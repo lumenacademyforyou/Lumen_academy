@@ -13,7 +13,7 @@ export function OverviewPage() {
 
   return (
     <PageContainer>
-      <h1 className="text-2xl font-extrabold text-navy">Good day, Santhoshkumar</h1>
+      <h1 className="text-2xl font-extrabold text-navy">Good day, Deepan B</h1>
       <p className="mb-6 text-sm text-muted">Here's what's happening in your NEET preparation console.</p>
 
       <div className="stagger-children grid gap-4 lg:grid-cols-3">

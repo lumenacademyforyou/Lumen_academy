@@ -8,7 +8,7 @@ import { SyllabusPage } from "./pages/SyllabusPage";
 import { TestBuilderPage } from "./pages/TestBuilderPage";
 import { ResultsPage } from "./pages/ResultsPage";
 import { TestHistoryPage } from "./pages/TestHistoryPage";
-
+import StudentDashboard from "./pages/StudentDashboard";
 function App() {
   return (
     <BrowserRouter>
@@ -17,13 +17,14 @@ function App() {
           <div className="min-h-screen bg-ivory">
             <ConsoleHeader />
             <Routes>
-              <Route path="/" element={<Navigate to="/overview" replace />} />
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/overview" element={<OverviewPage />} />
               <Route path="/study-plan/*" element={<StudyPlanPage />} />
               <Route path="/syllabus/*" element={<SyllabusPage />} />
               <Route path="/build-test" element={<TestBuilderPage />} />
               <Route path="/results" element={<ResultsPage />} />
               <Route path="/test-history" element={<TestHistoryPage />} />
+              <Route path="/dashboard" element={<StudentDashboard />} />
               <Route path="*" element={<Navigate to="/overview" replace />} />
             </Routes>
           </div>
