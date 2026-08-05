@@ -1,12 +1,22 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { SidebarProvider } from './contexts/SidebarContext';
+import AppRoutes from './routes/AppRoutes';
 
-
-
-function App() {
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Hello, World!</h1>
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <ThemeProvider>
+          <SidebarProvider>
+            <AppRoutes />
+          </SidebarProvider>
+        </ThemeProvider>
+      </AuthProvider>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
