@@ -53,9 +53,10 @@ export const updateSchoolAdmin = async (id: string, data: Prisma.SchoolAdminUpda
   return prisma.schoolAdmin.update({ where: { id }, data });
 };
 
-export const setSchoolAdminStatus = async (id: string, status: AdminStatus) => {
+export const setSchoolAdminStatus = async (id: string, status: AdminStatus | string) => {
   await getSchoolAdminById(id);
-  return prisma.schoolAdmin.update({ where: { id }, data: { status } });
+  const formattedStatus = status.toUpperCase() as AdminStatus;
+  return prisma.schoolAdmin.update({ where: { id }, data: { status: formattedStatus } });
 };
 
 export const deleteSchoolAdmin = async (id: string) => {

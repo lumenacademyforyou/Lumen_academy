@@ -24,6 +24,14 @@ export const getSchoolAdminsQuerySchema = z.object({
   }),
 });
 
+export const updateSchoolAdminStatusSchema = z.object({
+  params: z.object({ id: z.string().uuid() }),
+  body: z.object({
+    status: z.string().transform((val) => val.toUpperCase()).pipe(z.enum(['ACTIVE', 'SUSPENDED'])),
+  }),
+  query: z.object({}),
+});
+
 export const idParamSchema = z.object({
   params: z.object({ id: z.string().uuid() }),
   body: z.object({}),

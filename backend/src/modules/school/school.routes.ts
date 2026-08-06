@@ -11,6 +11,7 @@ router.post("/", validate(createSchoolSchema), controller.createSchool);
 
 router.get('/', validate(getSchoolsQuerySchema), controller.getAllSchools);
 router.get('/:id', validate(idParamSchema), controller.getSchoolById);
+router.put('/:id', validate(updateSchoolSchema), controller.updateSchool);
 router.patch('/:id', validate(updateSchoolSchema), controller.updateSchool);
 router.delete('/:id', validate(idParamSchema), controller.deleteSchool);
 

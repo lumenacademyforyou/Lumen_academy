@@ -28,6 +28,11 @@ export const activateSchoolAdmin = asyncHandler(async (req: Request, res: Respon
   return sendSuccess(res, admin, 'School admin activated');
 });
 
+export const updateSchoolAdminStatus = asyncHandler(async (req: Request, res: Response) => {
+  const admin = await service.setSchoolAdminStatus(req.params.id, req.body.status);
+  return sendSuccess(res, admin, 'School admin status updated');
+});
+
 export const deleteSchoolAdmin = asyncHandler(async (req: Request, res: Response) => {
   await service.deleteSchoolAdmin(req.params.id);
   return sendSuccess(res, null, 'School admin deleted');
