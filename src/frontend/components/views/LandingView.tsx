@@ -3,9 +3,8 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import LumenLogo from "../common/LumenLogo";
 import StudyPlanView from "./StudyPlanView";
-import logoImg from "../../assets/logo.png";
 import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../../../database/syllabusData";
-import { auth, googleProvider, signInWithPopup } from "../../firebase";
+import { sendEmailOtp, sendPhoneOtp, verifyEmailOtp, verifyPhoneOtp } from "../../lib/supabaseAuth";
 
 export type { SyllabusUnit, SyllabusUnitMaterial };
 export { SYLLABUS_UNITS };
@@ -30,13 +29,23 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
   const [unitModalTab, setUnitModalTab] = useState<"mock_test" | "syllabus_materials">("syllabus_materials");
   const [activeMaterialViewer, setActiveMaterialViewer] = useState<SyllabusUnitMaterial | null>(null);
   
+  // Registration & Login Contact Method State
+  const [authMethod, setAuthMethod] = useState<"email" | "phone">("email");
+  const [phoneCountryCode, setPhoneCountryCode] = useState("+91");
+  const [regPhone, setRegPhone] = useState("");
+  const [loginPhone, setLoginPhone] = useState("");
+  const [otpDelivery, setOtpDelivery] = useState<"email" | "phone">("email");
+
   // Registration Form State (Flow A)
   const [regName, setRegName] = useState("");
   const [regPhoneOrEmail, setRegPhoneOrEmail] = useState("");
   const [regStream, setRegStream] = useState("NEET Aspirant");
-  const [otpValues, setOtpValues] = useState(["1", "2", "3", "4"]);
+  const [otpValues, setOtpValues] = useState(["", "", "", "", "", ""]);
+  const [otpFlow, setOtpFlow] = useState<"register" | "login">("register");
+  const [isSendingOtp, setIsSendingOtp] = useState(false);
+  const [isVerifyingOtp, setIsVerifyingOtp] = useState(false);
   const [selectedExam, setSelectedExam] = useState("Ultimate Mock Series");
-  
+
   // Login State (Flow B)
   const [loginPhoneOrEmail, setLoginPhoneOrEmail] = useState("");
   const [formError, setFormError] = useState("");
@@ -53,51 +62,128 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
     setFormError("");
   };
 
-  const handleRegisterSubmit = (e: React.FormEvent) => {
+  // E.164 format required by Supabase (and every SMS provider behind it) — no
+  // spaces, no punctuation.
+  const toE164 = (rawPhone: string) => `${phoneCountryCode}${rawPhone.replace(/\D/g, "")}`;
+
+  const handleRegisterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!regName.trim()) {
       setFormError("Please enter your full name.");
       return;
     }
-    if (!regPhoneOrEmail.trim()) {
-      setFormError("Please enter email or mobile number.");
+    setOtpFlow("register");
+
+    if (authMethod === "phone") {
+      const cleanPhone = regPhone.replace(/\D/g, "");
+      if (cleanPhone.length < 10) {
+        setFormError("Please enter a valid 10-digit mobile number.");
+        return;
+      }
+      setFormError("");
+      setIsSendingOtp(true);
+      try {
+        await sendPhoneOtp(toE164(regPhone), true);
+        setOtpDelivery("phone");
+        setOtpValues(["", "", "", "", "", ""]);
+        setAuthMode("otp");
+      } catch (err: any) {
+        setFormError(err.message || "Could not send the verification code. Please try again.");
+      } finally {
+        setIsSendingOtp(false);
+      }
       return;
     }
+
+    // Email registration flow
+    if (!regPhoneOrEmail.trim() || !regPhoneOrEmail.includes("@")) {
+      setFormError("Please enter a valid email address.");
+      return;
+    }
+
     setFormError("");
-    setAuthMode("otp");
+    setIsSendingOtp(true);
+    try {
+      await sendEmailOtp(regPhoneOrEmail.trim().toLowerCase(), true);
+      setOtpDelivery("email");
+      setOtpValues(["", "", "", "", "", ""]);
+      setAuthMode("otp");
+    } catch (err: any) {
+      setFormError(err.message || "Could not send the verification code. Please try again.");
+    } finally {
+      setIsSendingOtp(false);
+    }
   };
 
-  const handleOtpSubmit = (e: React.FormEvent) => {
+  const handleOtpSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const entered = otpValues.join("");
-    if (entered.length < 4) {
-      setFormError("Please enter the 4-digit code.");
+    if (entered.length < 6) {
+      setFormError("Please enter the 6-digit verification code.");
       return;
     }
     setFormError("");
-    onLoginSuccess(regName || "Prince A", true);
-  };
+    setIsVerifyingOtp(true);
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!loginPhoneOrEmail.trim()) {
-      setFormError("Please enter registered email or mobile.");
-      return;
-    }
-    setFormError("");
-    // Log in as returning student
-    onLoginSuccess(loginPhoneOrEmail.includes("@") ? loginPhoneOrEmail.split("@")[0] : "Prince A", false);
-  };
+    const identifier = otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase();
+    const displayName = regName.trim() || (otpDelivery === "phone" ? `Student (${identifier.slice(-4)})` : identifier.split("@")[0]) || "Student";
 
-  const handleGoogleSignIn = async () => {
     try {
+      const session = otpDelivery === "phone" ? await verifyPhoneOtp(identifier, entered) : await verifyEmailOtp(identifier, entered);
+      const sessionName = (session.user.user_metadata as { display_name?: string } | undefined)?.display_name || displayName;
+
+      if (otpFlow === "register") {
+        setAuthMode("exam_select");
+      } else {
+        onLoginSuccess(sessionName, false);
+      }
+    } catch (err: any) {
+      setFormError(err.message || "That code didn't match. Please check it and try again.");
+    } finally {
+      setIsVerifyingOtp(false);
+    }
+  };
+
+  const handleLoginSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setOtpFlow("login");
+
+    if (authMethod === "phone") {
+      const cleanPhone = loginPhone.replace(/\D/g, "");
+      if (cleanPhone.length < 10) {
+        setFormError("Please enter a valid 10-digit registered mobile number.");
+        return;
+      }
       setFormError("");
-      const result = await signInWithPopup(auth, googleProvider);
-      const user = result.user;
-      onLoginSuccess(user.displayName || "Student", false);
-    } catch (error: any) {
-      console.error(error);
-      setFormError(error.message || "Failed to sign in with Google.");
+      setIsSendingOtp(true);
+      try {
+        await sendPhoneOtp(toE164(loginPhone), false);
+        setOtpDelivery("phone");
+        setOtpValues(["", "", "", "", "", ""]);
+        setAuthMode("otp");
+      } catch (err: any) {
+        setFormError(err.message || "Could not send the verification code. Please try again.");
+      } finally {
+        setIsSendingOtp(false);
+      }
+      return;
+    }
+
+    if (!loginPhoneOrEmail.trim() || !loginPhoneOrEmail.includes("@")) {
+      setFormError("Please enter your registered email.");
+      return;
+    }
+    setFormError("");
+    setIsSendingOtp(true);
+    try {
+      await sendEmailOtp(loginPhoneOrEmail.trim().toLowerCase(), false);
+      setOtpDelivery("email");
+      setOtpValues(["", "", "", "", "", ""]);
+      setAuthMode("otp");
+    } catch (err: any) {
+      setFormError(err.message || "Could not send the verification code. Please check the email and try again.");
+    } finally {
+      setIsSendingOtp(false);
     }
   };
 
@@ -133,7 +219,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
     newOtp[index] = val.slice(-1);
     setOtpValues(newOtp);
 
-    if (val && index < 3) {
+    if (val && index < otpValues.length - 1) {
       const nextInput = document.getElementById(`modal-otp-${index + 1}`);
       nextInput?.focus();
     }
@@ -152,11 +238,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
           
           {/* Logo & Name */}
           <div className="flex items-center gap-3 cursor-pointer pl-2 md:pl-3" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img 
-              src={logoImg} 
-              alt="Lumen Academy" 
-              className="h-[64px] md:h-[80px] w-auto object-contain transition-transform hover:scale-105 duration-200"
-            />
+            <LumenLogo className="w-[64px] md:w-[80px] h-[64px] md:h-[80px]  transition-transform hover:scale-105 duration-200" />
             <div className="hidden sm:block">
               <span className="font-black text-2xl md:text-3xl text-[var(--navy)] dark:text-white tracking-tight block leading-none">
                 LUMEN ACADEMY
@@ -315,7 +397,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={handleOpenRegister}
-                className="w-full sm:w-auto px-8 py-4 bg-[var(--teal)] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="w-full sm: px-8 py-4 bg-[var(--teal)] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span className="material-symbols-outlined text-sm">rocket_launch</span>
                 Register New Aspirant
@@ -325,7 +407,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={handleOpenLogin}
-                className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-[var(--teal)] dark:hover:border-[#FCB824] text-[#00243B] dark:text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-sm hover:shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="w-full sm: px-8 py-4 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-[var(--teal)] dark:hover:border-[#FCB824] text-[#00243B] dark:text-white font-bold text-xs uppercase tracking-wider rounded-2xl shadow-sm hover:shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span className="material-symbols-outlined text-sm">login</span>
                 Sign In Returning Student
@@ -408,14 +490,14 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 {/* Simulated Exam View snippet */}
                 <div className="space-y-4">
                   <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 text-[#00243B] dark:text-white flex items-center justify-between shadow-sm border border-slate-200 dark:border-slate-700 relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-400 via-transparent to-transparent"></div>
                     <div className="flex items-center gap-3 relative z-10">
-                      <div className="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold text-xs backdrop-blur-sm">
-                        <span className="material-symbols-outlined text-base animate-pulse">videocam</span>
+                      <div className="w-10 h-10 rounded-xl bg-teal-100 dark:bg-teal-900/40 border border-teal-200 dark:border-teal-800 flex items-center justify-center text-[var(--teal)] dark:text-teal-400 font-bold text-xs backdrop-blur-sm">
+                        <span className="material-symbols-outlined text-base animate-pulse">psychology</span>
                       </div>
                       <div>
-                        <p className="text-xs font-bold">Face & Gaze Locked</p>
-                        <p className="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono tracking-widest mt-0.5">Focus 100%</p>
+                        <p className="text-xs font-bold">Adaptive Difficulty Engine</p>
+                        <p className="text-[10px] text-teal-600 dark:text-teal-400 font-mono tracking-widest mt-0.5">Calibrating...</p>
                       </div>
                     </div>
                   </div>
@@ -454,7 +536,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                     onClick={onQuickDemoFlowC || handleOpenRegister}
                     className="px-4 py-2 bg-[var(--teal)] text-white font-bold rounded-xl text-[11px] hover:bg-[var(--teal-2)] transition-colors cursor-pointer"
                   >
-                    Test Live Demo
+                    Start Free Mock
                   </button>
                 </div>
               </div>
@@ -597,6 +679,74 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
         </div>
       </section>
 
+      {/* HOW IT WORKS SECTION */}
+      <section className="py-20 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto w-full border-t border-slate-200/50 dark:border-slate-800/50">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span className="text-[var(--teal)] dark:text-[#FCB824] text-xs font-black uppercase tracking-widest bg-amber-100 dark:bg-amber-950/80 px-3 py-1 rounded-full border border-[#FCB824] dark:border-[#FCB824]/50">
+            Simple 4-Step Process
+          </span>
+          <h2 className="text-2xl md:text-4xl font-black text-slate-950 dark:text-white tracking-tight">
+            How Lumen Academy Works
+          </h2>
+          <p className="text-slate-700 dark:text-slate-200 text-sm font-semibold">
+            From registration to rank improvement, our platform guides you systematically towards your target score.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          {/* Connecting line for desktop */}
+          <div className="hidden md:block absolute top-10 left-12 right-12 h-0.5 bg-gradient-to-r from-transparent via-[var(--teal)] dark:via-[#FCB824] to-transparent opacity-30 z-0"></div>
+          
+          {[
+            {
+              step: "01",
+              title: "Register & Profile",
+              desc: "Create your free account, select your target exam (NEET/JEE), and set your baseline goals.",
+              icon: "app_registration"
+            },
+            {
+              step: "02",
+              title: "Diagnostic Mock",
+              desc: "Take a full-syllabus mock test to establish your baseline score and accuracy velocity.",
+              icon: "quiz"
+            },
+            {
+              step: "03",
+              title: "AI Analysis",
+              desc: "Review your detailed scorecard, identifying exact weak chapters and time-management gaps.",
+              icon: "insights"
+            },
+            {
+              step: "04",
+              title: "Targeted Revision",
+              desc: "Use our syllabus viewer to access precise materials for weak areas and re-test to improve.",
+              icon: "trending_up"
+            }
+          ].map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.15, type: "spring", stiffness: 200 }}
+              className="relative z-10 flex flex-col items-center text-center space-y-4"
+            >
+              <div className="w-20 h-20 rounded-full bg-white dark:bg-[var(--navy)] border-4 border-slate-50 dark:border-slate-800 shadow-lg flex items-center justify-center relative group">
+                <div className="absolute inset-0 rounded-full bg-[var(--teal)]/10 dark:bg-[#FCB824]/10 group-hover:scale-110 transition-transform duration-300"></div>
+                <span className="material-symbols-outlined text-3xl text-[var(--teal)] dark:text-[#FCB824] z-10">{item.icon}</span>
+                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900 border-2 border-white dark:border-[var(--navy)] flex items-center justify-center text-[10px] font-black text-amber-900 dark:text-amber-100 shadow-sm">
+                  {item.step}
+                </div>
+              </div>
+              <h3 className="text-lg font-black text-[#00243B] dark:text-white pt-2">{item.title}</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-300 font-medium leading-relaxed max-w-[250px]">
+                {item.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* COURSES SECTION */}
       <section id="courses" className="py-20 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto w-full bg-slate-50 dark:bg-slate-900/40 rounded-3xl mb-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
@@ -731,7 +881,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
             </button>
           </div>
 
-          {/* Package 2: Ultimate Proctored Series (Featured) */}
+          {/* Package 2: Ultimate Mock Series (Featured) */}
           <div className="bg-[var(--navy)] dark:bg-[var(--navy)] text-white p-8 rounded-[32px] border-2 border-[#FCB824] shadow-2xl flex flex-col justify-between relative transform lg:-translate-y-2">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FCB824] text-slate-950 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest shadow-md">
               Most Popular Among Rankers
@@ -846,11 +996,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
       <footer className="bg-gradient-to-r from-[var(--navy)] via-[var(--navy)] to-[var(--navy)] text-white py-12 px-4 sm:px-6 md:px-12 border-t border-[#FCB824]/20 mt-auto">
         <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-3 md:gap-3.5">
-            <img 
-              src={logoImg} 
-              alt="Lumen Academy Logo" 
-              className="h-[42px] sm:h-[50px] md:h-[56px] w-auto object-contain shrink-0"
-            />
+            <LumenLogo className="w-[42px] sm:w-[50px] md:w-[56px] h-[42px] sm:h-[50px] md:h-[56px]  shrink-0" />
             <div className="flex flex-col justify-center leading-tight">
               <span className="font-black text-lg md:text-xl text-white tracking-tight block leading-none">LUMEN ACADEMY</span>
               <span className="text-[8px] md:text-[9px] font-bold text-[#FCB824] tracking-wider mt-0.5 uppercase whitespace-nowrap block">Empowering Future through Learning</span>
@@ -1169,32 +1315,28 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
       {/* AUTHENTICATION & ONBOARDING MODAL */}
       {showAuthModal && (
         <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
-          <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[32px] p-8 max-w-md w-full shadow-2xl border border-slate-200 dark:border-slate-700 relative">
+          <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 dark:border-slate-700 relative scrollbar-thin">
             
             {/* Close Button */}
             <button
               onClick={() => setShowAuthModal(false)}
-              className="absolute top-6 right-6 p-2 text-slate-400 hover:text-[#00243B] dark:hover:text-white rounded-full hover:bg-slate-100 dark:hover:bg-[#00243B] transition-colors cursor-pointer"
+              className="absolute top-5 right-5 p-2 text-slate-400 hover:text-[#00243B] dark:hover:text-white rounded-full hover:bg-slate-100 dark:hover:bg-[#00243B] transition-colors cursor-pointer"
             >
               <span className="material-symbols-outlined text-xl font-bold">close</span>
             </button>
 
             {/* Modal Header */}
-            <div className="text-center mb-6">
-              <div className="flex justify-center mb-2">
-                <img 
-                  src={logoImg} 
-                  alt="Lumen Academy Logo" 
-                  className="h-20 md:h-24 w-auto object-contain"
-                />
+            <div className="text-center mb-5">
+              <div className="flex justify-center mb-1">
+                <LumenLogo className="w-16 md:w-20 h-16 md:h-20 " />
               </div>
-              <p className="text-xs md:text-sm text-[var(--teal)] dark:text-[#FCB824] font-black uppercase tracking-widest mt-2">
+              <p className="text-[11px] md:text-xs text-[var(--teal)] dark:text-[#FCB824] font-black uppercase tracking-widest mt-1">
                 Lumen Academy Testing Portal
               </p>
             </div>
 
             {/* Mode Switcher Header within Modal */}
-            <div className="flex rounded-xl bg-slate-100 dark:bg-slate-800 p-1 mb-6 text-xs font-bold">
+            <div className="flex rounded-xl bg-slate-100 dark:bg-slate-800 p-1 mb-4 text-xs font-bold">
               <button
                 onClick={() => {
                   setAuthMode("register");
@@ -1202,7 +1344,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 }}
                 className={`flex-1 py-2 rounded-lg transition-all cursor-pointer ${
                   authMode === "register" || authMode === "otp" || authMode === "exam_select"
-                    ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow"
+                    ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-slate-950 shadow"
                     : "text-slate-600 dark:text-slate-300 hover:text-[#00243B] dark:hover:text-white"
                 }`}
               >
@@ -1228,12 +1370,44 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
               </div>
             )}
 
+            {/* Contact Method Tab Switcher (Email vs Mobile Number) */}
+            {(authMode === "register" || authMode === "login") && (
+              <div className="flex rounded-lg bg-slate-100 dark:bg-slate-800/80 p-1 mb-4 text-[11px] font-bold">
+                <button
+                  type="button"
+                  onClick={() => { setAuthMethod("email"); setFormError(""); }}
+                  className={`flex-1 py-1.5 rounded-md transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                    authMethod === "email"
+                      ? "bg-white dark:bg-slate-900 text-[var(--teal)] dark:text-[#FCB824] shadow-xs font-black"
+                      : "text-slate-500 hover:text-slate-700 dark:text-slate-400"
+                  }`}
+                >
+                  <span className="material-symbols-outlined text-sm">mail</span>
+                  <span>Email Address</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setAuthMethod("phone"); setFormError(""); }}
+                  className={`flex-1 py-1.5 rounded-md transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                    authMethod === "phone"
+                      ? "bg-white dark:bg-slate-900 text-[var(--teal)] dark:text-[#FCB824] shadow-xs font-black"
+                      : "text-slate-500 hover:text-slate-700 dark:text-slate-400"
+                  }`}
+                >
+                  <span className="material-symbols-outlined text-sm">smartphone</span>
+                  <span>Mobile OTP</span>
+                </button>
+              </div>
+            )}
+
             {/* 1. Registration Form */}
             {authMode === "register" && (
               <form onSubmit={handleRegisterSubmit} className="space-y-4 animate-in fade-in duration-200">
                 <div>
                   <h3 className="text-base font-bold text-[#00243B] dark:text-white">Aspirant Registration</h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">Enter your details to generate your assessment ID</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">
+                    {authMethod === "phone" ? "Enter your mobile number to receive instant SMS verification" : "Enter your email details to generate your assessment ID"}
+                  </p>
                 </div>
 
                 <div className="space-y-3">
@@ -1248,16 +1422,43 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                     />
                   </div>
 
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email or Mobile Number</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. prince@lumenacademy.edu"
-                      value={regPhoneOrEmail}
-                      onChange={(e) => setRegPhoneOrEmail(e.target.value)}
-                      className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
-                    />
-                  </div>
+                  {authMethod === "phone" ? (
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Mobile Number</label>
+                      <div className="flex gap-2">
+                        <select
+                          value={phoneCountryCode}
+                          onChange={(e) => setPhoneCountryCode(e.target.value)}
+                          className="px-3 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] outline-none"
+                        >
+                          <option value="+91">🇮🇳 +91</option>
+                          <option value="+1">🇺🇸 +1</option>
+                          <option value="+44">🇬🇧 +44</option>
+                          <option value="+971">🇦🇪 +971</option>
+                        </select>
+                        <input
+                          type="tel"
+                          placeholder="e.g. 9876543210"
+                          value={regPhone}
+                          onChange={(e) => setRegPhone(e.target.value)}
+                          className="flex-1 px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="space-y-1">
+                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email Address</label>
+                        <input
+                          type="text"
+                          placeholder="e.g. prince@lumenacademy.edu"
+                          value={regPhoneOrEmail}
+                          onChange={(e) => setRegPhoneOrEmail(e.target.value)}
+                          className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
+                        />
+                      </div>
+                    </>
+                  )}
 
                   <div className="space-y-1">
                     <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Target Stream")}</label>
@@ -1277,22 +1478,10 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer mt-2"
+                  disabled={isSendingOtp}
+                  className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] disabled:opacity-60 text-white dark:text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer mt-2"
                 >
-                  Send OTP Code →
-                </button>
-                <div className="flex items-center gap-3 my-4">
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
-                  <span className="text-xs text-slate-400 font-medium uppercase tracking-wider">or</span>
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleGoogleSignIn}
-                  className="w-full py-3.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 text-[#00243B] dark:text-white font-bold text-xs rounded-xl shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-4 h-4" />
-                  Sign Up with Google
+                  {isSendingOtp ? "Sending code..." : authMethod === "phone" ? "Send SMS Verification OTP →" : "Send Email Verification Code →"}
                 </button>
               </form>
             )}
@@ -1301,9 +1490,12 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
             {authMode === "otp" && (
               <form onSubmit={handleOtpSubmit} className="space-y-5 animate-in fade-in duration-200">
                 <div className="text-center space-y-1">
-                  <h3 className="text-base font-bold text-[#00243B] dark:text-white">OTP Security Verification</h3>
+                  <span className="text-xs font-black uppercase tracking-wider text-[var(--teal)] dark:text-[#FCB824] bg-teal-50 dark:bg-amber-950/80 px-3 py-1 rounded-full border border-[var(--teal)]/20 dark:border-[#FCB824]/30 inline-block">
+                    {otpDelivery === "phone" ? "📱 Mobile SMS Verification" : "✉️ Email Security Verification"}
+                  </span>
+                  <h3 className="text-base font-bold text-[#00243B] dark:text-white pt-1">Enter 6-Digit Security Code</h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">
-                    Enter the 4-digit code sent to <span className="text-[#00243B] dark:text-slate-200 font-bold">{regPhoneOrEmail}</span>
+                    Code sent to <span className="text-[#00243B] dark:text-slate-200 font-bold">{otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail)}</span>
                   </p>
                 </div>
 
@@ -1323,17 +1515,35 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer"
+                  disabled={isVerifyingOtp}
+                  className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] disabled:opacity-60 text-white dark:text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer"
                 >
-                  Verify Code & Continue →
+                  {isVerifyingOtp ? "Verifying..." : "Verify Code & Access Dashboard →"}
                 </button>
 
                 <div className="text-center text-xs text-slate-500 dark:text-slate-400 font-semibold">
-                  Didn't receive?{" "}
+                  Didn't receive code?{" "}
                   <button
                     type="button"
-                    onClick={() => setFormError("Resent OTP: 1234")}
-                    className="text-[var(--teal)] dark:text-[#FCB824] font-bold hover:underline cursor-pointer"
+                    disabled={isSendingOtp}
+                    onClick={async () => {
+                      setFormError("");
+                      setIsSendingOtp(true);
+                      try {
+                        const shouldCreateUser = otpFlow === "register";
+                        if (otpDelivery === "phone") {
+                          await sendPhoneOtp(toE164(regPhone || loginPhone), shouldCreateUser);
+                        } else {
+                          await sendEmailOtp((regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase(), shouldCreateUser);
+                        }
+                        setOtpValues(["", "", "", "", "", ""]);
+                      } catch (err: any) {
+                        setFormError(err.message || "Could not resend the code. Please try again.");
+                      } finally {
+                        setIsSendingOtp(false);
+                      }
+                    }}
+                    className="text-[var(--teal)] dark:text-[#FCB824] font-bold hover:underline cursor-pointer disabled:opacity-60"
                   >
                     Resend Code
                   </button>
@@ -1378,7 +1588,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
                 <button
                   onClick={handleExamSelectFinish}
-                  className="w-full py-4 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg transition-all cursor-pointer mt-2"
+                  className="w-full py-4 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white dark:text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg transition-all cursor-pointer mt-2"
                 >
                   Complete Onboarding & Enter Portal →
                 </button>
@@ -1390,40 +1600,57 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
               <form onSubmit={handleLoginSubmit} className="space-y-4 animate-in fade-in duration-200">
                 <div>
                   <h3 className="text-base font-bold text-[#00243B] dark:text-white">{t("Student Sign In")}</h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">Enter your credentials to access your mock dashboard & saved results</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">
+                    {authMethod === "phone" ? "Sign in using your registered mobile number and SMS OTP" : "Enter your credentials to access your mock dashboard & saved results"}
+                  </p>
                 </div>
 
                 <div className="space-y-3">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Registered Email or Mobile")}</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. prince@lumenacademy.edu"
-                      value={loginPhoneOrEmail}
-                      onChange={(e) => setLoginPhoneOrEmail(e.target.value)}
-                      className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--navy)] dark:focus:border-[#FCB824] outline-none"
-                    />
-                  </div>
+                  {authMethod === "phone" ? (
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Registered Mobile Number</label>
+                      <div className="flex gap-2">
+                        <select
+                          value={phoneCountryCode}
+                          onChange={(e) => setPhoneCountryCode(e.target.value)}
+                          className="px-3 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--navy)] outline-none"
+                        >
+                          <option value="+91">🇮🇳 +91</option>
+                          <option value="+1">🇺🇸 +1</option>
+                          <option value="+44">🇬🇧 +44</option>
+                          <option value="+971">🇦🇪 +971</option>
+                        </select>
+                        <input
+                          type="tel"
+                          placeholder="e.g. 9876543210"
+                          value={loginPhone}
+                          onChange={(e) => setLoginPhone(e.target.value)}
+                          className="flex-1 px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--navy)] dark:focus:border-[#FCB824] outline-none"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="space-y-1">
+                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Registered Email")}</label>
+                        <input
+                          type="text"
+                          placeholder="e.g. prince@lumenacademy.edu"
+                          value={loginPhoneOrEmail}
+                          onChange={(e) => setLoginPhoneOrEmail(e.target.value)}
+                          className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--navy)] dark:focus:border-[#FCB824] outline-none"
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-[var(--navy)] hover:bg-[var(--navy)] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer mt-2"
+                  disabled={isSendingOtp}
+                  className="w-full py-3.5 bg-[var(--navy)] dark:bg-[#FCB824] hover:bg-[var(--navy)] dark:hover:bg-[#FCB824] disabled:opacity-60 text-white dark:text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer mt-2"
                 >
-                  Sign In to Dashboard →
-                </button>
-                <div className="flex items-center gap-3 my-4">
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
-                  <span className="text-xs text-slate-400 font-medium uppercase tracking-wider">or</span>
-                  <div className="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleGoogleSignIn}
-                  className="w-full py-3.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 text-[#00243B] dark:text-white font-bold text-xs rounded-xl shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-4 h-4" />
-                  Sign In with Google
+                  {isSendingOtp ? "Sending code..." : authMethod === "phone" ? "Send Mobile Login OTP →" : "Send Email Login Code →"}
                 </button>
                 <div className="grid grid-cols-2 gap-3 mt-4">
                   <button

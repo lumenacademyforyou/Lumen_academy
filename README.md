@@ -1,27 +1,84 @@
 # Lumen Academy
 
-Lumen Academy is a comprehensive, single-page web application designed for students preparing for competitive exams like NEET, JEE Mains, JEE Advanced, and Olympiads. The platform provides a focused environment for taking mock tests, reviewing performance, and accessing study materials.
+Lumen Academy is a comprehensive web application for students preparing for
+competitive exams like NEET, JEE Mains, JEE Advanced, and Olympiads. The
+platform provides a focused environment for taking mock tests, reviewing
+performance, and accessing study materials. Bilingual: English and Tamil.
 
-## Features & Functionalities
+## Migration status
 
-- **Targeted Exam Preparation:** Select from streams like NEET Aspirant, NEET Repeaters, JEE Mains, JEE Advanced, and Olympiad.
-- **Mock Tests & Evaluations:** A dedicated test-taking interface with a timer and question navigation, followed by an evaluation view that reviews attempted answers.
-- **Study Plans & Course Area:** Access syllabus units, structured study materials, and track completion progress.
-- **Interactive Dashboard:** View analytics, recent attempts, and overall performance metrics.
-- **Authentication:** Integrated Google Sign-In via Firebase Auth, alongside a "Demo Account" for quick access and a basic Admin Portal interface.
-- **Responsive Design & Dark Mode:** A fully responsive UI that seamlessly toggles between light and dark themes using a refined color palette.
+This project is being migrated off a Google AI Studio applet stack (Firebase
+Auth + Firestore + Supabase + Gemini, deployed via AI Studio's managed Cloud
+Run pipeline) onto a self-hosted Express + PostgreSQL backend. See
+[CLAUDE.md](CLAUDE.md) for the target architecture and the current migration
+state.
 
-## Technology Stack
+## Technology stack
 
-- **Frontend Framework:** React 19 + TypeScript
-- **Build Tool:** Vite 6
-- **Styling:** Tailwind CSS v4 (CSS-first configuration)
-- **Animations:** `motion` (Framer Motion) for smooth UI transitions and route animations
-- **Icons:** `lucide-react`
-- **Authentication:** Firebase Authentication (Google Auth)
-- **State Management:** React `useState` and conditional rendering for a single state machine architecture
-- **AI Integration:** `@google/genai` for AI-assisted study plans and evaluation feedback
+- **Frontend:** React 19 + TypeScript, Vite 6, Tailwind CSS v4, `lucide-react`, `motion`
+- **Backend:** Node.js 20, Express 4, TypeScript (strict mode)
+- **Database:** PostgreSQL 16 (Neon), accessed through Prisma ORM
+- **Validation:** Zod
+- **Auth:** JWT access tokens + rotated opaque refresh tokens (bcrypt-hashed passwords)
+- **AI:** Provider-agnostic explanation layer (OpenRouter in production, a mock provider for local dev)
 
-## Architecture Note
+## Prerequisites
 
-The application operates as a single state machine housed in `src/frontend/App.tsx`. Screen transitions are managed purely through conditional rendering based on state variables (`currentScreen`, `currentTab`, `isAuthenticated`, `isAdmin`), purposefully avoiding complex routing libraries to maintain strict architectural boundaries.
+- Node.js 20 LTS
+- npm
+- A PostgreSQL 16 database (this project targets [Neon](https://neon.tech))
+
+## Setup
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Copy the environment template and fill in real values:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   At minimum you need `DATABASE_URL` (your Neon connection string) and a
+   `JWT_SECRET` of at least 32 characters.
+
+3. Generate the Prisma client and apply migrations:
+
+   ```bash
+   npx prisma generate
+   npx prisma migrate dev
+   ```
+
+4. Seed reference data (subjects, units, questions):
+
+   ```bash
+   npm run seed
+   ```
+
+## Running
+
+- Backend API: `npm run dev:api`
+- Frontend dev server: `npm run dev`
+- Typecheck: `npm run typecheck`
+- Build: `npm run build`
+- Tests: `npm test`
+
+## Folder structure
+
+```text
+prisma/                   Prisma schema, migrations, seed script
+src/
+  backend/
+    config.ts              Validated environment config (only place process.env is read)
+    server.ts               Express app bootstrap
+    middleware/              errorHandler, requireAuth, validate
+    routes/                  HTTP routes (thin, delegate to services)
+    services/                Business logic (no Express types)
+    ai/                      Provider-agnostic AI explanation layer
+  database/                 Legacy static syllabus/question data, being migrated into Postgres
+  frontend/                 React application (components, contexts, services)
+  types/                    Shared TypeScript types
+```

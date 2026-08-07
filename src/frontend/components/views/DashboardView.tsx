@@ -1,7 +1,88 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { motion } from "motion/react";
+import AnimatedCounter from "../common/AnimatedCounter";
 import { TestAttempt } from "../../../types";
+import { fetchStudentProfile, StudentProfile } from "../../supabase";
+import { LearningPathTimeline } from "../dashboard/LearningPathTimeline";
+import { PomodoroTimer } from "../dashboard/PomodoroTimer";
+import { DailyFlashcard } from "../dashboard/DailyFlashcard";
+import { fetchStudySessions, calculateStudyStreak } from "../../services/studySessionService";
+import { auth } from "../../firebase";
+
+interface RecommendedMock {
+  id: string;
+  title: string;
+  subject: string;
+  questionCount: number;
+  durationMinutes: number;
+  difficulty: "Beginner" | "Intermediate" | "Advanced" | "NTA Exam Level";
+  description: string;
+  tags: string[];
+}
+
+const ALL_MOCK_TESTS: RecommendedMock[] = [
+  {
+    id: "physics_1",
+    title: "NEET Physics Velocity & Mechanics Drill",
+    subject: "Physics",
+    questionCount: 45,
+    durationMinutes: 45,
+    difficulty: "Advanced",
+    description: "Targeted problem set on Rotational Dynamics, Kinematics & Wave Optics.",
+    tags: ["Formula Heavy", "High Weightage"]
+  },
+  {
+    id: "chemistry_1",
+    title: "NEET Organic Reaction Mechanisms Special",
+    subject: "Chemistry",
+    questionCount: 45,
+    durationMinutes: 45,
+    difficulty: "NTA Exam Level",
+    description: "Named reactions, Reaction Kinetics, and Electrochemistry NCERT questions.",
+    tags: ["NCERT Direct", "High Yield"]
+  },
+  {
+    id: "biology_1",
+    title: "NCERT Botany & Plant Physiology Mastery",
+    subject: "Biology",
+    questionCount: 90,
+    durationMinutes: 60,
+    difficulty: "Intermediate",
+    description: "Photosynthesis, Respiration, and Genetics diagram-based NCERT questions.",
+    tags: ["High Accuracy Target", "Diagram Based"]
+  },
+  {
+    id: "biology_2",
+    title: "Human Physiology & Zoology Rank Booster",
+    subject: "Biology",
+    questionCount: 90,
+    durationMinutes: 60,
+    difficulty: "NTA Exam Level",
+    description: "Neural Control, Endocrine, and Biomolecules assertion-reason questions.",
+    tags: ["Assertion-Reason", "Rank Enhancer"]
+  },
+  {
+    id: "math_1",
+    title: "Advanced Mathematics Problem Solving Mock",
+    subject: "Mathematics",
+    questionCount: 30,
+    durationMinutes: 45,
+    difficulty: "Advanced",
+    description: "Calculus, Vectors, and 3D Geometry problem-solving test.",
+    tags: ["Calculus", "Speed Test"]
+  },
+  {
+    id: "full_1",
+    title: "Ultimate Full-Syllabus Grand Mock",
+    subject: "All Subjects",
+    questionCount: 180,
+    durationMinutes: 180,
+    difficulty: "NTA Exam Level",
+    description: "Complete 180-question simulation with real-time AIR percentile ranking.",
+    tags: ["Full Syllabus", "AIR Ranking"]
+  }
+];
 
 interface DashboardViewProps {
   attempt: TestAttempt;
@@ -15,6 +96,73 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
   const [animatedScore, setAnimatedScore] = useState(0);
   const [showDetailedReport, setShowDetailedReport] = useState(false);
   const [showIRTReport, setShowIRTReport] = useState(false);
+
+  // Supabase Student Profile & Dynamic Mock Test Filtering
+  const [studentProfile, setStudentProfile] = useState<StudentProfile | null>(null);
+  const [userPreferredSubjects, setUserPreferredSubjects] = useState<string[]>(["Physics", "Chemistry", "Biology"]);
+  const [studyStreak, setStudyStreak] = useState(0);
+
+  const [dailyStudyGoal, setDailyStudyGoal] = useState<string>(() => {
+    return localStorage.getItem("lumen_daily_study_goal") || "";
+  });
+  const [tempStudyGoal, setTempStudyGoal] = useState<string>(dailyStudyGoal);
+  const [isEditingGoal, setIsEditingGoal] = useState<boolean>(!dailyStudyGoal);
+
+  const handleSaveGoal = () => {
+    setDailyStudyGoal(tempStudyGoal);
+    localStorage.setItem("lumen_daily_study_goal", tempStudyGoal);
+    setIsEditingGoal(false);
+  };
+
+  useEffect(() => {
+    let isMounted = true;
+    
+    const updateStreak = async () => {
+      try {
+        const userId = auth?.currentUser?.uid || "demo_user";
+        const sessions = await fetchStudySessions(userId);
+        if (isMounted) {
+          setStudyStreak(calculateStudyStreak(sessions));
+        }
+      } catch (err) {
+        console.error("Failed to update streak:", err);
+      }
+    };
+    
+    fetchStudentProfile(studentName).then((prof) => {
+      if (isMounted && prof) {
+        setStudentProfile(prof);
+        if (prof.preferred_subjects && prof.preferred_subjects.length > 0) {
+          // ensure mathematics is present if it's JEE and they don't have biology
+          if (prof.target_stream?.includes("JEE") && !prof.preferred_subjects.includes("Mathematics")) {
+            setUserPreferredSubjects(["Physics", "Chemistry", "Mathematics"]);
+          } else {
+            setUserPreferredSubjects(prof.preferred_subjects);
+          }
+        } else if (prof.target_stream?.includes("JEE")) {
+          setUserPreferredSubjects(["Physics", "Chemistry", "Mathematics"]);
+        }
+      }
+    });
+
+    updateStreak();
+    window.addEventListener("lumen_session_saved", updateStreak);
+
+    return () => { 
+      isMounted = false; 
+      window.removeEventListener("lumen_session_saved", updateStreak);
+    };
+  }, [studentName]);
+
+  const toggleSubjectFilter = (sub: string) => {
+    setUserPreferredSubjects(prev => 
+      prev.includes(sub) ? prev.filter(s => s !== sub) : [...prev, sub]
+    );
+  };
+
+  const filteredMocks = ALL_MOCK_TESTS.filter(mock => 
+    mock.subject === "All Subjects" || userPreferredSubjects.includes(mock.subject)
+  );
 
   const maxMarks = (attempt.correctAnswers + attempt.incorrectAnswers + attempt.skippedAnswers) * 4 || 1;
   const animatedPercentage = Math.max(0, (animatedScore / maxMarks) * 100);
@@ -113,11 +261,11 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
               <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase mb-1">{t("Target Percentile")}</p>
-              <p className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white">{attempt.percentile}%</p>
+              <AnimatedCounter value={attempt.percentile} suffix="%" className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white" />
             </div>
             <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
               <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase mb-1">{t("Accuracy")}</p>
-              <p className="text-xl md:text-2xl font-bold text-[var(--teal)] dark:text-[#FCB824]">{attempt.accuracy}%</p>
+              <AnimatedCounter value={attempt.accuracy} suffix="%" className="text-xl md:text-2xl font-bold text-[var(--teal)] dark:text-[#FCB824]" />
             </div>
             <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
               <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase mb-1">{t("Score")}</p>
@@ -276,12 +424,22 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6">
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 min-w-[140px] md:min-w-[160px] border border-white/20 text-center">
                 <span className="block text-white/70 text-[11px] font-bold tracking-wider mb-2">{t("ACCURACY")}</span>
-                <span className="text-white text-2xl md:text-3xl font-bold font-sans">{attempt.accuracy}%</span>
+                <AnimatedCounter value={attempt.accuracy} suffix="%" className="text-white text-2xl md:text-3xl font-bold font-sans" />
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 min-w-[140px] md:min-w-[160px] border border-white/20 text-center">
                 <span className="block text-white/70 text-[11px] font-bold tracking-wider mb-2">{t("PERCENTILE")}</span>
                 <span className="text-white text-2xl md:text-3xl font-bold font-sans">
-                  {attempt.percentile}<span className="text-base ml-0.5 font-normal">{t("th")}</span>
+                  <AnimatedCounter value={attempt.percentile} /><span className="text-base ml-0.5 font-normal">{t("th")}</span>
+                </span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 min-w-[140px] md:min-w-[160px] border border-white/20 text-center relative overflow-hidden group">
+                <div className="absolute inset-0 bg-[#FCB824]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span className="block text-[#FCB824] text-[11px] font-bold tracking-wider mb-2 flex justify-center items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">local_fire_department</span>
+                  {t("STUDY STREAK")}
+                </span>
+                <span className="text-white text-2xl md:text-3xl font-bold font-sans">
+                  <AnimatedCounter value={studyStreak} /><span className="text-base ml-1 font-normal text-white/70">{t("Days")}</span>
                 </span>
               </div>
             </div>
@@ -326,6 +484,118 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
             >{t("VIEW DETAILED REPORT")}</button>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Daily Study Goal */}
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] p-6 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col items-center justify-between gap-4 h-full"
+        >
+          <div className="flex items-center gap-4 w-full">
+            <div className="w-12 h-12 bg-amber-50 dark:bg-amber-950/40 text-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-2xl">flag</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">{t("Daily Study Goal")}</h3>
+              {isEditingGoal ? (
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mt-1.5 w-full">
+                  <input 
+                    type="text" 
+                    value={tempStudyGoal} 
+                    onChange={(e) => setTempStudyGoal(e.target.value)} 
+                    onKeyDown={(e) => e.key === "Enter" && handleSaveGoal()}
+                    placeholder={t("e.g. Solve 50 MCQs")}
+                    className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold px-3.5 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--teal)] w-full text-[#00243B] dark:text-white"
+                    autoFocus
+                  />
+                  <button 
+                    onClick={handleSaveGoal}
+                    className="bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] px-4 py-2 rounded-xl text-xs font-bold transition-transform hover:scale-105 shrink-0 w-full sm:w-auto"
+                  >
+                    {t("Save")}
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center gap-3 mt-1 justify-between w-full">
+                  <span className="text-lg font-bold text-[#00243B] dark:text-white truncate">
+                    {dailyStudyGoal || t("No goal set for today")}
+                  </span>
+                  <button 
+                    onClick={() => setIsEditingGoal(true)}
+                    className="text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] transition-colors p-1 flex-shrink-0"
+                  >
+                    <span className="material-symbols-outlined text-[18px]">edit</span>
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+          
+          {/* Progress Chip */}
+          {!isEditingGoal && dailyStudyGoal && (
+            <div className="flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider w-full justify-center">
+              <span className="material-symbols-outlined text-[18px]">track_changes</span>
+              {t("Goal Active")}
+            </div>
+          )}
+        </motion.div>
+
+        {/* Achievements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] p-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full flex flex-col"
+        >
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
+            <span className="material-symbols-outlined text-lg">emoji_events</span>
+            {t("Recent Achievements")}
+          </h3>
+          <div className="flex flex-wrap gap-4 overflow-hidden flex-1 items-start content-start">
+            {studyStreak >= 3 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border border-amber-200 dark:border-amber-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-amber-100 dark:bg-amber-900/60 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-sm border border-amber-200 dark:border-amber-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">local_fire_department</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-amber-700 dark:text-amber-500 truncate">{t("Streak Master")}</p>
+                  <p className="text-[10px] font-semibold text-amber-600 dark:text-amber-400/80 truncate">{studyStreak} {t("Day Streak")}</p>
+                </div>
+              </div>
+            )}
+            {attemptsCount > 0 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 border border-blue-200 dark:border-blue-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/60 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200 dark:border-blue-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">lightbulb</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-blue-700 dark:text-blue-500 truncate">{t("Early Bird")}</p>
+                  <p className="text-[10px] font-semibold text-blue-600 dark:text-blue-400/80 truncate">{t("Completed session")}</p>
+                </div>
+              </div>
+            )}
+            {attempt.accuracy >= 90 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-200 dark:border-emerald-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-sm border border-emerald-200 dark:border-emerald-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">military_tech</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-500 truncate">{t("High Scorer")}</p>
+                  <p className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400/80 truncate">{t("90%+ Accuracy")}</p>
+                </div>
+              </div>
+            )}
+            
+            {!(studyStreak >= 3 || attemptsCount > 0 || attempt.accuracy >= 90) && (
+              <div className="w-full flex items-center justify-center h-20 text-slate-400 dark:text-slate-500 text-xs font-semibold italic bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800">
+                {t("Keep studying to unlock achievements!")}
+              </div>
+            )}
+          </div>
+        </motion.div>
       </div>
 
       {/* Quick Stats Bento Grid */}
@@ -392,6 +662,116 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
           <span className="text-on-surface-variant dark:text-slate-300 font-bold text-[10px] md:text-xs tracking-wider uppercase">{t("Time Taken")}</span>
         </motion.div>
       </div>
+
+      <LearningPathTimeline />
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+        <PomodoroTimer studentName={studentName} />
+        <DailyFlashcard />
+      </div>
+
+      {/* DYNAMIC MOCK TEST RECOMMENDATIONS (FILTERED BY SUPABASE PROFILE PREFERRED SUBJECTS) */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] md:rounded-[36px] p-6 md:p-8 border-2 border-[var(--teal)]/30 dark:border-[#FCB824]/30 shadow-md space-y-6"
+      >
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-700 pb-5">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-xl">recommend</span>
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[var(--teal)] dark:text-[#FCB824] bg-teal-50 dark:bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-[var(--teal)]/20 dark:border-[#FCB824]/30">
+                Supabase Profile Recommendation Engine
+              </span>
+            </div>
+            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#00243B] dark:text-white">
+              Recommended Mock Tests for {studentName || "Student"}
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">
+              Dynamically filtered based on your preferred subjects set in your Supabase profile
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-bold text-slate-400 dark:text-slate-500 mr-1">Active Filter:</span>
+            {(studentProfile?.target_stream?.includes("JEE") ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]).map((sub) => {
+              const active = userPreferredSubjects.includes(sub);
+              return (
+                <button
+                  key={sub}
+                  type="button"
+                  onClick={() => toggleSubjectFilter(sub)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
+                    active
+                      ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] border-transparent shadow-xs"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300"
+                  }`}
+                >
+                  {active ? "✓ " : "+ "}{sub}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {filteredMocks.length === 0 ? (
+            <div className="col-span-full py-10 text-center space-y-2">
+              <p className="text-sm font-bold text-slate-500">No mock tests found matching your selected subject filter.</p>
+              <p className="text-xs text-slate-400">Select at least one subject chip above to view targeted practice tests.</p>
+            </div>
+          ) : (
+            filteredMocks.map((mock) => (
+              <div
+                key={mock.id}
+                className="bg-slate-50 dark:bg-[#071d2b] p-5 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between space-y-4 hover:border-[var(--teal)] dark:hover:border-[#FCB824] transition-all group shadow-2xs"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-[#FCB824]">
+                      {mock.subject}
+                    </span>
+                    <span className="text-[10px] font-bold text-slate-400">
+                      {mock.difficulty}
+                    </span>
+                  </div>
+
+                  <h4 className="text-sm font-bold text-[#00243B] dark:text-white group-hover:text-[var(--teal)] dark:group-hover:text-[#FCB824] transition-colors leading-snug">
+                    {mock.title}
+                  </h4>
+
+                  <p className="text-xs text-slate-600 dark:text-slate-300 font-normal line-clamp-2">
+                    {mock.description}
+                  </p>
+                </div>
+
+                <div className="space-y-3 pt-2 border-t border-slate-200/60 dark:border-slate-700/60">
+                  <div className="flex items-center justify-between text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                    <span className="flex items-center gap-1">
+                      <span className="material-symbols-outlined text-sm">quiz</span>
+                      {mock.questionCount} Questions
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <span className="material-symbols-outlined text-sm">schedule</span>
+                      {mock.durationMinutes} Mins
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={onTakeTest}
+                    className="w-full py-2.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white dark:text-[#00243B] font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer flex items-center justify-center gap-2"
+                  >
+                    <span>Start Recommended Test</span>
+                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      </motion.div>
 
       {/* Subject Wise Performance */}
       <div>
@@ -565,7 +945,7 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
 
       {/* AI Recommendation Section & Lagging Topics Improvement Guide */}
       {/* Item Response Theory (IRT) Advanced Analytics */}
-      {/* AI Proctoring Telemetry Report */}
+      
 
       {/* 3D Temporal Analytics Section */}
       <motion.div 

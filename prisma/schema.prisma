@@ -1,0 +1,213 @@
+// Prisma schema — see CLAUDE.md for architecture rules.
+// DATABASE_URL is read via prisma.config.ts, not hardcoded here.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// id is NOT self-generated — it is always set explicitly to match the
+// Supabase auth.users id of the account this profile belongs to. Rows are
+// lazily provisioned on first authenticated request; see CLAUDE.md's
+// "Auth architecture" section.
+model User {
+  id          String   @id @db.Uuid
+  email       String?  @unique
+  phone       String?  @unique
+  displayName String   @map("display_name")
+  role        String   @default("student")
+  locale      String   @default("en")
+  targetExam  String   @default("NEET") @map("target_exam")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  attempts TestAttempt[]
+  aiUsage  AiUsage[]
+
+  @@map("users")
+}
+
+// NEET biology is modeled as two subjects (botany, zoology), not one combined
+// "biology" — see the domain note in CLAUDE.md.
+model Subject {
+  id           String @id
+  name         String
+  displayOrder Int    @map("display_order")
+
+  units Unit[]
+
+  @@map("subjects")
+}
+
+model Unit {
+  id             String @id
+  subjectId      String @map("subject_id")
+  name           String
+  weightageMarks Int    @map("weightage_marks")
+  displayOrder   Int    @map("display_order")
+
+  // Denormalized display fields carried over from src/database/syllabusData.ts
+  // so the syllabus/course UI can be served from the database instead of a
+  // static array. Nullable because they only apply to units, not to future
+  // chapter/topic rows.
+  ncertClass            String? @map("ncert_class")
+  expectedQuestions     String? @map("expected_questions")
+  weightagePercent      Int?    @map("weightage_percent")
+  subtopics             Json?
+  keyFormulas           Json?   @map("key_formulas")
+  overview              String? @db.Text
+  highYieldNcertChapter String? @map("high_yield_ncert_chapter") @db.Text
+  badgeColor            String? @map("badge_color")
+
+  subject   Subject    @relation(fields: [subjectId], references: [id])
+  chapters  Chapter[]
+  questions Question[]
+
+  @@index([subjectId])
+  @@map("units")
+}
+
+model Chapter {
+  id           String @id @default(uuid()) @db.Uuid
+  unitId       String @map("unit_id")
+  name         String
+  classLevel   String @map("class_level")
+  displayOrder Int    @map("display_order")
+
+  unit   Unit    @relation(fields: [unitId], references: [id])
+  topics Topic[]
+
+  @@index([unitId])
+  @@map("chapters")
+}
+
+model Topic {
+  id           String  @id @default(uuid()) @db.Uuid
+  chapterId    String  @map("chapter_id") @db.Uuid
+  name         String
+  tagCode      String? @map("tag_code")
+  displayOrder Int     @map("display_order")
+
+  chapter   Chapter    @relation(fields: [chapterId], references: [id])
+  questions Question[]
+
+  @@index([chapterId])
+  @@map("topics")
+}
+
+model Question {
+  id            String   @id
+  unitId        String   @map("unit_id")
+  topicId       String?  @map("topic_id") @db.Uuid
+  stemEn        String   @map("stem_en") @db.Text
+  stemTa        String?  @map("stem_ta") @db.Text
+  difficulty    Int      @default(3)
+  marks         Int      @default(4)
+  negativeMarks Int      @default(1) @map("negative_marks")
+  explanationEn String?  @map("explanation_en") @db.Text
+  explanationTa String?  @map("explanation_ta") @db.Text
+  isActive      Boolean  @default(true) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  unit           Unit             @relation(fields: [unitId], references: [id])
+  topic          Topic?           @relation(fields: [topicId], references: [id])
+  options        QuestionOption[]
+  attemptAnswers AttemptAnswer[]
+
+  @@index([unitId])
+  @@index([topicId])
+  @@map("questions")
+}
+
+model QuestionOption {
+  id           String  @id
+  questionId   String  @map("question_id")
+  label        String
+  textEn       String  @map("text_en") @db.Text
+  textTa       String? @map("text_ta") @db.Text
+  isCorrect    Boolean @map("is_correct")
+  displayOrder Int     @map("display_order")
+
+  question       Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  attemptAnswers AttemptAnswer[]
+
+  @@index([questionId])
+  @@map("question_options")
+}
+
+model TestAttempt {
+  id              String    @id @default(uuid()) @db.Uuid
+  userId          String    @map("user_id") @db.Uuid
+  config          Json
+  durationSeconds Int       @map("duration_seconds")
+  startedAt       DateTime  @default(now()) @map("started_at")
+  submittedAt     DateTime? @map("submitted_at")
+  status          String    @default("in_progress")
+  score           Int?
+  maxScore        Int?      @map("max_score")
+  correctCount    Int?      @map("correct_count")
+  wrongCount      Int?      @map("wrong_count")
+  skippedCount    Int?      @map("skipped_count")
+
+  user    User            @relation(fields: [userId], references: [id])
+  answers AttemptAnswer[]
+
+  @@index([userId])
+  @@map("test_attempts")
+}
+
+model AttemptAnswer {
+  attemptId        String   @map("attempt_id") @db.Uuid
+  questionId       String   @map("question_id")
+  selectedOptionId String?  @map("selected_option_id")
+  isCorrect        Boolean? @map("is_correct")
+  timeSpentMs      Int?     @map("time_spent_ms")
+  answeredAt       DateTime @default(now()) @map("answered_at")
+
+  attempt        TestAttempt     @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question       Question        @relation(fields: [questionId], references: [id])
+  selectedOption QuestionOption? @relation(fields: [selectedOptionId], references: [id])
+
+  @@id([attemptId, questionId])
+  @@index([questionId])
+  @@index([selectedOptionId])
+  @@map("attempt_answers")
+}
+
+model AiCache {
+  cacheKey      String   @id @map("cache_key")
+  responseJson  Json     @map("response_json")
+  promptVersion String   @map("prompt_version")
+  provider      String
+  model         String
+  hitCount      Int      @default(0) @map("hit_count")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@map("ai_cache")
+}
+
+model AiUsage {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  endpoint  String
+  provider  String
+  model     String?
+  tokensIn  Int?     @map("tokens_in")
+  tokensOut Int?     @map("tokens_out")
+  latencyMs Int      @map("latency_ms")
+  cacheHit  Boolean  @default(false) @map("cache_hit")
+  costUsd   Float?   @map("cost_usd")
+  errorCode String?  @map("error_code")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([createdAt])
+  @@map("ai_usage")
+}

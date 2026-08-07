@@ -11,8 +11,9 @@ interface CoursesViewProps {
     title: string;
     questions: Question[];
     durationSeconds: number;
-    mode: "proctored" | "standard" | "practice";
+    mode: "standard" | "practice";
     subject: string;
+    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
   }) => void;
   onNavigateTab: (tab: string) => void;
 }

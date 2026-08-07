@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LumenLogo from "./LumenLogo";
-import logoImg from "../../assets/logo.png";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { saveStudentProfile } from "../../supabase";
+import { fetchStudySessions, calculateStudyStreak } from "../../services/studySessionService";
+import { auth } from "../../firebase";
 
 interface HeaderProps {
   currentTab: string;
@@ -15,6 +17,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   const { t } = useLanguage();
   const [showNotifyPopup, setShowNotifyPopup] = useState(false);
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  const [studyStreak, setStudyStreak] = useState(0);
 
   // Global Dark Mode State (Syncs with html.dark & localStorage)
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
@@ -68,10 +71,32 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   // Settings Feedback
   const [settingsSuccessMsg, setSettingsSuccessMsg] = useState("");
 
-  const handleSaveProfile = (e: React.FormEvent) => {
+  const updateStreak = async () => {
+    try {
+      const userId = auth?.currentUser?.uid || "demo_user";
+      const sessions = await fetchStudySessions(userId);
+      setStudyStreak(calculateStudyStreak(sessions));
+    } catch (err) {
+      console.error("Failed to update streak:", err);
+    }
+  };
+
+  useEffect(() => {
+    updateStreak();
+    const handleSessionSaved = () => updateStreak();
+    window.addEventListener("lumen_session_saved", handleSessionSaved);
+    return () => window.removeEventListener("lumen_session_saved", handleSessionSaved);
+  }, []);
+
+  const handleSaveProfile = async (e: React.FormEvent) => {
     e.preventDefault();
     if (editedName.trim()) {
       setStudentName(editedName.trim());
+      await saveStudentProfile({
+        display_name: editedName.trim(),
+        target_stream: targetStream,
+        preferred_subjects: targetStream === "JEE Aspirant" ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]
+      });
     }
     setProfileSuccessMsg("Profile updated successfully!");
     setTimeout(() => {
@@ -91,7 +116,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-slate-50 via-white to-amber-50/50 dark:from-[var(--navy)] dark:via-[var(--navy)] dark:to-[var(--navy)] backdrop-blur-md border-b border-amber-200/50 dark:border-amber-900/50 shadow-sm flex flex-col justify-center">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-slate-50 via-white to-amber-50/50 dark:from-[var(--navy)] dark:via-[var(--navy)] dark:to-[var(--navy)] backdrop-blur-md border-b border-amber-200/50 dark:border-amber-900/50 shadow-sm flex flex-col justify-center print:hidden">
         <div className="h-20 md:h-22 py-2 flex items-center justify-between px-3 sm:px-6 md:px-8 w-full max-w-[1360px] mx-auto min-w-0">
           {/* Left section: Logo & Desktop Nav Links */}
           <div className="flex items-center gap-3 xl:gap-8 min-w-0">
@@ -99,11 +124,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
               className="flex items-center gap-2 sm:gap-2.5 cursor-pointer shrink-0" 
               onClick={() => { setTab("dashboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             >
-              <img 
-                src={logoImg} 
-                alt="Lumen Academy" 
-                className="h-[42px] sm:h-[50px] md:h-[56px] w-auto object-contain transition-transform hover:scale-105 duration-200"
-              />
+              <LumenLogo className="w-[42px] sm:w-[50px] md:w-[56px] h-[42px] sm:h-[50px] md:h-[56px]  transition-transform hover:scale-105 duration-200" />
               <div className="flex flex-col justify-center leading-tight hidden sm:flex">
                 <span className="font-black text-lg md:text-xl text-[var(--navy)] dark:text-white tracking-tight font-sans leading-none">
                   LUMEN ACADEMY
@@ -197,6 +218,13 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
           </div>
 
           <div className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700 relative shrink-0">
+            {studyStreak > 0 && (
+              <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800 rounded-full text-orange-600 dark:text-orange-400 font-bold text-[10px] shadow-sm" title={`${studyStreak} Day Study Streak`}>
+                <span className="material-symbols-outlined text-[14px] text-orange-500">local_fire_department</span>
+                {studyStreak}
+              </div>
+            )}
+
             <div 
               onClick={() => {
                 setShowProfileDropdown(!showProfileDropdown);

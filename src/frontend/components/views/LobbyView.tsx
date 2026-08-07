@@ -4,7 +4,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 interface LobbyViewProps {
   onStartTest: () => void;
   testTitle: string;
-  mode: "proctored" | "standard" | "practice";
+  mode: "standard" | "practice";
 }
 
 export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewProps) {
@@ -125,16 +125,6 @@ export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewPro
             </div>
             
             <ul className="space-y-6 md:space-y-8">
-              <li className="flex gap-3.5">
-                <span className="material-symbols-outlined text-error text-xl md:text-2xl mt-1">block</span>
-                <div className="flex flex-col">
-                  <span className="font-bold text-base md:text-lg text-on-surface">{t("No tab switching")}</span>
-                  <span className="text-xs md:text-sm text-on-surface-variant mt-0.5 leading-relaxed">
-                    Switching windows or tabs will result in an automatic warning and potential auto-submission.
-                  </span>
-                </div>
-              </li>
-              
               <li className="flex gap-3.5">
                 <span className="material-symbols-outlined text-secondary text-xl md:text-2xl mt-1">visibility</span>
                 <div className="flex flex-col">

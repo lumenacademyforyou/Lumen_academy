@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import LumenLogo from "../common/LumenLogo";
+import { TestAttempt } from "../../../types";
 
 interface EvaluatingViewProps {
   onEvaluationComplete: () => void;
+  attempt?: TestAttempt;
 }
 
-export default function EvaluatingView({ onEvaluationComplete }: EvaluatingViewProps) {
+export default function EvaluatingView({ onEvaluationComplete, attempt }: EvaluatingViewProps) {
   const { t, language } = useLanguage();
   const [progress, setProgress] = useState(0);
   const [phaseIndex, setPhaseIndex] = useState(0);
@@ -30,7 +32,7 @@ export default function EvaluatingView({ onEvaluationComplete }: EvaluatingViewP
           // Small delay before transition to make it feel polished
           setTimeout(() => {
             onEvaluationComplete();
-          }, 800);
+          }, 2000); // Increased delay slightly so user has a chance to download or read
           return 100;
         }
 
@@ -42,10 +44,48 @@ export default function EvaluatingView({ onEvaluationComplete }: EvaluatingViewP
 
         return nextProgress;
       });
-    }, 120);
+    }, 150); // Slightly slower to give time
 
     return () => clearInterval(interval);
   }, [phaseIndex, onEvaluationComplete]);
+
+  const handleDownloadSummary = () => {
+    if (!attempt) return;
+    
+    const summaryText = `
+LUMEN ACADEMY - TEST PERFORMANCE SUMMARY
+----------------------------------------
+Test: ${attempt.title}
+Date: ${attempt.date}
+Score: ${attempt.totalScore}
+Accuracy: ${attempt.accuracy}%
+Percentile: ${attempt.percentile}th
+
+-- PERFORMANCE DETAILS --
+Correct Answers: ${attempt.correctAnswers}
+Incorrect Answers: ${attempt.incorrectAnswers}
+Skipped Answers: ${attempt.skippedAnswers}
+Time Taken: ${attempt.timeTakenMinutes} minutes
+
+-- SUBJECT BREAKDOWN --
+Physics: ${attempt.subjectBreakdown.Physics.score}% (${attempt.subjectBreakdown.Physics.status})
+Chemistry: ${attempt.subjectBreakdown.Chemistry.score}% (${attempt.subjectBreakdown.Chemistry.status})
+Biology: ${attempt.subjectBreakdown.Biology.score}% (${attempt.subjectBreakdown.Biology.status})
+
+-- AI RECOMMENDATIONS --
+${attempt.aiRecommendation.topics.map(t => `- ${t}`).join('\n')}
+    `.trim();
+
+    const blob = new Blob([summaryText], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `lumen_summary_${attempt.id}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
 
   // Current active status messages
   const currentPhase = phases[phaseIndex] || phases[phases.length - 1];
@@ -92,8 +132,21 @@ export default function EvaluatingView({ onEvaluationComplete }: EvaluatingViewP
           </p>
         </div>
 
+        {/* Download Summary Button */}
+        {attempt && (
+          <div className="mt-8 opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-500 fill-mode-forwards">
+            <button
+              onClick={handleDownloadSummary}
+              className="px-6 py-2.5 bg-white/50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 border border-amber-200 dark:border-amber-700/50 text-amber-700 dark:text-amber-400 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer"
+            >
+              <span className="material-symbols-outlined text-sm">download</span>
+              {t("Download Summary (.txt)")}
+            </button>
+          </div>
+        )}
+
         {/* Animated Bouncing Indicator Dots */}
-        <div className="mt-12 flex gap-3">
+        <div className="mt-8 flex gap-3">
           <div className="w-3 h-3 rounded-full bg-amber-500/50 animate-bounce" style={{ animationDelay: "0.1s" }}></div>
           <div className="w-3 h-3 rounded-full bg-amber-500/50 animate-bounce" style={{ animationDelay: "0.2s" }}></div>
           <div className="w-3 h-3 rounded-full bg-amber-500/50 animate-bounce" style={{ animationDelay: "0.3s" }}></div>

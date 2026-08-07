@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { motion } from "motion/react";
+import AnimatedCounter from "../common/AnimatedCounter";
 import { TestAttempt, Question } from "../../../types";
 import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS, ALL_QUESTIONS } from "../../../database/questions";
 
@@ -13,8 +14,9 @@ interface TestListViewProps {
     title: string;
     questions: Question[];
     durationSeconds: number;
-    mode: "proctored" | "standard" | "practice";
+    mode: "standard" | "practice";
     subject: string;
+    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
   }) => void;
 }
 
@@ -70,6 +72,9 @@ export default function TestListView({
   const [selectedUnits, setSelectedUnits] = useState<string[]>([]);
   const [questionCount, setQuestionCount] = useState<number>(10);
   const [durationMinutes, setDurationMinutes] = useState<number>(10);
+  const [difficulty, setDifficulty] = useState<"Adaptive" | "Easy" | "Medium" | "Hard">("Adaptive");
+
+  const [filterDifficulty, setFilterDifficulty] = useState<"All" | "Easy" | "Medium" | "Hard">("All");
 
   const mockSeries = [
     {
@@ -80,6 +85,7 @@ export default function TestListView({
       questions: 180,
       duration: "180 mins",
       isCompleted: true,
+      difficulty: "Hard",
     },
     {
       id: "mock_05",
@@ -89,6 +95,7 @@ export default function TestListView({
       questions: 180,
       duration: "180 mins",
       isCompleted: false,
+      difficulty: "Hard",
     },
     {
       id: "mock_12",
@@ -98,6 +105,7 @@ export default function TestListView({
       questions: 10,
       duration: "10 mins",
       isCompleted: false,
+      difficulty: "Medium",
     },
     {
       id: "mock_08",
@@ -107,8 +115,13 @@ export default function TestListView({
       questions: 15,
       duration: "15 mins",
       isCompleted: false,
+      difficulty: "Easy",
     }
   ];
+
+  const filteredMockSeries = filterDifficulty === "All" 
+    ? mockSeries 
+    : mockSeries.filter(series => series.difficulty === filterDifficulty);
 
   // Helper to extract questions mapping subject & unit selections
   const getFilteredQuestions = () => {
@@ -167,6 +180,7 @@ export default function TestListView({
       durationSeconds: durationMinutes * 60,
       mode: finalMode,
       subject: selectedSubject,
+      difficulty: difficulty,
     });
   };
 
@@ -177,15 +191,37 @@ export default function TestListView({
 
   return (
     <div className="space-y-8 max-w-[1280px] mx-auto animate-in fade-in duration-500">
-      <div className="px-2">
-        <h2 className="text-2xl md:text-3xl font-sans font-bold text-[#00243B] dark:text-white tracking-tight mb-1">{t("NEET Mock Test Series")}</h2>
-        <p className="text-slate-600 dark:text-slate-300 text-sm">{t("Challenge yourself with high-fidelity examination environments and get instant, smart AI strategies.")}</p>
+      <div className="px-2 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+        <div>
+          <h2 className="text-2xl md:text-3xl font-sans font-bold text-[#00243B] dark:text-white tracking-tight mb-1">{t("NEET Mock Test Series")}</h2>
+          <p className="text-slate-600 dark:text-slate-300 text-sm">{t("Challenge yourself with high-fidelity examination environments and get instant, smart AI strategies.")}</p>
+        </div>
+        
+        {/* Difficulty Filter */}
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">{t("Difficulty:")}</span>
+          <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
+            {["All", "Easy", "Medium", "Hard"].map((level) => (
+              <button
+                key={level}
+                onClick={() => setFilterDifficulty(level as any)}
+                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-colors ${
+                  filterDifficulty === level
+                    ? "bg-white dark:bg-slate-600 text-[#00243B] dark:text-white shadow-sm"
+                    : "text-slate-500 dark:text-slate-400 hover:text-[#00243B] dark:hover:text-white"
+                }`}
+              >
+                {t(level)}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         
         {/* Render pre-configured mocks with standard coloring style */}
-        {mockSeries.map((seriesItem, idx) => {
+        {filteredMockSeries.map((seriesItem, idx) => {
           const attempt = attempts.find((a) => a.id === seriesItem.id);
           const hasCompleted = attempt && attempt.totalScore > 0;
 
@@ -241,7 +277,7 @@ export default function TestListView({
                     </div>
                     <div className="text-right">
                       <p className="text-slate-500 dark:text-slate-400 font-semibold mb-0.5">{t("Accuracy")}</p>
-                      <p className="text-lg font-bold text-[var(--teal)] dark:text-[#FCB824]">{attempt.accuracy}%</p>
+                      <AnimatedCounter value={attempt.accuracy} suffix="%" className="text-lg font-bold text-[var(--teal)] dark:text-[#FCB824]" />
                     </div>
                   </div>
 
@@ -395,6 +431,27 @@ export default function TestListView({
               </div>
             </div>
 
+          </div>
+
+          {/* Difficulty Selector */}
+          <div className="space-y-1.5 pt-4">
+            <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Difficulty")}</label>
+            <div className="grid grid-cols-4 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+              {(["Adaptive", "Easy", "Medium", "Hard"] as const).map((diff) => (
+                <button
+                  key={diff}
+                  type="button"
+                  onClick={() => setDifficulty(diff)}
+                  className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer select-none ${
+                    difficulty === diff 
+                      ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" 
+                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"
+                  }`}
+                >
+                  {t(diff)}
+                </button>
+              ))}
+            </div>
           </div>
 
           <button

@@ -12,7 +12,7 @@ interface TestTakingViewProps {
   customQuestions?: Question[];
   customDurationSeconds?: number;
   customTitle?: string;
-  customMode?: "proctored" | "standard" | "practice";
+  customMode?: "standard" | "practice";
 }
 
 export default function TestTakingView({ 
@@ -141,12 +141,31 @@ export default function TestTakingView({
   // Calculate dynamic statistics
   const answeredCount = Object.keys(selectedAnswers).length;
   const unansweredCount = questions.length - answeredCount;
+  const attemptedPercentage = Math.round((answeredCount / (questions.length || 1)) * 100);
+
+  const totalDuration = customDurationSeconds || 300;
+  const timeProgress = ((totalDuration - timeRemaining) / totalDuration) * 100;
+  const isTimeRunningLow = timeRemaining < totalDuration * 0.2;
+  const isUnder10Mins = timeRemaining <= 600 && timeRemaining > 0;
 
   return (
     <div className="min-h-screen bg-[#f8f9ff] dark:bg-[#031824] flex flex-col font-sans animate-in fade-in duration-300">
       
-      {/* Test taking proctored header bar */}
+      {/* Test taking header bar */}
       <header className="fixed top-0 left-0 right-0 h-20 bg-white dark:bg-[var(--navy)] border-b border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between px-6 md:px-12 z-40">
+        {/* Persistent Progress Bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-slate-200 dark:bg-slate-700 overflow-hidden">
+          <div 
+            className={`h-full transition-all duration-1000 ${
+              isTimeRunningLow 
+                ? 'bg-red-500 animate-pulse' 
+                : isUnder10Mins 
+                  ? 'bg-amber-500 animate-pulse shadow-[0_0_12px_rgba(245,158,11,0.8)]' 
+                  : 'bg-[var(--teal)] dark:bg-[#FCB824]'
+            }`} 
+            style={{ width: `${timeProgress}%` }}
+          />
+        </div>
         <div className="flex items-center gap-3.5">
           <div className="h-16 w-16 md:h-18 md:w-18 flex-shrink-0 transition-transform hover:scale-105 duration-200">
             <LumenLogo className="w-full h-full" />
@@ -156,6 +175,30 @@ export default function TestTakingView({
               LUMEN ACADEMY
             </span>
             <p className="text-xs text-[var(--teal)] dark:text-[#FCB824] font-bold mt-1">{customTitle || "NEET Biology Mini-Mock #12"}</p>
+          </div>
+        </div>
+
+        {/* Attempt Progress */}
+        <div className="hidden lg:flex flex-col flex-1 px-12 max-w-2xl">
+          <div className="flex justify-between items-center text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1.5 px-1 uppercase tracking-wider">
+            <span className="flex items-center gap-1.5">
+              <span>{t("Progress")}</span>
+              {isUnder10Mins && (
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30 animate-pulse font-bold normal-case tracking-normal">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping" />
+                  {t("<10m remaining")}
+                </span>
+              )}
+            </span>
+            <span className="text-[var(--navy)] dark:text-white">{answeredCount} / {questions.length}</span>
+          </div>
+          <div className={`h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner border transition-all ${
+            isUnder10Mins ? 'border-amber-400/80 dark:border-amber-500/60 ring-2 ring-amber-400/20' : 'border-slate-200/60 dark:border-slate-700'
+          }`}>
+            <div 
+              className={`h-full bg-[var(--teal)] dark:bg-[#FCB824] transition-all duration-500 rounded-full ${isUnder10Mins ? 'animate-pulse bg-gradient-to-r from-[var(--teal)] via-amber-400 to-[#FCB824]' : ''}`}
+              style={{ width: `${attemptedPercentage}%` }}
+            />
           </div>
         </div>
 
@@ -173,7 +216,13 @@ export default function TestTakingView({
             </button>
           </div>
 
-          <div className="flex items-center gap-2 px-4 py-2 bg-amber-100 dark:bg-[#FCB824]/10 text-amber-700 dark:text-[#FCB824] rounded-xl font-bold font-mono text-sm md:text-base border border-amber-300 dark:border-[#FCB824]/25">
+          <div className={`flex items-center gap-2 px-4 py-2 rounded-xl font-bold font-mono text-sm md:text-base transition-all ${
+            isTimeRunningLow 
+              ? 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 border border-red-300 dark:border-red-500/40 animate-pulse'
+              : isUnder10Mins 
+                ? 'bg-amber-100 dark:bg-[#FCB824]/15 text-amber-800 dark:text-[#FCB824] border border-amber-400 dark:border-[#FCB824]/40 animate-pulse' 
+                : 'bg-amber-100 dark:bg-[#FCB824]/10 text-amber-700 dark:text-[#FCB824] border border-amber-300 dark:border-[#FCB824]/25'
+          }`}>
             <span className="material-symbols-outlined text-base animate-pulse">timer</span>
             <span>{t("TIME REMAINING")}: {formatTime(timeRemaining)}</span>
           </div>

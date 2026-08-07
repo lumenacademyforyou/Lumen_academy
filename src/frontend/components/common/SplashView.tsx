@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
-import logoImg from '../../assets/logo.png';
+import LumenLogo from './LumenLogo';
 
 interface SplashViewProps {
   onEnter: () => void;
@@ -80,7 +80,7 @@ export default function SplashView({ onEnter }: SplashViewProps) {
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="relative flex flex-col items-center justify-center p-8 rounded-3xl backdrop-blur-sm bg-white/30 dark:bg-slate-800/40 border border-white/40 dark:border-white/10 shadow-2xl"
+        className="relative flex flex-col items-center justify-center p-8 rounded-3xl backdrop-blur-sm bg-white/5 dark:bg-slate-800/10 border border-white/10 dark:border-white/5 shadow-lg"
       >
         {/* Animated Logo Container */}
         <motion.div 
@@ -89,11 +89,7 @@ export default function SplashView({ onEnter }: SplashViewProps) {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
-          <img 
-            src={logoImg} 
-            alt="Lumen Academy" 
-            className="w-full h-auto object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]"
-          />
+          <LumenLogo className="w-full h-full drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]" />
         </motion.div>
 
         {/* Text Container with Parallax Depth */}

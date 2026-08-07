@@ -1,37 +1,41 @@
+import cors from "cors";
 import express from "express";
+import helmet from "helmet";
 import path from "path";
-import { createServer as createViteServer } from "vite";
-import apiRouter from "./routes/api";
+import { config } from "./config.js";
+import { AppError, errorHandler } from "./middleware/errorHandler.js";
+import apiRouter from "./routes/api.js";
 
-async function startServer() {
-  const app = express();
-  const PORT = 3000;
+const app = express();
 
-  app.use(express.json());
+app.use(helmet());
+app.use(
+  cors({
+    origin: config.corsOrigins,
+    credentials: true,
+  })
+);
+app.use(express.json({ limit: "1mb" }));
 
-  // Mount API Router
-  app.use("/api", apiRouter);
+app.use("/api", apiRouter);
+app.use("/api", (_req, _res, next) => {
+  next(new AppError(404, "NOT_FOUND", "Resource not found"));
+});
 
-  // Vite Middleware for development mode
-  if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (_req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
-  }
-
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Lumen Academy Full-Stack Server running at http://0.0.0.0:${PORT}`);
+if (config.nodeEnv === "production") {
+  const distPath = path.join(process.cwd(), "dist");
+  app.use(express.static(distPath));
+  app.get("*", (_req, res) => {
+    res.sendFile(path.join(distPath, "index.html"));
   });
 }
 
-startServer().catch((err) => {
-  console.error("Failed to start backend server:", err);
+app.use((_req, _res, next) => {
+  next(new AppError(404, "NOT_FOUND", "Resource not found"));
+});
+
+app.use(errorHandler);
+
+app.listen(config.port, () => {
+  console.log(`Lumen Academy API running at http://localhost:${config.port}`);
 });

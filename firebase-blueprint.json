@@ -1,0 +1,98 @@
+{
+  "entities": {
+    "StudySession": {
+      "title": "StudySession",
+      "description": "Logged study session interval for student focus tracking",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Owner student UID"
+        },
+        "studentName": {
+          "type": "string",
+          "description": "Student display name"
+        },
+        "subject": {
+          "type": "string",
+          "description": "Study subject e.g. Physics"
+        },
+        "taskTitle": {
+          "type": "string",
+          "description": "Topic or goal description"
+        },
+        "durationMinutes": {
+          "type": "number",
+          "description": "Session length in minutes"
+        },
+        "sessionType": {
+          "type": "string",
+          "enum": [
+            "focus",
+            "shortBreak",
+            "longBreak"
+          ]
+        },
+        "completedAt": {
+          "type": "string",
+          "description": "ISO timestamp string"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional focus reflection notes"
+        },
+        "rating": {
+          "type": "number",
+          "description": "1-5 focus score"
+        }
+      },
+      "required": [
+        "userId",
+        "subject",
+        "durationMinutes",
+        "sessionType"
+      ]
+    },
+    "Flashcard": {
+      "title": "Flashcard",
+      "description": "High-yield concept or formula for NEET preparation",
+      "type": "object",
+      "properties": {
+        "subject": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "concept": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "formula": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "concept",
+        "content"
+      ]
+    }
+  },
+  "firestore": {
+    "/study_sessions/{sessionId}": {
+      "schema": {
+        "$ref": "#/entities/StudySession"
+      },
+      "description": "Collection of recorded student study sessions"
+    },
+    "/flashcards/{flashcardId}": {
+      "schema": {
+        "$ref": "#/entities/Flashcard"
+      },
+      "description": "Collection of flashcards"
+    }
+  }
+}

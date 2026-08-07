@@ -1,8 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 
 import { ChapterGoal } from "../../../types";
+import { 
+  fetchUserTasks, 
+  saveUserTask, 
+  deleteUserTask, 
+  fetchUserNotes, 
+  saveUserNote, 
+  deleteUserNote, 
+  UserTask, 
+  UserNote 
+} from "../../supabase";
 
 interface StudyPlanProps {
   studentName?: string;
@@ -49,6 +59,76 @@ export default function StudyPlanView({
   const [localChapterGoals, setLocalChapterGoals] = useState<ChapterGoal[]>(DEFAULT_CHAPTER_GOALS);
   const chapterGoals = externalChapterGoals || localChapterGoals;
   const setChapterGoals = setExternalChapterGoals || setLocalChapterGoals;
+
+  // Custom User CRUD State (Tasks & Notes)
+  const [customTasks, setCustomTasks] = useState<UserTask[]>([]);
+  const [newTaskTitle, setNewTaskTitle] = useState("");
+  const [newTaskSubject, setNewTaskSubject] = useState("Physics");
+
+  const [customNotes, setCustomNotes] = useState<UserNote[]>([]);
+  const [newNoteTitle, setNewNoteTitle] = useState("");
+  const [newNoteSubject, setNewNoteSubject] = useState("Botany");
+  const [newNoteContent, setNewNoteContent] = useState("");
+  const [editingNoteId, setEditingNoteId] = useState<string | null>(null);
+
+  const userId = studentName || "Aspirant";
+
+  useEffect(() => {
+    fetchUserTasks(userId).then(setCustomTasks);
+    fetchUserNotes(userId).then(setCustomNotes);
+  }, [userId]);
+
+  const handleAddTask = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newTaskTitle.trim()) return;
+    const task = await saveUserTask({
+      user_id: userId,
+      title: newTaskTitle.trim(),
+      subject: newTaskSubject,
+      completed: false
+    });
+    setCustomTasks(prev => [task, ...prev.filter(t => t.id !== task.id)]);
+    setNewTaskTitle("");
+  };
+
+  const handleToggleTask = async (task: UserTask) => {
+    const updated = await saveUserTask({
+      ...task,
+      completed: !task.completed
+    });
+    setCustomTasks(prev => prev.map(t => t.id === updated.id ? updated : t));
+  };
+
+  const handleDeleteTask = async (taskId: string) => {
+    await deleteUserTask(taskId, userId);
+    setCustomTasks(prev => prev.filter(t => t.id !== taskId));
+  };
+
+  const handleSaveNote = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newNoteTitle.trim() || !newNoteContent.trim()) return;
+    const note = await saveUserNote({
+      id: editingNoteId || undefined,
+      user_id: userId,
+      unit_id: "custom_unit",
+      subject: newNoteSubject,
+      title: newNoteTitle.trim(),
+      content: newNoteContent.trim()
+    });
+    setCustomNotes(prev => {
+      const exists = prev.some(n => n.id === note.id);
+      if (exists) return prev.map(n => n.id === note.id ? note : n);
+      return [note, ...prev];
+    });
+    setNewNoteTitle("");
+    setNewNoteContent("");
+    setEditingNoteId(null);
+  };
+
+  const handleDeleteNote = async (noteId: string) => {
+    await deleteUserNote(noteId, userId);
+    setCustomNotes(prev => prev.filter(n => n.id !== noteId));
+  };
 
   const toggleChapter = (id: string) => {
     setChapterGoals((prev) =>
@@ -346,7 +426,7 @@ export default function StudyPlanView({
                     {goal.completed && <span className="material-symbols-outlined text-sm font-bold">check</span>}
                   </div>
                   <div>
-                    <p className={`text-xs font-bold ${goal.completed ? "line-through text-slate-500 dark:text-slate-400" : "text-[#00243B] dark:text-white"}`}>
+                    <p className={`text-xs font-bold ${goal.completed ? "text-amber-700 dark:text-amber-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
                       {goal.chapter}
                     </p>
                     <span className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">{goal.subject} • {goal.hoursNeeded} Hrs Allocated</span>
@@ -367,6 +447,187 @@ export default function StudyPlanView({
             <span className="material-symbols-outlined text-sm">rocket_launch</span>
             Test Completed Chapters Now
           </button>
+        </div>
+      </div>
+
+      {/* USER-CENTRIC CRUD SECTION: PERSONAL TASKS & NOTES */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
+        {/* CUSTOM STUDY TASKS (CREATE, READ, UPDATE, DELETE) */}
+        <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] p-6 md:p-8 border border-slate-200 dark:border-slate-700 shadow-sm space-y-5">
+          <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-4">
+            <div>
+              <h3 className="text-lg font-bold flex items-center gap-2">
+                <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824]">add_task</span>
+                My Custom Study Tasks
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Add, complete, or delete your custom revision targets</p>
+            </div>
+            <span className="text-xs font-bold text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
+              {customTasks.filter(t => t.completed).length}/{customTasks.length} Done
+            </span>
+          </div>
+
+          <form onSubmit={handleAddTask} className="flex gap-2">
+            <input
+              type="text"
+              placeholder="e.g. Solve 30 Rotational Motion PYQs..."
+              value={newTaskTitle}
+              onChange={(e) => setNewTaskTitle(e.target.value)}
+              className="flex-1 px-4 py-2.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+            />
+            <select
+              value={newTaskSubject}
+              onChange={(e) => setNewTaskSubject(e.target.value)}
+              className="px-3 py-2.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold outline-none"
+            >
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Botany">Botany</option>
+              <option value="Zoology">Zoology</option>
+            </select>
+            <button
+              type="submit"
+              className="px-4 py-2.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer shrink-0"
+            >
+              Add
+            </button>
+          </form>
+
+          <div className="space-y-2 max-h-[280px] overflow-y-auto pr-1">
+            {customTasks.length === 0 ? (
+              <p className="text-xs text-slate-400 italic text-center py-6">No custom tasks yet. Add one above to start tracking!</p>
+            ) : (
+              customTasks.map((t) => (
+                <div key={t.id} className="p-3 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 flex-1 min-w-0">
+                    <button
+                      type="button"
+                      onClick={() => handleToggleTask(t)}
+                      className={`w-5 h-5 rounded flex items-center justify-center border shrink-0 ${
+                        t.completed ? "bg-emerald-500 border-emerald-600 text-white" : "border-slate-300 dark:border-slate-600"
+                      }`}
+                    >
+                      {t.completed && <span className="material-symbols-outlined text-xs">check</span>}
+                    </button>
+                    <span className={`text-xs font-semibold truncate transition-colors ${t.completed ? "text-emerald-700 dark:text-emerald-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
+                      {t.title}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                      {t.subject}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => handleDeleteTask(t.id)}
+                      className="text-slate-400 hover:text-rose-500 p-1"
+                      title="Delete Task"
+                    >
+                      <span className="material-symbols-outlined text-sm">delete</span>
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        {/* CUSTOM PERSONAL STUDY NOTES (CREATE, READ, UPDATE, DELETE) */}
+        <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] p-6 md:p-8 border border-slate-200 dark:border-slate-700 shadow-sm space-y-5">
+          <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-4">
+            <div>
+              <h3 className="text-lg font-bold flex items-center gap-2">
+                <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824]">note_alt</span>
+                My Personal Revision Notes
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Create and update your custom formulas, mnemonics, & weak points</p>
+            </div>
+            <span className="text-xs font-bold text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
+              {customNotes.length} Saved
+            </span>
+          </div>
+
+          <form onSubmit={handleSaveNote} className="space-y-3">
+            <div className="flex gap-2">
+              <input
+                type="text"
+                placeholder="Note title (e.g. Optics Sign Conventions)"
+                value={newNoteTitle}
+                onChange={(e) => setNewNoteTitle(e.target.value)}
+                className="flex-1 px-4 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+              />
+              <select
+                value={newNoteSubject}
+                onChange={(e) => setNewNoteSubject(e.target.value)}
+                className="px-3 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold outline-none"
+              >
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Botany">Botany</option>
+                <option value="Zoology">Zoology</option>
+              </select>
+            </div>
+            <textarea
+              placeholder="Write your study notes, formulas, or key reminders here..."
+              value={newNoteContent}
+              onChange={(e) => setNewNoteContent(e.target.value)}
+              rows={2}
+              className="w-full px-4 py-2.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-medium text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+            />
+            <div className="flex justify-end gap-2">
+              {editingNoteId && (
+                <button
+                  type="button"
+                  onClick={() => { setEditingNoteId(null); setNewNoteTitle(""); setNewNoteContent(""); }}
+                  className="px-3 py-1.5 text-xs text-slate-500 hover:text-slate-700 font-bold"
+                >
+                  Cancel Edit
+                </button>
+              )}
+              <button
+                type="submit"
+                className="px-4 py-2 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer"
+              >
+                {editingNoteId ? "Update Note" : "Save Note"}
+              </button>
+            </div>
+          </form>
+
+          <div className="space-y-3 max-h-[220px] overflow-y-auto pr-1">
+            {customNotes.length === 0 ? (
+              <p className="text-xs text-slate-400 italic text-center py-4">No custom notes yet. Save your key formulas and insights above!</p>
+            ) : (
+              customNotes.map((n) => (
+                <div key={n.id} className="p-3.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-[#00243B] dark:text-white">{n.title}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-[#FCB824]">
+                        {n.subject}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => { setEditingNoteId(n.id); setNewNoteTitle(n.title); setNewNoteSubject(n.subject); setNewNoteContent(n.content); }}
+                        className="text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] p-1"
+                        title="Edit Note"
+                      >
+                        <span className="material-symbols-outlined text-sm">edit</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteNote(n.id)}
+                        className="text-slate-400 hover:text-rose-500 p-1"
+                        title="Delete Note"
+                      >
+                        <span className="material-symbols-outlined text-sm">delete</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p className="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed whitespace-pre-wrap">{n.content}</p>
+                </div>
+              ))
+            )}
+          </div>
         </div>
       </div>
 
