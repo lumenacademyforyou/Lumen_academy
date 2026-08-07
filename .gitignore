@@ -8,4 +8,7 @@ Thumbs.db
 .env*
 !.env.example
 
-/src/generated/prisma
+/backend/generated/prisma
+
+test-results/
+playwright-report/

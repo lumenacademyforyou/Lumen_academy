@@ -1,6 +1,6 @@
 import { AppError } from "../middleware/errorHandler.js";
 import { prisma } from "../db.js";
-import type { QuestionModel, QuestionOptionModel } from "../../generated/prisma/models.js";
+import type { QuestionModel, QuestionOptionModel } from "../generated/prisma/models.js";
 
 const MIN_SUBMITTED_ATTEMPTS_FOR_REPEATS = 50;
 

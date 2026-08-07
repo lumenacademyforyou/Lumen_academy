@@ -7,7 +7,7 @@ import {
   deleteStudySession, 
   calculateSessionStats, 
   StudySession 
-} from "../../services/studySessionService";
+} from "../../lib/studySessionService";
 
 interface PomodoroTimerProps {
   studentName?: string;

@@ -7,7 +7,7 @@ import { fetchStudentProfile, StudentProfile } from "../../supabase";
 import { LearningPathTimeline } from "../dashboard/LearningPathTimeline";
 import { PomodoroTimer } from "../dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../dashboard/DailyFlashcard";
-import { fetchStudySessions, calculateStudyStreak } from "../../services/studySessionService";
+import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
 import { auth } from "../../firebase";
 
 interface RecommendedMock {

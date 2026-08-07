@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import LumenLogo from "./LumenLogo";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { saveStudentProfile } from "../../supabase";
-import { fetchStudySessions, calculateStudyStreak } from "../../services/studySessionService";
+import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
 import { auth } from "../../firebase";
 
 interface HeaderProps {

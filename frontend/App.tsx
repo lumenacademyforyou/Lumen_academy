@@ -23,7 +23,7 @@ import confetti from "canvas-confetti";
 
 import AdminView from "./components/views/AdminView";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, BarChart, Bar, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
-import { exportAnalyticsPdf } from "./services/pdfExport";
+import { exportAnalyticsPdf } from "./lib/pdfExport";
 import { ensureDemoSession } from "./lib/demoSession";
 import {
   startAttempt,

@@ -7,8 +7,8 @@ frontend, Express backend, PostgreSQL database. Bilingual: English and Tamil.
 ## Migration in progress
 This project originally shipped as a Google AI Studio applet (Firebase Auth +
 Firestore + Supabase + `@google/genai`/Gemini, deployed via AI Studio's managed
-Cloud Run pipeline — see `metadata.json`, `firebase-applet-config.json`,
-`firebase-blueprint.json`). It is being migrated off that stack onto the one
+Cloud Run pipeline — see `legacy/metadata.json`, `legacy/firebase-applet-config.json`,
+`legacy/firebase-blueprint.json`). It is being migrated off that stack onto the one
 below, self-hosted. Files still referencing Firebase/Gemini are legacy and
 should be replaced, not extended, as each area is migrated. Do not add new
 Firebase or Gemini-specific code.
@@ -39,9 +39,9 @@ See "Auth architecture" below.
    attempt is submitted.
 3. Every request body, query parameter and path parameter is validated with Zod
    before it reaches a service.
-4. All configuration is read through one validated module (`src/backend/config.ts`).
+4. All configuration is read through one validated module (`backend/config.ts`).
    Never call `process.env` anywhere else.
-5. No file outside `src/backend/ai/` may reference an AI vendor SDK, vendor type
+5. No file outside `backend/ai/` may reference an AI vendor SDK, vendor type
    or model name. The provider is chosen at runtime from configuration.
 6. Errors are thrown as `AppError(statusCode, code, message)` and formatted by a
    single error handler. Never send an error response directly from a route.
@@ -82,7 +82,7 @@ See "Auth architecture" below.
   combined `biology` subject — this matches the existing syllabus data and
   question tagging. Subjects: `physics`, `chemistry`, `botany`, `zoology`.
 - Existing unit ids (`phy_01`, `chem_01`, `bot_01`, `zoo_01`, ...) in
-  `src/database/syllabusData.ts` must be preserved exactly when seeding, since
+  `database/syllabusData.ts` must be preserved exactly when seeding, since
   question tagging depends on them.
 
 ## Code conventions
