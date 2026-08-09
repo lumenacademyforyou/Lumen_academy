@@ -18,7 +18,7 @@ import DailyReminderModal from "./components/common/DailyReminderModal";
 import LumenLogo from "./components/common/LumenLogo";
 import CourseAreaView from "./components/views/CourseAreaView";
 import { supabase } from "./supabase";
-
+import ProfileView from "./components/views/ProfileView";
 // import { useLocation, useNavigate } from "react-router-dom";
 
 import { useLocation, useNavigate, useParams, Routes, Route, Navigate } from "react-router-dom";
@@ -151,7 +151,7 @@ const [userId, setUserId] = useState<string | null>(null);
   const [hasSeenSplash, setHasSeenSplash] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
-  const [studentName, setStudentName] = useState("Prince A");
+  const [studentName, setStudentName] = useState("");
   const [attempts, setAttempts] = useState<TestAttempt[]>(INITIAL_ATTEMPTS);
   const [activeAttemptId, setActiveAttemptId] = useState<string>("mock_04");
   const [currentTab, setTab] = useState<string>("dashboard");
@@ -166,16 +166,8 @@ const [userId, setUserId] = useState<string | null>(null);
     "/tests": "tests",
     "/course": "course",
     "/analytics": "analytics",
+    "/profile": "profile",
   };
-
-  useEffect(() => {
-  const path = location.pathname;
-  if (path.startsWith("/student-dashboard")) setTab("dashboard");
-  else if (path.startsWith("/student-tests")) setTab("tests");
-  else if (path.startsWith("/student-course")) setTab("course");
-  else if (path.startsWith("/student-analytics")) setTab("analytics");
-}, [location.pathname]);
-
   const tab = pathToTab[location.pathname];
 
   if (tab) {
@@ -726,7 +718,7 @@ useEffect(() => {
       ) : (
         <>
           {/* Main Navigation Header */}
-        <Header
+<Header
   currentTab={currentTab}
   setTab={(tab) => {
     setTab(tab);
@@ -737,10 +729,13 @@ useEffect(() => {
       tests: "/tests",
       course: "/course",
       analytics: "/analytics",
+      profile: "/profile",
     };
 
     navigate(paths[tab] || "/dashboard");
   }}
+  studentName={studentName}
+  setStudentName={setStudentName}
   onSignOut={() => {
     supabaseSignOut().catch(() => {});
     setIsAuthenticated(false);
@@ -790,6 +785,10 @@ useEffect(() => {
                         }}
                         attemptsCount={attempts.length}
                       />
+                    )}
+
+                    {currentTab === "profile" && (
+                        <ProfileView />
                     )}
 
                     {currentTab === "tests" && (

@@ -116,23 +116,45 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
   useEffect(() => {
   const loadProfile = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return;
-    const prof = await fetchStudentProfile(user.id);
-    if (prof) {
-      setProfile(prof);
-      setEditedName(prof.display_name || "");
-      setPhone(prof.phone_number || "");
-      setTargetStream((prof.target_stream as "NEET" | "JEE") || "");
-      setGradeClass(prof.grade_class || "");
-      setSchoolOrCoaching(prof.school_or_coaching || "");
-      setCity(prof.city || "");
-    } else {
-      setProfile({ user_id: user.id, email: user.email || "", display_name: "", preferred_subjects: [] });
+    try {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      if (!user) return;
+
+console.log("AUTH USER ID:", user?.id);
+console.log("AUTH EMAIL:", user?.email);
+      const prof = await fetchStudentProfile(user.id);
+
+      if (prof) {
+        setProfile(prof);
+
+        // Only use the real DB value
+        setStudentName(prof.display_name || "");
+
+        setEditedName(prof.display_name || "");
+        setPhone(prof.phone_number || "");
+        setTargetStream(
+          (prof.target_stream as "NEET" | "JEE") || ""
+        );
+        setGradeClass(prof.grade_class || "");
+        setSchoolOrCoaching(prof.school_or_coaching || "");
+        setCity(prof.city || "");
+      } else {
+        
+        // No profile data → keep the name blank
+        setStudentName("");
+        setEditedName("");
+      }
+    } catch (error) {
+      console.error("Failed to load student profile:", error);
+      setStudentName("");
     }
   };
+
   loadProfile();
-}, []);
+}, [setStudentName]);
 
 const handleSaveProfile = async (e: React.FormEvent) => {
   e.preventDefault();
@@ -303,22 +325,21 @@ const handleSaveProfile = async (e: React.FormEvent) => {
               }}
               className="flex items-center gap-2.5 px-2.5 py-1.5 bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 rounded-full shadow-sm hover:shadow-md transition-all cursor-pointer select-none"
             >
-              <div className="h-7 w-7 rounded-full bg-[var(--teal)] dark:bg-[#FCB824] text-white font-bold flex items-center justify-center text-xs shadow-inner shrink-0">
-                {studentName ? studentName.charAt(0).toUpperCase() : 'P'}
-              </div>
-              
-              <div className="flex flex-col text-left leading-tight hidden sm:flex">
-                <span className="text-xs font-bold text-[#00243B] dark:text-white truncate max-w-[120px]">
-                  {studentName}
-                </span>
-                <span className="text-[9px] text-slate-500 dark:text-slate-400 font-semibold tracking-wider">
-                  NEET 2026
-                </span>
-              </div>
+<div className="h-9 w-9 rounded-full bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] font-black flex items-center justify-center text-sm shadow-md shrink-0">
+  {studentName
+    ? studentName.trim().charAt(0).toUpperCase()
+    : ""}
+</div>
 
-              <span className={`material-symbols-outlined text-slate-400 text-lg transition-transform duration-200 ${showProfileDropdown ? 'rotate-180' : ''}`}>
-                expand_more
-              </span>
+<div className="flex flex-col text-left leading-tight hidden sm:flex">
+  <span className="text-sm font-black text-[#00243B] dark:text-white truncate max-w-[140px]">
+    {studentName || ""}
+  </span>
+
+  <span className="text-[9px] text-slate-500 dark:text-slate-400 font-semibold tracking-wide">
+    STUDENT
+  </span>
+</div>
             </div>
 
             {showProfileDropdown && (
@@ -345,7 +366,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                   <button 
                     onClick={() => {
                       setEditedName(studentName);
-                      setShowProfileModal(true);
+                      navigate("/profile");
                       setShowProfileDropdown(false);
                     }}
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"
@@ -368,7 +389,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                   <button 
                     onClick={() => {
                       setEditedName(studentName);
-                      setShowProfileModal(true);
+                     navigate("/profile");
                       setShowProfileDropdown(false);
                     }}
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"
