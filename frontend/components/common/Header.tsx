@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
 import { auth } from "../../firebase";
 import { saveStudentProfile, fetchStudentProfile, StudentProfile, supabase } from "../../supabase";
+import NotificationBell from "./NotificationBell";
 
 interface HeaderProps {
   currentTab: string;
@@ -16,7 +17,7 @@ interface HeaderProps {
 
 export default function Header({ currentTab, setTab, studentName, setStudentName, onSignOut }: HeaderProps) {
   const { t } = useLanguage();
-  const [showNotifyPopup, setShowNotifyPopup] = useState(false);
+ 
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
   const [studyStreak, setStudyStreak] = useState(0);
   const navigate = useNavigate();
@@ -278,37 +279,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
             <span>{t("Log Out")}</span>
           </button>
 
-          <div className="relative shrink-0">
-            <button 
-              onClick={() => {
-                setShowNotifyPopup(!showNotifyPopup);
-              }}
-              className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors relative cursor-pointer flex items-center justify-center"
-              title="Notifications"
-            >
-              <span className="material-symbols-outlined text-slate-700 dark:text-slate-200 text-[24px]">notifications</span>
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-white dark:border-[var(--navy)]"></span>
-            </button>
-            
-            {showNotifyPopup && (
-              <div className="absolute right-0 mt-2 w-80 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 p-4 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                <h4 className="font-bold text-sm text-[#00243B] dark:text-white mb-3 flex justify-between items-center">
-                  <span>{t("Notifications")}</span>
-                  <span className="text-xs text-[var(--teal)] dark:text-[#FCB824] font-semibold cursor-pointer hover:underline" onClick={() => setShowNotifyPopup(false)}>Close</span>
-                </h4>
-                <div className="space-y-3">
-                  <div className="p-2.5 hover:bg-slate-50 dark:hover:bg-[var(--navy)] rounded-xl text-xs transition-colors border-l-2 border-[var(--teal)] dark:border-[#FCB824]">
-                    <p className="font-semibold text-[#00243B] dark:text-white">NEET Biology Mini-Mock #12 is now live!</p>
-                    <p className="text-slate-500 dark:text-slate-400 mt-0.5">{t("Test your concepts on Genetics and Evolution.")}</p>
-                  </div>
-                  <div className="p-2.5 hover:bg-slate-50 dark:hover:bg-[var(--navy)] rounded-xl text-xs transition-colors border-l-2 border-[#FCB824]">
-                    <p className="font-semibold text-[#00243B] dark:text-white">{t("Urgent Focus Required")}</p>
-                    <p className="text-slate-500 dark:text-slate-400 mt-0.5">{t("Your Inorganic Chemistry accuracy was 76% in Mock 04.")}</p>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+       <NotificationBell profile={profile} />
 
           <div className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700 relative shrink-0">
             {studyStreak > 0 && (
@@ -318,11 +289,8 @@ const handleSaveProfile = async (e: React.FormEvent) => {
               </div>
             )}
 
-            <div 
-              onClick={() => {
-                setShowProfileDropdown(!showProfileDropdown);
-                setShowNotifyPopup(false);
-              }}
+            <div   onClick={() => setShowProfileDropdown((prev) => !prev)}
+            
               className="flex items-center gap-2.5 px-2.5 py-1.5 bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 rounded-full shadow-sm hover:shadow-md transition-all cursor-pointer select-none"
             >
 <div className="h-9 w-9 rounded-full bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] font-black flex items-center justify-center text-sm shadow-md shrink-0">
