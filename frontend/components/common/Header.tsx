@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import LumenLogo from "./LumenLogo";
 import { useLanguage } from "../../contexts/LanguageContext";
-import { saveStudentProfile } from "../../supabase";
+import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
 import { auth } from "../../firebase";
+import { saveStudentProfile, fetchStudentProfile, StudentProfile, supabase } from "../../supabase";
 
 interface HeaderProps {
   currentTab: string;
@@ -18,7 +19,28 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   const [showNotifyPopup, setShowNotifyPopup] = useState(false);
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
   const [studyStreak, setStudyStreak] = useState(0);
+  const navigate = useNavigate();
+  const handleNavigation = (tab: string) => {
+  const tabToPath: Record<string, string> = {
+    dashboard: "/dashboard",
+    course: "/course",
+    tests: "/tests",
+    analytics: "/analytics",
+  };
 
+  setTab(tab);
+
+  const path = tabToPath[tab];
+
+  if (path) {
+    navigate(path);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+
+  
   // Global Dark Mode State (Syncs with html.dark & localStorage)
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     if (typeof window !== "undefined") {
@@ -51,11 +73,14 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   // Profile Form States
-  const [editedName, setEditedName] = useState(studentName || "Prince A");
-  const [phone, setPhone] = useState("+91 98765 43210");
-  const [targetStream, setTargetStream] = useState("NEET 2026 Medical Aspirant");
-  const [targetCollege, setTargetCollege] = useState("AIIMS New Delhi");
-  const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
+  const [profile, setProfile] = useState<StudentProfile | null>(null);
+const [editedName, setEditedName] = useState("");
+const [phone, setPhone] = useState("");
+const [targetStream, setTargetStream] = useState<"" | "NEET" | "JEE">("");
+const [gradeClass, setGradeClass] = useState("");
+const [schoolOrCoaching, setSchoolOrCoaching] = useState("");
+const [city, setCity] = useState("");
+const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
   // Account Settings States
   const [settingsTab, setSettingsTab] = useState<"security" | "notifications" | "appearance">("security");
@@ -88,22 +113,68 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
     return () => window.removeEventListener("lumen_session_saved", handleSessionSaved);
   }, []);
 
-  const handleSaveProfile = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (editedName.trim()) {
-      setStudentName(editedName.trim());
-      await saveStudentProfile({
-        display_name: editedName.trim(),
-        target_stream: targetStream,
-        preferred_subjects: targetStream === "JEE Aspirant" ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]
-      });
+
+  useEffect(() => {
+  const loadProfile = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+    const prof = await fetchStudentProfile(user.id);
+    if (prof) {
+      setProfile(prof);
+      setEditedName(prof.display_name || "");
+      setPhone(prof.phone_number || "");
+      setTargetStream((prof.target_stream as "NEET" | "JEE") || "");
+      setGradeClass(prof.grade_class || "");
+      setSchoolOrCoaching(prof.school_or_coaching || "");
+      setCity(prof.city || "");
+    } else {
+      setProfile({ user_id: user.id, email: user.email || "", display_name: "", preferred_subjects: [] });
     }
+  };
+  loadProfile();
+}, []);
+
+const handleSaveProfile = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!profile?.user_id || !editedName.trim()) return;
+
+  const saved = await saveStudentProfile({
+    ...profile,
+    display_name: editedName.trim(),
+    target_stream: targetStream || undefined,
+    phone_number: phone.trim() || undefined,
+    grade_class: gradeClass || undefined,
+    school_or_coaching: schoolOrCoaching.trim() || undefined,
+    city: city.trim() || undefined,
+  });
+
+  if (saved) {
+    setProfile(saved);
+    setStudentName(saved.display_name);
     setProfileSuccessMsg("Profile updated successfully!");
     setTimeout(() => {
       setProfileSuccessMsg("");
       setShowProfileModal(false);
     }, 1200);
-  };
+  }
+};
+
+  // const handleSaveProfile = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (editedName.trim()) {
+  //     setStudentName(editedName.trim());
+  //     await saveStudentProfile({
+  //       display_name: editedName.trim(),
+  //       target_stream: targetStream,
+  //       preferred_subjects: targetStream === "JEE Aspirant" ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]
+  //     });
+  //   }
+  //   setProfileSuccessMsg("Profile updated successfully!");
+  //   setTimeout(() => {
+  //     setProfileSuccessMsg("");
+  //     setShowProfileModal(false);
+  //   }, 1200);
+  // };
 
   const handleSaveSettings = (e: React.FormEvent) => {
     e.preventDefault();
@@ -144,16 +215,16 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
                 { id: "analytics", label: "Analytics" },
               ].map((item) => (
                 <button
-                  key={item.id}
-                  onClick={() => { setTab(item.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className={`font-sans font-bold text-xs tracking-wide transition-all pb-1 cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
-                    currentTab === item.id
-                      ? "text-[#FCB824] dark:text-[#FCB824] border-b-2 border-[#FCB824]"
-                      : "text-slate-600 dark:text-slate-300 hover:text-[#FCB824]"
-                  }`}
-                >
-                  {t(item.label).toUpperCase()}
-                </button>
+  key={item.id}
+  onClick={() => handleNavigation(item.id)}
+  className={`font-sans font-bold text-xs tracking-wide transition-all pb-1 cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
+    currentTab === item.id
+      ? "text-[#FCB824] dark:text-[#FCB824] border-b-2 border-[#FCB824]"
+      : "text-slate-600 dark:text-slate-300 hover:text-[#FCB824]"
+  }`}
+>
+  {t(item.label).toUpperCase()}
+</button>
               ))}
             </nav>
           </div>
@@ -285,7 +356,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
                   
                   <button 
                     onClick={() => {
-                      setTab("course");
+                      handleNavigation("course");
                       setShowProfileDropdown(false);
                     }}
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"
@@ -309,7 +380,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
 
                   <button 
                     onClick={() => {
-                      setTab("analytics");
+                    handleNavigation("analytics");
                       setShowProfileDropdown(false);
                     }}
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"
@@ -358,7 +429,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
           ].map((item) => (
             <button
               key={item.id}
-              onClick={() => { setTab(item.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              onClick={() => handleNavigation(item.id)}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold tracking-wide transition-all whitespace-nowrap shrink-0 flex items-center gap-1 cursor-pointer ${
                 currentTab === item.id
                   ? "bg-[var(--navy)] dark:bg-amber-950/80 text-[#FCB824] border border-[#FCB824] shadow-sm font-black"
@@ -481,15 +552,15 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
                   />
                 </div>
 
-                <div className="space-y-1 md:col-span-2">
-                  <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Dream Medical Institute</label>
-                  <input
-                    type="text"
-                    value={targetCollege}
-                    onChange={(e) => setTargetCollege(e.target.value)}
-                    className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
-                  />
-                </div>
+             <div className="space-y-1 md:col-span-2">
+  <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">School / Coaching Institute</label>
+  <input
+    type="text"
+    value={schoolOrCoaching}
+    onChange={(e) => setSchoolOrCoaching(e.target.value)}
+    className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
+  />
+</div>
 
               </div>
 

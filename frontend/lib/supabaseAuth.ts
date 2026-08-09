@@ -11,6 +11,43 @@ export async function sendEmailOtp(email: string, shouldCreateUser: boolean): Pr
     options: { shouldCreateUser },
   });
   if (error) throw error;
+
+}
+
+// Email + password registration. Supabase auto-signs-in on success unless
+// "Confirm email" is enabled in your Supabase Auth settings — in that case
+// data.session will be null and the user must click the emailed link first.
+export async function signUpWithPassword(
+  email: string,
+  password: string,
+  displayName: string,
+  targetStream: string
+): Promise<Session | null> {
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+    options: {
+      data: { display_name: displayName, target_stream: targetStream },
+    },
+  });
+  if (error) throw error;
+  return data.session;
+}
+
+export async function signInWithPassword(email: string, password: string): Promise<Session> {
+  const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+  if (error) throw error;
+  if (!data.session) throw new Error("Sign-in succeeded but no session was returned.");
+  return data.session;
+}
+
+// Used by the profile-completion warning to know what's still missing.
+export function getProfileGaps(session: Session): string[] {
+  const meta = session.user.user_metadata as { display_name?: string; target_stream?: string } | undefined;
+  const gaps: string[] = [];
+  if (!meta?.display_name?.trim()) gaps.push("Full Name");
+  if (!meta?.target_stream?.trim()) gaps.push("Target Stream");
+  return gaps;
 }
 
 export async function verifyEmailOtp(email: string, token: string): Promise<Session> {

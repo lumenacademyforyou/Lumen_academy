@@ -1,10 +1,28 @@
 import { createClient } from "@supabase/supabase-js";
+import.meta.env.VITE_SUPABASE_URL
 
+
+console.log("VITE ENV:", import.meta.env);
+console.log("SUPABASE URL:", import.meta.env.VITE_SUPABASE_URL);
+console.log(
+  "SUPABASE KEY:",
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
+);
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabasePublishableKey =
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+
+if (!supabaseUrl || !supabasePublishableKey) {
+  throw new Error("Supabase environment variables are missing");
+}
+
+export const supabase = createClient(
+  supabaseUrl,
+  supabasePublishableKey
+);
 // Retrieve environment variables if configured
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "https://dummy-supabase-project.supabase.co";
-const supabasePublishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "dummy-publishable-key";
 
-export const supabase = createClient(supabaseUrl, supabasePublishableKey);
 
 export interface StudentProfile {
   id?: string;
@@ -13,6 +31,11 @@ export interface StudentProfile {
   display_name: string;
   preferred_subjects: string[];
   target_stream?: string;
+  target_exam_year?: number;
+  grade_class?: string;
+  phone_number?: string;        // NEW
+  school_or_coaching?: string;  // NEW
+  city?: string;                // NEW
   onboarding_completed?: boolean;
   created_at?: string;
   updated_at?: string;
@@ -60,16 +83,15 @@ function setLocalProfiles(profiles: Record<string, StudentProfile>): void {
     console.error("Failed to save local profiles", err);
   }
 }
-
 export async function saveStudentProfile(profile: Partial<StudentProfile>): Promise<StudentProfile | null> {
-  const fullProfile: StudentProfile = {
-    user_id: profile.user_id || `usr_${Date.now()}`,
-    email: profile.email || "",
-    display_name: profile.display_name || "Student",
-    preferred_subjects: profile.preferred_subjects || (profile.target_stream?.includes("JEE") ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]),
-    target_stream: profile.target_stream || "NEET Aspirant",
-    onboarding_completed: profile.onboarding_completed ?? true,
-    updated_at: new Date().toISOString()
+  if (!profile.user_id) {
+    console.error("saveStudentProfile: user_id is required");
+    return null;
+  }
+
+  const fullProfile: Partial<StudentProfile> = {
+    ...profile,
+    updated_at: new Date().toISOString(),
   };
 
   // Try Supabase if configured with real URL
@@ -84,6 +106,7 @@ export async function saveStudentProfile(profile: Partial<StudentProfile>): Prom
       if (!error && data) {
         return data as StudentProfile;
       }
+      if (error) console.error("Supabase upsert profile error:", error);
     } catch (err) {
       console.warn("Supabase upsert profile failed, falling back to local storage:", err);
     }
@@ -91,34 +114,104 @@ export async function saveStudentProfile(profile: Partial<StudentProfile>): Prom
 
   // LocalStorage Fallback
   const profiles = getLocalProfiles();
-  profiles[fullProfile.user_id] = fullProfile;
-  if (fullProfile.email) {
-    profiles[fullProfile.email] = fullProfile;
+  const merged = { ...(profiles[profile.user_id] || {}), ...fullProfile } as StudentProfile;
+  profiles[profile.user_id] = merged;
+  if (merged.email) {
+    profiles[merged.email] = merged;
   }
   setLocalProfiles(profiles);
-  return fullProfile;
+  return merged;
 }
 
-export async function fetchStudentProfile(userIdOrEmail: string): Promise<StudentProfile | null> {
-  if (!userIdOrEmail) return null;
+// export async function fetchStudentProfile(userIdOrEmail: string): Promise<StudentProfile | null> {
+//   if (!userIdOrEmail) return null;
 
-  if (supabaseUrl && !supabaseUrl.includes("dummy-supabase-project")) {
+//   if (supabaseUrl && !supabaseUrl.includes("dummy-supabase-project")) {
+//     try {
+//       const { data, error } = await supabase
+//         .from("profiles")
+//         .select("*")
+//         .or(`user_id.eq.${userIdOrEmail},email.eq.${userIdOrEmail}`)
+//         .maybeSingle();
+
+//       if (!error && data) {
+//         return data as StudentProfile;
+//       }
+//     } catch (err) {
+//       console.warn("Supabase fetch profile failed, using local storage:", err);
+//     }
+//   }
+
+//   // Fallback to local storage
+//   const profiles = getLocalProfiles();
+//   return profiles[userIdOrEmail] || null;
+// }
+
+export async function fetchStudentProfile(
+  userIdOrEmail: string
+): Promise<StudentProfile | null> {
+  if (!userIdOrEmail) return null;
+console.log("PROFILE USER ID:", userIdOrEmail);
+  if (
+    supabaseUrl &&
+    !supabaseUrl.includes("dummy-supabase-project")
+  ) {
     try {
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("*")
-        .or(`user_id.eq.${userIdOrEmail},email.eq.${userIdOrEmail}`)
-        .maybeSingle();
+      let query;
+
+      // Email
+      if (userIdOrEmail.includes("@")) {
+        query = supabase
+          .from("profiles")
+          .select("*")
+          .eq("email", userIdOrEmail)
+          .maybeSingle();
+      }
+
+      // UUID
+      else {
+        const uuidRegex =
+          /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+        if (!uuidRegex.test(userIdOrEmail)) {
+          console.warn(
+            "Invalid Supabase user ID:",
+            userIdOrEmail
+          );
+
+          // Don't send invalid value to UUID column
+          const profiles = getLocalProfiles();
+          return profiles[userIdOrEmail] || null;
+        }
+
+        query = supabase
+          .from("profiles")
+          .select("*")
+          .eq("user_id", userIdOrEmail)
+          .maybeSingle();
+      }
+
+      const { data, error } = await query;
 
       if (!error && data) {
         return data as StudentProfile;
       }
+
+      if (error) {
+        console.error(
+          "Supabase profile fetch error:",
+          error
+        );
+      }
     } catch (err) {
-      console.warn("Supabase fetch profile failed, using local storage:", err);
+      console.warn(
+        "Supabase fetch profile failed, using local storage:",
+        err
+      );
     }
   }
 
-  // Fallback to local storage
+  // LocalStorage fallback
   const profiles = getLocalProfiles();
   return profiles[userIdOrEmail] || null;
 }

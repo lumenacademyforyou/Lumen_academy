@@ -18,8 +18,16 @@ import DailyReminderModal from "./components/common/DailyReminderModal";
 import LumenLogo from "./components/common/LumenLogo";
 import CourseAreaView from "./components/views/CourseAreaView";
 import { supabase } from "./supabase";
-import { signOut as supabaseSignOut } from "./lib/supabaseAuth";
+
+// import { useLocation, useNavigate } from "react-router-dom";
+
+import { useLocation, useNavigate, useParams, Routes, Route, Navigate } from "react-router-dom";
+import {
+  signOut as supabaseSignOut,
+  getProfileGaps,
+} from "./lib/supabaseAuth";
 import confetti from "canvas-confetti";
+
 
 import AdminView from "./components/views/AdminView";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, BarChart, Bar, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
@@ -35,6 +43,8 @@ import {
   type AttemptResult,
   type ResultQuestion,
 } from "./lib/testApi";
+
+
 
 // Builds a TestAttempt from a real, server-scored result. Only score,
 // correctness, timing and per-question review are real; subjectBreakdown and
@@ -135,6 +145,8 @@ function buildHonestAttemptFromResult(
 }
 
 export default function App() {
+  const [authLoading, setAuthLoading] = useState(true);
+const [userId, setUserId] = useState<string | null>(null);
   const { t } = useLanguage();
   const [hasSeenSplash, setHasSeenSplash] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -145,7 +157,31 @@ export default function App() {
   const [currentTab, setTab] = useState<string>("dashboard");
   const [showDailyReminder, setShowDailyReminder] = useState(false);
   const [isExportingPdf, setIsExportingPdf] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
+  useEffect(() => {
+  const pathToTab: Record<string, string> = {
+    "/dashboard": "dashboard",
+    "/tests": "tests",
+    "/course": "course",
+    "/analytics": "analytics",
+  };
+
+  useEffect(() => {
+  const path = location.pathname;
+  if (path.startsWith("/student-dashboard")) setTab("dashboard");
+  else if (path.startsWith("/student-tests")) setTab("tests");
+  else if (path.startsWith("/student-course")) setTab("course");
+  else if (path.startsWith("/student-analytics")) setTab("analytics");
+}, [location.pathname]);
+
+  const tab = pathToTab[location.pathname];
+
+  if (tab) {
+    setTab(tab);
+  }
+}, [location.pathname]);
   const handleDownloadPdf = async () => {
     setIsExportingPdf(true);
     try {
@@ -259,20 +295,56 @@ export default function App() {
     setTab("tests");
   };
 
-  useEffect(() => {
+ const [profileGaps, setProfileGaps] = useState<string[]>([]);
+
+useEffect(() => {
+  const initializeAuth = async () => {
     const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session?.user) {
-        const meta = session.user.user_metadata as { display_name?: string } | undefined;
-        setStudentName(meta?.display_name || session.user.email?.split("@")[0] || session.user.phone || "Student");
-        setIsAuthenticated(true);
-      } else {
-        setIsAuthenticated(false);
-      }
-    });
-    return () => subscription.unsubscribe();
-  }, []);
+      data: { session },
+    } = await supabase.auth.getSession();
+
+    if (session?.user) {
+      setProfileGaps(getProfileGaps(session));
+      setIsAuthenticated(true);
+
+      // Optional: get the user's name from metadata
+      const name =
+        session.user.user_metadata?.full_name ||
+        session.user.user_metadata?.name ||
+        session.user.email?.split("@")[0] ||
+        "Student";
+
+      setStudentName(name);
+    } else {
+      setIsAuthenticated(false);
+    }
+  };
+
+  initializeAuth();
+
+  const {
+    data: { subscription },
+  } = supabase.auth.onAuthStateChange((_event, session) => {
+    if (session?.user) {
+      setProfileGaps(getProfileGaps(session));
+      setIsAuthenticated(true);
+
+      const name =
+        session.user.user_metadata?.full_name ||
+        session.user.user_metadata?.name ||
+        session.user.email?.split("@")[0] ||
+        "Student";
+
+      setStudentName(name);
+    } else {
+      setProfileGaps([]);
+      setIsAuthenticated(false);
+      setIsAdmin(false);
+    }
+  });
+
+  return () => subscription.unsubscribe();
+}, []);
   const [currentScreen, setCurrentScreen] = useState<"portal" | "system_check" | "lobby" | "test_taking" | "evaluating">("portal");
   const [customTestConfig, setCustomTestConfig] = useState<{
     title: string;
@@ -574,6 +646,7 @@ export default function App() {
           setIsAuthenticated(true);
           setTab("dashboard");
           setCurrentScreen("portal");
+          navigate("/dashboard");
         }}
         onQuickDemoFlowC={() => {
           setStudentName("Prince A");
@@ -653,20 +726,28 @@ export default function App() {
       ) : (
         <>
           {/* Main Navigation Header */}
-          <Header
-            currentTab={currentTab}
-            setTab={(tab) => {
-              setTab(tab);
-              setCurrentScreen("portal");
-            }}
-            studentName={studentName}
-            setStudentName={setStudentName}
-            onSignOut={() => {
-              supabaseSignOut().catch(() => {});
-              setIsAuthenticated(false);
-              setIsAdmin(false);
-            }}
-          />
+        <Header
+  currentTab={currentTab}
+  setTab={(tab) => {
+    setTab(tab);
+    setCurrentScreen("portal");
+
+    const paths: Record<string, string> = {
+      dashboard: "/dashboard",
+      tests: "/tests",
+      course: "/course",
+      analytics: "/analytics",
+    };
+
+    navigate(paths[tab] || "/dashboard");
+  }}
+  onSignOut={() => {
+    supabaseSignOut().catch(() => {});
+    setIsAuthenticated(false);
+    setIsAdmin(false);
+    navigate("/");
+  }}
+/>
 
           {/* Core Content Container */}
           <main className="flex-1 pt-44 lg:pt-32 pb-16 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto w-full print:pt-0 print:pb-0">
@@ -1309,9 +1390,9 @@ export default function App() {
               <div className="flex gap-8 md:gap-12 text-center md:text-left">
                 <div className="flex flex-col gap-3">
                   <span className="font-bold text-[10px] text-white tracking-widest uppercase">Learning</span>
-                  <button onClick={() => { setTab("dashboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">{t("Dashboard")}</button>
-                  <button onClick={() => { setTab("course"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">Courses</button>
-                  <button onClick={() => { setTab("tests"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">Test Series</button>
+                  <button onClick={() => handleNavigation("dashboard")} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">{t("Dashboard")}</button>
+                  <button onClick={() => handleNavigation("course")} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">Courses</button>
+                  <button onClick={() => handleNavigation("tests")} className="text-sm text-slate-300 hover:text-[#FCB824] transition-colors cursor-pointer text-left">Test Series</button>
                 </div>
                 <div className="flex flex-col gap-3">
                   <span className="font-bold text-[10px] text-white tracking-widest uppercase">Support</span>
