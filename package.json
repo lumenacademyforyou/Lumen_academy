@@ -1,0 +1,33 @@
+{
+  "name": "lumen-academy-database",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Prisma database schema and migrations for Lumen Academy",
+  "scripts": {
+    "db:validate": "prisma validate --schema ./schema6.prisma",
+    "db:generate": "prisma generate --schema ./schema6.prisma",
+    "db:migrate": "prisma migrate dev --schema ./schema6.prisma",
+    "db:deploy": "prisma migrate deploy --schema ./schema6.prisma",
+    "db:push": "prisma db push --schema ./schema6.prisma",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:verify-demo": "tsx prisma/verify-demo.ts",
+    "db:verify-all": "tsx prisma/verify-all-models.ts",
+    "db:studio": "prisma studio --schema ./schema6.prisma",
+    "db:format": "prisma format --schema ./schema6.prisma",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.14.0",
+    "pptxgenjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "prisma": "^6.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  }
+}

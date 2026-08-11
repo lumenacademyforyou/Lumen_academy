@@ -1,0 +1,1113 @@
+// ══════════════════════════════════════════════════════════════════════════
+// Lumen Academy — core data model
+// PostgreSQL 16 (Supabase) via Prisma. Auth identity is owned by Supabase Auth;
+// this file only models application data, keyed off the Supabase user id.
+//
+// Design laws this schema exists to enforce:
+//   1. No answer leakage before submission — isCorrect / numericalAnswer are
+//      only ever selected by a service once Attempt.status = SUBMITTED.
+//   2. Server owns time — startedAt/deadlineAt are authoritative, including
+//      per-section deadlines for JEE sectional timing.
+//   3. IDOR-proof — every student-owned row carries a userId (directly or
+//      via its parent) that services must filter on.
+//   4. Past results never change — AttemptQuestion snapshots the answer key
+//      at submit time; editing a Question later never touches old attempts.
+//   5. Mobile/poor-connectivity tolerant — Attempt/AttemptQuestion rows are
+//      upserted incrementally by the autosave loop, not written once.
+//
+// Layout:
+//   1. Identity & profile         7. Analytics rollup (UnitMastery)
+//   2. Syllabus taxonomy          8. Gamification
+//   3. Question bank              9. Study tools
+//   4. Tests (templates)         10. LMS
+//   5. Attempts (instances)      11. Institutions (optional B2B layer)
+//   6. AI explanation cache
+// ══════════════════════════════════════════════════════════════════════════
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL") // pooled, for the app
+  directUrl = env("DIRECT_URL") // direct (unpooled), for migrations
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 1. IDENTITY & PROFILE
+// Supabase Auth owns auth.users (credentials, OTP, sessions, verification).
+// User is the app-side row, created lazily on a user's first authenticated
+// request — see requireAuth middleware. It never stores a credential.
+// Split from StudentProfile so the hot-path auth lookup stays a small row.
+// ═══════════════════════════════════════════════════════════════════════
+
+model User {
+  id           String     @id // == Supabase auth.users.id
+  email        String?    @unique
+  phone        String?
+  passwordHash String?
+  role         Role       @default(STUDENT)
+  locale      Locale     @default(EN)
+  targetExam  TargetExam @default(NEET)
+  displayName String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  profile     StudentProfile?
+  preferences UserPreference?
+  streak      Streak?
+
+  // Historical / activity data is deliberately NOT cascade-deleted with the
+  // user (see note on Attempt) — account deletion is a policy decision for
+  // the service layer, not something the schema should do silently.
+  attempts          Attempt[]
+  ownedTests        Test[]               @relation("TestOwner")
+  lessonProgress    LessonProgress[]
+  bookmarks         Bookmark[]
+  pomodoroSessions  PomodoroSession[]
+  revisionNotes     RevisionNote[]
+  studyPlans        StudyPlan[]
+  userBadges        UserBadge[]
+  notifications     Notification[]
+  dailyGoals        DailyGoal[]
+  flashcardViews    UserFlashcardDaily[]
+  unitMastery       UnitMastery[]
+  auditEvents       AuditLog[]           @relation("AuditActor")
+  // Admin/faculty side of the question review queue (§3) — the reviewer,
+  // not the student. Ordinary students will never appear on this relation.
+  reviewedQuestions Question[]           @relation("QuestionReviewer")
+
+  deletedAt               DateTime?
+  dataDeletionRequestedAt DateTime?
+
+  @@index([deletedAt])
+  @@map("users")
+}
+
+enum Role {
+  STUDENT
+  FACULTY
+  ADMIN
+}
+
+enum Locale {
+  EN
+  TA
+}
+
+// A student's primary focus — drives defaults (which dashboard loads, which
+// tests get recommended first). It does NOT restrict access: Question and
+// Test both carry their own exam applicability, so a NEET-focused student
+// can still open a JEE test.
+enum TargetExam {
+  NEET
+  JEE_MAIN
+  JEE_ADVANCED
+}
+
+// Append-only record for privileged and assessment-sensitive actions. Store a
+// hash rather than a raw IP address to support incident correlation without
+// retaining unnecessary personal data.
+model AuditLog {
+  id          String      @id @default(uuid())
+  actorUserId String?
+  action      AuditAction
+  entityType  AuditEntity
+  entityId    String
+  metadata    Json?
+  ipHash      String?
+  userAgent   String?
+  createdAt   DateTime    @default(now())
+
+  actor User? @relation("AuditActor", fields: [actorUserId], references: [id])
+
+  @@index([entityType, entityId, createdAt(sort: Desc)])
+  @@index([actorUserId, createdAt(sort: Desc)])
+  @@map("audit_logs")
+}
+
+enum AuditAction {
+  CREATE
+  UPDATE
+  PUBLISH
+  RETIRE
+  SUBMIT
+  SCORE
+  DELETE_REQUEST
+  DELETE_COMPLETE
+}
+
+enum AuditEntity {
+  USER
+  QUESTION
+  TEST
+  ATTEMPT
+  SCHOOL
+}
+
+model StudentProfile {
+  userId           String    @id
+  fullName         String?
+  dob              DateTime?
+  class            Int? // 11 or 12
+  examYear         Int?
+  phoneDisplay     String? // display-only mirror; Supabase remains the
+  // source of truth for the verified phone number
+  avatarUrl        String?
+  profileCompleted Boolean   @default(false)
+
+  // ── Institution affiliation (both optional, mutually informative) ──
+  // A retail (B2C) student fills in schoolName as free text and schoolId
+  // stays null. A student onboarded through an institution (see §11) is
+  // linked by schoolId instead — schoolName can still be kept in sync for
+  // display so no screen needs to join through School just to show a name.
+  schoolName String?
+  schoolId   String?
+  school     School? @relation(fields: [schoolId], references: [id])
+
+  // ── Rank/percentile prediction inputs ──
+  // Both optional and never required to use the platform. NEET state
+  // counselling and JEE home-state NIT reservation both key off state;
+  // category materially changes predicted cutoffs/rank on the real exams,
+  // which is what powers the "AIR Rank Predictor" dashboard card.
+  state    String?
+  category ReservationCategory?
+
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([schoolId])
+  @@map("student_profiles")
+}
+
+// Standard NTA-form reservation categories. PwD status is intentionally
+// tracked separately by the frontend as a plain boolean toggle if needed —
+// it's orthogonal to category and not read anywhere in this schema.
+enum ReservationCategory {
+  GENERAL
+  EWS
+  OBC_NCL
+  SC
+  ST
+}
+
+model UserPreference {
+  userId               String  @id
+  theme                Theme   @default(LIGHT)
+  notificationsEnabled Boolean @default(true)
+  emailAlerts          Boolean @default(true)
+  mutePomodoroSound    Boolean @default(false)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_preferences")
+}
+
+enum Theme {
+  LIGHT
+  DARK
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 2. SYLLABUS TAXONOMY
+// Subject is a TABLE, not an enum — NEET biology is modelled as two
+// subjects (botany, zoology) per project convention. Mathematics (JEE-only)
+// is just another seeded row, no migration needed.
+// Slugs (phy_01, bot_04, ...) are permanent once published and must match
+// database/syllabusData.ts exactly — question tags and analytics key off
+// them, not off display names.
+// ═══════════════════════════════════════════════════════════════════════
+
+model Subject {
+  id     String  @id @default(uuid())
+  slug   String  @unique // "physics", "chemistry", "botany", "zoology", "mathematics"
+  nameEn String
+  nameTa String?
+  order  Int     @default(0)
+
+  // Which exam(s) this subject applies to, e.g. mathematics = [JEE_MAIN,
+  // JEE_ADVANCED], botany/zoology = [NEET]. Drives the subject picker on
+  // the Course/LMS screens so a NEET student never sees Mathematics.
+  // Empty = not yet tagged; the seed script always sets a real value.
+  examTypes TargetExam[] @default([])
+
+  units            Unit[]
+  questions        Question[]
+  pomodoroSessions PomodoroSession[]
+  revisionNotes    RevisionNote[]
+  flashcards       Flashcard[]
+  testSections     TestSection[]
+
+  @@map("subjects")
+}
+
+model Unit {
+  id     String  @id @default(uuid())
+  slug   String  @unique // "phy_01", "bot_04" — permanent
+  nameEn String
+  nameTa String?
+  order  Int     @default(0)
+
+  // 11 or 12 — drives the LMS "Class 11 / Class 12" selector shown across
+  // the Course and LMS flows. Null = the chapter spans both (rare).
+  classLevel Int?
+
+  weightage Decimal? @db.Decimal(4, 2) // % of paper — drives test blueprints
+
+  // Some chapters exist in only one exam's syllabus even within a subject
+  // shared by both exams (e.g. a JEE-Advanced-only Physics topic).
+  // Empty = inherits the parent Subject's examTypes.
+  examTypes TargetExam[] @default([])
+
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id])
+
+  topics            Topic[]
+  questions         Question[]
+  lessons           Lesson[]
+  studyPlanChapters StudyPlanChapter[]
+  studentMastery    UnitMastery[]
+
+  @@index([subjectId, order])
+  @@map("units")
+}
+
+model Topic {
+  id     String  @id @default(uuid())
+  slug   String  @unique
+  nameEn String
+  nameTa String?
+
+  unitId String
+  unit   Unit   @relation(fields: [unitId], references: [id])
+
+  questions Question[]
+
+  @@index([unitId])
+  @@map("topics")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 3. QUESTION BANK
+// Supports NEET, JEE Main, and JEE Advanced question interactions:
+//   SINGLE_CORRECT / MULTIPLE_CORRECT — graded against Option.isCorrect
+//   NUMERICAL                         — graded within numericalTolerance
+//   MATCHING / ASSERTION_REASON       — validated structured interactions
+// questionId is immutable forever. `version` increments on a meaningful
+// edit; never hard-delete a PUBLISHED question that has been attempted —
+// move it to RETIRED so AttemptQuestion history never dangles.
+//
+// Review pipeline (DRAFT → PENDING_REVIEW → PUBLISHED): a question authored
+// by faculty or drafted by the AI generation pipeline sits in PENDING_REVIEW
+// until a human approves it — only PUBLISHED questions are ever served to
+// a student. criticVerdict holds the automated adversarial-review pass
+// result when one ran (see neet-ai-layer-architecture-guide.md Phase 5).
+// Full embedding-based dedup/RAG chunk storage is intentionally OUT of
+// scope here — that belongs to the offline content-generation pipeline's
+// own store, not the transactional app database.
+// ═══════════════════════════════════════════════════════════════════════
+
+model Question {
+  id   String       @id @default(uuid())
+  type QuestionType @default(SINGLE_CORRECT)
+
+  stemEn        String
+  stemTa        String?
+  stemImageUrl  String? // diagram / equation / figure — common in Physics, Chemistry, Biology
+  explanationEn String?
+  explanationTa String?
+
+  // Per-question, never hardcoded in application code. A JEE numerical
+  // question typically carries negativeMarks = 0; an MCQ typically 1 —
+  // read from the row, always.
+  marks         Int @default(4)
+  negativeMarks Int @default(1)
+
+  difficulty Difficulty @default(MEDIUM)
+  status     QStatus    @default(DRAFT) // DRAFT → PENDING_REVIEW → PUBLISHED → RETIRED
+  version    Int        @default(1)
+
+  // Versioned contract for structured JEE interaction and marking rules.
+  // Both JSON fields are validated by Zod before content is published.
+  contentSchemaVersion Int   @default(1)
+  interactionConfig    Json? // public display structure for MATCHING and similar types
+  scoringConfig        Json? // server-only scoring instructions, never sent before submission
+
+  // SHA-256 of canonicalized content prevents duplicates across the question bank.
+  contentHash     String?   @unique
+  selectionBucket Int       @default(0) // 0-999, assigned at publish time for scalable sampling
+  publishedAt     DateTime?
+  retiredAt       DateTime?
+
+  // Which exam(s) this question is in scope for. Physics/Chemistry
+  // commonly serve both NEET and JEE; Botany/Zoology serve NEET only.
+  examTypes TargetExam[] @default([])
+
+  // Provenance — "NEET 2023 Official", "AI-generated", "Faculty-authored",
+  // a source PDF name, etc. Free text; not used for grading logic.
+  source String?
+
+  // Set when this question came from the AI generation pipeline; null for
+  // a human-authored one. Matches "version every prompt" so a quality
+  // regression can be traced to the exact prompt that produced it.
+  promptVersion String?
+
+  // ── Human/automated review, gate before DRAFT → PUBLISHED ──
+  reviewedById  String?
+  reviewedBy    User?     @relation("QuestionReviewer", fields: [reviewedById], references: [id])
+  reviewedAt    DateTime?
+  reviewNotes   String?
+  criticVerdict Json? // { passed, issues[], confidence } from the automated critic pass, if any
+
+  // ── NUMERICAL type only — null for SINGLE_CORRECT ──
+  numericalAnswer    Decimal? @db.Decimal(12, 4)
+  numericalTolerance Decimal? @db.Decimal(12, 4) // grading window, e.g. ±0.05
+  numericalUnit      String? // "m/s", "mol/L" — display only, not graded on
+
+  ncertReference String? // "Class 11, Ch 13, pp. 210-214"
+
+  subjectId String
+  unitId    String
+  topicId   String?
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  unit      Unit    @relation(fields: [unitId], references: [id])
+  topic     Topic?  @relation(fields: [topicId], references: [id])
+
+  options          Option[]
+  testQuestions    TestQuestion[]
+  attemptQuestions AttemptQuestion[]
+  aiExplanations   AiExplanationCache[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([unitId, status])
+  @@index([subjectId, status])
+  @@index([status, subjectId, unitId, difficulty, selectionBucket])
+  @@index([status, type, difficulty])
+  @@index([examTypes], type: Gin)
+  @@index([topicId])
+  @@index([status, reviewedById]) // the admin review queue: "items awaiting me"
+  @@map("questions")
+}
+
+enum QuestionType {
+  SINGLE_CORRECT
+  MULTIPLE_CORRECT
+  NUMERICAL
+  MATCHING
+  ASSERTION_REASON
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum QStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  RETIRED
+  REJECTED // failed AI-critic or human review — kept for the audit trail
+}
+
+model Option {
+  id         String  @id @default(uuid())
+  label      String // "A", "B", "C", "D"
+  textEn     String
+  textTa     String?
+  imageUrl   String? // for options that are themselves a diagram/structure
+  orderIndex Int     @default(0)
+
+  // ⚠ THE MOST SENSITIVE COLUMN IN THE DATABASE.
+  // Only ever selected by a service once Attempt.status = SUBMITTED.
+  // MULTIPLE_CORRECT questions legitimately have more than one true value.
+  isCorrect Boolean @default(false)
+
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  // The publishing service validates the correct-option count according to
+  // Question.type. A partial unique index would reject valid MULTIPLE_CORRECT
+  // questions, so it must not be added.
+
+  @@unique([questionId, label])
+  @@unique([questionId, orderIndex])
+  @@index([questionId])
+  @@map("options")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 4. TESTS — the published TEMPLATE, not a student's attempt at it.
+// TestSection exists for JEE sectional timing: a section with a non-null
+// durationSeconds runs its own independent clock (per JEE pattern, the
+// section can lock once its own time is up, even if the overall test has
+// time left). NEET has no sections, so durationSeconds stays null and the
+// whole test shares Test.durationSeconds.
+// ═══════════════════════════════════════════════════════════════════════
+
+model Test {
+  id              String     @id @default(uuid())
+  name            String
+  type            TestType
+  examType        TargetExam
+  isPublished     Boolean    @default(false)
+  durationSeconds Int // overall cap; sections may further subdivide it
+
+  // Null = official content-team test, visible to everyone once published.
+  // Non-null = a personal custom/AI-revision test, visible only to its owner.
+  ownerUserId String?
+  owner       User?   @relation("TestOwner", fields: [ownerUserId], references: [id])
+
+  // Provenance only, for AI_REVISION tests: which attempt's weak/incorrect
+  // questions this was generated from. No logic depends on it existing —
+  // "recommended tests" itself is a query, not a stored recommendation.
+  sourceAttemptId String?
+  sourceAttempt   Attempt? @relation("TestGeneratedFrom", fields: [sourceAttemptId], references: [id])
+
+  // Denormalized display hint for AI_REVISION tests — lets the "Recommended
+  // for you" card say "Focused on: Thermodynamics, Genetics" without a join
+  // back through sourceAttempt → AttemptQuestion → Unit on every render.
+  focusUnitSlugs String[] @default([])
+
+  createdAt DateTime @default(now())
+
+  sections  TestSection[]
+  questions TestQuestion[]
+  attempts  Attempt[]      @relation("AttemptOfTest")
+
+  @@index([examType, type, isPublished])
+  @@index([ownerUserId])
+  @@map("tests")
+}
+
+enum TestType {
+  FULL
+  SUBJECT
+  CUSTOM
+  AI_REVISION
+  PYQ
+}
+
+model TestSection {
+  id         String @id @default(uuid())
+  testId     String
+  name       String // "Physics", "Mathematics"
+  orderIndex Int    @default(0)
+
+  subjectId       String?
+  durationSeconds Int? // null = shares the overall Test duration
+
+  test             Test              @relation(fields: [testId], references: [id], onDelete: Cascade)
+  subject          Subject?          @relation(fields: [subjectId], references: [id])
+  questions        TestQuestion[]
+  attemptSections  AttemptSection[]
+  attemptQuestions AttemptQuestion[]
+
+  @@unique([testId, orderIndex])
+  @@map("test_sections")
+}
+
+model TestQuestion {
+  id         String  @id @default(uuid())
+  testId     String
+  sectionId  String?
+  questionId String
+  orderIndex Int     @default(0)
+
+  test     Test         @relation(fields: [testId], references: [id], onDelete: Cascade)
+  section  TestSection? @relation(fields: [sectionId], references: [id])
+  question Question     @relation(fields: [questionId], references: [id])
+
+  @@unique([testId, questionId])
+  @@unique([testId, orderIndex])
+  @@map("test_questions")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 5. ATTEMPTS — a concrete instance of a student taking a Test.
+// AttemptQuestion is the snapshot table (Law 4): correctOptionIdSnapshot /
+// correctNumericalAnswerSnapshot freeze the answer key exactly as it stood
+// at submit time, so editing a Question in June never changes a March score.
+// ═══════════════════════════════════════════════════════════════════════
+
+model Attempt {
+  id     String        @id @default(uuid()) // UUID: unguessable in a URL
+  userId String
+  testId String
+  status AttemptStatus @default(IN_PROGRESS)
+
+  // The authoritative clock. deadlineAt is computed once at creation
+  // (startedAt + durationSeconds) but stored explicitly, not recomputed,
+  // so a grace period or accommodation can extend it later without
+  // touching durationSeconds. Every autosave and the submit check both
+  // compare against this column, never the browser's countdown.
+  startedAt       DateTime  @default(now())
+  durationSeconds Int
+  deadlineAt      DateTime
+  submittedAt     DateTime?
+
+  // Cached results — derivable from AttemptQuestion, stored anyway so a
+  // dashboard listing 20 past attempts doesn't recompute per row. Safe to
+  // cache because a SUBMITTED attempt's underlying rows never change.
+  score        Int?
+  maxScore     Int?
+  correctCount Int?
+  wrongCount   Int?
+  skippedCount Int?
+  accuracy     Int? // 0–100, out of ATTEMPTED questions only
+  percentile   Decimal? @db.Decimal(5, 2) // within-platform only; refreshed
+  // periodically as more students attempt the same test — not frozen by Law 4,
+  // since it's a relative ranking, not a correctness fact
+
+  // Predicted All-India Rank for this attempt, computed from percentile plus
+  // the student's category (StudentProfile.category) at scoring time. A
+  // display estimate for the dashboard's rank-predictor card — recomputed
+  // whenever shown, not treated as exam-truth the way Law 4 treats scores.
+  predictedAirRank     Int?
+  scoringPolicyVersion String?
+
+  // Chart-ready rollups, frozen at submit time, so the report/analytics
+  // screens avoid a live join on every load:
+  //   sectionBreakdownJson: [{ sectionName, subjectSlug, correct, wrong, skipped, accuracy }]
+  //   unitBreakdownJson:    [{ unitSlug, correct, wrong, skipped, accuracy }]
+  sectionBreakdownJson Json?
+  unitBreakdownJson    Json?
+
+  user User @relation(fields: [userId], references: [id])
+  // Not cascade-deleted from User — deleting a student's account is a
+  // policy decision (anonymize vs. purge) for the service layer to make
+  // explicitly, not something a schema-level cascade should do silently.
+  test Test @relation("AttemptOfTest", fields: [testId], references: [id])
+
+  sections       AttemptSection[]
+  questions      AttemptQuestion[]
+  generatedTests Test[]            @relation("TestGeneratedFrom")
+
+  @@index([userId, startedAt(sort: Desc)]) // dashboard "recent attempts"
+  @@index([status, deadlineAt]) // the abandoned/expired-attempt cleanup job
+  @@index([testId])
+  @@map("attempts")
+}
+
+enum AttemptStatus {
+  IN_PROGRESS
+  SUBMITTED
+  EXPIRED
+  ABANDONED
+}
+
+// One row per (attempt, section) — only populated for tests with sectional
+// timing. Tracks each section's own deadline independently of the others.
+model AttemptSection {
+  id        String @id @default(uuid())
+  attemptId String
+  sectionId String
+
+  startedAt  DateTime?
+  deadlineAt DateTime?
+  lockedAt   DateTime? // set once the section's own clock expires
+
+  attempt Attempt     @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  section TestSection @relation(fields: [sectionId], references: [id])
+
+  @@unique([attemptId, sectionId])
+  @@map("attempt_sections")
+}
+
+model AttemptQuestion {
+  id         String  @id @default(uuid())
+  attemptId  String
+  questionId String
+  sectionId  String? // denormalized for fast per-section scoring/charts
+
+  position    Int // display order shown to this student
+  optionOrder String[] @default([]) // the shuffle used for THIS attempt (MCQ only)
+
+  // [] means skipped. SINGLE_CORRECT uses zero or one element; the same shape
+  // supports MULTIPLE_CORRECT without a separate attempt table.
+  chosenOptionIds         String[] @default([])
+  chosenNumericalAnswer   Decimal? @db.Decimal(12, 4) // NUMERICAL answer
+  chosenInteractionAnswer Json? // student mapping for MATCHING and future structured types
+  flagged                 Boolean  @default(false)
+
+  // Public question content is copied when the attempt starts, so later edits
+  // to the live question never alter an old student report.
+  contentSnapshot         Json
+  questionVersionSnapshot Int
+
+  // ── FROZEN AT SUBMIT TIME (Law 4) ──
+  correctOptionIdsSnapshot       String[] @default([])
+  correctNumericalAnswerSnapshot Decimal? @db.Decimal(12, 4)
+  numericalToleranceSnapshot     Decimal? @db.Decimal(12, 4)
+  answerKeySnapshot              Json?
+  marksSnapshot                  Int?
+  negativeMarksSnapshot          Int?
+  isCorrect                      Boolean?
+  marksAwarded                   Int?
+
+  timeSpentMs Int @default(0)
+
+  attempt  Attempt      @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question Question     @relation(fields: [questionId], references: [id])
+  section  TestSection? @relation(fields: [sectionId], references: [id])
+
+  @@unique([attemptId, questionId]) // answer changes UPDATE, never insert twice
+  @@index([attemptId, position])
+  @@index([attemptId, sectionId])
+  @@index([questionId]) // faulty-question / topic-accuracy queries
+  @@map("attempt_questions")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 6. AI EXPLANATION CACHE
+// One row per (question, language), forever. Generate once, serve to every
+// student who ever gets that question wrong — this table is the only place
+// a vendor model name is stored, and only as a free-text label.
+// ═══════════════════════════════════════════════════════════════════════
+
+model AiExplanationCache {
+  id            String   @id @default(uuid())
+  questionId    String
+  language      Locale
+  text          String
+  model         String // provider's model id, free text
+  promptVersion String?
+  createdAt     DateTime @default(now())
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([questionId, language])
+  @@map("ai_explanation_cache")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 7. ANALYTICS ROLLUP — UnitMastery
+// A denormalized, continuously-updated cache of each student's accuracy
+// per unit, across ALL their submitted attempts (not just one). This is
+// what the dashboard's "weak chapters" list and the Subject Mastery radar
+// chart actually query — recomputing it live from AttemptQuestion on every
+// dashboard load stops scaling once a student has more than a few hundred
+// attempted questions.
+//
+// Upserted by the submit service immediately after an attempt is scored:
+// for every question in that attempt, increment attempted/correct/wrong on
+// the row for (userId, question.unitId). Keyed on unitId — mandatory on
+// Question — rather than the optional topicId, so every attempt updates it
+// reliably regardless of how finely a question happens to be tagged.
+// ═══════════════════════════════════════════════════════════════════════
+
+model UnitMastery {
+  id     String @id @default(uuid())
+  userId String
+  unitId String
+
+  attempted       Int       @default(0)
+  correct         Int       @default(0)
+  wrong           Int       @default(0)
+  accuracy        Int       @default(0) // cached correct/attempted × 100, 0–100
+  lastAttemptedAt DateTime?
+  updatedAt       DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+  unit Unit @relation(fields: [unitId], references: [id])
+
+  @@unique([userId, unitId])
+  @@index([userId, accuracy]) // "weakest chapters first" — the dashboard's main query
+  @@map("unit_mastery")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 8. GAMIFICATION — streaks, badges, daily goal, notifications
+// ═══════════════════════════════════════════════════════════════════════
+
+model Streak {
+  userId           String   @id
+  currentStreak    Int      @default(0)
+  longestStreak    Int      @default(0)
+  lastActivityDate DateTime @db.Date
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("streaks")
+}
+
+model Badge {
+  id             String         @id @default(uuid())
+  name           String
+  description    String
+  icon           String
+  conditionType  BadgeCondition
+  conditionValue Float
+
+  userBadges UserBadge[]
+
+  @@map("badges")
+}
+
+enum BadgeCondition {
+  SCORE_GTE
+  ACCURACY_GTE
+  STREAK_DAYS_GTE
+  TESTS_COMPLETED
+  LESSONS_COMPLETED
+}
+
+model UserBadge {
+  id        String   @id @default(uuid())
+  userId    String
+  badgeId   String
+  awardedAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id])
+  badge Badge @relation(fields: [badgeId], references: [id])
+
+  @@unique([userId, badgeId])
+  @@map("user_badges")
+}
+
+model DailyGoal {
+  id       String   @id @default(uuid())
+  userId   String
+  goalText String
+  date     DateTime @db.Date
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([userId, date])
+  @@map("daily_goals")
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  userId    String
+  type      NotificationType
+  message   String
+  readAt    DateTime?
+  createdAt DateTime         @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId, readAt])
+  @@map("notifications")
+}
+
+enum NotificationType {
+  BADGE_AWARDED
+  STREAK_REMINDER
+  REPORT_READY
+  PLAN_REMINDER
+  GENERAL
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 9. STUDY TOOLS — Pomodoro, study plan, revision notes, flashcards
+// ═══════════════════════════════════════════════════════════════════════
+
+model PomodoroSession {
+  id             String       @id @default(uuid())
+  userId         String
+  subjectId      String?
+  mode           PomodoroMode
+  goalText       String?
+  plannedSeconds Int
+  actualSeconds  Int          @default(0)
+  startedAt      DateTime     @default(now())
+  finishedAt     DateTime?
+
+  user    User     @relation(fields: [userId], references: [id])
+  subject Subject? @relation(fields: [subjectId], references: [id])
+
+  @@index([userId, startedAt(sort: Desc)])
+  @@map("pomodoro_sessions")
+}
+
+enum PomodoroMode {
+  FOCUS
+  SHORT_BREAK
+  LONG_BREAK
+}
+
+model StudyPlan {
+  id           String @id @default(uuid())
+  userId       String
+  examYear     Int
+  currentScore Float?
+  targetScore  Float?
+
+  // AI-generated weekly/daily schedule — genuinely variable shape, so it's
+  // JSONB rather than a rigid join table.
+  timetableJson Json?
+
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user     User               @relation(fields: [userId], references: [id])
+  chapters StudyPlanChapter[]
+
+  @@index([userId, isActive])
+  @@map("study_plans")
+}
+
+model StudyPlanChapter {
+  id          String    @id @default(uuid())
+  planId      String
+  unitId      String
+  targetHours Float?
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+
+  plan StudyPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
+  unit Unit      @relation(fields: [unitId], references: [id])
+
+  @@unique([planId, unitId])
+  @@map("study_plan_chapters")
+}
+
+model RevisionNote {
+  id        String   @id @default(uuid())
+  userId    String
+  subjectId String?
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user    User     @relation(fields: [userId], references: [id])
+  subject Subject? @relation(fields: [subjectId], references: [id])
+
+  @@index([userId])
+  @@map("revision_notes")
+}
+
+model Flashcard {
+  id          String @id @default(uuid())
+  subjectId   String
+  concept     String
+  explanation String
+
+  subject      Subject              @relation(fields: [subjectId], references: [id])
+  dailyAssigns UserFlashcardDaily[]
+
+  @@map("flashcards")
+}
+
+model UserFlashcardDaily {
+  id          String   @id @default(uuid())
+  userId      String
+  flashcardId String
+  shownDate   DateTime @db.Date // in the user's own timezone
+
+  user      User      @relation(fields: [userId], references: [id])
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id])
+
+  @@unique([userId, shownDate])
+  @@map("user_flashcard_daily")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 10. LMS — video lessons, downloadable resources, per-user progress,
+// bookmarks. Completion rule (locked v1 decision): a watch-percent
+// threshold, not a manual toggle — `completed` flips once watchPercent
+// crosses the app's configured threshold (kept in application config, not
+// this schema). Bookmarks are lesson-scoped only, per the same locked
+// decision. classLevel/examTypes filtering happens one level up, on Unit.
+// ═══════════════════════════════════════════════════════════════════════
+
+model Lesson {
+  id           String  @id @default(uuid())
+  unitId       String
+  nameEn       String
+  nameTa       String?
+  overviewEn   String?
+  keyTakeaways String?
+  ncertNotes   String?
+  orderIndex   Int     @default(0)
+
+  unit      Unit             @relation(fields: [unitId], references: [id])
+  videos    LessonVideo[]
+  resources LessonResource[]
+  progress  LessonProgress[]
+  bookmarks Bookmark[]
+
+  @@index([unitId, orderIndex])
+  @@map("lessons")
+}
+
+model LessonVideo {
+  id              String @id @default(uuid())
+  lessonId        String
+  language        Locale
+  youtubeId       String
+  title           String
+  durationSeconds Int
+
+  lesson     Lesson           @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  timestamps VideoTimestamp[]
+
+  @@index([lessonId])
+  @@map("lesson_videos")
+}
+
+model VideoTimestamp {
+  id      String @id @default(uuid())
+  videoId String
+  label   String
+  seconds Int
+
+  video LessonVideo @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@index([videoId])
+  @@map("video_timestamps")
+}
+
+// Downloadable material per lesson — NCERT chapter PDFs, formula sheets,
+// slide decks. Distinct from LessonVideo because a lesson commonly has one
+// video per language but several resources of mixed type.
+model LessonResource {
+  id       String       @id @default(uuid())
+  lessonId String
+  titleEn  String
+  titleTa  String?
+  fileUrl  String
+  type     ResourceType
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@map("lesson_resources")
+}
+
+enum ResourceType {
+  PDF
+  NOTES
+  SLIDES
+}
+
+model LessonProgress {
+  id           String    @id @default(uuid())
+  userId       String
+  lessonId     String
+  watchPercent Int       @default(0)
+  completed    Boolean   @default(false)
+  completedAt  DateTime?
+  updatedAt    DateTime  @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id])
+  lesson Lesson @relation(fields: [lessonId], references: [id])
+
+  @@unique([userId, lessonId])
+  @@index([userId, lessonId])
+  @@map("lesson_progress")
+}
+
+model Bookmark {
+  id        String   @id @default(uuid())
+  userId    String
+  lessonId  String
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id])
+  lesson Lesson @relation(fields: [lessonId], references: [id])
+
+  @@unique([userId, lessonId])
+  @@index([userId])
+  @@map("bookmarks")
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// 11. INSTITUTIONS — optional B2B layer, built from
+// School_Onboarding_Form_Spec.docx. A school signs up through the public
+// landing-page form (School + one SchoolAdmin contact); Plan and Status
+// are set by the Lumen team after review, never self-assigned on the form.
+// Entirely optional for a retail (B2C) student — see StudentProfile above.
+// ═══════════════════════════════════════════════════════════════════════
+
+model School {
+  id          String      @id @default(uuid())
+  name        String
+  code        String      @unique // short unique identifier, e.g. "CPS001"
+  board       Board?
+  schoolType  SchoolType?
+  medium      Medium?
+  address     String?
+  district    String
+  state       String      @default("Tamil Nadu")
+  pincode     String?
+  maxStudents Int?
+
+  // Assigned by the Lumen team after reviewing the onboarding request —
+  // intentionally not present on the public signup form.
+  plan              SchoolPlan?
+  subscriptionStart DateTime?
+  subscriptionEnd   DateTime?
+  status            SchoolStatus @default(TRIAL)
+
+  createdAt DateTime @default(now())
+
+  admins   SchoolAdmin[]
+  students StudentProfile[]
+
+  @@index([status])
+  @@map("schools")
+}
+
+enum Board {
+  CBSE
+  ICSE
+  STATE_BOARD
+  IB
+  OTHER
+}
+
+enum SchoolType {
+  GOVERNMENT
+  PRIVATE
+  AIDED
+}
+
+enum Medium {
+  ENGLISH
+  TAMIL
+  TAMIL_ENGLISH
+  OTHER
+}
+
+enum SchoolPlan {
+  BASIC
+  STANDARD
+  PREMIUM
+}
+
+enum SchoolStatus {
+  TRIAL
+  ACTIVE
+  SUSPENDED
+  CANCELLED
+}
+
+model SchoolAdmin {
+  id          String       @id @default(uuid())
+  schoolId    String
+  fullName    String
+  designation Designation?
+  email       String
+  phone       String?
+  createdAt   DateTime     @default(now())
+
+  school School @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+
+  @@index([schoolId])
+  @@map("school_admins")
+}
+
+enum Designation {
+  PRINCIPAL
+  VICE_PRINCIPAL
+  ADMINISTRATOR
+  OTHER
+}

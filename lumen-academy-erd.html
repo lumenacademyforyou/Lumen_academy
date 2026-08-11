@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lumen Academy — Entity Relationship Diagram</title>
+<style>
+  :root{
+    --header-bg:#1c2b4a;
+    --header-bg2:#2b3f66;
+    --border:#c7cedb;
+    --row-alt:#f5f7fa;
+    --pk-color:#0f2f6b;
+    --fk-color:#8a4b00;
+    --line:#5a6373;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#eef1f6;
+    color:#1a1f2b;
+  }
+  .top{
+    padding:20px 28px 6px;
+  }
+  .top h1{
+    margin:0 0 4px;
+    font-size:20px;
+  }
+  .top p{
+    margin:0;
+    font-size:13px;
+    color:#5a6373;
+    max-width:900px;
+  }
+  .legend{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    padding:10px 28px 18px;
+    font-size:12px;
+    color:#3a4257;
+    flex-wrap:wrap;
+  }
+  .legend b{color:#1a1f2b;}
+  #canvas{
+    position:relative;
+    padding:10px 40px 80px;
+  }
+  .group{
+    margin-bottom:46px;
+  }
+  .group-title{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:#3a4257;
+    border-left:4px solid var(--header-bg2);
+    padding-left:10px;
+    margin-bottom:14px;
+  }
+  .tables{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    gap:46px 60px;
+  }
+  .tbl{
+    width:230px;
+    background:#fff;
+    border-radius:10px;
+    border:1px solid var(--border);
+    box-shadow:0 2px 6px rgba(20,30,60,.08);
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+  }
+  .tbl-header{
+    background:linear-gradient(180deg,var(--header-bg2),var(--header-bg));
+    color:#fff;
+    font-weight:700;
+    font-size:13px;
+    padding:8px 12px;
+    letter-spacing:.02em;
+  }
+  .row{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    padding:5px 12px;
+    font-size:11.5px;
+    border-top:1px solid #eef0f4;
+    line-height:1.3;
+  }
+  .row:nth-child(even){background:var(--row-alt);}
+  .fname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .ftype{color:#8b93a3;white-space:nowrap;font-size:10.5px;padding-top:1px;}
+  .pk .fname{font-weight:700;color:var(--pk-color);}
+  .pk .ftype{font-weight:700;}
+  .fk .fname{font-style:italic;color:var(--fk-color);}
+  .more{
+    padding:5px 12px;
+    font-size:10.5px;
+    color:#9aa1b0;
+    font-style:italic;
+    border-top:1px solid #eef0f4;
+  }
+  svg#lines{
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    pointer-events:none;
+  }
+  .swatch{display:inline-block;width:22px;height:2px;background:var(--line);vertical-align:middle;margin-right:4px;}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <h1>Lumen Academy — Core Data Model</h1>
+  <p>Generated from schema6.prisma. Tables are grouped the same way the schema file is organized (Identity, Syllabus, Question Bank, Tests, Attempts, AI cache, Analytics, Gamification, Study tools, LMS, Institutions). Each box shows the primary key, foreign keys, and the most relevant fields — not every column, to keep the diagram readable. <b>PK</b> = primary key, <i>FK</i> = foreign key.</p>
+</div>
+<div class="legend">
+  <span><span class="swatch"></span> relationship (line runs from the "one" side's PK to the "many" side's FK)</span>
+  <span>— tick = one</span>
+  <span>≺ crow's foot = many</span>
+</div>
+
+<div id="canvas">
+  <svg id="lines">
+    <defs>
+      <marker id="many" markerWidth="14" markerHeight="14" refX="11" refY="6" orient="auto">
+        <path d="M1,0 L11,6 L1,12 M1,6 L12,6" stroke="#5a6373" stroke-width="1.3" fill="none"/>
+      </marker>
+      <marker id="one" markerWidth="10" markerHeight="10" refX="4" refY="5" orient="auto">
+        <line x1="4" y1="0" x2="4" y2="10" stroke="#5a6373" stroke-width="1.3"/>
+      </marker>
+    </defs>
+  </svg>
+  <!-- groups get injected here by JS -->
+</div>
+
+<script>
+// ─── Table definitions (abridged fields — PK / FK / a few notable columns) ───
+const groups = [
+  { title: "1 · Identity & Profile", tables: [
+    { id:"User", pk:"id", fields:[
+      ["id","String","pk"], ["email","String?"], ["phone","String?"], ["passwordHash","String?"], ["role","Role"], ["displayName","String?"], ["targetExam","TargetExam"]
+    ], more:"locale, createdAt, updatedAt, deletedAt…" },
+    { id:"StudentProfile", pk:"userId", fields:[
+      ["userId","String","pk-fk", "User"], ["schoolId","String?","fk","School"],
+      ["fullName","String?"], ["class","Int?"], ["state","String?"]
+    ], more:"examYear, category, avatarUrl…" },
+    { id:"UserPreference", pk:"userId", fields:[
+      ["userId","String","pk-fk","User"], ["theme","Theme"], ["notificationsEnabled","Boolean"]
+    ]},
+    { id:"Streak", pk:"userId", fields:[
+      ["userId","String","pk-fk","User"], ["currentStreak","Int"], ["longestStreak","Int"]
+    ]},
+    { id:"AuditLog", pk:"id", fields:[
+      ["id","String","pk"], ["actorUserId","String?","fk","User"], ["action","AuditAction"], ["entityType","AuditEntity"]
+    ]}
+  ]},
+  { title: "2 · Syllabus Taxonomy", tables: [
+    { id:"Subject", pk:"id", fields:[
+      ["id","String","pk"], ["slug","String"], ["nameEn","String"], ["examTypes","TargetExam[]"]
+    ]},
+    { id:"Unit", pk:"id", fields:[
+      ["id","String","pk"], ["subjectId","String","fk","Subject"], ["slug","String"],
+      ["classLevel","Int?"], ["weightage","Decimal?"]
+    ]},
+    { id:"Topic", pk:"id", fields:[
+      ["id","String","pk"], ["unitId","String","fk","Unit"], ["slug","String"], ["nameEn","String"]
+    ]}
+  ]},
+  { title: "3 · Question Bank", tables: [
+    { id:"Question", pk:"id", fields:[
+      ["id","String","pk"], ["subjectId","String","fk","Subject"], ["unitId","String","fk","Unit"],
+      ["topicId","String?","fk","Topic"], ["reviewedById","String?","fk","User"],
+      ["type","QuestionType"], ["status","QStatus"]
+    ], more:"stemEn, marks, difficulty, numericalAnswer…" },
+    { id:"Option", pk:"id", fields:[
+      ["id","String","pk"], ["questionId","String","fk","Question"], ["label","String"], ["isCorrect","Boolean"]
+    ]}
+  ]},
+  { title: "4 · Tests (templates)", tables: [
+    { id:"Test", pk:"id", fields:[
+      ["id","String","pk"], ["ownerUserId","String?","fk","User"], ["sourceAttemptId","String?","fk","Attempt"],
+      ["name","String"], ["type","TestType"], ["examType","TargetExam"]
+    ]},
+    { id:"TestSection", pk:"id", fields:[
+      ["id","String","pk"], ["testId","String","fk","Test"], ["subjectId","String?","fk","Subject"],
+      ["name","String"], ["durationSeconds","Int?"]
+    ]},
+    { id:"TestQuestion", pk:"id", fields:[
+      ["id","String","pk"], ["testId","String","fk","Test"], ["sectionId","String?","fk","TestSection"],
+      ["questionId","String","fk","Question"], ["orderIndex","Int"]
+    ]}
+  ]},
+  { title: "5 · Attempts (instances)", tables: [
+    { id:"Attempt", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["testId","String","fk","Test"],
+      ["status","AttemptStatus"], ["score","Int?"]
+    ], more:"deadlineAt, accuracy, percentile, predictedAirRank…" },
+    { id:"AttemptSection", pk:"id", fields:[
+      ["id","String","pk"], ["attemptId","String","fk","Attempt"], ["sectionId","String","fk","TestSection"]
+    ]},
+    { id:"AttemptQuestion", pk:"id", fields:[
+      ["id","String","pk"], ["attemptId","String","fk","Attempt"], ["questionId","String","fk","Question"],
+      ["sectionId","String?","fk","TestSection"], ["isCorrect","Boolean?"]
+    ], more:"contentSnapshot, correctOptionIdsSnapshot…" }
+  ]},
+  { title: "6 · AI Explanation Cache", tables: [
+    { id:"AiExplanationCache", pk:"id", fields:[
+      ["id","String","pk"], ["questionId","String","fk","Question"], ["language","Locale"], ["model","String"]
+    ]}
+  ]},
+  { title: "7 · Analytics Rollup", tables: [
+    { id:"UnitMastery", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["unitId","String","fk","Unit"], ["accuracy","Int"]
+    ]}
+  ]},
+  { title: "8 · Gamification", tables: [
+    { id:"Badge", pk:"id", fields:[
+      ["id","String","pk"], ["name","String"], ["conditionType","BadgeCondition"]
+    ]},
+    { id:"UserBadge", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["badgeId","String","fk","Badge"]
+    ]},
+    { id:"DailyGoal", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["date","DateTime"], ["goalText","String"]
+    ]},
+    { id:"Notification", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["type","NotificationType"], ["readAt","DateTime?"]
+    ]}
+  ]},
+  { title: "9 · Study Tools", tables: [
+    { id:"PomodoroSession", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["subjectId","String?","fk","Subject"], ["mode","PomodoroMode"]
+    ]},
+    { id:"StudyPlan", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["examYear","Int"]
+    ]},
+    { id:"StudyPlanChapter", pk:"id", fields:[
+      ["id","String","pk"], ["planId","String","fk","StudyPlan"], ["unitId","String","fk","Unit"], ["completed","Boolean"]
+    ]},
+    { id:"RevisionNote", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["subjectId","String?","fk","Subject"], ["title","String"]
+    ]},
+    { id:"Flashcard", pk:"id", fields:[
+      ["id","String","pk"], ["subjectId","String","fk","Subject"], ["concept","String"]
+    ]},
+    { id:"UserFlashcardDaily", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["flashcardId","String","fk","Flashcard"], ["shownDate","DateTime"]
+    ]}
+  ]},
+  { title: "10 · LMS", tables: [
+    { id:"Lesson", pk:"id", fields:[
+      ["id","String","pk"], ["unitId","String","fk","Unit"], ["nameEn","String"]
+    ]},
+    { id:"LessonVideo", pk:"id", fields:[
+      ["id","String","pk"], ["lessonId","String","fk","Lesson"], ["language","Locale"], ["youtubeId","String"]
+    ]},
+    { id:"VideoTimestamp", pk:"id", fields:[
+      ["id","String","pk"], ["videoId","String","fk","LessonVideo"], ["label","String"], ["seconds","Int"]
+    ]},
+    { id:"LessonResource", pk:"id", fields:[
+      ["id","String","pk"], ["lessonId","String","fk","Lesson"], ["type","ResourceType"]
+    ]},
+    { id:"LessonProgress", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["lessonId","String","fk","Lesson"], ["watchPercent","Int"]
+    ]},
+    { id:"Bookmark", pk:"id", fields:[
+      ["id","String","pk"], ["userId","String","fk","User"], ["lessonId","String","fk","Lesson"]
+    ]}
+  ]},
+  { title: "11 · Institutions (B2B)", tables: [
+    { id:"School", pk:"id", fields:[
+      ["id","String","pk"], ["name","String"], ["code","String"], ["status","SchoolStatus"]
+    ]},
+    { id:"SchoolAdmin", pk:"id", fields:[
+      ["id","String","pk"], ["schoolId","String","fk","School"], ["fullName","String"], ["email","String"]
+    ]}
+  ]}
+];
+
+// ─── Relationships: [childTable, childFkField, parentTable] ───
+const rels = [
+  ["StudentProfile","userId","User"], ["StudentProfile","schoolId","School"],
+  ["UserPreference","userId","User"], ["Streak","userId","User"],
+  ["AuditLog","actorUserId","User"],
+  ["Unit","subjectId","Subject"], ["Topic","unitId","Unit"],
+  ["Question","subjectId","Subject"], ["Question","unitId","Unit"], ["Question","topicId","Topic"], ["Question","reviewedById","User"],
+  ["Option","questionId","Question"],
+  ["Test","ownerUserId","User"], ["Test","sourceAttemptId","Attempt"],
+  ["TestSection","testId","Test"], ["TestSection","subjectId","Subject"],
+  ["TestQuestion","testId","Test"], ["TestQuestion","sectionId","TestSection"], ["TestQuestion","questionId","Question"],
+  ["Attempt","userId","User"], ["Attempt","testId","Test"],
+  ["AttemptSection","attemptId","Attempt"], ["AttemptSection","sectionId","TestSection"],
+  ["AttemptQuestion","attemptId","Attempt"], ["AttemptQuestion","questionId","Question"], ["AttemptQuestion","sectionId","TestSection"],
+  ["AiExplanationCache","questionId","Question"],
+  ["UnitMastery","userId","User"], ["UnitMastery","unitId","Unit"],
+  ["UserBadge","userId","User"], ["UserBadge","badgeId","Badge"],
+  ["DailyGoal","userId","User"], ["Notification","userId","User"],
+  ["PomodoroSession","userId","User"], ["PomodoroSession","subjectId","Subject"],
+  ["StudyPlan","userId","User"], ["StudyPlanChapter","planId","StudyPlan"], ["StudyPlanChapter","unitId","Unit"],
+  ["RevisionNote","userId","User"], ["RevisionNote","subjectId","Subject"],
+  ["Flashcard","subjectId","Subject"],
+  ["UserFlashcardDaily","userId","User"], ["UserFlashcardDaily","flashcardId","Flashcard"],
+  ["Lesson","unitId","Unit"], ["LessonVideo","lessonId","Lesson"], ["VideoTimestamp","videoId","LessonVideo"],
+  ["LessonResource","lessonId","Lesson"], ["LessonProgress","userId","User"], ["LessonProgress","lessonId","Lesson"],
+  ["Bookmark","userId","User"], ["Bookmark","lessonId","Lesson"],
+  ["SchoolAdmin","schoolId","School"]
+];
+
+// ─── Render tables ───
+const canvas = document.getElementById("canvas");
+const svg = document.getElementById("lines");
+
+groups.forEach(g => {
+  const gEl = document.createElement("div");
+  gEl.className = "group";
+  const t = document.createElement("div");
+  t.className = "group-title";
+  t.textContent = g.title;
+  gEl.appendChild(t);
+  const tw = document.createElement("div");
+  tw.className = "tables";
+  g.tables.forEach(tbl => {
+    const box = document.createElement("div");
+    box.className = "tbl";
+    box.id = "tbl-" + tbl.id;
+    const h = document.createElement("div");
+    h.className = "tbl-header";
+    h.textContent = tbl.id;
+    box.appendChild(h);
+    tbl.fields.forEach(f => {
+      const [name, type, kind] = f;
+      const row = document.createElement("div");
+      row.className = "row" + (kind && kind.includes("pk") ? " pk" : "") + (kind && kind.includes("fk") ? " fk" : "");
+      row.id = "row-" + tbl.id + "-" + name;
+      const fn = document.createElement("span"); fn.className="fname"; fn.textContent=name;
+      const ft = document.createElement("span"); ft.className="ftype"; ft.textContent = kind && kind.includes("pk") ? "PK" : (kind && kind.includes("fk") ? "FK" : type);
+      row.appendChild(fn); row.appendChild(ft);
+      box.appendChild(row);
+    });
+    if (tbl.more) {
+      const m = document.createElement("div");
+      m.className = "more";
+      m.textContent = tbl.more;
+      box.appendChild(m);
+    }
+    tw.appendChild(box);
+  });
+  gEl.appendChild(tw);
+  canvas.appendChild(gEl);
+});
+
+// ─── Draw connector lines after layout ───
+function draw() {
+  while (svg.children.length > 1) svg.removeChild(svg.lastChild); // keep <defs>
+  const cRect = canvas.getBoundingClientRect();
+
+  rels.forEach(([childTable, fkField, parentTable]) => {
+    const childBox = document.getElementById("tbl-" + childTable);
+    const parentBox = document.getElementById("tbl-" + parentTable);
+    if (!childBox || !parentBox) return;
+    const childRow = document.getElementById("row-" + childTable + "-" + fkField) || childBox;
+    // find parent PK row (first .pk row in parent box)
+    const parentRow = parentBox.querySelector(".row.pk") || parentBox;
+
+    const cBoxR = childBox.getBoundingClientRect();
+    const pBoxR = parentBox.getBoundingClientRect();
+    const cRowR = childRow.getBoundingClientRect();
+    const pRowR = parentRow.getBoundingClientRect();
+
+    const goRight = pBoxR.left + pBoxR.width/2 < cBoxR.left + cBoxR.width/2;
+
+    const x1 = (goRight ? pBoxR.right : pBoxR.left) - cRect.left; // parent (one) exit
+    const y1 = pRowR.top + pRowR.height/2 - cRect.top;
+    const x2 = (goRight ? cBoxR.left : cBoxR.right) - cRect.left; // child (many) entry
+    const y2 = cRowR.top + cRowR.height/2 - cRect.top;
+
+    const dx = Math.max(40, Math.abs(x2-x1) * 0.35);
+    const path = document.createElementNS("http://www.w3.org/2000/svg","path");
+    const c1x = x1 + (goRight ? dx : -dx);
+    const c2x = x2 + (goRight ? -dx : dx);
+    path.setAttribute("d", `M${x1},${y1} C${c1x},${y1} ${c2x},${y2} ${x2},${y2}`);
+    path.setAttribute("fill","none");
+    path.setAttribute("stroke","#5a6373");
+    path.setAttribute("stroke-width","1.2");
+    path.setAttribute("opacity","0.75");
+    path.setAttribute("marker-start","url(#one)");
+    path.setAttribute("marker-end","url(#many)");
+    svg.appendChild(path);
+  });
+
+  // size svg/canvas to content
+  const full = canvas.scrollHeight;
+  svg.setAttribute("height", full);
+  canvas.style.minHeight = full + "px";
+}
+
+window.addEventListener("load", () => requestAnimationFrame(draw));
+window.addEventListener("resize", () => requestAnimationFrame(draw));
+</script>
+</body>
+</html>

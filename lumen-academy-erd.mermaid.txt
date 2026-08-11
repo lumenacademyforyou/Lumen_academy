@@ -1,0 +1,304 @@
+erDiagram
+    %% ── 1. Identity & Profile ─────────────────────────────
+    User {
+        string id PK
+        string email UK
+        string phone
+        string passwordHash
+        Role role
+        string displayName
+        TargetExam targetExam
+    }
+    StudentProfile {
+        string userId PK_FK
+        string schoolId FK
+        string fullName
+        int class
+        string state
+    }
+    UserPreference {
+        string userId PK_FK
+        Theme theme
+        boolean notificationsEnabled
+    }
+    Streak {
+        string userId PK_FK
+        int currentStreak
+        int longestStreak
+    }
+    AuditLog {
+        string id PK
+        string actorUserId FK
+        AuditAction action
+        AuditEntity entityType
+    }
+
+    %% ── 2. Syllabus Taxonomy ──────────────────────────────
+    Subject {
+        string id PK
+        string slug
+        string nameEn
+    }
+    Unit {
+        string id PK
+        string subjectId FK
+        string slug
+        int classLevel
+    }
+    Topic {
+        string id PK
+        string unitId FK
+        string slug
+        string nameEn
+    }
+
+    %% ── 3. Question Bank ──────────────────────────────────
+    Question {
+        string id PK
+        string subjectId FK
+        string unitId FK
+        string topicId FK
+        string reviewedById FK
+        QuestionType type
+        QStatus status
+    }
+    Option {
+        string id PK
+        string questionId FK
+        string label
+        boolean isCorrect
+    }
+
+    %% ── 4. Tests (templates) ──────────────────────────────
+    Test {
+        string id PK
+        string ownerUserId FK
+        string sourceAttemptId FK
+        string name
+        TestType type
+        TargetExam examType
+    }
+    TestSection {
+        string id PK
+        string testId FK
+        string subjectId FK
+        string name
+        int durationSeconds
+    }
+    TestQuestion {
+        string id PK
+        string testId FK
+        string sectionId FK
+        string questionId FK
+        int orderIndex
+    }
+
+    %% ── 5. Attempts (instances) ───────────────────────────
+    Attempt {
+        string id PK
+        string userId FK
+        string testId FK
+        AttemptStatus status
+        int score
+    }
+    AttemptSection {
+        string id PK
+        string attemptId FK
+        string sectionId FK
+    }
+    AttemptQuestion {
+        string id PK
+        string attemptId FK
+        string questionId FK
+        string sectionId FK
+        boolean isCorrect
+    }
+
+    %% ── 6. AI Explanation Cache ───────────────────────────
+    AiExplanationCache {
+        string id PK
+        string questionId FK
+        Locale language
+        string model
+    }
+
+    %% ── 7. Analytics Rollup ───────────────────────────────
+    UnitMastery {
+        string id PK
+        string userId FK
+        string unitId FK
+        int accuracy
+    }
+
+    %% ── 8. Gamification ───────────────────────────────────
+    Badge {
+        string id PK
+        string name
+        BadgeCondition conditionType
+    }
+    UserBadge {
+        string id PK
+        string userId FK
+        string badgeId FK
+    }
+    DailyGoal {
+        string id PK
+        string userId FK
+        datetime date
+        string goalText
+    }
+    Notification {
+        string id PK
+        string userId FK
+        NotificationType type
+        datetime readAt
+    }
+
+    %% ── 9. Study Tools ────────────────────────────────────
+    PomodoroSession {
+        string id PK
+        string userId FK
+        string subjectId FK
+        PomodoroMode mode
+    }
+    StudyPlan {
+        string id PK
+        string userId FK
+        int examYear
+    }
+    StudyPlanChapter {
+        string id PK
+        string planId FK
+        string unitId FK
+        boolean completed
+    }
+    RevisionNote {
+        string id PK
+        string userId FK
+        string subjectId FK
+        string title
+    }
+    Flashcard {
+        string id PK
+        string subjectId FK
+        string concept
+    }
+    UserFlashcardDaily {
+        string id PK
+        string userId FK
+        string flashcardId FK
+        datetime shownDate
+    }
+
+    %% ── 10. LMS ───────────────────────────────────────────
+    Lesson {
+        string id PK
+        string unitId FK
+        string nameEn
+    }
+    LessonVideo {
+        string id PK
+        string lessonId FK
+        Locale language
+        string youtubeId
+    }
+    VideoTimestamp {
+        string id PK
+        string videoId FK
+        string label
+        int seconds
+    }
+    LessonResource {
+        string id PK
+        string lessonId FK
+        ResourceType type
+    }
+    LessonProgress {
+        string id PK
+        string userId FK
+        string lessonId FK
+        int watchPercent
+    }
+    Bookmark {
+        string id PK
+        string userId FK
+        string lessonId FK
+    }
+
+    %% ── 11. Institutions (B2B) ────────────────────────────
+    School {
+        string id PK
+        string name
+        string code
+        SchoolStatus status
+    }
+    SchoolAdmin {
+        string id PK
+        string schoolId FK
+        string fullName
+        string email
+    }
+
+    %% ── Relationships ─────────────────────────────────────
+    User ||--o| StudentProfile : "has"
+    School ||--o{ StudentProfile : "enrolls"
+    User ||--o| UserPreference : "has"
+    User ||--o| Streak : "has"
+    User ||--o{ AuditLog : "performs"
+
+    Subject ||--o{ Unit : "contains"
+    Unit ||--o{ Topic : "contains"
+
+    Subject ||--o{ Question : "categorizes"
+    Unit ||--o{ Question : "categorizes"
+    Topic ||--o{ Question : "categorizes"
+    User ||--o{ Question : "reviews"
+    Question ||--o{ Option : "has"
+
+    User ||--o{ Test : "owns"
+    Attempt ||--o{ Test : "generates"
+    Test ||--o{ TestSection : "has"
+    Subject ||--o{ TestSection : "covers"
+    Test ||--o{ TestQuestion : "includes"
+    TestSection ||--o{ TestQuestion : "includes"
+    Question ||--o{ TestQuestion : "used_in"
+
+    User ||--o{ Attempt : "takes"
+    Test ||--o{ Attempt : "attempted_as"
+    Attempt ||--o{ AttemptSection : "has"
+    TestSection ||--o{ AttemptSection : "tracked_by"
+    Attempt ||--o{ AttemptQuestion : "has"
+    Question ||--o{ AttemptQuestion : "answered_in"
+    TestSection ||--o{ AttemptQuestion : "grouped_by"
+
+    Question ||--o{ AiExplanationCache : "explained_by"
+
+    User ||--o{ UnitMastery : "tracks"
+    Unit ||--o{ UnitMastery : "tracked_in"
+
+    User ||--o{ UserBadge : "earns"
+    Badge ||--o{ UserBadge : "awarded_as"
+    User ||--o{ DailyGoal : "sets"
+    User ||--o{ Notification : "receives"
+
+    User ||--o{ PomodoroSession : "runs"
+    Subject ||--o{ PomodoroSession : "focused_on"
+    User ||--o{ StudyPlan : "creates"
+    StudyPlan ||--o{ StudyPlanChapter : "has"
+    Unit ||--o{ StudyPlanChapter : "planned_in"
+    User ||--o{ RevisionNote : "writes"
+    Subject ||--o{ RevisionNote : "about"
+    Subject ||--o{ Flashcard : "has"
+    User ||--o{ UserFlashcardDaily : "shown"
+    Flashcard ||--o{ UserFlashcardDaily : "shown_as"
+
+    Unit ||--o{ Lesson : "has"
+    Lesson ||--o{ LessonVideo : "has"
+    LessonVideo ||--o{ VideoTimestamp : "has"
+    Lesson ||--o{ LessonResource : "has"
+    User ||--o{ LessonProgress : "tracks"
+    Lesson ||--o{ LessonProgress : "tracked_in"
+    User ||--o{ Bookmark : "saves"
+    Lesson ||--o{ Bookmark : "saved_as"
+
+    School ||--o{ SchoolAdmin : "has"
