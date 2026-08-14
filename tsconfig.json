@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["prisma/**/*.ts"]
+  "include": ["prisma/**/*.ts", "lib/**/*.ts", "scripts/**/*.ts", "tests/**/*.ts", "app/**/*.ts"]
 }
