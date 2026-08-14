@@ -10,8 +10,7 @@ import { LearningPathTimeline } from "../dashboard/LearningPathTimeline";
 import { PomodoroTimer } from "../dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../dashboard/DailyFlashcard";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
-import { auth } from "../../firebase";
-import { saveStudentProfile, StudentProfile } from "../../supabase";
+import { saveStudentProfile, StudentProfile, supabase } from "../../supabase";
 import { ProfileCard } from "./ProfileCard";
 
 interface RecommendedMock {
@@ -123,8 +122,14 @@ useEffect(() => {
 
   const updateStreak = async () => {
     try {
-      const userId = auth?.currentUser?.uid || "demo_user";
-      const sessions = await fetchStudySessions(userId);
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!user) {
+        if (isMounted) setStudyStreak(0);
+        return;
+      }
+      const sessions = await fetchStudySessions(user.id);
 
       if (isMounted) {
         setStudyStreak(calculateStudyStreak(sessions));

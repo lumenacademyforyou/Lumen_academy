@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "C.Santhosh Kumar, Prince.A, Deepan.B",
   "scripts": {
     "dev": "vite",
     "dev:api": "tsx watch backend/server.ts",
@@ -29,7 +30,6 @@
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
-    "firebase": "^12.17.0",
     "helmet": "^8.3.0",
     "html2canvas": "^1.4.1",
     "jimp": "^1.6.1",

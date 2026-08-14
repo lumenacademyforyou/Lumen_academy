@@ -3,15 +3,16 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 
 import { ChapterGoal } from "../../../types";
-import { 
-  fetchUserTasks, 
-  saveUserTask, 
-  deleteUserTask, 
-  fetchUserNotes, 
-  saveUserNote, 
-  deleteUserNote, 
-  UserTask, 
-  UserNote 
+import {
+  fetchUserTasks,
+  saveUserTask,
+  deleteUserTask,
+  fetchUserNotes,
+  saveUserNote,
+  deleteUserNote,
+  UserTask,
+  UserNote,
+  supabase
 } from "../../supabase";
 
 interface StudyPlanProps {
@@ -71,23 +72,28 @@ export default function StudyPlanView({
   const [newNoteContent, setNewNoteContent] = useState("");
   const [editingNoteId, setEditingNoteId] = useState<string | null>(null);
 
-  const userId = studentName || "Aspirant";
+  const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
+    supabase.auth.getUser().then(({ data: { user } }) => setUserId(user?.id ?? null));
+  }, []);
+
+  useEffect(() => {
+    if (!userId) return;
     fetchUserTasks(userId).then(setCustomTasks);
     fetchUserNotes(userId).then(setCustomNotes);
   }, [userId]);
 
   const handleAddTask = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTaskTitle.trim()) return;
+    if (!newTaskTitle.trim() || !userId) return;
     const task = await saveUserTask({
       user_id: userId,
       title: newTaskTitle.trim(),
       subject: newTaskSubject,
       completed: false
     });
-    setCustomTasks(prev => [task, ...prev.filter(t => t.id !== task.id)]);
+    if (task) setCustomTasks(prev => [task, ...prev.filter(t => t.id !== task.id)]);
     setNewTaskTitle("");
   };
 
@@ -96,17 +102,17 @@ export default function StudyPlanView({
       ...task,
       completed: !task.completed
     });
-    setCustomTasks(prev => prev.map(t => t.id === updated.id ? updated : t));
+    if (updated) setCustomTasks(prev => prev.map(t => t.id === updated.id ? updated : t));
   };
 
   const handleDeleteTask = async (taskId: string) => {
-    await deleteUserTask(taskId, userId);
+    await deleteUserTask(taskId);
     setCustomTasks(prev => prev.filter(t => t.id !== taskId));
   };
 
   const handleSaveNote = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newNoteTitle.trim() || !newNoteContent.trim()) return;
+    if (!newNoteTitle.trim() || !newNoteContent.trim() || !userId) return;
     const note = await saveUserNote({
       id: editingNoteId || undefined,
       user_id: userId,
@@ -115,18 +121,20 @@ export default function StudyPlanView({
       title: newNoteTitle.trim(),
       content: newNoteContent.trim()
     });
-    setCustomNotes(prev => {
-      const exists = prev.some(n => n.id === note.id);
-      if (exists) return prev.map(n => n.id === note.id ? note : n);
-      return [note, ...prev];
-    });
+    if (note) {
+      setCustomNotes(prev => {
+        const exists = prev.some(n => n.id === note.id);
+        if (exists) return prev.map(n => n.id === note.id ? note : n);
+        return [note, ...prev];
+      });
+    }
     setNewNoteTitle("");
     setNewNoteContent("");
     setEditingNoteId(null);
   };
 
   const handleDeleteNote = async (noteId: string) => {
-    await deleteUserNote(noteId, userId);
+    await deleteUserNote(noteId);
     setCustomNotes(prev => prev.filter(n => n.id !== noteId));
   };
 

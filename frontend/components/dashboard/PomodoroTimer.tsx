@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../../contexts/LanguageContext";
-import { 
-  saveStudySession, 
-  fetchStudySessions, 
-  deleteStudySession, 
-  calculateSessionStats, 
-  StudySession 
+import { supabase } from "../../supabase";
+import {
+  saveStudySession,
+  fetchStudySessions,
+  deleteStudySession,
+  calculateSessionStats,
+  StudySession
 } from "../../lib/studySessionService";
 
 interface PomodoroTimerProps {
   studentName?: string;
-  userId?: string;
 }
 
 type TimerMode = "focus" | "shortBreak" | "longBreak";
@@ -47,10 +47,15 @@ const SUBJECTS = [
 ];
 
 export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
-  studentName = "Student",
-  userId = "demo_user"
+  studentName = "Student"
 }) => {
   const { t } = useLanguage();
+
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data: { user } }) => setUserId(user?.id ?? null));
+  }, []);
 
   // Mode and Timer Settings
   const [mode, setMode] = useState<TimerMode>("focus");
@@ -103,15 +108,15 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
     }
   };
 
-  // Load session logs on mount
+  // Load session logs once we know who's signed in
   useEffect(() => {
-    loadSessions();
+    if (userId) loadSessions(userId);
   }, [userId]);
 
-  const loadSessions = async () => {
+  const loadSessions = async (uid: string) => {
     setIsLoadingHistory(true);
     try {
-      const data = await fetchStudySessions(userId);
+      const data = await fetchStudySessions(uid);
       setSessions(data);
     } catch (err) {
       console.error("Failed to fetch study sessions:", err);
@@ -189,6 +194,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
 
   // Save Session to Database
   const handleSaveLog = async () => {
+    if (!userId) return;
     setIsSaving(true);
     try {
       const saved = await saveStudySession({
@@ -266,7 +272,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
               </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              {t("Track active revision sessions and log focus intervals directly to Firestore")}
+              {t("Track active revision sessions and log focus intervals to your session history")}
             </p>
           </div>
         </div>
@@ -528,7 +534,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
                   database
                 </span>
                 <h4 className="text-sm font-bold text-[#00243B] dark:text-white">
-                  Logged Study Sessions (Firestore & Local DB)
+                  Logged Study Sessions
                 </h4>
               </div>
               <span className="text-xs text-slate-500 font-medium">

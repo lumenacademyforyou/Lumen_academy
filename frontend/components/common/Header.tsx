@@ -3,7 +3,6 @@ import LumenLogo from "./LumenLogo";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
-import { auth } from "../../firebase";
 import { saveStudentProfile, fetchStudentProfile, StudentProfile, supabase } from "../../supabase";
 import NotificationBell from "./NotificationBell";
 
@@ -99,8 +98,14 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
   const updateStreak = async () => {
     try {
-      const userId = auth?.currentUser?.uid || "demo_user";
-      const sessions = await fetchStudySessions(userId);
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (!user) {
+        setStudyStreak(0);
+        return;
+      }
+      const sessions = await fetchStudySessions(user.id);
       setStudyStreak(calculateStudyStreak(sessions));
     } catch (err) {
       console.error("Failed to update streak:", err);
@@ -124,8 +129,6 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
       if (!user) return;
 
-console.log("AUTH USER ID:", user?.id);
-console.log("AUTH EMAIL:", user?.email);
       const prof = await fetchStudentProfile(user.id);
 
       if (prof) {
@@ -181,23 +184,6 @@ const handleSaveProfile = async (e: React.FormEvent) => {
     }, 1200);
   }
 };
-
-  // const handleSaveProfile = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (editedName.trim()) {
-  //     setStudentName(editedName.trim());
-  //     await saveStudentProfile({
-  //       display_name: editedName.trim(),
-  //       target_stream: targetStream,
-  //       preferred_subjects: targetStream === "JEE Aspirant" ? ["Physics", "Chemistry", "Mathematics"] : ["Physics", "Chemistry", "Biology"]
-  //     });
-  //   }
-  //   setProfileSuccessMsg("Profile updated successfully!");
-  //   setTimeout(() => {
-  //     setProfileSuccessMsg("");
-  //     setShowProfileModal(false);
-  //   }, 1200);
-  // };
 
   const handleSaveSettings = (e: React.FormEvent) => {
     e.preventDefault();

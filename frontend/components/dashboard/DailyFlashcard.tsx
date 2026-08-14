@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from "../../contexts/LanguageContext";
 import { motion } from "motion/react";
-import { db } from "../../firebase";
-import { collection, getDocs, setDoc, doc } from 'firebase/firestore';
 
 interface Flashcard {
   id: string;
@@ -13,7 +11,7 @@ interface Flashcard {
   formula?: string;
 }
 
-const SEED_FLASHCARDS = [
+const FLASHCARDS: Flashcard[] = [
   {
     id: "fc1",
     subject: "Physics",
@@ -58,46 +56,10 @@ export function DailyFlashcard() {
   const { t } = useLanguage();
   const [flashcard, setFlashcard] = useState<Flashcard | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function loadFlashcard() {
-      try {
-        const querySnapshot = await getDocs(collection(db, 'flashcards'));
-        let cards = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Flashcard));
-        
-        if (cards.length === 0) {
-          try {
-            for (const card of SEED_FLASHCARDS) {
-              await setDoc(doc(db, 'flashcards', card.id), card);
-            }
-          } catch (e) {
-            console.warn("Could not seed flashcards to DB:", e);
-          }
-          cards = SEED_FLASHCARDS;
-        }
-
-        const randomCard = cards[Math.floor(Math.random() * cards.length)];
-        setFlashcard(randomCard);
-      } catch (e) {
-        console.error("Error loading flashcard", e);
-        // Fallback to local seed if DB fails (e.g. permissions)
-        const randomCard = SEED_FLASHCARDS[Math.floor(Math.random() * SEED_FLASHCARDS.length)];
-        setFlashcard(randomCard);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadFlashcard();
+    setFlashcard(FLASHCARDS[Math.floor(Math.random() * FLASHCARDS.length)]);
   }, []);
-
-  if (loading) {
-    return (
-      <div className="bg-white dark:bg-[var(--navy)] rounded-[32px] p-8 shadow-sm border border-slate-200 dark:border-slate-700 h-[380px] flex items-center justify-center animate-pulse">
-        <div className="w-8 h-8 rounded-full border-4 border-[var(--teal)] border-t-transparent animate-spin"></div>
-      </div>
-    );
-  }
 
   if (!flashcard) return null;
 
