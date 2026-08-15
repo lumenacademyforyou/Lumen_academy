@@ -7,8 +7,14 @@ Thumbs.db
 *.log
 .env*
 !.env.example
-CLAUDE
 /backend/generated/prisma
 
 test-results/
 playwright-report/
+
+# Claude Code
+CLAUDE.md
+.claude/settings.local.json
+
+# Lumen DB Claude Code Kit (reference/tooling, not project source)
+lumen-db-claude-code-kit/

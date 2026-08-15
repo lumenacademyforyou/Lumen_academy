@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Question } from "../../../types";
-import { BIOLOGY_QUESTIONS } from "../../../database/questions";
+import { BIOLOGY_QUESTIONS } from "../../../database_sample/questions";
 import LumenLogo from "../common/LumenLogo";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../../contexts/LanguageContext";

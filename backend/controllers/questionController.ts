@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { z } from "zod";
-import { ALL_QUESTIONS, BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "../../database";
+import { ALL_QUESTIONS, BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "../../database_sample/index.js";
 import { prisma } from "../db.js";
 import { AppError } from "../middleware/errorHandler.js";
 

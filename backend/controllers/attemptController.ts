@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ALL_QUESTIONS } from "../../database";
+import { ALL_QUESTIONS } from "../../database_sample";
 
 export const submitAttempt = (req: Request, res: Response): void => {
   const { attemptId, userAnswers, durationSeconds } = req.body || {};

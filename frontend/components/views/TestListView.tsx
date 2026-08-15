@@ -3,7 +3,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../common/AnimatedCounter";
 import { TestAttempt, Question } from "../../../types";
-import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS, ALL_QUESTIONS } from "../../../database/questions";
+import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS, ALL_QUESTIONS } from "../../../database_sample/questions";
 
 interface TestListViewProps {
   attempts: TestAttempt[];

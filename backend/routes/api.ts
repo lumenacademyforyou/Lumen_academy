@@ -10,6 +10,11 @@ import { AppError } from "../middleware/errorHandler.js";
 import { getProfile } from "../services/userProfile.service.js";
 import testsRouter from "./tests.routes.js";
 import aiRouter from "./ai.routes.js";
+import catalogRouter from "./catalog.routes.js";
+import contentRouter from "./content.routes.js";
+import coreRouter from "./core.routes.js";
+import assessRouter from "./assess.routes.js";
+import learnRouter from "./learn.routes.js";
 
 const router = Router();
 
@@ -30,6 +35,21 @@ router.get("/me", requireAuth, async (req: Request, res: Response, next) => {
 
 // Test Attempt Endpoints (Prisma-backed, replaces /submit-attempt as it's migrated)
 router.use("/tests", testsRouter);
+
+// Catalog Endpoints (db/catalog/-backed — exam, subject, syllabus, pattern data)
+router.use("/catalog", catalogRouter);
+
+// Content Endpoints (db/content/-backed, read-only — see content.routes.ts)
+router.use("/content", contentRouter);
+
+// Core Endpoints (db/core/-backed, ownership-scoped — see core.routes.ts)
+router.use("/core", coreRouter);
+
+// Assess Endpoints (db/assess/-backed, ownership-scoped — see assess.routes.ts)
+router.use("/assess", assessRouter);
+
+// Learn Endpoints (db/learn/-backed, ownership-scoped — see learn.routes.ts)
+router.use("/learn", learnRouter);
 
 // Provider-agnostic AI explanation endpoint (POST /ai/explain). The legacy
 // /ai/study-plan and /ai/evaluate-attempt routes below still call Gemini

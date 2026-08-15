@@ -1682,7 +1682,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import LumenLogo from "../common/LumenLogo";
 import StudyPlanView from "./StudyPlanView";
-import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../../../database/syllabusData";
+import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../../../database_sample/syllabusData";
 import {
   sendEmailOtp,
   sendPhoneOtp,

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
-import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../../../database/syllabusData";
+import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../../../database_sample/syllabusData";
 import { Question } from "../../../types";
-import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "../../../database/questions";
+import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "../../../database_sample/questions";
 
 interface CoursesViewProps {
   studentName: string;
