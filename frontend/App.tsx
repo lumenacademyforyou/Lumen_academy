@@ -43,6 +43,22 @@ import {
   type AttemptResult,
   type ResultQuestion,
 } from "./lib/testApi";
+// STAGE 7: parallel client for the newer db/assess-backed flow
+// (/api/assess/attempts/*), kept separate from lib/testApi.ts above (which
+// targets the older, still-live Prisma /api/tests/* routes). Gated by
+// VITE_USE_REAL_API — see onQuickDemoFlowC below.
+import {
+  getSyllabus as getRealSyllabus,
+  startAttempt as startAssessAttempt,
+  getPaper as getAssessPaper,
+  toLegacyQuestions as toLegacyQuestionsFromPaper,
+  batchSaveResponses as batchSaveAssessResponses,
+  submitAttempt as submitAssessAttempt,
+  getScorecard as getAssessScorecard,
+  type QuestionIdMapEntry as AssessQuestionIdMapEntry,
+} from "./lib/assessApi";
+
+const USE_REAL_API = import.meta.env.VITE_USE_REAL_API === "true";
 
 
 
@@ -141,6 +157,44 @@ function buildHonestAttemptFromResult(
     laggingTopics,
     questionTimeData,
     averageTimePerQuestionSeconds: questionTimeData.length > 0 ? Math.round(totalTimeSpentSeconds / questionTimeData.length) : 0,
+  };
+}
+
+// STAGE 7: simpler counterpart to buildHonestAttemptFromResult above, for
+// the newer /api/assess/attempts/:id/scorecard endpoint. That endpoint only
+// returns aggregate counts (no per-question correctness/explanation
+// breakdown — building that needs a separate endpoint this pass didn't add),
+// so laggingTopics/questionTimeData are honestly empty here rather than
+// fabricated from data that doesn't exist.
+function buildHonestAttemptFromAssessScorecard(
+  scorecard: { obtainedMarks: number; correctCount: number; wrongCount: number; skippedCount: number },
+  attemptTitle: string,
+  previousAttempts: TestAttempt[]
+): TestAttempt {
+  const accuracy = Math.round((scorecard.correctCount / (scorecard.correctCount + scorecard.wrongCount || 1)) * 100);
+  const previous = previousAttempts[0];
+  const baselineBreakdown = previous?.subjectBreakdown ?? {
+    Physics: { score: 0, growth: 0, status: "Average" as const },
+    Chemistry: { score: 0, growth: 0, status: "Average" as const },
+    Biology: { score: 0, growth: 0, status: "Average" as const },
+  };
+
+  return {
+    id: `assess_${Date.now()}`,
+    title: attemptTitle,
+    date: new Date().toLocaleDateString("en-GB"),
+    totalScore: scorecard.obtainedMarks,
+    accuracy,
+    percentile: previous?.percentile ?? 0,
+    correctAnswers: scorecard.correctCount,
+    incorrectAnswers: scorecard.wrongCount,
+    skippedAnswers: scorecard.skippedCount,
+    timeTakenMinutes: 0,
+    subjectBreakdown: baselineBreakdown,
+    aiRecommendation: { topics: [], potentialGain: scorecard.wrongCount * 4, focusAreas: [] },
+    laggingTopics: [],
+    questionTimeData: [],
+    averageTimePerQuestionSeconds: 0,
   };
 }
 
@@ -354,6 +408,13 @@ useEffect(() => {
   const [activeApiAttemptId, setActiveApiAttemptId] = useState<string | null>(null);
   const [apiQuestionIdMap, setApiQuestionIdMap] = useState<Map<number, QuestionIdMapEntry>>(new Map());
 
+  // STAGE 7: same bridge pattern as activeApiAttemptId above, for the newer
+  // db/assess-backed flow. Kept as a separate id/map rather than reusing the
+  // old ones — the two APIs key responses differently (question_id vs
+  // test_question_id), so merging the types would be misleading.
+  const [activeAssessAttemptId, setActiveAssessAttemptId] = useState<string | null>(null);
+  const [assessQuestionIdMap, setAssessQuestionIdMap] = useState<Map<number, AssessQuestionIdMapEntry>>(new Map());
+
   // Interactive Chapter Checklist State
   const [chapterGoals, setChapterGoals] = useState<ChapterGoal[]>([
     { id: "g1", subject: "Physics", chapter: "Mechanics & Rotational Dynamics", highYieldTag: "32 Marks", hoursNeeded: 12, completed: false },
@@ -451,11 +512,58 @@ useEffect(() => {
     }
   };
 
+  // STAGE 7: counterpart to handleCompleteRealAttempt above, for the newer
+  // db/assess-backed flow. Batch-saves answers (keyed by test_question_id,
+  // not question_id), submits (server scores synchronously — see
+  // db/assess/test/attempt/attempt-flow.ts), then reads the real scorecard.
+  const handleCompleteAssessAttempt = async (
+    attemptId: string,
+    selectedAnswers: { [key: number]: number },
+    timeMap: Record<number, number>
+  ) => {
+    try {
+      const responses = Array.from(assessQuestionIdMap.entries())
+        .filter(([legacyId]) => selectedAnswers[legacyId] !== undefined)
+        .map(([legacyId, entry]) => {
+          const optionIndex = selectedAnswers[legacyId];
+          const optionId = entry.optionIdByIndex[optionIndex] ?? null;
+          return {
+            testQuestionId: entry.testQuestionId,
+            option_id: optionId,
+            time_spent_seconds: Math.round((timeMap[legacyId] || 0)),
+          };
+        });
+
+      if (responses.length > 0) {
+        await batchSaveAssessResponses(attemptId, responses);
+      }
+      const submitRes = await submitAssessAttempt(attemptId);
+
+      const newAttempt = buildHonestAttemptFromAssessScorecard(
+        submitRes.data.scorecard,
+        customTestConfig ? customTestConfig.title : "Real API Test",
+        attempts
+      );
+      setAttempts((prev) => [newAttempt, ...prev]);
+      setActiveAttemptId(newAttempt.id);
+      setActiveAssessAttemptId(null);
+      setAssessQuestionIdMap(new Map());
+      setCurrentScreen("evaluating");
+    } catch (err) {
+      console.error("Failed to submit assess API attempt:", err);
+      alert("Something went wrong submitting your test. Please check your connection and try again.");
+    }
+  };
+
   const handleCompleteTest = async (
     selectedAnswers: { [key: number]: number },
     flaggedQuestions: number[],
     timeMap: Record<number, number>
   ) => {
+    if (activeAssessAttemptId) {
+      await handleCompleteAssessAttempt(activeAssessAttemptId, selectedAnswers, timeMap);
+      return;
+    }
     if (activeApiAttemptId) {
       await handleCompleteRealAttempt(activeApiAttemptId, selectedAnswers, timeMap);
       return;
@@ -646,6 +754,46 @@ useEffect(() => {
           setActiveAttemptId("mock_12");
           setCurrentScreen("system_check");
 
+          if (USE_REAL_API) {
+            // STAGE 7: db/assess-backed real flow (VITE_USE_REAL_API=true).
+            // Old /api/tests/* demo path below stays reachable by flipping
+            // the flag off — "old path is recoverable" per the task spec.
+            (async () => {
+              try {
+                const testId = import.meta.env.VITE_DEMO_TEST_ID;
+                if (!testId) {
+                  console.warn("VITE_USE_REAL_API is on but VITE_DEMO_TEST_ID is not set — nothing to start.");
+                  return;
+                }
+                // Needs a real Supabase session before any Bearer-authed
+                // call — same as the old path below, which calls this too.
+                await ensureDemoSession();
+
+                // Proves the real syllabus endpoint works end-to-end; not
+                // rendered anywhere yet (see STOP GATE 7 for why).
+                const syllabus = await getRealSyllabus();
+                console.info(`[assess API] GET /syllabus -> ${syllabus.units.length} real units`);
+
+                const attempt = await startAssessAttempt(testId);
+                const attemptId = attempt.data.attempt_id;
+                const paper = await getAssessPaper(attemptId);
+                const { legacy, idMap } = toLegacyQuestionsFromPaper(paper.data);
+                setAssessQuestionIdMap(idMap);
+                setActiveAssessAttemptId(attemptId);
+                setCustomTestConfig({
+                  title: "Real API Test (assess)",
+                  questions: legacy,
+                  durationSeconds: legacy.length * 60,
+                  mode: "standard",
+                  subject: "Biology",
+                });
+              } catch (err) {
+                console.warn("Could not start a real assess-API attempt, using local mock questions instead:", err);
+              }
+            })();
+            return;
+          }
+
           // Fire-and-forget: start a real, server-backed attempt in the
           // background. If it fails (e.g. no database configured yet), the
           // demo falls back to the local mock question pool below.
@@ -702,6 +850,8 @@ useEffect(() => {
             setCustomTestConfig(null);
             setActiveApiAttemptId(null);
             setApiQuestionIdMap(new Map());
+            setActiveAssessAttemptId(null);
+            setAssessQuestionIdMap(new Map());
             setCurrentScreen("portal");
           }}
           onCompleteTest={handleCompleteTest}
@@ -763,6 +913,8 @@ useEffect(() => {
                       setCustomTestConfig(null);
                       setActiveApiAttemptId(null);
                       setApiQuestionIdMap(new Map());
+                      setActiveAssessAttemptId(null);
+                      setAssessQuestionIdMap(new Map());
                       setCurrentScreen("portal");
                     }}
                   />

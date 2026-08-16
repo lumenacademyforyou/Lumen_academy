@@ -1,35 +1,23 @@
-import { Request, Response } from "express";
-import { ALL_QUESTIONS } from "../../database_sample";
+import { NextFunction, Request, Response } from "express";
+import { AppError } from "../middleware/errorHandler.js";
 
-export const submitAttempt = (req: Request, res: Response): void => {
-  const { attemptId, userAnswers, durationSeconds } = req.body || {};
-  let totalScore = 0;
-  let correctCount = 0;
-  let incorrectCount = 0;
-  let skippedCount = 0;
-
-  ALL_QUESTIONS.forEach((q) => {
-    const userSelected = userAnswers?.[q.id];
-    if (userSelected === undefined || userSelected === null) {
-      skippedCount++;
-    } else if (userSelected === q.correctAnswerIndex) {
-      correctCount++;
-      totalScore += 4;
-    } else {
-      incorrectCount++;
-      totalScore -= 1;
-    }
-  });
-
-  res.json({
-    status: "success",
-    attemptId: attemptId || `attempt_${Date.now()}`,
-    score: totalScore,
-    maxScore: ALL_QUESTIONS.length * 4,
-    correctCount,
-    incorrectCount,
-    skippedCount,
-    durationSeconds: durationSeconds || 0,
-    evaluatedAt: new Date().toISOString(),
-  });
+// Retired. The old mock version scored a client-supplied answer map against
+// database_sample/questions.ts's ALL_QUESTIONS by legacy numeric id, with no
+// persistence and no auth — that request shape has no equivalent in the real
+// schema (assess.attempt/attempt_response need a real test_id and
+// test_question_id chain, established via POST /api/assess/attempts/start
+// first). Not a shape-preserving rewire is possible here; the real
+// replacement is POST /api/assess/attempts/start -> PATCH/POST the
+// responses/submit endpoints under /api/assess/attempts/:attemptId, backed
+// by db/assess/test/attempt/attempt-flow.ts (built and auth-verified in
+// STOP GATE 4). No scoring logic lives here anymore.
+export const submitAttempt = (_req: Request, _res: Response, next: NextFunction): void => {
+  next(
+    new AppError(
+      410,
+      "ENDPOINT_RETIRED",
+      "POST /api/submit-attempt is retired. Start an attempt with POST /api/assess/attempts/start, " +
+        "save answers via the responses endpoints, then POST /api/assess/attempts/:attemptId/submit."
+    )
+  );
 };

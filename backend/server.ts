@@ -37,5 +37,5 @@ app.use((_req, _res, next) => {
 app.use(errorHandler);
 
 app.listen(config.port, () => {
-  console.log(`Lumen Academy API running at http://localhost:${config.port}`);
+  console.log(`✔ Lumen Academy API is healthy — running at http://localhost:${config.port}`);
 });

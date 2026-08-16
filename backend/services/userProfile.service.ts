@@ -26,11 +26,19 @@ export async function ensureUserProfile(payload: SupabaseAccessTokenPayload): Pr
     return toProfile(existing);
   }
 
+  // Supabase's JS SDK returns "" (not null/undefined) for an unset optional
+  // field like phone on a real user object — `?? null` doesn't catch that,
+  // and users.phone is @unique, so two phone-less users would collide on
+  // "" (a real, non-null value equal to itself). Found live: the second
+  // phone-less signup failed with P2002 on this exact field.
+  const email = payload.email || null;
+  const phone = payload.phone || null;
+
   const displayName =
     (payload.user_metadata?.display_name as string | undefined) ||
     (payload.user_metadata?.full_name as string | undefined) ||
-    payload.email?.split("@")[0] ||
-    payload.phone ||
+    email?.split("@")[0] ||
+    phone ||
     "Student";
 
   const created = await prisma.user.upsert({
@@ -38,8 +46,8 @@ export async function ensureUserProfile(payload: SupabaseAccessTokenPayload): Pr
     update: {},
     create: {
       id: payload.sub,
-      email: payload.email ?? null,
-      phone: payload.phone ?? null,
+      email,
+      phone,
       displayName,
     },
   });

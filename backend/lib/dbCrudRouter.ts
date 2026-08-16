@@ -93,7 +93,7 @@ export function makeOwnedCrudRouter<TModel>(repository: SimpleCrudRepository<TMo
   router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
     try {
       const row = await repository.findById(req.params.id);
-      if (!isOwnedBy(row, ownerColumn, req.user!.id)) {
+      if (!isOwnedBy(row, ownerColumn, req.user!.appUserId)) {
         next(NOT_FOUND());
         return;
       }
@@ -108,7 +108,7 @@ export function makeOwnedCrudRouter<TModel>(repository: SimpleCrudRepository<TMo
       // Owner column is always forced to the caller's own id — never trusts
       // a client-supplied value, so a user can only ever create rows for
       // themselves.
-      const data = { ...(req.body ?? {}), [ownerColumn]: req.user!.id };
+      const data = { ...(req.body ?? {}), [ownerColumn]: req.user!.appUserId };
       res.status(201).json({ data: await repository.create(data) });
     } catch (err) {
       next(err);
@@ -118,7 +118,7 @@ export function makeOwnedCrudRouter<TModel>(repository: SimpleCrudRepository<TMo
   router.patch("/:id", async (req: Request, res: Response, next: NextFunction) => {
     try {
       const existing = await repository.findById(req.params.id);
-      if (!isOwnedBy(existing, ownerColumn, req.user!.id)) {
+      if (!isOwnedBy(existing, ownerColumn, req.user!.appUserId)) {
         next(NOT_FOUND());
         return;
       }
@@ -134,7 +134,7 @@ export function makeOwnedCrudRouter<TModel>(repository: SimpleCrudRepository<TMo
   router.delete("/:id", async (req: Request, res: Response, next: NextFunction) => {
     try {
       const existing = await repository.findById(req.params.id);
-      if (!isOwnedBy(existing, ownerColumn, req.user!.id)) {
+      if (!isOwnedBy(existing, ownerColumn, req.user!.appUserId)) {
         next(NOT_FOUND());
         return;
       }

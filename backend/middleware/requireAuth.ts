@@ -1,5 +1,6 @@
 import type { NextFunction, Request, RequestHandler, Response } from "express";
 import { ensureUserProfile } from "../services/userProfile.service.js";
+import { ensureAppUser } from "../../db/core/institution/app_user/ensure-app-user.js";
 import { supabaseAuth } from "../supabaseClient.js";
 import { AppError } from "./errorHandler.js";
 
@@ -7,7 +8,11 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Express {
     interface Request {
-      user?: { id: string; role: string };
+      // id/role: Prisma public.users (existing profile system, unaffected).
+      // appUserId: core.app_user.user_id — the id every db/ repository FK
+      // actually expects. Deliberately a different id from `id` above; see
+      // db/core/institution/app_user/ensure-app-user.ts's header for why.
+      user?: { id: string; role: string; appUserId: string };
     }
   }
 }
@@ -31,13 +36,14 @@ export async function requireAuth(req: Request, _res: Response, next: NextFuncti
   }
 
   try {
-    const profile = await ensureUserProfile({
+    const tokenPayload = {
       sub: data.user.id,
       email: data.user.email,
       phone: data.user.phone,
       user_metadata: data.user.user_metadata,
-    });
-    req.user = { id: profile.id, role: profile.role };
+    };
+    const [profile, appUserId] = await Promise.all([ensureUserProfile(tokenPayload), ensureAppUser(tokenPayload)]);
+    req.user = { id: profile.id, role: profile.role, appUserId };
     next();
   } catch (err) {
     next(err);

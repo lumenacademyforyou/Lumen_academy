@@ -10,7 +10,7 @@ export interface AppUserModel {
   institution_id: string | null;
   auth_user_id: string;
   email: string;
-  mobile_number: string;
+  mobile_number: string | null; // relaxed nullable by 007_core_mobile_nullable.sql — email-only signups have none
   full_name: string;
   user_role: string;
   preferred_language: string | null;

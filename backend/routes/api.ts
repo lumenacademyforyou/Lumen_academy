@@ -65,7 +65,13 @@ router.get("/health", async (_req: Request, res: Response) => {
   } catch {
     db = "down";
   }
-  res.json({ status: "ok", service: "Lumen Academy Backend", db, timestamp: new Date().toISOString() });
+  res.json({
+    status: "ok",
+    message: db === "up" ? "API is healthy" : "API is running but the database is unreachable",
+    service: "Lumen Academy Backend",
+    db,
+    timestamp: new Date().toISOString(),
+  });
 });
 
 // Questions Endpoint
