@@ -20,9 +20,14 @@ CLAUDE.md
 lumen-db-claude-code-kit/*
 
 # ... EXCEPT for the 10 design artefacts which must be tracked
-!lumen-db-claude-code-kit/02_ER_diagram.ext 
-!lumen-db-claude-code-kit/03_ER_diagram.ext
-!lumen-db-claude-code-kit/LA-ARC-001.ext
-!lumen-db-claude-code-kit/LA-ARC-002.ext
-# (list all 10 specific files here with their correct extensions)
+!lumen-db-claude-code-kit/02_ER_physical.md
+!lumen-db-claude-code-kit/03_ER_physical.md
+!lumen-db-claude-code-kit/04_ER_physical.md
+!lumen-db-claude-code-kit/05_ER_physical.md
+!lumen-db-claude-code-kit/LA-ARC-001.md
+!lumen-db-claude-code-kit/LA-ARC-002.md
+!lumen-db-claude-code-kit/LA-ARC-003.md
+!lumen-db-claude-code-kit/LA-ARC-004.md
+!lumen-db-claude-code-kit/LA-ARC-005.md
+!lumen-db-claude-code-kit/LA-DBD-004.md
 !lumen-db-claude-code-kit/SCHEMA_SPEC.md
