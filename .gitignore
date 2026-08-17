@@ -17,4 +17,12 @@ CLAUDE.md
 .claude/settings.local.json
 
 # Lumen DB Claude Code Kit (reference/tooling, not project source)
-lumen-db-claude-code-kit/
+lumen-db-claude-code-kit/*
+
+# ... EXCEPT for the 10 design artefacts which must be tracked
+!lumen-db-claude-code-kit/02_ER_diagram.ext 
+!lumen-db-claude-code-kit/03_ER_diagram.ext
+!lumen-db-claude-code-kit/LA-ARC-001.ext
+!lumen-db-claude-code-kit/LA-ARC-002.ext
+# (list all 10 specific files here with their correct extensions)
+!lumen-db-claude-code-kit/SCHEMA_SPEC.md
