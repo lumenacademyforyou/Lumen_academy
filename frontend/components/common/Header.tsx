@@ -3,7 +3,13 @@ import LumenLogo from "./LumenLogo";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
-import { saveStudentProfile, fetchStudentProfile, StudentProfile, supabase } from "../../supabase";
+import {
+  saveStudentProfile,
+  fetchStudentProfile,
+  fetchAppUser,
+  StudentProfile,
+  supabase,
+} from "../../supabase";
 import NotificationBell from "./NotificationBell";
 
 interface HeaderProps {
@@ -120,39 +126,41 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
   }, []);
 
 
-  useEffect(() => {
+useEffect(() => {
   const loadProfile = async () => {
     try {
       const {
         data: { user },
       } = await supabase.auth.getUser();
 
-      if (!user) return;
+      if (!user) {
+        setStudentName("");
+        return;
+      }
 
+      // Get the application user from core.app_user
+      const appUser = await fetchAppUser(user.id);
+
+      if (appUser) {
+        // Header name comes from core.app_user.full_name
+        setStudentName(appUser.full_name || "");
+        setEditedName(appUser.full_name || "");
+        setPhone(appUser.mobile_number || "");
+      } else {
+        console.warn("No core.app_user found for auth user:", user.id);
+        setStudentName("");
+        setEditedName("");
+        setPhone("");
+      }
+
+      // Get student profile data separately
       const prof = await fetchStudentProfile(user.id);
 
       if (prof) {
         setProfile(prof);
-
-        // Only use the real DB value
-        setStudentName(prof.display_name || "");
-
-        setEditedName(prof.display_name || "");
-        setPhone(prof.phone_number || "");
-        setTargetStream(
-          (prof.target_stream as "NEET" | "JEE") || ""
-        );
-        setGradeClass(prof.grade_class || "");
-        setSchoolOrCoaching(prof.school_or_coaching || "");
-        setCity(prof.city || "");
-      } else {
-        
-        // No profile data → keep the name blank
-        setStudentName("");
-        setEditedName("");
       }
     } catch (error) {
-      console.error("Failed to load student profile:", error);
+      console.error("Failed to load header profile:", error);
       setStudentName("");
     }
   };
