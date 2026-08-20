@@ -430,6 +430,26 @@ useEffect(() => {
 
   const activeAttempt = attempts.find((a) => a.id === activeAttemptId) || attempts[0];
 
+  // Switches tab + returns to the main portal screen + syncs the URL. Same
+  // logic Header's setTab prop used inline below (kept there too, so this
+  // is just the reusable version for callers outside Header, e.g. the
+  // footer nav links, which called a same-named function that was never
+  // actually defined — a real bug, not a stub left for later).
+  const handleNavigation = (tab: string) => {
+    setTab(tab);
+    setCurrentScreen("portal");
+
+    const paths: Record<string, string> = {
+      dashboard: "/dashboard",
+      tests: "/tests",
+      course: "/course",
+      analytics: "/analytics",
+      profile: "/profile",
+    };
+
+    navigate(paths[tab] || "/dashboard");
+  };
+
   // Starts the pre-test lobby
   const handleStartLobby = (testId: string) => {
     setActiveAttemptId(testId);
@@ -870,20 +890,7 @@ useEffect(() => {
           {/* Main Navigation Header */}
 <Header
   currentTab={currentTab}
-  setTab={(tab) => {
-    setTab(tab);
-    setCurrentScreen("portal");
-
-    const paths: Record<string, string> = {
-      dashboard: "/dashboard",
-      tests: "/tests",
-      course: "/course",
-      analytics: "/analytics",
-      profile: "/profile",
-    };
-
-    navigate(paths[tab] || "/dashboard");
-  }}
+  setTab={handleNavigation}
   studentName={studentName}
   setStudentName={setStudentName}
   onSignOut={() => {

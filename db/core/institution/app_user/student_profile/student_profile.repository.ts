@@ -1,4 +1,4 @@
-import type { StudentProfileModel } from "./student_profile.model.js";
+import type { StudentProfile } from "./student_profile.model.js";
 import {
   findById as findByIdImpl,
   insertRow,
@@ -22,33 +22,33 @@ const SPEC: TableSpec = {
 };
 
 export interface StudentProfileRepository {
-  findById(id: StudentProfileId): Promise<StudentProfileModel>;
-  create(data: Partial<StudentProfileModel>): Promise<StudentProfileModel>;
-  update(id: StudentProfileId, data: Partial<StudentProfileModel>): Promise<StudentProfileModel>;
+  findById(id: StudentProfileId): Promise<StudentProfile>;
+  create(data: Partial<StudentProfile>): Promise<StudentProfile>;
+  update(id: StudentProfileId, data: Partial<StudentProfile>): Promise<StudentProfile>;
   remove(id: StudentProfileId): Promise<void>;
 }
 
 /**
  * @throws {NotFoundError} id does not match any row
  */
-async function findById(id: StudentProfileId): Promise<StudentProfileModel> {
-  return findByIdImpl<StudentProfileModel>(SPEC, { user_id: id });
+async function findById(id: StudentProfileId): Promise<StudentProfile> {
+  return findByIdImpl<StudentProfile>(SPEC, { user_id: id });
 }
 
 /**
  * @throws {DuplicateKeyError} PK or AK already exists
  * @throws {ForeignKeyViolationError} a referenced row does not exist
  */
-async function create(data: Partial<StudentProfileModel>): Promise<StudentProfileModel> {
-  return insertRow<StudentProfileModel>(SPEC, data as Record<string, unknown>);
+async function create(data: Partial<StudentProfile>): Promise<StudentProfile> {
+  return insertRow<StudentProfile>(SPEC, data as Record<string, unknown>);
 }
 
 /**
  * @throws {NotFoundError} id does not match any row
  * @throws {ForeignKeyViolationError} a referenced row does not exist
  */
-async function update(id: StudentProfileId, data: Partial<StudentProfileModel>): Promise<StudentProfileModel> {
-  return updateByIdImpl<StudentProfileModel>(SPEC, { user_id: id }, data as Record<string, unknown>);
+async function update(id: StudentProfileId, data: Partial<StudentProfile>): Promise<StudentProfile> {
+  return updateByIdImpl<StudentProfile>(SPEC, { user_id: id }, data as Record<string, unknown>);
 }
 
 /**

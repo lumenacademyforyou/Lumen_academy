@@ -1,4 +1,4 @@
-import type { StudentProfileModel } from "./student_profile.model.js";
+import type { StudentProfile } from "./student_profile.model.js";
 import type { StudentProfileId } from "./student_profile.repository.js";
 import { studentProfileRepository } from "./student_profile.repository.js";
 import {
@@ -16,16 +16,16 @@ import {
  * layer implements those rules later; this service does not throw them.
  */
 export interface StudentProfileService {
-  get(id: StudentProfileId): Promise<StudentProfileModel>;
-  create(data: Partial<StudentProfileModel>): Promise<StudentProfileModel>;
-  update(id: StudentProfileId, data: Partial<StudentProfileModel>): Promise<StudentProfileModel>;
+  get(id: StudentProfileId): Promise<StudentProfile>;
+  create(data: Partial<StudentProfile>): Promise<StudentProfile>;
+  update(id: StudentProfileId, data: Partial<StudentProfile>): Promise<StudentProfile>;
   remove(id: StudentProfileId): Promise<void>;
 }
 
 /**
  * @throws {NotFoundError} id does not match any row
  */
-async function get(id: StudentProfileId): Promise<StudentProfileModel> {
+async function get(id: StudentProfileId): Promise<StudentProfile> {
   return studentProfileRepository.findById(id);
 }
 
@@ -33,7 +33,7 @@ async function get(id: StudentProfileId): Promise<StudentProfileModel> {
  * @throws {DuplicateKeyError} PK or AK already exists
  * @throws {ForeignKeyViolationError} a referenced row does not exist
  */
-async function create(data: Partial<StudentProfileModel>): Promise<StudentProfileModel> {
+async function create(data: Partial<StudentProfile>): Promise<StudentProfile> {
   return studentProfileRepository.create(data);
 }
 
@@ -41,7 +41,7 @@ async function create(data: Partial<StudentProfileModel>): Promise<StudentProfil
  * @throws {NotFoundError} id does not match any row
  * @throws {ForeignKeyViolationError} a referenced row does not exist
  */
-async function update(id: StudentProfileId, data: Partial<StudentProfileModel>): Promise<StudentProfileModel> {
+async function update(id: StudentProfileId, data: Partial<StudentProfile>): Promise<StudentProfile> {
   return studentProfileRepository.update(id, data);
 }
 
