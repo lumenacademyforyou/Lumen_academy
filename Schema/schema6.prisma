@@ -1,7 +1,6 @@
 // Prisma schema — see CLAUDE.md for architecture rules.
 // DATABASE_URL is read from the environment below; backend runtime code
 // still reads all other config through backend/config.ts, never process.env directly.
-
 generator client {
   provider = "prisma-client-js"
   output   = "../backend/generated/prisma"
@@ -15,7 +14,6 @@ datasource db {
 // ============================================================
 // ENUMS
 // ============================================================
-
 enum ExamType {
   NEET
   JEE_MAIN
@@ -78,10 +76,30 @@ enum AttemptStatus {
   ABANDONED
 }
 
+// Editorial pipeline state for a question. Distinct from QuestionSource
+// (where the content came from) and from Question.isActive (whether it's
+// currently servable) — reviewStatus is "where is it in the review process".
+enum ReviewStatus {
+  DRAFT
+  IN_REVIEW
+  APPROVED
+  REJECTED
+  NEEDS_REVISION
+}
+
+// Shared publish lifecycle for content-managed collections (test series,
+// mock tests). Kept separate from ReviewStatus because a mock test isn't
+// reviewed line-by-line the way a question is — it's assembled, then
+// published/archived as a whole.
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
 // ============================================================
 // USER
 // ============================================================
-
 model User {
   // id is NOT auto-generated: it must equal the Supabase auth.users id,
   // assigned explicitly by the service layer on first authenticated request.
@@ -93,11 +111,37 @@ model User {
   locale      String   @default("en")
   targetExam  ExamType @default(NEET) @map("target_exam")
   isActive    Boolean  @default(true) @map("is_active")
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Denormalized read-model: the source of truth for streaks is
+  // UserDailyActivity (see ENGAGEMENT & PROGRESS below); these two columns
+  // are a cache kept in sync in the same transaction as each activity
+  // write, so the profile page / streak badge is a single-row read instead
+  // of a daily aggregation query on every page load.
+  currentStreakDays Int       @default(0) @map("current_streak_days")
+  longestStreakDays Int       @default(0) @map("longest_streak_days")
+  lastActivityDate  DateTime? @map("last_activity_date") @db.Date
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   attempts TestAttempt[]
   aiUsage  AiUsage[]
+
+  // Engagement & progress
+  bookmarks     Bookmark[]
+  notes         Note[]
+  dailyActivity UserDailyActivity[]
+  topicMastery  UserTopicMastery[]
+  notifications Notification[]
+
+  // Content authoring workflow — named relations because a User can play
+  // more than one of these roles against the Question model.
+  authoredQuestions Question[]         @relation("QuestionAuthor")
+  reviewedQuestions Question[]         @relation("QuestionReviewer")
+  questionRevisions QuestionRevision[] @relation("QuestionRevisionEditor")
+
+  // Test series / mock exams
+  createdMockTests MockTest[] @relation("MockTestCreator")
 
   @@map("users")
 }
@@ -105,7 +149,6 @@ model User {
 // ============================================================
 // SUBJECT / SYLLABUS
 // ============================================================
-
 model Subject {
   id           String @id
   name         String
@@ -165,6 +208,9 @@ model Topic {
   chapter   Chapter    @relation(fields: [chapterId], references: [id])
   questions Question[]
 
+  // Per-user mastery rollup for this topic — see UserTopicMastery.
+  userTopicMastery UserTopicMastery[]
+
   @@index([chapterId])
   @@map("topics")
 }
@@ -172,7 +218,6 @@ model Topic {
 // ============================================================
 // QUESTION
 // ============================================================
-
 model Question {
   id String @id @default(uuid()) @db.Uuid
 
@@ -235,6 +280,19 @@ model Question {
   explanationTa String? @map("explanation_ta") @db.Text
 
   // -------------------------
+  // Content authoring workflow
+  // (source = where the content came from; reviewStatus = where it is in
+  // the editorial pipeline; isActive below = whether it's currently
+  // servable to end users. Keeping these three separate means, e.g., you
+  // can un-publish an APPROVED question without losing its review state.)
+  // -------------------------
+  authorId     String?      @map("author_id") @db.Uuid
+  reviewStatus ReviewStatus @default(DRAFT) @map("review_status")
+  reviewedBy   String?      @map("reviewed_by") @db.Uuid
+  reviewedAt   DateTime?    @map("reviewed_at")
+  reviewNotes  String?      @map("review_notes") @db.Text
+
+  // -------------------------
   // Status
   // -------------------------
   isActive  Boolean  @default(true) @map("is_active")
@@ -250,6 +308,14 @@ model Question {
   options        QuestionOption[]
   attemptAnswers AttemptAnswer[]
 
+  author   User? @relation("QuestionAuthor", fields: [authorId], references: [id])
+  reviewer User? @relation("QuestionReviewer", fields: [reviewedBy], references: [id])
+
+  revisions         QuestionRevision[]
+  bookmarks         Bookmark[]
+  notes              Note[]
+  mockTestQuestions MockTestQuestion[]
+
   @@index([unitId])
   @@index([chapterId])
   @@index([topicId])
@@ -260,13 +326,15 @@ model Question {
   @@index([isActive])
   @@index([examType, difficulty, isActive])
   @@index([representationTypes], type: Gin)
+  @@index([reviewStatus])
+  @@index([authorId])
+  @@index([reviewedBy])
   @@map("questions")
 }
 
 // ============================================================
 // QUESTION OPTIONS
 // ============================================================
-
 model QuestionOption {
   id           String  @id @default(uuid()) @db.Uuid
   questionId   String  @map("question_id") @db.Uuid
@@ -284,12 +352,114 @@ model QuestionOption {
 }
 
 // ============================================================
+// CONTENT AUTHORING — REVISIONS
+// Append-only audit trail. Every time a question's content changes after
+// its first save, write one row here with a full snapshot rather than
+// trying to diff columns — cheap to write, trivial to render as a
+// version history / "revert to" UI, and it never blocks the hot path
+// (writing a Question row) on a schema migration if the snapshot shape
+// changes later, because it's just Json.
+// ============================================================
+model QuestionRevision {
+  id            String   @id @default(uuid()) @db.Uuid
+  questionId    String   @map("question_id") @db.Uuid
+  snapshot      Json
+  changeSummary String?  @map("change_summary")
+  editedBy      String?  @map("edited_by") @db.Uuid
+  editedAt      DateTime @default(now()) @map("edited_at")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  editor   User?    @relation("QuestionRevisionEditor", fields: [editedBy], references: [id])
+
+  @@index([questionId])
+  @@index([editedBy])
+  @@map("question_revisions")
+}
+
+// ============================================================
+// TEST SERIES / MOCK TESTS
+// A curated, reusable set of questions many users attempt against —
+// distinct from the ad-hoc practice sessions TestAttempt.config already
+// supports. TestSeries is the grouping ("NEET 2027 Full Syllabus Series");
+// MockTest is one sitting within it ("Full Test 12"); MockTestQuestion
+// pins the exact question set, order, and any per-test marks override.
+// ============================================================
+model TestSeries {
+  id           String        @id @default(uuid()) @db.Uuid
+  title        String
+  slug         String        @unique
+  examType     ExamType      @map("exam_type")
+  description  String?       @db.Text
+  status       PublishStatus @default(DRAFT)
+  displayOrder Int           @default(0) @map("display_order")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  mockTests MockTest[]
+
+  @@index([examType])
+  @@index([status])
+  @@map("test_series")
+}
+
+model MockTest {
+  id              String        @id @default(uuid()) @db.Uuid
+  testSeriesId    String?       @map("test_series_id") @db.Uuid
+  title           String
+  examType        ExamType      @map("exam_type")
+  status          PublishStatus @default(DRAFT)
+  durationSeconds Int           @map("duration_seconds")
+  totalMarks      Int           @map("total_marks")
+  questionCount   Int           @map("question_count")
+  isFree          Boolean       @default(true) @map("is_free")
+  publishAt       DateTime?     @map("publish_at")
+  createdBy       String?       @map("created_by") @db.Uuid
+  createdAt       DateTime      @default(now()) @map("created_at")
+  updatedAt       DateTime      @updatedAt @map("updated_at")
+
+  testSeries TestSeries? @relation(fields: [testSeriesId], references: [id])
+  creator    User?       @relation("MockTestCreator", fields: [createdBy], references: [id])
+  questions  MockTestQuestion[]
+  attempts   TestAttempt[]
+
+  @@index([testSeriesId])
+  @@index([examType])
+  @@index([status])
+  @@map("mock_tests")
+}
+
+model MockTestQuestion {
+  mockTestId String @map("mock_test_id") @db.Uuid
+  questionId String @map("question_id") @db.Uuid
+
+  sectionName           String? @map("section_name")
+  displayOrder           Int     @map("display_order")
+  marksOverride          Int?    @map("marks_override")
+  negativeMarksOverride  Int?    @map("negative_marks_override")
+
+  mockTest MockTest @relation(fields: [mockTestId], references: [id], onDelete: Cascade)
+  // No onDelete: Cascade here on purpose — a Question that's still pinned
+  // into a MockTest shouldn't be hard-deletable by accident; retire it via
+  // isActive instead. Remove it from the mock test first if it truly needs
+  // to go.
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@id([mockTestId, questionId])
+  @@index([questionId])
+  @@map("mock_test_questions")
+}
+
+// ============================================================
 // TEST ATTEMPT
 // ============================================================
-
 model TestAttempt {
   id     String @id @default(uuid()) @db.Uuid
   userId String @map("user_id") @db.Uuid
+
+  // Set when this attempt is against a curated MockTest (leaderboard-
+  // eligible); left null for ad-hoc practice sessions built from `config`
+  // alone, same as before this field was added.
+  mockTestId String? @map("mock_test_id") @db.Uuid
 
   config Json
 
@@ -305,20 +475,24 @@ model TestAttempt {
   wrongCount   Int? @map("wrong_count")
   skippedCount Int? @map("skipped_count")
 
-  user    User            @relation(fields: [userId], references: [id])
-  answers AttemptAnswer[]
+  user     User      @relation(fields: [userId], references: [id])
+  mockTest MockTest? @relation(fields: [mockTestId], references: [id])
+  answers  AttemptAnswer[]
 
   @@index([userId])
   @@index([userId, status])
   @@index([userId, startedAt(sort: Desc)])
   @@index([status])
+  // Leaderboard query shape: "top scores for this mock test, submitted
+  // attempts only" — this composite index serves it directly off the
+  // index instead of a sort-after-filter table scan.
+  @@index([mockTestId, status, score(sort: Desc)])
   @@map("test_attempts")
 }
 
 // ============================================================
 // ATTEMPT ANSWERS
 // ============================================================
-
 model AttemptAnswer {
   attemptId        String  @map("attempt_id") @db.Uuid
   questionId       String  @map("question_id") @db.Uuid
@@ -339,9 +513,111 @@ model AttemptAnswer {
 }
 
 // ============================================================
-// AI CACHE
+// ENGAGEMENT & PROGRESS
 // ============================================================
 
+// One row per (user, question) they've bookmarked for later review.
+model Bookmark {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+  @@index([questionId])
+  @@map("bookmarks")
+}
+
+// One editable personal note per (user, question). If you later need
+// multiple notes per question, drop the unique constraint and add an id-
+// based lookup instead of upserting on (userId, questionId).
+model Note {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  body       String   @db.Text
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+  @@index([questionId])
+  @@map("notes")
+}
+
+// Append-only daily activity log — the source of truth for streaks and
+// activity-heatmap UIs. User.currentStreakDays / longestStreakDays /
+// lastActivityDate are a cache derived from this table; recompute them
+// from here if they ever drift (e.g. after a bulk data fix).
+model UserDailyActivity {
+  userId             String   @map("user_id") @db.Uuid
+  activityDate       DateTime @map("activity_date") @db.Date
+  questionsAttempted Int      @default(0) @map("questions_attempted")
+  questionsCorrect   Int      @default(0) @map("questions_correct")
+  timeSpentSeconds   Int      @default(0) @map("time_spent_seconds")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, activityDate])
+  @@index([activityDate])
+  @@map("user_daily_activity")
+}
+
+// Denormalized per-(user, topic) rollup, upserted whenever an AttemptAnswer
+// is graded. Exists so "which topics is this student weak in" is an
+// indexed point-lookup instead of aggregating potentially millions of
+// AttemptAnswer rows per request. Treat it as a rebuildable cache, not a
+// primary record — AttemptAnswer + Question.topicId remains the ground
+// truth if you ever need to recompute it.
+model UserTopicMastery {
+  userId             String    @map("user_id") @db.Uuid
+  topicId            String    @map("topic_id") @db.Uuid
+  questionsAttempted Int       @default(0) @map("questions_attempted")
+  questionsCorrect   Int       @default(0) @map("questions_correct")
+  avgTimeSpentMs     Int?      @map("avg_time_spent_ms")
+  masteryScore       Float     @default(0) @map("mastery_score")
+  lastAttemptedAt    DateTime? @map("last_attempted_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@id([userId, topicId])
+  @@index([topicId])
+  @@map("user_topic_mastery")
+}
+
+// `type` is a plain String, not an enum, on purpose — notification types
+// tend to proliferate ("mock_test_published", "streak_reminder",
+// "rank_update"...) as product features grow, and adding a Postgres enum
+// value is a migration while adding a new string literal in application
+// code is not. Reach for an enum only once the set of types has actually
+// stabilized.
+model Notification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  type      String
+  title     String
+  body      String?  @db.Text
+  payload   Json?
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("notifications")
+}
+
+// ============================================================
+// AI CACHE
+// ============================================================
 model AiCache {
   cacheKey     String @id @map("cache_key")
   responseJson Json   @map("response_json")
@@ -361,7 +637,6 @@ model AiCache {
 // ============================================================
 // AI USAGE
 // ============================================================
-
 model AiUsage {
   id     String @id @default(uuid()) @db.Uuid
   userId String @map("user_id") @db.Uuid
@@ -372,11 +647,9 @@ model AiUsage {
 
   tokensIn  Int? @map("tokens_in")
   tokensOut Int? @map("tokens_out")
+  latencyMs Int  @map("latency_ms")
 
-  latencyMs Int @map("latency_ms")
-
-  cacheHit Boolean @default(false) @map("cache_hit")
-
+  cacheHit  Boolean @default(false) @map("cache_hit")
   costUsd   Float?  @map("cost_usd")
   errorCode String? @map("error_code")
 
