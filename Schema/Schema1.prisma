@@ -1,0 +1,1554 @@
+// Prisma schema — see CLAUDE.md for architecture rules.
+// DATABASE_URL is read from the environment below; backend runtime code
+// still reads all other config through backend/config.ts, never process.env directly.
+generator client {
+  provider = "prisma-client-js"
+  output   = "../backend/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// ENUMS
+// ============================================================
+enum ExamType {
+  NEET
+  JEE_MAIN
+  JEE_ADVANCED
+}
+
+enum DifficultyLevel {
+  L1
+  L2
+  L3
+  L4
+  L5
+}
+
+enum CognitiveSkill {
+  RECALL
+  UNDERSTAND
+  APPLY
+  ANALYZE
+  EVALUATE
+  MULTI_STEP_REASONING
+}
+
+enum QuestionType {
+  MCQ
+  NUMERICAL
+  ASSERTION_REASON
+  STATEMENT_BASED
+  MATCHING
+  INTEGER
+  MULTIPLE_CORRECT
+  CASE_BASED
+}
+
+enum RepresentationType {
+  TEXT
+  LATEX
+  IMAGE
+  DIAGRAM
+  GRAPH
+  TABLE
+  DATA
+  CHEMICAL_STRUCTURE
+  CIRCUIT
+  EXPERIMENTAL_SETUP
+  GEOMETRY_FIGURE
+}
+
+enum QuestionSource {
+  NCERT
+  PYQ
+  AI_GENERATED
+  EXPERT_CURATED
+  IMPORTED
+}
+
+enum AttemptStatus {
+  IN_PROGRESS
+  SUBMITTED
+  ABANDONED
+}
+
+// Editorial pipeline state for a question. Distinct from QuestionSource
+// (where the content came from) and from Question.isActive (whether it's
+// currently servable) — reviewStatus is "where is it in the review process".
+enum ReviewStatus {
+  DRAFT
+  IN_REVIEW
+  APPROVED
+  REJECTED
+  NEEDS_REVISION
+}
+
+// Shared publish lifecycle for content-managed collections (test series,
+// mock tests). Kept separate from ReviewStatus because a mock test isn't
+// reviewed line-by-line the way a question is — it's assembled, then
+// published/archived as a whole.
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+// How a ScoringRule awards marks for a question type that isn't simple
+// all-or-nothing — needed for JEE Advanced's MULTIPLE_CORRECT questions,
+// where some sessions have awarded partial credit per correct option
+// selected rather than requiring every option exactly right.
+enum PartialMarkingMode {
+  NONE
+  PER_CORRECT_OPTION
+  ALL_OR_NOTHING
+}
+
+// How a section may be navigated within a single attempt. FREE_NAVIGATION
+// is the common case (JEE Main-style — move between sections at will).
+// LOCK_ON_EXIT and SEQUENTIAL_ONLY exist because some patterns (and some
+// JEE Advanced sessions historically) restrict returning to a section
+// once you've left it, or require completing sections in order.
+enum SectionNavigationRule {
+  FREE_NAVIGATION
+  LOCK_ON_EXIT
+  SEQUENTIAL_ONLY
+}
+
+enum ContentAssetType {
+  VIDEO
+  NOTES_PDF
+  PRACTICE_SHEET
+  FORMULA_SHEET
+  AUDIO
+  OTHER
+}
+
+enum DoubtStatus {
+  OPEN
+  ANSWERED
+  CLOSED
+}
+
+enum StudyPlanItemStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  SKIPPED
+}
+
+enum GuardianAccessStatus {
+  PENDING
+  ACTIVE
+  REVOKED
+}
+
+// A small, bounded set of detectable browser/proctoring events — unlike
+// Notification.type or Role.permissions (deliberately strings because
+// those sets grow with product features), this one is tied to what a
+// browser can actually report and isn't expected to grow often, so the
+// enum's compile-time exhaustiveness is worth more than the flexibility
+// a string would give up.
+enum IntegrityEventType {
+  TAB_SWITCH
+  WINDOW_BLUR
+  FULLSCREEN_EXIT
+  COPY_PASTE_ATTEMPT
+  DEVTOOLS_OPENED
+  MULTIPLE_FACES_DETECTED
+  NO_FACE_DETECTED
+}
+
+// ============================================================
+// USER
+// ============================================================
+model User {
+  // id is NOT auto-generated: it must equal the Supabase auth.users id,
+  // assigned explicitly by the service layer on first authenticated request.
+  id          String   @id @db.Uuid
+  email       String?  @unique
+  phone       String?  @unique
+  displayName String   @map("display_name")
+  role        String   @default("student")
+  locale      String   @default("en")
+  targetExam  ExamType @default(NEET) @map("target_exam")
+  isActive    Boolean  @default(true) @map("is_active")
+
+  // Denormalized read-model: the source of truth for streaks is
+  // UserDailyActivity (see ENGAGEMENT & PROGRESS below); these two columns
+  // are a cache kept in sync in the same transaction as each activity
+  // write, so the profile page / streak badge is a single-row read instead
+  // of a daily aggregation query on every page load.
+  currentStreakDays Int       @default(0) @map("current_streak_days")
+  longestStreakDays Int       @default(0) @map("longest_streak_days")
+  lastActivityDate  DateTime? @map("last_activity_date") @db.Date
+
+  // Gamification cache — same pattern as the streak columns above: the
+  // "why" a user has this many points is reconstructable from UserBadge /
+  // UserDailyActivity / TestAttempt history, but the running total is
+  // cached here so a profile page or leaderboard-by-XP is a single-row
+  // read. Level is *not* a stored column — it's derived by looking up the
+  // highest Level.minXp <= xpPoints at read time, which stays correct
+  // automatically if level thresholds are ever retuned.
+  xpPoints Int @default(0) @map("xp_points")
+
+  // -------------------------
+  // Compliance
+  // A boolean alone can't demonstrate *when* or *under which policy
+  // version* consent was given if that's ever disputed or audited, so the
+  // durable record is ConsentLog (see COMPLIANCE below) — these two
+  // columns are a fast-path cache of "what's the current state" for
+  // everyday checks (e.g. gating access), same cache/log split already
+  // used for streaks above.
+  // -------------------------
+  consentGivenAt          DateTime? @map("consent_given_at")
+  consentVersion          String?   @map("consent_version")
+  parentalConsent         Boolean   @default(false) @map("parental_consent")
+  dataDeletionRequestedAt DateTime? @map("data_deletion_requested_at")
+
+  // NTA-style exam accommodations (extended time, scribe, etc.), carried
+  // on the student's profile since they typically apply across an entire
+  // exam cycle rather than being set per attempt. Application code reads
+  // accommodationExtraTimePercent when starting a MockTest attempt to
+  // compute the actual durationSeconds granted for that TestAttempt.
+  accommodationExtraTimePercent Int?    @map("accommodation_extra_time_percent")
+  accommodationNotes            String? @map("accommodation_notes") @db.Text
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  attempts TestAttempt[]
+  aiUsage  AiUsage[]
+
+  // Engagement & progress
+  bookmarks     Bookmark[]
+  notes         Note[]
+  dailyActivity UserDailyActivity[]
+  topicMastery  UserTopicMastery[]
+  notifications Notification[]
+
+  // Content authoring workflow — named relations because a User can play
+  // more than one of these roles against the Question model.
+  authoredQuestions Question[]         @relation("QuestionAuthor")
+  reviewedQuestions Question[]         @relation("QuestionReviewer")
+  questionRevisions QuestionRevision[] @relation("QuestionRevisionEditor")
+
+  // Test series / mock exams
+  createdMockTests MockTest[] @relation("MockTestCreator")
+
+  // Roles & permissions (see ROLES & PERMISSIONS below). `role` above
+  // remains the coarse app-facing flag ("student" vs "staff"); UserRole
+  // is where fine-grained admin capability grants live.
+  roles        UserRole[] @relation("UserRoles")
+  rolesGranted UserRole[] @relation("RoleGrantedBy")
+
+  // Compliance audit trail
+  consentLogs ConsentLog[]
+
+  // Content library
+  contentWatchProgress ContentWatchProgress[]
+  createdContentAssets ContentAsset[]         @relation("ContentAssetCreator")
+
+  // Doubt forum — named relations because a User can both ask doubts and
+  // reply to others'.
+  doubtsAsked   Doubt[]      @relation("DoubtAuthor")
+  doubtReplies  DoubtReply[] @relation("DoubtReplyAuthor")
+
+  // Study planner
+  studyPlans StudyPlan[]
+
+  // Adaptive practice & gamification
+  practiceQueueItems AdaptivePracticeQueueItem[]
+  badges             UserBadge[]
+
+  // Guardian (parent/mentor) access — named relations because a User can
+  // be a guardian of some students and simultaneously a student with
+  // their own guardians (e.g. a mentor who is also studying).
+  guardianOf       GuardianLink[] @relation("GuardianOf")
+  guardedByLinks   GuardianLink[] @relation("StudentGuardians")
+
+  @@map("users")
+}
+
+// ============================================================
+// ROLES & PERMISSIONS
+// `User.role` stays as-is for the coarse student/staff distinction the
+// app already uses. This section adds fine-grained, data-driven admin
+// capabilities on top of it — "can approve questions" vs. "can publish
+// mock tests" vs. "can manage users" — without needing a code deploy
+// every time a new capability or a new admin is added. A user can hold
+// more than one Role (e.g. content author AND reviewer), hence the
+// join table rather than a single roleId column on User.
+// ============================================================
+model Role {
+  id          String   @id @default(uuid()) @db.Uuid
+  // Stable machine key used in permission checks, e.g. "content_reviewer".
+  // `name`/`description` are the admin-UI-facing labels and can change
+  // freely without breaking any code that checks `key`.
+  key         String   @unique
+  name        String
+  description String?  @db.Text
+
+  // Permission strings, e.g. ["question:approve", "mocktest:publish",
+  // "user:manage"]. A String[] instead of a normalized Permission table
+  // on purpose: the set of capabilities is expected to grow as features
+  // ship, same reasoning as Notification.type — a new permission string
+  // is an application-code change, not a migration. Revisit this if you
+  // ever need to manage permissions themselves through an admin UI rather
+  // than defining them in code.
+  permissions String[]
+
+  // Seeded roles (e.g. "super_admin") that ship with the app and
+  // shouldn't be deletable from an admin UI, as opposed to roles an
+  // org admin might create later.
+  isSystem Boolean @default(false) @map("is_system")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  userRoles UserRole[]
+
+  @@index([permissions], type: Gin)
+  @@map("roles")
+}
+
+model UserRole {
+  userId     String   @map("user_id") @db.Uuid
+  roleId     String   @map("role_id") @db.Uuid
+  assignedAt DateTime @default(now()) @map("assigned_at")
+  assignedBy String?  @map("assigned_by") @db.Uuid
+
+  user    User  @relation("UserRoles", fields: [userId], references: [id], onDelete: Cascade)
+  role    Role  @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  granter User? @relation("RoleGrantedBy", fields: [assignedBy], references: [id])
+
+  @@id([userId, roleId])
+  @@index([roleId])
+  @@map("user_roles")
+}
+
+// ============================================================
+// SUBJECT / SYLLABUS
+// ============================================================
+model Subject {
+  id           String @id
+  name         String
+  displayOrder Int    @map("display_order")
+
+  units Unit[]
+
+  // See EXAM PATTERNS below — a section of an exam pattern (e.g. "Physics,
+  // 45 questions") optionally names which Subject it corresponds to.
+  examPatternSections ExamPatternSection[]
+
+  @@map("subjects")
+}
+
+model Unit {
+  id             String @id
+  subjectId      String @map("subject_id")
+  name           String
+  weightageMarks Int    @map("weightage_marks")
+  displayOrder   Int    @map("display_order")
+
+  ncertClass            String? @map("ncert_class")
+  expectedQuestions     String? @map("expected_questions")
+  weightagePercent      Int?    @map("weightage_percent")
+  subtopics             Json?
+  keyFormulas           Json?   @map("key_formulas")
+  overview              String? @db.Text
+  highYieldNcertChapter String? @map("high_yield_ncert_chapter") @db.Text
+  badgeColor            String? @map("badge_color")
+
+  subject   Subject    @relation(fields: [subjectId], references: [id])
+  chapters  Chapter[]
+  questions Question[]
+
+  // Content library & study planner — see those sections below.
+  contentAssets   ContentAsset[]
+  studyPlanItems  StudyPlanItem[]
+
+  @@index([subjectId])
+  @@map("units")
+}
+
+model Chapter {
+  id           String @id @default(uuid()) @db.Uuid
+  unitId       String @map("unit_id")
+  name         String
+  classLevel   String @map("class_level")
+  displayOrder Int    @map("display_order")
+
+  unit      Unit       @relation(fields: [unitId], references: [id])
+  topics    Topic[]
+  questions Question[]
+
+  contentAssets  ContentAsset[]
+  studyPlanItems StudyPlanItem[]
+
+  @@index([unitId])
+  @@map("chapters")
+}
+
+model Topic {
+  id           String  @id @default(uuid()) @db.Uuid
+  chapterId    String  @map("chapter_id") @db.Uuid
+  name         String
+  tagCode      String? @map("tag_code")
+  displayOrder Int     @map("display_order")
+
+  chapter   Chapter    @relation(fields: [chapterId], references: [id])
+  questions Question[]
+
+  // Per-user mastery rollup for this topic — see UserTopicMastery.
+  userTopicMastery UserTopicMastery[]
+
+  contentAssets      ContentAsset[]
+  studyPlanItems     StudyPlanItem[]
+  doubts             Doubt[]
+  practiceQueueItems AdaptivePracticeQueueItem[]
+
+  @@index([chapterId])
+  @@map("topics")
+}
+
+// ============================================================
+// QUESTION
+// ============================================================
+model Question {
+  id String @id @default(uuid()) @db.Uuid
+
+  // -------------------------
+  // Syllabus
+  // -------------------------
+  unitId    String  @map("unit_id")
+  chapterId String? @map("chapter_id") @db.Uuid
+  topicId   String? @map("topic_id") @db.Uuid
+
+  // -------------------------
+  // Exam classification
+  // -------------------------
+  examType ExamType @default(NEET) @map("exam_type")
+
+  // -------------------------
+  // Question content
+  // -------------------------
+  stemEn String  @map("stem_en") @db.Text
+  stemTa String? @map("stem_ta") @db.Text
+
+  // -------------------------
+  // Difficulty / cognition
+  // -------------------------
+  difficulty     DifficultyLevel @default(L3)
+  cognitiveSkill CognitiveSkill  @default(APPLY) @map("cognitive_skill")
+
+  // -------------------------
+  // Question format
+  // -------------------------
+  questionType QuestionType @default(MCQ) @map("question_type")
+
+  // -------------------------
+  // Representation
+  // -------------------------
+  representationTypes RepresentationType[] @map("representation_types")
+
+  // -------------------------
+  // Mathematical / conceptual
+  // -------------------------
+  isNumerical  Boolean @default(false) @map("is_numerical")
+  conceptCount Int     @default(1) @map("concept_count")
+
+  // -------------------------
+  // Source / provenance
+  // -------------------------
+  source          QuestionSource @default(AI_GENERATED)
+  sourceReference String?        @map("source_reference") @db.Text
+
+  // Set when source = PYQ: which year's paper this question is actually
+  // from, and (JEE Advanced only) which paper — "Paper 1" / "Paper 2".
+  // Left null for non-PYQ questions. Exists as real columns rather than
+  // parsed out of sourceReference because "PYQ, filterable by year" is a
+  // query aspirants explicitly search for, not just metadata to display.
+  examYear  Int?    @map("exam_year")
+  examPaper String? @map("exam_paper")
+
+  // -------------------------
+  // Scoring
+  // -------------------------
+  // Defaults used for ad-hoc practice attempts (no MockTest/ExamPattern
+  // involved) and as a fallback if a mock test's ExamPattern has no
+  // ScoringRule for this question's questionType. When an attempt is
+  // against a MockTest that has an examPatternId, scoring should prefer
+  // the matching ScoringRule (see EXAM PATTERNS & SCORING below) over
+  // these two columns, since that's what supports per-exam-year marking
+  // schemes and JEE Advanced's partial-credit rules.
+  marks         Int @default(4)
+  negativeMarks Int @default(1) @map("negative_marks")
+
+  // -------------------------
+  // Explanation
+  // -------------------------
+  explanationEn String? @map("explanation_en") @db.Text
+  explanationTa String? @map("explanation_ta") @db.Text
+
+  // -------------------------
+  // Content authoring workflow
+  // (source = where the content came from; reviewStatus = where it is in
+  // the editorial pipeline; isActive below = whether it's currently
+  // servable to end users. Keeping these three separate means, e.g., you
+  // can un-publish an APPROVED question without losing its review state.)
+  // -------------------------
+  authorId     String?      @map("author_id") @db.Uuid
+  reviewStatus ReviewStatus @default(DRAFT) @map("review_status")
+  reviewedBy   String?      @map("reviewed_by") @db.Uuid
+  reviewedAt   DateTime?    @map("reviewed_at")
+  reviewNotes  String?      @map("review_notes") @db.Text
+
+  // -------------------------
+  // Status
+  // -------------------------
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // -------------------------
+  // Relations
+  // -------------------------
+  unit           Unit             @relation(fields: [unitId], references: [id])
+  chapter        Chapter?         @relation(fields: [chapterId], references: [id])
+  topic          Topic?           @relation(fields: [topicId], references: [id])
+  options        QuestionOption[]
+  attemptAnswers AttemptAnswer[]
+
+  author   User? @relation("QuestionAuthor", fields: [authorId], references: [id])
+  reviewer User? @relation("QuestionReviewer", fields: [reviewedBy], references: [id])
+
+  revisions         QuestionRevision[]
+  bookmarks         Bookmark[]
+  notes              Note[]
+  mockTestQuestions MockTestQuestion[]
+  doubts             Doubt[]
+  practiceQueueItems AdaptivePracticeQueueItem[]
+
+  @@index([unitId])
+  @@index([chapterId])
+  @@index([topicId])
+  @@index([examType])
+  @@index([difficulty])
+  @@index([questionType])
+  @@index([source])
+  @@index([isActive])
+  @@index([examType, difficulty, isActive])
+  @@index([representationTypes], type: Gin)
+  @@index([reviewStatus])
+  @@index([authorId])
+  @@index([reviewedBy])
+  // Serves "PYQs from this year range on this topic" directly — the
+  // combination aspirants actually filter by, not examYear alone.
+  @@index([source, examYear])
+  @@map("questions")
+}
+
+// ============================================================
+// QUESTION OPTIONS
+// ============================================================
+model QuestionOption {
+  id           String  @id @default(uuid()) @db.Uuid
+  questionId   String  @map("question_id") @db.Uuid
+  label        String
+  textEn       String  @map("text_en") @db.Text
+  textTa       String? @map("text_ta") @db.Text
+  isCorrect    Boolean @map("is_correct")
+  displayOrder Int     @map("display_order")
+
+  question       Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  attemptAnswers AttemptAnswer[]
+
+  @@index([questionId])
+  @@map("question_options")
+}
+
+// ============================================================
+// CONTENT AUTHORING — REVISIONS
+// Append-only audit trail. Every time a question's content changes after
+// its first save, write one row here with a full snapshot rather than
+// trying to diff columns — cheap to write, trivial to render as a
+// version history / "revert to" UI, and it never blocks the hot path
+// (writing a Question row) on a schema migration if the snapshot shape
+// changes later, because it's just Json.
+// ============================================================
+model QuestionRevision {
+  id            String   @id @default(uuid()) @db.Uuid
+  questionId    String   @map("question_id") @db.Uuid
+  snapshot      Json
+  changeSummary String?  @map("change_summary")
+  editedBy      String?  @map("edited_by") @db.Uuid
+  editedAt      DateTime @default(now()) @map("edited_at")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  editor   User?    @relation("QuestionRevisionEditor", fields: [editedBy], references: [id])
+
+  @@index([questionId])
+  @@index([editedBy])
+  @@map("question_revisions")
+}
+
+// ============================================================
+// EXAM PATTERNS & SCORING
+// Versioned exam configuration, kept out of application code because NTA
+// changes exam patterns (section question counts, choice rules, marking
+// schemes) year to year — and JEE Advanced in particular has changed its
+// MULTIPLE_CORRECT partial-marking rules between sessions. An ExamPattern
+// is one version of "what a NEET / JEE Main / JEE Advanced paper looks
+// like" for a given exam + year (+ paper, for JEE Advanced's Paper 1 /
+// Paper 2 split); ExamPatternSection describes its sections (subject,
+// question count, optional "attempt any N of M", optional sectional
+// timer); ScoringRule describes how each QuestionType is marked within
+// that pattern. Question itself stays exam-pattern-agnostic — the same
+// question can be reused across many patterns/years, so scoring is
+// resolved at grading time from (MockTest.examPatternId, Question.
+// questionType), not stored redundantly on the question.
+// ============================================================
+model ExamPattern {
+  id          String   @id @default(uuid()) @db.Uuid
+  examType    ExamType @map("exam_type")
+  examYear    Int      @map("exam_year")
+  // "Paper 1" / "Paper 2" for JEE Advanced; "" (not null) for NEET / JEE
+  // Main, which don't have this split. Deliberately non-nullable with an
+  // empty-string default rather than String? — Postgres treats NULL as
+  // distinct from NULL in a unique constraint, so @@unique below would
+  // silently fail to stop duplicate NEET/JEE Main pattern rows if this
+  // were nullable and left null.
+  paper       String   @default("")
+  // Lets you correct a published pattern without mutating history —
+  // bump the version and mark the old one isActive: false rather than
+  // editing it in place, since mock tests already reference a specific
+  // ExamPattern row.
+  version     Int      @default(1)
+  isActive    Boolean  @default(true) @map("is_active")
+  description String?  @db.Text
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  sections     ExamPatternSection[]
+  scoringRules ScoringRule[]
+  mockTests    MockTest[]
+
+  @@unique([examType, examYear, paper, version])
+  @@index([examType, examYear])
+  @@map("exam_patterns")
+}
+
+model ExamPatternSection {
+  id            String @id @default(uuid()) @db.Uuid
+  examPatternId String @map("exam_pattern_id") @db.Uuid
+
+  name    String  // e.g. "Physics", "Section A — Physics"
+  subjectId String? @map("subject_id")
+
+  // "Attempt any N of M" sections (common in JEE Advanced) set both:
+  // questionCount = M (how many are presented), attemptCount = N (how
+  // many count toward the score). For a plain section, leave attemptCount
+  // null and it's assumed to equal questionCount.
+  questionCount Int  @map("question_count")
+  attemptCount  Int? @map("attempt_count")
+
+  // Null when the whole test shares one timer (MockTest.durationSeconds);
+  // set when this specific section is separately timed.
+  durationSeconds Int? @map("duration_seconds")
+  displayOrder    Int  @map("display_order")
+
+  // How a student may move in and out of this section during an attempt.
+  // Config only — per-attempt state (has this student actually left/
+  // locked/submitted this section) lives in AttemptSectionState below,
+  // since that's per (attempt, section), not shared config.
+  navigationRule SectionNavigationRule @default(FREE_NAVIGATION) @map("navigation_rule")
+  // Some patterns require a distinct "submit Section A" action before
+  // Section B unlocks, separate from the whole-test submit. When false,
+  // leaving the section (per navigationRule) is the only state change
+  // tracked — there's no separate per-section submit step.
+  requiresExplicitSectionSubmit Boolean @default(false) @map("requires_explicit_section_submit")
+
+  examPattern ExamPattern @relation(fields: [examPatternId], references: [id], onDelete: Cascade)
+  subject     Subject?    @relation(fields: [subjectId], references: [id])
+
+  attemptStates AttemptSectionState[]
+
+  @@index([examPatternId])
+  @@index([subjectId])
+  @@map("exam_pattern_sections")
+}
+
+model ScoringRule {
+  id            String       @id @default(uuid()) @db.Uuid
+  examPatternId String       @map("exam_pattern_id") @db.Uuid
+  questionType  QuestionType @map("question_type")
+
+  marks         Int
+  negativeMarks Int @map("negative_marks")
+
+  partialMarkingMode PartialMarkingMode @default(NONE) @map("partial_marking_mode")
+  // Used when partialMarkingMode = PER_CORRECT_OPTION: marks awarded per
+  // correct option the student selected, up to maxMarks.
+  marksPerCorrectOption Int? @map("marks_per_correct_option")
+  maxMarks              Int? @map("max_marks")
+
+  examPattern ExamPattern @relation(fields: [examPatternId], references: [id], onDelete: Cascade)
+
+  // One rule per question type per pattern — grading looks this up by
+  // (examPatternId, question.questionType).
+  @@unique([examPatternId, questionType])
+  @@index([examPatternId])
+  @@map("scoring_rules")
+}
+
+// ============================================================
+// TEST SERIES / MOCK TESTS
+// A curated, reusable set of questions many users attempt against —
+// distinct from the ad-hoc practice sessions TestAttempt.config already
+// supports. TestSeries is the grouping ("NEET 2027 Full Syllabus Series");
+// MockTest is one sitting within it ("Full Test 12"); MockTestQuestion
+// pins the exact question set, order, and any per-test marks override.
+// ============================================================
+model TestSeries {
+  id           String        @id @default(uuid()) @db.Uuid
+  title        String
+  slug         String        @unique
+  examType     ExamType      @map("exam_type")
+  description  String?       @db.Text
+  status       PublishStatus @default(DRAFT)
+  displayOrder Int           @default(0) @map("display_order")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  mockTests MockTest[]
+
+  @@index([examType])
+  @@index([status])
+  @@map("test_series")
+}
+
+model MockTest {
+  id              String        @id @default(uuid()) @db.Uuid
+  testSeriesId    String?       @map("test_series_id") @db.Uuid
+  // Optional: when set, grading and section/timer structure for this
+  // mock test are driven by the referenced ExamPattern (sections,
+  // ScoringRule per QuestionType) instead of each Question's own default
+  // marks/negativeMarks. Left null for mock tests that don't need that
+  // level of fidelity (e.g. informal topic-wise tests).
+  examPatternId   String?       @map("exam_pattern_id") @db.Uuid
+  title           String
+  examType        ExamType      @map("exam_type")
+  status          PublishStatus @default(DRAFT)
+  durationSeconds Int           @map("duration_seconds")
+  totalMarks      Int           @map("total_marks")
+  questionCount   Int           @map("question_count")
+  isFree          Boolean       @default(true) @map("is_free")
+  publishAt       DateTime?     @map("publish_at")
+  createdBy       String?       @map("created_by") @db.Uuid
+  createdAt       DateTime      @default(now()) @map("created_at")
+  updatedAt       DateTime      @updatedAt @map("updated_at")
+
+  testSeries  TestSeries?  @relation(fields: [testSeriesId], references: [id])
+  examPattern ExamPattern? @relation(fields: [examPatternId], references: [id])
+  creator     User?        @relation("MockTestCreator", fields: [createdBy], references: [id])
+  questions   MockTestQuestion[]
+  attempts    TestAttempt[]
+
+  // Cached score-distribution stats for this mock test — see
+  // MOCK TEST PERCENTILE & RANK below. One row per MockTest, hence the
+  // 1:1 relation rather than an array.
+  stats MockTestStat?
+
+  @@index([testSeriesId])
+  @@index([examPatternId])
+  @@index([examType])
+  @@index([status])
+  @@map("mock_tests")
+}
+
+model MockTestQuestion {
+  mockTestId String @map("mock_test_id") @db.Uuid
+  questionId String @map("question_id") @db.Uuid
+
+  sectionName           String? @map("section_name")
+  displayOrder           Int     @map("display_order")
+  marksOverride          Int?    @map("marks_override")
+  negativeMarksOverride  Int?    @map("negative_marks_override")
+
+  mockTest MockTest @relation(fields: [mockTestId], references: [id], onDelete: Cascade)
+  // No onDelete: Cascade here on purpose — a Question that's still pinned
+  // into a MockTest shouldn't be hard-deletable by accident; retire it via
+  // isActive instead. Remove it from the mock test first if it truly needs
+  // to go.
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@id([mockTestId, questionId])
+  @@index([questionId])
+  @@map("mock_test_questions")
+}
+
+// ============================================================
+// TEST ATTEMPT
+// ============================================================
+model TestAttempt {
+  id     String @id @default(uuid()) @db.Uuid
+  userId String @map("user_id") @db.Uuid
+
+  // Set when this attempt is against a curated MockTest (leaderboard-
+  // eligible); left null for ad-hoc practice sessions built from `config`
+  // alone, same as before this field was added.
+  mockTestId String? @map("mock_test_id") @db.Uuid
+
+  config Json
+
+  durationSeconds Int       @map("duration_seconds")
+  startedAt       DateTime  @default(now()) @map("started_at")
+  submittedAt     DateTime? @map("submitted_at")
+
+  status AttemptStatus @default(IN_PROGRESS)
+
+  score        Int?
+  maxScore     Int? @map("max_score")
+  correctCount Int? @map("correct_count")
+  wrongCount   Int? @map("wrong_count")
+  skippedCount Int? @map("skipped_count")
+
+  // Integrity summary — a denormalized count/flag kept in sync with
+  // AttemptIntegrityEvent (see ASSESSMENT INTEGRITY below), same
+  // cache/log split used elsewhere in this schema. Cheap to read for
+  // "does this attempt need manual review" without counting events every
+  // time; the event log underneath is what you'd actually inspect once
+  // flagged.
+  integrityViolationCount Int     @default(0) @map("integrity_violation_count")
+  integrityFlagged        Boolean @default(false) @map("integrity_flagged")
+
+  // -------------------------
+  // Percentile / predicted rank
+  // Computed shortly after submission (background job, not inline with
+  // grading) against MockTestStat's score distribution for this
+  // mockTestId, and — when a RankPredictionModel exists for this exam +
+  // year — extrapolated into predictedRank. Both are snapshots, not live
+  // values: recompute and overwrite if you want them to reflect a
+  // growing attempt pool later, but don't expect them to update
+  // themselves. See MOCK TEST PERCENTILE & RANK below.
+  // -------------------------
+  percentile       Float?    @map("percentile")
+  predictedRank    Int?      @map("predicted_rank")
+  rankCalculatedAt DateTime? @map("rank_calculated_at")
+
+  // -------------------------
+  // Answer sync resilience
+  // lastSyncedAt/syncGapSeconds are a denormalized summary, same pattern
+  // as the integrity fields above — AttemptSyncEvent (see ANSWER SYNC
+  // RESILIENCE below) is the actual log a support/integrity review would
+  // read; these two columns are what a "did this student's connection
+  // drop mid-test" list view filters/sorts on without joining that log.
+  // -------------------------
+  lastSyncedAt   DateTime? @map("last_synced_at")
+  syncGapSeconds Int?      @map("sync_gap_seconds")
+
+  user     User      @relation(fields: [userId], references: [id])
+  mockTest MockTest? @relation(fields: [mockTestId], references: [id])
+  answers  AttemptAnswer[]
+
+  integrityEvents AttemptIntegrityEvent[]
+  sectionStates   AttemptSectionState[]
+  syncEvents      AttemptSyncEvent[]
+
+  @@index([userId])
+  @@index([userId, status])
+  @@index([userId, startedAt(sort: Desc)])
+  @@index([status])
+  // Leaderboard query shape: "top scores for this mock test, submitted
+  // attempts only" — this composite index serves it directly off the
+  // index instead of a sort-after-filter table scan.
+  @@index([mockTestId, status, score(sort: Desc)])
+  @@index([integrityFlagged])
+  @@map("test_attempts")
+}
+
+// ============================================================
+// SECTIONAL NAVIGATION STATE
+// Per-(attempt, section) state — whether this student has entered,
+// locked, or explicitly submitted a given section during this specific
+// attempt. Separate from ExamPatternSection's navigationRule /
+// requiresExplicitSectionSubmit, which are shared config for every
+// attempt against that pattern; this table is what actually changes as
+// one student progresses through one sitting.
+// ============================================================
+model AttemptSectionState {
+  attemptId            String @map("attempt_id") @db.Uuid
+  examPatternSectionId String @map("exam_pattern_section_id") @db.Uuid
+
+  enteredAt        DateTime? @map("entered_at")
+  // Set once the student leaves this section under a LOCK_ON_EXIT rule —
+  // the client checks this before allowing re-entry.
+  lockedAt         DateTime? @map("locked_at")
+  // Set only when the section's requiresExplicitSectionSubmit is true —
+  // a distinct action from lockedAt (a section can lock on exit without
+  // ever having a dedicated submit step).
+  submittedAt      DateTime? @map("submitted_at")
+  timeSpentSeconds Int       @default(0) @map("time_spent_seconds")
+
+  attempt TestAttempt        @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  section ExamPatternSection @relation(fields: [examPatternSectionId], references: [id])
+
+  @@id([attemptId, examPatternSectionId])
+  @@index([examPatternSectionId])
+  @@map("attempt_section_states")
+}
+
+// ============================================================
+// ATTEMPT ANSWERS
+// ============================================================
+model AttemptAnswer {
+  attemptId        String  @map("attempt_id") @db.Uuid
+  questionId       String  @map("question_id") @db.Uuid
+  selectedOptionId String? @map("selected_option_id") @db.Uuid
+
+  isCorrect   Boolean?
+  timeSpentMs Int?     @map("time_spent_ms")
+  // When the server persisted this answer. During a connectivity gap this
+  // can lag well behind when the student actually picked it — see
+  // clientAnsweredAt.
+  answeredAt  DateTime @default(now()) @map("answered_at")
+  // When the student actually selected this answer on-device, as reported
+  // by the client. Null for older rows / clients that don't report it.
+  // The gap between this and answeredAt is what TestAttempt.syncGapSeconds
+  // is derived from — a large gap on a since-submitted attempt is a signal
+  // the student was offline for a stretch, not that they were idle.
+  clientAnsweredAt DateTime? @map("client_answered_at")
+
+  attempt        TestAttempt     @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question       Question        @relation(fields: [questionId], references: [id])
+  selectedOption QuestionOption? @relation(fields: [selectedOptionId], references: [id])
+
+  @@id([attemptId, questionId])
+  @@index([questionId])
+  @@index([selectedOptionId])
+  @@map("attempt_answers")
+}
+
+// ============================================================
+// MOCK TEST PERCENTILE & RANK
+// Two different things live here, deliberately kept separate. MockTestStat
+// is purely internal — a cached score distribution over your own users'
+// attempts at one MockTest, cheap to recompute periodically (a background
+// job, not inline with every submission) and cheap to read a percentile
+// from without scanning every TestAttempt row each time. RankPredictionModel
+// is external calibration — a curve derived from a previous year's actual
+// published results (or a large enough internal sample), used to
+// extrapolate "this score would likely rank around X nationally" beyond
+// just your own attempt pool. A MockTestStat can exist with zero
+// RankPredictionModel rows (you'd still get an internal percentile, just
+// no predicted All-India rank) — the two are independent, and
+// TestAttempt.percentile / predictedRank are populated from whichever of
+// these is actually available at calculation time.
+// ============================================================
+model MockTestStat {
+  mockTestId   String @id @map("mock_test_id") @db.Uuid
+  attemptCount Int    @default(0) @map("attempt_count")
+  meanScore    Float? @map("mean_score")
+  stdDevScore  Float? @map("std_dev_score")
+  minScore     Int?   @map("min_score")
+  maxScore     Int?   @map("max_score")
+  // Sorted array of {score, percentile} points, e.g.
+  // [{"score": 680, "percentile": 99.2}, ...] — lets a percentile lookup
+  // for a given score be an interpolation over this small array instead
+  // of a COUNT(*) query over every submitted TestAttempt for this mock
+  // test, which gets expensive exactly when a mock test is popular enough
+  // for the percentile to matter most.
+  scoreDistribution Json?    @map("score_distribution")
+  lastComputedAt    DateTime @default(now()) @map("last_computed_at")
+
+  mockTest MockTest @relation(fields: [mockTestId], references: [id], onDelete: Cascade)
+
+  @@map("mock_test_stats")
+}
+
+// One row per (exam, year, source) calibration curve. `source` is a
+// plain string identifying provenance ("nta_official_2025_results",
+// "internal_sample_2026_v2") rather than an enum, since new calibration
+// sources will be added over time as better data becomes available, and
+// isActive lets you swap which one is currently trusted without deleting
+// the superseded curve's history.
+model RankPredictionModel {
+  id       String   @id @default(uuid()) @db.Uuid
+  examType ExamType @map("exam_type")
+  examYear Int      @map("exam_year")
+
+  // Ordered array of {score, percentile, expectedRank} calibration
+  // points; application code interpolates between them for a given score.
+  curveData              Json    @map("curve_data")
+  totalCandidatesAssumed Int?    @map("total_candidates_assumed")
+  source                 String
+  isActive               Boolean @default(true) @map("is_active")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([examType, examYear, source])
+  @@index([examType, examYear, isActive])
+  @@map("rank_prediction_models")
+}
+
+// ============================================================
+// ANSWER SYNC RESILIENCE
+// AttemptAnswer's composite primary key (attemptId, questionId) already
+// makes each individual answer sync an idempotent upsert — a retried
+// write for the same question just overwrites the same row, so no
+// separate per-answer "sync status" column is needed. What's missing is
+// visibility into *when* a client's answers actually reached the server
+// relative to when the student made them, which matters specifically for
+// diagnosing "I answered this but it shows blank" disputes after a
+// dropped connection. AttemptSyncEvent is that append-only log — one row
+// per batch a client pushes, not per answer.
+// ============================================================
+model AttemptSyncEvent {
+  id        String @id @default(uuid()) @db.Uuid
+  attemptId String @map("attempt_id") @db.Uuid
+
+  // Idempotency key generated client-side per sync attempt, so a retried
+  // POST after a flaky reconnect doesn't get logged as two separate
+  // events for the same batch.
+  clientBatchId String @map("client_batch_id")
+  // Which questionIds this batch carried, e.g. ["uuid1", "uuid2"] — kept
+  // as Json rather than a join table since this is a diagnostic log, not
+  // something queried by individual questionId membership.
+  answeredQuestionIds Json @map("answered_question_ids")
+
+  // When the client captured this batch locally — can be well before it
+  // actually reaches the server if the device was offline.
+  clientQueuedAt   DateTime @map("client_queued_at")
+  serverReceivedAt DateTime @default(now()) @map("server_received_at")
+  // The client's own signal that it queued this batch while it detected
+  // no connectivity, as opposed to a batch that synced immediately.
+  wasOffline       Boolean  @default(false) @map("was_offline")
+
+  attempt TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+
+  @@unique([attemptId, clientBatchId])
+  @@index([attemptId])
+  @@map("attempt_sync_events")
+}
+
+// ============================================================
+// ENGAGEMENT & PROGRESS
+// ============================================================
+
+// One row per (user, question) they've bookmarked for later review.
+model Bookmark {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+  @@index([questionId])
+  @@map("bookmarks")
+}
+
+// One editable personal note per (user, question). If you later need
+// multiple notes per question, drop the unique constraint and add an id-
+// based lookup instead of upserting on (userId, questionId).
+model Note {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  body       String   @db.Text
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+  @@index([questionId])
+  @@map("notes")
+}
+
+// Append-only daily activity log — the source of truth for streaks and
+// activity-heatmap UIs. User.currentStreakDays / longestStreakDays /
+// lastActivityDate are a cache derived from this table; recompute them
+// from here if they ever drift (e.g. after a bulk data fix).
+model UserDailyActivity {
+  userId             String   @map("user_id") @db.Uuid
+  activityDate       DateTime @map("activity_date") @db.Date
+  questionsAttempted Int      @default(0) @map("questions_attempted")
+  questionsCorrect   Int      @default(0) @map("questions_correct")
+  timeSpentSeconds   Int      @default(0) @map("time_spent_seconds")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, activityDate])
+  @@index([activityDate])
+  @@map("user_daily_activity")
+}
+
+// Denormalized per-(user, topic) rollup, upserted whenever an AttemptAnswer
+// is graded. Exists so "which topics is this student weak in" is an
+// indexed point-lookup instead of aggregating potentially millions of
+// AttemptAnswer rows per request. Treat it as a rebuildable cache, not a
+// primary record — AttemptAnswer + Question.topicId remains the ground
+// truth if you ever need to recompute it.
+model UserTopicMastery {
+  userId             String    @map("user_id") @db.Uuid
+  topicId            String    @map("topic_id") @db.Uuid
+  questionsAttempted Int       @default(0) @map("questions_attempted")
+  questionsCorrect   Int       @default(0) @map("questions_correct")
+  avgTimeSpentMs     Int?      @map("avg_time_spent_ms")
+  masteryScore       Float     @default(0) @map("mastery_score")
+  lastAttemptedAt    DateTime? @map("last_attempted_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@id([userId, topicId])
+  @@index([topicId])
+  @@map("user_topic_mastery")
+}
+
+// `type` is a plain String, not an enum, on purpose — notification types
+// tend to proliferate ("mock_test_published", "streak_reminder",
+// "rank_update"...) as product features grow, and adding a Postgres enum
+// value is a migration while adding a new string literal in application
+// code is not. Reach for an enum only once the set of types has actually
+// stabilized.
+model Notification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  type      String
+  title     String
+  body      String?  @db.Text
+  payload   Json?
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("notifications")
+}
+
+// ============================================================
+// CONTENT LIBRARY
+// Turns the schema from "question bank + test engine" into an actual
+// learning product. ContentAsset covers video lectures, downloadable
+// notes/PDFs, and similar material, optionally scoped to a Unit/Chapter/
+// Topic (looser scoping is intentional — a formula-sheet PDF might cover
+// a whole Unit, a short video might be Topic-specific).
+// ============================================================
+model ContentAsset {
+  id        String  @id @default(uuid()) @db.Uuid
+  unitId    String? @map("unit_id")
+  chapterId String? @map("chapter_id") @db.Uuid
+  topicId   String? @map("topic_id") @db.Uuid
+
+  type        ContentAssetType
+  title       String
+  description String?          @db.Text
+
+  // CDN URLs, not the files themselves — this schema tracks metadata,
+  // not blob storage.
+  url          String  @db.Text
+  thumbnailUrl String? @map("thumbnail_url") @db.Text
+
+  durationSeconds Int?    @map("duration_seconds") // video/audio only
+  transcriptEn    String? @map("transcript_en") @db.Text
+  transcriptTa    String? @map("transcript_ta") @db.Text
+  fileSizeBytes   Int?    @map("file_size_bytes")
+
+  // Drives the offline/downloadable-content flag from the roadmap — the
+  // client checks this before showing a "download for offline" option;
+  // it does not itself track which users downloaded what (that's an app-
+  // /device-local concern, not server state worth persisting).
+  isDownloadable Boolean @default(false) @map("is_downloadable")
+
+  status       PublishStatus @default(DRAFT)
+  displayOrder Int           @default(0) @map("display_order")
+  createdBy    String?       @map("created_by") @db.Uuid
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  unit    Unit?    @relation(fields: [unitId], references: [id])
+  chapter Chapter? @relation(fields: [chapterId], references: [id])
+  topic   Topic?   @relation(fields: [topicId], references: [id])
+  creator User?    @relation("ContentAssetCreator", fields: [createdBy], references: [id])
+
+  watchProgress ContentWatchProgress[]
+
+  @@index([unitId])
+  @@index([chapterId])
+  @@index([topicId])
+  @@index([type])
+  @@index([status])
+  @@map("content_assets")
+}
+
+// Per-(user, asset) watch/read progress — lets a video resume where the
+// student left off and lets "continue learning" surfaces work off real
+// data instead of just "recently published."
+model ContentWatchProgress {
+  userId          String   @map("user_id") @db.Uuid
+  contentAssetId  String   @map("content_asset_id") @db.Uuid
+  progressSeconds Int      @default(0) @map("progress_seconds")
+  isCompleted     Boolean  @default(false) @map("is_completed")
+  lastWatchedAt   DateTime @default(now()) @map("last_watched_at")
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  contentAsset ContentAsset @relation(fields: [contentAssetId], references: [id], onDelete: Cascade)
+
+  @@id([userId, contentAssetId])
+  @@index([contentAssetId])
+  @@map("content_watch_progress")
+}
+
+// ============================================================
+// DOUBT FORUM
+// A Doubt can be anchored to a specific Question (most common — "I don't
+// understand why option C is wrong") or just a Topic (more general —
+// "can someone explain relative velocity in 2D again"), hence both FKs
+// are optional rather than picking one.
+// ============================================================
+model Doubt {
+  id         String      @id @default(uuid()) @db.Uuid
+  userId     String      @map("user_id") @db.Uuid
+  questionId String?     @map("question_id") @db.Uuid
+  topicId    String?     @map("topic_id") @db.Uuid
+
+  title   String
+  body    String      @db.Text
+  status  DoubtStatus @default(OPEN)
+  upvotes Int         @default(0)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user     User      @relation("DoubtAuthor", fields: [userId], references: [id], onDelete: Cascade)
+  question Question? @relation(fields: [questionId], references: [id])
+  topic    Topic?    @relation(fields: [topicId], references: [id])
+
+  replies DoubtReply[]
+
+  @@index([userId])
+  @@index([questionId])
+  @@index([topicId])
+  @@index([status])
+  @@map("doubts")
+}
+
+model DoubtReply {
+  id               String   @id @default(uuid()) @db.Uuid
+  doubtId          String   @map("doubt_id") @db.Uuid
+  userId           String   @map("user_id") @db.Uuid
+  body             String   @db.Text
+  // Set by the doubt's author to mark which reply actually resolved it —
+  // drives a "best answer" UI, same idea as Stack Overflow's accepted
+  // answer.
+  isAcceptedAnswer Boolean  @default(false) @map("is_accepted_answer")
+  // True when the replier holds a staff/reviewer role at reply time —
+  // lets the UI badge staff answers as authoritative without joining
+  // through Role/UserRole on every render.
+  isStaffReply     Boolean  @default(false) @map("is_staff_reply")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  doubt Doubt @relation(fields: [doubtId], references: [id], onDelete: Cascade)
+  user  User  @relation("DoubtReplyAuthor", fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([doubtId])
+  @@index([userId])
+  @@map("doubt_replies")
+}
+
+// ============================================================
+// STUDY PLANNER
+// A student's syllabus-coverage schedule against their target exam date.
+// Each StudyPlanItem is loosely scoped to Unit/Chapter/Topic (all
+// optional, same reasoning as ContentAsset — a plan item might be
+// chapter-level or drill into a single topic).
+// ============================================================
+model StudyPlan {
+  id             String   @id @default(uuid()) @db.Uuid
+  userId         String   @map("user_id") @db.Uuid
+  examType       ExamType @map("exam_type")
+  targetExamDate DateTime @map("target_exam_date") @db.Date
+  title          String   @default("My Study Plan")
+  isActive       Boolean  @default(true) @map("is_active")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  user  User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items StudyPlanItem[]
+
+  @@index([userId])
+  @@map("study_plans")
+}
+
+model StudyPlanItem {
+  id            String              @id @default(uuid()) @db.Uuid
+  studyPlanId   String              @map("study_plan_id") @db.Uuid
+  unitId        String?             @map("unit_id")
+  chapterId     String?             @map("chapter_id") @db.Uuid
+  topicId       String?             @map("topic_id") @db.Uuid
+  scheduledDate DateTime            @map("scheduled_date") @db.Date
+  status        StudyPlanItemStatus @default(PENDING)
+  displayOrder  Int                 @default(0) @map("display_order")
+  completedAt   DateTime?           @map("completed_at")
+
+  studyPlan StudyPlan @relation(fields: [studyPlanId], references: [id], onDelete: Cascade)
+  unit      Unit?     @relation(fields: [unitId], references: [id])
+  chapter   Chapter?  @relation(fields: [chapterId], references: [id])
+  topic     Topic?    @relation(fields: [topicId], references: [id])
+
+  @@index([studyPlanId])
+  @@index([scheduledDate])
+  @@map("study_plan_items")
+}
+
+// A general reference calendar (NTA registration windows, admit-card
+// release, exam date, result date) — not tied to any one user's
+// StudyPlan, since it's the same for everyone preparing for a given
+// exam + year. `eventType` is a plain string, same reasoning as
+// Notification.type: the set of milestones NTA publishes isn't fixed
+// forever, and a new one shouldn't need a migration.
+model ExamCalendarEvent {
+  id          String   @id @default(uuid()) @db.Uuid
+  examType    ExamType @map("exam_type")
+  examYear    Int      @map("exam_year")
+  eventType   String   @map("event_type")
+  eventDate   DateTime @db.Date
+  title       String
+  description String?  @db.Text
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([examType, examYear])
+  @@index([eventDate])
+  @@map("exam_calendar_events")
+}
+
+// ============================================================
+// ADAPTIVE PRACTICE & GAMIFICATION
+// ============================================================
+
+// A served-question log driving "practice the next question," selected
+// by application logic from UserTopicMastery's weak topics (plus spaced
+// repetition, new-concept introduction, etc. — `reason` records which
+// strategy picked this question, both for debugging the selection logic
+// and for eventually measuring which strategy actually helps). No unique
+// constraint on (userId, questionId): a question can legitimately be
+// re-served later (e.g. spaced repetition), so this is an append-only
+// log, not a per-question membership table.
+model AdaptivePracticeQueueItem {
+  id         String    @id @default(uuid()) @db.Uuid
+  userId     String    @map("user_id") @db.Uuid
+  questionId String    @map("question_id") @db.Uuid
+  topicId    String    @map("topic_id") @db.Uuid
+  reason     String    @map("reason")
+  servedAt   DateTime? @map("served_at")
+  answeredAt DateTime? @map("answered_at")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id])
+  topic    Topic    @relation(fields: [topicId], references: [id])
+
+  @@index([userId, servedAt])
+  @@index([topicId])
+  @@map("adaptive_practice_queue_items")
+}
+
+// Badges are data, not code — an admin can define a new badge (key,
+// name, machine-readable `criteria` for whatever background job awards
+// it) without a deploy. UserBadge is the award record.
+model Badge {
+  id          String   @id @default(uuid()) @db.Uuid
+  key         String   @unique
+  name        String
+  description String?  @db.Text
+  iconUrl     String?  @map("icon_url")
+  // e.g. {"type": "streak", "days": 7} or {"type": "topic_mastery",
+  // "topicId": "...", "minScore": 90} — interpreted by whatever job
+  // evaluates badge criteria, not enforced by the schema itself.
+  criteria    Json?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  userBadges UserBadge[]
+
+  @@map("badges")
+}
+
+model UserBadge {
+  userId   String   @map("user_id") @db.Uuid
+  badgeId  String   @map("badge_id") @db.Uuid
+  earnedAt DateTime @default(now()) @map("earned_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+
+  @@id([userId, badgeId])
+  @@index([badgeId])
+  @@map("user_badges")
+}
+
+// Level thresholds as data rather than a hardcoded formula, so tuning
+// the XP curve is a content edit, not a deploy. A user's current level
+// is derived at read time (highest Level.minXp <= User.xpPoints) rather
+// than stored on User, so retuning thresholds doesn't require rewriting
+// every user's row.
+model Level {
+  id           String  @id @default(uuid()) @db.Uuid
+  levelNumber  Int     @unique @map("level_number")
+  name         String
+  minXp        Int     @map("min_xp")
+  badgeIconUrl String? @map("badge_icon_url")
+
+  @@map("levels")
+}
+
+// ============================================================
+// GUARDIAN ACCESS
+// Links a parent/mentor User to specific student User(s) they're allowed
+// scoped read access to. Deliberately not a User.role value — "parent"
+// alone doesn't say *which* student(s), and a mentor at a coaching
+// institute might follow several. Pair this with the Role/Permission
+// system above (e.g. a "guardian" Role granting a "student:view_progress"
+// permission) — GuardianLink says *which* students a permission like
+// that actually applies to for a given guardian.
+// ============================================================
+model GuardianLink {
+  id          String               @id @default(uuid()) @db.Uuid
+  guardianId  String               @map("guardian_id") @db.Uuid
+  studentId   String               @map("student_id") @db.Uuid
+  status      GuardianAccessStatus @default(PENDING)
+  invitedAt   DateTime             @default(now()) @map("invited_at")
+  respondedAt DateTime?            @map("responded_at")
+
+  // Named relations because both sides of this link are the same User
+  // model — otherwise Prisma can't tell "guardian" from "student" apart.
+  guardian User @relation("GuardianOf", fields: [guardianId], references: [id], onDelete: Cascade)
+  student  User @relation("StudentGuardians", fields: [studentId], references: [id], onDelete: Cascade)
+
+  // One row per (guardian, student) pair, mutated over its lifecycle
+  // (PENDING -> ACTIVE, or -> REVOKED and potentially re-invited by
+  // resetting status back to PENDING) rather than a new row per invite —
+  // simpler than the alternative, and this table isn't the place you'd
+  // want a full audit trail anyway (that's what ConsentLog-style logging
+  // is for, if you ever need "who revoked guardian access and when").
+  @@unique([guardianId, studentId])
+  @@index([studentId])
+  @@map("guardian_links")
+}
+
+// ============================================================
+// ASSESSMENT INTEGRITY
+// Append-only proctoring/integrity event log per TestAttempt.
+// TestAttempt.integrityViolationCount / integrityFlagged (added above)
+// are a denormalized summary kept in sync with this table — same
+// cache/log pattern used throughout this schema (streaks, consent,
+// mastery). Review UI reads the summary to find flagged attempts, then
+// drills into this table for the actual event timeline.
+// ============================================================
+model AttemptIntegrityEvent {
+  id         String             @id @default(uuid()) @db.Uuid
+  attemptId  String             @map("attempt_id") @db.Uuid
+  eventType  IntegrityEventType @map("event_type")
+  occurredAt DateTime           @default(now()) @map("occurred_at")
+  // e.g. {"awayForMs": 4200} for a tab-switch/window-blur duration —
+  // shape varies by eventType, hence Json rather than fixed columns.
+  metadata   Json?
+
+  attempt TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+
+  @@index([attemptId])
+  @@index([eventType])
+  @@map("attempt_integrity_events")
+}
+
+// ============================================================
+// COMPLIANCE
+// Append-only, same reasoning as QuestionRevision and UserDailyActivity
+// above: User.consentGivenAt/consentVersion are a fast "what's the
+// current state" cache, but proving *when* consent was given or
+// withdrawn — which India's DPDP Act, and most other consent-driven
+// privacy regimes, expect you to be able to show — needs a durable
+// history, not just a mutable current-state column.
+// ============================================================
+model ConsentLog {
+  id     String @id @default(uuid()) @db.Uuid
+  userId String @map("user_id") @db.Uuid
+
+  // e.g. "granted", "withdrawn", "policy_updated_reconsent",
+  // "parental_consent_granted". Plain string for the same reason
+  // Notification.type is — this list will grow as policy needs change,
+  // and that shouldn't require a migration.
+  action        String
+  policyVersion String  @map("policy_version")
+  ipAddress     String? @map("ip_address")
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("consent_logs")
+}
+
+// ============================================================
+// AI CACHE
+// ============================================================
+model AiCache {
+  cacheKey     String @id @map("cache_key")
+  responseJson Json   @map("response_json")
+
+  promptVersion String @map("prompt_version")
+  provider      String
+  model         String
+
+  hitCount  Int      @default(0) @map("hit_count")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([promptVersion])
+  @@index([provider])
+  @@map("ai_cache")
+}
+
+// ============================================================
+// AI USAGE
+// ============================================================
+model AiUsage {
+  id     String @id @default(uuid()) @db.Uuid
+  userId String @map("user_id") @db.Uuid
+
+  endpoint String
+  provider String
+  model    String?
+
+  tokensIn  Int? @map("tokens_in")
+  tokensOut Int? @map("tokens_out")
+  latencyMs Int  @map("latency_ms")
+
+  cacheHit  Boolean @default(false) @map("cache_hit")
+  costUsd   Float?  @map("cost_usd")
+  errorCode String? @map("error_code")
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([provider])
+  @@index([endpoint])
+  @@map("ai_usage")
+}
