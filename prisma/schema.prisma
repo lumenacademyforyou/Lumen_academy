@@ -1,6 +1,3 @@
-// Prisma schema — see CLAUDE.md for architecture rules.
-// DATABASE_URL is read via prisma.config.ts, not hardcoded here.
-
 generator client {
   provider = "prisma-client"
   output   = "../backend/generated/prisma"
@@ -10,190 +7,276 @@ datasource db {
   provider = "postgresql"
 }
 
-// id is NOT self-generated — it is always set explicitly to match the
-// Supabase auth.users id of the account this profile belongs to. Rows are
-// lazily provisioned on first authenticated request; see CLAUDE.md's
-// "Auth architecture" section.
-model User {
-  id          String   @id @db.Uuid
-  email       String?  @unique
-  phone       String?  @unique
-  displayName String   @map("display_name")
-  role        String   @default("student")
-  locale      String   @default("en")
-  targetExam  String   @default("NEET") @map("target_exam")
-  isActive    Boolean  @default(true) @map("is_active")
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+// Reconstructed to match the state described by the two pending, unapplied
+// migrations (20260820140818_schema_audit_upgrade, 20260820142154_exam_pattern_model)
+// after the hand-authored schema.prisma that generated them was lost
+// uncommitted. Rebuilt from those migrations' DDL + inline comments, so it is
+// functionally equivalent but not guaranteed byte-identical to the original.
+// These migrations are NOT applied to the database — this file describes a
+// target state, not the current live one.
 
-  attempts TestAttempt[]
-  aiUsage  AiUsage[]
+enum UserRole {
+  STUDENT
+  EDUCATOR
+  REVIEWER
+  ADMIN
+  SUPER_ADMIN
+
+  @@map("user_role")
+}
+
+enum QuestionType {
+  MCQ
+  NUMERICAL
+  INTEGER
+  MULTIPLE_CORRECT
+  MATCHING
+
+  @@map("question_type")
+}
+
+enum ReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+
+  @@map("review_status")
+}
+
+enum ExamType {
+  NEET
+  JEE_MAIN
+  JEE_ADVANCED
+
+  @@map("exam_type")
+}
+
+enum PartialMarkingMode {
+  NONE
+  PER_CORRECT_OPTION
+  ALL_OR_NOTHING
+
+  @@map("partial_marking_mode")
+}
+
+enum SectionNavigationRule {
+  FREE_NAVIGATION
+  LOCK_ON_EXIT
+  SEQUENTIAL_ONLY
+
+  @@map("section_navigation_rule")
+}
+
+/// DB CHECK constraint (enforced in Postgres, not modeled by Prisma):
+/// chk_users_email_or_phone — email IS NOT NULL OR phone IS NOT NULL.
+model User {
+  id               String              @id @db.Uuid
+  email            String?             @unique
+  displayName      String              @map("display_name")
+  role             UserRole            @default(STUDENT)
+  locale           String              @default("en")
+  targetExam       String              @default("NEET") @map("target_exam")
+  isActive         Boolean             @default(true) @map("is_active")
+  createdAt        DateTime            @default(now()) @map("created_at")
+  updatedAt        DateTime            @updatedAt @map("updated_at")
+  phone            String?             @unique
+  lastActivityDate DateTime?           @map("last_activity_date") @db.Date
+  aiUsage          AiUsage[]
+  attempts         TestAttempt[]
+  dailyActivity    UserDailyActivity[]
+  bookmarks        Bookmark[]
+  notes            Note[]
+  notifications    Notification[]
 
   @@map("users")
 }
 
-// NEET biology is modeled as two subjects (botany, zoology), not one combined
-// "biology" — see the domain note in CLAUDE.md.
 model Subject {
-  id           String @id
-  name         String
-  displayOrder Int    @map("display_order")
-
-  units Unit[]
+  id                  String               @id
+  name                String
+  displayOrder        Int                  @map("display_order")
+  createdAt           DateTime             @default(now()) @map("created_at")
+  updatedAt           DateTime             @updatedAt @map("updated_at")
+  units               Unit[]
+  examPatternSections ExamPatternSection[]
 
   @@map("subjects")
 }
 
 model Unit {
-  id             String @id
-  subjectId      String @map("subject_id")
-  name           String
-  weightageMarks Int    @map("weightage_marks")
-  displayOrder   Int    @map("display_order")
-
-  // Denormalized display fields carried over from src/database/syllabusData.ts
-  // so the syllabus/course UI can be served from the database instead of a
-  // static array. Nullable because they only apply to units, not to future
-  // chapter/topic rows.
-  ncertClass            String? @map("ncert_class")
-  expectedQuestions     String? @map("expected_questions")
-  weightagePercent      Int?    @map("weightage_percent")
+  id                    String     @id
+  subjectId             String     @map("subject_id")
+  name                  String
+  weightageMarks        Int        @map("weightage_marks")
+  displayOrder          Int        @map("display_order")
+  ncertClass            String?    @map("ncert_class")
+  expectedQuestions     String?    @map("expected_questions")
+  weightagePercent      Int?       @map("weightage_percent")
   subtopics             Json?
-  keyFormulas           Json?   @map("key_formulas")
-  overview              String? @db.Text
-  highYieldNcertChapter String? @map("high_yield_ncert_chapter") @db.Text
-  badgeColor            String? @map("badge_color")
-
-  subject   Subject    @relation(fields: [subjectId], references: [id])
-  chapters  Chapter[]
-  questions Question[]
+  keyFormulas           Json?      @map("key_formulas")
+  overview              String?
+  highYieldNcertChapter String?    @map("high_yield_ncert_chapter")
+  badgeColor            String?    @map("badge_color")
+  createdAt             DateTime   @default(now()) @map("created_at")
+  updatedAt             DateTime   @updatedAt @map("updated_at")
+  chapters              Chapter[]
+  questions             Question[]
+  subject               Subject    @relation(fields: [subjectId], references: [id])
 
   @@index([subjectId])
   @@map("units")
 }
 
 model Chapter {
-  id           String @id @default(uuid()) @db.Uuid
-  unitId       String @map("unit_id")
+  id           String   @id @default(uuid()) @db.Uuid
+  unitId       String   @map("unit_id")
   name         String
-  classLevel   String @map("class_level")
-  displayOrder Int    @map("display_order")
-
-  unit   Unit    @relation(fields: [unitId], references: [id])
-  topics Topic[]
+  classLevel   String   @map("class_level")
+  displayOrder Int      @map("display_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  unit         Unit     @relation(fields: [unitId], references: [id])
+  topics       Topic[]
 
   @@index([unitId])
   @@map("chapters")
 }
 
 model Topic {
-  id           String  @id @default(uuid()) @db.Uuid
-  chapterId    String  @map("chapter_id") @db.Uuid
+  id           String     @id @default(uuid()) @db.Uuid
+  chapterId    String     @map("chapter_id") @db.Uuid
   name         String
-  tagCode      String? @map("tag_code")
-  displayOrder Int     @map("display_order")
-
-  chapter   Chapter    @relation(fields: [chapterId], references: [id])
-  questions Question[]
+  tagCode      String?    @map("tag_code")
+  displayOrder Int        @map("display_order")
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
+  questions    Question[]
+  chapter      Chapter    @relation(fields: [chapterId], references: [id])
 
   @@index([chapterId])
   @@map("topics")
 }
 
+/// DB CHECK constraint (enforced in Postgres, not modeled by Prisma):
+/// chk_questions_active_requires_approved — is_active = false OR review_status = 'APPROVED'.
+/// A partial index also exists in the DB (idx_questions_servable, on
+/// unit_id/difficulty WHERE is_active AND review_status = 'APPROVED') that
+/// Prisma's schema language cannot express and is not modeled here.
 model Question {
-  id            String   @id
-  unitId        String   @map("unit_id")
-  topicId       String?  @map("topic_id") @db.Uuid
-  stemEn        String   @map("stem_en") @db.Text
-  stemTa        String?  @map("stem_ta") @db.Text
-  difficulty    Int      @default(3)
-  marks         Int      @default(4)
-  negativeMarks Int      @default(1) @map("negative_marks")
-  explanationEn String?  @map("explanation_en") @db.Text
-  explanationTa String?  @map("explanation_ta") @db.Text
-  isActive      Boolean  @default(true) @map("is_active")
-  createdAt     DateTime @default(now()) @map("created_at")
+  id                String             @id
+  unitId            String             @map("unit_id")
+  topicId           String?            @map("topic_id") @db.Uuid
+  stemEn            String             @map("stem_en")
+  stemTa            String?            @map("stem_ta")
+  difficulty        Int                @default(3)
+  marks             Decimal            @default(4) @db.Decimal(5, 2)
+  negativeMarks     Decimal            @default(1) @map("negative_marks") @db.Decimal(5, 2)
+  explanationEn     String?            @map("explanation_en")
+  explanationTa     String?            @map("explanation_ta")
+  isActive          Boolean            @default(true) @map("is_active")
+  questionType      QuestionType       @default(MCQ) @map("question_type")
+  reviewStatus      ReviewStatus       @default(PENDING) @map("review_status")
+  examPaper         String?            @map("exam_paper")
+  examYear          Int?               @map("exam_year")
+  createdAt         DateTime           @default(now()) @map("created_at")
+  attemptAnswers    AttemptAnswer[]
+  options           QuestionOption[]
+  topic             Topic?             @relation(fields: [topicId], references: [id])
+  unit              Unit               @relation(fields: [unitId], references: [id])
+  revisions         QuestionRevision[]
+  assets            QuestionAsset[]
+  mockTestQuestions MockTestQuestion[]
+  attemptQuestions  AttemptQuestion[]
+  bookmarks         Bookmark[]
+  notes             Note[]
 
-  unit           Unit             @relation(fields: [unitId], references: [id])
-  topic          Topic?           @relation(fields: [topicId], references: [id])
-  options        QuestionOption[]
-  attemptAnswers AttemptAnswer[]
-
-  @@index([unitId])
   @@index([topicId])
+  @@index([unitId, difficulty, questionType])
   @@map("questions")
 }
 
 model QuestionOption {
-  id           String  @id
-  questionId   String  @map("question_id")
-  label        String
-  textEn       String  @map("text_en") @db.Text
-  textTa       String? @map("text_ta") @db.Text
-  isCorrect    Boolean @map("is_correct")
-  displayOrder Int     @map("display_order")
-
-  question       Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  id             String          @id
+  questionId     String          @map("question_id")
+  label          String
+  textEn         String          @map("text_en")
+  textTa         String?         @map("text_ta")
+  isCorrect      Boolean         @map("is_correct")
+  displayOrder   Int             @map("display_order")
+  createdAt      DateTime        @default(now()) @map("created_at")
+  updatedAt      DateTime        @updatedAt @map("updated_at")
   attemptAnswers AttemptAnswer[]
+  assets         QuestionAsset[]
+  question       Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
   @@index([questionId])
   @@map("question_options")
 }
 
 model TestAttempt {
-  id              String    @id @default(uuid()) @db.Uuid
-  userId          String    @map("user_id") @db.Uuid
-  config          Json
-  durationSeconds Int       @map("duration_seconds")
-  startedAt       DateTime  @default(now()) @map("started_at")
-  submittedAt     DateTime? @map("submitted_at")
-  status          String    @default("in_progress")
-  score           Int?
-  maxScore        Int?      @map("max_score")
-  correctCount    Int?      @map("correct_count")
-  wrongCount      Int?      @map("wrong_count")
-  skippedCount    Int?      @map("skipped_count")
-
-  user    User            @relation(fields: [userId], references: [id])
-  answers AttemptAnswer[]
+  id               String                @id @default(uuid()) @db.Uuid
+  userId           String                @map("user_id") @db.Uuid
+  config           Json
+  durationSeconds  Int                   @map("duration_seconds")
+  startedAt        DateTime              @default(now()) @map("started_at")
+  submittedAt      DateTime?             @map("submitted_at")
+  status           String                @default("in_progress")
+  score            Decimal?              @db.Decimal(8, 2)
+  maxScore         Decimal?              @map("max_score") @db.Decimal(8, 2)
+  correctCount     Int?                  @map("correct_count")
+  wrongCount       Int?                  @map("wrong_count")
+  skippedCount     Int?                  @map("skipped_count")
+  answers          AttemptAnswer[]
+  user             User                  @relation(fields: [userId], references: [id])
+  attemptQuestions AttemptQuestion[]
+  sectionStates    AttemptSectionState[]
 
   @@index([userId])
   @@map("test_attempts")
 }
 
 model AttemptAnswer {
-  attemptId        String   @map("attempt_id") @db.Uuid
-  questionId       String   @map("question_id")
-  selectedOptionId String?  @map("selected_option_id")
-  isCorrect        Boolean? @map("is_correct")
-  timeSpentMs      Int?     @map("time_spent_ms")
-  answeredAt       DateTime @default(now()) @map("answered_at")
-
-  attempt        TestAttempt     @relation(fields: [attemptId], references: [id], onDelete: Cascade)
-  question       Question        @relation(fields: [questionId], references: [id])
-  selectedOption QuestionOption? @relation(fields: [selectedOptionId], references: [id])
+  attemptId          String            @map("attempt_id") @db.Uuid
+  questionId         String            @map("question_id")
+  selectedOptionId   String?           @map("selected_option_id")
+  isCorrect          Boolean?          @map("is_correct")
+  timeSpentMs        Int?              @map("time_spent_ms")
+  answeredAt         DateTime          @default(now()) @map("answered_at")
+  markedForReview    Boolean           @default(false) @map("marked_for_review")
+  marksAwarded       Decimal?          @map("marks_awarded") @db.Decimal(5, 2)
+  numericAnswer      Decimal?          @map("numeric_answer") @db.Decimal(18, 6)
+  questionRevisionId String?           @map("question_revision_id") @db.Uuid
+  responseJson       Json?             @map("response_json")
+  selectedOptionIds  String[]          @map("selected_option_ids") @db.Uuid
+  clientAnsweredAt   DateTime?         @map("client_answered_at")
+  attempt            TestAttempt       @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question           Question          @relation(fields: [questionId], references: [id])
+  selectedOption     QuestionOption?   @relation(fields: [selectedOptionId], references: [id])
+  questionRevision   QuestionRevision? @relation(fields: [questionRevisionId], references: [id], onDelete: SetNull)
 
   @@id([attemptId, questionId])
   @@index([questionId])
   @@index([selectedOptionId])
+  @@index([questionRevisionId])
   @@map("attempt_answers")
 }
 
 model AiCache {
-  cacheKey      String   @id @map("cache_key")
-  responseJson  Json     @map("response_json")
-  promptVersion String   @map("prompt_version")
+  cacheKey      String    @id @map("cache_key")
+  responseJson  Json      @map("response_json")
+  promptVersion String    @map("prompt_version")
   provider      String
   model         String
-  hitCount      Int      @default(0) @map("hit_count")
-  createdAt     DateTime @default(now()) @map("created_at")
+  expiresAt     DateTime? @map("expires_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
 
+  @@index([expiresAt])
   @@map("ai_cache")
 }
 
 model AiUsage {
   id        String   @id @default(uuid()) @db.Uuid
-  userId    String   @map("user_id") @db.Uuid
+  userId    String?  @map("user_id") @db.Uuid
   endpoint  String
   provider  String
   model     String?
@@ -201,13 +284,240 @@ model AiUsage {
   tokensOut Int?     @map("tokens_out")
   latencyMs Int      @map("latency_ms")
   cacheHit  Boolean  @default(false) @map("cache_hit")
-  costUsd   Float?   @map("cost_usd")
+  costUsd   Decimal? @map("cost_usd") @db.Decimal(12, 6)
   errorCode String?  @map("error_code")
+  jobId     String?  @map("job_id")
   createdAt DateTime @default(now()) @map("created_at")
-
-  user User @relation(fields: [userId], references: [id])
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([userId])
   @@index([createdAt])
+  @@index([jobId])
   @@map("ai_usage")
+}
+
+model UserDailyActivity {
+  userId       String   @map("user_id") @db.Uuid
+  activityDate DateTime @map("activity_date") @db.Date
+  createdAt    DateTime @default(now()) @map("created_at")
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, activityDate])
+  @@map("user_daily_activity")
+}
+
+model QuestionRevision {
+  id              String          @id @default(uuid()) @db.Uuid
+  questionId      String          @map("question_id")
+  snapshotVersion Int             @default(1) @map("snapshot_version")
+  stemEn          String          @map("stem_en")
+  stemTa          String?         @map("stem_ta")
+  marks           Decimal         @db.Decimal(5, 2)
+  negativeMarks   Decimal         @map("negative_marks") @db.Decimal(5, 2)
+  optionsSnapshot Json            @map("options_snapshot")
+  createdAt       DateTime        @default(now()) @map("created_at")
+  question        Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  attemptAnswers  AttemptAnswer[]
+
+  @@index([questionId])
+  @@map("question_revisions")
+}
+
+model QuestionAsset {
+  id           String          @id @default(uuid()) @db.Uuid
+  questionId   String          @map("question_id")
+  optionId     String?         @map("option_id")
+  role         String
+  storagePath  String          @map("storage_path")
+  mimeType     String          @map("mime_type")
+  widthPx      Int?            @map("width_px")
+  heightPx     Int?            @map("height_px")
+  altTextEn    String?         @map("alt_text_en")
+  altTextTa    String?         @map("alt_text_ta")
+  displayOrder Int             @default(0) @map("display_order")
+  createdAt    DateTime        @default(now()) @map("created_at")
+  question     Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  option       QuestionOption? @relation(fields: [optionId], references: [id], onDelete: Cascade)
+
+  @@index([questionId])
+  @@index([optionId])
+  @@map("question_assets")
+}
+
+model MockTest {
+  id                String             @id @default(uuid()) @db.Uuid
+  title             String
+  examType          String             @default("NEET") @map("exam_type")
+  examPatternId     String?            @map("exam_pattern_id") @db.Uuid
+  totalMarks        Decimal?           @map("total_marks") @db.Decimal(8, 2)
+  questionCount     Int                @default(0) @map("question_count")
+  createdAt         DateTime           @default(now()) @map("created_at")
+  examPattern       ExamPattern?       @relation(fields: [examPatternId], references: [id], onDelete: SetNull)
+  mockTestQuestions MockTestQuestion[]
+
+  @@index([examPatternId])
+  @@map("mock_tests")
+}
+
+model MockTestQuestion {
+  mockTestId            String              @map("mock_test_id") @db.Uuid
+  questionId            String              @map("question_id")
+  displayOrder          Int                 @map("display_order")
+  sectionName           String?             @map("section_name")
+  examPatternSectionId  String?             @map("exam_pattern_section_id") @db.Uuid
+  marksOverride         Decimal?            @map("marks_override") @db.Decimal(5, 2)
+  negativeMarksOverride Decimal?            @map("negative_marks_override") @db.Decimal(5, 2)
+  mockTest              MockTest            @relation(fields: [mockTestId], references: [id], onDelete: Cascade)
+  question              Question            @relation(fields: [questionId], references: [id])
+  examPatternSection    ExamPatternSection? @relation(fields: [examPatternSectionId], references: [id], onDelete: SetNull)
+
+  @@id([mockTestId, questionId])
+  @@unique([mockTestId, displayOrder])
+  @@index([examPatternSectionId])
+  @@map("mock_test_questions")
+}
+
+model AttemptQuestion {
+  attemptId    String      @map("attempt_id") @db.Uuid
+  questionId   String      @map("question_id")
+  displayOrder Int         @map("display_order")
+  sectionName  String?     @map("section_name")
+  servedAt     DateTime    @default(now()) @map("served_at")
+  attempt      TestAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question     Question    @relation(fields: [questionId], references: [id], onDelete: Restrict)
+
+  @@id([attemptId, questionId])
+  @@unique([attemptId, displayOrder])
+  @@index([questionId])
+  @@map("attempt_questions")
+}
+
+model Bookmark {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id")
+  createdAt  DateTime @default(now()) @map("created_at")
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, questionId])
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("bookmarks")
+}
+
+model Note {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id")
+  content    String
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt(sort: Desc)])
+  @@map("notes")
+}
+
+model Notification {
+  id        String    @id @default(uuid()) @db.Uuid
+  userId    String    @map("user_id") @db.Uuid
+  type      String
+  message   String
+  readAt    DateTime? @map("read_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, type])
+  @@map("notifications")
+}
+
+model ExamPattern {
+  id           String               @id @default(uuid()) @db.Uuid
+  examType     ExamType             @map("exam_type")
+  examYear     Int                  @map("exam_year")
+  paper        String               @default("")
+  version      Int                  @default(1)
+  isActive     Boolean              @default(true) @map("is_active")
+  description  String?
+  createdAt    DateTime             @default(now()) @map("created_at")
+  updatedAt    DateTime             @updatedAt @map("updated_at")
+  sections     ExamPatternSection[]
+  mockTests    MockTest[]
+  scoringRules ScoringRule[]
+
+  @@unique([examType, examYear, paper, version])
+  @@index([examType, examYear])
+  @@map("exam_patterns")
+}
+
+model ExamPatternSection {
+  id                            String                @id @default(uuid()) @db.Uuid
+  examPatternId                 String                @map("exam_pattern_id") @db.Uuid
+  name                          String
+  subjectId                     String?               @map("subject_id")
+  questionCount                 Int                   @map("question_count")
+  attemptCount                  Int?                  @map("attempt_count")
+  durationSeconds               Int?                  @map("duration_seconds")
+  displayOrder                  Int                   @map("display_order")
+  navigationRule                SectionNavigationRule @default(FREE_NAVIGATION) @map("navigation_rule")
+  requiresExplicitSectionSubmit Boolean               @default(false) @map("requires_explicit_section_submit")
+  marksOverride                 Decimal?              @map("marks_override") @db.Decimal(5, 2)
+  negativeMarksOverride         Decimal?              @map("negative_marks_override") @db.Decimal(5, 2)
+  examPattern                   ExamPattern           @relation(fields: [examPatternId], references: [id], onDelete: Cascade)
+  subject                       Subject?              @relation(fields: [subjectId], references: [id], onDelete: SetNull)
+  mockTestQuestions             MockTestQuestion[]
+  attemptSectionStates          AttemptSectionState[]
+
+  @@unique([examPatternId, displayOrder])
+  @@index([examPatternId])
+  @@index([subjectId])
+  @@map("exam_pattern_sections")
+}
+
+model ScoringRule {
+  id                    String             @id @default(uuid()) @db.Uuid
+  examPatternId         String             @map("exam_pattern_id") @db.Uuid
+  questionType          QuestionType       @map("question_type")
+  marks                 Decimal            @db.Decimal(5, 2)
+  negativeMarks         Decimal            @map("negative_marks") @db.Decimal(5, 2)
+  partialMarkingMode    PartialMarkingMode @default(NONE) @map("partial_marking_mode")
+  marksPerCorrectOption Decimal?           @map("marks_per_correct_option") @db.Decimal(5, 2)
+  maxMarks              Decimal?           @map("max_marks") @db.Decimal(5, 2)
+  examPattern           ExamPattern        @relation(fields: [examPatternId], references: [id], onDelete: Cascade)
+
+  @@unique([examPatternId, questionType])
+  @@index([examPatternId])
+  @@map("scoring_rules")
+}
+
+model AttemptSectionState {
+  attemptId            String             @map("attempt_id") @db.Uuid
+  examPatternSectionId String             @map("exam_pattern_section_id") @db.Uuid
+  enteredAt            DateTime?          @map("entered_at")
+  lockedAt             DateTime?          @map("locked_at")
+  submittedAt          DateTime?          @map("submitted_at")
+  timeSpentSeconds     Int                @default(0) @map("time_spent_seconds")
+  attempt              TestAttempt        @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  examPatternSection   ExamPatternSection @relation(fields: [examPatternSectionId], references: [id], onDelete: Restrict)
+
+  @@id([attemptId, examPatternSectionId])
+  @@index([examPatternSectionId])
+  @@map("attempt_section_states")
+}
+
+model ExamCalendarEvent {
+  id          String   @id @default(uuid()) @db.Uuid
+  examType    ExamType @map("exam_type")
+  examYear    Int      @map("exam_year")
+  eventType   String   @map("event_type")
+  eventDate   DateTime @map("event_date") @db.Date
+  title       String
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([examType, examYear])
+  @@index([eventDate])
+  @@map("exam_calendar_events")
 }
