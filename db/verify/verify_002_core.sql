@@ -24,7 +24,7 @@ begin
     'institution_pkey', 'uq_institution_institution_code',
     'subscription_plan_pkey', 'uq_subscription_plan_tier_code',
     'app_user_pkey', 'fk_app_user_institution_id', 'fk_app_user_auth_user_id',
-      'uq_app_user_auth_user_id', 'uq_app_user_email', 'uq_app_user_mobile_number',
+      'uq_app_user_auth_user_id', 'uq_app_user_email',
     'student_profile_pkey', 'fk_student_profile_user_id',
     'educator_profile_pkey', 'fk_educator_profile_user_id',
     'batch_pkey', 'fk_batch_institution_id', 'fk_batch_cycle_id', 'uq_batch_batch_code',
@@ -41,9 +41,21 @@ begin
     end if;
   end loop;
 
+  -- 007_core_mobile_nullable.sql (committed, intentional) dropped
+  -- uq_app_user_mobile_number as a plain UNIQUE constraint and replaced it
+  -- with a partial unique index of the same name, so it belongs in pg_class
+  -- via pg_indexes now, not in pg_constraint.
+  if not exists (
+    select 1 from pg_indexes
+    where schemaname = 'core' and tablename = 'app_user'
+      and indexname = 'uq_app_user_mobile_number'
+  ) then
+    missing := array_append(missing, 'index:core.uq_app_user_mobile_number');
+  end if;
+
   if array_length(missing, 1) is not null then
     raise exception 'verify_002_core FAILED — missing: %', array_to_string(missing, ', ');
   end if;
 
-  raise notice 'verify_002_core: OK — 9 tables, 27 constraints present';
+  raise notice 'verify_002_core: OK — 9 tables, 26 constraints, 1 partial unique index present';
 end $$;
