@@ -14,9 +14,11 @@ import pg from "pg";
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(SCRIPT_DIR, "..", "..");
 
-const migration = process.argv[2];
+const args = process.argv.slice(2).filter((a) => a !== "--verify-only");
+const verifyOnly = process.argv.includes("--verify-only");
+const migration = args[0];
 if (!migration) {
-  console.error("usage: node db/scripts/run-migration.mjs <migration-name-without-.sql>");
+  console.error("usage: node db/scripts/run-migration.mjs <migration-name-without-.sql> [--verify-only]");
   process.exit(1);
 }
 
@@ -29,9 +31,13 @@ if (!databaseUrl) {
   process.exit(1);
 }
 
+// SSL detection matches db/shared/pool.ts's convention. The prior check
+// (neon.tech / sslmode=require) predates the move to Supabase and no longer
+// matches DATABASE_URL's pooler host (aws-0-*.pooler.supabase.com) — fixed
+// here rather than left broken for every migration after this one.
 const client = new pg.Client({
   connectionString: databaseUrl,
-  ssl: databaseUrl.includes("sslmode=require") || databaseUrl.includes("neon.tech") ? { rejectUnauthorized: false } : undefined,
+  ssl: databaseUrl.includes("supabase.co") ? { rejectUnauthorized: false } : undefined,
 });
 
 client.on("notice", (msg) => {
@@ -43,10 +49,14 @@ try {
   const versionRes = await client.query("select version();");
   console.log("Connected:", versionRes.rows[0].version);
 
-  console.log(`\n--- running db/migrations/${migration}.sql ---`);
-  const migrationSql = fs.readFileSync(migrationPath, "utf8");
-  await client.query(migrationSql);
-  console.log(`migration ${migration} applied.`);
+  if (!verifyOnly) {
+    console.log(`\n--- running db/migrations/${migration}.sql ---`);
+    const migrationSql = fs.readFileSync(migrationPath, "utf8");
+    await client.query(migrationSql);
+    console.log(`migration ${migration} applied.`);
+  } else {
+    console.log(`\n--- --verify-only: skipping db/migrations/${migration}.sql ---`);
+  }
 
   console.log(`\n--- running db/verify/verify_${migration}.sql ---`);
   const verifySql = fs.readFileSync(verifyPath, "utf8");
