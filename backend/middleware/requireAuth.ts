@@ -1,6 +1,5 @@
 import type { NextFunction, Request, RequestHandler, Response } from "express";
-import { ensureUserProfile } from "../services/userProfile.service.js";
-import { ensureAppUser } from "../../db/core/institution/app_user/ensure-app-user.js";
+import { provisionCanonicalUser } from "../services/provisionUser.service.js";
 import { supabaseAuth } from "../supabaseClient.js";
 import { AppError } from "./errorHandler.js";
 
@@ -42,7 +41,7 @@ export async function requireAuth(req: Request, _res: Response, next: NextFuncti
       phone: data.user.phone,
       user_metadata: data.user.user_metadata,
     };
-    const [profile, appUserId] = await Promise.all([ensureUserProfile(tokenPayload), ensureAppUser(tokenPayload)]);
+    const { profile, appUserId } = await provisionCanonicalUser(tokenPayload);
     req.user = { id: profile.id, role: profile.role, appUserId };
     next();
   } catch (err) {

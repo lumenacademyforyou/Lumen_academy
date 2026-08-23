@@ -10,8 +10,8 @@ import { LearningPathTimeline } from "../dashboard/LearningPathTimeline";
 import { PomodoroTimer } from "../dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../dashboard/DailyFlashcard";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
-import { saveStudentProfile, StudentProfile, supabase } from "../../supabase";
-import { ProfileCard } from "./ProfileCard";
+import { supabase } from "../../supabase";
+import { fetchMe, MeProfile } from "../../lib/meApi";
 
 interface RecommendedMock {
   id: string;
@@ -101,9 +101,6 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
   const [showDetailedReport, setShowDetailedReport] = useState(false);
   const [showIRTReport, setShowIRTReport] = useState(false);
 
-  // Supabase Student Profile & Dynamic Mock Test Filtering
-  const [studentProfile, setStudentProfile] = useState<StudentProfile | null>(null);
-  const [userPreferredSubjects, setUserPreferredSubjects] = useState<string[]>([]);
   const [studyStreak, setStudyStreak] = useState(0);
 
   const [dailyStudyGoal, setDailyStudyGoal] = useState<string>(() => {
@@ -139,9 +136,6 @@ useEffect(() => {
     }
   };
 
-  // Profile is now fetched/owned by <ProfileCard /> — see its onProfileChange
-  // callback below, which syncs studentProfile + userPreferredSubjects here.
-
   updateStreak();
 
   window.addEventListener("lumen_session_saved", updateStreak);
@@ -152,22 +146,25 @@ useEffect(() => {
   };
 }, [studentName]);
 
+  // Single call (LA-BE-CORE-002 CL-P4) drives both the "complete your
+  // profile" banner and which mock tests are recommended below — previously
+  // this depended on <ProfileCard>'s onIncompleteChange callback, but
+  // ProfileCard isn't rendered anywhere in this component, so
+  // profileIncomplete was permanently false and the banner never showed.
+  useEffect(() => {
+    let isMounted = true;
+    fetchMe()
+      .then((me) => {
+        if (!isMounted) return;
+        setProfileIncomplete(!me.studentProfile?.targetYear || !me.studentProfile?.classLevel);
+      })
+      .catch((err) => console.error("Failed to load profile completeness:", err));
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
-  const toggleSubjectFilter = async (sub: string) => {
-    const next = userPreferredSubjects.includes(sub)
-      ? userPreferredSubjects.filter(s => s !== sub)
-      : [...userPreferredSubjects, sub];
-    setUserPreferredSubjects(next);
-
-    if (studentProfile) {
-      const saved = await saveStudentProfile({ ...studentProfile, preferred_subjects: next });
-      if (saved) setStudentProfile(saved);
-    }
-  };
-
-  const filteredMocks = ALL_MOCK_TESTS.filter(mock => 
-    mock.subject === "All Subjects" || userPreferredSubjects.includes(mock.subject)
-  );
+  const filteredMocks = ALL_MOCK_TESTS;
 
   const maxMarks = (attempt.correctAnswers + attempt.incorrectAnswers + attempt.skippedAnswers) * 4 || 1;
   const animatedPercentage = Math.max(0, (animatedScore / maxMarks) * 100);
@@ -702,39 +699,11 @@ useEffect(() => {
             <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#00243B] dark:text-white">
               Recommended Mock Tests for {studentName || "Student"}
             </h3>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">
-              Dynamically filtered based on your preferred subjects set in your Supabase profile
-            </p>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-bold text-slate-400 dark:text-slate-500 mr-1">Active Filter:</span>
-            {(studentProfile?.preferred_subjects || []).map((sub) => {
-              const active = userPreferredSubjects.includes(sub);
-              return (
-                <button
-                  key={sub}
-                  type="button"
-                  onClick={() => toggleSubjectFilter(sub)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
-                    active
-                      ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] border-transparent shadow-xs"
-                      : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300"
-                  }`}
-                >
-                  {active ? "✓ " : "+ "}{sub}
-                </button>
-              );
-            })}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {!studentProfile ? (
-            <div className="col-span-full py-10 text-center space-y-2">
-              <p className="text-sm font-bold text-slate-500">{t("Complete your profile above to see personalized mock tests.")}</p>
-            </div>
-          ) : filteredMocks.length === 0 ? (
+          {filteredMocks.length === 0 ? (
             <div className="col-span-full py-10 text-center space-y-2">
               <p className="text-sm font-bold text-slate-500">No mock tests found matching your selected subject filter.</p>
               <p className="text-xs text-slate-400">Select at least one subject chip above to view targeted practice tests.</p>

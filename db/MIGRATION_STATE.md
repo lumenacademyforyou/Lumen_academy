@@ -1,9 +1,9 @@
 # Migration state
-_Last updated: 2026-08-23 by Session C (deploy the two Prisma migrations)_
+_Last updated: 2026-08-23 by the LA-BE-CORE-002 session (core-layer completion, CL-P0 through CL-P8)_
 
 ## Database state
 **State: A++ — git and live database match exactly, both migration tracks.**
-Raw-SQL 000–013 (`catalog/core/content/assess/learn`) and Prisma's two
+Raw-SQL 000–015 (`catalog/core/content/assess/learn`) and Prisma's two
 `public`-schema migrations are all applied, verified, and committed. No
 open migration drift anywhere in the database.
 
@@ -24,10 +24,28 @@ open migration drift anywhere in the database.
 | 011_assess_scope.sql | yes | yes | committed this session |
 | 012_domain_checks.sql | yes | yes | committed this session |
 | 013_content_import.sql | yes | yes | committed this session |
+| 014_core_status_expansion.sql | yes | yes | LA-BE-CORE-002 CL-P7/DC-7 — widens `ck_app_user_status` to add `awaiting_verification`/`locked`. Live survey before writing: every row was `active`; nothing could conflict. |
+| 015_core_invitation.sql | yes | yes | LA-BE-CORE-002 CL-P6 — new `core.invitation` table (invitation metadata; delivery is Supabase's own `admin.inviteUserByEmail`, no token/code column needed). |
 
 All six migration+verify pairs (008–013) are committed individually, in
 order, each in its own commit — see `git log --oneline` for the trail
-(`c3e9351`..`af54daa`).
+(`c3e9351`..`af54daa`). 014 and 015 are new this session (LA-BE-CORE-002).
+
+## Reference data seeded this session (LA-BE-CORE-002)
+
+Not schema migrations — seed scripts, run against the live database and
+confirmed idempotent (run twice, identical result both times):
+
+- `db/scripts/seed/00_core_roles.ts` — `core.role` had **zero rows** before
+  this ran, despite 009_core_rbac.sql's tables/triggers having existed since
+  an earlier session; `core.user_role_assignment` was unusable until this
+  seeded the 8 role codes, 5 permissions, and backfilled a real assignment
+  row for every pre-existing `core.app_user` row.
+- `db/scripts/seed/02_core_lifecycle_fixture.ts` — created the platform's
+  first `super_admin` (also previously zero — the "cannot revoke the last
+  super_admin" trigger had nothing to protect until now), one institution
+  (`LUMEN-PILOT-001`), and one fixture user of every type. Left live/
+  persistent (not test data) — see `db/CORE_LAYER_OPERATIONS.md`.
 
 ## Separate migration track: legacy `public` schema (Prisma)
 Distinct from the above. The `public` schema (`users`, `questions`,
@@ -94,10 +112,17 @@ deleted:
 ## Open decisions blocking the next session
 1. **Decide whether `public` (legacy Prisma app) and
    `catalog/core/content/assess/learn` (raw-SQL) are meant to converge,
-   coexist long-term, or whether one supersedes the other.** Both are now
-   fully migrated and live, which makes this more pressing, not less — two
-   parallel, independently-evolving schemas exist in the same database.
-   Out of scope for any session to decide unilaterally; needs a person.
+   coexist long-term, or whether one supersedes the other.** Still open at
+   the architecture level — but LA-BE-CORE-002 (the core-layer-completion
+   session) made a narrower, working decision for identity specifically:
+   `core.app_user` is canonical for identity/role/tenancy/status; `public.
+   users` is kept alive only because `test_attempts`/`bookmarks`/`ai_usage`/
+   etc. still FK to it and retiring those is out of that session's scope.
+   Every identity write (registration, invitations, admin actions) now
+   writes both, atomically, in one transaction
+   (`backend/services/provisionUser.service.ts`). The broader
+   "which schema wins everywhere" question is still exactly as open as it
+   was — this only settled it for the identity surface.
 2. **Reconcile `schema.prisma` against the original author's intent where
    it might matter** — the rebuild that generated the now-applied
    migrations was DDL-faithful but not guaranteed to match field/relation
@@ -112,6 +137,10 @@ deleted:
    checks.
 
 ## Next session should
-Read this file first. The migration backlog is now clear on both tracks —
-next work here is either the `public` vs. raw-SQL convergence decision
-above, or ordinary feature work against either schema.
+Read this file first, then `db/CORE_LAYER_ENDPOINTS.md` and
+`db/CORE_LAYER_OPERATIONS.md` if touching identity/auth/admin. The migration
+backlog is clear on both tracks (000–015 + Prisma's two) — next work here is
+either the `public` vs. raw-SQL convergence decision above, the
+`core.educator_profile`/automatic-lockout/bulk-ops gaps
+`CORE_LAYER_OPERATIONS.md` names as deliberately unfinished, or ordinary
+feature work against either schema.

@@ -1690,7 +1690,11 @@ import {
   verifyPhoneOtp,
   signUpWithPassword,
   signInWithPassword,
+  verifySignupOtp,
+  resendSignupConfirmation,
+  describeAuthError,
 } from "../../lib/supabaseAuth";
+import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../../lib/emailSendGuard";
 
 export type { SyllabusUnit, SyllabusUnitMaterial };
 export { SYLLABUS_UNITS };
@@ -1737,14 +1741,29 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
   const [regPhoneOrEmail, setRegPhoneOrEmail] = useState("");
   const [regStream, setRegStream] = useState("NEET Aspirant");
   const [otpValues, setOtpValues] = useState(["", "", "", "", "", ""]);
-  const [otpFlow, setOtpFlow] = useState<"register" | "login">("register");
+  // "confirm_signup" = verifying a password-based signUpWithPassword() via
+  // the emailed one-time code (LA-BE-CORE-002 CL-P2, Mechanism A) — distinct
+  // from "register"/"login", which verify a passwordless signInWithOtp() code.
+  const [otpFlow, setOtpFlow] = useState<"register" | "login" | "confirm_signup">("register");
   const [isSendingOtp, setIsSendingOtp] = useState(false);
   const [isVerifyingOtp, setIsVerifyingOtp] = useState(false);
+  // Ticking display for the resend cooldown so the button reads "Resend in
+  // 43s" instead of just going silently unclickable — "the user must be
+  // told the remaining wait, not left to press a dead button" (CL-P2).
+  const [resendRetryAfterMs, setResendRetryAfterMs] = useState(0);
   const [selectedExam, setSelectedExam] = useState("Ultimate Mock Series");
 
   // Login State (Flow B)
   const [loginPhoneOrEmail, setLoginPhoneOrEmail] = useState("");
   const [formError, setFormError] = useState("");
+
+  useEffect(() => {
+    if (authMode !== "otp" || resendRetryAfterMs <= 0) return;
+    const id = setInterval(() => {
+      setResendRetryAfterMs((prev) => Math.max(0, prev - 1000));
+    }, 1000);
+    return () => clearInterval(id);
+  }, [authMode, resendRetryAfterMs > 0]);
 
   const handleOpenRegister = () => {
     setAuthMode("register");
@@ -1788,19 +1807,39 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
       return;
     }
 
+    const normalizedEmail = regEmail.trim().toLowerCase();
+
+    // Guard the send with an idempotency-style check before Supabase is
+    // ever contacted — a double-submitted form or a retried request must
+    // not burn a second email out of the two-per-hour project quota
+    // (LA-BE-CORE-002 CL-P2, S-2 email delivery quota constraint).
+    const guard = checkSendAllowed(normalizedEmail);
+    if (!guard.allowed) {
+      setFormError(describeSendGuardRefusal(guard));
+      return;
+    }
+
     setFormError("");
     setIsSubmittingAuth(true);
     try {
-      const session = await signUpWithPassword(regEmail.trim().toLowerCase(), regPassword, regName.trim(), regStream);
+      const session = await signUpWithPassword(normalizedEmail, regPassword, regName.trim(), regStream);
+      recordSend(normalizedEmail);
       if (session) {
+        // "Confirm email" is off in Supabase settings — signUp already
+        // returned a live session, nothing left to verify.
         onLoginSuccess(regName.trim(), true);
       } else {
-        // Confirm-email is enabled in Supabase settings
-        setFormError("Check your email to confirm your account, then sign in.");
-        setAuthMode("login");
+        // Confirmation required. Mechanism A (LA-BE-CORE-002 CL-P2): show the
+        // code-entry step in this same tab/modal — no navigation, no new
+        // route, no separate "go check your email and come back to sign in"
+        // instruction.
+        setOtpFlow("confirm_signup");
+        setOtpValues(["", "", "", "", "", ""]);
+        setResendRetryAfterMs(0);
+        setAuthMode("otp");
       }
     } catch (err: any) {
-      setFormError(err.message || "Could not create your account. Please try again.");
+      setFormError(describeAuthError(err));
     } finally {
       setIsSubmittingAuth(false);
     }
@@ -1816,10 +1855,20 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
     setFormError("");
     setIsVerifyingOtp(true);
 
-    const identifier = otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase();
-    const displayName = regName.trim() || (otpDelivery === "phone" ? `Student (${identifier.slice(-4)})` : identifier.split("@")[0]) || "Student";
-
     try {
+      if (otpFlow === "confirm_signup") {
+        const email = regEmail.trim().toLowerCase();
+        const session = await verifySignupOtp(email, entered);
+        const sessionName = (session.user.user_metadata as { display_name?: string } | undefined)?.display_name || regName.trim() || "Student";
+        // Verified in place, in the same tab — no redirect, no second sign-in
+        // step (S-2's required outcome).
+        onLoginSuccess(sessionName, true);
+        return;
+      }
+
+      const identifier = otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase();
+      const displayName = regName.trim() || (otpDelivery === "phone" ? `Student (${identifier.slice(-4)})` : identifier.split("@")[0]) || "Student";
+
       const session = otpDelivery === "phone" ? await verifyPhoneOtp(identifier, entered) : await verifyEmailOtp(identifier, entered);
       const sessionName = (session.user.user_metadata as { display_name?: string } | undefined)?.display_name || displayName;
 
@@ -1829,7 +1878,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
         onLoginSuccess(sessionName, false);
       }
     } catch (err: any) {
-      setFormError(err.message || "That code didn't match. Please check it and try again.");
+      setFormError(describeAuthError(err));
     } finally {
       setIsVerifyingOtp(false);
     }
@@ -1859,7 +1908,17 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
       const meta = session.user.user_metadata as { display_name?: string } | undefined;
       onLoginSuccess(meta?.display_name || loginEmail.split("@")[0], false);
     } catch (err: any) {
-      setFormError(err.message || "Incorrect email or password.");
+      if (err?.code === "email_not_confirmed") {
+        // Account exists but was never verified — send them straight into
+        // the same in-tab code-entry step rather than a dead-end error.
+        setRegEmail(loginEmail.trim().toLowerCase());
+        setOtpFlow("confirm_signup");
+        setOtpValues(["", "", "", "", "", ""]);
+        setResendRetryAfterMs(0);
+        setAuthMode("otp");
+        return;
+      }
+      setFormError(describeAuthError(err));
     } finally {
       setIsSubmittingAuth(false);
     }
@@ -3191,12 +3250,20 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
               <form onSubmit={handleOtpSubmit} className="space-y-5 animate-in fade-in duration-200">
                 <div className="text-center space-y-1">
                   <span className="text-xs font-black uppercase tracking-wider text-[var(--teal)] dark:text-[#FCB824] bg-teal-50 dark:bg-amber-950/80 px-3 py-1 rounded-full border border-[var(--teal)]/20 dark:border-[#FCB824]/30 inline-block">
-                    {otpDelivery === "phone" ? "📱 Mobile SMS Verification" : "✉️ Email Security Verification"}
+                    {otpFlow === "confirm_signup" ? "✉️ Confirm Your Account" : otpDelivery === "phone" ? "📱 Mobile SMS Verification" : "✉️ Email Security Verification"}
                   </span>
                   <h3 className="text-base font-bold text-[#00243B] dark:text-white pt-1">Enter 6-Digit Security Code</h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">
-                    Code sent to <span className="text-[#00243B] dark:text-slate-200 font-bold">{otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail)}</span>
+                    Code sent to{" "}
+                    <span className="text-[#00243B] dark:text-slate-200 font-bold">
+                      {otpFlow === "confirm_signup" ? regEmail.trim().toLowerCase() : otpDelivery === "phone" ? toE164(regPhone || loginPhone) : (regPhoneOrEmail || loginPhoneOrEmail)}
+                    </span>
                   </p>
+                  {otpFlow === "confirm_signup" && (
+                    <p className="text-[10px] text-slate-400 dark:text-slate-500 font-semibold pt-1">
+                      Enter it right here — you don't need to open your email or leave this tab.
+                    </p>
+                  )}
                 </div>
 
                 <div className="flex justify-center gap-3 my-2">
@@ -3225,27 +3292,45 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                   Didn't receive code?{" "}
                   <button
                     type="button"
-                    disabled={isSendingOtp}
+                    disabled={isSendingOtp || resendRetryAfterMs > 0}
                     onClick={async () => {
+                      const email = otpFlow === "confirm_signup" ? regEmail.trim().toLowerCase() : (regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase();
+
+                      // Applies to both OTP flows: refuse locally, before
+                      // Supabase is contacted, once the cooldown or the
+                      // per-address hourly cap says no (LA-BE-CORE-002 CL-P2).
+                      if (otpFlow !== "confirm_signup" || otpDelivery !== "phone") {
+                        const guard = checkSendAllowed(email);
+                        if (!guard.allowed) {
+                          setFormError(describeSendGuardRefusal(guard));
+                          setResendRetryAfterMs(guard.retryAfterMs ?? 0);
+                          return;
+                        }
+                      }
+
                       setFormError("");
                       setIsSendingOtp(true);
                       try {
-                        const shouldCreateUser = otpFlow === "register";
-                        if (otpDelivery === "phone") {
-                          await sendPhoneOtp(toE164(regPhone || loginPhone), shouldCreateUser);
+                        if (otpFlow === "confirm_signup") {
+                          await resendSignupConfirmation(email);
+                          recordSend(email);
+                        } else if (otpDelivery === "phone") {
+                          await sendPhoneOtp(toE164(regPhone || loginPhone), otpFlow === "register");
                         } else {
-                          await sendEmailOtp((regPhoneOrEmail || loginPhoneOrEmail).trim().toLowerCase(), shouldCreateUser);
+                          await sendEmailOtp(email, otpFlow === "register");
+                          recordSend(email);
                         }
                         setOtpValues(["", "", "", "", "", ""]);
+                        setResendRetryAfterMs(60_000);
                       } catch (err: any) {
-                        setFormError(err.message || "Could not resend the code. Please try again.");
+                        setFormError(describeAuthError(err));
                       } finally {
                         setIsSendingOtp(false);
                       }
                     }}
-                    className="text-[var(--teal)] dark:text-[#FCB824] font-bold hover:underline cursor-pointer disabled:opacity-60"
+                    className="text-[var(--teal)] dark:text-[#FCB824] font-bold hover:underline cursor-pointer disabled:opacity-60 disabled:no-underline disabled:text-slate-400"
                   >
-                    Resend Code
+                    {resendRetryAfterMs > 0 ? `Resend available in ${formatRetryAfter(resendRetryAfterMs)}` : "Resend Code"}
                   </button>
                 </div>
               </form>

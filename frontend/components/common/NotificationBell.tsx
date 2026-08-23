@@ -1,30 +1,10 @@
 import React, { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
-import { StudentProfile } from "../../supabase";
+import { MeProfile, getMissingProfileFields } from "../../lib/meApi";
 
 interface NotificationBellProps {
-  profile: StudentProfile | null;
-}
-
-// Fields we consider "required" for a complete profile.
-// label = shown to the user, key = field on StudentProfile
-const REQUIRED_FIELDS: { key: keyof StudentProfile; label: string }[] = [
-  { key: "display_name", label: "Name" },
-  { key: "phone_number", label: "Mobile Number" },
-  { key: "target_stream", label: "Target Stream" },
-  { key: "grade_class", label: "Class / Grade" },
-  { key: "school_or_coaching", label: "School / Coaching Institute" },
-  { key: "city", label: "City" },
-];
-
-function getMissingFields(profile: StudentProfile | null): string[] {
-  if (!profile) return REQUIRED_FIELDS.map((f) => f.label);
-
-  return REQUIRED_FIELDS.filter((field) => {
-    const value = profile[field.key];
-    return !value || (typeof value === "string" && !value.trim());
-  }).map((f) => f.label);
+  profile: MeProfile | null;
 }
 
 export default function NotificationBell({ profile }: NotificationBellProps) {
@@ -32,7 +12,7 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
-  const missingFields = getMissingFields(profile);
+  const missingFields = getMissingProfileFields(profile);
   const hasIncompleteProfile = missingFields.length > 0;
 
   return (

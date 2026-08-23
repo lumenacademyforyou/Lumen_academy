@@ -3,13 +3,8 @@ import LumenLogo from "./LumenLogo";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
-import {
-  saveStudentProfile,
-  fetchStudentProfile,
-  fetchAppUser,
-  StudentProfile,
-  supabase,
-} from "../../supabase";
+import { supabase } from "../../supabase";
+import { fetchMe, updateMe, MeProfile } from "../../lib/meApi";
 import NotificationBell from "./NotificationBell";
 
 interface HeaderProps {
@@ -79,13 +74,10 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   // Profile Form States
-  const [profile, setProfile] = useState<StudentProfile | null>(null);
+  const [profile, setProfile] = useState<MeProfile | null>(null);
 const [editedName, setEditedName] = useState("");
 const [phone, setPhone] = useState("");
-const [targetStream, setTargetStream] = useState<"" | "NEET" | "JEE">("");
-const [gradeClass, setGradeClass] = useState("");
-const [schoolOrCoaching, setSchoolOrCoaching] = useState("");
-const [city, setCity] = useState("");
+const [targetExam, setTargetExam] = useState<"" | "NEET" | "JEE">("");
 const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
   // Account Settings States
@@ -127,38 +119,20 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
 
 useEffect(() => {
+  // One call replaces what used to be fetchAppUser() + fetchStudentProfile()
+  // (which itself called fetchAppUser() a second time) — see
+  // backend/services/meProfile.service.ts (LA-BE-CORE-002 CL-P4). This is
+  // the fetch that runs immediately after sign-in, since Header is always
+  // mounted — the one most responsible for S-3's "long delay right after
+  // sign-in" symptom.
   const loadProfile = async () => {
     try {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-
-      if (!user) {
-        setStudentName("");
-        return;
-      }
-
-      // Get the application user from core.app_user
-      const appUser = await fetchAppUser(user.id);
-
-      if (appUser) {
-        // Header name comes from core.app_user.full_name
-        setStudentName(appUser.full_name || "");
-        setEditedName(appUser.full_name || "");
-        setPhone(appUser.mobile_number || "");
-      } else {
-        console.warn("No core.app_user found for auth user:", user.id);
-        setStudentName("");
-        setEditedName("");
-        setPhone("");
-      }
-
-      // Get student profile data separately
-      const prof = await fetchStudentProfile(user.id);
-
-      if (prof) {
-        setProfile(prof);
-      }
+      const me = await fetchMe();
+      setProfile(me);
+      setStudentName(me.fullName || "");
+      setEditedName(me.fullName || "");
+      setPhone(me.mobileNumber || "");
+      setTargetExam(me.targetExam === "JEE" ? "JEE" : "NEET");
     } catch (error) {
       console.error("Failed to load header profile:", error);
       setStudentName("");
@@ -170,26 +144,23 @@ useEffect(() => {
 
 const handleSaveProfile = async (e: React.FormEvent) => {
   e.preventDefault();
-  if (!profile?.user_id || !editedName.trim()) return;
+  if (!editedName.trim()) return;
 
-  const saved = await saveStudentProfile({
-    ...profile,
-    display_name: editedName.trim(),
-    target_stream: targetStream || undefined,
-    phone_number: phone.trim() || undefined,
-    grade_class: gradeClass || undefined,
-    school_or_coaching: schoolOrCoaching.trim() || undefined,
-    city: city.trim() || undefined,
-  });
-
-  if (saved) {
+  try {
+    const saved = await updateMe({
+      fullName: editedName.trim(),
+      mobileNumber: phone.trim() || null,
+      ...(targetExam ? { targetExam } : {}),
+    });
     setProfile(saved);
-    setStudentName(saved.display_name);
+    setStudentName(saved.fullName);
     setProfileSuccessMsg("Profile updated successfully!");
     setTimeout(() => {
       setProfileSuccessMsg("");
       setShowProfileModal(false);
     }, 1200);
+  } catch (error) {
+    console.error("Failed to save profile:", error);
   }
 };
 
@@ -512,18 +483,16 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Target Stream")}</label>
+                  <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Target Exam")}</label>
                   <select
-                    value={targetStream}
-                    onChange={(e) => setTargetStream(e.target.value)}
+                    value={targetExam}
+                    onChange={(e) => setTargetExam(e.target.value as "" | "NEET" | "JEE")}
                     className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
                   >
-                    <option value="NEET 2026 Medical Aspirant">NEET 2026 Medical Aspirant</option>
-                    <option value="NEET 2027 Foundation">NEET 2027 Foundation</option>
-                    <option value="Class 12 Board Prep">Class 12 Board Prep</option>
+                    <option value="NEET">NEET</option>
+                    <option value="JEE">JEE</option>
                   </select>
                 </div>
-
 
                 <div className="space-y-1">
                   <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Mobile Number</label>
@@ -534,17 +503,6 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                     className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
                   />
                 </div>
-
-             <div className="space-y-1 md:col-span-2">
-  <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">School / Coaching Institute</label>
-  <input
-    type="text"
-    value={schoolOrCoaching}
-    onChange={(e) => setSchoolOrCoaching(e.target.value)}
-    className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
-  />
-</div>
-
               </div>
 
               {/* Action Buttons */}
