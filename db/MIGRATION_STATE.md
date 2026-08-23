@@ -1,93 +1,103 @@
 # Migration state
-_Last updated: 2026-08-23 by Session A (audit and reset)_
+_Last updated: 2026-08-23 by Session B (close-out of Session A's open decisions)_
 
 ## Database state
-**State: B — partly migrated beyond the committed baseline.**
-
-Evidence: all seven newer-brief-only objects exist live in the database —
-`catalog.node_level`, `catalog.exam_family`, `core.role`, `core.user_role_assignment`,
-`content.question_group`, `content.question_source`, `assess.test_scope_node`, plus
-columns `catalog.syllabus_node.node_path`, `assess.test.scope_type`,
-`content.question.external_ref`. None of this is possible under STATE A. Every DDL
-object defined by migrations 008–013 is present, even though none of those six
-migration files (or their verify files) are committed to git — they are untracked.
-The database is ahead of what git has recorded.
-
-There is no ledger for the raw-SQL migration runner (`db/scripts/run-migration.mjs`
-runs a file and its verify script with no bookkeeping of its own), so "applied"
-below is inferred entirely from live object presence + verify-script results
-gathered this session (all verify scripts are read-only assertions — confirmed by
-reading their SQL before running).
+**State: A+ — matches git exactly now.** Migrations 000–013 are all applied,
+verified, and committed. There is no drift between git and the live database
+for the `catalog/core/content/assess/learn` schemas.
 
 ## Applied
 | Migration | Applied | Verified | Notes |
 |---|---|---|---|
 | 000_foundation.sql | yes | yes | |
 | 001_catalog.sql | yes | yes | |
-| 002_core.sql | yes | **stale check** | verify_002 asserts `uq_app_user_mobile_number` is a UNIQUE **constraint**. Migration 007 (already-committed, intentional, documented) dropped that constraint and replaced it with an equivalent partial unique **index** of the same name. Schema is correct; verify_002 was never updated after 007 shipped. Not schema corruption. |
+| 002_core.sql | yes | yes | verify_002_core fixed this session — it was checking `uq_app_user_mobile_number` as a UNIQUE constraint; 007 (already committed) replaced it with a partial unique index of the same name. Verify script now checks `pg_indexes` for it instead. |
 | 003_content.sql | yes | yes | |
 | 004_assess.sql | yes | yes | |
 | 005_learn.sql | yes | yes | |
 | 006_pgvector_index.sql | yes | yes | |
-| 007_core_mobile_nullable.sql | yes | yes | this is the migration that makes verify_002 stale (see above) |
-| 008_catalog_taxonomy.sql | yes (uncommitted) | yes | functional proof passed; proof rows rolled back |
-| 009_core_rbac.sql | yes (uncommitted) | yes | functional proof passed; proof rows rolled back |
-| 010_content_rich.sql | yes (uncommitted) | **FAILED** | schema objects all present (first assertion block passed), but the verify script's own functional-proof step inserts `content.ai_generation_job.job_type = 'verify_proof'`, which is not in the allowed list `('manual_import','question_generation','translation','review_assist','other')` added later by migration 012's `ck_ai_generation_job_type` check constraint. Real cross-migration ordering bug: 010's verify script predates 012's constraint and was never updated to match. Needs a person to decide the fix (change the verify script's literal, or add an allowed value) — not something to silently patch. |
-| 011_assess_scope.sql | yes (uncommitted) | yes | functional proof passed; proof rows rolled back |
-| 012_domain_checks.sql | yes (uncommitted) | yes | functional proof passed; proof rows rolled back |
-| 013_content_import.sql | yes (uncommitted) | yes | functional proof passed |
+| 007_core_mobile_nullable.sql | yes | yes | |
+| 008_catalog_taxonomy.sql | yes | yes | committed this session (was applied+verified, uncommitted, since last audit) |
+| 009_core_rbac.sql | yes | yes | committed this session |
+| 010_content_rich.sql | yes | yes | verify_010's functional-proof step inserted `job_type = 'verify_proof'`, not in 012's `ck_ai_generation_job_type` allow-list. Fixed to use `'other'` (the constraint's catch-all value); re-ran live, passes. |
+| 011_assess_scope.sql | yes | yes | committed this session |
+| 012_domain_checks.sql | yes | yes | committed this session |
+| 013_content_import.sql | yes | yes | committed this session |
 
-## Objects present that no committed migration created
-All of the following exist live but come from untracked files (008–013):
+All six migration+verify pairs (008–013) are committed individually, in
+order, each in its own commit — see `git log --oneline` for the trail
+(`c3e9351`..`af54daa`).
 
-- `catalog.exam_family`, `catalog.node_level`, `catalog.syllabus_node.node_path` (+ related unique/prefix indexes and hierarchy triggers) — **008_catalog_taxonomy.sql**
-- `core.role`, `core.role_permission`, `core.user_role_assignment` (+ scope/audit/last-super_admin-revoke guard triggers) — **009_core_rbac.sql**
-- `content.question_group`, `content.question_source`, `content.question.external_ref`, `content.question.group_id`, `content.asset.group_id` — **010_content_rich.sql**
-- `assess.test.scope_type`, `assess.test_scope_node` (+ cross-exam consistency trigger) — **011_assess_scope.sql**
-- Domain check constraints across assess/catalog/core, incl. `ck_ai_generation_job_type`, `ck_ai_generation_job_status`, `ck_question_review_reviewer_type`, `ck_question_translation_review_status` — **012_domain_checks.sql**
-- `content.import_batch`, `content.import_row` (checksum + batch/row_no uniqueness) — **013_content_import.sql**
+## Separate migration track: legacy `public` schema (Prisma)
+Distinct from the above. The `public` schema (`users`, `questions`,
+`test_attempts`, `mock_tests`, etc. — the original pre-audit app model) is
+managed by Prisma, not the raw-SQL runner, and is **not** the same schema as
+`catalog/core/content/assess/learn`. Two migrations exist for it, generated
+by a prior session and left unapplied:
 
-Separately, uncommitted working-tree changes exist on top of all this:
-`.env.example` (+7 lines), `db/scripts/run-migration.mjs` (SSL-detection fix for the
-Supabase pooler host, per its own inline comment), and `prisma/schema.prisma`
-(570-line diff). Two new Prisma migration folders also sit on disk —
-`20260820140818_schema_audit_upgrade` and `20260820142154_exam_pattern_model` —
-but neither appears in the `public._prisma_migrations` ledger (which still lists
-only `20260807095708_init` and `20260807162258_supabase_auth`), so neither has been
-deployed via Prisma. Whether the schema.prisma diff is meant to mirror 008–013 or
-is separate, not-yet-applied work is unclear from evidence alone — flagged below.
+| Prisma migration | Applied | Committed | Notes |
+|---|---|---|---|
+| 20260820140818_schema_audit_upgrade | **no** | yes (this session) | Adds `user_role`/`question_type`/`review_status` enums, audit timestamp columns across most tables, `question_revisions`, `question_assets`, `mock_tests`, `mock_test_questions`, `attempt_questions`, `bookmarks`, `notes`, `notifications`, `user_daily_activity`. Includes a hand-written data-preserving migration for `users.role` text→enum and two CHECK constraints. |
+| 20260820142154_exam_pattern_model | **no** | yes (this session) | Second pass: replaces per-`MockTest` `mock_test_sections` with a reusable, versioned `exam_patterns`/`exam_pattern_sections`/`scoring_rules` model. |
+
+**Neither is applied to the database.** Applying them touches live
+`users`/`questions`/`test_attempts` data (including a real text→enum
+migration with a data-mapping step) and needs its own dedicated session,
+per the one-migration-per-session rule — not folded into this close-out.
+
+### Incident: `schema.prisma` was reconstructed, not recovered
+The `schema.prisma` diff that generated these two migrations (570 lines,
+uncommitted, authored by whichever session ran `prisma migrate dev`) was
+destroyed this session: `prisma db pull` was run to "reconcile" Prisma
+against the live DB without checking `git status` or stashing first, and it
+overwrote the file. It was never staged or committed, so it is not
+recoverable via git, and no editor local-history backup was found either.
+
+It was reconstructed instead — Prisma migration SQL is generated by diffing
+`schema.prisma` against the DB, so the two migration files above fully
+describe the target model. The rebuilt `schema.prisma` was validated with
+`prisma validate` and cross-checked with `prisma migrate diff` against the
+live DB; the regenerated DDL matches the two committed migrations almost
+exactly (the only gaps are two CHECK constraints and one partial index that
+Prisma's schema language cannot express — expected, not an error). It should
+be functionally equivalent to what was lost, but is not guaranteed
+byte-identical — comments, field ordering, or naming choices may differ from
+the original author's version.
+
+**Lesson recorded here so it isn't repeated:** any command that overwrites a
+tracked file based on external state (`prisma db pull`, codegen, formatters
+that rewrite in place) needs the same `git status`-first / stash-first
+discipline as a destructive git command, even though it isn't one.
 
 ## Existing assess data
-Two accounts own all `assess` data, both unambiguously seed/test accounts, not
-real users:
+Unchanged since the last audit — two disposable seed/test accounts, nothing
+deleted:
 
 | email | attempts | scorecards | first | last |
 |---|---|---|---|---|
 | demo.student@lumenacademy.dev | 8 | 6 | 2026-08-16T16:11:23Z | 2026-08-16T16:21:19Z |
 | e2e-test-student@lumen.internal | 2 | 1 | 2026-08-16T15:40:54Z | 2026-08-16T15:48:25Z |
 
-Disposable. Nothing was deleted this session.
-
 ## Open decisions blocking the next session
-1. **Commit or discard 008–013 + their verify files.** They are fully applied and
-   (mostly) verified live but sit uncommitted in git. If they're kept, they should
-   be committed migration-by-migration per the session rules below, not as one bulk
-   commit, since no per-migration commit trail exists yet.
-2. **Fix verify_010_content_rich vs. 012's `ck_ai_generation_job_type` constraint.**
-   Decide whether to change the verify script's proof literal or extend the allowed
-   `job_type` values — this is a real bug, not stale-script noise like 002.
-3. **Fix or retire verify_002_core's stale constraint assertion** (checks for a
-   UNIQUE constraint that 007 intentionally replaced with a partial index).
-4. **Reconcile the two migration systems.** Raw SQL migrations (008–013, applied
-   directly to the DB) and Prisma migrations (`schema_audit_upgrade`,
-   `exam_pattern_model`, present on disk but not deployed, plus the uncommitted
-   570-line `schema.prisma` diff) both exist and are out of sync. Decide which is
-   authoritative going forward, and whether the two pending Prisma migrations
-   should be deployed, rewritten, or dropped.
-5. **`.env.example` and `run-migration.mjs` diffs** are uncommitted and untested
-   against this report — no evidence gathered either way; just noting they exist.
+1. **Apply (or don't) the two pending Prisma migrations.** They're
+   committed and validated but not deployed. Needs its own session: run
+   `prisma migrate deploy`, then manually verify the `users.role`
+   text→enum backfill and both CHECK constraints against live data (the
+   migration's own inline comments record what was checked as of
+   2026-08-20 — re-verify, don't assume it still holds).
+2. **Decide whether `public` (legacy Prisma app) and
+   `catalog/core/content/assess/learn` (raw-SQL) are meant to converge,
+   coexist long-term, or whether one supersedes the other.** Out of scope
+   for this session to decide; flagged for a person, not inferred from
+   evidence.
+3. **Reconcile `schema.prisma` against the original author's intent where
+   it might matter** — the rebuild is DDL-faithful but not guaranteed to
+   match field/relation naming choices the original author would have
+   made. Worth a quick read-through before anyone builds application code
+   against these models.
 
 ## Next session should
-Read this file first, then get a person's decision on items 1–4 above before
-applying, committing, or altering anything — this audit applied no migrations and
-changed no schema.
+Read this file first. If picking up the Prisma migrations (item 1), treat
+it as its own single-migration session per the standing rules — do not
+bundle both pending migrations into one applied step without verifying the
+first before the second.
