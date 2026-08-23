@@ -1,10 +1,11 @@
 # Migration state
-_Last updated: 2026-08-23 by Session B (close-out of Session A's open decisions)_
+_Last updated: 2026-08-23 by Session C (deploy the two Prisma migrations)_
 
 ## Database state
-**State: A+ — matches git exactly now.** Migrations 000–013 are all applied,
-verified, and committed. There is no drift between git and the live database
-for the `catalog/core/content/assess/learn` schemas.
+**State: A++ — git and live database match exactly, both migration tracks.**
+Raw-SQL 000–013 (`catalog/core/content/assess/learn`) and Prisma's two
+`public`-schema migrations are all applied, verified, and committed. No
+open migration drift anywhere in the database.
 
 ## Applied
 | Migration | Applied | Verified | Notes |
@@ -32,18 +33,30 @@ order, each in its own commit — see `git log --oneline` for the trail
 Distinct from the above. The `public` schema (`users`, `questions`,
 `test_attempts`, `mock_tests`, etc. — the original pre-audit app model) is
 managed by Prisma, not the raw-SQL runner, and is **not** the same schema as
-`catalog/core/content/assess/learn`. Two migrations exist for it, generated
-by a prior session and left unapplied:
+`catalog/core/content/assess/learn`. Both migrations for it are now applied:
 
 | Prisma migration | Applied | Committed | Notes |
 |---|---|---|---|
-| 20260820140818_schema_audit_upgrade | **no** | yes (this session) | Adds `user_role`/`question_type`/`review_status` enums, audit timestamp columns across most tables, `question_revisions`, `question_assets`, `mock_tests`, `mock_test_questions`, `attempt_questions`, `bookmarks`, `notes`, `notifications`, `user_daily_activity`. Includes a hand-written data-preserving migration for `users.role` text→enum and two CHECK constraints. |
-| 20260820142154_exam_pattern_model | **no** | yes (this session) | Second pass: replaces per-`MockTest` `mock_test_sections` with a reusable, versioned `exam_patterns`/`exam_pattern_sections`/`scoring_rules` model. |
+| 20260820140818_schema_audit_upgrade | **yes** — 2026-08-23T14:41:09Z | yes | Adds `user_role`/`question_type`/`review_status` enums, audit timestamp columns across most tables, `question_revisions`, `question_assets`, `mock_tests`, `mock_test_questions`, `attempt_questions`, `bookmarks`, `notes`, `notifications`, `user_daily_activity`. Includes a hand-written data-preserving migration for `users.role` text→enum and two CHECK constraints. |
+| 20260820142154_exam_pattern_model | **yes** — 2026-08-23T14:41:20Z | yes | Second pass: replaces per-`MockTest` `mock_test_sections` with a reusable, versioned `exam_patterns`/`exam_pattern_sections`/`scoring_rules` model. |
 
-**Neither is applied to the database.** Applying them touches live
-`users`/`questions`/`test_attempts` data (including a real text→enum
-migration with a data-mapping step) and needs its own dedicated session,
-per the one-migration-per-session rule — not folded into this close-out.
+Applied via `prisma migrate deploy` (both, in order, zero errors) after
+re-verifying — fresh, same-day — the data assumptions the migrations were
+written against: `users.role` was still only `'student'` (2 rows), no user
+had both `email` and `phone` null, and `questions`/`test_attempts`/
+`attempt_answers`/`ai_usage`/`ai_cache` were all empty. Post-deploy checks,
+all passing:
+- `users.role` backfilled to `'STUDENT'` (enum) for both existing rows.
+- Both CHECK constraints (`chk_users_email_or_phone`,
+  `chk_questions_active_requires_approved`) present in `pg_constraint`.
+- All 14 new tables present in `public`; `mock_test_sections` correctly
+  absent (created by the first migration, dropped by the second).
+- `_prisma_migrations` ledger lists both, `rolled_back_at` null.
+- `npx prisma generate` succeeded against the new schema.
+- No new Postgres schema namespace was created — confirmed against
+  `information_schema.schemata`; both migrations landed inside the
+  existing `public` schema, alongside the untouched
+  `catalog/core/content/assess/learn` schemas.
 
 ### Incident: `schema.prisma` was reconstructed, not recovered
 The `schema.prisma` diff that generated these two migrations (570 lines,
@@ -79,25 +92,26 @@ deleted:
 | e2e-test-student@lumen.internal | 2 | 1 | 2026-08-16T15:40:54Z | 2026-08-16T15:48:25Z |
 
 ## Open decisions blocking the next session
-1. **Apply (or don't) the two pending Prisma migrations.** They're
-   committed and validated but not deployed. Needs its own session: run
-   `prisma migrate deploy`, then manually verify the `users.role`
-   text→enum backfill and both CHECK constraints against live data (the
-   migration's own inline comments record what was checked as of
-   2026-08-20 — re-verify, don't assume it still holds).
-2. **Decide whether `public` (legacy Prisma app) and
+1. **Decide whether `public` (legacy Prisma app) and
    `catalog/core/content/assess/learn` (raw-SQL) are meant to converge,
-   coexist long-term, or whether one supersedes the other.** Out of scope
-   for this session to decide; flagged for a person, not inferred from
-   evidence.
-3. **Reconcile `schema.prisma` against the original author's intent where
-   it might matter** — the rebuild is DDL-faithful but not guaranteed to
-   match field/relation naming choices the original author would have
-   made. Worth a quick read-through before anyone builds application code
-   against these models.
+   coexist long-term, or whether one supersedes the other.** Both are now
+   fully migrated and live, which makes this more pressing, not less — two
+   parallel, independently-evolving schemas exist in the same database.
+   Out of scope for any session to decide unilaterally; needs a person.
+2. **Reconcile `schema.prisma` against the original author's intent where
+   it might matter** — the rebuild that generated the now-applied
+   migrations was DDL-faithful but not guaranteed to match field/relation
+   naming choices the original author would have made. Worth a quick
+   read-through before anyone builds application code against these
+   models.
+3. **Both migrations' inline comments describe the human review that
+   justified skipping certain backfills** (e.g. no `questions` rows to
+   reconcile against the new `review_status` default). That review is now
+   also stale from the moment new rows are written to `public.questions` —
+   nothing to do now, just don't assume future sessions can skip the same
+   checks.
 
 ## Next session should
-Read this file first. If picking up the Prisma migrations (item 1), treat
-it as its own single-migration session per the standing rules — do not
-bundle both pending migrations into one applied step without verifying the
-first before the second.
+Read this file first. The migration backlog is now clear on both tracks —
+next work here is either the `public` vs. raw-SQL convergence decision
+above, or ordinary feature work against either schema.
