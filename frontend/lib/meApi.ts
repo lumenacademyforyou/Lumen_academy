@@ -7,6 +7,7 @@ import { apiFetch } from "./api.js";
 export interface MeProfile {
   appUserId: string;
   authUserId: string;
+  memberCode: string | null;
   email: string | null;
   mobileNumber: string | null;
   fullName: string;
@@ -75,6 +76,16 @@ export async function updateMe(patch: UpdateMeInput): Promise<MeProfile> {
     body: JSON.stringify(patch),
   });
   return user;
+}
+
+// Requires the caller's current session to carry a recent OTP-verified amr
+// claim — see backend/services/deleteAccount.service.ts. The frontend flow
+// this is meant to be called from: sendEmailOtp(email, false) to send the
+// code, then verifyEmailOtp(email, code) to mint that fresh OTP session,
+// then this call immediately after (apiFetch always sends the client's
+// current session token, so it picks up the fresh one automatically).
+export async function deleteAccount(): Promise<void> {
+  await apiFetch<void>("/me", { method: "DELETE" });
 }
 
 // A profile counts as "complete enough" once the fields the dashboard/

@@ -12,33 +12,40 @@ interface PathNode {
   chaptersDone: number;
 }
 
+// Progress/status here used to be fabricated (two subjects pre-marked
+// "completed" at 100% mastery, a third at 65%) and shown to every user
+// regardless of whether they had ever opened a chapter — exactly the kind
+// of fake history flagged for removal. No backend course-progress tracking
+// exists yet (that's a separate, later piece of work), so until this reads
+// real progress, every node honestly starts unearned: the first topic is
+// available to begin, everything after it is locked behind it.
 const LEARNING_PATH: PathNode[] = [
   {
     id: "bio_1",
     subject: "Biology",
     title: "Diversity & Structural Organization",
-    status: 'completed',
-    progress: 100,
+    status: 'in-progress',
+    progress: 0,
     chaptersTotal: 7,
-    chaptersDone: 7,
+    chaptersDone: 0,
   },
   {
     id: "chem_1",
     subject: "Chemistry",
     title: "Physical Chemistry Basics",
-    status: 'completed',
-    progress: 100,
+    status: 'locked',
+    progress: 0,
     chaptersTotal: 5,
-    chaptersDone: 5,
+    chaptersDone: 0,
   },
   {
     id: "phy_1",
     subject: "Physics",
     title: "Mechanics & Kinematics",
-    status: 'in-progress',
-    progress: 65,
+    status: 'locked',
+    progress: 0,
     chaptersTotal: 8,
-    chaptersDone: 5,
+    chaptersDone: 0,
   },
   {
     id: "bio_2",

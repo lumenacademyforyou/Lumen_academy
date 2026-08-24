@@ -91,6 +91,10 @@ interface DashboardViewProps {
   attempt: TestAttempt;
   studentName: string;
   onTakeTest: () => void;
+  // Count of real completed attempts only — used below to gate the "Early
+  // Bird" achievement badge. Passing the full attempts catalog length here
+  // used to make that badge (and the achievements empty-state) fire for
+  // every user regardless of whether they had ever finished a test.
   attemptsCount: number;
 }
 
@@ -100,6 +104,14 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
   const [animatedScore, setAnimatedScore] = useState(0);
   const [showDetailedReport, setShowDetailedReport] = useState(false);
   const [showIRTReport, setShowIRTReport] = useState(false);
+
+  // "Available" is TestAttempt's marker for a not-yet-taken catalog entry
+  // (see database_sample/initialAttempts.ts) — the IRT/AI-diagnostic panels
+  // below narrate specific numbers ("Based on your results in...") that
+  // only make sense once a real attempt exists. Showing them against a
+  // template attempt fabricated a performance history for users who hadn't
+  // taken a test yet.
+  const hasRealAttempt = attempt.date !== "Available";
 
   const [studyStreak, setStudyStreak] = useState(0);
 
@@ -412,16 +424,27 @@ useEffect(() => {
           {/* Hero text information */}
           <div className="flex-1 text-center lg:text-left">
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-4">
-              <span className="inline-block bg-white/10 text-blue-100 border border-white/10 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">{t("LATEST SCORECARD")}</span>
+              <span className="inline-block bg-white/10 text-blue-100 border border-white/10 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">{t(hasRealAttempt ? "LATEST SCORECARD" : "GET STARTED")}</span>
               <span className="inline-flex items-center gap-1.5 bg-[#FCB824]/20 text-[#FCB824] border border-[#FCB824]/30 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide">
                 <span className="material-symbols-outlined text-sm animate-pulse">stars</span>
                 <span>{t("Journey to 720 starts here")}</span>
               </span>
             </div>
-            <h1 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tight mb-4 leading-none">
-              Great work, {studentName}!
-            </h1>
-            <p className="text-blue-100 text-base md:text-lg font-normal max-w-xl opacity-90 leading-relaxed mx-auto lg:mx-0">{t("You've outperformed")}<span className="font-bold text-white">{attempt.percentile}{t("% of participants")}</span>{t(" in the ")}<span className="text-white font-semibold">{attempt.title}</span>{t(". Your consistency in Physics is showing significant growth.")}</p>
+            {hasRealAttempt ? (
+              <>
+                <h1 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tight mb-4 leading-none">
+                  Great work, {studentName}!
+                </h1>
+                <p className="text-blue-100 text-base md:text-lg font-normal max-w-xl opacity-90 leading-relaxed mx-auto lg:mx-0">{t("You've outperformed")}<span className="font-bold text-white">{attempt.percentile}{t("% of participants")}</span>{t(" in the ")}<span className="text-white font-semibold">{attempt.title}</span>{t(". Your consistency in Physics is showing significant growth.")}</p>
+              </>
+            ) : (
+              <>
+                <h1 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tight mb-4 leading-none">
+                  Start your journey, {studentName}!
+                </h1>
+                <p className="text-blue-100 text-base md:text-lg font-normal max-w-xl opacity-90 leading-relaxed mx-auto lg:mx-0">{t("Take your first mock test to unlock your scorecard, accuracy trends, and a personalised NEET prep plan.")}</p>
+              </>
+            )}
             
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6">
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 md:p-6 min-w-[140px] md:min-w-[160px] border border-white/20 text-center">
@@ -487,15 +510,13 @@ useEffect(() => {
           </div>
         </div>
       </div>
-{profileIncomplete && (
-  <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-200 rounded-2xl p-4 flex items-center gap-3 text-sm font-semibold">
-    <span className="material-symbols-outlined text-xl">info</span>
-    {t("Your profile is incomplete — please fill in your details below to get personalized recommendations.")}
-  </div>
-)}
-      {/* Student Profile */}
-   
 
+      {profileIncomplete && (
+        <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-200 rounded-2xl p-4 flex items-center gap-3 text-sm font-semibold">
+          <span className="material-symbols-outlined text-xl">info</span>
+          {t("Your profile is incomplete — please fill in your details below to get personalized recommendations.")}
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Daily Study Goal */}
@@ -1000,6 +1021,8 @@ useEffect(() => {
       </motion.div>
 
 
+      {hasRealAttempt && (
+      <>
       <div className="p-6 md:p-10 rounded-[32px] md:rounded-[40px] bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 relative overflow-hidden shadow-sm space-y-8">
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
           <div>
@@ -1227,6 +1250,8 @@ useEffect(() => {
           </div>
         )}
       </div>
+      </>
+      )}
 
       {/* Detailed IRT Report Modal */}
       {showIRTReport && (

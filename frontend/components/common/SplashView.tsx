@@ -98,10 +98,10 @@ export default function SplashView({ onEnter }: SplashViewProps) {
           style={{ transform: `translateZ(${textTranslateZ}px)` }}
         >
           <h3 className="text-2xl md:text-3xl font-black mb-2 tracking-tight drop-shadow-sm">
-            Welcome back, scholar
+            Welcome, scholar
           </h3>
           <p className="text-sm md:text-base font-semibold opacity-85 max-w-[320px] mx-auto text-slate-700 dark:text-slate-200">
-            Your progress is waiting. Let's pick up right where you left off.
+            Your journey to NEET success starts here.
           </p>
 
           <motion.div 

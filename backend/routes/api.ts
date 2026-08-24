@@ -9,6 +9,7 @@ import { requireAuth } from "../middleware/requireAuth.js";
 import { requirePermission } from "../middleware/requirePermission.js";
 import { validate } from "../middleware/validate.js";
 import { getFullProfile, updateProfile, updateProfileSchema } from "../services/meProfile.service.js";
+import { requireRecentOtpReauthentication, deleteOwnAccount } from "../services/deleteAccount.service.js";
 import testsRouter from "./tests.routes.js";
 import aiRouter from "./ai.routes.js";
 import catalogRouter from "./catalog.routes.js";
@@ -45,6 +46,20 @@ router.patch("/me", requireAuth, validate({ body: updateProfileSchema }), async 
   try {
     const profile = await updateProfile(req.user!.appUserId, req.user!.id, req.body);
     res.json({ user: profile });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Self-service account deletion. Requires the caller's session to carry a
+// recent (<10 min) OTP-verified amr entry — see deleteAccount.service.ts for
+// why that's the actual reauthentication gate instead of Supabase's
+// password-update-only reauthenticate() API.
+router.delete("/me", requireAuth, async (req: Request, res: Response, next) => {
+  try {
+    await requireRecentOtpReauthentication(req.accessToken!);
+    await deleteOwnAccount(req.user!.id, req.user!.appUserId);
+    res.status(204).send();
   } catch (err) {
     next(err);
   }

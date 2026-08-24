@@ -4,7 +4,9 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../lib/studySessionService";
 import { supabase } from "../../supabase";
-import { fetchMe, updateMe, MeProfile } from "../../lib/meApi";
+import { fetchMe, updateMe, deleteAccount, MeProfile } from "../../lib/meApi";
+import { sendEmailOtp, verifyEmailOtp, describeAuthError } from "../../lib/supabaseAuth";
+import { ApiError } from "../../lib/api";
 import NotificationBell from "./NotificationBell";
 
 interface HeaderProps {
@@ -93,6 +95,64 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
 
   // Settings Feedback
   const [settingsSuccessMsg, setSettingsSuccessMsg] = useState("");
+
+  // Delete Account (OTP-gated) States
+  const [showDeleteAccountModal, setShowDeleteAccountModal] = useState(false);
+  const [deleteStep, setDeleteStep] = useState<"warn" | "otp">("warn");
+  const [deleteOtpCode, setDeleteOtpCode] = useState("");
+  const [deleteError, setDeleteError] = useState("");
+  const [deleteLoading, setDeleteLoading] = useState(false);
+  const [deleteOtpSent, setDeleteOtpSent] = useState(false);
+
+  const resetDeleteFlow = () => {
+    setShowDeleteAccountModal(false);
+    setDeleteStep("warn");
+    setDeleteOtpCode("");
+    setDeleteError("");
+    setDeleteLoading(false);
+    setDeleteOtpSent(false);
+  };
+
+  const handleSendDeleteOtp = async () => {
+    if (!profile?.email) {
+      setDeleteError("No verified email on this account to send a code to.");
+      return;
+    }
+    setDeleteLoading(true);
+    setDeleteError("");
+    try {
+      await sendEmailOtp(profile.email, false);
+      setDeleteOtpSent(true);
+      setDeleteStep("otp");
+    } catch (err) {
+      setDeleteError(describeAuthError(err));
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+
+  const handleConfirmDeleteAccount = async () => {
+    if (!profile?.email || deleteOtpCode.trim().length === 0) return;
+    setDeleteLoading(true);
+    setDeleteError("");
+    try {
+      // Verifying the code mints a fresh session carrying the recent-otp
+      // amr claim the backend requires (see meApi.ts's deleteAccount doc
+      // comment) — the delete call right after picks that session up
+      // automatically.
+      await verifyEmailOtp(profile.email, deleteOtpCode.trim());
+      await deleteAccount();
+      await supabase.auth.signOut();
+      window.location.assign("/");
+    } catch (err) {
+      if (err instanceof ApiError) {
+        setDeleteError(err.message);
+      } else {
+        setDeleteError(describeAuthError(err));
+      }
+      setDeleteLoading(false);
+    }
+  };
 
   const updateStreak = async () => {
     try {
@@ -418,7 +478,9 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                 </div>
                 <div>
                   <h3 className="text-xl font-black text-white">{studentName}</h3>
-                  <p className="text-xs text-amber-200 font-medium">NEET 2026 Registered Aspirant • Roll ID: LUMEN-8841</p>
+                  <p className="text-xs text-amber-200 font-medium">
+                    NEET 2026 Registered Aspirant{profile?.memberCode ? ` • Member ID: ${profile.memberCode}` : ""}
+                  </p>
                   <div className="inline-flex items-center gap-1.5 bg-[#FCB824]/20 text-[#FCB824] text-[10px] font-bold px-2.5 py-0.5 rounded-full mt-1.5 border border-[#FCB824]/30">
                     <span className="w-2 h-2 rounded-full bg-[#FCB824] animate-pulse"></span>
                     <span>{t("Verified Student")}</span>
@@ -437,21 +499,6 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                 </div>
               )}
 
-              {/* Quick Academic Performance Bar */}
-              <div className="grid grid-cols-3 gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-2xl border border-slate-200 dark:border-slate-700 text-center">
-                <div>
-                  <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase block">{t("Predicted AIR")}</span>
-                  <span className="text-sm font-black text-[var(--teal)] dark:text-[#FCB824]">#142</span>
-                </div>
-                <div className="border-x border-slate-200 dark:border-slate-700">
-                  <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase block">Avg Score</span>
-                  <span className="text-sm font-black text-[#ffd15c] dark:text-[#FCB824]">685/720</span>
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase block">{t("Tests Attempted")}</span>
-                  <span className="text-sm font-black text-[#00243B] dark:text-slate-200">8 Mocks</span>
-                </div>
-              </div>
 
               {/* Package Details */}
               <div className="bg-[#FCB824]/10 dark:bg-amber-950/30 border border-[#FCB824]/30 rounded-2xl p-4">
@@ -632,6 +679,24 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                           }`} />
                         </button>
                       </div>
+
+                      <div className="pt-4 mt-2 border-t border-slate-200 dark:border-slate-700">
+                        <p className="text-[10px] font-bold text-red-500 uppercase tracking-wider mb-2">{t("Danger Zone")}</p>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setShowSettingsModal(false);
+                            setShowDeleteAccountModal(true);
+                          }}
+                          className="w-full flex items-center justify-between p-3 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900 rounded-2xl hover:bg-red-100 dark:hover:bg-red-950/50 transition-colors cursor-pointer text-left"
+                        >
+                          <div>
+                            <p className="text-xs font-bold text-red-600 dark:text-red-400">{t("Delete Account")}</p>
+                            <p className="text-[10px] text-red-500/80 dark:text-red-400/70 font-medium">{t("Permanently delete your account and data")}</p>
+                          </div>
+                          <span className="material-symbols-outlined text-red-500 text-lg">delete_forever</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -738,6 +803,87 @@ const handleSaveProfile = async (e: React.FormEvent) => {
 
             </form>
 
+          </div>
+        </div>
+      )}
+
+      {/* ------------------------------------------------------------------ */}
+      {/* DELETE ACCOUNT MODAL (OTP-gated)                                   */}
+      {/* ------------------------------------------------------------------ */}
+      {showDeleteAccountModal && (
+        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+          <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[32px] max-w-md w-full shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden relative p-6">
+            <button
+              onClick={resetDeleteFlow}
+              className="absolute top-5 right-5 p-2 text-slate-400 hover:text-[#00243B] dark:hover:text-white rounded-full hover:bg-slate-100 dark:hover:bg-[#00243B] transition-colors cursor-pointer"
+            >
+              <span className="material-symbols-outlined text-xl">close</span>
+            </button>
+
+            <div className="w-14 h-14 rounded-full bg-red-50 dark:bg-red-950/40 flex items-center justify-center mb-4">
+              <span className="material-symbols-outlined text-red-500 text-2xl">delete_forever</span>
+            </div>
+
+            {deleteStep === "warn" ? (
+              <>
+                <h3 className="text-lg font-black text-[#00243B] dark:text-white mb-2">{t("Delete your account?")}</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-4 leading-relaxed">
+                  {t("This permanently deletes your profile, study progress and notifications. This cannot be undone. We'll email a verification code to")} <span className="font-bold text-[#00243B] dark:text-white">{profile?.email}</span> {t("to confirm it's really you.")}
+                </p>
+                {deleteError && (
+                  <div className="mb-4 p-3 bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-xs font-bold rounded-xl">
+                    {deleteError}
+                  </div>
+                )}
+                <div className="flex items-center justify-end gap-3">
+                  <button
+                    type="button"
+                    onClick={resetDeleteFlow}
+                    className="px-5 py-2.5 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-[#00243B] text-xs font-bold rounded-xl transition-colors cursor-pointer"
+                  >{t("Cancel")}</button>
+                  <button
+                    type="button"
+                    disabled={deleteLoading}
+                    onClick={handleSendDeleteOtp}
+                    className="px-5 py-2.5 bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer"
+                  >{deleteLoading ? t("Sending...") : t("Send Verification Code")}</button>
+                </div>
+              </>
+            ) : (
+              <>
+                <h3 className="text-lg font-black text-[#00243B] dark:text-white mb-2">{t("Enter verification code")}</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-4 leading-relaxed">
+                  {deleteOtpSent && t("We've sent a 6-digit code to")} <span className="font-bold text-[#00243B] dark:text-white">{profile?.email}</span>. {t("Enter it below to permanently delete your account.")}
+                </p>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  maxLength={6}
+                  placeholder="123456"
+                  value={deleteOtpCode}
+                  onChange={(e) => setDeleteOtpCode(e.target.value.replace(/\D/g, ""))}
+                  className="w-full px-4 py-3 mb-4 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-center text-lg font-black tracking-[0.3em] text-[#00243B] dark:text-white focus:border-red-500 outline-none"
+                />
+                {deleteError && (
+                  <div className="mb-4 p-3 bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-xs font-bold rounded-xl">
+                    {deleteError}
+                  </div>
+                )}
+                <div className="flex items-center justify-end gap-3">
+                  <button
+                    type="button"
+                    onClick={resetDeleteFlow}
+                    className="px-5 py-2.5 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-[#00243B] text-xs font-bold rounded-xl transition-colors cursor-pointer"
+                  >{t("Cancel")}</button>
+                  <button
+                    type="button"
+                    disabled={deleteLoading || deleteOtpCode.trim().length === 0}
+                    onClick={handleConfirmDeleteAccount}
+                    className="px-5 py-2.5 bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer"
+                  >{deleteLoading ? t("Deleting...") : t("Permanently Delete")}</button>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}

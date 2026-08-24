@@ -121,6 +121,20 @@ export async function provisionCanonicalUser(payload: SupabaseAccessTokenPayload
   }
 }
 
+// LA + the first two letters of the person's name (uppercased, non-letters
+// stripped, padded with 'X' if the name can't supply two letters) + a
+// random 6-digit number, e.g. LAPR384920 for "Prince" — the human-readable
+// member/roll-number requested for every user entity. Built here rather
+// than in SQL because it needs displayName, a provisioning-time input a
+// migration has no access to (see 017_core_member_code.sql).
+function buildMemberCodeCandidate(displayName: string): string {
+  const letters = (displayName.toUpperCase().match(/[A-Z]/g) ?? []).join("").padEnd(2, "X").slice(0, 2);
+  const digits = Math.floor(Math.random() * 1_000_000)
+    .toString()
+    .padStart(6, "0");
+  return `LA${letters}${digits}`;
+}
+
 async function runProvisioningTransaction(
   payload: SupabaseAccessTokenPayload,
   email: string | null,
@@ -128,6 +142,23 @@ async function runProvisioningTransaction(
   displayName: string
 ): Promise<ProvisionedUser> {
   return prisma.$transaction(async (tx) => {
+    // Collision space is 1,000,000 numbers per 2-letter prefix — a
+    // pre-insert existence check inside this same transaction, rather than
+    // catch-and-retry on the unique constraint, since Prisma's $queryRaw
+    // wraps the underlying Postgres error code in ways not worth depending
+    // on. Only spent on identities not already handled by
+    // provisionCanonicalUser's readExisting() pre-check, i.e. effectively
+    // once per brand-new signup.
+    let memberCode: string | null = null;
+    for (let attempt = 0; attempt < 20 && memberCode === null; attempt++) {
+      const candidate = buildMemberCodeCandidate(displayName);
+      const clash = await tx.$queryRaw<{ user_id: string }[]>`
+        select user_id from core.app_user where member_code = ${candidate} limit 1
+      `;
+      if (clash.length === 0) memberCode = candidate;
+    }
+    if (memberCode === null) throw new Error("Could not generate a unique member code after 20 attempts");
+
     // Highest-authority pending, unexpired invitation for this email, if
     // any. Ordering by core.role's own hierarchy (mirrors
     // trg_sync_app_user_role's CASE in 009_core_rbac.sql / ROLE_RANK in
@@ -179,8 +210,8 @@ async function runProvisioningTransaction(
     // got a row back from RETURNING regardless of which one actually
     // inserted it, so without this check both wrote an audit row.
     const appUserRows = await tx.$queryRaw<{ user_id: string; wasInserted: boolean }[]>`
-      insert into core.app_user (auth_user_id, email, mobile_number, full_name, user_role, status, institution_id)
-      values (${payload.sub}::uuid, ${email}, ${phone}, ${displayName}, ${roleCode}, 'active', ${institutionId}::uuid)
+      insert into core.app_user (auth_user_id, email, mobile_number, full_name, user_role, status, institution_id, member_code)
+      values (${payload.sub}::uuid, ${email}, ${phone}, ${displayName}, ${roleCode}, 'active', ${institutionId}::uuid, ${memberCode})
       on conflict (auth_user_id) do update set auth_user_id = excluded.auth_user_id
       returning user_id, (xmax = 0) as "wasInserted"
     `;
@@ -215,6 +246,21 @@ async function runProvisioningTransaction(
           'core.app_user',
           ${appUserId}::text,
           jsonb_build_object('auth_user_id', ${payload.sub}::text, 'email', ${email}::text, 'role_code', ${roleCode}::text, 'via_invitation', ${invitation !== null}::boolean),
+          now()
+        )
+      `;
+
+      // A real, honest first notification tied to the actual signup event —
+      // not fabricated history. Gives NotificationBell.tsx something genuine
+      // to show a brand-new user rather than an empty "you're all caught up"
+      // on the very first load.
+      await tx.$executeRaw`
+        insert into learn.notification (user_id, channel, template_key, payload, sent_at)
+        values (
+          ${appUserId}::uuid,
+          'in_app',
+          'welcome',
+          jsonb_build_object('title', 'Welcome to Lumen Academy!', 'body', 'Your account is ready. Take your first mock test to unlock your scorecard and a personalised prep plan.'),
           now()
         )
       `;

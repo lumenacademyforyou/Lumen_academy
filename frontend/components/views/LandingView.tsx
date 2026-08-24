@@ -1693,6 +1693,8 @@ import {
   verifySignupOtp,
   resendSignupConfirmation,
   describeAuthError,
+  signInWithGoogle,
+  signInWithLinkedIn,
 } from "../../lib/supabaseAuth";
 import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../../lib/emailSendGuard";
 
@@ -1756,6 +1758,24 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
   // Login State (Flow B)
   const [loginPhoneOrEmail, setLoginPhoneOrEmail] = useState("");
   const [formError, setFormError] = useState("");
+  const [oAuthLoading, setOAuthLoading] = useState<"google" | "linkedin_oidc" | null>(null);
+
+  // signInWithGoogle/signInWithLinkedIn navigate the whole page away to the
+  // provider's consent screen and back — there is no "then what" here, the
+  // resulting session is picked up by App.tsx's existing onAuthStateChange
+  // listener on return, same as every other sign-in path.
+  const handleOAuthClick = async (provider: "google" | "linkedin_oidc") => {
+    setFormError("");
+    setOAuthLoading(provider);
+    try {
+      await (provider === "google" ? signInWithGoogle() : signInWithLinkedIn());
+      // No further state update on success — the redirect has already
+      // started navigating away by the time this would run.
+    } catch (err: any) {
+      setFormError(describeAuthError(err));
+      setOAuthLoading(null);
+    }
+  };
 
   useEffect(() => {
     if (authMode !== "otp" || resendRetryAfterMs <= 0) return;
@@ -3107,6 +3127,43 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
               </div>
             )}
 
+            {/* OAuth: Google / LinkedIn — same button either mode, Supabase
+                handles account creation vs. sign-in automatically. */}
+            {(authMode === "register" || authMode === "login") && (
+              <div className="mb-4 space-y-2">
+                <button
+                  type="button"
+                  disabled={oAuthLoading !== null}
+                  onClick={() => handleOAuthClick("google")}
+                  className="w-full flex items-center justify-center gap-2.5 py-3 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-xl text-xs font-bold text-[#00243B] dark:text-white transition-colors disabled:opacity-60 cursor-pointer"
+                >
+                  <svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true">
+                    <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/>
+                    <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.9 19 13 24 13c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+                    <path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.3-5.1l-6.6-5.6C29.7 35 27 36 24 36c-5.3 0-9.7-3.1-11.3-7.5l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/>
+                    <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.3 5.7l6.6 5.6C40.5 36.6 44 31 44 24c0-1.3-.1-2.7-.4-3.5z"/>
+                  </svg>
+                  {oAuthLoading === "google" ? "Redirecting…" : "Continue with Google"}
+                </button>
+                <button
+                  type="button"
+                  disabled={oAuthLoading !== null}
+                  onClick={() => handleOAuthClick("linkedin_oidc")}
+                  className="w-full flex items-center justify-center gap-2.5 py-3 bg-[#0A66C2] hover:bg-[#095196] rounded-xl text-xs font-bold text-white transition-colors disabled:opacity-60 cursor-pointer"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+                  </svg>
+                  {oAuthLoading === "linkedin_oidc" ? "Redirecting…" : "Continue with LinkedIn"}
+                </button>
+                <div className="flex items-center gap-3 pt-1">
+                  <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700" />
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">or</span>
+                  <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700" />
+                </div>
+              </div>
+            )}
+
             {/* Contact Method Tab Switcher (Email vs Mobile Number) */}
             {(authMode === "register" || authMode === "login") && (
               <div className="flex rounded-lg bg-slate-100 dark:bg-slate-800/80 p-1 mb-4 text-[11px] font-bold">
@@ -3149,8 +3206,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
                 <div className="space-y-3">
                   <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Full Name</label>
+                    <label htmlFor="reg-name" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Full Name</label>
                     <input
+                      id="reg-name"
+                      name="name"
+                      autoComplete="name"
                       type="text"
                       placeholder="e.g. Prince A"
                       value={regName}
@@ -3161,9 +3221,10 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
                   {authMethod === "phone" ? (
                     <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Mobile Number</label>
+                      <label htmlFor="reg-phone" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Mobile Number</label>
                       <div className="flex gap-2">
                         <select
+                          aria-label="Country code"
                           value={phoneCountryCode}
                           onChange={(e) => setPhoneCountryCode(e.target.value)}
                           className="px-3 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] outline-none"
@@ -3174,6 +3235,9 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                           <option value="+971">🇦🇪 +971</option>
                         </select>
                         <input
+                          id="reg-phone"
+                          name="tel"
+                          autoComplete="tel"
                           type="tel"
                           placeholder="e.g. 9876543210"
                           value={regPhone}
@@ -3185,8 +3249,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                   ) : (
                     <>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email Address</label>
+                        <label htmlFor="reg-email" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email Address</label>
                         <input
+                          id="reg-email"
+                          name="email"
+                          autoComplete="email"
                           type="email"
                           placeholder="e.g. prince@lumenacademy.edu"
                           value={regEmail}
@@ -3195,8 +3262,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                         />
                       </div>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>
+                        <label htmlFor="reg-password" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>
                         <input
+                          id="reg-password"
+                          name="new-password"
+                          autoComplete="new-password"
                           type="password"
                           placeholder="At least 8 characters"
                           value={regPassword}
@@ -3205,8 +3275,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                         />
                       </div>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Confirm Password</label>
+                        <label htmlFor="reg-confirm-password" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Confirm Password</label>
                         <input
+                          id="reg-confirm-password"
+                          name="confirm-password"
+                          autoComplete="new-password"
                           type="password"
                           placeholder="Re-enter password"
                           value={regConfirmPassword}
@@ -3218,8 +3291,10 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                   )}
 
                   <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Target Stream")}</label>
+                    <label htmlFor="reg-stream" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Target Stream")}</label>
                     <select
+                      id="reg-stream"
+                      name="target-stream"
                       value={regStream}
                       onChange={(e) => setRegStream(e.target.value)}
                       className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
@@ -3393,9 +3468,10 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 <div className="space-y-3">
                   {authMethod === "phone" ? (
                     <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Registered Mobile Number</label>
+                      <label htmlFor="login-phone" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Registered Mobile Number</label>
                       <div className="flex gap-2">
                         <select
+                          aria-label="Country code"
                           value={phoneCountryCode}
                           onChange={(e) => setPhoneCountryCode(e.target.value)}
                           className="px-3 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold text-[#00243B] dark:text-white focus:border-[var(--navy)] outline-none"
@@ -3406,6 +3482,9 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                           <option value="+971">🇦🇪 +971</option>
                         </select>
                         <input
+                          id="login-phone"
+                          name="tel"
+                          autoComplete="tel"
                           type="tel"
                           placeholder="e.g. 9876543210"
                           value={loginPhone}
@@ -3417,8 +3496,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                   ) : (
                     <>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Registered Email")}</label>
+                        <label htmlFor="login-email" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Registered Email")}</label>
                         <input
+                          id="login-email"
+                          name="email"
+                          autoComplete="username"
                           type="email"
                           placeholder="e.g. prince@lumenacademy.edu"
                           value={loginEmail}
@@ -3427,8 +3509,11 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                         />
                       </div>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>
+                        <label htmlFor="login-password" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>
                         <input
+                          id="login-password"
+                          name="current-password"
+                          autoComplete="current-password"
                           type="password"
                           placeholder="Your password"
                           value={loginPassword}

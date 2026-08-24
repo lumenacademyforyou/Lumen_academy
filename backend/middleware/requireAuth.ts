@@ -12,6 +12,11 @@ declare global {
       // actually expects. Deliberately a different id from `id` above; see
       // db/core/institution/app_user/ensure-app-user.ts's header for why.
       user?: { id: string; role: string; appUserId: string };
+      // The raw bearer token, kept around for callers that need to inspect
+      // the token's own claims (e.g. deleteAccount.service.ts checking amr
+      // for a recent OTP reauthentication) rather than just the user it
+      // resolves to.
+      accessToken?: string;
     }
   }
 }
@@ -43,6 +48,7 @@ export async function requireAuth(req: Request, _res: Response, next: NextFuncti
     };
     const { profile, appUserId } = await provisionCanonicalUser(tokenPayload);
     req.user = { id: profile.id, role: profile.role, appUserId };
+    req.accessToken = token;
     next();
   } catch (err) {
     next(err);

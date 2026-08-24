@@ -14,6 +14,7 @@ import { AppError } from "../middleware/errorHandler.js";
 export interface FullProfile {
   appUserId: string;
   authUserId: string;
+  memberCode: string | null;
   email: string | null;
   mobileNumber: string | null;
   fullName: string;
@@ -42,7 +43,7 @@ export interface FullProfile {
 export async function getFullProfile(appUserId: string, authUserId: string): Promise<FullProfile> {
   const [appUserResult, rolesResult, studentProfileResult, prismaUser] = await Promise.all([
     pool.query(
-      `select au.user_id, au.institution_id, au.email, au.mobile_number, au.full_name,
+      `select au.user_id, au.institution_id, au.email, au.mobile_number, au.full_name, au.member_code,
               au.user_role, au.preferred_language, au.status, au.last_login_at,
               i.institution_id as inst_id, i.name as inst_name, i.institution_code as inst_code
          from core.app_user au
@@ -73,6 +74,7 @@ export async function getFullProfile(appUserId: string, authUserId: string): Pro
   return {
     appUserId: row.user_id,
     authUserId,
+    memberCode: row.member_code,
     email: row.email,
     mobileNumber: row.mobile_number,
     fullName: row.full_name,

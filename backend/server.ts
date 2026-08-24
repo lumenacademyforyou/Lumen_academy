@@ -17,6 +17,14 @@ app.use(
 );
 app.use(express.json({ limit: "1mb" }));
 
+// Bare root hit directly (e.g. a sanity check in a browser) previously fell
+// through to the generic 404 catch-all below — misleading, since it usually
+// just means "checking whether the server is up", which it is. Real
+// programmatic health checks should still use GET /api/health.
+app.get("/", (_req, res) => {
+  res.json({ status: "ok", message: "Lumen Academy backend is running and healthy." });
+});
+
 app.use("/api", apiRouter);
 app.use("/api", (_req, _res, next) => {
   next(new AppError(404, "NOT_FOUND", "Resource not found"));

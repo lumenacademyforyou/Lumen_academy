@@ -217,7 +217,7 @@ const [userId, setUserId] = useState<string | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [studentName, setStudentName] = useState("");
   const [attempts, setAttempts] = useState<TestAttempt[]>(INITIAL_ATTEMPTS);
-  const [activeAttemptId, setActiveAttemptId] = useState<string>("mock_04");
+  const [activeAttemptId, setActiveAttemptId] = useState<string>(INITIAL_ATTEMPTS[0].id);
   const [currentTab, setTab] = useState<string>("dashboard");
   const [showDailyReminder, setShowDailyReminder] = useState(false);
   const [isExportingPdf, setIsExportingPdf] = useState(false);
@@ -331,18 +331,21 @@ const [userId, setUserId] = useState<string | null>(null);
   useEffect(() => {
     if (isAuthenticated && !sessionStorage.getItem('daily_reminder_seen')) {
       const completedAttempts = attempts.filter(a => a.totalScore > 0 && a.date !== "Available");
+      // A user with zero completed attempts has never "left off" anywhere —
+      // this used to fall into an else branch that fired the same "you
+      // haven't attempted a test in 24 hours" reminder for brand-new users,
+      // which is exactly backwards. Only nag a user who has a real prior
+      // attempt to compare against.
       if (completedAttempts.length > 0) {
         const recentDateStr = completedAttempts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0].date;
         const recentDate = new Date(recentDateStr);
         const now = new Date();
         const diffMs = now.getTime() - recentDate.getTime();
         const diffHours = diffMs / (1000 * 60 * 60);
-        
+
         if (diffHours > 24) {
           setShowDailyReminder(true);
         }
-      } else {
-        setShowDailyReminder(true);
       }
     }
   }, [isAuthenticated, attempts]);
@@ -940,7 +943,7 @@ useEffect(() => {
                           setTab("tests");
                           setCurrentScreen("portal");
                         }}
-                        attemptsCount={attempts.length}
+                        attemptsCount={attempts.filter((a) => a.totalScore > 0 && a.date !== "Available").length}
                       />
                     )}
 

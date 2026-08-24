@@ -134,6 +134,31 @@ export async function signOut(): Promise<void> {
   await supabase.auth.signOut();
 }
 
+// OAuth sign-in is a full-page redirect, not a promise that resolves with a
+// session — the browser navigates away to the provider's consent screen and
+// back. App.tsx's existing onAuthStateChange listener (already wired since
+// CL-P1) picks up the resulting session automatically on return; there's
+// nothing else to call after this. 'google' and 'linkedin_oidc' are the
+// exact provider identifiers this installed auth-js version accepts (see
+// node_modules/@supabase/auth-js/dist/main/lib/types.d.ts's Provider type —
+// note it's 'linkedin_oidc', the current OIDC-based provider, not the
+// deprecated plain 'linkedin').
+export async function signInWithGoogle(): Promise<void> {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: { redirectTo: window.location.origin },
+  });
+  if (error) throw error;
+}
+
+export async function signInWithLinkedIn(): Promise<void> {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "linkedin_oidc",
+    options: { redirectTo: window.location.origin },
+  });
+  if (error) throw error;
+}
+
 export async function getCurrentSession(): Promise<Session | null> {
   const { data } = await supabase.auth.getSession();
   return data.session;

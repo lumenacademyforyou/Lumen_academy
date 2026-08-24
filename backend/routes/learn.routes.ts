@@ -1,5 +1,6 @@
-import { Router } from "express";
+import { Router, Request, Response, NextFunction } from "express";
 import { makeOwnedCrudRouter } from "../lib/dbCrudRouter.js";
+import { requireAuth } from "../middleware/requireAuth.js";
 import { requirePlanOwnership, requireDeckOwnership } from "../middleware/ownership.js";
 import { studyPlanRepository } from "../../db/learn/study_plan/study_plan.repository.js";
 import { studySessionRepository } from "../../db/learn/study_plan/plan_task/study_session/study_session.repository.js";
@@ -37,6 +38,35 @@ flashcardsRouter.post("/:flashcardId/reviews", requireDeckOwnership(), postFlash
 router.use("/flashcards", flashcardsRouter);
 
 router.use("/error-log", makeOwnedCrudRouter(errorLogRepository, "user_id"));
+
+// makeOwnedCrudRouter only ever exposes GET /:id (fetch one, by an id the
+// caller must already know) — no entity mounted through it has needed "list
+// mine" until now. Mounted as its own router, ahead of the generic one, on
+// the same "/notifications" prefix: a route not matched here falls through
+// to the next router.use() at the same prefix, but if these were instead
+// added directly onto makeOwnedCrudRouter's own router object, PATCH
+// /read-all would be shadowed by that router's own already-registered
+// PATCH /:id (matching "read-all" as if it were an id) — found by tracing
+// through Express's route-match-by-registration-order behavior before
+// shipping this, not by hitting it live.
+const notificationsListRouter = Router();
+notificationsListRouter.use(requireAuth);
+notificationsListRouter.get("/", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    res.json({ data: await notificationRepository.findByUser(req.user!.appUserId) });
+  } catch (err) {
+    next(err);
+  }
+});
+notificationsListRouter.patch("/read-all", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    await notificationRepository.markAllRead(req.user!.appUserId);
+    res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+});
+router.use("/notifications", notificationsListRouter);
 router.use("/notifications", makeOwnedCrudRouter(notificationRepository, "user_id"));
 
 export default router;

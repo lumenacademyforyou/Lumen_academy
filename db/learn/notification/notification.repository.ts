@@ -1,4 +1,5 @@
 import type { NotificationModel } from "./notification.model.js";
+import { pool } from "../../shared/pool.js";
 import {
   findById as findByIdImpl,
   insertRow,
@@ -26,6 +27,28 @@ export interface NotificationRepository {
   create(data: Partial<NotificationModel>): Promise<NotificationModel>;
   update(id: NotificationId, data: Partial<NotificationModel>): Promise<NotificationModel>;
   remove(id: NotificationId): Promise<void>;
+  findByUser(userId: string): Promise<NotificationModel[]>;
+  markAllRead(userId: string): Promise<void>;
+}
+
+// No generic "list mine" helper exists in repository-helpers.ts yet — every
+// other entity there is fetched one row at a time by id. Notifications are
+// the first entity that actually needs "give me all of mine", so that query
+// lives here rather than growing repository-helpers.ts a generic findMany
+// before a second caller actually needs one.
+async function findByUser(userId: string): Promise<NotificationModel[]> {
+  // The table has no created_at (see notification.model.ts) — sent_at is
+  // the only timestamp it carries, and it's nullable. Most-recent-first by
+  // sent_at, with unsent (sent_at is null) rows trailing.
+  const res = await pool.query<NotificationModel>(
+    `select * from learn.notification where user_id = $1 order by sent_at desc nulls last`,
+    [userId]
+  );
+  return res.rows;
+}
+
+async function markAllRead(userId: string): Promise<void> {
+  await pool.query(`update learn.notification set read_at = now() where user_id = $1 and read_at is null`, [userId]);
 }
 
 /**
@@ -59,4 +82,4 @@ async function remove(id: NotificationId): Promise<void> {
   return deleteByIdImpl(SPEC, { notification_id: id });
 }
 
-export const notificationRepository: NotificationRepository = { findById, create, update, remove };
+export const notificationRepository: NotificationRepository = { findById, create, update, remove, findByUser, markAllRead };
