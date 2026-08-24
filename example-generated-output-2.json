@@ -1,0 +1,85 @@
+[
+  {
+    "lumenId": "LMN-CHE-NERNST-000001",
+    "subjectId": "<resolved-by-script-from-subjectCode>",
+    "conceptId": "<resolved-by-script-from-conceptPath>",
+    "conceptPath": "CHE/PHYCHE/ELCHEM/NERNST",
+    "examCode": "JEE-ADV",
+    "baseFormat": "MCQ_MULTIPLE",
+    "cognitiveSkill": "MULTI_STEP_REASONING",
+    "baseDifficulty": "L4",
+    "isNumerical": true,
+    "conceptCount": 2,
+    "source": "AI_GENERATED",
+    "sourceReference": "gemini-2.5-flash | prompt_v2 | 2026-08-24",
+    "stemBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Consider the electrochemical cell represented as:" },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$Zn(s) \\mid Zn^{2+}(aq,\\ 0.1\\ M) \\parallel Cu^{2+}(aq,\\ 1.0\\ M) \\mid Cu(s)$ at $298\\ K$, with $E^\\circ_{cell} = 1.10\\ V$ and $n = 2$." },
+        { "seq": 3, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Based on the Nernst equation, which of the following statement(s) is/are correct? (One or more options may be correct.)" }
+      ],
+      "ta": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "பின்வரும் மின்வேதியியல் கலனைக் கருதுக:" },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$Zn(s) \\mid Zn^{2+}(aq,\\ 0.1\\ M) \\parallel Cu^{2+}(aq,\\ 1.0\\ M) \\mid Cu(s)$, $298\\ K$ இல், $E^\\circ_{cell} = 1.10\\ V$ மற்றும் $n = 2$." },
+        { "seq": 3, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "நெர்ன்ஸ்ட் சமன்பாட்டின் அடிப்படையில், பின்வரும் கூற்று(களில்) எது/எவை சரியானது/சரியானவை? (ஒன்றுக்கு மேற்பட்ட விடைகள் சரியாக இருக்கலாம்.)" }
+      ]
+    },
+    "options": [
+      {
+        "label": "A",
+        "displayOrder": 1,
+        "isCorrect": true,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$E_{cell}$ at the given concentrations is greater than $1.10\\ V$." }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "கொடுக்கப்பட்ட செறிவுகளில் $E_{cell}$, $1.10\\ V$ ஐ விட அதிகமாக இருக்கும்." }]
+        }
+      },
+      {
+        "label": "B",
+        "displayOrder": 2,
+        "isCorrect": true,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Increasing $[Cu^{2+}]$ to $2.0\\ M$ (keeping $[Zn^{2+}]$ at $0.1\\ M$) would increase $E_{cell}$ further." }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$[Zn^{2+}]$ ஐ $0.1\\ M$ ஆக வைத்திருந்தபடி, $[Cu^{2+}]$ ஐ $2.0\\ M$ ஆக அதிகரித்தால், $E_{cell}$ மேலும் அதிகரிக்கும்." }]
+        }
+      },
+      {
+        "label": "C",
+        "displayOrder": 3,
+        "isCorrect": false,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "The cell reaction is spontaneous because $\\Delta G$ for the reaction is positive." }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "வினைக்கான $\\Delta G$ நேர்மறையாக இருப்பதால் கல வினை தன்னிச்சையானது." }]
+        }
+      },
+      {
+        "label": "D",
+        "displayOrder": 4,
+        "isCorrect": false,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "The equilibrium constant $K$ for this cell reaction is less than $1$." }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "இந்த கல வினைக்கான சமநிலை மாறிலி $K$, $1$ ஐ விடக் குறைவாக இருக்கும்." }]
+        }
+      }
+    ],
+    "explanationBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Step 1: The Nernst equation for this cell at 298 K is Ecell = E°cell − (0.0591/n) log([Zn²⁺]/[Cu²⁺])." },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Step 2: Substituting the given values, $E_{cell} = 1.10 - \\dfrac{0.0591}{2}\\log\\!\\left(\\dfrac{0.1}{1.0}\\right) = 1.10 - (0.02955)(-1) = 1.1296\\ V$, which is indeed greater than $1.10\\ V$ — confirming statement A." },
+        { "seq": 3, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Step 3: Raising $[Cu^{2+}]$ to $2.0\\ M$ lowers the reaction quotient $Q = [Zn^{2+}]/[Cu^{2+}]$ to $0.05$, making $\\log Q$ more negative and the correction term more positive, so $E_{cell}$ rises further to about $1.14\\ V$ — confirming statement B." },
+        { "seq": 4, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Step 4: A positive cell potential corresponds to a negative ΔG, since ΔG = −nFEcell. The reaction is spontaneous precisely because ΔG is negative, not positive — statement C has the sign backwards and is false." },
+        { "seq": 5, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Step 5: Since $\\Delta G^\\circ = -nFE^\\circ_{cell} = -RT\\ln K$, a large positive $E^\\circ_{cell}$ gives $\\ln K = \\dfrac{nFE^\\circ_{cell}}{RT} \\approx 86.9$, so $K \\approx 10^{37}$ — far greater than $1$, not less than it. Statement D is false. The correct statements are A and B." }
+      ],
+      "ta": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "படி 1: 298 K இல் இந்த கலனுக்கான நெர்ன்ஸ்ட் சமன்பாடு Ecell = E°cell − (0.0591/n) log([Zn²⁺]/[Cu²⁺]) ஆகும்." },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "படி 2: மதிப்புகளைப் பிரதியிட, $E_{cell} = 1.10 - \\dfrac{0.0591}{2}\\log\\!\\left(\\dfrac{0.1}{1.0}\\right) = 1.1296\\ V$, இது $1.10\\ V$ ஐ விட அதிகம் — கூற்று A சரி." },
+        { "seq": 3, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "படி 3: $[Cu^{2+}]$ ஐ $2.0\\ M$ ஆக உயர்த்தும்போது $Q = [Zn^{2+}]/[Cu^{2+}] = 0.05$ ஆகக் குறைகிறது, இதனால் $E_{cell}$ மேலும் உயர்ந்து சுமார் $1.14\\ V$ ஆகிறது — கூற்று B சரி." },
+        { "seq": 4, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "படி 4: ΔG = −nFEcell என்பதால், நேர்மறை கல மின்னழுத்தம் எதிர்மறை ΔG ஐக் குறிக்கும். வினை தன்னிச்சையானது ΔG எதிர்மறையாக இருப்பதால்தான், நேர்மறையாக இருப்பதால் அல்ல — கூற்று C தவறானது." },
+        { "seq": 5, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "படி 5: $\\Delta G^\\circ = -nFE^\\circ_{cell} = -RT\\ln K$ என்பதால், $\\ln K \\approx 86.9$, எனவே $K \\approx 10^{37}$ — இது $1$ ஐ விட மிக அதிகம். கூற்று D தவறானது. சரியான கூற்றுகள் A மற்றும் B." }
+      ]
+    },
+    "authorId": "<resolved-by-script-from-AI_AUTHOR_USER_ID>",
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  }
+]
