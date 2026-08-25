@@ -1,0 +1,116 @@
+[
+  {
+    "lumenId": "LMN-TEST-FULLBLOCKS-000001",
+    "conceptPath": "PHY/ELEC/CURELE/WHEAT",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L3",
+    "isNumerical": true,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: exercises EQUATION/TABLE/IMAGE block families end to end",
+    "stemBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "A Wheatstone bridge is set up with the component values shown below." },
+        {
+          "seq": 2,
+          "blockType": "IMAGE",
+          "altText": "Wheatstone bridge with resistors P, Q in the upper arms and R, S in the lower arms, a galvanometer across the bridge",
+          "caption": "Figure 1: Wheatstone bridge",
+          "asset": {
+            "assetKind": "CIRCUIT",
+            "storageUri": "assets/phy/elec/wheatstone-bridge-fixture.svg",
+            "mimeType": "image/svg+xml",
+            "widthPx": 720,
+            "heightPx": 460,
+            "checksumSha256": "444444444444444444444444444444444444444444444444444444444444444a"
+          }
+        },
+        {
+          "seq": 3,
+          "blockType": "TABLE",
+          "caption": "Component values",
+          "table": {
+            "tableKind": "TABLE",
+            "columnDefs": ["Component", "Value"],
+            "rowData": [["P", "10"], ["Q", "20"], ["R", "30"], ["S", "unknown"]],
+            "units": ["", "ohm"]
+          }
+        },
+        {
+          "seq": 4,
+          "blockType": "EQUATION",
+          "caption": "Balance condition",
+          "equation": {
+            "equationName": "Wheatstone bridge balance condition",
+            "latexSource": "\\frac{P}{Q} = \\frac{R}{S}",
+            "displayMode": "DISPLAY",
+            "variables": [
+              { "symbol": "P", "meaning": "resistance in the first upper arm", "siUnit": "ohm", "sortOrder": 1 },
+              { "symbol": "Q", "meaning": "resistance in the second upper arm", "siUnit": "ohm", "sortOrder": 2 },
+              { "symbol": "R", "meaning": "resistance in the first lower arm", "siUnit": "ohm", "sortOrder": 3 },
+              { "symbol": "S", "meaning": "resistance in the second lower arm", "siUnit": "ohm", "sortOrder": 4 }
+            ]
+          }
+        },
+        { "seq": 5, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Find the value of S for a balanced bridge." }
+      ]
+    },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": true,  "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "60 ohm" }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "15 ohm" }] } },
+      { "label": "C", "displayOrder": 3, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "6.7 ohm" }] } },
+      { "label": "D", "displayOrder": 4, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "30 ohm" }] } }
+    ],
+    "explanationBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "EQUATION", "caption": "Solving for S", "equation": { "equationName": "Wheatstone bridge balance condition", "latexSource": "S = \\frac{Q \\cdot R}{P}", "displayMode": "DISPLAY", "variables": [] } },
+        { "seq": 2, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "S = (20 x 30) / 10 = 60 ohm." }
+      ]
+    },
+    "authorId": "00000000-aaaa-4bbb-8ccc-1234567890ab",
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  },
+  {
+    "lumenId": "LMN-TEST-FULLBLOCKS-000002",
+    "conceptPath": "PHY/ELEC/CURELE/WHEAT",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L2",
+    "isNumerical": false,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: reuses the same asset checksum to exercise dedup",
+    "stemBlocks": {
+      "en": [
+        {
+          "seq": 1,
+          "blockType": "IMAGE",
+          "altText": "Wheatstone bridge with resistors P, Q in the upper arms and R, S in the lower arms, a galvanometer across the bridge",
+          "caption": "Figure 1: Wheatstone bridge (same figure, reused)",
+          "asset": {
+            "assetKind": "CIRCUIT",
+            "storageUri": "assets/phy/elec/wheatstone-bridge-fixture.svg",
+            "mimeType": "image/svg+xml",
+            "widthPx": 720,
+            "heightPx": 460,
+            "checksumSha256": "444444444444444444444444444444444444444444444444444444444444444a"
+          }
+        },
+        { "seq": 2, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "In the bridge shown, which arm carries the unknown resistance?" }
+      ]
+    },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "P" }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Q" }] } },
+      { "label": "C", "displayOrder": 3, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "R" }] } },
+      { "label": "D", "displayOrder": 4, "isCorrect": true,  "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "S" }] } }
+    ],
+    "authorId": "00000000-aaaa-4bbb-8ccc-1234567890ab",
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  }
+]

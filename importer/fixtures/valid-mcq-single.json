@@ -1,0 +1,101 @@
+[
+  {
+    "lumenId": "LMN-PHY-ROLL-000001",
+    "subjectId": "3f9a1c2e-6b7d-4e10-9c4a-1d2e3f4a5b6c",
+    "conceptId": "7a8b9c0d-1e2f-4a3b-8c5d-6e7f8a9b0c1d",
+    "conceptPath": "PHY/MECH/ROTMO/ROLL",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L3",
+    "isNumerical": true,
+    "conceptCount": 2,
+    "source": "AI_GENERATED",
+    "sourceReference": "gemini-2.5-flash | prompt_v2 | 2026-08-24",
+    "stemBlocks": {
+      "en": [
+        {
+          "seq": 1,
+          "blockType": "TEXT",
+          "textFormat": "PLAIN",
+          "textContent": "A uniform solid sphere rolls without slipping down a rough inclined plane, starting from rest."
+        },
+        {
+          "seq": 2,
+          "blockType": "LATEX",
+          "textFormat": "LATEX",
+          "textContent": "Given the moment of inertia of the sphere about its diameter is $I = \\tfrac{2}{5}MR^{2}$ and the angle of the incline is $\\theta = 30^\\circ$, find the linear acceleration $a$ of its centre of mass."
+        }
+      ],
+      "ta": [
+        {
+          "seq": 1,
+          "blockType": "TEXT",
+          "textFormat": "PLAIN",
+          "textContent": "ஒரு சீரான திண்ம கோளம், ஓய்வு நிலையிலிருந்து புறப்பட்டு, ஒரு உராய்வுள்ள சாய்தளத்தில் சறுக்காமல் உருண்டு இறங்குகிறது."
+        },
+        {
+          "seq": 2,
+          "blockType": "LATEX",
+          "textFormat": "LATEX",
+          "textContent": "கோளத்தின் விட்டத்தைப் பொறுத்த நிலைமத் திருப்புத்திறன் $I = \\tfrac{2}{5}MR^{2}$ எனவும், சாய்தளத்தின் கோணம் $\\theta = 30^\\circ$ எனவும் கொடுக்கப்பட்டால், அதன் திணிவு மையத்தின் நேர்கோட்டு முடுக்கம் $a$ ஐக் காண்க."
+        }
+      ]
+    },
+    "options": [
+      {
+        "label": "A",
+        "displayOrder": 1,
+        "isCorrect": true,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{5g}{14}$" }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{5g}{14}$" }]
+        }
+      },
+      {
+        "label": "B",
+        "displayOrder": 2,
+        "isCorrect": false,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{2g}{7}$" }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{2g}{7}$" }]
+        }
+      },
+      {
+        "label": "C",
+        "displayOrder": 3,
+        "isCorrect": false,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{g}{2}$" }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{g}{2}$" }]
+        }
+      },
+      {
+        "label": "D",
+        "displayOrder": 4,
+        "isCorrect": false,
+        "blocks": {
+          "en": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{5g}{7}$" }],
+          "ta": [{ "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "$\\dfrac{5g}{7}$" }]
+        }
+      }
+    ],
+    "explanationBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Step 1: For a body rolling without slipping down an incline, the acceleration of its centre of mass is a = g sinθ / (1 + I/MR²) — the general result for rolling motion under gravity and friction." },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Step 2: Substitute $I = \\tfrac{2}{5}MR^{2}$, so $I/MR^{2} = \\tfrac{2}{5}$, giving $a = \\dfrac{g\\sin\\theta}{1 + \\tfrac{2}{5}} = \\dfrac{5g\\sin\\theta}{7}$." },
+        { "seq": 3, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Step 3: With $\\theta = 30^\\circ$, $\\sin\\theta = \\tfrac{1}{2}$, so $a = \\dfrac{5g}{7}\\times\\dfrac{1}{2} = \\dfrac{5g}{14}$." },
+        { "seq": 4, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Step 4: Options B and D both drop the sin 30° factor; option C is the frictionless-sliding result that ignores rotational inertia entirely. The correct acceleration is 5g/14 — Option A." }
+      ],
+      "ta": [
+        { "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "படி 1: ஒரு பொருள் சாய்தளத்தில் சறுக்காமல் உருண்டு இறங்கும்போது, அதன் திணிவு மையத்தின் முடுக்கம் a = g sinθ / (1 + I/MR²) என்பதே பொது விதி." },
+        { "seq": 2, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "படி 2: $I = \\tfrac{2}{5}MR^{2}$ எனப் பிரதியிட, $a = \\dfrac{5g\\sin\\theta}{7}$." },
+        { "seq": 3, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "படி 3: $\\theta = 30^\\circ$ எனில் $a = \\dfrac{5g}{14}$." },
+        { "seq": 4, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "படி 4: விருப்பம் B, D இரண்டும் sin 30° காரணியை விட்டுவிடுகின்றன; C உராய்வற்ற சறுக்கல் விடையாகும். சரியான விடை 5g/14 — விருப்பம் A." }
+      ]
+    },
+    "authorId": "00000000-aaaa-4bbb-8ccc-1234567890ab",
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  }
+]

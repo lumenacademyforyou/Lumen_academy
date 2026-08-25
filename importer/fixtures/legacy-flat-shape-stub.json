@@ -1,0 +1,17 @@
+[
+  {
+    "questionText": "A uniform solid sphere rolls without slipping down a rough inclined plane. Find its linear acceleration.",
+    "stemEn": "A uniform solid sphere rolls without slipping down a rough inclined plane. Find its linear acceleration.",
+    "stemTa": "ஒரு சீரான திண்ம கோளம் ஒரு உராய்வுள்ள சாய்தளத்தில் சறுக்காமல் உருண்டு இறங்குகிறது. அதன் நேர்கோட்டு முடுக்கத்தைக் காண்க.",
+    "examType": "NEET",
+    "questionType": "SINGLE_CHOICE",
+    "unitName": "Rotational Motion",
+    "chapterName": "Systems of Particles and Rotational Motion",
+    "topicName": "Rolling Motion",
+    "difficulty": "MEDIUM",
+    "options": ["5g/14", "2g/7", "g/2", "5g/7"],
+    "correctOptionIndex": 0,
+    "explanationEn": "Using a = g sin(theta) / (1 + I/MR^2) with I = 2/5 MR^2 and theta = 30 degrees gives a = 5g/14.",
+    "authorEmail": "content-team@lumenacademy.example"
+  }
+]

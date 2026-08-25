@@ -1,0 +1,22 @@
+{
+  "name": "lumen-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task 4 of the Lumen Academy delivery plan: takes a finished question in the v3 block-storage shape (the shape generate-questions.ts writes to gemini-question-gen/generated/*.json), validates it structurally and semantically against a live catalog/content database, and imports it for real — or, with --dry-run, reports every problem without writing anything.",
+  "type": "commonjs",
+  "scripts": {
+    "import": "tsx import-questions.ts",
+    "test": "tsx run-fixture-tests.ts"
+  },
+  "dependencies": {
+    "pg": "^8.12.0",
+    "zod": "^3.23.8",
+    "katex": "^0.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "lumenId": "LMN-TEST-BADPATH-000001",
+    "conceptPath": "PHY/MECH/ROTMO/NOSUCHTOPIC",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L3",
+    "isNumerical": false,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: nonexistent concept path",
+    "stemBlocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Placeholder stem." }] },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": true,  "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option A" }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option B" }] } }
+    ],
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  },
+  {
+    "lumenId": "LMN-TEST-BADLATEX-000001",
+    "conceptPath": "PHY/MECH/ROTMO/ROLL",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L3",
+    "isNumerical": true,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: unparsable LaTeX",
+    "stemBlocks": {
+      "en": [
+        { "seq": 1, "blockType": "LATEX", "textFormat": "LATEX", "textContent": "Find $a = \\frac{5g}{14$ for this incline." }
+      ]
+    },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": true,  "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option A" }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option B" }] } }
+    ],
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  },
+  {
+    "lumenId": "LMN-TEST-TWOCORRECT-000001",
+    "conceptPath": "PHY/MECH/ROTMO/ROLL",
+    "examCode": "NEET-UG",
+    "baseFormat": "MCQ_SINGLE",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L3",
+    "isNumerical": false,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: two correct options on a single-answer format",
+    "stemBlocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Placeholder stem." }] },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": true, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option A" }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": true, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Option B" }] } }
+    ],
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  },
+  {
+    "lumenId": "LMN-TEST-NUMERICAL-000001",
+    "conceptPath": "PHY/MECH/ROTMO/ROLL",
+    "examCode": "JEE-ADV",
+    "baseFormat": "NUMERICAL",
+    "cognitiveSkill": "APPLY",
+    "baseDifficulty": "L4",
+    "isNumerical": true,
+    "conceptCount": 1,
+    "source": "MANUAL",
+    "sourceReference": "fixture: unsupported NUMERICAL format",
+    "stemBlocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Placeholder stem." }] },
+    "options": [
+      { "label": "A", "displayOrder": 1, "isCorrect": true, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Placeholder — NUMERICAL has no option set in reality." }] } },
+      { "label": "B", "displayOrder": 2, "isCorrect": false, "blocks": { "en": [{ "seq": 1, "blockType": "TEXT", "textFormat": "PLAIN", "textContent": "Placeholder" }] } }
+    ],
+    "reviewStatus": "DRAFT",
+    "isActive": false
+  }
+]
