@@ -36,6 +36,13 @@
 -- Prerequisites: 010_question_model.sql, 000_template_helpers.sql,
 --                all five subjects/*.concept-tree.sql, neet-ug.exam-template.sql
 -- Re-running this file is safe: every line upserts.
+-- Fix pass: added the missing depth-1 subject-level root syllabus node
+-- ('unit'-less catalog.upsert_syllabus_node(..., '<SUBJ>', '<Name>', 'subject', 1, null))
+-- for every subject in this file, since upsert_syllabus_node requires a
+-- node's parent path to already exist and only the exam-template file's
+-- own demo subject had one. Caught by actually running this chain against
+-- a live database rather than static review. Safe to leave in even for the
+-- one subject the exam-template file already created it for (upsert).
 -- =====================================================================
 
 -- ===== PHY =====
@@ -46,6 +53,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'PHY'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('NEET-UG', 'PHY', '2026', 'PHY', 'Physics', 'subject', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'PHY', '2026', 'PHY/U01', 'Physical World and Measurement', 'unit', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'PHY', '2026', 'PHY/U01/CH01', 'Physical World and Measurement', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'PHY', '2026', 'PHY/U01/CH01/T01', 'Units and Measurement', 'topic', 1, null);
@@ -226,6 +234,33 @@ select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U21/CH01/T02', 'P
 select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U21/CH01/T03', 'PHY/MODRN/ELDEV/TRANSI');
 select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U21/CH01/T04', 'PHY/MODRN/ELDEV/LOGIC');
 
+
+-- Chapter-level tags for PHY -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U01/CH01', 'PHY/MECH/MEAS');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U02/CH01', 'PHY/MECH/KINEM');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U03/CH01', 'PHY/MECH/LAWMO');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U04/CH01', 'PHY/MECH/WORKEN');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U08/CH01', 'PHY/MECH/ROTMO');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U05/CH01', 'PHY/MECH/GRAV');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U06/CH01', 'PHY/MECH/PROPMA');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U07/CH01', 'PHY/THERM/THERMO');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U09/CH01', 'PHY/THERM/KINTHE');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U10/CH01', 'PHY/OSCWA/OSCIL');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U11/CH01', 'PHY/OSCWA/WAVES');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U12/CH01', 'PHY/ELEC/ELSTAT');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U13/CH01', 'PHY/ELEC/CURELE');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U14/CH01', 'PHY/ELEC/MAGEFF');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U15/CH01', 'PHY/ELEC/EMIND');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U16/CH01', 'PHY/ELEC/EMWAVE');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U17/CH01', 'PHY/OPTIC/RAYOPT');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U18/CH01', 'PHY/OPTIC/WAVOPT');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U19/CH01', 'PHY/MODRN/DUALNM');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U20/CH01', 'PHY/MODRN/ATOMS');
+select catalog.map_node_concept('NEET-UG', 'PHY', '2026', 'PHY/U21/CH01', 'PHY/MODRN/ELDEV');
 -- ===== CHE =====
 insert into catalog.syllabus_version (exam_subject_id, version_code, effective_from, version_status)
 select es.exam_subject_id, '2026', date '2025-06-01', 'active'
@@ -234,6 +269,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'CHE'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('NEET-UG', 'CHE', '2026', 'CHE', 'Chemistry', 'subject', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'CHE', '2026', 'CHE/U01', 'Some Basic Concepts of Chemistry', 'unit', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'CHE', '2026', 'CHE/U01/CH01', 'Some Basic Concepts of Chemistry', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'CHE', '2026', 'CHE/U01/CH01/T01', 'Mole Concept', 'topic', 1, null);
@@ -432,6 +468,35 @@ select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U23/CH01/T02', 'C
 select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U23/CH01/T03', 'CHE/ORGAN/BIOMOL/NUCACI');
 select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U23/CH01/T04', 'CHE/ORGAN/BIOMOL/VITAMI');
 
+
+-- Chapter-level tags for CHE -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U01/CH01', 'CHE/PHYCHE/SOMBAS');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U02/CH01', 'CHE/PHYCHE/STRATO');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U03/CH01', 'CHE/PHYCHE/STATES');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U04/CH01', 'CHE/PHYCHE/THERMO');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U05/CH01', 'CHE/PHYCHE/EQUIL');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U06/CH01', 'CHE/PHYCHE/REDOX');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U07/CH01', 'CHE/PHYCHE/ELCHEM');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U08/CH01', 'CHE/PHYCHE/KINET');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U09/CH01', 'CHE/PHYCHE/SOLUT');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U10/CH01', 'CHE/INORG/CLASPE');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U11/CH01', 'CHE/INORG/BONDST');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U12/CH01', 'CHE/INORG/HYDROG');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U13/CH01', 'CHE/INORG/SBLOCK');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U14/CH01', 'CHE/INORG/PBLOCK');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U15/CH01', 'CHE/INORG/DFBLOC');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U16/CH01', 'CHE/INORG/COORD');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U17/CH01', 'CHE/ORGAN/GOCPUR');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U18/CH01', 'CHE/ORGAN/HYDROC');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U19/CH01', 'CHE/ORGAN/HALOAL');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U20/CH01', 'CHE/ORGAN/ALCPHE');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U21/CH01', 'CHE/ORGAN/ALDKET');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U22/CH01', 'CHE/ORGAN/AMINES');
+select catalog.map_node_concept('NEET-UG', 'CHE', '2026', 'CHE/U23/CH01', 'CHE/ORGAN/BIOMOL');
 -- ===== BOT =====
 insert into catalog.syllabus_version (exam_subject_id, version_code, effective_from, version_status)
 select es.exam_subject_id, '2026', date '2025-06-01', 'active'
@@ -440,6 +505,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'BOT'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('NEET-UG', 'BOT', '2026', 'BOT', 'Botany', 'subject', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'BOT', '2026', 'BOT/U01', 'The Living World', 'unit', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'BOT', '2026', 'BOT/U01/CH01', 'The Living World', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'BOT', '2026', 'BOT/U01/CH01/T01', 'Taxonomic Categories and Hierarchy', 'topic', 1, null);
@@ -594,6 +660,29 @@ select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U17/CH01/T01', 'B
 select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U17/CH01/T02', 'BOT/REPGE/BIOTEC/PCRTEC');
 select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U17/CH01/T03', 'BOT/REPGE/BIOTEC/GMCROP');
 
+
+-- Chapter-level tags for BOT -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U01/CH01', 'BOT/DIVER/LIVWOR');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U02/CH01', 'BOT/DIVER/PLNKIN');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U03/CH01', 'BOT/DIVER/MORPHO');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U04/CH01', 'BOT/STRUC/ANATOM');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U05/CH01', 'BOT/STRUC/CELUNI');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U06/CH01', 'BOT/STRUC/BIOMOL');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U07/CH01', 'BOT/STRUC/CELDIV');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U08/CH01', 'BOT/PLPHY/TRANSP');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U09/CH01', 'BOT/PLPHY/MINNUT');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U10/CH01', 'BOT/PLPHY/PHOTOS');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U11/CH01', 'BOT/PLPHY/RESPIR');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U12/CH01', 'BOT/PLPHY/PLGROW');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U13/CH01', 'BOT/REPGE/PLREPR');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U14/CH01', 'BOT/REPGE/INHERI');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U15/CH01', 'BOT/REPGE/MOLBAS');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U16/CH01', 'BOT/REPGE/ECOLOG');
+select catalog.map_node_concept('NEET-UG', 'BOT', '2026', 'BOT/U17/CH01', 'BOT/REPGE/BIOTEC');
 -- ===== ZOO =====
 insert into catalog.syllabus_version (exam_subject_id, version_code, effective_from, version_status)
 select es.exam_subject_id, '2026', date '2025-06-01', 'active'
@@ -602,6 +691,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'ZOO'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('NEET-UG', 'ZOO', '2026', 'ZOO', 'Zoology', 'subject', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'ZOO', '2026', 'ZOO/U01', 'Animal Kingdom', 'unit', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'ZOO', '2026', 'ZOO/U01/CH01', 'Animal Kingdom', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('NEET-UG', 'ZOO', '2026', 'ZOO/U01/CH01/T01', 'Phylum Porifera', 'topic', 1, null);
@@ -736,6 +826,27 @@ select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U15/CH01/T01', 'Z
 select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U15/CH01/T02', 'ZOO/EVOAP/BIOPRI/VECTOR');
 select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U15/CH01/T03', 'ZOO/EVOAP/BIOPRI/BIOREA');
 
+
+-- Chapter-level tags for ZOO -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U01/CH01', 'ZOO/ANDIV/ANIKIN');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U02/CH01', 'ZOO/ANDIV/STRORG');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U03/CH01', 'ZOO/HUPHY/DIGEST');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U04/CH01', 'ZOO/HUPHY/BREATH');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U05/CH01', 'ZOO/HUPHY/BODFLU');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U06/CH01', 'ZOO/HUPHY/EXCRET');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U07/CH01', 'ZOO/HUPHY/LOCOMO');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U08/CH01', 'ZOO/HUPHY/NEURAL');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U09/CH01', 'ZOO/HUPHY/CHEMCO');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U10/CH01', 'ZOO/HUREP/HUMREP');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U11/CH01', 'ZOO/HUREP/REPHEA');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U12/CH01', 'ZOO/HUREP/HUMHEA');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U13/CH01', 'ZOO/EVOAP/EVOLUT');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U14/CH01', 'ZOO/EVOAP/BIOHUM');
+select catalog.map_node_concept('NEET-UG', 'ZOO', '2026', 'ZOO/U15/CH01', 'ZOO/EVOAP/BIOPRI');
 -- Check your work:
 --   select tree, node_path from catalog.v_syllabus_tree where exam_code = 'NEET-UG';
 --   select * from catalog.v_concept_coverage where exam_code is null and is_taggable;  -- expect 0 rows for PHY/CHE/BOT/ZOO
