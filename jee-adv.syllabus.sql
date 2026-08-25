@@ -53,6 +53,13 @@
 --                physics/chemistry/mathematics.concept-tree.sql,
 --                jee-adv.exam-template.sql
 -- Re-running this file is safe: every line upserts.
+-- Fix pass: added the missing depth-1 subject-level root syllabus node
+-- ('unit'-less catalog.upsert_syllabus_node(..., '<SUBJ>', '<Name>', 'subject', 1, null))
+-- for every subject in this file, since upsert_syllabus_node requires a
+-- node's parent path to already exist and only the exam-template file's
+-- own demo subject had one. Caught by actually running this chain against
+-- a live database rather than static review. Safe to leave in even for the
+-- one subject the exam-template file already created it for (upsert).
 -- =====================================================================
 
 -- ===== PHY =====
@@ -63,6 +70,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'PHY'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('JEE-ADV', 'PHY', '2026', 'PHY', 'Physics', 'subject', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'PHY', '2026', 'PHY/MECH', 'Mechanics', 'unit', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'PHY', '2026', 'PHY/MECH/MEAS', 'Physical World and Measurement', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'PHY', '2026', 'PHY/MECH/MEAS/UNITS', 'Units and Measurement', 'topic', 1, null);
@@ -219,6 +227,32 @@ select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MODRN/ATOMS/BOHR'
 select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MODRN/ATOMS/RADIOA', 'PHY/MODRN/ATOMS/RADIOA');
 select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MODRN/ATOMS/NUCBIN', 'PHY/MODRN/ATOMS/NUCBIN');
 
+
+-- Chapter-level tags for PHY -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/MEAS', 'PHY/MECH/MEAS');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/KINEM', 'PHY/MECH/KINEM');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/LAWMO', 'PHY/MECH/LAWMO');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/WORKEN', 'PHY/MECH/WORKEN');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/RIGID', 'PHY/MECH/ROTMO');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/GRAV', 'PHY/MECH/GRAV');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MECH/PROPMA', 'PHY/MECH/PROPMA');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/THERM/THERMO', 'PHY/THERM/THERMO');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/THERM/KINTHE', 'PHY/THERM/KINTHE');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/OSCWA/OSCIL', 'PHY/OSCWA/OSCIL');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/OSCWA/WAVES', 'PHY/OSCWA/WAVES');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/ELEC/ELSTAT', 'PHY/ELEC/ELSTAT');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/ELEC/CURELE', 'PHY/ELEC/CURELE');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/ELEC/MAGEFF', 'PHY/ELEC/MAGEFF');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/ELEC/EMIND', 'PHY/ELEC/EMIND');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/ELEC/EMWAVE', 'PHY/ELEC/EMWAVE');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/OPTIC/RAYOPT', 'PHY/OPTIC/RAYOPT');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/OPTIC/WAVOPT', 'PHY/OPTIC/WAVOPT');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MODRN/DUALNM', 'PHY/MODRN/DUALNM');
+select catalog.map_node_concept('JEE-ADV', 'PHY', '2026', 'PHY/MODRN/ATOMS', 'PHY/MODRN/ATOMS');
 -- ===== CHE =====
 insert into catalog.syllabus_version (exam_subject_id, version_code, effective_from, version_status)
 select es.exam_subject_id, '2026', date '2025-06-01', 'active'
@@ -227,6 +261,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'CHE'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('JEE-ADV', 'CHE', '2026', 'CHE', 'Chemistry', 'subject', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE', 'Physical Chemistry', 'unit', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/SOMBAS', 'Some Basic Concepts of Chemistry', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/SOMBAS/MOLE', 'Mole Concept', 'topic', 1, null);
@@ -405,6 +440,35 @@ select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/BIOMOL/PROT
 select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/BIOMOL/NUCACI', 'CHE/ORGAN/BIOMOL/NUCACI');
 select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/BIOMOL/VITAMI', 'CHE/ORGAN/BIOMOL/VITAMI');
 
+
+-- Chapter-level tags for CHE -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/SOMBAS', 'CHE/PHYCHE/SOMBAS');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/STRATO', 'CHE/PHYCHE/STRATO');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/STATES', 'CHE/PHYCHE/STATES');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/THERMO', 'CHE/PHYCHE/THERMO');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/EQUIL', 'CHE/PHYCHE/EQUIL');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/REDOX', 'CHE/PHYCHE/REDOX');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/ELCHEM', 'CHE/PHYCHE/ELCHEM');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/KINET', 'CHE/PHYCHE/KINET');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/PHYCHE/SOLUT', 'CHE/PHYCHE/SOLUT');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/CLASPE', 'CHE/INORG/CLASPE');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/BONDST', 'CHE/INORG/BONDST');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/HYDROG', 'CHE/INORG/HYDROG');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/SBLOCK', 'CHE/INORG/SBLOCK');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/PBLOCK', 'CHE/INORG/PBLOCK');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/DFBLOC', 'CHE/INORG/DFBLOC');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/INORG/COORD', 'CHE/INORG/COORD');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/GOCPUR', 'CHE/ORGAN/GOCPUR');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/HYDROC', 'CHE/ORGAN/HYDROC');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/HALOAL', 'CHE/ORGAN/HALOAL');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/ALCPHE', 'CHE/ORGAN/ALCPHE');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/ALDKET', 'CHE/ORGAN/ALDKET');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/AMINES', 'CHE/ORGAN/AMINES');
+select catalog.map_node_concept('JEE-ADV', 'CHE', '2026', 'CHE/ORGAN/BIOMOL', 'CHE/ORGAN/BIOMOL');
 -- ===== MAT =====
 insert into catalog.syllabus_version (exam_subject_id, version_code, effective_from, version_status)
 select es.exam_subject_id, '2026', date '2025-06-01', 'active'
@@ -413,6 +477,7 @@ select es.exam_subject_id, '2026', date '2025-06-01', 'active'
   join catalog.subject s on s.subject_id = es.subject_id and s.subject_code = 'MAT'
 on conflict (exam_subject_id, version_code) do nothing;
 
+select catalog.upsert_syllabus_node('JEE-ADV', 'MAT', '2026', 'MAT', 'Mathematics', 'subject', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'MAT', '2026', 'MAT/SETRE', 'Sets, Relations and Functions', 'unit', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'MAT', '2026', 'MAT/SETRE/SETS', 'Sets', 'chapter', 1, null);
 select catalog.upsert_syllabus_node('JEE-ADV', 'MAT', '2026', 'MAT/SETRE/SETS/SETOPS', 'Set Operations', 'topic', 1, null);
@@ -536,6 +601,30 @@ select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/PROBAB/COND
 select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/PROBAB/BAYES', 'MAT/VECST/PROBAB/BAYES');
 select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/PROBAB/BINDIS', 'MAT/VECST/PROBAB/BINDIS');
 
+
+-- Chapter-level tags for MAT -- a question can also be tagged
+-- directly at chapter granularity (depth 3 is taggable too, per the
+-- concept tree's own header), not only at the topic leaf. Without these,
+-- content.v_question_eligibility would never reach a chapter-tagged
+-- question for any exam. Derived 1:1 from the topic-level mappings above.
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/SETRE/SETS', 'MAT/SETRE/SETS');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/SETRE/RELFUN', 'MAT/SETRE/RELFUN');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/SETRE/TRIGON', 'MAT/SETRE/TRIGON');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/ALGEB/COMPLX', 'MAT/ALGEB/COMPLX');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/ALGEB/PERCOM', 'MAT/ALGEB/PERCOM');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/ALGEB/BINOM', 'MAT/ALGEB/BINOM');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/ALGEB/SEQSER', 'MAT/ALGEB/SEQSER');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/ALGEB/MATDET', 'MAT/ALGEB/MATDET');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/COORD/STLINE', 'MAT/COORD/STLINE');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/COORD/CONICS', 'MAT/COORD/CONICS');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/COORD/THREED', 'MAT/COORD/THREED');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/CALC/LIMCON', 'MAT/CALC/LIMCON');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/CALC/DIFFER', 'MAT/CALC/DIFFER');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/CALC/INTEGR', 'MAT/CALC/INTEGR');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/CALC/DIFFEQ', 'MAT/CALC/DIFFEQ');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/VECTOR', 'MAT/VECST/VECTOR');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/STATIS', 'MAT/VECST/STATIS');
+select catalog.map_node_concept('JEE-ADV', 'MAT', '2026', 'MAT/VECST/PROBAB', 'MAT/VECST/PROBAB');
 -- Check your work:
 --   select tree, node_path from catalog.v_syllabus_tree where exam_code = 'JEE-ADV';
 --   select * from catalog.v_concept_coverage where exam_code is null and is_taggable;
