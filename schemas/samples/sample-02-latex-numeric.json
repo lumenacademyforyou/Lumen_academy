@@ -1,0 +1,18 @@
+{
+  "questionUid": "LMN-CHEM-CHEM06-000101",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_06",
+  "questionType": "numeric",
+  "difficultyBand": "medium",
+  "stemFormat": "latex",
+  "stemText": "The elevation in boiling point of a solution containing $1\\,\\text{mol}$ of a non-volatile, non-electrolyte solute in $1\\,\\text{kg}$ of water is given by $\\Delta T_b = K_b \\times m$, where $m$ is the molality. If $K_b = 0.52\\ \\text{K kg mol}^{-1}$, calculate $\\Delta T_b$ in Kelvin.",
+  "numericAnswer": "0.52",
+  "answerTolerance": "0.01",
+  "solution": {
+    "explanationText": "Molality m = 1 mol / 1 kg = 1 mol/kg. So $\\Delta T_b = K_b \\times m = 0.52 \\times 1 = 0.52\\ \\text{K}$.",
+    "formulaReference": "NCERT Chemistry Class XII, Ch. 2 — Solutions",
+    "solutionFormat": "latex"
+  },
+  "images": []
+}

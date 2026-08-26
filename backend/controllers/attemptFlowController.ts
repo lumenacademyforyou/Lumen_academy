@@ -27,8 +27,9 @@ export async function startAttempt(req: Request, res: Response, next: NextFuncti
       next(new AppError(400, "VALIDATION_ERROR", "test_id is required."));
       return;
     }
-    const attempt = await startAttemptFlow(testId, req.user!.appUserId);
-    res.status(201).json({ data: attempt });
+    const idempotencyKey = typeof req.body?.idempotencyKey === "string" ? req.body.idempotencyKey : undefined;
+    const result = await startAttemptFlow(testId, req.user!.appUserId, idempotencyKey);
+    res.status(201).json({ data: result });
   } catch (err) {
     next(err);
   }
@@ -36,7 +37,17 @@ export async function startAttempt(req: Request, res: Response, next: NextFuncti
 
 export async function saveResponse(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    const response = await upsertResponse(req.params.attemptId, req.params.testQuestionId, req.user!.appUserId, req.body ?? {});
+    // Route param is questionId (brief's endpoint catalogue), not
+    // testQuestionId — upsertResponse (TE-P4 rewrite) resolves the
+    // FIXED-mode test_question_id internally when one exists.
+    const body = req.body ?? {};
+    const response = await upsertResponse(req.params.attemptId, req.params.questionId, req.user!.appUserId, {
+      optionId: body.option_id ?? body.optionId ?? null,
+      selectedOptionLabel: body.selected_option_label ?? body.selectedOptionLabel ?? null,
+      numericAnswer: body.numeric_answer ?? body.numericAnswer ?? null,
+      timeSpentSeconds: body.time_spent_seconds ?? body.timeSpentSeconds ?? null,
+      isMarkedForReview: body.is_marked_for_review ?? body.isMarkedForReview ?? false,
+    });
     res.json({ data: response });
   } catch (err) {
     next(err);
@@ -45,8 +56,9 @@ export async function saveResponse(req: Request, res: Response, next: NextFuncti
 
 export async function submitAttempt(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    const { attempt, scorecard } = await submitAttemptFlow(req.params.attemptId, req.user!.appUserId);
-    res.json({ data: { attempt, scorecard } });
+    const idempotencyKey = typeof req.body?.idempotencyKey === "string" ? req.body.idempotencyKey : undefined;
+    const result = await submitAttemptFlow(req.params.attemptId, req.user!.appUserId, idempotencyKey);
+    res.json({ data: result });
   } catch (err) {
     next(err);
   }
@@ -71,12 +83,12 @@ export async function batchSaveResponses(req: Request, res: Response, next: Next
       return;
     }
     for (const item of items) {
-      if (typeof item?.testQuestionId !== "string" || item.testQuestionId.length === 0) {
-        next(new AppError(400, "VALIDATION_ERROR", "each response needs a testQuestionId."));
+      if (typeof item?.questionId !== "string" || item.questionId.length === 0) {
+        next(new AppError(400, "VALIDATION_ERROR", "each response needs a questionId."));
         return;
       }
     }
-    const saved = await batchUpsertResponses(req.params.attemptId, items as BatchResponseItem[]);
+    const saved = await batchUpsertResponses(req.params.attemptId, req.user!.appUserId, items as BatchResponseItem[]);
     res.json({ data: saved });
   } catch (err) {
     next(err);

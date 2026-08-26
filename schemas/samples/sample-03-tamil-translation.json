@@ -1,0 +1,34 @@
+{
+  "questionUid": "LMN-BOT-BOT01-000101",
+  "examCode": "NEET",
+  "subjectCode": "BOT",
+  "nodeTagCode": "bot_01",
+  "questionType": "single_choice",
+  "difficultyBand": "easy",
+  "stemFormat": "plain",
+  "stemText": "Which of the following best describes the structure of DNA as proposed by Watson and Crick?",
+  "options": [
+    { "label": "A", "text": "A single-stranded helix with sugar-phosphate backbone", "isCorrect": false },
+    { "label": "B", "text": "A right-handed double helix with antiparallel sugar-phosphate strands and complementary base pairing", "isCorrect": true },
+    { "label": "C", "text": "A triple helix stabilised by hydrogen bonds", "isCorrect": false },
+    { "label": "D", "text": "A branched structure with no defined base pairing rule", "isCorrect": false }
+  ],
+  "solution": {
+    "explanationText": "Watson and Crick (1953) proposed DNA as a right-handed double helix of two antiparallel strands held together by hydrogen bonds between complementary bases (A-T, G-C).",
+    "formulaReference": "NCERT Biology Class XII, Ch. 6 — Molecular Basis of Inheritance",
+    "solutionFormat": "plain"
+  },
+  "images": [],
+  "translations": [
+    {
+      "languageCode": "ta",
+      "stemText": "வாட்சன் மற்றும் கிரிக் முன்மொழிந்த டிஎன்ஏ கட்டமைப்பை பின்வருவனவற்றுள் எது சிறப்பாக விவரிக்கிறது?",
+      "optionTexts": [
+        "சர்க்கரை-பாஸ்பேட் முதுகெலும்புடன் கூடிய ஒற்றை இழை மடிப்பு",
+        "நிரப்பு காரங்கள் ஜோடி சேரும் எதிரெதிர் திசை இழைகளுடன் கூடிய வலது கை இரட்டை மடிப்பு",
+        "ஹைட்ரஜன் பிணைப்புகளால் நிலைப்படுத்தப்பட்ட முப்படை மடிப்பு",
+        "வரையறுக்கப்பட்ட கார ஜோடி விதி இல்லாத கிளை அமைப்பு"
+      ]
+    }
+  ]
+}

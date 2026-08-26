@@ -34,7 +34,7 @@ const attemptsRouter = makeOwnedCrudRouter(attemptRepository, "user_id");
 // Real attempt lifecycle (see backend/controllers/attemptFlowController.ts):
 // these inherit the requireAuth that makeOwnedCrudRouter already applied above.
 attemptsRouter.post("/start", startAttempt);
-attemptsRouter.patch("/:attemptId/responses/:testQuestionId", saveResponse);
+attemptsRouter.patch("/:attemptId/responses/:questionId", saveResponse);
 attemptsRouter.post("/:attemptId/submit", submitAttempt);
 attemptsRouter.get("/:attemptId/paper", requireAttemptOwnership(), getPaper);
 
