@@ -1,0 +1,1497 @@
+[
+  {
+    "questionUid": "LMN-CHEM-PENDING-000101",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many moles of CO2 are present in 11 g of CO2? (Molar mass of CO2 = 44 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.25 mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.50 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.00 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.00 mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = mass / molar mass = 11 / 44 = 0.25 mol.\nStep 2: Conclude n(CO2) = 0.25 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "11 g CO2 இல் எத்தனை மோல் CO2 உள்ளது? (CO2 இன் மோலார் நிறை = 44 g/mol)",
+        "optionTexts": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.00 mol",
+          "4.00 mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000102",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many molecules are present in 0.5 mol of O2 gas? (NA = 6.022 × 10²³ mol⁻¹)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.011 × 10²³",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.022 × 10²³",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.204 × 10²⁴",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.505 × 10²³",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Number of molecules = n × NA = 0.5 × 6.022 × 10²³.\nStep 2: = 3.011 × 10²³ molecules.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.5 mol O2 வாயுவில் எத்தனை மூலக்கூறுகள் உள்ளன? (NA = 6.022 × 10²³ mol⁻¹)",
+        "optionTexts": [
+          "3.011 × 10²³",
+          "6.022 × 10²³",
+          "1.204 × 10²⁴",
+          "1.505 × 10²³"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000103",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Find the mass of 0.2 mol of H2SO4. (Molar mass of H2SO4 = 98 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "9.8 g",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "19.6 g",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "49.0 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "98.0 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: mass = n × molar mass = 0.2 × 98 = 19.6 g.\nStep 2: Conclude mass = 19.6 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.2 mol H2SO4 என்ன நிறையுடையது காண்க. (H2SO4 இன் மோலார் நிறை = 98 g/mol)",
+        "optionTexts": [
+          "9.8 g",
+          "19.6 g",
+          "49.0 g",
+          "98.0 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000104",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Find the volume occupied at STP by 4.4 g of CO2. (Molar mass of CO2 = 44 g/mol; molar volume at STP = 22.4 L/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.12 L",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.24 L",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4.48 L",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "22.4 L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = 4.4 / 44 = 0.1 mol.\nStep 2: V = n × 22.4 = 0.1 × 22.4 = 2.24 L.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4.4 g CO2 நிலையான வெப்பநிலை மற்றும் அழுத்தத்தில் (STP) ஆக்கிரமிக்கும் கனஅளவை காண்க. (CO2 இன் மோலார் நிறை = 44 g/mol; STP இல் மோலார் கனஅளவு = 22.4 L/mol)",
+        "optionTexts": [
+          "1.12 L",
+          "2.24 L",
+          "4.48 L",
+          "22.4 L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000105",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Chlorine occurs as two isotopes, Cl-35 (75%) and Cl-37 (25%). Find the average atomic mass of chlorine.",
+    "options": [
+      {
+        "label": "A",
+        "text": "35.5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "36.0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "35.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "36.5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Average atomic mass = (0.75 × 35) + (0.25 × 37).\nStep 2: = 26.25 + 9.25 = 35.5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரின் ஒரு இரண்டு ஐசோடோப்களாக காணப்படுகிறது, Cl-35 (75%) மற்றும் Cl-37 (25%). குளோரினின் சராசரி அணு நிறையை காண்க.",
+        "optionTexts": [
+          "35.5",
+          "36.0",
+          "35.0",
+          "36.5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000106",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Find the number of atoms present in 2 mol of iron (Fe). (NA = 6.022 × 10²³ mol⁻¹)",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.022 × 10²³",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.204 × 10²⁴",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3.011 × 10²³",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.409 × 10²⁴",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Number of atoms = n × NA = 2 × 6.022 × 10²³.\nStep 2: = 1.204 × 10²⁴ atoms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 mol இரும்பு (Fe) இல் உள்ள அணுக்களின் எண்ணிக்கையை காண்க. (NA = 6.022 × 10²³ mol⁻¹)",
+        "optionTexts": [
+          "6.022 × 10²³",
+          "1.204 × 10²⁴",
+          "3.011 × 10²³",
+          "2.409 × 10²⁴"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000107",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Find the mass of a single molecule of water. (Molar mass of H2O = 18 g/mol; NA = 6.022 × 10²³ mol⁻¹)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.99 × 10⁻²³ g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.80 × 10⁻²³ g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.02 × 10⁻²³ g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.66 × 10⁻²⁴ g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: mass of one molecule = molar mass / NA = 18 / 6.022 × 10²³.\nStep 2: = 2.99 × 10⁻²³ g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீர் மூலக்கூறின் நிறையை காண்க. (H2O இன் மோலார் நிறை = 18 g/mol; NA = 6.022 × 10²³ mol⁻¹)",
+        "optionTexts": [
+          "2.99 × 10⁻²³ g",
+          "1.80 × 10⁻²³ g",
+          "6.02 × 10⁻²³ g",
+          "1.66 × 10⁻²⁴ g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000108",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mole-relationship diagram shows how mass, number of particles, and gas volume at STP are all connected through the molar mass (M), Avogadro's number (NA), and molar volume (22.4 L/mol). Using the relationships shown, find the volume occupied at STP by 8.5 g of NH3. (Molar mass of NH3 = 17 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.6 L",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "11.2 L",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "22.4 L",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.48 L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = mass / M = 8.5 / 17 = 0.5 mol.\nStep 2: V = n × 22.4 L/mol = 0.5 × 22.4 = 11.2 L.",
+      "solutionFormat": "plain"
+    },
+    "images": [
+      {
+        "fileName": "CHE_SOMBAS_DIAG_0002.png",
+        "targetRole": "stem"
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மோல்-தொடர்பு வரைபடம், நிறை, துகள்களின் எண்ணிக்கை மற்றும் STP இல் வாயு கனஅளவு ஆகியவை மோலார் நிறை (M), அவகாத்ரோ எண் (NA) மற்றும் மோலார் கனஅளவு (22.4 L/mol) மூலம் எவ்வாறு இணைக்கப்பட்டுள்ளன என்பதைக் காட்டுகிறது. காட்டப்பட்டுள்ள தொடர்புகளைப் பயன்படுத்தி, 8.5 g NH3 STP இல் ஆக்கிரமிக்கும் கனஅளவைக் காண்க. (NH3 இன் மோலார் நிறை = 17 g/mol)",
+        "optionTexts": [
+          "5.6 L",
+          "11.2 L",
+          "22.4 L",
+          "4.48 L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000109",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A compound contains 92.3% carbon and 7.7% hydrogen by mass. Find its empirical formula. (Atomic mass: C = 12, H = 1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C2H3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moles C = 92.3/12 = 7.69; Moles H = 7.7/1 = 7.7.\nStep 2: Ratio C:H ≈ 1:1.\nStep 3: Empirical formula = CH.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கூட்டில் நிறையால் 92.3% கார்பன் மற்றும் 7.7% ஹைட்ரஜன் உள்ளது. அதன் அனுபவ சூத்திரத்தை காண்க. (அணு நிறை: C = 12, H = 1)",
+        "optionTexts": [
+          "CH",
+          "CH2",
+          "CH3",
+          "C2H3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000110",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Analysis of a compound gives 0.2 mol C, 0.4 mol H, and 0.2 mol O per sample. Find its empirical formula.",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH2O",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C2H4O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH4O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C2H4O2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Divide each by the smallest (0.2): C = 1, H = 2, O = 1.\nStep 2: Empirical formula = CH2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கூட்டின் பகுப்பாய்வில் ஒரு மாதிரியில் 0.2 mol C, 0.4 mol H, மற்றும் 0.2 mol O உள்ளது எனக் கிடைக்கிறது. அதன் அனுபவ சூத்திரத்தை காண்க.",
+        "optionTexts": [
+          "CH2O",
+          "C2H4O",
+          "CH4O",
+          "C2H4O2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000111",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A compound has empirical formula CH2O and a molar mass of 180 g/mol. Find its molecular formula. (Empirical formula mass of CH2O = 30 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "C2H4O2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C3H6O3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C6H12O6",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "C4H8O4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = molar mass / empirical formula mass = 180 / 30 = 6.\nStep 2: Molecular formula = (CH2O) × 6 = C6H12O6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கூட்டின் அனுபவ சூத்திரம் CH2O மற்றும் மோலார் நிறை 180 g/mol. அதன் மூலக்கூறு சூத்திரத்தை காண்க. (CH2O இன் அனுபவ சூத்திர நிறை = 30 g/mol)",
+        "optionTexts": [
+          "C2H4O2",
+          "C3H6O3",
+          "C6H12O6",
+          "C4H8O4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000112",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Find the percentage of hydrogen by mass in water, H2O. (Atomic mass: H = 1, O = 16)",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.55%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "11.11%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "88.89%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "16.67%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Molar mass of H2O = 18 g/mol; mass of H = 2 g.\nStep 2: % H = (2/18) × 100 = 11.11%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர் (H2O) இல் நிறையால் ஹைட்ரஜனின் சதவீதத்தை காண்க. (அணு நிறை: H = 1, O = 16)",
+        "optionTexts": [
+          "5.55%",
+          "11.11%",
+          "88.89%",
+          "16.67%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000113",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The pie chart shows the percentage composition by mass of a compound containing only carbon, hydrogen, and oxygen: C = 40.0%, H = 6.7%, O = 53.3%. Find its empirical formula. (Atomic mass: C = 12, H = 1, O = 16)",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH2O",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C2H4O2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C3H6O3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moles: C = 40.0/12 = 3.33; H = 6.7/1 = 6.70; O = 53.3/16 = 3.33.\nStep 2: Divide by smallest (3.33): C = 1, H = 2, O = 1.\nStep 3: Empirical formula = CH2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [
+      {
+        "fileName": "CHE_SOMBAS_DIAG_0003.png",
+        "targetRole": "stem"
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வட்ட விளக்கப்படம், கார்பன், ஹைட்ரஜன் மற்றும் ஆக்சிஜன் மட்டும் கொண்ட ஒரு கூட்டின் நிறையால் சதவீத கலவையைக் காட்டுகிறது: C = 40.0%, H = 6.7%, O = 53.3%. அதன் அனுபவ சூத்திரத்தை காண்க. (அணு நிறை: C = 12, H = 1, O = 16)",
+        "optionTexts": [
+          "CH2O",
+          "C2H4O2",
+          "CH3O",
+          "C3H6O3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000114",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which statement correctly relates the empirical formula and the molecular formula of a compound?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The molecular formula is always identical to the empirical formula",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The molecular formula mass is a whole-number multiple of the empirical formula mass",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The empirical formula mass is always greater than the molecular formula mass",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The empirical formula depends only on the molecular formula's subscripts, not on mass composition",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The molecular formula is (empirical formula)n, where n = molecular mass / empirical formula mass, a whole number.\nStep 2: So option B correctly relates the two.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கூட்டின் அனுபவ சூத்திரம் மற்றும் மூலக்கூறு சூத்திரத்தை சரியாக தொடர்புபடுத்தும் கூற்று எது?",
+        "optionTexts": [
+          "The molecular formula is always identical to the empirical formula",
+          "The molecular formula mass is a whole-number multiple of the empirical formula mass",
+          "The empirical formula mass is always greater than the molecular formula mass",
+          "The empirical formula depends only on the molecular formula's subscripts, not on mass composition"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000115",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A hydrocarbon has empirical formula CH and molar mass 78 g/mol. Find its molecular formula. (Empirical formula mass of CH = 13 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "C6H6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C3H3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C4H4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C5H5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = 78 / 13 = 6.\nStep 2: Molecular formula = (CH) × 6 = C6H6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஹைட்ரோகார்பனின் அனுபவ சூத்திரம் CH மற்றும் மோலார் நிறை 78 g/mol. அதன் மூலக்கூறு சூத்திரத்தை காண்க. (CH இன் அனுபவ சூத்திர நிறை = 13 g/mol)",
+        "optionTexts": [
+          "C6H6",
+          "C3H3",
+          "C4H4",
+          "C5H5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000116",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For the reaction N2 + 3H2 → 2NH3, if 2 mol of N2 reacts completely with 6 mol of H2, how many moles of NH3 are formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 mol",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mole ratio N2:H2:NH3 = 1:3:2 — the given 2 mol N2 and 6 mol H2 are in exact stoichiometric ratio.\nStep 2: mol NH3 = 2 × 2 = 4 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "N2 + 3H2 → 2NH3 வினையில், 2 mol N2 முழுமையாக 6 mol H2 உடன் வினைபுரிந்தால், எத்தனை மோல் NH3 உருவாகும்?",
+        "optionTexts": [
+          "2 mol",
+          "4 mol",
+          "6 mol",
+          "8 mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000117",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the reaction 2H2 + O2 → 2H2O, 4 mol of H2 is mixed with 1 mol of O2. Identify the limiting reagent and find the moles of water formed.",
+    "options": [
+      {
+        "label": "A",
+        "text": "H2 is limiting; 4 mol H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "O2 is limiting; 2 mol H2O",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "O2 is limiting; 1 mol H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2 is limiting; 2 mol H2O",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 4 mol H2 needs 2 mol O2, but only 1 mol O2 is available, so O2 is the limiting reagent.\nStep 2: mol H2O = 2 × mol O2 used = 2 × 1 = 2 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2H2 + O2 → 2H2O வினையில், 4 mol H2 உடன் 1 mol O2 கலக்கப்படுகிறது. குறைந்தளவு வினைப்பொருள் (limiting reagent) எதுவென கண்டு, உருவாகும் நீரின் மோல்களைக் காண்க.",
+        "optionTexts": [
+          "H2 is limiting; 4 mol H2O",
+          "O2 is limiting; 2 mol H2O",
+          "O2 is limiting; 1 mol H2O",
+          "H2 is limiting; 2 mol H2O"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000118",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Find the mass of CO2 produced by the complete combustion of 12 g of carbon: C + O2 → CO2. (Atomic mass: C = 12; molar mass of CO2 = 44 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "12 g",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "22 g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "44 g",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "88 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n(C) = 12/12 = 1 mol.\nStep 2: By 1:1 ratio, n(CO2) = 1 mol → mass = 1 × 44 = 44 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "12 g கார்பனின் முழுமையான எரிதலால் உருவாகும் CO2 இன் நிறையை காண்க: C + O2 → CO2. (அணு நிறை: C = 12; CO2 இன் மோலார் நிறை = 44 g/mol)",
+        "optionTexts": [
+          "12 g",
+          "22 g",
+          "44 g",
+          "88 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000119",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The diagram shows the molecules available before the reaction 2H2 + O2 → 2H2O: 6 molecules of H2 and 2 molecules of O2. Based on the diagram, identify the limiting reagent and the number of H2O molecules formed.",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2 is limiting; 4 H2O molecules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2 is limiting; 6 H2O molecules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "O2 is limiting; 2 H2O molecules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2 is limiting; 4 H2O molecules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 2 molecules of O2 need 4 molecules of H2; 6 molecules of H2 are available, so H2 is in excess and O2 is limiting.\nStep 2: H2O molecules formed = 2 × O2 molecules used = 2 × 2 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [
+      {
+        "fileName": "CHE_SOMBAS_DIAG_0001.png",
+        "targetRole": "stem"
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2H2 + O2 → 2H2O வினைக்கு முன் கிடைக்கும் மூலக்கூறுகள் படம் காட்டுகிறது: 6 H2 மூலக்கூறுகள் மற்றும் 2 O2 மூலக்கூறுகள். படத்தின் அடிப்படையில், குறைந்தளவு வினைப்பொருளையும் உருவாகும் H2O மூலக்கூறுகளின் எண்ணிக்கையையும் காண்க.",
+        "optionTexts": [
+          "O2 is limiting; 4 H2O molecules",
+          "H2 is limiting; 6 H2O molecules",
+          "O2 is limiting; 2 H2O molecules",
+          "H2 is limiting; 4 H2O molecules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000120",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The bar graph shows the moles of reactants X and Y available for the reaction X + 2Y → Z: 5 mol of X and 8 mol of Y. Based on the graph, find the maximum moles of Z that can be formed.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.5 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4.0 mol",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.0 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8.0 mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 5 mol X needs 10 mol Y, but only 8 mol Y is available, so Y is the limiting reagent.\nStep 2: mol Z = mol Y used / 2 = 8 / 2 = 4.0 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [
+      {
+        "fileName": "CHE_SOMBAS_DIAG_0005.png",
+        "targetRole": "stem"
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "X + 2Y → Z வினைக்கு கிடைக்கும் X மற்றும் Y வினைப்பொருட்களின் மோல்களைப் பட்டை வரைபடம் காட்டுகிறது: 5 mol X மற்றும் 8 mol Y. வரைபடத்தின் அடிப்படையில், உருவாகக்கூடிய அதிகபட்ச Z மோல்களைக் காண்க.",
+        "optionTexts": [
+          "2.5 mol",
+          "4.0 mol",
+          "5.0 mol",
+          "8.0 mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000121",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The theoretical yield of a reaction is 50.0 g, but the actual yield obtained is 42.5 g. Find the percentage yield.",
+    "options": [
+      {
+        "label": "A",
+        "text": "75%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "80%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "85%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "90%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: % yield = (actual yield / theoretical yield) × 100.\nStep 2: = (42.5 / 50.0) × 100 = 85%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினையின் தத்துவார்த்த விளைச்சல் 50.0 g, ஆனால் கிடைத்த உண்மையான விளைச்சல் 42.5 g. சதவீத விளைச்சலைக் காண்க.",
+        "optionTexts": [
+          "75%",
+          "80%",
+          "85%",
+          "90%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000122",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the reaction 2Mg + O2 → 2MgO, find the mass of MgO formed from 4.8 g of Mg. (Atomic mass: Mg = 24; molar mass of MgO = 40 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 g",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8.0 g",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16.0 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "24.0 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n(Mg) = 4.8/24 = 0.2 mol.\nStep 2: By 1:1 ratio (Mg:MgO), n(MgO) = 0.2 mol → mass = 0.2 × 40 = 8.0 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2Mg + O2 → 2MgO வினையில், 4.8 g Mg இலிருந்து உருவாகும் MgO இன் நிறையை காண்க. (அணு நிறை: Mg = 24; MgO இன் மோலார் நிறை = 40 g/mol)",
+        "optionTexts": [
+          "4.0 g",
+          "8.0 g",
+          "16.0 g",
+          "24.0 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000123",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the reaction 2H2 + O2 → 2H2O, 2 mol of H2 is mixed with 2 mol of O2. Find the moles of O2 left unreacted after the reaction goes to completion.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.5 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 mol",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1.5 mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 2 mol H2 needs 1 mol O2 (ratio 2:1); 2 mol O2 is available.\nStep 2: O2 remaining = 2 − 1 = 1.0 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2H2 + O2 → 2H2O வினையில், 2 mol H2 உடன் 2 mol O2 கலக்கப்படுகிறது. வினை முழுமையடைந்த பின் வினைபுரியாமல் மீதமுள்ள O2 மோல்களைக் காண்க.",
+        "optionTexts": [
+          "0 mol",
+          "0.5 mol",
+          "1.0 mol",
+          "1.5 mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000124",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Find the molarity of a solution prepared by dissolving 9.8 g of H2SO4 in water to make 500 mL of solution. (Molar mass of H2SO4 = 98 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.2 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.4 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.5 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n = 9.8/98 = 0.1 mol.\nStep 2: V = 500 mL = 0.5 L.\nStep 3: M = n/V = 0.1/0.5 = 0.2 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "9.8 g H2SO4 ஐ நீரில் கரைத்து 500 mL கரைசல் தயாரிக்கப்படும் போது, கரைசலின் மோலாரிக்கியை காண்க. (H2SO4 இன் மோலார் நிறை = 98 g/mol)",
+        "optionTexts": [
+          "0.1 M",
+          "0.2 M",
+          "0.4 M",
+          "0.5 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000125",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "5.0 g of NaCl is dissolved in 250 g of water. Find the molality of the solution. (Molar mass of NaCl = 58.5 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.171 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.342 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.500 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.855 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n(NaCl) = 5.0/58.5 = 0.0855 mol.\nStep 2: mass of water = 250 g = 0.250 kg.\nStep 3: molality = 0.0855/0.250 = 0.342 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "5.0 g NaCl ஐ 250 g நீரில் கரைக்கப்படுகிறது. கரைசலின் மோலாலிக்கியை காண்க. (NaCl இன் மோலார் நிறை = 58.5 g/mol)",
+        "optionTexts": [
+          "0.171 m",
+          "0.342 m",
+          "0.500 m",
+          "0.855 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000126",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A solution contains 2 mol of ethanol and 8 mol of water. Find the mole fraction of ethanol in the solution.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.10",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.20",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.25",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.80",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total moles = 2 + 8 = 10 mol.\nStep 2: Mole fraction of ethanol = 2/10 = 0.20.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கரைசலில் 2 mol எத்தனால் மற்றும் 8 mol நீர் உள்ளது. கரைசலில் எத்தனாலின் மோல் பின்னத்தை காண்க.",
+        "optionTexts": [
+          "0.10",
+          "0.20",
+          "0.25",
+          "0.80"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000127",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "100 mL of 2 M HCl solution is diluted with water to a final volume of 500 mL. Find the molarity of the diluted solution.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.2 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.4 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1.0 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By the dilution law, M1V1 = M2V2.\nStep 2: 2 × 100 = M2 × 500 → M2 = 200/500 = 0.4 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 mL, 2 M HCl கரைசல் நீரால் நீர்த்துப்போகச் செய்யப்பட்டு இறுதி கனஅளவு 500 mL ஆக்கப்படுகிறது. நீர்த்துப்போன கரைசலின் மோலாரிக்கியை காண்க.",
+        "optionTexts": [
+          "0.1 M",
+          "0.2 M",
+          "0.4 M",
+          "1.0 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000128",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The diagram shows a titration set-up: a burette containing NaOH solution positioned above a conical flask containing HCl solution. If 25.0 mL of 0.100 M HCl exactly neutralises 20.0 mL of the NaOH solution, find the molarity of the NaOH solution. (HCl + NaOH → NaCl + H2O, 1:1 mole ratio)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.100 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.125 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.150 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.200 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: moles HCl = 0.100 M × 0.0250 L = 0.00250 mol.\nStep 2: By 1:1 ratio, moles NaOH = 0.00250 mol.\nStep 3: M(NaOH) = 0.00250 / 0.0200 = 0.125 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [
+      {
+        "fileName": "CHE_SOMBAS_DIAG_0004.png",
+        "targetRole": "stem"
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டிட்ரேஷன் அமைப்பு படம் காட்டுகிறது: NaOH கரைசல் கொண்ட பியூரெட் என்பது HCl கரைசல் கொண்ட கூம்பு குடுவைக்கு மேல் வைக்கப்பட்டுள்ளது. 25.0 mL, 0.100 M HCl சரியாக 20.0 mL NaOH கரைசலை நடுநிலையாக்கினால், NaOH கரைசலின் மோலாரிக்கியை காண்க. (HCl + NaOH → NaCl + H2O, 1:1 மோல் விகிதம்)",
+        "optionTexts": [
+          "0.100 M",
+          "0.125 M",
+          "0.150 M",
+          "0.200 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000129",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "4.9 g of H2SO4 is dissolved in water to make 250 mL of solution. Find the normality of the solution. (Equivalent mass of H2SO4 = 49 g/eq)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.2 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.4 N",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.5 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: equivalents = mass / equivalent mass = 4.9/49 = 0.1 eq.\nStep 2: V = 250 mL = 0.25 L.\nStep 3: N = equivalents/V = 0.1/0.25 = 0.4 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4.9 g H2SO4 ஐ நீரில் கரைத்து 250 mL கரைசல் தயாரிக்கப்படுகிறது. கரைசலின் நார்மாலிக்கியை காண்க. (H2SO4 இன் சமான நிறை = 49 g/eq)",
+        "optionTexts": [
+          "0.1 N",
+          "0.2 N",
+          "0.4 N",
+          "0.5 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHEM-PENDING-000130",
+    "examCode": "NEET",
+    "subjectCode": "CHEM",
+    "nodeTagCode": "UNMAPPED_some_basic_concepts_of_chemistry",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "100 mL of 1 M HCl is mixed with 100 mL of 3 M HCl. Find the molarity of the resulting solution. (Assume volumes are additive)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.5 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.0 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4.0 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: moles = (0.100 × 1) + (0.100 × 3) = 0.100 + 0.300 = 0.400 mol.\nStep 2: total volume = 100 + 100 = 200 mL = 0.200 L.\nStep 3: M = 0.400/0.200 = 2.0 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 mL, 1 M HCl உடன் 100 mL, 3 M HCl கலக்கப்படுகிறது. விளைவாகும் கரைசலின் மோலாரிக்கியை காண்க. (கனஅளவுகள் கூட்டு நேர்மையானவை என கொள்ள)",
+        "optionTexts": [
+          "1.0 M",
+          "1.5 M",
+          "2.0 M",
+          "4.0 M"
+        ]
+      }
+    ]
+  }
+]

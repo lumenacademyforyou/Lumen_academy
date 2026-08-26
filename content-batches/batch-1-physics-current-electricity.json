@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY02-000101",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A conductor has a resistance of 5 Ω. Find the current through it when a potential difference of 10 V is applied across its ends.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 A",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 A",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "50 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Ohm's law, I = V/R = 10/5 = 2 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கடத்தியின் மின்தடை 5 Ω. அதன் முனைகளுக்கு இடையே 10 V மின்னழுத்த வேறுபாடு செலுத்தப்படும்போது, அதன் வழியாக பாயும் மின்னோட்டத்தை காண்க.",
+        "optionTexts": [
+          "0.5 A",
+          "5 A",
+          "2 A",
+          "50 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000102",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two wires of the same material have lengths in the ratio 2:1 and radii in the ratio 1:2. Find the ratio of their resistances.",
+    "options": [
+      {
+        "label": "A",
+        "text": "8:1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1:8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2:1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1:2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "R = ρL/A = ρL/(πr²). R₁/R₂ = (L₁/L₂)×(r₂/r₁)² = (2/1)×(2/1)² = 2×4 = 8, so R₁:R₂ = 8:1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே பொருளால் ஆன ஒரு ஜோடி கம்பிகளின் நீளங்களின் விகிதம் 2:1 மற்றும் ஆரங்களின் விகிதம் 1:2. அவற்றின் மின்தடைகளின் விகிதத்தை காண்க.",
+        "optionTexts": [
+          "8:1",
+          "1:8",
+          "2:1",
+          "1:2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000103",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The resistance of a conductor is 100 Ω at 0°C. If its temperature coefficient of resistance is 0.004 per °C, find its resistance at 100°C.",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "120 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "160 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "140 Ω",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "R = R₀(1 + αΔT) = 100(1 + 0.004×100) = 100×1.4 = 140 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கடத்தியின் மின்தடை 0°C இல் 100 Ω ஆகும். அதன் மின்தடையின் வெப்பநிலை குணகம் ஒரு °C க்கு 0.004 எனில், 100°C இல் அதன் மின்தடையை காண்க.",
+        "optionTexts": [
+          "100 Ω",
+          "120 Ω",
+          "160 Ω",
+          "140 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000104",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A copper wire of cross-sectional area 1 mm² carries a current of 1.6 A. If the free electron density is 8×10²⁸ m⁻³ and e = 1.6×10⁻¹⁹ C, find the drift velocity of electrons.",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.25×10⁻² m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.25×10⁻⁴ m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "8×10⁻⁴ m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8×10⁻² m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "v_d = I/(nAe) = 1.6/(8×10²⁸ × 1×10⁻⁶ × 1.6×10⁻¹⁹) = 1.6/12800 = 1.25×10⁻⁴ m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 mm² குறுக்குவெட்டுப் பரப்பளவு கொண்ட ஒரு தாமிரக் கம்பியில் 1.6 A மின்னோட்டம் பாய்கிறது. சுதந்திர எலக்ட்ரான் அடர்த்தி 8×10²⁸ m⁻³ மற்றும் e = 1.6×10⁻¹⁹ C எனில், எலக்ட்ரான்களின் இழுவை திசைவேகத்தை காண்க.",
+        "optionTexts": [
+          "1.25×10⁻² m/s",
+          "1.25×10⁻⁴ m/s",
+          "8×10⁻⁴ m/s",
+          "8×10⁻² m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000105",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Three resistors of 2 Ω, 3 Ω and 5 Ω are connected in series across a 20 V battery. Find the current in the circuit.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 A",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "R_total = 2+3+5 = 10 Ω. I = V/R = 20/10 = 2 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 Ω, 3 Ω மற்றும் 5 Ω மதிப்புள்ள மூன்று மின்தடையங்கள் 20 V மின்கலத்துடன் தொடர் இணைப்பில் இணைக்கப்பட்டுள்ளன. மின்சுற்றில் உள்ள மின்னோட்டத்தை காண்க.",
+        "optionTexts": [
+          "2 A",
+          "1 A",
+          "4 A",
+          "10 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000106",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two resistors of 4 Ω and 6 Ω are connected in parallel. Find the equivalent resistance.",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.4 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "24 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "1/R = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, so R = 12/5 = 2.4 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 Ω மற்றும் 6 Ω மதிப்புள்ள ஒரு மின்தடையங்கள் இணை இணைப்பில் இணைக்கப்பட்டுள்ளன. இணையான மின்தடையை காண்க.",
+        "optionTexts": [
+          "5 Ω",
+          "10 Ω",
+          "2.4 Ω",
+          "24 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000107",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cell of EMF 2 V and internal resistance 0.5 Ω is connected to an external resistance of 4.5 Ω. Find the current in the circuit.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.2 A",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.4 A",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.5 A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "I = E/(R+r) = 2/(4.5+0.5) = 2/5 = 0.4 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 V emf மற்றும் 0.5 Ω உள் மின்தடை கொண்ட ஒரு மின்கலம் 4.5 Ω வெளி மின்தடையுடன் இணைக்கப்பட்டுள்ளது. மின்சுற்றில் உள்ள மின்னோட்டத்தை காண்க.",
+        "optionTexts": [
+          "0.2 A",
+          "0.4 A",
+          "0.5 A",
+          "4 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000108",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "n identical cells, each of EMF ε and internal resistance r, are connected in series. Find the EMF and internal resistance of the combination.",
+    "options": [
+      {
+        "label": "A",
+        "text": "ε, r",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "nε, r",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "ε, nr",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "nε, nr",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "In series, EMFs add and internal resistances add: equivalent EMF = nε, equivalent internal resistance = nr.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒவ்வொன்றும் ε emf மற்றும் r உள் மின்தடை கொண்ட n ஒரு மாதிரியான மின்கலங்கள் தொடர் இணைப்பில் இணைக்கப்பட்டுள்ளன. கூட்டின் emf மற்றும் உள் மின்தடையை காண்க.",
+        "optionTexts": [
+          "ε, r",
+          "nε, r",
+          "ε, nr",
+          "nε, nr"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000109",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "n identical cells, each of EMF ε and internal resistance r, are connected in parallel. Find the equivalent internal resistance.",
+    "options": [
+      {
+        "label": "A",
+        "text": "r/n",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "nr",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n²r",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For identical cells in parallel, the equivalent EMF stays ε and the internal resistances combine as resistors in parallel: r_eq = r/n.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒவ்வொன்றும் ε emf மற்றும் r உள் மின்தடை கொண்ட n ஒரு மாதிரியான மின்கலங்கள் இணை இணைப்பில் இணைக்கப்பட்டுள்ளன. விளைவான உள் மின்தடையை காண்க.",
+        "optionTexts": [
+          "r/n",
+          "nr",
+          "r",
+          "n²r"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000110",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At a junction, currents I₁ = 2 A and I₂ = 3 A flow into the junction and I₃ flows out. Find I₃.",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 A",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 A",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Kirchhoff's current law, total current in = total current out, so I₃ = I₁ + I₂ = 2 + 3 = 5 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சந்திப்பில், I₁ = 2 A மற்றும் I₂ = 3 A மின்னோட்டங்கள் சந்திப்பிற்குள் நுழைகின்றன, I₃ வெளியேறுகிறது. I₃ ஐ காண்க.",
+        "optionTexts": [
+          "1 A",
+          "5 A",
+          "2 A",
+          "3 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000111",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Kirchhoff's voltage law (loop rule) is a direct consequence of which conservation principle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Conservation of momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of energy",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The algebraic sum of potential differences around a closed loop is zero because energy gained/lost by a charge going around a loop must sum to zero — conservation of energy.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிர்ச்ஹாஃப் மின்னழுத்த விதி (வளைய விதி) எந்த பாதுகாப்பு தேற்றத்தின் நேரடி விளைவாகும்?",
+        "optionTexts": [
+          "மின்னூட்டப் பாதுகாப்பு",
+          "உந்தப் பாதுகாப்பு",
+          "நிறைப் பாதுகாப்பு",
+          "ஆற்றல் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000112",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a balanced Wheatstone bridge, the four arms have resistances P, Q, R and S. Which condition must hold for balance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "P + Q = R + S",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "PQ = RS",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P/Q = R/S",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "P − Q = R − S",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At balance, no current flows through the galvanometer, which requires P/Q = R/S.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சமன் நிலையில் உள்ள விட்ஸ்டன் பாலத்தில், நான்கு கரங்களும் P, Q, R மற்றும் S மின்தடைகளைக் கொண்டுள்ளன. சமநிலைக்கு எந்த நிபந்தன் பூர்ந்த வேண்டும்?",
+        "optionTexts": [
+          "P + Q = R + S",
+          "PQ = RS",
+          "P/Q = R/S",
+          "P − Q = R − S"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000113",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a Wheatstone bridge, P = 5 Ω, Q = 10 Ω and R = 15 Ω. Find S for the bridge to be balanced.",
+    "options": [
+      {
+        "label": "A",
+        "text": "30 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7.5 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At balance, P/Q = R/S, so S = QR/P = (10×15)/5 = 30 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு விட்ஸ்டன் பாலத்தில், P = 5 Ω, Q = 10 Ω மற்றும் R = 15 Ω. பாலம் சமநிலையில் இருக்க S ஐ காண்க.",
+        "optionTexts": [
+          "30 Ω",
+          "7.5 Ω",
+          "10 Ω",
+          "50 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000114",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a meter bridge, the balance point is at 40 cm from the left end, with unknown resistance X in the left gap and a standard 15 Ω in the right gap. Find X.",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "15 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "22.5 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "X/15 = 40/(100−40) = 40/60 = 2/3, so X = 15×(2/3) = 10 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மீட்டர் பாலத்தில், சமநிலைப் புள்ளி இடது முனையிலிருந்து 40 செ.மீ தூலவில் உள்ளது, தெரியாத மின்தடை X இடது இடைவெளியில்ம், நியமமான 15 Ω வலது இடைவெளியில்ம் உள்ளது. X ஐ காண்க.",
+        "optionTexts": [
+          "6 Ω",
+          "10 Ω",
+          "15 Ω",
+          "22.5 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000115",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The principle of a potentiometer is that the potential drop across any length of a uniform wire carrying a constant current is",
+    "options": [
+      {
+        "label": "A",
+        "text": "inversely proportional to its length",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "independent of its length",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "directly proportional to its length",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "proportional to the square of its length",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a uniform wire with constant current, potential drop per unit length is constant, so potential drop is directly proportional to length.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறாத மின்னோட்டத்தை கடத்தும் சீரான கம்பியின் எந்த நீளத்திலும் ஏற்படும் மின்னழுத்தக் குறைவு, பொட்டன்ஷியோமீட்டரின் தத்துவமாகும். இது எதற்கு விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "அதன் நீளத்திற்கு நேர்மாறு விகிதத்தில்",
+          "அதன் நீளத்தை காராத",
+          "அதன் நீளத்திற்கு நேர் விகிதத்தில்",
+          "அதன் நீளத்தின் வர்க்கத்திற்கு விகிதத்தில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000116",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a potentiometer experiment, the balancing lengths for two cells connected individually are 300 cm and 200 cm. Find the ratio of their EMFs.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2:3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1:1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4:9",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3:2",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "E₁/E₂ = l₁/l₂ = 300/200 = 3/2, so E₁:E₂ = 3:2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொட்டன்ஷியோமீட்டர் பரிசோதனையில், தனித்தனியாக இணைக்கப்பட்ட ஒரு மின்கலங்களுக்கான சமநிலை நீளங்கள் 300 செ.மீ மற்றும் 200 செ.மீ. அவற்றின் emf-களின் விகிதத்தை காண்க.",
+        "optionTexts": [
+          "2:3",
+          "1:1",
+          "4:9",
+          "3:2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000117",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A resistor of 10 Ω carries a current of 2 A. Find the power dissipated in it.",
+    "options": [
+      {
+        "label": "A",
+        "text": "40 W",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 W",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 W",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "80 W",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "P = I²R = (2)²×10 = 40 W.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 Ω மின்தடை கொண்ட ஒரு மின்தடையத்தில் 2 A மின்னோட்டம் பாய்கிறது. அதில் விரயமாகும் திறனை காண்க.",
+        "optionTexts": [
+          "40 W",
+          "5 W",
+          "20 W",
+          "80 W"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000118",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electric heater draws a current of 5 A from a 220 V supply. Find the heat produced in 1 minute.",
+    "options": [
+      {
+        "label": "A",
+        "text": "11 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "66 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "33 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "132 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "P = VI = 220×5 = 1100 W. Heat in 60 s: Q = Pt = 1100×60 = 66000 J = 66 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின் ஹீட்டர் 220 V மின்காரத்திலிருந்து 5 A மின்னோட்டத்தை இழுக்கிறது. 1 நிமிடத்தில் உற்பத்தியாகும் வெப்பத்தை காண்க.",
+        "optionTexts": [
+          "11 kJ",
+          "66 kJ",
+          "33 kJ",
+          "132 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000119",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two 6 Ω resistors are connected in parallel, and this combination is connected in series with a 2 Ω resistor. Find the total resistance.",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "14 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Parallel part: (6×6)/(6+6) = 3 Ω. Total = 3 + 2 = 5 Ω (series).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டு 6 Ω மின்தடையங்கள் இணையாக இணைக்கப்பட்டு, இந்த கூவு ஒரு 2 Ω மின்தடையத்துடன் தொடராக இணைக்கப்பட்டுள்ளது. மொத்த மின்தடையை காண்க.",
+        "optionTexts": [
+          "3 Ω",
+          "8 Ω",
+          "5 Ω",
+          "14 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000120",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A resistor has color bands brown, black, red, gold in order. Find its resistance value.",
+    "options": [
+      {
+        "label": "A",
+        "text": "1000 Ω ± 5%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100 Ω ± 5%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 Ω ± 5%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10000 Ω ± 5%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Brown = 1, Black = 0, Red = ×100 multiplier, Gold = ±5% tolerance. Value = 10×100 = 1000 Ω ± 5%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்தடையத்தில் பழுப்பு, கருப்பு, சிவப்பு, தங்கம் என்ற வரிசையில் நிற வளையங்கள் உள்ளன. அதன் மின்தடை மதிப்பை காண்க.",
+        "optionTexts": [
+          "1000 Ω ± 5%",
+          "100 Ω ± 5%",
+          "10 Ω ± 5%",
+          "10000 Ω ± 5%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000121",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A material whose resistance becomes exactly zero below a certain critical temperature is called a",
+    "options": [
+      {
+        "label": "A",
+        "text": "semiconductor",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "insulator",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "rectifier",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "superconductor",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "This defining property — zero resistance below a critical temperature — is the hallmark of a superconductor.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறிப்பிட்ட நிர்ணய வெப்பநிலைக்குக் கீழ் மின்தடை முற்றிலும் பூஜ்யமாகும் பொருள் எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "அரைக்கடத்தி",
+          "மின்கடத்தா பொருள்",
+          "திருத்தி (ரெக்டிபயர்)",
+          "மீக்கடத்தி (சூப்பர் கண்டக்டர்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000122",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A current of 4 A flows through a conductor of cross-sectional area 2×10⁻⁶ m². Find the current density.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2×10⁴ A/m²",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2×10⁶ A/m²",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2×10⁵ A/m²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2×10⁷ A/m²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "J = I/A = 4/(2×10⁻⁶) = 2×10⁶ A/m².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2×10⁻⁶ m² குறுக்குவெட்டுப் பரப்பளவு கொண்ட ஒரு கடத்தி வழியாக 4 A மின்னோட்டம் பாய்கிறது. மின்னோட்ட அடர்த்தியை காண்க.",
+        "optionTexts": [
+          "2×10⁴ A/m²",
+          "2×10⁶ A/m²",
+          "2×10⁵ A/m²",
+          "2×10⁷ A/m²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000123",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The drift velocity of electrons in a conductor is 2×10⁻⁴ m/s under an electric field of 100 V/m. Find the mobility of the electrons.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2×10⁻⁴ m²/(V·s)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2×10⁻² m²/(V·s)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2×10⁻⁶ m²/(V·s)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2×10² m²/(V·s)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Mobility μ = v_d/E = (2×10⁻⁴)/100 = 2×10⁻⁶ m²/(V·s).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 V/m மின்புலத்தின் கீழ், ஒரு கடத்தியில் எலக்ட்ரான்களின் இழுவை திசைவேகம் 2×10⁻⁴ m/s. எலக்ட்ரான்களின் இயக்கத்திறனை (மொபிலிட்டி) காண்க.",
+        "optionTexts": [
+          "2×10⁻⁴ m²/(V·s)",
+          "2×10⁻² m²/(V·s)",
+          "2×10⁻⁶ m²/(V·s)",
+          "2×10² m²/(V·s)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000124",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer of resistance 100 Ω gives full-scale deflection for a current of 1 mA. Find the shunt resistance needed to convert it into an ammeter reading up to 1 A.",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.01 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "S = I_g×G/(I−I_g) = (0.001×100)/(1−0.001) = 0.1/0.999 ≈ 0.1 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 Ω மின்தடை கொண்ட ஒரு கால்வனோமீட்டர் 1 mA மின்னோட்டத்திற்கு முழு அளவு விலகலைக் காட்டுகிறது. இது 1 A வரை படிக்கும் அம்மீட்டராக மாற்ற தேவையான shunt மின்தடையை காண்க.",
+        "optionTexts": [
+          "0.1 Ω",
+          "0.01 Ω",
+          "1 Ω",
+          "10 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000125",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer of resistance 50 Ω shows full-scale deflection for a current of 2 mA. Find the series resistance needed to convert it into a voltmeter of range 0–5 V.",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "500 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2500 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2450 Ω",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "R = V/I_g − G = 5/0.002 − 50 = 2500 − 50 = 2450 Ω.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "50 Ω மின்தடை கொண்ட ஒரு கால்வனோமீட்டர் 2 mA மின்னோட்டத்திற்கு முழு அளவு விலகலைக் காட்டுகிறது. இது 0–5 V வரை கொண்ட வோல்ட்மீட்டராக மாற்ற தேவையான தொடர் மின்தடையை காண்க.",
+        "optionTexts": [
+          "50 Ω",
+          "500 Ω",
+          "2500 Ω",
+          "2450 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000126",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer can be converted into a voltmeter by connecting a",
+    "options": [
+      {
+        "label": "A",
+        "text": "low resistance in parallel",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "high resistance in series",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "low resistance in series",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "high resistance in parallel",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A high resistance connected in series limits the current through the galvanometer so it can measure a larger voltage range.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வனோமீட்டர் வோல்ட்மீட்டராக மாற்ற, எது இணைக்க வேண்டும்?",
+        "optionTexts": [
+          "குறைந்த மின்தடை இணையாக",
+          "அதிக மின்தடை தொடராக",
+          "குறைந்த மின்தடை தொடராக",
+          "அதிக மின்தடை இணையாக"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000127",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For maximum current from a combination of identical cells through an external resistance R, the cells should be grouped in series when",
+    "options": [
+      {
+        "label": "A",
+        "text": "R is much greater than total internal resistance",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R is much less than the internal resistance of a single cell",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R equals zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R is negative",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Series grouping is best when external resistance dominates (R >> total internal resistance), since it maximizes total EMF without proportionally increasing total internal resistance's effect.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மாதிரியான மின்கலங்களின் கூட்டிலிருந்து ஒரு வெளி மின்தடை R வழியாக அதிகபட்ச மின்னோட்டம் பெற, எப்போது மின்கலங்கள் தொடராக குழுவாக்க வேண்டும்?",
+        "optionTexts": [
+          "R மொத்த உள் மின்தடையை விட மிக அதிகமாக இருக்கும்போது",
+          "R ஒரு மின்கலத்தின் உள் மின்தடையை விட மிகக் குறைவாக இருக்கும்போது",
+          "R பூஜ்ஜியத்திற்கு சமமாக இருக்கும்போது",
+          "R எதிர்குறியாக இருக்கும்போது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000128",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cell of EMF 6 V and internal resistance 1 Ω is connected to an external resistance of 2 Ω. Find the terminal voltage of the cell.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "6 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "I = E/(R+r) = 6/3 = 2 A. Terminal voltage V = E − Ir = 6 − (2×1) = 4 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6 V emf மற்றும் 1 Ω உள் மின்தடை கொண்ட ஒரு மின்கலம் 2 Ω வெளி மின்தடையுடன் இணைக்கப்பட்டுள்ளது. மின்கலத்தின் முனைய மின்னழுத்தத்தை காண்க.",
+        "optionTexts": [
+          "2 V",
+          "5 V",
+          "4 V",
+          "6 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000129",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The reciprocal of the resistivity of a material is called its",
+    "options": [
+      {
+        "label": "A",
+        "text": "conductance",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "resistance",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "permittivity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "conductivity",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Conductivity σ is defined as the reciprocal of resistivity ρ: σ = 1/ρ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருளின் மின்தடையீட்டின் தலைகீழ் எண் எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "கடத்துத்திறன் (conductance)",
+          "மின்தடை",
+          "விகதனம் (permittivity)",
+          "மின்கடத்தளவு (conductivity)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000130",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following does NOT obey Ohm's law?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A metallic wire at constant temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A p-n junction diode",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A carbon resistor",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A copper wire",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A p-n junction diode has a non-linear V-I characteristic and does not obey Ohm's law, unlike ohmic conductors such as metallic wires and carbon resistors at constant temperature.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் எது ஓம் விதிக்கு கீழ்ப்படியாது?",
+        "optionTexts": [
+          "மாறாத வெப்பநிலையில் உள்ள ஒரு உலோகக் கம்பி",
+          "ஒரு p-n சந்திப்பு டையோடு",
+          "ஒரு கார்பன் மின்தடையம்",
+          "ஒரு தாமிரக் கம்பி"
+        ]
+      }
+    ]
+  }
+]
