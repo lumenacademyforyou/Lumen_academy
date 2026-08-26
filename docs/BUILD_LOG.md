@@ -284,3 +284,80 @@ Next phase: TE-P5 (scorecard and review) can start — `assess.scorecard`/`secti
 populated by a real, live-proven `submitAttempt`. Before TE-P6 (HTTP surface), worth a short session
 specifically proving `enforceExpiry` and the sweeper against a real expired attempt, since this one
 didn't.
+
+## CL-2 — General-purpose content importer, CL-3 — Asset storage resolver
+Date: 26-08-2026
+Status: COMPLETE (both G3 and G4 gates cleared with the real tooling, not the manual reproduction
+`docs/CL2_DryRun_Report_Batch1.md` / `docs/CL2_DryRun_Report_Batch2-3-4.md` used because CL-2 didn't
+exist yet at the time those were written)
+Files created: db/scripts/import/import-content.ts (CL-2), db/content/asset-resolver.ts (CL-3),
+  db/scripts/prove-cl3-asset-resolver.ts
+Files modified: .env (added `OBJECT_STORAGE_BUCKET="content-assets"`)
+Migrations applied: none
+External changes: created the `content-assets` Supabase Storage bucket (public, 10MB file-size limit)
+  — none existed in the project before this phase (`storage.listBuckets()` returned 0). Public rather
+  than private/signed-URL because question diagram images need to be directly fetchable by any
+  authenticated student without a signing round-trip, and nothing in `content.asset` is
+  access-sensitive on its own (RLS/ownership is enforced at the question/attempt layer, not the
+  image). Revisit if that assumption turns out wrong.
+Stop gate output:
+```
+CL-2 dry-run, all 4 authored batches (content-batches/batch-{1..4}-*.json), real importer not a
+reproduction:
+  batch-1 (phy_02):  30/30 valid, 0 schema_error, 0 unmapped_node, 0 missing_asset
+  batch-2 (chem_08): 30/30 valid, 0 schema_error, 0 unmapped_node, 0 missing_asset  <- incl. the 5 real images
+  batch-3 (bot_07):  30/30 valid, 0 schema_error, 0 unmapped_node, 0 missing_asset
+  batch-4 (zoo_03):  30/30 valid, 0 schema_error, 0 unmapped_node, 0 missing_asset
+  Per-row JSON reports written to db/reports/import_<batch>_<timestamp>.json.
+
+CL-3 proof (db/scripts/prove-cl3-asset-resolver.ts), against a real live content.question row
+(LEGACY-13, one of TE-P3's restored fixture questions) and a real batch-2 diagram file:
+  content.asset row landed (asset_id 73354e10-c394-43bc-a9bd-7cb2fa49fd09)
+  resolveAssetUrl() -> https://<project>.supabase.co/storage/v1/object/public/content-assets/
+    question/<question_id>/CHE_SOMBAS_DIAG_0001.png
+  GET on that URL -> 200 image/png
+  CL-3 PASS
+```
+Isolated `tsc --noEmit` on all three new files: zero errors (the project-wide run still shows the
+same 2 pre-existing Prisma Decimal-type errors in `backend/services/{attempt,aiExplanation}.service.ts`
+noted in TE-P4 — unchanged, untouched by this phase).
+Deviations from LA-PLAN-002:
+- **CL-2 defaults to dry-run; `--live` is required to write anything.** The plan's Day 1 scope is
+  dry-run only (live import is explicitly a Day 2 item, gated by G3) — building the importer
+  dry-run-by-default rather than requiring a `--dry-run` opt-in makes the safe mode the one that
+  needs no flag, so a bare invocation can never accidentally write to the shared database.
+  **Only the dry-run path was actually executed this session** — live import against real data was
+  not run, per the plan's own Day 2 placement; `--live` exists and typechecks but is unproven this
+  session.
+- **CL-2 does not write `content.question_node_map` directly.** `content.trg_question_primary_node_sync`
+  (010_content_rich.sql) already inserts that row automatically on `content.question` insert/update of
+  `primary_node_id`, `on conflict (question_id, node_id) do nothing`. Writing it again from CL-2 would
+  be redundant, not incorrect, but redundant per R-12.
+- **CL-2 batch-scopes to one exam and one syllabus_version.** `content.import_batch` has exactly one
+  `exam_id`/`syllabus_version_id` column each (013_content_import.sql), so a batch file whose valid
+  rows resolve to more than one of either is refused outright before any write, rather than picking
+  one arbitrarily or splitting silently into multiple batches.
+- **CL-3's idempotency key is `content.asset.storage_uri`, checked in application code, not
+  `ON CONFLICT`.** `content.asset` has no unique constraint on `storage_uri` in any applied migration
+  — adding one just for this would be a new migration for a single caller's convenience. A
+  select-then-insert-or-update in `uploadAsset()` gets the same idempotent-reupload behaviour without
+  a schema change.
+- **Created the `content-assets` bucket and added `OBJECT_STORAGE_BUCKET` to `.env`** — both were
+  genuinely absent (confirmed via `storage.listBuckets()` returning empty, and `dbConfig.objectStorageBucket`
+  parsing as `undefined`), not an existing setup CL-3 could just point at. Flagged plainly since bucket
+  naming/visibility is a real decision, not a mechanical default: `content-assets`, public, 10MB limit.
+- **CL-3's system import user is `content-import@lumen.internal`, distinct from `02_content.ts`'s
+  `legacy-import@lumen.internal`.** Same pattern (Supabase Auth Admin API + `core.app_user` upsert,
+  `user_role='system'`), kept as a separate account so the one-time legacy migration and the ongoing
+  CL-2 pipeline don't share an identity in `content.ai_generation_job.requested_by` / `content.import_batch.submitted_by`.
+- **Imported questions land at `lifecycle_status='draft'`, not `'published'`** (unlike `02_content.ts`,
+  which was a one-shot legacy migration that published directly). CL-4 (content lifecycle service,
+  not yet built) is the intended gate from `draft` onward; skipping straight to `published` here would
+  let unreviewed authored content reach students before CL-4 exists to review it. On re-import,
+  `lifecycle_status` is deliberately left out of the `ON CONFLICT ... DO UPDATE SET` list so a
+  re-run never silently reverts an already-approved/published question back to draft.
+Inputs still required: unchanged. Real live import (Day 2) and the asset upload run over all of
+batch-1/batch-2's images (currently only 1 of 5 batch-2 images has been uploaded, as CL-3's proof)
+remain Day 2 work per the roadmap.
+Next phase: Day 2 — live import of all 4 batches via `--live`, followed by the full asset upload run
+for batch-2's remaining 4 images, per LA-PLAN-002 §4.1.
