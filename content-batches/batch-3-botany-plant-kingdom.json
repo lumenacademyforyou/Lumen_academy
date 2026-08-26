@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-BOT-BOT07-000101",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which pigment is chiefly responsible for the red colour of algae in class Rhodophyceae?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorophyll b",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fucoxanthin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "r-Phycoerythrin",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Carotene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Rhodophyceae (red algae) contain the accessory pigment r-phycoerythrin in addition to chlorophyll a and d, which masks the green of chlorophyll, giving these algae their characteristic red colour.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ரோடோஃபிசி வகுப்பில் சிவப்பு பாகிகளின் நிறத்திற்கு முதன்மையாகக் காரணமான நிறமி எது?",
+        "optionTexts": [
+          "குளோரோஃபில் b",
+          "ஃபூகோஃசாந்தின்",
+          "r-ஃபைக்கோஎரித்ரின்",
+          "கரோட்டீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000102",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the chief stored (reserve) food material in members of class Chlorophyceae?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mannitol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Starch",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Laminarin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Floridean starch",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Chlorophyceae (green algae) contain chlorophyll a and b; their chief reserve food material is starch, stored inside the chloroplast (pyrenoid).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோஃபிசி உறுப்பினர்களில் முதன்மையாகச் சேமிக்கப்படும் கணவுப் பொருள் எது?",
+        "optionTexts": [
+          "மானிட்டால்",
+          "மாவுச்சத்து",
+          "லேமினரின்",
+          "ஃப்ளோரிடியன் மாவுச்சத்து"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000103",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Fucoxanthin is the dominant accessory pigment in which class of algae, giving them a brown colour?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorophyceae",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Rhodophyceae",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phaeophyceae",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Cyanophyceae",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Phaeophyceae (brown algae) possess chlorophyll a, c, and fucoxanthin, present in the largest amount, masking other pigments and giving a brown colour.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எந்த பாகி வகுப்பில் ஃபூகோஃசாந்தின் முதன்மை துணை நிறமியாக இருந்து அவற்றிற்கு பழுப்பு நிறத்தை அளிக்கிறது?",
+        "optionTexts": [
+          "குளோரோஃபிசி",
+          "ரோடோஃபிசி",
+          "ஃபேயோஃபிசி",
+          "சயனோஃபிசி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000104",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The cell wall of brown algae (Phaeophyceae) is composed of cellulose along with which other substance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Algin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chitin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pectin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lignin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The cell wall of Phaeophyceae members is cellulose on the inside; the outer part is covered with a gelatinous, gummy substance called algin.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பழுப்பு பாகிகளின் (Phaeophyceae) செல் சுவர் செல்லுலோஸுடன் வேறு எந்தப் பொருளையும் கொண்டுள்ளது?",
+        "optionTexts": [
+          "ஆல்ஜின்",
+          "கைட்டின்",
+          "பெக்டின்",
+          "லிக்னின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000105",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is an example of class Chlorophyceae (green algae)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Polysiphonia",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ectocarpus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlamydomonas",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Fucus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Chlamydomonas is a unicellular, flagellated green alga belonging to Chlorophyceae. Ectocarpus and Fucus belong to Phaeophyceae; Polysiphonia belongs to Rhodophyceae.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் குளோரோஃபிசி (பச்சை பாகிகள்) வகுப்பிற்கு உதாரணமாகுவது எது?",
+        "optionTexts": [
+          "பாலிசிஃபோனியா",
+          "எக்டோகார்பஸ்",
+          "குளமிடோமோனாஸ்",
+          "ஃபியூகஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000106",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is an example of class Rhodophyceae (red algae)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ulothrix",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sargassum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Volvox",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gracilaria",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Gracilaria is a red alga belonging to Rhodophyceae, economically important as a source of agar. Ulothrix and Volvox belong to Chlorophyceae; Sargassum belongs to Phaeophyceae.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் ரோடோஃபிசி (சிவப்பு பாகிகள்) வகுப்பிற்கு உதாரணமாகுவது எது?",
+        "optionTexts": [
+          "உலோத்ரிக்ஸ்",
+          "சர்காசம்",
+          "வால்வாக்ஸ்",
+          "கிரசிலேரியா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000107",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Vegetative reproduction in algae most commonly occurs by which method?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fragmentation",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Conjugation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Isogamy",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oogamy",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Vegetative reproduction in algae occurs by fragmentation, where the parent filament simply breaks into two or more pieces, each growing into a new thallus.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாகிகளில் தாவர இனப்பெருக்கம் பொதுவாக எந்த முறையில் நடைபெறுகிறது?",
+        "optionTexts": [
+          "பிளவுறுதல்",
+          "கணந்திணத்தல்",
+          "ஐசோகமி",
+          "ஊகமி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000108",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Motile and flagellated structures produced during asexual reproduction in algae are called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conidia",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zoospores",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Basidiospores",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ascospores",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Asexual reproduction in algae commonly occurs through zoospores, motile flagellated structures that germinate directly into new plants.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாகிகளின் அசைவியல் இனப்பெருக்கத்தின் போது உருவாகும் நகரக்கூடிய, சவுக்குயிரும் அமைப்புகள் என்ன அழைக்கப்படும்?",
+        "optionTexts": [
+          "கோனிடியா",
+          "சூஸ்போர்கள்",
+          "பேசிடியோஸ்போர்கள்",
+          "அஸ்கோஸ்போர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000109",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A type of sexual reproduction in which the fusing gametes are dissimilar in size but similar in structure is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Isogamy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Oogamy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Anisogamy",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Conjugation",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In anisogamy, the fusing gametes are morphologically similar in shape but differ in size — distinct from isogamy (similar size and structure) and oogamy (large non-motile female gamete, small motile male gamete).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணையும் கேமீட்கள் அளவில் வேற்படுத்து, அமைப்பில் ஒரு மாதிரியாக இருக்கும் பாலிய இனப்பெருக்க வகை என்ன அழைக்கப்படும்?",
+        "optionTexts": [
+          "ஐசோகமி",
+          "ஊகமி",
+          "அனிசோகமி",
+          "கணந்திணத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000110",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Members of Phaeophyceae and Rhodophyceae are predominantly found in which habitat?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Freshwater ponds",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Marine (sea water)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Moist soil",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Inside animal bodies",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Most members of Phaeophyceae and Rhodophyceae are marine, found attached to rocks in coastal and deeper sea waters. Chlorophyceae, in contrast, are found in both fresh and marine water.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபேயோஃபிசி மற்றும் ரோடோஃபிசி உறுப்பினர்கள் பெரும்பாலும் எந்த வாழிடத்தில் காணப்படுகின்றன?",
+        "optionTexts": [
+          "நன்னீர் குளங்கள்",
+          "கடல்நீர்",
+          "ஈரமான மண்",
+          "விலங்குகளின் உடலுக்குள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000111",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the life cycle of bryophytes, which generation is dominant, photosynthetic, and free-living?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sporophyte",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gametophyte",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Protonema",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sporangium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In bryophytes, the gametophyte is the dominant, free-living, photosynthetic phase. The sporophyte is short-lived and remains attached to, and dependent on, the gametophyte.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரையோஃபைட்டுகளின் வாழ்க்கைச் சுழற்சியில், எந்த தலைமுறை ஆதிக்கம் செலுத்துவதாகவும், ஒளிச்சேர்க்கை செய்யுவதாகவும், தனித்து வாழக்கூடியதாகவும் உள்ளது?",
+        "optionTexts": [
+          "ஸ்போரோஃபைட்",
+          "கேமீட்டோஃபைட்",
+          "புரோட்டோனேமா",
+          "ஸ்போரேஞ்சியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000112",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Bryophytes are called the 'amphibians of the plant kingdom' mainly because they:",
+    "options": [
+      {
+        "label": "A",
+        "text": "live only in water",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "require water for fertilisation",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "lack roots entirely",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "have no vascular tissue",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bryophytes can live in soil, but require external/free water for the motile male gametes to swim to the female gametes for fertilisation — paralleling amphibians needing water to breed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரையோஃபைட்டுகள் 'தாவர உலகின் நீர்வாழ் தரவாழ் உயிரினங்கள்' (amphibians) எனப்படுவதற்கு முதன்மைக் காரணம் என்ன?",
+        "optionTexts": [
+          "நீரில் மட்டும் வாழக்கூடியவை",
+          "கருக்கூட்டுக்கு நீர் தேவைப்படும்",
+          "வேர்கள் முற்றிலும் இல்லாதவை",
+          "நாள திசு இல்லாதவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000113",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a commonly studied example of a liverwort?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Funaria",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Marchantia",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Selaginella",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pinus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Marchantia is a well-known liverwort with a flat, dorsiventral thalloid gametophyte. Funaria is a moss, Selaginella is a pteridophyte, and Pinus is a gymnosperm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் பொதுவாகப் படிக்கப்படும் லிவர்வொர்ட் (liverwort) வகைக்கு உதாரணமாகுவது எது?",
+        "optionTexts": [
+          "ஃபுனேரியா",
+          "மார்க்காண்டியா",
+          "செலாஜினெல்லா",
+          "பைனஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000114",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In mosses, the spore germinates first into a green, branched, filamentous stage called the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Prothallus",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Protonema",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Rhizoid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sporophyll",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In mosses, the spore first germinates into a creeping, green, filamentous protonema stage, which then produces upright, leafy gametophore shoots.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாகிகளில் (mosses), விதை முதலில் முளைத்து பச்சை நிற, கிளைத்த, இழை வடிவ நிலையை உருவாக்குகிறது, அது என்ன அழைக்கப்படும்?",
+        "optionTexts": [
+          "புரோதல்லஸ்",
+          "புரோட்டோனேமா",
+          "ரைசாய்டு",
+          "ஸ்போரோஃபில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000115",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The conspicuous, main plant body of a fern (pteridophyte) that we see growing represents which generation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gametophyte",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Protonema",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sporophyte",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Prothallus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Unlike bryophytes, in pteridophytes the sporophyte is the dominant, independent, and conspicuous phase. The gametophyte (prothallus) is small and short-lived.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நாம் பார்க்கும் ஒரு ஃபெர்ன் (pteridophyte) தாவரத்தின் முதன்மையான தாவர உடல் எந்த தலைமுறையைக் குறிக்கிறது?",
+        "optionTexts": [
+          "கேமீட்டோஃபைட்",
+          "புரோட்டோனேமா",
+          "ஸ்போரோஃபைட்",
+          "புரோதல்லஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000116",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "True vascular tissue (xylem and phloem) first appears in which group of plants?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Algae",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bryophytes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pteridophytes",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Gymnosperms",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bryophytes lack true vascular tissue (non-vascular cryptogams). Pteridophytes are the first group to possess well-differentiated vascular tissue, making them vascular cryptogams.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உண்மையான வாஸ்குலார் திசு (சைலம் மற்றும் ஃபுளோயம்) முதன்முதலில் எந்த தாவரக் குழுவில் தோன்றுகிறது?",
+        "optionTexts": [
+          "பாகிகள்",
+          "புரையோஃபைட்டுகள்",
+          "பெரிடோஃபைட்டுகள்",
+          "ஜிம்னோஸ்பெர்ம்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000117",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pteridophyte genera exhibits heterospory (production of microspores and megaspores)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pteris",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Adiantum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Selaginella",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Dryopteris",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Most pteridophytes are homosporous, like Pteris, Adiantum, and Dryopteris. Selaginella and Salvinia are exceptions, producing two kinds of spores — heterospory.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் பெரிடோஃபைட் பிரினங்களில் எது ஏரோஸ்போரி (heterospory) — நுண்விதை மற்றும் பெரிவிதை உற்பத்தியைக் காட்டுகிறது?",
+        "optionTexts": [
+          "டெரிஸ்",
+          "அடியாண்டம்",
+          "செலாஜினெல்லா",
+          "ட்ரையாப்டெரிஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000118",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In ferns, the clusters of sporangia found on the undersurface of the leaves (fronds) are called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sori",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cones",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Antheridia",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Archegonia",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In ferns, sporangia are borne in clusters on the undersurface of the sporophylls (fronds). These clusters are called sori (singular: sorus).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபெர்ன்களில், இலைகளின் (fronds) அடிப்பரப்பில் காணப்படும் ஸ்போரங்கியத் தொகுதிகள் என்ன அழைக்கப்படும்?",
+        "optionTexts": [
+          "சோரி",
+          "கூம்புகள்",
+          "ஆண் உறுப்பு",
+          "பெண் உறுப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000119",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Pteridophytes are classified into four classes. Which of the following is NOT one of them?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Psilopsida",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lycopsida",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sphenopsida",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bryopsida",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The four classes of pteridophytes are Psilopsida, Lycopsida, Sphenopsida, and Pteropsida. Bryopsida is a class of mosses (bryophytes), not pteridophytes.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெரிடோஃபைட்டுகள் நான்கு வகுப்புகளாக வகுப்படுத்தப்பட்டுள்ளன. பின்வருவனவற்றுள் அன்று இல்லாதது எது?",
+        "optionTexts": [
+          "சைலோப்சிடா",
+          "லைக்கோப்சிடா",
+          "ஸ்பீனோப்சிடா",
+          "பிரையோப்சிடா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000120",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a commonly studied example of a moss?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Marchantia",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Funaria",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Pteris",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Riccia",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Funaria is a widely-studied moss with erect, leafy gametophore shoots. Marchantia and Riccia are liverworts, while Pteris is a fern.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் பொதுவாகப் படிக்கப்படும் பாகி (moss) வகைக்கு உதாரணமாகுவது எது?",
+        "optionTexts": [
+          "மார்க்காண்டியா",
+          "ஃபுனேரியா",
+          "டெரிஸ்",
+          "ரிக்கியா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000121",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The term 'gymnosperm' (naked seed) refers to the fact that the seeds are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "not enclosed within a fruit",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "produced without fertilisation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "found only underground",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "lacking a seed coat",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In gymnosperms, the ovules are not enclosed by an ovary wall; the resulting seeds are 'naked', not enclosed within a fruit, unlike in angiosperms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "'ஜிம்னோஸ்பெர்ம்' (naked seed / நிர்வாண விதை) என்னும் சொல் எதைக் குறிக்கிறது?",
+        "optionTexts": [
+          "கனிக்குள் அடைக்கப்படாதவை",
+          "கருக்கூட்டல் இல்லாமல் உருவாக்கப்படுபவை",
+          "நிலத்திற்கு அடியில் மட்டும் காணப்படும்",
+          "விதைத்தோல் இல்லாதவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000122",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a well-known example of a gymnosperm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Marchantia",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pinus",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Funaria",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Spirogyra",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Pinus (pine) is a widely studied gymnosperm, along with Cycas and Cedrus. Marchantia and Funaria are bryophytes; Spirogyra is an alga.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் நன்கறியப்படும் ஜிம்னோஸ்பெர்ம் தாவரத்திற்கு உதாரணமாகுவது எது?",
+        "optionTexts": [
+          "மார்க்காண்டியா",
+          "பைனஸ்",
+          "ஃபுனேரியா",
+          "ஸ்பைரோகைரா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000123",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Gymnosperm leaves are often needle-like with a thick cuticle and sunken stomata. This is an adaptation to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "excess humidity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "extreme temperature, humidity and wind (xerophytic conditions)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "constant flooding",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "low light intensity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Many gymnosperms grow in habitats with extremes of temperature, humidity, and wind. Needle-like leaves with a thick cuticle and sunken stomata reduce water loss, typical of xerophytes.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜிம்னோஸ்பெர்ம் இலைகள் பெரும்பாலும் ஊசி வடிவமான, தடிமனான க்யூட்டிக்கிள் மற்றும் ஆழ்ந்த மூய இலைத்துளைகளுடன் இருக்கும். இது எந்த சூழலுக்கான தகவமைப்பு?",
+        "optionTexts": [
+          "அதிக ஈரப்பதம்",
+          "அதீத வெப்பநிலை, ஈரப்பதம் மற்றும் காற்று (வறட்சி தாங்கும் சூழல்)",
+          "தொடர்ச்சியான வெள்ளச் சூழல்",
+          "குறைந்த ஒளியின் தீவிரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000124",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a haplontic life cycle, which stage/phase is diploid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only the zygote",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Only the gametes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both gametophyte and sporophyte equally",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The entire life cycle",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a haplontic life cycle, the dominant, free-living phase is the haploid gametophyte. Meiosis occurs immediately after the diploid zygote is formed, so the zygote is the only diploid structure.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹாப்லாண்டிக் வாழ்க்கைச் சுழற்சியில், எந்த நிலை/தலைமுறை டிப்ளாயிட் ஆகும்?",
+        "optionTexts": [
+          "ஜைகோட் மட்டும்",
+          "கேமீட்கள் மட்டும்",
+          "கேமீட்டோஃபைட் மற்றும் ஸ்போரோஃபைட் இரண்டும் சமமாக",
+          "முழு வாழ்க்கைச் சுழற்சியும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000125",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a diplontic life cycle (as seen in gymnosperms), which stage/phase is haploid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Only the gametes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The sporophyte",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both gametophyte and sporophyte",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The zygote",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a diplontic life cycle, the diploid sporophyte is the dominant, independent, photosynthetic phase. Meiosis occurs at gamete formation, so only the gametes are haploid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டிப்ளாண்டிக் வாழ்க்கைச் சுழற்சியில் (ஜிம்னோஸ்பெர்ம்களில் காணப்படுவது போல), எந்த நிலை ஹாப்ளாயிட் ஆகும்?",
+        "optionTexts": [
+          "கேமீட்கள் மட்டும்",
+          "ஸ்போரோஃபைட்",
+          "கேமீட்டோஃபைட் மற்றும் ஸ்போரோஃபைட் இரண்டும்",
+          "ஜைகோட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000126",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A life cycle pattern showing a clear alternation of generations, where both the gametophytic and sporophytic phases are multicellular, is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Haplontic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Diplontic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Haplo-diplontic",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Aplanospontic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a haplo-diplontic life cycle, both the gametophyte and sporophyte are multicellular. One phase is haploid, the other diploid, and they alternate — seen in bryophytes and pteridophytes.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேமீட்டோஃபைட் மற்றும் ஸ்போரோஃபைட் ஆகிய இரு தலைமுறைகளும் பல செல்களுக்கு கொண்டதா, தலைமுறை மாற்றம் தெளிவாக காணப்படும் வாழ்க்கை சுழற்சி வகை என்ன அழைக்கப்படும்?",
+        "optionTexts": [
+          "ஹாப்லாண்டிக்",
+          "டிப்ளாண்டிக்",
+          "ஹாப்லோ-டிப்ளாண்டிக்",
+          "அப்லானோஸ்பாண்டிக்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000127",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In gymnosperms, the male and female gametophytes are highly reduced and:",
+    "options": [
+      {
+        "label": "A",
+        "text": "are completely independent of the sporophyte",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "remain retained on, and nutritionally dependent on, the sporophyte",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "undergo photosynthesis independently",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "do not produce gametes at all",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Unlike in pteridophytes, gymnosperm gametophytes are not free-living; they remain retained within the sporangia, entirely dependent on the sporophyte for nutrition.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜிம்னோஸ்பெர்ம்களில், ஆண் மற்றும் பெண் கேமீட்டோஃபைட்டுகள் மிகவும் குறுகியவையாக இருந்து:",
+        "optionTexts": [
+          "ஸ்போரோஃபைட்டிலிருந்து முற்றிலும் சுயேச்சையானவை",
+          "ஸ்போரோஃபைட்டின் மீது தங்கி, ஊட்டச்சத்திற்காக அதையே சார்ந்திருக்கும்",
+          "சுயேச்சையாக ஒளிச்சேர்க்கை மேற்கொள்ளும்",
+          "பாலணுக்களையே உருவாக்காது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000128",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Pollination in most gymnosperms is typically carried out by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Insects (entomophily)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Water (hydrophily)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Wind (anemophily)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Birds (ornithophily)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Gymnosperms typically produce large quantities of light, dry pollen grains dispersed by wind currents to reach the female cones — anemophily.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெரும்பாலான ஜிம்னோஸ்பெர்ம்களில் மகரந்தச் சேர்க்கை பொதுவாக எதன் மூலம் நடைபெறுகிறது?",
+        "optionTexts": [
+          "பூச்சிகள் (பூச்சி மூலம் மகரந்தச் சேர்க்கை)",
+          "நீர் (நீர் மூலம் மகரந்தச் சேர்க்கை)",
+          "காற்று (காற்று மூலம் மகரந்தச் சேர்க்கை)",
+          "பறவைகள் (பறவை மூலம் மகரந்தச் சேர்க்கை)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000129",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Cycas is described as a dioecious plant. What does this mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Male and female cones are on the same plant",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Male and female cones are on separate, distinct plants",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The plant has no cones at all",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The plant reproduces only asexually",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In dioecious gymnosperms like Cycas, individual plants bear either only male cones or only female cones, never both — unlike monoecious gymnosperms like Pinus.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சைகாஸ் (Cycas) ஒரு டையீசியஸ் (dioecious) தாவரம் என விவரிக்கப்படுகிறது. இதன் பொருள் என்ன?",
+        "optionTexts": [
+          "ஆண் மற்றும் பெண் கூம்புகள் ஒரு தாவரத்தில் இருக்கும்",
+          "ஆண் மற்றும் பெண் கூம்புகள் தனித்தனி தாவரங்களில் இருக்கும்",
+          "தாவரத்தில் கூம்புகள் இல்லவே இல்லை",
+          "தாவரம் பாலிலா இனப்பெருக்கத்தாலேயே மட்டும் பெருகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000130",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In gymnosperm seeds, the formation of endosperm occurs:",
+    "options": [
+      {
+        "label": "A",
+        "text": "after fertilisation, like in angiosperms",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "before fertilisation, from the female gametophyte",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "never — gymnosperm seeds lack endosperm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "only in male cones",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In gymnosperms, the female gametophyte develops into the nutritive tissue while still haploid — a pre-fertilisation event, unlike the post-fertilisation endosperm of angiosperms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜிம்னோஸ்பெர்ம் விதைகளில், எண்டோஸ்பெர்ம் உருவாவது எப்போது நடைபெறுகிறது?",
+        "optionTexts": [
+          "கருக்கூட்டல் நடந்த பின்னர், ஆஞ்சியோஸ்பெர்மில் உள்ளதுபோல",
+          "கருக்கூட்டலுக்கு முன், பெண் கரிணக் கோலத்தலியிலிருந்து",
+          "ஒருபோதும் இல்லை — நிர்வாண விதைத் தாவரங்களின் விதைகளில் எண்டோஸ்பெர்ம் இல்லை",
+          "ஆண் கூம்புகளில் மட்டும்"
+        ]
+      }
+    ]
+  }
+]
