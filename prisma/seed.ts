@@ -1,8 +1,8 @@
 import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../backend/src/generated/prisma/client.js";
-import { ALL_QUESTIONS } from "../database_sample/questions.js";
-import { SYLLABUS_UNITS } from "../database_sample/syllabusData.js";
+import { ALL_QUESTIONS } from "../frontend/src/data/questions.js";
+import { SYLLABUS_UNITS } from "../frontend/src/data/syllabusData.js";
 
 const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 const prisma = new PrismaClient({ adapter });

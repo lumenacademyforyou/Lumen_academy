@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { ALL_QUESTIONS } from "../../../database_sample/questions.js";
+import { ALL_QUESTIONS } from "../../../frontend/src/data/questions.js";
 import { pool } from "../../shared/pool.js";
 import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 

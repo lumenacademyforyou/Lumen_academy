@@ -1,4 +1,4 @@
-import { SYLLABUS_UNITS } from "../../../database_sample/syllabusData.js";
+import { SYLLABUS_UNITS } from "../../../frontend/src/data/syllabusData.js";
 import { pool } from "../../shared/pool.js";
 
 // STAGE 1 — seed catalog.exam, catalog.subject, catalog.syllabus_version,
