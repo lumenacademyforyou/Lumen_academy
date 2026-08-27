@@ -45,7 +45,7 @@ confirmed idempotent (run twice, identical result both times):
   first `super_admin` (also previously zero — the "cannot revoke the last
   super_admin" trigger had nothing to protect until now), one institution
   (`LUMEN-PILOT-001`), and one fixture user of every type. Left live/
-  persistent (not test data) — see `db/CORE_LAYER_OPERATIONS.md`.
+  persistent (not test data) — see `docs/CORE_LAYER_OPERATIONS.md`.
 
 ## Separate migration track: legacy `public` schema (Prisma)
 Distinct from the above. The `public` schema (`users`, `questions`,
@@ -137,8 +137,8 @@ deleted:
    checks.
 
 ## Next session should
-Read this file first, then `db/CORE_LAYER_ENDPOINTS.md` and
-`db/CORE_LAYER_OPERATIONS.md` if touching identity/auth/admin. The migration
+Read this file first, then `docs/CORE_LAYER_ENDPOINTS.md` and
+`docs/CORE_LAYER_OPERATIONS.md` if touching identity/auth/admin. The migration
 backlog is clear on both tracks (000–015 + Prisma's two) — next work here is
 either the `public` vs. raw-SQL convergence decision above, the
 `core.educator_profile`/automatic-lockout/bulk-ops gaps

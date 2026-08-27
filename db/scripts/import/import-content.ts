@@ -3,7 +3,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { pool } from "../../shared/pool.js";
-import { getSupabaseAdmin } from "../../../backend/supabaseAdmin.js";
+import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 import { QuestionAuthoringSchema, type QuestionAuthoring } from "../../../schemas/question-authoring.schema.js";
 import { uploadAsset } from "../../content/asset-resolver.js";
 

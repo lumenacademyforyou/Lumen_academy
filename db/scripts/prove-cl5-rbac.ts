@@ -1,5 +1,5 @@
 import { pool } from "../shared/pool.js";
-import { roleSetHasPermission } from "../../backend/lib/permissions.js";
+import { roleSetHasPermission } from "../../backend/src/lib/permissions.js";
 
 // CL-5 proof (partial — LA-PLAN-002 Day 2 "first pass") — proves the exact
 // authorization decision requirePermission makes for each content:*

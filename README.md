@@ -49,7 +49,7 @@ tests/                        # Playwright or unit tests
 package.json                  # Root scripts and dependency list
 vite.config.ts                # Frontend build config
 prisma.config.ts              # Prisma / DB helper config
-HAPPY_PATH.md                 # User journey & architecture reference
+docs/HAPPY_PATH.md            # User journey & architecture reference
 README.md                     # (this file)
 ```
 
@@ -110,7 +110,7 @@ npm start
 ## Testing & QA
 - Playwright is configured for E2E tests (playwright.config.ts). Run `npm test` to execute test suite.
 - Unit tests for backend can be executed with Node test runner (see package.json `test:unit`).
-- Use the `HAPPY_PATH.md` document to replicate the expected user journey and manual QA scenarios.
+- Use the `docs/HAPPY_PATH.md` document to replicate the expected user journey and manual QA scenarios.
 
 ## Database & migrations
 - Schema lives under `prisma/` (edit schema.prisma).
@@ -140,7 +140,7 @@ npm start
   - Type check passes
   - Tests (unit + E2E) added/updated for feature
   - Migration files included if DB changes are required
-  - Update HAPPY_PATH.md or README sections if flows change
+  - Update docs/HAPPY_PATH.md or README sections if flows change
 
 ## Troubleshooting
 - "Cannot connect to DB": verify DATABASE_URL and allowlist IPs on managed DB provider.
@@ -150,7 +150,7 @@ npm start
 ## Try asking
 - "Where are the question banks located for NEET topics?" — check `database/questions.ts` and `prisma/seed.ts`.
 - "How do I run the backend server with hot reload?" — use `npm run dev:api`.
-- "Which env vars are required to run the Supabase admin tasks?" — check `.env.example` and `backend/supabaseAdmin.ts`.
+- "Which env vars are required to run the Supabase admin tasks?" — check `.env.example` and `backend/src/lib/supabaseAdmin.ts`.
 
 ## License & contact
 - LICENSE: (Add your project license file here)

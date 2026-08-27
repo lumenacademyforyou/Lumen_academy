@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import type { Pool, PoolClient } from "pg";
-import { getSupabaseAdmin } from "../../backend/supabaseAdmin.js";
+import { getSupabaseAdmin } from "../../backend/src/lib/supabaseAdmin.js";
 import { dbConfig } from "../config/env.js";
 import { pool } from "../shared/pool.js";
 

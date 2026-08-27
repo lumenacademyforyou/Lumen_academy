@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ALL_QUESTIONS } from "../../../database_sample/questions.js";
 import { pool } from "../../shared/pool.js";
-import { getSupabaseAdmin } from "../../../backend/supabaseAdmin.js";
+import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 
 // STAGE 2 — migrate database_sample/questions.ts into content.question /
 // question_option / question_solution / question_translation.

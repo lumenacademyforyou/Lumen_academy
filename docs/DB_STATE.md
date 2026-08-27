@@ -2,7 +2,7 @@
 
 Produced by querying the live Supabase Postgres 16 database directly (`npx tsx db/scripts/query.ts`)
 on 2026-08-25. Supersedes brief Section 1.6's estimate for everything below. Where this file and
-`db/MIGRATION_STATE.md` (prior session, 2026-08-23) disagree, **this file wins** — it was verified
+`docs/MIGRATION_STATE.md` (prior session, 2026-08-23) disagree, **this file wins** — it was verified
 live today; `MIGRATION_STATE.md` describes state that no longer exists (see "Data reality vs
 MIGRATION_STATE.md" at the end).
 
@@ -307,7 +307,7 @@ verifying/renaming something already there.
   `backend/db.js` by `backend/routes/api.ts` (health check only) and `backend/services/attempt.service.ts`
   (the entire legacy `/api/tests/*` attempt flow — see `docs/ENGINE_STATE.md` §"Attempt path trace").
 
-## 8. Data reality vs `db/MIGRATION_STATE.md`
+## 8. Data reality vs `docs/MIGRATION_STATE.md`
 
 `MIGRATION_STATE.md` (2026-08-23, prior session) is accurate about **schema/DDL state** — every
 migration+verify pair it lists as applied is confirmed still applied today, and its Prisma-track

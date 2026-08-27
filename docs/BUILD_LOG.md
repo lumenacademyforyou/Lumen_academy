@@ -145,7 +145,7 @@ Deviations from LA-BE-ENGINE-001:
 - Reused this repository's own pre-existing, already-committed seed scripts
   (`db/scripts/seed/{00_core_roles,01_catalog,02_content,02_core_lifecycle_fixture,03_assess_fixture}.ts`)
   to restore the institution, five role-fixture accounts, and 20 real (not fabricated) legacy
-  questions that `db/MIGRATION_STATE.md` recorded as created in an earlier session but which
+  questions that `docs/MIGRATION_STATE.md` recorded as created in an earlier session but which
   docs/DB_STATE.md found were no longer live. Chosen over writing new placeholder-data scripts per
   the user's explicit instruction to build now against placeholder/seed data and swap in real
   confirmed inputs later — and because these scripts already existed, were idempotent, and used real

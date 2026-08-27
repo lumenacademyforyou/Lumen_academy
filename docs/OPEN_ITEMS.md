@@ -60,7 +60,7 @@ reads of the repository — see that file for full detail; this file is the delt
 ## Prisma / dual-schema risk (brief §1.6, "highest-risk item")
 
 - **Brief assumed:** "two coexisting schema definitions... a known drift risk," framed as something
-  TE-P0 must assess for the first time. **Actual:** `db/MIGRATION_STATE.md` (a prior session, dated
+  TE-P0 must assess for the first time. **Actual:** `docs/MIGRATION_STATE.md` (a prior session, dated
   2026-08-23) already assessed and applied both Prisma migrations, already flagged the
   converge/coexist/supersede question as open, and already made a narrower working decision for
   identity specifically (`core.app_user` canonical, `public.users` kept alive for FK reasons). TE-P0
@@ -125,7 +125,7 @@ reads of the repository — see that file for full detail; this file is the delt
 
 ## Data (not a §1.6/§1.7 path/schema item, but load-bearing for TE-P1's planning)
 
-- **`db/MIGRATION_STATE.md` (prior session, not the brief, but worth flagging the same way):**
+- **`docs/MIGRATION_STATE.md` (prior session, not the brief, but worth flagging the same way):**
   claimed persistent fixture data (an institution, a super_admin account, demo/e2e student accounts
   with attempt history) as "left live/persistent." None of it is present in the live database today
   — see `docs/DB_STATE.md` §8 for the full comparison. Whatever changed the data between

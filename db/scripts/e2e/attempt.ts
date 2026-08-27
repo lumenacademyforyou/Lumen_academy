@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { createClient } from "@supabase/supabase-js";
-import { getSupabaseAdmin } from "../../../backend/supabaseAdmin.js";
+import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 import { pool } from "../../shared/pool.js";
 
 // STAGE 6 — end-to-end attempt proof against the LIVE server (must be

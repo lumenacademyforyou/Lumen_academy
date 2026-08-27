@@ -16,8 +16,8 @@ below is read from the repository and the live database as they stand.
 - A Prisma-generated client (`backend/generated/prisma/`) and one `PrismaClient` instance
   (`backend/db.ts`), used by `backend/services/attempt.service.ts` (the `/api/tests/*` flow) and by
   the health check.
-- A complete core/identity layer (LA-BE-CORE-002, documented in `db/CORE_LAYER_ENDPOINTS.md` /
-  `db/CORE_LAYER_OPERATIONS.md`) — RBAC, invitations, admin user lifecycle, RLS lockdown. Not this
+- A complete core/identity layer (LA-BE-CORE-002, documented in `docs/CORE_LAYER_ENDPOINTS.md` /
+  `docs/CORE_LAYER_OPERATIONS.md`) — RBAC, invitations, admin user lifecycle, RLS lockdown. Not this
   phase's concern beyond confirming it's real and not mock (it is: `core.role`/`permission`/
   `role_permission` are seeded and read by `backend/lib/permissions.ts` via `pool`, no hardcoded
   role table anywhere).
@@ -187,7 +187,7 @@ Reasoning:
   would leave the raw-SQL path — which still has the unresolved 500-instead-of-4xx handling gap —
   as the sole path with no fallback.
 - Running `prisma db pull` against the whole database is actively dangerous here and not just
-  theoretically: `db/MIGRATION_STATE.md` already records one incident this project caused
+  theoretically: `docs/MIGRATION_STATE.md` already records one incident this project caused
   (`schema.prisma` overwritten and had to be reconstructed from migration diffs) from exactly this
   command, and `catalog/core/content/assess/learn` were deliberately built outside `public` so that
   PostgREST — and, by the same logic, Prisma's introspection — never has to model them (brief
