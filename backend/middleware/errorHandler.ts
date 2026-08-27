@@ -32,7 +32,10 @@ const DB_ERROR_STATUS: [new (...args: never[]) => Error, { status: number; code:
   [NotFoundError, { status: 404, code: "NOT_FOUND" }],
   [DuplicateKeyError, { status: 409, code: "DUPLICATE_KEY" }],
   [ForeignKeyViolationError, { status: 409, code: "FK_VIOLATION" }],
-  [InvalidStateTransitionError, { status: 409, code: "ATTEMPT_INVALID_TRANSITION" }],
+  // Generic — thrown by both assess.attempt transitions and content.question
+  // lifecycle transitions (CL-4); not attempt-specific despite the class's
+  // original name.
+  [InvalidStateTransitionError, { status: 409, code: "INVALID_STATE_TRANSITION" }],
   [ConcurrentWriteError, { status: 409, code: "CONCURRENT_WRITE" }],
   [TestNotPublishedError, { status: 409, code: "TEST_NOT_PUBLISHED" }],
   [TestWindowClosedError, { status: 409, code: "TEST_WINDOW_CLOSED" }],

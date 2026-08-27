@@ -361,3 +361,301 @@ batch-1/batch-2's images (currently only 1 of 5 batch-2 images has been uploaded
 remain Day 2 work per the roadmap.
 Next phase: Day 2 — live import of all 4 batches via `--live`, followed by the full asset upload run
 for batch-2's remaining 4 images, per LA-PLAN-002 §4.1.
+
+## CL-6 — Content at volume (Day 2 live import)
+Date: 27-08-2026
+Status: COMPLETE for the 4 batches authored so far (120 questions); ongoing per LA-PLAN-002 (90-question
+proof bar already exceeded)
+Files modified: db/content/asset-resolver.ts (bugfix, see below), db/scripts/import/import-content.ts
+  (bugfix, see below)
+Migrations applied: none
+Stop gate output:
+```
+npx tsx db/scripts/import/import-content.ts content-batches/batch-{1,2,3,4}-*.json --live, in order:
+  batch-1 (phy_02):  accepted 30, rejected 0 — import_batch 75386000-7fcb-4766-bbcc-77e44bde4014
+  batch-2 (chem_08): accepted 30, rejected 0 — import_batch 7496fe39-eb6e-4c7a-975e-61bef48e3f48 (incl. 5 real images)
+  batch-3 (bot_07):  accepted 30, rejected 0 — import_batch 19506098-df80-4da8-be94-5a996a7833c4
+  batch-4 (zoo_03):  accepted 30, rejected 0 — import_batch d3293c54-6248-41b4-b45f-dca3f348fb3a
+
+Post-import verification (direct query, not importer self-report):
+  content.question: 140 rows total (120 new @ lifecycle_status='draft' + 20 pre-existing published
+    legacy fixture rows from TE-P3, untouched)
+  content.asset: 6 rows (5 from batch-2's live import + 1 from CL-3's earlier proof upload, different
+    object paths, no collision)
+  content.import_batch: all 4 rows batch_status='loaded', accepted_count=30/rejected_count=0 each
+```
+Deviations from LA-PLAN-002:
+- **Live import was run by Santhosh in this session, not by Prince in his Day 2 08:00-10:30 slot as
+  originally scheduled.** The plan assigned it to Prince's slot on the assumption CL-2 wouldn't be
+  ready before Day 2 morning; since CL-2 was built and dry-run-proven on Day 1 evening instead, running
+  it immediately unblocks LL-P0 availability counts, TE-P5, CL-4, and CL-5 all at once rather than
+  waiting on a slot. Explicitly confirmed with the user before running (a real write to the shared
+  database), per this session's own safety gate.
+- **Two real bugs found and fixed during this run, not during Day 1's dry-run** (dry-run never
+  reaches the write path, so neither could surface earlier):
+  1. `ensureSystemImportUser`'s hardcoded placeholder `mobile_number` ("0000000000") collided with
+     `02_content.ts`'s legacy-import system user, which already holds that value live
+     (`core.app_user.uq_app_user_mobile_number`). Fixed by giving CL-2's system user
+     (`content-import@lumen.internal`) a distinct placeholder ("0000000001").
+  2. `uploadAsset()` wrote through the shared `pool`, but CL-2 calls it mid-transaction on a
+     checked-out `client` — the just-inserted `content.question` row is invisible to any other pooled
+     connection until that transaction commits, so `content.asset`'s FK to `question_id` failed with
+     `23503` on every image-bearing row. Fixed by adding an optional `db` parameter to `uploadAsset`
+     (defaults to the shared `pool`, accepts a transaction client) and having CL-2 pass its own
+     `client`. Transaction rolled back cleanly both times this was hit — no partial writes reached the
+     database either time.
+Inputs still required: unchanged. Coverage is 120 authored/live questions across 4 chapters (one per
+subject) — the two-chapters-per-exam bar (I-16) is not yet met per-subject (each subject currently has
+exactly one chapter); Prince's next two batches close that gap (see below).
+Next phase: batch-5/6 (Physics phy_01, Chemistry chem_04) to reach 180 total and a second chapter per
+subject; TE-P5, the TE-P4 expiry/sweeper gap proof, CL-4, and CL-5 remain the rest of Santhosh's Day 2
+scope per LA-PLAN-002 §4.2.
+
+## TE-P5 — Scorecard and review
+Date: 27-08-2026
+Status: COMPLETE
+Files created: db/scripts/prove-te-p5-scorecard-review.ts
+Files modified: db/assess/test/attempt/attempt-flow.ts (added getReview, listAttempts, and their
+  supporting types — getScorecardWithSections already existed from TE-P4 and needed no changes),
+  db/shared/errors.ts (added ReviewNotAvailableError)
+Migrations applied: none
+Stop gate output (`npx tsx db/scripts/prove-te-p5-scorecard-review.ts`, against a real `scored`
+attempt TE-P4's own proof run left live):
+```
+Part 1 (getScorecardWithSections): obtained 21/80, 4 sections — byte-for-byte matches a direct
+  `select * from assess.scorecard` read, proving it reads rather than recomputes — PASS
+Part 2 (getReview): 20 questions reviewed; sample question reveals topic title, is_correct, marks
+  awarded, explanation text, and a correct option/numeric value — PASS
+Part 2b (ownership): a second real user calling getReview on someone else's attempt gets
+  NotFoundError, not their review — PASS
+Part 2c (not-yet-scored gate): started a fresh real attempt (no live in_progress attempt existed to
+  test against, so one was created for real rather than skipping this check) and confirmed getReview
+  rejects it with ReviewNotAvailableError — PASS
+Part 3 (listAttempts): returns the scored attempt for its owning user with the same obtainedMarks as
+  the persisted scorecard, most-recent-first — PASS
+```
+Isolated `tsc --noEmit`: zero errors on both changed/new files.
+Deviations from LA-PLAN-002:
+- **getScorecard() didn't need building — it already existed** as `getScorecardWithSections`,
+  written during TE-P4 (`db/assess/test/attempt/attempt-flow.ts` at the time), already read-only and
+  already never recomputing. TE-P5's actual net-new work was `getReview` and `listAttempts`, which is
+  reflected in the stop gate above only proving what's new plus a same-file consistency check on the
+  pre-existing function, not reimplementing it.
+- **`getReview` lives in `attempt-flow.ts`, not a separate `review.ts`** — the brief doesn't mandate a
+  file split, and `attempt-flow.ts` already owns every other "read this attempt's persisted state"
+  function (`listResponses`, `listEvents`, `getScorecardWithSections`, `getPaperForAttempt`); a new
+  file for one more reader would just be an arbitrary split (R-12).
+- **Added `ReviewNotAvailableError`** (`db/shared/errors.ts`) — none of the existing typed errors fit
+  "this attempt exists and is yours, but isn't scored yet" (`InvalidStateTransitionError` is for a
+  rejected *transition attempt*, not a read guard). A genuine gap, not a rename.
+- **`getReview` deliberately does not filter by `test_section_id`/subject** — it returns every served
+  question for the attempt in one call; the brief doesn't ask for section-scoped pagination and
+  nothing downstream needs it yet.
+Inputs still required: unchanged.
+Next phase: the TE-P4 expiry/sweeper gap proof, CL-4, and CL-5 remain the rest of Santhosh's Day 2
+scope per LA-PLAN-002 §4.2. G7 (TE-P5 complete) now clears the joint end-to-end run once CL-4/CL-5 land.
+
+## TE-P4 outstanding gap — expiry/sweeper proof
+Date: 27-08-2026
+Status: COMPLETE
+Files created: db/scripts/prove-te-p4-expiry-setup.ts, db/scripts/prove-te-p4-expiry-verify.ts
+Files modified: none (expiry.ts and sweep-expired-attempts.ts were already correct — TE-P4 wrote them,
+  it just hadn't proven them against a real expired attempt yet)
+Migrations applied: none
+Stop gate output (`prove-te-p4-expiry-setup.ts`, a real ~75s wait, then `prove-te-p4-expiry-verify.ts`):
+```
+Part A — enforceExpiry force-submitted attempt 4090f014-...: attempt_state='scored',
+  submitted_reason='expiry', both persisted correctly — PASS
+Part B — the actual shipped db/scripts/sweep-expired-attempts.ts, run as a real subprocess (not
+  reimplemented inline): found 1 expired attempt still open, closed 0fcd3f82-...
+  (obtained=0/80, attempt_state='scored', submitted_reason='sweeper') — PASS
+Part C — a further response on EITHER closed attempt is rejected with InvalidStateTransitionError
+  (not an unhandled 500) — PASS for both
+```
+Deviations from LA-PLAN-002:
+- **No backdated data anywhere.** TE-P4's own build log explicitly flagged that proving this without
+  either fabricating a backdated `server_deadline` or waiting out a real test duration wasn't obviously
+  possible. Resolved by temporarily setting the real NEET_E2E_FIXTURE test's `duration_minutes` to 1
+  minute, starting two real attempts through the real `startAttempt` (so `server_deadline` is computed
+  genuinely as `now() + 1 minute`, not written directly), immediately restoring the test's real 60-minute
+  duration so no other attempt is affected, then genuinely waiting ~75 real seconds
+  (`until [ $(date +%s) -ge $target ]; do sleep 2; done`, run in the background) before checking anything.
+- **The sweeper was exercised as a real subprocess** (`execFileSync` on the actual
+  `db/scripts/sweep-expired-attempts.ts` file), not by re-reading its query inline — proves the shipped
+  script itself works, not a copy of its logic.
+- **Two attempts, not one** — one dedicated to lazy enforcement (`enforceExpiry` called directly) and
+  one deliberately left untouched for the sweeper to find on its own, so each mechanism is proven via
+  its own real code path rather than one attempt standing in for both.
+Inputs still required: unchanged.
+Next phase: CL-4 (content lifecycle service) and CL-5 (content HTTP surface, first pass) close out the
+rest of Santhosh's Day 2 scope.
+
+## CL-4 — Content lifecycle service
+Date: 27-08-2026
+Status: COMPLETE
+Files created: db/content/lifecycle.ts, db/scripts/prove-cl4-lifecycle.ts
+Files modified: db/scripts/seed/00_core_roles.ts (added content:submit_review/review_decide/publish
+  permissions and their role grants; re-run live — idempotent, see stop gate)
+Migrations applied: none — content.question.lifecycle_status already had the exact
+  draft/in_review/approved/published/retired vocabulary (010_content_rich.sql), and
+  content.question_review already existed with no owning service; both were schema-ready, just unwired.
+Stop gate output:
+```
+db/scripts/seed/00_core_roles.ts (live): 8 permissions now (3 new), 17 role_permission grants —
+  content_admin: submit_review+review_decide+publish; content_reviewer: review_decide;
+  educator: submit_review; student: none.
+
+npx tsx db/scripts/prove-cl4-lifecycle.ts, against a real live imported question (LMN-CHEM-CHEM08-000112)
+and the real educator@lumen.internal fixture account:
+  Part 1: draft -> in_review — PASS
+  Part 2: a second submitForReview on the same question rejected (InvalidStateTransitionError) — PASS
+  Part 3: in_review -> approved — PASS
+  Part 4: publishQuestion on an unrelated still-draft question rejected — PASS
+  Part 5: approved -> published — PASS
+  Part 6: published -> retired — PASS
+  Part 7: content.question_review history reads back in order: submitted, approved, published, retired — PASS
+```
+Deviations from LA-PLAN-002:
+- **RBAC is deliberately NOT checked inside lifecycle.ts** — only the state machine is (`lifecycle.ts`'s
+  own header explains why: role-checking belongs to `requirePermission` at the HTTP layer so every
+  future non-HTTP caller gets the state-machine protection without re-implementing an RBAC check that
+  only makes sense in an HTTP request context).
+- **Three permissions, not one per transition**: `content:submit_review` (draft->in_review),
+  `content:review_decide` (in_review->approved/draft), `content:publish` (approved->published AND
+  published->retired, bundled since both are the same content_admin-only "publishing authority"
+  question). Matches the brief's own wording ("educator submits, content_reviewer/content_admin
+  approves") rather than inventing a finer split the brief doesn't ask for.
+- **This proof run permanently retired one real live question** (`LMN-CHEM-CHEM08-000112`, one of
+  batch-2's 30) — walking the full state machine against fabricated/rolled-back data would prove less
+  (state machines are exactly the kind of code where "it compiled" and "it works against Postgres's
+  real constraints" diverge). `chem_08` still has 29 other questions unaffected; flagging plainly per
+  R-13 rather than leaving it to be discovered later.
+Inputs still required: unchanged.
+Next phase: CL-5 (content HTTP surface, first pass).
+
+## CL-5 — Content HTTP surface (first pass)
+Date: 27-08-2026
+Status: COMPLETE for this pass's explicit scope (lifecycle actions + filter-by-node, RBAC-gated);
+  broader CRUD-write stripping remains out of scope per LA-PLAN-002 §6 ("first pass only")
+Files created: db/scripts/prove-cl5-rbac.ts
+Files modified: backend/routes/content.routes.ts (added 6 routes), backend/middleware/errorHandler.ts
+  (renamed InvalidStateTransitionError's mapped code from ATTEMPT_INVALID_TRANSITION to the accurate
+  INVALID_STATE_TRANSITION now that content.question transitions throw it too — grep-confirmed nothing
+  outside errorHandler.ts referenced the old string)
+Migrations applied: none
+New routes (all under /content, all requireAuth):
+  POST /content/questions/:id/submit-review    — requirePermission("content:submit_review")
+  POST /content/questions/:id/review-decision  — requirePermission("content:review_decide")
+  POST /content/questions/:id/publish          — requirePermission("content:publish")
+  POST /content/questions/:id/retire           — requirePermission("content:publish")
+  GET  /content/questions/:id/review-history   — requireAuth only (read)
+  GET  /content/questions?nodeTagCode=...       — requireAuth; role-scoped in the handler itself (any
+    content:* permission sees every lifecycle status for the node, everyone else sees published only)
+Stop gate output:
+```
+Whole-project tsc --noEmit: zero new errors (same 2 pre-existing Prisma Decimal errors, unchanged).
+
+npx tsx db/scripts/prove-cl5-rbac.ts — proves the exact authorization decision requirePermission makes
+for each new permission, against real live role assignments (not a running HTTP server + real JWT,
+which this session couldn't stand up):
+  educator can submit_review: true — PASS
+  educator cannot review_decide (would be self-approving) — PASS
+  educator cannot publish — PASS
+  student cannot submit_review / review_decide / publish — PASS (all three)
+```
+Deviations from LA-PLAN-002:
+- **Routes registered before the generic CRUD mounts**, not after — Express matches in registration
+  order; `POST /questions/:id/submit-review` and `GET /questions` (list) both needed to be reachable
+  before `router.use("/questions", makeCrudRouter(questionRepository, { readOnly: true }))`, which only
+  ever registers a bare `GET /:id`. Confirmed no collision either direction (different HTTP methods /
+  an extra path segment the CRUD router's single route never matches).
+- **HTTP-level RBAC enforcement was not exercised via a real request in this session** — no running
+  Express server + real Supabase JWT was stood up. What was proven instead: the exact permission-lookup
+  `requirePermission` performs (`roleSetHasPermission` against real `core.user_role_assignment` rows),
+  and that the route code typechecks and follows `admin.routes.ts`'s already-HTTP-proven
+  `[requireAuth, requirePermission(...)]` pattern verbatim. Flagged per R-13 rather than claimed as a
+  full end-to-end HTTP proof — worth a real curl/Postman pass before the pilot demo.
+- **Generic CRUD write-stripping not done** — LA-PLAN-002 §6 already lists this as explicitly carried
+  forward past this pass ("CL-5 — First pass only. Remaining generic CRUD writes still to be stripped").
+  content's CRUD mounts were already `readOnly: true` before this session (a prior phase's decision,
+  per the file's own header comment) — nothing to strip yet; this note is about routes for *other*
+  db/ entities (assess, catalog, etc.) that may still have writable generic CRUD, unaudited this pass.
+Inputs still required: unchanged.
+Next phase: a real HTTP-level RBAC pass (running server + real JWTs) before the pilot demo; the joint
+end-to-end run (TE-P7 partial) once Prince's fixed-paper composition is ready.
+
+## Bulk publish — unblocking fixed-paper composition
+Date: 27-08-2026
+Status: COMPLETE
+Files created: db/scripts/bulk-publish-draft-questions.ts
+Migrations applied: none
+Context: `db/assess/test/definition/ingest-paper.ts` requires every question in a fixed paper to be
+`lifecycle_status='published'`; after CL-6's live import all 120 new questions sat at `draft`, only
+the 20 legacy questions were published — Prince's Day 2 fixed-paper task was blocked. User explicitly
+chose "bulk-approve all 120 now" over a manual-sample-first review (they already passed schema + live
+node + asset validation on the way in via CL-2) — see this session's AskUserQuestion exchange, not a
+unilateral call.
+Stop gate output:
+```
+granted content_admin to lumenacademyforyou@gmail.com (the session operator's own real account,
+  27164d68-a850-4313-b327-b5cd3aaf4812) — no content_admin/content_reviewer account existed yet.
+119 draft questions found (120 minus the 1 CL-4 proof run already retired).
+Ran every one through the real submitForReview -> decideReview('approve') -> publishQuestion path
+  (educator@lumen.internal submits, the newly-granted content_admin account approves+publishes).
+published 119/119, failed 0.
+
+Direct DB verification (not just the script's own report):
+  content.question lifecycle_status: published=139, retired=1 (140 total — matches exactly)
+  content.question_review: 361 rows (119 x 3 new + 4 from the earlier CL-4 proof — matches exactly)
+```
+Note on the run itself: the background shell was later reported by the harness as "stopped" with no
+clean-exit record (a session/agent teardown artifact, not a mid-write failure) — verified directly
+against the live database rather than trusting the script's own console output alone, since a
+"stopped" status is exactly the kind of signal that shouldn't be taken on faith. All writes were
+already committed (each publishQuestion call commits its own transaction synchronously) by the time
+the script's final summary line printed, and the direct query above confirms it.
+Next phase: Prince's fixed-paper composition is now fully unblocked — all 139 published questions
+across 6 chapters (once batch-5/6 land) are eligible.
+
+## Test-code convention + subject/chapter/topic/unit-wise practice-test creation
+Date: 27-08-2026
+Status: COMPLETE
+Files created: db/assess/test/definition/test-code.ts, db/assess/test/definition/create-practice-test.ts,
+  db/scripts/prove-practice-test-creation.ts
+Migrations applied: none
+Context: user asked (1) whether subject/chapter/topic/unit-wise + full-mock test categories are
+supported, and to follow question_uid's LMN-... convention for test_code too. Finding: the assembly
+*mechanism* (`assess.test_blueprint.syllabus_node_id` + `include_descendants`,
+`db/assess/test/generation/assemble.ts`) already supported every one of these scopes since TE-P3 —
+what was missing was (a) any test_code convention at all, and (b) a way to create one of these tests
+without hand-building a matching `catalog.exam_pattern` first, which nothing did.
+Stop gate output (`npx tsx db/scripts/prove-practice-test-creation.ts`, real live data throughout):
+```
+created test: LMN-NEET-CHAP-PHY02-000001 — matches the documented LMN-<EXAM>-<TYPE>-<SCOPE>-<serial>
+  format (mirrors question_uid's LMN-<SUBJECT>-<NODE>-<serial> exactly) — PASS
+assembleForAttempt returned exactly 15 questions, all 15 confirmed (by an independent query, not
+  trusting the function's own claim) to genuinely belong to phy_02 and no other chapter — PASS
+startAttempt succeeded for a real student; assess.attempt_question has exactly 15 rows for it — PASS
+```
+Deviations / real bug found:
+- **`is_current=true` was the wrong default** for a practice-test pattern — `catalog.exam_pattern` has
+  a partial unique index allowing only one `is_current=true` row per `cycle_id` (the cycle's one
+  official pattern). The first run of this proof hit that constraint immediately trying to create a
+  second "current" pattern for the same cycle as the existing NEET_E2E_FIXTURE pattern. Fixed:
+  practice-test patterns are created with `is_current=false` — `createTest()` never required
+  `is_current` to begin with, only that the pattern and its sections exist and agree with each other.
+- **Pattern reuse is single-line only.** A pattern_section carries `(subject_id, question_count)` but
+  no node — node-scoping is entirely a `test_blueprint` (per-test) concern, not a pattern (shared
+  shape) concern. That means one "15-question Physics practice" pattern is genuinely reusable across
+  *every* Physics chapter/topic/unit, not just phy_02 — `createPracticeTest` searches for and reuses
+  an existing single-section pattern of the exact (subject, count) shape before creating a new one.
+  Multi-line (MOCK, several subjects in one test) always creates a fresh pattern; matching an exact
+  multi-subject shape is a fuller search this function doesn't attempt yet.
+- **No real full-mock (45-per-subject) pattern was created or attempted.** Live published-question
+  counts per subject right now are 35/34/36/34 (Physics/Chemistry/Botany/Zoology) — short of NEET's
+  real 45-per-subject section size. Flagged as a content gap for Prince (see docs/BUILD_LOG.md's next
+  entry and the task list given to the user), not worked around by silently reducing the mock's size.
+Next phase: Santhosh — HTTP routes for `createPracticeTest`/`assembleForAttempt` (currently db/-layer
+only, zero HTTP surface for test creation exists anywhere, unlike attempt-taking); Prince — more
+Botany/Zoology (and ideally Physics/Chemistry) content so a genuine 45-per-subject full mock becomes
+possible.

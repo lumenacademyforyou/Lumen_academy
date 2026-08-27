@@ -129,7 +129,7 @@ async function ensureSystemImportUser(): Promise<string> {
      values ($1, $2, $3, $4, $5, $6)
      on conflict (auth_user_id) do update set auth_user_id = excluded.auth_user_id
      returning user_id`,
-    [authUserId, IMPORT_EMAIL, "0000000000", "Content Import System (CL-2)", "system", "active"]
+    [authUserId, IMPORT_EMAIL, "0000000001", "Content Import System (CL-2)", "system", "active"]
   );
   return appUserRes.rows[0].user_id;
 }
@@ -363,6 +363,7 @@ async function main() {
           optionId: img.targetRole === "option" && img.optionLabel ? optionIdByLabel.get(img.optionLabel) : undefined,
           targetRole: img.targetRole,
           altText: img.altText,
+          db: client, // question row is uncommitted — must write via the same transaction client, not the shared pool
         });
       }
 
