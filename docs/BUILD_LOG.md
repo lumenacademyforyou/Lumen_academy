@@ -659,3 +659,57 @@ Next phase: Santhosh — HTTP routes for `createPracticeTest`/`assembleForAttemp
 only, zero HTTP surface for test creation exists anywhere, unlike attempt-taking); Prince — more
 Botany/Zoology (and ideally Physics/Chemistry) content so a genuine 45-per-subject full mock becomes
 possible.
+
+## HTTP surface: test creation, envelope, pause/resume, review, list-attempts
+Date: 27-08-2026
+Status: COMPLETE
+Files created: none
+Files modified: backend/controllers/attemptFlowController.ts (5 new handlers: getEnvelope,
+  pauseAttempt, resumeAttempt, getReviewHandler, listOwnAttempts), backend/routes/assess.routes.ts
+  (5 new attempt routes + POST /tests/practice)
+Migrations applied: none
+Context: Prince's coverage-verification report (`docs/CL2_Coverage_Verification.md`) independently
+flagged that `LMN-NEET-CHAP-PHY02-000001` (yesterday's practice-test proof) shows "0 questions wired"
+when checked through `assess.test_question` — correct observation, not a bug: BLUEPRINT-mode tests
+(everything `createPracticeTest` makes) never populate `test_question` at all, only
+`assess.attempt_question`, and only once a student actually starts an attempt. The real gap this
+exposed: `getPaperForAttempt` (the only "fetch a test's questions" route that existed) only ever reads
+`test_question`, so BLUEPRINT-mode tests — including every practice test this session's new feature
+creates — had no way to actually be served over HTTP. `getAttemptEnvelope` (built in TE-P4, mode-
+agnostic, R-9-safe) already solved this and was sitting unwired.
+New routes (all under /api/assess/attempts, all requireAuth + requireAttemptOwnership except the list):
+```
+GET  /attempts                    -> listOwnAttempts (TE-P5, own attempts, optional ?testId=)
+GET  /attempts/:attemptId/envelope -> getAttemptEnvelope (mode-agnostic; the actual fix for the gap above)
+POST /attempts/:attemptId/pause   -> pauseAttempt
+POST /attempts/:attemptId/resume  -> resumeAttempt
+GET  /attempts/:attemptId/review  -> getReview (TE-P5)
+POST /api/assess/tests/practice   -> createPracticeTest (SUBJ/CHAP/TOPIC/UNIT; requireAuth only —
+  any signed-in user can generate their own practice test, same as any consumer test-prep app; auto-
+  publishes the created test immediately since a self-serve ad-hoc test has no reviewer)
+```
+Stop gate output:
+```
+Whole-project tsc --noEmit: zero new errors (same 2 pre-existing Prisma Decimal errors, unchanged).
+
+Real server boot (npx tsx backend/server.ts) + real HTTP requests, not just typecheck:
+  GET /api/health -> 200 {"status":"ok", "db":"up", ...}
+  GET /api/assess/attempts (no token) -> 401 (route matched — requireAuth ran and correctly rejected;
+    a 404 would have meant the route itself wasn't wired)
+  POST /api/assess/tests/practice (no token) -> 401 (same)
+```
+Deviations from LA-PLAN-002:
+- **Full authenticated HTTP proof (a real 200 with real content) was not done** — no real Supabase JWT
+  was obtained for a fixture account this session (would need either a known password for
+  `signInWithPassword` or a magic-link exchange flow, neither attempted). What was proven instead:
+  the server boots clean with all new imports/routes wired, and every new route is reachable and
+  correctly gated (401, not 404 or 500). Flagged per R-13, same caveat as CL-5's earlier RBAC proof —
+  worth a real curl/Postman pass with a live token before the pilot demo.
+- **getPaper (FIXED-mode-only) was left mounted, not replaced** — matches TE-P4's own note that
+  retiring it is TE-P6's job. getEnvelope is additive.
+- **/tests/practice is intentionally open to any authenticated user, not RBAC-gated** — unlike CL-5's
+  content:* routes, creating a practice test doesn't touch shared content, only a new assess.test row
+  scoped to the creator's own use; gating it behind a permission would block the exact self-serve use
+  case it exists for.
+Inputs still required: unchanged. Next phase: a real authenticated HTTP pass before the pilot demo;
+frontend wiring (Phase 4, out of the current two-day window).

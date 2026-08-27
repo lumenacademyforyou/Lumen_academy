@@ -10,8 +10,13 @@ import {
   appendEvent,
   getScorecardWithSections,
   getPaperForAttempt,
+  pauseAttempt as pauseAttemptFlow,
+  resumeAttempt as resumeAttemptFlow,
+  getReview,
+  listAttempts,
   type BatchResponseItem,
 } from "../../db/assess/test/attempt/attempt-flow.js";
+import { getAttemptEnvelope } from "../../db/assess/test/attempt/envelope.js";
 
 // Real (non-mock) attempt lifecycle, backed by db/assess/test/attempt/attempt-flow.ts.
 // Separate from the legacy mock attemptController.submitAttempt (still mounted
@@ -133,6 +138,58 @@ export async function getScorecard(req: Request, res: Response, next: NextFuncti
       return;
     }
     res.json({ data: { scorecard, sectionScores } });
+  } catch (err) {
+    next(err);
+  }
+}
+
+// --- TE-P4/TE-P5 additions, wired to HTTP for the first time here.
+
+// Mode-agnostic replacement for getPaper (reads assess.attempt_question, not
+// assess.test_question — getPaper only ever worked for FIXED-mode tests;
+// every BLUEPRINT-mode test, including the new subject/chapter/topic/unit-
+// wise practice tests, has nothing in test_question at all). Not replacing
+// the getPaper route itself (still mounted, still used by whatever the
+// frontend currently calls) — adding this alongside it, per TE-P4's own note
+// that retiring the old route is TE-P6's job, not done here either.
+export async function getEnvelope(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    res.json({ data: await getAttemptEnvelope(req.params.attemptId, req.user!.appUserId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+export async function pauseAttempt(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    await pauseAttemptFlow(req.params.attemptId, req.user!.appUserId);
+    res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+}
+
+export async function resumeAttempt(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    await resumeAttemptFlow(req.params.attemptId, req.user!.appUserId);
+    res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+}
+
+export async function getReviewHandler(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    res.json({ data: await getReview(req.params.attemptId, req.user!.appUserId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+export async function listOwnAttempts(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    const testId = typeof req.query.testId === "string" ? req.query.testId : undefined;
+    res.json({ data: await listAttempts(req.user!.appUserId, testId) });
   } catch (err) {
     next(err);
   }
