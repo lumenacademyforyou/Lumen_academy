@@ -99,12 +99,14 @@ export async function createPracticeTest(input: CreatePracticeTestInput): Promis
 
   let patternId: string;
   let patternSectionIds: string[];
+  let patternWasCreatedThisCall = false;
 
   const reusable = input.lines.length === 1 ? await findReusableSingleLinePattern(cycleId, schemeId, input.lines[0]) : null;
   if (reusable) {
     patternId = reusable.patternId;
     patternSectionIds = [reusable.patternSectionId];
   } else {
+    patternWasCreatedThisCall = true;
     const totalQuestions = input.lines.reduce((sum, l) => sum + l.pickCount, 0);
     const totalMarks = (Number(correctMarks) * totalQuestions).toString();
 
@@ -157,14 +159,27 @@ export async function createPracticeTest(input: CreatePracticeTestInput): Promis
     },
   }));
 
-  return createTest({
-    testCode,
-    patternId,
-    createdBy: input.createdBy,
-    title: input.title,
-    examId: input.examId,
-    sourceType: "generated",
-    durationMinutes: input.durationMinutes,
-    sections,
-  });
+  // See db/scripts/compose-fixed-paper-i17.ts's identical comment: createTest()
+  // manages its own internal transaction and has no visibility into the
+  // pattern/sections just inserted above via bare pool.query calls, so a
+  // failure here can't roll those back on its own. Only clean up a pattern
+  // this call actually created — never delete a reused, possibly-shared one.
+  try {
+    return await createTest({
+      testCode,
+      patternId,
+      createdBy: input.createdBy,
+      title: input.title,
+      examId: input.examId,
+      sourceType: "generated",
+      durationMinutes: input.durationMinutes,
+      sections,
+    });
+  } catch (err) {
+    if (patternWasCreatedThisCall) {
+      await pool.query(`delete from catalog.pattern_section where pattern_id = $1`, [patternId]);
+      await pool.query(`delete from catalog.exam_pattern where pattern_id = $1`, [patternId]);
+    }
+    throw err;
+  }
 }

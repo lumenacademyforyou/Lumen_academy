@@ -87,8 +87,8 @@ export async function createTest(input: CreateTestInput): Promise<CreatedTest> {
   try {
     await client.query("begin");
 
-    const patternRes = await client.query<{ pattern_id: string; total_questions: number }>(
-      `select pattern_id, total_questions from catalog.exam_pattern where pattern_id = $1`,
+    const patternRes = await client.query<{ pattern_id: string; total_questions: number; total_marks: string }>(
+      `select pattern_id, total_questions, total_marks from catalog.exam_pattern where pattern_id = $1`,
       [input.patternId]
     );
     if (patternRes.rowCount === 0) {
@@ -126,8 +126,8 @@ export async function createTest(input: CreateTestInput): Promise<CreatedTest> {
     const testRes = await client.query<{ test_id: string; test_status: string }>(
       `insert into assess.test
          (test_code, pattern_id, cycle_id, created_by, title, test_mode, exam_id, source_type,
-          duration_minutes, window_opens_at, window_closes_at, test_status)
-       values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, 'draft')
+          duration_minutes, window_opens_at, window_closes_at, test_status, total_marks)
+       values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, 'draft', $12)
        returning test_id, test_status`,
       [
         input.testCode,
@@ -141,6 +141,7 @@ export async function createTest(input: CreateTestInput): Promise<CreatedTest> {
         input.durationMinutes ?? null,
         input.windowOpensAt ?? null,
         input.windowClosesAt ?? null,
+        pattern.total_marks,
       ]
     );
     const testId = testRes.rows[0].test_id;

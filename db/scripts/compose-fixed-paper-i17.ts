@@ -245,22 +245,41 @@ async function main() {
   if (systemUserRes.rowCount === 0) throw new Error("system app_user 'legacy-import@lumen.internal' not found");
   const createdBy = systemUserRes.rows[0].user_id;
 
-  const createdTest = await createTest({
-    testCode,
-    patternId,
-    cycleId,
-    createdBy,
-    title: spec.title,
-    testMode: spec.testMode,
-    examId,
-    sourceType: "authored",
-    durationMinutes: spec.durationMinutes,
-    sections: resolvedSections.map((s) => ({
-      patternSectionId: patternSectionIdBySeq.get(s.sequenceNo)!,
-      sectionName: s.sectionName,
-      sequenceNo: s.sequenceNo,
-    })),
-  });
+  // createTest() manages its own internal transaction (assess.test +
+  // test_section only) — it has no visibility into the catalog.exam_pattern/
+  // pattern_section rows just inserted above via bare pool.query calls, so a
+  // createTest() failure here can't roll those back on its own. Caught for
+  // real once already (a bad test_mode value orphaned a pattern + 4
+  // sections, cleaned up by hand) — this best-effort cleanup covers exactly
+  // that failure mode. It deliberately does NOT try to clean up after
+  // ingestFixedPaper failing below: by then assess.test/test_section already
+  // exist and reference the pattern, so deleting it would violate their own
+  // FK — that messier partial state is left for a human to inspect instead
+  // of auto-repaired.
+  let createdTest: Awaited<ReturnType<typeof createTest>>;
+  try {
+    createdTest = await createTest({
+      testCode,
+      patternId,
+      cycleId,
+      createdBy,
+      title: spec.title,
+      testMode: spec.testMode,
+      examId,
+      sourceType: "authored",
+      durationMinutes: spec.durationMinutes,
+      sections: resolvedSections.map((s) => ({
+        patternSectionId: patternSectionIdBySeq.get(s.sequenceNo)!,
+        sectionName: s.sectionName,
+        sequenceNo: s.sequenceNo,
+      })),
+    });
+  } catch (err) {
+    console.error(`createTest failed — cleaning up the now-orphaned pattern ${patternId} and its ${patternSectionIdBySeq.size} section(s) before re-throwing`);
+    await pool.query(`delete from catalog.pattern_section where pattern_id = $1`, [patternId]);
+    await pool.query(`delete from catalog.exam_pattern where pattern_id = $1`, [patternId]);
+    throw err;
+  }
   console.log(`assess.test: ${createdTest.testId} (${createdTest.testCode}), status=${createdTest.testStatus}`);
 
   const ingestResult = await ingestFixedPaper({

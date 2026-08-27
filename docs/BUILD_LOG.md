@@ -713,3 +713,42 @@ Deviations from LA-PLAN-002:
   case it exists for.
 Inputs still required: unchanged. Next phase: a real authenticated HTTP pass before the pilot demo;
 frontend wiring (Phase 4, out of the current two-day window).
+
+## I-17 — fixed paper seeded live (closes the gap Prince's coverage-verification flagged)
+Date: 27-08-2026
+Status: COMPLETE — I-17 goes from GAP to PASS
+Files modified: db/scripts/compose-fixed-paper-i17.ts (bugfix + orphan-cleanup safety net, both below),
+  db/scripts/paper-i17-composition.json (`testMode: "mock"` -> `"exam"`),
+  db/assess/test/definition/create-practice-test.ts (same orphan-cleanup safety net),
+  db/assess/test/definition/create-test.ts (real gap fix: now sets assess.test.total_marks from the
+  pattern — previously left null for every test created through this function, including
+  NEET_E2E_FIXTURE's total_marks=80 only existing because that fixture was seeded by different, older
+  raw SQL that set it directly)
+Migrations applied: none
+Author of the composition work: Prince (`docs/I17_Fixed_Paper_Composition.md` — 139 questions, 4
+sections, answer key independently cross-checked 139/139, dry-run-verified, held for explicit
+go-ahead before writing live, per this session's own protocol). Santhosh ran the live seed.
+Stop gate output:
+```
+First live attempt failed: ck_test_mode rejected testMode="mock" (valid: practice/timed/exam/
+  diagnostic) — a real bug in the composition JSON, not caught by the dry-run because dry-run never
+  reaches createTest()'s insert. Left an orphaned catalog.exam_pattern + 4 pattern_section rows
+  (created via bare pool.query before createTest()'s own transaction, so createTest's failure/rollback
+  had no visibility into them) — confirmed genuinely orphaned (no assess.test referenced the pattern)
+  before deleting by hand.
+Fixed testMode to "exam"; added a best-effort cleanup (delete the pattern+sections it just created) to
+  both compose-fixed-paper-i17.ts and create-practice-test.ts for any future createTest() failure in
+  this position — same latent bug existed in both scripts, fixed in both.
+Re-ran live: exam_pattern created (version_no=1001, is_current=false), 4 pattern_section rows, test_code
+  LMN-NEET-MOCK-ALL-000001, assess.test_question: 139 rows inserted. Published (test_status='published').
+Backfilled total_marks=556 on this row directly (matches Prince's sheet), and fixed createTest() itself
+  to set it from the pattern for every future test, not just this one.
+Follow-up verification (Prince's own doc requested this): per-section counts read back from the live
+  database — Physics 35, Chemistry 34, Botany 36, Zoology 34, total 139 — exact match to
+  docs/I17_Fixed_Paper_Composition.md's sheet. Zero duplicate questions within the paper.
+```
+Deviations: none beyond the bugfixes above, which were real defects surfaced by the live run itself
+(exactly why dry-run alone isn't sufficient sign-off for a write path — noted for future scripts in
+this family).
+Next phase: the joint end-to-end run — LMN-NEET-MOCK-ALL-000001 is now a real, published, 139-question
+fixed paper ready to sit.
