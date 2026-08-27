@@ -282,5 +282,148 @@ config exists to change.
 
 ---
 
-*(Phase 3/4 verification output and the final executed mapping will be appended
-below as each step completes.)*
+## 11. Phase 3 — verification (actual output)
+
+`npx tsc --noEmit -p frontend/tsconfig.json` → **0 errors.**
+
+`npx tsc --noEmit -p backend/tsconfig.json` → **6 errors, all pre-existing**
+(confirmed by regenerating the Prisma client fresh at its new path and
+re-running — identical errors before and after):
+```
+backend/src/services/aiExplanation.service.ts(89,64): 'hitCount' does not exist on AiCache update input
+backend/src/services/attempt.service.ts(43,5) / (44,5): Type 'Decimal' is not assignable to type 'number'
+backend/src/services/attempt.service.ts(239,5): ScoringInput.marks: Decimal vs number
+backend/src/services/attempt.service.ts(356,28) / (364,26) / (409,24): score: Decimal vs number
+```
+These are drift between `prisma/schema.prisma`'s `Decimal` fields and
+hand-written interfaces expecting `number` — unrelated to file paths.
+`prisma/schema.prisma`'s own header comment already flags it as
+"reconstructed... not guaranteed byte-identical to the original." Left
+untouched, as instructed for pre-existing failures.
+
+`npx tsc --noEmit` (root config, whole repo — what `npm run typecheck`/`lint`
+actually runs) → same 6 errors, nothing else. Confirms the restructure
+introduced zero errors anywhere in `db/`, `prisma/`, `schemas/`, or the
+seed scripts.
+
+`npm run build` (`vite build && esbuild backend/src/server.ts ...`) →
+**succeeds.** Vite transformed 3005 modules and produced a separate chunk
+for every lazy-loaded page (`AdminView`, `AnalyticsView`, `CourseAreaView`,
+`DashboardView`, `EvaluatingView`, `LandingView`, `LobbyView`, `ProfileView`,
+`SystemCheckView`, `TestListView`, `TestTakingView`) plus `syllabusData` —
+confirming every dynamic `import()` in `App.tsx` resolved. esbuild bundled
+`dist/server.cjs` with no new warnings (the one pre-existing warning, about
+`import.meta` in the generated Prisma client under `--format=cjs`, is
+intrinsic to bundling any Prisma client this way and unrelated to its
+new path).
+
+Runtime checks:
+- `npx tsx backend/src/server.ts` boots cleanly and logs the healthy-start
+  message — proves every route/controller/service/middleware/`db/` import
+  across the whole backend resolves at module-load time, not just under `tsc`.
+- `GET /` → `{"status":"ok", ...}`. `GET /api/health` → `{"status":"ok","db":"up",...}`
+  (live Supabase connection succeeded). `GET /api/questions` → 139 real
+  questions returned. `GET /api/syllabus` → `200`. Route table intact.
+- `npx vite` dev server: `GET /` serves `index.html`; `GET /frontend/src/main.tsx`
+  → `200` (entry script resolves through the new `publicDir`/root config);
+  `GET /lumen-logo.png` → `200` (public-asset fallback path still resolves
+  from the relocated `frontend/public/`).
+- A repo-wide sweep for stale old-path import patterns (old component
+  bucket names, bare `../db.js`/`../supabaseAdmin.js`, `backend/{controllers,
+  routes,...}/` outside `src/`, `frontend/lib`, `database_sample`) found none
+  remaining in active code — only inert comments and historical status docs
+  (see §12).
+
+## 12. Phase 4 — report
+
+### Final `old → new` mapping as executed
+Matches §8 exactly as planned, with one addition not anticipated in Phase 1:
+`database_sample/questions.ts` did not survive as a clean rename (git shows
+delete+add, not rename) because its content was rewritten (arrays emptied)
+in the same step it moved — see §6.
+
+### Every import rewritten, grouped by file
+- **db/ doc tidy (commit 1):** no imports touched, doc-only + `README.md`
+  cross-reference fixes (`docs/OPEN_ITEMS.md`, `docs/ENGINE_STATE.md`,
+  `docs/DB_STATE.md`, `docs/BUILD_LOG.md`, `docs/CORE_LAYER_OPERATIONS.md`,
+  `docs/MIGRATION_STATE.md`, `README.md`).
+- **backend/ move (commit 2):** `backend/src/{server.ts, lib/db.ts,
+  lib/supabaseAdmin.ts, lib/supabaseClient.ts}` (config.js → config/env.js);
+  `backend/src/services/ai/{index.ts, providers/openrouter.ts}` (config.js
+  path depth); `backend/src/services/aiExplanation.service.ts` (db.js → lib/db.js,
+  ai/* → ./ai/*); 9 files' `../db.js`/`../supabaseAdmin.js`/`../supabaseClient.js`
+  → `../lib/...`; 18 files / 46 occurrences of `../../db/...` → `../../../db/...`;
+  5 reverse-coupling files outside backend (`db/content/asset-resolver.ts`,
+  `db/scripts/e2e/attempt.ts`, `db/scripts/import/import-content.ts`,
+  `db/scripts/seed/02_content.ts`, `db/scripts/prove-cl5-rbac.ts`) plus
+  `prisma/seed.ts`'s generated-client import.
+- **frontend/ move (commit 3):** `App.tsx` (14 import lines), `main.tsx` (1),
+  5 `services/*.ts` files (supabase.js path fixes), `components/layout/
+  {Header,SplashView}.tsx`, `components/ui/NotificationBell.tsx`,
+  3 `components/ui/dashboard/*.tsx` files (+1 depth level each), all 14
+  `pages/*.tsx` files (uniform −1 depth level, applied via 14 distinct
+  find/replace patterns), plus 3 cross-tier seed-script/`prisma/seed.ts`
+  fixes for the `database_sample/` → `frontend/src/data/` move.
+
+### Every config value changed, with old and new value
+| File | Old | New |
+|---|---|---|
+| `index.html` | `src="/frontend/main.tsx"` | `src="/frontend/src/main.tsx"` |
+| `vite.config.ts` | `alias['@'] = __dirname` (repo root); no `publicDir` | `alias['@'] = __dirname/frontend/src`; `publicDir = __dirname/frontend/public` |
+| `tsconfig.json` (root) | `paths: {"@/*": ["./*"]}` | `paths: {"@/*": ["./frontend/src/*"]}` |
+| `backend/tsconfig.json` | *(new)* | `{"extends": "../tsconfig.json", "include": ["src"]}` |
+| `frontend/tsconfig.json` | *(new)* | `{"extends": "../tsconfig.json", "include": ["src"]}` |
+| `prisma/schema.prisma` | `output = "../backend/generated/prisma"` | `output = "../backend/src/generated/prisma"` |
+| `.gitignore` | `/backend/generated/prisma` | `/backend/src/generated/prisma` |
+| `package.json` `dev:api` | `tsx watch backend/server.ts` | `tsx watch backend/src/server.ts` |
+| `package.json` `build` | `esbuild backend/server.ts ...` | `esbuild backend/src/server.ts ...` |
+| `package.json` `test:unit` | `--test "backend/**/*.test.ts"` | `--test "backend/src/**/*.test.ts"` |
+
+No changes to `playwright.config.ts`, `.env.example`, or any oxlint/Tailwind/
+PostCSS config (none of the latter three exist in this repo).
+
+### DELETE_CANDIDATES
+| File | Evidence |
+|---|---|
+| `backend/src/middleware/tenancyScope.ts` | Grepped repo-wide for `tenancyScope`, `requireOwnInstitution`, `getCallerInstitutionId` — zero references outside its own file. Its own header comment confirms this is deliberate ("not wired into any route yet... built ahead of the phase that needs it"), not an accidental orphan. **Not deleted**, per rule 2 — flagged only. |
+| `db/reports/*.json` (23 files) | Timestamped, contributor-machine-path-embedding generated run output, currently git-tracked unlike `backend/generated/prisma`. Not unreferenced by code, just inconsistent with the repo's own generated-artifact convention. **Not deleted** — out of scope (not a layout question), flagged for a separate decision. |
+
+No other unreferenced files were found — the three research agents' exhaustive
+import-graph audit (§3) found zero orphans in `frontend/` or `db/`, and only
+the one in `backend/`.
+
+### Pre-existing failures not touched
+The 6 `Decimal`/`hitCount` type errors in `backend/src/services/{attempt,
+aiExplanation}.service.ts` — see §11.
+
+### Anything skipped and why
+- **`shared/types/`** — omitted. Nothing in the current codebase is imported
+  by both `frontend/` and `backend/`; forcing an empty folder into existence
+  would contradict the target tree's own placement rule.
+- **Root `scripts/`** — omitted. Every operational script that exists lives
+  under `db/scripts/` already and is domain-specific; there was nothing
+  left over to populate a generic top-level `scripts/`.
+- **`content-batches/`, `schemas/`, `prisma/`** — left at repo root as
+  standalone "other" folders (per the user's own framing: hold frontend/
+  backend/db's respective files in those three, everything else stays
+  outside). Their only consumers (`db/scripts/*`) didn't move, so no import
+  changes were needed for them beyond the 2 files noted above.
+- **`db/`'s internal domain-layer structure (catalog/core/content/assess/learn)**
+  — left exactly as-is (Option B from §7): moving that business logic into
+  `backend/src/{services,repositories}/` to literally match the target
+  tree's minimal `db/` definition would have required rewriting on the
+  order of 150+ internal relative imports across the domain layer for no
+  behavioral benefit, which is a different risk class than the ~200 import
+  lines this restructure did rewrite (all either a single mechanical
+  depth-offset or a single renamed-file substitution, each individually
+  verified). Flagged as a deviation from the literal prompt in §7, consistent
+  with the user's explicit go-ahead to keep `db/`'s own files inside `db/`.
+- **Historical status docs** (`docs/ENGINE_STATE.md`, `docs/DB_STATE.md`,
+  `docs/BUILD_LOG.md`, `docs/FRONTEND.md`, and code comments referencing old
+  paths) — left untouched. These are dated engineering logs describing
+  point-in-time state ("Mounted at `backend/routes/api.ts:69`"), not living
+  indexes; rewriting them wholesale would misrepresent them as still being
+  maintained references. Only the docs that were clearly meant as
+  forward-pointing (`README.md`'s architecture tree and troubleshooting
+  section, `docs/CORE_LAYER_ENDPOINTS.md`/`OPERATIONS.md`/`MIGRATION_STATE.md`'s
+  own cross-references) were updated.

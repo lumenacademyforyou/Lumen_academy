@@ -36,20 +36,22 @@ Lumen Academy helps NEET candidates train with realistic mock tests, review resu
   - Optional AI layer: provider-agnostic explanation interface (OpenRouter / mock providers)
 
 ## Architecture & folder layout
-Top-level important entries:
+Top-level important entries (see RESTRUCTURE_PLAN.md for the full audit/rationale):
 ```
-.backend/ or backend/         # Express app, routes, controllers, services
-prisma/                       # Prisma schema, migrations, seeds
-public/                       # Static assets (favicon, meta files)
-db/ or database/              # Legacy question banks, initial data (being migrated)
-frontend/ or src/frontend/     # React app (components, contexts, views)
-types/                        # Shared TypeScript types
-tests/                        # Playwright or unit tests
+backend/src/                  # Express app: routes, controllers, services, middleware, lib, config
+db/                           # Domain layer (catalog/core/content/assess/learn repositories+services)
+                               # + migrations/, verify/, scripts/ (seed, import, e2e, prove-*)
+prisma/                       # A second, parallel Prisma ORM setup (schema, migrations, seed) — legacy
+frontend/src/                 # React app: pages, components/{layout,ui}, contexts, services, data, types
+frontend/public/              # Static assets served as-is (logo fallback)
+content-batches/              # Raw question-import batches (JSON + images), pending validation
+schemas/                      # Zod schema validating content-batch JSON shape
+docs/                         # Design docs, status logs, HAPPY_PATH.md
+tests/                        # Playwright E2E tests
 .env.example                  # Environment template
 package.json                  # Root scripts and dependency list
-vite.config.ts                # Frontend build config
+vite.config.ts, tsconfig.json # Root build/type config (frontend/backend each also have a tsconfig.json)
 prisma.config.ts              # Prisma / DB helper config
-docs/HAPPY_PATH.md            # User journey & architecture reference
 README.md                     # (this file)
 ```
 
@@ -148,7 +150,7 @@ npm start
 - Frontend CORS issues in dev: use `dev:api` + `dev` in separate terminals; CORS origins are configured via backend `config`.
 
 ## Try asking
-- "Where are the question banks located for NEET topics?" — check `database/questions.ts` and `prisma/seed.ts`.
+- "Where are the question banks located for NEET topics?" — real content is uploaded unit-wise via `content-batches/` -> `db/scripts/import/import-content.ts` -> `db/content`. `frontend/src/data/questions.ts` is a retired mock bank (arrays intentionally empty); `prisma/seed.ts` still seeds the legacy Prisma track from `frontend/src/data/`.
 - "How do I run the backend server with hot reload?" — use `npm run dev:api`.
 - "Which env vars are required to run the Supabase admin tasks?" — check `.env.example` and `backend/src/lib/supabaseAdmin.ts`.
 
