@@ -56,15 +56,25 @@ const PERMISSIONS: { code: string; description: string }[] = [
   { code: "users:invite", description: "Invite a new user (platform_admin, institution_admin or educator) by email." },
   { code: "users:manage_platform", description: "List, read, update and change the status of any user platform-wide." },
   { code: "users:manage_institution", description: "List, read, update and change the status of users within one's own institution." },
+  // CL-4 (LA-PLAN-002 Day 2) — content.question lifecycle (draft -> in_review
+  // -> approved -> published -> retired). Three permissions, not one per
+  // transition: submitting and deciding are genuinely different authority
+  // levels (an author must not be able to approve their own submission);
+  // publish/retire are bundled under one "publishing authority" permission
+  // since both are content_admin-only platform-visibility actions, not a
+  // meaningfully different authority question from each other.
+  { code: "content:submit_review", description: "Submit a draft question for review (draft -> in_review)." },
+  { code: "content:review_decide", description: "Approve or reject a question under review (in_review -> approved, or back to draft)." },
+  { code: "content:publish", description: "Publish an approved question or retire a published one." },
 ];
 
 const ROLE_PERMISSIONS: Record<string, string[]> = {
   super_admin: ["catalog:write", "admin:stats", "users:invite", "users:manage_platform"],
   platform_admin: ["catalog:write", "admin:stats", "users:invite", "users:manage_platform"],
-  content_admin: ["catalog:write"],
-  content_reviewer: [],
+  content_admin: ["catalog:write", "content:submit_review", "content:review_decide", "content:publish"],
+  content_reviewer: ["content:review_decide"],
   institution_admin: ["users:invite", "users:manage_institution"],
-  educator: [],
+  educator: ["content:submit_review"],
   student: [],
   system: ["catalog:write"],
 };

@@ -128,3 +128,11 @@ export class AttemptExpiredError extends Error {
     this.name = "AttemptExpiredError";
   }
 }
+
+/** TE-P5 getReview: the answer key/solution walkthrough is only readable once the attempt is scored. */
+export class ReviewNotAvailableError extends Error {
+  constructor(attemptId: string, attemptState: string) {
+    super(`attempt ${attemptId} has no review available yet (state: ${attemptState}, needs: scored)`);
+    this.name = "ReviewNotAvailableError";
+  }
+}

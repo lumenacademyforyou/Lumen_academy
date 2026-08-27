@@ -1,9 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import type { Pool, PoolClient } from "pg";
 import { getSupabaseAdmin } from "../../backend/supabaseAdmin.js";
 import { dbConfig } from "../config/env.js";
 import { pool } from "../shared/pool.js";
+
+/** Anything with pool.query's shape — the default `pool` or a checked-out transaction `client`. */
+type Queryable = Pool | PoolClient;
 
 /**
  * CL-3 — Supabase Storage asset resolver (LA-PLAN-002 Day 1, G4).
@@ -20,6 +24,14 @@ import { pool } from "../shared/pool.js";
  * in application code rather than adding a migration for an ON CONFLICT
  * target — the simpler fix given the sole caller (CL-2's importer) always
  * knows the object path up front.
+ *
+ * Every DB write below accepts an optional `db` (a pg Pool or a checked-out
+ * transaction client), defaulting to the shared pool. A caller that inserts
+ * content.question and then calls uploadAsset in the same database
+ * transaction (CL-2 does exactly this) MUST pass its own client — the
+ * question row is invisible to any other connection (including a fresh
+ * pool.query() call) until that transaction commits, so the FK from
+ * content.asset.question_id would otherwise fail with 23503.
  */
 
 const MIME_BY_EXT: Record<string, string> = {
@@ -66,6 +78,8 @@ export interface UploadAssetInput {
   altText?: string;
   /** Overrides the default "question/<questionId|documentId>/<fileName>" object path. */
   objectPath?: string;
+  /** Pass the transaction client when the owning row was inserted in the same open transaction (see file header). */
+  db?: Queryable;
 }
 
 /**
@@ -92,6 +106,7 @@ export async function uploadAsset(input: UploadAssetInput): Promise<AssetRow> {
   const mimeType = MIME_BY_EXT[ext] ?? "application/octet-stream";
   const fileName = path.basename(input.localFilePath);
   const objectPath = input.objectPath ?? `question/${input.questionId ?? input.documentId}/${fileName}`;
+  const db = input.db ?? pool;
 
   const admin = getSupabaseAdmin();
   const { error: uploadError } = await admin.storage.from(bucket).upload(objectPath, bytes, {
@@ -102,13 +117,13 @@ export async function uploadAsset(input: UploadAssetInput): Promise<AssetRow> {
     throw new Error(`Supabase Storage upload failed for "${objectPath}": ${uploadError.message}`);
   }
 
-  const existing = await pool.query<{ asset_id: string }>(
+  const existing = await db.query<{ asset_id: string }>(
     `select asset_id from content.asset where storage_uri = $1`,
     [objectPath]
   );
 
   if (existing.rowCount && existing.rowCount > 0) {
-    const res = await pool.query<AssetRow>(
+    const res = await db.query<AssetRow>(
       `update content.asset set
          question_id = $2, document_id = $3, option_id = $4, asset_type = $5,
          alt_text = $6, target_role = $7, mime_type = $8, byte_size = $9, checksum_sha256 = $10
@@ -130,7 +145,7 @@ export async function uploadAsset(input: UploadAssetInput): Promise<AssetRow> {
     return res.rows[0];
   }
 
-  const res = await pool.query<AssetRow>(
+  const res = await db.query<AssetRow>(
     `insert into content.asset
        (question_id, document_id, option_id, asset_type, storage_uri, alt_text, target_role, mime_type, byte_size, checksum_sha256)
      values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)

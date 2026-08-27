@@ -9,6 +9,7 @@ import {
   QuestionNotInAttemptError,
   InvalidNumericAnswerError,
   ScoringRuleMissingError,
+  ReviewNotAvailableError,
 } from "../../../shared/errors.js";
 import type { AttemptModel } from "./attempt.model.js";
 import type { AttemptResponseModel } from "./attempt_response/attempt_response.model.js";
@@ -794,5 +795,179 @@ export async function getPaperForAttempt(attemptId: string): Promise<PaperQuesti
     stem_text: r.stem_text,
     question_type: r.question_type,
     options: optionsByQuestion.get(r.question_id) ?? [],
+  }));
+}
+
+// ---------------------------------------------------------------------------
+// TE-P5 — getReview / listAttempts (LA-PLAN-002 Day 2, G7 depends on this).
+// Both are pure reads of already-persisted values — unlike getAttemptEnvelope
+// (R-9: never leaks the key pre-submission), getReview's whole point is to
+// reveal is_correct/correctOptionIds/marks_awarded, but only once
+// submitAttempt has actually written them (attempt_state = 'scored').
+// Neither function here recomputes a score; getScorecardWithSections above
+// already covers "read the persisted scorecard" — this section adds the
+// per-question walkthrough and the attempt list, which didn't exist yet.
+
+export interface ReviewOption {
+  optionId: string;
+  optionLabel: string;
+  optionText: string;
+  isCorrect: boolean;
+  wasSelected: boolean;
+}
+
+export interface ReviewQuestion {
+  questionId: string;
+  testSectionId: string;
+  sequenceNo: number;
+  stemText: string;
+  questionType: string | null;
+  topicTagCode: string;
+  topicTitle: string;
+  options: ReviewOption[];
+  correctNumericValue: string | null;
+  studentNumericAnswer: string | null;
+  isCorrect: boolean | null;
+  marksAwarded: string | null;
+  timeSpentSeconds: number | null;
+  explanationText: string | null;
+  formulaReference: string | null;
+}
+
+interface ReviewRow {
+  question_id: string;
+  test_section_id: string;
+  sequence_no: number;
+  stem_text: string;
+  question_type: string | null;
+  numeric_answer: string | null;
+  tag_code: string;
+  topic_title: string;
+  explanation_text: string | null;
+  formula_reference: string | null;
+  selected_option_id: string | null;
+  student_numeric_answer: string | null;
+  is_correct: boolean | null;
+  marks_awarded: string | null;
+  time_spent_seconds: number | null;
+}
+
+/**
+ * @throws {NotFoundError} attemptId doesn't exist or doesn't belong to userId
+ * @throws {ReviewNotAvailableError} the attempt hasn't been scored yet
+ */
+export async function getReview(attemptId: string, userId: string): Promise<ReviewQuestion[]> {
+  const attempt = await loadAttemptForUser(attemptId, userId);
+  if (attempt.attempt_state !== "scored") {
+    throw new ReviewNotAvailableError(attemptId, attempt.attempt_state);
+  }
+
+  const rows = await pool.query<ReviewRow>(
+    `select aq.question_id, aq.test_section_id, aq.sequence_no,
+            q.stem_text, q.question_type, q.numeric_answer,
+            sn.tag_code, sn.title as topic_title,
+            qs.explanation_text, qs.formula_reference,
+            ar.option_id as selected_option_id, ar.numeric_answer as student_numeric_answer,
+            ar.is_correct, ar.marks_awarded, ar.time_spent_seconds
+       from assess.attempt_question aq
+       join content.question q on q.question_id = aq.question_id
+       join catalog.syllabus_node sn on sn.node_id = q.primary_node_id
+       left join content.question_solution qs on qs.question_id = q.question_id
+       left join assess.attempt_response ar on ar.attempt_id = aq.attempt_id and ar.question_id = aq.question_id
+      where aq.attempt_id = $1
+      order by aq.test_section_id, aq.sequence_no`,
+    [attemptId]
+  );
+
+  const questionIds = rows.rows.map((r) => r.question_id);
+  const optionsByQuestion = new Map<string, ReviewOption[]>();
+  if (questionIds.length > 0) {
+    const optionsRes = await pool.query<{ question_id: string; option_id: string; option_label: string; option_text: string; is_correct: boolean }>(
+      `select question_id, option_id, option_label, option_text, is_correct
+         from content.question_option
+        where question_id = any($1::uuid[])
+        order by display_order`,
+      [questionIds]
+    );
+    for (const r of rows.rows) {
+      const list: ReviewOption[] = [];
+      for (const row of optionsRes.rows) {
+        if (row.question_id !== r.question_id) continue;
+        list.push({
+          optionId: row.option_id,
+          optionLabel: row.option_label,
+          optionText: row.option_text,
+          isCorrect: row.is_correct,
+          wasSelected: row.option_id === r.selected_option_id,
+        });
+      }
+      optionsByQuestion.set(r.question_id, list);
+    }
+  }
+
+  return rows.rows.map((r) => ({
+    questionId: r.question_id,
+    testSectionId: r.test_section_id,
+    sequenceNo: r.sequence_no,
+    stemText: r.stem_text,
+    questionType: r.question_type,
+    topicTagCode: r.tag_code,
+    topicTitle: r.topic_title,
+    options: optionsByQuestion.get(r.question_id) ?? [],
+    correctNumericValue: r.numeric_answer,
+    studentNumericAnswer: r.student_numeric_answer,
+    isCorrect: r.is_correct,
+    marksAwarded: r.marks_awarded,
+    timeSpentSeconds: r.time_spent_seconds,
+    explanationText: r.explanation_text,
+    formulaReference: r.formula_reference,
+  }));
+}
+
+export interface AttemptSummary {
+  attemptId: string;
+  testId: string;
+  testTitle: string;
+  attemptNo: number;
+  attemptState: string;
+  startedAt: string | null;
+  submittedAt: string | null;
+  obtainedMarks: string | null;
+  totalMarks: string | null;
+}
+
+/** Lists a user's own attempts, most recent first. Optionally scoped to one test. Never recomputes a score — left join onto the persisted scorecard only. */
+export async function listAttempts(userId: string, testId?: string): Promise<AttemptSummary[]> {
+  const res = await pool.query<{
+    attempt_id: string;
+    test_id: string;
+    test_title: string;
+    attempt_no: number;
+    attempt_state: string;
+    started_at: string | null;
+    submitted_at: string | null;
+    obtained_marks: string | null;
+    total_marks: string | null;
+  }>(
+    `select a.attempt_id, a.test_id, t.title as test_title, a.attempt_no, a.attempt_state,
+            a.started_at, a.submitted_at, sc.obtained_marks, sc.total_marks
+       from assess.attempt a
+       join assess.test t on t.test_id = a.test_id
+       left join assess.scorecard sc on sc.attempt_id = a.attempt_id
+      where a.user_id = $1 ${testId ? "and a.test_id = $2" : ""}
+      order by a.started_at desc nulls last`,
+    testId ? [userId, testId] : [userId]
+  );
+
+  return res.rows.map((r) => ({
+    attemptId: r.attempt_id,
+    testId: r.test_id,
+    testTitle: r.test_title,
+    attemptNo: r.attempt_no,
+    attemptState: r.attempt_state,
+    startedAt: r.started_at,
+    submittedAt: r.submitted_at,
+    obtainedMarks: r.obtained_marks,
+    totalMarks: r.total_marks,
   }));
 }
