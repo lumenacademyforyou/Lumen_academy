@@ -62,7 +62,7 @@ function inferAssetsDir(batchFilePath: string): string {
   const base = path.basename(batchFilePath);
   const match = base.match(/^(batch-\d+)/);
   const dirName = match ? match[1] : base.replace(/\.json$/, "");
-  return path.resolve(REPO_ROOT, "content-batches", "assets", dirName);
+  return path.resolve(REPO_ROOT, "db", "content", "content-batches", "assets", dirName);
 }
 
 async function loadNodeIndex(): Promise<Map<string, NodeIndexEntry>> {

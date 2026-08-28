@@ -44,7 +44,7 @@ db/                           # Domain layer (catalog/core/content/assess/learn 
 prisma/                       # A second, parallel Prisma ORM setup (schema, migrations, seed) — legacy
 frontend/src/                 # React app: pages, components/{layout,ui}, contexts, services, data, types
 frontend/public/              # Static assets served as-is (logo fallback)
-content-batches/              # Raw question-import batches (JSON + images), pending validation
+db/content/content-batches/   # Raw question-import batches (JSON + images), organized by subject, pending validation
 schemas/                      # Zod schema validating content-batch JSON shape
 docs/                         # Design docs, status logs, HAPPY_PATH.md
 tests/                        # Playwright E2E tests
@@ -150,7 +150,7 @@ npm start
 - Frontend CORS issues in dev: use `dev:api` + `dev` in separate terminals; CORS origins are configured via backend `config`.
 
 ## Try asking
-- "Where are the question banks located for NEET topics?" — real content is uploaded unit-wise via `content-batches/` -> `db/scripts/import/import-content.ts` -> `db/content`. `frontend/src/data/questions.ts` is a retired mock bank (arrays intentionally empty); `prisma/seed.ts` still seeds the legacy Prisma track from `frontend/src/data/`.
+- "Where are the question banks located for NEET topics?" — real content is uploaded unit-wise via `db/content/content-batches/` (organized by subject) -> `db/scripts/import/import-content.ts` -> `db/content`. `frontend/src/data/questions.ts` is a retired mock bank (arrays intentionally empty); `prisma/seed.ts` still seeds the legacy Prisma track from `frontend/src/data/`.
 - "How do I run the backend server with hot reload?" — use `npm run dev:api`.
 - "Which env vars are required to run the Supabase admin tasks?" — check `.env.example` and `backend/src/lib/supabaseAdmin.ts`.
 

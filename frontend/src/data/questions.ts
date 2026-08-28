@@ -1,7 +1,7 @@
 import { Question } from "../types";
 
 // Mock question bank retired: real content is now uploaded unit-by-unit
-// through the content domain (content-batches/ -> db/scripts/import/
+// through the content domain (db/content/content-batches/ -> db/scripts/import/
 // import-content.ts -> db/content) and validated before going live. These
 // arrays are kept (empty) so every existing import site keeps compiling and
 // rendering an empty state instead of breaking, until those screens are

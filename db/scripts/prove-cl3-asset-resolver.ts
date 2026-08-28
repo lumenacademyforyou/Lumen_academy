@@ -11,7 +11,7 @@ import { uploadAsset, resolveAssetUrl } from "../content/asset-resolver.js";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(SCRIPT_DIR, "..", "..");
-const IMAGE_PATH = path.resolve(REPO_ROOT, "content-batches", "assets", "batch-2", "CHE_SOMBAS_DIAG_0001.png");
+const IMAGE_PATH = path.resolve(REPO_ROOT, "db", "content", "content-batches", "assets", "batch-2", "CHE_SOMBAS_DIAG_0001.png");
 
 async function main() {
   const qRes = await pool.query<{ question_id: string; question_uid: string }>(
