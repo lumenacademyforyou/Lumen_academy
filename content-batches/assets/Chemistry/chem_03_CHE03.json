@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE03-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 4 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 500.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-122.54 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "61.27 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-30.64 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-61.27 kJ",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 4, T = 400 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 4 × 8.314 × 400 × 2.0 = -61271 J = -61.27 kJ.\nStep 4: Conclude that work done is -61.27 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 4 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 500.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-122.54 kJ",
+          "61.27 kJ",
+          "-30.64 kJ",
+          "-61.27 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-3 M",
+          "1.0 × 10^-11 M",
+          "3.0 × 10^-14 M",
+          "1.0 × 10^-17 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 4 mole(s) of an ideal gas expands isothermally and reversibly from 2.0 L to 200.0 L at 300 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-45.95 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "45.95 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-22.98 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-91.91 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 4, T = 300 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 4 × 8.314 × 300 × 2.0 = -45953 J = -45.95 kJ.\nStep 4: Conclude that work done is -45.95 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K மாறா வெப்பநிலையில் 4 மோல் நல்லியல்பு வாயுவானது 2.0 L இலிருந்து 200.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-45.95 kJ",
+          "45.95 kJ",
+          "-22.98 kJ",
+          "-91.91 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 4. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-18 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-4 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-10 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 4 = 10.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(10) M = 1.0 × 10^-10 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-10 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 4 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-18 M",
+          "1.0 × 10^-4 M",
+          "1.0 × 10^-10 M",
+          "4.0 × 10^-14 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 4 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 500.0 L at 500 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-76.59 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-38.29 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "76.59 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-153.18 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 4, T = 500 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 4 × 8.314 × 500 × 2.0 = -76589 J = -76.59 kJ.\nStep 4: Conclude that work done is -76.59 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K மாறா வெப்பநிலையில் 4 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 500.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-76.59 kJ",
+          "-38.29 kJ",
+          "76.59 kJ",
+          "-153.18 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "3.0 × 10^-14 M",
+          "1.0 × 10^-17 M",
+          "1.0 × 10^-3 M",
+          "1.0 × 10^-11 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 1 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 50.0 L at 500 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-9.57 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "9.57 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-4.79 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-19.15 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 1, T = 500 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 1 × 8.314 × 500 × 1.0 = -9574 J = -9.57 kJ.\nStep 4: Conclude that work done is -9.57 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K மாறா வெப்பநிலையில் 1 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 50.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-9.57 kJ",
+          "9.57 kJ",
+          "-4.79 kJ",
+          "-19.15 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-5 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-19 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-9 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-5 M",
+          "1.0 × 10^-19 M",
+          "1.0 × 10^-9 M",
+          "5.0 × 10^-14 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 4 mole(s) of an ideal gas expands isothermally and reversibly from 2.0 L to 200.0 L at 500 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-153.18 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-38.29 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-76.59 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "76.59 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 4, T = 500 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 4 × 8.314 × 500 × 2.0 = -76589 J = -76.59 kJ.\nStep 4: Conclude that work done is -76.59 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K மாறா வெப்பநிலையில் 4 மோல் நல்லியல்பு வாயுவானது 2.0 L இலிருந்து 200.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-153.18 kJ",
+          "-38.29 kJ",
+          "-76.59 kJ",
+          "76.59 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-5 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-9 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-19 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-5 M",
+          "1.0 × 10^-9 M",
+          "5.0 × 10^-14 M",
+          "1.0 × 10^-19 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 1 mole(s) of an ideal gas expands isothermally and reversibly from 2.0 L to 20.0 L at 300 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-5.74 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.74 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-2.87 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 1, T = 300 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 1 × 8.314 × 300 × 1.0 = -5744 J = -5.74 kJ.\nStep 4: Conclude that work done is -5.74 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K மாறா வெப்பநிலையில் 1 மோல் நல்லியல்பு வாயுவானது 2.0 L இலிருந்து 20.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-11.49 kJ",
+          "-5.74 kJ",
+          "5.74 kJ",
+          "-2.87 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-11 M",
+          "3.0 × 10^-14 M",
+          "1.0 × 10^-17 M",
+          "1.0 × 10^-3 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 2 mole(s) of an ideal gas expands isothermally and reversibly from 10.0 L to 100.0 L at 300 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-5.74 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-11.49 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-22.98 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 2, T = 300 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 2 × 8.314 × 300 × 1.0 = -11488 J = -11.49 kJ.\nStep 4: Conclude that work done is -11.49 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K மாறா வெப்பநிலையில் 2 மோல் நல்லியல்பு வாயுவானது 10.0 L இலிருந்து 100.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-5.74 kJ",
+          "-11.49 kJ",
+          "11.49 kJ",
+          "-22.98 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-5 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-19 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-9 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-5 M",
+          "1.0 × 10^-19 M",
+          "1.0 × 10^-9 M",
+          "5.0 × 10^-14 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 3 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 50.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "22.98 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-22.98 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-45.95 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 3, T = 400 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 3 × 8.314 × 400 × 1.0 = -22977 J = -22.98 kJ.\nStep 4: Conclude that work done is -22.98 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 3 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 50.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-11.49 kJ",
+          "22.98 kJ",
+          "-22.98 kJ",
+          "-45.95 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 4. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-18 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-10 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-4 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 4 = 10.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(10) M = 1.0 × 10^-10 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-10 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 4 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "4.0 × 10^-14 M",
+          "1.0 × 10^-18 M",
+          "1.0 × 10^-10 M",
+          "1.0 × 10^-4 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 3 mole(s) of an ideal gas expands isothermally and reversibly from 2.0 L to 20.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-45.95 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-22.98 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "22.98 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 3, T = 400 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 3 × 8.314 × 400 × 1.0 = -22977 J = -22.98 kJ.\nStep 4: Conclude that work done is -22.98 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 3 மோல் நல்லியல்பு வாயுவானது 2.0 L இலிருந்து 20.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-45.95 kJ",
+          "-22.98 kJ",
+          "-11.49 kJ",
+          "22.98 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 4. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-18 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-10 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-4 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 4 = 10.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(10) M = 1.0 × 10^-10 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-10 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 4 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-18 M",
+          "1.0 × 10^-10 M",
+          "1.0 × 10^-4 M",
+          "4.0 × 10^-14 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 3 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 50.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "22.98 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-22.98 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-45.95 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 3, T = 400 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 3 × 8.314 × 400 × 1.0 = -22977 J = -22.98 kJ.\nStep 4: Conclude that work done is -22.98 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 3 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 50.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-11.49 kJ",
+          "22.98 kJ",
+          "-22.98 kJ",
+          "-45.95 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 9. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-23 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "9.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-9 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-5 M",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 9 = 5.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(5) M = 1.0 × 10^-5 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-5 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 9 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-23 M",
+          "9.0 × 10^-14 M",
+          "1.0 × 10^-9 M",
+          "1.0 × 10^-5 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 2 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 500.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "30.64 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-15.32 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-30.64 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-61.27 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 2, T = 400 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 2 × 8.314 × 400 × 2.0 = -30635 J = -30.64 kJ.\nStep 4: Conclude that work done is -30.64 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 2 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 500.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "30.64 kJ",
+          "-15.32 kJ",
+          "-30.64 kJ",
+          "-61.27 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-17 M",
+          "1.0 × 10^-11 M",
+          "1.0 × 10^-3 M",
+          "3.0 × 10^-14 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 3 mole(s) of an ideal gas expands isothermally and reversibly from 10.0 L to 1000.0 L at 500 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-57.44 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-28.72 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "57.44 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-114.88 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 3, T = 500 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 3 × 8.314 × 500 × 2.0 = -57441 J = -57.44 kJ.\nStep 4: Conclude that work done is -57.44 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K மாறா வெப்பநிலையில் 3 மோல் நல்லியல்பு வாயுவானது 10.0 L இலிருந்து 1000.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-57.44 kJ",
+          "-28.72 kJ",
+          "57.44 kJ",
+          "-114.88 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-17 M",
+          "3.0 × 10^-14 M",
+          "1.0 × 10^-11 M",
+          "1.0 × 10^-3 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 2 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 500.0 L at 500 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-19.15 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "38.29 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-76.59 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-38.29 kJ",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 2, T = 500 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 2 × 8.314 × 500 × 2.0 = -38294 J = -38.29 kJ.\nStep 4: Conclude that work done is -38.29 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K மாறா வெப்பநிலையில் 2 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 500.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-19.15 kJ",
+          "38.29 kJ",
+          "-76.59 kJ",
+          "-38.29 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-17 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-3 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-11 M",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-17 M",
+          "3.0 × 10^-14 M",
+          "1.0 × 10^-3 M",
+          "1.0 × 10^-11 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 4 mole(s) of an ideal gas expands isothermally and reversibly from 2.0 L to 200.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-61.27 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-30.64 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-122.54 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "61.27 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 4, T = 400 K, V2/V1 = 100, so log₁₀(100) = 2.0.\nStep 3: w = -2.303 × 4 × 8.314 × 400 × 2.0 = -61271 J = -61.27 kJ.\nStep 4: Conclude that work done is -61.27 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 4 மோல் நல்லியல்பு வாயுவானது 2.0 L இலிருந்து 200.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-61.27 kJ",
+          "-30.64 kJ",
+          "-122.54 kJ",
+          "61.27 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-9 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-19 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.0 × 10^-14 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 × 10^-5 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-9 M",
+          "1.0 × 10^-19 M",
+          "5.0 × 10^-14 M",
+          "1.0 × 10^-5 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Calculate the work done (w) when 2 mole(s) of an ideal gas expands isothermally and reversibly from 10.0 L to 100.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-15.32 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-30.64 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-7.66 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15.32 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 2, T = 400 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 2 × 8.314 × 400 × 1.0 = -15318 J = -15.32 kJ.\nStep 4: Conclude that work done is -15.32 kJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 K மாறா வெப்பநிலையில் 2 மோல் நல்லியல்பு வாயுவானது 10.0 L இலிருந்து 100.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-15.32 kJ",
+          "-30.64 kJ",
+          "-7.66 kJ",
+          "15.32 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution at 298 K has a measured pH of 10. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 × 10^-10 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 × 10^-4 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.0 × 10^-24 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10.0 × 10^-14 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 10 = 4.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(4) M = 1.0 × 10^-4 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-4 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 10 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
+        "optionTexts": [
+          "1.0 × 10^-10 M",
+          "1.0 × 10^-4 M",
+          "1.0 × 10^-24 M",
+          "10.0 × 10^-14 M"
+        ]
+      }
+    ]
+  }
+]

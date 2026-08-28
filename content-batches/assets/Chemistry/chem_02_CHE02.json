@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE02-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "அயனி வீழ்படிவு உருவாதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "என்ட்ரோபி குறைவு (ΔS° < 0)",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "அயனி வீழ்படிவு உருவாதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon in xenon tetrafluoride (XeF4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Octahedral shape with sp3d2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral shape with sp3 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "See-saw shape with sp3d hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar shape with sp3d2 hybridization",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons; forms 4 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 4 bp + 2 lp = 6 (sp3d2 hybridization).\nStep 3: Two lone pairs occupy axial positions, leaving four fluorines in a square plane.\nStep 4: Conclude shape is square planar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டெட்ராபுளோரைடில் (XeF4) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "எண்முக வடிவம் மற்றும் sp3d2 இனக்கலப்பு",
+          "நான்முகி வடிவம் மற்றும் sp3 இனக்கலப்பு",
+          "சீ-சா வடிவம் மற்றும் sp3d இனக்கலப்பு",
+          "சதுர தள வடிவம் மற்றும் sp3d2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary thermodynamic driving force for the extraordinary stability of chelate complexes like [Ni(en)3]2+ compared to [Ni(NH3)6]2+ (the chelate effect)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of ionic precipitates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Large positive entropy change (ΔS° > 0) due to increase in number of free species in solution",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Enthalpy change ΔH° is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Decrease in entropy of solution (ΔS° < 0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement of 6 unidentate NH3 ligands by 3 bidentate en ligands increases total particles from 4 to 7.\nStep 2: This creates a large positive entropy change (ΔS° > 0).\nStep 3: By ΔG° = ΔH° - T ΔS°, a positive ΔS° makes ΔG° strongly negative, driving formation stability.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒற்றை முனை அணைவான [Ni(NH3)6]2+ ஐ விட கீலேட் அணைவான [Ni(en)3]2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் 'கீலேட் விளைவின்' முதன்மை வெப்ப இயக்கவியல் காரணி எது?",
+        "optionTexts": [
+          "அயனி வீழ்படிவு உருவாதல்",
+          "கரைசலில் தனித்த மூலக்கூறுகளின் எண்ணிக்கை அதிகரிப்பதால் ஏற்படும் அதிக நேர்மறை என்ட்ரோபி மாற்றம் (ΔS° > 0)",
+          "என்தால்பி மாற்றம் பூஜ்ஜியம்",
+          "என்ட்ரோபி குறைவு (ΔS° < 0)"
+        ]
+      }
+    ]
+  }
+]

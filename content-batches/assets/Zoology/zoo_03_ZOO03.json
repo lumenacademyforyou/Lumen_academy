@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "10 முதல் 12 நுண்குழல்கள்",
+          "100 முதல் 150 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்",
+          "200 முதல் 300 நுண்குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)",
+          "பினகோசைட்டுகள்",
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "ஆர்க்கியோசைட்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "பினகோசைட்டுகள்",
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)",
+          "ஆர்க்கியோசைட்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "பினகோசைட்டுகள்",
+          "ஆர்க்கியோசைட்டுகள்",
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "200 முதல் 300 நுண்குழல்கள்",
+          "10 முதல் 12 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்",
+          "100 முதல் 150 நுண்குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "மெல்லுடலிகள் (மாலஸ்கா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "10 முதல் 12 நுண்குழல்கள்",
+          "200 முதல் 300 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்",
+          "100 முதல் 150 நுண்குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "ஆர்க்கியோசைட்டுகள்",
+          "பினகோசைட்டுகள்",
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "ஹெமிடெஸ்மோசோம்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "வளைதசையுடலிகள் (அன்னலிடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "பினகோசைட்டுகள்",
+          "ஆர்க்கியோசைட்டுகள்",
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "100 முதல் 150 நுண்குழல்கள்",
+          "200 முதல் 300 நுண்குழல்கள்",
+          "10 முதல் 12 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "10 முதல் 12 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்",
+          "100 முதல் 150 நுண்குழல்கள்",
+          "200 முதல் 300 நுண்குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In phylum Porifera (sponges), which specialized flagellated cells line the central spongocoel and radial water canals to maintain water current and capture food particles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cnidocytes (stinging cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Choanocytes (collar cells)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Archaeocytes (totipotent cells)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pinacocytes (dermal cells)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sponges possess a unique water canal (aquiferous) system for feeding, respiration, and excretion.\nStep 2: The inner lining of the spongocoel and canals is formed by flagellated collar cells called choanocytes.\nStep 3: The coordinated beating of choanocyte flagella draws water through ostia into the spongocoel and out through the osculum.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துளையுடலிகளில் (Porifera), மையக் குழியான ஸ்பாஞ்சோசீல் மற்றும் ஆரக் கால்வாய்களைச் சூழ்ந்து நீர் ஓட்டத்தை ஏற்படுத்தி உணவுத் துகள்களைப் பிடிக்கும் சிறப்பு கசையிழை செல்கள் யாவை?",
+        "optionTexts": [
+          "நிடோசைட்டுகள் / கொட்டும் செல்கள்",
+          "கோவனோசைட்டுகள் / காலர் செல்கள் (Choanocytes)",
+          "ஆர்க்கியோசைட்டுகள்",
+          "பினகோசைட்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the cockroach (Periplaneta americana), how many fine, yellow-colored blind Malpighian tubules are present at the junction of the midgut and hindgut for uric acid excretion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 to 12 tubules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100 to 150 tubules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6 to 8 tubules (hepatic caeca)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 to 300 tubules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cockroaches, the excretory system consists of Malpighian tubules located at the midgut-hindgut boundary.\nStep 2: There are 100-150 thin, yellow, filamentous blind tubules lined by glandular and ciliated cells.\nStep 3: They absorb potassium urate from hemolymph and convert it into uric acid excreted through the hindgut (uricotelic excretion).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரப்பான் பூச்சியில் (Periplaneta americana), யூரிக் அமிலக் கழிவுநீக்கத்திற்காக நடுக்குடல் மற்றும் பின்குடல் சந்திப்பில் அமைந்துள்ள மெல்லிய மஞ்சள் நிற மால்பீஜியன் நுண்குழல்களின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "10 முதல் 12 நுண்குழல்கள்",
+          "100 முதல் 150 நுண்குழல்கள்",
+          "6 முதல் 8 குழல்கள்",
+          "200 முதல் 300 நுண்குழல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)",
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "மெல்லுடலிகள் (மாலஸ்கா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which phylum of invertebrates exhibits a specialized water vascular system (ambulacral system) that functions in locomotion, capture and transport of food, and respiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Echinodermata (e.g., Asterias / Starfish, Echinus / Sea urchin)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mollusca (e.g., Pila, Octopus)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Annelida (e.g., Earthworm, Nereis)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Arthropoda (e.g., Periplaneta, Prawn)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The water vascular system is the most distinctive anatomical feature of phylum Echinodermata.\nStep 2: Seawater enters through the madreporite and circulates through stone, ring, and radial canals into tube feet (podia).\nStep 3: Hydraulic pressure in tube feet drives movement, food handling, and respiratory gas exchange.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி, உணவைப் பிடித்தல் மற்றும் கடத்துதல், மற்றும் சுவாசப் பணிகளுக்கு உதவும் சிறப்பு 'நீர் வாஸ்குலார் மண்டலத்தை' (ஆம்புலக்ரல் மண்டலம்) கொண்டுள்ள முதுகுநாணற்ற விலங்கு தொகுதி எது?",
+        "optionTexts": [
+          "முட்தோலிகள் / எக்கினோடெர்மேட்டா (எ.கா. நட்சத்திர மீன், கடல் அர்ச்சின்)",
+          "மெல்லுடலிகள் (மாலஸ்கா)",
+          "வளைதசையுடலிகள் (அன்னலிடா)",
+          "கணுக்காலிகள் (ஆர்த்ரோபோடா)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO03-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of cell junction in animal epithelial tissues facilitates rapid intercellular cytoplasmic communication and direct transfer of ions, small signaling molecules, and secondary messengers between neighboring cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adhering junctions (Desmosomes / Macula adherens)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tight junctions (Zonula occludens)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hemidesmosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gap junctions (Nexus)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Epithelial cells are held together by three main types of specialized junctions.\nStep 2: Tight junctions prevent fluid leakage across cellular sheets.\nStep 3: Adhering junctions cement neighboring cells together mechanically.\nStep 4: Gap junctions contain connexon protein channels that connect the cytoplasm of adjacent cells, enabling rapid electrical and chemical coupling.\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு எபிதீலிய திசுக்களில், அருகருகே உள்ள செல்களுக்கு இடையே அயனிகள், சிறிய மூலக்கூறுகள் மற்றும் சமிக்ஞை தூதுவர்களின் விரைவான செல் சைட்டோபிளாச தொடர்பிற்கு உதவும் செல் சந்திப்பு எது?",
+        "optionTexts": [
+          "ஒட்டும் சந்திப்புகள் (Desmosomes)",
+          "இறுக்கமான சந்திப்புகள் (Tight junctions)",
+          "ஹெமிடெஸ்மோசோம்கள்",
+          "இடைவெளிச் சந்திப்புகள் (Gap junctions)"
+        ]
+      }
+    ]
+  }
+]

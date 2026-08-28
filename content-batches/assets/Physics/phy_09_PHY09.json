@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY09-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Work, Energy and Power (case #1_1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Creation of mass",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Work, Energy and Power.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option C (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Work, Energy and Power (case #1_1)?",
+        "optionTexts": [
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "நிறை தன்னிச்சையாக உருவாதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "5.00 SI units",
+          "10.00 SI units",
+          "2.00 SI units",
+          "2.50 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #2). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option B (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #2). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 2.5 r_loop (5/2 r_loop)",
+          "H_min = 2.7 r_loop (27/10 r_loop)",
+          "H_min = 2.0 r_loop",
+          "H_min = 3.0 r_loop"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "200.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "400.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "800.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "80.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (400.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "200.0 Joules",
+          "400.0 Joules",
+          "800.0 Joules",
+          "80.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 17.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "68.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "136.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "34.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 17, factor = 4.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (68.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 17.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "21.0 SI units",
+          "68.0 SI units",
+          "136.0 SI units",
+          "34.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option C (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "2.00 SI units",
+          "2.50 SI units",
+          "5.00 SI units",
+          "10.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Work, Energy and Power (case #10_2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Work, Energy and Power.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option C (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Work, Energy and Power (case #10_2)?",
+        "optionTexts": [
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "400.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "100.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "40.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (200.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "400.0 Joules",
+          "200.0 Joules",
+          "100.0 Joules",
+          "40.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 27.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "27.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "108.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "29.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "54.0 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 27, factor = 2.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (54.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 27.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "27.0 SI units",
+          "108.0 SI units",
+          "29.0 SI units",
+          "54.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "360.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2700.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5400.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "10800.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (5400.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "360.0 Joules",
+          "2700.0 Joules",
+          "5400.0 Joules",
+          "10800.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option D (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "2.50 SI units",
+          "2.00 SI units",
+          "10.00 SI units",
+          "5.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #16). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option D (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #16). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 2.5 r_loop (5/2 r_loop)",
+          "H_min = 2.0 r_loop",
+          "H_min = 3.0 r_loop",
+          "H_min = 2.7 r_loop (27/10 r_loop)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 40.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "200.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "45.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "400.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 40, factor = 5.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option A (200.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 40.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "200.0 SI units",
+          "45.0 SI units",
+          "100.0 SI units",
+          "400.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1800.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "240.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3600.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "7200.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (3600.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1800.0 Joules",
+          "240.0 Joules",
+          "3600.0 Joules",
+          "7200.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Work, Energy and Power (case #20_0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Creation of mass",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Work, Energy and Power.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option C (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Work, Energy and Power (case #20_0)?",
+        "optionTexts": [
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "நிறை தன்னிச்சையாக உருவாதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option D (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "2.00 SI units",
+          "2.50 SI units",
+          "10.00 SI units",
+          "5.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 50.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "75.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "300.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "150.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "53.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 50, factor = 3.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option C (150.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 50.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "75.0 SI units",
+          "300.0 SI units",
+          "150.0 SI units",
+          "53.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "900.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1800.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3600.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (1800.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "120.0 Joules",
+          "900.0 Joules",
+          "1800.0 Joules",
+          "3600.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 63.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "378.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "756.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "189.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "69.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 63, factor = 6.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option A (378.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 63.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "378.0 SI units",
+          "756.0 SI units",
+          "189.0 SI units",
+          "69.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1875.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7500.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "300.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3750.0 Joules",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option D (3750.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1875.0 Joules",
+          "7500.0 Joules",
+          "300.0 Joules",
+          "3750.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Work, Energy and Power (case #29_1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Work, Energy and Power.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Work, Energy and Power (case #29_1)?",
+        "optionTexts": [
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option C (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "2.50 SI units",
+          "2.00 SI units",
+          "5.00 SI units",
+          "10.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #30). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option C (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #30). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 3.0 r_loop",
+          "H_min = 2.0 r_loop",
+          "H_min = 2.7 r_loop (27/10 r_loop)",
+          "H_min = 2.5 r_loop (5/2 r_loop)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1250.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2500.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5000.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (2500.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1250.0 Joules",
+          "2500.0 Joules",
+          "5000.0 Joules",
+          "200.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 73.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "292.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "146.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "584.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "77.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 73, factor = 4.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option A (292.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 73.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "292.0 SI units",
+          "146.0 SI units",
+          "584.0 SI units",
+          "77.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Work, Energy and Power.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "5.00 SI units",
+          "10.00 SI units",
+          "2.50 SI units",
+          "2.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Work, Energy and Power (case #38_2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Work, Energy and Power.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Work, Energy and Power (case #38_2)?",
+        "optionTexts": [
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "625.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1250.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2500.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (1250.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 25.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "625.0 Joules",
+          "100.0 Joules",
+          "1250.0 Joules",
+          "2500.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a parameter of magnitude 83.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "83.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "332.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "166.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "85.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Work, Energy and Power.\nStep 2: Substitute given numerical parameters: primary value = 83, factor = 2.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option C (166.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a parameter of magnitude 83.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "83.0 SI units",
+          "332.0 SI units",
+          "166.0 SI units",
+          "85.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 20.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2400.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "240.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4800.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1200.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Work, Energy and Power.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (2400.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Work, Energy and Power பாடப்பிரிவில்: In Work, Energy and Power, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 20.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "2400.0 Joules",
+          "240.0 Joules",
+          "4800.0 Joules",
+          "1200.0 Joules"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY07-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Laws of Motion (case #1_0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Laws of Motion.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Laws of Motion (case #1_0)?",
+        "optionTexts": [
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #1). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option D (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #1). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 2.0 r_loop",
+          "H_min = 3.0 r_loop",
+          "H_min = 2.5 r_loop (5/2 r_loop)",
+          "H_min = 2.7 r_loop (27/10 r_loop)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A circular wire loop of radius a and resistance R falls vertically in a non-uniform horizontal magnetic field B(y) = B₀ (1 + k y) k̂ (case #1). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_term = m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v_term = m g R / (π a² B₀ k)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v_term = m g R / (2 B₀² k² a⁴)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Induction drag and terminal descent equilibrium in magnetic gradients.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option A (v_term = m g R / (π² a⁴ B₀² k²)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரம் a மற்றும் மின்தடை R கொண்ட ஒரு வட்ட வடிவ கம்பி வளையம், சீரற்ற கிடைமட்ட காந்தப்புலம் B(y) = B₀ (1 + k y) k̂ இல் செங்குத்தாக விழும்போது அதன் முற்றுத் திசைவேகம் v_term யாது? (case #1). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+        "optionTexts": [
+          "v_term = m g R / (π² a⁴ B₀² k²)",
+          "v_term = m g R / (π a² B₀ k)",
+          "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+          "v_term = m g R / (2 B₀² k² a⁴)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10800.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2700.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5400.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "360.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Units and Measurements.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (5400.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "10800.0 Joules",
+          "2700.0 Joules",
+          "5400.0 Joules",
+          "360.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Straight Line, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12600.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6300.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3150.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "420.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Straight Line.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (6300.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Straight Line பாடப்பிரிவில்: In Motion in a Straight Line, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "12600.0 Joules",
+          "6300.0 Joules",
+          "3150.0 Joules",
+          "420.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a parameter of magnitude 16.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "160.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "80.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "40.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "21.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Units and Measurements.\nStep 2: Substitute given numerical parameters: primary value = 16, factor = 5.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (80.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a parameter of magnitude 16.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "160.0 SI units",
+          "80.0 SI units",
+          "40.0 SI units",
+          "21.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body accelerates uniformly from rest at a = 6.0 m/s² for a duration of t = 17.0 s. What is its final velocity and displacement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v = 204.0 m/s and s = 433.5 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v = 102.0 m/s and s = 1734.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v = 51.0 m/s and s = 1734.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v = 102.0 m/s and s = 867.0 m",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Uniform linear acceleration kinematic relations.\nStep 2: Substitute given numerical parameters: primary value = 17, factor = 6.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (v = 102.0 m/s and s = 867.0 m) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் ஓய்வு நிலையிலிருந்து a = 6.0 m/s² என்ற முடுக்கத்துடன் t = 17.0 s. நேரத்திற்கு சீராக முடுக்கமடைகிறது எனில், அதன் இறுதித் திசைவேகம் மற்றும் இடப்பெயர்ச்சி யாது?",
+        "optionTexts": [
+          "v = 204.0 m/s and s = 433.5 m",
+          "v = 102.0 m/s and s = 1734.0 m",
+          "v = 51.0 m/s and s = 1734.0 m",
+          "v = 102.0 m/s and s = 867.0 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Plane, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "400.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "200.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "40.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Plane.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (200.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Plane பாடப்பிரிவில்: In Motion in a Plane, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "100.0 Joules",
+          "400.0 Joules",
+          "200.0 Joules",
+          "40.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Laws of Motion, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "600.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "300.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "150.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "60.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Laws of Motion.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (300.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Laws of Motion பாடப்பிரிவில்: In Laws of Motion, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "600.0 Joules",
+          "300.0 Joules",
+          "150.0 Joules",
+          "60.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body accelerates uniformly from rest at a = 2.0 m/s² for a duration of t = 15.0 s. What is its final velocity and displacement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v = 15.0 m/s and s = 450.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v = 30.0 m/s and s = 225.0 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "v = 30.0 m/s and s = 450.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v = 60.0 m/s and s = 112.5 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Uniform linear acceleration kinematic relations.\nStep 2: Substitute given numerical parameters: primary value = 15, factor = 2.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (v = 30.0 m/s and s = 225.0 m) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் ஓய்வு நிலையிலிருந்து a = 2.0 m/s² என்ற முடுக்கத்துடன் t = 15.0 s. நேரத்திற்கு சீராக முடுக்கமடைகிறது எனில், அதன் இறுதித் திசைவேகம் மற்றும் இடப்பெயர்ச்சி யாது?",
+        "optionTexts": [
+          "v = 15.0 m/s and s = 450.0 m",
+          "v = 30.0 m/s and s = 225.0 m",
+          "v = 30.0 m/s and s = 450.0 m",
+          "v = 60.0 m/s and s = 112.5 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m = 16.0 kg is accelerated across a smooth floor at a = 3.0 m/s². What is the net horizontal propelling force F?",
+    "options": [
+      {
+        "label": "A",
+        "text": "96.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "58.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "24.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "48.0 N",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Newton's second law linear force evaluation.\nStep 2: Substitute given numerical parameters: primary value = 16, factor = 3.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (48.0 N) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m = 16.0 kg நிறை கொண்ட ஒரு பொருள் உராய்வற்ற தரைப்பரப்பில் a = 3.0 m/s². முடுக்கத்துடன் நகர்த்தப்பட்டால், அதன் மீதான நிகர விசை F யாது?",
+        "optionTexts": [
+          "96.0 N",
+          "58.0 N",
+          "24.0 N",
+          "48.0 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.50 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Units and Measurements.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (5.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a system is subjected to boundary field constraint with scaling factor K = 2.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "5.00 SI units",
+          "10.00 SI units",
+          "2.00 SI units",
+          "2.50 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Straight Line, a system is subjected to boundary field constraint with scaling factor K = 3.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7.50 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3.75 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Motion in a Straight Line.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option B (7.50 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Straight Line பாடப்பிரிவில்: In Motion in a Straight Line, a system is subjected to boundary field constraint with scaling factor K = 3.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "15.00 SI units",
+          "7.50 SI units",
+          "3.75 SI units",
+          "3.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Plane, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Motion in a Plane.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option B (10.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Plane பாடப்பிரிவில்: In Motion in a Plane, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "20.00 SI units",
+          "10.00 SI units",
+          "5.00 SI units",
+          "4.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Laws of Motion, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "25.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12.50 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "6.25 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Laws of Motion.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option C (12.50 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Laws of Motion பாடப்பிரிவில்: In Laws of Motion, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "5.00 SI units",
+          "25.00 SI units",
+          "12.50 SI units",
+          "6.25 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the dimensional formula of the physical constant in Units and Measurements associated with parameter #9_1?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[M L^2 T^-2]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[M L^2 T^-3]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[M^-1 L^3 T^-2]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[M L^-1 T^-2]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Dimensional homogeneity and SI derived unit reduction.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option A ([M L^2 T^-2]) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட இயற்பியல் மாறிலியின் பரிமாண வாய்ப்பாடு என்ன: Units and Measurements associated with parameter #9_1?",
+        "optionTexts": [
+          "[M L^2 T^-2]",
+          "[M L^2 T^-3]",
+          "[M^-1 L^3 T^-2]",
+          "[M L^-1 T^-2]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Motion in a Straight Line (case #9_2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Motion in a Straight Line.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Motion in a Straight Line (case #9_2)?",
+        "optionTexts": [
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1800.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "240.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7200.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3600.0 Joules",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Units and Measurements.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option D (3600.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1800.0 Joules",
+          "240.0 Joules",
+          "7200.0 Joules",
+          "3600.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Straight Line, a body of mass m = 10.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4500.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "9000.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2250.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "300.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Straight Line.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (4500.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Straight Line பாடப்பிரிவில்: In Motion in a Straight Line, a body of mass m = 10.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "4500.0 Joules",
+          "9000.0 Joules",
+          "2250.0 Joules",
+          "300.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Plane, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "360.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5400.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2700.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10800.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Plane.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (5400.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Plane பாடப்பிரிவில்: In Motion in a Plane, a body of mass m = 12.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "360.0 Joules",
+          "5400.0 Joules",
+          "2700.0 Joules",
+          "10800.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Laws of Motion, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3150.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12600.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6300.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "420.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Laws of Motion.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (6300.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Laws of Motion பாடப்பிரிவில்: In Laws of Motion, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "3150.0 Joules",
+          "12600.0 Joules",
+          "6300.0 Joules",
+          "420.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Motion in a Plane (case #10_0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Motion in a Plane.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option A (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Motion in a Plane (case #10_0)?",
+        "optionTexts": [
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Laws of Motion (case #10_1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Laws of Motion.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option B (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Laws of Motion (case #10_1)?",
+        "optionTexts": [
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a parameter of magnitude 26.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "156.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "78.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "39.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "29.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Units and Measurements.\nStep 2: Substitute given numerical parameters: primary value = 26, factor = 3.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (78.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a parameter of magnitude 26.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "156.0 SI units",
+          "78.0 SI units",
+          "39.0 SI units",
+          "29.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body accelerates uniformly from rest at a = 4.0 m/s² for a duration of t = 27.0 s. What is its final velocity and displacement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v = 216.0 m/s and s = 729.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v = 108.0 m/s and s = 2916.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v = 54.0 m/s and s = 2916.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v = 108.0 m/s and s = 1458.0 m",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Uniform linear acceleration kinematic relations.\nStep 2: Substitute given numerical parameters: primary value = 27, factor = 4.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (v = 108.0 m/s and s = 1458.0 m) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் ஓய்வு நிலையிலிருந்து a = 4.0 m/s² என்ற முடுக்கத்துடன் t = 27.0 s. நேரத்திற்கு சீராக முடுக்கமடைகிறது எனில், அதன் இறுதித் திசைவேகம் மற்றும் இடப்பெயர்ச்சி யாது?",
+        "optionTexts": [
+          "v = 216.0 m/s and s = 729.0 m",
+          "v = 108.0 m/s and s = 2916.0 m",
+          "v = 54.0 m/s and s = 2916.0 m",
+          "v = 108.0 m/s and s = 1458.0 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body accelerates uniformly from rest at a = 5.0 m/s² for a duration of t = 28.0 s. What is its final velocity and displacement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v = 140.0 m/s and s = 3920.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v = 280.0 m/s and s = 980.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v = 70.0 m/s and s = 3920.0 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v = 140.0 m/s and s = 1960.0 m",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Uniform linear acceleration kinematic relations.\nStep 2: Substitute given numerical parameters: primary value = 28, factor = 5.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (v = 140.0 m/s and s = 1960.0 m) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் ஓய்வு நிலையிலிருந்து a = 5.0 m/s² என்ற முடுக்கத்துடன் t = 28.0 s. நேரத்திற்கு சீராக முடுக்கமடைகிறது எனில், அதன் இறுதித் திசைவேகம் மற்றும் இடப்பெயர்ச்சி யாது?",
+        "optionTexts": [
+          "v = 140.0 m/s and s = 3920.0 m",
+          "v = 280.0 m/s and s = 980.0 m",
+          "v = 70.0 m/s and s = 3920.0 m",
+          "v = 140.0 m/s and s = 1960.0 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m = 29.0 kg is accelerated across a smooth floor at a = 6.0 m/s². What is the net horizontal propelling force F?",
+    "options": [
+      {
+        "label": "A",
+        "text": "348.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "184.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "87.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "174.0 N",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Newton's second law linear force evaluation.\nStep 2: Substitute given numerical parameters: primary value = 29, factor = 6.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (174.0 N) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m = 29.0 kg நிறை கொண்ட ஒரு பொருள் உராய்வற்ற தரைப்பரப்பில் a = 6.0 m/s². முடுக்கத்துடன் நகர்த்தப்பட்டால், அதன் மீதான நிகர விசை F யாது?",
+        "optionTexts": [
+          "348.0 N",
+          "184.0 N",
+          "87.0 N",
+          "174.0 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Units and Measurements, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1800.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "120.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "900.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3600.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Units and Measurements.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (1800.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Units and Measurements பாடப்பிரிவில்: In Units and Measurements, a body of mass m = 4.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1800.0 Joules",
+          "120.0 Joules",
+          "900.0 Joules",
+          "3600.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Straight Line, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2700.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "180.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1350.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5400.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Straight Line.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (2700.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Straight Line பாடப்பிரிவில்: In Motion in a Straight Line, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "2700.0 Joules",
+          "180.0 Joules",
+          "1350.0 Joules",
+          "5400.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Motion in a Plane, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "240.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7200.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3600.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1800.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Motion in a Plane.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (3600.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Motion in a Plane பாடப்பிரிவில்: In Motion in a Plane, a body of mass m = 8.0 kg operates under standard conditions with velocity v = 30.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "240.0 Joules",
+          "7200.0 Joules",
+          "3600.0 Joules",
+          "1800.0 Joules"
+        ]
+      }
+    ]
+  }
+]

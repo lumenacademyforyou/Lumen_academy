@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY04-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Carnot heat engine operates between heat source at T_H = 505 K and sink at T_C = 340 K. What is its thermal efficiency η?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42.7%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "16.3%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "32.7%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "67.3%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Carnot thermodynamic cycle temperature ratio efficiency.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (32.7%) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்னோ வெப்ப இயந்திரம் T_H = 505 K வெப்பநிலை மூலத்திற்கும் T_C = 340 K. வெப்பநிலை ஏற்பிக்கும் இடையே இயங்கினால், அதன் வெப்பப் பயனுறுதிறன் η யாது?",
+        "optionTexts": [
+          "42.7%",
+          "16.3%",
+          "32.7%",
+          "67.3%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3150.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "787.5 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "210.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1575.0 Joules",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Kinetic Theory of Gases.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option D (1575.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "3150.0 Joules",
+          "787.5 Joules",
+          "210.0 Joules",
+          "1575.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a parameter of magnitude 7.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "9.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "14.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "28.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Thermodynamics.\nStep 2: Substitute given numerical parameters: primary value = 7, factor = 2.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option C (14.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a parameter of magnitude 7.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "7.0 SI units",
+          "9.0 SI units",
+          "14.0 SI units",
+          "28.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a parameter of magnitude 8.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "24.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "48.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "11.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Kinetic Theory of Gases.\nStep 2: Substitute given numerical parameters: primary value = 8, factor = 3.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (24.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a parameter of magnitude 8.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "12.0 SI units",
+          "24.0 SI units",
+          "48.0 SI units",
+          "11.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Thermodynamics.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option B (10.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "20.00 SI units",
+          "10.00 SI units",
+          "5.00 SI units",
+          "4.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12.50 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.25 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "25.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Kinetic Theory of Gases.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (12.50 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "12.50 SI units",
+          "6.25 SI units",
+          "25.00 SI units",
+          "5.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In an ideal thermodynamic cycle #3_1, which state variable remains constant during a reversible adiabatic path?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pressure (isobaric process)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Temperature (isothermal process)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Entropy (isentropic process)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Volume (isochoric process)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Reversible adiabatic processes and entropy invariance.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option C (Entropy (isentropic process)) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வெப்ப இயக்கவியல் சுழற்சியில், #3_1, மீளக்கூடிய வெப்பப் பரிமாற்றமில்லா நிகழ்வின் போது மாறிலியாக இருக்கும் நிலை மாறி எது?",
+        "optionTexts": [
+          "அழுத்தம் (அழுத்தம் மாறா நிகழ்வு)",
+          "வெப்பநிலை (வெப்பநிலை மாறா நிகழ்வு)",
+          "என்ட்ரோபி (என்ட்ரோபி மாறா நிகழ்வு)",
+          "பருமன் (பருமன் மாறா நிகழ்வு)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Kinetic Theory of Gases (case #3_2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Kinetic Theory of Gases.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Kinetic Theory of Gases (case #3_2)?",
+        "optionTexts": [
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #5). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option C (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #5). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 2.0 r_loop",
+          "H_min = 2.5 r_loop (5/2 r_loop)",
+          "H_min = 2.7 r_loop (27/10 r_loop)",
+          "H_min = 3.0 r_loop"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A circular wire loop of radius a and resistance R falls vertically in a non-uniform horizontal magnetic field B(y) = B₀ (1 + k y) k̂ (case #5). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v_term = m g R / (π a² B₀ k)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v_term = m g R / (2 B₀² k² a⁴)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v_term = m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Induction drag and terminal descent equilibrium in magnetic gradients.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option D (v_term = m g R / (π² a⁴ B₀² k²)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரம் a மற்றும் மின்தடை R கொண்ட ஒரு வட்ட வடிவ கம்பி வளையம், சீரற்ற கிடைமட்ட காந்தப்புலம் B(y) = B₀ (1 + k y) k̂ இல் செங்குத்தாக விழும்போது அதன் முற்றுத் திசைவேகம் v_term யாது? (case #5). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+        "optionTexts": [
+          "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+          "v_term = m g R / (π a² B₀ k)",
+          "v_term = m g R / (2 B₀² k² a⁴)",
+          "v_term = m g R / (π² a⁴ B₀² k²)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Carnot heat engine operates between heat source at T_H = 530 K and sink at T_C = 320 K. What is its thermal efficiency η?",
+    "options": [
+      {
+        "label": "A",
+        "text": "49.6%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "19.8%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "39.6%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "60.4%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Carnot thermodynamic cycle temperature ratio efficiency.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (39.6%) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்னோ வெப்ப இயந்திரம் T_H = 530 K வெப்பநிலை மூலத்திற்கும் T_C = 320 K. வெப்பநிலை ஏற்பிக்கும் இடையே இயங்கினால், அதன் வெப்பப் பயனுறுதிறன் η யாது?",
+        "optionTexts": [
+          "49.6%",
+          "19.8%",
+          "39.6%",
+          "60.4%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a body of mass m = 10.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1125.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "562.5 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2250.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "150.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Kinetic Theory of Gases.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (1125.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a body of mass m = 10.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "1125.0 Joules",
+          "562.5 Joules",
+          "2250.0 Joules",
+          "150.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a parameter of magnitude 20.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "200.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Thermodynamics.\nStep 2: Substitute given numerical parameters: primary value = 20, factor = 5.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (100.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a parameter of magnitude 20.0 units is coupled with factor 5.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "25.0 SI units",
+          "100.0 SI units",
+          "200.0 SI units",
+          "50.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a parameter of magnitude 21.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "27.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "63.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "126.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "252.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Kinetic Theory of Gases.\nStep 2: Substitute given numerical parameters: primary value = 21, factor = 6.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option C (126.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a parameter of magnitude 21.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "27.0 SI units",
+          "63.0 SI units",
+          "126.0 SI units",
+          "252.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10.00 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Thermodynamics.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (10.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "10.00 SI units",
+          "5.00 SI units",
+          "20.00 SI units",
+          "4.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6.25 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12.50 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Kinetic Theory of Gases.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option C (12.50 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "25.00 SI units",
+          "6.25 SI units",
+          "12.50 SI units",
+          "5.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Carnot heat engine operates between heat source at T_H = 555 K and sink at T_C = 300 K. What is its thermal efficiency η?",
+    "options": [
+      {
+        "label": "A",
+        "text": "45.9%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "23.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "55.9%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "54.1%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Carnot thermodynamic cycle temperature ratio efficiency.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option A (45.9%) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்னோ வெப்ப இயந்திரம் T_H = 555 K வெப்பநிலை மூலத்திற்கும் T_C = 300 K. வெப்பநிலை ஏற்பிக்கும் இடையே இயங்கினால், அதன் வெப்பப் பயனுறுதிறன் η யாது?",
+        "optionTexts": [
+          "45.9%",
+          "23.0%",
+          "55.9%",
+          "54.1%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "337.5 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "90.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "675.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1350.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Kinetic Theory of Gases.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (675.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a body of mass m = 6.0 kg operates under standard conditions with velocity v = 15.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "337.5 Joules",
+          "90.0 Joules",
+          "675.0 Joules",
+          "1350.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In an ideal thermodynamic cycle #12_2, which state variable remains constant during a reversible adiabatic path?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Temperature (isothermal process)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Volume (isochoric process)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pressure (isobaric process)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Entropy (isentropic process)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Reversible adiabatic processes and entropy invariance.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option D (Entropy (isentropic process)) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வெப்ப இயக்கவியல் சுழற்சியில், #12_2, மீளக்கூடிய வெப்பப் பரிமாற்றமில்லா நிகழ்வின் போது மாறிலியாக இருக்கும் நிலை மாறி எது?",
+        "optionTexts": [
+          "வெப்பநிலை (வெப்பநிலை மாறா நிகழ்வு)",
+          "பருமன் (பருமன் மாறா நிகழ்வு)",
+          "அழுத்தம் (அழுத்தம் மாறா நிகழ்வு)",
+          "என்ட்ரோபி (என்ட்ரோபி மாறா நிகழ்வு)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which fundamental physical principle governs the conservation laws in Kinetic Theory of Gases (case #13_0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Creation of mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Non-conservation of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of mechanical energy and momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Violation of thermodynamics",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the underlying physical law governing Fundamental conservation principles in Kinetic Theory of Gases.\nStep 2: State the standard theoretical relation or boundary condition.\nStep 3: Analyze the parameters and evaluate the invariant quantity.\nStep 4: Conclude that Option C (Conservation of mechanical energy and momentum) is the correct response.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட அத்தியாயத்தின் பாதுகாப்பு விதிகளுக்கு அடிப்படையான இயற்பியல் கோட்பாடு எது: Kinetic Theory of Gases (case #13_0)?",
+        "optionTexts": [
+          "நிறை தன்னிச்சையாக உருவாதல்",
+          "மின்னூட்டம் பாதுகாக்கப்படாதது",
+          "இயந்திர ஆற்றல் மற்றும் நேர்கோட்டு உந்தத்தின் பாதுகாப்பு",
+          "வெப்ப இயக்கவியல் விதிகளின் மீறல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a parameter of magnitude 30.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "45.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "90.0 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "180.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "33.0 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Thermodynamics.\nStep 2: Substitute given numerical parameters: primary value = 30, factor = 3.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option B (90.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a parameter of magnitude 30.0 units is coupled with factor 3.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "45.0 SI units",
+          "90.0 SI units",
+          "180.0 SI units",
+          "33.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a parameter of magnitude 31.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "62.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "248.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "124.0 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Kinetic Theory of Gases.\nStep 2: Substitute given numerical parameters: primary value = 31, factor = 4.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (124.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a parameter of magnitude 31.0 units is coupled with factor 4.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "35.0 SI units",
+          "62.0 SI units",
+          "248.0 SI units",
+          "124.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Carnot heat engine operates between heat source at T_H = 575 K and sink at T_C = 340 K. What is its thermal efficiency η?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20.4%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "40.9%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "50.9%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "59.1%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Carnot thermodynamic cycle temperature ratio efficiency.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option B (40.9%) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்னோ வெப்ப இயந்திரம் T_H = 575 K வெப்பநிலை மூலத்திற்கும் T_C = 340 K. வெப்பநிலை ஏற்பிக்கும் இடையே இயங்கினால், அதன் வெப்பப் பயனுறுதிறன் η யாது?",
+        "optionTexts": [
+          "20.4%",
+          "40.9%",
+          "50.9%",
+          "59.1%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "140.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1400.0 Joules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "700.0 Joules",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "350.0 Joules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the governing physical relation for Multi-step standard analysis in Kinetic Theory of Gases.\nStep 2: Express the mathematical equation and substitute the given numerical constants.\nStep 3: Carry out algebraic and trigonometric reduction.\nStep 4: Conclude that Option C (700.0 Joules) is the exact verified answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a body of mass m = 14.0 kg operates under standard conditions with velocity v = 10.0 m/s. What is the standard mechanical parameter value?",
+        "optionTexts": [
+          "140.0 Joules",
+          "1400.0 Joules",
+          "700.0 Joules",
+          "350.0 Joules"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10.00 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Thermodynamics.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option D (10.00 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a system is subjected to boundary field constraint with scaling factor K = 4.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "4.00 SI units",
+          "5.00 SI units",
+          "20.00 SI units",
+          "10.00 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12.50 SI units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.00 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.25 SI units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulate the multi-variable boundary equation for Advanced boundary application in Kinetic Theory of Gases.\nStep 2: Express intermediate field variables and apply boundary conditions.\nStep 3: Simplify the resulting algebraic fraction.\nStep 4: Conclude that Option A (12.50 SI units) is the exact derived solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a system is subjected to boundary field constraint with scaling factor K = 5.0. What is the equilibrium field response value?",
+        "optionTexts": [
+          "12.50 SI units",
+          "25.00 SI units",
+          "5.00 SI units",
+          "6.25 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Thermodynamics, a parameter of magnitude 43.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "49.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "129.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "516.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "258.0 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Thermodynamics.\nStep 2: Substitute given numerical parameters: primary value = 43, factor = 6.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (258.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Thermodynamics பாடப்பிரிவில்: In Thermodynamics, a parameter of magnitude 43.0 units is coupled with factor 6.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "49.0 SI units",
+          "129.0 SI units",
+          "516.0 SI units",
+          "258.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kinetic Theory of Gases, a parameter of magnitude 41.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "164.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "43.0 SI units",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "82.0 SI units",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify the standard formula for Formulaic calculation in Kinetic Theory of Gases.\nStep 2: Substitute given numerical parameters: primary value = 41, factor = 2.\nStep 3: Perform direct algebraic calculation.\nStep 4: Conclude that Option D (82.0 SI units) is the exact matching result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Kinetic Theory of Gases பாடப்பிரிவில்: In Kinetic Theory of Gases, a parameter of magnitude 41.0 units is coupled with factor 2.0. What is the resulting primary physical value?",
+        "optionTexts": [
+          "41.0 SI units",
+          "164.0 SI units",
+          "43.0 SI units",
+          "82.0 SI units"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls purely without slipping down a rough slope that merges smoothly into a vertical circular loop of radius r_loop (case #19). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H_min = 2.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H_min = 3.0 r_loop",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H_min = 2.7 r_loop (27/10 r_loop)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "H_min = 2.5 r_loop (5/2 r_loop)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Rotational energy surcharge on vertical loop release threshold.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option C (H_min = 2.7 r_loop (27/10 r_loop)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை M மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளம், r_loop ஆரம் கொண்ட செங்குத்து வட்ட வளையத்தில் நழுவாமல் உருண்டு முழு வட்டப்பாதையை நிறைவு செய்யத் தேவையான குறைந்தபட்ச தொடக்க உயரம் H_min யாது? (case #19). What is the minimum release height H_min above the base of the loop to complete the loop without apex detachment?",
+        "optionTexts": [
+          "H_min = 2.0 r_loop",
+          "H_min = 3.0 r_loop",
+          "H_min = 2.7 r_loop (27/10 r_loop)",
+          "H_min = 2.5 r_loop (5/2 r_loop)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A circular wire loop of radius a and resistance R falls vertically in a non-uniform horizontal magnetic field B(y) = B₀ (1 + k y) k̂ (case #19). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_term = m g R / (π a² B₀ k)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "v_term = m g R / (2 B₀² k² a⁴)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v_term = m g R / (π² a⁴ B₀² k²)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Set up the differential dynamical equations for Induction drag and terminal descent equilibrium in magnetic gradients.\nStep 2: Apply the no-slip / motional flux constraint.\nStep 3: Integrate over spatial boundaries and equate energy / force balance.\nStep 4: Conclude that Option D (v_term = m g R / (π² a⁴ B₀² k²)) is the exact verified result.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரம் a மற்றும் மின்தடை R கொண்ட ஒரு வட்ட வடிவ கம்பி வளையம், சீரற்ற கிடைமட்ட காந்தப்புலம் B(y) = B₀ (1 + k y) k̂ இல் செங்குத்தாக விழும்போது அதன் முற்றுத் திசைவேகம் v_term யாது? (case #19). What is the steady terminal falling velocity v_term of the loop under gravity g?",
+        "optionTexts": [
+          "v_term = m g R / (π a² B₀ k)",
+          "v_term = m g R / (2 B₀² k² a⁴)",
+          "v_term = 2 m g R / (π² a⁴ B₀² k²)",
+          "v_term = m g R / (π² a⁴ B₀² k²)"
+        ]
+      }
+    ]
+  }
+]
