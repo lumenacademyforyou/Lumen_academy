@@ -3,20 +3,15 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import CoursesView from "./CoursesView";
 import StudyPlanView from "./StudyPlanView";
-import { ChapterGoal, Question } from "../types";
+import { ChapterGoal, CatalogTree, SessionResult } from "../types";
 
 interface CourseAreaViewProps {
   studentName: string;
   chapterGoals: ChapterGoal[];
   setChapterGoals: React.Dispatch<React.SetStateAction<ChapterGoal[]>>;
-  onStartCustomTest: (config: {
-    title: string;
-    questions: Question[];
-    durationSeconds: number;
-    mode: "standard" | "practice";
-    subject: string;
-    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
-  }) => void;
+  catalogTree: CatalogTree | null;
+  catalogError: string | null;
+  onSessionCreated: (session: SessionResult) => void;
   onNavigateTab: (tab: string) => void;
 }
 
@@ -24,7 +19,9 @@ export default function CourseAreaView({
   studentName,
   chapterGoals,
   setChapterGoals,
-  onStartCustomTest,
+  catalogTree,
+  catalogError,
+  onSessionCreated,
   onNavigateTab
 }: CourseAreaViewProps) {
   const { t } = useLanguage();
@@ -95,7 +92,9 @@ export default function CourseAreaView({
           >
             <CoursesView
               studentName={studentName}
-              onStartCustomTest={onStartCustomTest}
+              catalogTree={catalogTree}
+              catalogError={catalogError}
+              onSessionCreated={onSessionCreated}
               onNavigateTab={onNavigateTab}
             />
           </motion.div>
@@ -110,6 +109,8 @@ export default function CourseAreaView({
               studentName={studentName}
               chapterGoals={chapterGoals}
               setChapterGoals={setChapterGoals}
+              catalogTree={catalogTree}
+              onSessionCreated={onSessionCreated}
               onNavigateTab={onNavigateTab}
             />
           </motion.div>

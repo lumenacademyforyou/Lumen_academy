@@ -2,6 +2,7 @@ import { Router } from "express";
 import { requireAuth } from "../middleware/requireAuth.js";
 import { requirePermission } from "../middleware/requirePermission.js";
 import { makeCrudRouter } from "../lib/dbCrudRouter.js";
+import { getCatalogTree } from "../controllers/catalogTreeController.js";
 import { examRepository } from "../../../db/catalog/exam/exam.repository.js";
 import { markingSchemeRepository } from "../../../db/catalog/marking_scheme/marking_scheme.repository.js";
 import { examCycleRepository } from "../../../db/catalog/exam/exam_cycle/exam_cycle.repository.js";
@@ -23,6 +24,13 @@ import { nodeWeightageRepository } from "../../../db/catalog/exam/exam_cycle/exa
 const authed = [requireAuth, requirePermission("catalog:write")];
 
 const router = Router();
+
+// Read-open, same as /questions and /syllabus — see the CRUD reads-open
+// comment above. Phase D's test directory/subject drill-down/custom builder
+// all need this (subject->unit tree with real uuids and live published
+// counts, which no other endpoint provides — see catalogTreeController.ts's
+// header for what was actually missing).
+router.get("/tree", getCatalogTree);
 
 router.use("/exams", makeCrudRouter(examRepository, { writeMiddleware: authed }));
 router.use("/marking-schemes", makeCrudRouter(markingSchemeRepository, { writeMiddleware: authed }));

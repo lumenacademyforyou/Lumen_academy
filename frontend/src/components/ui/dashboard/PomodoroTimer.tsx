@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import Modal from "../../layout/Modal";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import { supabase } from "../../../services/supabase";
 import {
@@ -267,9 +268,6 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
               <h3 className="text-xl font-bold tracking-tight text-[#00243B] dark:text-white">
                 {t("Pomodoro Study Timer")}
               </h3>
-              <span className="text-[10px] font-extrabold uppercase tracking-widest text-teal-700 dark:text-[#FCB824] bg-teal-50 dark:bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-teal-200 dark:border-[#FCB824]/30">
-                Database Sync
-              </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
               {t("Track active revision sessions and log focus intervals to your session history")}
@@ -605,7 +603,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
       {/* Completion Rating / Logging Modal */}
       <AnimatePresence>
         {showLogModal && (
-          <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <Modal onClose={() => setShowLogModal(false)} backdropClassName="bg-slate-900/60 backdrop-blur-sm">
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -695,7 +693,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
                 </button>
               </div>
             </motion.div>
-          </div>
+          </Modal>
         )}
       </AnimatePresence>
     </div>

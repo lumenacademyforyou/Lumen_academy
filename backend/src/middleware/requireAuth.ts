@@ -2,6 +2,7 @@ import type { NextFunction, Request, RequestHandler, Response } from "express";
 import { provisionCanonicalUser } from "../services/provisionUser.service.js";
 import { supabaseAuth } from "../lib/supabaseClient.js";
 import { AppError } from "./errorHandler.js";
+import { checkAndTouchOnAuth, decodeSessionId, type SessionInfo } from "../services/session.service.js";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
@@ -17,6 +18,10 @@ declare global {
       // for a recent OTP reauthentication) rather than just the user it
       // resolves to.
       accessToken?: string;
+      // Phase E (session management) — the app-level session row backing
+      // idle-timeout/absolute-cap enforcement, resolved once per request
+      // here so /auth/session/* routes don't need a second query.
+      sessionInfo?: SessionInfo;
     }
   }
 }
@@ -49,6 +54,15 @@ export async function requireAuth(req: Request, _res: Response, next: NextFuncti
     const { profile, appUserId } = await provisionCanonicalUser(tokenPayload);
     req.user = { id: profile.id, role: profile.role, appUserId };
     req.accessToken = token;
+
+    // Phase E: Supabase's own verification above only proves the token is
+    // currently valid per Supabase — it has no idea about this app's
+    // 30-min-idle / 12h-absolute policy. checkAndTouchOnAuth throws 401
+    // SESSION_EXPIRED if that local policy has lapsed, independent of the
+    // Supabase token's own (much longer) expiry.
+    const sessionId = decodeSessionId(token, data.user.id);
+    req.sessionInfo = await checkAndTouchOnAuth(sessionId, appUserId);
+
     next();
   } catch (err) {
     next(err);

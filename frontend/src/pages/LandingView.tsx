@@ -1681,6 +1681,7 @@ import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import LumenLogo from "../components/ui/LumenLogo";
+import Modal from "../components/layout/Modal";
 import StudyPlanView from "./StudyPlanView";
 import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../data/syllabusData";
 import {
@@ -1697,6 +1698,7 @@ import {
   signInWithLinkedIn,
 } from "../services/supabaseAuth";
 import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../services/emailSendGuard";
+import { ensureDemoSession } from "../services/demoSession";
 
 export type { SyllabusUnit, SyllabusUnitMaterial };
 export { SYLLABUS_UNITS };
@@ -1704,9 +1706,13 @@ export { SYLLABUS_UNITS };
 interface LandingViewProps {
   onLoginSuccess: (name: string, isNewUser?: boolean, isAdmin?: boolean) => void;
   onQuickDemoFlowC?: () => void;
+  // Phase E — set after a forced idle/absolute-timeout sign-out, so the
+  // reason surfaces here instead of the user just silently landing back on
+  // this page with no explanation.
+  authMessage?: string | null;
 }
 
-export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: LandingViewProps) {
+export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMessage }: LandingViewProps) {
   const { t, language } = useLanguage();
 
   // Registration Form State
@@ -1944,6 +1950,31 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
     }
   };
 
+  // Real bug found live while writing Phase F6's Playwright journeys (LA-APP-COMPLETION-001):
+  // this button used to call onLoginSuccess directly with no Supabase call at
+  // all, flipping isAuthenticated to true with no real session behind it.
+  // Every authenticated API call the app shell makes right after (Header's
+  // own profile fetch, among others) then 401s, and apiFetch's existing
+  // 401 handler (services/api.ts) reacts by signing out and hard-navigating
+  // back to "/" — so this button silently bounced the user right back to the
+  // landing page within moments of "logging in". Fixed to establish the same
+  // real demo session the separate "Quick Demo" flow already uses
+  // (services/demoSession.ts's ensureDemoSession, sign-in-or-create-once
+  // against one fixed demo account) before reporting success.
+  const [isDemoLoggingIn, setIsDemoLoggingIn] = useState(false);
+  const handleDemoAccountLogin = async () => {
+    setFormError("");
+    setIsDemoLoggingIn(true);
+    try {
+      await ensureDemoSession();
+      onLoginSuccess("Demo Student", false, false);
+    } catch (err: any) {
+      setFormError(describeAuthError(err));
+    } finally {
+      setIsDemoLoggingIn(false);
+    }
+  };
+
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("lumen_theme");
@@ -1988,7 +2019,13 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-[#00243B] dark:text-slate-100 font-sans flex flex-col selection:bg-amber-100 selection:text-amber-900">
-      
+
+      {authMessage && (
+        <div className="bg-amber-50 dark:bg-amber-950/60 border-b border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-100 text-sm font-semibold text-center py-2.5 px-4">
+          {authMessage}
+        </div>
+      )}
+
       {/* Primary Navigation Header */}
       <header className="sticky top-0 z-40 bg-white/90 dark:bg-[#031824]/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-700 shadow-sm">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12 h-24 py-2 flex items-center justify-between gap-4">
@@ -2776,7 +2813,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
       {/* DETAILED SYLLABUS UNIT BREAKDOWN MODAL */}
       <AnimatePresence>
         {activeUnitModal && (
-          <div className="fixed inset-0 bg-[var(--navy)]/60 dark:bg-black/80 backdrop-blur-md z-[100] flex items-center justify-center p-4">
+          <Modal onClose={() => setActiveUnitModal(null)} backdropClassName="bg-[var(--navy)]/60 dark:bg-black/80 backdrop-blur-md" zIndexClassName="z-[100]">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -3000,14 +3037,14 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 </button>
               </div>
             </motion.div>
-          </div>
+          </Modal>
         )}
       </AnimatePresence>
 
       {/* MATERIAL VIEWER MODAL */}
       <AnimatePresence>
         {activeMaterialViewer && (
-          <div className="fixed inset-0 bg-slate-950/70 backdrop-blur-md z-[110] flex items-center justify-center p-4 animate-in fade-in duration-200">
+          <Modal onClose={() => setActiveMaterialViewer(null)} backdropClassName="bg-slate-950/70 backdrop-blur-md" zIndexClassName="z-[110]">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -3065,13 +3102,13 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 </button>
               </div>
             </motion.div>
-          </div>
+          </Modal>
         )}
       </AnimatePresence>
 
       {/* AUTHENTICATION & ONBOARDING MODAL */}
       {showAuthModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+        <Modal onClose={() => setShowAuthModal(false)} backdropClassName="bg-slate-950/60 backdrop-blur-sm">
           <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 dark:border-slate-700 relative scrollbar-thin">
             
             {/* Close Button */}
@@ -3537,11 +3574,12 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
                 <div className="grid grid-cols-2 gap-3 mt-4">
                   <button
                     type="button"
-                    onClick={() => onLoginSuccess("Demo Student", false, false)}
-                    className="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-[#00243B] dark:text-white font-bold text-xs rounded-xl transition-all flex flex-col items-center justify-center cursor-pointer border border-transparent dark:border-slate-600"
+                    onClick={handleDemoAccountLogin}
+                    disabled={isDemoLoggingIn}
+                    className="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-[#00243B] dark:text-white font-bold text-xs rounded-xl transition-all flex flex-col items-center justify-center cursor-pointer border border-transparent dark:border-slate-600 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <span className="material-symbols-outlined text-lg mb-1">person</span>
-                    Demo Account
+                    {isDemoLoggingIn ? "Signing in..." : "Demo Account"}
                   </button>
                   <button
                     type="button"
@@ -3556,7 +3594,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC }: Landin
             )}
 
           </div>
-        </div>
+        </Modal>
       )}
 
     </div>

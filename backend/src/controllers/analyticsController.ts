@@ -1,21 +1,21 @@
 import { Request, Response, NextFunction } from "express";
 import { pool } from "../../../db/shared/pool.js";
+import { getDashboardAnalytics } from "../../../db/assess/analytics/dashboard.js";
 
-// getAnalytics: no real source anymore. assess.attempt is empty (no real
-// attempts exist yet), and the old mock's "latestProjectedRank": "AIR 140" /
-// "averageAccuracy": "88%" were hardcoded demo values, not derived from
-// INITIAL_ATTEMPTS — carrying them forward would be inventing data. This
-// route also has no auth, so there's no user to scope real analytics to even
-// once assess.attempt has rows; that's a separate decision (add requireAuth
-// here) this rewrite doesn't make unilaterally. Returns an honest empty
-// shell instead of fake numbers.
-export const getAnalytics = (_req: Request, res: Response): void => {
-  res.json({
-    status: "success",
-    attempts: [],
-    latestProjectedRank: null,
-    averageAccuracy: null,
-  });
+// LA-APP-COMPLETION-001 Phase G (G1/G2) — replaces the old getAnalytics stub
+// below, which had no real source at all (assess.attempt was empty and the
+// prior mock's "latestProjectedRank"/"averageAccuracy" were hardcoded demo
+// values). Real, auth-gated, SQL-aggregated per-user analytics — no
+// client-side aggregation, nothing seeded. See db/assess/analytics/
+// dashboard.ts for the query set and the "unattempted = no attempt_response
+// row, or one whose is_correct stayed null" definition it uses throughout.
+export const getDashboard = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const data = await getDashboardAnalytics(req.user!.appUserId);
+    res.json({ data });
+  } catch (err) {
+    next(err);
+  }
 };
 
 interface SyllabusNodeRow {

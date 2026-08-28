@@ -4,10 +4,11 @@ import { useLanguage } from "../contexts/LanguageContext";
 interface LobbyViewProps {
   onStartTest: () => void;
   testTitle: string;
+  testCode: string;
   mode: "standard" | "practice";
 }
 
-export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewProps) {
+export default function LobbyView({ onStartTest, testTitle, testCode, mode }: LobbyViewProps) {
   const { t, language } = useLanguage();
   const [timeLeft, setTimeLeft] = useState(30);
   const [agreed, setAgreed] = useState(false);
@@ -110,6 +111,7 @@ export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewPro
             Your test is about to begin
           </p>
           <p className="text-secondary font-semibold text-sm mt-1">{testTitle}</p>
+          <p className="text-outline font-mono text-xs mt-1">{testCode}</p>
         </div>
 
         {/* Instructions Bento Layout */}
@@ -130,7 +132,7 @@ export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewPro
                 <div className="flex flex-col">
                   <span className="font-bold text-base md:text-lg text-on-surface">{t("Standard Examination Session")}</span>
                   <span className="text-xs md:text-sm text-on-surface-variant mt-0.5 leading-relaxed">
-                    This is a standardized NEET mock examination session under NTA test guidelines.
+                    This is a standardized NEET mock examination session under Lumen Academy test guidelines.
                   </span>
                 </div>
               </li>
@@ -210,9 +212,6 @@ export default function LobbyView({ onStartTest, testTitle, mode }: LobbyViewPro
             </span>
           </button>
           
-          <p className="mt-6 text-xs text-outline tracking-wider text-center">
-            Subject: Biology • Topics: Genetics, Evolution, Ecology
-          </p>
         </div>
 
       </div>

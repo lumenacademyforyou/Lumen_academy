@@ -2,23 +2,50 @@ import React, { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../data/syllabusData";
-import { Question } from "../types";
-import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "../data/questions";
+import { CatalogTree, CatalogUnit, SessionResult, SubjectCode } from "../types";
+import { createSession } from "../services/sessionApi";
+import { ApiError } from "../services/api";
 
 interface CoursesViewProps {
   studentName: string;
-  onStartCustomTest: (config: {
-    title: string;
-    questions: Question[];
-    durationSeconds: number;
-    mode: "standard" | "practice";
-    subject: string;
-    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
-  }) => void;
+  catalogTree: CatalogTree | null;
+  catalogError: string | null;
+  onSessionCreated: (session: SessionResult) => void;
   onNavigateTab: (tab: string) => void;
 }
 
-export default function CoursesView({ studentName, onStartCustomTest, onNavigateTab }: CoursesViewProps) {
+// This screen's unit descriptions (subtopics/formulas/materials) come from a
+// local reference dataset (data/syllabusData.ts) — course content, not test
+// questions, out of Phase D2's "no mock question data" scope. Its unitName
+// strings don't exactly match the real catalog's titles (different content
+// pipelines), so launching a real test for one of these units needs a
+// best-effort name match against the live catalog rather than an exact key.
+const SUBJECT_CODE_MAP: Record<SyllabusUnit["subject"], SubjectCode> = {
+  physics: "PHY",
+  chemistry: "CHEM",
+  botany: "BOT",
+  zoology: "ZOO",
+};
+
+function normalizeWords(s: string): string[] {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, "")
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function findBestMatchingUnit(units: CatalogUnit[], unitName: string): CatalogUnit | null {
+  const target = new Set(normalizeWords(unitName));
+  let best: { unit: CatalogUnit; score: number } | null = null;
+  for (const u of units) {
+    const score = normalizeWords(u.title).filter((w) => target.has(w)).length;
+    if (score > 0 && (!best || score > best.score)) best = { unit: u, score };
+  }
+  return best?.unit ?? null;
+}
+
+export default function CoursesView({ studentName, catalogTree, catalogError, onSessionCreated, onNavigateTab }: CoursesViewProps) {
   const { t, language } = useLanguage();
   // Filter States
   const [selectedSubjectTab, setSelectedSubjectTab] = useState<"all" | "physics" | "chemistry" | "botany" | "zoology">("all");
@@ -47,63 +74,37 @@ export default function CoursesView({ studentName, onStartCustomTest, onNavigate
     return matchesSubject && matchesClass && matchesSearch;
   });
 
-  // Helper to handle launching a unit mock test with exactly 30 questions based on unit syllabus
-  const handleStartUnitMock = (unit: SyllabusUnit) => {
-    let baseQuestions: Question[] = [];
-    if (unit.subject === "physics") baseQuestions = PHYSICS_QUESTIONS;
-    else if (unit.subject === "chemistry") baseQuestions = CHEMISTRY_QUESTIONS;
-    else baseQuestions = BIOLOGY_QUESTIONS;
+  const [launching, setLaunching] = useState(false);
+  const [launchError, setLaunchError] = useState<string | null>(null);
 
-    // Filter questions matching unit if possible
-    const unitMatches = baseQuestions.filter(
-      (q) => q.unit && q.unit.toLowerCase().includes(unit.unitName.toLowerCase())
-    );
-
-    const pool = unitMatches.length > 0 ? unitMatches : baseQuestions;
-    const shuffled = [...pool].sort(() => 0.5 - Math.random());
-
-    const selectedQs: Question[] = [];
-    const TOTAL_QUESTIONS = 30;
-
-    for (let i = 0; i < TOTAL_QUESTIONS; i++) {
-      if (i < shuffled.length) {
-        selectedQs.push({
-          ...shuffled[i],
-          id: 90000 + i + 1,
-          unit: unit.unitName,
-        });
-      } else {
-        // Generate unit-specific high-yield NCERT question based on syllabus subtopics
-        const subtopic = unit.subtopics[i % unit.subtopics.length] || unit.unitName;
-        const formula = unit.keyFormulas[i % unit.keyFormulas.length] || "";
-        const templateQ = shuffled[i % shuffled.length];
-
-        selectedQs.push({
-          id: 90000 + i + 1,
-          text: `[${unit.unitName} - ${subtopic}] Question ${i + 1}: Which of the following statements is ACCURATE regarding ${subtopic}? ${formula ? `(Formula Concept: ${formula})` : ""}`,
-          options: templateQ?.options || [
-            `Statement A: Verified NCERT concept for ${subtopic} under standard conditions`,
-            `Statement B: Inversely proportional relationship observed in experimental setups`,
-            `Statement C: Reaction requires an external energy input / catalyst`,
-            `Statement D: Applies exclusively to ideal equilibrium states`
-          ],
-          correctAnswerIndex: (i % 4),
-          subject: unit.subject === "physics" ? "Physics" : unit.subject === "chemistry" ? "Chemistry" : "Biology",
-          unit: unit.unitName,
-          ncertReference: `${unit.highYieldNCERTChapter}, NCERT Class ${unit.ncertClass}`,
-          explanation: `Refer to ${unit.highYieldNCERTChapter} in NCERT Class ${unit.ncertClass}. ${subtopic} is a high-yield NEET concept. ${formula ? `Key formula: ${formula}.` : ""}`
-        });
-      }
+  // Assembles a real 30-question session from the live bank, scoped to the
+  // catalog unit that best matches this reference unit's name (falls back to
+  // the whole subject if no confident match — never a fabricated question).
+  const handleStartUnitMock = async (unit: SyllabusUnit) => {
+    if (!catalogTree) return;
+    setLaunching(true);
+    setLaunchError(null);
+    try {
+      const subjectCode = SUBJECT_CODE_MAP[unit.subject];
+      const subject = catalogTree.subjects.find((s) => s.subjectCode === subjectCode);
+      if (!subject) throw new Error(`No published content for ${unit.subjectLabel} yet.`);
+      const matched = findBestMatchingUnit(subject.units, unit.unitName);
+      const session = await createSession({
+        mode: "subject-wise",
+        title: `${unit.unitName} - Unit Mock Test`,
+        durationMinutes: 30,
+        subjectId: subject.subjectId,
+        syllabusNodeId: matched?.nodeId,
+        includeDescendants: true,
+        pickCount: 30,
+      });
+      onSessionCreated(session);
+      setActiveUnitModal(null);
+    } catch (err) {
+      setLaunchError(err instanceof ApiError && err.code === "POOL_INSUFFICIENT" ? `Not enough published questions for this unit yet (${err.message}).` : err instanceof Error ? err.message : "Could not start this unit's mock test.");
+    } finally {
+      setLaunching(false);
     }
-
-    onStartCustomTest({
-      title: `${unit.unitName} - Unit Mock Test`,
-      questions: selectedQs,
-      durationSeconds: TOTAL_QUESTIONS * 60, // 30 mins
-      mode: "standard",
-      subject: unit.subject.toUpperCase(),
-    });
-    setActiveUnitModal(null);
   };
 
   // If a unit is selected for detailed view, render the dedicated Unit Workspace View
@@ -366,12 +367,14 @@ export default function CoursesView({ studentName, onStartCustomTest, onNavigate
                 </ul>
               </div>
 
+              {launchError && <p className="text-xs text-red-600 dark:text-red-400 font-semibold text-center">{launchError}</p>}
               <button
                 onClick={() => handleStartUnitMock(activeUnitModal)}
-                className="w-full py-4 bg-[#FCB824] hover:bg-amber-400 text-[#00243B] font-black text-sm uppercase tracking-wider rounded-2xl transition-all cursor-pointer shadow-lg flex items-center justify-center gap-2"
+                disabled={launching || !catalogTree}
+                className="w-full py-4 bg-[#FCB824] hover:bg-amber-400 text-[#00243B] font-black text-sm uppercase tracking-wider rounded-2xl transition-all cursor-pointer shadow-lg flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 <span className="material-symbols-outlined">play_arrow</span>
-                <span>Start 30-Question Unit Mock Test Now</span>
+                <span>{launching ? "Starting..." : "Start 30-Question Unit Mock Test Now"}</span>
               </button>
             </div>
           </div>
@@ -382,6 +385,9 @@ export default function CoursesView({ studentName, onStartCustomTest, onNavigate
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500 pb-12">
+      {catalogError && (
+        <div className="px-4 py-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-400 text-sm font-semibold">{catalogError}</div>
+      )}
       {/* Top Banner with "Journey to 720 starts here" */}
       <div className="bg-gradient-to-r from-[var(--navy)] via-[var(--teal)] to-[var(--navy)] rounded-[32px] p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
         {/* Background Decorative Glows */}
@@ -394,7 +400,7 @@ export default function CoursesView({ studentName, onStartCustomTest, onNavigate
             <span>{t("Journey to 720 starts here")}</span>
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight font-sans text-white leading-tight">{t("Complete NEET Syllabus & Unit Mock Tests")}</h1>
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight font-sans text-white leading-tight">{t("NEET")}</h1>
 
           <p className="text-slate-200 text-sm md:text-base leading-relaxed">{t("Explore all 24 NTA-aligned units across Physics, Chemistry, Botany, and Zoology. Study high-yield NCERT notes, access formula cheatsheets, and take targeted unit mock tests.")}</p>
 

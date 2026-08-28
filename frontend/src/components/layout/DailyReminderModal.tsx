@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
+import Modal from "./Modal";
 
 interface DailyReminderModalProps {
   onClose: () => void;
@@ -11,7 +12,7 @@ export default function DailyReminderModal({ onClose, onTakeTest, studentName }:
   const { t } = useLanguage();
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#00243B]/60 backdrop-blur-md p-4 animate-in fade-in duration-200">
+    <Modal onClose={onClose}>
       <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white w-full max-w-md rounded-[32px] p-8 md:p-10 shadow-2xl flex flex-col items-center text-center border border-slate-200 dark:border-slate-700 relative">
         <button 
           onClick={onClose}
@@ -50,6 +51,6 @@ export default function DailyReminderModal({ onClose, onTakeTest, studentName }:
           </button>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }

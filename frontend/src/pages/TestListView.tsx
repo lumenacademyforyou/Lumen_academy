@@ -1,469 +1,471 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
-import { TestAttempt, Question } from "../types";
-import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS, ALL_QUESTIONS } from "../data/questions";
+import { TestAttempt, CatalogTree, SubjectCode, DifficultyBand, SessionResult, CreateSessionRequest, SessionLine } from "../types";
+import { createSession } from "../services/sessionApi";
+import { ApiError } from "../services/api";
 
 interface TestListViewProps {
   attempts: TestAttempt[];
+  catalogTree: CatalogTree | null;
+  catalogError: string | null;
   isSyllabusCompleted: boolean;
   onSelectAttempt: (attempt: TestAttempt) => void;
-  onStartLobby: (testId: string) => void;
-  onStartCustomTest: (config: {
-    title: string;
-    questions: Question[];
-    durationSeconds: number;
-    mode: "standard" | "practice";
-    subject: string;
-    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
-  }) => void;
+  onSessionCreated: (session: SessionResult) => void;
 }
 
-// Available unit maps per subject
-const UNITS_BY_SUBJECT: Record<string, string[]> = {
-  Biology: [
-    "Molecular Basis of Inheritance",
-    "Genetics & Evolution",
-    "Ecology & Environment",
-    "Biotechnology & Applications"
-  ],
-  Chemistry: [
-    "p-Block & Periodic Trends",
-    "p-Block & Inorganic Chemistry",
-    "Solutions & Physical Chemistry",
-    "Coordination Compounds",
-    "Organic Chemistry - Reactions"
-  ],
-  Physics: [
-    "Rotational Dynamics & Mechanics",
-    "Electrostatics & Capacitance",
-    "Modern Physics & Dual Nature",
-    "Oscillations & SHM"
-  ],
-  Full: [
-    "Molecular Basis of Inheritance",
-    "Genetics & Evolution",
-    "Ecology & Environment",
-    "Biotechnology & Applications",
-    "p-Block & Periodic Trends",
-    "p-Block & Inorganic Chemistry",
-    "Solutions & Physical Chemistry",
-    "Coordination Compounds",
-    "Organic Chemistry - Reactions",
-    "Rotational Dynamics & Mechanics",
-    "Electrostatics & Capacitance",
-    "Modern Physics & Dual Nature",
-    "Oscillations & SHM"
-  ]
-};
+const DIFFICULTY_OPTIONS: { value: DifficultyBand | undefined; label: string }[] = [
+  { value: undefined, label: "Adaptive" },
+  { value: "easy", label: "Easy" },
+  { value: "medium", label: "Medium" },
+  { value: "hard", label: "Hard" },
+];
 
-export default function TestListView({ 
+const QUESTION_COUNT_OPTIONS = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
-  attempts, 
-  isSyllabusCompleted,
-  onSelectAttempt, 
-  onStartLobby, 
-  onStartCustomTest 
-}: TestListViewProps) {
-  const { t, language } = useLanguage();
-  // Calibration states for the Custom Mock Builder
-  const [selectedSubject, setSelectedSubject] = useState<"Biology" | "Chemistry" | "Physics" | "Full">("Full");
-  const [selectedUnits, setSelectedUnits] = useState<string[]>([]);
-  const [questionCount, setQuestionCount] = useState<number>(10);
-  const [durationMinutes, setDurationMinutes] = useState<number>(10);
-  const [difficulty, setDifficulty] = useState<"Adaptive" | "Easy" | "Medium" | "Hard">("Adaptive");
+// Evenly distributes `total` across `n` buckets — the last few buckets take
+// the +1 remainder rather than the first, purely so smaller units (fewer
+// available questions) are less likely to be asked for slightly more than
+// they hold; the server's PoolInsufficientError is still the real safety net
+// either way.
+function distributeCount(total: number, n: number): number[] {
+  if (n <= 0) return [];
+  const base = Math.floor(total / n);
+  const remainder = total % n;
+  return Array.from({ length: n }, (_, i) => base + (i >= n - remainder ? 1 : 0));
+}
 
-  const [filterDifficulty, setFilterDifficulty] = useState<"All" | "Easy" | "Medium" | "Hard">("All");
-
-  const mockSeries = [
-    {
-      id: "mock_04",
-      title: "NEET Full Syllabus Mock 04",
-      subject: "All Subjects",
-      topics: "Physics, Chemistry, Biology Complete Syllabus",
-      questions: 180,
-      duration: "180 mins",
-      isCompleted: true,
-      difficulty: "Hard",
-    },
-    {
-      id: "mock_05",
-      title: "NEET Full Syllabus Mock 05 (720 Marks)",
-      subject: "All Subjects",
-      topics: "Physics, Chemistry, Biology Complete Syllabus",
-      questions: 180,
-      duration: "180 mins",
-      isCompleted: false,
-      difficulty: "Hard",
-    },
-    {
-      id: "mock_12",
-      title: "NEET Biology Mini-Mock #12",
-      subject: "Biology Focus",
-      topics: "Genetics, Evolution, Ecology",
-      questions: 10,
-      duration: "10 mins",
-      isCompleted: false,
-      difficulty: "Medium",
-    },
-    {
-      id: "mock_08",
-      title: "NEET Chemistry Mini-Mock #08",
-      subject: "Chemistry Focus",
-      topics: "p-Block Elements, Periodic Trends",
-      questions: 15,
-      duration: "15 mins",
-      isCompleted: false,
-      difficulty: "Easy",
+function friendlyError(err: unknown): string {
+  if (err instanceof ApiError) {
+    if (err.code === "POOL_INSUFFICIENT") {
+      return `Not enough published questions for this selection (${err.message}). Try a smaller question count or different units.`;
     }
-  ];
+    return err.message;
+  }
+  return err instanceof Error ? err.message : "Something went wrong. Please try again.";
+}
 
-  const filteredMockSeries = filterDifficulty === "All" 
-    ? mockSeries 
-    : mockSeries.filter(series => series.difficulty === filterDifficulty);
+export default function TestListView({ attempts, catalogTree, catalogError, isSyllabusCompleted, onSelectAttempt, onSessionCreated }: TestListViewProps) {
+  const { t } = useLanguage();
+  const [view, setView] = useState<"directory" | "subject-wise" | "custom">("directory");
+  const [creating, setCreating] = useState(false);
+  const [createError, setCreateError] = useState<string | null>(null);
 
-  // Helper to extract questions mapping subject & unit selections
-  const getFilteredQuestions = () => {
-    let pool: Question[] = [];
-    switch (selectedSubject) {
-      case "Biology":
-        pool = BIOLOGY_QUESTIONS;
-        break;
-      case "Chemistry":
-        pool = CHEMISTRY_QUESTIONS;
-        break;
-      case "Physics":
-        pool = PHYSICS_QUESTIONS;
-        break;
-      case "Full":
-      default:
-        pool = ALL_QUESTIONS;
-        break;
+  // Subject-wise builder state
+  const [swSubjectCode, setSwSubjectCode] = useState<SubjectCode | null>(null);
+  const [swUnitNodeId, setSwUnitNodeId] = useState<string | "all">("all");
+  const [swPickCount, setSwPickCount] = useState(20);
+  const [swDifficulty, setSwDifficulty] = useState<DifficultyBand | undefined>(undefined);
+
+  // Custom builder state
+  const [customSubjectFilter, setCustomSubjectFilter] = useState<SubjectCode | "ALL">("ALL");
+  const [customSelectedUnits, setCustomSelectedUnits] = useState<Set<string>>(new Set());
+  const [customTotalCount, setCustomTotalCount] = useState(20);
+  const [customDifficulty, setCustomDifficulty] = useState<DifficultyBand | undefined>(undefined);
+
+  const swSubject = catalogTree?.subjects.find((s) => s.subjectCode === swSubjectCode) ?? null;
+  const swUnit = swSubject?.units.find((u) => u.nodeId === swUnitNodeId) ?? null;
+  const swAvailable = swUnit ? swUnit.publishedQuestionCount : (swSubject?.publishedQuestionCount ?? 0);
+
+  const customUnitsPool = useMemo(() => {
+    if (!catalogTree) return [];
+    return catalogTree.subjects.filter((s) => customSubjectFilter === "ALL" || s.subjectCode === customSubjectFilter).flatMap((s) => s.units.map((u) => ({ ...u, subjectId: s.subjectId, subjectCode: s.subjectCode })));
+  }, [catalogTree, customSubjectFilter]);
+
+  async function launch(body: CreateSessionRequest) {
+    setCreating(true);
+    setCreateError(null);
+    try {
+      const session = await createSession(body);
+      onSessionCreated(session);
+    } catch (err) {
+      setCreateError(friendlyError(err));
+    } finally {
+      setCreating(false);
     }
+  }
 
-    if (selectedUnits.length > 0) {
-      const unitFiltered = pool.filter((q) => q.unit && selectedUnits.includes(q.unit));
-      return unitFiltered.length > 0 ? unitFiltered : pool;
+  function handleStartFullMock() {
+    if (!isSyllabusCompleted) {
+      setCreateError("Complete all units in your Syllabus Tracker (Study Plan) to unlock the Full Mock Test.");
+      return;
     }
-    return pool;
-  };
+    launch({ mode: "full-mock", title: "Full Mock Test" });
+  }
 
-  const toggleUnit = (unitName: string) => {
-    if (selectedUnits.includes(unitName)) {
-      setSelectedUnits(selectedUnits.filter((u) => u !== unitName));
-    } else {
-      setSelectedUnits([...selectedUnits, unitName]);
-    }
-  };
-
-  const handleSubjectChange = (sub: "Biology" | "Chemistry" | "Physics" | "Full") => {
-    setSelectedSubject(sub);
-    setSelectedUnits([]); // Reset units selection on subject change
-  };
-
-  const handleLaunchCustom = () => {
-    const rawQuestions = getFilteredQuestions();
-    
-    // Symmetrical random shuffle
-    const shuffled = [...rawQuestions].sort(() => 0.5 - Math.random());
-    const finalQuestions = shuffled.slice(0, Math.min(questionCount, shuffled.length));
-
-    const subjectTitle = selectedSubject === "Full" ? "Full Syllabus" : selectedSubject;
-    const finalMode = "standard";
-    const unitsSuffix = selectedUnits.length > 0 ? ` [${selectedUnits.length} Units]` : "";
-    const customTitle = `Custom ${subjectTitle} Mock${unitsSuffix}`;
-
-    onStartCustomTest({
-      title: customTitle,
-      questions: finalQuestions,
-      durationSeconds: durationMinutes * 60,
-      mode: finalMode,
-      subject: selectedSubject,
-      difficulty: difficulty,
+  function handleStartSubjectWise() {
+    if (!swSubject) return;
+    launch({
+      mode: "subject-wise",
+      title: swUnit ? `${swSubject.subjectName} — ${swUnit.title}` : `${swSubject.subjectName} Practice`,
+      durationMinutes: swPickCount,
+      subjectId: swSubject.subjectId,
+      syllabusNodeId: swUnit ? swUnit.nodeId : undefined,
+      includeDescendants: true,
+      difficultyBand: swDifficulty,
+      pickCount: swPickCount,
     });
-  };
+  }
 
-  // Uniform card class matching requirement 2
-  const cardClassName = "bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] md:rounded-[32px] border border-slate-200 dark:border-slate-700 hover:border-[var(--teal)]/40 dark:hover:border-[#FCB824]/50 shadow-sm hover:shadow-xl transition-all duration-300 p-6 md:p-8 flex flex-col justify-between";
+  function handleLaunchCustom() {
+    if (!catalogTree) return;
+    const selectedList = customUnitsPool.filter((u) => customSelectedUnits.has(u.nodeId));
+    let lines: SessionLine[];
+    if (selectedList.length > 0) {
+      const counts = distributeCount(customTotalCount, selectedList.length);
+      lines = selectedList.map((u, i) => ({
+        subjectId: u.subjectId,
+        syllabusNodeId: u.nodeId,
+        includeDescendants: true,
+        difficultyBand: customDifficulty,
+        pickCount: counts[i],
+        sectionName: `${u.subjectCode} - ${u.title}`,
+      }));
+    } else {
+      // No specific units picked — one line per subject in the active filter,
+      // whole-subject (no syllabusNodeId), matching subject-wise's own
+      // "no unit chosen = whole subject" default.
+      const subjects = catalogTree.subjects.filter((s) => customSubjectFilter === "ALL" || s.subjectCode === customSubjectFilter);
+      const counts = distributeCount(customTotalCount, subjects.length);
+      lines = subjects.map((s, i) => ({
+        subjectId: s.subjectId,
+        includeDescendants: true,
+        difficultyBand: customDifficulty,
+        pickCount: counts[i],
+        sectionName: s.subjectCode,
+      }));
+    }
+    const unitsSuffix = selectedList.length > 0 ? ` [${selectedList.length} units]` : "";
+    launch({ mode: "custom", title: `Custom Test${unitsSuffix}`, durationMinutes: customTotalCount, lines });
+  }
 
-  const activeUnitsList = UNITS_BY_SUBJECT[selectedSubject] || UNITS_BY_SUBJECT["Full"];
+  const cardClassName =
+    "bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] md:rounded-[32px] border border-slate-200 dark:border-slate-700 hover:border-[var(--teal)]/40 dark:hover:border-[#FCB824]/50 shadow-sm hover:shadow-xl transition-all duration-300 p-6 md:p-8 flex flex-col justify-between";
+
+  if (catalogError) {
+    return (
+      <div className="max-w-[1280px] mx-auto p-10 text-center">
+        <p className="text-red-600 dark:text-red-400 font-semibold">{catalogError}</p>
+      </div>
+    );
+  }
+
+  if (!catalogTree) {
+    return (
+      <div className="max-w-[1280px] mx-auto p-10 flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-slate-300 border-t-[var(--teal)] rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  const recentAttempts = attempts.filter((a) => a.totalScore !== undefined);
 
   return (
     <div className="space-y-8 max-w-[1280px] mx-auto animate-in fade-in duration-500">
       <div className="px-2 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
         <div>
           <h2 className="text-2xl md:text-3xl font-sans font-bold text-[#00243B] dark:text-white tracking-tight mb-1">{t("NEET Mock Test Series")}</h2>
-          <p className="text-slate-600 dark:text-slate-300 text-sm">{t("Challenge yourself with high-fidelity examination environments and get instant, smart AI strategies.")}</p>
+          <p className="text-slate-600 dark:text-slate-300 text-sm">{t("Assembled fresh from the live question bank — every attempt is different, and questions never repeat until you've seen the whole bank.")}</p>
         </div>
-        
-        {/* Difficulty Filter */}
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">{t("Difficulty:")}</span>
-          <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
-            {["All", "Easy", "Medium", "Hard"].map((level) => (
-              <button
-                key={level}
-                onClick={() => setFilterDifficulty(level as any)}
-                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-colors ${
-                  filterDifficulty === level
-                    ? "bg-white dark:bg-slate-600 text-[#00243B] dark:text-white shadow-sm"
-                    : "text-slate-500 dark:text-slate-400 hover:text-[#00243B] dark:hover:text-white"
-                }`}
-              >
-                {t(level)}
-              </button>
-            ))}
-          </div>
-        </div>
+        {view !== "directory" && (
+          <button
+            onClick={() => {
+              setView("directory");
+              setCreateError(null);
+            }}
+            className="px-4 py-2 text-xs font-bold rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+          >
+            {t("← Back to Test Directory")}
+          </button>
+        )}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        
-        {/* Render pre-configured mocks with standard coloring style */}
-        {filteredMockSeries.map((seriesItem, idx) => {
-          const attempt = attempts.find((a) => a.id === seriesItem.id);
-          const hasCompleted = attempt && attempt.totalScore > 0;
+      {createError && (
+        <div className="px-4 py-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-400 text-sm font-semibold">{createError}</div>
+      )}
 
-          return (
-            <motion.div 
-              key={seriesItem.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3, delay: idx * 0.1 }}
-              className={cardClassName}
-            >
+      {view === "directory" && (
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {/* Full Mock */}
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ y: -6 }} transition={{ duration: 0.3 }} className={cardClassName}>
               <div>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-[10px] font-black uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 text-[var(--teal)] dark:text-[#FCB824] px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
-                    {t(seriesItem.subject)}
-                  </span>
-                  
-                  {hasCompleted ? (
-                    <span className="bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-[#FCB824] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 border border-amber-200 dark:border-[#FCB824]/40">
-                      <span className="material-symbols-outlined text-sm font-bold">check_circle</span>{t("Completed")}</span>
-                  ) : (
-                    <span className="bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-[#FCB824] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-200 dark:border-[#FCB824]/40">{t("Available")}</span>
-                  )}
-                </div>
-
-                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mb-2">
-                  {t(seriesItem.title)}
-                </h3>
-                
-                <p className="text-xs text-slate-600 dark:text-slate-300 mb-6 font-medium leading-relaxed">
-                  <span className="font-bold text-[#00243B] dark:text-slate-100">{t("Topics:")}</span> {t(seriesItem.topics)}
-                </p>
-
+                <span className="text-[10px] font-black uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 text-[var(--teal)] dark:text-[#FCB824] px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
+                  {t("All Subjects")}
+                </span>
+                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Full Mock Test")}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 mb-6 font-medium leading-relaxed">{t("Real NEET pattern: 45 questions per subject across Physics, Chemistry, Botany, and Zoology.")}</p>
                 <div className="grid grid-cols-2 gap-4 py-4 border-t border-b border-slate-200 dark:border-slate-700 mb-6 text-xs font-semibold text-slate-600 dark:text-slate-300">
                   <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-lg">list_alt</span>
-                    <span>{seriesItem.questions} {t("Questions")}</span>
+                    <span>180 {t("Questions")}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-lg">schedule</span>
-                    <span>{seriesItem.duration.replace("mins", t("mins"))}</span>
+                    <span>180 {t("mins")}</span>
                   </div>
                 </div>
               </div>
-
-              {hasCompleted ? (
-                <div className="space-y-4">
-                  <div className="bg-slate-50 dark:bg-slate-900/40 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 flex justify-between items-center text-xs">
-                    <div>
-                      <p className="text-slate-500 dark:text-slate-400 font-semibold mb-0.5">{t("Your Score")}</p>
-                      <p className="text-lg font-bold text-[#00243B] dark:text-white">{attempt.totalScore}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-slate-500 dark:text-slate-400 font-semibold mb-0.5">{t("Accuracy")}</p>
-                      <AnimatedCounter value={attempt.accuracy} suffix="%" className="text-lg font-bold text-[var(--teal)] dark:text-[#FCB824]" />
-                    </div>
-                  </div>
-
-                  <button
-                    onClick={() => onSelectAttempt(attempt)}
-                    className="w-full py-3.5 bg-[var(--navy)] dark:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-[var(--navy)] dark:hover:bg-[#FCB824] transition-colors cursor-pointer text-center block"
-                  >{t("View Scorecard")}</button>
-                </div>
-              ) : (
-                <button
-                  onClick={() => {
-                    const isFullSyllabus = seriesItem.title.toLowerCase().includes("full syllabus");
-                    if (isFullSyllabus && !isSyllabusCompleted) {
-                      alert("Please complete all units in your Syllabus Tracker (Study Plan) to unlock Full Syllabus Mock Tests.");
-                    } else if (seriesItem.id === "mock_08") {
-                      alert("NEET Chemistry Mini-Mock #08 is locked. Complete the Biology focus test to unlock it!");
-                    } else {
-                      onStartLobby(seriesItem.id);
-                    }
-                  }}
-                  className={`w-full py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl transition-all cursor-pointer text-center block ${
-                    (seriesItem.title.toLowerCase().includes("full syllabus") && !isSyllabusCompleted) || seriesItem.id === "mock_08"
-                      ? "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 border border-transparent cursor-not-allowed"
-                      : "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] shadow-md hover:shadow-lg"
-                  }`}
-                >
-                  {(seriesItem.title.toLowerCase().includes("full syllabus") && !isSyllabusCompleted)
-                    ? "Locked (Complete Syllabus Tracker)"
-                    : seriesItem.id === "mock_08" 
-                      ? "Locked (Complete Biology First)" 
-                      : "Start Mock Test"}
-                </button>
-              )}
+              <button
+                onClick={handleStartFullMock}
+                disabled={creating}
+                className={`w-full py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center block ${
+                  isSyllabusCompleted ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] shadow-md hover:shadow-lg cursor-pointer" : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed"
+                } disabled:opacity-60`}
+              >
+                {isSyllabusCompleted ? t("Start Full Mock Test") : t("Locked (Complete Syllabus Tracker)")}
+              </button>
             </motion.div>
-          );
-        })}
 
-        {/* Custom Mock Test Generator Card */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ y: -6 }}
-          transition={{ duration: 0.3, delay: 0.3 }}
-          className={cardClassName}
-        >
-          <div className="space-y-4">
-            <div className="flex justify-between items-center">
-              <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">{t("Custom Calibration")}</span>
-              <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-xl font-bold animate-pulse">settings_suggest</span>
+            {/* Subject-wise */}
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ y: -6 }} transition={{ duration: 0.3, delay: 0.1 }} className={cardClassName}>
+              <div>
+                <span className="text-[10px] font-black uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 text-[var(--teal)] dark:text-[#FCB824] px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
+                  {t("Focused Practice")}
+                </span>
+                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Subject-wise Practice")}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 mb-6 font-medium leading-relaxed">{t("Drill a single subject, or one specific unit within it, at your own pace.")}</p>
+                <div className="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2">
+                  {catalogTree.subjects.map((s) => (
+                    <div key={s.subjectId} className="flex items-center justify-between px-3 py-2 bg-slate-50 dark:bg-slate-900/40 rounded-lg border border-slate-200 dark:border-slate-700">
+                      <span>{s.subjectCode}</span>
+                      <span className="text-[var(--teal)] dark:text-[#FCB824] font-bold">{s.publishedQuestionCount}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <button onClick={() => setView("subject-wise")} className="w-full py-3.5 mt-4 bg-[var(--teal)] dark:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-[var(--teal-2)] shadow-md hover:shadow-lg transition-all cursor-pointer">
+                {t("Configure Practice")}
+              </button>
+            </motion.div>
+
+            {/* Custom */}
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ y: -6 }} transition={{ duration: 0.3, delay: 0.2 }} className={cardClassName}>
+              <div>
+                <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
+                  {t("Custom Calibration")}
+                </span>
+                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Custom Mock Builder")}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 font-semibold leading-relaxed mb-6">{t("Pick specific units across every subject, a total question count, and a difficulty level.")}</p>
+              </div>
+              <button onClick={() => setView("custom")} className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-[var(--teal-2)] shadow-md hover:shadow-lg transition-all cursor-pointer">
+                {t("Build Custom Test")}
+              </button>
+            </motion.div>
+          </div>
+
+          {recentAttempts.length > 0 && (
+            <div className="pt-4">
+              <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4 px-2">{t("Recent Attempts")}</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {recentAttempts.slice(0, 6).map((attempt) => (
+                  <button key={attempt.id} onClick={() => onSelectAttempt(attempt)} className="text-left bg-slate-50 dark:bg-slate-900/40 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-[var(--teal)]/40 transition-all">
+                    <p className="text-sm font-bold text-[#00243B] dark:text-white mb-1">{attempt.title}</p>
+                    <div className="flex justify-between items-center text-xs">
+                      <span className="text-slate-500 dark:text-slate-400">{attempt.date}</span>
+                      <AnimatedCounter value={attempt.accuracy} suffix="% acc." className="font-bold text-[var(--teal)] dark:text-[#FCB824]" />
+                    </div>
+                  </button>
+                ))}
+              </div>
             </div>
+          )}
+        </>
+      )}
 
-            <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white">{t("Custom Mock Builder")}</h3>
-            <p className="text-xs text-slate-600 dark:text-slate-300 font-semibold leading-relaxed">
-              Design a tailored study session matching your active pacing and unit revision targets.
-            </p>
-
-            {/* Subject Selector */}
-            <div className="space-y-1.5 pt-1">
-              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Focus Subject")}</label>
+      {view === "subject-wise" && (
+        <div className={cardClassName + " max-w-xl"}>
+          <div className="space-y-5">
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Subject")}</label>
               <div className="grid grid-cols-4 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
-                {(["Full", "Biology", "Chemistry", "Physics"] as const).map((sub) => (
+                {catalogTree.subjects.map((s) => (
                   <button
-                    key={sub}
-                    type="button"
-                    onClick={() => handleSubjectChange(sub)}
-                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer select-none ${
-                      selectedSubject === sub 
-                        ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" 
-                        : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"
-                    }`}
+                    key={s.subjectId}
+                    onClick={() => {
+                      setSwSubjectCode(s.subjectCode);
+                      setSwUnitNodeId("all");
+                    }}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${swSubjectCode === s.subjectCode ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"}`}
                   >
-                    {sub === "Full" ? "All" : sub.slice(0, 4)}
+                    {s.subjectCode}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* Unit / Chapter Multi-Select */}
-            <div className="space-y-1.5 pt-1">
+            {swSubject && (
+              <div className="space-y-1.5">
+                <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Unit (optional)")}</label>
+                <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto p-2 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200 dark:border-slate-700">
+                  <button
+                    onClick={() => setSwUnitNodeId("all")}
+                    className={`text-[10px] font-bold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${swUnitNodeId === "all" ? "bg-[var(--teal)] text-white border border-[var(--teal)]" : "bg-white dark:bg-[var(--navy)] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"}`}
+                  >
+                    {t("All Units")} ({swSubject.publishedQuestionCount})
+                  </button>
+                  {swSubject.units.map((u) => (
+                    <button
+                      key={u.nodeId}
+                      onClick={() => setSwUnitNodeId(u.nodeId)}
+                      className={`text-[10px] font-bold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${swUnitNodeId === u.nodeId ? "bg-[var(--teal)] text-white border border-[var(--teal)]" : "bg-white dark:bg-[var(--navy)] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"}`}
+                    >
+                      {u.title} ({u.publishedQuestionCount})
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                {t("Questions")} ({t("available")}: {swAvailable})
+              </label>
+              <select
+                value={swPickCount}
+                onChange={(e) => setSwPickCount(Number(e.target.value))}
+                className="w-full bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs font-bold text-[#00243B] dark:text-white"
+              >
+                {QUESTION_COUNT_OPTIONS.map((c) => (
+                  <option key={c} value={c}>
+                    {c} {t("Qs")}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Difficulty")}</label>
+              <div className="grid grid-cols-4 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+                {DIFFICULTY_OPTIONS.map((d) => (
+                  <button
+                    key={d.label}
+                    onClick={() => setSwDifficulty(d.value)}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${swDifficulty === d.value ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"}`}
+                  >
+                    {t(d.label)}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button
+              onClick={handleStartSubjectWise}
+              disabled={!swSubject || creating}
+              className="w-full mt-2 py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {creating ? t("Starting...") : t("Start Practice")}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {view === "custom" && (
+        <div className={cardClassName + " max-w-xl"}>
+          <div className="space-y-4">
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Focus Subject")}</label>
+              <div className="grid grid-cols-5 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+                {(["ALL", ...catalogTree.subjects.map((s) => s.subjectCode)] as const).map((code) => (
+                  <button
+                    key={code}
+                    onClick={() => setCustomSubjectFilter(code)}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${customSubjectFilter === code ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"}`}
+                  >
+                    {code === "ALL" ? "All" : code}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-1.5">
               <div className="flex justify-between items-center">
                 <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  Select Particular Units ({selectedUnits.length === 0 ? "All Selected" : `${selectedUnits.length} Picked`})
+                  {t("Select Units")} ({customSelectedUnits.size === 0 ? t("All Selected") : `${customSelectedUnits.size} ${t("Picked")}`})
                 </label>
-                {selectedUnits.length > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => setSelectedUnits([])}
-                    className="text-[10px] text-[#ffd15c] dark:text-[#FCB824] font-bold hover:underline"
-                  >
-                    Reset Units
+                {customSelectedUnits.size > 0 && (
+                  <button onClick={() => setCustomSelectedUnits(new Set())} className="text-[10px] text-[#ffd15c] dark:text-[#FCB824] font-bold hover:underline">
+                    {t("Reset Units")}
                   </button>
                 )}
               </div>
-
-              <div className="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto p-2 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200 dark:border-slate-700 scrollbar-thin">
-                {activeUnitsList.map((unit) => {
-                  const isSelected = selectedUnits.includes(unit);
+              <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto p-2 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200 dark:border-slate-700">
+                {customUnitsPool.map((u) => {
+                  const isSelected = customSelectedUnits.has(u.nodeId);
                   return (
                     <button
-                      key={unit}
-                      type="button"
-                      onClick={() => toggleUnit(unit)}
-                      className={`text-[10px] font-bold px-2.5 py-1 rounded-lg transition-all cursor-pointer text-left flex items-center gap-1 ${
-                        isSelected
-                          ? "bg-[var(--teal)] text-white shadow-sm border border-[var(--teal)]"
-                          : "bg-white dark:bg-[var(--navy)] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-[var(--teal)]/50"
+                      key={u.nodeId}
+                      onClick={() =>
+                        setCustomSelectedUnits((prev) => {
+                          const next = new Set(prev);
+                          if (next.has(u.nodeId)) next.delete(u.nodeId);
+                          else next.add(u.nodeId);
+                          return next;
+                        })
+                      }
+                      className={`text-[10px] font-bold px-2.5 py-1 rounded-lg transition-all cursor-pointer flex items-center gap-1 ${
+                        isSelected ? "bg-[var(--teal)] text-white shadow-sm border border-[var(--teal)]" : "bg-white dark:bg-[var(--navy)] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
                       }`}
                     >
-                      <span className="material-symbols-outlined text-[12px]">
-                        {isSelected ? "check_box" : "check_box_outline_blank"}
+                      <span className="material-symbols-outlined text-[12px]">{isSelected ? "check_box" : "check_box_outline_blank"}</span>
+                      <span>
+                        {u.subjectCode} — {u.title} ({u.publishedQuestionCount})
                       </span>
-                      <span>{unit}</span>
                     </button>
                   );
                 })}
               </div>
             </div>
 
-            {/* Qs and Mins Selector */}
-            <div className="grid grid-cols-2 gap-3 pt-1">
+            <div className="grid grid-cols-2 gap-3">
               <div className="space-y-1.5">
                 <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Questions")}</label>
                 <select
-                  value={questionCount}
-                  onChange={(e) => {
-                    const count = Number(e.target.value);
-                    setQuestionCount(count);
-                    setDurationMinutes(count);
-                  }}
-                  className="w-full bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs font-bold text-[#00243B] dark:text-white cursor-pointer"
+                  value={customTotalCount}
+                  onChange={(e) => setCustomTotalCount(Number(e.target.value))}
+                  className="w-full bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs font-bold text-[#00243B] dark:text-white"
                 >
-                  <option value={10}>{t("10 Qs")}</option>
-                  <option value={20}>{t("20 Qs")}</option>
-                  <option value={30}>{t("30 Qs")}</option>
-                  <option value={40}>{t("40 Qs")}</option>
-                  <option value={50}>{t("50 Qs")}</option>
-                  <option value={60}>{t("60 Qs")}</option>
-                  <option value={70}>{t("70 Qs")}</option>
-                  <option value={80}>{t("80 Qs")}</option>
-                  <option value={90}>{t("90 Qs")}</option>
-                  <option value={100}>{t("100 Qs")}</option>
-                  <option value={180}>{t("180 Qs (Full)")}</option>
+                  {[...QUESTION_COUNT_OPTIONS, 180].map((c) => (
+                    <option key={c} value={c}>
+                      {c} {t("Qs")}
+                    </option>
+                  ))}
                 </select>
               </div>
-
               <div className="space-y-1.5">
                 <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Duration")}</label>
-                <div className="w-full bg-slate-100 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-500 dark:text-slate-400 cursor-not-allowed">
-                  {questionCount} {t("Mins (Strict)")}
+                <div className="w-full bg-slate-100 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs font-bold text-slate-500 dark:text-slate-400">
+                  {customTotalCount} {t("Mins (Strict)")}
                 </div>
               </div>
             </div>
 
-          </div>
-
-          {/* Difficulty Selector */}
-          <div className="space-y-1.5 pt-4">
-            <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Difficulty")}</label>
-            <div className="grid grid-cols-4 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
-              {(["Adaptive", "Easy", "Medium", "Hard"] as const).map((diff) => (
-                <button
-                  key={diff}
-                  type="button"
-                  onClick={() => setDifficulty(diff)}
-                  className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer select-none ${
-                    difficulty === diff 
-                      ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" 
-                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"
-                  }`}
-                >
-                  {t(diff)}
-                </button>
-              ))}
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{t("Difficulty")}</label>
+              <div className="grid grid-cols-4 gap-1 bg-slate-100 dark:bg-slate-900/60 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+                {DIFFICULTY_OPTIONS.map((d) => (
+                  <button
+                    key={d.label}
+                    onClick={() => setCustomDifficulty(d.value)}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${customDifficulty === d.value ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm" : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-[#00243B]"}`}
+                  >
+                    {t(d.label)}
+                  </button>
+                ))}
+              </div>
             </div>
+
+            <button
+              onClick={handleLaunchCustom}
+              disabled={creating}
+              className="w-full mt-2 py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {creating ? t("Starting...") : t("Launch Custom Exam")}
+            </button>
           </div>
-
-          <button
-            type="button"
-            onClick={handleLaunchCustom}
-            className="w-full mt-6 py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer text-center block bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white"
-          >
-            Launch Custom Exam
-          </button>
-        </motion.div>
-
-      </div>
+        </div>
+      )}
     </div>
   );
 }

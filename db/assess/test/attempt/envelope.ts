@@ -13,12 +13,21 @@
  */
 import { pool } from "../../../shared/pool.js";
 import { NotFoundError } from "../../../shared/errors.js";
+import { resolveAssetUrl } from "../../../content/asset-resolver.js";
+import { deriveSessionModeFromTestCode } from "../definition/test-code.js";
 import type { AttemptModel } from "./attempt.model.js";
 
 export interface EnvelopeOption {
   optionId: string;
   optionLabel: string;
   optionText: string;
+  optionTextTa: string | null;
+}
+
+export interface EnvelopeImage {
+  url: string;
+  altText: string | null;
+  optionId: string | null;
 }
 
 export interface EnvelopeQuestion {
@@ -29,8 +38,10 @@ export interface EnvelopeQuestion {
   marks: string;
   negativeMarks: string;
   stemText: string;
+  stemTextTa: string | null;
   stemFormat: string;
   options: EnvelopeOption[];
+  images: EnvelopeImage[];
 }
 
 export interface EnvelopeSection {
@@ -56,6 +67,11 @@ export interface AttemptEnvelope {
   remainingSeconds: number;
   allowPause: boolean;
   test: { testId: string; title: string; durationMinutes: number | null };
+  // Phase E — carried on every envelope (not just at session-creation time)
+  // so a resumed/reloaded attempt can be rebuilt into a full SessionResult
+  // client-side from this one call, without a second round trip.
+  testCode: string;
+  mode: "subject-wise" | "full-mock" | "custom";
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
@@ -74,8 +90,8 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
   }
   const attempt = attemptRes.rows[0];
 
-  const testRes = await pool.query<{ title: string; duration_minutes: number | null }>(
-    `select title, duration_minutes from assess.test where test_id = $1`,
+  const testRes = await pool.query<{ title: string; duration_minutes: number | null; test_code: string }>(
+    `select title, duration_minutes, test_code from assess.test where test_id = $1`,
     [attempt.test_id]
   );
 
@@ -129,8 +145,52 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
   const optionsByQuestion = new Map<string, EnvelopeOption[]>();
   for (const row of optionsRes.rows) {
     const list = optionsByQuestion.get(row.question_id) ?? [];
-    list.push({ optionId: row.option_id, optionLabel: row.option_label, optionText: row.option_text });
+    list.push({ optionId: row.option_id, optionLabel: row.option_label, optionText: row.option_text, optionTextTa: null });
     optionsByQuestion.set(row.question_id, list);
+  }
+
+  // Tamil translations (content.question_translation, ~91% coverage of
+  // published content) — option_texts is a plain jsonb array in the same
+  // display_order the options above are already fetched in, so it's matched
+  // positionally rather than needing its own per-option id.
+  const translationsByQuestion = new Map<string, { stemTextTa: string; optionTextsTa: string[] }>();
+  if (questionIds.length > 0) {
+    const translationsRes = await pool.query<{ question_id: string; stem_text: string; option_texts: string[] }>(
+      `select question_id, stem_text, option_texts
+         from content.question_translation
+        where question_id = any($1::uuid[]) and language_code = 'ta'`,
+      [questionIds]
+    );
+    for (const row of translationsRes.rows) {
+      translationsByQuestion.set(row.question_id, { stemTextTa: row.stem_text, optionTextsTa: row.option_texts ?? [] });
+    }
+    for (const [questionId, options] of optionsByQuestion) {
+      const translation = translationsByQuestion.get(questionId);
+      if (!translation) continue;
+      options.forEach((opt, i) => {
+        opt.optionTextTa = translation.optionTextsTa[i] ?? null;
+      });
+    }
+  }
+
+  // R-9: same answer-key discipline as options above — only stem/option
+  // assets are eligible pre-submission; 'solution'/'hint'/'explanation'
+  // assets (none exist yet, but the schema allows them) stay server-side
+  // until getReview, same as is_correct and explanation_text do today.
+  const imagesByQuestion = new Map<string, EnvelopeImage[]>();
+  if (questionIds.length > 0) {
+    const assetsRes = await pool.query<{ question_id: string; option_id: string | null; storage_uri: string; alt_text: string | null }>(
+      `select question_id, option_id, storage_uri, alt_text
+         from content.asset
+        where question_id = any($1::uuid[]) and target_role in ('stem', 'option')
+        order by display_order`,
+      [questionIds]
+    );
+    for (const row of assetsRes.rows) {
+      const list = imagesByQuestion.get(row.question_id) ?? [];
+      list.push({ url: resolveAssetUrl(row.storage_uri), altText: row.alt_text, optionId: row.option_id });
+      imagesByQuestion.set(row.question_id, list);
+    }
   }
 
   const responsesRes = await pool.query<{ question_id: string; option_id: string | null; numeric_answer: string | null; response_state: string }>(
@@ -146,6 +206,8 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
     remainingSeconds,
     allowPause: true, // no per-test "allow pause" setting exists live yet — see docs/OPEN_ITEMS.md
     test: { testId: attempt.test_id, title: testRes.rows[0]?.title ?? "", durationMinutes: testRes.rows[0]?.duration_minutes ?? null },
+    testCode: testRes.rows[0]?.test_code ?? "",
+    mode: deriveSessionModeFromTestCode(testRes.rows[0]?.test_code ?? ""),
     sections: sectionsRes.rows.map((s) => ({
       testSectionId: s.test_section_id,
       sectionName: s.section_name,
@@ -160,8 +222,10 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
       marks: q.marks,
       negativeMarks: q.negative_marks,
       stemText: q.stem_text,
+      stemTextTa: translationsByQuestion.get(q.question_id)?.stemTextTa ?? null,
       stemFormat: q.stem_format,
       options: optionsByQuestion.get(q.question_id) ?? [],
+      images: imagesByQuestion.get(q.question_id) ?? [],
     })),
     responses: responsesRes.rows.map((r) => ({
       questionId: r.question_id,

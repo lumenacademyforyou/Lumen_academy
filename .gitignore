@@ -6,10 +6,15 @@ coverage/
 Thumbs.db
 *.log
 .env*
+!.env.example
 /backend/src/generated/prisma
 
 test-results/
 playwright-report/
+
+# Run artifacts from db/scripts (import runs, prove-*, e2e scripts) — logs of
+# what happened on a given run, not source. Kept on disk, not tracked.
+db/reports/
 
 # Claude Code
 CLAUDE.md

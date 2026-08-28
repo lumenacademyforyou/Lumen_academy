@@ -3,11 +3,18 @@
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
+// LA-APP-COMPLETION-001 Phase H (H1/H2) — prisma/seed.ts retired (it only
+// ever seeded prisma.subject/prisma.unit, both confirmed dead — see
+// prisma/schema.prisma's header). Real reference-data seeding lives in
+// db/scripts/seed/*.ts (see docs/CORE_LAYER_OPERATIONS.md) and is unrelated
+// to Prisma entirely. `migrations.path` is left pointing at prisma/migrations
+// for `prisma generate`'s own bookkeeping — db/migrations/ is the actual
+// schema-migration track; nothing here should ever run `prisma migrate
+// deploy`/`db push` against the live database.
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
     path: "prisma/migrations",
-    seed: "tsx prisma/seed.ts",
   },
   datasource: {
     url: process.env["DATABASE_URL"],

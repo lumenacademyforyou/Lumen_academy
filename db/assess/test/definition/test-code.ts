@@ -28,6 +28,22 @@ function normaliseScopeCode(scopeCode: string): string {
 }
 
 /**
+ * Reverses sessionController.ts's testType/scopeCode choice (LA-APP-COMPLETION-001
+ * Phase C1) back into the mode label the frontend's SessionResult type uses.
+ * Read directly off the test_code string so a resumed/reloaded attempt
+ * (envelope.ts) doesn't need a second query to know how to render itself —
+ * SUBJ/UNIT -> subject-wise, MOCK+ALL -> full-mock, MOCK+CUSTOM -> custom.
+ */
+export function deriveSessionModeFromTestCode(testCode: string): "subject-wise" | "full-mock" | "custom" {
+  const match = testCode.match(/^LMN-[A-Z]+-(MOCK|SUBJ|CHAP|TOPIC|UNIT)-([A-Z0-9]+)-\d{6}$/);
+  if (!match) return "custom";
+  const [, testType, scopeCode] = match;
+  if (testType === "SUBJ" || testType === "UNIT") return "subject-wise";
+  if (testType === "MOCK" && scopeCode === "ALL") return "full-mock";
+  return "custom";
+}
+
+/**
  * Assigns the next free serial for (examCode, testType, scopeCode) and
  * returns the full test_code. Reads the current max under the caller's own
  * transaction client when given (pass the same `client` createTest/

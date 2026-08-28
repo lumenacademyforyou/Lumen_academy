@@ -7,12 +7,15 @@ import { z } from "zod";
  * Express app. Fails loudly and lists every missing key — never falls back
  * to a default for a value that must come from the environment.
  *
- * Only DATABASE_URL and SUPABASE_URL are required: they're the only ones any
- * code in db/ actually reads today (db/shared/pool.ts). The rest
- * (SUPABASE_SERVICE_ROLE_KEY, REDIS_URL, OBJECT_STORAGE_BUCKET) are declared
- * but optional until Storage/Redis-backed code exists to consume them —
- * requiring them earlier just blocks the repository layer on unrelated
- * features. Move a key to required when something starts reading it.
+ * Only DATABASE_URL and SUPABASE_URL are required at boot (db/shared/pool.ts).
+ * REDIS_URL stays optional/unconsumed — no Redis-backed code exists yet.
+ * OBJECT_STORAGE_BUCKET is schema-optional here (so importing this module
+ * never fails boot on its own), but is genuinely required at runtime by
+ * db/content/asset-resolver.ts (resolveAssetUrl/uploadAsset both throw
+ * immediately if it's unset) — real, live image-bearing questions have
+ * depended on it since Phase B3. Left schema-optional rather than required
+ * so this file's own import doesn't gate every db/ script on Storage being
+ * configured, not because it's actually unused.
  */
 const envSchema = z.object({
   DATABASE_URL: z.string().min(1, "DATABASE_URL is required"),

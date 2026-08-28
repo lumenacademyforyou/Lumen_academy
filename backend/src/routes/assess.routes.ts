@@ -23,6 +23,7 @@ import {
 } from "../controllers/attemptFlowController.js";
 import { createPracticeTest } from "../../../db/assess/test/definition/create-practice-test.js";
 import { pool } from "../../../db/shared/pool.js";
+import { createSession } from "../controllers/sessionController.js";
 
 // assess.attempt has a direct user_id column, so makeOwnedCrudRouter's
 // per-row ownership check applies directly. This is the exact case
@@ -65,6 +66,16 @@ attemptsRouter.post("/:attemptId/resume", requireAttemptOwnership(), resumeAttem
 attemptsRouter.get("/:attemptId/review", requireAttemptOwnership(), getReviewHandler);
 
 router.use("/attempts", attemptsRouter);
+
+// ---------------------------------------------------------------------------
+// POST /assess/sessions (LA-APP-COMPLETION-001 Phase C, C1) — one call
+// covering all three test-directory modes (subject-wise / full-mock /
+// custom), creating+publishing the test and starting the attempt in one
+// round trip. See backend/src/controllers/sessionController.ts for the
+// mode-to-blueprint mapping. Kept as a separate route rather than folding
+// into /tests/practice below since its response shape (an attempt envelope,
+// ready to render) differs from that route's (a bare test definition).
+router.post("/sessions", requireAuth, createSession);
 
 // ---------------------------------------------------------------------------
 // Test creation — subject/chapter/topic/unit-wise practice tests

@@ -14,6 +14,45 @@ datasource db {
 // functionally equivalent but not guaranteed byte-identical to the original.
 // These migrations are NOT applied to the database — this file describes a
 // target state, not the current live one.
+//
+// LA-APP-COMPLETION-001 Phase H (H2) — the migration-tooling boundary,
+// decided rather than left ambiguous: `db/migrations/` (raw SQL + a matching
+// `db/verify/` script per file, applied via `db/scripts/run-migration.mjs`)
+// is the single source of truth for the real application schema — catalog,
+// content, assess, core, util. This file/track is retired as a competing
+// migration system for that schema; do not add new domain tables here, and
+// do not run `prisma migrate deploy`/`db push` against the live database —
+// the two migrations above have sat unapplied for exactly that reason and
+// should stay that way pending an explicit decision to apply or discard them.
+//
+// What remains genuinely load-bearing: exactly one model, `User`, for
+// exactly two fields — `targetExam` and `locale` — read/written by
+// `backend/src/services/meProfile.service.ts` (the real `GET/PATCH /api/me`)
+// and created at signup by `backend/src/services/provisionUser.service.ts`.
+// Those two fields were never migrated into `core.app_user`/
+// `core.student_profile`; consolidating them there and dropping this whole
+// file is the natural follow-up, but is out of scope for this pass — it
+// would touch two live, exercised endpoints and isn't something to bundle
+// into a documentation/retirement pass.
+//
+// The other 23 models below (Subject/Unit/Chapter/Topic/Question/
+// QuestionOption/TestAttempt/AttemptAnswer/AiCache/AiUsage/
+// UserDailyActivity/QuestionRevision/QuestionAsset/MockTest/
+// MockTestQuestion/AttemptQuestion/Bookmark/Note/Notification/
+// ExamPattern/ExamPatternSection/ScoringRule/AttemptSectionState/
+// ExamCalendarEvent) are confirmed dead application code as of this
+// session — `backend/src/routes/tests.routes.ts`, `services/
+// attempt.service.ts`, `services/pdfReport.service.ts`, and the AI
+// subsystem (`controllers/aiController.ts`, `services/aiExplanation.
+// service.ts`, `services/ai/*`) were their only callers, and all were
+// retired this phase (zero frontend callers; the AI subsystem also
+// violated the directive's rule 6, "no AI calls anywhere in this build").
+// Confirmed via `grep -rn "prisma\.<model>\."` across `backend/src`
+// (excluding generated code) — zero hits for all 23. Left in this schema
+// and in the live `public` Postgres schema rather than dropped: deleting
+// real database tables is a separate, higher-risk decision (data loss if
+// anything outside this repo depends on them) that deserves its own
+// explicit go-ahead, not one bundled into a code-retirement pass.
 
 enum UserRole {
   STUDENT

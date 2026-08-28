@@ -21,6 +21,7 @@ import { evaluateResponse } from "../../scoring/evaluate.js";
 import { aggregateAttempt, type SectionInput } from "../../scoring/aggregate.js";
 import * as decimal from "../../scoring/decimal.js";
 import type { EvaluatedResponse, PartialMode, QuestionFormat, ScoringRule, ServedQuestion, StudentResponse } from "../../scoring/types.js";
+import { resolveAssetUrl } from "../../../content/asset-resolver.js";
 
 /**
  * TE-P4 rewrite (LA-BE-ENGINE-001 Section 6). Every function here now goes
@@ -140,6 +141,18 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
 
     const sectionSchemes = await loadSectionSchemes(testId);
 
+    // Bulk-inserted via unnest() rather than one awaited round trip per
+    // question (LA-APP-COMPLETION-001 Phase F finding: a full-mock's 180
+    // sequential inserts measured ~14s against the real remote database —
+    // see docs/APP_COMPLETION_PLAN.md's Phase F section). Same
+    // (attempt_id, question_id, test_section_id, sequence_no, marks,
+    // negative_marks) rows as before, in one insert instead of N.
+    const bulkQuestionIds: string[] = [];
+    const bulkTestSectionIds: string[] = [];
+    const bulkSequenceNos: number[] = [];
+    const bulkMarks: string[] = [];
+    const bulkNegativeMarks: string[] = [];
+
     if (test.source_type === "generated") {
       const assembled = await assembleForAttempt(testId, userId);
       await client.query("update assess.attempt set generation_seed = $1 where attempt_id = $2", [assembled.seed, attempt.attempt_id]);
@@ -148,11 +161,11 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
         if (!scheme) throw new ScoringRuleMissingError("(blueprint section)", section.testSectionId);
         let seq = 1;
         for (const questionId of section.questionIds) {
-          await client.query(
-            `insert into assess.attempt_question (attempt_id, question_id, test_section_id, sequence_no, marks, negative_marks)
-             values ($1, $2, $3, $4, $5, $6)`,
-            [attempt.attempt_id, questionId, section.testSectionId, seq, scheme.correct_marks, scheme.incorrect_marks]
-          );
+          bulkQuestionIds.push(questionId);
+          bulkTestSectionIds.push(section.testSectionId);
+          bulkSequenceNos.push(seq);
+          bulkMarks.push(scheme.correct_marks);
+          bulkNegativeMarks.push(scheme.incorrect_marks);
           seq++;
         }
       }
@@ -168,12 +181,21 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       for (const row of tqRes.rows) {
         const scheme = sectionSchemes.get(row.test_section_id);
         if (!scheme) throw new ScoringRuleMissingError(row.question_id, row.test_section_id);
-        await client.query(
-          `insert into assess.attempt_question (attempt_id, question_id, test_section_id, sequence_no, marks, negative_marks)
-           values ($1, $2, $3, $4, $5, $6)`,
-          [attempt.attempt_id, row.question_id, row.test_section_id, row.sequence_no, row.marks_override ?? scheme.correct_marks, scheme.incorrect_marks]
-        );
+        bulkQuestionIds.push(row.question_id);
+        bulkTestSectionIds.push(row.test_section_id);
+        bulkSequenceNos.push(row.sequence_no);
+        bulkMarks.push(row.marks_override ?? scheme.correct_marks);
+        bulkNegativeMarks.push(scheme.incorrect_marks);
       }
+    }
+
+    if (bulkQuestionIds.length > 0) {
+      await client.query(
+        `insert into assess.attempt_question (attempt_id, question_id, test_section_id, sequence_no, marks, negative_marks)
+         select $1, q, ts, seq, m, nm
+           from unnest($2::uuid[], $3::uuid[], $4::smallint[], $5::numeric[], $6::numeric[]) as t(q, ts, seq, m, nm)`,
+        [attempt.attempt_id, bulkQuestionIds, bulkTestSectionIds, bulkSequenceNos, bulkMarks, bulkNegativeMarks]
+      );
     }
 
     await client.query(
@@ -816,6 +838,13 @@ export interface ReviewOption {
   wasSelected: boolean;
 }
 
+export interface ReviewImage {
+  url: string;
+  altText: string | null;
+  optionId: string | null;
+  targetRole: string;
+}
+
 export interface ReviewQuestion {
   questionId: string;
   testSectionId: string;
@@ -825,6 +854,7 @@ export interface ReviewQuestion {
   topicTagCode: string;
   topicTitle: string;
   options: ReviewOption[];
+  images: ReviewImage[];
   correctNumericValue: string | null;
   studentNumericAnswer: string | null;
   isCorrect: boolean | null;
@@ -905,6 +935,26 @@ export async function getReview(attemptId: string, userId: string): Promise<Revi
     }
   }
 
+  // Post-scoring: unlike envelope.ts/questionController.ts, no target_role
+  // restriction — solution/hint/explanation assets (none exist yet, but the
+  // schema allows them) are fair to reveal here, same as explanation_text
+  // and is_correct already are on this endpoint.
+  const imagesByQuestion = new Map<string, ReviewImage[]>();
+  if (questionIds.length > 0) {
+    const assetsRes = await pool.query<{ question_id: string; option_id: string | null; storage_uri: string; alt_text: string | null; target_role: string }>(
+      `select question_id, option_id, storage_uri, alt_text, target_role
+         from content.asset
+        where question_id = any($1::uuid[])
+        order by display_order`,
+      [questionIds]
+    );
+    for (const row of assetsRes.rows) {
+      const list = imagesByQuestion.get(row.question_id) ?? [];
+      list.push({ url: resolveAssetUrl(row.storage_uri), altText: row.alt_text, optionId: row.option_id, targetRole: row.target_role });
+      imagesByQuestion.set(row.question_id, list);
+    }
+  }
+
   return rows.rows.map((r) => ({
     questionId: r.question_id,
     testSectionId: r.test_section_id,
@@ -914,6 +964,7 @@ export async function getReview(attemptId: string, userId: string): Promise<Revi
     topicTagCode: r.tag_code,
     topicTitle: r.topic_title,
     options: optionsByQuestion.get(r.question_id) ?? [],
+    images: imagesByQuestion.get(r.question_id) ?? [],
     correctNumericValue: r.numeric_answer,
     studentNumericAnswer: r.student_numeric_answer,
     isCorrect: r.is_correct,

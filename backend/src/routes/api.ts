@@ -1,8 +1,8 @@
 import { Router, Request, Response } from "express";
 import { getQuestionCount, getQuestions } from "../controllers/questionController";
-import { getAnalytics, getSyllabus } from "../controllers/analyticsController";
+import { getDashboard, getSyllabus } from "../controllers/analyticsController";
 import { submitAttempt } from "../controllers/attemptController";
-import { generateStudyPlan, evaluateAttemptAI } from "../controllers/aiController";
+import { generateStudyPlan, evaluateAttemptAI, explainWrongAnswer } from "../controllers/aiController";
 import { getAdminStats } from "../controllers/adminController";
 import { prisma } from "../lib/db.js";
 import { requireAuth } from "../middleware/requireAuth.js";
@@ -10,8 +10,7 @@ import { requirePermission } from "../middleware/requirePermission.js";
 import { validate } from "../middleware/validate.js";
 import { getFullProfile, updateProfile, updateProfileSchema } from "../services/meProfile.service.js";
 import { requireRecentOtpReauthentication, deleteOwnAccount } from "../services/deleteAccount.service.js";
-import testsRouter from "./tests.routes.js";
-import aiRouter from "./ai.routes.js";
+import { getSessionStatus, heartbeat, logoutSession } from "../controllers/authSessionController.js";
 import catalogRouter from "./catalog.routes.js";
 import contentRouter from "./content.routes.js";
 import coreRouter from "./core.routes.js";
@@ -65,8 +64,12 @@ router.delete("/me", requireAuth, async (req: Request, res: Response, next) => {
   }
 });
 
-// Test Attempt Endpoints (Prisma-backed, replaces /submit-attempt as it's migrated)
-router.use("/tests", testsRouter);
+// Phase E (session management/auto logout) — see backend/src/services/session.service.ts.
+// requireAuth already resolves+enforces req.sessionInfo before any handler
+// below runs; these just expose it over HTTP.
+router.get("/auth/session", requireAuth, getSessionStatus);
+router.post("/auth/session/heartbeat", requireAuth, heartbeat);
+router.post("/auth/session/logout", requireAuth, logoutSession);
 
 // Catalog Endpoints (db/catalog/-backed — exam, subject, syllabus, pattern data)
 router.use("/catalog", catalogRouter);
@@ -85,11 +88,6 @@ router.use("/learn", learnRouter);
 
 // Admin: invitations (CL-P6) and user-lifecycle administration (CL-P7) — see admin.routes.ts
 router.use("/admin", adminRouter);
-
-// Provider-agnostic AI explanation endpoint (POST /ai/explain). The legacy
-// /ai/study-plan and /ai/evaluate-attempt routes below still call Gemini
-// directly and are migrated separately.
-router.use("/ai", aiRouter);
 
 // Health Check
 router.get("/health", async (_req: Request, res: Response) => {
@@ -116,15 +114,19 @@ router.get("/questions/count", getQuestionCount);
 // Syllabus Endpoint
 router.get("/syllabus", getSyllabus);
 
-// Analytics Endpoint
-router.get("/analytics", getAnalytics);
+// Analytics Endpoint (Phase G — real, SQL-aggregated, scoped to the caller)
+router.get("/analytics/dashboard", requireAuth, getDashboard);
 
-// Submit Attempt Endpoint
+// Submit Attempt Endpoint — retired (see backend/src/controllers/attemptController.ts);
+// kept mounted so old clients get a clear 410 instead of a 404.
 router.post("/submit-attempt", submitAttempt);
 
-// AI Endpoints
+// AI Endpoints — all retired (Phase H, H1: no AI calls anywhere in this
+// build, and zero frontend callers remained). See
+// backend/src/controllers/aiController.ts.
 router.post("/ai/study-plan", generateStudyPlan);
 router.post("/ai/evaluate-attempt", evaluateAttemptAI);
+router.post("/ai/explain", explainWrongAnswer);
 
 // Admin Endpoint. Data is still hardcoded placeholder content (not this
 // phase's concern to make real) but the route itself was wide open to any

@@ -3,11 +3,14 @@ import { useLanguage } from "../contexts/LanguageContext";
 
 interface SystemCheckViewProps {
   testTitle: string;
+  testCode: string;
+  testTypeLabel: string;
+  studentName: string;
   onCompleteSystemCheck: () => void;
   onCancel: () => void;
 }
 
-export default function SystemCheckView({ testTitle, onCompleteSystemCheck, onCancel }: SystemCheckViewProps) {
+export default function SystemCheckView({ testTitle, testCode, testTypeLabel, studentName, onCompleteSystemCheck, onCancel }: SystemCheckViewProps) {
   const { t, language } = useLanguage();
   // Checking states
   const [browserCheck, setBrowserCheck] = useState<"pending" | "checking" | "success">("pending");
@@ -244,7 +247,7 @@ export default function SystemCheckView({ testTitle, onCompleteSystemCheck, onCa
           <div className="p-4 bg-[var(--teal)]/5 rounded-2xl border border-[var(--teal)]/15 text-xs text-secondary dark:text-amber-300 leading-relaxed flex gap-3 font-semibold">
             <span className="material-symbols-outlined text-lg">verified</span>
             <p>
-              Your device and connection meet NTA NEET examination guidelines. Automatic state saving and offline recovery are active.
+              Your device and connection meet Lumen Academy examination guidelines. Automatic answer saving is active.
             </p>
           </div>
         </div>
@@ -258,22 +261,22 @@ export default function SystemCheckView({ testTitle, onCompleteSystemCheck, onCa
           <div className="bg-white dark:bg-slate-800 rounded-3xl border border-outline-variant/60 p-6 shadow-sm space-y-5">
             <div className="flex items-center gap-4 border-b border-outline-variant pb-4">
               <div className="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 flex items-center justify-center font-bold text-xl font-sans">
-                PA
+                {studentName.slice(0, 2).toUpperCase() || "ST"}
               </div>
               <div>
-                <h4 className="font-bold text-primary dark:text-white text-base">{t("Prince A")}</h4>
-                <p className="text-xs text-on-surface-variant dark:text-slate-300">{t("App No: N-2026-894723")}</p>
+                <h4 className="font-bold text-primary dark:text-white text-base">{studentName}</h4>
+                <p className="text-xs text-on-surface-variant dark:text-slate-300 font-mono">{testCode}</p>
               </div>
             </div>
 
             <div className="space-y-3 text-xs">
               <div className="flex justify-between items-center py-1">
                 <span className="text-outline font-bold uppercase tracking-wider text-[10px]">{t("Target Exam")}</span>
-                <span className="font-bold text-primary dark:text-white">{t("NEET UG 2026")}</span>
+                <span className="font-bold text-primary dark:text-white">{t("NEET UG")}</span>
               </div>
               <div className="flex justify-between items-center py-1 border-t border-outline-variant/30">
                 <span className="text-outline font-bold uppercase tracking-wider text-[10px]">{t("Test Type")}</span>
-                <span className="font-bold text-secondary dark:text-amber-300">{t("Full-Syllabus Mock Exam")}</span>
+                <span className="font-bold text-secondary dark:text-amber-300">{testTypeLabel}</span>
               </div>
               <div className="flex justify-between items-center py-1 border-t border-outline-variant/30">
                 <span className="text-outline font-bold uppercase tracking-wider text-[10px]">{t("Diagnostics Status")}</span>

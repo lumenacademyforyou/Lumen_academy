@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LumenLogo from "../ui/LumenLogo";
+import Modal from "./Modal";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { fetchStudySessions, calculateStudyStreak } from "../../services/studySessionService";
@@ -460,7 +461,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
       {/* MY PROFILE MODAL                                                   */}
       {/* ------------------------------------------------------------------ */}
       {showProfileModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+        <Modal onClose={() => setShowProfileModal(false)} backdropClassName="bg-slate-950/60 backdrop-blur-sm">
           <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[32px] max-w-xl w-full shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden relative">
             
             {/* Modal Header Banner */}
@@ -573,14 +574,14 @@ const handleSaveProfile = async (e: React.FormEvent) => {
             </form>
 
           </div>
-        </div>
+        </Modal>
       )}
 
       {/* ------------------------------------------------------------------ */}
       {/* ACCOUNT SETTINGS MODAL                                              */}
       {/* ------------------------------------------------------------------ */}
       {showSettingsModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+        <Modal onClose={() => setShowSettingsModal(false)} backdropClassName="bg-slate-950/60 backdrop-blur-sm">
           <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[32px] max-w-2xl w-full shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden relative flex flex-col md:flex-row min-h-[480px]">
             
             {/* Close button */}
@@ -804,14 +805,14 @@ const handleSaveProfile = async (e: React.FormEvent) => {
             </form>
 
           </div>
-        </div>
+        </Modal>
       )}
 
       {/* ------------------------------------------------------------------ */}
       {/* DELETE ACCOUNT MODAL (OTP-gated)                                   */}
       {/* ------------------------------------------------------------------ */}
       {showDeleteAccountModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+        <Modal onClose={resetDeleteFlow} backdropClassName="bg-slate-950/60 backdrop-blur-sm">
           <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[32px] max-w-md w-full shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden relative p-6">
             <button
               onClick={resetDeleteFlow}
@@ -885,7 +886,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
               </>
             )}
           </div>
-        </div>
+        </Modal>
       )}
     </>
   );

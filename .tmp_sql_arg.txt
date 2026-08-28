@@ -1,0 +1,19 @@
+with targets(name, auth_id, app_id) as (
+  values
+    ('Prince A (demo)', '5996534c-ba8d-4cb8-9550-20c27574060b'::uuid, '6429d74a-76bd-4526-a987-3323b7871f46'::uuid),
+    ('Lumen academy', '4e659d3a-9e6a-43bd-a5f3-2b90efb1d519'::uuid, '27164d68-a850-4313-b327-b5cd3aaf4812'::uuid),
+    ('Platform Root', '3bed155a-7b15-4372-9ff9-380a373572dc'::uuid, '00a51896-039e-41d5-b7bc-a956a1c5187d'::uuid),
+    ('Platform Admin', '6dca3a10-7d9b-4dc5-bd24-b3d5116f2f1c'::uuid, '40ec76dd-22eb-4c14-8394-99657033939a'::uuid),
+    ('Institution Admin', '3aa62644-c384-4ab7-a7a2-7cd5ecd83cd0'::uuid, 'e5294f7e-daa4-4afd-8b8b-0bb7cf56384b'::uuid),
+    ('Educator', '98e7db67-50fc-4026-bc1d-21eaf6fd67a8'::uuid, 'dfd6fa85-74e0-4601-ba6e-fb91af129a80'::uuid),
+    ('Student', 'c1cfa396-acda-47de-a1b5-a761dd17daa4'::uuid, '72c4dca3-3eac-46ef-a913-adfc3aed0f71'::uuid)
+)
+select t.name,
+  (select count(*) from public.test_attempts where user_id = t.auth_id) as legacy_test_attempts,
+  (select count(*) from assess.attempt where user_id = t.app_id) as attempts,
+  (select count(*) from assess.test where created_by = t.app_id) as tests_created,
+  (select count(*) from content.ai_generation_job where requested_by = t.app_id) as ai_jobs,
+  (select count(*) from content.import_batch where submitted_by = t.app_id) as import_batches,
+  (select count(*) from content.question_review where reviewer_user_id = t.app_id) as question_reviews,
+  (select count(*) from core.invitation where invited_by = t.app_id) as invitations
+from targets t;

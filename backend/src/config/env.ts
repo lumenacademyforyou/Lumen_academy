@@ -21,9 +21,12 @@ const envSchema = z.object({
   SUPABASE_SERVICE_ROLE_KEY: z.string().optional(),
   CORS_ORIGINS: z.string().default("http://localhost:5173"),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
-  AI_PROVIDER: z.enum(["mock", "openrouter"]).default("mock"),
-  OPENROUTER_API_KEY: z.string().optional(),
-  OPENROUTER_MODEL: z.string().optional(),
+  // Phase E (session management/auto logout) — no prior value existed
+  // anywhere in the codebase for either of these (confirmed by survey before
+  // building this), so these are the directive's own stated defaults
+  // (30 min idle / 12h absolute), env-overridable rather than hardcoded.
+  SESSION_IDLE_TIMEOUT_MINUTES: z.coerce.number().int().positive().default(30),
+  SESSION_ABSOLUTE_HOURS: z.coerce.number().int().positive().default(12),
 });
 
 const parsed = envSchema.safeParse(process.env);
@@ -47,7 +50,6 @@ export const config = Object.freeze({
   supabaseServiceRoleKey: env.SUPABASE_SERVICE_ROLE_KEY,
   corsOrigins: env.CORS_ORIGINS.split(",").map((origin) => origin.trim()),
   logLevel: env.LOG_LEVEL,
-  aiProvider: env.AI_PROVIDER,
-  openrouterApiKey: env.OPENROUTER_API_KEY,
-  openrouterModel: env.OPENROUTER_MODEL,
+  sessionIdleTimeoutMinutes: env.SESSION_IDLE_TIMEOUT_MINUTES,
+  sessionAbsoluteHours: env.SESSION_ABSOLUTE_HOURS,
 });

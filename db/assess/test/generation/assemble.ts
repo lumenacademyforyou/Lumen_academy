@@ -38,18 +38,12 @@ interface CandidateRow {
 }
 
 function generateSeed(): string {
-  // 63 bits so it always fits a signed bigint column without overflow.
-  return BigInt(`0x${crypto.randomBytes(8).toString("hex")}`.slice(0, 18)).toString();
-}
-
-async function currentAttemptSeq(userId: string): Promise<number> {
-  const res = await pool.query<{ seq: string }>(
-    `select coalesce(max(attempt_seq), 0) as seq
-       from assess.attempt
-      where user_id = $1 and attempt_state in ('submitted', 'scored')`,
-    [userId]
-  );
-  return Number(res.rows[0].seq);
+  // 56 bits (7 random bytes) so it always fits a signed bigint column
+  // (max 2^63-1) without overflow. The previous version took a full 8 bytes
+  // (64 bits) — interpreted as unsigned, that exceeds bigint's signed range
+  // roughly half the time, and Postgres rejected the value outright rather
+  // than wrapping it, breaking startAttempt intermittently.
+  return BigInt(`0x${crypto.randomBytes(7).toString("hex")}`).toString();
 }
 
 /**
@@ -58,8 +52,15 @@ async function currentAttemptSeq(userId: string): Promise<number> {
  * schema's real names (docs/DB_STATE.md): content.question_node_map instead
  * of a concept-tree eligibility view (none exists — see docs/OPEN_ITEMS.md),
  * catalog.syllabus_node.node_path (plain text with a trigram index, not
- * ltree) for the include_descendants match, assess.user_question_seen from
- * db/migrations/018_test_engine.sql for the anti-repetition exclusion (D-2).
+ * ltree) for the include_descendants match.
+ *
+ * D-2 exposure preference (LA-APP-COMPLETION-001 Phase C, C4): never a hard
+ * exclusion — a student is never told "insufficient pool" just because every
+ * remaining question happens to be one they've seen before. Unseen questions
+ * (no assess.user_question_seen row) sort first, in the seeded shuffle order;
+ * once those run out, previously-seen questions fill the rest, oldest
+ * last_seen_at first (true least-recently-seen), only reached when the
+ * unseen pool for this blueprint line is exhausted.
  */
 const CANDIDATE_POOL_SQL = `
   select bp.blueprint_id, bp.test_section_id, bp.pick_count, picked.question_id
@@ -69,6 +70,7 @@ const CANDIDATE_POOL_SQL = `
         from content.question q
         join content.question_node_map qnm on qnm.question_id = q.question_id
         join catalog.syllabus_node sn on sn.node_id = qnm.node_id
+        left join assess.user_question_seen s on s.user_id = $2 and s.question_id = q.question_id
        where sn.subject_id = bp.subject_id
          and q.lifecycle_status = 'published'
          and (
@@ -81,13 +83,10 @@ const CANDIDATE_POOL_SQL = `
              )
          and (bp.difficulty_band is null or q.difficulty_band = bp.difficulty_band)
          and (bp.question_format is null or q.question_type = bp.question_format)
-         and not exists (
-               select 1 from assess.user_question_seen s
-                where s.user_id = $2
-                  and s.question_id = q.question_id
-                  and s.last_seen_attempt_seq > ($3::int - 50)
-             )
-       order by md5(q.question_id::text || $4::text)
+       order by
+         (s.question_id is not null),
+         case when s.question_id is null then md5(q.question_id::text || $3::text) end,
+         s.last_seen_at
        limit bp.pick_count
     ) picked
    where bp.test_id = $1
@@ -99,9 +98,8 @@ const CANDIDATE_POOL_SQL = `
  */
 export async function assembleForAttempt(testId: string, userId: string, seed?: string): Promise<AssembleResult> {
   const generationSeed = seed ?? generateSeed();
-  const attemptSeq = await currentAttemptSeq(userId);
 
-  const res = await pool.query<CandidateRow>(CANDIDATE_POOL_SQL, [testId, userId, attemptSeq, generationSeed]);
+  const res = await pool.query<CandidateRow>(CANDIDATE_POOL_SQL, [testId, userId, generationSeed]);
 
   const byBlueprint = new Map<string, { testSectionId: string; pickCount: number; questionIds: string[] }>();
   for (const row of res.rows) {
@@ -122,12 +120,15 @@ export async function assembleForAttempt(testId: string, userId: string, seed?: 
     const entry = byBlueprint.get(bp.blueprint_id);
     const picked = entry?.questionIds.length ?? 0;
     if (picked < bp.pick_count) {
+      // No seen-status exclusion here: since the candidate query above only
+      // deprioritizes seen questions rather than excluding them, "available"
+      // is the raw filtered pool size, regardless of exposure history.
       const availableRes = await pool.query<{ available: string }>(
         `select count(*) as available
            from content.question q
            join content.question_node_map qnm on qnm.question_id = q.question_id
            join catalog.syllabus_node sn on sn.node_id = qnm.node_id
-           join assess.test_blueprint bp on bp.blueprint_id = $2
+           join assess.test_blueprint bp on bp.blueprint_id = $1
           where sn.subject_id = bp.subject_id
             and q.lifecycle_status = 'published'
             and (
@@ -136,12 +137,8 @@ export async function assembleForAttempt(testId: string, userId: string, seed?: 
                   or (bp.include_descendants and sn.node_path like (select target.node_path || '%' from catalog.syllabus_node target where target.node_id = bp.syllabus_node_id))
                 )
             and (bp.difficulty_band is null or q.difficulty_band = bp.difficulty_band)
-            and (bp.question_format is null or q.question_type = bp.question_format)
-            and not exists (
-                  select 1 from assess.user_question_seen s
-                   where s.user_id = $1 and s.question_id = q.question_id and s.last_seen_attempt_seq > ($3::int - 50)
-                )`,
-        [userId, bp.blueprint_id, attemptSeq]
+            and (bp.question_format is null or q.question_type = bp.question_format)`,
+        [bp.blueprint_id]
       );
       throw new PoolInsufficientError(bp.blueprint_id, bp.test_section_id, bp.pick_count, Number(availableRes.rows[0].available));
     }

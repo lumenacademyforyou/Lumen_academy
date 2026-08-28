@@ -61,3 +61,289 @@ export interface TestAttempt {
   questionTimeData?: { questionId: number; subject: "Physics" | "Chemistry" | "Biology" | "Botany" | "Zoology"; timeSpentSeconds: number }[];
   averageTimePerQuestionSeconds?: number;
 }
+
+// --- Real API types (LA-APP-COMPLETION-001 Phase D) ---------------------
+// Mirrors backend/src/controllers/catalogTreeController.ts and
+// db/assess/test/attempt/envelope.ts's real shapes. Deliberately separate
+// from Question/TestAttempt above (Phase G's concern) rather than widening
+// those — this is the shape the new session/workspace/result flow actually
+// consumes end to end, with real UUIDs and no answer keys pre-submission.
+
+export type SubjectCode = "PHY" | "CHEM" | "BOT" | "ZOO";
+
+export interface CatalogUnit {
+  nodeId: string;
+  tagCode: string;
+  title: string;
+  classLevel: string | null;
+  displayOrder: number | null;
+  publishedQuestionCount: number;
+}
+
+export interface CatalogSubject {
+  subjectId: string;
+  subjectCode: SubjectCode;
+  subjectName: string;
+  displayOrder: number | null;
+  publishedQuestionCount: number;
+  units: CatalogUnit[];
+}
+
+export interface CatalogTree {
+  examId: string;
+  examCode: string;
+  examName: string;
+  subjects: CatalogSubject[];
+}
+
+export type DifficultyBand = "easy" | "medium" | "hard";
+
+/** One line of a custom-mode session request — see sessionController.ts's customLineSchema. */
+export interface SessionLine {
+  subjectId: string;
+  syllabusNodeId?: string;
+  includeDescendants?: boolean;
+  difficultyBand?: DifficultyBand;
+  pickCount: number;
+  sectionName: string;
+}
+
+export type CreateSessionRequest =
+  | { mode: "subject-wise"; title: string; durationMinutes: number; subjectId: string; syllabusNodeId?: string; includeDescendants?: boolean; difficultyBand?: DifficultyBand; pickCount: number }
+  | { mode: "full-mock"; title?: string }
+  | { mode: "custom"; title: string; durationMinutes: number; lines: SessionLine[] };
+
+export interface EnvelopeOption {
+  optionId: string;
+  optionLabel: string;
+  optionText: string;
+  optionTextTa: string | null;
+}
+
+export interface EnvelopeImage {
+  url: string;
+  altText: string | null;
+  optionId: string | null;
+}
+
+export interface EnvelopeQuestion {
+  questionId: string;
+  testSectionId: string;
+  sequenceNo: number;
+  format: string | null;
+  marks: string;
+  negativeMarks: string;
+  stemText: string;
+  stemTextTa: string | null;
+  stemFormat: string;
+  options: EnvelopeOption[];
+  images: EnvelopeImage[];
+}
+
+export interface EnvelopeSection {
+  testSectionId: string;
+  sectionName: string;
+  sequenceNo: number;
+  questionCount: number;
+}
+
+export interface EnvelopeResponse {
+  questionId: string;
+  selectedOptionId: string | null;
+  numericAnswer: string | null;
+  isMarkedForReview: boolean;
+  hasAnswered: boolean;
+}
+
+export interface AttemptEnvelope {
+  attemptId: string;
+  attemptNo: number;
+  status: string;
+  serverNow: string;
+  remainingSeconds: number;
+  allowPause: boolean;
+  test: { testId: string; title: string; durationMinutes: number | null };
+  // Phase E — every envelope (not just the one returned at session-creation
+  // time) now carries these, so a resumed/reloaded attempt can be rebuilt
+  // into a full SessionResult from one GET call (see sessionApi.ts's
+  // getActiveAttempt).
+  testCode: string;
+  mode: "subject-wise" | "full-mock" | "custom";
+  sections: EnvelopeSection[];
+  questions: EnvelopeQuestion[];
+  responses: EnvelopeResponse[];
+}
+
+export interface SessionResult {
+  mode: "subject-wise" | "full-mock" | "custom";
+  testId: string;
+  testCode: string;
+  attemptId: string;
+  attemptNo: number;
+  status: string;
+  serverNow: string;
+  remainingSeconds: number;
+  allowPause: boolean;
+  test: { testId: string; title: string; durationMinutes: number | null };
+  sections: EnvelopeSection[];
+  questions: EnvelopeQuestion[];
+  responses: EnvelopeResponse[];
+}
+
+// Phase E — summary row from GET /assess/attempts (db/assess/test/attempt/
+// attempt-flow.ts's listAttempts), used only to detect an in-progress/paused
+// attempt worth resuming; not the full envelope shape above.
+export interface AttemptSummary {
+  attemptId: string;
+  testId: string;
+  testTitle: string;
+  attemptNo: number;
+  attemptState: string;
+  startedAt: string | null;
+  submittedAt: string | null;
+  obtainedMarks: string | null;
+  totalMarks: string | null;
+}
+
+// Phase E — GET /auth/session's status snapshot, used to drive the
+// idle-warning countdown without ever touching last_activity_at itself.
+export interface SessionStatus {
+  sessionId: string;
+  issuedAt: string;
+  lastActivityAt: string;
+  absoluteExpiresAt: string;
+  idleTimeoutMs: number;
+  serverNow: string;
+}
+
+// Matches db/assess/test/attempt/attempt-flow.ts's SubmitResult (the POST
+// .../submit response) — camelCase, unlike GET .../scorecard's raw DB-model
+// shape, which this app doesn't need yet (submit's own response already
+// carries everything the result screen shows).
+export interface Scorecard {
+  scorecardId: string;
+  obtainedMarks: string;
+  totalMarks: string;
+  correctCount: number;
+  incorrectCount: number;
+  partialCount: number;
+  unattemptedCount: number;
+  idempotent: boolean;
+}
+
+// --- Phase G: dashboard/analytics (real, SQL-aggregated) ------------------
+// Mirrors db/assess/analytics/dashboard.ts exactly — every number here comes
+// from a SQL count(*)/avg() over the caller's own scored attempts, never
+// computed client-side. No percentile/rank/growth/AI-recommendation fields
+// exist because nothing in the backend populates them (assess.scorecard.
+// percentile is a dead column — see APP_COMPLETION_PLAN.md's Phase G notes)
+// — deliberately not fabricated here to fill the gap.
+
+export interface AttemptHistoryEntry {
+  attemptId: string;
+  testId: string;
+  testTitle: string;
+  testCode: string;
+  mode: "subject-wise" | "full-mock" | "custom";
+  submittedAt: string;
+  obtainedMarks: string;
+  totalMarks: string;
+  accuracyPercent: string;
+}
+
+export interface ScoreTrendPoint {
+  attemptId: string;
+  submittedAt: string;
+  obtainedMarks: string;
+  totalMarks: string;
+  accuracyPercent: string;
+}
+
+export interface SubjectAccuracy {
+  subjectCode: SubjectCode;
+  subjectName: string;
+  correct: number;
+  incorrect: number;
+  unattempted: number;
+  total: number;
+  accuracyPercent: number;
+}
+
+export interface UnitAccuracy {
+  subjectCode: SubjectCode;
+  nodeId: string;
+  tagCode: string;
+  unitTitle: string;
+  correct: number;
+  incorrect: number;
+  unattempted: number;
+  total: number;
+  accuracyPercent: number;
+}
+
+export interface DifficultyAccuracy {
+  difficultyBand: string;
+  correct: number;
+  incorrect: number;
+  unattempted: number;
+  total: number;
+  accuracyPercent: number;
+}
+
+export interface TimeBucket {
+  bucketLabel: string;
+  questionCount: number;
+  averageSeconds: number | null;
+}
+
+export interface DashboardAnalytics {
+  attemptHistory: AttemptHistoryEntry[];
+  scoreTrend: ScoreTrendPoint[];
+  subjectAccuracy: SubjectAccuracy[];
+  unitAccuracy: UnitAccuracy[];
+  difficultyAccuracy: DifficultyAccuracy[];
+  timeDistribution: TimeBucket[];
+  weakestUnits: UnitAccuracy[];
+  unattemptedRate: { servedCount: number; unattemptedCount: number; unattemptedPercent: number };
+}
+
+// --- Phase G: per-attempt review (G4) -------------------------------------
+// Mirrors db/assess/test/attempt/attempt-flow.ts's ReviewQuestion — the
+// answer-key-revealing, post-scoring-only shape GET /attempts/:id/review
+// returns. "Unattempted" for a given question is isCorrect === null (see
+// getReview's own comment: a question never interacted with never got an
+// attempt_response row at all).
+
+export interface ReviewOption {
+  optionId: string;
+  optionLabel: string;
+  optionText: string;
+  isCorrect: boolean;
+  wasSelected: boolean;
+}
+
+export interface ReviewImage {
+  url: string;
+  altText: string | null;
+  optionId: string | null;
+  targetRole: string;
+}
+
+export interface ReviewQuestion {
+  questionId: string;
+  testSectionId: string;
+  sequenceNo: number;
+  stemText: string;
+  questionType: string | null;
+  topicTagCode: string;
+  topicTitle: string;
+  options: ReviewOption[];
+  images: ReviewImage[];
+  correctNumericValue: string | null;
+  studentNumericAnswer: string | null;
+  isCorrect: boolean | null;
+  marksAwarded: string | null;
+  timeSpentSeconds: number | null;
+  explanationText: string | null;
+  formulaReference: string | null;
+}

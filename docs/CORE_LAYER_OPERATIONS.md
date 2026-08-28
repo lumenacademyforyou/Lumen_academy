@@ -40,7 +40,7 @@ All three are idempotent — safe to re-run. Each accepts `--dry-run` to preview
 ## What "safe to run repeatedly" actually means here
 
 - Seed scripts (`00_core_roles.ts`, `02_core_lifecycle_fixture.ts`): every write is an upsert on a real unique constraint or an existence check before insert. Confirmed live by running each twice in a row — identical IDs returned, no duplicate rows.
-- The e2e script (`db/scripts/e2e/core_lifecycle.ts`): generates a fresh timestamped email and institution code on every run, and deletes everything it created in a `finally` block regardless of pass or fail. Confirmed live by running it twice consecutively.
+- The e2e script (`db/scripts/manual/e2e/core_lifecycle.ts`): generates a fresh timestamped email and institution code on every run, and deletes everything it created in a `finally` block regardless of pass or fail. Confirmed live by running it twice consecutively.
 - Neither ever sends a real email — both use `admin.createUser({ email_confirm: true })`, never `signUp()` or `inviteUserByEmail()`. The two-per-hour Supabase email quota is never at risk from running either script, including in CI on every commit.
 
 ## What's genuinely unfinished, and why

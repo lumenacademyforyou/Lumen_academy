@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -18,11 +22,38 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Generates the typed client backend/src/generated/prisma imports (needed
+      # for the one still-live model, User.targetExam/locale — see prisma/
+      # schema.prisma's header, Phase H/H2). This is NOT a migration step —
+      # db/migrations/ is this app's only schema-migration track; nothing here
+      # runs `prisma migrate deploy`/`db push` against any database.
       - name: Generate Prisma client
         run: npx prisma generate
 
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Unit tests
+        run: npm run test:unit
+
+      # test:unit already runs this as its last step (so `npm run test:unit`
+      # alone stays the one local command for full coverage) — called again
+      # here as its own named step purely so a CI failure clearly says
+      # "frontend" vs "backend" instead of both hiding under "Unit tests".
+      - name: Frontend unit tests
+        run: npm run test:frontend
+
       - name: Build
         run: npm run build
+
+      - name: Install Playwright browsers
+        if: ${{ env.DATABASE_URL != '' }}
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end tests
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::warning::Skipping end-to-end tests — the DATABASE_URL repository secret is not configured, and this suite asserts against real published content in a live database (e.g. GET /api/questions returning real rows). Set the DATABASE_URL (and SUPABASE_URL) secrets on this repository to enable it."
+            exit 0
+          fi
+          npm run test:e2e

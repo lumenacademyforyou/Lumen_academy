@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 
-import { ChapterGoal } from "../types";
+import { ChapterGoal, CatalogTree, CatalogUnit, SessionResult, SessionLine, SubjectCode, UnitAccuracy } from "../types";
+import { createSession } from "../services/sessionApi";
+import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
 import {
   fetchUserTasks,
   saveUserTask,
@@ -17,10 +19,59 @@ import {
 
 interface StudyPlanProps {
   studentName?: string;
-  onTakeRecommendedMock?: () => void;
   chapterGoals?: ChapterGoal[];
   setChapterGoals?: React.Dispatch<React.SetStateAction<ChapterGoal[]>>;
+  catalogTree?: CatalogTree | null;
+  onSessionCreated?: (session: SessionResult) => void;
   onNavigateTab?: (tab: string) => void;
+}
+
+// LA-APP-COMPLETION-001 Phase D9: the study-plan "Build Test" handoff. A
+// ChapterGoal's subject/chapter are plain strings (this screen's own local
+// state, not catalog uuids), so launching a real test for one needs a
+// best-effort name match against the live catalog — same approach as
+// CoursesView.tsx's unit mocks, duplicated locally rather than shared since
+// these are two independent page-level concerns matching against the same
+// public CatalogTree shape.
+const SUBJECT_TO_CODE: Record<string, SubjectCode> = { Physics: "PHY", Chemistry: "CHEM", Botany: "BOT", Zoology: "ZOO" };
+
+function normalizeWords(s: string): string[] {
+  return s.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(/\s+/).filter(Boolean);
+}
+
+function findBestMatchingUnit(units: CatalogUnit[], name: string): CatalogUnit | null {
+  const target = new Set(normalizeWords(name));
+  let best: { unit: CatalogUnit; score: number } | null = null;
+  for (const u of units) {
+    const score = normalizeWords(u.title).filter((w) => target.has(w)).length;
+    if (score > 0 && (!best || score > best.score)) best = { unit: u, score };
+  }
+  return best?.unit ?? null;
+}
+
+// LA-APP-COMPLETION-001 Phase G, G5 — the reverse direction of the match
+// above: a real catalog nodeId -> which ChapterGoal it belongs to, so a
+// chapter's card can show its own real, SQL-aggregated test performance
+// (db/assess/analytics/dashboard.ts's per-unit accuracy) instead of staying
+// silent. Deliberately additive, not a replacement for the manual
+// `completed` toggle: this screen has no reliable way to know a study
+// session happened outside of a test (reading NCERT, watching a video), so
+// auto-flipping `completed` from accuracy alone would overwrite the
+// student's own tracking with an incomplete proxy for it. Showing both side
+// by side (manual completion + real tested accuracy) closes the test-layer
+// -> course-layer loop the directive asks for without guessing at a
+// completion rule nothing in this codebase specifies.
+function findMatchingUnitAccuracy(goal: ChapterGoal, unitAccuracy: UnitAccuracy[]): UnitAccuracy | null {
+  const subjectCode = SUBJECT_TO_CODE[goal.subject];
+  if (!subjectCode) return null;
+  const candidates = unitAccuracy.filter((u) => u.subjectCode === subjectCode);
+  const target = new Set(normalizeWords(goal.chapter));
+  let best: { unit: UnitAccuracy; score: number } | null = null;
+  for (const u of candidates) {
+    const score = normalizeWords(u.unitTitle).filter((w) => target.has(w)).length;
+    if (score > 0 && (!best || score > best.score)) best = { unit: u, score };
+  }
+  return best?.unit ?? null;
 }
 
 export interface DayRoutine {
@@ -44,9 +95,10 @@ const DEFAULT_CHAPTER_GOALS: ChapterGoal[] = [
 export default function StudyPlanView({
 
   studentName = "Aspirant",
-  onTakeRecommendedMock,
   chapterGoals: externalChapterGoals,
   setChapterGoals: setExternalChapterGoals,
+  catalogTree,
+  onSessionCreated,
   onNavigateTab,
 }: StudyPlanProps) {
   const { t, language } = useLanguage();
@@ -146,6 +198,72 @@ export default function StudyPlanView({
 
   const completedCount = chapterGoals.filter((g) => g.completed).length;
   const progressPercent = Math.round((completedCount / chapterGoals.length) * 100);
+
+  // Phase G, G5 — real per-chapter tested performance, matched by subject +
+  // title against the live analytics endpoint's per-unit accuracy.
+  const { analytics } = useDashboardAnalytics();
+
+  const [launching, setLaunching] = useState(false);
+  const [launchError, setLaunchError] = useState<string | null>(null);
+
+  // Daily-routine "Start Session" buttons are tied to a slot's subject, not
+  // a specific chapter. "Biology" isn't a real catalog subject (the bank
+  // splits it Botany/Zoology) — represented as one mixed two-line session.
+  const handleStartSubjectSession = async (subjectLabel: "Physics" | "Chemistry" | "Biology" | "Mock Test") => {
+    if (!catalogTree || !onSessionCreated) return;
+    setLaunching(true);
+    setLaunchError(null);
+    try {
+      let session: SessionResult;
+      if (subjectLabel === "Mock Test") {
+        session = await createSession({ mode: "full-mock", title: "Full Mock Test" });
+      } else if (subjectLabel === "Biology") {
+        const lines: SessionLine[] = catalogTree.subjects
+          .filter((s) => s.subjectCode === "BOT" || s.subjectCode === "ZOO")
+          .map((s) => ({ subjectId: s.subjectId, includeDescendants: true, pickCount: 10, sectionName: s.subjectCode }));
+        if (lines.length === 0) throw new Error("No Biology content published yet.");
+        session = await createSession({ mode: "custom", title: "Biology Practice Session", durationMinutes: lines.length * 10, lines });
+      } else {
+        const subject = catalogTree.subjects.find((s) => s.subjectCode === SUBJECT_TO_CODE[subjectLabel]);
+        if (!subject) throw new Error(`No published ${subjectLabel} content yet.`);
+        session = await createSession({ mode: "subject-wise", title: `${subjectLabel} Practice Session`, durationMinutes: 20, subjectId: subject.subjectId, pickCount: 20 });
+      }
+      onSessionCreated(session);
+    } catch (err) {
+      setLaunchError(err instanceof Error ? err.message : "Could not start this session.");
+    } finally {
+      setLaunching(false);
+    }
+  };
+
+  // "Test Completed Chapters Now" — one line per completed chapter, matched
+  // to the closest real catalog unit by title.
+  const handleTestCompletedChapters = async () => {
+    if (!catalogTree || !onSessionCreated) return;
+    const completed = chapterGoals.filter((g) => g.completed);
+    if (completed.length === 0) {
+      setLaunchError("Mark at least one chapter as completed first.");
+      return;
+    }
+    setLaunching(true);
+    setLaunchError(null);
+    try {
+      const lines: SessionLine[] = [];
+      for (const goal of completed) {
+        const subject = catalogTree.subjects.find((s) => s.subjectCode === SUBJECT_TO_CODE[goal.subject]);
+        if (!subject) continue;
+        const matched = findBestMatchingUnit(subject.units, goal.chapter);
+        lines.push({ subjectId: subject.subjectId, syllabusNodeId: matched?.nodeId, includeDescendants: true, pickCount: 5, sectionName: goal.chapter });
+      }
+      if (lines.length === 0) throw new Error("Could not match your completed chapters to published content yet.");
+      const session = await createSession({ mode: "custom", title: "Completed Chapters Test", durationMinutes: lines.length * 5, lines });
+      onSessionCreated(session);
+    } catch (err) {
+      setLaunchError(err instanceof Error ? err.message : "Could not start this test.");
+    } finally {
+      setLaunching(false);
+    }
+  };
 
   // Dynamic Routine based on daily hours & focus area
   const getDailySchedule = (): DayRoutine[] => {
@@ -380,10 +498,11 @@ export default function StudyPlanView({
                 </div>
 
                 <button
-                  onClick={onTakeRecommendedMock}
-                  className="px-3.5 py-1.5 bg-white dark:bg-[var(--navy)] hover:bg-slate-100 dark:hover:bg-[#00243B] text-[var(--teal)] dark:text-[#FCB824] border border-slate-300 dark:border-slate-700 rounded-xl text-[11px] font-bold cursor-pointer transition-colors shrink-0 self-start sm:self-auto"
+                  onClick={() => handleStartSubjectSession(item.subject)}
+                  disabled={launching || !catalogTree}
+                  className="px-3.5 py-1.5 bg-white dark:bg-[var(--navy)] hover:bg-slate-100 dark:hover:bg-[#00243B] text-[var(--teal)] dark:text-[#FCB824] border border-slate-300 dark:border-slate-700 rounded-xl text-[11px] font-bold cursor-pointer transition-colors shrink-0 self-start sm:self-auto disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Start Session
+                  {launching ? "Starting..." : "Start Session"}
                 </button>
               </div>
             ))}
@@ -417,7 +536,9 @@ export default function StudyPlanView({
           </div>
 
           <div className="space-y-2.5 max-h-[380px] overflow-y-auto pr-1 scrollbar-thin">
-            {chapterGoals.map((goal) => (
+            {chapterGoals.map((goal) => {
+              const tested = analytics ? findMatchingUnitAccuracy(goal, analytics.unitAccuracy) : null;
+              return (
               <div
                 key={goal.id}
                 onClick={() => toggleChapter(goal.id)}
@@ -441,19 +562,39 @@ export default function StudyPlanView({
                   </div>
                 </div>
 
-                <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700 shadow-xs shrink-0">
-                  {goal.highYieldTag}
-                </span>
+                <div className="flex items-center gap-2 shrink-0">
+                  {/* Real tested accuracy for this unit (Phase G, G5) — only
+                      shown once the student has actually attempted questions
+                      from it, never a placeholder/guessed number. */}
+                  {tested && tested.correct + tested.incorrect > 0 && (
+                    <span
+                      title={`${tested.correct} correct / ${tested.incorrect} incorrect / ${tested.unattempted} unattempted, tested`}
+                      className={`text-[10px] font-black px-2 py-0.5 rounded-md border shadow-xs ${
+                        tested.accuracyPercent >= 70
+                          ? "text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
+                          : "text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
+                      }`}
+                    >
+                      {t("Tested")}: {tested.accuracyPercent}%
+                    </span>
+                  )}
+                  <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700 shadow-xs">
+                    {goal.highYieldTag}
+                  </span>
+                </div>
               </div>
-            ))}
+              );
+            })}
           </div>
 
+          {launchError && <p className="text-xs text-red-600 dark:text-red-400 font-semibold text-center">{launchError}</p>}
           <button
-            onClick={onTakeRecommendedMock}
-            className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors cursor-pointer text-center flex items-center justify-center gap-2"
+            onClick={handleTestCompletedChapters}
+            disabled={launching || !catalogTree || completedCount === 0}
+            className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors cursor-pointer text-center flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <span className="material-symbols-outlined text-sm">rocket_launch</span>
-            Test Completed Chapters Now
+            {launching ? "Starting..." : "Test Completed Chapters Now"}
           </button>
         </div>
       </div>

@@ -52,6 +52,13 @@ export default function EvaluatingView({ onEvaluationComplete, attempt }: Evalua
   const handleDownloadSummary = () => {
     if (!attempt) return;
     
+    // Phase G cleanup: dropped percentile (assess.scorecard.percentile is
+    // never populated anywhere server-side — always a stale, frozen
+    // carried-forward number, never real), subjectBreakdown (merges
+    // Botany+Zoology into a fake "Biology" bucket and its `status` field is
+    // never computed from real data), and aiRecommendation.topics (always
+    // empty on a real attempt — see buildHonestAttemptFromScorecard in
+    // App.tsx). Only fields the server actually returns remain.
     const summaryText = `
 LUMEN ACADEMY - TEST PERFORMANCE SUMMARY
 ----------------------------------------
@@ -59,21 +66,12 @@ Test: ${attempt.title}
 Date: ${attempt.date}
 Score: ${attempt.totalScore}
 Accuracy: ${attempt.accuracy}%
-Percentile: ${attempt.percentile}th
 
 -- PERFORMANCE DETAILS --
 Correct Answers: ${attempt.correctAnswers}
 Incorrect Answers: ${attempt.incorrectAnswers}
 Skipped Answers: ${attempt.skippedAnswers}
 Time Taken: ${attempt.timeTakenMinutes} minutes
-
--- SUBJECT BREAKDOWN --
-Physics: ${attempt.subjectBreakdown.Physics.score}% (${attempt.subjectBreakdown.Physics.status})
-Chemistry: ${attempt.subjectBreakdown.Chemistry.score}% (${attempt.subjectBreakdown.Chemistry.status})
-Biology: ${attempt.subjectBreakdown.Biology.score}% (${attempt.subjectBreakdown.Biology.status})
-
--- AI RECOMMENDATIONS --
-${attempt.aiRecommendation.topics.map(t => `- ${t}`).join('\n')}
     `.trim();
 
     const blob = new Blob([summaryText], { type: "text/plain" });

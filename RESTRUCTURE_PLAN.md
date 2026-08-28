@@ -6,6 +6,20 @@ hand-written TypeScript domain layer (not just SQL), there is a second, parallel
 Prisma ORM setup, and several root-level data folders (`database_sample/`,
 `content-batches/`, `schemas/`) don't fit neatly into `frontend/backend/db`.
 
+> **LA-APP-COMPLETION-001 Phase H (H3) note:** this document is a historical
+> restructuring audit — a snapshot of the tree before/during a one-time file
+> reorganization, plus the defects found while doing it. It is intentionally
+> left as-is below (rewriting its "before" entries or old error listings would
+> falsify the historical record of what actually happened). Several paths and
+> tools it references have since moved again or been retired entirely by
+> later completion-directive phases — `database_sample/`, `content-batches/`
+> at repo root, `backend/ai/**`, `backend/src/services/ai/**`,
+> `backend/src/routes/tests.routes.ts`, `backend/src/services/{attempt,
+> pdfReport}.service.ts`, and `prisma/seed.ts` no longer exist. For the
+> **current, up-to-date** state of the repo, its schema-migration boundary,
+> and what's built vs. still open, see `docs/APP_COMPLETION_PLAN.md` — that
+> file is the living tracker; this one is not.
+
 ---
 
 ## 1. Current tree (depth 4, excl. node_modules/dist/.git)

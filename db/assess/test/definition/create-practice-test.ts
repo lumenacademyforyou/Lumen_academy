@@ -110,24 +110,44 @@ export async function createPracticeTest(input: CreatePracticeTestInput): Promis
     const totalQuestions = input.lines.reduce((sum, l) => sum + l.pickCount, 0);
     const totalMarks = (Number(correctMarks) * totalQuestions).toString();
 
-    const versionRes = await pool.query<{ next: number }>(
-      `select coalesce(max(version_no), 0) + 1 as next from catalog.exam_pattern where cycle_id = $1`,
-      [cycleId]
-    );
-    const versionNo = versionRes.rows[0].next;
-
-    // is_current=false deliberately — catalog.uq_exam_pattern_current_per_cycle
-    // allows only ONE is_current=true pattern per cycle (the cycle's official
-    // exam pattern). A practice-test shape is an auxiliary pattern, not that;
-    // createTest() itself doesn't require is_current, only that the pattern
-    // row and its sections exist and are self-consistent.
-    const patternRes = await pool.query<{ pattern_id: string }>(
-      `insert into catalog.exam_pattern (cycle_id, scheme_id, version_no, total_questions, total_marks, duration_minutes, is_current)
-       values ($1, $2, $3, $4, $5, $6, false)
-       returning pattern_id`,
-      [cycleId, schemeId, versionNo, totalQuestions, totalMarks, input.durationMinutes]
-    );
-    patternId = patternRes.rows[0].pattern_id;
+    // Bounded count-then-insert retry on the version_no race (F3's automated
+    // assembly test caught this live: two concurrent createPracticeTest calls
+    // for the same cycleId — e.g. two students both starting a subject-wise
+    // practice test around the same moment — both read the same max(version_no)
+    // and one loses the (cycle_id, version_no) unique constraint, surfacing as
+    // a raw 23505/409 instead of the test just being created. Same pattern
+    // attempt-flow.ts's startAttempt already uses for the analogous
+    // attempt_no race.
+    let pattern: { pattern_id: string } | null = null;
+    let lastErr: unknown;
+    for (let tries = 0; tries < 5 && !pattern; tries++) {
+      const versionRes = await pool.query<{ next: number }>(
+        `select coalesce(max(version_no), 0) + 1 as next from catalog.exam_pattern where cycle_id = $1`,
+        [cycleId]
+      );
+      const versionNo = versionRes.rows[0].next;
+      try {
+        // is_current=false deliberately — catalog.uq_exam_pattern_current_per_cycle
+        // allows only ONE is_current=true pattern per cycle (the cycle's
+        // official exam pattern). A practice-test shape is an auxiliary
+        // pattern, not that; createTest() itself doesn't require is_current,
+        // only that the pattern row and its sections exist and are
+        // self-consistent.
+        const patternRes = await pool.query<{ pattern_id: string }>(
+          `insert into catalog.exam_pattern (cycle_id, scheme_id, version_no, total_questions, total_marks, duration_minutes, is_current)
+           values ($1, $2, $3, $4, $5, $6, false)
+           returning pattern_id`,
+          [cycleId, schemeId, versionNo, totalQuestions, totalMarks, input.durationMinutes]
+        );
+        pattern = patternRes.rows[0];
+      } catch (err) {
+        lastErr = err;
+        if ((err as { code?: string }).code !== "23505") throw err;
+        // another concurrent call took this version_no — retry with a fresh max()
+      }
+    }
+    if (!pattern) throw lastErr instanceof Error ? lastErr : new Error("createPracticeTest: exhausted retries allocating exam_pattern.version_no");
+    patternId = pattern.pattern_id;
 
     patternSectionIds = [];
     let seq = 1;

@@ -1,11 +1,9 @@
-import React, { useState, useMemo, useEffect, lazy, Suspense } from "react";
+import React, { useState, useMemo, useEffect, useRef, lazy, Suspense } from "react";
 import { useLanguage } from "./contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
 import { INITIAL_ATTEMPTS } from "./data/initialAttempts";
-import { BIOLOGY_QUESTIONS, CHEMISTRY_QUESTIONS, PHYSICS_QUESTIONS } from "./data/questions";
-import { TestAttempt, Question, ChapterGoal } from "./types";
+import { TestAttempt, ChapterGoal, CatalogTree, SessionResult, Scorecard } from "./types";
 import Header from "./components/layout/Header";
-import SplashView from "./components/layout/SplashView";
 import DailyReminderModal from "./components/layout/DailyReminderModal";
 import LumenLogo from "./components/ui/LumenLogo";
 import { supabase } from "./services/supabase";
@@ -36,6 +34,12 @@ const AdminView = lazy(() => import("./pages/AdminView"));
 // of the initial chunk entirely; only fetched when the Analytics tab opens.
 const AnalyticsView = lazy(() => import("./pages/AnalyticsView"));
 
+const SESSION_MODE_LABEL: Record<SessionResult["mode"], string> = {
+  "subject-wise": "Subject-wise Practice",
+  "full-mock": "Full Mock Exam",
+  custom: "Custom Test",
+};
+
 function AppLoadingFallback() {
   return (
     <div className="w-full min-h-[40vh] flex items-center justify-center">
@@ -43,32 +47,34 @@ function AppLoadingFallback() {
     </div>
   );
 }
-import {
-  startAttempt,
-  patchAnswers,
-  submitAttempt as apiSubmitAttempt,
-  getResult,
-  toLegacyQuestions,
-  type QuestionIdMapEntry,
-  type AttemptResult,
-  type ResultQuestion,
-} from "./services/testApi";
-// STAGE 7: parallel client for the newer db/assess-backed flow
-// (/api/assess/attempts/*), kept separate from lib/testApi.ts above (which
-// targets the older, still-live Prisma /api/tests/* routes). Gated by
-// VITE_USE_REAL_API — see onQuickDemoFlowC below.
-import {
-  getSyllabus as getRealSyllabus,
-  startAttempt as startAssessAttempt,
-  getPaper as getAssessPaper,
-  toLegacyQuestions as toLegacyQuestionsFromPaper,
-  batchSaveResponses as batchSaveAssessResponses,
-  submitAttempt as submitAssessAttempt,
-  getScorecard as getAssessScorecard,
-  type QuestionIdMapEntry as AssessQuestionIdMapEntry,
-} from "./services/assessApi";
 
-const USE_REAL_API = import.meta.env.VITE_USE_REAL_API === "true";
+// Branded, full-screen fallback for the exam-launch chain
+// (system_check/lobby/test_taking/evaluating) — these are all React.lazy()
+// chunks with no Suspense boundary above them before this fix, so the first
+// navigation into any of them (e.g. right after "I Understand, Start Test")
+// had no loading UI at all. This is what a user waits on while that chunk
+// fetches.
+function ExamLoadingFallback({ message }: { message: string }) {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-[#f8f9ff] dark:bg-[#031824]">
+      <div className="h-20 w-20">
+        <LumenLogo className="w-full h-full" />
+      </div>
+      <div className="flex flex-col items-center gap-3">
+        <span className="font-black text-lg text-[var(--navy)] dark:text-white uppercase tracking-wide">LUMEN ACADEMY</span>
+        <div className="flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
+          <div className="w-4 h-4 border-2 border-slate-300 border-t-[var(--teal)] dark:border-t-[#FCB824] rounded-full animate-spin" />
+          <span>{message}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+import { getCatalogTree } from "./services/catalogApi";
+import { createSession, getActiveSession, pauseAttempt } from "./services/sessionApi";
+import { logoutSession as revokeAuthSession } from "./services/authSessionApi";
+import { useIdleSessionGuard, type SessionExpiryReason } from "./hooks/useIdleSessionGuard";
+import SessionExpiryModal from "./components/layout/SessionExpiryModal";
 
 
 
@@ -77,131 +83,40 @@ const USE_REAL_API = import.meta.env.VITE_USE_REAL_API === "true";
 // percentile for subjects this attempt didn't cover are carried forward from
 // the previous attempt rather than invented, since we have no new
 // information about them.
-function buildHonestAttemptFromResult(
-  result: AttemptResult,
-  attemptTitle: string,
-  previousAttempts: TestAttempt[]
-): TestAttempt {
-  const correctCount = result.correctCount ?? 0;
-  const wrongCount = result.wrongCount ?? 0;
-  const skippedCount = result.skippedCount ?? 0;
-  const accuracy = Math.round((correctCount / (correctCount + wrongCount || 1)) * 100);
-
-  const isWrong = (q: ResultQuestion) => {
-    if (q.selectedOptionId === null) return false;
-    const opt = q.options.find((o) => o.id === q.selectedOptionId);
-    return opt ? !opt.isCorrect : false;
-  };
-  const wrongQuestions = result.questions.filter(isWrong);
-
-  const laggingTopics = wrongQuestions.map((q) => {
-    const selected = q.options.find((o) => o.id === q.selectedOptionId);
-    const correct = q.options.find((o) => o.isCorrect);
-    return {
-      topic: q.unit,
-      unit: q.unit,
-      subject: q.subject as ChapterGoal["subject"],
-      accuracy: 0,
-      negativeMarksLost: 1,
-      conceptGap: `Selected option (${selected?.textEn ?? "Unknown"}) instead of correct option (${correct?.textEn ?? "Unknown"}).`,
-      improvementSteps: [
-        q.explanationEn ? `Review the core concept: ${q.explanationEn}` : "Review this topic in your syllabus notes.",
-        "Re-read the relevant NCERT section and solve a few similar practice problems.",
-      ],
-      ncertReference: {
-        book: `NCERT ${q.subject}`,
-        chapter: q.unit,
-        pages: "See unit syllabus",
-        keyLines: q.explanationEn ?? "No explanation recorded for this question.",
-      },
-    };
-  });
-
-  const legacySubjectKey = (subj: string): "Physics" | "Chemistry" | "Biology" =>
-    subj === "Physics" ? "Physics" : subj === "Chemistry" ? "Chemistry" : "Biology";
-
+// Builds a TestAttempt from the real, server-computed Scorecard (POST
+// .../submit's response — LA-APP-COMPLETION-001 Phase D8: the client
+// performs no scoring arithmetic, only formats what the server already
+// computed). The scorecard endpoint returns aggregate marks/counts only, no
+// per-question correctness/explanation breakdown (that's getReview's job,
+// not wired into the dashboard's TestAttempt shape here) — so
+// laggingTopics/questionTimeData/subjectBreakdown-for-this-attempt are
+// honestly carried forward from the previous attempt or left empty, never
+// fabricated from data that doesn't exist.
+function buildHonestAttemptFromScorecard(scorecard: Scorecard, attemptTitle: string, previousAttempts: TestAttempt[], elapsedMinutes: number): TestAttempt {
+  const correctCount = scorecard.correctCount;
+  const incorrectCount = scorecard.incorrectCount;
+  const skippedCount = scorecard.unattemptedCount;
+  const accuracy = Math.round((correctCount / (correctCount + incorrectCount || 1)) * 100);
   const previous = previousAttempts[0];
   const baselineBreakdown = previous?.subjectBreakdown ?? {
     Physics: { score: 0, growth: 0, status: "Average" as const },
     Chemistry: { score: 0, growth: 0, status: "Average" as const },
     Biology: { score: 0, growth: 0, status: "Average" as const },
   };
-  const testedKey = result.questions[0] ? legacySubjectKey(result.questions[0].subject) : "Biology";
-  const previousScore = baselineBreakdown[testedKey].score;
-
-  const subjectBreakdown = {
-    ...baselineBreakdown,
-    [testedKey]: {
-      score: accuracy,
-      growth: parseFloat((accuracy - previousScore).toFixed(1)),
-      status: (accuracy >= 90 ? "Expert" : accuracy >= 75 ? "Strong" : "Average") as "Strong" | "Average" | "Expert",
-    },
-  };
-
-  const uniqueWrongUnits = Array.from(new Set(wrongQuestions.map((q) => q.unit)));
-
-  const questionTimeData = result.questions.map((q, idx) => ({
-    questionId: idx + 1,
-    subject: q.subject as ChapterGoal["subject"],
-    timeSpentSeconds: Math.round((q.timeSpentMs ?? 0) / 1000),
-  }));
-  const totalTimeSpentSeconds = questionTimeData.reduce((sum, item) => sum + item.timeSpentSeconds, 0);
 
   return {
-    id: result.id,
+    id: scorecard.scorecardId,
     title: attemptTitle,
     date: new Date().toLocaleDateString("en-GB"),
-    totalScore: result.score ?? 0,
+    totalScore: Number(scorecard.obtainedMarks),
     accuracy,
     percentile: previous?.percentile ?? 0,
     correctAnswers: correctCount,
-    incorrectAnswers: wrongCount,
+    incorrectAnswers: incorrectCount,
     skippedAnswers: skippedCount,
-    timeTakenMinutes: Math.ceil((totalTimeSpentSeconds || 1) / 60),
-    subjectBreakdown,
-    aiRecommendation: {
-      topics: uniqueWrongUnits.slice(0, 2),
-      potentialGain: wrongCount * 4 + (skippedCount > 0 ? 4 : 0),
-      focusAreas: uniqueWrongUnits.slice(0, 3).map((topic) => ({ topic, level: "Critical" as const })),
-    },
-    laggingTopics,
-    questionTimeData,
-    averageTimePerQuestionSeconds: questionTimeData.length > 0 ? Math.round(totalTimeSpentSeconds / questionTimeData.length) : 0,
-  };
-}
-
-// STAGE 7: simpler counterpart to buildHonestAttemptFromResult above, for
-// the newer /api/assess/attempts/:id/scorecard endpoint. That endpoint only
-// returns aggregate counts (no per-question correctness/explanation
-// breakdown — building that needs a separate endpoint this pass didn't add),
-// so laggingTopics/questionTimeData are honestly empty here rather than
-// fabricated from data that doesn't exist.
-function buildHonestAttemptFromAssessScorecard(
-  scorecard: { obtainedMarks: number; correctCount: number; wrongCount: number; skippedCount: number },
-  attemptTitle: string,
-  previousAttempts: TestAttempt[]
-): TestAttempt {
-  const accuracy = Math.round((scorecard.correctCount / (scorecard.correctCount + scorecard.wrongCount || 1)) * 100);
-  const previous = previousAttempts[0];
-  const baselineBreakdown = previous?.subjectBreakdown ?? {
-    Physics: { score: 0, growth: 0, status: "Average" as const },
-    Chemistry: { score: 0, growth: 0, status: "Average" as const },
-    Biology: { score: 0, growth: 0, status: "Average" as const },
-  };
-
-  return {
-    id: `assess_${Date.now()}`,
-    title: attemptTitle,
-    date: new Date().toLocaleDateString("en-GB"),
-    totalScore: scorecard.obtainedMarks,
-    accuracy,
-    percentile: previous?.percentile ?? 0,
-    correctAnswers: scorecard.correctCount,
-    incorrectAnswers: scorecard.wrongCount,
-    skippedAnswers: scorecard.skippedCount,
-    timeTakenMinutes: 0,
+    timeTakenMinutes: elapsedMinutes,
     subjectBreakdown: baselineBreakdown,
-    aiRecommendation: { topics: [], potentialGain: scorecard.wrongCount * 4, focusAreas: [] },
+    aiRecommendation: { topics: [], potentialGain: incorrectCount * 4, focusAreas: [] },
     laggingTopics: [],
     questionTimeData: [],
     averageTimePerQuestionSeconds: 0,
@@ -212,7 +127,6 @@ export default function App() {
   const [authLoading, setAuthLoading] = useState(true);
 const [userId, setUserId] = useState<string | null>(null);
   const { t } = useLanguage();
-  const [hasSeenSplash, setHasSeenSplash] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [studentName, setStudentName] = useState("");
@@ -411,28 +325,107 @@ useEffect(() => {
   return () => subscription.unsubscribe();
 }, []);
   const [currentScreen, setCurrentScreen] = useState<"portal" | "system_check" | "lobby" | "test_taking" | "evaluating">("portal");
-  const [customTestConfig, setCustomTestConfig] = useState<{
-    title: string;
-    questions: Question[];
-    durationSeconds: number;
-    mode: "standard" | "practice";
-    subject: string;
-    difficulty?: "Adaptive" | "Easy" | "Medium" | "Hard";
-  } | null>(null);
+  // Mirrors currentScreen for reads inside async callbacks (e.g. the
+  // reload-survival check below) that must see the *latest* screen at
+  // resolution time, not whatever it was when the closure was created.
+  const currentScreenRef = useRef(currentScreen);
+  currentScreenRef.current = currentScreen;
   const [exploredCourse, setExploredCourse] = useState<"physics" | "chemistry" | "biology" | null>(null);
 
-  // Set only when the current test came from the real backend (currently just
-  // the Quick Demo entry point — see lib/demoSession.ts). Drives handleCompleteTest
-  // to score server-side instead of the local fake-scoring path below.
-  const [activeApiAttemptId, setActiveApiAttemptId] = useState<string | null>(null);
-  const [apiQuestionIdMap, setApiQuestionIdMap] = useState<Map<number, QuestionIdMapEntry>>(new Map());
+  // The just-created real session (LA-APP-COMPLETION-001 Phase C's
+  // POST /api/assess/sessions) — set once by whichever entry point launched
+  // a test (test directory, course unit mock, study-plan recommended test),
+  // consumed by system_check/lobby/test_taking, cleared on completion/cancel.
+  const [activeSession, setActiveSession] = useState<SessionResult | null>(null);
 
-  // STAGE 7: same bridge pattern as activeApiAttemptId above, for the newer
-  // db/assess-backed flow. Kept as a separate id/map rather than reusing the
-  // old ones — the two APIs key responses differently (question_id vs
-  // test_question_id), so merging the types would be misleading.
-  const [activeAssessAttemptId, setActiveAssessAttemptId] = useState<string | null>(null);
-  const [assessQuestionIdMap, setAssessQuestionIdMap] = useState<Map<number, AssessQuestionIdMapEntry>>(new Map());
+  // Subject/unit tree with live published-question counts (GET /api/catalog/tree)
+  // — the one source every test-launch entry point (directory, course
+  // drill-down, study-plan handoff) reads from. Fetched once per
+  // authenticated session rather than per-screen, so every consumer sees the
+  // same data and there's a single loading/error state to handle (D10).
+  const [catalogTree, setCatalogTree] = useState<CatalogTree | null>(null);
+  const [catalogError, setCatalogError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    let cancelled = false;
+    getCatalogTree()
+      .then((tree) => {
+        if (!cancelled) setCatalogTree(tree);
+      })
+      .catch((err) => {
+        if (!cancelled) setCatalogError(err instanceof Error ? err.message : "Could not load the subject/unit catalog.");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [isAuthenticated]);
+
+  // LA-APP-COMPLETION-001 Phase E (E1/E4) — reload/re-login survival. Every
+  // fresh authenticated app load (a real page reload, or landing back here
+  // after an idle-logout-and-relogin) checks for an attempt this user left
+  // mid-flight and drops straight back into it — resuming server-side first
+  // if it was paused — instead of losing it and showing the dashboard.
+  // Deliberately independent of the idle-guard below: this also covers a
+  // plain browser refresh, which has nothing to do with idle timeout.
+  //
+  // Real race found live while writing Phase F6's Playwright journeys: this
+  // lookup is async and was applying unconditionally on resolution, so a
+  // slow response could land *after* the user had already manually launched
+  // a brand-new session (e.g. clicked "Start Practice" while this was still
+  // in flight) — silently clobbering the fresh session with a stale one.
+  // Guarded on currentScreenRef below: only ever resume into a screen the
+  // user hasn't already navigated away from "portal" on their own.
+  useEffect(() => {
+    if (!isAuthenticated || isAdmin) return;
+    let cancelled = false;
+    getActiveSession()
+      .then((session) => {
+        if (cancelled || !session || currentScreenRef.current !== "portal") return;
+        setActiveSession(session);
+        setCurrentScreen("test_taking");
+      })
+      .catch(() => {
+        // No resumable attempt, or the lookup failed — falling through to
+        // the normal portal view is the correct default either way.
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [isAuthenticated, isAdmin]);
+
+  // Message surfaced on the landing page after a forced sign-out (idle or
+  // absolute session timeout) — cleared on the next successful login.
+  const [authMessage, setAuthMessage] = useState<string | null>(null);
+
+  // Central "this session is over, one way or another" path — shared by the
+  // idle/absolute-timeout guard below and by a manual sign-out, so both
+  // leave the local session row and any in-progress attempt in the same
+  // honest state (E3: server-side revocation, not just client-side hiding;
+  // E4: an in-progress attempt is paused, never silently abandoned mid-clock).
+  const endSession = async (message: string | null) => {
+    if (activeSession && currentScreen === "test_taking" && activeSession.status === "in_progress") {
+      await pauseAttempt(activeSession.attemptId).catch(() => {});
+    }
+    await revokeAuthSession(message ? "forced" : "user_logout").catch(() => {});
+    await supabaseSignOut().catch(() => {});
+    setAuthMessage(message);
+    setIsAuthenticated(false);
+    setIsAdmin(false);
+    setActiveSession(null);
+    setCurrentScreen("portal");
+    navigate("/");
+  };
+
+  const handleSessionExpired = (reason: SessionExpiryReason) => {
+    const message =
+      reason === "absolute_timeout"
+        ? "Your session reached its maximum length and was ended for security. Please sign in again."
+        : "You were signed out due to inactivity. Please sign in again.";
+    endSession(message);
+  };
+
+  const idleGuard = useIdleSessionGuard(isAuthenticated && !isAdmin, handleSessionExpired);
 
   // Interactive Chapter Checklist State
   const [chapterGoals, setChapterGoals] = useState<ChapterGoal[]>([
@@ -469,274 +462,33 @@ useEffect(() => {
     navigate(paths[tab] || "/dashboard");
   };
 
-  // Starts the pre-test lobby
-  const handleStartLobby = (testId: string) => {
-    setActiveAttemptId(testId);
-    setCurrentScreen("lobby");
+  // A session is created (POST /api/assess/sessions) by whichever entry
+  // point launched the test; this just records it and enters the pre-test
+  // flow (system_check -> lobby -> test_taking), same screen sequence as
+  // before.
+  const handleSessionCreated = (session: SessionResult) => {
+    setActiveSession(session);
+    setCurrentScreen("system_check");
   };
 
-  // Generate appropriate questions for predefined attempts if not using a custom test config
-  const fallbackQuestions = useMemo(() => {
-    if (customTestConfig) return customTestConfig.questions;
-    
-    // Combine questions to have a large pool
-    const pool = [...BIOLOGY_QUESTIONS, ...CHEMISTRY_QUESTIONS, ...PHYSICS_QUESTIONS];
-    
-    let requiredCount = 10;
-    if (activeAttempt.title.toLowerCase().includes("full syllabus")) {
-       requiredCount = 180;
-    } else if (activeAttempt.title.toLowerCase().includes("chemistry")) {
-       requiredCount = 15;
-    } else if (activeAttempt.title.toLowerCase().includes("biology")) {
-       requiredCount = 10;
-    }
-    
-    // pad the pool if needed
-    let finalQuestions: Question[] = [];
-    while (finalQuestions.length < requiredCount) {
-       finalQuestions = [...finalQuestions, ...pool];
-    }
-    // Symmetrical random shuffle and map fresh IDs
-    const shuffled = finalQuestions.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, requiredCount).map((q, i) => ({ ...q, id: i + 1 }));
-  }, [customTestConfig, activeAttempt]);
-
-  const activeDurationSeconds = customTestConfig ? customTestConfig.durationSeconds : fallbackQuestions.length * 60;
+  const handleCancelSession = () => {
+    setActiveSession(null);
+    setCurrentScreen("portal");
+  };
 
   // Enters standard exam taking environment
   const handleStartTest = () => {
     setCurrentScreen("test_taking");
   };
 
-  // Executed when user finishes test taking
-  // Real-API path: translates the legacy per-question answer state back into
-  // real question/option ids, records answers, submits, and scores server-side.
-  const handleCompleteRealAttempt = async (
-    attemptId: string,
-    selectedAnswers: { [key: number]: number },
-    timeMap: Record<number, number>
-  ) => {
-    try {
-      const answers = Array.from(apiQuestionIdMap.entries()).map(([legacyId, entry]) => {
-        const optionIndex = selectedAnswers[legacyId];
-        const selectedOptionId = optionIndex !== undefined ? entry.optionIdByIndex[optionIndex] ?? null : null;
-        const timeSpentMs = (timeMap[legacyId] || 0) * 1000;
-        return { questionId: entry.questionId, selectedOptionId, timeSpentMs };
-      });
-
-      if (answers.length > 0) {
-        await patchAnswers(attemptId, answers);
-      }
-      await apiSubmitAttempt(attemptId);
-      const result = await getResult(attemptId);
-
-      const newAttempt = buildHonestAttemptFromResult(
-        result,
-        customTestConfig ? customTestConfig.title : "NEET Biology Mini-Mock #12",
-        attempts
-      );
-
-      if (customTestConfig) {
-        setAttempts((prev) => [newAttempt, ...prev]);
-      } else {
-        setAttempts((prev) => prev.map((a) => (a.id === "mock_12" ? newAttempt : a)));
-      }
-      setActiveAttemptId(newAttempt.id);
-      setActiveApiAttemptId(null);
-      setApiQuestionIdMap(new Map());
-      setCurrentScreen("evaluating");
-    } catch (err) {
-      console.error("Failed to submit real test attempt:", err);
-      alert("Something went wrong submitting your test. Please check your connection and try again.");
-    }
-  };
-
-  // STAGE 7: counterpart to handleCompleteRealAttempt above, for the newer
-  // db/assess-backed flow. Batch-saves answers (keyed by test_question_id,
-  // not question_id), submits (server scores synchronously — see
-  // db/assess/test/attempt/attempt-flow.ts), then reads the real scorecard.
-  const handleCompleteAssessAttempt = async (
-    attemptId: string,
-    selectedAnswers: { [key: number]: number },
-    timeMap: Record<number, number>
-  ) => {
-    try {
-      const responses = Array.from(assessQuestionIdMap.entries())
-        .filter(([legacyId]) => selectedAnswers[legacyId] !== undefined)
-        .map(([legacyId, entry]) => {
-          const optionIndex = selectedAnswers[legacyId];
-          const optionId = entry.optionIdByIndex[optionIndex] ?? null;
-          return {
-            testQuestionId: entry.testQuestionId,
-            option_id: optionId,
-            time_spent_seconds: Math.round((timeMap[legacyId] || 0)),
-          };
-        });
-
-      if (responses.length > 0) {
-        await batchSaveAssessResponses(attemptId, responses);
-      }
-      const submitRes = await submitAssessAttempt(attemptId);
-
-      const newAttempt = buildHonestAttemptFromAssessScorecard(
-        submitRes.data.scorecard,
-        customTestConfig ? customTestConfig.title : "Real API Test",
-        attempts
-      );
-      setAttempts((prev) => [newAttempt, ...prev]);
-      setActiveAttemptId(newAttempt.id);
-      setActiveAssessAttemptId(null);
-      setAssessQuestionIdMap(new Map());
-      setCurrentScreen("evaluating");
-    } catch (err) {
-      console.error("Failed to submit assess API attempt:", err);
-      alert("Something went wrong submitting your test. Please check your connection and try again.");
-    }
-  };
-
-  const handleCompleteTest = async (
-    selectedAnswers: { [key: number]: number },
-    flaggedQuestions: number[],
-    timeMap: Record<number, number>
-  ) => {
-    if (activeAssessAttemptId) {
-      await handleCompleteAssessAttempt(activeAssessAttemptId, selectedAnswers, timeMap);
-      return;
-    }
-    if (activeApiAttemptId) {
-      await handleCompleteRealAttempt(activeApiAttemptId, selectedAnswers, timeMap);
-      return;
-    }
-
-    // 1. Compute dynamic correct, incorrect, skipped scores
-    const activeQuestions = fallbackQuestions;
-    let correct = 0;
-    let incorrect = 0;
-    let skipped = 0;
-    const incorrectQuestions: Question[] = [];
-
-    activeQuestions.forEach((q) => {
-      const answer = selectedAnswers[q.id];
-      if (answer === undefined) {
-        skipped++;
-      } else if (answer === q.correctAnswerIndex) {
-        correct++;
-      } else {
-        incorrect++;
-        incorrectQuestions.push(q);
-      }
-    });
-
-    // NEET Marking Scheme: +4 for correct, -1 for incorrect
-    const calculatedScore = (correct * 4) - incorrect;
-    const calculatedAccuracy = Math.round((correct / (correct + incorrect || 1)) * 100);
-
-    // Dynamic Lagging Topics generation
-    const generatedLaggingTopics = incorrectQuestions.map((iq) => {
-      const ref = typeof iq.ncertReference === "object" && iq.ncertReference !== null ? iq.ncertReference : {
-        book: `NCERT Class 12 ${iq.subject}`,
-        chapter: iq.unit || "Syllabus Unit",
-        pages: "NCERT Standard Section",
-        keyLines: iq.explanation
-      };
-
-      return {
-        topic: iq.unit || iq.subject,
-        unit: iq.unit || "Core Concept",
-        subject: iq.subject,
-        accuracy: 0,
-        negativeMarksLost: 4,
-        conceptGap: `Selected option (${iq.options[selectedAnswers[iq.id]] || "Unknown"}) instead of correct option (${iq.options[iq.correctAnswerIndex]}).`,
-        improvementSteps: [
-          `Review the core concept: ${iq.explanation}`,
-          `Re-read NCERT section carefully and solve 5 similar practice problems.`
-        ],
-        ncertReference: ref
-      };
-    });
-
-    // Default fallback if no incorrect questions
-    const finalLagging = generatedLaggingTopics.length > 0 ? generatedLaggingTopics : [
-      {
-        topic: "Hardy-Weinberg Heterozygote Frequency (2pq)",
-        unit: "Genetics & Evolution",
-        subject: "Biology" as const,
-        accuracy: 85,
-        negativeMarksLost: 0,
-        conceptGap: "Minor hesitation on calculating binomial frequencies under selection pressure.",
-        improvementSteps: ["Review binomial expansion formula: p² + 2pq + q² = 1."],
-        ncertReference: {
-          book: "NCERT Class 12 Biology",
-          chapter: "Chapter 7: Evolution",
-          pages: "Pages 136 - 137",
-          keyLines: "2pq represents the proportion of heterozygous carriers in Hardy-Weinberg equilibrium."
-        }
-      }
-    ];
-
-    // 2. Build the completed TestAttempt structure
-    const attemptId = customTestConfig ? `custom_${Date.now()}` : "mock_12";
-    const attemptTitle = customTestConfig ? customTestConfig.title : "NEET Biology Mini-Mock #12";
-
-    // Compute time stats
-    const questionTimeData = Object.keys(timeMap).map((idStr) => {
-      const qId = parseInt(idStr);
-      const q = activeQuestions.find((q) => q.id === qId);
-      return {
-        questionId: qId,
-        subject: q ? q.subject : ("Biology" as "Physics" | "Chemistry" | "Biology"),
-        timeSpentSeconds: timeMap[qId] || 0
-      };
-    });
-    const totalTimeSpent = questionTimeData.reduce((acc, curr) => acc + curr.timeSpentSeconds, 0);
-    const averageTimePerQuestionSeconds = questionTimeData.length > 0 ? Math.round(totalTimeSpent / questionTimeData.length) : 0;
-
-    const newAttempt: TestAttempt = {
-      id: attemptId,
-      title: attemptTitle,
-      date: new Date().toLocaleDateString("en-GB"),
-      totalScore: calculatedScore,
-      accuracy: calculatedAccuracy,
-      percentile: parseFloat((75 + (correct * (20 / activeQuestions.length))).toFixed(1)), // rewarding percentile simulation
-      correctAnswers: correct,
-      incorrectAnswers: incorrect,
-      skippedAnswers: skipped,
-      timeTakenMinutes: Math.ceil((totalTimeSpent || 1) / 60),
-      subjectBreakdown: {
-        Physics: { score: customTestConfig?.subject === "Physics" ? calculatedAccuracy : 88, growth: 12.4, status: "Strong" },
-        Chemistry: { score: customTestConfig?.subject === "Chemistry" ? calculatedAccuracy : 76, growth: 5.2, status: "Average" },
-        Biology: { 
-          score: customTestConfig?.subject === "Biology" || customTestConfig?.subject === "Full" ? calculatedAccuracy : 92, 
-          growth: parseFloat(((calculatedAccuracy - 92) / 10).toFixed(1)), 
-          status: calculatedAccuracy >= 90 ? "Expert" : calculatedAccuracy >= 75 ? "Strong" : "Average" 
-        }
-      },
-      aiRecommendation: {
-        topics: [
-          incorrectQuestions[0]?.unit || (customTestConfig?.subject === "Chemistry" ? "Xenon Hybridization" : "Inorganic Chemistry"),
-          incorrectQuestions[1]?.unit || (customTestConfig?.subject === "Physics" ? "Photoelectric Slope" : "Genetics Basics")
-        ],
-        potentialGain: incorrect * 4 + 4,
-        focusAreas: [
-          { topic: incorrectQuestions[0]?.unit || "p-Block Elements", level: "Critical" },
-          { topic: incorrectQuestions[1]?.unit || "Hardy-Weinberg Frequency", level: calculatedAccuracy >= 80 ? "Done" : "Improvement" },
-          { topic: "NCERT Formula Drills", level: "Improvement" }
-        ]
-      },
-      laggingTopics: finalLagging,
-      questionTimeData,
-      averageTimePerQuestionSeconds
-    };
-
-    // 3. Save to active attempts in state
-    if (customTestConfig) {
-      setAttempts((prev) => [newAttempt, ...prev]);
-    } else {
-      setAttempts((prev) => prev.map((a) => (a.id === "mock_12" ? newAttempt : a)));
-    }
-    setActiveAttemptId(attemptId);
-    
-    // 4. Move to evaluation load screen
+  // TestTakingView owns the whole submit lifecycle itself (autosave, submit,
+  // real scorecard — see sessionApi.ts) and only reports the final Scorecard
+  // here. No client-side scoring arithmetic (Phase D8).
+  const handleSessionComplete = (scorecard: Scorecard, elapsedMinutes: number) => {
+    const newAttempt = buildHonestAttemptFromScorecard(scorecard, activeSession?.test.title ?? "Test", attempts, elapsedMinutes);
+    setAttempts((prev) => [newAttempt, ...prev]);
+    setActiveAttemptId(newAttempt.id);
+    setActiveSession(null);
     setCurrentScreen("evaluating");
   };
 
@@ -750,15 +502,13 @@ useEffect(() => {
   // used there, and keeping the computation with its one consumer lets that
   // whole chart section (and recharts) load as a separate chunk.
 
-  if (!hasSeenSplash) {
-    return <SplashView onEnter={() => setHasSeenSplash(true)} />;
-  }
-
   if (!isAuthenticated) {
     return (
       <Suspense fallback={<AppLoadingFallback />}>
       <LandingView
+        authMessage={authMessage}
         onLoginSuccess={(name, isNewUser, isAdminFlag) => {
+          setAuthMessage(null);
           setStudentName(name);
           setIsAdmin(!!isAdminFlag);
           setIsAuthenticated(true);
@@ -769,68 +519,27 @@ useEffect(() => {
         onQuickDemoFlowC={() => {
           setStudentName("Prince A");
           setIsAuthenticated(true);
-          setActiveAttemptId("mock_12");
-          setCurrentScreen("system_check");
 
-          if (USE_REAL_API) {
-            // STAGE 7: db/assess-backed real flow (VITE_USE_REAL_API=true).
-            // Old /api/tests/* demo path below stays reachable by flipping
-            // the flag off — "old path is recoverable" per the task spec.
-            (async () => {
-              try {
-                const testId = import.meta.env.VITE_DEMO_TEST_ID;
-                if (!testId) {
-                  console.warn("VITE_USE_REAL_API is on but VITE_DEMO_TEST_ID is not set — nothing to start.");
-                  return;
-                }
-                // Needs a real Supabase session before any Bearer-authed
-                // call — same as the old path below, which calls this too.
-                await ensureDemoSession();
-
-                // Proves the real syllabus endpoint works end-to-end; not
-                // rendered anywhere yet (see STOP GATE 7 for why).
-                const syllabus = await getRealSyllabus();
-                console.info(`[assess API] GET /syllabus -> ${syllabus.units.length} real units`);
-
-                const attempt = await startAssessAttempt(testId);
-                const attemptId = attempt.data.attempt_id;
-                const paper = await getAssessPaper(attemptId);
-                const { legacy, idMap } = toLegacyQuestionsFromPaper(paper.data);
-                setAssessQuestionIdMap(idMap);
-                setActiveAssessAttemptId(attemptId);
-                setCustomTestConfig({
-                  title: "Real API Test (assess)",
-                  questions: legacy,
-                  durationSeconds: legacy.length * 60,
-                  mode: "standard",
-                  subject: "Biology",
-                });
-              } catch (err) {
-                console.warn("Could not start a real assess-API attempt, using local mock questions instead:", err);
-              }
-            })();
-            return;
-          }
-
-          // Fire-and-forget: start a real, server-backed attempt in the
-          // background. If it fails (e.g. no database configured yet), the
-          // demo falls back to the local mock question pool below.
+          // Fire-and-forget: assembles a real 10-question Botany session
+          // from the live bank and enters it. No mock fallback — if this
+          // fails, the demo stays on the portal rather than showing fake
+          // questions (Phase D2/D8: no mock data, no fabricated results).
           (async () => {
             try {
               await ensureDemoSession();
-              const attempt = await startAttempt({ unitId: "bot_01", count: 10, durationSeconds: 600 });
-              const { legacy, idMap } = toLegacyQuestions(attempt.questions);
-              setApiQuestionIdMap(idMap);
-              setActiveApiAttemptId(attempt.id);
-              setCustomTestConfig({
-                title: "NEET Biology Mini-Mock #12",
-                questions: legacy,
-                durationSeconds: attempt.durationSeconds,
-                mode: "standard",
-                subject: "Biology",
+              const tree = catalogTree ?? (await getCatalogTree());
+              const botany = tree.subjects.find((s) => s.subjectCode === "BOT") ?? tree.subjects[0];
+              if (!botany) throw new Error("No subjects available in the catalog.");
+              const session = await createSession({
+                mode: "subject-wise",
+                title: "NEET Biology Mini-Mock",
+                durationMinutes: 10,
+                subjectId: botany.subjectId,
+                pickCount: 10,
               });
+              handleSessionCreated(session);
             } catch (err) {
-              console.warn("Could not start a real demo attempt, using local mock questions instead:", err);
+              console.error("Could not start the quick demo test:", err);
             }
           })();
         }}
@@ -855,6 +564,14 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0f172a] flex flex-col font-sans selection:bg-amber-100 selection:text-amber-900 dark:selection:bg-[#FCB824]/40 dark:selection:text-amber-100">
+      {idleGuard.showWarning && (
+        <SessionExpiryModal
+          reason={idleGuard.reason}
+          secondsRemaining={idleGuard.secondsRemaining}
+          onStayActive={idleGuard.stayActive}
+          onSignOutNow={() => endSession(null)}
+        />
+      )}
       {showDailyReminder && currentScreen === "portal" && (
         <DailyReminderModal 
           onClose={handleCloseReminder} 
@@ -864,28 +581,17 @@ useEffect(() => {
       )}
       
       {/* If taking a test, show full test window instead of regular app shell */}
-      {currentScreen === "test_taking" ? (
-        <TestTakingView
-          studentName={studentName}
-          onCancel={() => {
-            setCustomTestConfig(null);
-            setActiveApiAttemptId(null);
-            setApiQuestionIdMap(new Map());
-            setActiveAssessAttemptId(null);
-            setAssessQuestionIdMap(new Map());
-            setCurrentScreen("portal");
-          }}
-          onCompleteTest={handleCompleteTest}
-          customQuestions={fallbackQuestions}
-          customDurationSeconds={activeDurationSeconds}
-          customTitle={customTestConfig ? customTestConfig.title : activeAttempt.title}
-          customMode="standard"
-        />
+      {currentScreen === "test_taking" && activeSession ? (
+        <Suspense fallback={<ExamLoadingFallback message="Starting your exam..." />}>
+          <TestTakingView session={activeSession} studentName={studentName} onCancel={handleCancelSession} onCompleteTest={handleSessionComplete} />
+        </Suspense>
       ) : currentScreen === "evaluating" ? (
-        <EvaluatingView 
-          onEvaluationComplete={handleEvaluationComplete} 
-          attempt={attempts.find((a) => a.id === activeAttemptId) || attempts[0]}
-        />
+        <Suspense fallback={<ExamLoadingFallback message="Evaluating your responses..." />}>
+          <EvaluatingView
+            onEvaluationComplete={handleEvaluationComplete}
+            attempt={attempts.find((a) => a.id === activeAttemptId) || attempts[0]}
+          />
+        </Suspense>
       ) : (
         <>
           {/* Main Navigation Header */}
@@ -895,10 +601,7 @@ useEffect(() => {
   studentName={studentName}
   setStudentName={setStudentName}
   onSignOut={() => {
-    supabaseSignOut().catch(() => {});
-    setIsAuthenticated(false);
-    setIsAdmin(false);
-    navigate("/");
+    endSession(null);
   }}
 />
 
@@ -913,25 +616,18 @@ useEffect(() => {
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full"
               >
-                {currentScreen === "system_check" ? (
+                <Suspense fallback={<AppLoadingFallback />}>
+                {currentScreen === "system_check" && activeSession ? (
                   <SystemCheckView
-                    testTitle={customTestConfig ? customTestConfig.title : activeAttempt.title}
+                    testTitle={activeSession.test.title}
+                    testCode={activeSession.testCode}
+                    testTypeLabel={SESSION_MODE_LABEL[activeSession.mode]}
+                    studentName={studentName}
                     onCompleteSystemCheck={() => setCurrentScreen("lobby")}
-                    onCancel={() => {
-                      setCustomTestConfig(null);
-                      setActiveApiAttemptId(null);
-                      setApiQuestionIdMap(new Map());
-                      setActiveAssessAttemptId(null);
-                      setAssessQuestionIdMap(new Map());
-                      setCurrentScreen("portal");
-                    }}
+                    onCancel={handleCancelSession}
                   />
-                ) : currentScreen === "lobby" ? (
-                  <LobbyView
-                    testTitle={customTestConfig ? customTestConfig.title : activeAttempt.title}
-                    onStartTest={handleStartTest}
-                    mode="standard"
-                  />
+                ) : currentScreen === "lobby" && activeSession ? (
+                  <LobbyView testTitle={activeSession.test.title} testCode={activeSession.testCode} onStartTest={handleStartTest} mode="standard" />
                 ) : (
                   <>
                     {/* Router based on selected Tab */}
@@ -954,16 +650,14 @@ useEffect(() => {
                     {currentTab === "tests" && (
                       <TestListView
                         attempts={attempts}
+                        catalogTree={catalogTree}
+                        catalogError={catalogError}
                         isSyllabusCompleted={isSyllabusCompleted}
                         onSelectAttempt={(attempt) => {
                           setActiveAttemptId(attempt.id);
                           setTab("dashboard");
                         }}
-                        onStartLobby={handleStartLobby}
-                        onStartCustomTest={(config) => {
-                          setCustomTestConfig(config);
-                          setCurrentScreen("lobby");
-                        }}
+                        onSessionCreated={handleSessionCreated}
                       />
                     )}
 
@@ -974,10 +668,9 @@ useEffect(() => {
                         studentName={studentName}
                         chapterGoals={chapterGoals}
                         setChapterGoals={setChapterGoals}
-                        onStartCustomTest={(config) => {
-                          setCustomTestConfig(config);
-                          setCurrentScreen("lobby");
-                        }}
+                        catalogTree={catalogTree}
+                        catalogError={catalogError}
+                        onSessionCreated={handleSessionCreated}
                         onNavigateTab={(tab) => setTab(tab)}
                       />
                     )}
@@ -986,29 +679,16 @@ useEffect(() => {
                 {currentTab === "analytics" && (
                   <Suspense fallback={<AppLoadingFallback />}>
                     <AnalyticsView
-                      attempts={attempts}
                       shareText={shareText}
                       isExportingPdf={isExportingPdf}
                       onShareReport={handleShareReport}
                       onDownloadPdf={handleDownloadPdf}
-                      onGenerateRevisionSheet={() => {
-                        const pool = [...BIOLOGY_QUESTIONS, ...CHEMISTRY_QUESTIONS, ...PHYSICS_QUESTIONS];
-                        const shuffled = pool.sort(() => 0.5 - Math.random());
-                        const finalQuestions = shuffled.slice(0, Math.min(45, shuffled.length)).map((q, i) => ({ ...q, id: i + 1 }));
-                        setCustomTestConfig({
-                          title: "AI Revision Sheet - 45 Qs",
-                          questions: finalQuestions,
-                          durationSeconds: 45 * 60,
-                          mode: "standard",
-                          subject: "Mixed"
-                        });
-                        setCurrentScreen("lobby");
-                      }}
                     />
                   </Suspense>
                 )}
               </>
             )}
+                </Suspense>
               </motion.div>
             </AnimatePresence>
           </main>
