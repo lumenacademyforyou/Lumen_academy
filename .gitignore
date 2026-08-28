@@ -6,7 +6,6 @@ coverage/
 Thumbs.db
 *.log
 .env*
-!.env.example
 /backend/src/generated/prisma
 
 test-results/
