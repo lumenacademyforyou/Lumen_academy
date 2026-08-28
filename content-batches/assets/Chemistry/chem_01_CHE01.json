@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE01-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "1:1 ரேசிமிக் கலவை",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பிக்ரிக் அமிலம்",
+          "சாலிசிலால்டிஹைடு",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "பென்சோயிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propanamine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)",
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு",
+          "புரோப்பனமீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "1:1 ரேசிமிக் கலவை",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Picric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "சாலிசிலால்டிஹைடு",
+          "பென்சோயிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "பிக்ரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "புரோப்பனமீன்",
+          "ஃபார்மமைடு",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "1:1 ரேசிமிக் கலவை",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Picric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "சாலிசிலால்டிஹைடு",
+          "பென்சோயிக் அமிலம்",
+          "பிக்ரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு",
+          "புரோப்பனமீன்",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "1:1 ரேசிமிக் கலவை",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "சாலிசிலால்டிஹைடு",
+          "பென்சோயிக் அமிலம்",
+          "பிக்ரிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formamide",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "புரோப்பனமீன்",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)",
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)",
+          "1:1 ரேசிமிக் கலவை",
+          "நீக்க விளைபொருட்கள் மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "பிக்ரிக் அமிலம்",
+          "பென்சோயிக் அமிலம்",
+          "சாலிசிலால்டிஹைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Propanamine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)",
+          "புரோப்பனமீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "1:1 ரேசிமிக் கலவை",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பென்சோயிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "பிக்ரிக் அமிலம்",
+          "சாலிசிலால்டிஹைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு",
+          "புரோப்பனமீன்",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "1:1 ரேசிமிக் கலவை",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பென்சோயிக் அமிலம்",
+          "பிக்ரிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "சாலிசிலால்டிஹைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "ஃபார்மமைடு",
+          "புரோப்பனமீன்",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)",
+          "எத்தனமீன் (CH3CH2NH2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "1:1 ரேசிமிக் கலவை",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Picric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பென்சோயிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "சாலிசிலால்டிஹைடு",
+          "பிக்ரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Propanamine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "ஃபார்மமைடு",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)",
+          "புரோப்பனமீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "1:1 ரேசிமிக் கலவை",
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)",
+          "நீக்க விளைபொருட்கள் மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Picric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "பிக்ரிக் அமிலம்",
+          "சாலிசிலால்டிஹைடு",
+          "பென்சோயிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "எத்தனமீன் (CH3CH2NH2)",
+          "புரோப்பனமீன்",
+          "ஃபார்மமைடு",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The bimolecular nucleophilic substitution (SN2) reaction of an optically active alkyl halide results in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A 1:1 racemic mixture of enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Formation of elimination products exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Complete 100% Walden inversion of stereochemical configuration",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN2 is a single-step concerted mechanism involving 180° backside nucleophilic attack.\nStep 2: The umbrella of remaining substituents flips inside out as the leaving group departs.\nStep 3: This causes 100% stereochemical Walden inversion.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிச்சுழற்றும் பண்புடைய ஆல்கைல் ஹாலைடின் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினை எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "அமைப்பில் எந்த மாற்றமும் இன்றி இருத்தல்",
+          "1:1 ரேசிமிக் கலவை",
+          "நீக்க விளைபொருட்கள் மட்டுமே",
+          "முழுமையான 100% வால்டன் தலைகீழாக்கம் (Walden inversion)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's reaction, sodium phenoxide is heated with CO2 at 400 K and 4-7 atm pressure followed by acidification. What is the major product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Salicylic acid (2-hydroxybenzoic acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Salicylaldehyde (2-hydroxybenzaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Picric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phenoxide is a strong nucleophile that attacks electrophilic CO2 at the ortho position.\nStep 2: Acidification yields salicylic acid (2-hydroxybenzoic acid).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் வினையில், சோடியம் பீனாக்சைடு 400 K இல் CO2 உடன் சூடுபடுத்தப்பட்டு பின்னர் அமிலமாக்கப்படுகிறது. இதில் கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பென்சோயிக் அமிலம்",
+          "சாலிசிலிக் அமிலம் (2-ஹைட்ராக்ஸிபென்சோயிக் அமிலம்)",
+          "சாலிசிலால்டிஹைடு",
+          "பிக்ரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the Hoffmann bromamide degradation of ethanamide (CH3CONH2) with Br2 and aqueous KOH, what is the primary amine produced?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formamide",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ethanamine (Ethylamine, CH3CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanamine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanamine (Methylamine, CH3NH2, with one carbon fewer)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hoffmann bromamide degradation converts R-CONH2 into R-NH2 with the loss of the carbonyl carbon as carbonate.\nStep 2: For ethanamide (CH3CONH2), the product is methanamine (CH3NH2).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனமைடு (CH3CONH2) Br2 மற்றும் காரத்துடன் ஹாஃப்மேன் புரோமமைடு சிதைவுக்கு உள்ளாகும்போது உருவாகும் ஓரிணைய அமீன் எது?",
+        "optionTexts": [
+          "ஃபார்மமைடு",
+          "எத்தனமீன் (CH3CH2NH2)",
+          "புரோப்பனமீன்",
+          "மெத்தனமீன் (CH3NH2, ஒரு கார்பன் குறைவான அமீன்)"
+        ]
+      }
+    ]
+  }
+]

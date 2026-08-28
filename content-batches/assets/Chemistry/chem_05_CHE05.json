@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE05-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "புரோப்பேன்",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "புரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "புரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "புரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பேன்",
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of thermodynamic stability among carbocations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is governed by hyperconjugation (α-hydrogens) and +I inductive effects.\nStep 2: 3° (9 α-H) > 2° (6 α-H) > 1° (3 α-H) > methyl (0 α-H).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்போகேட்டயான்களின் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)3C^+ (3°) > (CH3)2CH^+ (2°) > CH3CH2^+ (1°) > CH3^+",
+          "CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+ > CH3^+",
+          "CH3^+ > CH3CH2^+ > (CH3)2CH^+ > (CH3)3C^+",
+          "(CH3)2CH^+ > (CH3)3C^+ > CH3CH2^+ > CH3^+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propene (CH3-CH=CH2) is treated with HBr in the presence of benzoyl peroxide, what is the major organic product formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Bromopropane (CH3-CH2-CH2Br, Anti-Markovnikov product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Bromopropane (CH3-CH(Br)-CH3, Markovnikov product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the presence of peroxide, addition of HBr proceeds via a free-radical chain mechanism (Kharasch effect).\nStep 2: Br• radical attacks the terminal carbon to form the more stable 2° free radical (CH3-•CH-CH2Br).\nStep 3: Hydrogen abstraction gives 1-bromopropane as the major anti-Markovnikov product.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீன் HBr உடன் வினைபுரியும்போது உருவாகும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "1-புரோமோபுரோப்பேன் (ஆன்டி-மார்க்கோனிகோவ் விளைபொருள்)",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "2-புரோமோபுரோப்பேன் (மார்க்கோனிகோவ் விளைபொருள்)",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE06-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.047 °C",
+          "-0.186 °C",
+          "0.093 °C",
+          "-0.093 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.76 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.04 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.78 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+1.56 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-1.56 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.76).\nStep 3: Compute: E°cell = +0.80 + 0.76 = +1.56 V.\nStep 4: Conclude standard cell potential is +1.56 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.76 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.04 V",
+          "+0.78 V",
+          "+1.56 V",
+          "-1.56 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.186 °C",
+          "-0.093 °C",
+          "0.093 °C",
+          "-0.047 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.44 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+1.24 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-1.24 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+0.36 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.62 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.44).\nStep 3: Compute: E°cell = +0.80 + 0.44 = +1.24 V.\nStep 4: Conclude standard cell potential is +1.24 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.44 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+1.24 V",
+          "-1.24 V",
+          "+0.36 V",
+          "+0.62 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.093 °C",
+          "0.093 °C",
+          "-0.047 °C",
+          "-0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.44 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.83 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.67 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.79 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-1.67 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.44).\nStep 3: Compute: E°cell = +1.23 + 0.44 = +1.67 V.\nStep 4: Conclude standard cell potential is +1.67 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.44 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.83 V",
+          "+1.67 V",
+          "+0.79 V",
+          "-1.67 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.10 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.372 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.186 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.10 mol kg^-1 = 0.186 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.186 °C = -0.186 °C.\nStep 4: Conclude the freezing point is -0.186 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.10 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.372 °C",
+          "-0.093 °C",
+          "0.186 °C",
+          "-0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.76 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.99 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.47 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+1.99 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "+0.99 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.76).\nStep 3: Compute: E°cell = +1.23 + 0.76 = +1.99 V.\nStep 4: Conclude standard cell potential is +1.99 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.76 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.99 V",
+          "+0.47 V",
+          "+1.99 V",
+          "+0.99 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.20 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.372 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.744 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.372 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.20 mol kg^-1 = 0.372 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.372 °C = -0.372 °C.\nStep 4: Conclude the freezing point is -0.372 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.20 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "0.372 °C",
+          "-0.186 °C",
+          "-0.744 °C",
+          "-0.372 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.25 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.48 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.48 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.74 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.98 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.25).\nStep 3: Compute: E°cell = +1.23 + 0.25 = +1.48 V.\nStep 4: Conclude standard cell potential is +1.48 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.25 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.48 V",
+          "+1.48 V",
+          "+0.74 V",
+          "+0.98 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.50 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.465 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.930 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1.860 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.930 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.50 mol kg^-1 = 0.930 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.930 °C = -0.930 °C.\nStep 4: Conclude the freezing point is -0.930 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.50 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.465 °C",
+          "0.930 °C",
+          "-1.860 °C",
+          "-0.930 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.76 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.99 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.47 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+1.99 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-1.99 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.76).\nStep 3: Compute: E°cell = +1.23 + 0.76 = +1.99 V.\nStep 4: Conclude standard cell potential is +1.99 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.76 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.99 V",
+          "+0.47 V",
+          "+1.99 V",
+          "-1.99 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.093 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.047 °C",
+          "-0.186 °C",
+          "-0.093 °C",
+          "0.093 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.34 V and E°_anode = -0.25 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.30 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.59 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-0.59 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.09 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.34) - (-0.25).\nStep 3: Compute: E°cell = +0.34 + 0.25 = +0.59 V.\nStep 4: Conclude standard cell potential is +0.59 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.34 V மற்றும் E°_ஆனோடு = -0.25 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.30 V",
+          "+0.59 V",
+          "-0.59 V",
+          "+0.09 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.10 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.372 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.186 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.186 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.10 mol kg^-1 = 0.186 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.186 °C = -0.186 °C.\nStep 4: Conclude the freezing point is -0.186 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.10 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.372 °C",
+          "-0.186 °C",
+          "-0.093 °C",
+          "0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.76 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.99 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.99 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.47 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.99 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.76).\nStep 3: Compute: E°cell = +1.23 + 0.76 = +1.99 V.\nStep 4: Conclude standard cell potential is +1.99 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.76 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.99 V",
+          "+1.99 V",
+          "+0.47 V",
+          "+0.99 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.10 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.372 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.186 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.186 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.10 mol kg^-1 = 0.186 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.186 °C = -0.186 °C.\nStep 4: Conclude the freezing point is -0.186 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.10 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.093 °C",
+          "-0.372 °C",
+          "-0.186 °C",
+          "0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.76 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.56 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.56 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.78 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.04 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.76).\nStep 3: Compute: E°cell = +0.80 + 0.76 = +1.56 V.\nStep 4: Conclude standard cell potential is +1.56 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.76 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.56 V",
+          "+1.56 V",
+          "+0.78 V",
+          "+0.04 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.093 °C",
+          "0.093 °C",
+          "-0.047 °C",
+          "-0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.44 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.24 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.24 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.36 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.62 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.44).\nStep 3: Compute: E°cell = +0.80 + 0.44 = +1.24 V.\nStep 4: Conclude standard cell potential is +1.24 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.44 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.24 V",
+          "+1.24 V",
+          "+0.36 V",
+          "+0.62 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.20 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.372 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.744 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.372 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.20 mol kg^-1 = 0.372 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.372 °C = -0.372 °C.\nStep 4: Conclude the freezing point is -0.372 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.20 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.372 °C",
+          "-0.186 °C",
+          "-0.744 °C",
+          "0.372 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.44 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.62 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-1.24 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+0.36 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+1.24 V",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.44).\nStep 3: Compute: E°cell = +0.80 + 0.44 = +1.24 V.\nStep 4: Conclude standard cell potential is +1.24 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.44 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.62 V",
+          "-1.24 V",
+          "+0.36 V",
+          "+1.24 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.50 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.860 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.465 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.930 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.930 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.50 mol kg^-1 = 0.930 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.930 °C = -0.930 °C.\nStep 4: Conclude the freezing point is -0.930 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.50 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-1.860 °C",
+          "-0.465 °C",
+          "0.930 °C",
+          "-0.930 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +0.80 V and E°_anode = -0.25 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.05 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.55 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+1.05 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "+0.53 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+0.80) - (-0.25).\nStep 3: Compute: E°cell = +0.80 + 0.25 = +1.05 V.\nStep 4: Conclude standard cell potential is +1.05 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +0.80 V மற்றும் E°_ஆனோடு = -0.25 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "-1.05 V",
+          "+0.55 V",
+          "+1.05 V",
+          "+0.53 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.20 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.744 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.372 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.372 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.20 mol kg^-1 = 0.372 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.372 °C = -0.372 °C.\nStep 4: Conclude the freezing point is -0.372 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.20 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.744 °C",
+          "0.372 °C",
+          "-0.372 °C",
+          "-0.186 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.25 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.74 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.48 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-1.48 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.98 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.25).\nStep 3: Compute: E°cell = +1.23 + 0.25 = +1.48 V.\nStep 4: Conclude standard cell potential is +1.48 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.25 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.74 V",
+          "+1.48 V",
+          "-1.48 V",
+          "+0.98 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.093 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.186 °C",
+          "-0.047 °C",
+          "0.093 °C",
+          "-0.093 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.44 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.79 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.83 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1.67 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+1.67 V",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.44).\nStep 3: Compute: E°cell = +1.23 + 0.44 = +1.67 V.\nStep 4: Conclude standard cell potential is +1.67 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.44 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.79 V",
+          "+0.83 V",
+          "-1.67 V",
+          "+1.67 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the freezing point of an ideal non-electrolyte aqueous solution with a molality of 0.05 m? (Kf for water = 1.86 K kg mol^-1, freezing point of pure water = 0.00 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.093 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-0.047 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.186 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.093 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State freezing point depression equation: ΔTf = Kf × m.\nStep 2: Compute ΔTf = 1.86 K kg mol^-1 × 0.05 mol kg^-1 = 0.093 K.\nStep 3: Freezing point of solution is Tf = Tf° - ΔTf = 0.00 °C - 0.093 °C = -0.093 °C.\nStep 4: Conclude the freezing point is -0.093 °C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.05 m மோலாலிட்டி கொண்ட ஒரு நல்லியல்பு மின்பகுளி அல்லாத நீர்க்கரைசலின் உறைநிலை என்ன? (நீரின் Kf = 1.86 K kg mol^-1, தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": [
+          "-0.093 °C",
+          "-0.047 °C",
+          "-0.186 °C",
+          "0.093 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A galvanic cell consists of two half-cells with standard reduction potentials E°_cathode = +1.23 V and E°_anode = -0.25 V. What is the standard cell potential (E°cell)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.74 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+1.48 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.98 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-1.48 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State standard cell EMF formula: E°cell = E°_cathode - E°_anode.\nStep 2: Substitute values: E°cell = (+1.23) - (-0.25).\nStep 3: Compute: E°cell = +1.23 + 0.25 = +1.48 V.\nStep 4: Conclude standard cell potential is +1.48 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கால்வானிக் மின்கலனில் திட்ட ஒடுக்க மின்னழுத்தங்கள் E°_கேத்தோடு = +1.23 V மற்றும் E°_ஆனோடு = -0.25 V எனக் கொண்டுள்ளன. அம்மின்கலனின் திட்ட மின்னழுத்தம் (E°cell) என்ன?",
+        "optionTexts": [
+          "+0.74 V",
+          "+1.48 V",
+          "+0.98 V",
+          "-1.48 V"
+        ]
+      }
+    ]
+  }
+]

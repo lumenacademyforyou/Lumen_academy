@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE04-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 5 for singly ionized helium (He+, Z = 2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-4.35 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-2.18 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-1.09 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.18 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 2 and principal quantum number n = 5.\nStep 3: Compute: En = -13.6 × (2² / 5²) = -13.6 × (4/25) = -2.18 eV.\nStep 4: Conclude that the orbital energy is -2.18 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹீலியம் அயனி (He+) இல் n = 5 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-4.35 eV",
+          "-2.18 eV",
+          "-1.09 eV",
+          "2.18 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine (F, 4.0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nitrogen (N)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Fluorine is in Group 17, Period 2 with highest effective nuclear charge and smallest radius among halogens.\nStep 3: Identify the matching candidate: Fluorine (F, 4.0).\nStep 4: Conclude that the answer is Fluorine (F, 4.0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் அளவீட்டில் மிக அதிக எலக்ட்ரான் கவர்தன்மை கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புளோரின் (F, 4.0)",
+          "நைட்ரஜன் (N)",
+          "குளோரின் (Cl)",
+          "ஆக்ஸிஜன் (O)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the shape and central atom hybridization of methane (CH4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Linear, sp hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral, sp3 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Trigonal planar, sp2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar, dsp2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: CH4 has 4 bond pairs and 0 lone pairs with 109.5° bond angles.\nStep 3: Match with correct geometry/bond order: Tetrahedral, sp3 hybridization.\nStep 4: Conclude the answer is Tetrahedral, sp3 hybridization.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் (CH4) வடிவம் மற்றும் மைய அணுவின் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "நேர்கோடு, sp இனக்கலப்பு",
+          "நான்முகி, sp3 இனக்கலப்பு",
+          "முக்கோண தளம், sp2 இனக்கலப்பு",
+          "சதுர தளம், dsp2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 5 for hydrogen atom (H, Z = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.27 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.54 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1.09 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.54 eV",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 1 and principal quantum number n = 5.\nStep 3: Compute: En = -13.6 × (1² / 5²) = -13.6 × (1/25) = -0.54 eV.\nStep 4: Conclude that the orbital energy is -0.54 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹைட்ரஜன் அணு இல் n = 5 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-0.27 eV",
+          "0.54 eV",
+          "-1.09 eV",
+          "-0.54 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest negative electron gain enthalpy in the periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bromine (Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Iodine (I)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fluorine (F)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorine (Cl, -349 kJ/mol)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Chlorine possesses larger 3p orbitals with lower interelectronic repulsion compared to compact 2p in fluorine.\nStep 3: Identify the matching candidate: Chlorine (Cl, -349 kJ/mol).\nStep 4: Conclude that the answer is Chlorine (Cl, -349 kJ/mol).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் மிக அதிக எதிர்மறை எலக்ட்ரான் நாட்டம் கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புரோமின் (Br)",
+          "அயோடின் (I)",
+          "புளோரின் (F)",
+          "குளோரின் (Cl, -349 kJ/mol)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the shape and central atom hybridization of methane (CH4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Linear, sp hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal planar, sp2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tetrahedral, sp3 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Square planar, dsp2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: CH4 has 4 bond pairs and 0 lone pairs with 109.5° bond angles.\nStep 3: Match with correct geometry/bond order: Tetrahedral, sp3 hybridization.\nStep 4: Conclude the answer is Tetrahedral, sp3 hybridization.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் (CH4) வடிவம் மற்றும் மைய அணுவின் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "நேர்கோடு, sp இனக்கலப்பு",
+          "முக்கோண தளம், sp2 இனக்கலப்பு",
+          "நான்முகி, sp3 இனக்கலப்பு",
+          "சதுர தளம், dsp2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 4 for hydrogen atom (H, Z = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.85 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.85 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-1.70 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.42 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 1 and principal quantum number n = 4.\nStep 3: Compute: En = -13.6 × (1² / 4²) = -13.6 × (1/16) = -0.85 eV.\nStep 4: Conclude that the orbital energy is -0.85 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹைட்ரஜன் அணு இல் n = 4 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "0.85 eV",
+          "-0.85 eV",
+          "-1.70 eV",
+          "-0.42 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest negative electron gain enthalpy in the periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bromine (Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fluorine (F)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Iodine (I)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorine (Cl, -349 kJ/mol)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Chlorine possesses larger 3p orbitals with lower interelectronic repulsion compared to compact 2p in fluorine.\nStep 3: Identify the matching candidate: Chlorine (Cl, -349 kJ/mol).\nStep 4: Conclude that the answer is Chlorine (Cl, -349 kJ/mol).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் மிக அதிக எதிர்மறை எலக்ட்ரான் நாட்டம் கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புரோமின் (Br)",
+          "புளோரின் (F)",
+          "அயோடின் (I)",
+          "குளோரின் (Cl, -349 kJ/mol)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 3 for singly ionized helium (He+, Z = 2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-12.09 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-6.04 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-3.02 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.04 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 2 and principal quantum number n = 3.\nStep 3: Compute: En = -13.6 × (2² / 3²) = -13.6 × (4/9) = -6.04 eV.\nStep 4: Conclude that the orbital energy is -6.04 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹீலியம் அயனி (He+) இல் n = 3 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-12.09 eV",
+          "-6.04 eV",
+          "-3.02 eV",
+          "6.04 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest negative electron gain enthalpy in the periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iodine (I)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chlorine (Cl, -349 kJ/mol)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Fluorine (F)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bromine (Br)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Chlorine possesses larger 3p orbitals with lower interelectronic repulsion compared to compact 2p in fluorine.\nStep 3: Identify the matching candidate: Chlorine (Cl, -349 kJ/mol).\nStep 4: Conclude that the answer is Chlorine (Cl, -349 kJ/mol).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் மிக அதிக எதிர்மறை எலக்ட்ரான் நாட்டம் கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "அயோடின் (I)",
+          "குளோரின் (Cl, -349 kJ/mol)",
+          "புளோரின் (F)",
+          "புரோமின் (Br)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the shape and central atom hybridization of methane (CH4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tetrahedral, sp3 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Linear, sp hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trigonal planar, sp2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar, dsp2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: CH4 has 4 bond pairs and 0 lone pairs with 109.5° bond angles.\nStep 3: Match with correct geometry/bond order: Tetrahedral, sp3 hybridization.\nStep 4: Conclude the answer is Tetrahedral, sp3 hybridization.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் (CH4) வடிவம் மற்றும் மைய அணுவின் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "நான்முகி, sp3 இனக்கலப்பு",
+          "நேர்கோடு, sp இனக்கலப்பு",
+          "முக்கோண தளம், sp2 இனக்கலப்பு",
+          "சதுர தளம், dsp2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 2 for singly ionized helium (He+, Z = 2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-13.60 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "13.60 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-27.20 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-6.80 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 2 and principal quantum number n = 2.\nStep 3: Compute: En = -13.6 × (2² / 2²) = -13.6 × (4/4) = -13.60 eV.\nStep 4: Conclude that the orbital energy is -13.60 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹீலியம் அயனி (He+) இல் n = 2 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-13.60 eV",
+          "13.60 eV",
+          "-27.20 eV",
+          "-6.80 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine (F, 4.0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen (N)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Fluorine is in Group 17, Period 2 with highest effective nuclear charge and smallest radius among halogens.\nStep 3: Identify the matching candidate: Fluorine (F, 4.0).\nStep 4: Conclude that the answer is Fluorine (F, 4.0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் அளவீட்டில் மிக அதிக எலக்ட்ரான் கவர்தன்மை கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புளோரின் (F, 4.0)",
+          "ஆக்ஸிஜன் (O)",
+          "குளோரின் (Cl)",
+          "நைட்ரஜன் (N)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 3 for hydrogen atom (H, Z = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-3.02 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.51 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1.51 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-0.76 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 1 and principal quantum number n = 3.\nStep 3: Compute: En = -13.6 × (1² / 3²) = -13.6 × (1/9) = -1.51 eV.\nStep 4: Conclude that the orbital energy is -1.51 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹைட்ரஜன் அணு இல் n = 3 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-3.02 eV",
+          "1.51 eV",
+          "-1.51 eV",
+          "-0.76 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which element has the lowest first ionization enthalpy among alkali metals?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sodium (Na)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lithium (Li)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Potassium (K)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Caesium (Cs)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Caesium has the largest atomic radius and strongest shielding effect in Group 1.\nStep 3: Identify the matching candidate: Caesium (Cs).\nStep 4: Conclude that the answer is Caesium (Cs).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார உலோகங்களில் மிகக் குறைந்த முதல் அயனியாக்கும் என்தால்பி கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "சோடியம் (Na)",
+          "லித்தியம் (Li)",
+          "பொட்டாசியம் (K)",
+          "சீசியம் (Cs)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 3 for hydrogen atom (H, Z = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.51 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.51 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-3.02 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.76 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 1 and principal quantum number n = 3.\nStep 3: Compute: En = -13.6 × (1² / 3²) = -13.6 × (1/9) = -1.51 eV.\nStep 4: Conclude that the orbital energy is -1.51 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹைட்ரஜன் அணு இல் n = 3 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-1.51 eV",
+          "1.51 eV",
+          "-3.02 eV",
+          "-0.76 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine (F, 4.0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen (N)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Fluorine is in Group 17, Period 2 with highest effective nuclear charge and smallest radius among halogens.\nStep 3: Identify the matching candidate: Fluorine (F, 4.0).\nStep 4: Conclude that the answer is Fluorine (F, 4.0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் அளவீட்டில் மிக அதிக எலக்ட்ரான் கவர்தன்மை கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புளோரின் (F, 4.0)",
+          "ஆக்ஸிஜன் (O)",
+          "குளோரின் (Cl)",
+          "நைட்ரஜன் (N)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 2 for singly ionized helium (He+, Z = 2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-27.20 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "13.60 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-13.60 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-6.80 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 2 and principal quantum number n = 2.\nStep 3: Compute: En = -13.6 × (2² / 2²) = -13.6 × (4/4) = -13.60 eV.\nStep 4: Conclude that the orbital energy is -13.60 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹீலியம் அயனி (He+) இல் n = 2 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-27.20 eV",
+          "13.60 eV",
+          "-13.60 eV",
+          "-6.80 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fluorine (F, 4.0)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen (N)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Fluorine is in Group 17, Period 2 with highest effective nuclear charge and smallest radius among halogens.\nStep 3: Identify the matching candidate: Fluorine (F, 4.0).\nStep 4: Conclude that the answer is Fluorine (F, 4.0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் அளவீட்டில் மிக அதிக எலக்ட்ரான் கவர்தன்மை கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "ஆக்ஸிஜன் (O)",
+          "புளோரின் (F, 4.0)",
+          "குளோரின் (Cl)",
+          "நைட்ரஜன் (N)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 4 for singly ionized helium (He+, Z = 2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.40 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-3.40 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-1.70 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-6.80 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 2 and principal quantum number n = 4.\nStep 3: Compute: En = -13.6 × (2² / 4²) = -13.6 × (4/16) = -3.40 eV.\nStep 4: Conclude that the orbital energy is -3.40 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹீலியம் அயனி (He+) இல் n = 4 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "3.40 eV",
+          "-3.40 eV",
+          "-1.70 eV",
+          "-6.80 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest negative electron gain enthalpy in the periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bromine (Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fluorine (F)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl, -349 kJ/mol)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Iodine (I)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Chlorine possesses larger 3p orbitals with lower interelectronic repulsion compared to compact 2p in fluorine.\nStep 3: Identify the matching candidate: Chlorine (Cl, -349 kJ/mol).\nStep 4: Conclude that the answer is Chlorine (Cl, -349 kJ/mol).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் மிக அதிக எதிர்மறை எலக்ட்ரான் நாட்டம் கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புரோமின் (Br)",
+          "புளோரின் (F)",
+          "குளோரின் (Cl, -349 kJ/mol)",
+          "அயோடின் (I)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the bond order and magnetic character of diatomic nitrogen (N2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond order = 3.0, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 2.5, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 2.0, Diamagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 1.0, Paramagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: N2 has 14 electrons: (10 bonding - 4 antibonding)/2 = 3.0 with all electrons paired.\nStep 3: Match with correct geometry/bond order: Bond order = 3.0, Diamagnetic.\nStep 4: Conclude the answer is Bond order = 3.0, Diamagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரணு நைட்ரஜனின் (N2) பிணைப்புத் தரம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "பிணைப்புத் தரம் = 3.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 2.5, பாராகாந்தம்",
+          "பிணைப்புத் தரம் = 2.0, டயாகாந்தம்",
+          "பிணைப்புத் தரம் = 1.0, பாராகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's atomic theory, what is the electronic energy of an electron in orbit n = 4 for hydrogen atom (H, Z = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.85 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-1.70 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.42 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.85 eV",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State Bohr's energy formula: En = -13.6 × (Z² / n²) eV.\nStep 2: Substitute Z = 1 and principal quantum number n = 4.\nStep 3: Compute: En = -13.6 × (1² / 4²) = -13.6 × (1/16) = -0.85 eV.\nStep 4: Conclude that the orbital energy is -0.85 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் அணு மாதிரியின்படி, ஹைட்ரஜன் அணு இல் n = 4 சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றல் மதிப்பு என்ன?",
+        "optionTexts": [
+          "0.85 eV",
+          "-1.70 eV",
+          "-0.42 eV",
+          "-0.85 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which element has the highest electronegativity on the Pauling scale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine (F, 4.0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nitrogen (N)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine (Cl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Analyze the periodic trend across groups and periods.\nStep 2: Fluorine is in Group 17, Period 2 with highest effective nuclear charge and smallest radius among halogens.\nStep 3: Identify the matching candidate: Fluorine (F, 4.0).\nStep 4: Conclude that the answer is Fluorine (F, 4.0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் அளவீட்டில் மிக அதிக எலக்ட்ரான் கவர்தன்மை கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "புளோரின் (F, 4.0)",
+          "நைட்ரஜன் (N)",
+          "குளோரின் (Cl)",
+          "ஆக்ஸிஜன் (O)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the shape and central atom hybridization of methane (CH4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tetrahedral, sp3 hybridization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Trigonal planar, sp2 hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Linear, sp hybridization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Square planar, dsp2 hybridization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Determine valence electron count and Lewis / MO structure.\nStep 2: CH4 has 4 bond pairs and 0 lone pairs with 109.5° bond angles.\nStep 3: Match with correct geometry/bond order: Tetrahedral, sp3 hybridization.\nStep 4: Conclude the answer is Tetrahedral, sp3 hybridization.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் (CH4) வடிவம் மற்றும் மைய அணுவின் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "நான்முகி, sp3 இனக்கலப்பு",
+          "முக்கோண தளம், sp2 இனக்கலப்பு",
+          "நேர்கோடு, sp இனக்கலப்பு",
+          "சதுர தளம், dsp2 இனக்கலப்பு"
+        ]
+      }
+    ]
+  }
+]
