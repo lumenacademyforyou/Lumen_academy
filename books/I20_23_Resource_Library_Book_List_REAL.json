@@ -1,0 +1,1464 @@
+{
+  "meta": {
+    "source": "Google Drive Books/ folder, owner lumenacademyforyou@gmail.com — all file IDs and titles verified live, none invented",
+    "edition": "NCERT 2026-27 reprint of the post-2023 Rationalised textbooks",
+    "link_format": "https://drive.google.com/file/d/<drive_file_id>/preview",
+    "catalog_source": "database_sample/syllabusData.ts — 38 catalog.syllabus_node units (10 physics, 10 chemistry, 9 botany, 9 zoology)",
+    "total_real_chapters_found": 79,
+    "total_catalog_units": 38,
+    "chapters_with_no_catalog_unit": 6,
+    "generated_note": "unit_codes on a chapter can contain more than one entry — a chapter can legitimately support multiple catalog units."
+  },
+  "units": [
+    {
+      "unit_code": "phy_01",
+      "unit_name": "Mechanics & Rotational Dynamics",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph106.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_02",
+      "unit_name": "Electrostatics & Current Electricity",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "leph101.pdf",
+        "leph102.pdf",
+        "leph103.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_03",
+      "unit_name": "Optics & Wave Physics",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "leph201.pdf",
+        "leph202.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_04",
+      "unit_name": "Thermodynamics & Kinetic Theory",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph203.pdf",
+        "keph204.pdf",
+        "keph205.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_05",
+      "unit_name": "Oscillations, Waves & SHM",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph206.pdf",
+        "keph207.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_06",
+      "unit_name": "Magnetism, EMI & Semiconductor Devices",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "leph104.pdf",
+        "leph105.pdf",
+        "leph106.pdf",
+        "leph107.pdf",
+        "leph206.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_07",
+      "unit_name": "Kinematics & Laws of Motion",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph102.pdf",
+        "keph103.pdf",
+        "keph104.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_08",
+      "unit_name": "Modern Physics: Dual Nature, Atoms & Nuclei",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "leph203.pdf",
+        "leph204.pdf",
+        "leph205.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_09",
+      "unit_name": "Work, Energy and Power",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph105.pdf"
+      ]
+    },
+    {
+      "unit_code": "phy_10",
+      "unit_name": "Gravitation & Properties of Matter",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "keph107.pdf",
+        "keph201.pdf",
+        "keph202.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_01",
+      "unit_name": "Organic Reactions & Mechanisms",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech201.pdf",
+        "lech202.pdf",
+        "lech203.pdf",
+        "lech204.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_02",
+      "unit_name": "Inorganic Coordination & p-Block Trends",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech105.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_03",
+      "unit_name": "Physical Chemistry: Equilibrium & Thermodynamics",
+      "subject": "chemistry",
+      "ncert_class": "Class 11/12",
+      "chapter_files": [
+        "kech105.pdf",
+        "kech106.pdf",
+        "lech102.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_04",
+      "unit_name": "Atomic Structure & Chemical Bonding",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kech102.pdf",
+        "kech103.pdf",
+        "kech104.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_05",
+      "unit_name": "Hydrocarbons & Basic Organic Principles",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kech202.pdf",
+        "kech203.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_06",
+      "unit_name": "Electrochemistry, Solutions & Surface Chem",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech101.pdf",
+        "lech102.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_07",
+      "unit_name": "Aldehydes, Ketones & Carboxylic Acids",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech203.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_08",
+      "unit_name": "Some Basic Concepts & States of Matter",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kech101.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_09",
+      "unit_name": "Chemical Kinetics",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech103.pdf"
+      ]
+    },
+    {
+      "unit_code": "chem_10",
+      "unit_name": "d and f Block Elements",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lech104.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_01",
+      "unit_name": "Genetics & Molecular Inheritance",
+      "subject": "botany",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo104.pdf",
+        "lebo105.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_02",
+      "unit_name": "Plant Physiology & Photosynthesis",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo111.pdf",
+        "kebo112.pdf",
+        "kebo113.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_03",
+      "unit_name": "Plant Diversity, Morphology & Anatomy",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo103.pdf",
+        "kebo105.pdf",
+        "kebo106.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_04",
+      "unit_name": "Cell Structure, Biomolecules & Cell Cycle",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo108.pdf",
+        "kebo109.pdf",
+        "kebo110.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_05",
+      "unit_name": "Ecology, Ecosystems & Conservation",
+      "subject": "botany",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo111.pdf",
+        "lebo112.pdf",
+        "lebo113.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_06",
+      "unit_name": "Sexual Reproduction in Flowering Plants",
+      "subject": "botany",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo101.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_07",
+      "unit_name": "Biological Classification & Plant Kingdom",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo102.pdf",
+        "kebo103.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_08",
+      "unit_name": "Anatomy of Flowering Plants",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo106.pdf"
+      ]
+    },
+    {
+      "unit_code": "bot_09",
+      "unit_name": "Plant Growth & Development",
+      "subject": "botany",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo113.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_01",
+      "unit_name": "Human Physiology & Neuro-Endocrine Systems",
+      "subject": "zoology",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo114.pdf",
+        "kebo115.pdf",
+        "kebo116.pdf",
+        "kebo118.pdf",
+        "kebo119.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_02",
+      "unit_name": "Human Reproduction & ART Technologies",
+      "subject": "zoology",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo102.pdf",
+        "lebo103.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_03",
+      "unit_name": "Animal Diversity & Structural Organisation",
+      "subject": "zoology",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo104.pdf",
+        "kebo107.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_04",
+      "unit_name": "Human Health, Immunity & Infectious Diseases",
+      "subject": "zoology",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo107.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_05",
+      "unit_name": "Origin of Life & Evolutionary Biology",
+      "subject": "zoology",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo106.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_06",
+      "unit_name": "Biotechnology: Principles & Applications",
+      "subject": "zoology",
+      "ncert_class": "Class 12",
+      "chapter_files": [
+        "lebo109.pdf",
+        "lebo110.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_07",
+      "unit_name": "Breathing, Circulation & Excretion",
+      "subject": "zoology",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo114.pdf",
+        "kebo115.pdf",
+        "kebo116.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_08",
+      "unit_name": "Locomotion and Movement",
+      "subject": "zoology",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo117.pdf"
+      ]
+    },
+    {
+      "unit_code": "zoo_09",
+      "unit_name": "Neural Control & Coordination",
+      "subject": "zoology",
+      "ncert_class": "Class 11",
+      "chapter_files": [
+        "kebo118.pdf"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "chapter_file": "kebo101.pdf",
+      "title": "The Living World",
+      "title_confirmed": true,
+      "drive_file_id": "1Gl-85nYjepS5ANrjpw0i8LHJdu--DQiV",
+      "drive_preview_url": "https://drive.google.com/file/d/1Gl-85nYjepS5ANrjpw0i8LHJdu--DQiV/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [],
+      "unmapped_note": "The Living World — intro chapter, no catalog unit currently covers it."
+    },
+    {
+      "chapter_file": "kebo102.pdf",
+      "title": "Biological Classification",
+      "title_confirmed": true,
+      "drive_file_id": "13XO_yamR_qCq0rSW6HRxy_5617pO9713",
+      "drive_preview_url": "https://drive.google.com/file/d/13XO_yamR_qCq0rSW6HRxy_5617pO9713/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_07"
+      ]
+    },
+    {
+      "chapter_file": "kebo103.pdf",
+      "title": "Plant Kingdom",
+      "title_confirmed": true,
+      "drive_file_id": "1rgsSfGWumbWmkBek-qTAgL79ZURXBHAU",
+      "drive_preview_url": "https://drive.google.com/file/d/1rgsSfGWumbWmkBek-qTAgL79ZURXBHAU/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_03",
+        "bot_07"
+      ]
+    },
+    {
+      "chapter_file": "kebo104.pdf",
+      "title": "Animal Kingdom",
+      "title_confirmed": true,
+      "drive_file_id": "170f4iTKZ3T2jnAitQNTz3xmWvIppBtj5",
+      "drive_preview_url": "https://drive.google.com/file/d/170f4iTKZ3T2jnAitQNTz3xmWvIppBtj5/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_03"
+      ]
+    },
+    {
+      "chapter_file": "kebo105.pdf",
+      "title": "Morphology of Flowering Plants",
+      "title_confirmed": true,
+      "drive_file_id": "1XmRfBWJ3zEXYFJgtpU3Ajv-URvNPBgE3",
+      "drive_preview_url": "https://drive.google.com/file/d/1XmRfBWJ3zEXYFJgtpU3Ajv-URvNPBgE3/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_03"
+      ]
+    },
+    {
+      "chapter_file": "kebo106.pdf",
+      "title": "Anatomy of Flowering Plants",
+      "title_confirmed": true,
+      "drive_file_id": "1-qchaeS6o6QKNLHUC86_EAod2OLsZP-J",
+      "drive_preview_url": "https://drive.google.com/file/d/1-qchaeS6o6QKNLHUC86_EAod2OLsZP-J/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_03",
+        "bot_08"
+      ]
+    },
+    {
+      "chapter_file": "kebo107.pdf",
+      "title": "Structural Organisation in Animals",
+      "title_confirmed": true,
+      "drive_file_id": "1SteUmdt-2B7Hhkh0ViM8Lq43MclsV52m",
+      "drive_preview_url": "https://drive.google.com/file/d/1SteUmdt-2B7Hhkh0ViM8Lq43MclsV52m/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_03"
+      ]
+    },
+    {
+      "chapter_file": "kebo108.pdf",
+      "title": "Cell: The Unit of Life",
+      "title_confirmed": true,
+      "drive_file_id": "1x6HOzQ2PJD4fHrV0uHevLhmAt4Gb5rLw",
+      "drive_preview_url": "https://drive.google.com/file/d/1x6HOzQ2PJD4fHrV0uHevLhmAt4Gb5rLw/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_04"
+      ]
+    },
+    {
+      "chapter_file": "kebo109.pdf",
+      "title": "Biomolecules",
+      "title_confirmed": true,
+      "drive_file_id": "1aZZG8e-34mLbrGKGaQnb_xdHS2zfdC3U",
+      "drive_preview_url": "https://drive.google.com/file/d/1aZZG8e-34mLbrGKGaQnb_xdHS2zfdC3U/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_04"
+      ]
+    },
+    {
+      "chapter_file": "kebo110.pdf",
+      "title": "Cell Cycle and Cell Division",
+      "title_confirmed": true,
+      "drive_file_id": "1I3LQ-XrGOxTJZ4b9dKO5RnbYCP8QzHS-",
+      "drive_preview_url": "https://drive.google.com/file/d/1I3LQ-XrGOxTJZ4b9dKO5RnbYCP8QzHS-/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_04"
+      ]
+    },
+    {
+      "chapter_file": "kebo111.pdf",
+      "title": "Photosynthesis in Higher Plants",
+      "title_confirmed": true,
+      "drive_file_id": "1n_3O4WRguRb7pDIdtMauvHNzr5ShTp1T",
+      "drive_preview_url": "https://drive.google.com/file/d/1n_3O4WRguRb7pDIdtMauvHNzr5ShTp1T/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_02"
+      ]
+    },
+    {
+      "chapter_file": "kebo112.pdf",
+      "title": "Respiration in Plants",
+      "title_confirmed": true,
+      "drive_file_id": "1QVxKqKQ3-Yt7O8K5gYqRo-zYpHEJ1q0b",
+      "drive_preview_url": "https://drive.google.com/file/d/1QVxKqKQ3-Yt7O8K5gYqRo-zYpHEJ1q0b/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_02"
+      ]
+    },
+    {
+      "chapter_file": "kebo113.pdf",
+      "title": "Plant Growth and Development",
+      "title_confirmed": true,
+      "drive_file_id": "1pqMZTsqIQThqY8WqInZEG2ufI8mqvRWy",
+      "drive_preview_url": "https://drive.google.com/file/d/1pqMZTsqIQThqY8WqInZEG2ufI8mqvRWy/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "bot_02",
+        "bot_09"
+      ]
+    },
+    {
+      "chapter_file": "kebo114.pdf",
+      "title": "Breathing and Exchange of Gases",
+      "title_confirmed": true,
+      "drive_file_id": "1-W88Qq8Ch9gDhbcK_HrOw81w2tc-_PWW",
+      "drive_preview_url": "https://drive.google.com/file/d/1-W88Qq8Ch9gDhbcK_HrOw81w2tc-_PWW/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_01",
+        "zoo_07"
+      ]
+    },
+    {
+      "chapter_file": "kebo115.pdf",
+      "title": "Body Fluids and Circulation",
+      "title_confirmed": true,
+      "drive_file_id": "12HaPVQp8Wj5zRq4P3NzH6tLeCYSkOq04",
+      "drive_preview_url": "https://drive.google.com/file/d/12HaPVQp8Wj5zRq4P3NzH6tLeCYSkOq04/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_01",
+        "zoo_07"
+      ]
+    },
+    {
+      "chapter_file": "kebo116.pdf",
+      "title": "Excretory Products and their Elimination",
+      "title_confirmed": true,
+      "drive_file_id": "18qeKq5ptkZQdWnH_T2WeqFUPm4ceDaO9",
+      "drive_preview_url": "https://drive.google.com/file/d/18qeKq5ptkZQdWnH_T2WeqFUPm4ceDaO9/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_01",
+        "zoo_07"
+      ]
+    },
+    {
+      "chapter_file": "kebo117.pdf",
+      "title": "Locomotion and Movement",
+      "title_confirmed": true,
+      "drive_file_id": "1x5nObfY0-kyS7Ljn7J3ddJIAIEhVzJYq",
+      "drive_preview_url": "https://drive.google.com/file/d/1x5nObfY0-kyS7Ljn7J3ddJIAIEhVzJYq/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_08"
+      ]
+    },
+    {
+      "chapter_file": "kebo118.pdf",
+      "title": "Neural Control and Coordination",
+      "title_confirmed": true,
+      "drive_file_id": "1h_gVC-JHZR56f3Bp2_NYs5WCj9titAB_",
+      "drive_preview_url": "https://drive.google.com/file/d/1h_gVC-JHZR56f3Bp2_NYs5WCj9titAB_/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_01",
+        "zoo_09"
+      ]
+    },
+    {
+      "chapter_file": "kebo119.pdf",
+      "title": "Chemical Coordination and Integration",
+      "title_confirmed": true,
+      "drive_file_id": "1YfjZLZAVyfYkDkkRRmcQRfW23MHjhGcD",
+      "drive_preview_url": "https://drive.google.com/file/d/1YfjZLZAVyfYkDkkRRmcQRfW23MHjhGcD/preview",
+      "book": "BIOLOGY 11",
+      "subject": "biology",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "zoo_01"
+      ]
+    },
+    {
+      "chapter_file": "kech101.pdf",
+      "title": "Some Basic Concepts of Chemistry",
+      "title_confirmed": true,
+      "drive_file_id": "192qjSirRUTlHrib1z2ZdPSNkLmXepwaf",
+      "drive_preview_url": "https://drive.google.com/file/d/192qjSirRUTlHrib1z2ZdPSNkLmXepwaf/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_08"
+      ]
+    },
+    {
+      "chapter_file": "kech102.pdf",
+      "title": "Structure of Atom",
+      "title_confirmed": true,
+      "drive_file_id": "1yAAEggGOZXjUN-F-V2ESeMEFogM7vcto",
+      "drive_preview_url": "https://drive.google.com/file/d/1yAAEggGOZXjUN-F-V2ESeMEFogM7vcto/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_04"
+      ]
+    },
+    {
+      "chapter_file": "kech103.pdf",
+      "title": "Classification of Elements and Periodicity in Properties",
+      "title_confirmed": true,
+      "drive_file_id": "1QkhK_SIFhCbwcAmo50yBmcqJyOfS4eoj",
+      "drive_preview_url": "https://drive.google.com/file/d/1QkhK_SIFhCbwcAmo50yBmcqJyOfS4eoj/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_04"
+      ]
+    },
+    {
+      "chapter_file": "kech104.pdf",
+      "title": "Chemical Bonding and Molecular Structure",
+      "title_confirmed": true,
+      "drive_file_id": "1zCW1QGvXrUij94OXY-fhZa34160K8cLr",
+      "drive_preview_url": "https://drive.google.com/file/d/1zCW1QGvXrUij94OXY-fhZa34160K8cLr/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_04"
+      ]
+    },
+    {
+      "chapter_file": "kech105.pdf",
+      "title": "Thermodynamics",
+      "title_confirmed": true,
+      "drive_file_id": "143wqdRGyMXkTIHHsIRfmYDE2RgyfJMQE",
+      "drive_preview_url": "https://drive.google.com/file/d/143wqdRGyMXkTIHHsIRfmYDE2RgyfJMQE/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_03"
+      ]
+    },
+    {
+      "chapter_file": "kech106.pdf",
+      "title": "Equilibrium",
+      "title_confirmed": true,
+      "drive_file_id": "1dR-6rbgHHVCcOFwb6OvwqW97F4_xql0N",
+      "drive_preview_url": "https://drive.google.com/file/d/1dR-6rbgHHVCcOFwb6OvwqW97F4_xql0N/preview",
+      "book": "CHEMISTRY 11 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_03"
+      ]
+    },
+    {
+      "chapter_file": "kech201.pdf",
+      "title": "Redox Reactions",
+      "title_confirmed": true,
+      "drive_file_id": "1lMlEzyfUeMI94dWsQzcg5eB0VgvRnWWW",
+      "drive_preview_url": "https://drive.google.com/file/d/1lMlEzyfUeMI94dWsQzcg5eB0VgvRnWWW/preview",
+      "book": "CHEMISTRY 11 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [],
+      "unmapped_note": "Redox Reactions — no catalog unit currently covers this chapter."
+    },
+    {
+      "chapter_file": "kech202.pdf",
+      "title": "Organic Chemistry — Some Basic Principles and Techniques",
+      "title_confirmed": true,
+      "drive_file_id": "1y1E1NLLMgiHxbd6SHDV9u9LEJmisb2rp",
+      "drive_preview_url": "https://drive.google.com/file/d/1y1E1NLLMgiHxbd6SHDV9u9LEJmisb2rp/preview",
+      "book": "CHEMISTRY 11 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_05"
+      ]
+    },
+    {
+      "chapter_file": "kech203.pdf",
+      "title": "Hydrocarbons",
+      "title_confirmed": true,
+      "drive_file_id": "1ooIrra-HPKUKvodR8nnHRl4iG3DiYZ7p",
+      "drive_preview_url": "https://drive.google.com/file/d/1ooIrra-HPKUKvodR8nnHRl4iG3DiYZ7p/preview",
+      "book": "CHEMISTRY 11 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "chem_05"
+      ]
+    },
+    {
+      "chapter_file": "keph101.pdf",
+      "title": "Units and Measurement",
+      "title_confirmed": true,
+      "drive_file_id": "1UzSvMZ7eaFlzNEFmWa-kUbAgDt-Iw5Jp",
+      "drive_preview_url": "https://drive.google.com/file/d/1UzSvMZ7eaFlzNEFmWa-kUbAgDt-Iw5Jp/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [],
+      "unmapped_note": "Units and Measurement — no catalog unit currently covers this chapter."
+    },
+    {
+      "chapter_file": "keph102.pdf",
+      "title": "Motion in a Straight Line",
+      "title_confirmed": true,
+      "drive_file_id": "1jxiMWtvJaOUIsB3olJy4SV84gJG5Wj4R",
+      "drive_preview_url": "https://drive.google.com/file/d/1jxiMWtvJaOUIsB3olJy4SV84gJG5Wj4R/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_07"
+      ]
+    },
+    {
+      "chapter_file": "keph103.pdf",
+      "title": "Motion in a Plane",
+      "title_confirmed": true,
+      "drive_file_id": "1OGY9Ofn93PfMPylH3A8KiIb8huMTkQq7",
+      "drive_preview_url": "https://drive.google.com/file/d/1OGY9Ofn93PfMPylH3A8KiIb8huMTkQq7/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_07"
+      ]
+    },
+    {
+      "chapter_file": "keph104.pdf",
+      "title": "Laws of Motion",
+      "title_confirmed": true,
+      "drive_file_id": "15ROlnhGpL38JGkdL_DblgIqd1WFJdZnU",
+      "drive_preview_url": "https://drive.google.com/file/d/15ROlnhGpL38JGkdL_DblgIqd1WFJdZnU/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_07"
+      ]
+    },
+    {
+      "chapter_file": "keph105.pdf",
+      "title": "Work, Energy and Power",
+      "title_confirmed": true,
+      "drive_file_id": "1CerBLMKjDlZUg8hU7wQVyY_CWPVEyr1Y",
+      "drive_preview_url": "https://drive.google.com/file/d/1CerBLMKjDlZUg8hU7wQVyY_CWPVEyr1Y/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_09"
+      ]
+    },
+    {
+      "chapter_file": "keph106.pdf",
+      "title": "Systems of Particles and Rotational Motion",
+      "title_confirmed": true,
+      "drive_file_id": "1Vqu_NuGGiK6-LX2f377nAbKOxIU0NBo_",
+      "drive_preview_url": "https://drive.google.com/file/d/1Vqu_NuGGiK6-LX2f377nAbKOxIU0NBo_/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_01"
+      ]
+    },
+    {
+      "chapter_file": "keph107.pdf",
+      "title": "Gravitation",
+      "title_confirmed": true,
+      "drive_file_id": "1LUU5CQ5m5lsUv95zB9kk4_9-bJvPX5eG",
+      "drive_preview_url": "https://drive.google.com/file/d/1LUU5CQ5m5lsUv95zB9kk4_9-bJvPX5eG/preview",
+      "book": "PHYSICS 11 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_10"
+      ]
+    },
+    {
+      "chapter_file": "keph201.pdf",
+      "title": "Mechanical Properties of Solids",
+      "title_confirmed": true,
+      "drive_file_id": "1dPqQw9wMjh6NiEYGm4IxdD0E30yE3jMW",
+      "drive_preview_url": "https://drive.google.com/file/d/1dPqQw9wMjh6NiEYGm4IxdD0E30yE3jMW/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_10"
+      ]
+    },
+    {
+      "chapter_file": "keph202.pdf",
+      "title": "Mechanical Properties of Fluids",
+      "title_confirmed": true,
+      "drive_file_id": "1dKATj3bDrj_oWKIG4Eij5ldl0nrbcRhR",
+      "drive_preview_url": "https://drive.google.com/file/d/1dKATj3bDrj_oWKIG4Eij5ldl0nrbcRhR/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_10"
+      ]
+    },
+    {
+      "chapter_file": "keph203.pdf",
+      "title": "Thermal Properties of Matter",
+      "title_confirmed": true,
+      "drive_file_id": "1MTJFD9cu24j4CJ19hrsWhpXendhvs0TB",
+      "drive_preview_url": "https://drive.google.com/file/d/1MTJFD9cu24j4CJ19hrsWhpXendhvs0TB/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_04"
+      ]
+    },
+    {
+      "chapter_file": "keph204.pdf",
+      "title": "Thermodynamics",
+      "title_confirmed": true,
+      "drive_file_id": "13nKf72LdDh2wME7ghS4slFsldxhbZeFc",
+      "drive_preview_url": "https://drive.google.com/file/d/13nKf72LdDh2wME7ghS4slFsldxhbZeFc/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_04"
+      ]
+    },
+    {
+      "chapter_file": "keph205.pdf",
+      "title": "Kinetic Theory",
+      "title_confirmed": true,
+      "drive_file_id": "1Sf9eDyDnPai5I6LX9I5Td4C9iCjVj3Mc",
+      "drive_preview_url": "https://drive.google.com/file/d/1Sf9eDyDnPai5I6LX9I5Td4C9iCjVj3Mc/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_04"
+      ]
+    },
+    {
+      "chapter_file": "keph206.pdf",
+      "title": "Oscillations",
+      "title_confirmed": true,
+      "drive_file_id": "1w1sq8Qd_O23kQkoEojZhirFmev7FEq1U",
+      "drive_preview_url": "https://drive.google.com/file/d/1w1sq8Qd_O23kQkoEojZhirFmev7FEq1U/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_05"
+      ]
+    },
+    {
+      "chapter_file": "keph207.pdf",
+      "title": "Waves",
+      "title_confirmed": true,
+      "drive_file_id": "1CPajGU-fHfYpcri7abskK_obTkQOwf24",
+      "drive_preview_url": "https://drive.google.com/file/d/1CPajGU-fHfYpcri7abskK_obTkQOwf24/preview",
+      "book": "PHYSICS 11 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 11",
+      "unit_codes": [
+        "phy_05"
+      ]
+    },
+    {
+      "chapter_file": "lebo101.pdf",
+      "title": "Sexual Reproduction in Flowering Plants",
+      "title_confirmed": false,
+      "drive_file_id": "1-B7tYIR5pU3-QN_NUEbPr15XjRuxlJ-r",
+      "drive_preview_url": "https://drive.google.com/file/d/1-B7tYIR5pU3-QN_NUEbPr15XjRuxlJ-r/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_06"
+      ]
+    },
+    {
+      "chapter_file": "lebo102.pdf",
+      "title": "Human Reproduction",
+      "title_confirmed": false,
+      "drive_file_id": "1pdRFBfaQBNTeRSYiIvUhkcohC1IVWoWn",
+      "drive_preview_url": "https://drive.google.com/file/d/1pdRFBfaQBNTeRSYiIvUhkcohC1IVWoWn/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_02"
+      ]
+    },
+    {
+      "chapter_file": "lebo103.pdf",
+      "title": "Reproductive Health",
+      "title_confirmed": true,
+      "drive_file_id": "1si1geBiIkdjRhFdU50Q1Qynr_EUGjPLH",
+      "drive_preview_url": "https://drive.google.com/file/d/1si1geBiIkdjRhFdU50Q1Qynr_EUGjPLH/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_02"
+      ]
+    },
+    {
+      "chapter_file": "lebo104.pdf",
+      "title": "Principles of Inheritance and Variation",
+      "title_confirmed": true,
+      "drive_file_id": "1mkU-6U46jdoL1I1f9cWWJqpkupi-Tsl9",
+      "drive_preview_url": "https://drive.google.com/file/d/1mkU-6U46jdoL1I1f9cWWJqpkupi-Tsl9/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_01"
+      ]
+    },
+    {
+      "chapter_file": "lebo105.pdf",
+      "title": "Molecular Basis of Inheritance",
+      "title_confirmed": true,
+      "drive_file_id": "1Xij-ZGX4ImY7V9a1WvD-WuQT04dXMzbv",
+      "drive_preview_url": "https://drive.google.com/file/d/1Xij-ZGX4ImY7V9a1WvD-WuQT04dXMzbv/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_01"
+      ]
+    },
+    {
+      "chapter_file": "lebo106.pdf",
+      "title": "Evolution",
+      "title_confirmed": true,
+      "drive_file_id": "1skeY56cVuVlLF_uALvn2xa2IPuXU9VZE",
+      "drive_preview_url": "https://drive.google.com/file/d/1skeY56cVuVlLF_uALvn2xa2IPuXU9VZE/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_05"
+      ]
+    },
+    {
+      "chapter_file": "lebo107.pdf",
+      "title": "Human Health and Disease",
+      "title_confirmed": true,
+      "drive_file_id": "1ugPqwGq-Z6qki5nUOR42fUGPP8dKUQZK",
+      "drive_preview_url": "https://drive.google.com/file/d/1ugPqwGq-Z6qki5nUOR42fUGPP8dKUQZK/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_04"
+      ]
+    },
+    {
+      "chapter_file": "lebo108.pdf",
+      "title": "Microbes in Human Welfare",
+      "title_confirmed": true,
+      "drive_file_id": "1Mmm5EVzfqzXvr2Kax2T3OI0etvWfqPAh",
+      "drive_preview_url": "https://drive.google.com/file/d/1Mmm5EVzfqzXvr2Kax2T3OI0etvWfqPAh/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [],
+      "unmapped_note": "Microbes in Human Welfare — no catalog unit currently covers this chapter."
+    },
+    {
+      "chapter_file": "lebo109.pdf",
+      "title": "Biotechnology: Principles and Processes",
+      "title_confirmed": true,
+      "drive_file_id": "1Rj_aGdxJDG9hvYtaJK_O17GnsrCPQ18B",
+      "drive_preview_url": "https://drive.google.com/file/d/1Rj_aGdxJDG9hvYtaJK_O17GnsrCPQ18B/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_06"
+      ]
+    },
+    {
+      "chapter_file": "lebo110.pdf",
+      "title": "Biotechnology and its Applications",
+      "title_confirmed": true,
+      "drive_file_id": "1dzND--gvKUQQ94tF6igjj9nFrW1qqmo_",
+      "drive_preview_url": "https://drive.google.com/file/d/1dzND--gvKUQQ94tF6igjj9nFrW1qqmo_/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "zoo_06"
+      ]
+    },
+    {
+      "chapter_file": "lebo111.pdf",
+      "title": "Organisms and Populations",
+      "title_confirmed": true,
+      "drive_file_id": "1WOO5uzTn3Dh5T2fNjCw2c-GEnLXekahE",
+      "drive_preview_url": "https://drive.google.com/file/d/1WOO5uzTn3Dh5T2fNjCw2c-GEnLXekahE/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_05"
+      ]
+    },
+    {
+      "chapter_file": "lebo112.pdf",
+      "title": "Ecosystem",
+      "title_confirmed": true,
+      "drive_file_id": "1xopv8Ewtu8q79Mm6SXPYidu-IMvpLLPI",
+      "drive_preview_url": "https://drive.google.com/file/d/1xopv8Ewtu8q79Mm6SXPYidu-IMvpLLPI/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_05"
+      ]
+    },
+    {
+      "chapter_file": "lebo113.pdf",
+      "title": "Biodiversity and Conservation",
+      "title_confirmed": true,
+      "drive_file_id": "1seEyk9plHO0vbvEXxEUfBebcyfAluZ9p",
+      "drive_preview_url": "https://drive.google.com/file/d/1seEyk9plHO0vbvEXxEUfBebcyfAluZ9p/preview",
+      "book": "BIOLOGY 12",
+      "subject": "biology",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "bot_05"
+      ]
+    },
+    {
+      "chapter_file": "lech101.pdf",
+      "title": "Solutions",
+      "title_confirmed": true,
+      "drive_file_id": "1I8uqszb59MPO8LYqwlvEu7gWpYlp1cNY",
+      "drive_preview_url": "https://drive.google.com/file/d/1I8uqszb59MPO8LYqwlvEu7gWpYlp1cNY/preview",
+      "book": "CHEMISTRY 12 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_06"
+      ]
+    },
+    {
+      "chapter_file": "lech102.pdf",
+      "title": "Electrochemistry",
+      "title_confirmed": true,
+      "drive_file_id": "1kOnIBipCaQ3ICbFfAYkxlVecRHY0TuwE",
+      "drive_preview_url": "https://drive.google.com/file/d/1kOnIBipCaQ3ICbFfAYkxlVecRHY0TuwE/preview",
+      "book": "CHEMISTRY 12 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_03",
+        "chem_06"
+      ]
+    },
+    {
+      "chapter_file": "lech103.pdf",
+      "title": "Chemical Kinetics",
+      "title_confirmed": true,
+      "drive_file_id": "1XYhTeT_SR_rK-jfg5krJtivyJ-1Bk--u",
+      "drive_preview_url": "https://drive.google.com/file/d/1XYhTeT_SR_rK-jfg5krJtivyJ-1Bk--u/preview",
+      "book": "CHEMISTRY 12 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_09"
+      ]
+    },
+    {
+      "chapter_file": "lech104.pdf",
+      "title": "The d- and f-Block Elements",
+      "title_confirmed": true,
+      "drive_file_id": "1YzjRBXYqii-PyLyQPFoN4c85v4Jc42JA",
+      "drive_preview_url": "https://drive.google.com/file/d/1YzjRBXYqii-PyLyQPFoN4c85v4Jc42JA/preview",
+      "book": "CHEMISTRY 12 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_10"
+      ]
+    },
+    {
+      "chapter_file": "lech105.pdf",
+      "title": "Coordination Compounds",
+      "title_confirmed": true,
+      "drive_file_id": "1kh9M6Llyt2tiwKnAQBIb4aV84R_9rpU3",
+      "drive_preview_url": "https://drive.google.com/file/d/1kh9M6Llyt2tiwKnAQBIb4aV84R_9rpU3/preview",
+      "book": "CHEMISTRY 12 Part I",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_02"
+      ]
+    },
+    {
+      "chapter_file": "lech201.pdf",
+      "title": "Haloalkanes and Haloarenes",
+      "title_confirmed": true,
+      "drive_file_id": "1FQBnKYKt6f7MULSMOc8AaJpFxsDB7CQQ",
+      "drive_preview_url": "https://drive.google.com/file/d/1FQBnKYKt6f7MULSMOc8AaJpFxsDB7CQQ/preview",
+      "book": "CHEMISTRY 12 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_01"
+      ]
+    },
+    {
+      "chapter_file": "lech202.pdf",
+      "title": "Alcohols, Phenols and Ethers",
+      "title_confirmed": true,
+      "drive_file_id": "1ir6xc9zJzrMVa0QSdtGta0Nfd48DE7Y7",
+      "drive_preview_url": "https://drive.google.com/file/d/1ir6xc9zJzrMVa0QSdtGta0Nfd48DE7Y7/preview",
+      "book": "CHEMISTRY 12 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_01"
+      ]
+    },
+    {
+      "chapter_file": "lech203.pdf",
+      "title": "Aldehydes, Ketones and Carboxylic Acids",
+      "title_confirmed": true,
+      "drive_file_id": "1BfNtnLQjwXxeUBUcYrgCquap5n4s_PZV",
+      "drive_preview_url": "https://drive.google.com/file/d/1BfNtnLQjwXxeUBUcYrgCquap5n4s_PZV/preview",
+      "book": "CHEMISTRY 12 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_01",
+        "chem_07"
+      ]
+    },
+    {
+      "chapter_file": "lech204.pdf",
+      "title": "Amines",
+      "title_confirmed": true,
+      "drive_file_id": "1cvJ7JTa9GMXWicSGqn19GuSuw2DFGZbG",
+      "drive_preview_url": "https://drive.google.com/file/d/1cvJ7JTa9GMXWicSGqn19GuSuw2DFGZbG/preview",
+      "book": "CHEMISTRY 12 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "chem_01"
+      ]
+    },
+    {
+      "chapter_file": "lech205.pdf",
+      "title": "Biomolecules",
+      "title_confirmed": true,
+      "drive_file_id": "1FTGrkHQSOhJ5NhPISrtpHxdKxvub3v3Y",
+      "drive_preview_url": "https://drive.google.com/file/d/1FTGrkHQSOhJ5NhPISrtpHxdKxvub3v3Y/preview",
+      "book": "CHEMISTRY 12 Part II",
+      "subject": "chemistry",
+      "ncert_class": "Class 12",
+      "unit_codes": [],
+      "unmapped_note": "Biomolecules (chemistry) — no catalog unit currently covers this chapter; distinct from the biology Biomolecules chapter (kebo109.pdf, mapped to bot_04)."
+    },
+    {
+      "chapter_file": "leph101.pdf",
+      "title": "Electric Charges and Fields",
+      "title_confirmed": true,
+      "drive_file_id": "1PJEboseKyXFfalOlt3SABVE9Aypujf9e",
+      "drive_preview_url": "https://drive.google.com/file/d/1PJEboseKyXFfalOlt3SABVE9Aypujf9e/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_02"
+      ]
+    },
+    {
+      "chapter_file": "leph102.pdf",
+      "title": "Electrostatic Potential and Capacitance",
+      "title_confirmed": true,
+      "drive_file_id": "1hJz9B_yO0xgaXK4kkouitEjHMF-cEfds",
+      "drive_preview_url": "https://drive.google.com/file/d/1hJz9B_yO0xgaXK4kkouitEjHMF-cEfds/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_02"
+      ]
+    },
+    {
+      "chapter_file": "leph103.pdf",
+      "title": "Current Electricity",
+      "title_confirmed": true,
+      "drive_file_id": "1LMXokn0TVskMuXz5EtkbcS3x-hJKitge",
+      "drive_preview_url": "https://drive.google.com/file/d/1LMXokn0TVskMuXz5EtkbcS3x-hJKitge/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_02"
+      ]
+    },
+    {
+      "chapter_file": "leph104.pdf",
+      "title": "Moving Charges and Magnetism",
+      "title_confirmed": true,
+      "drive_file_id": "19z_c4CvmIsvwUT-QDiFL_JWFllzOYD2w",
+      "drive_preview_url": "https://drive.google.com/file/d/19z_c4CvmIsvwUT-QDiFL_JWFllzOYD2w/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_06"
+      ]
+    },
+    {
+      "chapter_file": "leph105.pdf",
+      "title": "Magnetism and Matter",
+      "title_confirmed": true,
+      "drive_file_id": "1ExNIXyzadqNNKYafm2IhXB-1gCrTOQTF",
+      "drive_preview_url": "https://drive.google.com/file/d/1ExNIXyzadqNNKYafm2IhXB-1gCrTOQTF/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_06"
+      ]
+    },
+    {
+      "chapter_file": "leph106.pdf",
+      "title": "Electromagnetic Induction",
+      "title_confirmed": true,
+      "drive_file_id": "1swpn3YF_EwqTylT7AAcS78KlCy6kptnh",
+      "drive_preview_url": "https://drive.google.com/file/d/1swpn3YF_EwqTylT7AAcS78KlCy6kptnh/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_06"
+      ]
+    },
+    {
+      "chapter_file": "leph107.pdf",
+      "title": "Alternating Current",
+      "title_confirmed": true,
+      "drive_file_id": "1wa4FaVNbF2E1xahYk7FIki-n4IYbPu5_",
+      "drive_preview_url": "https://drive.google.com/file/d/1wa4FaVNbF2E1xahYk7FIki-n4IYbPu5_/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_06"
+      ]
+    },
+    {
+      "chapter_file": "leph108.pdf",
+      "title": "Electromagnetic Waves",
+      "title_confirmed": true,
+      "drive_file_id": "1GTptWtscnP4BHg-xhyENY4sH0PgyAl9W",
+      "drive_preview_url": "https://drive.google.com/file/d/1GTptWtscnP4BHg-xhyENY4sH0PgyAl9W/preview",
+      "book": "PHYSICS 12 Part I",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [],
+      "unmapped_note": "Electromagnetic Waves — no catalog unit currently covers this chapter."
+    },
+    {
+      "chapter_file": "leph201.pdf",
+      "title": "Ray Optics and Optical Instruments",
+      "title_confirmed": true,
+      "drive_file_id": "1URwopBM_qqedXx70Epjoov8hdHseWqbY",
+      "drive_preview_url": "https://drive.google.com/file/d/1URwopBM_qqedXx70Epjoov8hdHseWqbY/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_03"
+      ]
+    },
+    {
+      "chapter_file": "leph202.pdf",
+      "title": "Wave Optics",
+      "title_confirmed": true,
+      "drive_file_id": "1xzo5e5qerc-Abp1rPp-Lj3gkrshxUo5o",
+      "drive_preview_url": "https://drive.google.com/file/d/1xzo5e5qerc-Abp1rPp-Lj3gkrshxUo5o/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_03"
+      ]
+    },
+    {
+      "chapter_file": "leph203.pdf",
+      "title": "Dual Nature of Radiation and Matter",
+      "title_confirmed": true,
+      "drive_file_id": "1DPZjFhqrT46pZQQWFrZmVIAs338Wa0C6",
+      "drive_preview_url": "https://drive.google.com/file/d/1DPZjFhqrT46pZQQWFrZmVIAs338Wa0C6/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_08"
+      ]
+    },
+    {
+      "chapter_file": "leph204.pdf",
+      "title": "Atoms",
+      "title_confirmed": true,
+      "drive_file_id": "1wWcOCBSDqImB5i_PjaZkK4XpVv4eczUQ",
+      "drive_preview_url": "https://drive.google.com/file/d/1wWcOCBSDqImB5i_PjaZkK4XpVv4eczUQ/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_08"
+      ]
+    },
+    {
+      "chapter_file": "leph205.pdf",
+      "title": "Nuclei",
+      "title_confirmed": true,
+      "drive_file_id": "1s_Y8aU94pAo0D7rMarC8C2enEsq--3dh",
+      "drive_preview_url": "https://drive.google.com/file/d/1s_Y8aU94pAo0D7rMarC8C2enEsq--3dh/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_08"
+      ]
+    },
+    {
+      "chapter_file": "leph206.pdf",
+      "title": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "title_confirmed": true,
+      "drive_file_id": "1mPGRl5nZc5S4tN1qpeCbdwlgfu_WO8on",
+      "drive_preview_url": "https://drive.google.com/file/d/1mPGRl5nZc5S4tN1qpeCbdwlgfu_WO8on/preview",
+      "book": "PHYSICS 12 Part II",
+      "subject": "physics",
+      "ncert_class": "Class 12",
+      "unit_codes": [
+        "phy_06"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "chapter_file": "keph101.pdf",
+      "note": "Units and Measurement — no catalog unit currently covers this chapter.",
+      "drive_preview_url": "https://drive.google.com/file/d/1UzSvMZ7eaFlzNEFmWa-kUbAgDt-Iw5Jp/preview"
+    },
+    {
+      "chapter_file": "leph108.pdf",
+      "note": "Electromagnetic Waves — no catalog unit currently covers this chapter.",
+      "drive_preview_url": "https://drive.google.com/file/d/1GTptWtscnP4BHg-xhyENY4sH0PgyAl9W/preview"
+    },
+    {
+      "chapter_file": "kech201.pdf",
+      "note": "Redox Reactions — no catalog unit currently covers this chapter.",
+      "drive_preview_url": "https://drive.google.com/file/d/1lMlEzyfUeMI94dWsQzcg5eB0VgvRnWWW/preview"
+    },
+    {
+      "chapter_file": "lech205.pdf",
+      "note": "Biomolecules (chemistry) — no catalog unit currently covers this chapter; distinct from the biology Biomolecules chapter (kebo109.pdf, mapped to bot_04).",
+      "drive_preview_url": "https://drive.google.com/file/d/1FTGrkHQSOhJ5NhPISrtpHxdKxvub3v3Y/preview"
+    },
+    {
+      "chapter_file": "kebo101.pdf",
+      "note": "The Living World — intro chapter, no catalog unit currently covers it.",
+      "drive_preview_url": "https://drive.google.com/file/d/1Gl-85nYjepS5ANrjpw0i8LHJdu--DQiV/preview"
+    },
+    {
+      "chapter_file": "lebo108.pdf",
+      "note": "Microbes in Human Welfare — no catalog unit currently covers this chapter.",
+      "drive_preview_url": "https://drive.google.com/file/d/1Mmm5EVzfqzXvr2Kax2T3OI0etvWfqPAh/preview"
+    }
+  ]
+}
