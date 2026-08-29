@@ -3,6 +3,8 @@ import express from "express";
 import helmet from "helmet";
 import path from "path";
 import { config } from "./config/env.js";
+import { pool } from "../../db/shared/pool.js";
+import { prisma } from "./lib/db.js";
 import { AppError, errorHandler } from "./middleware/errorHandler.js";
 import { requestTiming } from "./middleware/requestTiming.js";
 import apiRouter from "./routes/api.js";
@@ -72,6 +74,18 @@ app.use((_req, _res, next) => {
 
 app.use(errorHandler);
 
-app.listen(config.port, () => {
+const server = app.listen(config.port, () => {
   console.log(`✔ Lumen Academy API is healthy — running at http://localhost:${config.port}`);
 });
+
+// Both pools draw from Supabase's session-mode pooler, which caps the whole
+// project at 15 connections (see db/shared/pool.ts). Without this, `tsx
+// watch` restarting the process on every save (SIGTERM) leaked connections
+// until the pooler ran them down, eventually throwing EMAXCONNSESSION.
+async function shutdown(): Promise<void> {
+  server.close();
+  await Promise.allSettled([pool.end(), prisma.$disconnect()]);
+  process.exit(0);
+}
+process.on("SIGTERM", shutdown);
+process.on("SIGINT", shutdown);
