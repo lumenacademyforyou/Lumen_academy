@@ -98,6 +98,37 @@ test(
         const envelope = await assemble(5, "F3NOLEAK");
         assert.ok(!JSON.stringify(envelope).includes("isCorrect"), "envelope leaked isCorrect before submission (R-9 violation)");
       });
+
+      // docs/neet-tool-fix-prompt.md Task 2 — the cross-bucket duplicate
+      // case: two blueprint lines with identical scope (same subject, no
+      // unit restriction) and no exclusion between them would, before the
+      // fix, both independently pick the exact same top-N candidates (same
+      // seed -> same md5 ordering), and the old persist-time dedup Set would
+      // then silently drop the second line's picks down to nothing new —
+      // shipping a paper with only 10 real questions where 20 were
+      // requested, with no error raised. Assert the paper is now genuinely
+      // 20 unique questions, not silently short.
+      await t.test("two overlapping-scope blueprint lines in one paper never collide, and the paper is never silently short", async () => {
+        const created = await createPracticeTest({
+          examId,
+          examCode,
+          testType: "MOCK",
+          scopeCode: "F3XLINE",
+          title: "F3 cross-line dedup test",
+          durationMinutes: 30,
+          createdBy: userId,
+          lines: [
+            { subjectId, includeDescendants: true, pickCount: 10, sectionName: `${subjectCode}-A` },
+            { subjectId, includeDescendants: true, pickCount: 10, sectionName: `${subjectCode}-B` },
+          ],
+        });
+        await pool.query(`update assess.test set test_status = 'published' where test_id = $1`, [created.testId]);
+        const attempt = await startAttempt(created.testId, userId);
+        const envelope = await getAttemptEnvelope(attempt.attemptId, userId);
+        const ids = envelope.questions.map((q) => q.questionId);
+        assert.equal(ids.length, 20, "paper was served short instead of erroring or filling all 20 requested questions");
+        assert.equal(new Set(ids).size, 20, "the two overlapping-scope lines served a duplicate question across sections");
+      });
     } finally {
       await pool.end();
     }

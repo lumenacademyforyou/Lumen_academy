@@ -91,6 +91,52 @@ export interface UploadAssetInput {
  * @throws {Error} the file doesn't exist, OBJECT_STORAGE_BUCKET is unset, or
  *   neither questionId nor documentId is given.
  */
+/**
+ * docs/neet-tool-fix-prompt.md Task 3b Step 5 — "the upload/ingest path
+ * assign[s] the canonical name at write time, so new material can never
+ * enter with an arbitrary filename." Canonical scheme (Step 3):
+ *   q_<question_id>_stem_<nn>.<ext>
+ *   q_<question_id>_opt_<A|B|C|D>_<nn>.<ext>
+ * <nn> is a zero-padded per-slot sequence, computed by counting this
+ * question's existing assets in the same slot (target_role, or the option's
+ * label for target_role='option') before this upload. The filename is for
+ * human debugging convenience only (per that task's own text) — the FK
+ * (question_id/option_id columns) remains the actual source of truth; this
+ * function never parses a filename back into an id anywhere.
+ */
+async function canonicalObjectPath(
+  db: Queryable,
+  questionId: string | undefined,
+  targetRole: UploadAssetInput["targetRole"],
+  optionId: string | undefined,
+  ext: string
+): Promise<string | null> {
+  if (!questionId) return null; // document-owned assets (no questionId) keep the caller-supplied/default path
+
+  let slotTag: string;
+  if (targetRole === "option") {
+    if (!optionId) return null; // can't name an option slot without knowing which option
+    const labelRes = await db.query<{ option_label: string }>(
+      `select option_label from content.question_option where option_id = $1`,
+      [optionId]
+    );
+    if (labelRes.rowCount === 0) return null;
+    slotTag = `opt_${labelRes.rows[0].option_label}`;
+  } else {
+    slotTag = targetRole;
+  }
+
+  const countRes = await db.query<{ n: string }>(
+    `select count(*) as n from content.asset
+      where question_id = $1
+        and coalesce(option_id::text, target_role) = coalesce($2::text, $3)`,
+    [questionId, optionId ?? null, targetRole]
+  );
+  const nextSeq = Number(countRes.rows[0].n) + 1;
+  const nn = String(nextSeq).padStart(2, "0");
+  return `question/${questionId}/q_${questionId}_${slotTag}_${nn}${ext}`;
+}
+
 export async function uploadAsset(input: UploadAssetInput): Promise<AssetRow> {
   if (!input.questionId && !input.documentId) {
     throw new Error("uploadAsset requires questionId or documentId (content.asset.ck_asset_owner)");
@@ -105,8 +151,11 @@ export async function uploadAsset(input: UploadAssetInput): Promise<AssetRow> {
   const ext = path.extname(input.localFilePath).toLowerCase();
   const mimeType = MIME_BY_EXT[ext] ?? "application/octet-stream";
   const fileName = path.basename(input.localFilePath);
-  const objectPath = input.objectPath ?? `question/${input.questionId ?? input.documentId}/${fileName}`;
   const db = input.db ?? pool;
+  const objectPath =
+    input.objectPath ??
+    (await canonicalObjectPath(db, input.questionId, input.targetRole, input.optionId, ext)) ??
+    `question/${input.questionId ?? input.documentId}/${fileName}`;
 
   const admin = getSupabaseAdmin();
   const { error: uploadError } = await admin.storage.from(bucket).upload(objectPath, bytes, {

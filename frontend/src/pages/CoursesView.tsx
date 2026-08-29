@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion, AnimatePresence } from "motion/react";
-import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../data/syllabusData";
+import { SYLLABUS_UNITS, SyllabusUnit } from "../data/syllabusData";
 import { CatalogTree, CatalogUnit, SessionResult, SubjectCode } from "../types";
 import { createSession } from "../services/sessionApi";
 import { ApiError } from "../services/api";
+import { UnitMaterial, getUnitMaterialsByTagCodes, driveEmbedUrl, downloadUnitMaterial } from "../services/unitMaterialsApi";
+import Modal from "../components/layout/Modal";
 
 interface CoursesViewProps {
   studentName: string;
@@ -55,7 +57,52 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
   // Modal States
   const [activeUnitModal, setActiveUnitModal] = useState<SyllabusUnit | null>(null);
   const [modalTab, setModalTab] = useState<"syllabus_materials" | "mock_test">("syllabus_materials");
-  const [activeMaterialViewer, setActiveMaterialViewer] = useState<SyllabusUnitMaterial | null>(null);
+  const [activeMaterialViewer, setActiveMaterialViewer] = useState<UnitMaterial | null>(null);
+
+  // docs/neet-tool-fix-prompt.md Task 4 — real Drive-backed materials for
+  // the currently-open unit. SyllabusUnit.id (e.g. "phy_01") is the same
+  // tag_code catalog.syllabus_node uses everywhere else in this codebase, so
+  // it's passed straight through to the backend rather than cross-referenced
+  // against catalogTree first.
+  const [unitMaterials, setUnitMaterials] = useState<UnitMaterial[]>([]);
+  const [materialsLoading, setMaterialsLoading] = useState(false);
+  const [materialsError, setMaterialsError] = useState<string | null>(null);
+  const [downloadingId, setDownloadingId] = useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (!activeUnitModal) {
+      setUnitMaterials([]);
+      setActiveMaterialViewer(null);
+      return;
+    }
+    let cancelled = false;
+    setMaterialsLoading(true);
+    setMaterialsError(null);
+    getUnitMaterialsByTagCodes([activeUnitModal.id])
+      .then(({ data }) => {
+        if (!cancelled) setUnitMaterials(data);
+      })
+      .catch((err) => {
+        if (!cancelled) setMaterialsError(err instanceof Error ? err.message : "Could not load materials.");
+      })
+      .finally(() => {
+        if (!cancelled) setMaterialsLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeUnitModal]);
+
+  async function handleDownloadMaterial(material: UnitMaterial) {
+    setDownloadingId(material.id);
+    try {
+      await downloadUnitMaterial(material);
+    } catch (err) {
+      setMaterialsError(err instanceof Error ? err.message : "Download failed.");
+    } finally {
+      setDownloadingId(null);
+    }
+  }
 
   // Scroll to top whenever unit workspace opens or closes
   React.useEffect(() => {
@@ -232,84 +279,61 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
                     <span className="material-symbols-outlined text-emerald-500">folder_open</span>
                     <span>NCERT Study Materials</span>
                   </h3>
-                  <span className="text-xs font-bold text-[#FCB824] bg-amber-50 dark:bg-amber-950 px-2.5 py-1 rounded-full border border-amber-200 dark:border-amber-800">
-                    4 PDFs
-                  </span>
+                  {!materialsLoading && (
+                    <span className="text-xs font-bold text-[#FCB824] bg-amber-50 dark:bg-amber-950 px-2.5 py-1 rounded-full border border-amber-200 dark:border-amber-800">
+                      {unitMaterials.length} PDF{unitMaterials.length === 1 ? "" : "s"}
+                    </span>
+                  )}
                 </div>
 
-                {/* Material Viewer Preview Box */}
-                {activeMaterialViewer && (
-                  <div className="bg-[#00243B] dark:bg-slate-800 text-white p-5 rounded-2xl space-y-4 border border-amber-500/40 animate-in fade-in duration-200">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-[#FCB824] bg-[#FCB824]/20 px-2.5 py-0.5 rounded-md border border-[#FCB824]/40">
-                          {activeMaterialViewer.format || "PDF"} Preview
-                        </span>
-                        <h5 className="text-sm font-bold text-white mt-1">
-                          {activeMaterialViewer.title}
-                        </h5>
-                      </div>
-                      <button
-                        onClick={() => setActiveMaterialViewer(null)}
-                        className="text-amber-300 hover:text-white text-xs underline cursor-pointer"
-                      >
-                        Back
-                      </button>
-                    </div>
-
-                    <div className="bg-[#00121d] p-4 rounded-xl text-xs text-slate-200 leading-relaxed space-y-2 font-mono border border-slate-800">
-                      <p className="text-amber-400 font-bold">📄 [DOCUMENT PREVIEW READY]</p>
-                      <p>{activeMaterialViewer.description}</p>
-                      <p className="text-slate-400 text-[11px]">
-                        Verified NCERT diagrams, proofs, and previous year answer keys for {activeUnitModal.unitName}.
-                      </p>
-                    </div>
-
-                    <div className="flex gap-2 pt-1">
-                      <button
-                        onClick={() => alert(`Downloading ${activeMaterialViewer.title}... File downloaded successfully!`)}
-                        className="flex-1 py-2.5 bg-[#FCB824] hover:bg-amber-400 text-[#00243B] font-black text-xs rounded-xl transition-colors cursor-pointer flex items-center justify-center gap-1.5"
-                      >
-                        <span className="material-symbols-outlined text-base">download</span>
-                        <span>Download ({activeMaterialViewer.size || "2.4 MB"})</span>
-                      </button>
-                      <button
-                        onClick={() => setActiveMaterialViewer(null)}
-                        className="py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs rounded-xl transition-colors cursor-pointer"
-                      >
-                        Close
-                      </button>
-                    </div>
+                {materialsError && (
+                  <div className="text-xs font-semibold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 rounded-xl p-3">
+                    {materialsError}
                   </div>
                 )}
 
-                <div className="space-y-3">
-                  {activeUnitModal.materials.map((mat, idx) => (
-                    <div
-                      key={idx}
-                      className="p-4 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all space-y-2.5"
-                    >
-                      <div className="flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
-                        <span className="uppercase text-[#FCB824] bg-amber-50 dark:bg-amber-950/60 px-2 py-0.5 rounded border border-amber-200/50 dark:border-amber-900/50">{mat.format || mat.type}</span>
-                        <span>{mat.size || mat.fileInfo}</span>
-                      </div>
-                      <h5 className="text-xs font-bold text-[#00243B] dark:text-white">
-                        {mat.title}
-                      </h5>
-                      <p className="text-[11px] text-slate-600 dark:text-slate-300 line-clamp-2">
-                        {mat.description}
-                      </p>
+                {materialsLoading && (
+                  <div className="text-xs text-slate-400 dark:text-slate-500 italic py-6 text-center">Loading materials…</div>
+                )}
 
-                      <button
-                        onClick={() => setActiveMaterialViewer(mat)}
-                        className="w-full py-2 bg-white dark:bg-slate-800 hover:bg-[#FCB824] dark:hover:bg-[#FCB824] text-[#00243B] dark:text-white hover:text-[#00243B] dark:hover:text-[#00243B] border border-slate-200 dark:border-slate-700 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-xs"
+                {!materialsLoading && !materialsError && unitMaterials.length === 0 && (
+                  <div className="text-xs text-slate-400 dark:text-slate-500 italic py-6 text-center bg-slate-50 dark:bg-slate-800/40 rounded-xl border border-slate-100 dark:border-slate-800">
+                    No study materials are available for this unit yet.
+                  </div>
+                )}
+
+                {!materialsLoading && unitMaterials.length > 0 && (
+                  <div className="space-y-3">
+                    {unitMaterials.map((mat) => (
+                      <div
+                        key={mat.id}
+                        className="p-4 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all space-y-2.5"
                       >
-                        <span className="material-symbols-outlined text-sm">visibility</span>
-                        <span>View & Download Material</span>
-                      </button>
-                    </div>
-                  ))}
-                </div>
+                        <div className="flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                          <span className="uppercase text-[#FCB824] bg-amber-50 dark:bg-amber-950/60 px-2 py-0.5 rounded border border-amber-200/50 dark:border-amber-900/50">PDF</span>
+                        </div>
+                        <h5 className="text-xs font-bold text-[#00243B] dark:text-white">{mat.title}</h5>
+
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => setActiveMaterialViewer(mat)}
+                            className="flex-1 py-2 bg-white dark:bg-slate-800 hover:bg-[#FCB824] dark:hover:bg-[#FCB824] text-[#00243B] dark:text-white hover:text-[#00243B] dark:hover:text-[#00243B] border border-slate-200 dark:border-slate-700 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-xs"
+                          >
+                            <span className="material-symbols-outlined text-sm">visibility</span>
+                            <span>View</span>
+                          </button>
+                          <button
+                            onClick={() => handleDownloadMaterial(mat)}
+                            disabled={downloadingId === mat.id}
+                            className="py-2 px-3 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-[#00243B] dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl text-xs font-bold transition-all cursor-pointer disabled:opacity-60 flex items-center justify-center gap-1.5"
+                          >
+                            <span className="material-symbols-outlined text-sm">{downloadingId === mat.id ? "hourglass_top" : "download"}</span>
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -638,6 +662,44 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
             </div>
           ))}
         </div>
+      )}
+
+      {/* Task 4b — in-app PDF viewer: Drive preview embed inside our own
+          modal (no new tab, no redirect out of the product). Drive's own
+          preview chrome provides page navigation and zoom; Modal's own
+          Escape/backdrop-click/body-scroll-lock provide the close/back
+          control back to the unit view. */}
+      {activeMaterialViewer && (
+        <Modal onClose={() => setActiveMaterialViewer(null)} wrapperClassName="items-stretch sm:items-center">
+          <div className="w-full max-w-4xl h-[85vh] bg-white dark:bg-[var(--navy)] rounded-2xl overflow-hidden flex flex-col shadow-2xl">
+            <div className="flex items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-slate-700 shrink-0">
+              <h5 className="text-sm font-bold text-[#00243B] dark:text-white truncate">{activeMaterialViewer.title}</h5>
+              <div className="flex items-center gap-2 shrink-0">
+                <button
+                  onClick={() => handleDownloadMaterial(activeMaterialViewer)}
+                  disabled={downloadingId === activeMaterialViewer.id}
+                  className="py-1.5 px-3 bg-[#FCB824] hover:bg-amber-400 text-[#00243B] font-black text-xs rounded-lg transition-colors cursor-pointer flex items-center gap-1.5 disabled:opacity-60"
+                >
+                  <span className="material-symbols-outlined text-sm">{downloadingId === activeMaterialViewer.id ? "hourglass_top" : "download"}</span>
+                  <span>Download</span>
+                </button>
+                <button
+                  onClick={() => setActiveMaterialViewer(null)}
+                  className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 cursor-pointer"
+                  aria-label="Close"
+                >
+                  <span className="material-symbols-outlined text-lg">close</span>
+                </button>
+              </div>
+            </div>
+            <iframe
+              src={driveEmbedUrl(activeMaterialViewer)}
+              title={activeMaterialViewer.title}
+              className="flex-1 w-full border-0"
+              allow="autoplay"
+            />
+          </div>
+        </Modal>
       )}
     </div>
   );

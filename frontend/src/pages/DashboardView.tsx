@@ -6,7 +6,6 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
 import { TestAttempt, CatalogTree, SessionResult, UnitAccuracy } from "../types";
-import { LearningPathTimeline } from "../components/ui/dashboard/LearningPathTimeline";
 import { PomodoroTimer } from "../components/ui/dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../components/ui/dashboard/DailyFlashcard";
 import { fetchStudySessions, calculateStudyStreak } from "../services/studySessionService";
@@ -530,8 +529,6 @@ useEffect(() => {
           <span className="text-on-surface-variant dark:text-slate-300 font-bold text-[10px] md:text-xs tracking-wider uppercase">{t("Time Taken")}</span>
         </motion.div>
       </div>
-
-      <LearningPathTimeline />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
         <PomodoroTimer studentName={studentName} />

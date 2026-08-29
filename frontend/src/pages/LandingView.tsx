@@ -8,7 +8,7 @@
 // import { sendPhoneOtp, verifyPhoneOtp, signUpWithPassword, signInWithPassword } from "../services/supabaseAuth";
 
 
-// export type { SyllabusUnit, SyllabusUnitMaterial };
+// export type { SyllabusUnit };
 // export { SYLLABUS_UNITS };
 
 // interface LandingViewProps {
@@ -1683,7 +1683,7 @@ import { motion, AnimatePresence } from "motion/react";
 import LumenLogo from "../components/ui/LumenLogo";
 import Modal from "../components/layout/Modal";
 import StudyPlanView from "./StudyPlanView";
-import { SYLLABUS_UNITS, SyllabusUnit, SyllabusUnitMaterial } from "../data/syllabusData";
+import { SYLLABUS_UNITS, SyllabusUnit } from "../data/syllabusData";
 import {
   sendEmailOtp,
   sendPhoneOtp,
@@ -1701,7 +1701,7 @@ import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfte
 import { ensureDemoSession } from "../services/demoSession";
 import { tryGoogleOneTap } from "../services/googleOneTap";
 
-export type { SyllabusUnit, SyllabusUnitMaterial };
+export type { SyllabusUnit };
 export { SYLLABUS_UNITS };
 
 interface LandingViewProps {
@@ -1736,8 +1736,7 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
   const [syllabusSearch, setSyllabusSearch] = useState("");
   const [activeUnitModal, setActiveUnitModal] = useState<SyllabusUnit | null>(null);
   const [unitModalTab, setUnitModalTab] = useState<"mock_test" | "syllabus_materials">("syllabus_materials");
-  const [activeMaterialViewer, setActiveMaterialViewer] = useState<SyllabusUnitMaterial | null>(null);
-  
+
   // Registration & Login Contact Method State
   const [authMethod, setAuthMethod] = useState<"email" | "phone">("email");
   const [phoneCountryCode, setPhoneCountryCode] = useState("+91");
@@ -2956,42 +2955,28 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
                     </div>
                   </div>
 
-                  {/* Unit Materials & Resources */}
+                  {/* Unit Materials & Resources — docs/neet-tool-fix-prompt.md
+                      Task 4: real NCERT PDF materials (learn.unit_material)
+                      require an authenticated request (same as the rest of
+                      the attempt API), so this pre-login preview shows a
+                      sign-in prompt instead of a fabricated materials list —
+                      the real, per-unit list renders in CoursesView.tsx
+                      after sign-in. */}
                   <div className="space-y-3 pt-2">
-                    <h4 className="text-xs font-black uppercase tracking-wider text-[#00243B] dark:text-white flex items-center justify-between">
-                      <span className="flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-base text-[var(--teal)] dark:text-[#FCB824]">folder_shared</span>
-                        Available Unit Materials ({activeUnitModal.materials?.length || 0})
-                      </span>
-                      <span className="text-[10px] text-amber-700 dark:text-[#FCB824] font-bold bg-amber-50 dark:bg-amber-950/70 px-2 py-0.5 rounded border border-amber-200 dark:border-[#FCB824]/40">
-                        100% Free Aspirant Access
-                      </span>
+                    <h4 className="text-xs font-black uppercase tracking-wider text-[#00243B] dark:text-white flex items-center gap-1.5">
+                      <span className="material-symbols-outlined text-base text-[var(--teal)] dark:text-[#FCB824]">folder_shared</span>
+                      Unit Materials
                     </h4>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {activeUnitModal.materials?.map((mat) => (
-                        <div
-                          key={mat.id}
-                          onClick={() => setActiveMaterialViewer(mat)}
-                          className="bg-slate-50 dark:bg-slate-900/40 hover:bg-amber-50/60 dark:hover:bg-amber-900/40 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-[var(--teal)]/40 transition-all flex items-center justify-between group cursor-pointer"
-                        >
-                          <div className="flex items-center gap-3">
-                            <div className="w-9 h-9 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-[var(--teal)] dark:text-[#FCB824] group-hover:scale-105 transition-transform shadow-xs">
-                              <span className="material-symbols-outlined text-lg">
-                                {mat.type === "mindmap" ? "account_tree" : mat.type === "notes" ? "description" : mat.type === "pyq" ? "quiz" : "functions"}
-                              </span>
-                            </div>
-                            <div>
-                              <h5 className="text-xs font-bold text-[#00243B] dark:text-white group-hover:text-[var(--teal)] dark:group-hover:text-[#FCB824] transition-colors">{mat.title}</h5>
-                              <p className="text-[10px] font-medium text-slate-500 dark:text-slate-400">{mat.format} • {mat.size}</p>
-                            </div>
-                          </div>
-                          <span className="material-symbols-outlined text-slate-400 dark:text-slate-500 group-hover:text-[var(--teal)] dark:group-hover:text-[#FCB824] text-base group-hover:translate-x-1 transition-all">
-                            visibility
-                          </span>
-                        </div>
-                      ))}
-                    </div>
+                    <button
+                      onClick={() => setShowAuthModal(true)}
+                      className="w-full flex items-center justify-between gap-3 p-4 bg-amber-50/70 dark:bg-amber-950/40 hover:bg-amber-100/70 dark:hover:bg-amber-900/50 rounded-2xl border border-amber-200 dark:border-[#FCB824]/40 transition-all cursor-pointer text-left"
+                    >
+                      <span className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-xl">lock</span>
+                        <span className="text-xs font-bold text-[#00243B] dark:text-white">Sign in to view and download real NCERT study materials for this unit</span>
+                      </span>
+                      <span className="material-symbols-outlined text-[var(--teal)] dark:text-[#FCB824] text-base shrink-0">arrow_forward</span>
+                    </button>
                   </div>
                 </div>
               )}
@@ -3054,71 +3039,6 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
                   className="py-2.5 px-6 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   Close
-                </button>
-              </div>
-            </motion.div>
-          </Modal>
-        )}
-      </AnimatePresence>
-
-      {/* MATERIAL VIEWER MODAL */}
-      <AnimatePresence>
-        {activeMaterialViewer && (
-          <Modal onClose={() => setActiveMaterialViewer(null)} backdropClassName="bg-slate-950/70 backdrop-blur-md" zIndexClassName="z-[110]">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[28px] p-6 md:p-8 max-w-xl w-full shadow-2xl border border-slate-200 dark:border-slate-700 relative space-y-6"
-            >
-              <button
-                onClick={() => setActiveMaterialViewer(null)}
-                className="absolute top-6 right-6 p-2 text-slate-400 hover:text-[#00243B] dark:hover:text-white rounded-full hover:bg-slate-100 dark:hover:bg-[#00243B] transition-colors cursor-pointer"
-              >
-                <span className="material-symbols-outlined text-xl font-bold">close</span>
-              </button>
-
-              <div className="space-y-2 pr-8">
-                <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/70 text-[var(--teal)] dark:text-[#FCB824] border border-amber-200 dark:border-[#FCB824]/40">
-                  {activeMaterialViewer.type.toUpperCase()} DOCUMENT
-                </span>
-                <h3 className="text-xl font-black text-[#00243B] dark:text-white">{activeMaterialViewer.title}</h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Format: {activeMaterialViewer.format} • Size: {activeMaterialViewer.size}</p>
-              </div>
-
-              <div className="p-6 bg-[#00243B] dark:bg-[var(--navy)] text-slate-100 rounded-2xl border border-[#00243B] dark:border-slate-700 space-y-4">
-                <div className="flex items-center gap-3 border-b border-[#00243B] dark:border-slate-700/80 pb-3">
-                  <span className="material-symbols-outlined text-[#FCB824] text-2xl">description</span>
-                  <div>
-                    <h4 className="text-xs font-bold text-white">Lumen High-Yield NCERT Study Sheet</h4>
-                    <p className="text-[10px] text-slate-400">{t("Verified by Senior Faculty")}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 text-xs font-mono text-slate-300 bg-slate-950/80 dark:bg-black/60 p-4 rounded-xl border border-[#00243B]">
-                  <p>✓ High-yield diagrams and labeling guides</p>
-                  <p>✓ Last 10-year topic frequency mapping</p>
-                  <p>✓ Formula cheat-sheets and reaction mechanisms</p>
-                  <p>✓ Rapid revision mnemonics for last-minute prep</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-3">
-                <button
-                  onClick={() => {
-                    alert(`Downloading ${activeMaterialViewer.title}... Free Aspirant Download Started!`);
-                    setActiveMaterialViewer(null);
-                  }}
-                  className="flex-1 py-3 bg-[var(--teal)] dark:bg-[#ffd15c] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white rounded-xl font-bold text-xs uppercase tracking-wider shadow transition-all cursor-pointer flex items-center justify-center gap-2"
-                >
-                  <span className="material-symbols-outlined text-base">download</span>
-                  Download Resource PDF
-                </button>
-                <button
-                  onClick={() => setActiveMaterialViewer(null)}
-                  className="py-3 px-6 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-xl font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
-                >
-                  Done
                 </button>
               </div>
             </motion.div>

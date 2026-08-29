@@ -337,8 +337,7 @@ frontend/
 └── components/
     ├── common/                   AnimatedCounter, DailyReminderModal, Header (734),
     │                             LumenLogo, SplashView
-    ├── dashboard/                DailyFlashcard, LearningPathTimeline,
-    │                             PomodoroTimer (697)
+    ├── dashboard/                DailyFlashcard, PomodoroTimer (697)
     └── views/                    Admin, CourseArea, Courses (638), Dashboard (1349),
                                   Evaluating, Landing (1682), Lobby, StudyPlan (636),
                                   SystemCheck, TestList (469), TestTaking (542)

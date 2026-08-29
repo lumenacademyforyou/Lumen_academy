@@ -9,6 +9,7 @@ import { flashcardRepository } from "../../../db/learn/flashcard/flashcard.repos
 import { errorLogRepository } from "../../../db/learn/error_log/error_log.repository.js";
 import { notificationRepository } from "../../../db/learn/notification/notification.repository.js";
 import { getPlanTasks, patchPlanTaskStatus, getFlashcardReviews, postFlashcardReview } from "../controllers/learnFlowController.js";
+import { listUnitMaterials, listUnitMaterialsByTagCodes, downloadUnitMaterial } from "../controllers/unitMaterialController.js";
 
 // learn entities with a direct user_id column and a single-uuid PK, scoped
 // to the signed-in user via makeOwnedCrudRouter.
@@ -80,5 +81,17 @@ notificationsListRouter.delete("/", async (req: Request, res: Response, next: Ne
 });
 router.use("/notifications", notificationsListRouter);
 router.use("/notifications", makeOwnedCrudRouter(notificationRepository, "user_id"));
+
+// Task 4 (docs/neet-tool-fix-prompt.md) — read-only, platform-owned course
+// materials (not user-owned, so no makeOwnedCrudRouter here). Registered as
+// its own router, same reasoning as notificationsListRouter above: the
+// query-param list route must come before the :unitId param route so
+// "by-tag-codes" is never swallowed as a literal unitId.
+const unitMaterialsRouter = Router();
+unitMaterialsRouter.use(requireAuth);
+unitMaterialsRouter.get("/by-tag-codes", listUnitMaterialsByTagCodes);
+unitMaterialsRouter.get("/unit/:unitId", listUnitMaterials);
+unitMaterialsRouter.get("/:materialId/download", downloadUnitMaterial);
+router.use("/unit-materials", unitMaterialsRouter);
 
 export default router;

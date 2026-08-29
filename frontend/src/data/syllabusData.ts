@@ -1,13 +1,3 @@
-export interface SyllabusUnitMaterial {
-  id?: string;
-  title: string;
-  type: "pdf" | "pyq" | "formula" | "notes" | "mindmap";
-  fileInfo?: string;
-  format?: string;
-  size?: string;
-  description: string;
-}
-
 export interface SyllabusUnit {
   id: string;
   subject: "physics" | "chemistry" | "botany" | "zoology";
@@ -22,15 +12,13 @@ export interface SyllabusUnit {
   keyFormulas: string[];
   overview: string;
   highYieldNCERTChapter: string;
-  materials: SyllabusUnitMaterial[];
 }
 
-export const DEFAULT_MATERIALS: SyllabusUnitMaterial[] = [
-  { id: "m1", title: "High-Yield NCERT Mindmaps PDF", type: "mindmap", format: "PDF", size: "2.4 MB", description: "Visual branch diagrams highlighting all high-frequency NCERT lines and diagram labels." },
-  { id: "m2", title: "10-Year Unit Solved PYQ Bank", type: "pyq", format: "NTA Paper Set", size: "45 Qs", description: "Comprehensive previous 10 years NEET questions with step-by-step NCERT page references." },
-  { id: "m3", title: "Formula & Key Reaction Cheat Sheet", type: "formula", format: "Quick Sheet", size: "1.1 MB", description: "All essential mathematical equations, physical constants, and named reaction pathways." },
-  { id: "m4", title: "NCERT Line-by-Line Highlighted Notes", type: "notes", format: "PDF Annotations", size: "3.2 MB", description: "Expert-curated NCERT textbook highlights marking recurring exam trick points." }
-];
+// docs/neet-tool-fix-prompt.md Task 4 — real materials now come from
+// learn.unit_material via services/unitMaterialsApi.ts (fetched by
+// SyllabusUnit.id / catalog.syllabus_node.tag_code), not from this file.
+// The fabricated 4-entry placeholder array previously here (reused
+// verbatim, unchanged, on every one of these 38 units) is gone.
 
 export const SYLLABUS_UNITS: SyllabusUnit[] = [
   // PHYSICS (6 UNITS)
@@ -48,7 +36,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["I = ∑ m r²", "τ = I α", "L = I ω", "K_rot = ½ I ω²", "v_cm = R ω"],
     overview: "Covers rigid body rotation, rotational equilibrium, angular momentum conservation laws, and moment of inertia for standard symmetric bodies.",
     highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapter 7)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_02",
@@ -64,7 +51,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["F = k q1 q2 / r²", "E = -dV/dr", "V = I R", "P = V I = I² R", "C = ε0 A / d"],
     overview: "Focuses on static charge interactions, potential energy, dielectric polarization, circuit analysis, resistivity temperature coefficient, and precision meters.",
     highYieldNCERTChapter: "Class 12 Physics (Part 1 - Chapters 1, 2 & 3)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_03",
@@ -80,7 +66,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["1/f = (μ-1)(1/R1 - 1/R2)", "n1 sin i = n2 sin r", "β = λ D / d", "sin θ = 1.22 λ / d"],
     overview: "Ray optics focal length calculations, wave optics fringe width calculation, polarization by Malus law, and astronomical telescope magnification.",
     highYieldNCERTChapter: "Class 12 Physics (Part 2 - Chapters 9 & 10)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_04",
@@ -96,7 +81,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["ΔQ = ΔU + ΔW", "W_adiabatic = (P1 V1 - P2 V2)/(γ - 1)", "η = 1 - T2/T1", "v_rms = √(3RT/M)"],
     overview: "Heat capacity, work done in gas expansions, thermodynamic cycle efficiencies, and molecular velocity distributions.",
     highYieldNCERTChapter: "Class 11 Physics (Part 2 - Chapters 11, 12 & 13)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_05",
@@ -112,7 +96,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["x(t) = A sin(ωt + φ)", "T = 2π √(m/k)", "T = 2π √(L/g)", "f' = f (v ± vo)/(v ∓ vs)"],
     overview: "Displacement, velocity and acceleration in SHM, energy conservation in harmonic oscillators, and sound wave resonance.",
     highYieldNCERTChapter: "Class 11 Physics (Part 2 - Chapters 14 & 15)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_06",
@@ -128,7 +111,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["B = μ0 I / (2π r)", "e = -L (dI/dt)", "f_r = 1 / (2π √(LC))", "F = q (v × B)"],
     overview: "Magnetic force on moving charges, electromagnetic induction, transformer principles, diode rectifiers, and logic gate truth tables.",
     highYieldNCERTChapter: "Class 12 Physics (Part 1 - Ch 4, 5, 6, 7 & Part 2 - Ch 14)",
-    materials: DEFAULT_MATERIALS
   },
 
   // CHEMISTRY (6 UNITS)
@@ -146,7 +128,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Markovnikov Rule", "Saytzeff Elimination", "Carbanion Stability: 1° > 2° > 3°", "Carbocation Stability: 3° > 2° > 1°"],
     overview: "Comprehensive study of nucleophilic substitution, named organic reactions, carbonyl chemistry, acidity/basicity orders of organic compounds.",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 2 - Chapters 10, 11, 12, 13)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_02",
@@ -162,7 +143,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["μ_eff = √(n(n+2)) BM", "EAN Rule", "CFSE = (-0.4 t2g + 0.6 eg) Δo"],
     overview: "Master ligand field strength (spectrochemical series), hybridisation geometry prediction, oxoacid structure counting, and group 15-18 periodic trends.",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 1 - Chapters 7, 8, 9)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_03",
@@ -178,7 +158,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["pH = -log[H+]", "pH = pKa + log([Salt]/[Acid])", "ΔG° = -n F E°_cell", "k = (2.303/t) log(A0/A)"],
     overview: "Calculations on ionic equilibrium, Henderson-Hasselbalch buffers, enthalpy changes, cell potential predictions, and radioactive decay half-lives.",
     highYieldNCERTChapter: "Class 11 Chemistry (Chapters 6, 7) & Class 12 (Chapters 2, 3)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_04",
@@ -194,7 +173,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["1/λ = R z² (1/n1² - 1/n2²)", "λ = h / (m v)", "Bond Order = ½ (Nb - Na)"],
     overview: "Orbital energy calculations, spectral emission lines, paramagnetic vs diamagnetic MO configurations, and molecular geometries.",
     highYieldNCERTChapter: "Class 11 Chemistry (Chapters 2, 3 & 4)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_05",
@@ -210,7 +188,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Hückel Rule: (4n+2) π electrons", "Hyperconjugation α-H count"],
     overview: "Core organic foundation: carbocation stability, resonance energy, electrophilic aromatic substitution directing effects, and isomer counting.",
     highYieldNCERTChapter: "Class 11 Chemistry (Chapters 12 & 13)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_06",
@@ -226,7 +203,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["ΔTb = i Kb m", "ΔTf = i Kf m", "π = i C R T", "E_cell = E°_cell - (0.0591/n) log Q"],
     overview: "Boiling point elevation, freezing point depression, osmotic pressure, electrolytic conductance, galvanic cells, and Freundlich adsorption.",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 1 - Chapters 2, 3 & 5)",
-    materials: DEFAULT_MATERIALS
   },
 
   // BOTANY (6 UNITS)
@@ -244,7 +220,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Dihybrid Phenotypic Ratio = 9:3:3:1", "Chargaff's Rule: A+G = T+C", "Recombination Frequency = (Recombinants/Total) × 100"],
     overview: "High-yield weightage unit covering gene mapping, DNA replication enzymes, genetic code degeneracy, wobble hypothesis, and molecular regulation.",
     highYieldNCERTChapter: "Class 12 Biology (Chapters 5 & 6)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_02",
@@ -260,7 +235,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Overall Photosynthesis: 6CO2 + 12H2O → C6H12O6 + 6O2 + 6H2O", "1 Glucose = 38 ATP"],
     overview: "Detailed electron transport chain in chloroplast thylakoid membranes, ATP synthesis via chemiosmosis, RuBisCO enzyme dual activity, and plant hormones.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 11, 12, 13, 14, 15)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_03",
@@ -276,7 +250,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Floral Formula Notation", "Vascular Bundle Arrangements"],
     overview: "Plant kingdom classification, alternation of generations, root/stem/leaf modifications, estivation patterns, and cambial ring activity.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 3, 5 & 6)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_04",
@@ -292,7 +265,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Enzyme Velocity V = Vmax [S] / (Km + [S])", "Meiosis Chromosome Halving"],
     overview: "Endomembrane system organelles, peptide and glycosidic bonds, cell division checkpoints, and synaptonemal complex recombination.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 8, 9 & 10)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_05",
@@ -308,7 +280,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["dN/dt = rN (1 - N/K)", "10% Energy Transfer Law"],
     overview: "Population interactions (Mutualism, Parasitism, Competition), primary productivity, trophic level efficiency, and endangered species protection.",
     highYieldNCERTChapter: "Class 12 Biology (Chapters 13, 14, 15 & 16)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_06",
@@ -324,7 +295,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Triple Fusion: 1 Male Gamete + 2 Polar Nuclei → 3n PEN", "Syngamy: 1 Male Gamete + Egg → 2n Zygote"],
     overview: "Anther wall layers, pollination mechanisms (Anemophily, Hydrophily, Entomophily), pollen-pistil interaction, seed dormancy, and parthenocarpy.",
     highYieldNCERTChapter: "Class 12 Biology (Chapter 2)",
-    materials: DEFAULT_MATERIALS
   },
 
   // ZOOLOGY (6 UNITS)
@@ -342,7 +312,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Cardiac Output = Stroke Volume × Heart Rate (70 mL × 72 = 5040 mL/min)", "Normal GFR = 125 mL/min"],
     overview: "Core organ system functions: PQRST ECG analysis, juxtaglomerular apparatus, nephron Henle's loop concentration gradient, neurotransmitters, and endocrine feedback.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 16, 17, 18, 19, 20, 21, 22)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_02",
@@ -358,7 +327,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["LH Surge → Ovulation Trigger at Day 14", "Gestational Placental Hormones: hCG, hPL, Relaxin"],
     overview: "Embryonic germ layer differentiation, hormone levels across follicular and luteal phases, barrier/hormonal/IUD contraceptives, and fertility clinics.",
     highYieldNCERTChapter: "Class 12 Biology (Chapters 2, 3, 4)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_03",
@@ -374,7 +342,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Phylum Key Traits: Porifera to Mammalia"],
     overview: "Diagnostic phylum characteristics (Canal system, Cnidocytes, Flame cells, Radula, Water vascular system), tissue classification, and cockroach ommatidia.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 4 & 7)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_04",
@@ -390,7 +357,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Antibody Structure: H2L2", "Active vs Passive Immunity"],
     overview: "Pathogen lifecycles, primary vs secondary immune responses, vaccination principles, drug & alcohol abuse effects, and Interferon innate defense.",
     highYieldNCERTChapter: "Class 12 Biology (Chapter 8)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_05",
@@ -406,7 +372,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Hardy-Weinberg Equation: p² + 2pq + q² = 1"],
     overview: "Chemical evolution theories, natural selection types (Stabilizing, Directional, Disruptive), industrial melanism, genetic drift, and fossil record milestones.",
     highYieldNCERTChapter: "Class 12 Biology (Chapter 7)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_06",
@@ -422,7 +387,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["PCR Amplification: 2^n copies"],
     overview: "Palindromic restriction cleavage, Selectable markers (ampR, tetR), Taq polymerase thermal cycle (Denaturation, Annealing, Extension), and RNA interference (RNAi).",
     highYieldNCERTChapter: "Class 12 Biology (Chapters 11 & 12)",
-    materials: DEFAULT_MATERIALS
   },
   // ADDED PHYSICS UNITS
   {
@@ -439,7 +403,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["v = u + at", "s = ut + 1/2 at^2", "v² = u² + 2as", "F = dp/dt = ma", "f_s <= μ_s N"],
     overview: "Foundational mechanics covering 1D/2D kinematics, force analysis, free body diagrams, and basic circular dynamics.",
     highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapters 3, 4 & 5)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_08",
@@ -455,7 +418,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["E = hν", "K_max = hν - Φ", "λ = h/p", "E_n = -13.6/n² eV", "N = N_0 e^(-λt)"],
     overview: "Quantum nature of light and matter, atomic structure transitions, nuclear binding energy, and radioactive decay laws.",
     highYieldNCERTChapter: "Class 12 Physics (Part 2 - Chapters 11, 12 & 13)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_09",
@@ -471,7 +433,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["W = F.d", "K = 1/2 mv²", "P = F.v", "v1 = ((m1-m2)/(m1+m2))u1 + ((2m2)/(m1+m2))u2"],
     overview: "Concepts of work and energy, conservative vs non-conservative forces, conservation of mechanical energy, and momentum in collisions.",
     highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapter 6)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "phy_10",
@@ -487,7 +448,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["F = G m1 m2 / r²", "v_e = sqrt(2gR)", "Y = (F/A) / (ΔL/L)", "P + ρgh + 1/2 ρv² = constant"],
     overview: "Universal law of gravitation, planetary motion, mechanical properties of solids (stress/strain), and fluid dynamics (viscosity, surface tension).",
     highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapter 8, Part 2 - Chapters 9 & 10)",
-    materials: DEFAULT_MATERIALS
   },
   // ADDED CHEMISTRY UNITS
   {
@@ -504,7 +464,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["R-CHO + HCN -> Cyanohydrin", "R-COOH Acidity Trend"],
     overview: "Core carbonyl chemistry, named reactions, nucleophilic addition mechanisms, and properties of carboxylic acids.",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 2 - Chapter 12)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_08",
@@ -520,7 +479,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["n = w/M", "PV = nRT", "P_total = P_1 + P_2 + ...", "u_rms = sqrt(3RT/M)"],
     overview: "Fundamental calculations of moles, empirical formulas, and behavior of gases under varying conditions.",
     highYieldNCERTChapter: "Class 11 Chemistry (Chapters 1 & 5)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_09",
@@ -536,7 +494,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Rate = k[A]^x[B]^y", "t_1/2 = 0.693/k (1st order)", "k = A e^(-Ea/RT)"],
     overview: "Study of reaction rates, factors affecting them, zero/first order kinetics, and temperature dependence (activation energy).",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 1 - Chapter 4)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "chem_10",
@@ -552,7 +509,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["μ = sqrt(n(n+2)) BM"],
     overview: "Electronic configuration, oxidation states, magnetic properties, and colored complexes of transition and inner-transition elements.",
     highYieldNCERTChapter: "Class 12 Chemistry (Part 1 - Chapter 8)",
-    materials: DEFAULT_MATERIALS
   },
   // ADDED BOTANY UNITS
   {
@@ -569,7 +525,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Haplontic vs Diplontic Life Cycles"],
     overview: "Taxonomic hierarchy, detailed features of microbial kingdoms, and evolutionary advancement in plant groups.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 2 & 3)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_08",
@@ -585,7 +540,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Heartwood vs Sapwood Differences"],
     overview: "Internal structure and functional organization of higher plants, including vascular bundle arrangements and secondary thickening.",
     highYieldNCERTChapter: "Class 11 Biology (Chapter 6)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "bot_09",
@@ -601,7 +555,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["L_t = L_0 + rt", "W_1 = W_0 e^(rt)"],
     overview: "Physiological effects of phytohormones, environmental cues on flowering, and cellular differentiation processes.",
     highYieldNCERTChapter: "Class 11 Biology (Chapter 15)",
-    materials: DEFAULT_MATERIALS
   },
   // ADDED ZOOLOGY UNITS
   {
@@ -618,7 +571,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Tidal Volume = 500mL", "Cardiac Output = HR × SV"],
     overview: "Detailed physiological mechanisms of gas exchange, fluid transport, and nitrogenous waste elimination in humans.",
     highYieldNCERTChapter: "Class 11 Biology (Chapters 17, 18 & 19)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_08",
@@ -634,7 +586,6 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Actin-Myosin Cross-Bridge Cycle"],
     overview: "Molecular mechanisms of sliding filament theory, axial and appendicular skeleton, and types of synovial joints.",
     highYieldNCERTChapter: "Class 11 Biology (Chapter 20)",
-    materials: DEFAULT_MATERIALS
   },
   {
     id: "zoo_09",
@@ -650,6 +601,5 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     keyFormulas: ["Resting Membrane Potential ≈ -70mV"],
     overview: "Transmission of action potentials, neuroanatomy of the brain, and detailed mechanisms of vision and hearing.",
     highYieldNCERTChapter: "Class 11 Biology (Chapter 21)",
-    materials: DEFAULT_MATERIALS
   }
 ];
