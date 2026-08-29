@@ -29,3 +29,15 @@ export async function markNotificationRead(notificationId: string): Promise<void
     body: JSON.stringify({ read_at: new Date().toISOString() }),
   });
 }
+
+// P0-5: single-item "Clear" — a real delete (backend/lib/dbCrudRouter.ts's
+// makeOwnedCrudRouter already exposes DELETE /:id for every owned entity,
+// notifications included; this was just never called from the frontend).
+export async function clearNotification(notificationId: string): Promise<void> {
+  await apiFetch<void>(`/learn/notifications/${notificationId}`, { method: "DELETE" });
+}
+
+// "Clear all" — backend/src/routes/learn.routes.ts's bare DELETE /notifications.
+export async function clearAllNotifications(): Promise<void> {
+  await apiFetch<void>("/learn/notifications", { method: "DELETE" });
+}

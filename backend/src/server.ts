@@ -4,6 +4,7 @@ import helmet from "helmet";
 import path from "path";
 import { config } from "./config/env.js";
 import { AppError, errorHandler } from "./middleware/errorHandler.js";
+import { requestTiming } from "./middleware/requestTiming.js";
 import apiRouter from "./routes/api.js";
 
 const app = express();
@@ -40,6 +41,7 @@ app.use(
   })
 );
 app.use(express.json({ limit: "1mb" }));
+app.use(requestTiming);
 
 app.use("/api", apiRouter);
 app.use("/api", (_req, _res, next) => {

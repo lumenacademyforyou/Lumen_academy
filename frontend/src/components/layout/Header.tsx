@@ -9,6 +9,8 @@ import { fetchMe, updateMe, deleteAccount, MeProfile } from "../../services/meAp
 import { sendEmailOtp, verifyEmailOtp, describeAuthError } from "../../services/supabaseAuth";
 import { ApiError } from "../../services/api";
 import NotificationBell from "../ui/NotificationBell";
+import { pluralize } from "../../utils/pluralize";
+import { isDemoEmail } from "../../services/demoSession";
 
 interface HeaderProps {
   currentTab: string;
@@ -30,6 +32,7 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
     course: "/course",
     tests: "/tests",
     analytics: "/analytics",
+    results: "/results",
   };
 
   setTab(tab);
@@ -280,6 +283,19 @@ const handleSaveProfile = async (e: React.FormEvent) => {
 
         {/* Right section: Actions & Profile */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* P1-6: subtle "Demo mode" badge — visible whenever the signed-in
+              account is the shared demo user, so nobody mistakes seeded demo
+              data/attempts for their own. */}
+          {isDemoEmail(profile?.email) && (
+            <span
+              className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-full text-indigo-600 dark:text-indigo-400 font-bold text-[10px] shadow-sm uppercase tracking-wider shrink-0"
+              title="You're signed in on the shared demo account — data here is sample data, not personal."
+            >
+              <span className="material-symbols-outlined text-[14px]">visibility</span>
+              {t("Demo Mode")}
+            </span>
+          )}
+
           {/* Global Dark Mode Theme Toggle */}
           <button
             onClick={toggleDarkMode}
@@ -309,7 +325,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
 
           <div className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700 relative shrink-0">
             {studyStreak > 0 && (
-              <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800 rounded-full text-orange-600 dark:text-orange-400 font-bold text-[10px] shadow-sm" title={`${studyStreak} Day Study Streak`}>
+              <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800 rounded-full text-orange-600 dark:text-orange-400 font-bold text-[10px] shadow-sm" title={`${studyStreak} ${pluralize(studyStreak, "Day")} Study Streak`}>
                 <span className="material-symbols-outlined text-[14px] text-orange-500">local_fire_department</span>
                 {studyStreak}
               </div>
@@ -393,9 +409,9 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                     <span className="text-[10px] font-bold text-[var(--teal)] dark:text-[#FCB824] bg-amber-100/80 dark:bg-amber-950/60 px-2 py-0.5 rounded-md">{t("Pro")}</span>
                   </button>
 
-                  <button 
+                  <button
                     onClick={() => {
-                    handleNavigation("analytics");
+                    handleNavigation("results");
                       setShowProfileDropdown(false);
                     }}
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"

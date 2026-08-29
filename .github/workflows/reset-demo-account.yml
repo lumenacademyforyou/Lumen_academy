@@ -1,0 +1,54 @@
+name: Reset demo account
+
+# P1-6 (docs/assessment-tool-fix-prompt.md) — "reset or sandbox demo data on
+# a schedule so it doesn't degrade over time". Runs db/scripts/demo/seed-
+# demo-account.ts --reset against the real database: wipes the shared demo
+# account's own attempts and reseeds a fresh, realistic set. Scoped to that
+# one fixed account only (see that script's own header) — nothing else in
+# the database is touched.
+#
+# Needs SUPABASE_PUBLISHABLE_KEY as a repository secret in addition to the
+# DATABASE_URL/SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY secrets ci.yml already
+# uses — the anon/publishable key the script signs the demo account in with
+# (same one frontend/src/services/supabase.ts uses; NOT the service-role
+# key). Add it under Settings -> Secrets and variables -> Actions before the
+# schedule below is expected to actually succeed.
+#
+# Does NOT need a locally running backend the way a brand-new demo account
+# would (see the script's header on why identity provisioning isn't
+# reimplemented here) — that one-time bootstrap already happened outside CI
+# before this workflow was added; every scheduled run after that only resets
+# and reseeds attempts for an account that already exists.
+
+on:
+  schedule:
+    # Every Monday 03:00 UTC — sample data refreshed weekly, not so often
+    # that a mid-week demo suddenly loses whatever a viewer was just shown.
+    - cron: "0 3 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  reset:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Reset and reseed the demo account
+        run: |
+          if [ -z "$DATABASE_URL" ] || [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_PUBLISHABLE_KEY" ]; then
+            echo "::warning::Skipping demo account reset — DATABASE_URL/SUPABASE_URL/SUPABASE_PUBLISHABLE_KEY repository secrets are not fully configured."
+            exit 0
+          fi
+          npx tsx db/scripts/demo/seed-demo-account.ts --reset

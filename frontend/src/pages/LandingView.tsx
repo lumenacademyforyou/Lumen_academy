@@ -1699,6 +1699,7 @@ import {
 } from "../services/supabaseAuth";
 import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../services/emailSendGuard";
 import { ensureDemoSession } from "../services/demoSession";
+import { tryGoogleOneTap } from "../services/googleOneTap";
 
 export type { SyllabusUnit, SyllabusUnitMaterial };
 export { SYLLABUS_UNITS };
@@ -1790,6 +1791,25 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
     }, 1000);
     return () => clearInterval(id);
   }, [authMode, resendRetryAfterMs > 0]);
+
+  // P0-1: pick up an already-signed-in Google session on landing/login page
+  // load — see services/googleOneTap.ts for the silent-vs-visible-bubble
+  // and no-op-until-configured behaviour. Runs once per mount; this view is
+  // only ever mounted while signed out (App.tsx gates it on
+  // !isAuthenticated), so there's no risk of firing while already logged in.
+  useEffect(() => {
+    let cancelled = false;
+    tryGoogleOneTap((session) => {
+      if (cancelled) return;
+      const meta = session.user.user_metadata as { display_name?: string; full_name?: string; name?: string } | undefined;
+      const name = meta?.display_name || meta?.full_name || meta?.name || session.user.email?.split("@")[0] || "Student";
+      onLoginSuccess(name, false);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleOpenRegister = () => {
     setAuthMode("register");
@@ -3353,6 +3373,19 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
                   {authMethod === "phone"
                     ? (isSendingOtp ? "Sending code..." : "Send SMS Verification OTP →")
                     : (isSubmittingAuth ? "Creating account..." : "Register & Continue →")}
+                </button>
+
+                {/* P1-6: "Try demo account" on the signup form too, not just
+                    Sign In — one click, no form fields, into the same shared
+                    demo user handleDemoAccountLogin already wires up. */}
+                <button
+                  type="button"
+                  onClick={handleDemoAccountLogin}
+                  disabled={isDemoLoggingIn}
+                  className="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-[#00243B] dark:text-white font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer border border-transparent dark:border-slate-600 disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  <span className="material-symbols-outlined text-base">person</span>
+                  {isDemoLoggingIn ? "Signing in..." : "Try Demo Account"}
                 </button>
               </form>
             )}

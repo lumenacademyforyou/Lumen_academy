@@ -20,6 +20,7 @@ import {
   Radar,
 } from "recharts";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
+import ReportBrandHeader from "../components/ui/ReportBrandHeader";
 import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
 
 // Extracted from App.tsx (LA-BE-CORE-002 CL-P1) so recharts — the single
@@ -100,6 +101,7 @@ export default function AnalyticsView({ shareText, isExportingPdf, onShareReport
 
   return (
     <div id="analytics-report-container" className="space-y-8 animate-in fade-in duration-500 bg-white dark:bg-slate-900 p-4 rounded-3xl">
+      <ReportBrandHeader reportTitle={t("Deep Diagnostics & Analytics")} subtitle={new Date().toLocaleDateString()} />
       <div className="px-2 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl md:text-3xl font-sans font-bold text-slate-900 dark:text-white tracking-tight mb-1">{t("Deep Diagnostics & Analytics")}</h2>

@@ -15,6 +15,8 @@ import {
   getProfileGaps,
 } from "./services/supabaseAuth";
 import { ensureDemoSession } from "./services/demoSession";
+import { suppressGoogleOneTapForSession } from "./services/googleOneTap";
+import { clearMeCache } from "./services/meApi";
 
 // Route-level code splitting (LA-BE-CORE-002 CL-P1): none of these are
 // needed for first paint (splash/landing render before any of them), so
@@ -33,6 +35,9 @@ const AdminView = lazy(() => import("./pages/AdminView"));
 // Pulls in recharts (the largest single dependency in the bundle) — kept out
 // of the initial chunk entirely; only fetched when the Analytics tab opens.
 const AnalyticsView = lazy(() => import("./pages/AnalyticsView"));
+// P1-11 — "View results". Also pulls in recharts transitively (its detailed
+// report view embeds P1-7's IrtSection), same reasoning as AnalyticsView above.
+const MyResultsView = lazy(() => import("./pages/MyResultsView"));
 
 const SESSION_MODE_LABEL: Record<SessionResult["mode"], string> = {
   "subject-wise": "Subject-wise Practice",
@@ -145,6 +150,7 @@ const [userId, setUserId] = useState<string | null>(null);
     "/course": "course",
     "/analytics": "analytics",
     "/profile": "profile",
+    "/results": "results",
   };
   const tab = pathToTab[location.pathname];
 
@@ -409,6 +415,13 @@ useEffect(() => {
     }
     await revokeAuthSession(message ? "forced" : "user_logout").catch(() => {});
     await supabaseSignOut().catch(() => {});
+    // Any sign-out through this shared path — explicit or forced — must not
+    // be immediately undone by Google One Tap silently re-authenticating the
+    // same browser session (P0-1).
+    suppressGoogleOneTapForSession();
+    // P2-13: the cached /me response must not leak into whichever account
+    // signs in next within the cache's TTL window.
+    clearMeCache();
     setAuthMessage(message);
     setIsAuthenticated(false);
     setIsAdmin(false);
@@ -640,6 +653,8 @@ useEffect(() => {
                           setCurrentScreen("portal");
                         }}
                         attemptsCount={attempts.filter((a) => a.totalScore > 0 && a.date !== "Available").length}
+                        catalogTree={catalogTree}
+                        onSessionCreated={handleSessionCreated}
                       />
                     )}
 
@@ -684,6 +699,12 @@ useEffect(() => {
                       onShareReport={handleShareReport}
                       onDownloadPdf={handleDownloadPdf}
                     />
+                  </Suspense>
+                )}
+
+                {currentTab === "results" && (
+                  <Suspense fallback={<AppLoadingFallback />}>
+                    <MyResultsView />
                   </Suspense>
                 )}
               </>

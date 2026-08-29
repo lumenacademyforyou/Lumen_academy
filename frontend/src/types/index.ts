@@ -196,7 +196,10 @@ export interface SessionResult {
 export interface AttemptSummary {
   attemptId: string;
   testId: string;
+  testCode: string;
   testTitle: string;
+  mode: "subject-wise" | "full-mock" | "custom";
+  durationMinutes: number | null;
   attemptNo: number;
   attemptState: string;
   startedAt: string | null;
@@ -346,4 +349,79 @@ export interface ReviewQuestion {
   timeSpentSeconds: number | null;
   explanationText: string | null;
   formulaReference: string | null;
+}
+
+// --- P1-7: real IRT (Rasch) ability estimate — mirrors db/assess/analytics/irt.ts exactly. ---
+
+export interface IrtItemCharacteristic {
+  questionId: string;
+  difficulty: number;
+  correct: boolean;
+}
+
+export interface IrtAbilityTrendPoint {
+  attemptId: string;
+  submittedAt: string;
+  theta: number;
+  standardError: number;
+}
+
+export type IrtBand = "well above average" | "above average" | "average" | "below average" | "well below average";
+
+export type IrtReport =
+  | { available: false; reason: string }
+  | {
+      available: true;
+      theta: number;
+      standardError: number;
+      itemsUsed: number;
+      band: IrtBand;
+      itemCharacteristics: IrtItemCharacteristic[];
+      abilityTrend: IrtAbilityTrendPoint[];
+      calibration: { itemCount: number; personCount: number };
+    };
+
+// --- P1-10: detailed report — mirrors db/assess/test/attempt/attempt-flow.ts's
+// getScorecardWithSections and db/assess/analytics/dashboard.ts's
+// getCohortComparison exactly (raw snake_case — same "read the persisted
+// row directly" discipline as the rest of this app's scorecard/review data). ---
+
+export interface ScorecardDetail {
+  scorecard_id: string;
+  attempt_id: string;
+  obtained_marks: string | null;
+  total_marks: string | null;
+  accuracy_percent: string | null;
+  percentile: string | null;
+  rank_in_cohort: number | null;
+  generated_at: string | null;
+}
+
+export interface SectionScoreDetail {
+  section_score_id: string;
+  scorecard_id: string;
+  test_section_id: string;
+  section_name: string;
+  question_count: number | null;
+  obtained_marks: string | null;
+  attempted_count: number | null;
+  correct_count: number | null;
+  average_time_seconds: number | null;
+}
+
+export interface ScorecardTiming {
+  started_at: string | null;
+  submitted_at: string | null;
+  allotted_minutes: number | null;
+}
+
+export interface DetailedScorecardResponse {
+  scorecard: ScorecardDetail;
+  sectionScores: SectionScoreDetail[];
+  timing: ScorecardTiming | null;
+}
+
+export interface CohortComparison {
+  cohortAverageAccuracy: number;
+  cohortSize: number;
 }

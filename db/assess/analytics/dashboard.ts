@@ -363,3 +363,41 @@ export async function getDashboardAnalytics(userId: string): Promise<DashboardAn
     client.release();
   }
 }
+
+export interface CohortComparison {
+  cohortAverageAccuracy: number;
+  cohortSize: number;
+}
+
+// P1-10 (docs/assessment-tool-fix-prompt.md's detailed report — "comparison
+// ... against the cohort average"). "Cohort" here is every OTHER scored
+// attempt of the same test shape — same TEST_TYPE + SCOPE_CODE segment of
+// test_code (db/assess/test/definition/test-code.ts's own naming
+// convention: e.g. every PHY subject-wise practice test, or every full
+// mock) — not "the same test_id": createPracticeTest creates a brand-new
+// assess.test row per session (LA-APP-COMPLETION-001 Phase C1), so almost
+// no two attempts ever literally share one test_id to compare against.
+// Comparing by shape instead is what makes a real cohort exist at all.
+export async function getCohortComparison(attemptId: string): Promise<CohortComparison | null> {
+  const selfRes = await pool.query<{ test_code: string }>(
+    `select t.test_code from assess.attempt a join assess.test t on t.test_id = a.test_id where a.attempt_id = $1`,
+    [attemptId]
+  );
+  const testCode = selfRes.rows[0]?.test_code;
+  if (!testCode) return null;
+  const prefixMatch = testCode.match(/^(LMN-[A-Z]+-[A-Z]+-[A-Z0-9]+-)\d{6}$/);
+  if (!prefixMatch) return null;
+  const prefix = prefixMatch[1];
+
+  const res = await pool.query<{ avg_accuracy: string | null; cohort_size: string }>(
+    `select avg(sc.accuracy_percent) as avg_accuracy, count(*) as cohort_size
+       from assess.scorecard sc
+       join assess.attempt a on a.attempt_id = sc.attempt_id
+       join assess.test t on t.test_id = a.test_id
+      where a.attempt_id != $1 and a.attempt_state = 'scored' and t.test_code like $2`,
+    [attemptId, `${prefix}%`]
+  );
+  const cohortSize = Number(res.rows[0]?.cohort_size ?? 0);
+  if (cohortSize === 0 || res.rows[0]?.avg_accuracy === null) return null;
+  return { cohortAverageAccuracy: Math.round(Number(res.rows[0].avg_accuracy) * 100) / 100, cohortSize };
+}

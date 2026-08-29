@@ -5,6 +5,8 @@ import AnimatedCounter from "../components/ui/AnimatedCounter";
 import { TestAttempt, CatalogTree, SubjectCode, DifficultyBand, SessionResult, CreateSessionRequest, SessionLine } from "../types";
 import { createSession } from "../services/sessionApi";
 import { ApiError } from "../services/api";
+import { FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION } from "../config/featureFlags";
+import { countLabel } from "../utils/pluralize";
 
 interface TestListViewProps {
   attempts: TestAttempt[];
@@ -48,6 +50,10 @@ function friendlyError(err: unknown): string {
 
 export default function TestListView({ attempts, catalogTree, catalogError, isSyllabusCompleted, onSelectAttempt, onSessionCreated }: TestListViewProps) {
   const { t } = useLanguage();
+  // P1-9: feature-flagged off — the Full Mock Test is unlocked for everyone
+  // regardless of syllabus-tracker progress. Flip the flag, not this line,
+  // to restore the gate.
+  const fullMockUnlocked = !FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION || isSyllabusCompleted;
   const [view, setView] = useState<"directory" | "subject-wise" | "custom">("directory");
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState<string | null>(null);
@@ -87,7 +93,7 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   }
 
   function handleStartFullMock() {
-    if (!isSyllabusCompleted) {
+    if (!fullMockUnlocked) {
       setCreateError("Complete all units in your Syllabus Tracker (Study Plan) to unlock the Full Mock Test.");
       return;
     }
@@ -136,7 +142,7 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
         sectionName: s.subjectCode,
       }));
     }
-    const unitsSuffix = selectedList.length > 0 ? ` [${selectedList.length} units]` : "";
+    const unitsSuffix = selectedList.length > 0 ? ` [${countLabel(selectedList.length, "unit")}]` : "";
     launch({ mode: "custom", title: `Custom Test${unitsSuffix}`, durationMinutes: customTotalCount, lines });
   }
 
@@ -211,10 +217,10 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
                 onClick={handleStartFullMock}
                 disabled={creating}
                 className={`w-full py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center block ${
-                  isSyllabusCompleted ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] shadow-md hover:shadow-lg cursor-pointer" : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed"
+                  fullMockUnlocked ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] shadow-md hover:shadow-lg cursor-pointer" : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed"
                 } disabled:opacity-60`}
               >
-                {isSyllabusCompleted ? t("Start Full Mock Test") : t("Locked (Complete Syllabus Tracker)")}
+                {fullMockUnlocked ? t("Start Full Mock Test") : t("Locked (Complete Syllabus Tracker)")}
               </button>
             </motion.div>
 

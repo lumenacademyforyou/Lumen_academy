@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { getAttemptReview } from "../services/sessionApi";
+import { exportAnalyticsPdf } from "../services/pdfExport";
+import QuestionImage from "../components/ui/QuestionImage";
+import IrtSection from "../components/ui/IrtSection";
+import ReportBrandHeader from "../components/ui/ReportBrandHeader";
+import ReportSummary from "../components/ui/ReportSummary";
 import type { ReviewQuestion } from "../types";
 
 interface AttemptReviewViewProps {
@@ -23,6 +28,23 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
   const [questions, setQuestions] = useState<ReviewQuestion[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<ReviewFilter>("all");
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  // P1-12: every report is downloadable as a properly branded PDF (see
+  // ReportBrandHeader) — a plain DOM capture of whatever's currently
+  // rendered here, same mechanism AnalyticsView's "Download PDF" already
+  // uses. print:hidden controls (this button, Back) are excluded from the
+  // capture by pdfExport.ts's ignoreElements.
+  const handleDownloadPdf = async () => {
+    setIsDownloading(true);
+    try {
+      await exportAnalyticsPdf("attempt-report-content", `Lumen_Academy_${testTitle.replace(/\s+/g, "_")}.pdf`);
+    } catch (err) {
+      console.error("Failed to download report PDF:", err);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -54,12 +76,13 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
   const filtered = questions?.filter((q) => filter === "all" || outcomeOf(q) === filter) ?? [];
 
   return (
-    <div className="space-y-6 max-w-[1100px] mx-auto animate-in fade-in duration-300 pb-12">
+    <div id="attempt-report-content" className="space-y-6 max-w-[1100px] mx-auto animate-in fade-in duration-300 pb-12 bg-white dark:bg-slate-900 p-4 rounded-3xl">
+      <ReportBrandHeader reportTitle={testTitle} subtitle={t("Attempt Report")} />
       <div className="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4 shadow-sm">
         <div className="flex items-center gap-3">
           <button
             onClick={onBack}
-            className="p-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-[#00243B] dark:text-white rounded-2xl transition-all cursor-pointer flex items-center justify-center font-bold text-xs gap-2 shadow-xs"
+            className="print:hidden p-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-[#00243B] dark:text-white rounded-2xl transition-all cursor-pointer flex items-center justify-center font-bold text-xs gap-2 shadow-xs"
           >
             <span className="material-symbols-outlined text-lg">arrow_back</span>
             <span>{t("Back")}</span>
@@ -71,6 +94,14 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
             <h2 className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white mt-1">{testTitle}</h2>
           </div>
         </div>
+        <button
+          onClick={handleDownloadPdf}
+          disabled={isDownloading}
+          className="print:hidden flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-[var(--navy)] dark:text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-colors border border-slate-200 dark:border-slate-700 shadow-sm disabled:opacity-50 cursor-pointer"
+        >
+          <span className={`material-symbols-outlined text-sm ${isDownloading ? "animate-spin" : ""}`}>{isDownloading ? "refresh" : "download"}</span>
+          {isDownloading ? t("Generating PDF...") : t("Download Report (PDF)")}
+        </button>
       </div>
 
       {error && (
@@ -85,6 +116,10 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
 
       {questions && (
         <>
+          <div className="p-5 md:p-6 rounded-3xl bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 shadow-sm">
+            <ReportSummary attemptId={attemptId} attemptedCount={counts.correct + counts.incorrect} unattemptedCount={counts.unattempted} />
+          </div>
+
           <div className="flex flex-wrap gap-3">
             {(
               [
@@ -107,6 +142,8 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
               </button>
             ))}
           </div>
+
+          <IrtSection attemptId={attemptId} />
 
           <div className="space-y-5">
             {filtered.map((q) => {
@@ -150,7 +187,7 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
                   </div>
 
                   <p className="font-semibold text-sm text-[#00243B] dark:text-white">{q.stemText}</p>
-                  {stemImage && <img src={stemImage.url} alt={stemImage.altText ?? ""} className="max-w-full rounded-xl border border-slate-200 dark:border-slate-700" />}
+                  {stemImage && <QuestionImage url={stemImage.url} altText={stemImage.altText} />}
 
                   {q.options.length > 0 && (
                     <div className="space-y-2">
@@ -170,7 +207,11 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
                             <span className="font-bold">{opt.optionLabel}.</span>
                             <span className="flex-1">
                               {opt.optionText}
-                              {optionImage && <img src={optionImage.url} alt={optionImage.altText ?? ""} className="max-w-[200px] rounded-lg mt-1" />}
+                              {optionImage && (
+                                <div className="max-w-[200px] mt-1">
+                                  <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />
+                                </div>
+                              )}
                             </span>
                             {opt.isCorrect && <span className="material-symbols-outlined text-sm">check_circle</span>}
                             {opt.wasSelected && !opt.isCorrect && <span className="material-symbols-outlined text-sm">cancel</span>}

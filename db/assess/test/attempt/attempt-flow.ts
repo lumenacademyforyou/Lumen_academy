@@ -22,6 +22,7 @@ import { aggregateAttempt, type SectionInput } from "../../scoring/aggregate.js"
 import * as decimal from "../../scoring/decimal.js";
 import type { EvaluatedResponse, PartialMode, QuestionFormat, ScoringRule, ServedQuestion, StudentResponse } from "../../scoring/types.js";
 import { resolveAssetUrl } from "../../../content/asset-resolver.js";
+import { deriveSessionModeFromTestCode } from "../definition/test-code.js";
 
 /**
  * TE-P4 rewrite (LA-BE-ENGINE-001 Section 6). Every function here now goes
@@ -153,6 +154,31 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
     const bulkMarks: string[] = [];
     const bulkNegativeMarks: string[] = [];
 
+    // P0-3 (docs/assessment-tool-fix-prompt.md): the one place both the
+    // BLUEPRINT (assembleForAttempt) and FIXED (assess.test_question) paths
+    // funnel through before the same question_id could ever reach a served
+    // attempt twice — assess.attempt_question's PK is (attempt_id,
+    // question_id), so a duplicate here would otherwise surface as a raw
+    // 23505 failure on the bulk insert below (source: FIXED papers can
+    // legally repeat a question_id across two different sections;
+    // ingestFixedPaper only rejects duplicates within one section, not
+    // across the whole paper — see its own header comment). Deduping here,
+    // once, covers both sources instead of trusting each producer.
+    const seenQuestionIds = new Set<string>();
+    let skippedDuplicates = 0;
+    const pushServedQuestion = (questionId: string, testSectionId: string, sequenceNo: number, marks: string, negativeMarks: string) => {
+      if (seenQuestionIds.has(questionId)) {
+        skippedDuplicates++;
+        return;
+      }
+      seenQuestionIds.add(questionId);
+      bulkQuestionIds.push(questionId);
+      bulkTestSectionIds.push(testSectionId);
+      bulkSequenceNos.push(sequenceNo);
+      bulkMarks.push(marks);
+      bulkNegativeMarks.push(negativeMarks);
+    };
+
     if (test.source_type === "generated") {
       const assembled = await assembleForAttempt(testId, userId);
       await client.query("update assess.attempt set generation_seed = $1 where attempt_id = $2", [assembled.seed, attempt.attempt_id]);
@@ -161,11 +187,7 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
         if (!scheme) throw new ScoringRuleMissingError("(blueprint section)", section.testSectionId);
         let seq = 1;
         for (const questionId of section.questionIds) {
-          bulkQuestionIds.push(questionId);
-          bulkTestSectionIds.push(section.testSectionId);
-          bulkSequenceNos.push(seq);
-          bulkMarks.push(scheme.correct_marks);
-          bulkNegativeMarks.push(scheme.incorrect_marks);
+          pushServedQuestion(questionId, section.testSectionId, seq, scheme.correct_marks, scheme.incorrect_marks);
           seq++;
         }
       }
@@ -181,12 +203,12 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       for (const row of tqRes.rows) {
         const scheme = sectionSchemes.get(row.test_section_id);
         if (!scheme) throw new ScoringRuleMissingError(row.question_id, row.test_section_id);
-        bulkQuestionIds.push(row.question_id);
-        bulkTestSectionIds.push(row.test_section_id);
-        bulkSequenceNos.push(row.sequence_no);
-        bulkMarks.push(row.marks_override ?? scheme.correct_marks);
-        bulkNegativeMarks.push(scheme.incorrect_marks);
+        pushServedQuestion(row.question_id, row.test_section_id, row.sequence_no, row.marks_override ?? scheme.correct_marks, scheme.incorrect_marks);
       }
+    }
+
+    if (skippedDuplicates > 0) {
+      console.warn(`startAttempt: test ${testId} attempted to serve ${skippedDuplicates} duplicate question_id(s) — deduped before persisting attempt ${attempt.attempt_id}.`);
     }
 
     if (bulkQuestionIds.length > 0) {
@@ -733,18 +755,53 @@ export async function appendEvent(attemptId: string, eventType: string, payload?
   return res.rows[0];
 }
 
+export interface SectionScoreWithName extends SectionScoreModel {
+  section_name: string;
+  question_count: number | null;
+}
+
+export interface ScorecardTiming {
+  started_at: string | null;
+  submitted_at: string | null;
+  allotted_minutes: number | null;
+}
+
 // Read-only — scorecard/section_score are produced exclusively by
 // submitAttempt's scoring step above, never written directly by a client.
+// P1-10 (docs/assessment-tool-fix-prompt.md's detailed report — "time taken
+// vs allotted" and a named section-wise breakdown) is why section_name and
+// attempt/test timing were added here rather than left for the frontend to
+// cross-reference against a second call: this is already the one query scoped
+// to exactly this attempt's scorecard, so it's the natural place to also
+// answer "how long did this take, out of how long they had" and "which
+// section is section X" — not a second question-count round trip either
+// (`question_count` here is `assess.test_section.question_count`, the same
+// count is used to know a section's total independent of who attempted what).
 export async function getScorecardWithSections(
   attemptId: string
-): Promise<{ scorecard: ScorecardModel | null; sectionScores: SectionScoreModel[] }> {
+): Promise<{ scorecard: ScorecardModel | null; sectionScores: SectionScoreWithName[]; timing: ScorecardTiming | null }> {
   const scorecardRes = await pool.query<ScorecardModel>("select * from assess.scorecard where attempt_id = $1", [attemptId]);
   const scorecard = scorecardRes.rows[0] ?? null;
-  if (!scorecard) return { scorecard: null, sectionScores: [] };
-  const sectionRes = await pool.query<SectionScoreModel>("select * from assess.section_score where scorecard_id = $1", [
-    scorecard.scorecard_id,
-  ]);
-  return { scorecard, sectionScores: sectionRes.rows };
+  if (!scorecard) return { scorecard: null, sectionScores: [], timing: null };
+
+  const sectionRes = await pool.query<SectionScoreWithName>(
+    `select ss.*, ts.section_name, ts.question_count
+       from assess.section_score ss
+       join assess.test_section ts on ts.test_section_id = ss.test_section_id
+      where ss.scorecard_id = $1
+      order by ts.sequence_no`,
+    [scorecard.scorecard_id]
+  );
+
+  const timingRes = await pool.query<ScorecardTiming>(
+    `select a.started_at, a.submitted_at, t.duration_minutes as allotted_minutes
+       from assess.attempt a
+       join assess.test t on t.test_id = a.test_id
+      where a.attempt_id = $1`,
+    [attemptId]
+  );
+
+  return { scorecard, sectionScores: sectionRes.rows, timing: timingRes.rows[0] ?? null };
 }
 
 // ---------------------------------------------------------------------------
@@ -978,7 +1035,15 @@ export async function getReview(attemptId: string, userId: string): Promise<Revi
 export interface AttemptSummary {
   attemptId: string;
   testId: string;
+  testCode: string;
   testTitle: string;
+  // P1-11 (docs/assessment-tool-fix-prompt.md's "View results" list) — same
+  // derivation dashboard.ts/envelope.ts already use elsewhere; test_mode
+  // itself is never populated (createPracticeTest never passes it through
+  // to createTest), so the test_code's own TEST_TYPE segment is the one
+  // reliable source, not a DB column.
+  mode: "subject-wise" | "full-mock" | "custom";
+  durationMinutes: number | null;
   attemptNo: number;
   attemptState: string;
   startedAt: string | null;
@@ -992,7 +1057,9 @@ export async function listAttempts(userId: string, testId?: string): Promise<Att
   const res = await pool.query<{
     attempt_id: string;
     test_id: string;
+    test_code: string;
     test_title: string;
+    duration_minutes: number | null;
     attempt_no: number;
     attempt_state: string;
     started_at: string | null;
@@ -1000,7 +1067,7 @@ export async function listAttempts(userId: string, testId?: string): Promise<Att
     obtained_marks: string | null;
     total_marks: string | null;
   }>(
-    `select a.attempt_id, a.test_id, t.title as test_title, a.attempt_no, a.attempt_state,
+    `select a.attempt_id, a.test_id, t.test_code, t.title as test_title, t.duration_minutes, a.attempt_no, a.attempt_state,
             a.started_at, a.submitted_at, sc.obtained_marks, sc.total_marks
        from assess.attempt a
        join assess.test t on t.test_id = a.test_id
@@ -1013,7 +1080,10 @@ export async function listAttempts(userId: string, testId?: string): Promise<Att
   return res.rows.map((r) => ({
     attemptId: r.attempt_id,
     testId: r.test_id,
+    testCode: r.test_code,
     testTitle: r.test_title,
+    mode: deriveSessionModeFromTestCode(r.test_code),
+    durationMinutes: r.duration_minutes,
     attemptNo: r.attempt_no,
     attemptState: r.attempt_state,
     startedAt: r.started_at,

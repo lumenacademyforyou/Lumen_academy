@@ -13,6 +13,7 @@ import {
   QuestionNotInAttemptError,
   InvalidNumericAnswerError,
   ScoringRuleMissingError,
+  ReviewNotAvailableError,
 } from "../../../db/shared/errors.js";
 
 export class AppError extends Error {
@@ -42,6 +43,12 @@ const DB_ERROR_STATUS: [new (...args: never[]) => Error, { status: number; code:
   [IdempotencyConflictError, { status: 409, code: "IDEMPOTENCY_CONFLICT" }],
   [QuestionNotInAttemptError, { status: 422, code: "QUESTION_NOT_IN_ATTEMPT" }],
   [InvalidNumericAnswerError, { status: 422, code: "INVALID_NUMERIC_ANSWER" }],
+  // Real pre-existing gap found while wiring P1-7's IRT endpoint (same
+  // "attempt exists but isn't scored yet" precondition getReview already
+  // enforces): this was thrown but never mapped, so it fell through to a
+  // generic 500 instead of a real "not ready yet" 409 — same status class
+  // as InvalidStateTransitionError above, for the same reason.
+  [ReviewNotAvailableError, { status: 409, code: "REVIEW_NOT_AVAILABLE" }],
 ];
 
 // Postgres SQLSTATE codes for malformed/missing request input that never

@@ -1,5 +1,15 @@
 import { apiFetch } from "./api";
-import type { AttemptEnvelope, AttemptSummary, CreateSessionRequest, ReviewQuestion, Scorecard, SessionResult } from "../types";
+import type {
+  AttemptEnvelope,
+  AttemptSummary,
+  CreateSessionRequest,
+  ReviewQuestion,
+  Scorecard,
+  SessionResult,
+  IrtReport,
+  DetailedScorecardResponse,
+  CohortComparison,
+} from "../types";
 
 // LA-APP-COMPLETION-001 Phase D — the real session/attempt lifecycle client.
 // Replaces services/testApi.ts (legacy Prisma /tests/*) and the older
@@ -73,6 +83,24 @@ export async function getAttemptReview(attemptId: string): Promise<ReviewQuestio
   return res.data;
 }
 
+// P1-7 — real IRT ability estimate for a scored attempt (db/assess/analytics/irt.ts).
+export async function getAttemptIrtReport(attemptId: string): Promise<IrtReport> {
+  const res = await apiFetch<{ data: IrtReport }>(`/assess/attempts/${attemptId}/irt`);
+  return res.data;
+}
+
+// P1-10 — detailed report: overall score/accuracy, section-wise breakdown, time taken vs allotted.
+export async function getAttemptScorecardDetail(attemptId: string): Promise<DetailedScorecardResponse> {
+  const res = await apiFetch<{ data: DetailedScorecardResponse }>(`/assess/attempts/${attemptId}/scorecard`);
+  return res.data;
+}
+
+// P1-10 — comparison against the cohort average (same test shape, see db/assess/analytics/dashboard.ts).
+export async function getAttemptCohortComparison(attemptId: string): Promise<CohortComparison | null> {
+  const res = await apiFetch<{ data: CohortComparison | null }>(`/assess/attempts/${attemptId}/cohort`);
+  return res.data;
+}
+
 // Phase E (E1/E4) — reload/re-login survival. Finds the caller's most recent
 // in-progress-or-paused attempt (if any), resumes it server-side if it was
 // paused, and returns a ready-to-render SessionResult built entirely from
@@ -89,4 +117,13 @@ export async function getActiveSession(): Promise<SessionResult | null> {
   }
   const envelope = await getEnvelope(active.attemptId);
   return { ...envelope, testId: envelope.test.testId };
+}
+
+// P1-11 — "View results": every attempt the caller has ever made, any
+// state, most recent first. Same GET /assess/attempts getActiveSession
+// already calls; this just returns the whole list instead of filtering
+// down to the one resumable attempt.
+export async function listMyAttempts(): Promise<AttemptSummary[]> {
+  const res = await apiFetch<{ data: AttemptSummary[] }>("/assess/attempts");
+  return res.data;
 }

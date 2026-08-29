@@ -19,6 +19,8 @@ import {
   pauseAttempt,
   resumeAttempt,
   getReviewHandler,
+  getIrtReportHandler,
+  getCohortComparisonHandler,
   listOwnAttempts,
 } from "../controllers/attemptFlowController.js";
 import { createPracticeTest } from "../../../db/assess/test/definition/create-practice-test.js";
@@ -64,6 +66,8 @@ attemptsRouter.get("/:attemptId/envelope", requireAttemptOwnership(), getEnvelop
 attemptsRouter.post("/:attemptId/pause", requireAttemptOwnership(), pauseAttempt);
 attemptsRouter.post("/:attemptId/resume", requireAttemptOwnership(), resumeAttempt);
 attemptsRouter.get("/:attemptId/review", requireAttemptOwnership(), getReviewHandler);
+attemptsRouter.get("/:attemptId/irt", requireAttemptOwnership(), getIrtReportHandler);
+attemptsRouter.get("/:attemptId/cohort", requireAttemptOwnership(), getCohortComparisonHandler);
 
 router.use("/attempts", attemptsRouter);
 

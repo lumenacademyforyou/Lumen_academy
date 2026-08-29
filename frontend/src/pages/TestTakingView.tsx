@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import LumenLogo from "../components/ui/LumenLogo";
+import QuestionImage from "../components/ui/QuestionImage";
 import Modal from "../components/layout/Modal";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -310,7 +311,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
 
               {stemImage && (
                 <div className="mb-6">
-                  <img src={stemImage.url} alt={stemImage.altText ?? ""} className="max-w-full rounded-xl border border-slate-200 dark:border-slate-700" />
+                  <QuestionImage url={stemImage.url} altText={stemImage.altText} />
                 </div>
               )}
 
@@ -338,7 +339,11 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                       <div className="flex flex-col gap-1">
                         <span>{option.optionText}</span>
                         {language === "ta" && option.optionTextTa && <span className="text-[var(--teal)] dark:text-[#FCB824] opacity-90 text-sm">{option.optionTextTa}</span>}
-                        {optionImage && <img src={optionImage.url} alt={optionImage.altText ?? ""} className="max-w-[220px] rounded-lg border border-slate-200 dark:border-slate-700 mt-1" />}
+                        {optionImage && (
+                          <div className="max-w-[220px] mt-1">
+                            <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />
+                          </div>
+                        )}
                       </div>
                     </button>
                   );

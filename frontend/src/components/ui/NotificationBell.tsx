@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { MeProfile, getMissingProfileFields } from "../../services/meApi";
-import { Notification, fetchNotifications, markAllNotificationsRead } from "../../services/notificationsApi";
+import {
+  Notification,
+  fetchNotifications,
+  markAllNotificationsRead,
+  markNotificationRead,
+  clearNotification,
+  clearAllNotifications,
+} from "../../services/notificationsApi";
 
 interface NotificationBellProps {
   profile: MeProfile | null;
@@ -45,13 +52,58 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
   const unreadCount = notifications.filter((n) => !n.read_at).length;
   const hasAnything = hasIncompleteProfile || notifications.length > 0;
 
+  // P0-5 (docs/assessment-tool-fix-prompt.md): every mutation here is
+  // optimistic-with-rollback — update local state immediately (so the badge
+  // count and list reflect the action with no perceptible delay), then
+  // revert to the pre-action snapshot if the server call actually fails,
+  // rather than leaving the UI showing a state the DB never agreed to.
+
   const handleMarkAllRead = async () => {
     if (unreadCount === 0) return;
+    const previous = notifications;
+    setNotifications((prev) => prev.map((n) => ({ ...n, read_at: n.read_at ?? new Date().toISOString() })));
     try {
       await markAllNotificationsRead();
-      setNotifications((prev) => prev.map((n) => ({ ...n, read_at: n.read_at ?? new Date().toISOString() })));
     } catch (err) {
       console.error("Failed to mark notifications read:", err);
+      setNotifications(previous);
+    }
+  };
+
+  const handleMarkOneRead = async (notificationId: string) => {
+    const target = notifications.find((n) => n.notification_id === notificationId);
+    if (!target || target.read_at) return;
+    const previous = notifications;
+    setNotifications((prev) => prev.map((n) => (n.notification_id === notificationId ? { ...n, read_at: new Date().toISOString() } : n)));
+    try {
+      await markNotificationRead(notificationId);
+    } catch (err) {
+      console.error("Failed to mark notification read:", err);
+      setNotifications(previous);
+    }
+  };
+
+  const handleClearOne = async (e: React.MouseEvent, notificationId: string) => {
+    e.stopPropagation();
+    const previous = notifications;
+    setNotifications((prev) => prev.filter((n) => n.notification_id !== notificationId));
+    try {
+      await clearNotification(notificationId);
+    } catch (err) {
+      console.error("Failed to clear notification:", err);
+      setNotifications(previous);
+    }
+  };
+
+  const handleClearAll = async () => {
+    if (notifications.length === 0) return;
+    const previous = notifications;
+    setNotifications([]);
+    try {
+      await clearAllNotifications();
+    } catch (err) {
+      console.error("Failed to clear notifications:", err);
+      setNotifications(previous);
     }
   };
 
@@ -86,6 +138,14 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
                     {t("Mark all read")}
                   </span>
                 )}
+                {notifications.length > 0 && (
+                  <span
+                    className="text-xs text-rose-500 dark:text-rose-400 font-semibold cursor-pointer hover:underline"
+                    onClick={handleClearAll}
+                  >
+                    {t("Clear all")}
+                  </span>
+                )}
                 <span
                   className="text-xs text-slate-400 font-semibold cursor-pointer hover:underline"
                   onClick={() => setIsOpen(false)}
@@ -117,16 +177,30 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
                 {notifications.map((n) => (
                   <div
                     key={n.notification_id}
-                    className={`p-2.5 rounded-xl text-xs transition-colors border-l-2 ${
-                      n.read_at ? "border-slate-200 dark:border-slate-700" : "border-[var(--teal)] dark:border-[#FCB824]"
+                    onClick={() => handleMarkOneRead(n.notification_id)}
+                    className={`group p-2.5 rounded-xl text-xs transition-colors border-l-2 flex items-start justify-between gap-2 ${
+                      n.read_at
+                        ? "border-slate-200 dark:border-slate-700"
+                        : "border-[var(--teal)] dark:border-[#FCB824] cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/60"
                     }`}
                   >
-                    <p className="font-semibold text-[#00243B] dark:text-white">
-                      {n.payload?.title || n.template_key || t("Notification")}
-                    </p>
-                    {n.payload?.body && (
-                      <p className="text-slate-500 dark:text-slate-400 mt-0.5">{n.payload.body}</p>
-                    )}
+                    <div className="min-w-0">
+                      <p className="font-semibold text-[#00243B] dark:text-white">
+                        {n.payload?.title || n.template_key || t("Notification")}
+                      </p>
+                      {n.payload?.body && (
+                        <p className="text-slate-500 dark:text-slate-400 mt-0.5">{n.payload.body}</p>
+                      )}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={(e) => handleClearOne(e, n.notification_id)}
+                      className="shrink-0 opacity-0 group-hover:opacity-100 text-slate-300 hover:text-rose-500 dark:text-slate-600 dark:hover:text-rose-400 transition-opacity cursor-pointer"
+                      title={t("Clear")}
+                      aria-label={t("Clear")}
+                    >
+                      <span className="material-symbols-outlined text-sm">close</span>
+                    </button>
                   </div>
                 ))}
               </div>

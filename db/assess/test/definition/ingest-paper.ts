@@ -70,9 +70,27 @@ export async function ingestFixedPaper(input: IngestFixedPaperInput): Promise<{ 
     const candidateById = new Map(candidateRes.rows.map((r) => [r.question_id, r]));
 
     const itemErrors: { testSectionId: string; questionId: string; reason: string }[] = [];
+    // P0-3 (docs/assessment-tool-fix-prompt.md): assess.test_question's
+    // unique constraint is (test_section_id, question_id) — scoped to one
+    // section — so the same question_id repeated across two DIFFERENT
+    // sections of this same paper would insert cleanly and reach a student
+    // twice within one attempt. Caught here, across the whole payload, not
+    // just within a single section.
+    const firstSeenAt = new Map<string, string>(); // question_id -> first testSectionId it appeared in
     for (const section of input.sections) {
       const subjectId = subjectIdBySection.get(section.testSectionId);
       section.questionIds.forEach((questionId, index) => {
+        const priorSectionId = firstSeenAt.get(questionId);
+        if (priorSectionId !== undefined) {
+          itemErrors.push({
+            testSectionId: section.testSectionId,
+            questionId,
+            reason: `question ${questionId} is repeated within this paper (already used in section ${priorSectionId}) — a question may only appear once per test`,
+          });
+          return;
+        }
+        firstSeenAt.set(questionId, section.testSectionId);
+
         const candidate = candidateById.get(questionId);
         if (!candidate) {
           itemErrors.push({ testSectionId: section.testSectionId, questionId, reason: `question ${questionId} does not exist (item ${index + 1})` });

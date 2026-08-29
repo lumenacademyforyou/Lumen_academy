@@ -1,19 +1,27 @@
 
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
-import { TestAttempt } from "../types";
+import { TestAttempt, CatalogTree, SessionResult, UnitAccuracy } from "../types";
 import { LearningPathTimeline } from "../components/ui/dashboard/LearningPathTimeline";
 import { PomodoroTimer } from "../components/ui/dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../components/ui/dashboard/DailyFlashcard";
 import { fetchStudySessions, calculateStudyStreak } from "../services/studySessionService";
 import { supabase } from "../services/supabase";
 import { fetchMe, MeProfile } from "../services/meApi";
+import { createSession } from "../services/sessionApi";
+import { ApiError } from "../services/api";
 import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
-import AttemptReviewView from "./AttemptReviewView";
+// P2-13: this view now pulls in recharts + jsPDF/html2canvas (IrtSection,
+// ReportSummary, PDF export) — code-split so DashboardView's own chunk (the
+// very first thing loaded post-login) doesn't carry that weight for every
+// user who never opens a detailed report.
+const AttemptReviewView = lazy(() => import("./AttemptReviewView"));
+import { pluralize } from "../utils/pluralize";
+import { getMotivationalMessage } from "../utils/motivationalMessage";
 
 const SUBJECT_STYLE: Record<string, { icon: string; color: string; label: string }> = {
   PHY: { icon: "bolt", color: "#f59e0b", label: "Physics" },
@@ -31,9 +39,14 @@ interface DashboardViewProps {
   // used to make that badge (and the achievements empty-state) fire for
   // every user regardless of whether they had ever finished a test.
   attemptsCount: number;
+  // P1-8: needed to resolve a weakest-unit's real subjectId (analytics only
+  // carries subjectCode) so "Start unit test" can launch a real session
+  // scoped to that exact unit, not just switch to the generic test list.
+  catalogTree: CatalogTree | null;
+  onSessionCreated: (session: SessionResult) => void;
 }
 
-export default function DashboardView({ attempt, studentName, onTakeTest, attemptsCount }: DashboardViewProps) {
+export default function DashboardView({ attempt, studentName, onTakeTest, attemptsCount, catalogTree, onSessionCreated }: DashboardViewProps) {
   const [profileIncomplete, setProfileIncomplete] = useState(false);
   const { t } = useLanguage();
   const [animatedScore, setAnimatedScore] = useState(0);
@@ -60,6 +73,43 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
     setDailyStudyGoal(tempStudyGoal);
     localStorage.setItem("lumen_daily_study_goal", tempStudyGoal);
     setIsEditingGoal(false);
+  };
+
+  // P1-8: launches a real session scoped to exactly this weakest unit
+  // (subjectId + syllabusNodeId), not a hand-off to the generic test
+  // directory — the whole point of "routes directly into that unit's test".
+  const [startingUnitNodeId, setStartingUnitNodeId] = useState<string | null>(null);
+  const [unitStartError, setUnitStartError] = useState<string | null>(null);
+  const handleStartUnitTest = async (unit: UnitAccuracy) => {
+    const subject = catalogTree?.subjects.find((s) => s.subjectCode === unit.subjectCode);
+    if (!subject) {
+      setUnitStartError(`No published content found for ${unit.subjectCode} yet.`);
+      return;
+    }
+    setUnitStartError(null);
+    setStartingUnitNodeId(unit.nodeId);
+    try {
+      const session = await createSession({
+        mode: "subject-wise",
+        title: `${unit.unitTitle} - Unit Practice Test`,
+        durationMinutes: 30,
+        subjectId: subject.subjectId,
+        syllabusNodeId: unit.nodeId,
+        includeDescendants: true,
+        pickCount: 20,
+      });
+      onSessionCreated(session);
+    } catch (err) {
+      setUnitStartError(
+        err instanceof ApiError && err.code === "POOL_INSUFFICIENT"
+          ? `Not enough published questions for ${unit.unitTitle} yet (${err.message}).`
+          : err instanceof Error
+            ? err.message
+            : "Could not start this unit's test."
+      );
+    } finally {
+      setStartingUnitNodeId(null);
+    }
   };
 useEffect(() => {
   let isMounted = true;
@@ -161,8 +211,28 @@ useEffect(() => {
   // a specific, real attemptId instead.
   if (selectedAttemptId) {
     const historyEntry = analytics?.attemptHistory.find((a) => a.attemptId === selectedAttemptId);
-    return <AttemptReviewView attemptId={selectedAttemptId} testTitle={historyEntry?.testTitle ?? attempt.title} onBack={() => setSelectedAttemptId(null)} />;
+    return (
+      <Suspense fallback={<div className="p-10 text-center text-sm text-slate-400 font-semibold">{t("Loading...")}</div>}>
+        <AttemptReviewView attemptId={selectedAttemptId} testTitle={historyEntry?.testTitle ?? attempt.title} onBack={() => setSelectedAttemptId(null)} />
+      </Suspense>
+    );
   }
+
+  // P1-15: attemptHistory is most-recent-first (Phase G), so [0] is the
+  // just-taken attempt this hero is already showing and [1] is the one
+  // before it — real improvement, not a guess.
+  const previousAccuracyPercent = analytics && analytics.attemptHistory.length > 1 ? Number(analytics.attemptHistory[1].accuracyPercent) : null;
+  const motivational = hasRealAttempt
+    ? getMotivationalMessage({
+        studentName,
+        accuracyPercent: attempt.accuracy,
+        attemptsCount,
+        previousAccuracyPercent,
+        studyStreakDays: studyStreak,
+        weakestUnitTitle: analytics && analytics.weakestUnits.length > 0 ? analytics.weakestUnits[0].unitTitle : null,
+        variationSeed: attemptsCount,
+      })
+    : null;
 
   return (
     <div className="space-y-12 max-w-[1280px] mx-auto animate-in fade-in duration-500">
@@ -183,12 +253,13 @@ useEffect(() => {
                 <span>{t("Journey to 720 starts here")}</span>
               </span>
             </div>
-            {hasRealAttempt ? (
+            {hasRealAttempt && motivational ? (
               <>
                 <h1 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tight mb-4 leading-none">
-                  Great work, {studentName}!
+                  {motivational.headline}
                 </h1>
                 <p className="text-blue-100 text-base md:text-lg font-normal max-w-xl opacity-90 leading-relaxed mx-auto lg:mx-0">{t("You scored")}<span className="font-bold text-white"> {attempt.totalScore} {t("marks")}</span>{t(" in ")}<span className="text-white font-semibold">{attempt.title}</span>{t(", with ")}<span className="font-bold text-white">{attempt.accuracy}{t("% accuracy")}</span>.</p>
+                <p className="text-[#FCB824] text-sm md:text-base font-semibold mt-2 opacity-95">{motivational.nextStep}</p>
               </>
             ) : (
               <>
@@ -196,6 +267,13 @@ useEffect(() => {
                   Start your journey, {studentName}!
                 </h1>
                 <p className="text-blue-100 text-base md:text-lg font-normal max-w-xl opacity-90 leading-relaxed mx-auto lg:mx-0">{t("Take your first mock test to unlock your scorecard, accuracy trends, and a personalised NEET prep plan.")}</p>
+                <button
+                  onClick={onTakeTest}
+                  className="mt-6 bg-[#fde047] text-[var(--teal)] hover:bg-[#facc15] px-8 py-3.5 rounded-2xl font-bold text-xs tracking-wider uppercase hover:scale-105 active:scale-95 transition-all shadow-xl cursor-pointer inline-flex items-center gap-2"
+                >
+                  {t("Take Your First Test")}
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
               </>
             )}
             
@@ -219,8 +297,8 @@ useEffect(() => {
                   <span className="material-symbols-outlined text-[14px]">local_fire_department</span>
                   {t("STUDY STREAK")}
                 </span>
-                <span className="text-white text-2xl md:text-3xl font-bold font-sans">
-                  <AnimatedCounter value={studyStreak} /><span className="text-base ml-1 font-normal text-white/70">{t("Days")}</span>
+                <span className="text-white text-2xl md:text-3xl font-bold font-sans flex items-baseline gap-1.5">
+                  <AnimatedCounter value={studyStreak} /><span className="text-base font-normal text-white/70">{t(pluralize(studyStreak, "Day", "Days"))}</span>
                 </span>
               </div>
             </div>
@@ -662,28 +740,43 @@ useEffect(() => {
           </div>
         </div>
 
+        {unitStartError && (
+          <div className="p-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-400 text-xs font-semibold">{unitStartError}</div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* P1-8: each card is its own direct link into that unit's test —
+              "Start unit test" launches a real session scoped to exactly
+              this subject + syllabus node, not a hand-off to the generic
+              test directory. */}
           {analytics.weakestUnits.map((u) => (
-            <div key={u.nodeId} className="p-5 bg-slate-50 dark:bg-slate-900/40 rounded-2xl border border-amber-200 dark:border-amber-950 space-y-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-[#FCB824] px-2.5 py-0.5 rounded-full border border-[#FCB824] dark:border-amber-800">
-                {u.subjectCode} • {u.tagCode}
-              </span>
-              <h5 className="font-bold text-sm text-[#00243B] dark:text-white">{u.unitTitle}</h5>
-              <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
-                <span>{u.correct}✓ / {u.incorrect}✗ / {u.unattempted} {t("skipped")}</span>
-                <span className="text-rose-600 dark:text-rose-400 font-bold">{u.accuracyPercent}%</span>
+            <div key={u.nodeId} className="p-5 bg-slate-50 dark:bg-slate-900/40 rounded-2xl border border-amber-200 dark:border-amber-950 space-y-2.5 flex flex-col justify-between">
+              <div className="space-y-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-[#FCB824] px-2.5 py-0.5 rounded-full border border-[#FCB824] dark:border-amber-800">
+                  {u.subjectCode} • {u.tagCode}
+                </span>
+                <h5 className="font-bold text-sm text-[#00243B] dark:text-white">{u.unitTitle}</h5>
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
+                  <span>{u.correct}✓ / {u.incorrect}✗ / {u.unattempted} {t("skipped")}</span>
+                  <span className="text-rose-600 dark:text-rose-400 font-bold">{u.accuracyPercent}% {t("accuracy")}</span>
+                </div>
               </div>
+              <button
+                onClick={() => handleStartUnitTest(u)}
+                disabled={startingUnitNodeId !== null}
+                className="w-full py-2.5 mt-1 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer flex items-center justify-center gap-1.5"
+              >
+                {startingUnitNodeId === u.nodeId ? (
+                  t("Starting...")
+                ) : (
+                  <>
+                    {t("Start Unit Test")}
+                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  </>
+                )}
+              </button>
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-end pt-2">
-          <button
-            onClick={onTakeTest}
-            className="bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] px-8 py-3.5 rounded-2xl font-bold text-xs tracking-wider flex items-center gap-2 shadow-lg hover:scale-[1.02] active:scale-95 transition-all cursor-pointer uppercase"
-          >
-            {t("PRACTICE THESE UNITS")}<span className="material-symbols-outlined text-sm">arrow_forward</span>
-          </button>
         </div>
       </div>
       )}

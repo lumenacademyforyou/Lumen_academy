@@ -8,46 +8,52 @@ interface EvaluatingViewProps {
   attempt?: TestAttempt;
 }
 
+// P2-13 (docs/assessment-tool-fix-prompt.md): this screen used to run a
+// random-increment progress simulation with NO relation to any real work —
+// by the time EvaluatingView mounts, App.tsx's handleSessionComplete has
+// already received the real, server-scored Scorecard (submitAttempt
+// finished before this component ever renders); nothing is actually being
+// "evaluated" here. That random simulation could take anywhere from ~2s to
+// ~7s+ depending on Math.random() luck, then bolted on a flat extra 2s no
+// matter what — exactly the "blocking on computation with no fixed end"
+// complaint. Replaced with a fixed, deterministic ANIMATION_MS duration
+// (elapsed-time-based, not random-increment-based) capped at the item's own
+// 2s ceiling, transitioning immediately once it completes — never longer,
+// never shorter, never looping.
+const ANIMATION_MS = 1500;
+
 export default function EvaluatingView({ onEvaluationComplete, attempt }: EvaluatingViewProps) {
   const { t, language } = useLanguage();
   const [progress, setProgress] = useState(0);
-  const [phaseIndex, setPhaseIndex] = useState(0);
 
   const phases = [
-    { limit: 30, status: t("Evaluating your test..."), sub: t("Analyzing accuracy metrics") },
-    { limit: 65, status: t("Generating deep insights..."), sub: t("Preparing report for NEET Biology Mini-Mock #12") },
-    { limit: 90, status: t("Almost there..."), sub: t("Mapping progress to Biology, Chemistry & Physics") },
-    { limit: 100, status: t("Analysis Complete!"), sub: t("Redirecting to your scorecard") }
+    { atFraction: 0, status: t("Evaluating your test..."), sub: t("Analyzing accuracy metrics") },
+    { atFraction: 0.4, status: t("Generating deep insights..."), sub: attempt ? attempt.title : t("Preparing your report") },
+    { atFraction: 0.75, status: t("Almost there..."), sub: t("Preparing your scorecard") },
+    { atFraction: 1, status: t("Analysis Complete!"), sub: t("Redirecting to your scorecard") },
   ];
+  const phaseIndex = phases.reduce((acc, p, idx) => (progress / 100 >= p.atFraction ? idx : acc), 0);
 
   useEffect(() => {
-    // Run the loading simulation from 0% to 100%
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        const increment = Math.random() * 6 + 2;
-        const nextProgress = Math.min(prev + increment, 100);
+    const startedAt = performance.now();
+    let frameId: number;
 
-        if (nextProgress >= 100) {
-          clearInterval(interval);
-          // Small delay before transition to make it feel polished
-          setTimeout(() => {
-            onEvaluationComplete();
-          }, 2000); // Increased delay slightly so user has a chance to download or read
-          return 100;
-        }
+    const tick = () => {
+      const elapsed = performance.now() - startedAt;
+      const nextProgress = Math.min(100, (elapsed / ANIMATION_MS) * 100);
+      setProgress(nextProgress);
 
-        // Determine current status phase
-        const matchingPhaseIdx = phases.findIndex((p) => nextProgress < p.limit);
-        if (matchingPhaseIdx !== -1 && matchingPhaseIdx !== phaseIndex) {
-          setPhaseIndex(matchingPhaseIdx);
-        }
+      if (elapsed >= ANIMATION_MS) {
+        onEvaluationComplete();
+        return;
+      }
+      frameId = requestAnimationFrame(tick);
+    };
 
-        return nextProgress;
-      });
-    }, 150); // Slightly slower to give time
-
-    return () => clearInterval(interval);
-  }, [phaseIndex, onEvaluationComplete]);
+    frameId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleDownloadSummary = () => {
     if (!attempt) return;

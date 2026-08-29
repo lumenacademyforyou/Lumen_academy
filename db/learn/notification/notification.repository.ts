@@ -29,6 +29,7 @@ export interface NotificationRepository {
   remove(id: NotificationId): Promise<void>;
   findByUser(userId: string): Promise<NotificationModel[]>;
   markAllRead(userId: string): Promise<void>;
+  clearAll(userId: string): Promise<void>;
 }
 
 // No generic "list mine" helper exists in repository-helpers.ts yet — every
@@ -49,6 +50,13 @@ async function findByUser(userId: string): Promise<NotificationModel[]> {
 
 async function markAllRead(userId: string): Promise<void> {
   await pool.query(`update learn.notification set read_at = now() where user_id = $1 and read_at is null`, [userId]);
+}
+
+// P0-5 (docs/assessment-tool-fix-prompt.md) — "Clear all": a real delete,
+// scoped to the caller's own rows, not a soft-dismiss flag (this table has
+// none to set).
+async function clearAll(userId: string): Promise<void> {
+  await pool.query(`delete from learn.notification where user_id = $1`, [userId]);
 }
 
 /**
@@ -82,4 +90,4 @@ async function remove(id: NotificationId): Promise<void> {
   return deleteByIdImpl(SPEC, { notification_id: id });
 }
 
-export const notificationRepository: NotificationRepository = { findById, create, update, remove, findByUser, markAllRead };
+export const notificationRepository: NotificationRepository = { findById, create, update, remove, findByUser, markAllRead, clearAll };

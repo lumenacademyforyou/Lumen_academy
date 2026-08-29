@@ -61,6 +61,19 @@ function generateSeed(): string {
  * once those run out, previously-seen questions fill the rest, oldest
  * last_seen_at first (true least-recently-seen), only reached when the
  * unseen pool for this blueprint line is exhausted.
+ *
+ * P0-3 (docs/assessment-tool-fix-prompt.md): content.question_node_map's PK
+ * is (question_id, node_id), not (question_id) — a question CAN legally be
+ * tagged to more than one syllabus_node (the current import pipeline only
+ * ever writes one row per question via a DB trigger, but nothing enforces
+ * that as an invariant). Without the "group by q.question_id" below, a
+ * question tagged to two nodes both matching this blueprint line's scope
+ * would join into two candidate rows and could be picked twice — the exact
+ * "de-duplicated at the point of paper generation" defect this item calls
+ * out. Aggregating collapses that fan-out before ORDER BY/LIMIT ever see it;
+ * the left-joined user_question_seen row is already at most one per
+ * question_id, so bool_or/min are just how you carry a single-row value
+ * through a GROUP BY, not a real aggregation.
  */
 const CANDIDATE_POOL_SQL = `
   select bp.blueprint_id, bp.test_section_id, bp.pick_count, picked.question_id
@@ -83,10 +96,11 @@ const CANDIDATE_POOL_SQL = `
              )
          and (bp.difficulty_band is null or q.difficulty_band = bp.difficulty_band)
          and (bp.question_format is null or q.question_type = bp.question_format)
+       group by q.question_id
        order by
-         (s.question_id is not null),
-         case when s.question_id is null then md5(q.question_id::text || $3::text) end,
-         s.last_seen_at
+         bool_or(s.question_id is not null),
+         case when bool_or(s.question_id is not null) = false then md5(q.question_id::text || $3::text) end,
+         min(s.last_seen_at)
        limit bp.pick_count
     ) picked
    where bp.test_id = $1
@@ -124,7 +138,7 @@ export async function assembleForAttempt(testId: string, userId: string, seed?: 
       // deprioritizes seen questions rather than excluding them, "available"
       // is the raw filtered pool size, regardless of exposure history.
       const availableRes = await pool.query<{ available: string }>(
-        `select count(*) as available
+        `select count(distinct q.question_id) as available
            from content.question q
            join content.question_node_map qnm on qnm.question_id = q.question_id
            join catalog.syllabus_node sn on sn.node_id = qnm.node_id

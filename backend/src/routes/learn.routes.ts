@@ -66,6 +66,18 @@ notificationsListRouter.patch("/read-all", async (req: Request, res: Response, n
     next(err);
   }
 });
+// P0-5: "Clear all" — a bare DELETE / (no id), same reason it's registered
+// here rather than on the generic makeOwnedCrudRouter below: that router
+// only ever defines DELETE /:id, so this doesn't shadow anything, but it
+// must still come first for consistency with read-all above.
+notificationsListRouter.delete("/", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    await notificationRepository.clearAll(req.user!.appUserId);
+    res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+});
 router.use("/notifications", notificationsListRouter);
 router.use("/notifications", makeOwnedCrudRouter(notificationRepository, "user_id"));
 

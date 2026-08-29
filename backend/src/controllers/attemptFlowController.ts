@@ -17,6 +17,8 @@ import {
   type BatchResponseItem,
 } from "../../../db/assess/test/attempt/attempt-flow.js";
 import { getAttemptEnvelope } from "../../../db/assess/test/attempt/envelope.js";
+import { getIrtReportForAttempt } from "../../../db/assess/analytics/irt.js";
+import { getCohortComparison } from "../../../db/assess/analytics/dashboard.js";
 
 // Real (non-mock) attempt lifecycle, backed by db/assess/test/attempt/attempt-flow.ts.
 // Separate from the legacy mock attemptController.submitAttempt (still mounted
@@ -132,12 +134,12 @@ export async function getPaper(req: Request, res: Response, next: NextFunction):
 
 export async function getScorecard(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    const { scorecard, sectionScores } = await getScorecardWithSections(req.params.attemptId);
+    const { scorecard, sectionScores, timing } = await getScorecardWithSections(req.params.attemptId);
     if (!scorecard) {
       next(new AppError(404, "NOT_FOUND", "This attempt has not been scored yet."));
       return;
     }
-    res.json({ data: { scorecard, sectionScores } });
+    res.json({ data: { scorecard, sectionScores, timing } });
   } catch (err) {
     next(err);
   }
@@ -181,6 +183,30 @@ export async function resumeAttempt(req: Request, res: Response, next: NextFunct
 export async function getReviewHandler(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     res.json({ data: await getReview(req.params.attemptId, req.user!.appUserId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+// P1-7: real IRT ability estimate for one scored attempt (see
+// db/assess/analytics/irt.ts). Same auth/ownership discipline as review —
+// requireAttemptOwnership() below plus the function's own NotFoundError
+// check.
+export async function getIrtReportHandler(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    res.json({ data: await getIrtReportForAttempt(req.user!.appUserId, req.params.attemptId) });
+  } catch (err) {
+    next(err);
+  }
+}
+
+// P1-10: "comparison ... against the cohort average" — real ownership check
+// via requireAttemptOwnership() on the route (same as every other
+// :attemptId sub-route here); getCohortComparison itself only reads
+// aggregate scorecard rows, never another student's individual attempt.
+export async function getCohortComparisonHandler(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    res.json({ data: await getCohortComparison(req.params.attemptId) });
   } catch (err) {
     next(err);
   }
