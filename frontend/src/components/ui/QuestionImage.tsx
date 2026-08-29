@@ -40,11 +40,23 @@ export default function QuestionImage({ url, altText, className = "", maxHeightP
 
       {/* Kept mounted (not removed) while loading/erroring so onLoad/onError
           still fire for a URL that eventually resolves; just visually hidden
-          until it does. */}
+          until it does.
+          No loading="lazy" here — a real, confirmed live bug (found via a
+          browser diagnostic, not guessed): this element is display:none
+          (via the "hidden" class below) until `status` flips to "loaded",
+          and a display:none element has no layout box, so the browser's
+          native lazy-loading can never observe it as "near the viewport" to
+          start fetching it in the first place. The two mechanisms deadlock
+          — the image needs to load to become visible, but needs geometry
+          (i.e. to already be visible) for lazy-loading to ever fetch it —
+          and confirmed live that the network request for the image was
+          never even made. Fetching eagerly is also simply correct here:
+          every caller of this component (TestTakingView, AttemptReviewView)
+          only ever shows the one image belonging to the currently-relevant
+          question, never an off-screen list item worth deferring. */}
       <img
         src={url}
         alt={altText ?? ""}
-        loading="lazy"
         decoding="async"
         onLoad={() => setStatus("loaded")}
         onError={() => setStatus("error")}
