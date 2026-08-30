@@ -48,7 +48,7 @@ async function create(data: Partial<StudyPlanModel>): Promise<StudyPlanModel> {
  * @throws {ForeignKeyViolationError} a referenced row does not exist
  */
 async function update(id: StudyPlanId, data: Partial<StudyPlanModel>): Promise<StudyPlanModel> {
-  return updateByIdImpl<StudyPlanModel>(SPEC, { plan_id: id }, data as Record<string, unknown>);
+  return updateByIdImpl<StudyPlanModel>(SPEC, { plan_id: id }, { ...data, updated_at: new Date().toISOString() } as Record<string, unknown>);
 }
 
 /**

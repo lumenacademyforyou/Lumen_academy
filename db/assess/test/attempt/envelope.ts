@@ -164,11 +164,33 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
     for (const row of translationsRes.rows) {
       translationsByQuestion.set(row.question_id, { stemTextTa: row.stem_text, optionTextsTa: row.option_texts ?? [] });
     }
+    // BUG-15 (docs/assessment-tool-debug-plan.md): language completeness is
+    // per-question and all-or-nothing — never let a question render with
+    // some options in Tamil and others silently still in English. Today's
+    // live data has zero mismatches (verified), but this positional match
+    // (option_texts[i]) would otherwise silently under-translate a question
+    // the moment a future import produced a shorter/empty option_texts
+    // array or blank stem text, with no error to catch it. A partial
+    // translation is treated the same as no translation for that question —
+    // it falls back to English entirely, exactly as a genuinely-missing
+    // translation already does two lines below.
     for (const [questionId, options] of optionsByQuestion) {
       const translation = translationsByQuestion.get(questionId);
       if (!translation) continue;
+      const stemComplete = translation.stemTextTa.trim().length > 0;
+      const optionsComplete =
+        translation.optionTextsTa.length === options.length && translation.optionTextsTa.every((t) => typeof t === "string" && t.trim().length > 0);
+      if (!stemComplete || !optionsComplete) {
+        // Incomplete — treated the same as no translation at all, for both
+        // the stem (read from this same map below, at this function's
+        // question-building step) and the options above. Removing the
+        // entry outright means every reader of translationsByQuestion sees
+        // one consistent "not available" answer, not two different ones.
+        translationsByQuestion.delete(questionId);
+        continue;
+      }
       options.forEach((opt, i) => {
-        opt.optionTextTa = translation.optionTextsTa[i] ?? null;
+        opt.optionTextTa = translation.optionTextsTa[i];
       });
     }
   }

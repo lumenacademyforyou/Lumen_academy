@@ -53,6 +53,13 @@ export async function downloadUnitMaterial(material: Pick<UnitMaterial, "id" | "
   });
   if (!res.ok) throw new Error(`Download failed (${res.status}).`);
 
+  // BUG-18: a Drive file that isn't shared "Anyone with the link" ends this
+  // redirect chain on Google's sign-in page instead of the file — that
+  // response is still a 200 OK, so without this check the sign-in page's
+  // HTML would get silently saved to disk renamed as "<title>.pdf".
+  const contentType = res.headers.get("content-type") ?? "";
+  if (contentType.includes("text/html")) throw new Error("Material is not accessible.");
+
   const blob = await res.blob();
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");

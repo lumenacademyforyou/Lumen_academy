@@ -97,8 +97,12 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
     setDownloadingId(material.id);
     try {
       await downloadUnitMaterial(material);
-    } catch (err) {
-      setMaterialsError(err instanceof Error ? err.message : "Download failed.");
+    } catch {
+      // BUG-18: a raw network/HTTP error (e.g. a CORS failure or an HTML
+      // sign-in page from a Drive file that isn't shared publicly) is
+      // meaningless to a student — show one clear, actionable message
+      // instead of surfacing err.message verbatim.
+      setMaterialsError("This material isn't available for download right now. Please try again later or contact support.");
     } finally {
       setDownloadingId(null);
     }
@@ -148,7 +152,15 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
       onSessionCreated(session);
       setActiveUnitModal(null);
     } catch (err) {
-      setLaunchError(err instanceof ApiError && err.code === "POOL_INSUFFICIENT" ? `Not enough published questions for this unit yet (${err.message}).` : err instanceof Error ? err.message : "Could not start this unit's mock test.");
+      setLaunchError(
+        err instanceof ApiError && err.code === "POOL_INSUFFICIENT"
+          ? `Not enough published questions for this unit yet (${err.message}).`
+          : err instanceof ApiError && err.code === "ACTIVE_ATTEMPT_EXISTS"
+            ? "You already have a test in progress. Go to your Dashboard to resume or submit it before starting a new one."
+            : err instanceof Error
+              ? err.message
+              : "Could not start this unit's mock test."
+      );
     } finally {
       setLaunching(false);
     }
@@ -692,6 +704,15 @@ export default function CoursesView({ studentName, catalogTree, catalogError, on
                 </button>
               </div>
             </div>
+            {/* BUG-18: cross-origin iframe content can't be inspected from
+                here, so a Drive file that isn't shared publicly (a real,
+                confirmed gap for every material as of this writing — see
+                DEFECT-BACKLOG.md DB-06) shows Google's own sign-in page
+                inside this frame with no way for us to detect that and show
+                a nicer message. This static hint is the honest fallback. */}
+            <p className="px-5 py-1.5 text-[11px] text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-700 shrink-0">
+              Seeing a Google sign-in page instead of the document? This material isn't available for in-app viewing yet — contact support.
+            </p>
             <iframe
               src={driveEmbedUrl(activeMaterialViewer)}
               title={activeMaterialViewer.title}

@@ -5,17 +5,19 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChapterGoal, CatalogTree, CatalogUnit, SessionResult, SessionLine, SubjectCode, UnitAccuracy } from "../types";
 import { createSession } from "../services/sessionApi";
 import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
+import { listMyCustomTasks, createCustomTask, updateCustomTask, deleteCustomTask, CustomTask } from "../services/customTasksApi";
+import { listMyRevisionNotes, createRevisionNote, updateRevisionNote, deleteRevisionNote, RevisionNote } from "../services/revisionNotesApi";
 import {
-  fetchUserTasks,
-  saveUserTask,
-  deleteUserTask,
-  fetchUserNotes,
-  saveUserNote,
-  deleteUserNote,
-  UserTask,
-  UserNote,
-  supabase
-} from "../services/supabase";
+  getMyStudyPlan,
+  saveMyStudyPlan,
+  resetMyStudyPlan,
+  listStudyPlanGoals,
+  addStudyPlanGoal,
+  updateStudyPlanGoal,
+  deleteStudyPlanGoal,
+  reorderStudyPlanGoals,
+  StudyPlanGoal,
+} from "../services/studyPlanApi";
 
 interface StudyPlanProps {
   studentName?: string;
@@ -37,6 +39,21 @@ const SUBJECT_TO_CODE: Record<string, SubjectCode> = { Physics: "PHY", Chemistry
 
 function normalizeWords(s: string): string[] {
   return s.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(/\s+/).filter(Boolean);
+}
+
+// BUG-19 — learn.study_plan_goal's server row shape mapped onto the
+// screen's existing ChapterGoal shape, so the rest of the app (App.tsx's
+// isSyllabusCompleted gate, CourseAreaView.tsx's prop drilling) keeps
+// working against real data without needing to know about the API at all.
+function goalToChapterGoal(g: StudyPlanGoal): ChapterGoal {
+  return {
+    id: g.goal_id,
+    subject: g.subject as ChapterGoal["subject"],
+    chapter: g.chapter,
+    highYieldTag: g.high_yield_tag ?? "",
+    hoursNeeded: g.hours_needed ?? 0,
+    completed: g.is_completed,
+  };
 }
 
 function findBestMatchingUnit(units: CatalogUnit[], name: string): CatalogUnit | null {
@@ -81,17 +98,6 @@ export interface DayRoutine {
   badgeColor: string;
 }
 
-const DEFAULT_CHAPTER_GOALS: ChapterGoal[] = [
-  { id: "g1", subject: "Physics", chapter: "Mechanics & Rotational Dynamics", highYieldTag: "32 Marks", hoursNeeded: 12, completed: false },
-  { id: "g2", subject: "Physics", chapter: "Electrostatics & Current Electricity", highYieldTag: "36 Marks", hoursNeeded: 10, completed: true },
-  { id: "g3", subject: "Chemistry", chapter: "Organic Reactions & Mechanisms", highYieldTag: "40 Marks", hoursNeeded: 14, completed: false },
-  { id: "g4", subject: "Chemistry", chapter: "Inorganic Coordination & p-Block", highYieldTag: "36 Marks", hoursNeeded: 8, completed: false },
-  { id: "g5", subject: "Botany", chapter: "Genetics & Molecular Inheritance", highYieldTag: "48 Marks", hoursNeeded: 16, completed: true },
-  { id: "g6", subject: "Botany", chapter: "Plant Physiology & Photosynthesis", highYieldTag: "32 Marks", hoursNeeded: 10, completed: false },
-  { id: "g7", subject: "Zoology", chapter: "Human Physiology & Neuro-Endocrine", highYieldTag: "52 Marks", hoursNeeded: 18, completed: false },
-  { id: "g8", subject: "Zoology", chapter: "Human Reproduction & ART Tech", highYieldTag: "36 Marks", hoursNeeded: 8, completed: false },
-];
-
 export default function StudyPlanView({
 
   studentName = "Aspirant",
@@ -108,96 +114,284 @@ export default function StudyPlanView({
   const [dailyHours, setDailyHours] = useState<number>(10);
   const [focusArea, setFocusArea] = useState<"physics_numericals" | "organic_chem" | "biology_ncert" | "full_720">("full_720");
   const [savedSuccess, setSavedSuccess] = useState(false);
+  const [savingPlan, setSavingPlan] = useState(false);
+  const [resettingPlan, setResettingPlan] = useState(false);
 
-  const [localChapterGoals, setLocalChapterGoals] = useState<ChapterGoal[]>(DEFAULT_CHAPTER_GOALS);
+  // BUG-19 — real, server-backed plan (learn.study_plan). planId is null
+  // until the very first save, matching "create once": nothing is inserted
+  // just from viewing this screen.
+  const [planId, setPlanId] = useState<string | null>(null);
+  const [planLoading, setPlanLoading] = useState(true);
+  const [newGoalSubject, setNewGoalSubject] = useState<ChapterGoal["subject"]>("Physics");
+  const [newGoalChapter, setNewGoalChapter] = useState("");
+
+  const [localChapterGoals, setLocalChapterGoals] = useState<ChapterGoal[]>([]);
   const chapterGoals = externalChapterGoals || localChapterGoals;
   const setChapterGoals = setExternalChapterGoals || setLocalChapterGoals;
 
-  // Custom User CRUD State (Tasks & Notes)
-  const [customTasks, setCustomTasks] = useState<UserTask[]>([]);
+  // Custom User CRUD State (Tasks & Notes) — BUG-20/21, real server-side
+  // persistence (learn.custom_task / learn.revision_note), replacing the
+  // Supabase calls that pointed at tables that were never migrated.
+  const [customTasks, setCustomTasks] = useState<CustomTask[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState("");
   const [newTaskSubject, setNewTaskSubject] = useState("Physics");
 
-  const [customNotes, setCustomNotes] = useState<UserNote[]>([]);
+  const [customNotes, setCustomNotes] = useState<RevisionNote[]>([]);
   const [newNoteTitle, setNewNoteTitle] = useState("");
   const [newNoteSubject, setNewNoteSubject] = useState("Botany");
+  const [newNoteTopic, setNewNoteTopic] = useState("");
   const [newNoteContent, setNewNoteContent] = useState("");
   const [editingNoteId, setEditingNoteId] = useState<string | null>(null);
-
-  const [userId, setUserId] = useState<string | null>(null);
+  const [noteSearchQuery, setNoteSearchQuery] = useState("");
+  const [autosaveStatus, setAutosaveStatus] = useState<"idle" | "saving" | "saved">("idle");
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data: { user } }) => setUserId(user?.id ?? null));
+    let cancelled = false;
+    (async () => {
+      try {
+        const plan = await getMyStudyPlan();
+        if (cancelled) return;
+        if (plan) {
+          setPlanId(plan.plan_id);
+          const cfg = plan.config ?? {};
+          if (typeof cfg.targetExamYear === "string") setTargetExamYear(cfg.targetExamYear as "NEET 2026" | "NEET 2027");
+          if (typeof cfg.currentScoreLevel === "string") setCurrentScoreLevel(cfg.currentScoreLevel as typeof currentScoreLevel);
+          if (typeof cfg.dailyHours === "number") setDailyHours(cfg.dailyHours);
+          if (typeof cfg.focusArea === "string") setFocusArea(cfg.focusArea as typeof focusArea);
+          const goals = await listStudyPlanGoals(plan.plan_id);
+          if (!cancelled) setChapterGoals(goals.map(goalToChapterGoal));
+        }
+      } catch (err) {
+        console.error("Failed to load study plan:", err);
+      } finally {
+        if (!cancelled) setPlanLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    if (!userId) return;
-    fetchUserTasks(userId).then(setCustomTasks);
-    fetchUserNotes(userId).then(setCustomNotes);
-  }, [userId]);
+    listMyCustomTasks().then(setCustomTasks).catch((err) => console.error("Failed to load custom tasks:", err));
+    listMyRevisionNotes().then(setCustomNotes).catch((err) => console.error("Failed to load revision notes:", err));
+  }, []);
+
+  // BUG-21 — autosave: once an existing note is open for editing, every
+  // keystroke debounce-saves it server-side instead of requiring an explicit
+  // "Update Note" click. A brand-new note still needs one explicit "Save
+  // Note" click first (there's nothing to attach a debounce to before it
+  // has an id) — after that, editing it again autosaves the same way.
+  useEffect(() => {
+    if (!editingNoteId) return;
+    setAutosaveStatus("saving");
+    const timeout = setTimeout(async () => {
+      try {
+        const updated = await updateRevisionNote(editingNoteId, {
+          title: newNoteTitle.trim() || "Untitled Note",
+          content: newNoteContent,
+          subject: newNoteSubject,
+          topic: newNoteTopic.trim() || undefined,
+        });
+        setCustomNotes((prev) => prev.map((n) => (n.note_id === updated.note_id ? updated : n)));
+        setAutosaveStatus("saved");
+      } catch (err) {
+        console.error("Autosave failed:", err);
+        setAutosaveStatus("idle");
+      }
+    }, 800);
+    return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [newNoteTitle, newNoteContent, newNoteSubject, newNoteTopic, editingNoteId]);
+
+  const currentPlanConfig = () => ({ targetExamYear, currentScoreLevel, dailyHours, focusArea });
+
+  const handleSavePlan = async () => {
+    setSavingPlan(true);
+    try {
+      const plan = await saveMyStudyPlan(currentPlanConfig());
+      setPlanId(plan.plan_id);
+      // Always resync from the server rather than gating on chapterGoals
+      // being "empty" — when chapterGoals comes from App.tsx's external
+      // prop (the normal case), it starts pre-populated with its own
+      // placeholder defaults, so an emptiness check would never fire and a
+      // brand-new plan's real, server-seeded goals would never load in.
+      const goals = await listStudyPlanGoals(plan.plan_id);
+      setChapterGoals(goals.map(goalToChapterGoal));
+      setSavedSuccess(true);
+      setTimeout(() => setSavedSuccess(false), 3000);
+    } catch (err) {
+      console.error("Failed to save study plan:", err);
+    } finally {
+      setSavingPlan(false);
+    }
+  };
+
+  // BUG-19 — explicit "Reset plan": archives the current plan and starts a
+  // fresh one with the default checklist, rather than leaving a user
+  // permanently stuck with a bad first attempt.
+  const handleResetPlan = async () => {
+    if (typeof window !== "undefined" && !window.confirm("This archives your current plan and starts a fresh one with the default chapter checklist. Continue?")) {
+      return;
+    }
+    setResettingPlan(true);
+    try {
+      const plan = await resetMyStudyPlan(currentPlanConfig());
+      setPlanId(plan.plan_id);
+      const goals = await listStudyPlanGoals(plan.plan_id);
+      setChapterGoals(goals.map(goalToChapterGoal));
+      setSavedSuccess(true);
+      setTimeout(() => setSavedSuccess(false), 3000);
+    } catch (err) {
+      console.error("Failed to reset study plan:", err);
+    } finally {
+      setResettingPlan(false);
+    }
+  };
 
   const handleAddTask = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTaskTitle.trim() || !userId) return;
-    const task = await saveUserTask({
-      user_id: userId,
-      title: newTaskTitle.trim(),
-      subject: newTaskSubject,
-      completed: false
-    });
-    if (task) setCustomTasks(prev => [task, ...prev.filter(t => t.id !== task.id)]);
-    setNewTaskTitle("");
+    if (!newTaskTitle.trim()) return;
+    try {
+      const task = await createCustomTask({ title: newTaskTitle.trim(), subject: newTaskSubject });
+      setCustomTasks((prev) => [task, ...prev]);
+      setNewTaskTitle("");
+    } catch (err) {
+      console.error("Failed to add task:", err);
+    }
   };
 
-  const handleToggleTask = async (task: UserTask) => {
-    const updated = await saveUserTask({
-      ...task,
-      completed: !task.completed
-    });
-    if (updated) setCustomTasks(prev => prev.map(t => t.id === updated.id ? updated : t));
+  const handleToggleTask = async (task: CustomTask) => {
+    const nextCompleted = !task.is_completed;
+    setCustomTasks((prev) => prev.map((t) => (t.task_id === task.task_id ? { ...t, is_completed: nextCompleted } : t)));
+    try {
+      const updated = await updateCustomTask(task.task_id, { is_completed: nextCompleted });
+      setCustomTasks((prev) => prev.map((t) => (t.task_id === updated.task_id ? updated : t)));
+    } catch (err) {
+      console.error("Failed to update task:", err);
+      setCustomTasks((prev) => prev.map((t) => (t.task_id === task.task_id ? task : t)));
+    }
   };
 
   const handleDeleteTask = async (taskId: string) => {
-    await deleteUserTask(taskId);
-    setCustomTasks(prev => prev.filter(t => t.id !== taskId));
+    const prevTasks = customTasks;
+    setCustomTasks((prev) => prev.filter((t) => t.task_id !== taskId));
+    try {
+      await deleteCustomTask(taskId);
+    } catch (err) {
+      console.error("Failed to delete task:", err);
+      setCustomTasks(prevTasks);
+    }
   };
 
   const handleSaveNote = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newNoteTitle.trim() || !newNoteContent.trim() || !userId) return;
-    const note = await saveUserNote({
-      id: editingNoteId || undefined,
-      user_id: userId,
-      unit_id: "custom_unit",
-      subject: newNoteSubject,
-      title: newNoteTitle.trim(),
-      content: newNoteContent.trim()
-    });
-    if (note) {
-      setCustomNotes(prev => {
-        const exists = prev.some(n => n.id === note.id);
-        if (exists) return prev.map(n => n.id === note.id ? note : n);
-        return [note, ...prev];
-      });
+    if (!newNoteTitle.trim() || !newNoteContent.trim()) return;
+    if (editingNoteId) {
+      // Autosave (above) already persisted the latest edit — just close the editor.
+      setEditingNoteId(null);
+      setNewNoteTitle("");
+      setNewNoteContent("");
+      setNewNoteTopic("");
+      setAutosaveStatus("idle");
+      return;
     }
-    setNewNoteTitle("");
-    setNewNoteContent("");
-    setEditingNoteId(null);
+    try {
+      const note = await createRevisionNote({
+        title: newNoteTitle.trim(),
+        content: newNoteContent.trim(),
+        subject: newNoteSubject,
+        topic: newNoteTopic.trim() || undefined,
+      });
+      setCustomNotes((prev) => [note, ...prev]);
+      setNewNoteTitle("");
+      setNewNoteContent("");
+      setNewNoteTopic("");
+    } catch (err) {
+      console.error("Failed to save note:", err);
+    }
   };
 
   const handleDeleteNote = async (noteId: string) => {
-    await deleteUserNote(noteId);
-    setCustomNotes(prev => prev.filter(n => n.id !== noteId));
+    const prevNotes = customNotes;
+    setCustomNotes((prev) => prev.filter((n) => n.note_id !== noteId));
+    try {
+      await deleteRevisionNote(noteId);
+    } catch (err) {
+      console.error("Failed to delete note:", err);
+      setCustomNotes(prevNotes);
+    }
   };
 
-  const toggleChapter = (id: string) => {
-    setChapterGoals((prev) =>
-      prev.map((g) => (g.id === id ? { ...g, completed: !g.completed } : g))
+  const filteredNotes = customNotes.filter((n) => {
+    if (!noteSearchQuery.trim()) return true;
+    const q = noteSearchQuery.toLowerCase();
+    return (
+      n.title.toLowerCase().includes(q) ||
+      n.content.toLowerCase().includes(q) ||
+      (n.subject ?? "").toLowerCase().includes(q) ||
+      (n.topic ?? "").toLowerCase().includes(q)
     );
+  });
+
+  const toggleChapter = async (id: string) => {
+    const goal = chapterGoals.find((g) => g.id === id);
+    if (!goal || !planId) return;
+    const nextCompleted = !goal.completed;
+    setChapterGoals((prev) => prev.map((g) => (g.id === id ? { ...g, completed: nextCompleted } : g)));
+    try {
+      await updateStudyPlanGoal(planId, id, { is_completed: nextCompleted });
+    } catch (err) {
+      console.error("Failed to update goal:", err);
+      setChapterGoals((prev) => prev.map((g) => (g.id === id ? { ...g, completed: !nextCompleted } : g)));
+    }
+  };
+
+  // BUG-19 — "add/remove/reorder items." Reordering uses simple move-up/
+  // move-down buttons rather than drag-and-drop, avoiding a new dependency
+  // for a checklist that's typically under a dozen items.
+  const handleAddGoal = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newGoalChapter.trim() || !planId) return;
+    try {
+      const goal = await addStudyPlanGoal(planId, { subject: newGoalSubject, chapter: newGoalChapter.trim() });
+      setChapterGoals((prev) => [...prev, goalToChapterGoal(goal)]);
+      setNewGoalChapter("");
+    } catch (err) {
+      console.error("Failed to add goal:", err);
+    }
+  };
+
+  const handleDeleteGoal = async (goalId: string) => {
+    if (!planId) return;
+    const prevGoals = chapterGoals;
+    setChapterGoals((prev) => prev.filter((g) => g.id !== goalId));
+    try {
+      await deleteStudyPlanGoal(planId, goalId);
+    } catch (err) {
+      console.error("Failed to delete goal:", err);
+      setChapterGoals(prevGoals);
+    }
+  };
+
+  const handleMoveGoal = async (goalId: string, direction: "up" | "down") => {
+    if (!planId) return;
+    const idx = chapterGoals.findIndex((g) => g.id === goalId);
+    const swapWith = direction === "up" ? idx - 1 : idx + 1;
+    if (idx === -1 || swapWith < 0 || swapWith >= chapterGoals.length) return;
+    const reordered = [...chapterGoals];
+    [reordered[idx], reordered[swapWith]] = [reordered[swapWith], reordered[idx]];
+    setChapterGoals(reordered);
+    try {
+      await reorderStudyPlanGoals(planId, reordered.map((g) => g.id));
+    } catch (err) {
+      console.error("Failed to reorder goals:", err);
+    }
   };
 
   const completedCount = chapterGoals.filter((g) => g.completed).length;
-  const progressPercent = Math.round((completedCount / chapterGoals.length) * 100);
+  const progressPercent = chapterGoals.length > 0 ? Math.round((completedCount / chapterGoals.length) * 100) : 0;
 
   // Phase G, G5 — real per-chapter tested performance, matched by subject +
   // title against the live analytics endpoint's per-unit accuracy.
@@ -292,11 +486,6 @@ export default function StudyPlanView({
     }
   };
 
-  const handleSavePlan = () => {
-    setSavedSuccess(true);
-    setTimeout(() => setSavedSuccess(false), 3000);
-  };
-
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
       
@@ -346,13 +535,27 @@ export default function StudyPlanView({
             <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{t("Adjust your prep profile to update your daily hourly routine and milestone map in real-time.")}</p>
           </div>
 
-          <button
-            onClick={handleSavePlan}
-            className="px-5 py-2.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer flex items-center gap-2 shrink-0"
-          >
-            <span className="material-symbols-outlined text-sm">bookmark</span>
-            Save My 720 Plan
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            {planId && (
+              <button
+                onClick={handleResetPlan}
+                disabled={resettingPlan || savingPlan}
+                title="Archive this plan and start fresh"
+                className="px-4 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-xs uppercase tracking-wider rounded-xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer flex items-center gap-2 disabled:opacity-60"
+              >
+                <span className="material-symbols-outlined text-sm">restart_alt</span>
+                {resettingPlan ? "Resetting..." : "Reset Plan"}
+              </button>
+            )}
+            <button
+              onClick={handleSavePlan}
+              disabled={savingPlan || resettingPlan}
+              className="px-5 py-2.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer flex items-center gap-2 disabled:opacity-60"
+            >
+              <span className="material-symbols-outlined text-sm">bookmark</span>
+              {savingPlan ? "Saving..." : planId ? "Update My 720 Plan" : "Save My 720 Plan"}
+            </button>
+          </div>
         </div>
 
         {savedSuccess && (
@@ -535,57 +738,122 @@ export default function StudyPlanView({
             </div>
           </div>
 
-          <div className="space-y-2.5 max-h-[380px] overflow-y-auto pr-1 scrollbar-thin">
-            {chapterGoals.map((goal) => {
-              const tested = analytics ? findMatchingUnitAccuracy(goal, analytics.unitAccuracy) : null;
-              return (
-              <div
-                key={goal.id}
-                onClick={() => toggleChapter(goal.id)}
-                className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex items-center justify-between gap-3 ${
-                  goal.completed
-                    ? "bg-amber-50/60 dark:bg-amber-950/50 border-[#FCB824] dark:border-[#FCB824]/40 text-amber-950 dark:text-amber-200"
-                    : "bg-slate-50 dark:bg-[#071d2b] border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-700"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <div className={`w-5 h-5 rounded-md flex items-center justify-center border transition-colors ${
-                    goal.completed ? "bg-[#FCB824] border-[#ffd15c] text-white" : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700"
-                  }`}>
-                    {goal.completed && <span className="material-symbols-outlined text-sm font-bold">check</span>}
+          {planLoading ? (
+            <div className="text-xs text-slate-400 italic text-center py-6">Loading your plan...</div>
+          ) : chapterGoals.length === 0 ? (
+            <div className="p-6 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800 text-center space-y-1">
+              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">No chapter goals yet.</p>
+              <p className="text-[11px] text-slate-400">Click "Save My 720 Plan" above to generate your default checklist.</p>
+            </div>
+          ) : (
+            <div className="space-y-2.5 max-h-[380px] overflow-y-auto pr-1 scrollbar-thin">
+              {chapterGoals.map((goal, idx) => {
+                const tested = analytics ? findMatchingUnitAccuracy(goal, analytics.unitAccuracy) : null;
+                return (
+                <div
+                  key={goal.id}
+                  onClick={() => toggleChapter(goal.id)}
+                  className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex items-center justify-between gap-3 ${
+                    goal.completed
+                      ? "bg-amber-50/60 dark:bg-amber-950/50 border-[#FCB824] dark:border-[#FCB824]/40 text-amber-950 dark:text-amber-200"
+                      : "bg-slate-50 dark:bg-[#071d2b] border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-700"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className={`w-5 h-5 rounded-md flex items-center justify-center border transition-colors ${
+                      goal.completed ? "bg-[#FCB824] border-[#ffd15c] text-white" : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700"
+                    }`}>
+                      {goal.completed && <span className="material-symbols-outlined text-sm font-bold">check</span>}
+                    </div>
+                    <div>
+                      <p className={`text-xs font-bold ${goal.completed ? "text-amber-700 dark:text-amber-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
+                        {goal.chapter}
+                      </p>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">{goal.subject} • {goal.hoursNeeded} Hrs Allocated</span>
+                    </div>
                   </div>
-                  <div>
-                    <p className={`text-xs font-bold ${goal.completed ? "text-amber-700 dark:text-amber-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
-                      {goal.chapter}
-                    </p>
-                    <span className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">{goal.subject} • {goal.hoursNeeded} Hrs Allocated</span>
-                  </div>
-                </div>
 
-                <div className="flex items-center gap-2 shrink-0">
-                  {/* Real tested accuracy for this unit (Phase G, G5) — only
-                      shown once the student has actually attempted questions
-                      from it, never a placeholder/guessed number. */}
-                  {tested && tested.correct + tested.incorrect > 0 && (
-                    <span
-                      title={`${tested.correct} correct / ${tested.incorrect} incorrect / ${tested.unattempted} unattempted, tested`}
-                      className={`text-[10px] font-black px-2 py-0.5 rounded-md border shadow-xs ${
-                        tested.accuracyPercent >= 70
-                          ? "text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
-                          : "text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
-                      }`}
-                    >
-                      {t("Tested")}: {tested.accuracyPercent}%
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    {/* Real tested accuracy for this unit (Phase G, G5) — only
+                        shown once the student has actually attempted questions
+                        from it, never a placeholder/guessed number. */}
+                    {tested && tested.correct + tested.incorrect > 0 && (
+                      <span
+                        title={`${tested.correct} correct / ${tested.incorrect} incorrect / ${tested.unattempted} unattempted, tested`}
+                        className={`text-[10px] font-black px-2 py-0.5 rounded-md border shadow-xs ${
+                          tested.accuracyPercent >= 70
+                            ? "text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800"
+                            : "text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800"
+                        }`}
+                      >
+                        {t("Tested")}: {tested.accuracyPercent}%
+                      </span>
+                    )}
+                    <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700 shadow-xs">
+                      {goal.highYieldTag}
                     </span>
-                  )}
-                  <span className="text-[10px] font-black text-[var(--teal)] dark:text-[#FCB824] bg-white dark:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700 shadow-xs">
-                    {goal.highYieldTag}
-                  </span>
+                    {/* BUG-19 — reorder (move up/down) + remove, each stopping
+                        propagation so they don't also toggle completion. */}
+                    <button
+                      type="button"
+                      onClick={(e) => { e.stopPropagation(); handleMoveGoal(goal.id, "up"); }}
+                      disabled={idx === 0}
+                      className="p-1 text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] disabled:opacity-30 disabled:cursor-not-allowed"
+                      title="Move up"
+                    >
+                      <span className="material-symbols-outlined text-sm">arrow_upward</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(e) => { e.stopPropagation(); handleMoveGoal(goal.id, "down"); }}
+                      disabled={idx === chapterGoals.length - 1}
+                      className="p-1 text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] disabled:opacity-30 disabled:cursor-not-allowed"
+                      title="Move down"
+                    >
+                      <span className="material-symbols-outlined text-sm">arrow_downward</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(e) => { e.stopPropagation(); handleDeleteGoal(goal.id); }}
+                      className="p-1 text-slate-400 hover:text-rose-500"
+                      title="Remove goal"
+                    >
+                      <span className="material-symbols-outlined text-sm">delete</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
+
+          {planId && (
+            <form onSubmit={handleAddGoal} className="flex gap-2">
+              <select
+                value={newGoalSubject}
+                onChange={(e) => setNewGoalSubject(e.target.value as ChapterGoal["subject"])}
+                className="px-2.5 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-bold outline-none"
+              >
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Botany">Botany</option>
+                <option value="Zoology">Zoology</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Add a chapter goal..."
+                value={newGoalChapter}
+                onChange={(e) => setNewGoalChapter(e.target.value)}
+                className="flex-1 min-w-0 px-3 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+              />
+              <button
+                type="submit"
+                className="px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-[#00243B] dark:text-white font-bold text-xs rounded-xl transition-all cursor-pointer shrink-0"
+              >
+                <span className="material-symbols-outlined text-sm">add</span>
+              </button>
+            </form>
+          )}
 
           {launchError && <p className="text-xs text-red-600 dark:text-red-400 font-semibold text-center">{launchError}</p>}
           <button
@@ -612,7 +880,7 @@ export default function StudyPlanView({
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Add, complete, or delete your custom revision targets</p>
             </div>
             <span className="text-xs font-bold text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
-              {customTasks.filter(t => t.completed).length}/{customTasks.length} Done
+              {customTasks.filter(t => t.is_completed).length}/{customTasks.length} Done
             </span>
           </div>
 
@@ -647,18 +915,18 @@ export default function StudyPlanView({
               <p className="text-xs text-slate-400 italic text-center py-6">No custom tasks yet. Add one above to start tracking!</p>
             ) : (
               customTasks.map((t) => (
-                <div key={t.id} className="p-3 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-between gap-3">
+                <div key={t.task_id} className="p-3 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 flex-1 min-w-0">
                     <button
                       type="button"
                       onClick={() => handleToggleTask(t)}
                       className={`w-5 h-5 rounded flex items-center justify-center border shrink-0 ${
-                        t.completed ? "bg-emerald-500 border-emerald-600 text-white" : "border-slate-300 dark:border-slate-600"
+                        t.is_completed ? "bg-emerald-500 border-emerald-600 text-white" : "border-slate-300 dark:border-slate-600"
                       }`}
                     >
-                      {t.completed && <span className="material-symbols-outlined text-xs">check</span>}
+                      {t.is_completed && <span className="material-symbols-outlined text-xs">check</span>}
                     </button>
-                    <span className={`text-xs font-semibold truncate transition-colors ${t.completed ? "text-emerald-700 dark:text-emerald-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
+                    <span className={`text-xs font-semibold truncate transition-colors ${t.is_completed ? "text-emerald-700 dark:text-emerald-400 opacity-90" : "text-[#00243B] dark:text-white"}`}>
                       {t.title}
                     </span>
                   </div>
@@ -668,7 +936,7 @@ export default function StudyPlanView({
                     </span>
                     <button
                       type="button"
-                      onClick={() => handleDeleteTask(t.id)}
+                      onClick={() => handleDeleteTask(t.task_id)}
                       className="text-slate-400 hover:text-rose-500 p-1"
                       title="Delete Task"
                     >
@@ -716,6 +984,14 @@ export default function StudyPlanView({
                 <option value="Zoology">Zoology</option>
               </select>
             </div>
+            {/* BUG-21 — optional topic, a finer-grained attachment than subject alone. */}
+            <input
+              type="text"
+              placeholder="Topic (optional, e.g. Rotational Motion)"
+              value={newNoteTopic}
+              onChange={(e) => setNewNoteTopic(e.target.value)}
+              className="w-full px-4 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+            />
             <textarea
               placeholder="Write your study notes, formulas, or key reminders here..."
               value={newNoteContent}
@@ -723,40 +999,78 @@ export default function StudyPlanView({
               rows={2}
               className="w-full px-4 py-2.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-medium text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
             />
-            <div className="flex justify-end gap-2">
+            <div className="flex items-center justify-end gap-3">
+              {/* BUG-21 — visible autosave indicator while editing an existing note. */}
+              {editingNoteId && (
+                <span className="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
+                  {autosaveStatus === "saving" && (
+                    <>
+                      <span className="material-symbols-outlined text-sm animate-spin">progress_activity</span>
+                      Saving...
+                    </>
+                  )}
+                  {autosaveStatus === "saved" && (
+                    <>
+                      <span className="material-symbols-outlined text-sm text-emerald-500">check_circle</span>
+                      Saved
+                    </>
+                  )}
+                </span>
+              )}
               {editingNoteId && (
                 <button
                   type="button"
-                  onClick={() => { setEditingNoteId(null); setNewNoteTitle(""); setNewNoteContent(""); }}
+                  onClick={() => { setEditingNoteId(null); setNewNoteTitle(""); setNewNoteContent(""); setAutosaveStatus("idle"); }}
                   className="px-3 py-1.5 text-xs text-slate-500 hover:text-slate-700 font-bold"
                 >
-                  Cancel Edit
+                  Done Editing
                 </button>
               )}
-              <button
-                type="submit"
-                className="px-4 py-2 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer"
-              >
-                {editingNoteId ? "Update Note" : "Save Note"}
-              </button>
+              {!editingNoteId && (
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition-all cursor-pointer"
+                >
+                  Save Note
+                </button>
+              )}
             </div>
           </form>
+
+          {/* BUG-21 — search notes by title/content/subject. */}
+          {customNotes.length > 0 && (
+            <div className="relative">
+              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-base">search</span>
+              <input
+                type="text"
+                placeholder="Search your notes..."
+                value={noteSearchQuery}
+                onChange={(e) => setNoteSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+              />
+            </div>
+          )}
 
           <div className="space-y-3 max-h-[220px] overflow-y-auto pr-1">
             {customNotes.length === 0 ? (
               <p className="text-xs text-slate-400 italic text-center py-4">No custom notes yet. Save your key formulas and insights above!</p>
+            ) : filteredNotes.length === 0 ? (
+              <p className="text-xs text-slate-400 italic text-center py-4">No notes match "{noteSearchQuery}".</p>
             ) : (
-              customNotes.map((n) => (
-                <div key={n.id} className="p-3.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl space-y-1.5">
+              filteredNotes.map((n) => (
+                <div key={n.note_id} className="p-3.5 bg-slate-50 dark:bg-[#071d2b] border border-slate-200 dark:border-slate-700 rounded-xl space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-[#00243B] dark:text-white">{n.title}</span>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="text-xs font-bold text-[#00243B] dark:text-white truncate">{n.title}</span>
+                      {n.topic && <span className="text-[10px] text-slate-400 shrink-0">• {n.topic}</span>}
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-[#FCB824]">
                         {n.subject}
                       </span>
                       <button
                         type="button"
-                        onClick={() => { setEditingNoteId(n.id); setNewNoteTitle(n.title); setNewNoteSubject(n.subject); setNewNoteContent(n.content); }}
+                        onClick={() => { setEditingNoteId(n.note_id); setNewNoteTitle(n.title); setNewNoteSubject(n.subject ?? "Physics"); setNewNoteTopic(n.topic ?? ""); setNewNoteContent(n.content); setAutosaveStatus("idle"); }}
                         className="text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] p-1"
                         title="Edit Note"
                       >
@@ -764,7 +1078,7 @@ export default function StudyPlanView({
                       </button>
                       <button
                         type="button"
-                        onClick={() => handleDeleteNote(n.id)}
+                        onClick={() => handleDeleteNote(n.note_id)}
                         className="text-slate-400 hover:text-rose-500 p-1"
                         title="Delete Note"
                       >

@@ -11,65 +11,12 @@ export interface StudySession {
   rating?: number; // 1-5 focus score
 }
 
-const LOCAL_STORAGE_SESSIONS_KEY = "lumen_study_sessions";
-
-function getLocalSessions(): StudySession[] {
-  try {
-    const raw = localStorage.getItem(LOCAL_STORAGE_SESSIONS_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
-}
-
-function saveLocalSession(session: StudySession): void {
-  try {
-    const sessions = getLocalSessions();
-    const existingIdx = sessions.findIndex(s => s.id === session.id);
-    if (existingIdx >= 0) {
-      sessions[existingIdx] = session;
-    } else {
-      sessions.unshift(session);
-    }
-    localStorage.setItem(LOCAL_STORAGE_SESSIONS_KEY, JSON.stringify(sessions));
-  } catch (err) {
-    console.error("Failed to save session to local storage:", err);
-  }
-}
-
-export async function saveStudySession(
-  sessionData: Omit<StudySession, "id" | "completedAt"> & { completedAt?: string }
-): Promise<StudySession> {
-  const id = `session_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;
-  const completedAt = sessionData.completedAt || new Date().toISOString();
-
-  const newSession: StudySession = {
-    ...sessionData,
-    id,
-    completedAt
-  };
-
-  saveLocalSession(newSession);
-  if (typeof window !== "undefined") {
-    window.dispatchEvent(new Event("lumen_session_saved"));
-  }
-
-  return newSession;
-}
-
-export async function fetchStudySessions(userId: string): Promise<StudySession[]> {
-  return getLocalSessions().filter(s => s.userId === userId);
-}
-
-export async function deleteStudySession(sessionId: string): Promise<void> {
-  try {
-    const sessions = getLocalSessions();
-    const updated = sessions.filter(s => s.id !== sessionId);
-    localStorage.setItem(LOCAL_STORAGE_SESSIONS_KEY, JSON.stringify(updated));
-  } catch (err) {
-    console.error("Error deleting local session:", err);
-  }
-}
+// BUG-22 (docs/assessment-tool-debug-plan.md Phase 7) — this file's
+// localStorage-backed save/fetch/delete functions were removed once the
+// session log moved to a real server-side table (learn.pomodoro_session,
+// via frontend/src/services/pomodoroApi.ts). calculateStudyStreak and
+// calculateSessionStats below are kept as-is: pure functions over a
+// StudySession[] shape, with no localStorage dependency of their own.
 
 export function calculateStudyStreak(sessions: StudySession[]): number {
   const focusSessions = sessions.filter(s => s.sessionType === "focus");

@@ -115,6 +115,57 @@ router.get(
   }
 );
 
+// BUG-11 (docs/assessment-tool-debug-plan.md) — "content-health" report: how
+// much of the published question bank has real, complete Tamil coverage.
+// Mounted here (under /content, gated by an existing content-admin
+// permission) rather than a separate top-level /admin/content-health this
+// app has no other content-admin routes under — /content is already where
+// every other content-lifecycle/admin-facing endpoint in this router lives.
+// "Complete" mirrors BUG-15's own all-or-nothing rule in envelope.ts: a
+// non-empty stem AND an option_texts array the same length as the
+// question's real option count, with no blank entries — a translation that
+// only partially covers a question counts as missing here too, not present.
+router.get(
+  "/content-health",
+  requireAuth,
+  requirePermission("content:publish"),
+  async (_req: Request, res: Response, next: NextFunction) => {
+    try {
+      const totalsRes = await pool.query<{ total_published: string }>(
+        `select count(*) as total_published from content.question where lifecycle_status = 'published'`
+      );
+      const missingRes = await pool.query<{ missing_ta: string }>(
+        `select count(*) as missing_ta
+           from content.question q
+          where q.lifecycle_status = 'published'
+            and not exists (select 1 from content.question_translation qt where qt.question_id = q.question_id and qt.language_code = 'ta')`
+      );
+      const mismatchRes = await pool.query<{ mismatched: string; incomplete_stem: string }>(
+        `select
+           count(*) filter (
+             where jsonb_array_length(coalesce(qt.option_texts, '[]'::jsonb)) <> o.n_opts
+                or exists (select 1 from jsonb_array_elements_text(coalesce(qt.option_texts, '[]'::jsonb)) t where trim(t) = '')
+           ) as mismatched,
+           count(*) filter (where trim(coalesce(qt.stem_text, '')) = '') as incomplete_stem
+         from content.question q
+         join content.question_translation qt on qt.question_id = q.question_id and qt.language_code = 'ta'
+         join (select question_id, count(*) as n_opts from content.question_option group by question_id) o on o.question_id = q.question_id
+        where q.lifecycle_status = 'published'`
+      );
+      res.json({
+        data: {
+          totalPublished: Number(totalsRes.rows[0].total_published),
+          missingTamilEntirely: Number(missingRes.rows[0].missing_ta),
+          tamilOptionCountOrBlankMismatch: Number(mismatchRes.rows[0].mismatched),
+          tamilStemBlank: Number(mismatchRes.rows[0].incomplete_stem),
+        },
+      });
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
 // Filter-by-node listing (LA-PLAN-002 Day 2 CL-5 "done when"). Role-scoped:
 // a caller holding any content:* permission (educator/reviewer/admin) sees
 // every lifecycle status for the node; anyone else (a plain student) sees

@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
 import { TestAttempt, CatalogTree, SubjectCode, DifficultyBand, SessionResult, CreateSessionRequest, SessionLine } from "../types";
-import { createSession } from "../services/sessionApi";
+import { createSession, listMyAttempts } from "../services/sessionApi";
 import { ApiError } from "../services/api";
 import { FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION } from "../config/featureFlags";
 import { countLabel } from "../utils/pluralize";
@@ -43,6 +43,20 @@ function friendlyError(err: unknown): string {
     if (err.code === "POOL_INSUFFICIENT") {
       return `Not enough published questions for this selection (${err.message}). Try a smaller question count or different units.`;
     }
+    // BUG-08 (docs/assessment-tool-debug-plan.md): "some tests do not start"
+    // — the guard added for BUG-03 (at most one active attempt) is one real,
+    // specific cause. Point them at the fix (the resume prompt on Dashboard)
+    // instead of leaving a generic error with no next step.
+    if (err.code === "ACTIVE_ATTEMPT_EXISTS") {
+      return "You already have a test in progress. Go to your Dashboard to resume or submit it before starting a new one.";
+    }
+    // BUG-28: hiding the button is not sufficient (per the plan's own spec)
+    // — StudyPlanView.tsx's "Mock Test" quick-start has no client-side gate
+    // at all, so this server-side rejection is the only thing that ever
+    // stops it; give it the same clear, actionable message either way.
+    if (err.code === "FULL_MOCK_LOCKED") {
+      return "Complete 1 practice test to unlock Full Tests.";
+    }
     return err.message;
   }
   return err instanceof Error ? err.message : "Something went wrong. Please try again.";
@@ -52,8 +66,35 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   const { t } = useLanguage();
   // P1-9: feature-flagged off — the Full Mock Test is unlocked for everyone
   // regardless of syllabus-tracker progress. Flip the flag, not this line,
-  // to restore the gate.
-  const fullMockUnlocked = !FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION || isSyllabusCompleted;
+  // to restore the gate. A separate, independent decision from BUG-28 below.
+  const syllabusGateUnlocked = !FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION || isSyllabusCompleted;
+  // BUG-28 (docs/assessment-tool-debug-plan.md): real gate, not a guess —
+  // starts `null` (unknown) rather than `true` so the button doesn't
+  // flash "unlocked" before this resolves; only ever shown as unlocked once
+  // the server-backed answer comes back. The actual enforcement lives
+  // server-side (sessionController.ts's hasCompletedPracticeTest) since
+  // hiding this button alone would leave StudyPlanView.tsx's ungated
+  // "Mock Test" quick-start as an open bypass — this is purely so the
+  // button explains itself instead of failing silently or looking broken.
+  const [hasCompletedPractice, setHasCompletedPractice] = useState<boolean | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    listMyAttempts()
+      .then((attempts) => {
+        if (cancelled) return;
+        setHasCompletedPractice(attempts.some((a) => a.mode !== "full-mock" && a.attemptState === "scored"));
+      })
+      .catch(() => {
+        // Unknown is the safe default here — the button stays disabled
+        // rather than silently unlocking on a failed fetch; the real gate
+        // is server-side regardless.
+        if (!cancelled) setHasCompletedPractice(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  const fullMockUnlocked = syllabusGateUnlocked && hasCompletedPractice === true;
   const [view, setView] = useState<"directory" | "subject-wise" | "custom">("directory");
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState<string | null>(null);
@@ -93,8 +134,12 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   }
 
   function handleStartFullMock() {
-    if (!fullMockUnlocked) {
+    if (!syllabusGateUnlocked) {
       setCreateError("Complete all units in your Syllabus Tracker (Study Plan) to unlock the Full Mock Test.");
+      return;
+    }
+    if (hasCompletedPractice !== true) {
+      setCreateError("Complete 1 practice test to unlock Full Tests.");
       return;
     }
     launch({ mode: "full-mock", title: "Full Mock Test" });
@@ -215,12 +260,22 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
               </div>
               <button
                 onClick={handleStartFullMock}
-                disabled={creating}
+                disabled={creating || hasCompletedPractice === null}
                 className={`w-full py-3.5 font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center block ${
                   fullMockUnlocked ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] dark:hover:bg-[#FCB824] shadow-md hover:shadow-lg cursor-pointer" : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed"
                 } disabled:opacity-60`}
               >
-                {fullMockUnlocked ? t("Start Full Mock Test") : t("Locked (Complete Syllabus Tracker)")}
+                {/* BUG-28: the reason a locked button is locked must always
+                    be visible, never a silent disable — two independent
+                    gates here, each with its own real explanation rather
+                    than a generic "Locked". */}
+                {hasCompletedPractice === null
+                  ? t("Checking eligibility...")
+                  : !syllabusGateUnlocked
+                    ? t("Locked (Complete Syllabus Tracker)")
+                    : !fullMockUnlocked
+                      ? t("Complete 1 practice test to unlock")
+                      : t("Start Full Mock Test")}
               </button>
             </motion.div>
 

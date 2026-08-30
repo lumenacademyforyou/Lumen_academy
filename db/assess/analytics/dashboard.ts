@@ -84,6 +84,15 @@ export interface DashboardAnalytics {
   timeDistribution: TimeBucket[];
   weakestUnits: UnitAccuracy[];
   unattemptedRate: { servedCount: number; unattemptedCount: number; unattemptedPercent: number };
+  // BUG-23 (docs/assessment-tool-debug-plan.md) — "Tests Taken" definition,
+  // recorded here since this is its one real source of truth: count of
+  // attempts with attempt_state = 'scored' for this user. Excludes created
+  // (never persisted at all), in_progress, paused, and abandoned — an
+  // attempt that expired with zero answers still gets scored (0/total) by
+  // enforceExpiry/submitAttempt, same as a real zero-score submission, so it
+  // correctly counts as "taken." attemptHistory above is capped at 20 rows
+  // for chart/list rendering; this is the real, uncapped total.
+  totalScoredAttempts: number;
 }
 
 // Shared by every accuracy-shaped row (subject/unit/difficulty) — SQL does
@@ -328,6 +337,11 @@ async function getUnattemptedRate(
   };
 }
 
+async function getTotalScoredAttempts(client: QueryClient, userId: string): Promise<number> {
+  const res = await client.query<{ n: string }>(`select count(*) as n from assess.attempt where user_id = $1 and attempt_state = 'scored'`, [userId]);
+  return Number(res.rows[0]?.n ?? 0);
+}
+
 /** Weakest units: derived in JS from the already-fetched unit-accuracy rows (not a second query) — restricted to units with a minimum sample size (avoids a 1-question outlier reading as "weakest"), ordered worst-first. This is a re-sort of SQL-aggregated rows, not client-side aggregation of raw responses. */
 function pickWeakestUnits(unitAccuracy: UnitAccuracy[], limit: number, minAttempted: number): UnitAccuracy[] {
   return unitAccuracy
@@ -357,8 +371,9 @@ export async function getDashboardAnalytics(userId: string): Promise<DashboardAn
     const difficultyAccuracy = await getDifficultyAccuracy(client, userId);
     const timeDistribution = await getTimeDistribution(client, userId);
     const unattemptedRate = await getUnattemptedRate(client, userId);
+    const totalScoredAttempts = await getTotalScoredAttempts(client, userId);
     const weakestUnits = pickWeakestUnits(unitAccuracy, 5, 3);
-    return { attemptHistory, scoreTrend, subjectAccuracy, unitAccuracy, difficultyAccuracy, timeDistribution, weakestUnits, unattemptedRate };
+    return { attemptHistory, scoreTrend, subjectAccuracy, unitAccuracy, difficultyAccuracy, timeDistribution, weakestUnits, unattemptedRate, totalScoredAttempts };
   } finally {
     client.release();
   }

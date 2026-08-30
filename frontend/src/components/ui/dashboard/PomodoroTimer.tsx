@@ -3,13 +3,8 @@ import { motion, AnimatePresence } from "motion/react";
 import Modal from "../../layout/Modal";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import { supabase } from "../../../services/supabase";
-import {
-  saveStudySession,
-  fetchStudySessions,
-  deleteStudySession,
-  calculateSessionStats,
-  StudySession
-} from "../../../services/studySessionService";
+import { calculateSessionStats, StudySession } from "../../../services/studySessionService";
+import { listMyPomodoroSessions, createPomodoroSession, deletePomodoroSession, toStudySessions } from "../../../services/pomodoroApi";
 
 interface PomodoroTimerProps {
   studentName?: string;
@@ -114,11 +109,11 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
     if (userId) loadSessions(userId);
   }, [userId]);
 
-  const loadSessions = async (uid: string) => {
+  const loadSessions = async (_uid: string) => {
     setIsLoadingHistory(true);
     try {
-      const data = await fetchStudySessions(uid);
-      setSessions(data);
+      const data = await listMyPomodoroSessions();
+      setSessions(toStudySessions(data));
     } catch (err) {
       console.error("Failed to fetch study sessions:", err);
     } finally {
@@ -198,28 +193,29 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
     if (!userId) return;
     setIsSaving(true);
     try {
-      const saved = await saveStudySession({
-        userId,
-        studentName,
+      const startedAt = new Date(Date.now() - loggedDuration * 60000).toISOString();
+      const saved = await createPomodoroSession({
         subject: selectedSubject,
-        taskTitle: taskTitle.trim() || `${selectedSubject} Focus Session`,
-        durationMinutes: loggedDuration,
-        sessionType: mode,
-        notes,
-        rating
+        task_title: taskTitle.trim() || `${selectedSubject} Focus Session`,
+        session_type: mode,
+        started_at: startedAt,
+        duration_seconds: loggedDuration * 60,
+        notes: notes || undefined,
+        rating,
       });
 
-      setSessions((prev) => [saved, ...prev.filter(s => s.id !== saved.id)]);
+      const mapped = toStudySessions([saved])[0];
+      setSessions((prev) => [mapped, ...prev.filter((s) => s.id !== mapped.id)]);
       setShowLogModal(false);
-      setToastMessage(`✓ Logged ${loggedDuration} mins of ${selectedSubject} to Database!`);
-      
+      setToastMessage(`✓ Logged ${loggedDuration} mins of ${selectedSubject}!`);
+
       // Reset timer back for next session
       resetTimer();
 
       setTimeout(() => setToastMessage(""), 4000);
     } catch (err) {
       console.error("Failed to save study session:", err);
-      setToastMessage("Failed to save study session. Saved locally.");
+      setToastMessage("Failed to save study session.");
     } finally {
       setIsSaving(false);
     }
@@ -228,7 +224,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
   const handleDeleteSession = async (id?: string) => {
     if (!id) return;
     try {
-      await deleteStudySession(id);
+      await deletePomodoroSession(id);
       setSessions((prev) => prev.filter((s) => s.id !== id));
       setToastMessage("Session log removed.");
       setTimeout(() => setToastMessage(""), 3000);
@@ -548,7 +544,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
                   No active study sessions logged yet.
                 </p>
                 <p className="text-[11px] text-slate-400">
-                  Complete a Pomodoro timer session or click "Finish & Log" to record your study time to the database.
+                  Complete a Pomodoro timer session or click "Finish & Log" to record your study time.
                 </p>
               </div>
             ) : (
@@ -618,7 +614,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
                   Session Complete!
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Great job staying focused! Log this study session to your database scorecard.
+                  Great job staying focused! Save this study session to your progress.
                 </p>
               </div>
 
@@ -689,7 +685,7 @@ export const PomodoroTimer: React.FC<PomodoroTimerProps> = ({
                   disabled={isSaving}
                   className="flex-1 py-3 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-teal-700 dark:hover:bg-amber-400 text-white dark:text-[#00243B] font-bold text-xs rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                 >
-                  {isSaving ? "Logging..." : "Log to Database →"}
+                  {isSaving ? "Saving..." : "Save Session →"}
                 </button>
               </div>
             </motion.div>

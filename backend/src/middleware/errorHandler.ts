@@ -14,6 +14,7 @@ import {
   InvalidNumericAnswerError,
   ScoringRuleMissingError,
   ReviewNotAvailableError,
+  ActiveAttemptExistsError,
 } from "../../../db/shared/errors.js";
 
 export class AppError extends Error {
@@ -91,6 +92,21 @@ export function errorHandler(err: unknown, _req: Request, res: Response, _next: 
   }
   if (err instanceof PaperInvalidError) {
     res.status(422).json({ error: { code: "PAPER_INVALID", message: err.message, itemErrors: err.itemErrors } });
+    return;
+  }
+  if (err instanceof ActiveAttemptExistsError) {
+    // BUG-03/BUG-08 (docs/assessment-tool-debug-plan.md): carries the
+    // existing attempt's id/test id so the client can offer a real
+    // resume-or-submit choice instead of a bare "something went wrong" —
+    // same structured-payload pattern as PoolInsufficientError below.
+    res.status(409).json({
+      error: {
+        code: "ACTIVE_ATTEMPT_EXISTS",
+        message: err.message,
+        existingAttemptId: err.existingAttemptId,
+        existingTestId: err.existingTestId,
+      },
+    });
     return;
   }
   if (err instanceof ScoringRuleMissingError) {

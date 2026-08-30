@@ -5,7 +5,7 @@ import Modal from "../components/layout/Modal";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../contexts/LanguageContext";
 import type { EnvelopeQuestion, Scorecard, SessionResult } from "../types";
-import { saveResponses, submitAttempt as submitAttemptApi, type ResponseUpdate } from "../services/sessionApi";
+import { saveResponses, submitAttempt as submitAttemptApi, pauseAttempt as pauseAttemptApi, type ResponseUpdate } from "../services/sessionApi";
 
 interface TestTakingViewProps {
   session: SessionResult;
@@ -36,8 +36,35 @@ function orderQuestions(session: SessionResult): EnvelopeQuestion[] {
 
 const AUTOSAVE_INTERVAL_MS = 12000;
 
+type QuestionLanguage = "en" | "ta" | "bilingual";
+const QUESTION_LANG_STORAGE_KEY = "lumen_question_lang";
+
+function readStoredQuestionLanguage(): QuestionLanguage {
+  if (typeof window === "undefined") return "en";
+  const stored = window.localStorage.getItem(QUESTION_LANG_STORAGE_KEY);
+  return stored === "ta" || stored === "bilingual" ? stored : "en";
+}
+
 export default function TestTakingView({ session, onCompleteTest, onCancel, studentName }: TestTakingViewProps) {
-  const { t, language, toggleLanguage } = useLanguage();
+  // `language` here is the app-wide ui_lang (BUG-16), read-only — used only
+  // for this component's own chrome text (e.g. the submit-confirmation
+  // dialog's bilingual copy below), same as every other screen. Never write
+  // to it from here; question_lang (below) is the separate, test-only
+  // control BUG-17 asks for.
+  const { t, language } = useLanguage();
+  // BUG-17 (docs/assessment-tool-debug-plan.md): this used to read/write the
+  // same global `language` the whole app's chrome uses — flipping it here
+  // silently changed the Dashboard/Header/every other screen's language too,
+  // the exact "bilingual leaking app-wide" report. question_lang is a
+  // separate, three-state (en/ta/bilingual) choice that exists ONLY here,
+  // never touches LanguageContext, and (per the plan) is available only in
+  // test/practice contexts — there is no equivalent control anywhere else.
+  // Persisted so a mid-test refresh (BUG-06's resume flow) keeps the
+  // student's choice instead of silently reverting to English.
+  const [questionLanguage, setQuestionLanguage] = useState<QuestionLanguage>(readStoredQuestionLanguage);
+  useEffect(() => {
+    window.localStorage.setItem(QUESTION_LANG_STORAGE_KEY, questionLanguage);
+  }, [questionLanguage]);
 
   const questions = useMemo(() => orderQuestions(session), [session]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,8 +77,19 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   const [timeRemaining, setTimeRemaining] = useState(session.remainingSeconds);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [saveError, setSaveError] = useState<string | null>(null);
+  // BUG-10 (docs/assessment-tool-debug-plan.md) mobile gap found live while
+  // verifying the layout fix at the plan's own 390px width: the question
+  // panel and the palette panel both stacked as flex-1 on narrow screens,
+  // splitting the viewport ~50/50 — the answer options were pushed
+  // off-screen behind the palette's internal scroll for every question, not
+  // just a long one. The plan's own BUG-10 footer spec calls for a "palette
+  // toggle", not an always-visible stacked panel — this makes the palette an
+  // off-canvas drawer below `lg`, so the question panel gets the full body
+  // height on mobile the way it already does on desktop.
+  const [showPaletteMobile, setShowPaletteMobile] = useState(false);
 
   const currentQuestion = questions[currentIndex];
 
@@ -94,6 +132,27 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
       flushDirty();
     }, AUTOSAVE_INTERVAL_MS);
     return () => clearInterval(interval);
+  }, [flushDirty]);
+
+  // BUG-05 (docs/assessment-tool-debug-plan.md): answers only reached the
+  // server on this component's own 12s interval or on explicit submit —
+  // switching tabs, minimising, or closing the browser inside that window
+  // lost whatever hadn't been flushed yet (confirmed live: no
+  // visibilitychange/beforeunload listener existed anywhere in this app
+  // before this fix). This does not change exam timer policy (still running
+  // in the background either way — that's a separate, open product decision,
+  // not this fix) — it only makes sure an answer already picked is never
+  // lost to a tab switch.
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") flushDirty();
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("pagehide", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("pagehide", handleVisibilityChange);
+    };
   }, [flushDirty]);
 
   useEffect(() => {
@@ -172,6 +231,30 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
     setShowSubmitModal(true);
   };
 
+  // BUG-07 (docs/assessment-tool-debug-plan.md): this control ("Exit Lobby",
+  // renamed below — it was a mislabeled leftover, not actually a lobby
+  // screen) used to call onCancel() directly with no server call at all,
+  // which just cleared local App.tsx state and left the attempt sitting
+  // in_progress server-side forever (a real, concrete path to the reported
+  // "ghost test" / orphaned-attempt bugs). Flush whatever's unsaved, pause
+  // the attempt server-side so it's honestly resumable, then leave — never a
+  // silent client-side abandon.
+  const handleExitAndPause = async () => {
+    if (!confirm("Exit and pause? Your time will be paused and you can resume this test later from Previous Tests.")) return;
+    setIsExiting(true);
+    try {
+      await flushDirty();
+      await pauseAttemptApi(session.attemptId);
+    } catch {
+      // Best-effort: even if the pause call fails (e.g. offline), still let
+      // the user leave — staying stuck on this screen with no way out is a
+      // worse outcome than an attempt that resolves itself via the server's
+      // own expiry reconciliation later.
+    } finally {
+      onCancel();
+    }
+  };
+
   const handleSubmitAnyway = async () => {
     setShowSubmitModal(false);
     setIsSubmitting(true);
@@ -208,10 +291,25 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   }
 
   const stemImage = currentQuestion.images.find((img) => img.optionId === null);
+  // BUG-17/BUG-15: see envelope.ts's completeness guarantee cited below.
+  const hasCompleteTamil = !!currentQuestion.stemTextTa;
+  const showEnglishText = questionLanguage !== "ta" || !hasCompleteTamil;
+  const showTamilText = (questionLanguage === "ta" || questionLanguage === "bilingual") && hasCompleteTamil;
 
   return (
-    <div className="min-h-screen bg-[#f8f9ff] dark:bg-[#031824] flex flex-col font-sans animate-in fade-in duration-300">
-      <header className="fixed top-0 left-0 right-0 h-20 bg-white dark:bg-[var(--navy)] border-b border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between px-6 md:px-12 z-40">
+    // BUG-10 (docs/assessment-tool-debug-plan.md): this used to be
+    // `min-h-screen` with the header pinned via `fixed` and the rest in
+    // normal document flow — a long question (or a tall image) grew the
+    // whole page, so the browser window itself scrolled and the timer/nav
+    // could end up off-screen. `h-dvh` + `overflow-hidden` here (not `h-screen`
+    // — `100vh` is well-documented to misbehave under mobile browser chrome,
+    // per this same bug's own fix spec) makes this component's own root a
+    // fixed viewport; header/footer below are normal `shrink-0` flex
+    // children now (no longer `fixed`, so no more `pt-28`/`pb-24` offset
+    // hacks needed), and each of the two panels inside `main` gets its own
+    // internal scroll region with pinned controls — see the two panels below.
+    <div className="h-dvh overflow-hidden bg-[#f8f9ff] dark:bg-[#031824] flex flex-col font-sans animate-in fade-in duration-300">
+      <header className="relative shrink-0 h-20 bg-white dark:bg-[var(--navy)] border-b border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between px-6 md:px-12 z-40">
         <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-slate-200 dark:bg-slate-700 overflow-hidden">
           <div
             className={`h-full transition-all duration-1000 ${
@@ -259,15 +357,23 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
         </div>
 
         <div className="flex items-center gap-6">
-          <div className="relative shrink-0 hidden md:block">
-            <button
-              onClick={toggleLanguage}
-              className="px-2.5 py-1.5 h-9 flex items-center justify-center gap-1.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-2xl border border-slate-200 dark:border-slate-700 transition-colors font-bold text-xs cursor-pointer shadow-sm"
-              title="Change Language (English / Tamil)"
-            >
-              <span className="material-symbols-outlined text-[18px]">translate</span>
-              <span className="hidden md:inline uppercase tracking-wider">{language === "en" ? "A / அ" : "அ / A"}</span>
-            </button>
+          {/* BUG-17: question-display mode (en/ta/bilingual) — test/practice
+              only, never touches the app-wide language toggle in Header.tsx. */}
+          <div className="hidden md:flex items-center gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shrink-0">
+            {(["en", "ta", "bilingual"] as const).map((mode) => (
+              <button
+                key={mode}
+                onClick={() => setQuestionLanguage(mode)}
+                className={`px-2.5 py-1.5 rounded-xl text-[11px] font-bold uppercase tracking-wide transition-all cursor-pointer ${
+                  questionLanguage === mode
+                    ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white shadow-sm"
+                    : "text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+                }`}
+                title="Question display language"
+              >
+                {mode === "en" ? "EN" : mode === "ta" ? "TA" : "EN+TA"}
+              </button>
+            ))}
           </div>
 
           <div
@@ -291,8 +397,9 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
         </div>
       </header>
 
-      <main className="flex-1 pt-28 pb-24 px-6 md:px-12 flex flex-col lg:flex-row gap-8 max-w-[1280px] mx-auto w-full">
-        <div className="flex-1 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-3xl border border-slate-200 dark:border-slate-700 p-6 md:p-8 shadow-sm flex flex-col justify-between min-h-[480px]">
+      <main className="flex-1 min-h-0 overflow-hidden px-6 md:px-12 py-8 flex flex-col lg:flex-row gap-8 max-w-[1280px] mx-auto w-full">
+        <div className="flex-1 min-h-0 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col">
+          <div className="flex-1 min-h-0 overflow-y-auto p-6 md:p-8">
           <AnimatePresence mode="wait">
             <motion.div key={currentIndex} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.2 }}>
               <div className="flex justify-between items-center pb-4 border-b border-slate-200 dark:border-slate-700 mb-6">
@@ -305,8 +412,16 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               </div>
 
               <h2 className="text-base md:text-lg font-bold text-[#00243B] dark:text-white mb-6 leading-relaxed font-sans">
-                <div className="mb-2">{currentQuestion.stemText}</div>
-                {language === "ta" && currentQuestion.stemTextTa && <div className="text-[var(--teal)] dark:text-[#FCB824]">{currentQuestion.stemTextTa}</div>}
+                {/* BUG-17: three real modes, not a binary toggle that just
+                    appended Tamil below English whenever "ta" was picked.
+                    BUG-15's server-side completeness guarantee (envelope.ts
+                    only ever populates *TextTa when the whole question —
+                    stem and every option — has complete Tamil) is what makes
+                    !!stemTextTa a safe, sufficient completeness check here:
+                    pure "ta" mode falls back to English for the whole
+                    question rather than ever rendering a blank stem. */}
+                {showEnglishText && <div className="mb-2">{currentQuestion.stemText}</div>}
+                {showTamilText && <div className={showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}>{currentQuestion.stemTextTa}</div>}
               </h2>
 
               {stemImage && (
@@ -337,8 +452,8 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                         {option.optionLabel || String.fromCharCode(65 + idx)}
                       </div>
                       <div className="flex flex-col gap-1">
-                        <span>{option.optionText}</span>
-                        {language === "ta" && option.optionTextTa && <span className="text-[var(--teal)] dark:text-[#FCB824] opacity-90 text-sm">{option.optionTextTa}</span>}
+                        {showEnglishText && <span>{option.optionText}</span>}
+                        {showTamilText && <span className={`opacity-90 text-sm ${showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}`}>{option.optionTextTa}</span>}
                         {optionImage && (
                           <div className="max-w-[220px] mt-1">
                             <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />
@@ -351,8 +466,9 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               </div>
             </motion.div>
           </AnimatePresence>
+          </div>
 
-          <div className="flex flex-wrap justify-between items-center gap-4 mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+          <div className="shrink-0 flex flex-wrap justify-between items-center gap-4 px-6 md:px-8 py-4 border-t border-slate-200 dark:border-slate-700">
             <div className="flex gap-2">
               <button
                 onClick={handleToggleFlag}
@@ -370,6 +486,18 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                 className="px-5 py-3 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-[#ffd15c] dark:hover:text-[#FCB824] hover:bg-amber-50 dark:hover:bg-amber-950/30 disabled:opacity-50 disabled:pointer-events-none transition-all cursor-pointer"
               >
                 {t("Clear Response")}
+              </button>
+
+              {/* BUG-10: palette toggle, mobile only — the palette panel
+                  itself is an off-canvas drawer below `lg` (see its wrapper
+                  below), opened from here instead of always occupying half
+                  the viewport. */}
+              <button
+                onClick={() => setShowPaletteMobile(true)}
+                className="lg:hidden px-5 py-3 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer flex items-center gap-2"
+              >
+                <span className="material-symbols-outlined text-sm">grid_view</span>
+                {t("Palette")} ({answeredCount}/{questions.length})
               </button>
             </div>
 
@@ -391,10 +519,50 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               </button>
             </div>
           </div>
+
+          {/* BUG-10: Submit must stay reachable without opening the palette
+              drawer on mobile — it's the single most time-critical action in
+              the whole console. Desktop already shows it in the side panel
+              (lg:hidden below), so this is a mobile-only duplicate, not a
+              second control competing for attention on larger screens. */}
+          <div className="lg:hidden shrink-0 px-6 pb-4 space-y-2">
+            {saveError && <p className="text-[11px] text-amber-600 dark:text-amber-400 font-semibold text-center">{saveError}</p>}
+            {submitError && <p className="text-[11px] text-red-600 dark:text-red-400 font-semibold text-center">{submitError}</p>}
+            <button
+              onClick={handleTriggerSubmit}
+              disabled={isSubmitting}
+              className="w-full py-3.5 bg-[#ffd15c] hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wide rounded-2xl shadow-md transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {isSubmitting ? t("Submitting...") : t("Submit Test?")}
+            </button>
+          </div>
         </div>
 
-        <div className="w-full lg:w-[320px] bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-3xl border border-slate-200 dark:border-slate-700 p-6 md:p-8 shadow-sm flex flex-col justify-between gap-6">
-          <div>
+        {/* BUG-10: independent scroll container for the palette, separate
+            from the question panel's own — a long question and a large
+            question count (e.g. a 180-question full mock's palette grid)
+            must each be able to scroll without affecting the other.
+            Below `lg` this is an off-canvas drawer (see showPaletteMobile
+            above) instead of a stacked flex-1 panel — sharing the viewport
+            50/50 with the question panel on a phone-width screen pushed the
+            answer options themselves out of view, confirmed live at the
+            plan's own 390px check width. lg:flex-none restores the static
+            320px column on desktop where the two panels sit side by side. */}
+        {showPaletteMobile && (
+          <div className="fixed inset-0 z-40 bg-black/40 lg:hidden" onClick={() => setShowPaletteMobile(false)} />
+        )}
+        <div
+          className={`fixed inset-x-0 bottom-0 z-50 max-h-[80vh] rounded-t-3xl transition-transform duration-300 ${
+            showPaletteMobile ? "translate-y-0" : "translate-y-full"
+          } lg:static lg:z-auto lg:translate-y-0 lg:transition-none lg:max-h-none lg:rounded-3xl lg:flex-none lg:w-[320px] w-full flex-1 min-h-0 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col`}
+        >
+          <div className="shrink-0 flex items-center justify-between px-6 pt-4 lg:hidden">
+            <span className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">{t("Question Palette")}</span>
+            <button onClick={() => setShowPaletteMobile(false)} className="p-1.5 rounded-full bg-slate-100 dark:bg-slate-800 cursor-pointer">
+              <span className="material-symbols-outlined text-lg">close</span>
+            </button>
+          </div>
+          <div className="flex-1 min-h-0 overflow-y-auto p-6 md:p-8">
             <div className="flex flex-wrap gap-2 mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
               {sectionsForTabs.map((s) => (
                 <button
@@ -409,7 +577,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               ))}
             </div>
 
-            <h3 className="font-bold text-sm text-[#00243B] dark:text-white mb-1 uppercase tracking-wide">{t("Question Palette")}</h3>
+            <h3 className="hidden lg:block font-bold text-sm text-[#00243B] dark:text-white mb-1 uppercase tracking-wide">{t("Question Palette")}</h3>
             <p className="text-slate-500 dark:text-slate-400 text-xs mb-6">{t("Review answered, flagged, and skipped questions")}</p>
 
             <div className="grid grid-cols-5 gap-3.5">
@@ -439,7 +607,10 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                 return (
                   <button
                     key={q.questionId}
-                    onClick={() => setCurrentIndex(idx)}
+                    onClick={() => {
+                      setCurrentIndex(idx);
+                      setShowPaletteMobile(false);
+                    }}
                     className={`h-11 rounded-xl font-bold text-xs transition-all relative flex items-center justify-center cursor-pointer hover:scale-105 ${bgClass} ${borderClass}`}
                   >
                     {idx + 1}
@@ -475,7 +646,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
             </div>
           </div>
 
-          <div className="space-y-3 mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+          <div className="shrink-0 space-y-3 px-6 md:px-8 py-4 border-t border-slate-200 dark:border-slate-700">
             {saveError && <p className="text-[11px] text-amber-600 dark:text-amber-400 font-semibold text-center">{saveError}</p>}
             {submitError && <p className="text-[11px] text-red-600 dark:text-red-400 font-semibold text-center">{submitError}</p>}
             <button
@@ -486,20 +657,17 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               {isSubmitting ? t("Submitting...") : t("Submit Test?")}
             </button>
             <button
-              onClick={() => {
-                if (confirm("Are you sure you want to exit the test? Your current progress will be lost.")) {
-                  onCancel();
-                }
-              }}
-              className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer text-center block"
+              onClick={handleExitAndPause}
+              disabled={isExiting}
+              className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer text-center block disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {t("Exit Lobby")}
+              {isExiting ? t("Exiting...") : t("Exit & Pause Test")}
             </button>
           </div>
         </div>
       </main>
 
-      <footer className="h-16 border-t border-slate-200 dark:border-slate-700 flex items-center justify-center bg-slate-50 dark:bg-[#031824] mt-auto">
+      <footer className="shrink-0 h-16 border-t border-slate-200 dark:border-slate-700 flex items-center justify-center bg-slate-50 dark:bg-[#031824]">
         <p className="text-sm text-slate-700 dark:text-slate-300 font-semibold bg-slate-200 dark:bg-slate-800/80 px-4 py-1.5 rounded-md">© 2026 Lumen Academy. All rights reserved.</p>
       </footer>
 

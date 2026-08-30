@@ -308,6 +308,10 @@ export interface DashboardAnalytics {
   timeDistribution: TimeBucket[];
   weakestUnits: UnitAccuracy[];
   unattemptedRate: { servedCount: number; unattemptedCount: number; unattemptedPercent: number };
+  // BUG-23 (docs/assessment-tool-debug-plan.md) — the real, server-counted
+  // "Tests Taken" (attempt_state = 'scored', uncapped — attemptHistory above
+  // is capped at 20 for chart/list rendering).
+  totalScoredAttempts: number;
 }
 
 // --- Phase G: per-attempt review (G4) -------------------------------------

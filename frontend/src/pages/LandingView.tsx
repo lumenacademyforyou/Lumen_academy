@@ -1698,7 +1698,7 @@ import {
   signInWithLinkedIn,
 } from "../services/supabaseAuth";
 import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../services/emailSendGuard";
-import { ensureDemoSession } from "../services/demoSession";
+import { ensureDemoSession, resetDemoAccountData, setDemoLoginInFlight } from "../services/demoSession";
 import { tryGoogleOneTap } from "../services/googleOneTap";
 
 export type { SyllabusUnit };
@@ -1984,12 +1984,24 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
   const handleDemoAccountLogin = async () => {
     setFormError("");
     setIsDemoLoggingIn(true);
+    // Real race found live: App.tsx's global auth-state listener used to
+    // reveal the authenticated app the instant ensureDemoSession() signed
+    // in, racing ahead of the reset below and letting a fast interaction
+    // create data the reset then deleted moments later. This flag tells
+    // that listener to defer to this function's own onLoginSuccess call
+    // instead — see demoSession.ts's isDemoLoginInFlight.
+    setDemoLoginInFlight(true);
     try {
       await ensureDemoSession();
+      // BUG-02: wipe whatever this account accumulated last time before
+      // entering the app, so every demo login opens fresh. Best-effort by
+      // design (see resetDemoAccountData) — never blocks login on failure.
+      await resetDemoAccountData();
       onLoginSuccess("Demo Student", false, false);
     } catch (err: any) {
       setFormError(describeAuthError(err));
     } finally {
+      setDemoLoginInFlight(false);
       setIsDemoLoggingIn(false);
     }
   };

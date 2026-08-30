@@ -1,11 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" translate="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#020617" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- BUG-16 (docs/assessment-tool-debug-plan.md): the app has its own real
+         i18n layer (frontend/src/contexts/LanguageContext.tsx) — a browser's
+         automatic "Translate this page?" prompt (Chrome offers this on any
+         page it detects as non-English, which Tamil question text would
+         trigger) rewrites DOM text nodes React doesn't know about, a
+         well-documented cause of frozen/crashed React UIs. This plus
+         translate="no" above tells Chrome/Google Translate not to offer it. -->
+    <meta name="google" content="notranslate" />
     <title>Lumen Academy Test Prep Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
   </head>

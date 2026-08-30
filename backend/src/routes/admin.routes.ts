@@ -36,7 +36,7 @@ import {
 const router = Router();
 const gated = [requireAuth, requirePermission("users:invite")];
 
-function requireUserManagePermission(): (req: Request, res: Response, next: (err?: unknown) => void) => void {
+export function requireUserManagePermission(): (req: Request, res: Response, next: (err?: unknown) => void) => void {
   const managePlatform = requirePermission("users:manage_platform");
   const manageInstitution = requirePermission("users:manage_institution");
   return (req, res, next) => {

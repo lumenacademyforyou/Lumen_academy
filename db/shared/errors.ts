@@ -136,3 +136,20 @@ export class ReviewNotAvailableError extends Error {
     this.name = "ReviewNotAvailableError";
   }
 }
+
+/**
+ * BUG-03/BUG-08 (docs/assessment-tool-debug-plan.md) — startAttempt: the user
+ * already has an in_progress/paused attempt (checked only after reconciling
+ * expiry first, so a genuinely-expired one never blocks a fresh start).
+ * Carries the existing attempt's id so the client can offer a real
+ * "resume or submit" choice instead of a blank failure.
+ */
+export class ActiveAttemptExistsError extends Error {
+  constructor(
+    public readonly existingAttemptId: string,
+    public readonly existingTestId: string
+  ) {
+    super(`user already has an active attempt (${existingAttemptId}) — finish or exit it before starting another`);
+    this.name = "ActiveAttemptExistsError";
+  }
+}

@@ -11,12 +11,13 @@ import { validate } from "../middleware/validate.js";
 import { getFullProfile, updateProfile, updateProfileSchema } from "../services/meProfile.service.js";
 import { requireRecentOtpReauthentication, deleteOwnAccount } from "../services/deleteAccount.service.js";
 import { getSessionStatus, heartbeat, logoutSession } from "../controllers/authSessionController.js";
+import { resetDemoAccountData } from "../controllers/demoController.js";
 import catalogRouter from "./catalog.routes.js";
 import contentRouter from "./content.routes.js";
 import coreRouter from "./core.routes.js";
 import assessRouter from "./assess.routes.js";
 import learnRouter from "./learn.routes.js";
-import adminRouter from "./admin.routes.js";
+import adminRouter, { requireUserManagePermission } from "./admin.routes.js";
 
 const router = Router();
 
@@ -50,11 +51,20 @@ router.patch("/me", requireAuth, validate({ body: updateProfileSchema }), async 
   }
 });
 
-// Self-service account deletion. Requires the caller's session to carry a
-// recent (<10 min) OTP-verified amr entry — see deleteAccount.service.ts for
-// why that's the actual reauthentication gate instead of Supabase's
-// password-update-only reauthenticate() API.
-router.delete("/me", requireAuth, async (req: Request, res: Response, next) => {
+// BUG-27 (docs/assessment-tool-debug-plan.md): this used to be reachable by
+// any signed-in student with just requireAuth + a fresh OTP — genuine
+// self-service deletion, no admin involved at all. The plan's own fix spec
+// asks for the "Delete Account" UI removed AND the endpoint itself gated
+// behind an admin role check, with a real admin-side path for legitimate
+// deletion requests. That admin path already existed and needed no new code
+// — POST /admin/users/:id/status {toStatus:"deleted"} (adminUser.service.ts)
+// already soft-deletes a target user (bans the auth identity, marks
+// core.app_user.status='deleted', leaves an audit row) and is the one this
+// route now defers to conceptually. This route stays mounted (rather than
+// removed outright) specifically so a normal user hitting it directly gets
+// a clean, intentional 403 — matching the plan's own acceptance test —
+// instead of a generic 404 that reads like a dead/typo'd endpoint.
+router.delete("/me", requireAuth, requireUserManagePermission(), async (req: Request, res: Response, next) => {
   try {
     await requireRecentOtpReauthentication(req.accessToken!);
     await deleteOwnAccount(req.user!.id, req.user!.appUserId);
@@ -70,6 +80,11 @@ router.delete("/me", requireAuth, async (req: Request, res: Response, next) => {
 router.get("/auth/session", requireAuth, getSessionStatus);
 router.post("/auth/session/heartbeat", requireAuth, heartbeat);
 router.post("/auth/session/logout", requireAuth, logoutSession);
+
+// BUG-02 — wipes the caller's own data if (and only if) they're the fixed
+// demo account; a no-op for anyone else. Called once, right after the
+// "Quick Demo" flow establishes a session, so every demo login starts empty.
+router.post("/auth/demo/reset", requireAuth, resetDemoAccountData);
 
 // Catalog Endpoints (db/catalog/-backed — exam, subject, syllabus, pattern data)
 router.use("/catalog", catalogRouter);

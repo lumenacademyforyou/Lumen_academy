@@ -17,6 +17,7 @@ import {
   type BatchResponseItem,
 } from "../../../db/assess/test/attempt/attempt-flow.js";
 import { getAttemptEnvelope } from "../../../db/assess/test/attempt/envelope.js";
+import { enforceExpiry, reconcileUserAttempts } from "../../../db/assess/test/attempt/expiry.js";
 import { getIrtReportForAttempt } from "../../../db/assess/analytics/irt.js";
 import { getCohortComparison } from "../../../db/assess/analytics/dashboard.js";
 
@@ -156,6 +157,17 @@ export async function getScorecard(req: Request, res: Response, next: NextFuncti
 // that retiring the old route is TE-P6's job, not done here either.
 export async function getEnvelope(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
+    // BUG-03: this is getActiveSession()'s single call after listing attempts
+    // (frontend/src/services/sessionApi.ts) — reconciling expiry here means a
+    // stale in_progress/paused attempt is force-closed before it can ever be
+    // rendered as a live countdown again. If it just got closed, there's no
+    // envelope to serve; the frontend treats `expired: true` as "nothing to
+    // resume" (see getEnvelope/getActiveSession in sessionApi.ts).
+    const closed = await enforceExpiry(req.params.attemptId, req.user!.appUserId);
+    if (closed) {
+      res.json({ data: null, expired: true });
+      return;
+    }
     res.json({ data: await getAttemptEnvelope(req.params.attemptId, req.user!.appUserId) });
   } catch (err) {
     next(err);
@@ -214,6 +226,11 @@ export async function getCohortComparisonHandler(req: Request, res: Response, ne
 
 export async function listOwnAttempts(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
+    // BUG-03: reconcile every stale in_progress/paused attempt this user has
+    // before reporting the list, so an expired one never shows as "active"
+    // here either (getActiveSession's own list-then-envelope flow calls this
+    // route first).
+    await reconcileUserAttempts(req.user!.appUserId);
     const testId = typeof req.query.testId === "string" ? req.query.testId : undefined;
     res.json({ data: await listAttempts(req.user!.appUserId, testId) });
   } catch (err) {

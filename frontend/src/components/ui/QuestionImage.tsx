@@ -19,10 +19,17 @@ interface QuestionImageProps {
 // requirement falls out of that, not out of this component.
 export default function QuestionImage({ url, altText, className = "", maxHeightPx = 320 }: QuestionImageProps) {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
+  // BUG-10 (docs/assessment-tool-debug-plan.md): the plan's own image spec
+  // asks for click-to-zoom on dense diagrams — this component had no way to
+  // see an image any larger than its reserved slot (maxHeightPx, as small as
+  // 160px for an option image) before this fix. A plain fixed-overlay
+  // lightbox, not a new dependency: the images here are already served over
+  // HTTPS from this app's own asset host, nothing more elaborate needed.
+  const [zoomed, setZoomed] = useState(false);
 
   return (
     <div
-      className={`relative w-full rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-slate-50 dark:bg-slate-800/60 ${className}`}
+      className={`relative w-full rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-slate-50 dark:bg-slate-800/60 flex items-center justify-center ${className}`}
       style={{ minHeight: status === "loaded" ? undefined : Math.min(160, maxHeightPx) }}
     >
       {status === "loading" && (
@@ -60,9 +67,38 @@ export default function QuestionImage({ url, altText, className = "", maxHeightP
         decoding="async"
         onLoad={() => setStatus("loaded")}
         onError={() => setStatus("error")}
-        className={`max-w-full w-auto rounded-xl ${status === "loaded" ? "block" : "hidden"}`}
+        onClick={() => status === "loaded" && setZoomed(true)}
+        className={`max-w-full w-auto rounded-xl ${status === "loaded" ? "block cursor-zoom-in" : "hidden"}`}
         style={{ maxHeight: maxHeightPx }}
       />
+
+      {status === "loaded" && (
+        <button
+          type="button"
+          onClick={() => setZoomed(true)}
+          aria-label="Zoom image"
+          className="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center cursor-pointer"
+        >
+          <span className="material-symbols-outlined text-base">zoom_in</span>
+        </button>
+      )}
+
+      {zoomed && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/85 flex items-center justify-center p-6 cursor-zoom-out"
+          onClick={() => setZoomed(false)}
+        >
+          <img src={url} alt={altText ?? ""} className="max-w-full max-h-full object-contain rounded-lg" />
+          <button
+            type="button"
+            onClick={() => setZoomed(false)}
+            aria-label="Close zoomed image"
+            className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center cursor-pointer"
+          >
+            <span className="material-symbols-outlined text-xl">close</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

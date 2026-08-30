@@ -55,7 +55,25 @@ if (config.nodeEnv === "production") {
   // index.html, not a JSON stub — the bare-root JSON handler formerly here
   // shadowed the app's actual landing page. Real health checks use GET /api/health.
   const distPath = path.join(process.cwd(), "dist");
-  app.use(express.static(distPath));
+  // BUG-31 (docs/assessment-tool-debug-plan.md Phase 10) — Vite already
+  // content-hashes every file under dist/assets (e.g. index-e4OvjKVV.js), so
+  // those can be cached for a year: a new deploy produces new filenames, it
+  // never serves stale content under an old name. index.html itself (and
+  // anything else at the root) must stay no-cache — it's the one file whose
+  // content changes on every deploy while keeping the same URL ("/"), and a
+  // stale cached copy would keep pointing at asset filenames that no longer
+  // exist.
+  app.use(
+    express.static(distPath, {
+      setHeaders: (res, filePath) => {
+        if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+          res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        } else {
+          res.setHeader("Cache-Control", "no-cache");
+        }
+      },
+    })
+  );
   app.get("*", (_req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });

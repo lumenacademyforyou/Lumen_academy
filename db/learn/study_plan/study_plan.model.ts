@@ -15,4 +15,8 @@ export interface StudyPlanModel {
   start_date: string | null;
   plan_strategy: string | null;
   plan_status: string;
+  /** BUG-19 (026_learn_study_tools.sql) — the plan configurator's free-form fields (target exam year, current score level, daily hours, focus area). */
+  config: Record<string, unknown>;
+  created_at: string;
+  updated_at: string;
 }

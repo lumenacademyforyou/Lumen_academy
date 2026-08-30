@@ -8,7 +8,8 @@ import AnimatedCounter from "../components/ui/AnimatedCounter";
 import { TestAttempt, CatalogTree, SessionResult, UnitAccuracy } from "../types";
 import { PomodoroTimer } from "../components/ui/dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../components/ui/dashboard/DailyFlashcard";
-import { fetchStudySessions, calculateStudyStreak } from "../services/studySessionService";
+import { calculateStudyStreak } from "../services/studySessionService";
+import { listMyPomodoroSessions, toStudySessions } from "../services/pomodoroApi";
 import { supabase } from "../services/supabase";
 import { fetchMe, MeProfile } from "../services/meApi";
 import { createSession } from "../services/sessionApi";
@@ -33,11 +34,6 @@ interface DashboardViewProps {
   attempt: TestAttempt;
   studentName: string;
   onTakeTest: () => void;
-  // Count of real completed attempts only — used below to gate the "Early
-  // Bird" achievement badge. Passing the full attempts catalog length here
-  // used to make that badge (and the achievements empty-state) fire for
-  // every user regardless of whether they had ever finished a test.
-  attemptsCount: number;
   // P1-8: needed to resolve a weakest-unit's real subjectId (analytics only
   // carries subjectCode) so "Start unit test" can launch a real session
   // scoped to that exact unit, not just switch to the generic test list.
@@ -45,12 +41,23 @@ interface DashboardViewProps {
   onSessionCreated: (session: SessionResult) => void;
 }
 
-export default function DashboardView({ attempt, studentName, onTakeTest, attemptsCount, catalogTree, onSessionCreated }: DashboardViewProps) {
+export default function DashboardView({ attempt, studentName, onTakeTest, catalogTree, onSessionCreated }: DashboardViewProps) {
   const [profileIncomplete, setProfileIncomplete] = useState(false);
   const { t } = useLanguage();
   const [animatedScore, setAnimatedScore] = useState(0);
   const [selectedAttemptId, setSelectedAttemptId] = useState<string | null>(null);
   const { analytics } = useDashboardAnalytics();
+  // BUG-23 (docs/assessment-tool-debug-plan.md) — "Tests Taken" (and every
+  // other place this screen counts completed attempts) used to come from a
+  // prop derived from App.tsx's client-only `attempts` array — in-memory
+  // state that starts over on every reload/new device/new login and was
+  // never the account's real history. Now sourced from the same real,
+  // server-counted `attempt_state = 'scored'` query the rest of this
+  // screen's analytics already use (db/assess/analytics/dashboard.ts).
+  // `analytics` loads asynchronously — 0 until then, same as every other
+  // analytics-derived number on this screen already defaults to while
+  // loading (see e.g. weakestUnits below).
+  const attemptsCount = analytics?.totalScoredAttempts ?? 0;
 
   // "Available" is TestAttempt's marker for a not-yet-taken catalog entry
   // (see database_sample/initialAttempts.ts) — the IRT/AI-diagnostic panels
@@ -102,9 +109,11 @@ export default function DashboardView({ attempt, studentName, onTakeTest, attemp
       setUnitStartError(
         err instanceof ApiError && err.code === "POOL_INSUFFICIENT"
           ? `Not enough published questions for ${unit.unitTitle} yet (${err.message}).`
-          : err instanceof Error
-            ? err.message
-            : "Could not start this unit's test."
+          : err instanceof ApiError && err.code === "ACTIVE_ATTEMPT_EXISTS"
+            ? "You already have a test in progress. Resume or submit it before starting a new one."
+            : err instanceof Error
+              ? err.message
+              : "Could not start this unit's test."
       );
     } finally {
       setStartingUnitNodeId(null);
@@ -122,10 +131,10 @@ useEffect(() => {
         if (isMounted) setStudyStreak(0);
         return;
       }
-      const sessions = await fetchStudySessions(user.id);
+      const sessions = await listMyPomodoroSessions(90);
 
       if (isMounted) {
-        setStudyStreak(calculateStudyStreak(sessions));
+        setStudyStreak(calculateStudyStreak(toStudySessions(sessions)));
       }
     } catch (err) {
       console.error("Failed to update streak:", err);

@@ -19,7 +19,18 @@ async function loginAsDemo(page: Page) {
   // latency against the live database) overwrites it with the account's real
   // profile name, "Prince A" (demoSession.ts's DEMO_DISPLAY_NAME) — asserting
   // on that final, stable name rather than the racy transient one.
-  await expect(page.getByRole("heading", { name: /Start your journey, Prince A!/i })).toBeVisible({ timeout: 20000 });
+  //
+  // BUG-02 (docs/assessment-tool-debug-plan.md) added a real server-side wipe
+  // of the account's own data on every single demo login (demoSession.ts's
+  // resetDemoAccountData, awaited before onLoginSuccess fires) so the account
+  // is always genuinely fresh — the plan's own trade-off note for this
+  // approach ("Option B... slower logins") is real, not theoretical: this
+  // wipe is ~20 sequential DELETE round trips, which measured live at
+  // 5-10s+ in this environment's ~250ms-per-round-trip latency. 20000ms was
+  // enough before that existed; bumped to match the 40000ms this same file
+  // already uses for other post-real-backend-work assertions (e.g. after a
+  // submit), not an arbitrary increase.
+  await expect(page.getByRole("heading", { name: /Start your journey, Prince A!/i })).toBeVisible({ timeout: 40000 });
 }
 
 // Shared pre-test ritual every session (subject-wise/custom/full-mock) goes
@@ -120,8 +131,16 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
 
   // F6 — subject-wise journey: login -> directory -> subject-wise practice ->
   // attempt -> submit -> back on the dashboard, which now reflects a real
-  // completed attempt (DashboardView.tsx switches its heading from
-  // "Start your journey" to "Great work" once hasRealAttempt is true).
+  // completed attempt. The exact hero headline is scenario-based
+  // (frontend/src/utils/motivationalMessage.ts), not a fixed "Great work"
+  // string — and BUG-02 (docs/assessment-tool-debug-plan.md) made every
+  // "Quick Demo" login wipe the account's prior history first, so the
+  // attempt this test just submitted is genuinely attempt #1 every time,
+  // which always takes the getMotivationalMessage() attemptsCount<=1
+  // branch ("Nice work getting started!") regardless of score — asserting
+  // that specific, now-deterministic headline instead of the old
+  // score-band phrasing this test used to see back when the demo account
+  // carried pre-seeded history across runs.
   test("Frontend Journey - Subject-wise practice test, attempt, submit, and dashboard reflects it", async ({ page }) => {
     await loginAsDemo(page);
 
@@ -135,7 +154,7 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
     await passSystemCheckAndLobby(page);
     await answerFirstQuestionAndSubmit(page);
 
-    await expect(page.getByRole("heading", { name: /Great work, Prince A!/i })).toBeVisible({ timeout: 40000 });
+    await expect(page.getByRole("heading", { name: /Nice work getting started!/i })).toBeVisible({ timeout: 40000 });
   });
 
   // F6 — the primary journey the directive names explicitly: build a custom
@@ -167,7 +186,9 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
     }
 
     await answerFirstQuestionAndSubmit(page);
-    await expect(page.getByRole("heading", { name: /Great work, Prince A!/i })).toBeVisible({ timeout: 40000 });
+    // Same BUG-02 reasoning as the subject-wise journey above: every demo
+    // login now wipes prior history first, so this is always attempt #1.
+    await expect(page.getByRole("heading", { name: /Nice work getting started!/i })).toBeVisible({ timeout: 40000 });
   });
 
   // F6 — full-mock journey. A fresh demo account has an incomplete syllabus

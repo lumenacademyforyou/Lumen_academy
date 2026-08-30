@@ -109,6 +109,17 @@ export const getCatalogTree = async (_req: Request, res: Response, next: NextFun
       };
     });
 
+    // BUG-31 (docs/assessment-tool-debug-plan.md Phase 10) — "sensible
+    // ETag/Cache-Control on content that rarely changes (syllabus, question
+    // metadata)." This endpoint is read-open (no requireAuth above) and
+    // platform-wide — identical for every caller, not personalized — so
+    // it's safe to cache without any risk of the cross-user bleed BUG-04
+    // flagged for attempt/user data. Express already sends a weak ETag on
+    // every response by default (enables a conditional GET even without
+    // this); the explicit max-age additionally lets the browser skip the
+    // round trip entirely for 5 minutes, well under how often content
+    // admins actually publish new questions/units.
+    res.set("Cache-Control", "public, max-age=300");
     res.json({
       data: {
         examId: exam.exam_id,

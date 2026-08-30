@@ -14,7 +14,7 @@ import {
   signOut as supabaseSignOut,
   getProfileGaps,
 } from "./services/supabaseAuth";
-import { ensureDemoSession } from "./services/demoSession";
+import { ensureDemoSession, isDemoEmail, isDemoLoginInFlight } from "./services/demoSession";
 import { suppressGoogleOneTapForSession } from "./services/googleOneTap";
 import { clearMeCache } from "./services/meApi";
 
@@ -76,10 +76,11 @@ function ExamLoadingFallback({ message }: { message: string }) {
   );
 }
 import { getCatalogTree } from "./services/catalogApi";
-import { createSession, getActiveSession, pauseAttempt } from "./services/sessionApi";
+import { createSession, getActiveSession, pauseAttempt, submitAttempt as submitAttemptApi } from "./services/sessionApi";
 import { logoutSession as revokeAuthSession } from "./services/authSessionApi";
 import { useIdleSessionGuard, type SessionExpiryReason } from "./hooks/useIdleSessionGuard";
 import SessionExpiryModal from "./components/layout/SessionExpiryModal";
+import Modal from "./components/layout/Modal";
 
 
 
@@ -135,6 +136,12 @@ const [userId, setUserId] = useState<string | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [studentName, setStudentName] = useState("");
+  // BUG-03/BUG-06 (docs/assessment-tool-debug-plan.md): a resumable attempt
+  // used to be auto-entered with no confirmation — the "ghost test" report.
+  // Now it's surfaced as an explicit choice instead (see the modal near the
+  // bottom of this component).
+  const [resumableSession, setResumableSession] = useState<SessionResult | null>(null);
+  const [isResumingDecision, setIsResumingDecision] = useState(false);
   const [attempts, setAttempts] = useState<TestAttempt[]>(INITIAL_ATTEMPTS);
   const [activeAttemptId, setActiveAttemptId] = useState<string>(INITIAL_ATTEMPTS[0].id);
   const [currentTab, setTab] = useState<string>("dashboard");
@@ -311,6 +318,17 @@ useEffect(() => {
     data: { subscription },
   } = supabase.auth.onAuthStateChange((_event, session) => {
     if (session?.user) {
+      // Real race found live while verifying BUG-10's layout fix: this
+      // listener fires (and used to reveal the whole authenticated app)
+      // the instant ensureDemoSession()'s signInWithPassword resolves —
+      // before handleDemoAccountLogin's own `await resetDemoAccountData()`
+      // has actually finished wiping the account. A fast click into
+      // "Start Practice" in that window creates a real attempt that the
+      // still-in-flight reset then deletes moments later (confirmed via a
+      // 404 "assess.test not found" straight out of startAttempt). Defer to
+      // that flow's own onLoginSuccess call instead of racing ahead of it.
+      if (isDemoEmail(session.user.email) && isDemoLoginInFlight()) return;
+
       setProfileGaps(getProfileGaps(session));
       setIsAuthenticated(true);
 
@@ -388,8 +406,13 @@ useEffect(() => {
     getActiveSession()
       .then((session) => {
         if (cancelled || !session || currentScreenRef.current !== "portal") return;
-        setActiveSession(session);
-        setCurrentScreen("test_taking");
+        // BUG-03/BUG-06: never silently drop the user back into a running
+        // countdown on their behalf — surface it as a choice instead. If the
+        // attempt had already expired server-side, getActiveSession's own
+        // envelope call just force-closed it and returned null here, so
+        // there's nothing to prompt about — the normal portal view is
+        // already correct in that case.
+        setResumableSession(session);
       })
       .catch(() => {
         // No resumable attempt, or the lookup failed — falling through to
@@ -399,6 +422,33 @@ useEffect(() => {
       cancelled = true;
     };
   }, [isAuthenticated, isAdmin]);
+
+  const handleResumeSession = () => {
+    if (!resumableSession) return;
+    setActiveSession(resumableSession);
+    setResumableSession(null);
+    setCurrentScreen("test_taking");
+  };
+
+  const handleSubmitResumableNow = async () => {
+    if (!resumableSession) return;
+    setIsResumingDecision(true);
+    try {
+      const scorecard = await submitAttemptApi(resumableSession.attemptId);
+      const durationSeconds = resumableSession.test.durationMinutes ? resumableSession.test.durationMinutes * 60 : resumableSession.remainingSeconds || 0;
+      const elapsedMinutes = Math.round(Math.max(0, durationSeconds - resumableSession.remainingSeconds) / 60);
+      const newAttempt = buildHonestAttemptFromScorecard(scorecard, resumableSession.test.title, attempts, elapsedMinutes);
+      setAttempts((prev) => [newAttempt, ...prev]);
+      setActiveAttemptId(newAttempt.id);
+      setResumableSession(null);
+      setCurrentScreen("evaluating");
+    } catch {
+      // Leave the prompt up — the attempt is still safely paused/in_progress
+      // server-side either way, so the user can just try again.
+    } finally {
+      setIsResumingDecision(false);
+    }
+  };
 
   // Message surfaced on the landing page after a forced sign-out (idle or
   // absolute session timeout) — cleared on the next successful login.
@@ -427,6 +477,15 @@ useEffect(() => {
     setIsAdmin(false);
     setActiveSession(null);
     setCurrentScreen("portal");
+    // BUG-04 (docs/assessment-tool-debug-plan.md): `attempts`/`activeAttemptId`
+    // are plain in-memory SPA state, never fetched from the server and (until
+    // this fix) never cleared here — sign-out/sign-in is a client-side route
+    // change, not a hard reload, so without this a second account signing in
+    // on the same tab could briefly render the previous account's
+    // just-completed attempt (EvaluatingView's lookup, the dashboard reminder
+    // logic, attemptsCount) before any real data ever loads for them.
+    setAttempts(INITIAL_ATTEMPTS);
+    setActiveAttemptId(INITIAL_ATTEMPTS[0].id);
     navigate("/");
   };
 
@@ -440,18 +499,14 @@ useEffect(() => {
 
   const idleGuard = useIdleSessionGuard(isAuthenticated && !isAdmin, handleSessionExpired);
 
-  // Interactive Chapter Checklist State
-  const [chapterGoals, setChapterGoals] = useState<ChapterGoal[]>([
-    { id: "g1", subject: "Physics", chapter: "Mechanics & Rotational Dynamics", highYieldTag: "32 Marks", hoursNeeded: 12, completed: false },
-    { id: "g2", subject: "Physics", chapter: "Electrostatics & Current Electricity", highYieldTag: "36 Marks", hoursNeeded: 10, completed: true },
-    { id: "g3", subject: "Chemistry", chapter: "Organic Reactions & Mechanisms", highYieldTag: "40 Marks", hoursNeeded: 14, completed: false },
-    { id: "g4", subject: "Chemistry", chapter: "Inorganic Coordination & p-Block", highYieldTag: "36 Marks", hoursNeeded: 8, completed: false },
-    { id: "g5", subject: "Botany", chapter: "Genetics & Molecular Inheritance", highYieldTag: "48 Marks", hoursNeeded: 16, completed: true },
-    { id: "g6", subject: "Botany", chapter: "Plant Physiology & Photosynthesis", highYieldTag: "32 Marks", hoursNeeded: 10, completed: false },
-    { id: "g7", subject: "Zoology", chapter: "Human Physiology & Neuro-Endocrine", highYieldTag: "52 Marks", hoursNeeded: 18, completed: false },
-    { id: "g8", subject: "Zoology", chapter: "Human Reproduction & ART Tech", highYieldTag: "36 Marks", hoursNeeded: 8, completed: false },
-  ]);
-  const isSyllabusCompleted = chapterGoals.every(g => g.completed);
+  // Interactive Chapter Checklist State — BUG-19 (docs/assessment-tool-debug-plan.md
+  // Phase 7): real goals now load from the server (learn.study_plan_goal,
+  // via StudyPlanView's own mount effect / handleSavePlan) and replace this
+  // via setChapterGoals; starts empty rather than a hardcoded fake array so
+  // "no plan saved yet" is represented honestly instead of by 8 sample rows
+  // that used to include two already marked complete.
+  const [chapterGoals, setChapterGoals] = useState<ChapterGoal[]>([]);
+  const isSyllabusCompleted = chapterGoals.length > 0 && chapterGoals.every(g => g.completed);
 
   const activeAttempt = attempts.find((a) => a.id === activeAttemptId) || attempts[0];
 
@@ -585,6 +640,36 @@ useEffect(() => {
           onSignOutNow={() => endSession(null)}
         />
       )}
+      {resumableSession && currentScreen === "portal" && (
+        <Modal onClose={() => setResumableSession(null)} closeOnBackdropClick={false} closeOnEscape={false}>
+          <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-8 max-w-md w-full text-center">
+            <h2 className="font-sans font-extrabold text-2xl text-[#00243B] dark:text-white mb-2">{t("Test in progress")}</h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mb-1">
+              {resumableSession.test.title} — {Math.floor(resumableSession.remainingSeconds / 60)}:
+              {String(resumableSession.remainingSeconds % 60).padStart(2, "0")} {t("remaining")}
+            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-6">
+              {t("You have an unfinished attempt. Resume where you left off, or submit it now with whatever answers you already gave.")}
+            </p>
+            <div className="flex flex-col gap-3">
+              <button
+                onClick={handleResumeSession}
+                disabled={isResumingDecision}
+                className="w-full py-3 bg-[#ffd15c] hover:bg-amber-500 text-[#00243B] font-bold text-sm uppercase tracking-wide rounded-2xl shadow-md transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {t("Resume Test")}
+              </button>
+              <button
+                onClick={handleSubmitResumableNow}
+                disabled={isResumingDecision}
+                className="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 font-bold text-sm uppercase tracking-wide rounded-2xl transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {isResumingDecision ? t("Submitting...") : t("Submit Now")}
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
       {showDailyReminder && currentScreen === "portal" && (
         <DailyReminderModal 
           onClose={handleCloseReminder} 
@@ -652,7 +737,6 @@ useEffect(() => {
                           setTab("tests");
                           setCurrentScreen("portal");
                         }}
-                        attemptsCount={attempts.filter((a) => a.totalScore > 0 && a.date !== "Available").length}
                         catalogTree={catalogTree}
                         onSessionCreated={handleSessionCreated}
                       />

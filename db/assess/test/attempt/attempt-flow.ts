@@ -10,7 +10,9 @@ import {
   InvalidNumericAnswerError,
   ScoringRuleMissingError,
   ReviewNotAvailableError,
+  ActiveAttemptExistsError,
 } from "../../../shared/errors.js";
+import { reconcileUserAttempts } from "./expiry.js";
 import type { AttemptModel } from "./attempt.model.js";
 import type { AttemptResponseModel } from "./attempt_response/attempt_response.model.js";
 import type { AttemptEventModel } from "./attempt_event/attempt_event.model.js";
@@ -60,8 +62,20 @@ interface SectionSchemeRow {
   incorrect_marks: string;
 }
 
-async function loadSectionSchemes(testId: string): Promise<Map<string, SectionSchemeRow>> {
-  const res = await pool.query<SectionSchemeRow>(
+// BUG-03 (docs/assessment-tool-debug-plan.md) fallout — found live, not
+// guessed: both call sites run this from inside an already-open transaction
+// (a `client` checked out via pool.connect()), but this always called
+// pool.query() directly instead of using that client — requesting a SECOND
+// connection from the same pool while the first was still held open.
+// db/shared/pool.ts caps the whole pool at 4 connections; running 4 of these
+// transactions at once (which this session's own reconciliation-concurrency
+// fix for the same bug started doing) deadlocks every one of them forever,
+// each waiting for a 5th connection that can only ever free up once one of
+// the other 4 finishes — which none of them can, since they're all stuck
+// the same way. Confirmed live via pg_stat_activity: 4 backends sitting
+// "idle in transaction" on the query right before this call, indefinitely.
+async function loadSectionSchemes(testId: string, client: { query: typeof pool.query } = pool): Promise<Map<string, SectionSchemeRow>> {
+  const res = await client.query<SectionSchemeRow>(
     `select ts.test_section_id, ts.pattern_section_id, ms.correct_marks, ms.incorrect_marks
        from assess.test_section ts
        join catalog.v_section_marking vsm on vsm.pattern_section_id = ts.pattern_section_id
@@ -87,6 +101,15 @@ export interface StartAttemptResult {
  * @throws {IdempotencyConflictError} idempotencyKey was already used for a different test
  */
 export async function startAttempt(testId: string, userId: string, idempotencyKey?: string): Promise<StartAttemptResult> {
+  // BUG-03/BUG-08 (docs/assessment-tool-debug-plan.md): startAttempt never
+  // checked for an existing in_progress/paused attempt before this fix — the
+  // only guard was a duplicate-attempt_no race retry (below), which does
+  // nothing to stop two *different* tests both being "active" for one user
+  // at once. Reconcile first (a genuinely-expired attempt must never block a
+  // fresh start), then check what's left; ActiveAttemptExistsError carries
+  // the real attempt id so the caller can offer resume-or-submit instead of
+  // silently allowing a second concurrent attempt (the actual mechanism
+  // behind the reported "ghost test" / cross-test bleed symptoms).
   if (idempotencyKey) {
     const existing = await pool.query<{ response_body: StartAttemptResult; subject_id: string }>(
       `select response_body, subject_id from assess.idempotency_key where key = $1 and user_id = $2 and operation = 'attempt_start'`,
@@ -98,6 +121,15 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       }
       return { ...existing.rows[0].response_body, idempotent: true };
     }
+  }
+
+  await reconcileUserAttempts(userId);
+  const activeRes = await pool.query<{ attempt_id: string; test_id: string }>(
+    `select attempt_id, test_id from assess.attempt where user_id = $1 and attempt_state in ('in_progress', 'paused') limit 1`,
+    [userId]
+  );
+  if (activeRes.rowCount && activeRes.rowCount > 0) {
+    throw new ActiveAttemptExistsError(activeRes.rows[0].attempt_id, activeRes.rows[0].test_id);
   }
 
   const client = await pool.connect();
@@ -140,7 +172,7 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
     }
     if (!attempt) throw lastErr instanceof Error ? lastErr : new Error("startAttempt: exhausted retries allocating attempt_no");
 
-    const sectionSchemes = await loadSectionSchemes(testId);
+    const sectionSchemes = await loadSectionSchemes(testId, client);
 
     // Bulk-inserted via unnest() rather than one awaited round trip per
     // question (LA-APP-COMPLETION-001 Phase F finding: a full-mock's 180
@@ -553,7 +585,7 @@ export async function submitAttempt(
       allOptionsByQuestion.set(row.question_id, [...(allOptionsByQuestion.get(row.question_id) ?? []), row.option_id]);
     }
 
-    const sectionSchemes = await loadSectionSchemes(attempt.test_id);
+    const sectionSchemes = await loadSectionSchemes(attempt.test_id, client);
     const bySection = new Map<string, { rows: ServedRow[] }>();
     for (const row of servedRes.rows) {
       const entry = bySection.get(row.test_section_id) ?? { rows: [] };
