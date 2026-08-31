@@ -9,7 +9,7 @@ import { pluralize } from "../utils/pluralize";
 // jsPDF/html2canvas only load once a report is actually opened.
 const AttemptReviewView = lazy(() => import("./AttemptReviewView"));
 
-type ModeFilter = "all" | "subject-wise" | "full-mock" | "custom";
+type ModeFilter = "all" | "subject-wise" | "full-mock" | "image-practice" | "custom";
 type SortKey = "date" | "score" | "testTitle";
 type SortDir = "asc" | "desc";
 
@@ -18,6 +18,7 @@ const PAGE_SIZE = 10;
 const MODE_LABEL: Record<AttemptSummary["mode"], string> = {
   "subject-wise": "Practice",
   "full-mock": "Full Mock",
+  "image-practice": "Image-Based",
   custom: "Custom",
 };
 
@@ -162,6 +163,7 @@ export default function MyResultsView() {
             <option value="all">{t("All Types")}</option>
             <option value="subject-wise">{t("Practice")}</option>
             <option value="full-mock">{t("Full Mock")}</option>
+            <option value="image-practice">{t("Image-Based")}</option>
             <option value="custom">{t("Custom")}</option>
           </select>
         </div>

@@ -124,17 +124,30 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
   }
 
   await reconcileUserAttempts(userId);
-  const activeRes = await pool.query<{ attempt_id: string; test_id: string }>(
-    `select attempt_id, test_id from assess.attempt where user_id = $1 and attempt_state in ('in_progress', 'paused') limit 1`,
-    [userId]
-  );
-  if (activeRes.rowCount && activeRes.rowCount > 0) {
-    throw new ActiveAttemptExistsError(activeRes.rows[0].attempt_id, activeRes.rows[0].test_id);
-  }
 
   const client = await pool.connect();
   try {
     await client.query("begin");
+
+    // Test-layer hardening A4b: the active-attempt check used to run as a
+    // plain pool.query() *before* this transaction even began — a genuine
+    // TOCTOU race (two near-simultaneous startAttempt calls for the same
+    // user, e.g. two tabs, could both read zero active attempts before
+    // either had committed its insert, producing two concurrent in_progress
+    // attempts). pg_advisory_xact_lock serializes concurrent callers on the
+    // same user_id for the lifetime of this transaction (auto-released on
+    // commit/rollback, no separate unlock needed) — a second concurrent call
+    // now blocks here until the first commits or rolls back, then re-reads
+    // real post-commit state instead of a stale pre-transaction snapshot.
+    await client.query("select pg_advisory_xact_lock(hashtext($1::text))", [userId]);
+
+    const activeRes = await client.query<{ attempt_id: string; test_id: string }>(
+      `select attempt_id, test_id from assess.attempt where user_id = $1 and attempt_state in ('in_progress', 'paused') limit 1`,
+      [userId]
+    );
+    if (activeRes.rowCount && activeRes.rowCount > 0) {
+      throw new ActiveAttemptExistsError(activeRes.rows[0].attempt_id, activeRes.rows[0].test_id);
+    }
 
     const testRes = await client.query<{ test_id: string; test_status: string; window_opens_at: string | null; window_closes_at: string | null; duration_minutes: number | null; source_type: string }>(
       `select test_id, test_status, window_opens_at, window_closes_at, duration_minutes, source_type from assess.test where test_id = $1 for share`,
@@ -212,7 +225,12 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
     };
 
     if (test.source_type === "generated") {
-      const assembled = await assembleForAttempt(testId, userId);
+      // Test-layer hardening A4: pass this transaction's own `client` through
+      // instead of letting assembleForAttempt fall back to the shared pool —
+      // see assemble.ts's own comment on assembleForAttempt for the deadlock
+      // this closes (the same bug pattern loadSectionSchemes above was
+      // already fixed for, left unfixed here until now).
+      const assembled = await assembleForAttempt(testId, userId, undefined, client);
       await client.query("update assess.attempt set generation_seed = $1 where attempt_id = $2", [assembled.seed, attempt.attempt_id]);
       for (const section of assembled.sections) {
         const scheme = sectionSchemes.get(section.testSectionId);
@@ -250,6 +268,25 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
            from unnest($2::uuid[], $3::uuid[], $4::smallint[], $5::numeric[], $6::numeric[]) as t(q, ts, seq, m, nm)`,
         [attempt.attempt_id, bulkQuestionIds, bulkTestSectionIds, bulkSequenceNos, bulkMarks, bulkNegativeMarks]
       );
+
+      // Test-layer hardening A6: assess.user_question_seen used to be
+      // written only inside submitAttempt (below) — so a started, then
+      // abandoned/never-submitted attempt burned none of its served
+      // questions' exposure, and the next generation for this user would
+      // treat all of them as fully unseen again. Mark exposure at serve
+      // time instead (last_seen_attempt_seq=0/was_correct_last=null is a
+      // "served but not yet scored" placeholder — submitAttempt's own write
+      // below fills in the real values once scoring happens, and no longer
+      // re-increments times_seen for a question already counted here).
+      await client.query(
+        `insert into assess.user_question_seen (user_id, question_id, last_seen_attempt_seq, was_correct_last)
+         select $1, q, 0, null
+           from unnest($2::uuid[]) as t(q)
+         on conflict (user_id, question_id) do update set
+           last_seen_at = now(),
+           times_seen = assess.user_question_seen.times_seen + 1`,
+        [userId, bulkQuestionIds]
+      );
     }
 
     await client.query(
@@ -280,6 +317,56 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
   } finally {
     client.release();
   }
+}
+
+export interface ReproducedAssembly {
+  attemptId: string;
+  testId: string;
+  userId: string;
+  seed: string;
+  sections: Awaited<ReturnType<typeof assembleForAttempt>>["sections"];
+}
+
+/**
+ * Test-layer hardening A10: assembleForAttempt's seed was persisted onto
+ * assess.attempt.generation_seed at start time (see startAttempt above) but
+ * nothing ever read it back — there was no way to reproduce a disputed
+ * paper's exact draw after the fact, despite the plumbing already existing
+ * for it. Read-only: does not touch the original attempt or its
+ * attempt_question rows, purely re-runs assembleForAttempt with the stored
+ * seed against current DB state.
+ *
+ * Known, real limitation (found live, not theoretical — see
+ * reproduce-assembly.test.ts): A6's own fix marks a served question "seen"
+ * in assess.user_question_seen at serve time, and the candidate query sorts
+ * unseen-before-seen. That means starting the original attempt itself
+ * changes the exposure state its own candidate query depended on — a call
+ * to this function any time after the attempt exists will generally NOT
+ * reproduce the identical question set once any served question was
+ * previously unseen, because "unseen" is no longer true by the time you
+ * reproduce it. What this function *does* still guarantee: assembleForAttempt
+ * itself is genuinely deterministic given an identical seed and unchanged
+ * state (see reproduce-assembly.test.ts's first case) — useful for proving
+ * the algorithm isn't accidentally random, and for a best-effort "what would
+ * this seed draw from the pool today" sanity check, but not a byte-for-byte
+ * audit trail of exactly what a student saw once any time has passed.
+ *
+ * @throws {NotFoundError} attemptId does not exist
+ * @throws {Error} the attempt has no generation_seed (FIXED-mode paper, or
+ *   predates seed persistence) — nothing to reproduce
+ */
+export async function reproduceAttemptAssembly(attemptId: string): Promise<ReproducedAssembly> {
+  const res = await pool.query<{ attempt_id: string; test_id: string; user_id: string; generation_seed: string | null }>(
+    `select attempt_id, test_id, user_id, generation_seed from assess.attempt where attempt_id = $1`,
+    [attemptId]
+  );
+  if (res.rowCount === 0) throw new NotFoundError("assess.attempt", attemptId);
+  const row = res.rows[0];
+  if (!row.generation_seed) {
+    throw new Error(`assess.attempt ${attemptId} has no generation_seed — it is a FIXED-mode paper (not BLUEPRINT-generated), so there is nothing to reproduce`);
+  }
+  const assembled = await assembleForAttempt(row.test_id, row.user_id, row.generation_seed);
+  return { attemptId: row.attempt_id, testId: row.test_id, userId: row.user_id, seed: row.generation_seed, sections: assembled.sections };
 }
 
 // ---------------------------------------------------------------------------
@@ -712,12 +799,17 @@ export async function submitAttempt(
     );
 
     for (const [questionId, evaluatedResponse] of evaluatedById) {
+      // Test-layer hardening A6: startAttempt's own upsert above already
+      // counted this exposure in times_seen at serve time — do not
+      // increment it again here, or every submitted (non-abandoned) attempt
+      // would double-count its own questions relative to an abandoned one.
+      // This write's job is purely to fill in the real scoring outcome once
+      // it's known.
       await client.query(
         `insert into assess.user_question_seen (user_id, question_id, last_seen_attempt_seq, was_correct_last)
          values ($1, $2, $3, $4)
          on conflict (user_id, question_id) do update set
            last_seen_at = now(),
-           times_seen = assess.user_question_seen.times_seen + 1,
            last_seen_attempt_seq = excluded.last_seen_attempt_seq,
            was_correct_last = excluded.was_correct_last`,
         [userId, questionId, attemptSeq, evaluatedResponse.outcome === "CORRECT"]
@@ -746,6 +838,89 @@ export async function submitAttempt(
 
     await client.query("commit");
     return result;
+  } catch (err) {
+    await client.query("rollback");
+    throw err;
+  } finally {
+    client.release();
+  }
+}
+
+export interface AbandonResult {
+  attemptId: string;
+  abandoned: true;
+}
+
+/**
+ * Test-layer hardening C1: `abandoned` has been a schema-legal
+ * `attempt_state` since 018_test_engine.sql, but no live code path ever
+ * wrote it (confirmed by grep — only test fixtures did) — every expired
+ * attempt, including one the student never touched at all, was force-scored
+ * via submitAttempt exactly like a genuine submission, producing a
+ * misleading "Scored: 0/40" result for a test that was, honestly, never
+ * taken.
+ *
+ * Policy decision made explicitly here rather than guessed at: an expired
+ * attempt is only ever routed here — instead of the normal submitAttempt
+ * scoring path — when it has literally zero assess.attempt_response rows
+ * (see the callers in expiry.ts, which check this before choosing which
+ * function to call). Any attempt with at least one response, however
+ * partial, still goes through the real scoring path and is reported
+ * `scored`, per this bug's own audited resolution ("keep scored for
+ * anything with ≥1 response at expiry"). Deliberately not adding a separate
+ * N-hours-of-inactivity grace window on top of that — inventing an arbitrary
+ * threshold with no product source would be guessing, the same reasoning
+ * D1's blueprint work was deferred over rather than sourcing a number from
+ * memory.
+ *
+ * Re-checks the response count itself, inside the same row lock, rather
+ * than trusting the caller's earlier read — a response landing in the gap
+ * between the caller's check and this call (e.g. a very last-second
+ * autosave) must never be silently discarded by an abandon that raced past
+ * it; falls through to the real scoring path instead if that happens.
+ */
+export async function abandonAttempt(attemptId: string, userId: string, reason: "expiry" | "sweeper" = "expiry"): Promise<AbandonResult | SubmitResult> {
+  const client = await pool.connect();
+  try {
+    await client.query("begin");
+    const attemptRes = await client.query<AttemptModel>(`select * from assess.attempt where attempt_id = $1 for update`, [attemptId]);
+    if (attemptRes.rowCount === 0 || attemptRes.rows[0].user_id !== userId) throw new NotFoundError("assess.attempt", attemptId);
+    const attempt = attemptRes.rows[0];
+
+    // Already terminal (a concurrent caller got here first, or it was
+    // already scored/abandoned) — idempotent no-op, same D-7 reasoning as
+    // submitAttempt's own already-scored short-circuit.
+    if (attempt.attempt_state === "abandoned") {
+      await client.query("commit");
+      return { attemptId, abandoned: true };
+    }
+    // scored (or anything else terminal) — defer to submitAttempt's own
+    // idempotent-return handling rather than duplicating it here. Committing
+    // this (no-op) transaction first releases this row lock before
+    // submitAttempt opens its own on a separate pooled connection — `finally`
+    // below still releases this client exactly once regardless of this early
+    // return.
+    if (attempt.attempt_state !== "in_progress" && attempt.attempt_state !== "paused") {
+      await client.query("commit");
+      return submitAttempt(attemptId, userId, undefined, undefined, reason);
+    }
+
+    const responseCountRes = await client.query<{ count: string }>(`select count(*) from assess.attempt_response where attempt_id = $1`, [attemptId]);
+    if (Number(responseCountRes.rows[0].count) > 0) {
+      // Raced past a real response — this is a genuine attempt, not an
+      // abandoned one. Hand off to the real scoring path instead of losing
+      // it silently.
+      await client.query("commit");
+      return submitAttempt(attemptId, userId, undefined, undefined, reason);
+    }
+
+    await client.query(
+      `update assess.attempt set attempt_state = 'abandoned', submitted_at = coalesce(submitted_at, now()), submitted_reason = coalesce(submitted_reason, $1) where attempt_id = $2`,
+      [reason, attemptId]
+    );
+    await client.query(`insert into assess.attempt_event (attempt_id, event_type, event_at) values ($1, 'ATTEMPT_ABANDONED', now())`, [attemptId]);
+    await client.query("commit");
+    return { attemptId, abandoned: true };
   } catch (err) {
     await client.query("rollback");
     throw err;
@@ -1074,7 +1249,7 @@ export interface AttemptSummary {
   // itself is never populated (createPracticeTest never passes it through
   // to createTest), so the test_code's own TEST_TYPE segment is the one
   // reliable source, not a DB column.
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: "subject-wise" | "full-mock" | "image-practice" | "custom";
   durationMinutes: number | null;
   attemptNo: number;
   attemptState: string;

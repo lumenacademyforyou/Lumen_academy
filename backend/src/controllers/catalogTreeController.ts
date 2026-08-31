@@ -83,6 +83,43 @@ export const getCatalogTree = async (_req: Request, res: Response, next: NextFun
     );
     const countByNode = new Map(countsRes.rows.map((r) => [r.node_id, Number(r.n)]));
 
+    // Image-based test type (docs/BUGS.md#E1-E3) — same query shape as the
+    // published-question count above, filtered to has_image=true (reliably
+    // trigger-maintained since E2's migration, safe to build on), so the
+    // test directory can show real availability instead of a client-side
+    // guess. Reuses content.question_node_map, not primary_node_id, for this
+    // one count — a question can legally map to more than one node, and an
+    // image-eligibility count should reflect every node it's reachable
+    // from, not just its single "primary" one.
+    const imageCountsRes = await pool.query<CountRow>(
+      `select qnm.node_id as node_id, count(distinct q.question_id) as n
+         from content.question q
+         join content.question_node_map qnm on qnm.question_id = q.question_id
+         join catalog.syllabus_node sn on sn.node_id = qnm.node_id
+         join catalog.subject s on s.subject_id = sn.subject_id
+        where q.lifecycle_status = 'published' and q.has_image = true and s.exam_id = $1
+        group by qnm.node_id`,
+      [exam.exam_id]
+    );
+    const imageCountByNode = new Map(imageCountsRes.rows.map((r) => [r.node_id, Number(r.n)]));
+
+    // Summed separately (not derived by adding up the per-unit counts above)
+    // because content.question_node_map allows one question to map to more
+    // than one node — summing per-unit counts could double-count a question
+    // mapped to two units of the same subject; this counts distinct
+    // question_ids per subject directly instead.
+    const imageCountsBySubjectRes = await pool.query<{ subject_id: string; n: string }>(
+      `select sn.subject_id, count(distinct q.question_id) as n
+         from content.question q
+         join content.question_node_map qnm on qnm.question_id = q.question_id
+         join catalog.syllabus_node sn on sn.node_id = qnm.node_id
+         join catalog.subject s on s.subject_id = sn.subject_id
+        where q.lifecycle_status = 'published' and q.has_image = true and s.exam_id = $1
+        group by sn.subject_id`,
+      [exam.exam_id]
+    );
+    const imageCountBySubject = new Map(imageCountsBySubjectRes.rows.map((r) => [r.subject_id, Number(r.n)]));
+
     const unitsBySubject = new Map<string, UnitRow[]>();
     for (const unit of unitsRes.rows) {
       const list = unitsBySubject.get(unit.subject_id) ?? [];
@@ -98,6 +135,7 @@ export const getCatalogTree = async (_req: Request, res: Response, next: NextFun
         classLevel: u.class_level,
         displayOrder: u.display_order,
         publishedQuestionCount: countByNode.get(u.node_id) ?? 0,
+        imageQuestionCount: imageCountByNode.get(u.node_id) ?? 0,
       }));
       return {
         subjectId: s.subject_id,
@@ -105,6 +143,7 @@ export const getCatalogTree = async (_req: Request, res: Response, next: NextFun
         subjectName: s.subject_name,
         displayOrder: s.display_order,
         publishedQuestionCount: units.reduce((sum, u) => sum + u.publishedQuestionCount, 0),
+        imageQuestionCount: imageCountBySubject.get(s.subject_id) ?? 0,
         units,
       };
     });

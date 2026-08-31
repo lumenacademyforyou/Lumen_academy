@@ -49,6 +49,7 @@ interface BlueprintLine {
   include_descendants: boolean;
   difficulty_band: string | null;
   question_format: string | null;
+  has_image_only: boolean;
   pick_count: number;
 }
 
@@ -62,7 +63,7 @@ interface BlueprintLine {
  */
 const BLUEPRINT_LINES_SQL = `
   select bp.blueprint_id, bp.test_section_id, bp.subject_id, bp.syllabus_node_id,
-         bp.include_descendants, bp.difficulty_band, bp.question_format, bp.pick_count
+         bp.include_descendants, bp.difficulty_band, bp.question_format, bp.has_image_only, bp.pick_count
     from assess.test_blueprint bp
     join assess.test_section ts on ts.test_section_id = bp.test_section_id
    where bp.test_id = $1
@@ -83,6 +84,33 @@ const BLUEPRINT_LINES_SQL = `
  * once those run out, previously-seen questions fill the rest, oldest
  * last_seen_at first (true least-recently-seen), only reached when the
  * unseen pool for this blueprint line is exhausted.
+ *
+ * Live "still seeing repeats" report, investigated rather than re-guessed:
+ * checked real exposure data first (assess.user_question_seen) before
+ * touching any code. Confirmed this policy is doing exactly what it was
+ * designed to do — units are seeded with exactly 30 published questions
+ * each (subjects have 330-365), so a handful of unit-scoped attempts
+ * genuinely exhausts the unseen pool; recycling the least-recently-seen
+ * ones at that point is the correct, intended fallback, not a defect, and
+ * accounts with heavy repeated testing against small unit scopes showed
+ * exactly this pattern (avg times-seen in the 8-12x range for some
+ * accounts). That is a content-volume limit, not something a query change
+ * can fix — more unique questions per unit is the only real remedy.
+ *
+ * One genuine latent risk was found and hardened regardless, even though a
+ * live reproduction attempt (db/assess/test/generation/repeat-rotation.test.ts)
+ * did not actually observe it misbehave on this Postgres build/plan:
+ * `min(s.last_seen_at)` alone has no explicit tiebreaker, and startAttempt's
+ * own serve-time exposure upsert (A6, attempt-flow.ts) stamps every
+ * question served in one attempt with the *same* last_seen_at in one
+ * batched query, so once a pool is exhausted, many candidates tie exactly
+ * — leaving their relative order to Postgres's unspecified (not
+ * contractually random) tie-breaking rather than this query's own seed.
+ * Added the same seed-keyed md5 hash already used to randomize the unseen
+ * bucket as an explicit final tiebreaker for the seen bucket too, so
+ * rotation among tied candidates is deterministically seed-driven rather
+ * than resting on incidental physical/plan ordering that could legally
+ * change with a Postgres version, statistics, or plan shape.
  *
  * P0-3 (docs/assessment-tool-fix-prompt.md): content.question_node_map's PK
  * is (question_id, node_id), not (question_id) — a question CAN legally be
@@ -118,6 +146,18 @@ const BLUEPRINT_LINES_SQL = `
  * multi-unit custom build), which is the only way to make "already used
  * elsewhere in this paper" available to each line's own ORDER BY/LIMIT.
  */
+// Test-layer hardening F1: both queries' descendant-scope match used to be
+// `target.node_path || '%'` with no trailing path separator before the
+// wildcard. node_path is generated as '/' || node_code per level with no
+// delimiter of its own, so that pattern also matched a *sibling* node whose
+// node_code happens to share target's as a prefix (e.g. target /PHY/U1 would
+// wrongly also match sibling /PHY/U10) — a real SQL correctness defect that
+// silently expands a line's scope the moment any two sibling node_codes
+// share a prefix, not just a theoretical one. Appending '/%' instead requires
+// an actual path separator right after target's own path, so only true
+// descendants match. The target node itself is already covered separately
+// by each query's own `qnm.node_id = $<n>::uuid` branch, so dropping the
+// exact-match case from this LIKE clause loses nothing.
 const LINE_CANDIDATE_SQL = `
   select q.question_id
     from content.question q
@@ -132,20 +172,22 @@ const LINE_CANDIDATE_SQL = `
            or qnm.node_id = $5::uuid
            or (
                 $6::boolean
-                and sn.node_path like (select target.node_path || '%' from catalog.syllabus_node target where target.node_id = $5::uuid)
+                and sn.node_path like (select target.node_path || '/%' from catalog.syllabus_node target where target.node_id = $5::uuid)
               )
          )
      and ($7::text is null or q.difficulty_band = $7::text)
      and ($8::text is null or q.question_type = $8::text)
+     and ($10::boolean is not true or q.has_image = true)
    group by q.question_id
    order by
      bool_or(s.question_id is not null),
      case when bool_or(s.question_id is not null) = false then md5(q.question_id::text || $3::text) end,
-     min(s.last_seen_at)
+     min(s.last_seen_at),
+     md5(q.question_id::text || $3::text)
    limit $9
 `;
 
-/** Same filters as LINE_CANDIDATE_SQL, minus the pick_count LIMIT — used only when a line comes back short, to report an honest "available" count. */
+/** Same filters as LINE_CANDIDATE_SQL (including F1's descendant-match fix above), minus the pick_count LIMIT — used only when a line comes back short, to report an honest "available" count. */
 const LINE_AVAILABLE_SQL = `
   select count(distinct q.question_id) as available
     from content.question q
@@ -159,28 +201,46 @@ const LINE_AVAILABLE_SQL = `
            or qnm.node_id = $3::uuid
            or (
                 $4::boolean
-                and sn.node_path like (select target.node_path || '%' from catalog.syllabus_node target where target.node_id = $3::uuid)
+                and sn.node_path like (select target.node_path || '/%' from catalog.syllabus_node target where target.node_id = $3::uuid)
               )
          )
      and ($5::text is null or q.difficulty_band = $5::text)
      and ($6::text is null or q.question_type = $6::text)
+     and ($7::boolean is not true or q.has_image = true)
 `;
 
 /**
  * @throws {PoolInsufficientError} a blueprint line's candidate pool has
  *   fewer questions than its pick_count (after excluding this paper's own
  *   already-picked questions) — names the line and the counts
+ *
+ * Test-layer hardening A4: `client` defaults to the shared `pool` for
+ * standalone callers, but `startAttempt` (attempt-flow.ts) already holds a
+ * dedicated connection checked out via `pool.connect()` for its whole
+ * transaction — the exact same shape of bug already found and fixed once in
+ * this codebase for `loadSectionSchemes` (see that function's own comment).
+ * `db/shared/pool.ts` caps the pool at 4 connections; calling `pool.query()`
+ * from in here while `startAttempt`'s transaction client is still checked
+ * out requests a 5th connection from an exhausted 4-connection pool under
+ * concurrent load, deadlocking every in-flight `startAttempt` call forever.
+ * Passing the transaction's own client through closes that hole the same
+ * way `loadSectionSchemes` did.
  */
-export async function assembleForAttempt(testId: string, userId: string, seed?: string): Promise<AssembleResult> {
+export async function assembleForAttempt(
+  testId: string,
+  userId: string,
+  seed?: string,
+  client: { query: typeof pool.query } = pool
+): Promise<AssembleResult> {
   const generationSeed = seed ?? generateSeed();
 
-  const linesRes = await pool.query<BlueprintLine>(BLUEPRINT_LINES_SQL, [testId]);
+  const linesRes = await client.query<BlueprintLine>(BLUEPRINT_LINES_SQL, [testId]);
 
   const globallyPicked: string[] = [];
   const sections: AssembledSection[] = [];
 
   for (const bp of linesRes.rows) {
-    const res = await pool.query<{ question_id: string }>(LINE_CANDIDATE_SQL, [
+    const res = await client.query<{ question_id: string }>(LINE_CANDIDATE_SQL, [
       bp.subject_id,
       userId,
       generationSeed,
@@ -190,17 +250,19 @@ export async function assembleForAttempt(testId: string, userId: string, seed?: 
       bp.difficulty_band,
       bp.question_format,
       bp.pick_count,
+      bp.has_image_only,
     ]);
     const questionIds = res.rows.map((r) => r.question_id);
 
     if (questionIds.length < bp.pick_count) {
-      const availableRes = await pool.query<{ available: string }>(LINE_AVAILABLE_SQL, [
+      const availableRes = await client.query<{ available: string }>(LINE_AVAILABLE_SQL, [
         bp.subject_id,
         globallyPicked,
         bp.syllabus_node_id,
         bp.include_descendants,
         bp.difficulty_band,
         bp.question_format,
+        bp.has_image_only,
       ]);
       throw new PoolInsufficientError(bp.blueprint_id, bp.test_section_id, bp.pick_count, Number(availableRes.rows[0].available));
     }

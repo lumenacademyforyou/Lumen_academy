@@ -13,7 +13,7 @@
     "test": "playwright test",
     "test:e2e": "playwright test",
     "test:frontend": "vitest run",
-    "test:unit": "node --import tsx --test \"backend/src/**/*.test.ts\" \"db/assess/scoring/*.test.ts\" \"db/assess/test/**/*.test.ts\" \"db/assess/analytics/*.test.ts\" && npm run test:frontend",
+    "test:unit": "node --import tsx --test --test-concurrency=1 \"backend/src/**/*.test.ts\" \"db/assess/scoring/*.test.ts\" \"db/assess/test/**/*.test.ts\" \"db/assess/analytics/*.test.ts\" \"db/content/**/*.test.ts\" && npm run test:frontend",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit"

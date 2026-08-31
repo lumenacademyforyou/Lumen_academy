@@ -3,37 +3,30 @@
  * in_progress/paused and force-submits them with submitted_reason='sweeper'
  * — the backstop for attempts abandoned without a further request (D-6's
  * lazy enforcement, db/assess/test/attempt/expiry.ts, only fires when a
- * request happens to arrive). Idempotent (submitAttempt itself is, D-7) and
- * safe to run repeatedly — run manually or by a platform scheduler later,
- * per the brief; no queue or cron infrastructure is wired up here (out of
- * scope, brief §3.2).
+ * request happens to arrive).
+ *
+ * Test-layer hardening C3: the actual sweep logic now lives in
+ * sweepExpiredAttempts (expiry.ts), shared with the in-process scheduler
+ * (backend/src/jobs/expirySweeper.ts) that runs this automatically — this
+ * script remains for manual/one-off runs (e.g. clearing a backlog by hand,
+ * or running it via an external platform scheduler instead of the in-process
+ * one) rather than duplicating the query.
  *
  * Usage: npx tsx db/scripts/sweep-expired-attempts.ts
  */
 import { pool } from "../shared/pool.js";
-import { submitAttempt } from "../assess/test/attempt/attempt-flow.js";
+import { sweepExpiredAttempts } from "../assess/test/attempt/expiry.js";
 
 async function main() {
-  const res = await pool.query<{ attempt_id: string; user_id: string }>(
-    `select attempt_id, user_id
-       from assess.attempt
-      where attempt_state in ('in_progress', 'paused')
-        and server_deadline is not null
-        and (extract(epoch from server_deadline) * 1000 + paused_ms_total) < (extract(epoch from now()) * 1000)`
+  const result = await sweepExpiredAttempts();
+  console.log(`found ${result.found} expired attempt(s) still open`);
+  // Test-layer hardening C1: an expired attempt with zero saved responses is
+  // now abandoned rather than force-scored — reported separately so a real
+  // sweep run's output honestly distinguishes "closed as scored" from
+  // "closed as never-answered", instead of collapsing both into "closed".
+  console.log(
+    `scored ${result.closed}, abandoned ${result.abandoned}, of ${result.found} attempt(s)${result.failed > 0 ? ` (${result.failed} failed — see errors above)` : ""}`
   );
-
-  console.log(`found ${res.rowCount} expired attempt(s) still open`);
-  let closed = 0;
-  for (const row of res.rows) {
-    try {
-      const result = await submitAttempt(row.attempt_id, row.user_id, undefined, undefined, "sweeper");
-      console.log(`  closed ${row.attempt_id}: obtained=${result.obtainedMarks}/${result.totalMarks} (idempotent=${result.idempotent})`);
-      closed++;
-    } catch (err) {
-      console.error(`  FAILED to close ${row.attempt_id}:`, err instanceof Error ? err.message : err);
-    }
-  }
-  console.log(`closed ${closed}/${res.rowCount} attempt(s)`);
   await pool.end();
 }
 

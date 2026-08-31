@@ -133,6 +133,15 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
     }
   }
 
+  // Image-based test type (docs/BUGS.md#E1-E3, user ask: "build a test for
+  // image based test in the whole application system"). The server resolves
+  // real per-subject has_image=true availability itself
+  // (sessionController.ts) — this button only ever asks for the mode, same
+  // shape as Full Mock, so the client can never send a stale/guessed count.
+  function handleStartImagePractice() {
+    launch({ mode: "image-practice", title: "Image-Based Practice" });
+  }
+
   function handleStartFullMock() {
     if (!syllabusGateUnlocked) {
       setCreateError("Complete all units in your Syllabus Tracker (Study Plan) to unlock the Full Mock Test.");
@@ -313,6 +322,47 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
               <button onClick={() => setView("custom")} className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] text-white font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-[var(--teal-2)] shadow-md hover:shadow-lg transition-all cursor-pointer">
                 {t("Build Custom Test")}
               </button>
+            </motion.div>
+
+            {/* Image-Based Practice */}
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ y: -6 }} transition={{ duration: 0.3, delay: 0.3 }} className={cardClassName}>
+              <div>
+                <span className="text-[10px] font-black uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 text-[var(--teal)] dark:text-[#FCB824] px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
+                  {t("Diagrams & Graphs")}
+                </span>
+                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Image-Based Practice")}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 mb-6 font-medium leading-relaxed">
+                  {t("Every published question with a diagram, graph, or figure, across all subjects — nothing else.")}
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-600 dark:text-slate-300 mb-2">
+                  {catalogTree.subjects.map((s) => (
+                    <div key={s.subjectId} className="flex items-center justify-between px-3 py-2 bg-slate-50 dark:bg-slate-900/40 rounded-lg border border-slate-200 dark:border-slate-700">
+                      <span>{s.subjectCode}</span>
+                      <span className="text-[var(--teal)] dark:text-[#FCB824] font-bold">{s.imageQuestionCount}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {(() => {
+                const totalImageQuestions = catalogTree.subjects.reduce((sum, s) => sum + s.imageQuestionCount, 0);
+                return (
+                  <button
+                    onClick={handleStartImagePractice}
+                    disabled={creating || totalImageQuestions === 0}
+                    className={`w-full py-3.5 mt-4 font-bold text-xs uppercase tracking-wider rounded-xl transition-all text-center block ${
+                      totalImageQuestions > 0
+                        ? "bg-[var(--teal)] dark:bg-[#FCB824] text-white hover:bg-[var(--teal-2)] shadow-md hover:shadow-lg cursor-pointer"
+                        : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 cursor-not-allowed"
+                    } disabled:opacity-60`}
+                  >
+                    {totalImageQuestions === 0
+                      ? t("No image questions available yet")
+                      : creating
+                        ? t("Starting...")
+                        : `${t("Start Image Practice")} (${totalImageQuestions})`}
+                  </button>
+                );
+              })()}
             </motion.div>
           </div>
 

@@ -21,6 +21,8 @@ export interface CreateTestBlueprintInput {
   includeDescendants?: boolean;
   difficultyBand?: string | null;
   questionFormat?: string | null;
+  /** Image-based test type (docs/BUGS.md#E1-E3) — restrict this line to has_image=true questions only. */
+  hasImageOnly?: boolean;
   pickCount: number;
 }
 
@@ -161,8 +163,8 @@ export async function createTest(input: CreateTestInput): Promise<CreatedTest> {
         const bp = section.blueprint;
         const blueprintRes = await client.query<{ blueprint_id: string }>(
           `insert into assess.test_blueprint
-             (test_id, test_section_id, subject_id, syllabus_node_id, include_descendants, difficulty_band, question_format, pick_count)
-           values ($1, $2, $3, $4, $5, $6, $7, $8)
+             (test_id, test_section_id, subject_id, syllabus_node_id, include_descendants, difficulty_band, question_format, has_image_only, pick_count)
+           values ($1, $2, $3, $4, $5, $6, $7, $8, $9)
            returning blueprint_id`,
           [
             testId,
@@ -172,6 +174,7 @@ export async function createTest(input: CreateTestInput): Promise<CreatedTest> {
             bp.includeDescendants ?? true,
             bp.difficultyBand ?? null,
             bp.questionFormat ?? null,
+            bp.hasImageOnly ?? false,
             bp.pickCount,
           ]
         );

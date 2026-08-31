@@ -8,6 +8,7 @@ import { prisma } from "./lib/db.js";
 import { AppError, errorHandler } from "./middleware/errorHandler.js";
 import { requestTiming } from "./middleware/requestTiming.js";
 import apiRouter from "./routes/api.js";
+import { startExpirySweeper, stopExpirySweeper } from "./jobs/expirySweeper.js";
 
 const app = express();
 
@@ -96,11 +97,17 @@ const server = app.listen(config.port, () => {
   console.log(`✔ Lumen Academy API is healthy — running at http://localhost:${config.port}`);
 });
 
+// Test-layer hardening C3: a genuinely-expired attempt used to stay
+// in_progress forever if the owning student never made another request —
+// see backend/src/jobs/expirySweeper.ts's own header for the full story.
+startExpirySweeper();
+
 // Both pools draw from Supabase's session-mode pooler, which caps the whole
 // project at 15 connections (see db/shared/pool.ts). Without this, `tsx
 // watch` restarting the process on every save (SIGTERM) leaked connections
 // until the pooler ran them down, eventually throwing EMAXCONNSESSION.
 async function shutdown(): Promise<void> {
+  stopExpirySweeper();
   server.close();
   await Promise.allSettled([pool.end(), prisma.$disconnect()]);
   process.exit(0);

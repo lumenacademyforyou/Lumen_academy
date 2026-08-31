@@ -33,6 +33,8 @@ export interface PracticeTestLine {
   includeDescendants?: boolean;
   difficultyBand?: string | null;
   questionFormat?: string | null;
+  /** Image-based test type (docs/BUGS.md#E1-E3) — restrict this line to has_image=true questions only. */
+  hasImageOnly?: boolean;
   pickCount: number;
   sectionName: string;
 }
@@ -175,6 +177,7 @@ export async function createPracticeTest(input: CreatePracticeTestInput): Promis
       includeDescendants: line.includeDescendants ?? true,
       difficultyBand: line.difficultyBand ?? null,
       questionFormat: line.questionFormat ?? null,
+      hasImageOnly: line.hasImageOnly ?? false,
       pickCount: line.pickCount,
     },
   }));

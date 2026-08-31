@@ -57,6 +57,12 @@ export interface EnvelopeResponse {
   numericAnswer: string | null;
   isMarkedForReview: boolean;
   hasAnswered: boolean;
+  // Test-layer hardening C4: previously absent from the envelope entirely,
+  // even though attempt_response.time_spent_seconds was already persisted —
+  // the client had no way to restore per-question time spent on resume/
+  // refresh even in principle. Added so TestTakingView can seed its
+  // questionTimeMap from real data instead of always starting at zero.
+  timeSpentSeconds: number;
 }
 
 export interface AttemptEnvelope {
@@ -71,7 +77,7 @@ export interface AttemptEnvelope {
   // so a resumed/reloaded attempt can be rebuilt into a full SessionResult
   // client-side from this one call, without a second round trip.
   testCode: string;
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: "subject-wise" | "full-mock" | "image-practice" | "custom";
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
@@ -215,8 +221,14 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
     }
   }
 
-  const responsesRes = await pool.query<{ question_id: string; option_id: string | null; numeric_answer: string | null; response_state: string }>(
-    `select question_id, option_id, numeric_answer, response_state from assess.attempt_response where attempt_id = $1`,
+  const responsesRes = await pool.query<{
+    question_id: string;
+    option_id: string | null;
+    numeric_answer: string | null;
+    response_state: string;
+    time_spent_seconds: number | null;
+  }>(
+    `select question_id, option_id, numeric_answer, response_state, time_spent_seconds from assess.attempt_response where attempt_id = $1`,
     [attemptId]
   );
 
@@ -255,6 +267,7 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
       numericAnswer: r.numeric_answer,
       isMarkedForReview: r.response_state === "marked_for_review",
       hasAnswered: r.response_state === "answered" || r.response_state === "marked_for_review",
+      timeSpentSeconds: r.time_spent_seconds ?? 0,
     })),
   };
 }

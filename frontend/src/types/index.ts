@@ -78,6 +78,8 @@ export interface CatalogUnit {
   classLevel: string | null;
   displayOrder: number | null;
   publishedQuestionCount: number;
+  /** Image-based test type (docs/BUGS.md#E1-E3) — published, has_image=true questions reachable from this unit. */
+  imageQuestionCount: number;
 }
 
 export interface CatalogSubject {
@@ -86,6 +88,8 @@ export interface CatalogSubject {
   subjectName: string;
   displayOrder: number | null;
   publishedQuestionCount: number;
+  /** Image-based test type (docs/BUGS.md#E1-E3) — published, has_image=true questions in this subject. */
+  imageQuestionCount: number;
   units: CatalogUnit[];
 }
 
@@ -104,13 +108,24 @@ export interface SessionLine {
   syllabusNodeId?: string;
   includeDescendants?: boolean;
   difficultyBand?: DifficultyBand;
+  hasImageOnly?: boolean;
   pickCount: number;
   sectionName: string;
 }
 
+// Single source for the session/attempt mode taxonomy — was four separate
+// repeated union literals below (SessionResult/AttemptEnvelope/AttemptSummary/
+// CreateSessionRequest), the same drift risk F4 (docs/BUGS.md) already fixed
+// once on the backend side (test-code.ts's TestTypeCode/TEST_TYPE_CONFIG).
+export type SessionMode = "subject-wise" | "full-mock" | "image-practice" | "custom";
+
 export type CreateSessionRequest =
-  | { mode: "subject-wise"; title: string; durationMinutes: number; subjectId: string; syllabusNodeId?: string; includeDescendants?: boolean; difficultyBand?: DifficultyBand; pickCount: number }
+  | { mode: "subject-wise"; title: string; durationMinutes: number; subjectId: string; syllabusNodeId?: string; includeDescendants?: boolean; difficultyBand?: DifficultyBand; hasImageOnly?: boolean; pickCount: number }
   | { mode: "full-mock"; title?: string }
+  // Image-based test type (docs/BUGS.md#E1-E3) — the server resolves real
+  // per-subject has_image=true availability itself (sessionController.ts),
+  // so the client only needs to ask for the mode, same shape as full-mock.
+  | { mode: "image-practice"; title?: string }
   | { mode: "custom"; title: string; durationMinutes: number; lines: SessionLine[] };
 
 export interface EnvelopeOption {
@@ -153,6 +168,7 @@ export interface EnvelopeResponse {
   numericAnswer: string | null;
   isMarkedForReview: boolean;
   hasAnswered: boolean;
+  timeSpentSeconds: number;
 }
 
 export interface AttemptEnvelope {
@@ -168,14 +184,14 @@ export interface AttemptEnvelope {
   // into a full SessionResult from one GET call (see sessionApi.ts's
   // getActiveAttempt).
   testCode: string;
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: SessionMode;
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
 }
 
 export interface SessionResult {
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: SessionMode;
   testId: string;
   testCode: string;
   attemptId: string;
@@ -198,7 +214,7 @@ export interface AttemptSummary {
   testId: string;
   testCode: string;
   testTitle: string;
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: SessionMode;
   durationMinutes: number | null;
   attemptNo: number;
   attemptState: string;
@@ -247,7 +263,7 @@ export interface AttemptHistoryEntry {
   testId: string;
   testTitle: string;
   testCode: string;
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: SessionMode;
   submittedAt: string;
   obtainedMarks: string;
   totalMarks: string;

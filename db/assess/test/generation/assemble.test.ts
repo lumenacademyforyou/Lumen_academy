@@ -33,8 +33,18 @@ test(
       if (subjectRes.rowCount === 0) throw new Error("no catalog.subject row for the active exam");
       const { subject_id: subjectId, subject_code: subjectCode } = subjectRes.rows[0];
 
-      const userRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user limit 1`);
-      if (userRes.rowCount === 0) throw new Error("no core.app_user row — needed to own the test attempts this creates");
+      // This shared dev database's core.app_user table is also used by
+      // several other attempt-lifecycle integration tests in this
+      // directory. Rather than coordinate row ownership between files
+      // in-process (a disjoint static partition, then a Postgres advisory
+      // lock, were both tried and both caused real problems — see
+      // package.json's test:unit script's comment), these tests never run
+      // concurrently with each other in the first place: `node --test
+      // --test-concurrency=1` in that script serializes every file. Any row
+      // choice here is therefore safe; row 3 is kept only because it's
+      // already what this file used.
+      const userRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user order by user_id asc offset 2 limit 1`);
+      if (userRes.rowCount === 0) throw new Error("no core.app_user row at the expected offset — needed to own the test attempts this creates");
       const userId = userRes.rows[0].user_id;
 
       // BUG-03 (docs/assessment-tool-debug-plan.md) added a real

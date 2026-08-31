@@ -5,7 +5,7 @@ import Modal from "../components/layout/Modal";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../contexts/LanguageContext";
 import type { EnvelopeQuestion, Scorecard, SessionResult } from "../types";
-import { saveResponses, submitAttempt as submitAttemptApi, pauseAttempt as pauseAttemptApi, type ResponseUpdate } from "../services/sessionApi";
+import { saveResponses, submitAttempt as submitAttemptApi, pauseAttempt as pauseAttemptApi, postAttemptEvent, type ResponseUpdate } from "../services/sessionApi";
 
 interface TestTakingViewProps {
   session: SessionResult;
@@ -67,13 +67,59 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   }, [questionLanguage]);
 
   const questions = useMemo(() => orderQuestions(session), [session]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Test-layer hardening C4: the server has always faithfully persisted
+  // selected answers, marked-for-review flags, and per-question time spent
+  // (attempt_response.*, returned in the envelope) — but this component
+  // never read any of it back. A student who refreshed, crashed, or resumed
+  // after logout saw every question as unanswered and unflagged from
+  // question 1, even though nothing was actually lost server-side and the
+  // countdown clock kept running correctly the whole time. Seeded once per
+  // real session.responses identity (not on every re-render) via a lazy
+  // initializer plus a resync effect below for the case where the same
+  // mounted component receives a different resumed attempt without
+  // unmounting.
+  function buildStateFromResponses() {
+    const answers: Record<string, string> = {};
+    const flagged = new Set<string>();
+    const timeMap: Record<string, number> = {};
+    for (const r of session.responses) {
+      if (r.selectedOptionId) answers[r.questionId] = r.selectedOptionId;
+      if (r.isMarkedForReview) flagged.add(r.questionId);
+      if (r.timeSpentSeconds) timeMap[r.questionId] = r.timeSpentSeconds;
+    }
+    return { answers, flagged, timeMap };
+  }
+  function firstUnansweredIndex(orderedQuestions: EnvelopeQuestion[], answers: Record<string, string>): number {
+    const idx = orderedQuestions.findIndex((q) => !answers[q.questionId]);
+    return idx === -1 ? 0 : idx;
+  }
+
+  const [currentIndex, setCurrentIndex] = useState(() => firstUnansweredIndex(questions, buildStateFromResponses().answers));
   const [activeSectionFilter, setActiveSectionFilter] = useState<string>("all");
 
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(new Set());
-  const [visitedQuestions, setVisitedQuestions] = useState<Set<string>>(() => new Set([questions[0]?.questionId].filter(Boolean) as string[]));
-  const [questionTimeMap, setQuestionTimeMap] = useState<Record<string, number>>({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>(() => buildStateFromResponses().answers);
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(() => buildStateFromResponses().flagged);
+  const [visitedQuestions, setVisitedQuestions] = useState<Set<string>>(() => new Set([questions[firstUnansweredIndex(questions, buildStateFromResponses().answers)]?.questionId].filter(Boolean) as string[]));
+  const [questionTimeMap, setQuestionTimeMap] = useState<Record<string, number>>(() => buildStateFromResponses().timeMap);
+
+  // Resync guard for the (less common, but real) case where this component
+  // stays mounted across a resume into a *different* attempt — without this,
+  // the lazy initializers above only ever run once at first mount and a
+  // second attempt's saved state would never be picked up.
+  const resyncedAttemptIdRef = useRef<string | null>(session.attemptId);
+  useEffect(() => {
+    if (resyncedAttemptIdRef.current === session.attemptId) return;
+    resyncedAttemptIdRef.current = session.attemptId;
+    const { answers, flagged, timeMap } = buildStateFromResponses();
+    setSelectedAnswers(answers);
+    setFlaggedQuestions(flagged);
+    setQuestionTimeMap(timeMap);
+    const idx = firstUnansweredIndex(questions, answers);
+    setCurrentIndex(idx);
+    setVisitedQuestions(new Set([questions[idx]?.questionId].filter(Boolean) as string[]));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session.attemptId]);
   const [timeRemaining, setTimeRemaining] = useState(session.remainingSeconds);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -143,9 +189,27 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   // in the background either way — that's a separate, open product decision,
   // not this fix) — it only makes sure an answer already picked is never
   // lost to a tab switch.
+  // Test-layer hardening B4: the visibilitychange handler already existed
+  // (BUG-05, above) but only ever triggered a silent autosave flush — no
+  // record was kept anywhere of how many times, or for how long, a student
+  // left the tab during an attempt (AUDIT.md §1.3: "not detected or not
+  // logged" for integrity purposes, confirmed live). Logs tab_hidden/
+  // tab_visible to the existing assess.attempt_event table via the
+  // already-live POST /assess/attempts/:id/events route — best-effort
+  // (fire-and-forget, errors swallowed) since a failed integrity log must
+  // never block the student's own test-taking flow.
+  const hiddenAtRef = useRef<number | null>(null);
   useEffect(() => {
     const handleVisibilityChange = () => {
-      if (document.visibilityState === "hidden") flushDirty();
+      if (document.visibilityState === "hidden") {
+        hiddenAtRef.current = Date.now();
+        flushDirty();
+        void postAttemptEvent(session.attemptId, "tab_hidden").catch(() => {});
+      } else if (document.visibilityState === "visible" && hiddenAtRef.current !== null) {
+        const hiddenForMs = Date.now() - hiddenAtRef.current;
+        hiddenAtRef.current = null;
+        void postAttemptEvent(session.attemptId, "tab_visible", { hiddenForMs }).catch(() => {});
+      }
     };
     document.addEventListener("visibilitychange", handleVisibilityChange);
     window.addEventListener("pagehide", handleVisibilityChange);
@@ -153,7 +217,30 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
       document.removeEventListener("visibilitychange", handleVisibilityChange);
       window.removeEventListener("pagehide", handleVisibilityChange);
     };
-  }, [flushDirty]);
+  }, [flushDirty, session.attemptId]);
+
+  // Test-layer hardening B7: confirmed live (AUDIT.md §1.3) that no
+  // beforeunload guard existed anywhere in this app — closing the tab or
+  // hitting refresh during an active attempt had zero native confirmation,
+  // unlike the visibilitychange/pagehide handler above (which only does a
+  // background autosave flush, silently). This is genuinely client-only —
+  // a closed tab has no server-side equivalent to "ask the user to
+  // confirm" — the real server-side backstop for a tab that closes anyway
+  // is the autosave above plus C3's expiry sweeper, not this listener.
+  // Suppressed once the attempt has actually ended (submit succeeded, or
+  // the user explicitly chose Exit & Pause) via exitingLifecycleRef, so a
+  // legitimate, intentional exit never shows a spurious "leave site?"
+  // prompt for a screen transition already in flight.
+  const exitingLifecycleRef = useRef(false);
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (exitingLifecycleRef.current) return;
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, []);
 
   useEffect(() => {
     if (!currentQuestion) return;
@@ -241,6 +328,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   // silent client-side abandon.
   const handleExitAndPause = async () => {
     if (!confirm("Exit and pause? Your time will be paused and you can resume this test later from Previous Tests.")) return;
+    exitingLifecycleRef.current = true;
     setIsExiting(true);
     try {
       await flushDirty();
@@ -271,11 +359,115 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
       // pause — a paused attempt is still resumed via BUG-06's flow and
       // should keep the student's choice).
       window.localStorage.removeItem(QUESTION_LANG_STORAGE_KEY);
+      exitingLifecycleRef.current = true;
       onCompleteTest(scorecard, elapsedMinutes);
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Something went wrong submitting your test.");
       setIsSubmitting(false);
     }
+  };
+
+  // Test-layer hardening B1/B2/B10: confirmed live (AUDIT.md §1.3) that
+  // nothing in this app integrates with the History API at all — the whole
+  // system_check/lobby/test_taking flow is driven purely by App.tsx's
+  // in-memory currentScreen state, never by navigate()/pushState. That means
+  // the browser history stack at the moment a student is mid-test is
+  // whatever it was *before* they even started (no entry was ever pushed for
+  // entering the exam), so the first Back press has nothing exam-related to
+  // return to and instead pops straight past the app into whatever came
+  // before — a real, silent escape, not just a same-document route change
+  // this component's own currentScreen-gated rendering could otherwise
+  // absorb. Push a throwaway history entry on mount so Back/Forward always
+  // has something to land on inside this same document, and route every
+  // popstate (Back, Forward, or a deep link/notification tap that manipulates
+  // history — B10 shares this exact root cause) through the same
+  // confirm-and-pause flow the "Exit & Pause" button already uses, rather
+  // than a silent no-op or an uncontrolled exit.
+  useEffect(() => {
+    window.history.pushState(null, "", window.location.href);
+    const handlePopState = () => {
+      if (exitingLifecycleRef.current) return;
+      window.history.pushState(null, "", window.location.href);
+      void handleExitAndPause();
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Test-layer hardening B5: nothing prevented two tabs from loading the
+  // same attempt and autosaving independently (confirmed live — last write
+  // per question silently wins, with no conflict signal). A full optimistic-
+  // concurrency fix needs a version column on attempt_response, out of scope
+  // here; this is the cheap, client-only mitigation the audit calls for — a
+  // BroadcastChannel scoped to this attemptId so any second tab for the same
+  // attempt makes both tabs aware of each other and shows a visible warning,
+  // instead of both silently racing with no indication anything is wrong.
+  const [otherTabDetected, setOtherTabDetected] = useState(false);
+  useEffect(() => {
+    if (typeof BroadcastChannel === "undefined") return;
+    const tabId = Math.random().toString(36).slice(2);
+    const channel = new BroadcastChannel(`lumen_attempt_${session.attemptId}`);
+    channel.onmessage = (e) => {
+      if (e.data?.tabId === tabId) return;
+      setOtherTabDetected(true);
+      if (e.data?.type === "announce") channel.postMessage({ type: "ack", tabId });
+    };
+    channel.postMessage({ type: "announce", tabId });
+    return () => channel.close();
+  }, [session.attemptId]);
+
+  // Test-layer hardening B6: confirmed live (grep across frontend/src) that
+  // fullscreen was never requested anywhere — there was nothing to "exit"
+  // because the exam never entered fullscreen in the first place.
+  //
+  // Revised after a live regression report ("can't resume the paused test"):
+  // this originally hard-blocked the exam behind a full-screen "Return to
+  // Fullscreen" overlay whenever `document.fullscreenElement` wasn't set.
+  // Two real problems with that, found live, not theoretical:
+  // (1) resuming a paused attempt jumps straight from the portal's "Resume
+  //     Test" modal into this component, bypassing LobbyView entirely — the
+  //     only place a request was ever made — so the overlay always blocked
+  //     a resumed session outright (now also fixed at the source in
+  //     App.tsx's handleResumeSession, which requests fullscreen from its
+  //     own real click, but that's still one specific caller remembering to
+  //     do it, not a structural guarantee).
+  // (2) even from a genuine click, requestFullscreen() resolves
+  //     asynchronously — this component can mount and run its first render
+  //     (deciding whether to show the overlay) before the browser's
+  //     `fullscreenchange` event actually fires, so the overlay could flash
+  //     up and block interaction for a real, successful fullscreen request
+  //     that just hadn't resolved yet. Confirmed live via Playwright: a
+  //     request made synchronously inside the resume click still left the
+  //     overlay covering the exam moments later.
+  // Hard-blocking the one thing a student is there to do (answer questions)
+  // behind a browser permission that's genuinely unreliable across entry
+  // paths, browsers, and timing is a worse failure mode than the anti-
+  // cheating value it adds, especially with B1-B8 already covering
+  // navigation/tab/API lockdown independently of fullscreen. Kept as a
+  // nudge, not a lockout: still requests fullscreen best-effort on mount and
+  // tracks state, but now surfaces a small dismissible-by-action banner
+  // (same non-blocking pattern as B5's second-tab warning) instead of an
+  // overlay — never covers or disables the question/options underneath.
+  const fullscreenSupported =
+    typeof document !== "undefined" && document.fullscreenEnabled !== false && typeof document.documentElement.requestFullscreen === "function";
+  const [isFullscreen, setIsFullscreen] = useState(() => !fullscreenSupported || !!document.fullscreenElement);
+  useEffect(() => {
+    if (!fullscreenSupported) return;
+    const handleFullscreenChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    if (!document.fullscreenElement) {
+      // Best-effort only: covers any entry path a caller forgot to request
+      // fullscreen from (or one added later). Browsers may reject this
+      // silently if it isn't within a live user gesture — the banner below
+      // is the guaranteed fallback either way, never a hard requirement.
+      document.documentElement.requestFullscreen?.().catch(() => {});
+    }
+    return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const requestFullscreen = () => {
+    document.documentElement.requestFullscreen?.().catch(() => {});
   };
 
   const answeredCount = Object.keys(selectedAnswers).length;
@@ -316,6 +508,22 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
     // hacks needed), and each of the two panels inside `main` gets its own
     // internal scroll region with pinned controls — see the two panels below.
     <div className="h-dvh overflow-hidden bg-[#f8f9ff] dark:bg-[#031824] flex flex-col font-sans animate-in fade-in duration-300">
+      {otherTabDetected && (
+        <div className="shrink-0 z-50 bg-amber-500 text-[#00243B] text-xs md:text-sm font-bold text-center py-2 px-4">
+          {t("This test is also open in another tab. Answering the same question in both tabs may cause one tab's answer to be lost — please continue in one tab only.")}
+        </div>
+      )}
+      {fullscreenSupported && !isFullscreen && (
+        <div className="shrink-0 z-50 bg-slate-700 dark:bg-slate-800 text-white text-xs md:text-sm font-semibold flex items-center justify-center gap-3 py-2 px-4">
+          <span>{t("For the best exam experience, switch to fullscreen.")}</span>
+          <button
+            onClick={requestFullscreen}
+            className="px-3 py-1 bg-[#ffd15c] hover:bg-amber-500 text-[#00243B] font-bold text-[11px] uppercase tracking-wide rounded-lg cursor-pointer shrink-0"
+          >
+            {t("Enter Fullscreen")}
+          </button>
+        </div>
+      )}
       <header className="relative shrink-0 h-20 bg-white dark:bg-[var(--navy)] border-b border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between px-6 md:px-12 z-40">
         <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-slate-200 dark:bg-slate-700 overflow-hidden">
           <div

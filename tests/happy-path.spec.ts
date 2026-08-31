@@ -62,8 +62,21 @@ async function answerFirstQuestionAndSubmit(page: Page) {
   // Clear/Save & Next controls and the whole right-hand palette sidebar, so
   // the first <button> inside <main> is always the first answer option —
   // confirmed against source, not guessed.
+  //
+  // Real bug found live while adding the Image-Based Practice journey below
+  // (docs/BUGS.md#E1-E3): when the current question has a stem image
+  // (QuestionImage.tsx), that image's own "Zoom image" button renders
+  // *before* the answer options in DOM order — so "main button first()"
+  // resolved to the zoom button instead, opening the fullscreen zoom
+  // lightbox (a fixed inset-0 overlay) instead of selecting an answer, which
+  // then blocked the later "Submit Test?" click entirely (a genuine element-
+  // interception timeout, not a flake). Every other journey in this file
+  // happened to avoid this because images were rare/absent on the questions
+  // they served; Image-Based Practice guarantees one on every question,
+  // which is exactly what surfaced it. Excluding the zoom button here fixes
+  // every journey that shares this helper, not just the new one.
   await expect(page.locator("main")).toBeVisible({ timeout: 15000 });
-  await page.locator("main button").first().click();
+  await page.locator('main button:not([aria-label="Zoom image"])').first().click();
 
   await page.getByRole("button", { name: "Submit Test?" }).click();
   const confirmButton = page.getByRole("button", { name: /^Submit (Anyway|Test)$/ });
@@ -209,6 +222,102 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
     await expect(fullMockButton).toBeVisible();
     // Whichever real state the seeded demo account is in, the button's own
     // text must say so honestly — never a silently-enabled bypass of the gate.
+  });
+
+  // Live-reported regression: "I can't resume the paused test." Root cause
+  // traced to the B6 fullscreen-lockdown work (test-layer-hardening pass) —
+  // fullscreen is only ever requested from LobbyView.tsx's real click
+  // (handleContinue), but App.tsx's handleResumeSession jumps straight from
+  // the "Test in progress" modal into TestTakingView, bypassing Lobby
+  // entirely, so no fullscreen request was ever made for a resumed attempt —
+  // yet TestTakingView's own "must be fullscreen" overlay still applied,
+  // blocking the exam UI underneath it. Fixed by requesting fullscreen
+  // directly inside handleResumeSession's own click handler (a genuine user
+  // gesture, same pattern LobbyView already used). This test drives the
+  // real pause -> reload -> resume -> answer path end to end so a future
+  // change to either handler can't silently reopen this gap.
+  test("Frontend Journey - Exit & Pause a test, reload, and Resume Test actually lands on an answerable exam (not stuck on a fullscreen overlay)", async ({ page }) => {
+    await loginAsDemo(page);
+
+    await page.getByRole("button", { name: "Tests" }).first().click();
+    await expect(page.getByRole("heading", { name: "NEET Mock Test Series" })).toBeVisible({ timeout: 15000 });
+    await page.getByRole("button", { name: "Configure Practice" }).click();
+    await page.getByRole("button", { name: "BOT", exact: true }).click();
+    await page.getByRole("button", { name: "Start Practice" }).click();
+    await passSystemCheckAndLobby(page);
+
+    await expect(page.locator("main")).toBeVisible({ timeout: 15000 });
+
+    // "Exit and pause?" is a native confirm() dialog (TestTakingView.tsx's
+    // handleExitAndPause) — must be accepted before the click resolves.
+    page.once("dialog", (dialog) => dialog.accept());
+    await page.getByRole("button", { name: /Exit & Pause Test/i }).click();
+
+    // Pausing returns to the portal (onCancel -> App.tsx clears activeSession,
+    // leaving currentTab as whatever it already was — "tests" here, since
+    // that's the tab this journey navigated through to launch the test).
+    await expect(page.getByRole("heading", { name: "NEET Mock Test Series" })).toBeVisible({ timeout: 20000 });
+
+    // A plain in-SPA return to the portal doesn't re-run the reload-survival
+    // effect (it only fires from a fresh app load) — reload for real, the
+    // same way a student closing and reopening the app would.
+    await page.reload({ waitUntil: "domcontentloaded" });
+
+    const resumeButton = page.getByRole("button", { name: "Resume Test" });
+    await expect(resumeButton).toBeVisible({ timeout: 20000 });
+    await resumeButton.click();
+
+    // The real regression: this used to render TestTakingView but leave it
+    // covered by a full-screen "Return to Fullscreen" overlay, with no
+    // fullscreen request ever having been made for the resume path (now
+    // fixed both in App.tsx's handleResumeSession and by making the
+    // fullscreen nudge a non-blocking banner instead of a hard overlay —
+    // see TestTakingView.tsx). Proven fixed by actually answering and
+    // submitting through the exam, not just checking visibility.
+    await expect(page.locator("main")).toBeVisible({ timeout: 15000 });
+    await answerFirstQuestionAndSubmit(page);
+    await expect(page.getByRole("heading", { name: /Nice work getting started!/i })).toBeVisible({ timeout: 40000 });
+  });
+
+  // Image-based test type (docs/BUGS.md#E1-E3, user ask: "build a test for
+  // image based test in the whole application system"). Unlike the custom-
+  // builder journey above (which only best-effort-checks for an image,
+  // since a hand-picked unit might not serve one this run), every question
+  // this mode serves is guaranteed has_image=true by the server
+  // (sessionController.ts's image-practice mode -> assess.test_blueprint.
+  // has_image_only -> assemble.ts) — so this asserts an image is actually
+  // present, not just possibly present.
+  test("Frontend Journey - Image-Based Practice serves only image-bearing questions, end to end through the real UI", async ({ page }) => {
+    await loginAsDemo(page);
+
+    await page.getByRole("button", { name: "Tests" }).first().click();
+    await expect(page.getByRole("heading", { name: "NEET Mock Test Series" })).toBeVisible({ timeout: 15000 });
+    await expect(page.getByRole("heading", { name: "Image-Based Practice" })).toBeVisible();
+
+    const startButton = page.getByRole("button", { name: /Start Image Practice|No image questions available yet/ });
+    await expect(startButton).toBeVisible();
+    test.skip((await startButton.textContent())?.includes("No image questions available yet") ?? false, "no has_image=true published questions exist in this environment right now");
+    await startButton.click();
+
+    await passSystemCheckAndLobby(page);
+
+    // LobbyView's own 30s countdown runs before it actually navigates into
+    // TestTakingView (LobbyView.tsx's COUNTDOWN_SECONDS) — the other
+    // journeys in this file never wait for it explicitly because their next
+    // action is a button click, whose own actionability retry silently
+    // waits it out. This journey's next assertion isn't a click, so it must
+    // wait for a TestTakingView-only marker itself first, or it can fire
+    // while still on the Lobby's countdown screen (which also renders a
+    // decorative img under the same app-shell <main>, confirmed live via a
+    // failed first attempt at this test — not guessed).
+    await expect(page.getByRole("button", { name: /Exit & Pause Test/i })).toBeVisible({ timeout: 35000 });
+
+    // The real assertion this journey exists for: unlike the custom-builder
+    // journey, this must actually have an image, not just possibly have one.
+    await expect(page.locator("main img").first()).toHaveAttribute("src", /.+/, { timeout: 10000 });
+
+    await answerFirstQuestionAndSubmit(page);
+    await expect(page.getByRole("heading", { name: /Nice work getting started!/i })).toBeVisible({ timeout: 40000 });
   });
 
 });

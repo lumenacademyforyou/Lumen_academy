@@ -3,6 +3,7 @@ import { provisionCanonicalUser } from "../services/provisionUser.service.js";
 import { supabaseAuth } from "../lib/supabaseClient.js";
 import { AppError } from "./errorHandler.js";
 import { checkAndTouchOnAuth, decodeSessionId, type SessionInfo } from "../services/session.service.js";
+import { enforceAttemptLockdown } from "./attemptLockdown.js";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
@@ -63,7 +64,16 @@ export async function requireAuth(req: Request, _res: Response, next: NextFuncti
     const sessionId = decodeSessionId(token, data.user.id);
     req.sessionInfo = await checkAndTouchOnAuth(sessionId, appUserId);
 
-    next();
+    // Test-layer hardening B8: folded into requireAuth itself, rather than
+    // added piecemeal to each of the several routers that call it (some
+    // router-wide, some per-route, in inconsistent array-literal patterns
+    // across catalog/content/admin/learn routes) — this is the one place
+    // every authenticated request in the app already passes through, so
+    // it's the one place this can be enforced without risking a router
+    // that quietly never gets the check. enforceAttemptLockdown's own
+    // allowlist exempts the /assess/attempts/* paths this same requireAuth
+    // call gates too, so a test's own attempt calls are unaffected.
+    await enforceAttemptLockdown(req, _res, next);
   } catch (err) {
     next(err);
   }

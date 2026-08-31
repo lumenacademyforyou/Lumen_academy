@@ -64,6 +64,18 @@ export async function submitAttempt(attemptId: string): Promise<Scorecard> {
   return res.data;
 }
 
+// Test-layer hardening B4: assess.attempt_event already existed (used for
+// ATTEMPT_STARTED) but nothing ever logged tab-visibility changes to it —
+// the existing visibilitychange handler only triggered a silent autosave
+// flush, with no record for later integrity review of how many times, or
+// for how long, a student left the test tab during an attempt.
+export async function postAttemptEvent(attemptId: string, eventType: string, eventPayload?: unknown): Promise<void> {
+  await apiFetch<void>(`/assess/attempts/${attemptId}/events`, {
+    method: "POST",
+    body: JSON.stringify({ event_type: eventType, event_payload: eventPayload }),
+  });
+}
+
 export async function pauseAttempt(attemptId: string): Promise<void> {
   await apiFetch<void>(`/assess/attempts/${attemptId}/pause`, { method: "POST" });
 }

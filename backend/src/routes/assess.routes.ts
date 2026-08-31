@@ -1,9 +1,9 @@
 import { Router, Request, Response, NextFunction } from "express";
 import { z } from "zod";
-import { makeOwnedCrudRouter } from "../lib/dbCrudRouter.js";
 import { requireAuth } from "../middleware/requireAuth.js";
 import { requireAttemptOwnership } from "../middleware/ownership.js";
 import { validate } from "../middleware/validate.js";
+import { AppError } from "../middleware/errorHandler.js";
 import { attemptRepository } from "../../../db/assess/test/attempt/attempt.repository.js";
 import {
   startAttempt,
@@ -24,6 +24,7 @@ import {
   listOwnAttempts,
 } from "../controllers/attemptFlowController.js";
 import { createPracticeTest } from "../../../db/assess/test/definition/create-practice-test.js";
+import { SINGLE_SCOPE_TEST_TYPES } from "../../../db/assess/test/definition/test-code.js";
 import { pool } from "../../../db/shared/pool.js";
 import { createSession } from "../controllers/sessionController.js";
 
@@ -43,9 +44,36 @@ import { createSession } from "../controllers/sessionController.js";
 //   - test, test_section, test_question, test_assignment
 const router = Router();
 
-const attemptsRouter = makeOwnedCrudRouter(attemptRepository, "user_id");
-// Real attempt lifecycle (see backend/controllers/attemptFlowController.ts):
-// these inherit the requireAuth that makeOwnedCrudRouter already applied above.
+// Test-layer hardening G1: assess.attempt used to be mounted through
+// makeOwnedCrudRouter, which also wires generic PATCH /:id and DELETE /:id
+// handlers that write/delete whatever the request body contains (minus the
+// owner column) with zero business-rule validation. That let an attempt's
+// own owner bypass every guard in attempt-flow.ts — set attempt_state
+// straight to 'scored', push server_deadline/paused_ms_total to an arbitrary
+// value (defeating the "server-authoritative timer" guarantee those columns
+// exist for), or delete the row outright via DELETE. Confirmed nothing in
+// this app calls the generic PATCH/DELETE/bare-GET routes for attempts —
+// the frontend only ever calls the purpose-built sub-routes below (start,
+// responses, submit, pause, resume, envelope, review, scorecard, irt,
+// cohort). Attempts are a stateful entity with server-enforced invariants;
+// a generic CRUD surface is the wrong tool for it regardless of an
+// allowlist, since a future column addition would need to remember to
+// update that allowlist too. Kept: a read-only, ownership-checked GET /:id
+// for parity with the old behavior's one safe half.
+const attemptsRouter = Router();
+attemptsRouter.use(requireAuth);
+attemptsRouter.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const row = await attemptRepository.findById(req.params.id);
+    if ((row as { user_id?: string }).user_id !== req.user!.appUserId) {
+      next(new AppError(404, "NOT_FOUND", "Resource not found."));
+      return;
+    }
+    res.json({ data: row });
+  } catch (err) {
+    next(err);
+  }
+});
 attemptsRouter.post("/start", startAttempt);
 attemptsRouter.patch("/:attemptId/responses/:questionId", saveResponse);
 attemptsRouter.post("/:attemptId/submit", submitAttempt);
@@ -92,7 +120,14 @@ router.post("/sessions", requireAuth, createSession);
 const createPracticeTestSchema = z.object({
   examId: z.string().uuid(),
   examCode: z.string().min(1),
-  testType: z.enum(["SUBJ", "CHAP", "TOPIC", "UNIT"]), // MOCK excluded — multi-line, not this single-scope shape
+  // Test-layer hardening F4: was a hand-maintained literal list independent
+  // of test-code.ts's own TestTypeCode union; now derived from
+  // TEST_TYPE_CONFIG's isSingleScope flag (test-code.ts) so this allowlist
+  // can't silently drift from that union — MOCK is still excluded here (it's
+  // multi-line/multi-scope, not this route's single-scope shape), just
+  // because TEST_TYPE_CONFIG says so instead of a separate hardcode agreeing
+  // with it by hand.
+  testType: z.enum(SINGLE_SCOPE_TEST_TYPES as [string, ...string[]]),
   scopeCode: z.string().min(1),
   title: z.string().min(1),
   durationMinutes: z.number().int().positive(),
@@ -100,6 +135,8 @@ const createPracticeTestSchema = z.object({
   syllabusNodeId: z.string().uuid().optional(),
   includeDescendants: z.boolean().optional(),
   difficultyBand: z.enum(["easy", "medium", "hard"]).optional(),
+  // Image-based test type (docs/BUGS.md#E1-E3) — same optional-filter shape as difficultyBand above.
+  hasImageOnly: z.boolean().optional(),
   pickCount: z.number().int().positive(),
   sectionName: z.string().min(1),
 });
@@ -121,6 +158,7 @@ router.post("/tests/practice", requireAuth, validate({ body: createPracticeTestS
           syllabusNodeId: b.syllabusNodeId ?? null,
           includeDescendants: b.includeDescendants ?? true,
           difficultyBand: b.difficultyBand ?? null,
+          hasImageOnly: b.hasImageOnly ?? false,
           pickCount: b.pickCount,
           sectionName: b.sectionName,
         },

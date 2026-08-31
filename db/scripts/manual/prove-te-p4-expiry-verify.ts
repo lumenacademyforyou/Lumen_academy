@@ -25,28 +25,35 @@ async function main() {
   // Part A already succeeded once is fine — enforceExpiry then correctly
   // returns null because the attempt is no longer in_progress/paused; that's
   // checked for below rather than treated as a failure.)
+  // Test-layer hardening C1 (docs/BUGS.md#C1): neither attempt this script's
+  // paired setup script creates is ever answered (no upsertResponse call
+  // anywhere in prove-te-p4-expiry-setup.ts) — so both now correctly resolve
+  // to `abandoned`, not a misleading "0/N, scored", per abandonAttempt's
+  // policy in attempt-flow.ts. Updated here to match, rather than leaving
+  // this script asserting the pre-C1 behavior.
   const enforceResult = await enforceExpiry(attemptForEnforceId, userId);
   if (enforceResult) {
-    console.log(`Part A PASS — enforceExpiry force-submitted ${attemptForEnforceId}: obtained ${enforceResult.obtainedMarks}/${enforceResult.totalMarks}`);
+    const detail = "obtainedMarks" in enforceResult ? `obtained ${enforceResult.obtainedMarks}/${enforceResult.totalMarks}` : "abandoned (never answered)";
+    console.log(`Part A PASS — enforceExpiry force-closed ${attemptForEnforceId}: ${detail}`);
   } else {
     const already = await pool.query<{ attempt_state: string; submitted_reason: string | null }>(
       `select attempt_state, submitted_reason from assess.attempt where attempt_id = $1`,
       [attemptForEnforceId]
     );
-    if (already.rows[0].attempt_state !== "scored" || already.rows[0].submitted_reason !== "expiry") {
-      throw new Error(`enforceExpiry returned null and the attempt isn't already scored/expiry: ${JSON.stringify(already.rows[0])}`);
+    if (already.rows[0].attempt_state !== "abandoned" || already.rows[0].submitted_reason !== "expiry") {
+      throw new Error(`enforceExpiry returned null and the attempt isn't already abandoned/expiry: ${JSON.stringify(already.rows[0])}`);
     }
-    console.log(`Part A PASS (already run) — ${attemptForEnforceId} was already force-submitted by a prior run of this script.`);
+    console.log(`Part A PASS (already run) — ${attemptForEnforceId} was already force-closed by a prior run of this script.`);
   }
 
   const stateAfterEnforce = await pool.query<{ attempt_state: string; submitted_reason: string | null }>(
     `select attempt_state, submitted_reason from assess.attempt where attempt_id = $1`,
     [attemptForEnforceId]
   );
-  if (stateAfterEnforce.rows[0].attempt_state !== "scored" || stateAfterEnforce.rows[0].submitted_reason !== "expiry") {
-    throw new Error(`expected state=scored/reason=expiry, got ${JSON.stringify(stateAfterEnforce.rows[0])}`);
+  if (stateAfterEnforce.rows[0].attempt_state !== "abandoned" || stateAfterEnforce.rows[0].submitted_reason !== "expiry") {
+    throw new Error(`expected state=abandoned/reason=expiry, got ${JSON.stringify(stateAfterEnforce.rows[0])}`);
   }
-  console.log("Part A PASS — attempt_state='scored', submitted_reason='expiry', both persisted correctly.");
+  console.log("Part A PASS — attempt_state='abandoned', submitted_reason='expiry', both persisted correctly.");
 
   // Part B — the actual shipped sweeper script, run for real as a subprocess
   // (not a reimplementation of its query), against attemptForSweeperId which
@@ -67,10 +74,10 @@ async function main() {
     `select attempt_state, submitted_reason from assess.attempt where attempt_id = $1`,
     [attemptForSweeperId]
   );
-  if (stateAfterSweep.rows[0].attempt_state !== "scored" || stateAfterSweep.rows[0].submitted_reason !== "sweeper") {
-    throw new Error(`expected state=scored/reason=sweeper, got ${JSON.stringify(stateAfterSweep.rows[0])}`);
+  if (stateAfterSweep.rows[0].attempt_state !== "abandoned" || stateAfterSweep.rows[0].submitted_reason !== "sweeper") {
+    throw new Error(`expected state=abandoned/reason=sweeper, got ${JSON.stringify(stateAfterSweep.rows[0])}`);
   }
-  console.log("Part B PASS — the real sweeper script closed the untouched attempt with attempt_state='scored', submitted_reason='sweeper'.");
+  console.log("Part B PASS — the real sweeper script closed the untouched attempt with attempt_state='abandoned', submitted_reason='sweeper'.");
 
   // Part C — both closed attempts must now reject a further response with
   // the correct typed error (InvalidStateTransitionError -> the R-6-style

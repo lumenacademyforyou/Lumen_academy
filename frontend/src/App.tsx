@@ -42,6 +42,7 @@ const MyResultsView = lazy(() => import("./pages/MyResultsView"));
 const SESSION_MODE_LABEL: Record<SessionResult["mode"], string> = {
   "subject-wise": "Subject-wise Practice",
   "full-mock": "Full Mock Exam",
+  "image-practice": "Image-Based Practice",
   custom: "Custom Test",
 };
 
@@ -425,6 +426,15 @@ useEffect(() => {
 
   const handleResumeSession = () => {
     if (!resumableSession) return;
+    // Test-layer hardening B6 regression fix: this is a real, direct click
+    // (the "Resume Test" button), but it jumps straight into test_taking,
+    // bypassing LobbyView entirely — that's the only place fullscreen was
+    // ever requested (LobbyView.tsx's handleContinue). Without this,
+    // resuming a paused attempt landed on TestTakingView's own "must be
+    // fullscreen" overlay every time, with no browser-fullscreen request
+    // ever having been made for this entry path — reported live as "can't
+    // resume the test." Same best-effort pattern as LobbyView's own call.
+    document.documentElement.requestFullscreen?.().catch(() => {});
     setActiveSession(resumableSession);
     setResumableSession(null);
     setCurrentScreen("test_taking");

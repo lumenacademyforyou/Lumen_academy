@@ -98,6 +98,15 @@ export default function LobbyView({ onStartTest, testTitle, testCode, mode }: Lo
       return;
     }
     setCheckboxError(false);
+    // Test-layer hardening B6: this is the one real, synchronous user click
+    // in the whole system_check/lobby/test_taking flow — the countdown below
+    // fires navigateIntoTest() from a setInterval, and TestTakingView itself
+    // mounts off a lazy import, neither of which carries the transient
+    // activation requestFullscreen() needs. Best-effort: if this is rejected
+    // or unsupported (e.g. iOS Safari never supports it), TestTakingView's
+    // own overlay button is the fallback real click, and its own
+    // feature-detection skips blocking entirely where the API doesn't exist.
+    document.documentElement.requestFullscreen?.().catch(() => {});
     setPhase("countdown");
   };
 

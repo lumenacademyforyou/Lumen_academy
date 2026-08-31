@@ -23,6 +23,48 @@ export type TestTypeCode = "MOCK" | "SUBJ" | "CHAP" | "TOPIC" | "UNIT";
 
 export const TEST_CODE_PATTERN = /^LMN-[A-Z]+-(MOCK|SUBJ|CHAP|TOPIC|UNIT)-[A-Z0-9]+-\d{6}$/;
 
+/**
+ * Test-layer hardening F4 (docs/BUGS.md#F4): adding a test type used to mean
+ * independently-maintained edits in at least three files — this union
+ * (test-code.ts), sessionController.ts's `toLines()` if-chain plus
+ * `hasCompletedPracticeTest`'s hand-written MOCK-exclusion regex, and
+ * assess.routes.ts's `z.enum([...])` allowlist — with nothing forcing them
+ * to agree. This table is the single source for the two properties that
+ * were actually independently duplicated (confirmed by tracing every
+ * TestTypeCode consumer, not assumed): whether a type is single-scope (one
+ * subject/node — SUBJ/CHAP/TOPIC/UNIT, the shape `POST /tests/practice`
+ * accepts) versus multi-scope (assembled from several blueprint lines
+ * spanning subjects — MOCK, which that route deliberately excludes), and
+ * whether an attempt of that type counts toward "has completed a practice
+ * test" (BUG-28's full-mock gate — every type except MOCK). Deliberately
+ * not adding a default-duration or marking-scheme-key field here: neither is
+ * actually duplicated across multiple call sites today (full-mock's duration
+ * is one constant in sessionController.ts; the marking-scheme lookup key is
+ * a separate, unrelated hardcode — D6's "related, smaller gap," out of this
+ * bug's scope) — adding config surface nothing yet needs would be
+ * speculative, not closing a real duplication.
+ */
+export interface TestTypeConfig {
+  isSingleScope: boolean;
+  countsAsPractice: boolean;
+}
+
+export const TEST_TYPE_CONFIG: Record<TestTypeCode, TestTypeConfig> = {
+  SUBJ: { isSingleScope: true, countsAsPractice: true },
+  CHAP: { isSingleScope: true, countsAsPractice: true },
+  TOPIC: { isSingleScope: true, countsAsPractice: true },
+  UNIT: { isSingleScope: true, countsAsPractice: true },
+  MOCK: { isSingleScope: false, countsAsPractice: false },
+};
+
+const ALL_TEST_TYPES = Object.keys(TEST_TYPE_CONFIG) as TestTypeCode[];
+
+/** The `POST /tests/practice` route's allowed testType values — every single-scope type, read from TEST_TYPE_CONFIG instead of a hand-maintained literal list. */
+export const SINGLE_SCOPE_TEST_TYPES = ALL_TEST_TYPES.filter((t) => TEST_TYPE_CONFIG[t].isSingleScope);
+
+/** The test types excluded from `hasCompletedPracticeTest`'s "has this user completed a real practice test" check — currently just MOCK, read from TEST_TYPE_CONFIG instead of a hand-written regex literal. */
+export const NON_PRACTICE_TEST_TYPES = ALL_TEST_TYPES.filter((t) => !TEST_TYPE_CONFIG[t].countsAsPractice);
+
 function normaliseScopeCode(scopeCode: string): string {
   return scopeCode.toUpperCase().replace(/_/g, "");
 }
@@ -32,14 +74,16 @@ function normaliseScopeCode(scopeCode: string): string {
  * Phase C1) back into the mode label the frontend's SessionResult type uses.
  * Read directly off the test_code string so a resumed/reloaded attempt
  * (envelope.ts) doesn't need a second query to know how to render itself —
- * SUBJ/UNIT -> subject-wise, MOCK+ALL -> full-mock, MOCK+CUSTOM -> custom.
+ * SUBJ/UNIT -> subject-wise, MOCK+ALL -> full-mock, MOCK+IMAGES ->
+ * image-practice (docs/BUGS.md#E1-E3), MOCK+CUSTOM -> custom.
  */
-export function deriveSessionModeFromTestCode(testCode: string): "subject-wise" | "full-mock" | "custom" {
+export function deriveSessionModeFromTestCode(testCode: string): "subject-wise" | "full-mock" | "image-practice" | "custom" {
   const match = testCode.match(/^LMN-[A-Z]+-(MOCK|SUBJ|CHAP|TOPIC|UNIT)-([A-Z0-9]+)-\d{6}$/);
   if (!match) return "custom";
   const [, testType, scopeCode] = match;
   if (testType === "SUBJ" || testType === "UNIT") return "subject-wise";
   if (testType === "MOCK" && scopeCode === "ALL") return "full-mock";
+  if (testType === "MOCK" && scopeCode === "IMAGES") return "image-practice";
   return "custom";
 }
 

@@ -23,7 +23,7 @@ export interface AttemptHistoryEntry {
   testId: string;
   testTitle: string;
   testCode: string;
-  mode: "subject-wise" | "full-mock" | "custom";
+  mode: "subject-wise" | "full-mock" | "image-practice" | "custom";
   submittedAt: string;
   obtainedMarks: string;
   totalMarks: string;
