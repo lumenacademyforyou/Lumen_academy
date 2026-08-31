@@ -163,39 +163,93 @@ const BLUEPRINT_LINES_SQL = `
 // descendants match. The target node itself is already covered separately
 // by each query's own `qnm.node_id = $<n>::uuid` branch, so dropping the
 // exact-match case from this LIKE clause loses nothing.
-const LINE_CANDIDATE_SQL = `
-  select q.question_id, q.content_fp, bool_or(s.question_id is not null) as was_seen
-    from content.question q
-    join content.question_node_map qnm on qnm.question_id = q.question_id
-    join catalog.syllabus_node sn on sn.node_id = qnm.node_id
-    left join assess.user_question_seen s on s.user_id = $2 and s.question_id = q.question_id
-   where sn.subject_id = $1
-     and q.lifecycle_status = 'published'
-     and not (q.question_id = any ($4::uuid[]))
-     and not (q.content_fp = any ($11::bytea[]))
-     and (
-           $5::uuid is null
-           or qnm.node_id = $5::uuid
-           or (
-                $6::boolean
-                and sn.node_path like (select target.node_path || '/%' from catalog.syllabus_node target where target.node_id = $5::uuid)
-              )
-         )
-     and ($7::text is null or q.difficulty_band = $7::text)
-     and ($8::text is null or q.question_type = $8::text)
-     and ($10::boolean is not true or q.has_image = true)
-   group by q.question_id
+// docs/test-engine-fix-prompt.md Defect 5, "template-family guard": never
+// pick more than one question sharing the same template family, regardless of
+// variant index. This bank has no `template_id` column, but migration 030
+// already computes exactly that key — skeleton_fp, the normalized stem with
+// every number collapsed to '#' — and deliberately left it *unenforced as a
+// bank-wide dedup key*, correctly so: it also collapses legitimate "same
+// formula, different numbers" drills, which should both exist in the bank.
+//
+// The guard is therefore scoped to one assembled paper rather than to the
+// bank. Two questions from the same family may both live in the bank; a
+// student never sees both in the same test. That is the distinction the
+// spec is actually after ("never pick more than one question sharing the
+// same template_id" — within an assembly), and it keeps migration 030's
+// reasoning intact instead of overriding it.
+//
+// Two halves, because a family can collide two different ways:
+//   * WITHIN one blueprint line — the `family_rank = 1` window filter below.
+//     A NULL skeleton_fp is given its own partition key (there should be
+//     none post-030, but a null must not collapse every null-fp row onto
+//     one pick).
+//   * ACROSS lines — $12::bytea[], the same shape as $11's content_fp
+//     exclusion, carrying every family already claimed by an earlier line.
+export const LINE_CANDIDATE_SQL = `
+  with candidates as (
+    select q.question_id, q.content_fp, q.skeleton_fp,
+           bool_or(s.question_id is not null) as was_seen,
+           min(s.last_seen_at) as last_seen_at
+      from content.question q
+      join content.question_node_map qnm on qnm.question_id = q.question_id
+      join catalog.syllabus_node sn on sn.node_id = qnm.node_id
+      left join assess.user_question_seen s on s.user_id = $2 and s.question_id = q.question_id
+     where sn.subject_id = $1
+       and q.lifecycle_status = 'published'
+       and not (q.question_id = any ($4::uuid[]))
+       and not (q.content_fp = any ($11::bytea[]))
+       and not (q.skeleton_fp = any ($12::bytea[]))
+       and (
+             $5::uuid is null
+             or qnm.node_id = $5::uuid
+             or (
+                  $6::boolean
+                  and sn.node_path like (select target.node_path || '/%' from catalog.syllabus_node target where target.node_id = $5::uuid)
+                )
+           )
+       and ($7::text is null or q.difficulty_band = $7::text)
+       and ($8::text is null or q.question_type = $8::text)
+       and ($10::boolean is not true or q.has_image = true)
+     group by q.question_id, q.content_fp, q.skeleton_fp
+  ),
+  ranked as (
+    select *,
+           row_number() over (
+             partition by coalesce(skeleton_fp, decode(md5(question_id::text), 'hex'))
+             order by was_seen,
+                      case when was_seen = false then md5(question_id::text || $3::text) end,
+                      last_seen_at,
+                      md5(question_id::text || $3::text)
+           ) as family_rank
+      from candidates
+  )
+  select question_id, content_fp, skeleton_fp, was_seen
+    from ranked
+   where family_rank = 1
    order by
-     bool_or(s.question_id is not null),
-     case when bool_or(s.question_id is not null) = false then md5(q.question_id::text || $3::text) end,
-     min(s.last_seen_at),
-     md5(q.question_id::text || $3::text)
+     was_seen,
+     case when was_seen = false then md5(question_id::text || $3::text) end,
+     last_seen_at,
+     md5(question_id::text || $3::text)
    limit $9
 `;
 
-/** Same filters as LINE_CANDIDATE_SQL (including F1's descendant-match fix above), minus the pick_count LIMIT — used only when a line comes back short, to report an honest "available" count. */
-const LINE_AVAILABLE_SQL = `
-  select count(distinct q.question_id) as available
+/**
+ * Same filters as LINE_CANDIDATE_SQL (including F1's descendant-match fix
+ * above), minus the pick_count LIMIT — used when a line comes back short, to
+ * report an honest "available" count, and exported for the availability
+ * endpoint (Defect 6) so the number a student is shown on the config screen
+ * is produced by the same predicate the assembler will actually run.
+ *
+ * Counts distinct *families*, not rows: after Defect 5's template-family
+ * guard, a family contributes exactly one usable question, so counting raw
+ * rows here would report a pool the assembler cannot actually deliver — the
+ * precise failure mode Defect 6 calls out ("counting raw rows makes the
+ * notification lie"). A NULL skeleton_fp falls back to its own question_id
+ * so it counts as its own family rather than merging with every other null.
+ */
+export const LINE_AVAILABLE_SQL = `
+  select count(distinct coalesce(q.skeleton_fp, decode(md5(q.question_id::text), 'hex'))) as available
     from content.question q
     join content.question_node_map qnm on qnm.question_id = q.question_id
     join catalog.syllabus_node sn on sn.node_id = qnm.node_id
@@ -203,6 +257,7 @@ const LINE_AVAILABLE_SQL = `
      and q.lifecycle_status = 'published'
      and not (q.question_id = any ($2::uuid[]))
      and not (q.content_fp = any ($8::bytea[]))
+     and not (q.skeleton_fp = any ($9::bytea[]))
      and (
            $3::uuid is null
            or qnm.node_id = $3::uuid
@@ -254,13 +309,17 @@ export async function assembleForAttempt(
   // rows.
   const pickedQuestionIds: string[] = [];
   const pickedContentFps: Buffer[] = [];
+  // Defect 5's template-family guard, across lines — see LINE_CANDIDATE_SQL's
+  // own comment for why skeleton_fp is the family key and why the guard is
+  // scoped to one paper rather than to the bank.
+  const pickedSkeletonFps: Buffer[] = [];
   const pickedByFpHex = new Map<string, string>(); // content_fp hex -> question_id, for the Phase 3.2 assertion's error message
   const sections: AssembledSection[] = [];
 
   let totalRecycledCount = 0;
 
   for (const bp of linesRes.rows) {
-    const res = await client.query<{ question_id: string; content_fp: Buffer | null; was_seen: boolean }>(LINE_CANDIDATE_SQL, [
+    const res = await client.query<{ question_id: string; content_fp: Buffer | null; skeleton_fp: Buffer | null; was_seen: boolean }>(LINE_CANDIDATE_SQL, [
       bp.subject_id,
       userId,
       generationSeed,
@@ -272,6 +331,7 @@ export async function assembleForAttempt(
       bp.pick_count,
       bp.has_image_only,
       pickedContentFps,
+      pickedSkeletonFps,
     ]);
     const questionIds = res.rows.map((r) => r.question_id);
 
@@ -285,6 +345,7 @@ export async function assembleForAttempt(
         bp.question_format,
         bp.has_image_only,
         pickedContentFps,
+        pickedSkeletonFps,
       ]);
       throw new PoolInsufficientError(bp.blueprint_id, bp.test_section_id, bp.pick_count, Number(availableRes.rows[0].available));
     }
@@ -314,6 +375,7 @@ export async function assembleForAttempt(
     pickedQuestionIds.push(...questionIds);
     for (const row of res.rows) {
       if (row.content_fp) pickedContentFps.push(row.content_fp);
+      if (row.skeleton_fp) pickedSkeletonFps.push(row.skeleton_fp);
     }
     const contentFps = res.rows.map((r) => (r.content_fp ? r.content_fp.toString("hex") : ""));
     const recycledCount = res.rows.filter((r) => r.was_seen).length;

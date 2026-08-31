@@ -1,13 +1,14 @@
 import React, { useEffect, useMemo, useState, lazy, Suspense } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
-import { listMyAttempts } from "../services/sessionApi";
+import { listMyAttempts, resumeSessionById } from "../services/sessionApi";
 import { exportAnalyticsPdf } from "../services/pdfExport";
-import type { AttemptSummary } from "../types";
+import type { AttemptSummary, SessionResult } from "../types";
 import { pluralize } from "../utils/pluralize";
 
 // P2-13: same code-splitting reasoning as DashboardView.tsx — recharts +
 // jsPDF/html2canvas only load once a report is actually opened.
 const AttemptReviewView = lazy(() => import("./AttemptReviewView"));
+const PausedAttemptPanel = lazy(() => import("./PausedAttemptPanel"));
 
 type ModeFilter = "all" | "subject-wise" | "full-mock" | "image-practice" | "custom";
 type SortKey = "date" | "score" | "testTitle";
@@ -43,7 +44,16 @@ const STATE_BADGE_CLASS: Record<string, string> = {
 // each row opening the detailed report (AttemptReviewView, which item 7's
 // IRT section and item 10's fuller report both already live in) with a
 // Download report action.
-export default function MyResultsView() {
+interface MyResultsViewProps {
+  /**
+   * Hands a resumed session up to App.tsx, which owns screen routing — this
+   * screen deliberately does not know how to navigate into the player.
+   * Optional so the component still renders standalone (e.g. in tests).
+   */
+  onResumeAttempt?: (session: SessionResult) => void;
+}
+
+export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = {}) {
   const { t } = useLanguage();
   const [attempts, setAttempts] = useState<AttemptSummary[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -57,6 +67,11 @@ export default function MyResultsView() {
 
   const [selectedAttempt, setSelectedAttempt] = useState<AttemptSummary | null>(null);
   const [downloadingId, setDownloadingId] = useState<string | null>(null);
+  // docs/test-engine-fix-prompt.md Defect 3 — a paused attempt opens its own
+  // partial-state screen instead of the scored report.
+  const [pausedAttempt, setPausedAttempt] = useState<AttemptSummary | null>(null);
+  const [resumingId, setResumingId] = useState<string | null>(null);
+  const [reloadKey, setReloadKey] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -70,7 +85,21 @@ export default function MyResultsView() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [reloadKey]);
+
+  // Straight from the row, without the intermediate panel — the shortcut for
+  // a student who already knows they want to carry on.
+  const handleResumeRow = async (attempt: AttemptSummary) => {
+    if (!onResumeAttempt) return;
+    setResumingId(attempt.attemptId);
+    setError(null);
+    try {
+      onResumeAttempt(await resumeSessionById(attempt.attemptId));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not resume this test.");
+      setResumingId(null);
+    }
+  };
 
   const filtered = useMemo(() => {
     if (!attempts) return [];
@@ -134,6 +163,27 @@ export default function MyResultsView() {
       }
     }, 800);
   };
+
+  if (pausedAttempt) {
+    return (
+      <Suspense fallback={<div className="p-10 text-center text-sm text-slate-400 font-semibold">{t("Loading...")}</div>}>
+        <PausedAttemptPanel
+          attempt={pausedAttempt}
+          onResume={(session) => {
+            setPausedAttempt(null);
+            onResumeAttempt?.(session);
+          }}
+          onBack={() => setPausedAttempt(null)}
+          onSubmitted={() => {
+            // The row is now `scored`; refetch so View/Download unlock on it
+            // rather than leaving a stale "Paused" badge behind.
+            setPausedAttempt(null);
+            setReloadKey((k) => k + 1);
+          }}
+        />
+      </Suspense>
+    );
+  }
 
   if (selectedAttempt) {
     // AttemptReviewView owns its own id="attempt-report-content" + Download
@@ -221,6 +271,14 @@ export default function MyResultsView() {
                   const dateStr = a.submittedAt ?? a.startedAt;
                   const elapsedMinutes = a.startedAt && a.submittedAt ? Math.round((new Date(a.submittedAt).getTime() - new Date(a.startedAt).getTime()) / 60000) : null;
                   const canOpen = a.attemptState === "scored";
+                  // Defect 3: a paused (or still-running) attempt is not a
+                  // dead end here any more. `View` opens its partial-state
+                  // screen, and `Resume` goes straight back into the test.
+                  // Resume is only offered when App.tsx actually gave us
+                  // somewhere to route to — a disabled-looking button with no
+                  // handler would be worse than no button.
+                  const isResumable = a.attemptState === "paused" || a.attemptState === "in_progress";
+                  const canResume = isResumable && Boolean(onResumeAttempt);
                   return (
                     <tr key={a.attemptId} className="border-b border-slate-100 dark:border-slate-800 last:border-0 hover:bg-slate-50 dark:hover:bg-slate-900/30">
                       <td className="p-3.5 font-semibold text-[#00243B] dark:text-white max-w-[220px] truncate">{a.testTitle}</td>
@@ -241,11 +299,22 @@ export default function MyResultsView() {
                       </td>
                       <td className="p-3.5">
                         <div className="flex items-center gap-2">
+                          {canResume && (
+                            <button
+                              onClick={() => void handleResumeRow(a)}
+                              disabled={resumingId !== null}
+                              title={t("Pick up where you left off")}
+                              className="px-3 py-1.5 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1"
+                            >
+                              <span className="material-symbols-outlined text-sm">play_arrow</span>
+                              {resumingId === a.attemptId ? t("Resuming...") : t("Resume")}
+                            </button>
+                          )}
                           <button
-                            onClick={() => setSelectedAttempt(a)}
-                            disabled={!canOpen}
-                            title={canOpen ? undefined : t("Available once scored")}
-                            className="px-3 py-1.5 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-[#00243B] dark:bg-[#FCB824] text-white dark:text-[#00243B] hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                            onClick={() => (isResumable ? setPausedAttempt(a) : setSelectedAttempt(a))}
+                            disabled={!canOpen && !isResumable}
+                            title={canOpen || isResumable ? undefined : t("Available once scored")}
+                            className="px-3 py-1.5 rounded-lg text-[11px] font-bold uppercase tracking-wider bg-[#00243B] dark:bg-slate-700 text-white hover:opacity-90 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                           >
                             {t("View")}
                           </button>

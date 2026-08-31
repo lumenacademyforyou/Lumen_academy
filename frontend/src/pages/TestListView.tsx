@@ -1,9 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
-import { TestAttempt, CatalogTree, SubjectCode, DifficultyBand, SessionResult, CreateSessionRequest, SessionLine } from "../types";
-import { createSession, listMyAttempts } from "../services/sessionApi";
+import { TestAttempt, CatalogTree, SubjectCode, DifficultyBand, SessionResult, CreateSessionRequest, SessionLine, AvailabilityResult } from "../types";
+import { createSession, listMyAttempts, checkAvailability } from "../services/sessionApi";
+import QuestionAvailabilityBanner from "../components/ui/QuestionAvailabilityBanner";
+import InsufficientQuestionsDialog from "../components/ui/InsufficientQuestionsDialog";
 import { ApiError } from "../services/api";
 import { FULL_MOCK_REQUIRES_SYLLABUS_COMPLETION } from "../config/featureFlags";
 import { countLabel } from "../utils/pluralize";
@@ -98,6 +100,19 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   const [view, setView] = useState<"directory" | "subject-wise" | "custom">("directory");
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState<string | null>(null);
+  async function launch(body: CreateSessionRequest) {
+    setCreating(true);
+    setCreateError(null);
+    try {
+      const session = await createSession(body);
+      onSessionCreated(session);
+    } catch (err) {
+      setCreateError(friendlyError(err));
+    } finally {
+      setCreating(false);
+    }
+  }
+
 
   // Subject-wise builder state
   const [swSubjectCode, setSwSubjectCode] = useState<SubjectCode | null>(null);
@@ -120,17 +135,111 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
     return catalogTree.subjects.filter((s) => customSubjectFilter === "ALL" || s.subjectCode === customSubjectFilter).flatMap((s) => s.units.map((u) => ({ ...u, subjectId: s.subjectId, subjectCode: s.subjectCode })));
   }, [catalogTree, customSubjectFilter]);
 
-  async function launch(body: CreateSessionRequest) {
+  // ---------------------------------------------------------------------
+  // docs/test-engine-fix-prompt.md Defect 6 — "not enough questions"
+  // notification, plus Defect 4's scoping rule that keeps it from following
+  // the student onto a different test.
+  //
+  // Every piece of assembler diagnostics lives in this component's own state,
+  // keyed by the config it was measured against. There is no module-level
+  // store and no context — the stale-badge bug Defect 4 describes is
+  // structurally impossible here, because unmounting this screen throws the
+  // diagnostics away with it, and while mounted the banner still refuses to
+  // paint unless `availability.configHash` matches the hash the server
+  // computed for the config currently on screen.
+  // ---------------------------------------------------------------------
+  const [availability, setAvailability] = useState<AvailabilityResult | null>(null);
+  const [currentConfigHash, setCurrentConfigHash] = useState<string | null>(null);
+  const [blockingShortfall, setBlockingShortfall] = useState<AvailabilityResult | null>(null);
+  const startButtonRef = useRef<HTMLElement | null>(null);
+
+  // The config the *currently visible* builder describes, or null when the
+  // screen isn't showing a builder (the directory has nothing to measure).
+  const pendingRequest = useMemo<CreateSessionRequest | null>(() => {
+    if (view === "subject-wise") return swSubject ? buildSubjectWiseRequest() : null;
+    if (view === "custom") return catalogTree ? buildCustomRequest() : null;
+    return null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view, catalogTree, swSubject, swUnitNodeId, swPickCount, swDifficulty, customSubjectFilter, customSelectedUnits, customTotalCount, customDifficulty]);
+
+  // Clear diagnostics on every transition the spec lists: config-screen mount,
+  // mode change, and navigating away from a builder. `view` changing covers
+  // all three in this screen's architecture.
+  useEffect(() => {
+    setAvailability(null);
+    setCurrentConfigHash(null);
+    setBlockingShortfall(null);
+  }, [view]);
+
+  // Live check, debounced 300ms after the last change to any config input.
+  useEffect(() => {
+    if (!pendingRequest) return;
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      checkAvailability(pendingRequest, controller.signal)
+        .then((result) => {
+          if (controller.signal.aborted) return;
+          setAvailability(result);
+          setCurrentConfigHash(result.configHash);
+        })
+        .catch(() => {
+          // A failed availability probe must never block or mislead: drop the
+          // banner rather than show a count we no longer trust. Start's own
+          // blocking check is the real gate, and the server's
+          // PoolInsufficientError remains the final backstop behind that.
+          if (!controller.signal.aborted) {
+            setAvailability(null);
+            setCurrentConfigHash(null);
+          }
+        });
+    }, 300);
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
+  }, [pendingRequest]);
+
+  /**
+   * The final blocking check on Start. Runs even when the debounced check
+   * already ran, because the pool can change between screens — and it is the
+   * only thing standing between a student and a silently short test.
+   */
+  async function launchGuarded(body: CreateSessionRequest, allowReducedBuild: boolean) {
+    // Whichever Start button was just pressed is the focused element right
+    // now — captured here rather than threaded as a ref through all four
+    // start buttons, so focus returns to the *actual* trigger (and works for
+    // keyboard activation too, not just mouse).
+    if (document.activeElement instanceof HTMLElement) startButtonRef.current = document.activeElement;
     setCreating(true);
     setCreateError(null);
     try {
-      const session = await createSession(body);
-      onSessionCreated(session);
-    } catch (err) {
-      setCreateError(friendlyError(err));
-    } finally {
-      setCreating(false);
+      const result = await checkAvailability(body);
+      if (result.shortfall > 0) {
+        setAvailability(result);
+        setCurrentConfigHash(result.configHash);
+        setBlockingShortfall(result);
+        setPendingLaunch({ body, allowReducedBuild });
+        setCreating(false);
+        return;
+      }
+    } catch {
+      // Availability could not be measured — fall through and let the server's
+      // own PoolInsufficientError be the authority rather than blocking a
+      // student out of a test that may well be fine.
     }
+    setCreating(false);
+    await launch(body);
+  }
+
+  const [pendingLaunch, setPendingLaunch] = useState<{ body: CreateSessionRequest; allowReducedBuild: boolean } | null>(null);
+
+  /** "Build with N" — rewrites the config to the available count, then starts. */
+  async function handleBuildWithAvailable() {
+    if (!pendingLaunch || !blockingShortfall) return;
+    const reduced = reduceRequestTo(pendingLaunch.body, blockingShortfall.available);
+    setBlockingShortfall(null);
+    setPendingLaunch(null);
+    await launch(reduced);
   }
 
   // Image-based test type (docs/BUGS.md#E1-E3, user ask: "build a test for
@@ -139,7 +248,7 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   // (sessionController.ts) — this button only ever asks for the mode, same
   // shape as Full Mock, so the client can never send a stale/guessed count.
   function handleStartImagePractice() {
-    launch({ mode: "image-practice", title: "Image Only Practice" });
+    void launchGuarded({ mode: "image-practice", title: "Image Only Practice" }, false);
   }
 
   function handleStartFullMock() {
@@ -151,25 +260,31 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
       setCreateError("Complete 1 practice test to unlock Full Tests.");
       return;
     }
-    launch({ mode: "full-mock", title: "Full Mock Test" });
+    void launchGuarded({ mode: "full-mock", title: "Full Mock Test" }, false);
   }
 
-  function handleStartSubjectWise() {
-    if (!swSubject) return;
-    launch({
+  // Split out of the handler so the debounced availability check and the
+  // Start button measure and submit the *same* object — no second description
+  // of "the test you asked for" that could drift from the one actually sent.
+  function buildSubjectWiseRequest(): CreateSessionRequest {
+    return {
       mode: "subject-wise",
-      title: swUnit ? `${swSubject.subjectName} — ${swUnit.title}` : `${swSubject.subjectName} Practice`,
+      title: swUnit ? `${swSubject!.subjectName} — ${swUnit.title}` : `${swSubject!.subjectName} Practice`,
       durationMinutes: swPickCount,
-      subjectId: swSubject.subjectId,
+      subjectId: swSubject!.subjectId,
       syllabusNodeId: swUnit ? swUnit.nodeId : undefined,
       includeDescendants: true,
       difficultyBand: swDifficulty,
       pickCount: swPickCount,
-    });
+    };
   }
 
-  function handleLaunchCustom() {
-    if (!catalogTree) return;
+  function handleStartSubjectWise() {
+    if (!swSubject) return;
+    void launchGuarded(buildSubjectWiseRequest(), true);
+  }
+
+  function buildCustomRequest(): CreateSessionRequest {
     const selectedList = customUnitsPool.filter((u) => customSelectedUnits.has(u.nodeId));
     let lines: SessionLine[];
     if (selectedList.length > 0) {
@@ -186,7 +301,7 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
       // No specific units picked — one line per subject in the active filter,
       // whole-subject (no syllabusNodeId), matching subject-wise's own
       // "no unit chosen = whole subject" default.
-      const subjects = catalogTree.subjects.filter((s) => customSubjectFilter === "ALL" || s.subjectCode === customSubjectFilter);
+      const subjects = (catalogTree?.subjects ?? []).filter((s) => customSubjectFilter === "ALL" || s.subjectCode === customSubjectFilter);
       const counts = distributeCount(customTotalCount, subjects.length);
       lines = subjects.map((s, i) => ({
         subjectId: s.subjectId,
@@ -197,7 +312,37 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
       }));
     }
     const unitsSuffix = selectedList.length > 0 ? ` [${countLabel(selectedList.length, "unit")}]` : "";
-    launch({ mode: "custom", title: `Custom Test${unitsSuffix}`, durationMinutes: customTotalCount, lines });
+    return { mode: "custom", title: `Custom Test${unitsSuffix}`, durationMinutes: customTotalCount, lines };
+  }
+
+  function handleLaunchCustom() {
+    if (!catalogTree) return;
+    void launchGuarded(buildCustomRequest(), true);
+  }
+
+  /**
+   * "Build with N" rewrites the config to the count that is actually
+   * available. For a custom test that means redistributing N across the same
+   * lines with the same distributeCount rule the builder already uses, so the
+   * reduced test keeps the shape the student configured — it is a smaller
+   * version of their test, not a different one.
+   */
+  function reduceRequestTo(body: CreateSessionRequest, available: number): CreateSessionRequest {
+    if (body.mode === "subject-wise") {
+      return { ...body, pickCount: available, durationMinutes: available };
+    }
+    if (body.mode === "custom") {
+      const counts = distributeCount(available, body.lines.length);
+      return {
+        ...body,
+        durationMinutes: available,
+        lines: body.lines.map((line, i) => ({ ...line, pickCount: counts[i] })).filter((line) => line.pickCount > 0),
+      };
+    }
+    // full-mock and image-practice are server-shaped and never reduced —
+    // launchGuarded passes allowReducedBuild:false for both, so the dialog
+    // never offers this path for them.
+    return body;
   }
 
   const cardClassName =
@@ -244,6 +389,11 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
       {createError && (
         <div className="px-4 py-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-400 text-sm font-semibold">{createError}</div>
       )}
+
+      {/* docs/test-engine-fix-prompt.md Defect 6 — persistent inline banner,
+          scoped to the config on screen (Defect 4). Renders nothing at all on
+          the directory view, where there is no configuration to be short. */}
+      <QuestionAvailabilityBanner availability={availability} currentConfigHash={currentConfigHash} />
 
       {view === "directory" && (
         <>
@@ -577,6 +727,24 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
           </div>
         </div>
       )}
+      {/* The blocking gate. Nothing starts short without an explicit tap here. */}
+      {blockingShortfall && (
+        <InsufficientQuestionsDialog
+          availability={blockingShortfall}
+          allowReducedBuild={pendingLaunch?.allowReducedBuild ?? false}
+          onBuildWithAvailable={() => void handleBuildWithAvailable()}
+          onChangeSettings={() => {
+            setBlockingShortfall(null);
+            setPendingLaunch(null);
+          }}
+          onCancel={() => {
+            setBlockingShortfall(null);
+            setPendingLaunch(null);
+          }}
+          returnFocusTo={startButtonRef}
+        />
+      )}
+
     </div>
   );
 }

@@ -272,9 +272,8 @@ describe('TestTakingView', () => {
     expect(prevented).toBe(false);
   });
 
-  it('routes a browser Back press through the same confirm-and-pause flow as Exit & Pause, and re-pushes history to absorb it (B1/B2/B10)', async () => {
+  it('routes a browser Back press through the same exit dialog as the Exit button, and re-pushes history to absorb it (B1/B2/B10, Defect 3)', async () => {
     const onCancel = vi.fn();
-    const confirmSpy = vi.spyOn(window, 'confirm').mockReturnValue(true);
     const pushStateSpy = vi.spyOn(window.history, 'pushState');
     renderView(buildSession(600), { onCancel });
 
@@ -286,10 +285,25 @@ describe('TestTakingView', () => {
       window.dispatchEvent(new PopStateEvent('popstate'));
     });
 
-    expect(confirmSpy).toHaveBeenCalled();
-    // The handler re-pushes to neutralize the navigation, then follows
-    // handleExitAndPause's real flow (flush -> pause -> onCancel).
+    // docs/test-engine-fix-prompt.md Defect 3 replaced the native confirm()
+    // this used to assert on with a real three-choice dialog. Back now opens
+    // that dialog rather than resolving the student's attempt itself — and
+    // critically, nothing is paused or abandoned until they choose.
+    expect(screen.getByText('Exit this test?')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Submit and exit' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Save and exit' })).toBeInTheDocument();
+    expect(pauseAttempt).not.toHaveBeenCalled();
+    expect(onCancel).not.toHaveBeenCalled();
+
+    // The handler re-pushes to neutralize the navigation itself, immediately —
+    // that must not wait on the student's answer, or a second Back press
+    // would escape the exam while the dialog is still open.
     expect(pushStateSpy).toHaveBeenCalledTimes(2);
+
+    // Choosing "Save and exit" runs the unchanged flush -> pause -> leave flow.
+    await act(async () => {
+      screen.getByRole('button', { name: 'Save and exit' }).click();
+    });
     expect(pauseAttempt).toHaveBeenCalledWith('attempt-1');
     expect(onCancel).toHaveBeenCalled();
   });
@@ -304,8 +318,6 @@ describe('TestTakingView', () => {
       obtainedMarks: '0',
       totalMarks: '8',
     } as never);
-    const confirmSpy = vi.spyOn(window, 'confirm').mockReturnValue(true);
-
     renderView(buildSession(1));
     await act(async () => {
       await vi.advanceTimersByTimeAsync(1000);
@@ -315,7 +327,9 @@ describe('TestTakingView', () => {
     await act(async () => {
       window.dispatchEvent(new PopStateEvent('popstate'));
     });
-    expect(confirmSpy).not.toHaveBeenCalled();
+    // exitingLifecycleRef is already set by the auto-submit, so the exit
+    // dialog must not open on top of a test that has already finished.
+    expect(screen.queryByText('Exit this test?')).not.toBeInTheDocument();
   });
 
   it('warns when a second tab announces itself for the same attempt over BroadcastChannel (B5)', async () => {

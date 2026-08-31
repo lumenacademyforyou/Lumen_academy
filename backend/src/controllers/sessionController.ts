@@ -7,6 +7,7 @@ import { createPracticeTest, type PracticeTestLine } from "../../../db/assess/te
 import { NON_PRACTICE_TEST_TYPES } from "../../../db/assess/test/definition/test-code.js";
 import { startAttempt } from "../../../db/assess/test/attempt/attempt-flow.js";
 import { getAttemptEnvelope } from "../../../db/assess/test/attempt/envelope.js";
+import { checkAvailability } from "../../../db/assess/test/generation/availability.js";
 
 // POST /api/assess/sessions (LA-APP-COMPLETION-001 Phase C, C1). One call that
 // covers all three test-directory entry points (subject-wise practice, full
@@ -271,6 +272,68 @@ async function toLines(
     durationMinutes: input.durationMinutes,
     lines: input.lines,
   };
+}
+
+// POST /api/assess/availability (docs/test-engine-fix-prompt.md Defect 6).
+//
+// "How many questions can this configuration actually produce?", answered
+// before any assess.test row exists, so the config screen can warn the
+// student instead of letting Start fail with a PoolInsufficientError.
+//
+// Deliberate deviation from the spec's `GET /api/availability?configHash=…`:
+// a GET keyed only by a hash needs a server-side store mapping hashes back to
+// configs, which does not exist here and would be a new stateful surface
+// built purely to satisfy a URL shape. This POSTs the config itself, on the
+// *same schema createSession validates against*, and returns the canonical
+// configHash the server computed from it. The client compares that hash to
+// the config currently on screen before rendering anything — which is the
+// actual guarantee the spec's Defect 4 asks for, and it is stronger this way:
+// the hash is computed by the server from the config it really measured,
+// never asserted by the client.
+//
+// It routes through the same toLines() that createSession uses, so a mode's
+// blueprint (full mock's 45-per-subject, image-practice's server-resolved
+// per-subject counts, subject-wise's single line, custom's client-built
+// lines) cannot drift between "what we told you was available" and "what we
+// will actually try to build."
+export async function getAvailability(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    const parsed = createSessionSchema.safeParse(req.body);
+    if (!parsed.success) {
+      next(new AppError(400, "VALIDATION_ERROR", parsed.error.issues[0].message));
+      return;
+    }
+
+    const { examId } = await resolveActiveExam();
+    const subjects = await resolveAllSubjectIds(examId);
+
+    let lines;
+    try {
+      ({ lines } = await toLines(parsed.data, subjects, examId));
+    } catch (err) {
+      // image-practice with nothing published throws NO_IMAGE_QUESTIONS_AVAILABLE
+      // from toLines. For an availability *check* that is an answer, not an
+      // error — report zero and let the UI say so.
+      if (err instanceof AppError && err.code === "NO_IMAGE_QUESTIONS_AVAILABLE") {
+        res.json({
+          data: {
+            configHash: "no-image-questions",
+            requested: 0,
+            available: 0,
+            shortfall: 0,
+            byUnit: subjects.map((s) => ({ unitId: null, unitName: s.subjectCode, requested: 0, available: 0, reason: "NO_VALID_IMAGE" as const })),
+          },
+        });
+        return;
+      }
+      throw err;
+    }
+
+    const result = await checkAvailability(parsed.data.mode, lines, req.user!.appUserId);
+    res.json({ data: result });
+  } catch (err) {
+    next(err);
+  }
 }
 
 export async function createSession(req: Request, res: Response, next: NextFunction): Promise<void> {

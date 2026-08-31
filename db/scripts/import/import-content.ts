@@ -7,6 +7,7 @@ import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 import { QuestionAuthoringSchema, type QuestionAuthoring } from "../../../schemas/question-authoring.schema.js";
 import { uploadAsset } from "../../content/asset-resolver.js";
 import { computeContentFp } from "../../shared/normalizeStem.js";
+import { hasQuestionArtifact } from "../../shared/questionArtifacts.js";
 
 // CL-2 — general-purpose content importer (LA-PLAN-002 Day 1, G3).
 // Generalised from db/scripts/seed/02_content.ts: that script migrated one
@@ -211,6 +212,25 @@ async function main() {
       .map((img) => `image file not found (case-sensitive): ${path.join(assetsDir, img.fileName)}`);
     if (missingAssets.length > 0) {
       reports.push({ rowNo, questionUid: q.questionUid, status: "missing_asset", errors: missingAssets });
+      return;
+    }
+
+    // docs/test-engine-fix-prompt.md Defect 1, requirement 4 — the write-time
+    // guard, at the import layer. content.question's own trigger
+    // (trg_question_reject_artifacts, migration 036) is the real choke point
+    // every write path shares; this check exists so a bad batch fails here,
+    // naming the row and the offending text, instead of aborting mid-insert
+    // on a raw trigger exception with no row context.
+    const artifactBearing: string[] = [];
+    if (hasQuestionArtifact(q.stemText)) artifactBearing.push(`stemText contains a template/case identifier: ${JSON.stringify(q.stemText.slice(0, 160))}`);
+    (q.options ?? []).forEach((o, i) => {
+      if (hasQuestionArtifact(o.text)) artifactBearing.push(`option ${i + 1} contains a template/case identifier: ${JSON.stringify(o.text.slice(0, 160))}`);
+    });
+    (q.translations ?? []).forEach((tr) => {
+      if (hasQuestionArtifact(tr.stemText)) artifactBearing.push(`translation "${tr.languageCode}" stemText contains a template/case identifier`);
+    });
+    if (artifactBearing.length > 0) {
+      reports.push({ rowNo, questionUid: q.questionUid, status: "schema_error", errors: artifactBearing });
       return;
     }
 

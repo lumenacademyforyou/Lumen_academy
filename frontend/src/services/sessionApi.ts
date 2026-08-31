@@ -9,6 +9,7 @@ import type {
   IrtReport,
   DetailedScorecardResponse,
   CohortComparison,
+  AvailabilityResult,
 } from "../types";
 
 // LA-APP-COMPLETION-001 Phase D — the real session/attempt lifecycle client.
@@ -22,6 +23,19 @@ export async function createSession(body: CreateSessionRequest): Promise<Session
   const res = await apiFetch<{ data: SessionResult }>("/assess/sessions", {
     method: "POST",
     body: JSON.stringify(body),
+  });
+  return res.data;
+}
+
+// docs/test-engine-fix-prompt.md Defect 6. Takes the identical body
+// createSession takes, so the count shown on the config screen is measured
+// against the exact configuration Start will submit — there is no second,
+// drifting description of "the test you asked for".
+export async function checkAvailability(body: CreateSessionRequest, signal?: AbortSignal): Promise<AvailabilityResult> {
+  const res = await apiFetch<{ data: AvailabilityResult }>("/assess/availability", {
+    method: "POST",
+    body: JSON.stringify(body),
+    signal,
   });
   return res.data;
 }
@@ -129,6 +143,35 @@ export async function getActiveSession(): Promise<SessionResult | null> {
   }
   const envelope = await getEnvelope(active.attemptId);
   return { ...envelope, testId: envelope.test.testId };
+}
+
+/**
+ * Resume one specific paused attempt, by id — the "Resume" action on a paused
+ * row in View Results (docs/test-engine-fix-prompt.md Defect 3).
+ *
+ * Same two-step sequence getActiveSession already uses (resume server-side,
+ * then rebuild a full SessionResult from one envelope call), with one
+ * difference that matters: the attempt's state is re-read from the server
+ * before deciding whether to resume, rather than trusted from the list row
+ * that rendered the button. resumeAttempt throws InvalidStateTransitionError
+ * on anything that is not `paused` (attempt-flow.ts:452), and a results list
+ * can easily be seconds stale — the attempt may have been resumed in another
+ * tab, or expired and been closed by the sweeper, since it was fetched.
+ * Reading the envelope first makes the decision on current truth instead.
+ */
+export async function resumeSessionById(attemptId: string): Promise<SessionResult> {
+  const envelope = await getEnvelope(attemptId);
+  if (envelope.status !== "paused") {
+    // Already in progress (e.g. resumed in another tab) — nothing to
+    // transition, just hand back what is already live.
+    return { ...envelope, testId: envelope.test.testId };
+  }
+  await resumeAttempt(attemptId);
+  // Re-read: resuming closes the open pause row and flips attempt_state, so
+  // the envelope fetched a moment ago now describes a state that no longer
+  // exists. TestTakingView reads `status` off the session it is handed.
+  const resumed = await getEnvelope(attemptId);
+  return { ...resumed, testId: resumed.test.testId };
 }
 
 // P1-11 — "View results": every attempt the caller has ever made, any

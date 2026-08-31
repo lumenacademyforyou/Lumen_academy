@@ -424,20 +424,32 @@ useEffect(() => {
     };
   }, [isAuthenticated, isAdmin]);
 
-  const handleResumeSession = () => {
-    if (!resumableSession) return;
-    // Test-layer hardening B6 regression fix: this is a real, direct click
-    // (the "Resume Test" button), but it jumps straight into test_taking,
-    // bypassing LobbyView entirely — that's the only place fullscreen was
-    // ever requested (LobbyView.tsx's handleContinue). Without this,
-    // resuming a paused attempt landed on TestTakingView's own "must be
-    // fullscreen" overlay every time, with no browser-fullscreen request
-    // ever having been made for this entry path — reported live as "can't
-    // resume the test." Same best-effort pattern as LobbyView's own call.
+  /**
+   * The one way an already-started attempt gets back on screen. Shared by the
+   * portal's "Resume Test" prompt and by the Resume button on a paused row in
+   * View Results (docs/test-engine-fix-prompt.md Defect 3) — extracted rather
+   * than copied, specifically so the fullscreen call below cannot be present
+   * on one resume path and missing on the other.
+   *
+   * Test-layer hardening B6 regression fix: this runs from a real, direct
+   * click, but it jumps straight into test_taking, bypassing LobbyView
+   * entirely — and LobbyView's handleContinue is the only place fullscreen was
+   * ever requested. Without this, resuming a paused attempt landed on
+   * TestTakingView's own "must be fullscreen" overlay every time, with no
+   * browser-fullscreen request ever having been made for this entry path —
+   * reported live as "can't resume the test." Same best-effort pattern as
+   * LobbyView's own call.
+   */
+  const enterResumedSession = (session: SessionResult) => {
     document.documentElement.requestFullscreen?.().catch(() => {});
-    setActiveSession(resumableSession);
+    setActiveSession(session);
     setResumableSession(null);
     setCurrentScreen("test_taking");
+  };
+
+  const handleResumeSession = () => {
+    if (!resumableSession) return;
+    enterResumedSession(resumableSession);
   };
 
   const handleSubmitResumableNow = async () => {
@@ -806,7 +818,7 @@ useEffect(() => {
 
                 {currentTab === "results" && (
                   <Suspense fallback={<AppLoadingFallback />}>
-                    <MyResultsView />
+                    <MyResultsView onResumeAttempt={enterResumedSession} />
                   </Suspense>
                 )}
               </>

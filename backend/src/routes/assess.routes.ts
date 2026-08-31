@@ -26,7 +26,7 @@ import {
 import { createPracticeTest } from "../../../db/assess/test/definition/create-practice-test.js";
 import { SINGLE_SCOPE_TEST_TYPES } from "../../../db/assess/test/definition/test-code.js";
 import { pool } from "../../../db/shared/pool.js";
-import { createSession } from "../controllers/sessionController.js";
+import { createSession, getAvailability } from "../controllers/sessionController.js";
 
 // assess.attempt has a direct user_id column, so makeOwnedCrudRouter's
 // per-row ownership check applies directly. This is the exact case
@@ -108,6 +108,12 @@ router.use("/attempts", attemptsRouter);
 // into /tests/practice below since its response shape (an attempt envelope,
 // ready to render) differs from that route's (a bare test definition).
 router.post("/sessions", requireAuth, createSession);
+
+// POST /assess/availability (docs/test-engine-fix-prompt.md Defect 6) — the
+// pre-flight pool check the config screen debounces against, and the same
+// check Start runs as a final blocking gate. POST rather than GET because it
+// carries the config itself; see getAvailability's own header for why.
+router.post("/availability", requireAuth, getAvailability);
 
 // ---------------------------------------------------------------------------
 // Test creation — subject/chapter/topic/unit-wise practice tests

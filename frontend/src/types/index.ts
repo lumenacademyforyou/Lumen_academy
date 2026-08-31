@@ -128,6 +128,39 @@ export type CreateSessionRequest =
   | { mode: "image-practice"; title?: string }
   | { mode: "custom"; title: string; durationMinutes: number; lines: SessionLine[] };
 
+// docs/test-engine-fix-prompt.md Defect 6 — the pre-flight pool check behind
+// the "Not enough questions for this test" banner and blocking dialog.
+// `available` is a post-dedup count: the server runs the assembler's own
+// candidate query (content_fp clone dedup + skeleton_fp template-family
+// guard + the running cross-line exclusion), so this number is what the
+// assembler will really deliver, not a raw row count that would over-promise.
+export type ShortfallReason =
+  | "POOL_TOO_SMALL"
+  | "FILTERED_OUT_BY_DIFFICULTY"
+  | "EXCLUDED_RECENTLY_ATTEMPTED"
+  | "NO_VALID_IMAGE"
+  | "UNIT_NOT_PUBLISHED";
+
+export interface AvailabilityUnitRow {
+  unitId: string | null;
+  unitName: string;
+  requested: number;
+  available: number;
+  reason: ShortfallReason;
+}
+
+export interface AvailabilityResult {
+  /** Server-computed hash of the config it actually measured. The banner
+   * renders only while this still matches the config on screen — Defect 4's
+   * scoping rule, which is what stops a stale warning following the student
+   * onto a different test. */
+  configHash: string;
+  requested: number;
+  available: number;
+  shortfall: number;
+  byUnit: AvailabilityUnitRow[];
+}
+
 export interface EnvelopeOption {
   optionId: string;
   optionLabel: string;

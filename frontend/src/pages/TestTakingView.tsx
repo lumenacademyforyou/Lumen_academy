@@ -4,6 +4,7 @@ import QuestionImage from "../components/ui/QuestionImage";
 import Modal from "../components/layout/Modal";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../contexts/LanguageContext";
+import { displayQuestionText } from "../utils/questionText";
 import type { EnvelopeQuestion, Scorecard, SessionResult } from "../types";
 import { saveResponses, submitAttempt as submitAttemptApi, pauseAttempt as pauseAttemptApi, postAttemptEvent, type ResponseUpdate } from "../services/sessionApi";
 
@@ -122,6 +123,9 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   }, [session.attemptId]);
   const [timeRemaining, setTimeRemaining] = useState(session.remainingSeconds);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  // docs/test-engine-fix-prompt.md Defect 3 — Exit is a three-way choice, not
+  // a native yes/no confirm(). See the modal at the bottom of this file.
+  const [showExitModal, setShowExitModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -326,8 +330,16 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   // "ghost test" / orphaned-attempt bugs). Flush whatever's unsaved, pause
   // the attempt server-side so it's honestly resumable, then leave — never a
   // silent client-side abandon.
+  // docs/test-engine-fix-prompt.md Defect 3: "Exit must never discard answers
+  // silently", and the confirmation offers three choices, not two. The native
+  // confirm() this replaced could only ever say yes/no to *pausing* — a
+  // student who actually wanted to finish had to cancel out and hunt for the
+  // Submit button, and a native dialog cannot be translated, styled, or
+  // tested. handleExitAndPause below is unchanged in what it does (flush,
+  // pause server-side, leave); it is just no longer the only option, and it
+  // is now reached from a real dialog.
   const handleExitAndPause = async () => {
-    if (!confirm("Exit and pause? Your time will be paused and you can resume this test later from Previous Tests.")) return;
+    setShowExitModal(false);
     exitingLifecycleRef.current = true;
     setIsExiting(true);
     try {
@@ -388,7 +400,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
     const handlePopState = () => {
       if (exitingLifecycleRef.current) return;
       window.history.pushState(null, "", window.location.href);
-      void handleExitAndPause();
+      setShowExitModal(true);
     };
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
@@ -635,8 +647,8 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                     !!stemTextTa a safe, sufficient completeness check here:
                     pure "ta" mode falls back to English for the whole
                     question rather than ever rendering a blank stem. */}
-                {showEnglishText && <div className="mb-2">{currentQuestion.stemText}</div>}
-                {showTamilText && <div className={showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}>{currentQuestion.stemTextTa}</div>}
+                {showEnglishText && <div className="mb-2">{displayQuestionText(currentQuestion.stemText)}</div>}
+                {showTamilText && <div className={showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}>{displayQuestionText(currentQuestion.stemTextTa)}</div>}
               </h2>
 
               {stemImage && (
@@ -667,8 +679,8 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                         {option.optionLabel || String.fromCharCode(65 + idx)}
                       </div>
                       <div className="flex flex-col gap-1">
-                        {showEnglishText && <span>{option.optionText}</span>}
-                        {showTamilText && <span className={`opacity-90 text-sm ${showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}`}>{option.optionTextTa}</span>}
+                        {showEnglishText && <span>{displayQuestionText(option.optionText)}</span>}
+                        {showTamilText && <span className={`opacity-90 text-sm ${showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}`}>{displayQuestionText(option.optionTextTa)}</span>}
                         {optionImage && (
                           <div className="max-w-[220px] mt-1">
                             <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />
@@ -872,7 +884,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
               {isSubmitting ? t("Submitting...") : t("Submit Test?")}
             </button>
             <button
-              onClick={handleExitAndPause}
+              onClick={() => setShowExitModal(true)}
               disabled={isExiting}
               className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer text-center block disabled:opacity-60 disabled:cursor-not-allowed"
             >
@@ -940,6 +952,48 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                 className="w-full py-4 bg-slate-100 dark:bg-slate-800 text-[#00243B] dark:text-white border border-slate-300 dark:border-slate-700 font-bold text-base md:text-lg rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
               >
                 {t("Go Back & Review")}
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
+
+      {/* docs/test-engine-fix-prompt.md Defect 3 — the Exit confirmation, with
+          the three choices the spec names. `closeOnBackdropClick={false}` and
+          `closeOnEscape={false}` deliberately: a stray click or keypress
+          during a live exam must not resolve a decision about the student's
+          attempt. Cancel is an explicit button. */}
+      {showExitModal && (
+        <Modal onClose={() => setShowExitModal(false)} closeOnBackdropClick={false} closeOnEscape={false}>
+          <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white w-full max-w-md rounded-[32px] p-7 md:p-9 shadow-2xl border border-slate-200 dark:border-slate-700">
+            <h2 className="font-sans font-extrabold text-2xl mb-2">{t("Exit this test?")}</h2>
+            <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 leading-relaxed font-medium">
+              {t("Your answers are already saved. Choose whether to finish now or keep this test for later — nothing is discarded either way.")}
+            </p>
+            <div className="space-y-3">
+              <button
+                onClick={() => {
+                  setShowExitModal(false);
+                  void handleSubmitAnyway();
+                }}
+                disabled={isSubmitting || isExiting}
+                className="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
+              >
+                {t("Submit and exit")}
+              </button>
+              <button
+                onClick={() => void handleExitAndPause()}
+                disabled={isSubmitting || isExiting}
+                className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
+              >
+                {isExiting ? t("Saving...") : t("Save and exit")}
+              </button>
+              <button
+                onClick={() => setShowExitModal(false)}
+                disabled={isSubmitting || isExiting}
+                className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-[#00243B] dark:text-white border border-slate-300 dark:border-slate-700 font-bold text-sm rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer disabled:opacity-60"
+              >
+                {t("Cancel")}
               </button>
             </div>
           </div>

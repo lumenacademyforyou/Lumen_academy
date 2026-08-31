@@ -32,6 +32,31 @@ test(
       if (unitRes.rowCount === 0) throw new Error("fixture unit 'Mechanics & Rotational Dynamics' not found — content bank may have changed");
       const { node_id: nodeId, subject_id: subjectId } = unitRes.rows[0];
 
+      // docs/test-engine-fix-prompt.md Defect 5 added a template-family guard:
+      // at most one question per skeleton_fp family in any single paper, so a
+      // student never sees eight "solid sphere of mass M = 6.0 / 10.0 / 14.0 kg"
+      // variants of one question in the same test. That is a real reduction in
+      // what a *narrow unit scope* can deliver, and this fixture was hardcoded
+      // to 10 from a unit that holds 19 published rows but only 5 distinct
+      // families — so it began failing with a correct PoolInsufficientError.
+      //
+      // Fixed by deriving the count from the pool rather than re-hardcoding a
+      // smaller number: the test now asks for exactly what this unit can
+      // actually deliver, so it keeps proving its real property (zero
+      // within-user repeats under concurrency, with genuine cross-user
+      // overlap) and does not silently break again the next time content
+      // changes on either side. Measured with the same expression
+      // LINE_AVAILABLE_SQL uses, including its null-skeleton fallback.
+      const poolRes = await pool.query<{ families: string }>(
+        `select count(distinct coalesce(q.skeleton_fp, decode(md5(q.question_id::text), 'hex'))) as families
+           from content.question q
+           join content.question_node_map qnm on qnm.question_id = q.question_id
+          where qnm.node_id = $1 and q.lifecycle_status = 'published'`,
+        [nodeId]
+      );
+      const pickCount = Math.min(10, Number(poolRes.rows[0].families));
+      assert.ok(pickCount >= 3, `fixture unit has only ${pickCount} usable question families — too few to prove anything about concurrent sharing`);
+
       const examRes = await pool.query<{ exam_id: string; exam_code: string }>(`select exam_id, exam_code from catalog.exam where is_active = true limit 1`);
       if (examRes.rowCount === 0) throw new Error("no active catalog.exam row");
       const { exam_id: examId, exam_code: examCode } = examRes.rows[0];
@@ -55,7 +80,7 @@ test(
         title: "Concurrent shared-pool regression test",
         durationMinutes: 30,
         createdBy: userIds[0],
-        lines: [{ subjectId, syllabusNodeId: nodeId, includeDescendants: false, pickCount: 10, sectionName: "PHY" }],
+        lines: [{ subjectId, syllabusNodeId: nodeId, includeDescendants: false, pickCount, sectionName: "PHY" }],
       });
       await pool.query(`update assess.test set test_status = 'published' where test_id = $1`, [created.testId]);
 
@@ -72,11 +97,11 @@ test(
 
       // Property 1: zero repeats within any one user's own paper.
       for (const r of results) {
-        assert.equal(r.items.length, 10, `user ${r.userId} did not receive the requested 10 items`);
+        assert.equal(r.items.length, pickCount, `user ${r.userId} did not receive the requested ${pickCount} items`);
         const qIds = r.items.map((i) => i.question_id);
         const fps = r.items.map((i) => i.content_fp.toString("hex"));
-        assert.equal(new Set(qIds).size, 10, `user ${r.userId}'s paper has a duplicate question_id`);
-        assert.equal(new Set(fps).size, 10, `user ${r.userId}'s paper has a duplicate content_fp (same visible question twice)`);
+        assert.equal(new Set(qIds).size, pickCount, `user ${r.userId}'s paper has a duplicate question_id`);
+        assert.equal(new Set(fps).size, pickCount, `user ${r.userId}'s paper has a duplicate content_fp (same visible question twice)`);
       }
 
       // Property 2: cross-user overlap is real, not just "not observed" —
