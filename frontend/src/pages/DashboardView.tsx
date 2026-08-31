@@ -740,7 +740,8 @@ useEffect(() => {
               </span>
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white">{t("Where You're Lagging")}</h3>
+              {/* BUG-30 — was "Where You're Lagging"; reworded to a motivating framing instead of naming the weakness. */}
+              <h3 className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white">{t("Where to Focus Next")}</h3>
               <p className="text-xs text-slate-500 dark:text-slate-400">{t("Real per-unit accuracy across your scored attempts, weakest first")}</p>
             </div>
           </div>

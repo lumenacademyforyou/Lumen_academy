@@ -264,6 +264,13 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
       const scorecard = await submitAttemptApi(session.attemptId);
       const durationSeconds = session.test.durationMinutes ? session.test.durationMinutes * 60 : session.remainingSeconds || 0;
       const elapsedMinutes = Math.round(Math.max(0, durationSeconds - timeRemaining) / 60);
+      // The question-language choice is deliberately test-only (BUG-17) but
+      // was persisted indefinitely, so it silently carried over into the
+      // *next* test too, not just surviving a mid-test refresh as intended.
+      // Reset it back to English once a test actually finishes (not on
+      // pause — a paused attempt is still resumed via BUG-06's flow and
+      // should keep the student's choice).
+      window.localStorage.removeItem(QUESTION_LANG_STORAGE_KEY);
       onCompleteTest(scorecard, elapsedMinutes);
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Something went wrong submitting your test.");
