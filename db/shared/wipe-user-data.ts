@@ -93,6 +93,13 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     await run("learn.custom_task", `delete from learn.custom_task ${scoped("user_id")}`, params);
     await run("learn.revision_note", `delete from learn.revision_note ${scoped("user_id")}`, params);
     await run("learn.notification", `delete from learn.notification ${scoped("user_id")}`, params);
+    // Found live in the same pg_constraint sweep as the ai_generation_job/
+    // import_batch/question_review/invitation gaps below — learn.
+    // topic_mastery (005_learn.sql) had a NOT NULL user_id FK and was never
+    // deleted here at all, not even nulled. Unlike those four, this is
+    // genuinely user-owned data (per-user topic mastery tracking), so it's
+    // deleted outright, same as every other learn.* table above.
+    await run("learn.topic_mastery", `delete from learn.topic_mastery ${scoped("user_id")}`, params);
     await run(
       "learn.audit_log",
       `delete from learn.audit_log where actor_user_id ${userId ? "= $1" : "is not null"}`,
@@ -167,6 +174,18 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     );
     await run("assess.test", `delete from assess.test where ${ownTestsWhere}`, params);
 
+    // Real gap found live: an 'authored'/'pyq' test (a shared curriculum
+    // paper, correctly left alone by ownTestsWhere above) still points its
+    // created_by at whoever made it — a full wipe deleting that user hit
+    // fk_test_created_by (23503) before this existed. Migration 035 made
+    // the column nullable; only a full wipe nulls it (a single-user reset
+    // keeps its own app_user row, so nothing is dangling), same
+    // preserve-the-content/sever-the-attribution shape as the four
+    // content.*/core.invitation columns below.
+    if (!userId) {
+      await run("assess.test (created_by nulled)", `update assess.test set created_by = null where created_by is not null`);
+    }
+
     // --- core.* (children first, app_user last) ---
     await run("core.user_session", `delete from core.user_session ${scoped("user_id")}`, params);
     await run("core.batch_member", `delete from core.batch_member ${scoped("user_id")}`, params);
@@ -184,9 +203,50 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     // demo login — churn the bug never asked for. Clearing this account's
     // *owned data* while keeping its identity stable is the actual ask.
     if (!userId) {
+      // Found live running a real full wipe: four more FKs into
+      // core.app_user that this function didn't know about, on tables it
+      // deliberately never deletes from (content.*/core.invitation are
+      // audit/provenance records, not user-owned data) — the first attempt
+      // hit fk_ai_generation_job_requested_by immediately (23503, rolled
+      // back cleanly, nothing lost); a full pg_constraint sweep afterward
+      // found three more of the same shape that would have broken the next
+      // attempt. Migration 034 made all four nullable; nulling them here
+      // (only on a full wipe — a single-user reset keeps its own app_user
+      // row, so there's no dangling pointer to sever) preserves the audit
+      // rows themselves while severing the now-dead reference, same
+      // ON DELETE SET NULL semantics this schema already uses for
+      // core.user_role_assignment.granted_by (009_core_rbac.sql).
+      await run("content.ai_generation_job (requested_by nulled)", `update content.ai_generation_job set requested_by = null where requested_by is not null`);
+      await run("content.import_batch (submitted_by nulled)", `update content.import_batch set submitted_by = null where submitted_by is not null`);
+      await run("content.question_review (reviewer_user_id nulled)", `update content.question_review set reviewer_user_id = null where reviewer_user_id is not null`);
+      await run("core.invitation (invited_by nulled)", `update core.invitation set invited_by = null where invited_by is not null`);
+
       await run("core.student_profile", `delete from core.student_profile`);
       await run("core.educator_profile", `delete from core.educator_profile`);
       await run("core.app_user", `delete from core.app_user`);
+
+      // Real gap found live, the hard way: after a full wipe + demo re-seed,
+      // the very next demo login failed with a raw 23505 on
+      // "users_email_key" inside provisionCanonicalUser. public.users
+      // (backend/src/services/provisionUser.service.ts's Prisma-track
+      // identity row, keyed by the same Supabase auth id as
+      // core.app_user.auth_user_id, own header comment: "not this phase's
+      // call to retire... that surface belongs to other engineers") was
+      // never part of this function's FK graph at all. The re-seeded demo
+      // account gets a brand-new auth id, so `on conflict (id)` in that
+      // insert never matched the OLD row still sitting here under the same
+      // email — it fell through to a genuine insert and hit the table's
+      // separate UNIQUE(email) constraint instead. Its child tables
+      // (public.test_attempts/bookmarks/notes/notifications/
+      // user_daily_activity/ai_usage) are confirmed live to be entirely
+      // empty in this database (this legacy track predates the current
+      // core.app_user-based one and was never actually written to by it) —
+      // deleting public.users first, before they could ever be populated,
+      // is safe today; if that ever changes, ON DELETE CASCADE (most of
+      // them) or SET NULL (ai_usage) handles it automatically except
+      // test_attempts (RESTRICT), which would need its own explicit delete
+      // added here at that point.
+      await run("public.users", `delete from public.users`);
     }
 
     await client.query("commit");

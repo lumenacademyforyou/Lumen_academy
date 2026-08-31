@@ -92,6 +92,12 @@ export interface StartAttemptResult {
   attemptState: string;
   serverDeadline: string | null;
   idempotent: boolean;
+  // docs/no-repeat-questions-fix.md Phase 5: honest recycling-policy
+  // disclosure. false/0 for FIXED-mode papers (every student sees the same
+  // paper — "recycled" isn't a meaningful concept there) and for a
+  // BLUEPRINT paper where every pick was genuinely unseen.
+  hasRecycledItems: boolean;
+  recycledItemCount: number;
 }
 
 /**
@@ -199,30 +205,48 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
     const bulkMarks: string[] = [];
     const bulkNegativeMarks: string[] = [];
 
-    // P0-3 (docs/assessment-tool-fix-prompt.md): the one place both the
-    // BLUEPRINT (assembleForAttempt) and FIXED (assess.test_question) paths
-    // funnel through before the same question_id could ever reach a served
-    // attempt twice — assess.attempt_question's PK is (attempt_id,
-    // question_id), so a duplicate here would otherwise surface as a raw
-    // 23505 failure on the bulk insert below (source: FIXED papers can
+    // P0-3 (docs/assessment-tool-fix-prompt.md), extended by docs/no-repeat-
+    // questions-fix.md Phase 4.3: the one place both the BLUEPRINT
+    // (assembleForAttempt) and FIXED (assess.test_question) paths funnel
+    // through before the same visible question could ever reach a served
+    // attempt twice. Originally keyed on question_id alone (guards
+    // assess.attempt_question's PK from a raw 23505 — FIXED papers can
     // legally repeat a question_id across two different sections;
     // ingestFixedPaper only rejects duplicates within one section, not
-    // across the whole paper — see its own header comment). Deduping here,
-    // once, covers both sources instead of trusting each producer.
-    const seenQuestionIds = new Set<string>();
+    // across the whole paper). Now keyed on content_fp instead — question_id
+    // alone stopped being the right unit of identity once docs/POOL_CENSUS.md
+    // found ~54% of the published bank was byte-for-byte content clones
+    // under distinct question_id. Both real sources (assemble.ts's
+    // content_fp exclusion, assess.test_question's
+    // uq_test_question_test_content DB constraint) already make a
+    // content-duplicate structurally impossible on their own — this Set is
+    // belt-and-braces, not the primary guard, same as migration 032's own
+    // comment on why attempt_question itself doesn't carry the DB-level
+    // constraint.
+    const seenContentFps = new Set<string>();
     let skippedDuplicates = 0;
-    const pushServedQuestion = (questionId: string, testSectionId: string, sequenceNo: number, marks: string, negativeMarks: string) => {
-      if (seenQuestionIds.has(questionId)) {
+    const pushServedQuestion = (
+      questionId: string,
+      contentFpHex: string,
+      testSectionId: string,
+      sequenceNo: number,
+      marks: string,
+      negativeMarks: string
+    ) => {
+      if (seenContentFps.has(contentFpHex)) {
         skippedDuplicates++;
         return;
       }
-      seenQuestionIds.add(questionId);
+      seenContentFps.add(contentFpHex);
       bulkQuestionIds.push(questionId);
       bulkTestSectionIds.push(testSectionId);
       bulkSequenceNos.push(sequenceNo);
       bulkMarks.push(marks);
       bulkNegativeMarks.push(negativeMarks);
     };
+
+    let hasRecycledItems = false;
+    let recycledItemCount = 0;
 
     if (test.source_type === "generated") {
       // Test-layer hardening A4: pass this transaction's own `client` through
@@ -236,14 +260,39 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
         const scheme = sectionSchemes.get(section.testSectionId);
         if (!scheme) throw new ScoringRuleMissingError("(blueprint section)", section.testSectionId);
         let seq = 1;
-        for (const questionId of section.questionIds) {
-          pushServedQuestion(questionId, section.testSectionId, seq, scheme.correct_marks, scheme.incorrect_marks);
+        for (let i = 0; i < section.questionIds.length; i++) {
+          pushServedQuestion(section.questionIds[i], section.contentFps[i], section.testSectionId, seq, scheme.correct_marks, scheme.incorrect_marks);
           seq++;
         }
       }
+
+      // docs/no-repeat-questions-fix.md Phase 5: recycledCount comes from
+      // assembleForAttempt's own read of assess.user_question_seen *before*
+      // this transaction's later exposure-ledger insert below runs, so it
+      // honestly reflects "seen before this attempt," not "seen because of
+      // this attempt." One assess.unit_recycle_log row per line that had to
+      // recycle anything — the content team's authoring backlog, ordered by
+      // real demand, per the spec's own "Report back" instruction.
+      recycledItemCount = assembled.recycledCount;
+      hasRecycledItems = recycledItemCount > 0;
+      for (const section of assembled.sections) {
+        if (section.recycledCount > 0) {
+          await client.query(
+            `insert into assess.unit_recycle_log (attempt_id, subject_id, syllabus_node_id, requested_count, recycled_count)
+             values ($1, $2, $3, $4, $5)`,
+            [attempt.attempt_id, section.subjectId, section.syllabusNodeId, section.questionIds.length, section.recycledCount]
+          );
+        }
+      }
     } else {
-      const tqRes = await client.query<{ test_section_id: string; question_id: string; sequence_no: number; marks_override: string | null }>(
-        `select tq.test_section_id, tq.question_id, tq.sequence_no, tq.marks_override
+      const tqRes = await client.query<{
+        test_section_id: string;
+        question_id: string;
+        content_fp: Buffer;
+        sequence_no: number;
+        marks_override: string | null;
+      }>(
+        `select tq.test_section_id, tq.question_id, tq.content_fp, tq.sequence_no, tq.marks_override
            from assess.test_question tq
            join assess.test_section ts on ts.test_section_id = tq.test_section_id
           where ts.test_id = $1
@@ -253,12 +302,19 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       for (const row of tqRes.rows) {
         const scheme = sectionSchemes.get(row.test_section_id);
         if (!scheme) throw new ScoringRuleMissingError(row.question_id, row.test_section_id);
-        pushServedQuestion(row.question_id, row.test_section_id, row.sequence_no, row.marks_override ?? scheme.correct_marks, scheme.incorrect_marks);
+        pushServedQuestion(
+          row.question_id,
+          row.content_fp.toString("hex"),
+          row.test_section_id,
+          row.sequence_no,
+          row.marks_override ?? scheme.correct_marks,
+          scheme.incorrect_marks
+        );
       }
     }
 
     if (skippedDuplicates > 0) {
-      console.warn(`startAttempt: test ${testId} attempted to serve ${skippedDuplicates} duplicate question_id(s) — deduped before persisting attempt ${attempt.attempt_id}.`);
+      console.warn(`startAttempt: test ${testId} attempted to serve ${skippedDuplicates} content-duplicate question(s) — deduped before persisting attempt ${attempt.attempt_id}.`);
     }
 
     if (bulkQuestionIds.length > 0) {
@@ -289,6 +345,13 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       );
     }
 
+    if (hasRecycledItems) {
+      await client.query(`update assess.attempt set has_recycled_items = true, recycled_item_count = $1 where attempt_id = $2`, [
+        recycledItemCount,
+        attempt.attempt_id,
+      ]);
+    }
+
     await client.query(
       `insert into assess.attempt_event (attempt_id, event_type, event_at) values ($1, 'ATTEMPT_STARTED', now())`,
       [attempt.attempt_id]
@@ -300,6 +363,8 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
       attemptState: attempt.attempt_state,
       serverDeadline: attempt.server_deadline,
       idempotent: false,
+      hasRecycledItems,
+      recycledItemCount,
     };
 
     if (idempotencyKey) {

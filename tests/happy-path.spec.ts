@@ -287,12 +287,12 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
   // (sessionController.ts's image-practice mode -> assess.test_blueprint.
   // has_image_only -> assemble.ts) — so this asserts an image is actually
   // present, not just possibly present.
-  test("Frontend Journey - Image-Based Practice serves only image-bearing questions, end to end through the real UI", async ({ page }) => {
+  test("Frontend Journey - Image Only Practice serves only image-bearing questions, end to end through the real UI", async ({ page }) => {
     await loginAsDemo(page);
 
     await page.getByRole("button", { name: "Tests" }).first().click();
     await expect(page.getByRole("heading", { name: "NEET Mock Test Series" })).toBeVisible({ timeout: 15000 });
-    await expect(page.getByRole("heading", { name: "Image-Based Practice" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Image Only Practice" })).toBeVisible();
 
     const startButton = page.getByRole("button", { name: /Start Image Practice|No image questions available yet/ });
     await expect(startButton).toBeVisible();

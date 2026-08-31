@@ -18,4 +18,7 @@ export interface AttemptModel {
   attempt_state: string;
   device_fingerprint: string | null;
   sync_state: string | null;
+  // docs/no-repeat-questions-fix.md Phase 5, migration 033.
+  has_recycled_items: boolean;
+  recycled_item_count: number;
 }

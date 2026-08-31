@@ -42,7 +42,7 @@ const MyResultsView = lazy(() => import("./pages/MyResultsView"));
 const SESSION_MODE_LABEL: Record<SessionResult["mode"], string> = {
   "subject-wise": "Subject-wise Practice",
   "full-mock": "Full Mock Exam",
-  "image-practice": "Image-Based Practice",
+  "image-practice": "Image Only Practice",
   custom: "Custom Test",
 };
 
@@ -735,7 +735,15 @@ useEffect(() => {
                     onCancel={handleCancelSession}
                   />
                 ) : currentScreen === "lobby" && activeSession ? (
-                  <LobbyView testTitle={activeSession.test.title} testCode={activeSession.testCode} onStartTest={handleStartTest} mode="standard" />
+                  <LobbyView
+                    testTitle={activeSession.test.title}
+                    testCode={activeSession.testCode}
+                    onStartTest={handleStartTest}
+                    mode="standard"
+                    hasRecycledItems={activeSession.hasRecycledItems}
+                    recycledItemCount={activeSession.recycledItemCount}
+                    totalQuestionCount={activeSession.questions.length}
+                  />
                 ) : (
                   <>
                     {/* Router based on selected Tab */}

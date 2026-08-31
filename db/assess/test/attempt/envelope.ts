@@ -81,6 +81,13 @@ export interface AttemptEnvelope {
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
+  // docs/no-repeat-questions-fix.md Phase 5: carried on every envelope (not
+  // just at session-creation time), same reasoning as testCode/mode above —
+  // a resumed/reloaded attempt rebuilds a full, honest SessionResult from
+  // this one call. Read straight off assess.attempt, set once by
+  // startAttempt and never changed afterward.
+  hasRecycledItems: boolean;
+  recycledItemCount: number;
 }
 
 /**
@@ -242,6 +249,8 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
     test: { testId: attempt.test_id, title: testRes.rows[0]?.title ?? "", durationMinutes: testRes.rows[0]?.duration_minutes ?? null },
     testCode: testRes.rows[0]?.test_code ?? "",
     mode: deriveSessionModeFromTestCode(testRes.rows[0]?.test_code ?? ""),
+    hasRecycledItems: attempt.has_recycled_items,
+    recycledItemCount: attempt.recycled_item_count,
     sections: sectionsRes.rows.map((s) => ({
       testSectionId: s.test_section_id,
       sectionName: s.section_name,

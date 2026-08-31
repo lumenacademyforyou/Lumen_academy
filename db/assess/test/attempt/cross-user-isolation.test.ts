@@ -21,15 +21,45 @@ test(
     const { NotFoundError } = await import("../../../shared/errors.js");
     const { startAttempt, submitAttempt, listAttempts, pauseAttempt } = await import("./attempt-flow.js");
     const { getAttemptEnvelope } = await import("./envelope.js");
+    const { createPracticeTest } = await import("../definition/create-practice-test.js");
 
     try {
       const usersRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user order by user_id limit 2`);
       if (usersRes.rowCount !== 2) throw new Error("need at least 2 core.app_user rows for this test — none created/deleted here on purpose");
       const [userA, userB] = usersRes.rows.map((r) => r.user_id);
 
-      const testRes = await pool.query<{ test_id: string }>(`select test_id from assess.test where test_status = 'published' limit 1`);
-      if (testRes.rowCount === 0) throw new Error("no published assess.test row to attempt against");
-      const testId = testRes.rows[0].test_id;
+      // docs/no-repeat-questions-fix.md's collapse migration (031) means a
+      // real per-unit distinct-content pool can now be as small as 1-2
+      // questions (docs/POOL_CENSUS.md) — "any published assess.test row"
+      // (whatever an earlier test file in this shared-DB run happened to
+      // leave behind) is no longer a safe assumption; it only ever worked
+      // by accident against the old duplicate-inflated pool sizes. This
+      // test isn't about assembly/pool sizing at all, just cross-user
+      // access control, so it builds its own small, deterministic
+      // whole-subject-scoped test (same pattern as reproduce-assembly.test.ts's
+      // A10REPRO fixture) instead of depending on shared-run state.
+      const examRes = await pool.query<{ exam_id: string; exam_code: string }>(`select exam_id, exam_code from catalog.exam where is_active = true limit 1`);
+      if (examRes.rowCount === 0) throw new Error("no active catalog.exam row — needed for this integration test");
+      const { exam_id: examId, exam_code: examCode } = examRes.rows[0];
+      const subjectRes = await pool.query<{ subject_id: string; subject_code: string }>(
+        `select subject_id, subject_code from catalog.subject where exam_id = $1 order by display_order limit 1`,
+        [examId]
+      );
+      if (subjectRes.rowCount === 0) throw new Error("no catalog.subject row for the active exam");
+      const { subject_id: subjectId, subject_code: subjectCode } = subjectRes.rows[0];
+
+      const created = await createPracticeTest({
+        examId,
+        examCode,
+        testType: "SUBJ",
+        scopeCode: "CUISOFIX",
+        title: "cross-user-isolation regression test",
+        durationMinutes: 30,
+        createdBy: userA,
+        lines: [{ subjectId, includeDescendants: true, pickCount: 6, sectionName: subjectCode }],
+      });
+      await pool.query(`update assess.test set test_status = 'published' where test_id = $1`, [created.testId]);
+      const testId = created.testId;
 
       // Neither account may have a pre-existing active attempt, or BUG-03's
       // own new guard would block this test's own startAttempt call — not a

@@ -6,6 +6,7 @@ import { pool } from "../../shared/pool.js";
 import { getSupabaseAdmin } from "../../../backend/src/lib/supabaseAdmin.js";
 import { QuestionAuthoringSchema, type QuestionAuthoring } from "../../../schemas/question-authoring.schema.js";
 import { uploadAsset } from "../../content/asset-resolver.js";
+import { computeContentFp } from "../../shared/normalizeStem.js";
 
 // CL-2 — general-purpose content importer (LA-PLAN-002 Day 1, G3).
 // Generalised from db/scripts/seed/02_content.ts: that script migrated one
@@ -26,7 +27,7 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(SCRIPT_DIR, "..", "..", "..");
 const REPORTS_DIR = path.resolve(REPO_ROOT, "db", "reports");
 
-type RowCategory = "valid" | "schema_error" | "unmapped_node" | "missing_asset";
+type RowCategory = "valid" | "schema_error" | "unmapped_node" | "missing_asset" | "duplicate_content";
 
 interface RowReport {
   rowNo: number;
@@ -155,6 +156,18 @@ async function main() {
   const reports: RowReport[] = [];
   const validRows: { rowNo: number; q: QuestionAuthoring; node: NodeIndexEntry }[] = [];
 
+  // Phase 2.4 (docs/no-repeat-questions-fix.md): reject an incoming row
+  // whose content_fp already exists in the bank instead of silently adding
+  // another clone — this is the pre-write half of the fix; the collapse
+  // migration (031) was the one-time cleanup for what had already leaked
+  // in. Checked against every existing content.question row regardless of
+  // lifecycle_status (a duplicate of an already-archived clone is still a
+  // duplicate), plus every row already accepted earlier in this same batch
+  // — two near-simultaneous copies of the same question in one file are
+  // exactly the shape of bug that produced the original ~750 clones.
+  const existingFpRes = await pool.query<{ fp: string }>(`select encode(content_fp, 'hex') as fp from content.question where content_fp is not null`);
+  const seenContentFps = new Set(existingFpRes.rows.map((r) => r.fp));
+
   parsedJson.forEach((rawRow: unknown, i: number) => {
     const rowNo = i + 1;
     const parsed = QuestionAuthoringSchema.safeParse(rawRow);
@@ -201,6 +214,18 @@ async function main() {
       return;
     }
 
+    const contentFp = computeContentFp(q.stemText, (q.options ?? []).map((o) => o.text)).toString("hex");
+    if (seenContentFps.has(contentFp)) {
+      reports.push({
+        rowNo,
+        questionUid: q.questionUid,
+        status: "duplicate_content",
+        errors: [`DUPLICATE_CONTENT_FP: normalized stem+options already exist in the bank (content_fp ${contentFp.slice(0, 16)}...)`],
+      });
+      return;
+    }
+    seenContentFps.add(contentFp);
+
     reports.push({ rowNo, questionUid: q.questionUid, status: "valid", errors: [] });
     validRows.push({ rowNo, q, node });
   });
@@ -211,8 +236,15 @@ async function main() {
     schema_error: reports.filter((r) => r.status === "schema_error").length,
     unmapped_node: reports.filter((r) => r.status === "unmapped_node").length,
     missing_asset: reports.filter((r) => r.status === "missing_asset").length,
+    duplicate_content: reports.filter((r) => r.status === "duplicate_content").length,
   };
   console.log("\nsummary:", summary);
+  if (summary.duplicate_content > 0) {
+    console.log(`rejected ${summary.duplicate_content} row(s) as DUPLICATE_CONTENT_FP:`);
+    for (const r of reports.filter((r) => r.status === "duplicate_content")) {
+      console.log(`  row ${r.rowNo} (${r.questionUid ?? "?"}): ${r.errors.join("; ")}`);
+    }
+  }
 
   const distinctSyllabusVersions = new Set(validRows.map((r) => r.node.syllabusVersionId));
   const distinctExams = new Set(validRows.map((r) => r.node.examId));

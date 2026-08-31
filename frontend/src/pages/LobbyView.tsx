@@ -6,11 +6,17 @@ interface LobbyViewProps {
   testTitle: string;
   testCode: string;
   mode: "standard" | "practice";
+  // docs/no-repeat-questions-fix.md Phase 5: honest recycling disclosure,
+  // shown before the student answers anything. Undefined/0 renders nothing
+  // (FIXED-mode papers and BLUEPRINT papers with zero recycled items).
+  hasRecycledItems?: boolean;
+  recycledItemCount?: number;
+  totalQuestionCount?: number;
 }
 
 const COUNTDOWN_SECONDS = 30;
 
-export default function LobbyView({ onStartTest, testTitle, testCode, mode }: LobbyViewProps) {
+export default function LobbyView({ onStartTest, testTitle, testCode, mode, hasRecycledItems, recycledItemCount, totalQuestionCount }: LobbyViewProps) {
   const { t, language } = useLanguage();
 
   // P0-2: the countdown itself is a one-shot, per-session event — if this
@@ -187,6 +193,37 @@ export default function LobbyView({ onStartTest, testTitle, testCode, mode }: Lo
           <p className="text-secondary font-semibold text-sm mt-1">{testTitle}</p>
           <p className="text-outline font-mono text-xs mt-1">{testCode}</p>
         </div>
+
+        {/* docs/no-repeat-questions-fix.md Phase 5: honest recycling
+            disclosure. Never hidden or softened into vague language — the
+            spec's own reasoning is "students accept a known limitation;
+            they do not accept a system that appears broken." */}
+        {!!hasRecycledItems && !!recycledItemCount && (
+          <div className="w-full max-w-2xl -mt-2 flex items-start gap-3 px-5 py-4 rounded-2xl border border-secondary/20 bg-secondary-container/10">
+            <span className="material-symbols-outlined text-secondary text-xl mt-0.5">info</span>
+            <div className="text-sm text-on-surface-variant leading-relaxed">
+              {totalQuestionCount && recycledItemCount >= totalQuestionCount ? (
+                <>
+                  <span className="font-bold text-on-surface">This is a practice retake.</span>{" "}
+                  You've already seen every question this scope currently has to offer — treat this as review, not a fresh assessment.
+                </>
+              ) : (
+                <>
+                  You've seen <span className="font-bold text-on-surface">{recycledItemCount}</span> of the{" "}
+                  <span className="font-bold text-on-surface">{totalQuestionCount ?? "these"}</span> questions in this test before
+                  {totalQuestionCount ? (
+                    <>
+                      {" "}
+                      — <span className="font-bold text-on-surface">{totalQuestionCount - recycledItemCount}</span> will be new.
+                    </>
+                  ) : (
+                    "."
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Instructions Bento Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full">

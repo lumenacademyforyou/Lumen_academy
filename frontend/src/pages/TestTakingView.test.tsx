@@ -31,6 +31,8 @@ function buildSession(remainingSeconds = 600, responses: EnvelopeResponse[] = []
     remainingSeconds,
     allowPause: true,
     test: { testId: 'test-1', title: 'Botany Practice', durationMinutes: 10 },
+    hasRecycledItems: false,
+    recycledItemCount: 0,
     sections: [{ testSectionId: 'sec-1', sectionName: 'BOT', sequenceNo: 1, questionCount: 2 }],
     questions: [
       {

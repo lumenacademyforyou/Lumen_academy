@@ -188,6 +188,9 @@ export interface AttemptEnvelope {
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
+  // docs/no-repeat-questions-fix.md Phase 5.
+  hasRecycledItems: boolean;
+  recycledItemCount: number;
 }
 
 export interface SessionResult {
@@ -204,6 +207,10 @@ export interface SessionResult {
   sections: EnvelopeSection[];
   questions: EnvelopeQuestion[];
   responses: EnvelopeResponse[];
+  // docs/no-repeat-questions-fix.md Phase 5: honest recycling disclosure,
+  // shown on the Lobby screen before the student answers anything.
+  hasRecycledItems: boolean;
+  recycledItemCount: number;
 }
 
 // Phase E — summary row from GET /assess/attempts (db/assess/test/attempt/

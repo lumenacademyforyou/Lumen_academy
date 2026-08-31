@@ -19,17 +19,22 @@
  */
 import crypto from "node:crypto";
 import { pool } from "../../../shared/pool.js";
-import { PoolInsufficientError } from "../../../shared/errors.js";
+import { PoolInsufficientError, AssemblerDuplicateAssertionError } from "../../../shared/errors.js";
 
 export interface AssembledSection {
   blueprintId: string;
   testSectionId: string;
   questionIds: string[]; // in the seeded random order — persisted order is the caller's job
+  contentFps: string[]; // hex, same order/index as questionIds — Phase 4.3's attempt-flow.ts dedup key
+  subjectId: string; // Phase 5: for attempt-flow.ts's per-unit recycle log, without a second query
+  syllabusNodeId: string | null;
+  recycledCount: number; // Phase 5: how many of this line's picks were already in assess.user_question_seen before this attempt
 }
 
 export interface AssembleResult {
   seed: string; // bigint as string — never number, matches R-11's NUMERIC discipline for anything persisted
   sections: AssembledSection[];
+  recycledCount: number; // Phase 5: sum of every section's recycledCount
 }
 
 function generateSeed(): string {
@@ -159,7 +164,7 @@ const BLUEPRINT_LINES_SQL = `
 // by each query's own `qnm.node_id = $<n>::uuid` branch, so dropping the
 // exact-match case from this LIKE clause loses nothing.
 const LINE_CANDIDATE_SQL = `
-  select q.question_id
+  select q.question_id, q.content_fp, bool_or(s.question_id is not null) as was_seen
     from content.question q
     join content.question_node_map qnm on qnm.question_id = q.question_id
     join catalog.syllabus_node sn on sn.node_id = qnm.node_id
@@ -167,6 +172,7 @@ const LINE_CANDIDATE_SQL = `
    where sn.subject_id = $1
      and q.lifecycle_status = 'published'
      and not (q.question_id = any ($4::uuid[]))
+     and not (q.content_fp = any ($11::bytea[]))
      and (
            $5::uuid is null
            or qnm.node_id = $5::uuid
@@ -196,6 +202,7 @@ const LINE_AVAILABLE_SQL = `
    where sn.subject_id = $1
      and q.lifecycle_status = 'published'
      and not (q.question_id = any ($2::uuid[]))
+     and not (q.content_fp = any ($8::bytea[]))
      and (
            $3::uuid is null
            or qnm.node_id = $3::uuid
@@ -236,40 +243,91 @@ export async function assembleForAttempt(
 
   const linesRes = await client.query<BlueprintLine>(BLUEPRINT_LINES_SQL, [testId]);
 
-  const globallyPicked: string[] = [];
+  // docs/no-repeat-questions-fix.md Phase 3.1: question_id alone is no
+  // longer the whole guard — docs/POOL_CENSUS.md found ~54% of the
+  // published bank was byte-for-byte content clones under distinct
+  // question_id before migration 031 collapsed them. pickedQuestionIds is
+  // retained (cheap, keeps uq_test_question_test_id_question_id and the
+  // attempt_question PK meaningful); pickedContentFps is the real guard —
+  // excluded on every subsequent line so the same visible question can
+  // never be drawn twice in one paper even via two different question_id
+  // rows.
+  const pickedQuestionIds: string[] = [];
+  const pickedContentFps: Buffer[] = [];
+  const pickedByFpHex = new Map<string, string>(); // content_fp hex -> question_id, for the Phase 3.2 assertion's error message
   const sections: AssembledSection[] = [];
 
+  let totalRecycledCount = 0;
+
   for (const bp of linesRes.rows) {
-    const res = await client.query<{ question_id: string }>(LINE_CANDIDATE_SQL, [
+    const res = await client.query<{ question_id: string; content_fp: Buffer | null; was_seen: boolean }>(LINE_CANDIDATE_SQL, [
       bp.subject_id,
       userId,
       generationSeed,
-      globallyPicked,
+      pickedQuestionIds,
       bp.syllabus_node_id,
       bp.include_descendants,
       bp.difficulty_band,
       bp.question_format,
       bp.pick_count,
       bp.has_image_only,
+      pickedContentFps,
     ]);
     const questionIds = res.rows.map((r) => r.question_id);
 
     if (questionIds.length < bp.pick_count) {
       const availableRes = await client.query<{ available: string }>(LINE_AVAILABLE_SQL, [
         bp.subject_id,
-        globallyPicked,
+        pickedQuestionIds,
         bp.syllabus_node_id,
         bp.include_descendants,
         bp.difficulty_band,
         bp.question_format,
         bp.has_image_only,
+        pickedContentFps,
       ]);
       throw new PoolInsufficientError(bp.blueprint_id, bp.test_section_id, bp.pick_count, Number(availableRes.rows[0].available));
     }
 
-    globallyPicked.push(...questionIds);
-    sections.push({ blueprintId: bp.blueprint_id, testSectionId: bp.test_section_id, questionIds });
+    // Phase 3.2 pre-persist assertion: content_fp should already be
+    // impossible to repeat by construction (every prior pick is excluded
+    // from every later line's candidate query above) — this is a fail-loud
+    // backstop, not the primary guard. A row with a null content_fp (should
+    // not exist post-migration-030 backfill, but not assumed here) can't be
+    // checked for a content collision and is skipped rather than treated as
+    // a false match.
+    const duplicates: { questionIdA: string; questionIdB: string; contentFpHex: string }[] = [];
+    for (const row of res.rows) {
+      if (!row.content_fp) continue;
+      const fpHex = row.content_fp.toString("hex");
+      const existing = pickedByFpHex.get(fpHex);
+      if (existing) {
+        duplicates.push({ questionIdA: existing, questionIdB: row.question_id, contentFpHex: fpHex });
+      } else {
+        pickedByFpHex.set(fpHex, row.question_id);
+      }
+    }
+    if (duplicates.length > 0) {
+      throw new AssemblerDuplicateAssertionError(duplicates);
+    }
+
+    pickedQuestionIds.push(...questionIds);
+    for (const row of res.rows) {
+      if (row.content_fp) pickedContentFps.push(row.content_fp);
+    }
+    const contentFps = res.rows.map((r) => (r.content_fp ? r.content_fp.toString("hex") : ""));
+    const recycledCount = res.rows.filter((r) => r.was_seen).length;
+    totalRecycledCount += recycledCount;
+    sections.push({
+      blueprintId: bp.blueprint_id,
+      testSectionId: bp.test_section_id,
+      questionIds,
+      contentFps,
+      subjectId: bp.subject_id,
+      syllabusNodeId: bp.syllabus_node_id,
+      recycledCount,
+    });
   }
 
-  return { seed: generationSeed, sections };
+  return { seed: generationSeed, sections, recycledCount: totalRecycledCount };
 }

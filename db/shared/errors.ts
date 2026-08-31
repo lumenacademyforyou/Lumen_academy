@@ -144,6 +144,22 @@ export class ReviewNotAvailableError extends Error {
  * Carries the existing attempt's id so the client can offer a real
  * "resume or submit" choice instead of a blank failure.
  */
+/**
+ * docs/no-repeat-questions-fix.md Phase 3.2: assembleForAttempt's own
+ * content_fp exclusion should make this structurally impossible — this
+ * assertion exists purely as a fail-loud backstop, not a first line of
+ * defense. A paper that fails this must never be persisted.
+ */
+export class AssemblerDuplicateAssertionError extends Error {
+  constructor(public readonly duplicates: { questionIdA: string; questionIdB: string; contentFpHex: string }[]) {
+    super(
+      `ASSEMBLER_DUPLICATE_ASSERTION_FAILED: assembled paper contains ${duplicates.length} content-duplicate pair(s): ` +
+        duplicates.map((d) => `${d.questionIdA} == ${d.questionIdB} (content_fp ${d.contentFpHex.slice(0, 16)}...)`).join(", ")
+    );
+    this.name = "AssemblerDuplicateAssertionError";
+  }
+}
+
 export class ActiveAttemptExistsError extends Error {
   constructor(
     public readonly existingAttemptId: string,

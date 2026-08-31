@@ -248,7 +248,7 @@ async function toLines(
     return {
       testType: "MOCK",
       scopeCode: "IMAGES",
-      title: input.title ?? "Image-Based Practice",
+      title: input.title ?? "Image Only Practice",
       durationMinutes: IMAGE_PRACTICE_DEFAULT_DURATION_MINUTES,
       lines,
     };
@@ -305,6 +305,10 @@ export async function createSession(req: Request, res: Response, next: NextFunct
     const attempt = await startAttempt(test.testId, req.user!.appUserId);
     const envelope = await getAttemptEnvelope(attempt.attemptId, req.user!.appUserId);
 
+    // docs/no-repeat-questions-fix.md Phase 5: hasRecycledItems/
+    // recycledItemCount come through in `...envelope` (getAttemptEnvelope
+    // reads them straight off assess.attempt) — surfaced to the Lobby
+    // screen before the student answers anything.
     res.status(201).json({ data: { mode: parsed.data.mode, testId: test.testId, testCode: test.testCode, ...envelope } });
   } catch (err) {
     next(err);

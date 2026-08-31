@@ -139,7 +139,7 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   // (sessionController.ts) — this button only ever asks for the mode, same
   // shape as Full Mock, so the client can never send a stale/guessed count.
   function handleStartImagePractice() {
-    launch({ mode: "image-practice", title: "Image-Based Practice" });
+    launch({ mode: "image-practice", title: "Image Only Practice" });
   }
 
   function handleStartFullMock() {
@@ -324,13 +324,13 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
               </button>
             </motion.div>
 
-            {/* Image-Based Practice */}
+            {/* Image Only Practice */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} whileHover={{ y: -6 }} transition={{ duration: 0.3, delay: 0.3 }} className={cardClassName}>
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider bg-amber-50 dark:bg-amber-950/80 text-[var(--teal)] dark:text-[#FCB824] px-3 py-1 rounded-full border border-amber-200 dark:border-[#FCB824]/40">
                   {t("Diagrams & Graphs")}
                 </span>
-                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Image-Based Practice")}</h3>
+                <h3 className="text-lg md:text-xl font-bold text-[#00243B] dark:text-white mt-4 mb-2">{t("Image Only Practice")}</h3>
                 <p className="text-xs text-slate-600 dark:text-slate-300 mb-6 font-medium leading-relaxed">
                   {t("Every published question with a diagram, graph, or figure, across all subjects — nothing else.")}
                 </p>
