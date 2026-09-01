@@ -25,7 +25,7 @@
 
 ## 1. Problem statement
 
-A Gemini-based generation pipeline drifted and emitted the same question many times. Typical damage: **~7 near-identical copies per unique stem**, spread across (a) the live database, (b) the on-disk content batches, and (c) newly generated content still waiting to be uploaded.
+A Gemini-based generation pipeline drifted and emitted the same question many times. Typical damage: **~7 more or less near-identical copies per unique stem**, spread across (a) the live database, (b) the on-disk content batches, and (c) newly generated content still waiting to be uploaded.
 
 You must:
 
