@@ -25,6 +25,7 @@ import * as decimal from "../../scoring/decimal.js";
 import type { EvaluatedResponse, PartialMode, QuestionFormat, ScoringRule, ServedQuestion, StudentResponse } from "../../scoring/types.js";
 import { resolveAssetUrl } from "../../../content/asset-resolver.js";
 import { deriveSessionModeFromTestCode } from "../definition/test-code.js";
+import { applyPermutation, isUsablePermutation, labelForPosition, optionPermutation, seedFrom } from "./session-shuffle.js";
 
 /**
  * TE-P4 rewrite (LA-BE-ENGINE-001 Section 6). Every function here now goes
@@ -324,6 +325,58 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
            from unnest($2::uuid[], $3::uuid[], $4::smallint[], $5::numeric[], $6::numeric[]) as t(q, ts, seq, m, nm)`,
         [attempt.attempt_id, bulkQuestionIds, bulkTestSectionIds, bulkSequenceNos, bulkMarks, bulkNegativeMarks]
       );
+
+      // session-shuffle-prompt.md — the per-session option permutation is
+      // decided ONCE here, on the write path, and stored on the attempt row.
+      //
+      // Not on the read path, and not as a bare seed. Section 5 of that
+      // directive wants the attempt to record how the question was actually
+      // presented, so a review screen can replay the exact screen the student
+      // saw. A stored array does that even if the shuffle algorithm changes
+      // later; a stored seed only does it while the algorithm never changes.
+      //
+      // This writes to assess.attempt_question — ANSWER HISTORY, not question
+      // data. content.question and content.question_option are untouched, and
+      // must stay untouched: storing a display order against the question
+      // itself is the duplication bug the dedup pass exists to fix.
+      //
+      // QUESTION order is deliberately NOT shuffled again here. sequence_no
+      // above already comes from assembleForAttempt's own seeded shuffle and
+      // is per-attempt, so the set already arrives in a per-session order.
+      // Re-shuffling it at render time would also desync sequenceNo from the
+      // value the client navigates by and the responses are keyed against.
+      const optionRows = await client.query<{ question_id: string; option_text: string }>(
+        `select question_id, option_text from content.question_option
+          where question_id = any($1::uuid[])
+          order by question_id, display_order`,
+        [bulkQuestionIds]
+      );
+      const textsByQuestion = new Map<string, string[]>();
+      for (const row of optionRows.rows) {
+        const list = textsByQuestion.get(row.question_id) ?? [];
+        list.push(row.option_text);
+        textsByQuestion.set(row.question_id, list);
+      }
+
+      const permutationQuestionIds: string[] = [];
+      const permutationJson: string[] = [];
+      for (const questionId of bulkQuestionIds) {
+        const texts = textsByQuestion.get(questionId);
+        if (!texts || texts.length < 2) continue;
+        permutationQuestionIds.push(questionId);
+        permutationJson.push(
+          JSON.stringify(optionPermutation(texts, seedFrom(attempt.attempt_id, questionId)))
+        );
+      }
+      if (permutationQuestionIds.length > 0) {
+        await client.query(
+          `update assess.attempt_question aq
+              set option_order = t.perm
+             from unnest($2::uuid[], $3::jsonb[]) as t(q, perm)
+            where aq.attempt_id = $1 and aq.question_id = t.q`,
+          [attempt.attempt_id, permutationQuestionIds, permutationJson]
+        );
+      }
 
       // Test-layer hardening A6: assess.user_question_seen used to be
       // written only inside submitAttempt (below) — so a started, then
@@ -1245,6 +1298,8 @@ interface ReviewRow {
   is_correct: boolean | null;
   marks_awarded: string | null;
   time_spent_seconds: number | null;
+  /** assess.attempt_question.option_order — the permutation this attempt was shown. */
+  option_order: unknown;
 }
 
 /**
@@ -1263,7 +1318,8 @@ export async function getReview(attemptId: string, userId: string): Promise<Revi
             sn.tag_code, sn.title as topic_title,
             qs.explanation_text, qs.formula_reference,
             ar.option_id as selected_option_id, ar.numeric_answer as student_numeric_answer,
-            ar.is_correct, ar.marks_awarded, ar.time_spent_seconds
+            ar.is_correct, ar.marks_awarded, ar.time_spent_seconds,
+            aq.option_order
        from assess.attempt_question aq
        join content.question q on q.question_id = aq.question_id
        join catalog.syllabus_node sn on sn.node_id = q.primary_node_id
@@ -1296,7 +1352,21 @@ export async function getReview(attemptId: string, userId: string): Promise<Revi
           wasSelected: row.option_id === r.selected_option_id,
         });
       }
-      optionsByQuestion.set(r.question_id, list);
+      // session-shuffle-prompt.md section 5 — replay the permutation stored
+      // on the attempt row, so review shows the student the SAME screen they
+      // answered on. Without this, "you picked B" sits next to a different B.
+      //
+      // wasSelected and isCorrect are computed above against canonical
+      // option ids and are carried through the reorder untouched; only the
+      // printed label is re-derived from the display position, exactly as it
+      // was at answer time.
+      const replayed = isUsablePermutation(r.option_order, list.length)
+        ? applyPermutation(list, r.option_order).map((option, position) => ({
+            ...option,
+            optionLabel: labelForPosition(position),
+          }))
+        : list;
+      optionsByQuestion.set(r.question_id, replayed);
     }
   }
 

@@ -9,10 +9,26 @@
     "stemFormat": "plain",
     "stemText": "A body continues in its state of rest or uniform motion in a straight line unless acted upon by an external unbalanced force. This is a statement of:",
     "options": [
-      { "label": "A", "text": "Newton's Second Law", "isCorrect": false },
-      { "label": "B", "text": "Newton's First Law", "isCorrect": true },
-      { "label": "C", "text": "Newton's Third Law", "isCorrect": false },
-      { "label": "D", "text": "Law of Conservation of Momentum", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Newton's Second Law",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Newton's First Law",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Newton's Third Law",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Law of Conservation of Momentum",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: This exact statement defining inertia is Newton's First Law (law of inertia).\nStep 2: It qualitatively describes the tendency of a body to resist a change in its state of motion.\nStep 3: Conclude Option B is correct.",
@@ -31,10 +47,26 @@
     "stemFormat": "plain",
     "stemText": "The inertia of a body is quantitatively measured by its:",
     "options": [
-      { "label": "A", "text": "Weight", "isCorrect": false },
-      { "label": "B", "text": "Volume", "isCorrect": false },
-      { "label": "C", "text": "Mass", "isCorrect": true },
-      { "label": "D", "text": "Momentum", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Weight",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Volume",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mass",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Momentum",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Inertia is the natural tendency of a body to resist any change in its state of rest or motion.\nStep 2: The quantitative measure of this tendency is the body's mass - a larger mass means greater inertia.\nStep 3: Conclude Option C is correct.",
@@ -53,10 +85,26 @@
     "stemFormat": "plain",
     "stemText": "Newton's Second Law of Motion states that the rate of change of momentum of a body is:",
     "options": [
-      { "label": "A", "text": "Always zero", "isCorrect": false },
-      { "label": "B", "text": "Directly proportional to the applied force and takes place in the direction of the force", "isCorrect": true },
-      { "label": "C", "text": "Inversely proportional to the applied force", "isCorrect": false },
-      { "label": "D", "text": "Independent of the applied force", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Always zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Directly proportional to the applied force and takes place in the direction of the force",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Inversely proportional to the applied force",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Independent of the applied force",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Newton's Second Law: dp/dt proportional to F, i.e., F = dp/dt = ma for constant mass.\nStep 2: The direction of change of momentum is along the direction of the net applied force.\nStep 3: Conclude Option B is correct.",
@@ -75,10 +123,26 @@
     "stemFormat": "plain",
     "stemText": "A net force of 20 N acts on a body of mass 4 kg, initially at rest. What is the acceleration produced?",
     "options": [
-      { "label": "A", "text": "2 m/s^2", "isCorrect": false },
-      { "label": "B", "text": "4 m/s^2", "isCorrect": false },
-      { "label": "C", "text": "5 m/s^2", "isCorrect": true },
-      { "label": "D", "text": "8 m/s^2", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "2 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 m/s^2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "8 m/s^2",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: By Newton's Second Law, F = ma, so a = F/m.\nStep 2: a = 20/4 = 5 m/s^2.\nStep 3: Conclude Option C is correct.",
@@ -97,10 +161,26 @@
     "stemFormat": "plain",
     "stemText": "The linear momentum of a body of mass m moving with velocity v is defined as:",
     "options": [
-      { "label": "A", "text": "p = mv^2", "isCorrect": false },
-      { "label": "B", "text": "p = (1/2)mv^2", "isCorrect": false },
-      { "label": "C", "text": "p = mv", "isCorrect": true },
-      { "label": "D", "text": "p = m/v", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "p = mv^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "p = (1/2)mv^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "p = mv",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "p = m/v",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Linear momentum is defined as the product of mass and velocity.\nStep 2: p = mv, a vector quantity in the direction of velocity.\nStep 3: Conclude Option C is correct.",
@@ -119,10 +199,26 @@
     "stemFormat": "plain",
     "stemText": "Impulse of a force is equal to:",
     "options": [
-      { "label": "A", "text": "The force multiplied by displacement", "isCorrect": false },
-      { "label": "B", "text": "The change in kinetic energy", "isCorrect": false },
-      { "label": "C", "text": "The change in momentum produced by the force", "isCorrect": true },
-      { "label": "D", "text": "The rate of change of force", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The force multiplied by displacement",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The change in kinetic energy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The change in momentum produced by the force",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The rate of change of force",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Impulse J = integral of F dt.\nStep 2: By Newton's Second Law, F = dp/dt, so integral of F dt = delta p - the impulse equals the change in momentum.\nStep 3: Conclude Option C is correct.",
@@ -141,10 +237,26 @@
     "stemFormat": "plain",
     "stemText": "A force of 50 N acts on a body for 0.2 s. What is the impulse imparted to the body?",
     "options": [
-      { "label": "A", "text": "5 N.s", "isCorrect": false },
-      { "label": "B", "text": "10 N.s", "isCorrect": true },
-      { "label": "C", "text": "25 N.s", "isCorrect": false },
-      { "label": "D", "text": "100 N.s", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "5 N.s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 N.s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "25 N.s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 N.s",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Impulse J = F x t.\nStep 2: J = 50 x 0.2 = 10 N.s.\nStep 3: Conclude Option B is correct.",
@@ -163,10 +275,26 @@
     "stemFormat": "plain",
     "stemText": "For every action, there is an equal and opposite reaction, and these action-reaction forces:",
     "options": [
-      { "label": "A", "text": "Act on the same body and cancel each other", "isCorrect": false },
-      { "label": "B", "text": "Act on two different bodies and never cancel each other", "isCorrect": true },
-      { "label": "C", "text": "Act only when bodies are in contact", "isCorrect": false },
-      { "label": "D", "text": "Are unequal in magnitude", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Act on the same body and cancel each other",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Act on two different bodies and never cancel each other",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Act only when bodies are in contact",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Are unequal in magnitude",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Newton's Third Law states action and reaction forces are equal in magnitude and opposite in direction.\nStep 2: Crucially, they act on two different bodies, so they never cancel out for either individual body.\nStep 3: Conclude Option B is correct.",
@@ -185,10 +313,26 @@
     "stemFormat": "plain",
     "stemText": "The law of conservation of linear momentum states that, in the absence of an external force, the total momentum of a system of interacting bodies:",
     "options": [
-      { "label": "A", "text": "Continuously increases", "isCorrect": false },
-      { "label": "B", "text": "Continuously decreases", "isCorrect": false },
-      { "label": "C", "text": "Remains constant", "isCorrect": true },
-      { "label": "D", "text": "Becomes zero", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Continuously increases",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Continuously decreases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remains constant",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Becomes zero",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: When no net external force acts on a system, the total linear momentum of the system remains conserved.\nStep 2: This follows directly from Newton's Third Law applied to internal forces between the interacting bodies, which cancel out in pairs.\nStep 3: Conclude Option C is correct.",
@@ -207,10 +351,26 @@
     "stemFormat": "plain",
     "stemText": "A body of mass 2 kg moving with velocity 6 m/s collides with a stationary body of mass 4 kg and they stick together. Find their common velocity after collision.",
     "options": [
-      { "label": "A", "text": "1 m/s", "isCorrect": false },
-      { "label": "B", "text": "2 m/s", "isCorrect": true },
-      { "label": "C", "text": "3 m/s", "isCorrect": false },
-      { "label": "D", "text": "4 m/s", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 m/s",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: By conservation of momentum, m1u1 + m2u2 = (m1+m2)v.\nStep 2: 2(6) + 4(0) = (2+4)v -> 12 = 6v -> v = 2 m/s.\nStep 3: Conclude Option B is correct.",
@@ -229,10 +389,26 @@
     "stemFormat": "plain",
     "stemText": "A particle is said to be in equilibrium under the action of several concurrent forces when:",
     "options": [
-      { "label": "A", "text": "The forces are all equal in magnitude", "isCorrect": false },
-      { "label": "B", "text": "The vector sum of all the forces acting on it is zero", "isCorrect": true },
-      { "label": "C", "text": "Only two forces act on it", "isCorrect": false },
-      { "label": "D", "text": "The particle is moving with constant non-zero acceleration", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The forces are all equal in magnitude",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The vector sum of all the forces acting on it is zero",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Only two forces act on it",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The particle is moving with constant non-zero acceleration",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A particle in equilibrium has zero net force acting on it.\nStep 2: For several concurrent forces, this means their vector sum is zero, so the particle remains at rest or moves with constant velocity.\nStep 3: Conclude Option B is correct.",
@@ -251,10 +427,26 @@
     "stemFormat": "plain",
     "stemText": "According to Lami's theorem, if three concurrent forces P, Q, and R keep a particle in equilibrium, then each force is proportional to the sine of the angle between:",
     "options": [
-      { "label": "A", "text": "Itself and the resultant force", "isCorrect": false },
-      { "label": "B", "text": "The other two forces", "isCorrect": true },
-      { "label": "C", "text": "Itself and one of the other forces only", "isCorrect": false },
-      { "label": "D", "text": "All three forces added together", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Itself and the resultant force",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The other two forces",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Itself and one of the other forces only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All three forces added together",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Lami's theorem states P/sin a = Q/sin b = R/sin c, where a, b, c are the angles opposite to P, Q, R respectively.\nStep 2: The angle opposite a given force is the angle between the other two forces.\nStep 3: Conclude Option B is correct.",
@@ -273,10 +465,26 @@
     "stemFormat": "plain",
     "stemText": "The contact force exerted by a surface on a body, acting perpendicular to the surface, is called:",
     "options": [
-      { "label": "A", "text": "Frictional force", "isCorrect": false },
-      { "label": "B", "text": "Tension", "isCorrect": false },
-      { "label": "C", "text": "Normal reaction", "isCorrect": true },
-      { "label": "D", "text": "Centripetal force", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Frictional force",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tension",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Normal reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Centripetal force",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: When a body rests on a surface, the surface exerts a contact force on it.\nStep 2: The component of this contact force perpendicular to the surface is called the normal reaction (or normal force).\nStep 3: Conclude Option C is correct.",
@@ -295,10 +503,26 @@
     "stemFormat": "plain",
     "stemText": "The maximum value of static friction that a surface can exert on a body, just before it starts sliding, is given by:",
     "options": [
-      { "label": "A", "text": "fs(max) = mu_s N", "isCorrect": true },
-      { "label": "B", "text": "fs(max) = mu_s / N", "isCorrect": false },
-      { "label": "C", "text": "fs(max) = N / mu_s", "isCorrect": false },
-      { "label": "D", "text": "fs(max) = mu_s + N", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "fs(max) = mu_s N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "fs(max) = mu_s / N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "fs(max) = N / mu_s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "fs(max) = mu_s + N",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Static friction adjusts itself to prevent relative sliding, up to a maximum limiting value.\nStep 2: This limiting (maximum) static friction is fs(max) = mu_s N, where mu_s is the coefficient of static friction and N is the normal reaction.\nStep 3: Conclude Option A is correct.",
@@ -317,10 +541,26 @@
     "stemFormat": "plain",
     "stemText": "Once a body starts sliding on a surface, the friction acting on it is called kinetic friction, and it is generally:",
     "options": [
-      { "label": "A", "text": "Greater than the maximum static friction", "isCorrect": false },
-      { "label": "B", "text": "Equal to the applied force at all times", "isCorrect": false },
-      { "label": "C", "text": "Slightly less than the maximum static friction", "isCorrect": true },
-      { "label": "D", "text": "Independent of the normal reaction", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Greater than the maximum static friction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Equal to the applied force at all times",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Slightly less than the maximum static friction",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Independent of the normal reaction",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Kinetic (sliding) friction, fk = mu_k N, opposes relative sliding once motion has begun.\nStep 2: Experimentally, mu_k is slightly less than mu_s, so kinetic friction is slightly less than the maximum static friction - this is why it is easier to keep a body moving than to start it moving.\nStep 3: Conclude Option C is correct.",
@@ -339,10 +579,26 @@
     "stemFormat": "plain",
     "stemText": "A block just begins to slide down a rough inclined plane when the angle of inclination is 30 degrees. What is the coefficient of static friction between the block and the plane? (tan 30 = 1/sqrt(3) is approximately 0.577)",
     "options": [
-      { "label": "A", "text": "0.289", "isCorrect": false },
-      { "label": "B", "text": "0.5", "isCorrect": false },
-      { "label": "C", "text": "0.577", "isCorrect": true },
-      { "label": "D", "text": "0.866", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "0.289",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.577",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.866",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A block just begins to slide when mg sin(theta) = fs(max) = mu_s mg cos(theta), giving mu_s = tan(theta).\nStep 2: mu_s = tan 30 = 1/sqrt(3) is approximately 0.577.\nStep 3: Conclude Option C is correct.",
@@ -361,10 +617,26 @@
     "stemFormat": "plain",
     "stemText": "The angle of friction and the angle of repose for a given pair of surfaces are:",
     "options": [
-      { "label": "A", "text": "Always different, with the angle of repose being larger", "isCorrect": false },
-      { "label": "B", "text": "Numerically equal to each other", "isCorrect": true },
-      { "label": "C", "text": "Always different, with the angle of friction being larger", "isCorrect": false },
-      { "label": "D", "text": "Unrelated quantities", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Always different, with the angle of repose being larger",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Numerically equal to each other",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Always different, with the angle of friction being larger",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Unrelated quantities",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The angle of friction lambda is defined by tan(lambda) = mu_s.\nStep 2: The angle of repose theta is the minimum incline angle at which a body just begins to slide, also given by tan(theta) = mu_s.\nStep 3: Since both equal tan^-1(mu_s), they are numerically equal - Conclude Option B.",
@@ -383,10 +655,26 @@
     "stemFormat": "plain",
     "stemText": "Compared to sliding friction between two surfaces, rolling friction is generally:",
     "options": [
-      { "label": "A", "text": "Much greater", "isCorrect": false },
-      { "label": "B", "text": "Exactly equal", "isCorrect": false },
-      { "label": "C", "text": "Much smaller", "isCorrect": true },
-      { "label": "D", "text": "Not comparable, as rolling friction does not exist", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Much greater",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Exactly equal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Much smaller",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Not comparable, as rolling friction does not exist",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Rolling friction arises from small deformations at the contact point of a rolling body and the surface.\nStep 2: It is generally much smaller in magnitude than sliding friction between the same two surfaces, which is why wheels are used to reduce friction.\nStep 3: Conclude Option C is correct.",
@@ -405,10 +693,26 @@
     "stemFormat": "plain",
     "stemText": "A body moving in a circular path with constant speed requires a net force directed:",
     "options": [
-      { "label": "A", "text": "Away from the centre of the circle", "isCorrect": false },
-      { "label": "B", "text": "Tangential to the path", "isCorrect": false },
-      { "label": "C", "text": "Towards the centre of the circle", "isCorrect": true },
-      { "label": "D", "text": "In the direction of motion", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Away from the centre of the circle",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tangential to the path",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Towards the centre of the circle",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "In the direction of motion",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: For circular motion, the velocity direction continuously changes, requiring a centripetal acceleration directed towards the centre.\nStep 2: By Newton's Second Law, this requires a net centripetal force, F = mv^2/r, directed towards the centre.\nStep 3: Conclude Option C is correct.",
@@ -427,10 +731,26 @@
     "stemFormat": "plain",
     "stemText": "Roads are banked at curves mainly to:",
     "options": [
-      { "label": "A", "text": "Increase the frictional force required", "isCorrect": false },
-      { "label": "B", "text": "Provide part of the necessary centripetal force through the normal reaction, reducing dependence on friction", "isCorrect": true },
-      { "label": "C", "text": "Reduce the speed of vehicles to zero", "isCorrect": false },
-      { "label": "D", "text": "Increase the weight of the vehicle", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Increase the frictional force required",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Provide part of the necessary centripetal force through the normal reaction, reducing dependence on friction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Reduce the speed of vehicles to zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Increase the weight of the vehicle",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: On a banked road, the normal reaction has a horizontal component directed towards the centre of the curve.\nStep 2: This horizontal component contributes to the required centripetal force, reducing the reliance on friction and allowing safer turning at higher speeds.\nStep 3: Conclude Option B is correct.",
@@ -449,10 +769,26 @@
     "stemFormat": "plain",
     "stemText": "A road is banked at an angle of 45 degrees for vehicles moving with a certain optimum speed around a curve of radius 20 m, assuming friction is negligible. Taking g = 10 m/s^2, find this optimum speed. (tan 45 = 1)",
     "options": [
-      { "label": "A", "text": "10 m/s", "isCorrect": false },
-      { "label": "B", "text": "14.1 m/s", "isCorrect": true },
-      { "label": "C", "text": "20 m/s", "isCorrect": false },
-      { "label": "D", "text": "200 m/s", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "10 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "14.1 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "20 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 m/s",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: For a banked road with negligible friction, tan(theta) = v^2/(rg).\nStep 2: v^2 = rg tan(theta) = 20 x 10 x 1 = 200, so v = sqrt(200) is approximately 14.1 m/s.\nStep 3: Conclude Option B is correct.",
@@ -471,10 +807,26 @@
     "stemFormat": "plain",
     "stemText": "In a conical pendulum, the bob moves in a horizontal circle while the string traces out the surface of a cone. The vertical component of the string's tension:",
     "options": [
-      { "label": "A", "text": "Provides the centripetal force", "isCorrect": false },
-      { "label": "B", "text": "Balances the weight of the bob", "isCorrect": true },
-      { "label": "C", "text": "Is always zero", "isCorrect": false },
-      { "label": "D", "text": "Is equal to the horizontal component", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Provides the centripetal force",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Balances the weight of the bob",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Is always zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Is equal to the horizontal component",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In a conical pendulum, the tension in the string has two components: a vertical component and a horizontal component.\nStep 2: The vertical component balances the weight of the bob (T cos(theta) = mg), while the horizontal component provides the centripetal force (T sin(theta) = mv^2/r).\nStep 3: Conclude Option B is correct.",
@@ -493,10 +845,26 @@
     "stemFormat": "plain",
     "stemText": "A person of mass 60 kg stands on a weighing scale inside a lift accelerating upward at 2 m/s^2. Taking g = 10 m/s^2, what does the scale read?",
     "options": [
-      { "label": "A", "text": "480 N", "isCorrect": false },
-      { "label": "B", "text": "600 N", "isCorrect": false },
-      { "label": "C", "text": "672 N", "isCorrect": false },
-      { "label": "D", "text": "720 N", "isCorrect": true }
+      {
+        "label": "A",
+        "text": "480 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "600 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "672 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "720 N",
+        "isCorrect": true
+      }
     ],
     "solution": {
       "explanationText": "Step 1: When the lift accelerates upward, the apparent weight (normal reaction) N = m(g+a).\nStep 2: N = 60(10+2) = 60x12 = 720 N.\nStep 3: Conclude Option D is correct.",
@@ -515,10 +883,26 @@
     "stemFormat": "plain",
     "stemText": "If the cable of a lift snaps and the lift falls freely under gravity, the apparent weight of a person standing inside the lift becomes:",
     "options": [
-      { "label": "A", "text": "Equal to their true weight", "isCorrect": false },
-      { "label": "B", "text": "Twice their true weight", "isCorrect": false },
-      { "label": "C", "text": "Zero", "isCorrect": true },
-      { "label": "D", "text": "Half their true weight", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Equal to their true weight",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Twice their true weight",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Half their true weight",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In free fall, the lift and the person inside it both have acceleration a = g downward.\nStep 2: Apparent weight N = m(g - a) = m(g - g) = 0, a state known as weightlessness.\nStep 3: Conclude Option C is correct.",
@@ -537,10 +921,26 @@
     "stemFormat": "plain",
     "stemText": "A pseudo force is an imaginary force that must be introduced when analysing the motion of a body:",
     "options": [
-      { "label": "A", "text": "In any inertial frame of reference", "isCorrect": false },
-      { "label": "B", "text": "In a non-inertial (accelerating) frame of reference, to apply Newton's laws", "isCorrect": true },
-      { "label": "C", "text": "Only when the body is at rest", "isCorrect": false },
-      { "label": "D", "text": "Only in circular motion", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "In any inertial frame of reference",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "In a non-inertial (accelerating) frame of reference, to apply Newton's laws",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Only when the body is at rest",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Only in circular motion",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Newton's laws of motion hold directly only in inertial (non-accelerating) frames of reference.\nStep 2: In a non-inertial (accelerating) frame, a pseudo force (equal to -ma, opposite to the frame's acceleration) must be introduced to make Newton's second law appear valid within that frame.\nStep 3: Conclude Option B is correct.",
@@ -559,10 +959,26 @@
     "stemFormat": "plain",
     "stemText": "In an Atwood machine with two unequal masses connected by a string over a frictionless, massless pulley, the tension in the string is:",
     "options": [
-      { "label": "A", "text": "Equal to the weight of the heavier mass", "isCorrect": false },
-      { "label": "B", "text": "Equal to the weight of the lighter mass", "isCorrect": false },
-      { "label": "C", "text": "The same throughout the string, but less than the weight of the heavier mass", "isCorrect": true },
-      { "label": "D", "text": "Zero", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Equal to the weight of the heavier mass",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Equal to the weight of the lighter mass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The same throughout the string, but less than the weight of the heavier mass",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: For an ideal (massless, frictionless) pulley, tension is uniform throughout the string.\nStep 2: Since the heavier mass accelerates downward, the net force on it (weight - tension) is positive, so tension must be less than its weight.\nStep 3: Conclude Option C is correct.",
@@ -581,17 +997,37 @@
     "stemFormat": "plain",
     "stemText": "In the frictionless ideal pulley system shown in the figure, two masses m1 = 3 kg and m2 = 5 kg are connected by a light inextensible string passing over a frictionless pulley (Atwood machine). What is the magnitude of the acceleration of the system when released? Take g = 10 m/s^2.",
     "options": [
-      { "label": "A", "text": "1.25 m/s^2", "isCorrect": false },
-      { "label": "B", "text": "2.5 m/s^2", "isCorrect": true },
-      { "label": "C", "text": "5 m/s^2", "isCorrect": false },
-      { "label": "D", "text": "10 m/s^2", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1.25 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.5 m/s^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 m/s^2",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: For an Atwood machine, a = (m2 - m1)g / (m1 + m2), taking m2 > m1.\nStep 2: a = (5-3)(10)/(5+3) = 20/8 = 2.5 m/s^2.\nStep 3: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "PHY_NLM_DIAG_0001.png", "altText": "Atwood machine showing a fixed pulley with mass m1 = 3 kg hanging on the left and mass m2 = 5 kg hanging on the right", "targetRole": "stem" }
+      {
+        "fileName": "PHY_NLM_DIAG_0001.png",
+        "altText": "Atwood machine showing a fixed pulley with mass m1 = 3 kg hanging on the left and mass m2 = 5 kg hanging on the right",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -605,17 +1041,37 @@
     "stemFormat": "plain",
     "stemText": "In the frictionless pulley system shown in the figure, a block of mass m1 = 2 kg rests on a smooth horizontal table and is connected by a light string over a pulley at the table's edge to a block of mass m2 = 3 kg hanging vertically. What is the acceleration of the system? Take g = 10 m/s^2.",
     "options": [
-      { "label": "A", "text": "2 m/s^2", "isCorrect": false },
-      { "label": "B", "text": "4 m/s^2", "isCorrect": false },
-      { "label": "C", "text": "5 m/s^2", "isCorrect": false },
-      { "label": "D", "text": "6 m/s^2", "isCorrect": true }
+      {
+        "label": "A",
+        "text": "2 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 m/s^2",
+        "isCorrect": true
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Only the hanging mass's weight drives the system (table is smooth, no friction).\nStep 2: a = m2 g / (m1 + m2) = 3(10)/(2+3) = 30/5 = 6 m/s^2.\nStep 3: Conclude Option D is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "PHY_NLM_DIAG_0002.png", "altText": "A 2 kg block on a horizontal table connected by a string over a pulley at the table edge to a 3 kg block hanging vertically off the edge", "targetRole": "stem" }
+      {
+        "fileName": "PHY_NLM_DIAG_0002.png",
+        "altText": "A 2 kg block on a horizontal table connected by a string over a pulley at the table edge to a 3 kg block hanging vertically off the edge",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -629,10 +1085,26 @@
     "stemFormat": "plain",
     "stemText": "The propulsion (forward thrust) of a rocket is best explained on the basis of:",
     "options": [
-      { "label": "A", "text": "Newton's First Law alone", "isCorrect": false },
-      { "label": "B", "text": "The law of conservation of energy", "isCorrect": false },
-      { "label": "C", "text": "The law of conservation of linear momentum (Newton's Third Law)", "isCorrect": true },
-      { "label": "D", "text": "The law of gravitation", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Newton's First Law alone",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The law of conservation of energy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The law of conservation of linear momentum (Newton's Third Law)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The law of gravitation",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A rocket expels burnt gases backward at high velocity.\nStep 2: By conservation of momentum (equivalently, Newton's Third Law), the backward momentum of the ejected gases is balanced by an equal forward momentum (thrust) given to the rocket.\nStep 3: Conclude Option C is correct.",
@@ -651,10 +1123,26 @@
     "stemFormat": "plain",
     "stemText": "A gun of mass 4 kg fires a bullet of mass 20 g with a velocity of 400 m/s. Find the recoil velocity of the gun.",
     "options": [
-      { "label": "A", "text": "1 m/s", "isCorrect": false },
-      { "label": "B", "text": "2 m/s", "isCorrect": true },
-      { "label": "C", "text": "4 m/s", "isCorrect": false },
-      { "label": "D", "text": "8 m/s", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 m/s",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Initial momentum of the system (gun + bullet) is zero.\nStep 2: By conservation of momentum, m_gun x v_recoil = m_bullet x v_bullet, so v_recoil = (0.02 x 400)/4 = 8/4 = 2 m/s.\nStep 3: Conclude Option B is correct.",
@@ -673,10 +1161,26 @@
     "stemFormat": "plain",
     "stemText": "According to the Valence Shell Electron Pair Repulsion (VSEPR) theory, the shape of a molecule is determined mainly by:",
     "options": [
-      { "label": "A", "text": "The atomic masses of the bonded atoms", "isCorrect": false },
-      { "label": "B", "text": "The minimization of repulsion between electron pairs (bonding and lone) around the central atom", "isCorrect": true },
-      { "label": "C", "text": "The number of neutrons in the central atom", "isCorrect": false },
-      { "label": "D", "text": "The colour of the compound", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The atomic masses of the bonded atoms",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The minimization of repulsion between electron pairs (bonding and lone) around the central atom",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The number of neutrons in the central atom",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The colour of the compound",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: VSEPR theory holds that electron pairs (bond pairs and lone pairs) around a central atom arrange themselves in space to minimize mutual repulsion.\nStep 2: This arrangement of electron pairs determines the geometry of the molecule.\nStep 3: Conclude Option B is correct.",
@@ -695,10 +1199,26 @@
     "stemFormat": "plain",
     "stemText": "Methane (CH4) has four bond pairs and no lone pairs around the central carbon atom. What is its molecular shape and bond angle?",
     "options": [
-      { "label": "A", "text": "Trigonal planar, 120 degrees", "isCorrect": false },
-      { "label": "B", "text": "Tetrahedral, 109.5 degrees", "isCorrect": true },
-      { "label": "C", "text": "Bent, 104.5 degrees", "isCorrect": false },
-      { "label": "D", "text": "Linear, 180 degrees", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Trigonal planar, 120 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral, 109.5 degrees",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Bent, 104.5 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Linear, 180 degrees",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Carbon in CH4 has 4 bond pairs and 0 lone pairs (steric number 4, no lone pair repulsion asymmetry).\nStep 2: With 4 identical bond pairs and no lone pairs, the electron pairs arrange in a regular tetrahedral geometry with bond angle 109.5 degrees.\nStep 3: Conclude Option B is correct.",
@@ -717,10 +1237,26 @@
     "stemFormat": "plain",
     "stemText": "Ammonia (NH3) has three bond pairs and one lone pair around the central nitrogen atom. What is its molecular shape?",
     "options": [
-      { "label": "A", "text": "Tetrahedral", "isCorrect": false },
-      { "label": "B", "text": "Trigonal planar", "isCorrect": false },
-      { "label": "C", "text": "Trigonal pyramidal", "isCorrect": true },
-      { "label": "D", "text": "Bent", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Tetrahedral",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal planar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trigonal pyramidal",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bent",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Nitrogen in NH3 has steric number 4 (3 bond pairs + 1 lone pair), so the electron-pair geometry is tetrahedral.\nStep 2: Since one of the four positions is occupied by a lone pair (not counted in molecular shape), the molecular shape becomes trigonal pyramidal, with a bond angle slightly less than 109.5 degrees (about 107 degrees) due to greater lone pair-bond pair repulsion.\nStep 3: Conclude Option C is correct.",
@@ -739,10 +1275,26 @@
     "stemFormat": "plain",
     "stemText": "Water (H2O) has two bond pairs and two lone pairs around the central oxygen atom. Its molecular shape and approximate bond angle are:",
     "options": [
-      { "label": "A", "text": "Linear, 180 degrees", "isCorrect": false },
-      { "label": "B", "text": "Trigonal pyramidal, 107 degrees", "isCorrect": false },
-      { "label": "C", "text": "Bent (angular), 104.5 degrees", "isCorrect": true },
-      { "label": "D", "text": "Tetrahedral, 109.5 degrees", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Linear, 180 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal pyramidal, 107 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bent (angular), 104.5 degrees",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral, 109.5 degrees",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Oxygen in H2O has steric number 4 (2 bond pairs + 2 lone pairs), giving a tetrahedral electron-pair geometry.\nStep 2: With two lone pairs occupying two of the four positions, the molecular shape is bent (angular); the two lone pairs cause even greater repulsion, compressing the H-O-H angle to about 104.5 degrees.\nStep 3: Conclude Option C is correct.",
@@ -761,10 +1313,26 @@
     "stemFormat": "plain",
     "stemText": "According to VSEPR theory, the order of repulsive strength between different types of electron pairs is:",
     "options": [
-      { "label": "A", "text": "Bond pair-bond pair > lone pair-bond pair > lone pair-lone pair", "isCorrect": false },
-      { "label": "B", "text": "Lone pair-lone pair > lone pair-bond pair > bond pair-bond pair", "isCorrect": true },
-      { "label": "C", "text": "Lone pair-bond pair > lone pair-lone pair > bond pair-bond pair", "isCorrect": false },
-      { "label": "D", "text": "All three types are exactly equal", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Bond pair-bond pair > lone pair-bond pair > lone pair-lone pair",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lone pair-lone pair > lone pair-bond pair > bond pair-bond pair",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lone pair-bond pair > lone pair-lone pair > bond pair-bond pair",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All three types are exactly equal",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A lone pair is held closer to the central atom's nucleus (by only one nucleus) than a bond pair (shared between two nuclei), so it occupies more space and repels more strongly.\nStep 2: This gives the established VSEPR repulsion order: lone pair-lone pair > lone pair-bond pair > bond pair-bond pair.\nStep 3: Conclude Option B is correct.",
@@ -783,17 +1351,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the VSEPR structural diagram shown, boron trifluoride (BF3) has three bond pairs and no lone pairs around the central boron atom. What is its molecular shape?",
     "options": [
-      { "label": "A", "text": "Tetrahedral", "isCorrect": false },
-      { "label": "B", "text": "Trigonal pyramidal", "isCorrect": false },
-      { "label": "C", "text": "Trigonal planar", "isCorrect": true },
-      { "label": "D", "text": "Bent", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Tetrahedral",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal pyramidal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trigonal planar",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bent",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Boron in BF3 has only 3 valence electrons available for bonding and forms 3 bond pairs with no lone pair (steric number 3).\nStep 2: With 3 identical bond pairs and no lone pairs, the electron pairs arrange in a flat, trigonal planar geometry with 120 degree bond angles.\nStep 3: Conclude Option C is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "CHE_CHEBON_DIAG_0001.png", "altText": "Central B atom with 3 F atoms arranged symmetrically in a flat triangular plane, all B-F bond angles equal to 120 degrees", "targetRole": "stem" }
+      {
+        "fileName": "CHE_CHEBON_DIAG_0001.png",
+        "altText": "Central B atom with 3 F atoms arranged symmetrically in a flat triangular plane, all B-F bond angles equal to 120 degrees",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -807,17 +1395,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the VSEPR structural diagram shown, phosphorus pentachloride (PCl5) has five bond pairs and no lone pairs around the central phosphorus atom. What is its molecular shape?",
     "options": [
-      { "label": "A", "text": "Octahedral", "isCorrect": false },
-      { "label": "B", "text": "Trigonal bipyramidal", "isCorrect": true },
-      { "label": "C", "text": "Square planar", "isCorrect": false },
-      { "label": "D", "text": "Tetrahedral", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Octahedral",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal bipyramidal",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Square planar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Phosphorus in PCl5 has 5 bond pairs and no lone pair (steric number 5).\nStep 2: With 5 identical bond pairs and no lone pairs, the electron pairs arrange in a trigonal bipyramidal geometry - 3 equatorial positions at 120 degrees and 2 axial positions at 90 degrees to the equatorial plane.\nStep 3: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "CHE_CHEBON_DIAG_0002.png", "altText": "Central P atom with 3 Cl atoms in an equatorial triangular plane (120 degrees apart) and 2 Cl atoms in axial positions perpendicular to that plane, 90 degrees from the equatorial plane", "targetRole": "stem" }
+      {
+        "fileName": "CHE_CHEBON_DIAG_0002.png",
+        "altText": "Central P atom with 3 Cl atoms in an equatorial triangular plane (120 degrees apart) and 2 Cl atoms in axial positions perpendicular to that plane, 90 degrees from the equatorial plane",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -831,17 +1439,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the VSEPR structural diagram shown, sulphur hexafluoride (SF6) has six bond pairs and no lone pairs around the central sulphur atom. What is its molecular shape?",
     "options": [
-      { "label": "A", "text": "Trigonal bipyramidal", "isCorrect": false },
-      { "label": "B", "text": "Square planar", "isCorrect": false },
-      { "label": "C", "text": "Octahedral", "isCorrect": true },
-      { "label": "D", "text": "Pentagonal bipyramidal", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Trigonal bipyramidal",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Square planar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Octahedral",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pentagonal bipyramidal",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Sulphur in SF6 has 6 bond pairs and no lone pair (steric number 6).\nStep 2: With 6 identical bond pairs and no lone pairs, the electron pairs arrange in a regular octahedral geometry with all bond angles equal to 90 degrees.\nStep 3: Conclude Option C is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "CHE_CHEBON_DIAG_0003.png", "altText": "Central S atom with 6 F atoms arranged at the vertices of an octahedron, 4 in a square plane and 1 each above and below, all S-F bond angles equal to 90 degrees", "targetRole": "stem" }
+      {
+        "fileName": "CHE_CHEBON_DIAG_0003.png",
+        "altText": "Central S atom with 6 F atoms arranged at the vertices of an octahedron, 4 in a square plane and 1 each above and below, all S-F bond angles equal to 90 degrees",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -855,10 +1483,26 @@
     "stemFormat": "plain",
     "stemText": "Hybridization is best defined as the process of:",
     "options": [
-      { "label": "A", "text": "Splitting one atomic orbital into two smaller orbitals", "isCorrect": false },
-      { "label": "B", "text": "Mixing of atomic orbitals of comparable energy on the same atom to form new, equivalent hybrid orbitals", "isCorrect": true },
-      { "label": "C", "text": "Combining orbitals of two different atoms into a single molecular orbital", "isCorrect": false },
-      { "label": "D", "text": "Removing electrons from an atomic orbital", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Splitting one atomic orbital into two smaller orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mixing of atomic orbitals of comparable energy on the same atom to form new, equivalent hybrid orbitals",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Combining orbitals of two different atoms into a single molecular orbital",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Removing electrons from an atomic orbital",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Hybridization is the intermixing of atomic orbitals of nearly the same energy, belonging to the same atom.\nStep 2: This mixing produces a new set of equivalent hybrid orbitals, suitable for bond formation, with definite geometry.\nStep 3: Conclude Option B is correct.",
@@ -877,10 +1521,26 @@
     "stemFormat": "plain",
     "stemText": "The carbon atom in methane (CH4) undergoes which type of hybridization?",
     "options": [
-      { "label": "A", "text": "sp", "isCorrect": false },
-      { "label": "B", "text": "sp2", "isCorrect": false },
-      { "label": "C", "text": "sp3", "isCorrect": true },
-      { "label": "D", "text": "sp3d", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "sp",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sp3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "sp3d",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Carbon in CH4 forms 4 sigma bonds with hydrogen and has no lone pairs (steric number 4).\nStep 2: A steric number of 4 corresponds to sp3 hybridization, giving a tetrahedral arrangement.\nStep 3: Conclude Option C is correct.",
@@ -899,10 +1559,26 @@
     "stemFormat": "plain",
     "stemText": "The boron atom in BF3 and the carbon atoms in ethylene (C2H4) both undergo which type of hybridization?",
     "options": [
-      { "label": "A", "text": "sp3d2", "isCorrect": false },
-      { "label": "B", "text": "sp3", "isCorrect": false },
-      { "label": "C", "text": "sp2", "isCorrect": true },
-      { "label": "D", "text": "sp", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "sp3d2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sp2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "sp",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In BF3, boron has 3 bond pairs and no lone pair (steric number 3); in ethylene, each carbon forms 3 sigma bonds (2 to H, 1 to C) with no lone pair.\nStep 2: A steric number of 3 corresponds to sp2 hybridization, giving a trigonal planar arrangement with one unhybridized p-orbital left for pi-bonding in ethylene's case.\nStep 3: Conclude Option C is correct.",
@@ -921,10 +1597,26 @@
     "stemFormat": "plain",
     "stemText": "The beryllium atom in BeCl2 and the carbon atoms in acetylene (C2H2) both undergo which type of hybridization, resulting in a linear geometry?",
     "options": [
-      { "label": "A", "text": "sp3", "isCorrect": false },
-      { "label": "B", "text": "sp2", "isCorrect": false },
-      { "label": "C", "text": "sp3d", "isCorrect": false },
-      { "label": "D", "text": "sp", "isCorrect": true }
+      {
+        "label": "A",
+        "text": "sp3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sp3d",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp",
+        "isCorrect": true
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In BeCl2, beryllium has only 2 bond pairs and no lone pair (steric number 2); in acetylene, each carbon forms 2 sigma bonds (1 to H, 1 to C) with no lone pair.\nStep 2: A steric number of 2 corresponds to sp hybridization, giving a linear arrangement with 180 degree bond angle.\nStep 3: Conclude Option D is correct.",
@@ -943,10 +1635,26 @@
     "stemFormat": "plain",
     "stemText": "The phosphorus atom in PCl5 (steric number 5, trigonal bipyramidal shape) undergoes which type of hybridization?",
     "options": [
-      { "label": "A", "text": "sp3", "isCorrect": false },
-      { "label": "B", "text": "sp3d", "isCorrect": true },
-      { "label": "C", "text": "sp3d2", "isCorrect": false },
-      { "label": "D", "text": "sp2", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "sp3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp3d",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sp3d2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp2",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Phosphorus in PCl5 has steric number 5 (5 bond pairs, no lone pair).\nStep 2: A steric number of 5 requires mixing one s, three p, and one d orbital - sp3d hybridization - giving a trigonal bipyramidal geometry.\nStep 3: Conclude Option B is correct.",
@@ -965,10 +1673,26 @@
     "stemFormat": "plain",
     "stemText": "The sulphur atom in SF6 (steric number 6, octahedral shape) undergoes which type of hybridization?",
     "options": [
-      { "label": "A", "text": "sp3d", "isCorrect": false },
-      { "label": "B", "text": "sp3d3", "isCorrect": false },
-      { "label": "C", "text": "sp3d2", "isCorrect": true },
-      { "label": "D", "text": "sp3", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "sp3d",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp3d3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sp3d2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "sp3",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Sulphur in SF6 has steric number 6 (6 bond pairs, no lone pair).\nStep 2: A steric number of 6 requires mixing one s, three p, and two d orbitals - sp3d2 hybridization - giving an octahedral geometry.\nStep 3: Conclude Option C is correct.",
@@ -987,10 +1711,26 @@
     "stemFormat": "plain",
     "stemText": "The nitrogen atom in ammonia (NH3) has 3 bond pairs and 1 lone pair (steric number 4). What is its hybridization?",
     "options": [
-      { "label": "A", "text": "sp2", "isCorrect": false },
-      { "label": "B", "text": "sp3", "isCorrect": true },
-      { "label": "C", "text": "sp3d", "isCorrect": false },
-      { "label": "D", "text": "sp", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "sp2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sp3d",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The steric number for hybridization counts both bond pairs and lone pairs: 3 bond pairs + 1 lone pair = 4.\nStep 2: A steric number of 4 corresponds to sp3 hybridization, regardless of whether all four positions hold bond pairs or include lone pairs.\nStep 3: Conclude Option B is correct.",
@@ -1009,10 +1749,26 @@
     "stemFormat": "plain",
     "stemText": "As the s-character of a hybrid orbital increases (sp3 -> sp2 -> sp), the bond angle formed by that orbital:",
     "options": [
-      { "label": "A", "text": "Decreases", "isCorrect": false },
-      { "label": "B", "text": "Increases", "isCorrect": true },
-      { "label": "C", "text": "Remains exactly the same", "isCorrect": false },
-      { "label": "D", "text": "Becomes zero", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Decreases",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Increases",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Remains exactly the same",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Becomes zero",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: s-orbitals are spherical and closer to the nucleus, while p-orbitals are directional and farther apart.\nStep 2: As s-character increases in the hybrid orbital, the hybrid orbitals repel each other more, pushing the bond angle wider: 109.5 degrees (sp3) < 120 degrees (sp2) < 180 degrees (sp).\nStep 3: Conclude Option B is correct.",
@@ -1031,10 +1787,26 @@
     "stemFormat": "plain",
     "stemText": "The dipole moment (mu) of a polar molecule/bond is defined as the product of:",
     "options": [
-      { "label": "A", "text": "Charge (q) and distance (d) between the charge centres", "isCorrect": true },
-      { "label": "B", "text": "Mass and velocity", "isCorrect": false },
-      { "label": "C", "text": "Electronegativity and bond length", "isCorrect": false },
-      { "label": "D", "text": "Charge and time", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Charge (q) and distance (d) between the charge centres",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mass and velocity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Electronegativity and bond length",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Charge and time",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Dipole moment arises when there is a separation of positive and negative charge centres in a bond or molecule.\nStep 2: It is quantitatively defined as mu = q x d, where q is the magnitude of charge and d is the distance between the charge centres.\nStep 3: Conclude Option A is correct.",
@@ -1053,10 +1825,26 @@
     "stemFormat": "plain",
     "stemText": "By convention in chemistry, the dipole moment vector of a polar bond is represented as pointing from:",
     "options": [
-      { "label": "A", "text": "The negative charge centre to the positive charge centre", "isCorrect": false },
-      { "label": "B", "text": "The positive charge centre to the negative charge centre", "isCorrect": true },
-      { "label": "C", "text": "Always vertically upward regardless of charge", "isCorrect": false },
-      { "label": "D", "text": "The larger atom to the smaller atom, regardless of charge", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The negative charge centre to the positive charge centre",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The positive charge centre to the negative charge centre",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Always vertically upward regardless of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The larger atom to the smaller atom, regardless of charge",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A polar bond has a partial positive end and a partial negative end due to unequal sharing of the bonding electron pair.\nStep 2: By the standard chemistry convention, the dipole moment vector is represented as pointing from the positive charge centre towards the negative charge centre.\nStep 3: Conclude Option B is correct.",
@@ -1075,10 +1863,26 @@
     "stemFormat": "plain",
     "stemText": "Although carbon dioxide (CO2) contains two polar C=O bonds, its net molecular dipole moment is zero. This is because:",
     "options": [
-      { "label": "A", "text": "The C=O bonds are not actually polar", "isCorrect": false },
-      { "label": "B", "text": "CO2 is linear and symmetric, so the two equal bond dipoles point in opposite directions and cancel", "isCorrect": true },
-      { "label": "C", "text": "Carbon has no electronegativity", "isCorrect": false },
-      { "label": "D", "text": "Oxygen atoms have no lone pairs", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The C=O bonds are not actually polar",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CO2 is linear and symmetric, so the two equal bond dipoles point in opposite directions and cancel",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Carbon has no electronegativity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen atoms have no lone pairs",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Each C=O bond in CO2 is individually polar, since oxygen is more electronegative than carbon.\nStep 2: However, CO2 is a linear, symmetric molecule (O=C=O), so the two equal-magnitude bond dipoles point in exactly opposite directions and cancel vectorially.\nStep 3: Conclude Option B is correct.",
@@ -1097,10 +1901,26 @@
     "stemFormat": "plain",
     "stemText": "Ammonia (NH3, trigonal pyramidal) has a nonzero net dipole moment, while boron trifluoride (BF3, trigonal planar) has a net dipole moment of zero. This difference is mainly due to:",
     "options": [
-      { "label": "A", "text": "Nitrogen and boron have the same electronegativity", "isCorrect": false },
-      { "label": "B", "text": "NH3 has an asymmetric pyramidal shape (due to a lone pair) so bond dipoles do not cancel, while BF3's symmetric planar shape causes its bond dipoles to cancel", "isCorrect": true },
-      { "label": "C", "text": "BF3 has more bond pairs than NH3", "isCorrect": false },
-      { "label": "D", "text": "Fluorine is less electronegative than hydrogen", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Nitrogen and boron have the same electronegativity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NH3 has an asymmetric pyramidal shape (due to a lone pair) so bond dipoles do not cancel, while BF3's symmetric planar shape causes its bond dipoles to cancel",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "BF3 has more bond pairs than NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fluorine is less electronegative than hydrogen",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In NH3, the lone pair on nitrogen makes the molecular shape asymmetric (trigonal pyramidal), so the three N-H bond dipoles and the lone pair's contribution do not cancel, giving a net dipole moment.\nStep 2: In BF3, the symmetric trigonal planar shape (no lone pair, three identical B-F bonds at 120 degrees) causes the three bond dipoles to cancel exactly, giving zero net dipole moment.\nStep 3: Conclude Option B is correct.",
@@ -1119,10 +1939,26 @@
     "stemFormat": "plain",
     "stemText": "A diatomic molecule has charges of magnitude 1.6 x 10^-19 C separated by a distance of 1.0 x 10^-10 m. What is its dipole moment?",
     "options": [
-      { "label": "A", "text": "1.6 x 10^-29 C.m", "isCorrect": true },
-      { "label": "B", "text": "1.6 x 10^-9 C.m", "isCorrect": false },
-      { "label": "C", "text": "1.6 x 10^-30 C.m", "isCorrect": false },
-      { "label": "D", "text": "1.6 x 10^-19 C.m", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1.6 x 10^-29 C.m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.6 x 10^-9 C.m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.6 x 10^-30 C.m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.6 x 10^-19 C.m",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Dipole moment mu = q x d.\nStep 2: mu = (1.6 x 10^-19 C) x (1.0 x 10^-10 m) = 1.6 x 10^-29 C.m.\nStep 3: Conclude Option A is correct.",
@@ -1141,10 +1977,26 @@
     "stemFormat": "plain",
     "stemText": "The percentage ionic character of a covalent bond is related to its dipole moment and can be estimated by comparing the:",
     "options": [
-      { "label": "A", "text": "Observed dipole moment with the dipole moment calculated assuming 100% ionic character", "isCorrect": true },
-      { "label": "B", "text": "Bond length with the atomic radius", "isCorrect": false },
-      { "label": "C", "text": "Melting point with the boiling point", "isCorrect": false },
-      { "label": "D", "text": "Number of electrons with the number of protons", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Observed dipole moment with the dipole moment calculated assuming 100% ionic character",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bond length with the atomic radius",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Melting point with the boiling point",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Number of electrons with the number of protons",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: If a bond were 100% ionic, its theoretical dipole moment (mu_ionic = e x d) can be calculated from the electronic charge and bond length.\nStep 2: The percentage ionic character is estimated as (observed dipole moment / theoretical 100% ionic dipole moment) x 100.\nStep 3: Conclude Option A is correct.",
@@ -1163,10 +2015,26 @@
     "stemFormat": "plain",
     "stemText": "Among the hydrogen halides HF, HCl, HBr, and HI, the dipole moment generally decreases in the order HF > HCl > HBr > HI, mainly because:",
     "options": [
-      { "label": "A", "text": "The electronegativity difference between hydrogen and the halogen decreases down the group", "isCorrect": true },
-      { "label": "B", "text": "The bond length decreases down the group", "isCorrect": false },
-      { "label": "C", "text": "Iodine is more electronegative than fluorine", "isCorrect": false },
-      { "label": "D", "text": "The molecular mass decreases down the group", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The electronegativity difference between hydrogen and the halogen decreases down the group",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The bond length decreases down the group",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Iodine is more electronegative than fluorine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The molecular mass decreases down the group",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Electronegativity of the halogen decreases down the group: F > Cl > Br > I.\nStep 2: Since dipole moment increases with greater electronegativity difference between the bonded atoms (for comparable bond lengths), the H-X dipole moment decreases as the electronegativity difference shrinks from HF to HI.\nStep 3: Conclude Option A is correct.",
@@ -1185,10 +2053,26 @@
     "stemFormat": "plain",
     "stemText": "According to Molecular Orbital Theory, when two atomic orbitals combine (LCAO), they form:",
     "options": [
-      { "label": "A", "text": "Only one bonding molecular orbital", "isCorrect": false },
-      { "label": "B", "text": "One bonding and one antibonding molecular orbital", "isCorrect": true },
-      { "label": "C", "text": "Two identical, non-interacting atomic orbitals", "isCorrect": false },
-      { "label": "D", "text": "A single hybrid atomic orbital", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Only one bonding molecular orbital",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "One bonding and one antibonding molecular orbital",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Two identical, non-interacting atomic orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A single hybrid atomic orbital",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In MOT, atomic orbitals combine using the Linear Combination of Atomic Orbitals (LCAO) method.\nStep 2: Constructive combination gives a lower-energy bonding molecular orbital, while destructive combination gives a higher-energy antibonding molecular orbital.\nStep 3: Conclude Option B is correct.",
@@ -1207,10 +2091,26 @@
     "stemFormat": "plain",
     "stemText": "The bond order of a diatomic molecule, according to Molecular Orbital Theory, is calculated using the formula:",
     "options": [
-      { "label": "A", "text": "Bond order = Nb + Na", "isCorrect": false },
-      { "label": "B", "text": "Bond order = (Nb - Na) / 2", "isCorrect": true },
-      { "label": "C", "text": "Bond order = Nb x Na", "isCorrect": false },
-      { "label": "D", "text": "Bond order = 2 / (Nb - Na)", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Bond order = Nb + Na",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = (Nb - Na) / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Bond order = Nb x Na",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 2 / (Nb - Na)",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Bond order reflects the net number of bonding electron pairs holding the two atoms together.\nStep 2: It is calculated as Bond order = (Nb - Na) / 2, where Nb is the number of electrons in bonding molecular orbitals and Na is the number in antibonding molecular orbitals.\nStep 3: Conclude Option B is correct.",
@@ -1229,10 +2129,26 @@
     "stemFormat": "plain",
     "stemText": "The nitrogen molecule (N2) has the molecular orbital electron configuration giving 10 bonding and 4 antibonding electrons. What is the bond order of N2?",
     "options": [
-      { "label": "A", "text": "1", "isCorrect": false },
-      { "label": "B", "text": "2", "isCorrect": false },
-      { "label": "C", "text": "3", "isCorrect": true },
-      { "label": "D", "text": "4", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Bond order = (Nb - Na) / 2 = (10 - 4) / 2.\nStep 2: Bond order = 6 / 2 = 3.\nStep 3: Conclude Option C is correct - this triple bond order matches N2's very high bond dissociation energy and short bond length.",
@@ -1251,10 +2167,26 @@
     "stemFormat": "plain",
     "stemText": "The oxygen molecule (O2) has the molecular orbital electron configuration giving 10 bonding and 6 antibonding electrons (with 2 unpaired electrons in the pi*2p orbitals). What is the bond order of O2?",
     "options": [
-      { "label": "A", "text": "1", "isCorrect": false },
-      { "label": "B", "text": "1.5", "isCorrect": false },
-      { "label": "C", "text": "2", "isCorrect": true },
-      { "label": "D", "text": "3", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Bond order = (Nb - Na) / 2 = (10 - 6) / 2.\nStep 2: Bond order = 4 / 2 = 2, consistent with the O=O double bond.\nStep 3: Conclude Option C is correct.",
@@ -1273,10 +2205,26 @@
     "stemFormat": "plain",
     "stemText": "Molecular Orbital Theory correctly predicts a property of O2 that Valence Bond Theory fails to explain. This property is:",
     "options": [
-      { "label": "A", "text": "Its colour", "isCorrect": false },
-      { "label": "B", "text": "Its paramagnetism, due to two unpaired electrons in the pi*2p antibonding orbitals", "isCorrect": true },
-      { "label": "C", "text": "Its boiling point", "isCorrect": false },
-      { "label": "D", "text": "Its molar mass", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Its colour",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Its paramagnetism, due to two unpaired electrons in the pi*2p antibonding orbitals",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Its boiling point",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Its molar mass",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Valence Bond Theory depicts O2 with all electrons paired (O=O), predicting it should be diamagnetic.\nStep 2: Experimentally, O2 is paramagnetic (attracted to a magnetic field). MOT correctly explains this because filling the two degenerate pi*2p antibonding orbitals places one electron in each (Hund's rule), leaving 2 unpaired electrons.\nStep 3: Conclude Option B is correct.",
@@ -1295,10 +2243,26 @@
     "stemFormat": "plain",
     "stemText": "A hypothetical He2 molecule would have the molecular orbital configuration giving 2 bonding and 2 antibonding electrons. What does this predict about He2?",
     "options": [
-      { "label": "A", "text": "Bond order = 2, a strong double bond", "isCorrect": false },
-      { "label": "B", "text": "Bond order = 1, a stable single bond", "isCorrect": false },
-      { "label": "C", "text": "Bond order = 0, He2 does not exist as a stable molecule", "isCorrect": true },
-      { "label": "D", "text": "Bond order = 0.5, a weak but stable bond", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Bond order = 2, a strong double bond",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond order = 1, a stable single bond",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bond order = 0, He2 does not exist as a stable molecule",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bond order = 0.5, a weak but stable bond",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Bond order = (Nb - Na) / 2 = (2 - 2) / 2 = 0.\nStep 2: A bond order of zero means there is no net bonding interaction, correctly predicting that He2 does not exist as a stable molecule (helium exists as a monoatomic gas).\nStep 3: Conclude Option C is correct.",
@@ -1317,10 +2281,26 @@
     "stemFormat": "plain",
     "stemText": "As the bond order between two atoms increases, the bond length and bond stability change as follows:",
     "options": [
-      { "label": "A", "text": "Bond length increases and bond stability decreases", "isCorrect": false },
-      { "label": "B", "text": "Bond length decreases and bond stability increases", "isCorrect": true },
-      { "label": "C", "text": "Both bond length and bond stability remain unchanged", "isCorrect": false },
-      { "label": "D", "text": "Bond length increases while bond stability also increases", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Bond length increases and bond stability decreases",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bond length decreases and bond stability increases",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Both bond length and bond stability remain unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bond length increases while bond stability also increases",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A higher bond order means more net bonding electron pairs holding the atoms together, pulling them closer.\nStep 2: This results in a shorter bond length and a stronger, more stable bond (higher bond dissociation energy).\nStep 3: Conclude Option B is correct.",
@@ -1339,10 +2319,26 @@
     "stemFormat": "plain",
     "stemText": "The light reactions of photosynthesis take place in which part of the chloroplast?",
     "options": [
-      { "label": "A", "text": "Stroma", "isCorrect": false },
-      { "label": "B", "text": "Outer membrane", "isCorrect": false },
-      { "label": "C", "text": "Thylakoid membrane", "isCorrect": true },
-      { "label": "D", "text": "Inner membrane space only", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Stroma",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Outer membrane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thylakoid membrane",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Inner membrane space only",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Chlorophyll and other pigments, along with the electron transport chain components, are embedded in the thylakoid membrane.\nStep 2: The light-dependent reactions - light absorption, water splitting, and electron transport - occur across this thylakoid membrane.\nStep 3: Conclude Option C is correct.",
@@ -1361,10 +2357,26 @@
     "stemFormat": "plain",
     "stemText": "Photosystem II (PS II) has its reaction centre chlorophyll a molecule with an absorption peak at:",
     "options": [
-      { "label": "A", "text": "P700", "isCorrect": false },
-      { "label": "B", "text": "P680", "isCorrect": true },
-      { "label": "C", "text": "P600", "isCorrect": false },
-      { "label": "D", "text": "P960", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "P700",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "P680",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "P600",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P960",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Each photosystem's reaction centre is named after the wavelength (in nm) at which its special chlorophyll a molecule best absorbs light.\nStep 2: Photosystem II's reaction centre chlorophyll a is called P680, absorbing maximally at 680 nm.\nStep 3: Conclude Option B is correct.",
@@ -1383,10 +2395,26 @@
     "stemFormat": "plain",
     "stemText": "In non-cyclic photophosphorylation, electrons flow through both Photosystem II and Photosystem I, and the products formed are:",
     "options": [
-      { "label": "A", "text": "ATP only", "isCorrect": false },
-      { "label": "B", "text": "NADPH only", "isCorrect": false },
-      { "label": "C", "text": "Both ATP and NADPH, along with O2", "isCorrect": true },
-      { "label": "D", "text": "Only glucose", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "ATP only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NADPH only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both ATP and NADPH, along with O2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Only glucose",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In non-cyclic photophosphorylation, electrons ejected from PS II travel through the electron transport chain to PS I, generating a proton gradient used for ATP synthesis.\nStep 2: Electrons finally reduce NADP+ to NADPH at the end of the chain, while water splitting at PS II releases O2 as a by-product.\nStep 3: Conclude Option C is correct.",
@@ -1405,10 +2433,26 @@
     "stemFormat": "plain",
     "stemText": "Cyclic photophosphorylation, involving only Photosystem I, produces:",
     "options": [
-      { "label": "A", "text": "ATP only, without NADPH or O2 release", "isCorrect": true },
-      { "label": "B", "text": "NADPH only", "isCorrect": false },
-      { "label": "C", "text": "Both ATP and NADPH equally", "isCorrect": false },
-      { "label": "D", "text": "O2 only", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "ATP only, without NADPH or O2 release",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NADPH only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both ATP and NADPH equally",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O2 only",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In cyclic photophosphorylation, the electron ejected from PS I returns back to the PS I complex itself via the electron transport chain, instead of reducing NADP+.\nStep 2: This cyclic electron flow generates a proton gradient used to synthesise ATP, but produces no NADPH and does not involve the water-splitting step, so no O2 is released.\nStep 3: Conclude Option A is correct.",
@@ -1427,10 +2471,26 @@
     "stemFormat": "plain",
     "stemText": "The splitting of water molecules (photolysis) during the light reaction, which releases O2, occurs on the ___ side of the thylakoid membrane and is associated with:",
     "options": [
-      { "label": "A", "text": "Outer (stromal) side; Photosystem I", "isCorrect": false },
-      { "label": "B", "text": "Inner (lumenal) side; Photosystem II", "isCorrect": true },
-      { "label": "C", "text": "Outer (stromal) side; ATP synthase only", "isCorrect": false },
-      { "label": "D", "text": "Inner (lumenal) side; Calvin cycle", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Outer (stromal) side; Photosystem I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Inner (lumenal) side; Photosystem II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Outer (stromal) side; ATP synthase only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Inner (lumenal) side; Calvin cycle",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Water splitting (photolysis) replenishes the electrons lost by the PS II reaction centre chlorophyll (P680) after it absorbs light.\nStep 2: This reaction occurs on the inner (lumenal) side of the thylakoid membrane, releasing O2, protons (H+), and electrons.\nStep 3: Conclude Option B is correct.",
@@ -1449,10 +2509,26 @@
     "stemFormat": "plain",
     "stemText": "The pigment system that mainly absorbs light and, along with accessory pigments, funnels the absorbed energy to the reaction centre chlorophyll a, is called the:",
     "options": [
-      { "label": "A", "text": "Calvin cycle enzyme complex", "isCorrect": false },
-      { "label": "B", "text": "Light-harvesting complex (antenna complex)", "isCorrect": true },
-      { "label": "C", "text": "Stroma lamellae", "isCorrect": false },
-      { "label": "D", "text": "Bundle sheath complex", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Calvin cycle enzyme complex",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Light-harvesting complex (antenna complex)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Stroma lamellae",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bundle sheath complex",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Each photosystem contains hundreds of pigment molecules (chlorophylls a, b, and carotenoids) organised as a light-harvesting (antenna) complex.\nStep 2: This complex absorbs light over a broad range of wavelengths and funnels the captured energy by resonance transfer to the single reaction centre chlorophyll a molecule.\nStep 3: Conclude Option B is correct.",
@@ -1471,10 +2547,26 @@
     "stemFormat": "plain",
     "stemText": "The chemiosmotic hypothesis explains ATP synthesis in chloroplasts as being driven by:",
     "options": [
-      { "label": "A", "text": "Direct transfer of a phosphate group from ADP to a protein", "isCorrect": false },
-      { "label": "B", "text": "A proton gradient (electrochemical gradient) built up across the thylakoid membrane", "isCorrect": true },
-      { "label": "C", "text": "Heat energy released during light absorption", "isCorrect": false },
-      { "label": "D", "text": "Direct reduction of glucose", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Direct transfer of a phosphate group from ADP to a protein",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A proton gradient (electrochemical gradient) built up across the thylakoid membrane",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Heat energy released during light absorption",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Direct reduction of glucose",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: According to the chemiosmotic hypothesis, electron transport during the light reactions pumps protons (H+) from the stroma into the thylakoid lumen.\nStep 2: This builds up a proton gradient across the thylakoid membrane, and the energy released as these protons flow back out through ATP synthase drives ATP synthesis.\nStep 3: Conclude Option B is correct.",
@@ -1493,10 +2585,26 @@
     "stemFormat": "plain",
     "stemText": "The proton (H+) concentration inside the thylakoid lumen, compared to the stroma, during active photosynthesis is:",
     "options": [
-      { "label": "A", "text": "Much lower than the stroma", "isCorrect": false },
-      { "label": "B", "text": "Exactly equal to the stroma", "isCorrect": false },
-      { "label": "C", "text": "Much higher than the stroma", "isCorrect": true },
-      { "label": "D", "text": "Zero", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Much lower than the stroma",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Exactly equal to the stroma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Much higher than the stroma",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Water splitting inside the lumen and proton pumping by the electron transport chain both add H+ ions to the thylakoid lumen.\nStep 2: This makes the lumen significantly more acidic (higher H+ concentration) than the surrounding stroma, creating the gradient that drives ATP synthesis.\nStep 3: Conclude Option C is correct.",
@@ -1515,10 +2623,26 @@
     "stemFormat": "plain",
     "stemText": "The enzyme complex that allows protons to flow back from the thylakoid lumen into the stroma, using the released energy to synthesise ATP, is called:",
     "options": [
-      { "label": "A", "text": "RuBisCO", "isCorrect": false },
-      { "label": "B", "text": "ATP synthase", "isCorrect": true },
-      { "label": "C", "text": "PEP carboxylase", "isCorrect": false },
-      { "label": "D", "text": "Photosystem I", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "RuBisCO",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ATP synthase",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "PEP carboxylase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Photosystem I",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: ATP synthase is a large membrane-bound enzyme complex embedded in the thylakoid membrane, consisting of a channel (CF0) and a headpiece (CF1).\nStep 2: Protons flow down their concentration gradient through the CF0 channel, and this flow provides the energy used by the CF1 headpiece to phosphorylate ADP into ATP.\nStep 3: Conclude Option B is correct.",
@@ -1537,10 +2661,26 @@
     "stemFormat": "plain",
     "stemText": "Apart from driving ATP synthesis, the breakdown of the proton gradient across a membrane, according to the chemiosmotic hypothesis, must occur in a system that is:",
     "options": [
-      { "label": "A", "text": "Completely open, with no membrane at all", "isCorrect": false },
-      { "label": "B", "text": "A closed, intact membrane system capable of maintaining a concentration gradient", "isCorrect": true },
-      { "label": "C", "text": "A system where protons freely diffuse without any barrier", "isCorrect": false },
-      { "label": "D", "text": "A system with no enzymes present", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Completely open, with no membrane at all",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A closed, intact membrane system capable of maintaining a concentration gradient",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A system where protons freely diffuse without any barrier",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A system with no enzymes present",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The chemiosmotic hypothesis fundamentally requires a membrane that separates two compartments so a concentration gradient of protons can be maintained.\nStep 2: This gradient can only build up and be usefully harnessed for ATP synthesis if the thylakoid membrane remains a closed, intact system controlling proton movement (mainly through ATP synthase).\nStep 3: Conclude Option B is correct.",
@@ -1559,10 +2699,26 @@
     "stemFormat": "plain",
     "stemText": "During the light reaction, the splitting of water inside the lumen, the pumping of protons by the electron transport chain, and the consumption of stromal H+ during NADPH formation together result in:",
     "options": [
-      { "label": "A", "text": "No change in proton distribution", "isCorrect": false },
-      { "label": "B", "text": "A steep proton gradient across the thylakoid membrane (high in lumen, low in stroma)", "isCorrect": true },
-      { "label": "C", "text": "Equal proton concentration on both sides", "isCorrect": false },
-      { "label": "D", "text": "A steep proton gradient with higher H+ in the stroma than the lumen", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "No change in proton distribution",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A steep proton gradient across the thylakoid membrane (high in lumen, low in stroma)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Equal proton concentration on both sides",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A steep proton gradient with higher H+ in the stroma than the lumen",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Water splitting and proton pumping both add H+ to the thylakoid lumen, while NADP+ reduction on the stromal side consumes H+ from the stroma.\nStep 2: All three processes act together to steepen the proton gradient, making the lumen strongly acidic relative to the stroma.\nStep 3: Conclude Option B is correct.",
@@ -1581,10 +2737,26 @@
     "stemFormat": "plain",
     "stemText": "The chemiosmotic hypothesis for ATP synthesis in chloroplasts was proposed by the scientist:",
     "options": [
-      { "label": "A", "text": "Peter Mitchell", "isCorrect": true },
-      { "label": "B", "text": "Melvin Calvin", "isCorrect": false },
-      { "label": "C", "text": "Robert Hill", "isCorrect": false },
-      { "label": "D", "text": "Robin Hill and C. P. Whittingham", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Peter Mitchell",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Melvin Calvin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Robert Hill",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Robin Hill and C. P. Whittingham",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The chemiosmotic hypothesis, explaining how a proton gradient across a membrane drives ATP synthesis, was proposed by Peter Mitchell.\nStep 2: This idea earned him the Nobel Prize and applies to ATP synthesis in both chloroplasts (photophosphorylation) and mitochondria (oxidative phosphorylation).\nStep 3: Conclude Option A is correct.",
@@ -1603,10 +2775,26 @@
     "stemFormat": "plain",
     "stemText": "In the Calvin (C3) cycle, the enzyme that catalyses the fixation of atmospheric CO2 onto RuBP (ribulose bisphosphate) is:",
     "options": [
-      { "label": "A", "text": "PEP carboxylase", "isCorrect": false },
-      { "label": "B", "text": "RuBisCO", "isCorrect": true },
-      { "label": "C", "text": "ATP synthase", "isCorrect": false },
-      { "label": "D", "text": "Hexokinase", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "PEP carboxylase",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "RuBisCO",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "ATP synthase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hexokinase",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The Calvin cycle's carboxylation step fixes atmospheric CO2 onto the 5-carbon acceptor molecule RuBP.\nStep 2: This reaction is catalysed by the enzyme RuBisCO, the most abundant enzyme in the world.\nStep 3: Conclude Option B is correct.",
@@ -1625,10 +2813,26 @@
     "stemFormat": "plain",
     "stemText": "The first stable product formed when CO2 combines with RuBP in the Calvin cycle is a 3-carbon compound called:",
     "options": [
-      { "label": "A", "text": "Glucose", "isCorrect": false },
-      { "label": "B", "text": "Oxaloacetic acid (OAA)", "isCorrect": false },
-      { "label": "C", "text": "3-phosphoglyceric acid (3-PGA)", "isCorrect": true },
-      { "label": "D", "text": "Pyruvate", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Glucose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Oxaloacetic acid (OAA)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3-phosphoglyceric acid (3-PGA)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pyruvate",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The unstable 6-carbon intermediate formed by RuBisCO's carboxylation of RuBP immediately splits into two molecules.\nStep 2: These two molecules are each 3-phosphoglyceric acid (3-PGA), a 3-carbon compound - this is why the cycle is called the C3 pathway.\nStep 3: Conclude Option C is correct.",
@@ -1647,10 +2851,26 @@
     "stemFormat": "plain",
     "stemText": "The three main phases of the Calvin cycle, in order, are:",
     "options": [
-      { "label": "A", "text": "Reduction, Regeneration, Carboxylation", "isCorrect": false },
-      { "label": "B", "text": "Carboxylation, Reduction, Regeneration of RuBP", "isCorrect": true },
-      { "label": "C", "text": "Regeneration, Carboxylation, Photolysis", "isCorrect": false },
-      { "label": "D", "text": "Carboxylation, Photolysis, Reduction", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Reduction, Regeneration, Carboxylation",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Carboxylation, Reduction, Regeneration of RuBP",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Regeneration, Carboxylation, Photolysis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carboxylation, Photolysis, Reduction",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The Calvin cycle begins with carboxylation, where CO2 is fixed onto RuBP by RuBisCO.\nStep 2: This is followed by reduction, where 3-PGA is reduced to glyceraldehyde-3-phosphate (G3P) using ATP and NADPH, and finally regeneration, where most of the G3P is used to regenerate RuBP so the cycle can continue.\nStep 3: Conclude Option B is correct.",
@@ -1669,10 +2889,26 @@
     "stemFormat": "plain",
     "stemText": "To synthesise one molecule of glucose via the Calvin cycle, the total number of CO2 molecules that must be fixed is:",
     "options": [
-      { "label": "A", "text": "1", "isCorrect": false },
-      { "label": "B", "text": "3", "isCorrect": false },
-      { "label": "C", "text": "6", "isCorrect": true },
-      { "label": "D", "text": "12", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "12",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Glucose is a 6-carbon sugar, and each turn of the Calvin cycle fixes only 1 carbon atom (from 1 CO2 molecule).\nStep 2: Therefore, 6 turns of the cycle, fixing 6 molecules of CO2, are required to generate enough carbon (via 2 net G3P molecules) to form one glucose molecule.\nStep 3: Conclude Option C is correct.",
@@ -1691,10 +2927,26 @@
     "stemFormat": "plain",
     "stemText": "During the reduction phase of the Calvin cycle, 3-PGA is converted to glyceraldehyde-3-phosphate (G3P) using:",
     "options": [
-      { "label": "A", "text": "ATP only", "isCorrect": false },
-      { "label": "B", "text": "NADPH only", "isCorrect": false },
-      { "label": "C", "text": "Both ATP and NADPH from the light reactions", "isCorrect": true },
-      { "label": "D", "text": "Oxygen and water", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "ATP only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NADPH only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both ATP and NADPH from the light reactions",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Oxygen and water",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The reduction of 3-PGA to G3P is an energy-requiring, two-step process.\nStep 2: It uses ATP to phosphorylate 3-PGA, and then NADPH to reduce the phosphorylated intermediate to G3P - both of these are products of the light reactions.\nStep 3: Conclude Option C is correct.",
@@ -1713,10 +2965,26 @@
     "stemFormat": "plain",
     "stemText": "Each turn of the Calvin cycle fixes one CO2 molecule and yields 2 molecules of G3P. Out of the 12 G3P molecules produced over 6 turns of the cycle, how many are used to regenerate RuBP, and how many are available as net gain?",
     "options": [
-      { "label": "A", "text": "6 used for regeneration, 6 as net gain", "isCorrect": false },
-      { "label": "B", "text": "10 used for regeneration, 2 as net gain", "isCorrect": true },
-      { "label": "C", "text": "2 used for regeneration, 10 as net gain", "isCorrect": false },
-      { "label": "D", "text": "All 12 used for regeneration, 0 net gain", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "6 used for regeneration, 6 as net gain",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 used for regeneration, 2 as net gain",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 used for regeneration, 10 as net gain",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All 12 used for regeneration, 0 net gain",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Six turns of the cycle fix 6 CO2 molecules and produce 12 G3P molecules (2 per turn).\nStep 2: Of these, 10 molecules (30 carbons) are used to regenerate the 6 molecules of RuBP consumed, so the cycle can continue.\nStep 3: The remaining 2 G3P molecules are the net gain, which combine to form 1 glucose molecule - conclude Option B is correct.",
@@ -1735,10 +3003,26 @@
     "stemFormat": "plain",
     "stemText": "In C4 plants, the primary CO2-fixing enzyme in the mesophyll cells is:",
     "options": [
-      { "label": "A", "text": "RuBisCO", "isCorrect": false },
-      { "label": "B", "text": "PEP carboxylase (PEPcase)", "isCorrect": true },
-      { "label": "C", "text": "ATP synthase", "isCorrect": false },
-      { "label": "D", "text": "Catalase", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "RuBisCO",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "PEP carboxylase (PEPcase)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "ATP synthase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Catalase",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In C4 plants, atmospheric CO2 is first fixed in the mesophyll cells by combining it with phosphoenolpyruvate (PEP), a 3-carbon compound.\nStep 2: This reaction is catalysed by PEP carboxylase (PEPcase), which has a much higher affinity for CO2 than RuBisCO and shows no oxygenase activity.\nStep 3: Conclude Option B is correct.",
@@ -1757,10 +3041,26 @@
     "stemFormat": "plain",
     "stemText": "The first stable product formed when CO2 is fixed by PEP carboxylase in C4 plants is the 4-carbon compound:",
     "options": [
-      { "label": "A", "text": "3-phosphoglyceric acid (3-PGA)", "isCorrect": false },
-      { "label": "B", "text": "Ribulose bisphosphate (RuBP)", "isCorrect": false },
-      { "label": "C", "text": "Oxaloacetic acid (OAA)", "isCorrect": true },
-      { "label": "D", "text": "Pyruvate", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "3-phosphoglyceric acid (3-PGA)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ribulose bisphosphate (RuBP)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Oxaloacetic acid (OAA)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pyruvate",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: PEP carboxylase combines CO2 with the 3-carbon PEP molecule.\nStep 2: This produces oxaloacetic acid (OAA), a 4-carbon compound - which is why this pathway is called the C4 pathway.\nStep 3: Conclude Option C is correct.",
@@ -1779,10 +3079,26 @@
     "stemFormat": "plain",
     "stemText": "In the C4 pathway, after OAA is converted to malic acid or aspartic acid in the mesophyll cells, this 4-carbon acid is transported to the bundle sheath cells, where it is decarboxylated to release CO2, which then enters:",
     "options": [
-      { "label": "A", "text": "The photorespiration pathway only", "isCorrect": false },
-      { "label": "B", "text": "The Calvin (C3) cycle, operating within the bundle sheath chloroplasts", "isCorrect": true },
-      { "label": "C", "text": "The nitrogen fixation pathway", "isCorrect": false },
-      { "label": "D", "text": "Back into the atmosphere directly", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The photorespiration pathway only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The Calvin (C3) cycle, operating within the bundle sheath chloroplasts",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The nitrogen fixation pathway",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Back into the atmosphere directly",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The 4-carbon acid transported into the bundle sheath cells is decarboxylated, releasing CO2 and regenerating pyruvate.\nStep 2: This released CO2 achieves a high local concentration around RuBisCO in the bundle sheath chloroplasts, where it enters the Calvin (C3) cycle to be fixed into carbohydrates.\nStep 3: Conclude Option B is correct.",
@@ -1801,10 +3117,26 @@
     "stemFormat": "plain",
     "stemText": "The C4 pathway is advantageous over the C3 pathway mainly because it:",
     "options": [
-      { "label": "A", "text": "Requires less sunlight overall", "isCorrect": false },
-      { "label": "B", "text": "Concentrates CO2 around RuBisCO in the bundle sheath, minimising photorespiration and improving efficiency in hot, dry conditions", "isCorrect": true },
-      { "label": "C", "text": "Does not require any enzymes", "isCorrect": false },
-      { "label": "D", "text": "Occurs only at night", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Requires less sunlight overall",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Concentrates CO2 around RuBisCO in the bundle sheath, minimising photorespiration and improving efficiency in hot, dry conditions",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Does not require any enzymes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Occurs only at night",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In C4 plants, PEP carboxylase efficiently captures even low CO2 concentrations in the mesophyll and delivers concentrated CO2 to RuBisCO in the bundle sheath.\nStep 2: This high local CO2 concentration around RuBisCO suppresses its oxygenase activity, minimising wasteful photorespiration and making C4 plants more efficient under hot, dry, high-light conditions where stomata are partly closed.\nStep 3: Conclude Option B is correct.",
@@ -1823,17 +3155,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the diagram of Kranz anatomy shown, the bundle sheath cells surrounding the vascular bundles in a C4 leaf are structurally specialised with:",
     "options": [
-      { "label": "A", "text": "Thin walls with abundant intercellular spaces and no chloroplasts", "isCorrect": false },
-      { "label": "B", "text": "Thick walls impervious to gaseous exchange, large chloroplasts, and no intercellular spaces", "isCorrect": true },
-      { "label": "C", "text": "No cell wall at all", "isCorrect": false },
-      { "label": "D", "text": "Chloroplasts identical in structure to the mesophyll chloroplasts", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Thin walls with abundant intercellular spaces and no chloroplasts",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thick walls impervious to gaseous exchange, large chloroplasts, and no intercellular spaces",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "No cell wall at all",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chloroplasts identical in structure to the mesophyll chloroplasts",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The bundle sheath cells in Kranz anatomy form a compact wreath-like layer around the vascular bundle, with thick walls that are impervious to gases and lack intercellular air spaces.\nStep 2: They contain numerous large chloroplasts (often agranal), which concentrate the CO2 released by decarboxylation right around RuBisCO, minimising its leakage and suppressing photorespiration.\nStep 3: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "BOT_PHOIN_DIAG_0001.png", "altText": "Transverse section of a C4 leaf showing mesophyll cells and a wreath (Kranz) of large bundle sheath cells with prominent chloroplasts encircling a central vascular bundle", "targetRole": "stem" }
+      {
+        "fileName": "BOT_PHOIN_DIAG_0001.png",
+        "altText": "Transverse section of a C4 leaf showing mesophyll cells and a wreath (Kranz) of large bundle sheath cells with prominent chloroplasts encircling a central vascular bundle",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -1847,17 +3199,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the diagram of the C4 pathway shown, tracing the flow of the carbon-fixing intermediate from the mesophyll cell to the bundle sheath cell, the correct sequence is:",
     "options": [
-      { "label": "A", "text": "RuBP -> 3-PGA -> glucose, all within the mesophyll cell", "isCorrect": false },
-      { "label": "B", "text": "CO2 + PEP -> OAA (mesophyll) -> malic/aspartic acid -> transported to bundle sheath -> decarboxylated to release CO2 for the Calvin cycle", "isCorrect": true },
-      { "label": "C", "text": "CO2 directly enters the bundle sheath without any mesophyll step", "isCorrect": false },
-      { "label": "D", "text": "OAA is directly used in the Calvin cycle without decarboxylation", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "RuBP -> 3-PGA -> glucose, all within the mesophyll cell",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CO2 + PEP -> OAA (mesophyll) -> malic/aspartic acid -> transported to bundle sheath -> decarboxylated to release CO2 for the Calvin cycle",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "CO2 directly enters the bundle sheath without any mesophyll step",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "OAA is directly used in the Calvin cycle without decarboxylation",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In the mesophyll cell, PEP carboxylase fixes CO2 onto PEP to form OAA, which is then converted to a transportable 4-carbon acid (malic or aspartic acid).\nStep 2: This 4-carbon acid diffuses through plasmodesmata into the bundle sheath cell, where it is decarboxylated to release CO2 for fixation by RuBisCO in the Calvin cycle.\nStep 3: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "BOT_PHOIN_DIAG_0002.png", "altText": "C4 pathway flowchart showing CO2 + PEP forming OAA in the mesophyll cell, conversion to malic/aspartic acid, transport via plasmodesmata to the bundle sheath cell, and decarboxylation releasing CO2 into the Calvin cycle", "targetRole": "stem" }
+      {
+        "fileName": "BOT_PHOIN_DIAG_0002.png",
+        "altText": "C4 pathway flowchart showing CO2 + PEP forming OAA in the mesophyll cell, conversion to malic/aspartic acid, transport via plasmodesmata to the bundle sheath cell, and decarboxylation releasing CO2 into the Calvin cycle",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -1871,10 +3243,26 @@
     "stemFormat": "plain",
     "stemText": "Photorespiration occurs when RuBisCO acts as an oxygenase instead of a carboxylase, using RuBP to combine with:",
     "options": [
-      { "label": "A", "text": "CO2, forming two molecules of 3-PGA", "isCorrect": false },
-      { "label": "B", "text": "O2, forming one molecule of 3-PGA and one molecule of phosphoglycolate", "isCorrect": true },
-      { "label": "C", "text": "Water, forming glucose directly", "isCorrect": false },
-      { "label": "D", "text": "Nitrogen, forming amino acids directly", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "CO2, forming two molecules of 3-PGA",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "O2, forming one molecule of 3-PGA and one molecule of phosphoglycolate",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Water, forming glucose directly",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen, forming amino acids directly",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: RuBisCO's active site can bind either CO2 (carboxylase activity, favoured in the Calvin cycle) or O2 (oxygenase activity).\nStep 2: When O2 binds, RuBP is split into one molecule of 3-PGA and one molecule of the 2-carbon compound phosphoglycolate, initiating the wasteful photorespiratory (C2) pathway.\nStep 3: Conclude Option B is correct.",
@@ -1893,10 +3281,26 @@
     "stemFormat": "plain",
     "stemText": "Unlike the Calvin cycle, the photorespiratory pathway:",
     "options": [
-      { "label": "A", "text": "Fixes CO2 and releases O2, generating net ATP", "isCorrect": false },
-      { "label": "B", "text": "Releases CO2 and consumes O2 and ATP, without producing any net gain in carbohydrate or ATP", "isCorrect": true },
-      { "label": "C", "text": "Occurs only in the roots", "isCorrect": false },
-      { "label": "D", "text": "Requires no enzymes at all", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Fixes CO2 and releases O2, generating net ATP",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Releases CO2 and consumes O2 and ATP, without producing any net gain in carbohydrate or ATP",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Occurs only in the roots",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Requires no enzymes at all",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The photorespiratory pathway operates across chloroplasts, peroxisomes, and mitochondria, ultimately releasing previously fixed CO2.\nStep 2: It consumes O2 and ATP without generating carbohydrate or net energy, making it wasteful for the plant.\nStep 3: Conclude Option B is correct.",
@@ -1915,10 +3319,26 @@
     "stemFormat": "plain",
     "stemText": "According to the Blackman's Law of Limiting Factors, the rate of photosynthesis at any moment is limited by:",
     "options": [
-      { "label": "A", "text": "The sum of all factors added together", "isCorrect": false },
-      { "label": "B", "text": "The factor that is nearest to its minimum value (the most limiting factor)", "isCorrect": true },
-      { "label": "C", "text": "Only the temperature, regardless of other factors", "isCorrect": false },
-      { "label": "D", "text": "Only the concentration of chlorophyll", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The sum of all factors added together",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The factor that is nearest to its minimum value (the most limiting factor)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Only the temperature, regardless of other factors",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Only the concentration of chlorophyll",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Blackman's Law states that when a physiological process depends on several separate factors, its rate is limited by the factor that is in shortest supply relative to its requirement.\nStep 2: This factor is called the limiting factor, and increasing any other factor beyond this point will not increase the rate.\nStep 3: Conclude Option B is correct.",
@@ -1937,10 +3357,26 @@
     "stemFormat": "plain",
     "stemText": "At very high light intensities, the rate of photosynthesis in most plants eventually plateaus (stops increasing) even though CO2 and temperature are adequate. This is because:",
     "options": [
-      { "label": "A", "text": "Chlorophyll is destroyed by excess light", "isCorrect": false },
-      { "label": "B", "text": "Some other factor, such as CO2 concentration or the capacity of the biochemical (dark) reactions, becomes limiting", "isCorrect": true },
-      { "label": "C", "text": "Water becomes unavailable at high light", "isCorrect": false },
-      { "label": "D", "text": "Photosynthesis cannot occur above a certain light intensity at all", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Chlorophyll is destroyed by excess light",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Some other factor, such as CO2 concentration or the capacity of the biochemical (dark) reactions, becomes limiting",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Water becomes unavailable at high light",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Photosynthesis cannot occur above a certain light intensity at all",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Beyond a certain light intensity, the light-dependent reactions can supply ATP and NADPH faster than the biochemical (Calvin cycle) reactions or available CO2 can use them.\nStep 2: At this point, CO2 concentration (or enzyme capacity) becomes the new limiting factor, so further increases in light intensity no longer raise the overall rate.\nStep 3: Conclude Option B is correct.",
@@ -1959,10 +3395,26 @@
     "stemFormat": "plain",
     "stemText": "Compared to C3 plants, C4 plants show much lower rates of photorespiration mainly because:",
     "options": [
-      { "label": "A", "text": "C4 plants lack RuBisCO entirely", "isCorrect": false },
-      { "label": "B", "text": "The Kranz anatomy concentrates CO2 around RuBisCO in the bundle sheath, suppressing its oxygenase activity", "isCorrect": true },
-      { "label": "C", "text": "C4 plants never carry out the Calvin cycle", "isCorrect": false },
-      { "label": "D", "text": "C4 plants close their stomata permanently", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "C4 plants lack RuBisCO entirely",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The Kranz anatomy concentrates CO2 around RuBisCO in the bundle sheath, suppressing its oxygenase activity",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "C4 plants never carry out the Calvin cycle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C4 plants close their stomata permanently",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: In C4 plants, RuBisCO is confined to the bundle sheath cells, where the C4 pathway maintains a high, concentrated supply of CO2 through decarboxylation of the 4-carbon acid.\nStep 2: This high local CO2 concentration favours RuBisCO's carboxylase activity and outcompetes O2 for its active site, suppressing the oxygenase (photorespiratory) reaction.\nStep 3: Conclude Option B is correct.",
@@ -1981,10 +3433,26 @@
     "stemFormat": "plain",
     "stemText": "Among the following, the factor that directly affects the rate of photosynthesis by controlling the diffusion of CO2 into the leaf through the stomata is:",
     "options": [
-      { "label": "A", "text": "Soil pH alone", "isCorrect": false },
-      { "label": "B", "text": "Water availability (which controls stomatal opening and closing)", "isCorrect": true },
-      { "label": "C", "text": "The colour of the flower", "isCorrect": false },
-      { "label": "D", "text": "The age of the seed", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Soil pH alone",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Water availability (which controls stomatal opening and closing)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The colour of the flower",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The age of the seed",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Stomata open and close mainly in response to guard cell turgor, which is strongly influenced by the plant's water status.\nStep 2: Under water stress, stomata close to reduce water loss, but this also restricts CO2 entry into the leaf, directly limiting the rate of photosynthesis.\nStep 3: Conclude Option B is correct.",
@@ -2003,10 +3471,26 @@
     "stemFormat": "plain",
     "stemText": "The volume of air inspired or expired during a single normal, quiet breath is called the:",
     "options": [
-      { "label": "A", "text": "Residual Volume (RV)", "isCorrect": false },
-      { "label": "B", "text": "Tidal Volume (TV)", "isCorrect": true },
-      { "label": "C", "text": "Vital Capacity (VC)", "isCorrect": false },
-      { "label": "D", "text": "Inspiratory Reserve Volume (IRV)", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Residual Volume (RV)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tidal Volume (TV)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Vital Capacity (VC)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Inspiratory Reserve Volume (IRV)",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: During normal, quiet breathing, only a small volume of air moves in and out of the lungs with each breath.\nStep 2: This volume is called the Tidal Volume (TV), which is approximately 500 mL in a healthy human adult at rest.\nStep 3: Conclude Option B is correct.",
@@ -2025,10 +3509,26 @@
     "stemFormat": "plain",
     "stemText": "The additional volume of air that can be forcibly inspired after a normal tidal inspiration is called the:",
     "options": [
-      { "label": "A", "text": "Expiratory Reserve Volume (ERV)", "isCorrect": false },
-      { "label": "B", "text": "Residual Volume (RV)", "isCorrect": false },
-      { "label": "C", "text": "Inspiratory Reserve Volume (IRV)", "isCorrect": true },
-      { "label": "D", "text": "Tidal Volume (TV)", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Expiratory Reserve Volume (ERV)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Residual Volume (RV)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Inspiratory Reserve Volume (IRV)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tidal Volume (TV)",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Beyond the normal tidal inspiration, the lungs can still take in extra air by a forceful, deep inspiration.\nStep 2: This extra volume, approximately 2500-3000 mL, is called the Inspiratory Reserve Volume (IRV).\nStep 3: Conclude Option C is correct.",
@@ -2047,10 +3547,26 @@
     "stemFormat": "plain",
     "stemText": "The volume of air that still remains in the lungs even after the most forceful expiration is called the:",
     "options": [
-      { "label": "A", "text": "Expiratory Reserve Volume (ERV)", "isCorrect": false },
-      { "label": "B", "text": "Tidal Volume (TV)", "isCorrect": false },
-      { "label": "C", "text": "Vital Capacity (VC)", "isCorrect": false },
-      { "label": "D", "text": "Residual Volume (RV)", "isCorrect": true }
+      {
+        "label": "A",
+        "text": "Expiratory Reserve Volume (ERV)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tidal Volume (TV)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vital Capacity (VC)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Residual Volume (RV)",
+        "isCorrect": true
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Even after the most forceful possible expiration, the lungs never completely empty of air.\nStep 2: The air that remains, approximately 1100-1200 mL, is called the Residual Volume (RV) - it prevents lung collapse.\nStep 3: Conclude Option D is correct.",
@@ -2069,10 +3585,26 @@
     "stemFormat": "plain",
     "stemText": "Vital Capacity (VC) is the maximum volume of air a person can breathe out after a forceful maximum inspiration. It is calculated as:",
     "options": [
-      { "label": "A", "text": "TV + RV", "isCorrect": false },
-      { "label": "B", "text": "ERV + RV", "isCorrect": false },
-      { "label": "C", "text": "TV + IRV + ERV", "isCorrect": true },
-      { "label": "D", "text": "IRV + RV only", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "TV + RV",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ERV + RV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "TV + IRV + ERV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "IRV + RV only",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Vital Capacity includes the tidal volume plus both reserve volumes that can be actively moved in and out.\nStep 2: VC = TV + IRV + ERV (Residual Volume is NOT included, since it can never be exhaled).\nStep 3: Conclude Option C is correct.",
@@ -2091,10 +3623,26 @@
     "stemFormat": "plain",
     "stemText": "If Tidal Volume (TV) = 500 mL, Inspiratory Reserve Volume (IRV) = 3000 mL, and Expiratory Reserve Volume (ERV) = 1100 mL, what is the Vital Capacity?",
     "options": [
-      { "label": "A", "text": "3500 mL", "isCorrect": false },
-      { "label": "B", "text": "4100 mL", "isCorrect": false },
-      { "label": "C", "text": "4600 mL", "isCorrect": true },
-      { "label": "D", "text": "1600 mL", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "3500 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4100 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4600 mL",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1600 mL",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Vital Capacity VC = TV + IRV + ERV.\nStep 2: VC = 500 + 3000 + 1100 = 4600 mL.\nStep 3: Conclude Option C is correct.",
@@ -2113,10 +3661,26 @@
     "stemFormat": "plain",
     "stemText": "Total Lung Capacity (TLC) - the total volume of air the lungs can accommodate - is calculated as:",
     "options": [
-      { "label": "A", "text": "Vital Capacity (VC) + Residual Volume (RV)", "isCorrect": true },
-      { "label": "B", "text": "Tidal Volume (TV) alone", "isCorrect": false },
-      { "label": "C", "text": "Inspiratory Reserve Volume (IRV) + Expiratory Reserve Volume (ERV) only", "isCorrect": false },
-      { "label": "D", "text": "Residual Volume (RV) alone", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Vital Capacity (VC) + Residual Volume (RV)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tidal Volume (TV) alone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Inspiratory Reserve Volume (IRV) + Expiratory Reserve Volume (ERV) only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Residual Volume (RV) alone",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Total Lung Capacity represents everything the lungs can hold - the air that can be actively exchanged plus the air that always remains.\nStep 2: TLC = VC + RV = (TV + IRV + ERV) + RV, typically about 5800 mL in an adult.\nStep 3: Conclude Option A is correct.",
@@ -2135,17 +3699,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the spirometer trace diagram shown, identify the labelled volume that represents the air remaining in the lungs after the deepest possible forced expiration, which cannot be directly measured by a simple spirometer.",
     "options": [
-      { "label": "A", "text": "Tidal Volume (TV)", "isCorrect": false },
-      { "label": "B", "text": "Inspiratory Reserve Volume (IRV)", "isCorrect": false },
-      { "label": "C", "text": "Residual Volume (RV)", "isCorrect": true },
-      { "label": "D", "text": "Expiratory Reserve Volume (ERV)", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Tidal Volume (TV)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Inspiratory Reserve Volume (IRV)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Residual Volume (RV)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Expiratory Reserve Volume (ERV)",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A spirometer can trace and measure TV, IRV, and ERV directly, since these volumes involve air actually moving in or out of the lungs.\nStep 2: The air left behind after the deepest possible expiration never leaves the lungs, so it cannot be traced by a simple spirometer - this is the Residual Volume (RV).\nStep 3: Conclude Option C is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "ZOO_BREAND_DIAG_0001.png", "altText": "Spirometer trace graph with volume (mL) on the y-axis and time on the x-axis, showing labelled segments for Tidal Volume, Inspiratory Reserve Volume, Expiratory Reserve Volume, and a dashed baseline segment below the ERV trough labelled 'X' representing Residual Volume", "targetRole": "stem" }
+      {
+        "fileName": "ZOO_BREAND_DIAG_0001.png",
+        "altText": "Spirometer trace graph with volume (mL) on the y-axis and time on the x-axis, showing labelled segments for Tidal Volume, Inspiratory Reserve Volume, Expiratory Reserve Volume, and a dashed baseline segment below the ERV trough labelled 'X' representing Residual Volume",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -2159,10 +3743,26 @@
     "stemFormat": "plain",
     "stemText": "Approximately what percentage of oxygen is transported in the blood bound to haemoglobin, with the remainder dissolved in plasma?",
     "options": [
-      { "label": "A", "text": "Approximately 3%", "isCorrect": false },
-      { "label": "B", "text": "Approximately 20%", "isCorrect": false },
-      { "label": "C", "text": "Approximately 97%", "isCorrect": true },
-      { "label": "D", "text": "Approximately 50%", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Approximately 3%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Approximately 20%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Approximately 97%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Approximately 50%",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Oxygen is poorly soluble in plasma, so only a small fraction (about 3%) is transported in the dissolved form.\nStep 2: The vast majority, about 97%, binds reversibly to the iron of haemoglobin in red blood cells, forming oxyhaemoglobin.\nStep 3: Conclude Option C is correct.",
@@ -2181,10 +3781,26 @@
     "stemFormat": "plain",
     "stemText": "The Oxygen-Haemoglobin Dissociation Curve, which plots percentage saturation of haemoglobin against partial pressure of oxygen (pO2), typically has which characteristic shape?",
     "options": [
-      { "label": "A", "text": "A straight line", "isCorrect": false },
-      { "label": "B", "text": "A sigmoid (S-shaped) curve", "isCorrect": true },
-      { "label": "C", "text": "A perfect circle", "isCorrect": false },
-      { "label": "D", "text": "A straight vertical line", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "A straight line",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A sigmoid (S-shaped) curve",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A perfect circle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A straight vertical line",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Haemoglobin's four subunits bind oxygen cooperatively - binding of the first O2 molecule makes it easier for the next to bind.\nStep 2: This cooperative binding produces a sigmoid (S-shaped) dissociation curve, rather than a simple linear relationship.\nStep 3: Conclude Option B is correct.",
@@ -2203,10 +3819,26 @@
     "stemFormat": "plain",
     "stemText": "At the alveoli, where pO2 is high, haemoglobin's affinity for oxygen is high, favouring oxygen binding. At the tissues, where pO2 is low, this affinity:",
     "options": [
-      { "label": "A", "text": "Also remains high, so oxygen never dissociates", "isCorrect": false },
-      { "label": "B", "text": "Decreases, favouring the release (dissociation) of oxygen to the tissues", "isCorrect": true },
-      { "label": "C", "text": "Becomes infinite", "isCorrect": false },
-      { "label": "D", "text": "Is completely unaffected by pO2", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Also remains high, so oxygen never dissociates",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decreases, favouring the release (dissociation) of oxygen to the tissues",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Becomes infinite",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Is completely unaffected by pO2",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The oxygen-haemoglobin dissociation curve shows that haemoglobin's affinity for O2 varies with pO2.\nStep 2: At the low pO2 found in respiring tissues, haemoglobin's affinity for oxygen decreases, causing it to readily release (dissociate) oxygen for use by the tissues.\nStep 3: Conclude Option B is correct.",
@@ -2225,10 +3857,26 @@
     "stemFormat": "plain",
     "stemText": "An increase in which of the following factors shifts the oxygen-haemoglobin dissociation curve to the right, promoting greater oxygen release to the tissues?",
     "options": [
-      { "label": "A", "text": "A decrease in pCO2 and temperature only", "isCorrect": false },
-      { "label": "B", "text": "An increase in pCO2, H+ concentration (lower pH), and temperature", "isCorrect": true },
-      { "label": "C", "text": "A decrease in H+ concentration only", "isCorrect": false },
-      { "label": "D", "text": "None of these factors affect the curve", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "A decrease in pCO2 and temperature only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "An increase in pCO2, H+ concentration (lower pH), and temperature",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A decrease in H+ concentration only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "None of these factors affect the curve",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Actively metabolising tissues produce more CO2, H+ (lowering pH), and heat.\nStep 2: An increase in pCO2, H+ concentration, and temperature all decrease haemoglobin's affinity for oxygen (the Bohr effect), shifting the dissociation curve to the right and promoting oxygen release exactly where it is needed most.\nStep 3: Conclude Option B is correct.",
@@ -2247,17 +3895,37 @@
     "stemFormat": "plain",
     "stemText": "Based on the oxygen-haemoglobin dissociation curve diagram shown, comparing Curve A (normal) and Curve B (shifted right relative to Curve A), Curve B most likely represents conditions of:",
     "options": [
-      { "label": "A", "text": "Lower temperature and lower pCO2 (resting conditions)", "isCorrect": false },
-      { "label": "B", "text": "Higher pCO2, higher H+ (lower pH), and higher temperature (as in exercising muscle)", "isCorrect": true },
-      { "label": "C", "text": "Complete absence of carbon dioxide", "isCorrect": false },
-      { "label": "D", "text": "A curve identical to Curve A, just relabelled", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Lower temperature and lower pCO2 (resting conditions)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Higher pCO2, higher H+ (lower pH), and higher temperature (as in exercising muscle)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Complete absence of carbon dioxide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A curve identical to Curve A, just relabelled",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: A rightward shift of the oxygen dissociation curve means that, at any given pO2, haemoglobin holds less oxygen (lower saturation).\nStep 2: This rightward shift (the Bohr effect) is caused by higher pCO2, higher H+ concentration (lower pH), and higher temperature - exactly the conditions found in actively exercising muscle tissue, which needs more oxygen released to it.\nStep 3: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [
-      { "fileName": "ZOO_BREAND_DIAG_0002.png", "altText": "Two sigmoid oxygen-haemoglobin dissociation curves on axes of % saturation (y) vs pO2 (x); Curve A is the normal reference curve, Curve B is shifted to the right of Curve A", "targetRole": "stem" }
+      {
+        "fileName": "ZOO_BREAND_DIAG_0002.png",
+        "altText": "Two sigmoid oxygen-haemoglobin dissociation curves on axes of % saturation (y) vs pO2 (x); Curve A is the normal reference curve, Curve B is shifted to the right of Curve A",
+        "targetRole": "stem"
+      }
     ],
     "translations": []
   },
@@ -2271,10 +3939,26 @@
     "stemFormat": "plain",
     "stemText": "One haemoglobin molecule contains four polypeptide (globin) chains, each associated with one haem group. Therefore, one fully saturated haemoglobin molecule can carry a maximum of how many O2 molecules?",
     "options": [
-      { "label": "A", "text": "1", "isCorrect": false },
-      { "label": "B", "text": "2", "isCorrect": false },
-      { "label": "C", "text": "4", "isCorrect": true },
-      { "label": "D", "text": "8", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "8",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Each of the four haem groups in a haemoglobin molecule can bind one molecule of O2 at its central iron (Fe2+) atom.\nStep 2: Since there are 4 haem groups per haemoglobin molecule, one fully saturated molecule carries a maximum of 4 O2 molecules.\nStep 3: Conclude Option C is correct.",
@@ -2293,10 +3977,26 @@
     "stemFormat": "plain",
     "stemText": "Carbon monoxide (CO) is dangerously toxic mainly because it:",
     "options": [
-      { "label": "A", "text": "Has no effect on haemoglobin at all", "isCorrect": false },
-      { "label": "B", "text": "Binds to haemoglobin with a much higher affinity than oxygen, blocking O2 transport", "isCorrect": true },
-      { "label": "C", "text": "Directly destroys the lungs' alveoli", "isCorrect": false },
-      { "label": "D", "text": "Increases the oxygen-carrying capacity of blood", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Has no effect on haemoglobin at all",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Binds to haemoglobin with a much higher affinity than oxygen, blocking O2 transport",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Directly destroys the lungs' alveoli",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Increases the oxygen-carrying capacity of blood",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Carbon monoxide binds to the same haem-iron site on haemoglobin as oxygen does.\nStep 2: Its affinity for haemoglobin is about 200 times greater than that of oxygen, so it displaces and blocks oxygen binding, severely reducing the blood's oxygen-carrying capacity even at low CO concentrations.\nStep 3: Conclude Option B is correct.",
@@ -2315,10 +4015,26 @@
     "stemFormat": "plain",
     "stemText": "The majority of CO2 produced by tissues is transported in the blood in which form?",
     "options": [
-      { "label": "A", "text": "As dissolved CO2 gas in plasma", "isCorrect": false },
-      { "label": "B", "text": "As bicarbonate ions (HCO3-)", "isCorrect": true },
-      { "label": "C", "text": "As carbaminohaemoglobin only", "isCorrect": false },
-      { "label": "D", "text": "As solid carbon particles", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "As dissolved CO2 gas in plasma",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "As bicarbonate ions (HCO3-)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "As carbaminohaemoglobin only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "As solid carbon particles",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: CO2 diffuses from tissues into blood and enters red blood cells, where the enzyme carbonic anhydrase rapidly converts it to carbonic acid, which dissociates into H+ and bicarbonate (HCO3-).\nStep 2: This bicarbonate form carries about 70% of the CO2, making it the majority transport form (compared to about 20-23% as carbaminohaemoglobin and about 7% dissolved in plasma).\nStep 3: Conclude Option B is correct.",
@@ -2337,10 +4053,26 @@
     "stemFormat": "plain",
     "stemText": "Approximately what percentage of CO2 is transported bound directly to haemoglobin, forming carbaminohaemoglobin?",
     "options": [
-      { "label": "A", "text": "Approximately 70%", "isCorrect": false },
-      { "label": "B", "text": "Approximately 20-23%", "isCorrect": true },
-      { "label": "C", "text": "Approximately 97%", "isCorrect": false },
-      { "label": "D", "text": "0%, CO2 never binds haemoglobin", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Approximately 70%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Approximately 20-23%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Approximately 97%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0%, CO2 never binds haemoglobin",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: CO2 can bind directly to the globin (protein) portion of haemoglobin, not the haem-iron site used by O2, forming carbaminohaemoglobin.\nStep 2: This form carries roughly 20-23% of the CO2 transported, the second-largest fraction after the bicarbonate form.\nStep 3: Conclude Option B is correct.",
@@ -2359,10 +4091,26 @@
     "stemFormat": "plain",
     "stemText": "The enzyme carbonic anhydrase, found abundantly inside red blood cells, catalyses which reaction essential for CO2 transport?",
     "options": [
-      { "label": "A", "text": "Glucose to pyruvate", "isCorrect": false },
-      { "label": "B", "text": "CO2 + H2O <-> H2CO3 (carbonic acid formation and its reverse)", "isCorrect": true },
-      { "label": "C", "text": "Oxygen to ozone", "isCorrect": false },
-      { "label": "D", "text": "Haemoglobin synthesis from amino acids", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Glucose to pyruvate",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CO2 + H2O <-> H2CO3 (carbonic acid formation and its reverse)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Oxygen to ozone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Haemoglobin synthesis from amino acids",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Carbonic anhydrase dramatically speeds up the otherwise slow reaction between CO2 and water.\nStep 2: It catalyses CO2 + H2O <-> H2CO3, and this carbonic acid then rapidly dissociates into H+ and HCO3-; the same enzyme also catalyses the reverse reaction in the lungs to release CO2 for exhalation.\nStep 3: Conclude Option B is correct.",
@@ -2381,10 +4129,26 @@
     "stemFormat": "plain",
     "stemText": "The 'chloride shift' (Hamburger phenomenon) refers to the movement of chloride ions into red blood cells from plasma, which occurs to:",
     "options": [
-      { "label": "A", "text": "Increase the pH of the red blood cell dramatically", "isCorrect": false },
-      { "label": "B", "text": "Maintain electrical neutrality as bicarbonate ions (HCO3-) diffuse out of the red blood cell into plasma", "isCorrect": true },
-      { "label": "C", "text": "Actively transport oxygen out of the cell", "isCorrect": false },
-      { "label": "D", "text": "Break down haemoglobin", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Increase the pH of the red blood cell dramatically",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Maintain electrical neutrality as bicarbonate ions (HCO3-) diffuse out of the red blood cell into plasma",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Actively transport oxygen out of the cell",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Break down haemoglobin",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: As bicarbonate (HCO3-) formed inside the red blood cell diffuses out into the plasma, this would leave the inside of the cell with a net positive charge if uncompensated.\nStep 2: To maintain electrical neutrality across the red blood cell membrane, chloride ions (Cl-) move from the plasma into the red blood cell - this exchange is called the chloride shift.\nStep 3: Conclude Option B is correct.",
@@ -2403,10 +4167,26 @@
     "stemFormat": "plain",
     "stemText": "At the alveoli, the reactions that formed bicarbonate and carbaminohaemoglobin in the tissues are reversed, releasing CO2 for exhalation. This reversal is favoured at the alveoli because:",
     "options": [
-      { "label": "A", "text": "pCO2 in the alveolar air is lower than in the blood arriving there, favouring diffusion of CO2 out of the blood", "isCorrect": true },
-      { "label": "B", "text": "pCO2 in the alveolar air is much higher than in the blood", "isCorrect": false },
-      { "label": "C", "text": "Temperature drops to freezing at the alveoli", "isCorrect": false },
-      { "label": "D", "text": "Carbonic anhydrase is absent in the lungs", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "pCO2 in the alveolar air is lower than in the blood arriving there, favouring diffusion of CO2 out of the blood",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pCO2 in the alveolar air is much higher than in the blood",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Temperature drops to freezing at the alveoli",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carbonic anhydrase is absent in the lungs",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The air in the alveoli (freshly ventilated) has a lower pCO2 than the deoxygenated blood arriving from the tissues via the pulmonary artery.\nStep 2: This pressure gradient favours the reactions running in reverse - bicarbonate and carbaminohaemoglobin release CO2, which then diffuses from the blood into the alveolar air to be exhaled.\nStep 3: Conclude Option A is correct.",
@@ -2425,10 +4205,26 @@
     "stemFormat": "plain",
     "stemText": "The small remaining fraction of CO2 (about 7%) that is not converted to bicarbonate or bound to haemoglobin is transported:",
     "options": [
-      { "label": "A", "text": "As dissolved CO2 gas directly in the plasma", "isCorrect": true },
-      { "label": "B", "text": "As solid crystals in the blood", "isCorrect": false },
-      { "label": "C", "text": "Bound permanently to red blood cell membranes", "isCorrect": false },
-      { "label": "D", "text": "It is simply lost and not transported at all", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "As dissolved CO2 gas directly in the plasma",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "As solid crystals in the blood",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bound permanently to red blood cell membranes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "It is simply lost and not transported at all",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Not all CO2 reacts chemically during transport.\nStep 2: A small fraction, about 7%, remains simply dissolved as CO2 gas directly in the blood plasma, and is carried this way to the lungs.\nStep 3: Conclude Option A is correct.",
@@ -2447,10 +4243,26 @@
     "stemFormat": "plain",
     "stemText": "Compared to oxyhaemoglobin, deoxygenated haemoglobin has a higher affinity for binding CO2 (to form carbaminohaemoglobin) and H+ ions. This property is known as the:",
     "options": [
-      { "label": "A", "text": "Bohr effect", "isCorrect": false },
-      { "label": "B", "text": "Haldane effect", "isCorrect": true },
-      { "label": "C", "text": "Chloride shift", "isCorrect": false },
-      { "label": "D", "text": "Kranz effect", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Bohr effect",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Haldane effect",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chloride shift",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kranz effect",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Deoxygenated haemoglobin more readily binds CO2 and H+ than oxygenated haemoglobin does.\nStep 2: This relationship is called the Haldane effect, and it promotes efficient CO2 pickup at the tissues.\nStep 3: Conclude Option B is correct.",
@@ -2469,10 +4281,26 @@
     "stemFormat": "plain",
     "stemText": "Compared to plasma, most of the bicarbonate (HCO3-) formed from CO2 inside red blood cells is ultimately found:",
     "options": [
-      { "label": "A", "text": "Diffused out into the plasma, where it is carried in the blood while chloride ions move in to replace it", "isCorrect": true },
-      { "label": "B", "text": "Permanently trapped inside the red blood cell", "isCorrect": false },
-      { "label": "C", "text": "Converted immediately back to CO2 inside the red blood cell", "isCorrect": false },
-      { "label": "D", "text": "Excreted directly through the skin", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Diffused out into the plasma, where it is carried in the blood while chloride ions move in to replace it",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Permanently trapped inside the red blood cell",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Converted immediately back to CO2 inside the red blood cell",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Excreted directly through the skin",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Bicarbonate is formed inside the red blood cell but is far more efficiently carried dissolved in the plasma.\nStep 2: Most of the HCO3- therefore diffuses out of the red blood cell into the plasma, with chloride ions (Cl-) moving in the opposite direction (the chloride shift) to maintain electrical neutrality.\nStep 3: Conclude Option A is correct.",
@@ -2491,10 +4319,26 @@
     "stemFormat": "plain",
     "stemText": "The primary rhythm centre controlling the basic rate and depth of breathing is located in which part of the brain?",
     "options": [
-      { "label": "A", "text": "Cerebrum", "isCorrect": false },
-      { "label": "B", "text": "Cerebellum", "isCorrect": false },
-      { "label": "C", "text": "Medulla oblongata", "isCorrect": true },
-      { "label": "D", "text": "Hypothalamus", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Cerebrum",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cerebellum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Medulla oblongata",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Hypothalamus",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The rhythm centre, which sets the basic rate and pattern of breathing, is located in the medulla oblongata (in the brain stem).\nStep 2: It sends rhythmic nerve signals to the respiratory muscles (diaphragm and intercostal muscles) to generate the breathing cycle.\nStep 3: Conclude Option C is correct.",
@@ -2513,10 +4357,26 @@
     "stemFormat": "plain",
     "stemText": "The pneumotaxic centre, located in the pons region of the brain, primarily functions to:",
     "options": [
-      { "label": "A", "text": "Directly control heartbeat rate", "isCorrect": false },
-      { "label": "B", "text": "Moderate and fine-tune the function of the medullary rhythm centre, helping regulate the rate and depth of respiration", "isCorrect": true },
-      { "label": "C", "text": "Produce red blood cells", "isCorrect": false },
-      { "label": "D", "text": "Store memories related to breathing", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Directly control heartbeat rate",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Moderate and fine-tune the function of the medullary rhythm centre, helping regulate the rate and depth of respiration",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Produce red blood cells",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Store memories related to breathing",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: The pneumotaxic centre in the pons sends signals that can moderate the activity of the medullary rhythm centre.\nStep 2: It helps fine-tune the rate and depth of breathing by influencing when inspiration is switched off, working alongside the medulla's basic rhythm.\nStep 3: Conclude Option B is correct.",
@@ -2535,10 +4395,26 @@
     "stemFormat": "plain",
     "stemText": "Chemosensitive areas near the rhythm centre in the medulla are most sensitive to changes in the concentration of which substance, making it the primary chemical stimulus for regulating respiration?",
     "options": [
-      { "label": "A", "text": "Oxygen (O2) directly, in almost all situations", "isCorrect": false },
-      { "label": "B", "text": "CO2 and hydrogen ion (H+) concentration", "isCorrect": true },
-      { "label": "C", "text": "Glucose concentration", "isCorrect": false },
-      { "label": "D", "text": "Sodium ion concentration only", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Oxygen (O2) directly, in almost all situations",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CO2 and hydrogen ion (H+) concentration",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Glucose concentration",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sodium ion concentration only",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Chemosensitive neurons near the medullary rhythm centre respond very sensitively to a rise in CO2 (and the resulting rise in H+/fall in pH) in the blood/cerebrospinal fluid.\nStep 2: A rise in CO2 and H+ concentration strongly stimulates the rhythm centre to increase the rate and depth of breathing, making CO2/H+ the primary regulator.\nStep 3: Conclude Option B is correct.",
@@ -2557,10 +4433,26 @@
     "stemFormat": "plain",
     "stemText": "Asthma is a respiratory disorder characterised by:",
     "options": [
-      { "label": "A", "text": "Permanent destruction of alveolar walls only", "isCorrect": false },
-      { "label": "B", "text": "Difficulty in breathing caused by inflammation and constriction (narrowing) of the bronchi and bronchioles", "isCorrect": true },
-      { "label": "C", "text": "Complete absence of alveoli from birth", "isCorrect": false },
-      { "label": "D", "text": "Excess production of haemoglobin", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Permanent destruction of alveolar walls only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Difficulty in breathing caused by inflammation and constriction (narrowing) of the bronchi and bronchioles",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Complete absence of alveoli from birth",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Excess production of haemoglobin",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Asthma is a condition in which the airways (bronchi and bronchioles) become inflamed and constrict, often in response to allergens, cold air, or irritants.\nStep 2: This narrowing increases airway resistance, causing difficulty in breathing, wheezing, and coughing.\nStep 3: Conclude Option B is correct.",
@@ -2579,10 +4471,26 @@
     "stemFormat": "plain",
     "stemText": "Emphysema is a chronic respiratory disorder in which:",
     "options": [
-      { "label": "A", "text": "The alveolar walls are destroyed, reducing the surface area available for gas exchange", "isCorrect": true },
-      { "label": "B", "text": "The trachea becomes permanently blocked by a bone", "isCorrect": false },
-      { "label": "C", "text": "The heart stops beating temporarily", "isCorrect": false },
-      { "label": "D", "text": "The bronchioles become wider than normal, improving gas exchange", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The alveolar walls are destroyed, reducing the surface area available for gas exchange",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The trachea becomes permanently blocked by a bone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The heart stops beating temporarily",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The bronchioles become wider than normal, improving gas exchange",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Emphysema, commonly caused by long-term smoking, involves the progressive destruction of the walls of the alveoli.\nStep 2: This destruction causes adjacent alveoli to merge into fewer, larger air spaces, drastically reducing the total surface area available for efficient gas exchange.\nStep 3: Conclude Option A is correct.",
@@ -2601,10 +4509,26 @@
     "stemFormat": "plain",
     "stemText": "Occupational respiratory disorders, such as silicosis in stone-grinding/mining workers, are typically caused by:",
     "options": [
-      { "label": "A", "text": "Long-term exposure and exposure to excess dust particles (like silica) at the workplace, causing chronic inflammation and fibrosis of the lungs", "isCorrect": true },
-      { "label": "B", "text": "A viral infection alone", "isCorrect": false },
-      { "label": "C", "text": "Sudden exposure to cold water", "isCorrect": false },
-      { "label": "D", "text": "Excess dietary sugar intake", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Long-term exposure and exposure to excess dust particles (like silica) at the workplace, causing chronic inflammation and fibrosis of the lungs",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A viral infection alone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sudden exposure to cold water",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Excess dietary sugar intake",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Occupational lung disorders arise when workers are chronically exposed to fine dust or fibrous particles (like silica in stone-grinding) in their work environment.\nStep 2: Long-term inhalation of these particles triggers chronic inflammation, leading to fibrosis (thickening/scarring) of lung tissue and reduced lung function.\nStep 3: Conclude Option A is correct.",
@@ -2623,10 +4547,26 @@
     "stemFormat": "plain",
     "stemText": "A person voluntarily holding their breath can only do so for a limited time before being forced to breathe again. This limit is mainly imposed by:",
     "options": [
-      { "label": "A", "text": "The rising CO2 (and H+) levels in the blood, which strongly stimulate the medullary rhythm centre to resume breathing", "isCorrect": true },
-      { "label": "B", "text": "A conscious decision made entirely by the cerebrum with no involuntary component", "isCorrect": false },
-      { "label": "C", "text": "Falling body temperature", "isCorrect": false },
-      { "label": "D", "text": "The stopping of the heartbeat", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "The rising CO2 (and H+) levels in the blood, which strongly stimulate the medullary rhythm centre to resume breathing",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A conscious decision made entirely by the cerebrum with no involuntary component",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Falling body temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The stopping of the heartbeat",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: While breath is held, CO2 continues to be produced by metabolism and accumulates in the blood, since it cannot be exhaled.\nStep 2: This rising CO2 (and the associated rise in H+) strongly stimulates the chemosensitive areas near the medullary rhythm centre, which overrides voluntary control and forces resumption of breathing.\nStep 3: Conclude Option A is correct.",
@@ -2645,10 +4585,26 @@
     "stemFormat": "plain",
     "stemText": "Hering-Breuer reflex, involving stretch receptors in the walls of the bronchi and bronchioles, primarily functions to:",
     "options": [
-      { "label": "A", "text": "Increase heart rate directly", "isCorrect": false },
-      { "label": "B", "text": "Prevent over-inflation of the lungs by inhibiting further inspiration when the lungs are already sufficiently stretched", "isCorrect": true },
-      { "label": "C", "text": "Produce more red blood cells", "isCorrect": false },
-      { "label": "D", "text": "Control digestion of food", "isCorrect": false }
+      {
+        "label": "A",
+        "text": "Increase heart rate directly",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Prevent over-inflation of the lungs by inhibiting further inspiration when the lungs are already sufficiently stretched",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Produce more red blood cells",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Control digestion of food",
+        "isCorrect": false
+      }
     ],
     "solution": {
       "explanationText": "Step 1: Stretch receptors in the walls of the bronchi and bronchioles are activated when the lungs are inflated beyond a certain point.\nStep 2: Signals from these receptors travel to the medulla and inhibit further inspiratory activity, preventing over-inflation of the lungs - this protective reflex is called the Hering-Breuer reflex.\nStep 3: Conclude Option B is correct.",

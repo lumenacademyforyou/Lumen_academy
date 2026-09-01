@@ -13,6 +13,7 @@
  */
 import { pool } from "../../../shared/pool.js";
 import { NotFoundError } from "../../../shared/errors.js";
+import { applyPermutation, isUsablePermutation, labelForPosition } from "./session-shuffle.js";
 import { resolveAssetUrl } from "../../../content/asset-resolver.js";
 import { deriveSessionModeFromTestCode } from "../definition/test-code.js";
 import type { AttemptModel } from "./attempt.model.js";
@@ -134,8 +135,10 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
     question_type: string | null;
     stem_text: string;
     stem_format: string;
+    option_order: unknown;
   }>(
     `select aq.question_id, aq.test_section_id, aq.sequence_no, aq.marks, aq.negative_marks,
+            aq.option_order,
             q.question_type, q.stem_text, q.stem_format
        from assess.attempt_question aq
        join content.question q on q.question_id = aq.question_id
@@ -226,6 +229,39 @@ export async function getAttemptEnvelope(attemptId: string, userId: string): Pro
       list.push({ url: resolveAssetUrl(row.storage_uri), altText: row.alt_text, optionId: row.option_id });
       imagesByQuestion.set(row.question_id, list);
     }
+  }
+
+  // session-shuffle-prompt.md — apply the per-session option permutation.
+  //
+  // LAST, deliberately. It runs after the Tamil translations (which are
+  // matched to options POSITIONALLY against display_order) and after the
+  // option images (keyed by optionId, so order-independent) have been
+  // attached, so permuting the option objects carries their translation with
+  // them instead of tearing the two apart.
+  //
+  // The permutation is READ, not recomputed: it was decided and stored on
+  // assess.attempt_question when the attempt started. That is what makes a
+  // re-render inside one session show the identical order — no flicker when
+  // the student scrolls back or the view remounts — without this read path
+  // ever writing anything.
+  //
+  // Attempts created before the permutation existed, and any stored value
+  // that no longer matches the question's option count, fall back to
+  // canonical order rather than to a guess. An unshuffled paper is correct;
+  // a paper shuffled by a permutation that does not belong to it is not.
+  for (const row of questionsRes.rows) {
+    const options = optionsByQuestion.get(row.question_id);
+    if (!options || options.length < 2) continue;
+    if (!isUsablePermutation(row.option_order, options.length)) continue;
+    const displayed = applyPermutation(options, row.option_order);
+    // Labels belong to display POSITIONS, not to options: the option
+    // canonically labelled D may print as B this session. optionId is
+    // untouched, and optionId is what the client posts back and what
+    // scoring compares — see session-shuffle.ts's header.
+    optionsByQuestion.set(
+      row.question_id,
+      displayed.map((option, position) => ({ ...option, optionLabel: labelForPosition(position) }))
+    );
   }
 
   const responsesRes = await pool.query<{

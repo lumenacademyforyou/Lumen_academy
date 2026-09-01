@@ -245,55 +245,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000006",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "3.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-17 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-3 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-11 M",
-        "isCorrect": true
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "3.0 × 10^-14 M",
-          "1.0 × 10^-17 M",
-          "1.0 × 10^-3 M",
-          "1.0 × 10^-11 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000007",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -441,55 +392,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000010",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-5 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-9 M",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "5.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-19 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-5 M",
-          "1.0 × 10^-9 M",
-          "5.0 × 10^-14 M",
-          "1.0 × 10^-19 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000011",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -534,55 +436,6 @@
           "-5.74 kJ",
           "5.74 kJ",
           "-2.87 kJ"
-        ]
-      }
-    ]
-  },
-  {
-    "questionUid": "LMN-CHEM-CHEM03-000012",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-11 M",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "3.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-17 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-3 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-11 M",
-          "3.0 × 10^-14 M",
-          "1.0 × 10^-17 M",
-          "1.0 × 10^-3 M"
         ]
       }
     ]
@@ -637,55 +490,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000014",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-5 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-19 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-9 M",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "5.0 × 10^-14 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-5 M",
-          "1.0 × 10^-19 M",
-          "1.0 × 10^-9 M",
-          "5.0 × 10^-14 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000015",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -735,55 +539,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000016",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 4. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "4.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-18 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-10 M",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-4 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 4 = 10.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(10) M = 1.0 × 10^-10 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-10 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 4 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "4.0 × 10^-14 M",
-          "1.0 × 10^-18 M",
-          "1.0 × 10^-10 M",
-          "1.0 × 10^-4 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000017",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -828,104 +583,6 @@
           "-22.98 kJ",
           "-11.49 kJ",
           "22.98 kJ"
-        ]
-      }
-    ]
-  },
-  {
-    "questionUid": "LMN-CHEM-CHEM03-000018",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 4. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-18 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-10 M",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-4 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "4.0 × 10^-14 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 4 = 10.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(10) M = 1.0 × 10^-10 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-10 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 4 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-18 M",
-          "1.0 × 10^-10 M",
-          "1.0 × 10^-4 M",
-          "4.0 × 10^-14 M"
-        ]
-      }
-    ]
-  },
-  {
-    "questionUid": "LMN-CHEM-CHEM03-000019",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Calculate the work done (w) when 3 mole(s) of an ideal gas expands isothermally and reversibly from 5.0 L to 50.0 L at 400 K. (R = 8.314 J K^-1 mol^-1)",
-    "options": [
-      {
-        "label": "A",
-        "text": "-11.49 kJ",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "22.98 kJ",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "-22.98 kJ",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "-45.95 kJ",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: State reversible isothermal work formula: w = -2.303 n R T log₁₀(V2 / V1).\nStep 2: Substitute n = 3, T = 400 K, V2/V1 = 10, so log₁₀(10) = 1.0.\nStep 3: w = -2.303 × 3 × 8.314 × 400 × 1.0 = -22977 J = -22.98 kJ.\nStep 4: Conclude that work done is -22.98 kJ.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "400 K மாறா வெப்பநிலையில் 3 மோல் நல்லியல்பு வாயுவானது 5.0 L இலிருந்து 50.0 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை (w) என்ன? (R = 8.314 J K^-1 mol^-1)",
-        "optionTexts": [
-          "-11.49 kJ",
-          "22.98 kJ",
-          "-22.98 kJ",
-          "-45.95 kJ"
         ]
       }
     ]
@@ -1029,55 +686,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000022",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-17 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-11 M",
-        "isCorrect": true
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-3 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "3.0 × 10^-14 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-17 M",
-          "1.0 × 10^-11 M",
-          "1.0 × 10^-3 M",
-          "3.0 × 10^-14 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000023",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -1122,55 +730,6 @@
           "-28.72 kJ",
           "57.44 kJ",
           "-114.88 kJ"
-        ]
-      }
-    ]
-  },
-  {
-    "questionUid": "LMN-CHEM-CHEM03-000024",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-17 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "3.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-11 M",
-        "isCorrect": true
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-3 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-17 M",
-          "3.0 × 10^-14 M",
-          "1.0 × 10^-11 M",
-          "1.0 × 10^-3 M"
         ]
       }
     ]
@@ -1225,55 +784,6 @@
     ]
   },
   {
-    "questionUid": "LMN-CHEM-CHEM03-000026",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 3. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-17 M",
-        "isCorrect": false
-      },
-      {
-        "label": "B",
-        "text": "3.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "1.0 × 10^-3 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-11 M",
-        "isCorrect": true
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 3 = 11.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(11) M = 1.0 × 10^-11 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-11 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 3 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-17 M",
-          "3.0 × 10^-14 M",
-          "1.0 × 10^-3 M",
-          "1.0 × 10^-11 M"
-        ]
-      }
-    ]
-  },
-  {
     "questionUid": "LMN-CHEM-CHEM03-000027",
     "examCode": "NEET",
     "subjectCode": "CHEM",
@@ -1318,55 +828,6 @@
           "-30.64 kJ",
           "-122.54 kJ",
           "61.27 kJ"
-        ]
-      }
-    ]
-  },
-  {
-    "questionUid": "LMN-CHEM-CHEM03-000028",
-    "examCode": "NEET",
-    "subjectCode": "CHEM",
-    "nodeTagCode": "chem_03",
-    "questionType": "single_choice",
-    "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "An aqueous solution at 298 K has a measured pH of 5. What is the hydroxide ion concentration [OH^-] in this solution? (Ionic product of water Kw = 1.0 × 10^-14)",
-    "options": [
-      {
-        "label": "A",
-        "text": "1.0 × 10^-9 M",
-        "isCorrect": true
-      },
-      {
-        "label": "B",
-        "text": "1.0 × 10^-19 M",
-        "isCorrect": false
-      },
-      {
-        "label": "C",
-        "text": "5.0 × 10^-14 M",
-        "isCorrect": false
-      },
-      {
-        "label": "D",
-        "text": "1.0 × 10^-5 M",
-        "isCorrect": false
-      }
-    ],
-    "solution": {
-      "explanationText": "Step 1: Use the relation pH + pOH = 14 at 298 K: pOH = 14 - pH = 14 - 5 = 9.\nStep 2: Calculate [OH^-] using [OH^-] = 10^(-pOH).\nStep 3: [OH^-] = 10^-(9) M = 1.0 × 10^-9 M.\nStep 4: Conclude that the hydroxide ion concentration is 1.0 × 10^-9 M.",
-      "solutionFormat": "plain"
-    },
-    "images": [],
-    "translations": [
-      {
-        "languageCode": "ta",
-        "stemText": "298 K இல் ஒரு நீர்க்கரைசலின் அளவிடப்பட்ட pH மதிப்பு 5 ஆகும். இக்கரைசலில் உள்ள ஹைட்ராக்சைடு அயனிச் செறிவு [OH^-] என்ன? (நீரின் அயனிப் பெருக்கம் Kw = 1.0 × 10^-14)",
-        "optionTexts": [
-          "1.0 × 10^-9 M",
-          "1.0 × 10^-19 M",
-          "5.0 × 10^-14 M",
-          "1.0 × 10^-5 M"
         ]
       }
     ]

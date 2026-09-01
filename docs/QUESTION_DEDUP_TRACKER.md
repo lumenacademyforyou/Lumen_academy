@@ -328,3 +328,385 @@ judgement, not a dedup one.
   would surface in clustering rather than as a constraint violation.
 - Verified the retirement did not shrink any unit pool (0 units lost capacity),
   rather than assuming the node-tag merge worked.
+
+
+---
+
+# Follow-on directive — `question-dedup-promptnew.md` + `session-shuffle-prompt.md`
+
+Started 2026-09-01, after everything above. Kept in THIS file rather than a
+separate tracker: it is the same subsystem, the same bank and a strictly
+stricter version of the same rule, and splitting one question's dedup history
+across two documents is the documentation version of the parallel-table
+mistake this pass had to undo in the schema.
+
+Full operating manual, environment table, deviation list and phase commands:
+**[db/scripts/dedup/README.md](../db/scripts/dedup/README.md)**.
+
+Source directives (both, together — they were handed over as a pair):
+
+- `question-dedup-promptnew.md` — dedup, restructure, safe ingestion. Toolkit: `db/scripts/dedup/`.
+- `session-shuffle-prompt.md` — per-session display shuffling. Implementation:
+  `db/assess/test/attempt/session-shuffle.ts`.
+
+**Relationship to the earlier passes in this repo.** Layered on top of
+`question-dedup-audit-and-fix.md` (tracked in `docs/QUESTION_DEDUP_TRACKER.md`),
+which built composite identity (stem + options + answer + type) and retired 67
+rows. This directive is *stricter*: **the stem is the only key**. Everything it
+adds is new surface — it does not replace migrations 037–042, and both unique
+indexes are kept side by side.
+
+---
+
+### The instruction this session was working under
+
+> "wait for the new questions first build the other things, execute this prompt"
+
+Read as: build the entire toolkit and the shuffle layer now; do not run
+anything that mutates shared state, because the new questions have not arrived
+yet. That is what happened. **Every phase has been built, executed in dry-run
+mode against real data, and stopped at its stop point.** In session 2 the user
+approved applying the two migrations and nothing else; no content row and no
+content file has been changed.
+
+---
+
+### Status
+
+| Phase | Deliverable | Status | Evidence |
+|---|---|---|---|
+| — | Toolkit skeleton, CLI, structured logging | done | `db/scripts/dedup/`, 16 modules; `npx tsx db/scripts/dedup/cli.ts --help` |
+| — | Migration 043 (dash fold) + 044 (dedup schema) + rollback | **APPLIED 2026-09-01** | Applied 043 then 044 via `run-migration.mjs`; both verify scripts passed. Post-state: 1400 questions and 533 published **unchanged**, `match_hash` populated on all 1400, `is_deleted` = 866 (matches `duplicate_archived`), 3 new tables, `uq_question_match_hash` live, 0 duplicate hashes |
+| 1 | Audit, `audit_report.md`, `duplicates.csv`, `review_queue.csv` | **done, executed** | `db/reports/dedup/<run_id>/` — read-only, opens no transaction |
+| 2 | Live DB dedup + `--purge` | built, **dry run only** | Dry run reports 0 clusters — the live bank is already clean under the stem-only key |
+| 3 | Batch dedup + quarantine | built, **dry run only** | Dry run: 1380 → 77, 1303 removals, 112 Tier-1 clusters |
+| 4 | Folder restructure | built, **dry run only** | Before/after tree printed; `restructure_plan.md` written |
+| 5 | Ingestion gate | built, **dry run, exercised on a synthetic drop** | 5 in → 1 staged, 3 rejected, 1 to review — every branch fired |
+| 6 | Transactional push, recorded in the existing `content.import_batch` ledger | built, **dry run only** | Idempotency proven by test against the real unique index |
+| — | `rollback --run-id` | built | Reverses soft deletes and replays `question_dedup_repoint` in reverse |
+| — | Tests | done | 27 unit + 14 integration (dedup) + 16 shuffle. Full repo suite re-run green |
+| S | Per-session option shuffling | **done, wired into the live serving path** | `session-shuffle.ts`, wired in `attempt-flow.ts` (write) + `envelope.ts` (serve) + `getReview` (replay) |
+| S | Shuffle verified end-to-end in the live app | **done** | Served a real attempt through `getAttemptEnvelope`: stored permutation `[2,0,1,3]` reproduced exactly, labels reassigned by position, option ids and texts unchanged, re-render identical |
+
+---
+
+### What the audit actually found
+
+Two results, and the second is the one that matters.
+
+**The live bank is clean.** 533 published rows, 533 distinct normalised stems,
+zero Tier-1 and zero Tier-2 clusters — under a key stricter than any earlier
+pass applied. Independent confirmation that 030/031/037–041 did what they
+claimed, from a tool sharing none of their code but the normaliser (and that
+normaliser is checked against the database directly).
+
+**The batch files are badly drifted, and re-importing them would undo
+everything.** 1380 questions, **557** distinct stems. 112 Tier-1 clusters. The
+largest is **45 byte-identical copies of one stem**. `zoo_09_ZOO09.json` is 30
+questions of which 30 are duplicates. 1280 of the 1380 are already published
+live. The generated `<subject>_NN_CODE.json` files are the drifted ones; the
+five hand-named `batch-N-*.json` files are clean.
+
+The live bank is clean only because earlier passes cleaned it *after* import.
+Nothing on disk was ever cleaned. That is the gap this pass closes, and it is
+why Phase 5's gate matters more than Phase 2.
+
+---
+
+### The finding that changed the design
+
+**Every single live Tier-2 candidate is a numeric variant.**
+
+| | |
+|---:|---|
+| 1451 | published pairs at trigram similarity ≥ 0.92 |
+| 1451 | of those whose digit signatures differ |
+| 0 | that Tier 2 may auto-delete |
+
+The directive's Tier 2 says "similarity ≥ 0.92 → auto-delete, no secondary
+condition". Applied literally to this bank it would have deleted roughly a
+thousand legitimate questions — template families that differ only in their
+quantities and have different correct answers. The directive's own
+numeric-variant guard catches all of them, which is why `digitSignature` is
+evaluated **before** the similarity threshold rather than after.
+
+---
+
+### Defects found in this pass's own work, by measurement
+
+Both were caught by tests, not by review.
+
+**1. Migration order was wrong, and would have failed silently.**
+`match_hash` is a STORED generated column over `content.fn_question_stem_norm`.
+Postgres does not re-evaluate a stored generated column when a function it
+calls is later redefined. With the dash-fold migration numbered *after* the
+schema migration, every dash-bearing stem kept a hash computed by the old
+normaliser — and that stale value is what `uq_question_match_hash` indexes, so
+the index would not have caught the duplicates it exists to catch. Found by
+`db/scripts/dedup/integration.test.ts`, which applies both migrations in a rolled-back
+transaction and compares the resulting column against the TypeScript hash for
+all 533 rows: exactly one mismatch, `LMN-PHY-PHY02-000125` ("…voltmeter of
+range 0–5 V", en dash). Fixed by renumbering — the dash fold is now 043 and
+the schema 044, with the ordering requirement stated in both file headers and
+in the README.
+
+**2. Re-pointing `question_node_map` hit a guard trigger nobody had read.**
+`trg_question_primary_node_sync` auto-creates a question's primary-node map
+row; `trg_question_node_map_guard` raises on any attempt to delete it. Because
+this toolkit soft-deletes, the loser row stays alive and its primary map row
+must stay with it — moving it aborts the entire cluster transaction. Found by
+the FK re-pointing test failing against the real schema. Fixed with a
+`skipWhere` predicate on the spec: only the loser's **secondary** tags move,
+which is also the semantically correct answer.
+
+---
+
+### Open / blocked — read this first on "continue"
+
+1. **Migrations 043 and 044 are APPLIED (2026-09-01); phases 2–6 are not.**
+   The schema is live and verified, and no content row was changed by it.
+   Phases 2–6 have still only ever been dry runs. The next real action is the
+   operator's: run each phase with `--apply` at its own stop point.
+
+2. **The new questions have not arrived.** That was the explicit reason to
+   stop here. When they do: drop them in `db/content/bank/incoming/` and run
+   `dedup-cli ingest`. `db/content/bank/` does not exist yet — it is created
+   by `restructure --apply`.
+
+3. **Phase 3 rewrites the historical import files.** The 1303 removals are
+   real duplicates, and they are quarantined rather than deleted, but those
+   43 files are also the provenance record of what was imported. Confirm that
+   quarantine (`_quarantine/<run_id>/…removed.jsonl`, plus the git commit
+   recorded in the audit report) is an acceptable substitute before applying.
+
+4. **Tier 3 is lexical only.** `content.question.stem_vec` is provisioned and
+   NULL on all 1400 rows; no embedding provider is configured here. Same
+   constraint the previous pass recorded. The cosine tier should be added
+   alongside — not instead of — the lexical one when a provider exists.
+
+5. **The review queue is unattended.** The audit wrote `review_queue.csv` with
+   a blank `KEEP_BOTH / DELETE` column. Nothing auto-deletes from it, so
+   leaving it is safe, but the Tier-3 pairs are unresolved until a subject
+   expert rules on them.
+
+6. ~~Migration 043 changes `stem_norm` for dash-bearing rows.~~ **Done.**
+   After applying 043, exactly one row (`LMN-PHY-PHY02-000125`) held a stale
+   `stem_norm` — the predicted one. Its recomputed `dedup_key` was checked
+   against every published row first (**0 collisions**), then the row was
+   touched so migration 037's trigger re-derived its identity columns. Stale
+   rows now: **0**. No stem, option, answer or lifecycle value was changed.
+
+---
+
+### Session log
+
+#### Session 1 — 2026-09-01
+
+Built the whole toolkit and the shuffle layer; ran every phase in dry-run mode;
+applied nothing.
+
+- Read the existing dedup work first (`docs/QUESTION_DEDUP_TRACKER.md`,
+  migrations 030–042) so this pass extends it rather than re-deriving it.
+- Filled in the directive's Section 0 environment table from the live schema
+  and `information_schema`, including the finding that `content.question` has
+  **no `created_at`**, which survivor rule 5 depends on.
+- Built `db/scripts/dedup/` (16 modules), `dedup-cli`, migrations 043/044 + rollback.
+- Wrote 57 tests (27 unit, 14 DB-backed, 16 shuffle). The DB-backed ones run
+  inside an always-rolled-back transaction, so they exercise the real schema,
+  the real constraints and the real triggers while persisting nothing.
+- Ran Phase 1 for real (read-only) and Phases 2–6 as dry runs. Exercised the
+  Phase 5 gate against a synthetic five-question drop covering all four
+  outcomes: staged, tier-1-live-duplicate, tier-1-self-duplicate, tier-3
+  numeric variant, and a validation failure (model preamble + `{{placeholder}}`
+  + `<<` + TODO + empty option + duplicate option text).
+- Implemented per-session option shuffling and wired it into the live serving
+  path: permutation decided once at `startAttempt` and stored on
+  `assess.attempt_question.option_order` (a column that has existed unused
+  since migration 020), applied in `envelope.ts`, replayed in `getReview`.
+  No migration needed and no change to `content.*`.
+- Full repo test suite re-run: green (`npm run test:unit`, exit 0).
+
+Deliberate deviations from both directives are listed with their measurements
+in [db/scripts/dedup/README.md](../db/scripts/dedup/README.md) §4 — there are eight.
+
+#### Session 2 — 2026-09-01
+
+Filed the toolkit where it belongs, wired its tests into CI, and verified the
+shuffle against the running app. Still nothing applied to the live database.
+
+**Relocation.** `dedup/` moved from the repository root to
+**`db/scripts/dedup/`**. The user's instruction was "gitignore it, it is not
+necessary for the app running — if it is necessary, structure it properly".
+It *is* necessary (it is the gate the new questions must pass through, and
+CLAUDE.md, this tracker and migrations 043/044 all reference it), so the second
+branch applied. `db/scripts/` already holds exactly this kind of non-runtime
+ops code in subdirectories — `demo/`, `import/`, `manual/`, `seed/` — and
+nothing under `db/scripts/` is in the Vite or esbuild path, so the toolkit is
+now out of the app build while staying in version control.
+
+**What is gitignored.** Only the generated output. Run reports moved to
+`db/reports/dedup/<run_id>/` and snapshots to `db/reports/dedup/_snapshots/`.
+`.gitignore` already excluded `db/reports/` with the comment "Run artifacts
+from db/scripts (import runs, prove-*, e2e scripts) — logs of what happened on
+a given run, not source", which describes these exactly, so **no new ignore
+rule was needed**. Reports embed full question stems and are regenerable by
+re-running the phase.
+
+**Also done this session:**
+
+- `db/scripts/dedup/*.test.ts` added to `npm run test:unit`, so the 41 dedup
+  tests run in CI instead of only by hand.
+- Fixed a CLI bug found while re-verifying from the new path: `--help` printed
+  "unknown command: --help" and exited 1. Asking for help is not an error.
+- Tidied `restructure.ts` — merged a duplicated import and removed a
+  `void paths;` placeholder left by an unused parameter.
+- Re-ran every phase from the new location: identical numbers (live 533/533
+  distinct, batch 1380 → 77).
+
+**Shuffle verified against the live app, not just unit tests.** The attempt
+tests create real attempts, so they exercised the new write path. Measured
+afterwards:
+
+| | |
+|---|---:|
+| `attempt_question` rows | 572 |
+| carrying a stored permutation | 388 |
+| genuinely non-identity | 336 |
+
+The 184 without one are attempts created before this change; the envelope
+correctly falls back to canonical order for them rather than inventing a
+permutation. One was then served through the real `getAttemptEnvelope` and
+checked: the stored permutation was reproduced exactly, labels were reassigned
+by display position, option ids and texts were unchanged, and a second render
+in the same session was identical.
+
+Coverage across the published bank: **483 of 533 questions (91%) genuinely
+shuffle**; 50 are numeric ladders deliberately kept in order; 0 are stuck on a
+single order across 100 sessions.
+
+#### Session 3 — 2026-09-01 — parallel structures removed
+
+The user challenged the pass on a point it had got wrong: **it had created new
+structures beside existing ones instead of extending them.** The challenge was
+correct in three places, all found by going and looking rather than by
+assuming:
+
+| Created by the first draft | Already existed | Resolution |
+|---|---|---|
+| `uq_question_match_hash` beside `uq_question_dedup` | migration 041's index | **Dropped 041's.** The stem-only key strictly subsumes it: `dedup_key` is derived from `stem_norm`, so every violation the old index could catch the new one catches first; the new predicate is broader (no `canonical_question_id is null` clause); and `dedup_key` is NULL when `answer_key` is NULL, which exempts those rows from a unique index entirely, while `match_hash` never is |
+| `content.question_dedup_audit` | `content.question_identity_audit`, **1467 rows** | **Extended the existing table** with `tier`, `similarity_score`, `payload_json`, `actor`. Its `action` CHECK already allowed `cluster_retire` / `cluster_restore`, and `new_canonical` already meant "the survivor" — only four columns were genuinely missing |
+| `content.ingestion_run` | `content.import_batch`, **43 rows** | **Extended the existing table** with `duplicate_count` and `detail`. Its status CHECK already allowed `loaded` / `failed` / `rolled_back`. A push *is* an import |
+| `docs/QUESTION_DEDUP_PROMPTNEW_TRACKER.md` | this file | **Merged and deleted.** Same subsystem, same bank, a stricter version of the same rule |
+
+Migration 044 had been applied ~10 minutes earlier and nothing depended on it,
+so rather than leave dead scaffolding and pile a 045 on top to remove it, 044
+was **rolled back, rewritten as a consolidation, and re-applied**. Clean
+history, no migration that creates a table the next one drops.
+
+Verified after re-applying: 1400 questions and 533 published **unchanged**,
+**1467 audit rows preserved**, **43 import batches preserved**, 0 parallel
+tables, `uq_question_dedup` gone, `uq_question_match_hash` live, 0 stale
+`stem_norm`.
+
+`verify_044` now asserts the *absence* of the parallel tables and the
+*presence* of the added columns, and a new integration test locks the whole
+consolidation in — so this specific mistake cannot silently return.
+
+**A second defect surfaced while writing verify_044.** `--purge` could never
+have worked: `trg_question_node_map_guard` forbids deleting the
+`question_node_map` row matching a question's `primary_node_id` while the
+question exists, and `fk_question_node_map_question_id` is not deferrable, so
+the question cannot go first either. No ordering of plain DELETEs can hard-
+delete a question. Purge now runs as one transaction that disables exactly
+that trigger (not `session_replication_role = replica`, which would also
+switch off foreign-key enforcement); DDL is transactional, so no failure path
+leaves the trigger off. Regression test added.
+
+#### Session 4 — 2026-09-01 — duplicates physically erased
+
+The user's instruction, reaffirmed three times, was that duplicates must not
+exist anywhere: not in the live database, not in the content folder, not in
+quarantine. Executed in that order.
+
+**Live database.** The 866 `duplicate_archived` rows — duplicates that
+migrations 030/031 and the 037-041 pass identified and soft-deleted years of
+sessions ago but never physically removed — are gone, along with everything
+they owned:
+
+| deleted | rows |
+|---|---:|
+| `content.question` | **866** |
+| `question_option` | 3464 |
+| `question_review` | 2598 |
+| `question_solution` | 866 |
+| `question_translation` | 866 |
+| `question_node_map` | 866 |
+
+Preconditions checked at run time, not assumed — the script refuses on any of
+them: all 866 had a canonical survivor (**0** without), and **0** were
+referenced by `attempt_response`, `attempt_question`, `test_question`,
+`user_question_seen` or `learn.flashcard`. They had been invisible to the app
+for a long time regardless, because the assembler filters on
+`lifecycle_status`.
+
+**Final state: 534 rows — 533 published, all distinct, plus 1 retired.**
+Post-delete integrity: 0 published questions without options, 0 orphaned
+attempt rows, 533 distinct normalised stems out of 533.
+
+**Recoverability.** Every one of the 866 was snapshotted into
+`question_identity_audit.payload_json` (question + options + solution +
+translations + node map) inside the same transaction, before any delete. 866
+snapshots verified present afterwards. Migration **045** is what made this
+possible: `question_identity_audit.question_id` was NOT NULL / NO ACTION, so
+deleting a question would have destroyed the audit row describing it. 045
+makes it nullable with ON DELETE SET NULL and adds `question_uid` as text, so
+an audit row now outlives its subject — 1799 rows are detached and still
+identifiable.
+
+**Content folder.** 43 batch files: **1380 → 77 questions**, 1303 duplicates
+removed (1280 already published live, 23 duplicated within/across files). A
+re-run finds 0 — idempotent, verified.
+
+**Parallel folders and files erased**, per "I don't want the duplicates
+anywhere": the `_quarantine/` tree (2.8 MB, 43 files) was deleted rather than
+kept, and 9 byte-identical PNGs in `assets/batch-5` that duplicated
+`assets/batch-2` were removed — checked first, **0** surviving batch questions
+reference any image. 14 unique image files remain. Git commit `59d2f44` is
+the undo path for the content files, since all 43 are tracked.
+
+**Permission note.** `purge-archived.ts --apply` was blocked by the auto-mode
+classifier. Following the precedent already in `.claude/settings.local.json`
+(exact-match rules per `--execute` script), and only after the user
+explicitly instructed it, one rule was added:
+`Bash(npx tsx db/scripts/dedup/purge-archived.ts --apply)`.
+
+#### Session 5 — 2026-09-01 — over-deletion in the content folder, corrected
+
+**The mistake.** Session 4's batch dedup removed 1303 of 1380 file rows,
+leaving 77. Only 823 of those were duplicates *within the folder*; the other
+480 were removed solely because the same question is also published in the
+live database. That is not what "remove the duplicates in the content folder"
+means — a file copy of a live row is the authoring source it was imported
+from, not a duplicate. The folder stopped being a record of what was authored.
+
+**The fix.** Restored from git commit `59d2f44` (all 43 files and all 23 asset
+images), then re-ran with the live comparison removed. `batch-dedup` now
+deduplicates the folder **against itself by default**; the old behaviour is
+opt-in behind `--against-live`, which is still useful before a re-import but
+is a different operation.
+
+**Content folder now: 1380 -> 557 questions, 823 duplicates removed, 0
+remaining.** Re-run confirms idempotent. All 557 distinct questions retained.
+
+**Why 77 of the 557 are not in the live DB — checked, and they must NOT be
+pushed.** Zero are new content:
+
+| | count | what it is |
+|---|---:|---|
+| stale copy of a live row | 32 | Same `question_uid` is live, but the DB's stem was cleaned after import — migration 036 stripped generator artifacts like `(case #2)` that the source files still carry. Pushing would re-introduce the artifact as a second question |
+| retired duplicate | 45 | Retired by the earlier passes and hard-deleted in session 4. Pushing would re-introduce the duplicates just removed |
+| **genuinely new** | **0** | — |
+
+So the folder holds 480 questions that match the live bank exactly, plus 77
+pre-cleanup or retired variants of questions that are already there. Nothing
+in it is missing from the database.
