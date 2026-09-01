@@ -343,6 +343,42 @@ export async function startAttempt(testId: string, userId: string, idempotencyKe
            times_seen = assess.user_question_seen.times_seen + 1`,
         [userId, bulkQuestionIds]
       );
+
+      // question-dedup-audit-and-fix.md Layer 4: the usage write-back the
+      // audit found was entirely missing — usage_count was 0 on all 1400
+      // rows because nothing ever incremented it, so "prefer the least-used
+      // question" could not be expressed and cross-paper rotation had no
+      // history to work from.
+      //
+      // Deliberately written HERE, inside startAttempt's existing
+      // transaction, rather than after it: the directive requires the
+      // increment to share the paper's transaction so a generation that
+      // fails part-way cannot inflate counts. usage_count itself is bumped
+      // by migration 040's trigger on this insert, not by this statement —
+      // an importer or a manual session therefore cannot desynchronise it.
+      //
+      // canonical_id is resolved in SQL rather than threaded down from the
+      // assembler because this path is mode-agnostic: it serves both the
+      // BLUEPRINT picks and the FIXED assess.test_question rows, and only
+      // the former carry assembler metadata.
+      //
+      // cohort_id is best-effort. core.batch/core.batch_member are empty on
+      // this database, so it resolves to NULL today and cooldown falls back
+      // to the per-user assess.user_question_seen signal above, which is
+      // stricter. The per-cohort path activates by itself once batches exist.
+      await client.query(
+        `insert into content.question_usage (question_id, canonical_id, paper_id, user_id, cohort_id)
+         select q.question_id,
+                coalesce(q.canonical_question_id, q.question_id),
+                $1,
+                $2,
+                (select bm.batch_id from core.batch_member bm
+                  where bm.user_id = $2 and bm.left_on is null limit 1)
+           from content.question q
+          where q.question_id = any($3::uuid[])
+         on conflict (paper_id, question_id) do nothing`,
+        [attempt.attempt_id, userId, bulkQuestionIds]
+      );
     }
 
     if (hasRecycledItems) {

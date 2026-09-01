@@ -29,8 +29,30 @@ export interface WipeResult {
   authUserIds: string[];
 }
 
-export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = {}): Promise<WipeResult> {
-  const { userId } = opts;
+export async function wipeUserOwnedData(
+  pool: Pool,
+  opts: {
+    userId?: string;
+    /**
+     * Wipe EVERY user's owned data (unscoped, like a full wipe) but keep all
+     * core.app_user rows and their profiles. Added for
+     * db/scripts/prune-users.ts, which wipes all data but only removes some
+     * accounts.
+     *
+     * This is not the same as looping the single-user path over every user,
+     * and the difference is a real FK bug rather than a preference: a
+     * per-user call deletes that user's generated assess.test/test_section
+     * rows, but assess.section_score rows belonging to a DIFFERENT user's
+     * attempt on that same shared test still reference them, so the delete
+     * fails with fk_section_score_test_section_id (23503). Found live running
+     * exactly that loop. Running the deletes unscoped removes every
+     * section_score before any test_section, so the ordering already encoded
+     * in this function is correct again.
+     */
+    keepIdentities?: boolean;
+  } = {}
+): Promise<WipeResult> {
+  const { userId, keepIdentities = false } = opts;
   const client: PoolClient = await pool.connect();
   const counts: { [table: string]: number } = {};
 
@@ -52,7 +74,7 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     // row (see the core.* section below), so there's no Auth identity to
     // hand back to the caller for deletion.
     let authUserIds: string[] = [];
-    if (!userId) {
+    if (!userId && !keepIdentities) {
       const authRowsRes = await client.query<{ auth_user_id: string }>(`select auth_user_id from core.app_user`);
       authUserIds = authRowsRes.rows.map((r) => r.auth_user_id);
     }
@@ -142,6 +164,29 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     // 018_test_engine.sql) — deleting assess.attempt below removes them too;
     // not listed as separate `run()` calls since there's nothing left to
     // delete once the parent is gone.
+    // content.question_usage — added by migration 040 (Layer 4 of
+    // question-dedup-audit-and-fix.md), which is newer than this routine, so
+    // this routine did not know about it. It IS user-owned, attempt-derived
+    // data: one row per question per generated paper, keyed on the attempt.
+    // Found live by a wipe that left 2,460 usage rows pointing at attempts
+    // that no longer existed.
+    //
+    // Deleted BEFORE assess.attempt so paper_id still resolves while the
+    // scoped subquery runs. There is no FK from paper_id to assess.attempt,
+    // so nothing forces this ordering — hence the explicit note.
+    //
+    // Deleting these rows also fires content.trg_question_usage_count, which
+    // decrements content.question.usage_count back down. That is correct and
+    // is why usage_count is not reset separately: the counter is derived from
+    // these rows, so removing the history removes the count with it.
+    await run(
+      "content.question_usage",
+      userId
+        ? `delete from content.question_usage where user_id = $1 or paper_id in (select attempt_id from assess.attempt where user_id = $1)`
+        : `delete from content.question_usage`,
+      params
+    );
+
     await run("assess.attempt", `delete from assess.attempt ${scoped("user_id")}`, params);
     await run("assess.user_question_seen", `delete from assess.user_question_seen ${scoped("user_id")}`, params);
     await run("assess.idempotency_key", `delete from assess.idempotency_key ${scoped("user_id")}`, params);
@@ -182,7 +227,7 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     // keeps its own app_user row, so nothing is dangling), same
     // preserve-the-content/sever-the-attribution shape as the four
     // content.*/core.invitation columns below.
-    if (!userId) {
+    if (!userId && !keepIdentities) {
       await run("assess.test (created_by nulled)", `update assess.test set created_by = null where created_by is not null`);
     }
 
@@ -202,7 +247,7 @@ export async function wipeUserOwnedData(pool: Pool, opts: { userId?: string } = 
     // a duplicate "Welcome to Lumen Academy!" notification) on every single
     // demo login — churn the bug never asked for. Clearing this account's
     // *owned data* while keeping its identity stable is the actual ask.
-    if (!userId) {
+    if (!userId && !keepIdentities) {
       // Found live running a real full wipe: four more FKs into
       // core.app_user that this function didn't know about, on tables it
       // deliberately never deletes from (content.*/core.invitation are

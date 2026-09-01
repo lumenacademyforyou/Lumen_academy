@@ -102,22 +102,35 @@ export async function computeConfigHash(mode: string, lines: AvailabilityLine[],
 /** Published, family-deduped count for one line, with an optional filter dropped. */
 async function availableFor(
   line: AvailabilityLine,
+  userId: string,
   excludedIds: string[],
   excludedContentFps: Buffer[],
   excludedSkeletonFps: Buffer[],
+  excludedAnswerKeys: string[],
+  excludedCanonicalIds: string[],
   overrides: { ignoreDifficulty?: boolean; ignoreImage?: boolean; ignoreScope?: boolean },
   client: { query: typeof pool.query }
 ): Promise<number> {
+  // LINE_AVAILABLE_SQL now shares CANDIDATE_BODY with LINE_CANDIDATE_SQL, so
+  // it takes the identical 15 parameters. The seed is fixed ("availability")
+  // for the same reason the draw below fixes it: which questions come back
+  // does not matter to a count, only how many.
   const res = await client.query<{ available: string }>(LINE_AVAILABLE_SQL, [
     line.subjectId,
+    userId,
+    "availability",
     excludedIds,
     overrides.ignoreScope ? null : (line.syllabusNodeId ?? null),
     line.includeDescendants ?? true,
     overrides.ignoreDifficulty ? null : (line.difficultyBand ?? null),
     line.questionFormat ?? null,
+    line.pickCount,
     overrides.ignoreImage ? false : (line.hasImageOnly ?? false),
     excludedContentFps,
     excludedSkeletonFps,
+    excludedAnswerKeys,
+    excludedCanonicalIds,
+    null,
   ]);
   return Number(res.rows[0].available);
 }
@@ -129,24 +142,27 @@ async function availableFor(
  */
 async function diagnoseShortfall(
   line: AvailabilityLine,
+  userId: string,
   available: number,
   excludedIds: string[],
   excludedContentFps: Buffer[],
   excludedSkeletonFps: Buffer[],
+  excludedAnswerKeys: string[],
+  excludedCanonicalIds: string[],
   client: { query: typeof pool.query }
 ): Promise<ShortfallReason> {
   // Nothing published in this scope at all, with every optional filter off?
   // Then the unit itself is the problem, not the filters.
-  const bare = await availableFor(line, [], [], [], { ignoreDifficulty: true, ignoreImage: true }, client);
+  const bare = await availableFor(line, userId, [], [], [], [], [], { ignoreDifficulty: true, ignoreImage: true }, client);
   if (bare === 0) return "UNIT_NOT_PUBLISHED";
 
   if (line.hasImageOnly) {
-    const withoutImage = await availableFor(line, excludedIds, excludedContentFps, excludedSkeletonFps, { ignoreImage: true }, client);
+    const withoutImage = await availableFor(line, userId, excludedIds, excludedContentFps, excludedSkeletonFps, excludedAnswerKeys, excludedCanonicalIds, { ignoreImage: true }, client);
     if (withoutImage >= line.pickCount && withoutImage > available) return "NO_VALID_IMAGE";
   }
 
   if (line.difficultyBand) {
-    const withoutDifficulty = await availableFor(line, excludedIds, excludedContentFps, excludedSkeletonFps, { ignoreDifficulty: true }, client);
+    const withoutDifficulty = await availableFor(line, userId, excludedIds, excludedContentFps, excludedSkeletonFps, excludedAnswerKeys, excludedCanonicalIds, { ignoreDifficulty: true }, client);
     if (withoutDifficulty >= line.pickCount && withoutDifficulty > available) return "FILTERED_OUT_BY_DIFFICULTY";
   }
 
@@ -172,6 +188,12 @@ export async function checkAvailability(
   const excludedIds: string[] = [];
   const excludedContentFps: Buffer[] = [];
   const excludedSkeletonFps: Buffer[] = [];
+  // Layer 4: mirrors assembleForAttempt's own running exclusions. Without
+  // these two the count reported to the student would exceed what the
+  // assembler can actually deliver, which is the exact "the notification
+  // lies" failure this module exists to prevent.
+  const excludedAnswerKeys: string[] = [];
+  const excludedCanonicalIds: string[] = [];
   const byUnit: AvailabilityUnitRow[] = [];
   let totalAvailable = 0;
 
@@ -200,7 +222,13 @@ export async function checkAvailability(
     // ones. The seed is fixed here ("availability") because *which* questions
     // come back does not matter to a count; only how many, and that the same
     // ones are removed from later lines' pools.
-    const drawn = await client.query<{ question_id: string; content_fp: Buffer | null; skeleton_fp: Buffer | null }>(LINE_CANDIDATE_SQL, [
+    const drawn = await client.query<{
+      question_id: string;
+      content_fp: Buffer | null;
+      skeleton_fp: Buffer | null;
+      canonical_id: string;
+      answer_key: string | null;
+    }>(LINE_CANDIDATE_SQL, [
       line.subjectId,
       userId,
       "availability",
@@ -213,13 +241,19 @@ export async function checkAvailability(
       line.hasImageOnly ?? false,
       excludedContentFps,
       excludedSkeletonFps,
+      excludedAnswerKeys,
+      excludedCanonicalIds,
+      // Uncapped, matching assembleForAttempt's own default. If a caller ever
+      // passes a per-node cap to the assembler, it has to be passed here too
+      // or this count goes back to over-reporting.
+      null,
     ]);
 
     const got = drawn.rowCount ?? 0;
     totalAvailable += got;
 
     if (got < line.pickCount) {
-      const reason = await diagnoseShortfall(line, got, excludedIds, excludedContentFps, excludedSkeletonFps, client);
+      const reason = await diagnoseShortfall(line, userId, got, excludedIds, excludedContentFps, excludedSkeletonFps, excludedAnswerKeys, excludedCanonicalIds, client);
       byUnit.push({
         unitId: line.syllabusNodeId ?? null,
         unitName:
@@ -235,6 +269,8 @@ export async function checkAvailability(
       excludedIds.push(row.question_id);
       if (row.content_fp) excludedContentFps.push(row.content_fp);
       if (row.skeleton_fp) excludedSkeletonFps.push(row.skeleton_fp);
+      if (row.answer_key) excludedAnswerKeys.push(row.answer_key);
+      excludedCanonicalIds.push(row.canonical_id);
     }
   }
 
