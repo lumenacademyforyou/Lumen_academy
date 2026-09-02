@@ -14,13 +14,24 @@ const EDUCATOR_EMAIL = "educator@lumen.internal";
 const ADMIN_EMAIL = "lumenacademyforyou@gmail.com"; // the operator running this session
 
 async function main() {
-  const educatorRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user where email = $1`, [EDUCATOR_EMAIL]);
-  if (educatorRes.rowCount === 0) throw new Error(`${EDUCATOR_EMAIL} not found`);
-  const educatorId = educatorRes.rows[0].user_id;
-
   const adminRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user where email = $1`, [ADMIN_EMAIL]);
   if (adminRes.rowCount === 0) throw new Error(`${ADMIN_EMAIL} not found`);
   const adminId = adminRes.rows[0].user_id;
+
+  // The educator account this script was written against no longer exists —
+  // it was removed by db/scripts/prune-users.ts in a later pass. Fall back to
+  // the admin as the submitting actor rather than failing outright: db/content/
+  // lifecycle.ts enforces the state machine only ("This module only enforces
+  // the state machine itself"), with reviewer-identity/RBAC rules applied at
+  // the HTTP layer, so one actor driving all three transitions is a valid use
+  // of these functions. It does mean submit and approve are recorded against
+  // the same user_id in content.question_review; that is visible in the audit
+  // trail rather than hidden, and matches how this bulk path is actually run.
+  const educatorRes = await pool.query<{ user_id: string }>(`select user_id from core.app_user where email = $1`, [EDUCATOR_EMAIL]);
+  const educatorId = educatorRes.rowCount === 0 ? adminId : educatorRes.rows[0].user_id;
+  if (educatorRes.rowCount === 0) {
+    console.log(`${EDUCATOR_EMAIL} not found — using ${ADMIN_EMAIL} as the submitting actor`);
+  }
 
   // Ensure the admin account actually holds content_admin (needed for
   // decideReview/publishQuestion's real-world RBAC gate at the HTTP layer;

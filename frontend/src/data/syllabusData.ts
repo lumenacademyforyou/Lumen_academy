@@ -449,6 +449,21 @@ export const SYLLABUS_UNITS: SyllabusUnit[] = [
     overview: "Universal law of gravitation, planetary motion, mechanical properties of solids (stress/strain), and fluid dynamics (viscosity, surface tension).",
     highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapter 8, Part 2 - Chapters 9 & 10)",
   },
+  {
+    id: "phy_11",
+    subject: "physics",
+    subjectLabel: "Physics",
+    badgeColor: "bg-amber-100 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-500/40",
+    ncertClass: "Class 11",
+    unitName: "Units & Measurements",
+    weightageMarks: 16,
+    expectedQuestions: "4 Questions",
+    weightagePercent: 9,
+    subtopics: ["SI Units & Dimensional Analysis", "Significant Figures", "Errors in Measurement", "Vernier Callipers & Screw Gauge", "Vectors & Relative Motion"],
+    keyFormulas: ["ΔX/X = a(ΔA/A) + b(ΔB/B)", "L.C. = pitch / no. of circular divisions", "[h] = [M L² T⁻¹]", "|A + B| = sqrt(A² + B² + 2AB cosθ)"],
+    overview: "Base and derived SI units, dimensional homogeneity, propagation of measurement error, least-count instruments, and vector algebra applied to relative and projectile motion.",
+    highYieldNCERTChapter: "Class 11 Physics (Part 1 - Chapters 1 & 2)",
+  },
   // ADDED CHEMISTRY UNITS
   {
     id: "chem_07",

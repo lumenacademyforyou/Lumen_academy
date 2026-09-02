@@ -710,3 +710,245 @@ pushed.** Zero are new content:
 So the folder holds 480 questions that match the live bank exactly, plus 77
 pre-cleanup or retired variants of questions that are already there. Nothing
 in it is missing from the database.
+
+---
+
+## Session 6 — 2026-09-02 — full bank replacement from `new_content`
+
+**What changed.** The 534-row bank (533 published, 1 retired) was quarantined
+and deleted, and replaced wholesale by
+`db/content/content-batches/new_content` — 38 chapter files, 30 questions
+each, **1140 questions**. The user's reason for replacing rather than merging:
+the old bank's Tamil stems were not of usable quality. Every question in the
+new bank carries a complete Tamil translation (stem + all four option texts).
+
+This supersedes the "push the content folder" work in Sessions 4-5: the
+folder those sessions deduplicated is itself now quarantined, and the 77
+questions Session 5 found were "pre-cleanup or retired variants" are gone
+with it. Nothing from the old folder was pushed, then or now.
+
+### Verification of the incoming bank, before anything was deleted
+
+| Check | Result |
+|---|---|
+| Distinct normalised English stems | **1140 / 1140** |
+| Distinct normalised Tamil stems | **1140 / 1140** |
+| Tier-2 near-duplicates (trigram >= 0.92, identical digit signature) | **0** |
+| `QuestionAuthoringSchema` (schemas/question-authoring.schema.ts) | all 1140 pass |
+| Tamil translation present, non-empty, contains Tamil script, 4 option texts | all 1140 pass |
+| Exactly one correct option, unique labels, no empty option text | all 1140 pass |
+| Template artifacts (`{{}}`, `<<`, TODO, model preamble, `In <Chapter>,` lead-in) | 0 |
+
+The `In <Chapter>,` decorative lead-in that motivated this whole directive
+(67 rows in 30 groups, Session 1) does **not** appear in the new bank. Thirty
+stems open with `In <something>,` but every one is real scientific context —
+"In Young's double-slit experiment,", "In C4 plants (e.g., Maize and
+Sugarcane),", "In Williamson ether synthesis," — not a chapter noun standing
+in for one. Checked by hand, all thirty.
+
+### Four defects found in the incoming files, and fixed
+
+1. **7 of 10 Chemistry files were not valid JSON.** They carried Python
+   `True`/`False` literals in `isCorrect`, and four of them had the
+   generator's own Python script pasted after the closing `]`. Repaired in
+   place: the JSON array is extracted by brace-matching (string- and
+   escape-aware), then `True`/`False`/`None` are converted **only in value
+   position** after a colon, so the legitimate option text `"True
+   second-order reaction"` survives. Git commit `720fc95` is the undo path —
+   all 38 files were tracked and the tree was clean.
+
+2. **All 300 Chemistry questions used `subjectCode: "CHE"`.** The live code is
+   `CHEM`. `import-content.ts` compares the authored `subjectCode` against the
+   subject of the resolved node and rejects on mismatch, so all 300 would have
+   failed import. Corrected to `CHEM`, and the uid node segment with it
+   (`LMN-CHE-CHE07-000001` -> `LMN-CHEM-CHEM07-000001`, matching the live
+   convention verified against the pre-purge bank).
+
+3. **All 300 Physics questions were tagged to the wrong chapter.** The new
+   content numbers Physics chapters its own way; the live catalog numbers them
+   differently, and the two disagree on every single one — `Optics & Wave
+   Physics` was tagged `phy_09`, which is live `Work, Energy and Power`. This
+   is the dangerous one: `phy_01`-`phy_10` all *exist*, so `unmapped_node`
+   never fires and every Physics question would have imported silently into
+   the wrong chapter. Remapped by chapter **title**, not by number. The
+   taxonomy was left alone deliberately — `frontend/src/data/syllabusData.ts`,
+   `assess.test_blueprint` and `learn.unit_material` all key off it, so the
+   content moves and the taxonomy does not.
+
+4. **Chapter-set mismatch in Physics.** The new bank has a `Units &
+   Measurements` chapter with no live node; live `phy_09 Work, Energy and
+   Power` has no new file. Resolved on the user's instruction by **adding**
+   the node (migration 046, `phy_11`) rather than renumbering or repurposing
+   an existing one, plus the matching `SYLLABUS_UNITS` entry.
+   `phy_09` keeps its identity and currently has **0 published questions** —
+   see "Known gaps" below.
+
+### A detector bug this surfaced — migration 047
+
+`db/shared/questionArtifacts.ts` and its SQL mirror
+`content.fn_strip_question_artifacts` (migration 036) both document the rule
+"every artifact carries either the literal word `case` or a `#`". The
+bracketed branch did not enforce it — `(case[ \t]*)?#?` made **both** markers
+optional, so the pattern matched any bracketed bare number.
+
+That was invisible against the old bank, which contained no such text. Against
+the new one it matched **89 of 1140 questions**, and had they been stripped
+rather than rejected it would have deleted real content:
+
+```
+"Five Kingdom Classification (1969)"  -> "Five Kingdom Classification"
+"Schleiden (1838) and Schwann (1839)" -> "Schleiden and Schwann"
+"t = t / sqrt(2)"                     -> "t = t / sqrt"
+"sin^-1(0.6)"                         -> "sin^-1"
+```
+
+Fixed in both places (marker now required), migration `047`, with
+`db/verify/verify_047_artifact_marker_required.sql` asserting that all six
+documented artifact forms are still stripped and that years, `sqrt(n)`,
+`sin^-1(n)` and bracketed bare integers are now left byte-for-byte intact.
+`db/content/question-artifacts.test.ts` ("TS stripper and SQL
+fn_strip_question_artifacts agree") passes — 30/30 content tests green.
+
+After the fix, 2 of 1140 still tripped the detector, both legitimately
+ambiguous and both in solution text: `(the #1 major cause)` and `Case 1:` /
+`Case 2:` used as step labels. These are exactly the shapes the guard exists
+to catch. Rather than weaken the guard for 2 rows, the two solutions were
+reworded (`the single largest cause`, `Case A:` / `Case B:`). Detector now
+reports **0 / 1140**.
+
+### Quarantine
+
+`db/content/_quarantine/pre-new-content-2026-09-02/` — written **before** any
+delete, verified afterwards (25 data files, every row count matching
+`manifest.json`, plus 81 quarantined batch files):
+
+| | rows |
+|---|---:|
+| questions | 534 |
+| options / solutions / translations | 2136 / 534 / 414 |
+| node_maps / reviews | 592 / 1543 |
+| assets | 14 |
+| attempts + attempt_questions + responses + events + pauses | 217 / 1468 / 24 / 445 / 14 |
+| scorecards / section_scores | 189 / 200 |
+| tests / sections / questions / blueprints | 128 / 148 / 179 / 136 |
+| user_question_seen / usage | 1109 / 1468 |
+
+The superseded on-disk folders (`Botany/`, `Chemistry/`, `Physics/`,
+`Zoology/`, `Multi-Subject/`, the old `_quarantine/`) were moved into
+`content-batches/` under the same quarantine directory. `content-batches/`
+now holds only `assets/` and `new_content/`.
+
+**Attempt history was deleted with the bank, deliberately.** It FK-references
+the rows being removed and cannot outlive them. It was safe to drop: all 217
+attempts share a single seeded `started_at` of `2026-08-31T18:30:00Z` across
+10 of 17 users, and the test rows they hang off are the QA artifacts of the
+earlier passes (`F3 cross-line dedup test`, `A10 seed-determinism regression
+test`, the I-17 fixed paper). No organic student activity was present. All of
+it is in the quarantine snapshot regardless.
+
+**Two schema obstacles hit during the purge, both real invariants:**
+
+- `content.trg_question_node_map_guard` (migration 010) refuses to delete the
+  `question_node_map` row mirroring a question's `primary_node_id`, and
+  `primary_node_id` is `NOT NULL` so it cannot be cleared first. Disabled for
+  the duration of the transaction only — DDL is transactional in Postgres, so
+  the first rollback restored it along with the data — and re-enabled in the
+  same transaction. Confirmed `tgenabled = 'O'` afterwards.
+- `content.asset` carries `ck_asset_owner`
+  (`num_nonnulls(question_id, document_id, group_id) >= 1`), so a
+  question-owned asset cannot be orphaned by nulling `question_id`. Checked
+  first that all 14 were **exclusively** question-owned (none also carried a
+  `document_id` or `group_id`), then deleted them.
+
+`content.import_row.question_id` and
+`content.question_identity_audit.question_id` are `ON DELETE SET NULL`, so the
+import trail and the identity audit (2333 rows) survived the questions they
+describe — which is what migration 045 was added for.
+
+### Result — live bank after the replacement
+
+| | |
+|---|---:|
+| published questions | **1140** |
+| distinct `dedup_key` (the DB's own identity function) | **1140** |
+| distinct normalised stems | **1140** |
+| Tamil translations (stem + 4 option texts) | **1140** |
+| chapters, each with exactly 30 | 38 of 39 |
+| questions carrying an image | 0 |
+| `canonical_question_id` (archived duplicates) | 0 |
+
+Import: 38 files, 38 committed batches, **1140 accepted / 0 rejected**.
+Publish: **1140 / 1140**, 0 failed, through the real `submitForReview ->
+decideReview -> publishQuestion` state machine.
+
+Per subject: BOT 270 (9 chapters), CHEM 300 (10), PHY 300 (10 populated of 11),
+ZOO 270 (9).
+
+### Test modes, proven end to end against the new bank
+
+Each ran the real `createPracticeTest -> startAttempt -> getAttemptEnvelope`
+chain the session controller drives, and every served question was checked for
+a non-empty Tamil stem:
+
+| Mode | Result |
+|---|---|
+| subject-wise (PHY, 30) | 30 served, 30 distinct, 30/30 Tamil |
+| full-mock (4 x 45) | 180 served across 4 sections, 180 distinct, 180/180 Tamil |
+| custom / unit-mock (`phy_11`, 30) | 30 served, 30 distinct, 30/30 Tamil |
+| chapter with an empty pool (`phy_09`) | clean `PoolInsufficientError` naming the real available count (0), no partial paper |
+| image-practice | 0 image-bearing questions -> the controller's existing 409 `NO_IMAGE_QUESTIONS_AVAILABLE` |
+
+`assembler-verify --unit=1 --subjects=all` also reports 30 pool rows / 30
+distinct content / buildable / 0 deficit / 0 self-overlap / 0 recycled for all
+four subjects.
+
+### Two tests updated — both fixture assumptions the replacement invalidated
+
+Full suite: **191 tests, 189 passing** before these fixes, both failures caused
+by the intended content change rather than by a regression. Both now pass
+(191/191), and neither was skipped:
+
+1. `db/assess/test/attempt/recycled-items.test.ts` pinned its fixture unit at
+   exactly 2 published questions (`docs/POOL_CENSUS.md`, post-migration-031).
+   Every unit now holds 30. The mechanism it proves — request a unit's entire
+   pool twice, so the second draw is fully recycled — holds at any pool size,
+   so the count is now read live and drives `pickCount` and all four
+   assertions. Its own failure message asked for exactly this ("update this
+   test's assumptions rather than skipping it").
+
+2. `db/assess/test/generation/image-only-blueprint.test.ts` required the live
+   bank to contain image-bearing questions and threw when it did not. That is
+   a content fact, not a code fact. It now **builds its own fixture** — three
+   `content.asset` rows, which the `028_has_image_computed.sql` trigger turns
+   into `has_image = true` — and deletes them in `finally`, where the same
+   trigger reverts it. Verified afterwards: 0 assets, 0 `has_image`, 1140
+   published, unchanged.
+
+### Known gaps — content, not wiring
+
+- **`phy_09` "Work, Energy and Power" has 0 questions.** The new bank ships no
+  file for it. Chapter tests on it surface the existing "not enough questions"
+  path (`PoolInsufficientError` -> `POOL_INSUFFICIENT`, which `CoursesView`
+  already renders as a message). It needs 30 authored questions.
+- **No image questions anywhere in the bank.** Image-practice mode returns its
+  409 by design. The mode is wired and tested; it has nothing to serve.
+- **`phy_11` has no `learn.unit_material` rows** — study materials are Drive
+  files managed outside this repo.
+- **Nine chapters have 0 `hard` questions** (bot_03, bot_06, bot_07, bot_08,
+  chem_04, chem_06, chem_07, chem_08, chem_10). A blueprint line requesting
+  `hard` from those will report an honest shortfall rather than silently widen.
+- **Every chapter holds exactly 30 and unit tests request 30**, so a second
+  attempt at the same chapter recycles by construction. The assembler discloses
+  this (`hasRecycledItems` / `recycledItemCount` / `assess.unit_recycle_log`)
+  rather than hiding it, but more questions per chapter is the only real fix.
+
+### Left behind, needing a decision
+
+Running the integration suite created **33 attempts, 20 tests and 269
+`assess.user_question_seen` rows** (all timestamped 2026-09-02 13:48-14:01 —
+the suite's own residue, no organic activity). The `user_question_seen` rows
+make the assembler treat those questions as already-seen for the handful of
+accounts the tests borrow. Clearing them was blocked by the auto-mode
+classifier, and the blanket `reset-user-data.ts` was not used because it also
+deletes all 17 user accounts, which nobody asked for. Left for the user to
+clear deliberately.

@@ -31,8 +31,25 @@
  * risk.
  */
 
-/** A bracketed tag, with or without the word "case": " (case #5_0)", " [case 5_0]", " (#5_0)", " (case #2)". */
-const BRACKETED_TAG = /[ \t]*[([][ \t]*(?:case[ \t]*)?#?[ \t]*\d+(?:[_.-]\d+)?[ \t]*[)\]]/gi;
+/**
+ * A bracketed tag: " (case #5_0)", " [case 5_0]", " (#5_0)", " (case #2)".
+ *
+ * The `case`/`#` marker is REQUIRED, matching this file's stated contract
+ * ("Every artifact is required here to carry either the literal word `case`
+ * or a `#`"). It used to be optional — `(?:case[ \t]*)?#?` — which made the
+ * pattern match any bracketed bare number and contradicted the contract the
+ * header documents. That went unnoticed because the old bank contained no
+ * such text, but it is not a safe rule: a bracketed bare number is ordinary
+ * content. Measured on the 2026-09-02 bank, the optional form rejected 89 of
+ * 1140 questions and, had they been stripped rather than rejected, would have
+ * deleted publication years — "Five Kingdom Classification (1969)",
+ * "W.M. Stanley (1935)", "Schleiden (1838) and Schwann (1839)" — and
+ * mathematical notation such as sqrt(2) and sin^-1(0.6).
+ *
+ * Mirrored in content.fn_strip_question_artifacts
+ * (db/migrations/047_artifact_marker_required.sql).
+ */
+const BRACKETED_TAG = /[ \t]*[([][ \t]*(?:case[ \t]*#?|#)[ \t]*\d+(?:[_.-]\d+)?[ \t]*[)\]]/gi;
 
 /** An unbracketed tag carrying the literal word "case": "… case#5_0", "… case 5_0". */
 const CASE_WORD_TAG = /[ \t]*case[ \t]*#?[ \t]*\d+(?:[_.-]\d+)?/gi;

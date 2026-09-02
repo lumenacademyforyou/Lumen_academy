@@ -1,0 +1,32 @@
+{
+  "quarantine_id": "pre-new-content-2026-09-02",
+  "created_at": "2026-09-02T11:22:07.742Z",
+  "reason": "Full question-bank replacement. The 534-row bank (533 published, 1 retired) is superseded by db/content/content-batches/new_content (1140 questions, 38 chapters, verified duplicate-free with complete Tamil translations). Snapshotted here before deletion so the change is reversible.",
+  "row_counts": {
+    "questions": 534,
+    "options": 2136,
+    "solutions": 534,
+    "translations": 414,
+    "node_maps": 592,
+    "reviews": 1543,
+    "sources": 0,
+    "assets": 14,
+    "usage": 1468,
+    "duplicate_candidates": 197,
+    "attempts": 217,
+    "attempt_questions": 1468,
+    "attempt_responses": 24,
+    "attempt_events": 445,
+    "attempt_pauses": 14,
+    "scorecards": 189,
+    "section_scores": 200,
+    "tests": 128,
+    "test_sections": 148,
+    "test_questions": 179,
+    "test_blueprints": 136,
+    "test_scope_nodes": 0,
+    "test_assignments": 0,
+    "user_question_seen": 1109,
+    "unit_recycle_log": 82
+  }
+}

@@ -21,10 +21,49 @@ test(
     const { startAttempt, submitAttempt } = await import("../attempt/attempt-flow.js");
     const { getAttemptEnvelope } = await import("../attempt/envelope.js");
 
+    // Asset rows this test creates to guarantee an image-bearing pool exists.
+    // content.has_image is trigger-maintained from content.asset
+    // (028_has_image_computed.sql), so inserting these sets has_image=true and
+    // deleting them in the finally block puts it back — the fixture leaves no
+    // trace either way.
+    const fixtureAssetIds: string[] = [];
+
     try {
       const examRes = await pool.query<{ exam_id: string; exam_code: string }>(`select exam_id, exam_code from catalog.exam where is_active = true limit 1`);
       if (examRes.rowCount === 0) throw new Error("no active catalog.exam row — needed for this integration test");
       const { exam_id: examId, exam_code: examCode } = examRes.rows[0];
+
+      // This test used to depend on the live bank happening to contain
+      // image-bearing questions. That is a content fact, not a code fact, and
+      // the 2026-09-02 bank replacement (1140 questions, none with images)
+      // removed it — the test then failed for a reason that said nothing about
+      // the mechanism under test. It now builds its own image pool when the
+      // bank has none, so it proves the has_image_only filter either way.
+      const existing = await pool.query<{ n: string }>(
+        `select count(*)::text as n from content.question where lifecycle_status = 'published' and has_image = true`
+      );
+      if (Number(existing.rows[0].n) < 3) {
+        const seed = await pool.query<{ question_id: string }>(
+          `select q.question_id
+             from content.question q
+             join content.question_node_map qnm on qnm.question_id = q.question_id
+             join catalog.syllabus_node sn on sn.node_id = qnm.node_id
+             join catalog.subject sub on sub.subject_id = sn.subject_id
+            where q.lifecycle_status = 'published' and q.has_image = false and sub.exam_id = $1
+            order by q.question_uid
+            limit 3`,
+          [examId]
+        );
+        for (const row of seed.rows) {
+          const ins = await pool.query<{ asset_id: string }>(
+            `insert into content.asset (question_id, asset_type, target_role, storage_uri, alt_text)
+             values ($1, 'image', 'stem', $2, 'image-only blueprint test fixture')
+             returning asset_id`,
+            [row.question_id, "test-fixture://image-only-blueprint/" + row.question_id + ".png"]
+          );
+          fixtureAssetIds.push(ins.rows[0].asset_id);
+        }
+      }
 
       // The subject with the most real has_image=true published questions —
       // makes the "serve exactly the available count" sub-test meaningful
@@ -113,6 +152,12 @@ test(
         );
       });
     } finally {
+      // Remove the fixture first, while the pool is still open. The
+      // content.asset delete trigger recomputes has_image, so every seeded
+      // question goes back to has_image=false.
+      if (fixtureAssetIds.length > 0) {
+        await pool.query(`delete from content.asset where asset_id = any($1::uuid[])`, [fixtureAssetIds]);
+      }
       await pool.end();
     }
   }
