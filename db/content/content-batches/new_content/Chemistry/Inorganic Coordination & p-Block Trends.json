@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE02-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When 0.1 mol of CoCl3.5NH3 is treated with excess of AgNO3 solution, 0.2 mol of AgCl is precipitated. The structural formula of the coordination compound is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Co(NH3)5Cl]Cl2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[Co(NH3)4Cl2]Cl.NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Co(NH3)5Cl2]Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Co(NH3)3Cl3].2NH3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 0.1 mol of complex gives 0.2 mol of AgCl precipitate, meaning 1 mole of complex releases 2 moles of ionizable chloride ions (Cl-) in aqueous solution.\nStep 2: According to Werner's theory, only the chloride ions present outside the coordination sphere in the ionization sphere can be precipitated by AgNO3.\nStep 3: Two Cl- ions must be outside the bracket: [Co(NH3)5Cl]Cl2 -> [Co(NH3)5Cl]2+ + 2Cl-.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.1 மோல் CoCl3.5NH3 சேர்மமானது அதிகளவு AgNO3 கரைசலுடன் வினைபுரியும்போது 0.2 மோல் AgCl வீழ்படிவாகிறது எனில், அவ்வணைவுச் சேர்மத்தின் அமைப்பு வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "[Co(NH3)5Cl]Cl2",
+          "[Co(NH3)4Cl2]Cl.NH3",
+          "[Co(NH3)5Cl2]Cl",
+          "[Co(NH3)3Cl3].2NH3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The correct IUPAC name of the complex [Co(NH3)5(CO3)]Cl is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pentaamminecarbonatocobalt(III) chloride",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Carbonatopentamminecobalt(III) chloride",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pentaamminecarbonatocobalt(II) chloride",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pentaamminechloridocobalt(III) carbonate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Identify ligands: 5 ammine (neutral) and 1 carbonato (CO3^2-, anionic). In alphabetical order: 'pentaammine' precedes 'carbonato'.\nStep 2: Calculate oxidation state of Co: x + 5(0) + (-2) + (-1) = 0 => x = +3.\nStep 3: Since the complex cation is cationic, the metal is named 'cobalt(III)'.\nStep 4: The counter anion is chloride, giving Pentaamminecarbonatocobalt(III) chloride (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[Co(NH3)5(CO3)]Cl என்ற அணைவுச் சேர்மத்தின் சரியான IUPAC பெயர் என்ன?",
+        "optionTexts": [
+          "பென்டாஅம்மீன்கார்பனேட்டோகோபால்ட்(III) குளோரைடு",
+          "கார்பனேட்டோபென்டாஅம்மீன்கோபால்ட்(III) குளோரைடு",
+          "பென்டாஅம்மீன்கார்பனேட்டோகோபால்ட்(II) குளோரைடு",
+          "பென்டாஅம்மீன்குளோரிடோகோபால்ட்(III) கார்பனேட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of isomerism is exhibited by the pair of coordination compounds [Co(NH3)5(NO2)]Cl2 and [Co(NH3)5(ONO)]Cl2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization isomerism",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Linkage isomerism",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Coordination isomerism",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Geometrical isomerism",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Linkage isomerism arises in a coordination compound containing an ambidentate ligand that can bind through different donor atoms.\nStep 2: The NO2- ligand is ambidentate and can bind via nitrogen (-NO2, nitro) or via oxygen (-ONO, nitrito).\nStep 3: Both compounds have the same molecular formula but different metal-ligand connectivity.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[Co(NH3)5(NO2)]Cl2 மற்றும் [Co(NH3)5(ONO)]Cl2 ஆகிய அணைவுச் சேர்மங்களின் ஜோடி எந்த வகையான மாற்றியத்தைக் காட்டுகிறது?",
+        "optionTexts": [
+          "அயனியாகும் மாற்றியம்",
+          "இணைப்பு மாற்றியம் (Linkage isomerism)",
+          "அணைவு மாற்றியம்",
+          "வடிவ மாற்றியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The pair of coordination complexes [Co(NH3)5(SO4)]Br and [Co(NH3)5Br]SO4 represents an example of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Linkage isomerism",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hydrate isomerism",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ionization isomerism",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Optical isomerism",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ionization isomerism occurs when a ligand in the coordination sphere exchanges places with an anion in the outer ionization sphere.\nStep 2: [Co(NH3)5(SO4)]Br produces bromide ions (Br-) in aqueous solution, reacting with AgNO3 to give a pale yellow AgBr precipitate.\nStep 3: [Co(NH3)5Br]SO4 produces sulfate ions (SO4^2-) in solution, reacting with BaCl2 to give a white BaSO4 precipitate.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[Co(NH3)5(SO4)]Br மற்றும் [Co(NH3)5Br]SO4 ஆகிய அணைவுச் சேர்மங்கள் எதற்கு எடுத்துக்காட்டாகும்?",
+        "optionTexts": [
+          "இணைப்பு மாற்றியம்",
+          "நீரேற்ற மாற்றியம்",
+          "அயனியாகும் மாற்றியம் (Ionization isomerism)",
+          "ஒளி சுழற்சி மாற்றியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following octahedral complexes exhibits facial (fac) and meridional (mer) geometrical isomerism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Co(NH3)3(NO2)3]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[Co(NH3)4Cl2]+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Pt(NH3)2Cl2]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Co(en)3]3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Facial-meridional (fac-mer) isomerism occurs in octahedral complexes of the general formula [Ma3b3] where 'a' and 'b' are monodentate ligands.\nStep 2: When three donor atoms of the same ligand occupy adjacent positions on the corners of an octahedral face, it is the 'fac' isomer.\nStep 3: When three donor atoms lie around the meridian/equator of the octahedron, it is the 'mer' isomer.\nStep 4: [Co(NH3)3(NO2)3] is an [Ma3b3] complex and shows fac-mer isomerism (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எண்முகி அணைவுச் சேர்மங்களில் எது முகப்பு (fac) மற்றும் முனைவு (mer) வடிவ மாற்றியங்களைக் காட்டுகிறது?",
+        "optionTexts": [
+          "[Co(NH3)3(NO2)3]",
+          "[Co(NH3)4Cl2]+",
+          "[Pt(NH3)2Cl2]",
+          "[Co(en)3]3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following complex ions is optically active (chiral) and exists as non-superimposable mirror images?",
+    "options": [
+      {
+        "label": "A",
+        "text": "trans-[Co(en)2Cl2]+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "cis-[Co(en)2Cl2]+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "trans-[Pt(NH3)2Cl2]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Co(NH3)4Cl2]+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Optical activity requires the absence of a plane of symmetry and center of inversion in the molecule.\nStep 2: trans-[Co(en)2Cl2]+ possesses a plane of symmetry and a center of inversion, so it is meso and optically inactive.\nStep 3: cis-[Co(en)2Cl2]+ lacks any plane or center of symmetry, making it chiral and optically active (resolvable into d- and l-enantiomers).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் அணைவு அயனிகளில் எது ஒளி சுழற்றும் தன்மையுடையது (கைரல் தன்மை கொண்டது) மற்றும் மேற்பொருந்தாத கண்ணாடி பிம்பங்களாக உள்ளது?",
+        "optionTexts": [
+          "டிரான்ஸ்-[Co(en)2Cl2]+",
+          "சிஸ்-[Co(en)2Cl2]+",
+          "டிரான்ஸ்-[Pt(NH3)2Cl2]",
+          "[Co(NH3)4Cl2]+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Valence Bond Theory (VBT), the hybridization, molecular geometry, and magnetic character of [Ni(CN)4]2- are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sp3, Tetrahedral, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "dsp2, Square planar, Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "dsp2, Square planar, Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp3, Tetrahedral, Diamagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In [Ni(CN)4]2-, Ni is in +2 oxidation state: Ni2+ = [Ar] 3d8 4s0.\nStep 2: CN- is a strong field ligand that forces the pairing of the two unpaired 3d electrons into four 3d orbitals.\nStep 3: This leaves one empty 3d orbital, which hybridizes with 4s and two 4p orbitals to form dsp2 hybrid orbitals (square planar geometry).\nStep 4: Since all electrons are paired, the complex is diamagnetic (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணைதிறன் பிணைப்புக் கொள்கையின்படி (VBT), [Ni(CN)4]2- அணைவின் இனக்கலப்பு, வடிவம் மற்றும் காந்தப் பண்பு என்ன?",
+        "optionTexts": [
+          "sp3, நான்முகி, பாராகாந்தம்",
+          "dsp2, சதுர தளம், டயாகாந்தம்",
+          "dsp2, சதுர தளம், பாராகாந்தம்",
+          "sp3, நான்முகி, டயாகாந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is an outer orbital octahedral complex that uses 4d orbitals in hybridization (sp3d2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Co(NH3)6]3+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "[Fe(CN)6]3-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[CoF6]3-",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "[Cr(NH3)6]3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In [CoF6]3-, Co is in +3 state: Co3+ = [Ar] 3d6.\nStep 2: F- is a weak field ligand that cannot force pairing of the 3d electrons.\nStep 3: Co3+ uses outer 4s, 4p, and two 4d orbitals to form sp3d2 hybrid orbitals (outer orbital complex).\nStep 4: It contains 4 unpaired electrons and is strongly paramagnetic (Option C).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றில் இனக்கலப்பில் 4d ஆர்பிட்டால்களைப் பயன்படுத்தும் வெளிப்புற ஆர்பிட்டால் எண்முகி அணைவு (sp3d2) எது?",
+        "optionTexts": [
+          "[Co(NH3)6]3+",
+          "[Fe(CN)6]3-",
+          "[CoF6]3-",
+          "[Cr(NH3)6]3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an octahedral crystal field, the electronic configuration of a d5 metal ion in the presence of a strong field ligand (Delta_o > P) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "t2g^3 eg^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "t2g^5 eg^0",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "t2g^4 eg^1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "t2g^2 eg^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In an octahedral field, the five d-orbitals split into lower energy t2g (triply degenerate) and higher energy eg (doubly degenerate) sets.\nStep 2: For a strong field ligand, the crystal field splitting energy is greater than the pairing energy (Delta_o > P).\nStep 3: All 5 electrons pair up in the lower t2g level before any electron enters the eg level.\nStep 4: The low-spin configuration is t2g^5 eg^0 (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எண்முக படிகப் புலத்தில், வலிமையான புல ஈனியின் முன்னிலையில் (Delta_o > P) d5 உலோக அயனியின் எலக்ட்ரான் அமைப்பு என்ன?",
+        "optionTexts": [
+          "t2g^3 eg^2",
+          "t2g^5 eg^0",
+          "t2g^4 eg^1",
+          "t2g^2 eg^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The spin-only magnetic moment of [MnBr4]2- (atomic number of Mn = 25) is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.92 BM",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4.90 BM",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.87 BM",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.73 BM",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oxidation state of Mn: x + 4(-1) = -2 => x = +2. Mn2+ = [Ar] 3d5.\nStep 2: Br- is a weak field ligand and tetrahedral splitting (Delta_t) is small, resulting in a high-spin complex with n = 5 unpaired electrons.\nStep 3: Spin-only magnetic moment mu = sqrt(n(n+2)) = sqrt(5(7)) = sqrt(35) = 5.92 BM.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[MnBr4]2- அணைவின் தற்சுழற்சி மட்டுமேயான காந்தத் திருப்புத்திறன் (BM) மதிப்பு என்ன? (Mn அணு எண் = 25)",
+        "optionTexts": [
+          "5.92 BM",
+          "4.90 BM",
+          "3.87 BM",
+          "1.73 BM"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct increasing order of ligand field strength in the spectrochemical series?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I- < Cl- < F- < H2O < NH3 < CN-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CN- < NH3 < H2O < F- < Cl- < I-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cl- < I- < F- < NH3 < H2O < CN-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2O < F- < Cl- < NH3 < CN- < I-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The spectrochemical series arranges ligands in order of increasing field strength (Delta_o splitting power).\nStep 2: Halide ions are weak field ligands: I- < Br- < S^2- < SCN- < Cl- < F-.\nStep 3: Oxygen donors follow: OH- < C2O4^2- < H2O.\nStep 4: Nitrogen and carbon donors are strong: NCS- < edta^4- < NH3 < en < NO2- < CN- < CO.\nStep 5: Conclude I- < Cl- < F- < H2O < NH3 < CN- (Option A is correct).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறமாலை வேதியியல் வரிசையில் ஈனிகளின் புல வலிமை அதிகரிக்கும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "I- < Cl- < F- < H2O < NH3 < CN-",
+          "CN- < NH3 < H2O < F- < Cl- < I-",
+          "Cl- < I- < F- < NH3 < H2O < CN-",
+          "H2O < F- < Cl- < NH3 < CN- < I-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In homoleptic metal carbonyls (e.g., Ni(CO)4, Fe(CO)5), synergic bonding involves:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sigma donation from filled CO lone pair to vacant metal orbital and pi back-donation from filled metal d-orbital to vacant pi* antibonding orbital of CO",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sigma bonding only between metal and carbon",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pi bonding only from metal to oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ionic bonding between M+ and CO-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The M-C sigma bond is formed by the donation of the lone pair of electrons on the carbonyl carbon into a vacant d-orbital of the metal.\nStep 2: The M-C pi bond is formed by back-donation of electrons from a filled d-orbital of the metal into the vacant pi* antibonding orbital of CO.\nStep 3: This synergic effect strengthens the M-C bond while weakening and lengthening the C-O bond.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உலோக கார்பனைல்களில் (எ.கா., Ni(CO)4, Fe(CO)5) உள்ள சினெர்ஜிக் பிணைப்பு எதனை உள்ளடக்கியது?",
+        "optionTexts": [
+          "CO இலிருந்து உலோகத்திற்கு சிக்மா வழங்கல் மற்றும் உலோகத்திலிருந்து CO இன் காலியான pi* எதிர் பிணைப்பு ஆர்பிட்டாலுக்கு pi பின்-வழங்கல்",
+          "உலோகம் மற்றும் கார்பன் இடையே சிக்மா பிணைப்பு மட்டுமே",
+          "உலோகத்திலிருந்து ஆக்ஸிஜனுக்கு pi பிணைப்பு மட்டுமே",
+          "M+ மற்றும் CO- இடையே அயனிப் பிணைப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Ethylenediaminetetraacetate ion (EDTA4-) is an example of a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bidentate ligand",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tetradentate ligand",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hexadentate ligand",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Monodentate ligand",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: EDTA4- possesses two nitrogen donor atoms (with lone pairs) and four oxygen donor atoms (from four acetate -COO- groups).\nStep 2: It can bind to a single metal cation through all six donor atoms simultaneously to form very stable chelate rings.\nStep 3: Therefore, EDTA4- is a hexadentate chelating ligand.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்திலீன்டையமீன்டெட்ராஅசிட்டேட் அயனி (EDTA4-) எதற்கு எடுத்துக்காட்டாகும்?",
+        "optionTexts": [
+          "இருமுனை ஈனி (Bidentate)",
+          "நான்முனை ஈனி (Tetradentate)",
+          "அறுமுனை ஈனி (Hexadentate)",
+          "ஒருமுனை ஈனி (Monodentate)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following complex ions is expected to be colorless in aqueous solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Ti(H2O)6]3+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "[Sc(H2O)6]3+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "[Cr(H2O)6]3+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Fe(H2O)6]3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The color of transition metal complexes in visible light arises from d-d electron transitions.\nStep 2: Scandium in [Sc(H2O)6]3+ is in +3 state: Sc3+ = [Ar] 3d0.\nStep 3: Since there are zero d-electrons (d0 configuration), no d-d transitions can take place.\nStep 4: Hence, [Sc(H2O)6]3+ is completely colorless (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் அணைவு அயனிகளில் எது நீர்க்கரைசலில் நிறமற்றதாக இருக்கும் என எதிர்பார்க்கப்படுகிறது?",
+        "optionTexts": [
+          "[Ti(H2O)6]3+",
+          "[Sc(H2O)6]3+",
+          "[Cr(H2O)6]3+",
+          "[Fe(H2O)6]3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Nitrogen does not form pentahalides (like NCl5) whereas phosphorus forms PCl5 because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrogen has high electronegativity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nitrogen lacks vacant d-orbitals in its valence shell (n = 2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Nitrogen is a diatomic gas",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "N-Cl bond is extremely strong",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nitrogen belongs to Period 2 with valence electronic configuration 2s2 2p3.\nStep 2: Principal quantum level n = 2 has only s and p subshells (no 2d subshell exists).\nStep 3: Due to the non-availability of vacant d-orbitals, nitrogen cannot expand its octet beyond a maximum covalency of 4.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாஸ்பரஸ் PCl5 ஐ உருவாக்கும் போது, நைட்ரஜன் பென்டாஹாலைடுகளை (NCl5 போன்ற) உருவாக்காததன் காரணம் என்ன?",
+        "optionTexts": [
+          "நைட்ரஜன் அதிக எலக்ட்ரான் கவர்தன்மை கொண்டது",
+          "நைட்ரஜனின் இணைதிறன் கூட்டில் (n = 2) காலியான d-ஆர்பிட்டால்கள் இல்லாததால்",
+          "நைட்ரஜன் ஒரு ஈரணு வாயு என்பதால்",
+          "N-Cl பிணைப்பு மிகவும் வலிமையானது என்பதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Among the hydrides of Group 15 elements (NH3, PH3, AsH3, SbH3, BiH3), which is the strongest reducing agent?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "PH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "AsH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "BiH3",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Down Group 15, the central atom size increases and E-H bond length increases (E = N, P, As, Sb, Bi).\nStep 2: Consequently, the E-H bond dissociation enthalpy decreases rapidly from N-H to Bi-H.\nStep 3: BiH3 has the lowest thermal stability and easily releases hydrogen, making it the strongest reducing agent.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "15-ஆம் தொகுதி தனிமங்களின் ஹைட்ரைடுகளில் (NH3, PH3, AsH3, SbH3, BiH3), எது மிக வலிமையான ஒடுக்கும் காரணியாகும்?",
+        "optionTexts": [
+          "NH3",
+          "PH3",
+          "AsH3",
+          "BiH3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "How many P-H, P-OH, and P=O bonds are present in hypophosphorous acid (phosphinic acid, H3PO2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two P-H, one P-OH, and one P=O",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "One P-H, two P-OH, and one P=O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero P-H, three P-OH, and one P=O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Two P-H, two P-OH, and zero P=O",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Write the structural formula of H3PO2: phosphorus is tetrahedrally bonded.\nStep 2: It contains one P=O double bond, one P-OH bond, and two direct P-H single bonds: H-P(=O)(H)(OH).\nStep 3: Because of the single P-OH group, H3PO2 is a monobasic acid, while the two P-H bonds give it strong reducing properties.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைப்போபாஸ்பரஸ் அமிலத்தில் (H3PO2) உள்ள P-H, P-OH மற்றும் P=O பிணைப்புகளின் எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "இரண்டு P-H, ஒரு P-OH மற்றும் ஒரு P=O",
+          "ஒரு P-H, இரண்டு P-OH மற்றும் ஒரு P=O",
+          "பூஜ்ஜியம் P-H, மூன்று P-OH மற்றும் ஒரு P=O",
+          "இரண்டு P-H, இரண்டு P-OH மற்றும் பூஜ்ஜியம் P=O"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "White phosphorus (P4) reacts with concentrated aqueous NaOH in an inert atmosphere of CO2 to produce phosphine (PH3) and:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sodium hypophosphite (NaH2PO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sodium phosphate (Na3PO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sodium phosphite (Na2HPO3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phosphorus pentoxide (P4O10)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The reaction is a disproportionation reaction of elemental white phosphorus:\nP4 + 3NaOH + 3H2O -> PH3 + 3NaH2PO2.\nStep 2: Phosphorus is reduced from oxidation state 0 (in P4) to -3 (in PH3) and oxidized to +1 (in NaH2PO2, sodium hypophosphite).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெள்ளைப் பாஸ்பரஸ் (P4) CO2 மந்த வளிமண்டலத்தில் அடர் NaOH உடன் வினைபுரிந்து பாஸ்பீனுடன் (PH3) எதனைத் தருகிறது?",
+        "optionTexts": [
+          "சோடியம் ஹைப்போபாஸ்பைட் (NaH2PO2)",
+          "சோடியம் பாஸ்பேட் (Na3PO4)",
+          "சோடியம் பாஸ்பைட் (Na2HPO3)",
+          "பாஸ்பரஸ் பென்டாக்சைடு (P4O10)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of bond angles in Group 16 hydrides?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H2O > H2S > H2Se > H2Te",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2Te > H2Se > H2S > H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2S > H2O > H2Se > H2Te",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2O > H2Te > H2Se > H2S",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oxygen in H2O is highly electronegative, pulling bonding electron pairs closer to itself and causing strong bond pair-bond pair repulsion (bond angle = 104.5°).\nStep 2: As the central atom size increases and electronegativity decreases down Group 16 (O > S > Se > Te), the bond pairs stay further from the central atom.\nStep 3: Bond angles decrease dramatically: H2O (104.5°) > H2S (92.1°) > H2Se (91°) > H2Te (90°).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "16-ஆம் தொகுதி ஹைட்ரைடுகளின் பிணைப்புக் கோணம் குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "H2O > H2S > H2Se > H2Te",
+          "H2Te > H2Se > H2S > H2O",
+          "H2S > H2O > H2Se > H2Te",
+          "H2O > H2Te > H2Se > H2S"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the vapor state at elevated temperatures (~1000 K), sulfur partly exists as S2 molecules which are paramagnetic because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "S2 has two unpaired electrons in antibonding pi* orbitals like O2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "S2 forms coordinate bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "S2 contains odd total number of electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "S2 has vacant d-orbitals",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At high temperatures (~1000 K), S8 rings break down into diatomic S2 molecules.\nStep 2: According to Molecular Orbital Theory (MOT), S2 has 16 valence electrons with a configuration analogous to O2.\nStep 3: The last two electrons singly occupy the degenerate pi*(3px) and pi*(3py) antibonding orbitals with parallel spins.\nStep 4: The presence of two unpaired electrons makes S2 paramagnetic (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயர் வெப்பநிலையில் (~1000 K) கந்தக ஆவி S2 மூலக்கூறுகளைக் கொண்டுள்ளது. இது பாராகாந்தப் பண்பைப் பெற்றிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "O2 போல S2 மூலக்கூறும் pi* எதிர்பிணைப்பு ஆர்பிட்டால்களில் இரண்டு ஜோடியற்ற எலக்ட்ரான்களைக் கொண்டுள்ளது",
+          "S2 ஈதல் சகப்பிணைப்புகளை உருவாக்குகிறது",
+          "S2 ஒற்றைப்படை எண்ணிக்கையிலான எலக்ட்ரான்களைக் கொண்டுள்ளது",
+          "S2 காலியான d-ஆர்பிட்டால்களைக் கொண்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following oxoacids of sulfur contains a peroxide (-O-O-) linkage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H2S2O7 (Pyrosulfuric acid / Oleum)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H2S2O8 (Peroxodisulfuric acid / Marshall's acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "H2S2O3 (Thiosulfuric acid)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2S2O6 (Dithionic acid)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Marshall's acid (Peroxodisulfuric acid, H2S2O8) is formed by joining two -SO2(OH) units through a peroxy (-O-O-) bridge: HO3S-O-O-SO3H.\nStep 2: Both sulfur atoms are in the +6 oxidation state.\nStep 3: Oleum (H2S2O7) contains an S-O-S bridge, not a peroxy bond.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் கந்தகத்தின் ஆக்சோஅமிலங்களில் எது பெராக்சைடு (-O-O-) பிணைப்பைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "H2S2O7 (பைரோசல்பூரிக் அமிலம் / ஓலியம்)",
+          "H2S2O8 (பெராக்சோடைசல்பூரிக் அமிலம் / மார்ஷல் அமிலம்)",
+          "H2S2O3 (தையோசல்பூரிக் அமிலம்)",
+          "H2S2O6 (டைதயானிக் அமிலம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The key catalyst used in the manufacture of sulfuric acid by the Contact Process is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "V2O5 (Vanadium pentoxide)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Finely divided Fe with Mo promoter",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ni catalyst",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CuCl2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The key step in the Contact Process is the catalytic oxidation of SO2 to SO3: 2SO2(g) + O2(g) <=> 2SO3(g).\nStep 2: This reversible exothermic reaction is catalyzed by solid vanadium pentoxide (V2O5) at 720 K and 2 bar pressure.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொடு முறையில் கந்தக அமிலம் தயாரிக்கும் போது பயன்படுத்தப்படும் முதன்மை வினையூக்கி எது?",
+        "optionTexts": [
+          "V2O5 (வனேடியம் பென்டாக்சைடு)",
+          "Mo ஊக்குவிக்கப்பட்ட இரும்புத்தூள்",
+          "Ni வினையூக்கி",
+          "CuCl2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Fluorine is a stronger oxidizing agent than chlorine in aqueous solution despite having a less negative electron gain enthalpy because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "F2 has lower bond dissociation enthalpy and F- has very high hydration enthalpy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fluorine has larger atomic size",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fluorine has empty d-orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "F- has lower hydration enthalpy than Cl-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Standard reduction potential E° reflects the overall enthalpy of the process: 1/2 X2(g) -> X-(aq).\nStep 2: F2 has a remarkably low bond dissociation enthalpy due to strong lone-pair repulsions in the compact F2 molecule.\nStep 3: The very small size of F- leads to an extremely high (exothermic) hydration enthalpy in water.\nStep 4: These two thermodynamic factors exceed the electron gain enthalpy difference, making F2 the strongest oxidizer (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரினை விட குறைவான எதிர்மறை எலக்ட்ரான் நாட்ட மதிப்பைப் பெற்றிருந்த போதிலும், புளோரின் வலிமையான ஆக்சிஜனேற்ற காரணியாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "F2 குறைந்த பிணைப்புப் பிளவு என்தால்பியையும், F- மிக அதிக நீரேற்ற என்தால்பியையும் பெற்றுள்ளது",
+          "புளோரின் பெரிய அணு ஆரத்தைக் கொண்டுள்ளது",
+          "புளோரின் காலியான d-ஆர்பிட்டால்களைக் கொண்டுள்ளது",
+          "F- குளோரைடை விட குறைந்த நீரேற்ற என்தால்பியைக் கொண்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of chlorine in chlorine trifluoride (ClF3)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Trigonal planar, sp2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T-shaped, sp3d",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Trigonal pyramidal, sp3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "See-saw, sp3d",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Valence electrons of central Cl = 7. Forms 3 single bonds with F and has 2 lone pairs.\nStep 2: Steric number = 3 bond pairs + 2 lone pairs = 5 (sp3d hybridization, trigonal bipyramidal electron geometry).\nStep 3: To minimize lone pair-lone pair repulsions, the 2 lone pairs occupy equatorial positions.\nStep 4: The resulting molecular geometry is T-shaped (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரின் டிரைபுளோரைடில் (ClF3) குளோரின் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "முக்கோண தளம், sp2",
+          "T-வடிவம், sp3d",
+          "முக்கோண பிரமிடு, sp3",
+          "சீ-சா வடிவம், sp3d"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct decreasing order of acidic strength among the oxoacids of chlorine?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HClO4 > HClO3 > HClO2 > HClO",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "HClO > HClO2 > HClO3 > HClO4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "HClO3 > HClO4 > HClO2 > HClO",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HClO4 > HClO2 > HClO3 > HClO",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Acid strength of oxoacids of the same halogen increases with increasing oxidation state of the halogen.\nStep 2: Oxidation states of Cl: HClO4 (+7) > HClO3 (+5) > HClO2 (+3) > HClO (+1).\nStep 3: Higher oxidation state increases the electronegativity of Cl and delocalizes negative charge across more terminal oxygen atoms in the conjugate base (ClO4- is extremely stable).\nStep 4: Conclude HClO4 > HClO3 > HClO2 > HClO (Option A is correct).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரினின் ஆக்சோஅமிலங்களின் அமில வலிமை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "HClO4 > HClO3 > HClO2 > HClO",
+          "HClO > HClO2 > HClO3 > HClO4",
+          "HClO3 > HClO4 > HClO2 > HClO",
+          "HClO4 > HClO2 > HClO3 > HClO"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Complete hydrolysis of xenon hexafluoride (XeF6) with excess water produces:",
+    "options": [
+      {
+        "label": "A",
+        "text": "XeO3 and HF",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "XeOF4 and HF",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "XeO2F2 and HF",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Xe and O2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Partial hydrolysis of XeF6 yields oxyfluorides: XeF6 + H2O -> XeOF4 + 2HF, and XeF6 + 2H2O -> XeO2F2 + 4HF.\nStep 2: Complete hydrolysis with excess water replaces all 6 fluorine atoms: XeF6 + 3H2O -> XeO3 + 6HF.\nStep 3: XeO3 is an explosive, colorless solid.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் ஹெக்சாபுளோரைடை (XeF6) அதிகளவு நீருடன் முழுமையாக நீராற்பகுக்கும் போது கிடைப்பது எது?",
+        "optionTexts": [
+          "XeO3 மற்றும் HF",
+          "XeOF4 மற்றும் HF",
+          "XeO2F2 மற்றும் HF",
+          "Xe மற்றும் O2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and number of lone pairs on the central xenon atom in xenon difluoride (XeF2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bent shape with 2 lone pairs",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Linear shape with 3 lone pairs",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "T-shaped with 2 lone pairs",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Linear shape with 0 lone pairs",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons. Forms 2 single bonds with F and retains 6 non-bonding electrons (3 lone pairs).\nStep 2: Steric number = 2 bond pairs + 3 lone pairs = 5 (sp3d hybridization, trigonal bipyramidal electron geometry).\nStep 3: The 3 lone pairs occupy the equatorial positions to minimize repulsions, placing the two F atoms axially at 180°.\nStep 4: The molecular geometry is Linear with 3 lone pairs (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டைபுளோரைடில் (XeF2) மைய செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் தனித்த எலக்ட்ரான் இரட்டைகளின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "வளைந்த வடிவம் மற்றும் 2 தனித்த இரட்டைகள்",
+          "நேர்கோட்டு வடிவம் மற்றும் 3 தனித்த இரட்டைகள்",
+          "T-வடிவம் மற்றும் 2 தனித்த இரட்டைகள்",
+          "நேர்கோட்டு வடிவம் மற்றும் 0 தனித்த இரட்டைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molecular geometry and hybridization of xenon trioxide (XeO3)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Trigonal planar, sp2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trigonal pyramidal, sp3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "T-shaped, sp3d",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tetrahedral, sp3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xe has 8 valence electrons. Forms three double bonds with oxygen (=O) using 6 electrons, leaving 1 lone pair (2 electrons).\nStep 2: Steric number = 3 sigma bonds + 1 lone pair = 4 (sp3 hybridization).\nStep 3: With 3 bonding pairs and 1 lone pair, the molecular geometry is Trigonal Pyramidal (similar to NH3).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டிரையாக்சைடில் (XeO3) செனான் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "முக்கோண தளம், sp2",
+          "முக்கோண பிரமிடு, sp3",
+          "T-வடிவம், sp3d",
+          "நான்முகி, sp3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The geometry and hybridization of iodine in iodine heptafluoride (IF7) are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pentagonal bipyramidal, sp3d3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Octahedral, sp3d2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Capped octahedral, sp3d3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trigonal bipyramidal, sp3d",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Central atom iodine (I) has 7 valence electrons and forms 7 single bonds with fluorine atoms (0 lone pairs).\nStep 2: Steric number = 7 bond pairs + 0 lone pairs = 7.\nStep 3: Hybridization is sp3d3 involving one s, three p, and three d orbitals.\nStep 4: The molecular geometry is Pentagonal Bipyramidal with 72° equatorial and 90° axial bond angles (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயோடின் ஹெப்டாபுளோரைடில் (IF7) அயோடின் அணுவின் மூலக்கூறு வடிவம் மற்றும் இனக்கலப்பு என்ன?",
+        "optionTexts": [
+          "ஐங்கோண இருபிரமிடு, sp3d3",
+          "எண்முகி, sp3d2",
+          "மூடிய எண்முகி, sp3d3",
+          "முக்கோண இருபிரமிடு, sp3d"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE02-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to the Irving-Williams series, the correct order of thermodynamic stability of divalent 3d transition metal complexes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mn2+ < Fe2+ < Co2+ < Ni2+ < Cu2+ > Zn2+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cu2+ < Ni2+ < Co2+ < Fe2+ < Mn2+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zn2+ > Cu2+ > Ni2+ > Co2+ > Fe2+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mn2+ > Fe2+ > Co2+ > Ni2+ > Cu2+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Irving-Williams series outlines the stability order of high-spin octahedral complexes of divalent first-row transition metal ions.\nStep 2: As ionic radius decreases and effective nuclear charge increases across the series, complex stability increases.\nStep 3: Cu2+ exhibits exceptional stability due to Jahn-Teller distortion.\nStep 4: The established order is: Mn2+ < Fe2+ < Co2+ < Ni2+ < Cu2+ > Zn2+ (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இர்விங்-வில்லியம்ஸ் வரிசையின்படி, இருஇணைதிறன் 3d இடைநிலை உலோக அணைவுகளின் வெப்ப இயக்கவியல் நிலைப்புத்தன்மையின் சரியான வரிசை எது?",
+        "optionTexts": [
+          "Mn2+ < Fe2+ < Co2+ < Ni2+ < Cu2+ > Zn2+",
+          "Cu2+ < Ni2+ < Co2+ < Fe2+ < Mn2+",
+          "Zn2+ > Cu2+ > Ni2+ > Co2+ > Fe2+",
+          "Mn2+ > Fe2+ > Co2+ > Ni2+ > Cu2+"
+        ]
+      }
+    ]
+  }
+]

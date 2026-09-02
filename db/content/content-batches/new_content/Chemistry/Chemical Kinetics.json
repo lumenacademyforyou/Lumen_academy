@@ -1,0 +1,1480 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE09-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For the reaction 2 N2O5(g) -> 4 NO2(g) + O2(g), the rate of disappearance of N2O5 is 6.25 * 10^-3 mol L^-1 s^-1. What is the rate of formation of NO2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.25 * 10^-2 mol L^-1 s^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.25 * 10^-3 mol L^-1 s^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.125 * 10^-3 mol L^-1 s^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.50 * 10^-2 mol L^-1 s^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Express rate of reaction in terms of stoichiometric coefficients: Rate = -1/2 (d[N2O5]/dt) = 1/4 (d[NO2]/dt) = d[O2]/dt.\nStep 2: Given rate of disappearance of N2O5: -d[N2O5]/dt = 6.25 * 10^-3 mol L^-1 s^-1.\nStep 3: Rate of formation of NO2: d[NO2]/dt = (4/2) * (-d[N2O5]/dt) = 2 * (6.25 * 10^-3) = 1.25 * 10^-2 mol L^-1 s^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 N2O5(g) -> 4 NO2(g) + O2(g) என்ற வினையில், N2O5 மறைவு வீதம் 6.25 * 10^-3 mol L^-1 s^-1 எனில், NO2 உருவாதல் வீதம் என்ன?",
+        "optionTexts": [
+          "1.25 * 10^-2 mol L^-1 s^-1",
+          "6.25 * 10^-3 mol L^-1 s^-1",
+          "3.125 * 10^-3 mol L^-1 s^-1",
+          "2.50 * 10^-2 mol L^-1 s^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What are the units of the rate constant (k) for a zero-order reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "mol L^-1 s^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "s^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "L mol^-1 s^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "L^2 mol^-2 s^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: General formula for units of rate constant: (mol L^-1)^(1 - n) * s^-1, where n is the order of the reaction.\nStep 2: For a zero-order reaction, n = 0.\nStep 3: Units of k = (mol L^-1)^(1 - 0) * s^-1 = mol L^-1 s^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பூஜ்ஜிய வகை வினைக்கான வினைவேக மாறிலியின் (k) அலகு என்ன?",
+        "optionTexts": [
+          "mol L^-1 s^-1",
+          "s^-1",
+          "L mol^-1 s^-1",
+          "L^2 mol^-2 s^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements is INCORRECT regarding the order and molecularity of a chemical reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Molecularity of a reaction can be zero or fractional",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Order of a reaction is an experimental quantity and can be zero, fractional, or negative",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Molecularity is defined only for elementary reactions and has no meaning for complex reactions",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Order is applicable to both elementary and complex reactions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Molecularity is the number of reacting species colliding simultaneously in an elementary step to bring about a chemical reaction.\nStep 2: Molecules cannot collide in fractional numbers or zero numbers (a collision requires at least 1, 2, or 3 particles).\nStep 3: Therefore, molecularity is always a positive integer (1, 2, 3) and cannot be zero or fractional.\nStep 4: Statement A is incorrect and is the correct answer.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வேதிவினையின் வினை வகை (order) மற்றும் மூலக்கூறு எண் (molecularity) பற்றிய பின்வரும் கூற்றுகளில் தவறானது எது?",
+        "optionTexts": [
+          "ஒரு வினையின் மூலக்கூறு எண் பூஜ்ஜியமாகவோ அல்லது பின்னமாகவோ இருக்கலாம்",
+          "வினை வகை என்பது சோதனை மூலம் அறியப்படும் மதிப்பு, அது பூஜ்ஜியமாகவோ, பின்னமாகவோ அல்லது எதிர்மறியாகவோ இருக்கலாம்",
+          "மூலக்கூறு எண் எளிய வினைகளுக்கு மட்டுமே வரையறுக்கப்படுகிறது",
+          "வினை வகை எளிய மற்றும் சிக்கலான வினைகள் இரண்டிற்கும் பொருந்தும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a zero-order reaction A -> Products, the half-life period (t1/2) is directly proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[A]0 (Initial concentration of reactant)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / [A]0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Independent of [A]0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[A]0^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Integrated rate law for zero-order reaction: [A] = [A]0 - k*t.\nStep 2: At half-life t = t1/2, [A] = [A]0 / 2.\nStep 3: [A]0 / 2 = [A]0 - k * t1/2 => t1/2 = [A]0 / (2k).\nStep 4: Therefore, t1/2 is directly proportional to initial concentration [A]0 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A -> விளைபொருட்கள் என்ற பூஜ்ஜிய வகை வினைக்கு, அரை ஆயுட்காலம் (t1/2) எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "[A]0 (வினைபடு பொருளின் ஆரம்ப செறிவு)",
+          "1 / [A]0",
+          "[A]0 ஐ சார்ந்தது அல்ல",
+          "[A]0^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The decomposition of gaseous ammonia on a hot platinum surface at high pressure is a zero-order reaction because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The metal surface is fully saturated with adsorbed ammonia molecules, so rate becomes independent of ammonia concentration",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ammonia is a weak base",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Platinum catalyst is volatile",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The activation energy of the reaction is zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The catalytic decomposition of NH3 on hot Pt proceeds by adsorption of NH3 molecules on active surface sites.\nStep 2: At high pressures, all the active sites on the platinum surface are completely occupied (saturated with adsorbed NH3).\nStep 3: Further increase in ammonia pressure cannot increase the amount adsorbed, rendering the rate independent of NH3 concentration (Rate = k[NH3]^0 = k).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயர் அழுத்தத்தில் சூடான பிளாட்டினப் பரப்பின் மீது அம்மோனியா வாயுவின் சிதைவு ஒரு பூஜ்ஜிய வகை வினையாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "உலோகப் பரப்பு முழுவதும் அம்மோனியா மூலக்கூறுகளால் நிரம்பியுள்ளதால் வினைவேகம் அம்மோனியாவின் செறிவைச் சார்ந்து இருப்பதில்லை",
+          "அம்மோனியா ஒரு வலிமை குறைந்த காரம்",
+          "பிளாட்டினம் வினையூக்கி ஆவியாகக்கூடியது",
+          "இவ்வினையின் கிளர்வுறு ஆற்றல் பூஜ்ஜியமாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A first-order reaction is 50% complete in 20 minutes. How much time is required for 99.9% completion of the reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "200 minutes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100 minutes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60 minutes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "400 minutes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a first-order reaction: t = (2.303 / k) * log10([A]0 / [A]).\nStep 2: For 99.9% completion, [A] = [A]0 - 0.999[A]0 = 0.001[A]0 = [A]0 / 1000.\nStep 3: t_99.9% = (2.303 / k) * log10(1000) = (2.303 / k) * 3 = 3 * (2.303 / k).\nStep 4: Since t1/2 = 0.693 / k = (2.303 * 0.301) / k, t_99.9% = 10 * t1/2 = 10 * 20 min = 200 minutes (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முதல் வகை வினை 50% நிறைவடைய 20 நிமிடங்கள் ஆகிறது எனில், அவ்வினை 99.9% நிறைவடைய எவ்வளவு நேரம் தேவைப்படும்?",
+        "optionTexts": [
+          "200 நிமிடங்கள்",
+          "100 நிமிடங்கள்",
+          "60 நிமிடங்கள்",
+          "400 நிமிடங்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a first-order reaction, the ratio of time required for 75% completion (t75%) to that for 50% completion (t50%) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: After one half-life (t50%), 50% reactant remains.\nStep 2: After two half-lives, 25% reactant remains, meaning 75% of the reactant has reacted (t75%).\nStep 3: Therefore, t75% = 2 * t50%.\nStep 4: The ratio t75% / t50% = 2 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முதல் வகை வினைக்கு, 75% நிறைவடைய தேவைப்படும் நேரத்திற்கும் 50% நிறைவடைய தேவைப்படும் நேரத்திற்கும் உள்ள விகிதம் (t75% / t50%) என்ன?",
+        "optionTexts": [
+          "2",
+          "1.5",
+          "3",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The acid-catalyzed hydrolysis of ethyl acetate: CH3COOC2H5 + H2O -(H+)-> CH3COOH + C2H5OH is an example of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pseudo-first-order reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zero-order reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "True second-order reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Third-order reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the hydrolysis of ethyl acetate, water is present in huge excess as the solvent.\nStep 2: The concentration of water remains virtually constant during the course of the reaction.\nStep 3: The rate law simplifies to Rate = k'[CH3COOC2H5][H2O] = k[CH3COOC2H5], behaving as a first-order reaction.\nStep 4: Such higher-order reactions conforming to first-order kinetics are called pseudo-first-order reactions (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமில முன்னிலையில் எத்தில் அசிட்டேட்டின் நீராற்பகுப்பு வினை எதற்கு சிறந்த எடுத்துக்காட்டாகும்?",
+        "optionTexts": [
+          "போலி முதல் வகை வினை (Pseudo-first-order)",
+          "பூஜ்ஜிய வகை வினை",
+          "உண்மையான இரண்டாம் வகை வினை",
+          "மூன்றாம் வகை வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a reaction A + B -> Products, doubling the concentration of A quadruples the rate, while doubling the concentration of B has no effect on the rate. The overall rate law is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rate = k [A]^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rate = k [A] [B]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Rate = k [A]^2 [B]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rate = k [A]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Let Rate = k [A]^x [B]^y.\nStep 2: When [A] is doubled (2^x), rate increases by a factor of 4 (2^2 = 4), which means x = 2 (second order in A).\nStep 3: When [B] is doubled (2^y), rate is unaffected (2^0 = 1), which means y = 0 (zero order in B).\nStep 4: Overall rate law is Rate = k [A]^2 [B]^0 = k [A]^2 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A + B -> விளைபொருட்கள் என்ற வினையில், A இன் செறிவை இருமடங்காக்கும் போது வினைவேகம் 4 மடங்காகிறது, ஆனால் B இன் செறிவை இருமடங்காக்கினால் வினைவேகத்தில் மாற்றமில்லை எனில், வினைவேக விதி என்ன?",
+        "optionTexts": [
+          "Rate = k [A]^2",
+          "Rate = k [A] [B]",
+          "Rate = k [A]^2 [B]",
+          "Rate = k [A]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a first-order reaction, a graphical plot of ln[R] versus time (t) yields a straight line with slope equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-k / 2.303",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-Ea / R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The natural logarithmic form of the first-order rate law is ln[R] = ln[R]0 - k*t.\nStep 2: Comparing with the linear equation y = c + mx: y = ln[R], x = t, intercept c = ln[R]0.\nStep 3: The slope m is equal to -k.\nStep 4: (Note: If log10[R] were plotted, slope would be -k / 2.303). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முதல் வகை வினைக்கு, ln[R] மற்றும் நேரம் (t) இடையேயான வரைபடத்தில் கிடைக்கும் நேர்கோட்டின் சாய்வு எதற்குச் சமம்?",
+        "optionTexts": [
+          "-k",
+          "-k / 2.303",
+          "+k",
+          "-Ea / R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For most chemical reactions, an increase in temperature by 10 °C (e.g., from 298 K to 308 K) roughly doubles the reaction rate because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The fraction of molecules possessing energy equal to or greater than the activation energy (Ea) almost doubles",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The collision frequency increases by 100%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The activation energy decreases by half",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Threshold energy becomes zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to Maxwell-Boltzmann distribution, collision frequency increases only by ~1-2% for a 10 °C rise.\nStep 2: However, the area under the curve beyond the activation energy threshold nearly doubles.\nStep 3: The fraction of molecules with energy >= Ea (given by e^(-Ea/RT)) increases by ~100%, nearly doubling the effective collisions and rate.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெரும்பாலான வேதிவினைகளில், வெப்பநிலையை 10 °C உயர்த்தும்போது வினைவேகம் தோராயமாக இருமடங்காவதன் முதன்மைக் காரணம் என்ன?",
+        "optionTexts": [
+          "கிளர்வுறு ஆற்றலுக்குச் சமமான அல்லது அதற்கு அதிகமான ஆற்றலைப் பெற்றுள்ள மூலக்கூறுகளின் பின்னம் கிட்டத்தட்ட இருமடங்காகிறது",
+          "மோதல் அதிர்வெண் 100% அதிகரிக்கிறது",
+          "கிளர்வுறு ஆற்றல் பாதியாகக் குறைகிறது",
+          "தொடக்க ஆற்றல் பூஜ்ஜியமாகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to the Arrhenius equation, a plot of log10(k) versus 1/T yields a straight line with a slope equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-Ea / (2.303 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-Ea / R",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "+Ea / (2.303 R)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "log10(A)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The logarithmic form of the Arrhenius equation is log10(k) = log10(A) - Ea / (2.303 R T).\nStep 2: Compare with y = mx + c where y = log10(k), x = 1/T, and c = log10(A).\nStep 3: The slope m = -Ea / (2.303 R).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அர்ஹீனியஸ் சமன்பாட்டின்படி, log10(k) மற்றும் 1/T இடையேயான வரைபடத்தில் கிடைக்கும் நேர்கோட்டின் சாய்வு எதற்குச் சமம்?",
+        "optionTexts": [
+          "-Ea / (2.303 R)",
+          "-Ea / R",
+          "+Ea / (2.303 R)",
+          "log10(A)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a reaction, the rate constant doubles when the temperature increases from 300 K to 310 K. What is the activation energy (Ea) of the reaction? (R = 8.314 J K^-1 mol^-1, log10 2 = 0.3010)",
+    "options": [
+      {
+        "label": "A",
+        "text": "53.6 kJ/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "26.8 kJ/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "107.2 kJ/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "8.314 kJ/mol",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use two-temperature Arrhenius equation: log10(k2 / k1) = (Ea / (2.303 * R)) * ((T2 - T1) / (T1 * T2)).\nStep 2: Substitute k2/k1 = 2, T1 = 300 K, T2 = 310 K: log10(2) = 0.3010.\nStep 3: 0.3010 = [Ea / (2.303 * 8.314)] * [10 / (300 * 310)] = [Ea / 19.147] * [10 / 93000].\nStep 4: Ea = (0.3010 * 19.147 * 93000) / 10 = 53594 J/mol approx 53.6 kJ/mol (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினையின் வெப்பநிலை 300 K இலிருந்து 310 K ஆக உயரும் போது வினைவேக மாறிலி இருமடங்காகிறது எனில், அவ்வினையின் கிளர்வுறு ஆற்றல் (Ea) என்ன? (R = 8.314 J K^-1 mol^-1, log 2 = 0.3010)",
+        "optionTexts": [
+          "53.6 kJ/mol",
+          "26.8 kJ/mol",
+          "107.2 kJ/mol",
+          "8.314 kJ/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For an exothermic reaction A -> B with enthalpy change Delta H, the activation energy for the forward reaction is Ea(f) and for the backward reaction is Ea(b). Which relationship is always true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ea(f) < Ea(b)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ea(f) > Ea(b)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Ea(f) = Ea(b)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Ea(f) = 0",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The enthalpy change of a reaction is given by Delta H = Ea(forward) - Ea(backward).\nStep 2: For an exothermic reaction, Delta H is negative (Delta H < 0).\nStep 3: Ea(f) - Ea(b) < 0 => Ea(f) < Ea(b).\nStep 4: Therefore, the activation energy of the forward reaction is always less than that of the backward reaction (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Delta H என்தால்பி மாற்றம் கொண்ட ஒரு வெப்ப உமிழ் வினைக்கு A -> B, முன்னோக்கு வினையின் கிளர்வுறு ஆற்றல் Ea(f) மற்றும் பின்னோக்கு வினையின் கிளர்வுறு ஆற்றல் Ea(b) எனில், பின்வருவனவற்றில் எப்போதும் சரியானது எது?",
+        "optionTexts": [
+          "Ea(f) < Ea(b)",
+          "Ea(f) > Ea(b)",
+          "Ea(f) = Ea(b)",
+          "Ea(f) = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the primary mechanism by which a positive catalyst increases the rate of a chemical reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It provides an alternative reaction pathway with lower activation energy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "It decreases the enthalpy change of the reaction (Delta H)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "It increases the average kinetic energy of the reactant molecules",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "It shifts the chemical equilibrium toward products",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A catalyst participates in the reaction mechanism by forming an activated complex of lower energy.\nStep 2: By lowering the activation energy barrier (Ea), a larger fraction of reactant molecules possess sufficient energy to cross the barrier.\nStep 3: A catalyst does not alter Delta H, Delta G, or the equilibrium constant K.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நேர்மறை வினையூக்கி ஒரு வேதிவினையின் வேகத்தை அதிகரிப்பதன் முதன்மை வழிமுறை என்ன?",
+        "optionTexts": [
+          "இது குறைந்த கிளர்வுறு ஆற்றல் கொண்ட மாற்று வினைப் பாதையை வழங்குகிறது",
+          "இது வினையின் என்தால்பி மாற்றத்தைக் (Delta H) குறைக்கிறது",
+          "இது வினைபடு மூலக்கூறுகளின் சராசரி இயக்க ஆற்றலை அதிகரிக்கிறது",
+          "இது வேதிச் சமநிலையை விளைபொருட்களை நோக்கி நகர்த்துகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the collision theory of chemical reactions, the rate equation is expressed as Rate = P * Z_AB * e^(-Ea / RT). The term 'P' represents:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Steric factor (or probability factor) accounting for proper molecular orientation",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Total pressure of the gaseous mixture",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Collision frequency between reactant molecules",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Planck's constant",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Collision theory assumes that for a reaction to occur, colliding molecules must possess activation energy and the proper orientation.\nStep 2: Z_AB is the collision frequency (number of collisions per second per unit volume).\nStep 3: The factor P is the steric or probability factor, which accounts for the requirement that molecules must collide in a specific geometric orientation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வேதிவினைகளின் மோதல் கொள்கையில், Rate = P * Z_AB * e^(-Ea / RT) என்ற சமன்பாட்டில் உள்ள 'P' எதனைக் குறிக்கிறது?",
+        "optionTexts": [
+          "சரியான மூலக்கூறு திசை அமைப்பைக் குறிக்கும் இடநெருக்கடி காரணி (Steric/Probability factor)",
+          "வாயுக்கலவையின் மொத்த அழுத்தம்",
+          "வினைபடு மூலக்கூறுகளுக்கு இடையேயான மோதல் அதிர்வெண்",
+          "பிளாங்க் மாறிலி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a multi-step complex reaction, the overall rate of the reaction is determined by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The slowest elementary step (rate-determining step)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The fastest elementary step",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "The step with the lowest activation energy",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "The average rate of all elementary steps",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A complex reaction proceeds through a sequence of two or more elementary steps (reaction mechanism).\nStep 2: The step having the highest activation energy barrier proceeds at the slowest pace.\nStep 3: The overall reaction cannot proceed faster than this bottleneck step.\nStep 4: Therefore, the slowest step is the rate-determining step (RDS). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பலபடி சிக்கலான வினையின் ஒட்டுமொத்த வினைவேகத்தை தீர்மானிப்பது எது?",
+        "optionTexts": [
+          "மிக மெதுவான எளிய படி (வினைவேகத்தை தீர்மானிக்கும் படி)",
+          "மிக வேகமான எளிய படி",
+          "குறைந்த கிளர்வுறு ஆற்றல் கொண்ட படி",
+          "அனைத்து படிகளின் சராசரி வேகம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The decomposition of ozone proceeds as: Step 1: O3 <=> O2 + O (fast equilibrium, K); Step 2: O + O3 -> 2 O2 (slow, k2). The overall rate law for the reaction is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rate = k [O3]^2 [O2]^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rate = k [O3]^2",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Rate = k [O3] [O2]",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Rate = k [O3]",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The rate-determining step is the slow step (Step 2): Rate = k2 [O] [O3].\nStep 2: Atomic oxygen [O] is a reactive intermediate. From the fast pre-equilibrium (Step 1): K = [O2][O] / [O3] => [O] = K [O3] / [O2].\nStep 3: Substitute [O] into the rate law: Rate = k2 (K [O3] / [O2]) [O3] = k [O3]^2 [O2]^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓசோன் சிதைவு பின்வருமாறு நிகழ்கிறது: படி 1: O3 <=> O2 + O (வேகமான சமநிலை, K); படி 2: O + O3 -> 2 O2 (மெதுவான படி, k2). இவ்வினையின் ஒட்டுமொத்த வினைவேக விதி என்ன?",
+        "optionTexts": [
+          "Rate = k [O3]^2 [O2]^-1",
+          "Rate = k [O3]^2",
+          "Rate = k [O3] [O2]",
+          "Rate = k [O3]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For an n-th order chemical reaction, the relationship between the half-life period (t1/2) and initial concentration ([A]0) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "t1/2 is proportional to [A]0^(1 - n)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "t1/2 is proportional to [A]0^n",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "t1/2 is proportional to [A]0^(n - 1)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "t1/2 is proportional to [A]0^(n + 1)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: General integrated rate equation for n-th order (n != 1): k*t = (1 / (n - 1)) * [1/[A]^(n - 1) - 1/[A]0^(n - 1)].\nStep 2: At t = t1/2, [A] = [A]0 / 2.\nStep 3: t1/2 = [(2^(n - 1) - 1) / (k * (n - 1))] * [1 / [A]0^(n - 1)].\nStep 4: Therefore, t1/2 is proportional to 1 / [A]0^(n - 1) = [A]0^(1 - n) (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு n-ஆம் வகை வேதிவினைக்கு, அரை ஆயுட்காலத்திற்கும் (t1/2) ஆரம்ப செறிவுக்கும் ([A]0) இடையே உள்ள தொடர்பு என்ன?",
+        "optionTexts": [
+          "t1/2 ஆனது [A]0^(1 - n) க்கு நேர்விகிதத்தில் இருக்கும்",
+          "t1/2 ஆனது [A]0^n க்கு நேர்விகிதத்தில் இருக்கும்",
+          "t1/2 ஆனது [A]0^(n - 1) க்கு நேர்விகிதத்தில் இருக்கும்",
+          "t1/2 ஆனது [A]0^(n + 1) க்கு நேர்விகிதத்தில் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A radioactive isotope has a half-life of 15 days. What percentage of the original sample remains undecayed after 60 days?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.25%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12.5%",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "25.0%",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "3.125%",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Radioactive decay follows first-order kinetics: N = N0 * (1/2)^n, where n is the number of half-lives.\nStep 2: Number of half-lives n = total time / t1/2 = 60 / 15 = 4.\nStep 3: N / N0 = (1/2)^4 = 1/16 = 0.0625.\nStep 4: Percentage remaining = 0.0625 * 100 = 6.25% (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்க ஐசோடோப்பின் அரை ஆயுட்காலம் 15 நாட்கள் ஆகும். 60 நாட்களுக்குப் பிறகு ஆரம்ப மாதிரியில் சிதைவடையாமல் எஞ்சியிருக்கும் சதவீதம் என்ன?",
+        "optionTexts": [
+          "6.25%",
+          "12.5%",
+          "25.0%",
+          "3.125%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a first-order gas-phase reaction A(g) -> 2 B(g) + C(g), if the initial pressure is P_i and the total pressure at time t is P_t, the rate constant k is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "k = (2.303 / t) * log10[ 2 P_i / (3 P_i - P_t) ]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k = (2.303 / t) * log10[ P_i / (2 P_i - P_t) ]",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "k = (2.303 / t) * log10[ P_i / (P_i - P_t) ]",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "k = (2.303 / t) * log10[ P_i / P_t ]",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At t = 0: P_A = P_i, P_B = 0, P_C = 0. At time t: P_A = P_i - x, P_B = 2x, P_C = x.\nStep 2: Total pressure P_t = (P_i - x) + 2x + x = P_i + 2x => 2x = P_t - P_i => x = (P_t - P_i) / 2.\nStep 3: Partial pressure of A at time t: P_A = P_i - x = P_i - (P_t - P_i) / 2 = (3 P_i - P_t) / 2.\nStep 4: k = (2.303 / t) * log10(P_i / P_A) = (2.303 / t) * log10[ 2 P_i / (3 P_i - P_t) ] (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A(g) -> 2 B(g) + C(g) என்ற முதல் வகை வாயு வினையில், ஆரம்ப அழுத்தம் P_i மற்றும் t நேரத்தில் மொத்த அழுத்தம் P_t எனில், வினைவேக மாறிலி k இன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "k = (2.303 / t) * log10[ 2 P_i / (3 P_i - P_t) ]",
+          "k = (2.303 / t) * log10[ P_i / (2 P_i - P_t) ]",
+          "k = (2.303 / t) * log10[ P_i / (P_i - P_t) ]",
+          "k = (2.303 / t) * log10[ P_i / P_t ]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A substance A decomposes by two parallel first-order pathways: A -> B with rate constant k1 = 1.26 * 10^-4 s^-1, and A -> C with rate constant k2 = 3.14 * 10^-5 s^-1. What is the percentage yield of B?",
+    "options": [
+      {
+        "label": "A",
+        "text": "80.0%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20.0%",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "50.0%",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "75.0%",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total rate constant of disappearance of A: k_total = k1 + k2.\nStep 2: k_total = (1.26 * 10^-4) + (0.314 * 10^-4) = 1.574 * 10^-4 s^-1.\nStep 3: Fractional yield of B = k1 / (k1 + k2) = (1.26 * 10^-4) / (1.574 * 10^-4) = 1.26 / 1.574 = 0.8005.\nStep 4: Percentage yield of B = 0.8005 * 100 approx 80.0% (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொருள் A இரண்டு இணை முதல் வகை வினைகளில் சிதைவடைகிறது: A -> B (k1 = 1.26 * 10^-4 s^-1) மற்றும் A -> C (k2 = 3.14 * 10^-5 s^-1) எனில், B இன் சதவீத விளைச்சல் என்ன?",
+        "optionTexts": [
+          "80.0%",
+          "20.0%",
+          "50.0%",
+          "75.0%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the order of the photochemical reaction between H2 and Cl2 over water: H2(g) + Cl2(g) -(light)-> 2 HCl(g)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero order",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "First order",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Second order",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Third order",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The reaction H2(g) + Cl2(g) -> 2 HCl(g) over water is a photochemical chain reaction.\nStep 2: The rate of reaction depends strictly on the intensity of the absorbed light photons and not on the concentrations of H2 or Cl2.\nStep 3: Rate = k * I (intensity)^1 * [H2]^0 * [Cl2]^0.\nStep 4: Therefore, it is a zero-order reaction (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரின் மேல் நிகழும் H2(g) + Cl2(g) -(ஒளி)-> 2 HCl(g) என்ற ஒளிவேதி வினையின் வகை என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜிய வகை",
+          "முதல் வகை",
+          "இரண்டாம் வகை",
+          "மூன்றாம் வகை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a first-order reaction, the time required for 90% completion of the reaction (t90%) is approximately related to half-life (t1/2) as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "t90% = 3.32 * t1/2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "t90% = 2 * t1/2",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "t90% = 10 * t1/2",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "t90% = 5 * t1/2",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: t90% = (2.303 / k) * log10([A]0 / 0.1[A]0) = (2.303 / k) * log10(10) = 2.303 / k.\nStep 2: t1/2 = 0.693 / k = (2.303 * 0.3010) / k.\nStep 3: Dividing the two expressions: t90% / t1/2 = (2.303 / k) / (0.693 / k) = 1 / 0.3010 = 3.32.\nStep 4: Conclude t90% = 3.32 * t1/2 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முதல் வகை வினைக்கு, 90% நிறைவடைய தேவைப்படும் நேரம் (t90%) அரை ஆயுட்காலத்துடன் (t1/2) எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "t90% = 3.32 * t1/2",
+          "t90% = 2 * t1/2",
+          "t90% = 10 * t1/2",
+          "t90% = 5 * t1/2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the presence of a catalyst, the activation energy of a reaction is lowered by 20 kJ/mol at 300 K. How does the rate constant k change? (e^(20000 / (8.314 * 300)) = 3130)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increases by approximately 3130 times",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Decreases by 3130 times",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Increases by 20 times",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Remains unchanged",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ratio of rate constants: k_cat / k_uncat = e^(-Ea_cat / RT) / e^(-Ea_uncat / RT) = e^(Delta Ea / RT).\nStep 2: Delta Ea = 20 kJ/mol = 20000 J/mol.\nStep 3: Exponent = 20000 / (8.314 * 300) = 20000 / 2494.2 = 8.018.\nStep 4: k_cat / k_uncat = e^8.018 = 3130. The rate increases by ~3130 times (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினையூக்கியின் முன்னிலையில் 300 K இல் ஒரு வினையின் கிளர்வுறு ஆற்றல் 20 kJ/mol குறைகிறது எனில், வினைவேக மாறிலி k எவ்வாறு மாறும்?",
+        "optionTexts": [
+          "சுமார் 3130 மடங்கு அதிகரிக்கும்",
+          "3130 மடங்கு குறையும்",
+          "20 மடங்கு அதிகரிக்கும்",
+          "மாறாமல் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What are the units of the rate constant (k) for a second-order chemical reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "L mol^-1 s^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "s^-1",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "mol L^-1 s^-1",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "L^2 mol^-2 s^-1",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: General formula for units of rate constant: (mol L^-1)^(1 - n) * s^-1.\nStep 2: For second-order reaction, n = 2.\nStep 3: Units of k = (mol L^-1)^(1 - 2) * s^-1 = (mol L^-1)^-1 * s^-1 = L mol^-1 s^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு இரண்டாம் வகை வேதிவினையின் வினைவேக மாறிலியின் (k) அலகு என்ன?",
+        "optionTexts": [
+          "L mol^-1 s^-1",
+          "s^-1",
+          "mol L^-1 s^-1",
+          "L^2 mol^-2 s^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The rate constant of a reaction is given by k = 2.1 * 10^-3 s^-1. What is the overall order of this reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "First order",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zero order",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Second order",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Third order",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Inspect the unit of the rate constant: s^-1 (time^-1).\nStep 2: General unit formula is (mol L^-1)^(1 - n) * s^-1.\nStep 3: Setting (1 - n) = 0 gives n = 1.\nStep 4: A rate constant with units of s^-1 corresponds strictly to a first-order reaction. Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினையின் வினைவேக மாறிலி k = 2.1 * 10^-3 s^-1 எனில், அவ்வினையின் வகை என்ன?",
+        "optionTexts": [
+          "முதல் வகை",
+          "பூஜ்ஜிய வகை",
+          "இரண்டாம் வகை",
+          "மூன்றாம் வகை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a reaction, the half-life period is 100 minutes when initial concentration is 0.1 M, and 25 minutes when initial concentration is 0.2 M. What is the order of the reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Relationship between half-life and initial concentration: (t1/2)_1 / (t1/2)_2 = ([A]0_2 / [A]0_1)^(n - 1).\nStep 2: Substitute values: 100 / 25 = (0.2 / 0.1)^(n - 1).\nStep 3: 4 = (2)^(n - 1) => 2^2 = 2^(n - 1).\nStep 4: n - 1 = 2 => n = 3. The reaction is third order (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினையின் ஆரம்ப செறிவு 0.1 M ஆக இருக்கும் போது அரை ஆயுட்காலம் 100 நிமிடங்கள், மற்றும் ஆரம்ப செறிவு 0.2 M ஆக இருக்கும் போது 25 நிமிடங்கள் எனில், அவ்வினையின் வகை என்ன?",
+        "optionTexts": [
+          "3",
+          "2",
+          "1",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The inversion of cane sugar: C12H22O11 + H2O -(H+)-> C6H12O6 (glucose) + C6H12O6 (fructose) is followed experimentally by measuring:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Change in optical rotation with a polarimeter",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Change in electrical conductance with a conductivity meter",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Evolution of gas volume",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Precipitation of silver mirror",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sucrose is dextrorotatory (+66.5°).\nStep 2: Hydrolysis produces an equimolar mixture of dextrorotatory D-(+)-glucose (+52.5°) and strongly levorotatory D-(-)-fructose (-92.4°).\nStep 3: The net reaction mixture flips from dextrorotatory to levorotatory (inversion of sign).\nStep 4: The kinetics are followed by measuring the optical rotation using a polarimeter at regular time intervals (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரும்புச் சர்க்கரையின் சுழற்சி மாற்ற வினையின் (Inversion of cane sugar) வினைவேகம் எதனை அளவிடுவதன் மூலம் தீர்மானிக்கப்படுகிறது?",
+        "optionTexts": [
+          "துருவமுனைமானி (Polarimeter) கொண்டு ஒளி சுழற்சி மாற்றத்தை அளவிடுதல்",
+          "மின்கடத்து திறன்மானி கொண்டு கடத்துத்திறன் மாற்றத்தை அளவிடுதல்",
+          "வெளியாகும் வாயுவின் கனஅளவை அளவிடுதல்",
+          "வெள்ளி ஆடி வீழ்படிவாதலை அளவிடுதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE09-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What fraction of a reactant remains unreacted after a time t equal to 5 half-lives in a first-order reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 32",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 16",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "1 / 64",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "1 / 10",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a first-order reaction, the amount remaining after n half-lives is [A] = [A]0 * (1/2)^n.\nStep 2: Here, n = 5 half-lives.\nStep 3: Fraction remaining = [A] / [A]0 = (1/2)^5 = 1 / 32 (or 3.125%).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முதல் வகை வினையில், 5 அரை ஆயுட்காலங்களுக்குப் பிறகு எஞ்சியிருக்கும் வினைபடு பொருளின் பின்னம் என்ன?",
+        "optionTexts": [
+          "1 / 32",
+          "1 / 16",
+          "1 / 64",
+          "1 / 10"
+        ]
+      }
+    ]
+  }
+]
+
+with open("/working_dir/c_cb6a7f7ae415f13b/chem_09_CHE09.json", "w", encoding="utf-8") as f:
+    json.dump(questions, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully wrote {len(questions)} unique questions to chem_09_CHE09.json")
+EOF
+python3 /working_dir/c_cb6a7f7ae415f13b/generate_chem09_json.py
+}}

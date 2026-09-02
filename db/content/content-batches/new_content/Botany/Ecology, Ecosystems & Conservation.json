@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-BOT-BOT05-000001",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In population ecology, which population interaction is represented when an epiphyte orchid plant grows on the branch of a mango tree, or barnacles attach to the back of a moving whale?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mutualism (+, +)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Parasitism (+, -)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Commensalism (+, 0: one species benefits while the other is neither harmed nor benefited)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Amensalism (-, 0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In Commensalism, one organism derives shelter, support, or transportation benefits (+) without imposing any measurable cost or benefit on the host (0).\nStep 2: The orchid gains access to sunlight on the mango tree without deriving nutrition from it.\nStep 3: Barnacles gain filter-feeding mobility from the swimming whale without harming it.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மக்கள்தொகை சூழலியலில், மாமரத்தின் கிளையில் ஆர்க்கிட் தாவரம் வளர்வது அல்லது திமிங்கலத்தின் முதுகில் பார்னக்கிள்ஸ் ஒட்டி வாழ்வது எவ்வகை உயிரினங்களுக்கிடையேயான தொடர்பைக் குறிக்கிறது?",
+        "optionTexts": [
+          "மியூச்சுவலிசம் / கூட்டுயிரி வாழ்க்கை (+, +)",
+          "ஒட்டுண்ணி வாழ்க்கை (+, -)",
+          "கமென்சலிசம் / உடனுண்ணும் வாழ்க்கை (+, 0: ஒரு இனம் பயனடைகிறது, மற்றொன்று பயனடைவதும் இல்லை பாதிக்கப்படுவதும் இல்லை)",
+          "அமேன்சலிசம் (-, 0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000002",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an ecosystem, which ecological pyramid is universally and strictly upright in all terrestrial and aquatic food webs without any exception?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pyramid of Standing Crop",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pyramid of Biomass in an aquatic ocean ecosystem",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pyramid of Energy (because energy transfer obeys the Second Law of Thermodynamics and Lindeman's 10% law)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pyramid of Numbers in a tree-parasite ecosystem",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Energy decreases progressively at each successive trophic level because ~90% of energy is lost as metabolic heat (Lindeman's 10% rule).\nStep 2: Energy flowing to a higher trophic level can never exceed the energy captured at the lower level.\nStep 3: Hence, the Pyramid of Energy is always strictly upright.\nStep 4: (In contrast, aquatic biomass pyramids can be inverted due to small phytoplankton standing crops).\nStep 5: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சூழல் மண்டலத்தில், நில மற்றும் நீர் உணவு வலைகள் அனைத்திலும் எந்தவொரு விதிவிலக்கும் இன்றி எப்போதும் நேராக மட்டுமே (upright) அமையும் சூழலியல் பிரமிடு எது?",
+        "optionTexts": [
+          "நிலைத்த பயிர் பிரமிடு",
+          "கடல் சூழல் மண்டலத்தின் உயிரி நிறை பிரமிடு",
+          "ஆற்றல் பிரமிடு (வெப்ப இயக்கவியலின் இரண்டாம் விதி மற்றும் 10% ஆற்றல் மாற்ற விதிக்கு உட்படுவதால்)",
+          "மரம்-ஒட்டுண்ணி சூழலின் எண்ணிக்கை பிரமிடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000003",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Edward O. Wilson and the IUCN, which of the following is universally recognized as the single most critical driver among 'The Evil Quartet' responsible for driving plant and animal species toward extinction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Co-extinctions in obligate mutualisms",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Over-exploitation of natural resources",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Alien species invasions (e.g., Nile perch / Eichhornia)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Habitat loss and fragmentation (e.g., clearing of the Amazon rain forest for soya bean cultivation and cattle pasture)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Evil Quartet lists the four primary causes of biodiversity loss:\n1. Habitat loss and fragmentation (the #1 major cause)\n2. Over-exploitation\n3. Alien invasive species\n4. Co-extinctions.\nStep 2: Destruction of vast tropical habitats (like Amazon 'lungs of the planet' shrinking from 14% to <6% of earth's land) directly displaces millions of interdependent organisms.\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "IUCN மற்றும் சூழலியல் வல்லுநர்களின் கூற்றுப்படி, தாவர மற்றும் விலங்கு இனங்களை பேரழிவிற்கு தள்ளும் 'நான்கு தீமைகளில்' (The Evil Quartet) மிக முதன்மையான காரணியாகக் கருதப்படுவது எது?",
+        "optionTexts": [
+          "இணை-அழிவு நிகழ்வுகள்",
+          "வளங்களை அளவுக்கு அதிகமாக சுரண்டுதல்",
+          "அயல்நாட்டு சிற்றினங்களின் ஆக்கிரமிப்பு",
+          "வாழிட இழப்பு மற்றும் துண்டாடப்படுதல் (எ.கா. அமேசான் மழைக்காடுகள் அழிக்கப்படுவது)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000004",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Gause's Competitive Exclusion Principle, what happens when two closely related species compete for the exact same limiting resource in a habitat?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two species competing for the same limiting resources cannot coexist indefinitely and the competitively inferior one will be eliminated",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Both species undergo mutualistic symbiosis to share resources equally",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both species will double their reproductive rates",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The superior species voluntarily migrates to an adjacent habitat",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gause's Competitive Exclusion Principle states that two species competing for the same limiting resource cannot coexist indefinitely in the same ecological niche.\nStep 2: The competitively inferior species will eventually be eliminated.\nStep 3: Classic example: The extinction of Abingdon tortoises in Galapagos islands after goats were introduced.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காஸேயின் போட்டி விலக்கல் கொள்கையின்படி (Gause's Competitive Exclusion Principle), ஒரே வரம்புக்குட்பட்ட வளத்திற்கு இரண்டு நெருங்கிய தொடர்புடைய சிற்றினங்கள் போட்டியிடும் போது என்ன நிகழ்கிறது?",
+        "optionTexts": [
+          "ஒரே வளத்திற்குப் போட்டியிடும் இரண்டு இனங்கள் காலவரையின்றி ஒன்றாக வாழ முடியாது; போட்டியில் பின்தங்கிய இனம் இறுதியில் அழிக்கப்படும்",
+          "இரு இனங்களும் கூட்டுயிரியாக மாறி வளங்களைப் பகிர்ந்து கொள்ளும்",
+          "இரு இனங்களும் தங்களின் இனப்பெருக்க வீதத்தை இரட்டிப்பாக்கும்",
+          "போட்டியில் வென்ற இனம் அடுத்த வாழிடத்திற்கு இடம்பெயரும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000005",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Alexander von Humboldt's Species-Area relationship (log S = log C + Z log A), what is the typical range of the regression coefficient (Z-value / slope of the line) when analyzing species richness across very large geographical areas such as entire continents?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.6 to 1.2 (e.g., Z = 1.15 for frugivorous birds and mammals in tropical forests)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.1 to 0.2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.5 to 2.5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.01 to 0.05",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: On a logarithmic scale, the species-area relationship is described by log S = log C + Z log A.\nStep 2: For small, regional areas (e.g., plants in Britain, birds in California), Z lies in the narrow range of 0.1 to 0.2.\nStep 3: When analyzing the species-area relationship across immense areas like entire continents, the slope of the regression line becomes much steeper with Z in the range of 0.6 to 1.2 (e.g., Z = 1.15 for frugivorous birds in tropical forests).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அலெக்சாண்டர் வான் ஹம்போல்ட்டின் சிற்றின-பரப்பளவு தொடர்பில் (log S = log C + Z log A), கண்டங்கள் போன்ற மிகப்பரந்த நிலப்பரப்புகளை ஆய்வு செய்யும் போது பின்னடைவு குணகத்தின் (Z மதிப்பு / சாய்வு) வரம்பு என்ன?",
+        "optionTexts": [
+          "0.6 முதல் 1.2 (எ.கா. வெப்பமண்டலக் காடுகளில் பழம் உண்ணும் பறவைகள் மற்றும் பாலூட்டிகளுக்கு Z = 1.15)",
+          "0.1 முதல் 0.2",
+          "1.5 முதல் 2.5",
+          "0.01 முதல் 0.05"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000006",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Paul Ehrlich's 'Rivet Popper hypothesis' comparing an ecosystem to an airplane, what do the 'rivets on the wings' specifically represent?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Key species that drive major ecosystem functions",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Invasive weed species",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Abiotic factors such as soil and rainfall",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Primary consumers",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the Rivet Popper hypothesis by Stanford ecologist Paul Ehrlich, an ecosystem is compared to an airplane and species to rivets.\nStep 2: Popping a few rivets inside the plane (loss of minor species) may not immediately threaten flight safety.\nStep 3: However, removal of rivets on the wings (loss of key species that drive major ecosystem functions) poses a serious, direct threat to plane/ecosystem stability.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சூழல் மண்டலத்தை ஒரு விமானத்துடன் ஒப்பிடும் பால் எர்லிச்சின் 'ரிவெட் பாப்பர் கருதுகோளில்' (Rivet Popper hypothesis), 'விமானத்தின் இறக்கைகளில் உள்ள ரிவெட்டுகள்' எதனைக் குறிக்கின்றன?",
+        "optionTexts": [
+          "சூழல் மண்டலத்தின் முக்கிய செயல்பாடுகளைக் கட்டுப்படுத்தும் முதன்மை முக்கிய சிற்றினங்கள் (Key species)",
+          "ஆக்கிரமிப்பு களைச் சிற்றினங்கள்",
+          "மண் மற்றும் மழை போன்ற உயிரற்ற காரணிகள்",
+          "முதலாம் நிலை நுகர்வோர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000007",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the process of decomposition of detritus, which step involves water-soluble inorganic nutrients seeping into the soil horizon and getting precipitated as unavailable salts?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Leaching",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fragmentation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Catabolism",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Humification",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Decomposition involves 5 steps: Fragmentation, Leaching, Catabolism, Humification, and Mineralization.\nStep 2: By the process of Leaching, water-soluble inorganic nutrients go down into the soil profile and become precipitated as unavailable salts.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இறந்த கழிவுப் பொருட்களின் சிதைவுறுதலில் (decomposition), நீரில் கரையக்கூடிய கனிம ஊட்டச்சத்துக்கள் மண்ணின் அடி அடுக்குக்குள் சென்று கிடைக்காத உப்புகளாகப் படியும் நிலை எது?",
+        "optionTexts": [
+          "கசிந்து வடிதல் / லீச்சிங் (Leaching)",
+          "துண்டாதல் (Fragmentation)",
+          "சிதைமாற்றம் (Catabolism)",
+          "மட்காதல் (Humification)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000008",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Why is the ecological pyramid of biomass in an open ocean / aquatic ecosystem inverted (narrow base and broad apex)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The standing crop biomass of primary producers (phytoplankton) with high turnover is much smaller than the biomass of long-lived zooplankton and predatory fishes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phytoplankton have zero energy transfer efficiency",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fishes produce their own energy by chemosynthesis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zooplankton are primary producers in deep water",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In aquatic marine ecosystems, the standing crop of phytoplankton is very small at any given point in time due to rapid grazing and short lifespan.\nStep 2: Their rapid reproduction supports a much larger standing biomass of long-lived zooplankton and fishes.\nStep 3: Hence, the pyramid of biomass in oceans is inverted.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திறந்த பெருங்கடல் / நீர்வாழ் சூழல் மண்டலத்தின் உயிரி நிறை பிரமிடு தலைகீழாக (inverted) அமைவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "குறுகிய ஆயுள் கொண்ட முதன்மை உற்பத்தியாளர்களின் (தாவர மிதவை நுண்ணுயிரிகள்) உயிரி நிறை, நீண்ட ஆயுள் கொண்ட விலங்கு மிதவைகள் மற்றும் மீன்களின் உயிரி நிறையை விடக் குறைவாக இருப்பதால்",
+          "தாவர மிதவை நுண்ணுயிரிகள் பூஜ்ஜிய ஆற்றல் மாற்றத் திறனைக் கொண்டுள்ளதால்",
+          "மீன்கள் வேதிச்சேர்க்கை மூலம் தங்களுக்குத் தேவையான ஆற்றலை உற்பத்தி செய்வதால்",
+          "விலங்கு மிதவை நுண்ணுயிரிகள் ஆழ்கடலில் முதன்மை உற்பத்தியாளர்களாக செயல்படுவதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000009",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What mathematical equation describes the Verhulst-Pearl Logistic Growth of a population with a carrying capacity (K)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "dN/dt = rN ((K - N) / K)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "dN/dt = rN",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nt = N0 e^(rt)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "dN/dt = (K - N) / rN",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A population growing in a habitat with limited resources exhibits logistic growth (sigmoid curve).\nStep 2: The equation is given by dN/dt = rN ((K - N) / K), where N = population density, r = intrinsic rate of natural increase, and K = carrying capacity.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாங்கும் திறன் (K) கொண்ட ஒரு மக்கள்தொகையின் வெர்ஹல்ஸ்ட்-பியர்ல் லாஜிஸ்டிக் வளர்ச்சியை விவரிக்கும் கணிதச் சமன்பாடு எது?",
+        "optionTexts": [
+          "dN/dt = rN ((K - N) / K)",
+          "dN/dt = rN",
+          "Nt = N0 e^(rt)",
+          "dN/dt = (K - N) / rN"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000010",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which rule states that mammals living in colder climates generally possess shorter ears and shorter limbs to minimize body heat loss?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Allen's Rule",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bergmann's Rule",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gloger's Rule",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Jordan's Rule",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Allen's Rule states that mammals from colder climates have shorter ears, tails, and limbs (extremities).\nStep 2: Shorter extremities reduce the surface area-to-volume ratio, thereby minimizing metabolic heat loss.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளிர்ந்த காலநிலையில் வாழும் பாலூட்டிகள் உடல் வெப்ப இழப்பைக் குறைக்க பொதுவாகக் குறுகிய காதுகளையும் குறுகிய கால்களையும் பெற்றுள்ளன எனக் கூறும் விதி எது?",
+        "optionTexts": [
+          "ஆலனின் விதி (Allen's Rule)",
+          "பெர்க்மானின் விதி",
+          "க்ளோகரின் விதி",
+          "ஜோர்டானின் விதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000011",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In primary xerarch ecological succession on a bare rock, which organisms represent the pioneer community?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Crustose and Foliose Lichens",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mosses and Liverworts",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phytoplankton",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Perennial grasses and shrubs",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In xerarch primary succession on bare rock, lichens are the pioneer species.\nStep 2: Crustose lichens secrete carbonic and organic acids that weather the rock into soil particles.\nStep 3: This allows foliose lichens and mosses to establish subsequently, leading toward a mesic climax forest.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றுப் பாறையில் தொடங்கும் முதன்மை வறள்நிலை சூழலியல் வழிமுறை வளர்ச்சியில் (xerarch succession), முன்னோடி சமூகமாக (pioneer community) விளங்குபவை எவை?",
+        "optionTexts": [
+          "கிரஸ்டோஸ் மற்றும் போலியோஸ் லைக்கன்கள் (Lichens)",
+          "மாஸ்கள் மற்றும் ஈரல் தாவரங்கள்",
+          "தாவர மிதவை நுண்ணுயிரிகள்",
+          "பல்லாண்டு புற்கள் மற்றும் புதர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000012",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which relationship correctly represents the Net Primary Productivity (NPP) of an ecosystem in relation to Gross Primary Productivity (GPP) and Respiration loss (R)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NPP = GPP - R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NPP = GPP + R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "GPP = NPP - R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NPP = GPP / R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gross Primary Productivity (GPP) is the total rate of production of organic matter during photosynthesis.\nStep 2: A considerable amount of GPP is utilized by plants in cellular respiration (R).\nStep 3: The remaining biomass available to heterotrophs is the Net Primary Productivity: NPP = GPP - R.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சூழல் மண்டலத்தின் நிகர முதன்மை உற்பத்தித்திறன் (NPP), மொத்த முதன்மை உற்பத்தித்திறன் (GPP) மற்றும் சுவாச இழப்பு (R) ஆகியவற்றுக்கு இடையேயான சரியான தொடர்பு எது?",
+        "optionTexts": [
+          "NPP = GPP - R",
+          "NPP = GPP + R",
+          "GPP = NPP - R",
+          "NPP = GPP / R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000013",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Mediterranean orchid Ophrys, how is cross-pollination achieved by the male bee Colletes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pseudocopulation (the orchid petal mimics the shape, color, and scent of female bee)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Offering copious edible nectar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trapping the bee inside a pitcher",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Providing egg-laying safe sites inside the ovary",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Mediterranean orchid Ophrys employs sexual deceit (pseudocopulation).\nStep 2: One petal of the flower resembles the female bee in size, color, and markings.\nStep 3: The male bee is attracted and 'pseudocopulates' with the flower, during which pollen dusts the bee and is transferred to another flower.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மத்திய தரைக்கடல் பகுதியின் ஆஃப்ரிஸ் (Ophrys) ஆர்க்கிட் தாவரத்தில் ஆண் தேனீ மூலம் அயல் மகரந்தச்சேர்க்கை எவ்வாறு நிகழ்கிறது?",
+        "optionTexts": [
+          "போலி புணர்ச்சி / சூடோகாப்புலேஷன் (ஆர்க்கிட் இதழ் பெண் தேனீயின் வடிவம், நிறம் மற்றும் மணத்தை ஒத்திருப்பதால்)",
+          "அதிகளவு தேனை உண்ண வழங்குவதன் மூலம்",
+          "தேனீயை குடுவைக்குள் சிறைப்பிடிப்பதன் மூலம்",
+          "சூலகத்தினுள் முட்டையிடுவதற்கான பாதுகாப்பான இடத்தை வழங்குவதன் மூலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000014",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which invasive alien fish introduced into Lake Victoria (East Africa) led to the catastrophic extinction of an entire ecologically unique species flock of over 200 endemic cichlid fishes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nile Perch (Lates niloticus)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "African Catfish (Clarias gariepinus)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Water Hyacinth (Eichhornia)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gambusia affinis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The introduction of the Nile perch into Lake Victoria in East Africa is a textbook example of alien species invasion.\nStep 2: As an aggressive predator, it drove more than 200 native cichlid fish species to extinction.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிழக்கு ஆப்பிரிக்காவின் விக்டோரியா ஏரியில் அறிமுகப்படுத்தப்பட்டு 200-க்கும் மேற்பட்ட உள்ளூர் சிச்லிட் மீன் இனங்களின் அழிவிற்குக் காரணமான அயல்நாட்டு மீன் எது?",
+        "optionTexts": [
+          "நைல் பெர்ச் (Nile Perch)",
+          "ஆப்பிரிக்க கெளுத்தி மீன் (Clarias gariepinus)",
+          "ஆகாயத்தாமரை (Eichhornia)",
+          "கம்பூசியா மீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000015",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is an example of an Ex-situ (off-site) biodiversity conservation strategy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zoological parks, Botanical gardens, and Cryopreservation seed banks",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "National Parks and Wildlife Sanctuaries",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Biosphere Reserves",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sacred Groves in Meghalaya",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In-situ conservation protects organisms in their natural habitat (National Parks, Sanctuaries, Biosphere Reserves, Sacred Groves).\nStep 2: Ex-situ conservation takes threatened species out of their natural habitats into specialized care facilities (Zoological parks, Botanical gardens, Cryopreservation gene/seed banks).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்வருவனவற்றில் எது வெளிவாழிடப் பல்லுயிர் பாதுகாப்பு (Ex-situ conservation) முறைக்கு உதாரணமாகும்?",
+        "optionTexts": [
+          "விலங்கியல் பூங்காக்கள், தாவரவியல் தோட்டங்கள் மற்றும் உறைநிலை விதைப் வங்கிகள்",
+          "தேசிய பூங்காக்கள் மற்றும் வனவிலங்கு சரணாலயங்கள்",
+          "உயிர்க்கோளக் காப்பகங்கள் (Biosphere Reserves)",
+          "மேகாலயாவின் புனித காடுகள் (Sacred Groves)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000016",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Khasi and Jaintia Hills of Meghalaya and Aravalli Hills of Rajasthan, tracts of forest set aside and protected completely by indigenous religious traditions are called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sacred Groves",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ramsar Wetland Sites",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Biosphere transition zones",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Botanical arboretums",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sacred groves are forest patches protected due to religious and cultural beliefs by local tribal communities.\nStep 2: Notable examples include Khasi and Jaintia Hills in Meghalaya, Aravalli Hills in Rajasthan, Western Ghats in Karnataka/Maharashtra, and Sarguja/Chanda in MP.\nStep 3: In Meghalaya, sacred groves are the last refuges for a large number of rare and threatened plants.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மேகாலயாவின் காசி மற்றும் ஜெயின்டியா குன்றுகள் மற்றும் ராஜஸ்தானின் ஆரவல்லி குன்றுகளில் கலாச்சாரப் பாரம்பரியத்தால் பாதுகாக்கப்படும் காடுகள் எவ்வாறு அழைக்கப்படுகின்றன?",
+        "optionTexts": [
+          "புனித காடுகள் / கோவில் காடுகள் (Sacred Groves)",
+          "ராம்சார் ஈரநிலப் பகுதிகள்",
+          "உயிர்க்கோள மாறுதல் மண்டலங்கள்",
+          "தாவரவியல் மரப் பூங்காக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000017",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The historic Earth Summit on Environment and Development (UNCED) advocating for the conservation of biodiversity and sustainable utilization of its benefits was held in 1992 at:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rio de Janeiro, Brazil",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Johannesburg, South Africa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kyoto, Japan",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Montreal, Canada",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The historic Convention on Biological Diversity ('The Earth Summit') was held in Rio de Janeiro in 1992.\nStep 2: It called upon all nations to take appropriate measures for conservation of biodiversity and sustainable utilization of resources.\nStep 3: (The World Summit on Sustainable Development was held in 2002 in Johannesburg, South Africa).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பல்லுயிர் பாதுகாப்பு மற்றும் அதன் வளங்களின் நிலையான பயன்பாட்டிற்காக 1992 ஆம் ஆண்டு வரலாற்றுச் சிறப்புமிக்க புவி உச்சி மாநாடு (Earth Summit) எங்கு நடைபெற்றது?",
+        "optionTexts": [
+          "ரியோ டி ஜெனிரோ, பிரேசில்",
+          "ஜோகன்னஸ்பர்க், தென்னாப்பிரிக்கா",
+          "கியோட்டோ, ஜப்பான்",
+          "மான்ட்ரியல், கனடா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000018",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Robert May estimates the total global species diversity on Earth to be approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 million",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.5 million",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 to 50 million",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 million",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Currently, slightly more than 1.5 million living species have been described by IUCN.\nStep 2: Robert May placed a scientifically sound, conservative estimate of global species diversity at about 7 million.\nStep 3: More than 70% of all recorded species are animals, and insects constitute >70% of total animals.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ராபர்ட் மேயின் அறிவியல் மதிப்பீட்டின்படி, பூமியில் உள்ள மொத்த உலகளாவிய சிற்றினங்களின் எண்ணிக்கை தோராயமாக எவ்வளவு?",
+        "optionTexts": [
+          "7 மில்லியன் (70 லட்சம்)",
+          "1.5 மில்லியன்",
+          "20 முதல் 50 மில்லியன்",
+          "100 மில்லியன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000019",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following biogeochemical cycles is sedimentary in nature without any significant gaseous atmospheric exchange?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phosphorus cycle and Sulphur cycle",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Carbon cycle and Nitrogen cycle",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Oxygen cycle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Water cycle",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nutrient cycles are of two types: Gaseous and Sedimentary.\nStep 2: In gaseous cycles (Nitrogen, Carbon), the reservoir is the atmosphere/hydrosphere.\nStep 3: In sedimentary cycles (Phosphorus, Sulphur, Calcium), the primary reservoir is the Earth's crust (lithosphere rocks).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளிமண்டலத்தில் குறிப்பிடத்தக்க வாயு பரிமாற்றம் இன்றி புவி மேலோட்டை மட்டுமே முதன்மை தேக்கமாகக் கொண்டுள்ள படிவு வகை உயிரி-புவிவேதியியல் சுழற்சி எது?",
+        "optionTexts": [
+          "பாஸ்பரஸ் சுழற்சி மற்றும் கந்தகச் சுழற்சி",
+          "கார்பன் சுழற்சி மற்றும் நைட்ரஜன் சுழற்சி",
+          "ஆக்ஸிஜன் சுழற்சி",
+          "நீர் சுழற்சி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000020",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What adaptation allows the kangaroo rat of North American deserts to survive without drinking liquid water throughout its life?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Internal fat oxidation providing metabolic water, and ability to concentrate urine to excrete minimal water",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Absorbing water vapor directly through thick dermal scales",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Producing copious dilute urine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hibernating underground for 11 months every year",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The kangaroo rat in North American deserts satisfies 90% of its water requirements through metabolic water produced as a byproduct of internal fat oxidation.\nStep 2: It possesses extremely long loops of Henle to produce hyper-concentrated urine, minimizing urinary water loss.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வட அமெரிக்கப் பாலைவனங்களில் வாழும் கங்காரு எலி வாழ்நாளில் ஒருபோதும் நீர் அருந்தாமல் வாழ உதவும் உடலியல் தகவமைப்பு எது?",
+        "optionTexts": [
+          "உடல் கொழுப்பு ஆக்சிஜனேற்றம் மூலம் வளர்ச்சிதை மாற்ற நீரைப் பெறுதல் மற்றும் மிக அடர்ந்த சிறுநீரை வெளியேற்றி நீர் இழப்பைக் குறைத்தல்",
+          "தோல் செதில்கள் மூலம் காற்றில் உள்ள ஈரப்பதத்தை நேரடியாக உறிஞ்சுதல்",
+          "அதிக அளவில் நீர்த்த சிறுநீரை வெளியேற்றுதல்",
+          "ஆண்டுக்கு 11 மாதங்கள் நிலத்தடியில் குளிர்கால உறக்கம் கொள்ளுதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000021",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In MacArthur's famous study on five closely related species of warblers coexisting on the same spruce tree, competitive exclusion was avoided through:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Resource partitioning (foraging in different parts of the tree and at different times)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Predation on each other's nestlings",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Genetic hybridization into a single super-species",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Seasonal migration to completely different continents",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Robert MacArthur showed that 5 species of warblers living on the same spruce tree avoid competition.\nStep 2: They coexist through resource partitioning by developing behavioral differences in foraging activities and micro-habitats within the tree.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே மரத்தில் வாழும் ஐந்து வகையான சிலம்பன் பறவைகள் (Warblers) தங்களுக்குள் போட்டியால் ஏற்படும் அழிவைத் தவிர்த்து இணைந்து வாழ்வதற்கு மெக்ஆர்தர் காட்டிய காரணம் என்ன?",
+        "optionTexts": [
+          "வளப் பகிர்வு / ரிசோர்ஸ் பார்ட்டிஷனிங் (Resource partitioning - மரத்தின் வெவ்வேறு பகுதிகளில் வெவ்வேறு நேரங்களில் உணவு தேடுதல்)",
+          "ஒன்றின் குஞ்சுகளை மற்றொன்று வேட்டையாடுதல்",
+          "இனக்கலப்பு மூலம் ஒரே இனமாக மாறுதல்",
+          "வெவ்வேறு கண்டங்களுக்கு பருவகால இடப்பெயர்வு செய்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000022",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When human beings travel to high altitudes (>3,500 meters, e.g., Rohtang Pass), altitude sickness (nausea, fatigue, heart palpitations) is physiologically compensated by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increasing RBC production, decreasing hemoglobin binding affinity, and increasing breathing rate",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Decreasing RBC production and slowing heart rate",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increasing hemoglobin binding affinity and decreasing respiratory rate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ceasing cellular aerobic respiration in muscles",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At high altitude, low atmospheric pressure causes hypoxia (low oxygen availability).\nStep 2: The body acclimatizes by stimulating erythropoietin to increase RBC production.\nStep 3: Hemoglobin binding affinity for O2 decreases (releasing oxygen to tissues more readily) and breathing rate increases.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனிதர்கள் அதிக உயரமான மலைப்பகுதிகளுக்குச் செல்லும்போது (3500 மீட்டருக்கும் மேல்) ஏற்படும் உயர நோய் (Altitude sickness) உடலியல் ரீதியாக எவ்வாறு சரிசெய்யப்படுகிறது?",
+        "optionTexts": [
+          "RBC உற்பத்தியை அதிகரித்தல், ஹீமோகுளோபினின் பிணைப்புத் திறனைக் குறைத்து திசுக்களுக்கு ஆக்ஸிஜனை விடுவித்தல் மற்றும் சுவாச வீதத்தை அதிகரித்தல்",
+          "RBC உற்பத்தியைக் குறைத்தல் மற்றும் இதயத் துடிப்பைக் குறைத்தல்",
+          "ஹீமோகுளோபின் பிணைப்புத் திறனை அதிகரித்து சுவாச வீதத்தைக் குறைத்தல்",
+          "தசைகளில் காற்று சுவாசத்தை முழுமையாக நிறுத்துதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000023",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which species of bird became extinct in recent history directly due to human over-exploitation and habitat loss?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Passenger Pigeon (Ectopistes migratorius) and Dodo (Raphus cucullatus)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Flamingo",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Great Indian Bustard",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Siberian Crane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Over-exploitation by humans for food and feathers led to the extinction of the Dodo (Mauritius), Steller's sea cow (Russia), and Passenger pigeon (North America).\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனிதனின் அதீத சுரண்டல் மற்றும் வேட்டையாடுதல் காரணமாக சமீப காலத்தில் முற்றிலும் அழிந்துபோன பறவை இனம் எது?",
+        "optionTexts": [
+          "பயணப் புறா (Passenger Pigeon) மற்றும் டோடோ (Dodo)",
+          "பூநாரை (Flamingo)",
+          "கானமயில் (Great Indian Bustard)",
+          "சைபீரியன் கொக்கு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000024",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many globally recognized Biodiversity Hotspots exist in the world, and how many cover regions in India?",
+    "options": [
+      {
+        "label": "A",
+        "text": "34 total worldwide (now 36), of which 3 (Western Ghats-Sri Lanka, Indo-Burma, Himalaya) cover India",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10 total worldwide, of which 5 cover India",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50 total worldwide, of which 10 cover India",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "25 total worldwide, of which 1 covers India",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Norman Myers conceptualized biodiversity hotspots characterized by exceptional levels of plant endemism and serious habitat loss.\nStep 2: Initially 25 hotspots were identified; 9 were added later, bringing the total to 34 (now 36).\nStep 3: Three hotspots cover India's high biodiversity regions: Western Ghats and Sri Lanka, Indo-Burma, and the Himalayas.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உலகளவில் அங்கீகரிக்கப்பட்ட பல்லுயிர் சிறப்பிடங்கள் (Biodiversity Hotspots) எத்தனை மற்றும் அவற்றில் இந்தியாவை உள்ளடக்கியவை எத்தனை?",
+        "optionTexts": [
+          "உலகில் மொத்தம் 34 (தற்போது 36), இதில் 3 பகுதிகள் (மேற்குத் தொடர்ச்சி மலை-இலங்கை, இந்தோ-பர்மா, இமயமலை) இந்தியாவை உள்ளடக்கியுள்ளன",
+          "உலகில் மொத்தம் 10, இதில் 5 பகுதிகள் இந்தியாவை உள்ளடக்கியுள்ளன",
+          "உலகில் மொத்தம் 50, இதில் 10 பகுதிகள் இந்தியாவை உள்ளடக்கியுள்ளன",
+          "உலகில் மொத்தம் 25, இதில் 1 பகுதி இந்தியாவை உள்ளடக்கியுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000025",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In David Tilman's long-term ecological experiments on outdoor outdoor plots, what was the definitive finding regarding species richness and community stability?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Plots with greater species diversity showed less year-to-year variation in total biomass and increased overall productivity",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Plots with single species monocultures had highest biomass stability",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Species richness had no effect on ecosystem productivity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "High species diversity always led to immediate extinction of herbivores",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: David Tilman carried out long-term ecosystem experiments using outdoor plots.\nStep 2: He discovered that plots with more species showed less year-to-year variation in total biomass.\nStep 3: He also showed that increased diversity contributed to higher productivity.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேவிட் டில்மேன் வெளிப்புற நிலப்பரப்புகளில் மேற்கொண்ட நீண்டகால சூழலியல் சோதனைகளில் சிற்றினங்களின் எண்ணிக்கை மற்றும் சமூக நிலைத்தன்மை குறித்து கண்டறிந்த உண்மை என்ன?",
+        "optionTexts": [
+          "அதிக சிற்றினப் பன்முகத்தன்மை கொண்ட நிலப்பரப்புகள் ஆண்டுக்கு ஆண்டு மொத்த உயிரி நிறையில் குறைந்த மாறுபாட்டை வெளிப்படுத்தி அதிக உற்பத்தித்திறனை அளித்தன",
+          "ஒற்றை இனம் மட்டுமே உள்ள நிலப்பரப்புகள் அதிக நிலைத்தன்மையைக் கொண்டிருந்தன",
+          "சிற்றினப் பன்முகத்தன்மை சூழல் மண்டல உற்பத்தித்திறனில் எவ்வித தாக்கத்தையும் ஏற்படுத்தவில்லை",
+          "அதிக சிற்றினப் பன்முகத்தன்மை தாவர உண்ணிகளின் விரைவான அழிவிற்குக் காரணமானது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000026",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which interspecific population interaction is represented by the relationship between the fungus Penicillium and surrounding bacteria, where the fungus secretes penicillin that kills bacteria without gaining or losing direct metabolic advantage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Amensalism (-, 0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Commensalism (+, 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Parasitism (+, -)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mutualism (+, +)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Amensalism is an interaction in which one species is harmed/inhibited (-) while the other species is unaffected (0).\nStep 2: Penicillium secretes the antibiotic penicillin, inhibiting bacterial growth without gaining nutritional benefit directly from the dead bacteria.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெனிசிலியம் பூஞ்சை பெனிசிலினைச் சுரந்து பாக்டீரியாக்களை அழிக்கும் போது பூஞ்சைக்கு எவ்வித நேரடிப் பயனோ பாதிப்போ இல்லாத தொடர்பு எவ்வகை உயிரினத் தொடர்பைக் குறிக்கிறது?",
+        "optionTexts": [
+          "அமேன்சலிசம் / எதிர்ப் பண்பு (-, 0)",
+          "கமென்சலிசம் (+, 0)",
+          "ஒட்டுண்ணி வாழ்க்கை (+, -)",
+          "கூட்டுயிரி வாழ்க்கை (+, +)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000027",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a food chain, what percentage of energy is transferred from one trophic level to the next higher trophic level according to Lindeman's 10% law?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Approximately 10% (the remaining ~90% is lost as metabolic heat and respiration)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Raymond Lindeman (1942) formulated the 10% law of energy transfer.\nStep 2: Only ~10% of the energy entering a trophic level is assimilated and made available to the next trophic level.\nStep 3: ~90% is lost during respiration, movement, and heat loss.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லிண்ட்மேனின் 10% ஆற்றல் விதியின்படி, ஒரு ஊட்டமட்டத்திலிருந்து அடுத்த உயர் ஊட்டமட்டத்திற்கு மாற்றப்படும் ஆற்றலின் அளவு எவ்வளவு?",
+        "optionTexts": [
+          "தோராயமாக 10% (மீதமுள்ள ~90% சுவாசம் மற்றும் வெப்பமாக வெளியேறுகிறது)",
+          "50%",
+          "1%",
+          "100%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000028",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In North American rocky intertidal communities, when the predatory starfish Pisaster was experimentally removed from an enclosed area, what was the ecological consequence?",
+    "options": [
+      {
+        "label": "A",
+        "text": "More than 10 species of intertidal invertebrates became extinct within a year due to intense interspecific competition",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "All invertebrate populations doubled in number",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Algal vegetation completely disappeared",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Barnacles and mussels developed mutualism",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Predators help in maintaining species diversity in a community by reducing the intensity of competition among competing prey species.\nStep 2: In Robert Paine's field experiment, removal of the keystone predator Pisaster led to competitive exclusion where more than 10 invertebrate prey species became extinct.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாறை நிறைந்த கடல் இடைப் பகுதியில் வேட்டையாடும் பைசாஸ்டர் (Pisaster) நட்சத்திர மீனை நீக்கிய போது ஏற்பட்ட சூழலியல் விளைவு என்ன?",
+        "optionTexts": [
+          "இனங்களுக்கிடையேயான கடும் போட்டி காரணமாக ஒரு வருடத்திற்குள் 10-க்கும் மேற்பட்ட முதுகெலும்பற்ற சிற்றினங்கள் அழிந்து போயின",
+          "அனைத்து முதுகெலும்பற்ற உயிரினங்களின் எண்ணிக்கை இரட்டிப்பானது",
+          "பாசி தாவரங்கள் முற்றிலும் அழிந்தன",
+          "பார்னக்கிள்கள் மற்றும் சிப்பிகள் கூட்டுயிரிகளாக மாறின"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000029",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is an example of an obligate mutualistic relationship showing co-evolution of mutualists?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fig tree (Ficus) pollinated exclusively by its partner Fig Wasp species",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cattle egret bird foraging near grazing cattle",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Clown fish sheltered among stinging sea anemone tentacles",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Barnacles attached to the skin of a whale",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The mutualism between fig trees and pollinator wasps is one-to-one and obligate.\nStep 2: A given fig species can be pollinated only by its specific partner wasp species.\nStep 3: The female wasp oviposits within the fig syconium fruit, pollinating the inflorescence while fig provides nourishment for developing wasp larvae.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணை-பரிணாமத்தை வெளிப்படுத்தும் கட்டாயக் கூட்டுயிரி வாழ்க்கைக்கு (obligate mutualism) மிகச்சிறந்த உதாரணம் எது?",
+        "optionTexts": [
+          "அத்தி மரம் (Ficus) அதன் குறிப்பிட்ட அத்தி குளவி (Fig Wasp) மூலம் மட்டுமே மகரந்தச்சேர்க்கை அடைதல்",
+          "மேயும் மாடுகளின் அருகில் உண்ணி உண்ணும் கொக்குகள்",
+          "கொட்டும் கடல் சாமந்தியின் உணர்நீட்சிகளுக்குள் வாழும் கோமாளி மீன்",
+          "திமிங்கலத்தின் தோலில் ஒட்டி வாழும் பார்னக்கிள்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT05-000030",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What type of population age pyramid is represented by a narrow base with fewer pre-reproductive individuals compared to reproductive and post-reproductive cohorts?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Declining population pyramid (Urn-shaped)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Expanding population pyramid (Triangular)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Stable population pyramid (Bell-shaped)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero-growth linear pyramid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Age pyramids plot proportions of pre-reproductive, reproductive, and post-reproductive age groups.\nStep 2: An expanding pyramid has a broad base with high pre-reproductive individuals (triangular).\nStep 3: A stable pyramid has roughly equal pre-reproductive and reproductive cohorts (bell-shaped).\nStep 4: A declining pyramid has a narrow base with fewer pre-reproductive individuals than reproductive individuals (urn-shaped).\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இனப்பெருக்கத்திற்கு முந்தைய வயதினரின் எண்ணிக்கை குறைவாகவும் குறுகிய அடிப்பகுதியையும் கொண்ட மக்கள்தொகை வயது பிரமிடு எவ்வகை மக்கள்தொகையைக் குறிக்கிறது?",
+        "optionTexts": [
+          "குறையும் மக்கள்தொகை பிரமிடு / குடுவை வடிவம் (Declining pyramid)",
+          "அதிகரிக்கும் மக்கள்தொகை பிரமிடு / முக்கோண வடிவம்",
+          "நிலையான மக்கள்தொகை பிரமிடு / மணி வடிவம்",
+          "பூஜ்ஜிய வளர்ச்சி நேர்கோட்டு பிரமிடு"
+        ]
+      }
+    ]
+  }
+]

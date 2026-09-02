@@ -1,0 +1,1480 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE06-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following binary liquid mixtures forms an ideal solution obeying Raoult's law over the entire range of concentration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzene and Toluene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ethanol and Acetone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chloroform and Acetone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitric acid and Water",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An ideal solution forms when intermolecular attractive forces between solute-solvent (A-B) are nearly equal to those between solute-solute (A-A) and solvent-solvent (B-B).\nStep 2: Benzene and toluene have nearly identical molecular sizes, polarities, and structures, giving Delta H_mix = 0 and Delta V_mix = 0.\nStep 3: Mixtures like ethanol + acetone show positive deviation, while chloroform + acetone and HNO3 + water show negative deviation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இருகூறு திரவக் கலவைகளில் எது அனைத்துச் செறிவு எல்லைகளிலும் ரவுல்ட் விதிக்கு உட்படும் நல்லியல்பு கரைசலை உருவாக்குகிறது?",
+        "optionTexts": [
+          "பென்சீன் மற்றும் டொலுவீன்",
+          "எத்தனால் மற்றும் அசிட்டோன்",
+          "குளோரோபார்ம் மற்றும் அசிட்டோன்",
+          "நைட்ரிக் அமிலம் மற்றும் நீர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A mixture of ethanol and acetone exhibits positive deviation from Raoult's law because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetone molecules get between ethanol molecules and weaken the intermolecular hydrogen bonding",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Strong hydrogen bonds are newly formed between ethanol and acetone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Delta H_mixing is negative",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The boiling point of the mixture is higher than both components",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In pure ethanol, molecules are held together by strong intermolecular hydrogen bonds.\nStep 2: On adding acetone, its molecules occupy spaces between ethanol molecules, breaking existing H-bonds.\nStep 3: The resulting A-B interactions are weaker than A-A interactions, increasing escaping tendency and vapor pressure (positive deviation, Delta H_mix > 0, Delta V_mix > 0).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனால் மற்றும் அசிட்டோன் கலவை ரவுல்ட் விதியிலிருந்து நேர்மறை விலகலைக் காட்டுவதற்கான காரணம் என்ன?",
+        "optionTexts": [
+          "அசிட்டோன் மூலக்கூறுகள் எத்தனால் மூலக்கூறுகளுக்கு இடையே நுழைந்து அவற்றின் ஹைட்ரஜன் பிணைப்புகளை பலவீனப்படுத்துகின்றன",
+          "எத்தனால் மற்றும் அசிட்டோன் இடையே புதிய வலிமையான ஹைட்ரஜன் பிணைப்புகள் உருவாகின்றன",
+          "Delta H_mixing மதிப்பு எதிர்மறியானது",
+          "கலவையின் கொதிநிலை இரண்டு கூறுகளை விடவும் அதிகமாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Mixing of chloroform and acetone results in a negative deviation from Raoult's law with the evolution of heat because of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formation of new intermolecular hydrogen bonds between chloroform and acetone molecules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Dipole-dipole repulsions between the components",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increase in the volume of mixing (Delta V_mix > 0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Precipitation of acetone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In chloroform (CHCl3), the hydrogen atom is acidic due to the strong -I effect of three chlorines.\nStep 2: When mixed with acetone (CH3COCH3), a new intermolecular hydrogen bond forms between the H of chloroform and the carbonyl oxygen of acetone.\nStep 3: The solute-solvent (A-B) attraction is stronger than A-A and B-B attractions, lowering vapor pressure (negative deviation, Delta H_mix < 0, Delta V_mix < 0).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோபார்ம் மற்றும் அசிட்டோனைக் கலக்கும் போது வெப்ப உமிழ்வுடன் ரவுல்ட் விதியிலிருந்து எதிர்மறை விலகல் ஏற்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "குளோரோபார்ம் மற்றும் அசிட்டோன் மூலக்கூறுகளிடையே புதிய மூலக்கூறுகளுக்கு இடையேயான ஹைட்ரஜன் பிணைப்பு உருவாவது",
+          "கூறுகளுக்கு இடையே இருமுனை-இருமுனை விலக்கு விசை ஏற்படுவது",
+          "கலத்தலின் கனஅளவு அதிகரிப்பது (Delta V_mix > 0)",
+          "அசிட்டோன் வீழ்படிவாவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Henry's law, the solubility of a gas in a liquid decreases with an increase in temperature because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dissolution of gas is an exothermic process, and the Henry's law constant (K_H) increases with temperature",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "K_H decreases with increasing temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Dissolution of gas is endothermic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gas molecules decompose at higher temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Henry's law is expressed as P = K_H * x, where x is solubility (mole fraction) and K_H is Henry's constant.\nStep 2: Higher K_H at a given pressure corresponds to lower solubility (x = P / K_H).\nStep 3: As temperature increases, gas dissolution is typically exothermic (Delta H_sol < 0), causing K_H to increase and gas solubility to decrease.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹென்றி விதியின்படி, வெப்பநிலை அதிகரிக்கும் போது திரவத்தில் வாயுவின் கரைதிறன் குறைவதற்கான காரணம் என்ன?",
+        "optionTexts": [
+          "வாயு கரைதல் ஒரு வெப்ப உமிழ் செயல்முறை மற்றும் ஹென்றி மாறிலி (K_H) வெப்பநிலையுடன் அதிகரிக்கிறது",
+          "வெப்பநிலை அதிகரிக்கும் போது K_H குறைகிறது",
+          "வாயு கரைதல் ஒரு வெப்ப ஏற்பு செயல்முறை",
+          "உயர் வெப்பநிலையில் வாயு மூலக்கூறுகள் சிதைவடைகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The vapor pressure of pure benzene at a certain temperature is 0.850 bar. When 0.5 g of a non-volatile non-electrolyte solid is added to 39.0 g of benzene (molar mass = 78 g/mol), the vapor pressure of the solution becomes 0.845 bar. What is the molar mass of the solid substance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "170 g/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "85 g/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "340 g/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "220 g/mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Relative lowering of vapor pressure: (P° - P_s) / P° = (w2 / M2) * (M1 / w1).\nStep 2: P° = 0.850 bar, P_s = 0.845 bar, P° - P_s = 0.005 bar. w2 = 0.5 g, w1 = 39.0 g, M1 = 78 g/mol.\nStep 3: 0.005 / 0.850 = (0.5 / M2) * (78 / 39) = (0.5 / M2) * 2 = 1.0 / M2.\nStep 4: M2 = 0.850 / 0.005 = 170 g/mol. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய பென்சீனின் ஆவி அழுத்தம் 0.850 பார். 39.0 g பென்சீனில் (மோலார் நிறை = 78 g/mol) 0.5 g ஆவியாகா திண்மத்தைக் கரைக்கும் போது ஆவி அழுத்தம் 0.845 பாராகக் குறைகிறது எனில், அத்திண்மத்தின் மோலார் நிறை என்ன?",
+        "optionTexts": [
+          "170 g/mol",
+          "85 g/mol",
+          "340 g/mol",
+          "220 g/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The boiling point of an aqueous solution containing 6.0 g of urea (molar mass = 60 g/mol) in 500 g of water is: (Kb for water = 0.52 K kg mol^-1, normal boiling point of water = 100 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "100.104 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100.520 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100.052 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "101.040 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Calculate moles of urea: n = 6.0 / 60 = 0.1 mol.\nStep 2: Molality m = moles of solute / mass of solvent in kg = 0.1 / 0.5 kg = 0.2 m.\nStep 3: Elevation in boiling point Delta Tb = Kb * m = 0.52 * 0.2 = 0.104 K.\nStep 4: Boiling point of solution Tb = 100 °C + 0.104 °C = 100.104 °C (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 g நீரில் 6.0 g யூரியா (மோலார் நிறை = 60 g/mol) கரைக்கப்பட்டுள்ள கரைசலின் கொதிநிலை என்ன? (நீரின் Kb = 0.52 K kg mol^-1)",
+        "optionTexts": [
+          "100.104 °C",
+          "100.520 °C",
+          "100.052 °C",
+          "101.040 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Ethylene glycol is widely added to water in automobile radiators in cold countries because it acts as an antifreeze by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Depressing the freezing point and elevating the boiling point of water",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Elevating the freezing point of water",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Decreasing the boiling point of water",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Acting as a solid lubricating agent",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Adding a non-volatile solute (ethylene glycol) to water lowers its freezing point (depression of freezing point, Delta Tf = Kf * m).\nStep 2: This prevents water in the engine cooling system from freezing into solid ice in sub-zero winter temperatures.\nStep 3: Simultaneously, it elevates the boiling point (Delta Tb), preventing boiling over in hot running engines.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளிர்ந்த நாடுகளில் வாகன ரேடியேட்டர்களில் எத்திலீன் கிளைக்கால் உறைதல் தடுப்பானாகச் சேர்க்கப்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "நீரின் உறைநிலையைக் குறைத்து கொதிநிலையை உயர்த்துவதால்",
+          "நீரின் உறைநிலையை உயர்த்துவதால்",
+          "நீரின் கொதிநிலையைக் குறைப்பதால்",
+          "திட உராய்வுத் தடுப்பானாகச் செயல்படுவதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which semipermeable membrane is commonly used for the desalination of seawater through reverse osmosis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cellulose acetate supported on an appropriate porous substrate",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Gelatin membrane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Parchment paper only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Animal bladder only",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reverse osmosis requires a semipermeable membrane that withstands high mechanical pressures (exceeding seawater osmotic pressure of ~30 atm).\nStep 2: A thin film of cellulose acetate deposited over a porous polymeric support allows water molecules to pass while rejecting salt ions.\nStep 3: It is the standard industrial membrane used for desalinating seawater.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எதிர் சவ்வூடு பரவல் மூலம் கடல்நீரைக் குடிநீராக்கும் முறையில் பொதுவாகப் பயன்படுத்தப்படும் அரைஊடுருவு சவ்வு எது?",
+        "optionTexts": [
+          "துளைகள் கொண்ட தாங்கியின் மீது அமைக்கப்பட்ட செல்லுலோஸ் அசிட்டேட் சவ்வு",
+          "ஜெலட்டின் சவ்வு",
+          "தோல் காகிதம் மட்டுமே",
+          "விலங்கு சவ்வு மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Benzoic acid completely dimerizes in benzene via intermolecular hydrogen bonding. What is the theoretical van 't Hoff factor (i) for this association?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.25",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Dimerization equation: 2 C6H5COOH <=> (C6H5COOH)2.\nStep 2: Two monomer molecules associate to form one dimer particle.\nStep 3: Formula for association: i = 1 - alpha + alpha / n. For complete association (alpha = 1) into dimers (n = 2): i = 1 - 1 + 1/2 = 0.5.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீனில் பென்சோயிக் அமிலம் ஹைட்ரஜன் பிணைப்பினால் முழுமையாக இரட்டை மூலக்கூறாக (டைமர்) மாறும்போது, அதன் கோட்பாட்டு வான்ட் ஹாஃப் காரணி (i) என்ன?",
+        "optionTexts": [
+          "0.5",
+          "1.0",
+          "2.0",
+          "0.25"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The freezing point depression of a 0.1 m aqueous solution of a monobasic acid HX is measured to be 0.205 K. What is the degree of dissociation (alpha) of the acid? (Kf for water = 1.86 K kg mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.10 (10%)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.05 (5%)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.20 (20%)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.00 (100%)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Theoretical Delta Tf (without dissociation) = Kf * m = 1.86 * 0.1 = 0.186 K.\nStep 2: van 't Hoff factor i = Delta Tf(observed) / Delta Tf(calculated) = 0.205 / 0.186 = 1.102.\nStep 3: For monobasic acid HX <=> H+ + X- (n = 2 ions): alpha = i - 1 = 1.102 - 1 = 0.102 approx 0.10 (10%).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.1 m HX ஒற்றைக்கார அமிலக் கரைசலின் உறைநிலைத் தாழ்வு 0.205 K எனில், அவ்வமிலத்தின் பிரிகை வீதம் (alpha) என்ன? (நீரின் Kf = 1.86 K kg mol^-1)",
+        "optionTexts": [
+          "0.10 (10%)",
+          "0.05 (5%)",
+          "0.20 (20%)",
+          "1.00 (100%)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "On increasing the dilution of an electrolytic solution, what happens to conductivity (kappa) and molar conductivity (Lambda_m)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conductivity (kappa) decreases, while molar conductivity (Lambda_m) increases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Both conductivity and molar conductivity increase",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both conductivity and molar conductivity decrease",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conductivity increases, while molar conductivity decreases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conductivity (kappa) is the conductance of 1 cm^3 (unit volume) of electrolytic solution.\nStep 2: On dilution, the number of current-carrying ions per unit volume decreases, so conductivity (kappa) always decreases.\nStep 3: Molar conductivity Lambda_m = kappa * V. The increase in volume V containing 1 mole of electrolyte overwhelmingly compensates for the decrease in kappa.\nStep 4: Therefore, Lambda_m increases on dilution (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்பகுளிக் கரைசலை நீர்க்கச் செய்யும்போது, மின்கடத்து திறன் (kappa) மற்றும் மோலார் கடத்து திறன் (Lambda_m) எவ்வாறு மாறுகின்றன?",
+        "optionTexts": [
+          "மின்கடத்து திறன் (kappa) குறைகிறது, ஆனால் மோலார் கடத்து திறன் (Lambda_m) அதிகரிக்கிறது",
+          "இரண்டுமே அதிகரிக்கின்றன",
+          "இரண்டுமே குறைகின்றன",
+          "மின்கடத்து திறன் அதிகரிக்கிறது, மோலார் கடத்து திறன் குறைகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Given limiting molar conductivities at 298 K: Lambda°_m(CH3COONa) = 91.0 S cm^2 mol^-1, Lambda°_m(HCl) = 426.0 S cm^2 mol^-1, and Lambda°_m(NaCl) = 126.0 S cm^2 mol^-1. The limiting molar conductivity of acetic acid Lambda°_m(CH3COOH) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "391.0 S cm^2 mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "517.0 S cm^2 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "643.0 S cm^2 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "209.0 S cm^2 mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Apply Kohlrausch's Law of Independent Migration of Ions:\nLambda°_m(CH3COOH) = Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl).\nStep 2: Substitute values: Lambda°_m(CH3COOH) = 91.0 + 426.0 - 126.0.\nStep 3: Lambda°_m(CH3COOH) = 517.0 - 126.0 = 391.0 S cm^2 mol^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் கொடுக்கப்பட்டுள்ள எல்லை மோலார் கடத்துத்திறன் மதிப்புகள்: CH3COONa = 91.0 S cm^2 mol^-1, HCl = 426.0 S cm^2 mol^-1, NaCl = 126.0 S cm^2 mol^-1 எனில், அசிட்டிக் அமிலத்தின் (CH3COOH) எல்லை மோலார் கடத்துத்திறன் என்ன?",
+        "optionTexts": [
+          "391.0 S cm^2 mol^-1",
+          "517.0 S cm^2 mol^-1",
+          "643.0 S cm^2 mol^-1",
+          "209.0 S cm^2 mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a Daniell cell (Zn-Cu galvanic cell), what is the primary function of the salt bridge containing agar-agar and inert electrolyte (such as KCl or KNO3)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maintains electrical neutrality in both half-cells and completes the internal circuit",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Supplies electrons to the cathode directly",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increases the standard cell EMF",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Prevents oxidation of zinc",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: As oxidation occurs at the zinc anode, Zn2+ ions accumulate in the anode compartment.\nStep 2: At the copper cathode, Cu2+ ions discharge, leaving excess SO4^2- in the cathode compartment.\nStep 3: The salt bridge allows migration of counter-ions (e.g. Cl- to anode and K+ to cathode), neutralizing charge accumulation and preventing liquid junction potential.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேனியல் மின்கலனில் அகர்-அகர் மற்றும் மந்த மின்பகுளியைக் கொண்டுள்ள உப்புப் பாலத்தின் முதன்மைப் பணி என்ன?",
+        "optionTexts": [
+          "இரு அரைக்கலன்களிலும் மின் நடுநிலைமையைப் பேணி உட்புற மின்சுற்றை நிறைவு செய்வது",
+          "நேரடியாக கேத்தோடிற்கு எலக்ட்ரான்களை வழங்குவது",
+          "மின்கலனின் திட்ட மின்னழுத்தத்தை அதிகரிப்பது",
+          "துத்தநாகத்தின் ஆக்சிஜனேற்றத்தைத் தடுப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Given standard reduction potentials: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, and E°(Cl2/Cl-) = +1.36 V. The strongest oxidizing agent among these is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "MnO4^-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cl2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cr2O7^2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cr3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oxidizing power is directly proportional to standard reduction potential (E°_red).\nStep 2: A species with a more positive standard reduction potential has a greater tendency to gain electrons and undergo reduction.\nStep 3: Comparing E° values: MnO4^- (+1.51 V) > Cl2 (+1.36 V) > Cr2O7^2- (+1.33 V) > Cr3+ (-0.74 V).\nStep 4: MnO4^- has the most positive reduction potential and is the strongest oxidizing agent (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்டுள்ள திட்ட ஒடுக்க மின்னழுத்தங்கள்: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, E°(Cl2/Cl-) = +1.36 V எனில், மிக வலிமையான ஆக்சிஜனேற்ற காரணி எது?",
+        "optionTexts": [
+          "MnO4^-",
+          "Cl2",
+          "Cr2O7^2-",
+          "Cr3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the Daniell cell: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), if E°cell = 1.10 V at 298 K, what is the cell potential (E_cell)? (2.303 RT / F = 0.0591 V)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.159 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.041 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.100 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.129 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cell reaction: Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), where n = 2 electrons transferred.\nStep 2: Nernst equation: E_cell = E°cell - (0.0591 / n) * log10([Zn2+] / [Cu2+]).\nStep 3: [Zn2+] / [Cu2+] = 0.01 / 1.0 = 10^-2, so log10(10^-2) = -2.\nStep 4: E_cell = 1.10 - (0.0591 / 2) * (-2) = 1.10 + 0.0591 = 1.1591 V approx 1.159 V (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேனியல் மின்கலனுக்கு: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), 298 K இல் E°cell = 1.10 V எனில், அம்மின்கலனின் மின்னழுத்தம் (E_cell) என்ன?",
+        "optionTexts": [
+          "1.159 V",
+          "1.041 V",
+          "1.100 V",
+          "1.129 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the standard cell potential for the reaction Cu(s) + 2 Ag+(aq) -> Cu2+(aq) + 2 Ag(s) is E°cell = +0.46 V at 298 K, what is the equilibrium constant (K) for this reaction? (2.303 RT / F = 0.059 V)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.9 * 10^15",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.0 * 10^8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.6 * 10^10",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.0 * 10^15",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula relating E°cell and equilibrium constant K: E°cell = (0.059 / n) * log10(K).\nStep 2: For this reaction, n = 2 electrons transferred.\nStep 3: 0.46 = (0.059 / 2) * log10(K) => log10(K) = (0.46 * 2) / 0.059 = 0.92 / 0.059 = 15.59.\nStep 4: K = 10^15.59 = 10^0.59 * 10^15 = 3.9 * 10^15 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Cu(s) + 2 Ag+(aq) -> Cu2+(aq) + 2 Ag(s) என்ற வினையின் திட்ட மின்கல மின்னழுத்தம் E°cell = +0.46 V எனில், அதன் சமநிலை மாறிலி (K) மதிப்பு என்ன? (2.303 RT / F = 0.059 V)",
+        "optionTexts": [
+          "3.9 * 10^15",
+          "1.0 * 10^8",
+          "4.6 * 10^10",
+          "2.0 * 10^15"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many Faradays (F) of electricity are required to produce 27.0 g of aluminum from molten Al2O3? (Molar mass of Al = 27.0 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 F",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 F",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 F",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 F",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reduction reaction at the cathode: Al3+ + 3 e- -> Al(s).\nStep 2: Deposition of 1 mole of Al (27.0 g) requires 3 moles of electrons.\nStep 3: Charge carried by 1 mole of electrons = 1 Faraday (F).\nStep 4: Therefore, depositing 27.0 g of Al requires exactly 3 F of electricity (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உருகிய Al2O3 இலிருந்து 27.0 g அலுமினியத்தைப் பெற எத்தனை ஃபாரடே (F) மின்சாரம் தேவைப்படுகிறது? (Al மோலார் நிறை = 27.0 g/mol)",
+        "optionTexts": [
+          "3 F",
+          "1 F",
+          "6 F",
+          "2 F"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A steady current of 1.5 A is passed through a solution of CuSO4 for 20 minutes. What mass of copper is deposited at the cathode? (Molar mass of Cu = 63.5 g/mol, 1 F = 96500 C/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.592 g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.185 g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.296 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.370 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total charge Q = I * t = 1.5 A * (20 * 60 s) = 1.5 * 1200 = 1800 C.\nStep 2: Reduction of Cu2+: Cu2+ + 2 e- -> Cu(s). Valence n = 2.\nStep 3: Mass deposited m = (M * Q) / (n * F) = (63.5 * 1800) / (2 * 96500).\nStep 4: m = 114300 / 193000 = 0.5922 g approx 0.592 g (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.5 A மின்னோட்டம் 20 நிமிடங்களுக்கு CuSO4 கரைசலில் செலுத்தப்படும் போது கேத்தோடில் படியும் தாமிரத்தின் நிறை என்ன? (Cu = 63.5 g/mol, 1 F = 96500 C/mol)",
+        "optionTexts": [
+          "0.592 g",
+          "1.185 g",
+          "0.296 g",
+          "2.370 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During the discharge of a lead storage battery, which chemical change occurs at the electrodes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both anode (Pb) and cathode (PbO2) are converted to PbSO4, consuming sulfuric acid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "PbSO4 is oxidized to PbO2 only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sulfuric acid is produced at the cathode",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lead metal is deposited at the cathode",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At the anode during discharge: Pb(s) + SO4^2-(aq) -> PbSO4(s) + 2e-.\nStep 2: At the cathode: PbO2(s) + 4H+(aq) + SO4^2-(aq) + 2e- -> PbSO4(s) + 2H2O(l).\nStep 3: Overall reaction: Pb(s) + PbO2(s) + 2H2SO4(aq) -> 2PbSO4(s) + 2H2O(l).\nStep 4: Both electrodes form insoluble PbSO4 and H2SO4 is consumed (lowering acid density). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காரீய அமில சேமிப்பு மின்கலம் மின்னிறக்கம் அடையும் போது, மின்முனைகளில் நிகழும் வேதி மாற்றம் என்ன?",
+        "optionTexts": [
+          "ஆனோடு (Pb) மற்றும் கேத்தோடு (PbO2) ஆகிய இரண்டுமே சல்பூரிக் அமிலத்தை உட்கொண்டு PbSO4 ஆக மாறுகின்றன",
+          "PbSO4 ஆனது PbO2 ஆக மட்டுமே ஆக்சிஜனேற்றம் அடைகிறது",
+          "கேத்தோடில் சல்பூரிக் அமிலம் உருவாகிறது",
+          "காரீய உலோகம் கேத்தோடில் படிகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The mercury cell used in small devices like hearing aids and watches delivers a constant potential of ~1.35 V throughout its life because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The overall cell reaction does not involve any ions in solution whose concentration could change",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mercury is a liquid metal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zinc acts as both anode and cathode",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The electrolyte paste is continuously replenished",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Overall reaction in mercury cell: Zn(Hg) + HgO(s) -> ZnO(s) + Hg(l).\nStep 2: The reaction involves only pure solid phases and liquid mercury.\nStep 3: Since there are no dissolved ions in solution whose concentration changes during discharge, the cell potential remains completely constant at 1.35 V.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கைக்கடிகாரங்களில் பயன்படும் பாதரச மின்கலம் அதன் வாழ்நாள் முழுவதும் மாறாத 1.35 V மின்னழுத்தத்தை வழங்குவதற்கான காரணம் என்ன?",
+        "optionTexts": [
+          "ஒட்டுமொத்த மின்கல வினையில் செறிவு மாறக்கூடிய எந்த அயனிகளும் கரைசலில் இல்லை",
+          "பாதரசம் ஒரு திரவ உலோகம் என்பதால்",
+          "துத்தநாகம் ஆனோடு மற்றும் கேத்தோடு இரண்டாகவும் செயல்படுவதால்",
+          "மின்பகுளிக் கூழ் தொடர்ந்து புதுப்பிக்கப்படுவதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the hydrogen-oxygen fuel cell used in spacecraft, the reaction occurring at the anode is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 H2(g) + 4 OH^-(aq) -> 4 H2O(l) + 4 e^-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "O2(g) + 2 H2O(l) + 4 e^- -> 4 OH^-(aq)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2(g) -> 2 H^+(aq) + 2 e^-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 H2O(l) + 2 e^- -> H2(g) + 2 OH^-(aq)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In an alkaline H2-O2 fuel cell (using aqueous KOH electrolyte), hydrogen gas is bubbled into the anode compartment.\nStep 2: At the anode, hydrogen is oxidized in alkaline medium: 2 H2(g) + 4 OH^-(aq) -> 4 H2O(l) + 4 e^-.\nStep 3: At the cathode, oxygen is reduced: O2(g) + 2 H2O(l) + 4 e^- -> 4 OH^-(aq).\nStep 4: Conclude Option A represents the anodic reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விண்கலங்களில் பயன்படும் ஹைட்ரஜன்-ஆக்ஸிஜன் எரிபொருள் மின்கலனில் நேர்மின்வாயில் (ஆனோடு) நிகழும் வினை எது?",
+        "optionTexts": [
+          "2 H2(g) + 4 OH^-(aq) -> 4 H2O(l) + 4 e^-",
+          "O2(g) + 2 H2O(l) + 4 e^- -> 4 OH^-(aq)",
+          "H2(g) -> 2 H^+(aq) + 2 e^-",
+          "2 H2O(l) + 2 e^- -> H2(g) + 2 OH^-(aq)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Galvanization of iron protects it from corrosion because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zinc has a more negative reduction potential than iron (E°_Zn2+/Zn = -0.76 V vs E°_Fe2+/Fe = -0.44 V) and corrodes sacrificially",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zinc forms an impermeable alloy with iron",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Iron has higher reduction potential than oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zinc is more noble and less reactive than iron",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Galvanization coats iron with a thin protective layer of zinc.\nStep 2: Zinc is more electropositive than iron (E° Zn2+/Zn = -0.76 V vs Fe2+/Fe = -0.44 V).\nStep 3: Even if the surface coating is scratched, zinc acts as the sacrificial anode, oxidizing preferentially and shielding iron from rusting.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரும்பின் மீது துத்தநாகம் பூசப்படுவது (நாகமுலாம் பூசுதல்) துருப்பிடித்தலைத் தடுப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "துத்தநாகம் இரும்பை விட அதிக எதிர்மறை ஒடுக்க மின்னழுத்தம் கொண்டதால் தியாக நேர்மின்வாயாகச் செயல்படுகிறது",
+          "துத்தநாகம் இரும்புடன் ஊடுருவ முடியாத உலோகக்கலவையை உருவாக்குகிறது",
+          "இரும்பு ஆக்ஸிஜனை விட அதிக ஒடுக்க மின்னழுத்தம் கொண்டது",
+          "துத்தநாகம் இரும்பை விட குறைவான வினைதிறன் கொண்டது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following characteristics distinguishes chemisorption from physisorption?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chemisorption is irreversible, highly specific, and forms a unimolecular layer",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chemisorption forms multimolecular layers",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Chemisorption has low enthalpy of adsorption (20-40 kJ/mol)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Chemisorption decreases continuously with an increase in temperature",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Physisorption involves weak van der Waals forces, is reversible, non-specific, forms multimolecular layers, and has low enthalpy (20-40 kJ/mol).\nStep 2: Chemisorption involves chemical bond formation, is irreversible, highly specific, requires activation energy, and stops after forming a single unimolecular layer.\nStep 3: Chemisorption has high enthalpy of adsorption (80-240 kJ/mol).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வேதிப்பரப்பு கவர்தலை இயற்பரப்பு கவர்தலில் இருந்து வேறுபடுத்தும் சரியான பண்பு எது?",
+        "optionTexts": [
+          "வேதிப்பரப்பு கவர்தல் மீளாதது, அதிக தனித்தன்மை கொண்டது மற்றும் ஒருமூலக்கூறு அடுக்கை உருவாக்குகிறது",
+          "வேதிப்பரப்பு கவர்தல் பலமூலக்கூறு அடுக்குகளை உருவாக்குகிறது",
+          "வேதிப்பரப்பு கவர்தலின் என்தால்பி குறைவு (20-40 kJ/mol)",
+          "வெப்பநிலை அதிகரிக்கும் போது வேதிப்பரப்பு கவர்தல் தொடர்ந்து குறைகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Freundlich adsorption isotherm, a linear plot of log(x/m) against log P gives a straight line with slope equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / n (where 0 <= 1/n <= 1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "log k",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "n",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Freundlich adsorption equation: x / m = k * P^(1/n).\nStep 2: Taking logarithms on both sides: log(x / m) = log k + (1/n) * log P.\nStep 3: Comparing with the straight-line equation y = c + mx: the y-intercept is log k and the slope is 1/n.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃப்ராய்ண்ட்லிச் பரப்பு கவர்தல் சமன்பாட்டில், log(x/m) மற்றும் log P வரைபடத்தில் கிடைக்கும் நேர்கோட்டின் சாய்வு எதற்குச் சமம்?",
+        "optionTexts": [
+          "1 / n (0 <= 1/n <= 1)",
+          "k",
+          "log k",
+          "n"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Colloidal sulfur sol containing thousands of S8 molecules aggregated together is classified as a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Multimolecular colloid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Macromolecular colloid",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Associated colloid (Micelle)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Lyophilic colloid",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: On dissolution, a large number of small atoms or molecules (diameter < 1 nm) aggregate together to form species having colloidal dimensions (1-1000 nm).\nStep 2: A sulfur sol contains clusters of thousands of S8 molecules held by van der Waals forces.\nStep 3: These species are designated as multimolecular colloids.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆயிரக்கணக்கான S8 மூலக்கூறுகள் இணைந்து உருவாகும் கந்தகக் கூழ்மம் எவ்வகை கூழ்மமாகக் கருதப்படுகிறது?",
+        "optionTexts": [
+          "பன்மூலக்கூறு கூழ்மம் (Multimolecular colloid)",
+          "பெருமூலக்கூறு கூழ்மம் (Macromolecular colloid)",
+          "இணைந்த கூழ்மம் (மிசெல்)",
+          "கரைப்பான் விரும்பும் கூழ்மம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The minimum temperature above which micelle formation takes place is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kraft temperature (T_k)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Critical temperature",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Curie temperature",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Boyle temperature",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Micelles (associated colloids) form only above a specific threshold concentration and temperature.\nStep 2: The minimum concentration required is the Critical Micelle Concentration (CMC).\nStep 3: The minimum temperature above which surfactant molecules aggregate into micelles is the Kraft temperature (T_k).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எந்தக் குறிப்பிட்ட வெப்பநிலைக்கு மேல் மிசெல் உருவாக்கம் நிகழ்கிறதோ அந்த வெப்பநிலை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "கிராஃப்ட் வெப்பநிலை (Kraft temperature, T_k)",
+          "நிலைமாறு வெப்பநிலை",
+          "கியூரி வெப்பநிலை",
+          "பாயில் வெப்பநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the Hardy-Schulze rule, which of the following electrolytes is the most effective in coagulating a negatively charged arsenious sulfide (As2S3) sol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "AlCl3 (Al3+ ion)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "BaCl2 (Ba2+ ion)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "NaCl (Na+ ion)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "K2SO4",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Hardy-Schulze rule states that the coagulating power of an active flocculating ion increases with the magnitude of its valency.\nStep 2: As2S3 is a negatively charged sol; therefore, cations bring about coagulation.\nStep 3: Comparing the valencies of cations: Al3+ (trivalent) > Ba2+ (divalent) > Na+ (monovalent).\nStep 4: Al3+ has the highest valency, making AlCl3 the most effective coagulating agent (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹார்டி-ஷூல்ஸ் விதியின்படி, எதிர்மின்சுமை கொண்ட ஆர்சீனியஸ் சல்பைடு (As2S3) கூழ்மத்தை வீழ்படிவாக்குவதில் மிகச் சிறந்த மின்பகுளி எது?",
+        "optionTexts": [
+          "AlCl3 (Al3+ அயனி)",
+          "BaCl2 (Ba2+ அயனி)",
+          "NaCl (Na+ அயனி)",
+          "K2SO4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The movement of colloidal particles under the influence of an applied electric field is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electrophoresis",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Electroosmosis",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Tyndall effect",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Dialysis",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Colloidal particles carry electrical charges (either positive or negative).\nStep 2: When an electric field is applied across a colloidal solution, the charged particles migrate toward the oppositely charged electrode.\nStep 3: This phenomenon is called electrophoresis (or cataphoresis).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்புலத்தின் செல்வாக்கினால் கூழ்மத் துகள்கள் எதிர் மின்முனையை நோக்கி நகரும் நிகழ்வு எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "மின்முனைக்கவர்ச்சி (Electrophoresis)",
+          "மின்சவ்வூடுபரவல் (Electroosmosis)",
+          "டிண்டால் விளைவு",
+          "கூழ்மப்பிரிப்பு (Dialysis)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The scattering of light by colloidal particles when illuminated by a converging beam of light is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tyndall effect",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Brownian movement",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Compton effect",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Raman effect",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When a beam of light passes through a colloidal sol, the colloidal particles scatter light in all directions.\nStep 2: The path of the beam becomes illuminated as a bright cone called the Tyndall cone.\nStep 3: This optical property is the Tyndall effect (true solutions do not show this effect).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கூழ்மத் துகள்களின் மீது ஒளிக்கற்றை படும்போது ஒளியானது அனைத்து திசைகளிலும் சிதறடிக்கப்படும் நிகழ்வு:",
+        "optionTexts": [
+          "டிண்டால் விளைவு",
+          "பிரௌனியன் இயக்கம்",
+          "காம்ப்டன் விளைவு",
+          "ராமன் விளைவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE06-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Freshly precipitated ferric hydroxide Fe(OH)3 on treatment with a small amount of dilute FeCl3 solution produces a reddish-brown colloidal sol. This process is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Peptization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Coagulation",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Dialysis",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Condensation",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Peptization is the process of converting a fresh precipitate into a colloidal sol by shaking with dispersion medium in the presence of a small amount of electrolyte (peptizing agent).\nStep 2: Fe(OH)3 particles preferentially adsorb Fe3+ ions from the added FeCl3 electrolyte on their surface.\nStep 3: The acquired positive charge creates electrostatic repulsion, dispersing the precipitate into colloidal particles.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புதிதாக வீழ்படிவாக்கப்பட்ட பெர்ரிக் ஹைட்ராக்சைடை (Fe(OH)3) குறைந்த அளவு நீர்த்த FeCl3 கரைசலுடன் குலுக்கி கூழ்மமாக மாற்றும் செயல்முறை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "கூழ்மமாக்கல் (Peptization)",
+          "திரிதல் (Coagulation)",
+          "கூழ்மப்பிரிப்பு (Dialysis)",
+          "சுருங்குதல் (Condensation)"
+        ]
+      }
+    ]
+  }
+]
+
+with open("/working_dir/c_cb6a7f7ae415f13b/chem_06_CHE06.json", "w", encoding="utf-8") as f:
+    json.dump(questions, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully wrote {len(questions)} unique questions to chem_06_CHE06.json")
+EOF
+python3 /working_dir/c_cb6a7f7ae415f13b/generate_chem06_json.py
+}}

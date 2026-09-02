@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY04-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At what depth d below the surface of the Earth will the acceleration due to gravity become one-fourth of its value on the Earth's surface? (Take R as the radius of the Earth)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3R / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The acceleration due to gravity at depth d is given by g' = g (1 - d / R).\nStep 2: Given g' = g / 4 => g / 4 = g (1 - d / R).\nStep 3: 1 - d / R = 1/4 => d / R = 1 - 1/4 = 3/4.\nStep 4: d = 3R / 4. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமியின் மேற்பரப்பில் உள்ள புவியீர்ப்பு முடுக்கத்தில் நான்கில் ஒரு பங்காக மாற, பூமியின் மேற்பரப்பிலிருந்து செல்ல வேண்டிய ஆழம் d என்ன? (R என்பது பூமியின் ஆரம்)",
+        "optionTexts": [
+          "3R / 4",
+          "R / 4",
+          "R / 2",
+          "R / 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The escape velocity from the surface of Earth is 11.2 km/s. If a planet has twice the mass and twice the radius of Earth, what is the escape velocity from that planet's surface?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11.2 km/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "22.4 km/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.6 km/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15.8 km/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for escape velocity: v_e = sqrt(2 G M / R).\nStep 2: For the new planet: v_e' = sqrt(2 G (2M) / (2R)) = sqrt(2 G M / R) = v_e.\nStep 3: v_e' = 11.2 km/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமியின் மேற்பரப்பிலிருந்து விடுபடு வேகம் 11.2 km/s ஆகும். பூமியைப் போல இருமடங்கு நிறையும் இருமடங்கு ஆரமும் கொண்ட ஒரு கோளின் மேற்பரப்பிலிருந்து விடுபடு வேகம் என்ன?",
+        "optionTexts": [
+          "11.2 km/s",
+          "22.4 km/s",
+          "5.6 km/s",
+          "15.8 km/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A satellite orbits the Earth in a circular orbit of radius r with orbital speed v₀. If the radius of its orbit is increased to 4r, what is its new orbital speed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v₀ / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v₀ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 v₀",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v₀ / sqrt(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Orbital velocity formula: v = sqrt(G M / r).\nStep 2: Orbital velocity is inversely proportional to square root of radius: v ∝ 1 / sqrt(r).\nStep 3: For r' = 4r: v' = sqrt(G M / 4r) = (1/2) sqrt(G M / r) = v₀ / 2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r ஆரமுடைய வட்டப்பாதையில் v₀ சுற்றுப்பாதை வேகத்தில் ஒரு செயற்கைக்கோள் பூமியைச் சுற்றுகிறது. அதன் சுற்றுப்பாதை ஆரம் 4r ஆக உயர்த்தப்பட்டால், அதன் புதிய சுற்றுப்பாதை வேகம் என்ன?",
+        "optionTexts": [
+          "v₀ / 2",
+          "v₀ / 4",
+          "2 v₀",
+          "v₀ / sqrt(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A geostationary satellite orbits the Earth at a height of approximately 36,000 km above the Earth's surface (orbital radius ≈ 7R). Another satellite orbits at a radius of 1.75R (≈ 7R/4). What is the time period of this second satellite?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 hours",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.5 hours",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By Kepler's third law: T^2 ∝ r^3 => (T2 / T1) = (r2 / r1)^(3/2).\nStep 2: r2 / r1 = (7R / 4) / (7R) = 1/4.\nStep 3: T2 = T1 * (1/4)^(3/2) = 24 hours * (1/8) = 3 hours.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு புவிநிலை செயற்கைக்கோளின் சுழற்சிக் காலம் 24 மணி நேரமாகும் (சுற்றுப்பாதை ஆரம் 7R). 1.75R (7R/4) ஆரத்தில் சுற்றும் மற்றொரு செயற்கைக்கோளின் சுழற்சிக் காலம் என்ன?",
+        "optionTexts": [
+          "3 மணி நேரம்",
+          "6 மணி நேரம்",
+          "12 மணி நேரம்",
+          "1.5 மணி நேரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A steel wire of length L and cross-sectional area A is stretched by a load F. If Young's modulus of steel is Y, what is the elastic potential energy stored in the stretched wire?",
+    "options": [
+      {
+        "label": "A",
+        "text": "F^2 L / (2 A Y)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "F^2 L / (A Y)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "F L^2 / (2 A Y)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "F^2 A / (2 L Y)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Elastic potential energy U = (1/2) * Force * Elongation = (1/2) F ΔL.\nStep 2: From Young's modulus: Y = (F / A) / (ΔL / L) => ΔL = F L / (A Y).\nStep 3: U = (1/2) F * [ F L / (A Y) ] = F^2 L / (2 A Y).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமும் A குறுக்குவெட்டுப் பரப்பும் கொண்ட எஃகு கம்பி F விசையால் நீட்சியடைகிறது. எஃகின் யங் குணகம் Y எனில், நீட்சியடைந்த கம்பியில் சேமிக்கப்படும் மீள்நிலை ஆற்றல் என்ன?",
+        "optionTexts": [
+          "F^2 L / (2 A Y)",
+          "F^2 L / (A Y)",
+          "F L^2 / (2 A Y)",
+          "F^2 A / (2 L Y)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Water rises to a height of 4.0 cm in a vertical glass capillary tube of radius r. If the radius of the tube is reduced to r/2, to what height will water rise in the capillary tube?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8.0 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "16.0 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Capillary rise formula: h = (2 T cos θ) / (r ρ g).\nStep 2: Capillary height is inversely proportional to radius: h ∝ 1 / r (Jurin's law).\nStep 3: When radius is halved (r' = r/2), height doubles: h' = 2 * h = 2 * 4.0 cm = 8.0 cm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r ஆரமுடைய நுண்புழைக் குழாயில் நீர் 4.0 cm உயரத்திற்கு ஏறுகிறது. குழாயின் ஆரம் r/2 ஆகக் குறைக்கப்பட்டால், நீர் ஏறும் உயரம் என்ன?",
+        "optionTexts": [
+          "8.0 cm",
+          "2.0 cm",
+          "4.0 cm",
+          "16.0 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Eight identical small spherical mercury droplets, each falling with a terminal speed of 5.0 cm/s in air, coalesce to form a single large spherical drop. What is the terminal velocity of the single large drop?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 cm/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10 cm/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "40 cm/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.5 cm/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conservation of volume: (4/3) π R^3 = 8 * (4/3) π r^3 => R = 2r.\nStep 2: Terminal velocity from Stokes' law: v_t = (2/9) [r^2 (ρ - σ) g] / η => v_t ∝ r^2.\nStep 3: Ratio of terminal speeds: v_T / v_t = (R / r)^2 = (2r / r)^2 = 4.\nStep 4: v_T = 4 * 5.0 cm/s = 20 cm/s. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒவ்வொன்றும் 5.0 cm/s முற்றுத் திசைவேகத்தில் விழும் எட்டு ஒரே மாதிரியான சிறிய பாதரசத் துளிகள் இணைந்து ஒரு பெரிய கோளத் துளியை உருவாக்குகின்றன. பெரிய துளியின் முற்றுத் திசைவேகம் என்ன?",
+        "optionTexts": [
+          "20 cm/s",
+          "10 cm/s",
+          "40 cm/s",
+          "2.5 cm/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the excess pressure inside a spherical soap bubble of radius R and surface tension T?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4T / R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2T / R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "T / R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8T / R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A soap bubble has two free surfaces (inner and outer liquid-air interfaces).\nStep 2: For each surface, excess pressure is 2T/R.\nStep 3: Total excess pressure ΔP = 2T/R + 2T/R = 4T/R.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமும் T பரப்பு இழுவிசையும் கொண்ட ஒரு சோப்புக் குமிழியின் உட்புற மிகை அழுத்தம் என்ன?",
+        "optionTexts": [
+          "4T / R",
+          "2T / R",
+          "T / R",
+          "8T / R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A hydraulic automobile lift has an input piston of radius 5 cm and an output piston of radius 15 cm. What force must be applied to the input piston to support a car of mass 1800 kg on the output piston? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2000 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6000 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "9000 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1800 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By Pascal's principle: P1 = P2 => F1 / A1 = F2 / A2 => F1 = F2 * (A1 / A2).\nStep 2: Area ratio: A1 / A2 = (r1 / r2)^2 = (5 / 15)^2 = (1/3)^2 = 1/9.\nStep 3: Weight on output piston: F2 = m g = 1800 kg * 10 m/s² = 18,000 N.\nStep 4: Input force F1 = 18,000 N * (1/9) = 2000 N. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீரியல் உயர்த்தியில் உள்ளீட்டு பிஸ்டனின் ஆரம் 5 cm மற்றும் வெளியீட்டு பிஸ்டனின் ஆரம் 15 cm ஆகும். வெளியீட்டு பிஸ்டனில் உள்ள 1800 kg நிறையுள்ள காரைத் தாங்க உள்ளீட்டு பிஸ்டனில் செலுத்த வேண்டிய விசை என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "2000 N",
+          "6000 N",
+          "9000 N",
+          "1800 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An open cylindrical water tank of height H is completely filled with water. A small orifice is punched in the vertical wall at depth h below the water surface. At what depth h should the orifice be made so that the horizontal range of the issuing water stream on the ground is maximum?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2H / 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Velocity of efflux: v = sqrt(2 g h).\nStep 2: Time to fall through remaining height (H - h): t = sqrt[ 2(H - h) / g ].\nStep 3: Horizontal range: R = v * t = sqrt(2 g h) * sqrt[ 2(H - h) / g ] = 2 sqrt[ h (H - h) ].\nStep 4: R is maximum when product h (H - h) is maximum, which occurs at h = H / 2 (maximum range R_max = H). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "H உயரமுள்ள உருளை வடிவ தண்ணீர் தொட்டி முழுமையாக நிரப்பப்பட்டுள்ளது. நீர் மட்டத்திலிருந்து h ஆழத்தில் ஒரு சிறிய துளை இடப்படுகிறது. தரையில் விழும் நீரின் கிடைமட்ட வீச்சு பெருமமாக இருக்க துளை இடப்பட வேண்டிய ஆழம் h என்ன?",
+        "optionTexts": [
+          "H / 2",
+          "H / 3",
+          "H / 4",
+          "2H / 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the acceleration due to gravity at the equator is to become zero due to Earth's axial rotation, what should be the new angular speed of rotation of the Earth? (Take R = 6400 km and g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.25 x 10^-3 rad/s (1 / 800 rad/s)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7.27 x 10^-5 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.5 x 10^-3 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.28 x 10^-4 rad/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Variation of g with latitude λ: g' = g - R ω^2 cos^2 λ.\nStep 2: At equator (λ = 0°): g' = g - R ω^2 = 0 => ω = sqrt(g / R).\nStep 3: Substitute g = 10 m/s² and R = 6.4 x 10^6 m: ω = sqrt(10 / (6.4 x 10^6)) = sqrt(1 / 640000) = 1 / 800 rad/s = 1.25 x 10^-3 rad/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமியின் சுழற்சியால் நிலநடுக்கோட்டு பகுதியில் புவியீர்ப்பு முடுக்கம் பூஜ்ஜியமாக மாற பூமியின் புதிய கோண வேகம் என்னவாக இருக்க வேண்டும்? (R = 6400 km மற்றும் g = 10 m/s²)",
+        "optionTexts": [
+          "1.25 x 10^-3 rad/s (1 / 800 rad/s)",
+          "7.27 x 10^-5 rad/s",
+          "2.5 x 10^-3 rad/s",
+          "6.28 x 10^-4 rad/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following materials has a Poisson's ratio (σ) that is theoretically impossible for an isotropic elastic solid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+0.25",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+0.45",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+0.10",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Theoretical limits of Poisson's ratio for isotropic materials are -1.0 <= σ <= +0.5 (practical values are between 0 and 0.5).\nStep 2: A value of +0.8 exceeds the upper theoretical bound of +0.5.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசைஒப்பு பண்புள்ள ஒரு மீள் திடப்பொருளுக்கு கோட்பாட்டளவில் சாத்தியமில்லாத பாய்சன் விகிதம் (σ) மதிப்பு எது?",
+        "optionTexts": [
+          "+0.8",
+          "+0.25",
+          "+0.45",
+          "+0.10"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass m is lifted from the surface of the Earth to an altitude equal to the Earth's radius R. What is the increase in gravitational potential energy of the body?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) m g R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "m g R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 m g R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/4) m g R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Potential energy at surface: U1 = - G M m / R.\nStep 2: Potential energy at height h = R (distance r = 2R): U2 = - G M m / (2R).\nStep 3: Change in potential energy ΔU = U2 - U1 = - G M m / (2R) - (- G M m / R) = G M m / (2R).\nStep 4: Since g = G M / R^2 => G M / R = g R, ΔU = (1/2) m g R. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு பொருள் பூமியின் மேற்பரப்பிலிருந்து பூமியின் ஆரம் R-க்கு சமமான உயரத்திற்கு உயர்த்தப்படுகிறது. பொருளின் ஈர்ப்பு நிலை ஆற்றலில் ஏற்படும் அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "(1/2) m g R",
+          "m g R",
+          "2 m g R",
+          "(1/4) m g R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two wires of identical material and lengths L and 2L have radii 2r and r respectively. If they are stretched by the same tensile force F, what is the ratio of elongation of the first wire to that of the second wire?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Elongation formula: ΔL = (F L) / (A Y) = (F L) / (π r^2 Y) ∝ L / r^2.\nStep 2: For wire 1: ΔL1 ∝ L / (2r)^2 = L / (4 r^2).\nStep 3: For wire 2: ΔL2 ∝ (2L) / (r^2) = 2L / r^2.\nStep 4: Ratio ΔL1 / ΔL2 = [ L / (4 r^2) ] / [ 2L / r^2 ] = (1/4) / 2 = 1/8. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே பொருளாலான இரு கம்பிகளின் நீளங்கள் L, 2L மற்றும் ஆரங்கள் 2r, r ஆகும். அவை சம விசை F ஆல் இழுக்கப்பட்டால், முதல் கம்பியின் நீட்சிக்கும் இரண்டாம் கம்பியின் நீட்சிக்கும் உள்ள விகிதம் என்ன?",
+        "optionTexts": [
+          "1 : 8",
+          "1 : 4",
+          "1 : 2",
+          "8 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two soap bubbles of radii r1 and r2 (r1 > r2) coalesce under isothermal conditions in vacuum to form a combined bubble of radius R. What is the relation for R in terms of r1 and r2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "R = sqrt(r1^2 + r2^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R = (r1^3 + r2^3)^(1/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R = r1 + r2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R = sqrt(r1 r2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In vacuum, pressure inside bubble of radius r is P = 4T / r, and volume is V = (4/3) π r^3.\nStep 2: By Boyle's law for isothermal mixing: P1 V1 + P2 V2 = P V.\nStep 3: (4T / r1) * ((4/3) π r1^3) + (4T / r2) * ((4/3) π r2^3) = (4T / R) * ((4/3) π R^3).\nStep 4: Simplifying yields r1^2 + r2^2 = R^2 => R = sqrt(r1^2 + r2^2). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் சமவெப்ப நிலையில் r1 மற்றும் r2 ஆரமுடைய இரு சோப்புக் குமிழிகள் இணைந்து R ஆரமுடைய ஒரு குமிழியாக மாறுகின்றன. R இன் தொடர்பு என்ன?",
+        "optionTexts": [
+          "R = sqrt(r1^2 + r2^2)",
+          "R = (r1^3 + r2^3)^(1/3)",
+          "R = r1 + r2",
+          "R = sqrt(r1 r2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Kepler's second law (law of areas) states that the areal velocity of a planet revolving around the Sun is constant. This law is a direct consequence of the conservation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Angular momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Linear momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kinetic energy",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Total mass",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gravitational force is a central force directed along the line joining the Sun and the planet.\nStep 2: Torque about the Sun is τ = r x F = 0.\nStep 3: Zero torque implies constant angular momentum: L = constant.\nStep 4: Areal velocity dA/dt = L / (2m) = constant. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சூரியனைச் சுற்றி வரும் கோளின் பரப்புத் திசைவேகம் மாறிலியாக இருக்கும் என்ற கெப்ளரின் இரண்டாம் விதி பின்வரும் எதன் மாறா விதியின் நேரடி விளைவாகும்?",
+        "optionTexts": [
+          "கோண உந்தம்",
+          "நேர்கோட்டு உந்தம்",
+          "இயக்க ஆற்றல்",
+          "மொத்த நிறை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An incompressible ideal fluid flows through a horizontal pipe of non-uniform cross-section. If the cross-sectional area at two points are A1 = 10 cm^2 and A2 = 5 cm^2, and velocity at section 1 is v1 = 2 m/s, what is the pressure difference (P1 - P2) between the two sections? (Density of fluid ρ = 1000 kg/m^3)",
+    "options": [
+      {
+        "label": "A",
+        "text": "6000 Pa",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3000 Pa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "8000 Pa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12000 Pa",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Equation of continuity: A1 v1 = A2 v2 => v2 = (A1 / A2) v1 = (10 / 5) * 2 = 4 m/s.\nStep 2: Bernoulli's equation for horizontal pipe: P1 + (1/2) ρ v1^2 = P2 + (1/2) ρ v2^2.\nStep 3: P1 - P2 = (1/2) ρ (v2^2 - v1^2) = (1/2) * 1000 * (4^2 - 2^2) = 500 * (16 - 4) = 500 * 12 = 6000 Pa.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரற்ற குறுக்குவெட்டுப் பரப்புள்ள கிடைமட்டக் குழாயில் பாயும் நீரின் இரு புள்ளிகளில் பரப்புகள் 10 cm^2 மற்றும் 5 cm^2 ஆகும். முதல் பகுதியில் வேகம் 2 m/s எனில், இரு பகுதிகளுக்கு இடையே உள்ள அழுத்த வேறுபாடு (P1 - P2) என்ன? (ρ = 1000 kg/m^3)",
+        "optionTexts": [
+          "6000 Pa",
+          "3000 Pa",
+          "8000 Pa",
+          "12000 Pa"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The ratio of gravitational potential energy to total mechanical energy of an orbiting satellite in a stable circular orbit is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a circular orbit of radius r: Potential energy U = - G M m / r.\nStep 2: Kinetic energy K = + G M m / (2r).\nStep 3: Total energy E = U + K = - G M m / (2r) = U / 2.\nStep 4: Ratio U / E = (- G M m / r) / (- G M m / (2r)) = 2 / 1 = 2:1. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலையான வட்டப்பாதையில் சுற்றும் செயற்கைக்கோளின் ஈர்ப்பு நிலை ஆற்றலுக்கும் மொத்த இயந்திர ஆற்றலுக்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "2 : 1",
+          "1 : 2",
+          "-2 : 1",
+          "1 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A spherical ball of density ρ and radius r is dropped into a viscous liquid of density σ (ρ > σ) and coefficient of viscosity η. When it reaches terminal velocity, what is the rate of heat generation due to viscous dissipation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "∝ r^5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "∝ r^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "∝ r^3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "∝ r^4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Terminal velocity v_t ∝ r^2.\nStep 2: Viscous retarding force F_v = 6 π η r v_t ∝ r * r^2 = r^3.\nStep 3: Rate of heat generation (power dissipated) P = F_v * v_t ∝ r^3 * r^2 = r^5.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ρ அடர்த்தியும் r ஆரமும் கொண்ட கோளக்குண்டு σ அடர்த்தி கொண்ட பாகு திரவத்தில் விழும்போது முற்றுத் திசைவேகத்தை அடைகிறது. பாகுநிலை உராய்வால் வெப்பம் உருவாகும் வீதம் (திறன் இழப்பு) ஆரத்தின் எந்த அடுக்குக்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "∝ r^5",
+          "∝ r^2",
+          "∝ r^3",
+          "∝ r^4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A wire of length L, area of cross-section A and Young's modulus Y is stretched by x. The work done per unit volume in stretching the wire is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) Y (x / L)^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Y (x / L)^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) Y (x / L)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/2) Y x^2 L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Energy density = Energy / Volume = (1/2) * Stress * Strain.\nStep 2: Stress = Y * Strain = Y * (x / L).\nStep 3: Energy density = (1/2) * [ Y (x/L) ] * (x/L) = (1/2) Y (x / L)^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமும் A குறுக்குவெட்டுப் பரப்பும் யங் குணகம் Y கொண்ட ஒரு கம்பி x அளவு நீட்சியடைகிறது. கம்பியின் ஓரலகு பருமனில் செய்யப்படும் வேலை என்ன?",
+        "optionTexts": [
+          "(1/2) Y (x / L)^2",
+          "Y (x / L)^2",
+          "(1/2) Y (x / L)",
+          "(1/2) Y x^2 L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the contact angle between a liquid and a solid surface is acute (θ < 90°), the liquid will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wet the solid and form a concave meniscus in a capillary",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Not wet the solid and form a convex meniscus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Form a plane flat meniscus and depress in capillary",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Depress in the capillary tube with convex shape",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An acute contact angle (θ < 90°) occurs when adhesive forces between liquid and solid exceed cohesive forces of liquid.\nStep 2: The liquid wets the surface, rises in the capillary tube, and forms a concave meniscus.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திரவத்திற்கும் திடப்பொருள் பரப்பிற்கும் இடையே உள்ள சேர்க்கைக் கோணம் குறுங்கோணமாக (θ < 90°) இருந்தால், அத்திரவம்:",
+        "optionTexts": [
+          "திடப்பொருளை நனைக்கும் மற்றும் நுண்புழையில் குழிந்த பிறைத்தளத்தை உருவாக்கும்",
+          "திடப்பொருளை நனைக்காது மற்றும் குவிந்த பிறைத்தளத்தை உருவாக்கும்",
+          "சமதள பிறைத்தளத்தை உருவாக்கி நுண்புழையில் தாழும்",
+          "குவிந்த வடிவத்துடன் நுண்புழைக் குழாயில் இறங்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A metal cube of edge 10 cm subjected to a uniform hydrostatic pressure of 2.0 x 10^7 Pa undergoes a volume contraction of 0.05 cm^3. What is the Bulk modulus of the metal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 x 10^11 Pa",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 x 10^11 Pa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 x 10^11 Pa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8.0 x 10^11 Pa",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Original volume V = (10 cm)^3 = 1000 cm^3.\nStep 2: Volume strain = ΔV / V = 0.05 cm^3 / 1000 cm^3 = 5.0 x 10^-5.\nStep 3: Bulk modulus B = P / (ΔV / V) = (2.0 x 10^7 Pa) / (5.0 x 10^-5).\nStep 4: B = 4.0 x 10^11 Pa. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 cm பக்கமுள்ள உலோகக் கனசதுரத்தின் மீது 2.0 x 10^7 Pa சீரான அழுத்தம் செலுத்தப்படும் போது அதன் பருமன் 0.05 cm^3 சுருங்குகிறது. உலோகத்தின் பருமக் குணகம் (B) என்ன?",
+        "optionTexts": [
+          "4.0 x 10^11 Pa",
+          "2.0 x 10^11 Pa",
+          "1.0 x 10^11 Pa",
+          "8.0 x 10^11 Pa"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two satellites S1 and S2 revolve around a planet in coplanar circular orbits in the same sense with radii 1 x 10^4 km and 4 x 10^4 km respectively. If the period of S1 is 8 hours, what is the time interval between their successive closest approaches?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64 / 7 hours (≈ 9.14 hours)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "16 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "32 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "64 hours",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By Kepler's third law: T2 / T1 = (r2 / r1)^(3/2) = (4/1)^(3/2) = 8 => T2 = 8 * 8 = 64 hours.\nStep 2: Angular speeds: ω1 = 2π / 8, ω2 = 2π / 64.\nStep 3: Relative angular speed: ω_rel = ω1 - ω2 = 2π [ 1/8 - 1/64 ] = 2π [ (8 - 1) / 64 ] = 2π (7 / 64).\nStep 4: Time interval between closest approaches: T_rel = 2π / ω_rel = 64 / 7 hours. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "S1 மற்றும் S2 ஆகிய இரு செயற்கைக்கோள்கள் ஒரே திசையில் 1 x 10^4 km மற்றும் 4 x 10^4 km ஆரமுள்ள வட்டப்பாதைகளில் சுற்றுகின்றன. S1 இன் சுழற்சிக் காலம் 8 மணி நேரம் எனில், அவை அருகருகே வரும் தொடர்ச்சியான கால இடைவெளி என்ன?",
+        "optionTexts": [
+          "64 / 7 மணி நேரம் (≈ 9.14 மணி நேரம்)",
+          "16 மணி நேரம்",
+          "32 மணி நேரம்",
+          "64 மணி நேரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "With increasing temperature, the surface tension of most common liquids:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decreases and becomes zero at critical temperature",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increases linearly",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remains unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "First decreases then increases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Increasing temperature increases the kinetic energy and thermal agitation of liquid molecules.\nStep 2: This reduces the cohesive intermolecular attractive forces.\nStep 3: Consequently, surface tension decreases with temperature and vanishes completely at the critical temperature.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்பநிலை அதிகரிக்கும் போது, பெரும்பாலான திரவங்களின் பரப்பு இழுவிசை:",
+        "optionTexts": [
+          "குறைந்து மாறுநிலை வெப்பநிலையில் பூஜ்ஜியமாகிறது",
+          "நேர்விகிதத்தில் அதிகரிக்கிறது",
+          "மாற்றமின்றி இருக்கும்",
+          "முதலில் குறைந்து பின் அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A U-tube contains water and methylated spirit separated by mercury in the columns. The mercury columns in the two arms are in level with 10.0 cm of water in one arm and 12.5 cm of spirit in the other. What is the specific gravity of the spirit?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.80",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.25",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.64",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.90",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Equal pressure at mercury interface: P_water = P_spirit => h_water * ρ_water * g = h_spirit * ρ_spirit * g.\nStep 2: Specific gravity = ρ_spirit / ρ_water = h_water / h_spirit.\nStep 3: Ratio = 10.0 cm / 12.5 cm = 0.80.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு U-குழாயில் பாதரசத்தால் பிரிக்கப்பட்ட நீர் மற்றும் ஸ்பிரிட் நிரப்பப்பட்டுள்ளன. பாதரச மட்டம் சமமாக இருக்கும்போது, ஒரு பக்கத்தில் 10.0 cm நீரும் மறுபக்கத்தில் 12.5 cm ஸ்பிரிட்டும் உள்ளன. ஸ்பிரிட்டின் ஒப்பு அடர்த்தி என்ன?",
+        "optionTexts": [
+          "0.80",
+          "1.25",
+          "0.64",
+          "0.90"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of gravitational potential V at the center of a uniform solid sphere of mass M and radius R (taking V = 0 at infinity) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "- (3/2) G M / R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "- G M / R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "- (1/2) G M / R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Potential inside a uniform solid sphere at distance r <= R is V(r) = - (G M / 2 R^3) (3 R^2 - r^2).\nStep 2: At center r = 0: V_center = - (G M / 2 R^3) (3 R^2) = - (3/2) G M / R.\nStep 3: This is 1.5 times the potential at the surface.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான திண்மக் கோளத்தின் மையத்தில் ஈர்ப்பு நிலை அழுத்தம் (V) என்ன? (ஈறிலா தொலைவில் V = 0)",
+        "optionTexts": [
+          "- (3/2) G M / R",
+          "- G M / R",
+          "பூஜ்ஜியம்",
+          "- (1/2) G M / R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Work done in blowing a liquid soap bubble of radius R is W. What is the additional work required to further expand the bubble to radius 2R?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3W",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4W",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7W",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "W",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Initial work to form bubble of radius R: W1 = T * 2 * (4π R^2) = 8π T R^2 = W.\nStep 2: Work to form bubble of radius 2R: W2 = 8π T (2R)^2 = 4 * (8π T R^2) = 4W.\nStep 3: Additional work required = W2 - W1 = 4W - W = 3W.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய சோப்புக் குமிழியை உருவாக்க செய்யப்படும் வேலை W ஆகும். அக்குமிழியை மேலும் 2R ஆரத்திற்கு விரிவாக்க செய்யப்பட வேண்டிய கூடுதல் வேலை என்ன?",
+        "optionTexts": [
+          "3W",
+          "4W",
+          "7W",
+          "W"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ice block floats in water in a beaker. What happens to the water level in the beaker when the ice melts completely?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remains exactly the same",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rises",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Falls",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "First rises then falls",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By Archimedes' principle, floating ice of mass m displaces volume of water V_displaced = m / ρ_water.\nStep 2: When ice melts, it turns into water of the exact same mass m, occupying volume V_melted = m / ρ_water.\nStep 3: Since V_melted = V_displaced, the melted ice fills the exact displaced volume.\nStep 4: Water level remains unchanged. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முகவையில் உள்ள நீரில் ஒரு பனிக்கட்டி மிதக்கிறது. பனிக்கட்டி முழுமையாக உருகிய பின் முகவையில் உள்ள நீர் மட்டம் என்னவாகும்?",
+        "optionTexts": [
+          "அதே மட்டத்தில் மாறாமல் இருக்கும்",
+          "உயரும்",
+          "குறையும்",
+          "முதலில் உயர்ந்து பின் குறையும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The dimensions of the universal gravitational constant G are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[M^-1 L^3 T^-2]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[M^1 L^3 T^-2]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[M^-1 L^2 T^-2]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[M^-2 L^3 T^-1]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From Newton's law of gravitation: F = G M1 M2 / r^2 => G = F r^2 / M^2.\nStep 2: [G] = [M L T^-2] [L^2] / [M^2] = [M^-1 L^3 T^-2].\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈர்ப்பியல் மாறிலி G இன் பரிமாண வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "[M^-1 L^3 T^-2]",
+          "[M^1 L^3 T^-2]",
+          "[M^-1 L^2 T^-2]",
+          "[M^-2 L^3 T^-1]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body weighs 200 N on the surface of the Earth. How much will it weigh at a height h = R/2 above the Earth's surface? (R is Earth's radius)",
+    "options": [
+      {
+        "label": "A",
+        "text": "88.9 N (800/9 N)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "133.3 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Variation of g with height h: g_h = g / (1 + h/R)^2.\nStep 2: Substitute h = R/2: g_h = g / (1 + 1/2)^2 = g / (3/2)^2 = 4g / 9.\nStep 3: Weight W_h = m g_h = (4/9) m g = (4/9) * 200 N = 800 / 9 N ≈ 88.9 N.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமியின் மேற்பரப்பில் ஒரு பொருளின் எடை 200 N ஆகும். பூமியின் மேற்பரப்பிற்கு மேலே h = R/2 உயரத்தில் அதன் எடை என்னவாக இருக்கும்? (R என்பது பூமியின் ஆரம்)",
+        "optionTexts": [
+          "88.9 N (800/9 N)",
+          "100 N",
+          "50 N",
+          "133.3 N"
+        ]
+      }
+    ]
+  }
+]

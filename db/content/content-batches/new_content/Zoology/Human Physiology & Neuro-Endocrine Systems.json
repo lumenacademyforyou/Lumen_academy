@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the ionic basis for the maintenance of the resting membrane potential (-70 mV) across the axolemma of an unexcited resting neuron?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Passive rapid influx of 3 Ca2+ ions against their concentration gradient",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Equal permeability of axolemma to all cations and anions",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Accumulation of positive charges along the inner surface of the axolemma",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Active transport by the electrogenic Na+/K+ ATPase pump (pumping 3 Na+ outward for every 2 K+ inward per ATP) combined with higher resting membrane permeability to K+ than to Na+",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a resting neuron, the axolemma is substantially more permeable to K+ than to Na+ and completely impermeable to intracellular negatively charged proteins.\nStep 2: K+ diffuses outward down its concentration gradient faster than Na+ can diffuse in.\nStep 3: The Na+/K+ ATPase pump actively expels 3 Na+ for every 2 K+ brought in, creating a net loss of positive charge inside.\nStep 4: This produces a stable resting membrane potential of -70 mV (inside negative relative to outside).\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஓய்வுநிலை நரம்பு செல்லின் அச்சு நரம்பு சவ்வின் குறுக்கே ஓய்வு நிலை மின்னழுத்தம் (-70 mV) பராமரிக்கப்படுவதன் அயனி அடிப்படை என்ன?",
+        "optionTexts": [
+          "Ca2+ அயனிகள் விரைவாக உள்ளே பாய்வது",
+          "அனைத்து அயனிகளுக்கும் சவ்வு சம ஊடுருவும் திறன் கொண்டிருப்பது",
+          "அச்சு சவ்வின் உள்புறத்தில் நேர்மின்சுமை சேர்வது",
+          "Na+/K+ ATPase பம்ப் மூலம் ஒவ்வொரு ATP க்கும் 3 Na+ அயனிகள் வெளியேற்றப்பட்டு 2 K+ அயனிகள் உள்ளே செலுத்தப்படுவது மற்றும் சவ்வு Na+ ஐ விட K+ அயனிகளுக்கு அதிக ஊடுருவும் திறன் கொண்டிருப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which pair of endocrine hormones acts antagonistically to regulate and strictly maintain normal extracellular calcium ion (Ca2+) homeostasis in human blood?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aldosterone and Atrial Natriuretic Factor (ANF)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Parathyroid Hormone (PTH, hypercalcemic) and Thyrocalcitonin (TCT, hypocalcemic)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Insulin and Glucagon",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxytocin and Vasopressin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Parathyroid hormone (PTH) is a hypercalcemic hormone; it increases blood Ca2+ levels by stimulating bone osteoclast resorption, renal tubular reabsorption of Ca2+, and intestinal absorption.\nStep 2: Thyrocalcitonin (TCT / Calcitonin) from the thyroid gland is a hypocalcemic hormone; it lowers blood Ca2+ by suppressing bone resorption and promoting Ca2+ excretion/deposition.\nStep 3: Together, PTH and TCT maintain precise blood calcium homeostasis.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித இரத்தத்தில் கால்சியம் அயனி (Ca2+) சமநிலையை ஒழுங்குபடுத்த ஒன்றுக்கொன்று எதிரெதிராகச் செயல்படும் நாளமில்லா சுரப்பி ஹார்மோன் இணை எது?",
+        "optionTexts": [
+          "ஆல்டோஸ்டீரோன் மற்றும் ANF",
+          "பாராதைராய்டு ஹார்மோன் (PTH, இரத்த Ca2+ ஐ உயர்த்தும்) மற்றும் தைரோகால்சிட்டோனின் (TCT, இரத்த Ca2+ ஐக் குறைக்கும்)",
+          "இன்சுலின் மற்றும் குளூக்கோகான்",
+          "ஆக்ஸிடாசின் மற்றும் வாசோபிரசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the transmission of a nerve impulse across a chemical synapse, which ion influx into the presynaptic axon terminal triggers the exocytosis of neurotransmitter vesicles into the synaptic cleft?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rapid influx of Mg2+ ions",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Efflux of Cl- ions into the synaptic cleft",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Influx of Ca2+ ions through voltage-gated channels",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Efflux of K+ ions out of the postsynaptic membrane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Arrival of an action potential at the presynaptic knob causes depolarization.\nStep 2: This depolarization opens voltage-gated Ca2+ channels, causing rapid Ca2+ influx into the axon terminal.\nStep 3: Ca2+ causes synaptic vesicles to fuse with the presynaptic membrane and release neurotransmitters (e.g., acetylcholine) into the synaptic cleft.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வேதியியல் சினாப்ஸில் நரம்பு தூண்டல் கடத்தலின் போது, சினாப்ஸுக்கு முந்தைய நரம்பு முனையத்தில் நியூரோடிரான்ஸ்மிட்டர் வெசிகிள்கள் வெளியேறத் தூண்டும் அயனி எது?",
+        "optionTexts": [
+          "Mg2+ அயனிகள் வேகமாக உள்ளே நுழைவது",
+          "Cl- அயனிகள் சினாப்ஸ் பிளவுக்குள் வெளியேறுவது",
+          "மின்னழுத்த உணர்வு கால்வாய்கள் வழியாக Ca2+ அயனிகள் உள்ளே நுழைவது",
+          "K+ அயனிகள் சினாப்ஸுக்கு பிந்தைய சவ்விலிருந்து வெளியேறுவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which region of the human brain contains autonomic centers regulating body temperature (thermostat), hunger, thirst, and satiety?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cerebellum",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hypothalamus",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Corpus callosum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pons varolii",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The hypothalamus forms the basal part of the diencephalon.\nStep 2: It contains specialized neurosecretory centers that control body temperature, urge for eating and drinking, and autonomic homeostasis.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மூளையில் உடல் வெப்பநிலை, பசி, தாகம் ஆகியவற்றை ஒழுங்குபடுத்தும் மையங்களைக் கொண்டுள்ள பகுதி எது?",
+        "optionTexts": [
+          "சிறுமூளை",
+          "ஹைப்போதலாமஸ்",
+          "கார்பஸ் கலோசம்",
+          "பான்ஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the human eye, the region of highest visual acuity (resolution) containing exclusively densely packed cone photoreceptors is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic disc (Blind spot)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Canal of Schlemm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fovea centralis of the macula lutea",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ciliary body",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Macula lutea is a yellowish pigmented spot on the retina lateral to the blind spot.\nStep 2: At its center is a pit called the fovea centralis where only cones are densely packed.\nStep 3: It is the point of sharpest vision with maximum visual acuity.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித கண்ணில் கூம்பு செல்கள் மட்டும் அடர்த்தியாக அமைந்து, தெளிவான பார்வைத் திறன் (visual acuity) கொண்ட விழித்திரை பகுதி எது?",
+        "optionTexts": [
+          "குருட்டுப் புள்ளி (Optic disc)",
+          "ஸ்லெம் கால்வாய்",
+          "மஞ்சள் புள்ளியில் உள்ள போவியா சென்ட்ரலிஸ் (Fovea centralis)",
+          "சிலியரி உடலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Organ of Corti, which contains auditory hair cell receptors responsible for hearing, is situated on which membrane of the inner ear cochlea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tympanic membrane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Basilar membrane",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Reissner's membrane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tectorial membrane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The cochlea contains the scala media, bounded by Reissner's membrane and the basilar membrane.\nStep 2: The Organ of Corti rests on the basilar membrane and contains auditory hair cells that transduce sound vibrations into nerve impulses.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேட்டலின் முதன்மை உணர்வு அமைப்பான கார்டை உறுப்பு (Organ of Corti) உள் காதின் எந்த சவ்வின் மீது அமைந்துள்ளது?",
+        "optionTexts": [
+          "செவிப்பறை சவ்வு",
+          "பேசிலார் சவ்வு (Basilar membrane)",
+          "ரெய்ஸ்னர் சவ்வு",
+          "டெக்டோரியல் சவ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which endocrine gland secretes the hormone melatonin to regulate the 24-hour diurnal rhythm (sleep-wake cycle) and body temperature in humans?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thyroid gland",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pineal gland",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Thymus gland",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Adrenal medulla",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The pineal gland is located on the dorsal side of the forebrain.\nStep 2: It secretes melatonin, which regulates circadian rhythm, sleep-wake cycles, body temperature, and pigmentation.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித உடலில் 24 மணி நேர தூக்கம்-விழிப்பு சுழற்சி மற்றும் உடல் வெப்பநிலையை ஒழுங்குபடுத்த மெலடோனின் ஹார்மோனைச் சுரக்கும் நாளமில்லா சுரப்பி எது?",
+        "optionTexts": [
+          "தைராய்டு சுரப்பி",
+          "பீனியல் சுரப்பி (Pineal gland)",
+          "தைமஸ் சுரப்பி",
+          "அட்ரீனல் மெடுல்லா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Grave's disease (Exophthalmic goitre) is an autoimmune endocrine disorder characterized by hyperthyroidism, high metabolic rate, and protruding eyes. It is caused by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hypersecretion of thyroid hormones (T3 and T4)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hyposecretion of thyroid hormones in infants (Cretinism)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hyposecretion of glucocorticoids from adrenal cortex",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hypersecretion of growth hormone in adults (Acromegaly)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Graves' disease is caused by autoimmune antibodies stimulating the thyroid to overproduce thyroid hormones.\nStep 2: This hyperthyroidism leads to elevated basal metabolic rate, goitre, and exophthalmos (protruding eyes).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிரேவ்ஸ் நோய் (Exophthalmic goitre) கண் துருத்துதல் மற்றும் அதிகரித்த வளர்சிதை மாற்றத்துடன் தொடர்புடையது. இது எதனால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "தைராய்டு ஹார்மோன்களின் மிகை சுரப்பு (Hyperthyroidism)",
+          "குழந்தைகளில் தைராய்டு ஹார்மோன்களின் குறை சுரப்பு (கிரெட்டினிசம்)",
+          "அட்ரீனல் கார்டெக்ஸ் ஹார்மோன் குறை சுரப்பு",
+          "பெரியவர்களில் வளர்ச்சி ஹார்மோனின் மிகை சுரப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which layer of the adrenal cortex is responsible for secreting mineralocorticoids, primarily aldosterone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zona fasciculata",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zona reticularis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zona glomerulosa",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Adrenal medulla",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The adrenal cortex has three layers: outer Zona glomerulosa, middle Zona fasciculata, and inner Zona reticularis.\nStep 2: Zona glomerulosa secretes mineralocorticoids like Aldosterone.\nStep 3: Zona fasciculata secretes glucocorticoids (Cortisol), and Zona reticularis secretes androgens.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அட்ரீனல் கார்டெக்ஸின் எந்த அடுக்கு மினரலோகார்டிகாய்டுகளை (முக்கியமாக ஆல்டோஸ்டீரோன்) சுரக்கிறது?",
+        "optionTexts": [
+          "ஜோனா பாசிகுலேட்டா",
+          "ஜோனா ரெட்டிகுலாரிஸ்",
+          "ஜோனா குளோமரூலோசா (Zona glomerulosa)",
+          "அட்ரீனல் மெடுல்லா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which peptide hormone secreted by the heart atria in response to elevated blood pressure causes vasodilation and excretion of sodium to reduce blood pressure?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Renin",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Angiotensin II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Aldosterone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Atrial Natriuretic Factor (ANF)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When blood pressure increases, atrial wall myocytes stretch and secrete Atrial Natriuretic Factor (ANF).\nStep 2: ANF causes vasodilation of blood vessels and increases excretion of Na+ and water by kidneys (natriuresis).\nStep 3: This acts antagonistically to the RAAS mechanism, lowering blood pressure.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரத்த அழுத்தம் அதிகரிக்கும் போது இதய ஏட்ரியம் சுவர்களால் சுரக்கப்பட்டு இரத்த நாளங்களை விரிவடையச் செய்து இரத்த அழுத்தத்தைக் குறைக்கும் பெப்டைட் ஹார்மோன் எது?",
+        "optionTexts": [
+          "ரெனின்",
+          "ஆஞ்சியோடென்சின் II",
+          "ஆல்டோஸ்டீரோன்",
+          "ஏட்ரியல் நேட்ரியூரிடிக் காரணி (ANF)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During depolarization of an axonal membrane upon electrical stimulation, which ion channel opens to allow rapid influx of ions down their electrochemical gradient?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Voltage-gated Potassium (K+) channels",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Voltage-gated Sodium (Na+) channels",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chloride (Cl-) leak channels",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Calcium (Ca2+) ATPase pump",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When a threshold stimulus is applied to a resting axolemma, voltage-gated Na+ channels rapidly open.\nStep 2: Na+ ions rush into the axoplasm down their electrochemical gradient.\nStep 3: This reverses membrane polarity from -70 mV to +30 mV (depolarization), generating an action potential.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூண்டலின் போது அச்சு நரம்பு சவ்வின் முனைவியக்க நீக்கத்திற்கு (depolarization) காரணமாக வேகமாகத் திறந்து அயனிகளை உள்ளே அனுமதிக்கும் கால்வாய் எது?",
+        "optionTexts": [
+          "மின்னழுத்த உணர்வு K+ கால்வாய்கள்",
+          "மின்னழுத்த உணர்வு சோடியம் (Na+) கால்வாய்கள்",
+          "குளோரைடு கசிவு கால்வாய்கள்",
+          "கால்சியம் பம்ப்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which portion of the human brain contains the pneumotaxic center, cardiovascular center, and reflex centers for vomiting, coughing, and swallowing?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Medulla oblongata and Pons",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cerebral cortex",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Corpus striatum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thalamus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The brainstem consists of the midbrain, pons, and medulla oblongata.\nStep 2: Pons contains the pneumotaxic center that moderates respiratory rhythm.\nStep 3: Medulla oblongata contains the respiratory rhythm center, cardiovascular reflex center, and centers for swallowing, coughing, and vomiting.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுவாச சீராக்கல் மையம் (Pneumotaxic center), இதய இரத்த நாள மையம், மற்றும் வாந்தி, இருமல், விழுங்குதல் ஆகிய அனிச்சை மையங்களைக் கொண்டுள்ள மூளையின் பகுதிகள் யாவை?",
+        "optionTexts": [
+          "முகுளம் (Medulla oblongata) மற்றும் பான்ஸ் (Pons)",
+          "பெருமூளைப் புறணி",
+          "கார்பஸ் ஸ்ட்ரைட்டேம்",
+          "தலாமஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The crista ampullaris located in the ampulla of semicircular canals and the macula of the utricle and saccule function respectively in detecting:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Auditory frequency and pitch",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Rotational (dynamic) equilibrium and Linear/Gravitational (static) equilibrium",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Photopic color vision and scotopic night vision",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Olfactory chemicals and gustatory tastes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The vestibular apparatus in the inner ear maintains body posture and balance.\nStep 2: Crista ampullaris has hair cells in the cupula of semicircular canals that sense rotational/angular acceleration (dynamic balance).\nStep 3: Maculae of the utricle and saccule contain otoliths that detect linear acceleration and head tilt relative to gravity (static balance).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உள் காதின் அரைவட்டக் கால்வாய்களில் உள்ள கிரிஸ்டா ஆம்புல்லாரிஸ் மற்றும் யூட்ரிக்கிள்-சாக்குலில் உள்ள மேக்குலா ஆகியவை முறையே எதை உணர்கின்றன?",
+        "optionTexts": [
+          "ஒலியின் அதிர்வெண் மற்றும் சுருதி",
+          "சுழற்சி (இயக்க) சமநிலை மற்றும் நேர்கோட்டு/ஈர்ப்பு (நிலை) சமநிலை",
+          "பகல் நேர வண்ணப் பார்வை மற்றும் இரவுப் பார்வை",
+          "நுகர்ச்சி மற்றும் சுவை உணர்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which hormone synthesized in the hypothalamus and stored/released by the posterior pituitary stimulates vigorous uterine contractions during parturition and milk ejection from mammary glands?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Prolactin",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Luteinizing Hormone (LH)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Oxytocin",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Progesterone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oxytocin is synthesized by hypothalamic neurosecretory cells and transported axonally to the posterior pituitary (neurohypophysis).\nStep 2: During labor, oxytocin stimulates myometrial smooth muscle contraction (Ferguson reflex).\nStep 3: Postpartum, oxytocin induces milk ejection (let-down reflex) from alveolar myoepithelial cells.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைப்போதலாமஸில் உற்பத்தியாகி பின் பிட்யூட்டரியால் சேமிக்கப்பட்டு பிரசவத்தின் போது கருப்பை சுருங்குதலையும், பால் வெளியேறுதலையும் தூண்டும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "புரோலாக்டின்",
+          "லூட்டினைசிங் ஹார்மோன் (LH)",
+          "ஆக்ஸிடாசின் (Oxytocin)",
+          "புரோஜெஸ்டிரோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Addison's disease is an endocrine disorder caused by the destruction and hyposecretion of hormones from which endocrine structure?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thyroid follicular cells",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Adrenal cortex (hyposecretion of mineralocorticoids and glucocorticoids)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Anterior pituitary acidophils",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pancreatic beta cells",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Underproduction of hormones by the adrenal cortex leads to Addison's disease.\nStep 2: Deficiency of cortisol and aldosterone causes altered carbohydrate metabolism, extreme weakness, fatigue, dehydration, low blood pressure, and skin hyperpigmentation.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடிசன் நோய் (Addison's disease) எந்த நாளமில்லா அமைப்பின் ஹார்மோன் குறை சுரப்பினால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "தைராய்டு பாலிக்கிள் செல்கள்",
+          "அட்ரீனல் கார்டெக்ஸ் (கார்டிசோல் மற்றும் ஆல்டோஸ்டீரோன் குறை சுரப்பு)",
+          "முன் பிட்யூட்டரி செல்கள்",
+          "கணைய பீட்டா செல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which hormone acts on the exocrine pancreas to stimulate secretion of water and bicarbonate ions, and on the gall bladder to stimulate bile release?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Secretin and Cholecystokinin (CCK) respectively",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Gastrin and Insulin respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "GIP and Glucagon respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Somatostatin and Pepsin respectively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Secretin acts on the exocrine pancreas to stimulate the secretion of water and bicarbonate ions.\nStep 2: Cholecystokinin (CCK) acts on both the pancreas (secretion of digestive enzymes) and the gall bladder (contraction to release bile).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கணையத்திலிருந்து நீர் மற்றும் பைகார்பனேட் அயனிகள் சுரப்பையும், பித்தப்பையிலிருந்து பித்தநீர் வெளியேற்றத்தையும் தூண்டும் இரைப்பை-குடல் ஹார்மோன்கள் முறையே எவை?",
+        "optionTexts": [
+          "செக்ரிட்டின் மற்றும் கோலிசிஸ்டோகைனின் (CCK)",
+          "கேஸ்ட்ரின் மற்றும் இன்சுலின்",
+          "GIP மற்றும் குளூக்கோகான்",
+          "சோமாட்டோஸ்டேட்டின் மற்றும் பெப்சின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which category of hormones cannot cross the lipid bilayer of the target cell membrane and instead exerts physiological effects via cell surface receptors and intracellular second messengers (e.g., cAMP, IP3, Ca2+)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Steroid hormones (e.g., Cortisol, Testosterone, Estrogen)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Iodothyronines (T3 and T4)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Peptide, polypeptide, and protein hormones (e.g., Insulin, Glucagon, Pituitary hormones)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Retinoids",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Water-soluble peptide/protein hormones cannot diffuse across target cell plasma membranes.\nStep 2: They bind membrane-bound surface receptors, activating G-proteins that generate second messengers such as cyclic AMP (cAMP), IP3, or Ca2+.\nStep 3: Steroid and thyroid hormones, being lipid-soluble, enter cells and bind intracellular/nuclear receptors.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இலக்கு செல்லின் பிளாஸ்மா சவ்வைக் கடக்க முடியாமல், செல் மேற்பரப்பு ஏற்பிகளுடன் இணைந்து இரண்டாம் நிலை தூதுவர்கள் (cAMP, IP3) வழியாகச் செயல்படும் ஹார்மோன்கள் எவை?",
+        "optionTexts": [
+          "ஸ்டீராய்டு ஹார்மோன்கள் (கார்டிசோல், ஈஸ்ட்ரோஜன்)",
+          "அயோடோதைரோனின்கள் (T3, T4)",
+          "பெப்டைட் மற்றும் புரத ஹார்மோன்கள் (இன்சுலின், குளூக்கோகான், பிட்யூட்டரி ஹார்மோன்கள்)",
+          "ரெட்டினாய்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the human nervous system, myelin sheath surrounding the axon of peripheral neurons is produced by which glial cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Astrocytes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Microglia",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Schwann cells",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ependymal cells",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the peripheral nervous system (PNS), Schwann cells envelope the axons and lay down concentric layers of myelin sheath.\nStep 2: The gaps between two adjacent myelin sheaths are called Nodes of Ranvier.\nStep 3: (In the CNS, myelin is formed by oligodendrocytes).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித புற நரம்பு மண்டலத்தில் (PNS) அச்சு நரம்பைச் சுற்றி மயலின் உறையை உருவாக்கும் நியூரோகிளியா செல்கள் யாவை?",
+        "optionTexts": [
+          "ஆஸ்ட்ரோசைட்டுகள்",
+          "மைக்ரோகிளியா",
+          "ஷ்வான் செல்கள் (Schwann cells)",
+          "எப்பன்டைமல் செல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Acromegaly in adults is a severe physiological and anatomical condition characterized by abnormal enlargement of facial and extremity bones. It is caused by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hypersecretion of Growth Hormone (GH) after epiphyseal plate closure",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hyposecretion of Growth Hormone in children (Pituitary dwarfism)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Deficiency of Parathyroid hormone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hypersecretion of Calcitonin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hypersecretion of GH in adults (after epiphyseal plate fusion) causes acromegaly, resulting in disfigurement of facial bones, hands, and feet.\nStep 2: In children, excess GH causes gigantism, while GH deficiency causes pituitary dwarfism.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெரியவர்களில் முகம் மற்றும் கை, கால் எலும்புகளின் அதீத வளர்ச்சியைக் காட்டும் அக்ரோமேகலி (Acromegaly) நிலை எதனால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "பெரியவர்களில் வளர்ச்சி ஹார்மோனின் (GH) மிகை சுரப்பு",
+          "குழந்தைகளில் வளர்ச்சி ஹார்மோனின் குறை சுரப்பு (குள்ளத்தன்மை)",
+          "பாராதைராய்டு ஹார்மோன் குறைபாடு",
+          "கால்சிட்டோனின் மிகை சுரப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which hormone secreted by the beta cells of the Islets of Langerhans promotes cellular glucose uptake, glycogenesis in hepatocytes, and lowers blood glucose levels?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Glucagon",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Insulin",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cortisol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Somatostatin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Insulin is a hypoglycemic peptide hormone secreted by beta cells of pancreatic islets.\nStep 2: It enhances glucose uptake in adipocytes and hepatocytes and stimulates glycogenesis, lowering blood glucose.\nStep 3: Glucagon from alpha cells stimulates glycogenolysis and gluconeogenesis, raising blood glucose.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லாங்கர்ஹான் திட்டுகளின் பீட்டா செல்களால் சுரக்கப்பட்டு, செல்களின் குளுக்கோஸ் பயன்பாட்டை அதிகரித்து இரத்த சர்க்கரை அளவைக் குறைக்கும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "குளூக்கோகான்",
+          "இன்சுலின் (Insulin)",
+          "கார்டிசோல்",
+          "சோமாட்டோஸ்டேட்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Corpora quadrigemina, consisting of two pairs of rounded optic and auditory reflex lobes, is located in which division of the human brain?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Forebrain (Prosencephalon)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Midbrain (Mesencephalon)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hindbrain (Rhombencephalon)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Medulla oblongata",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The midbrain is situated between the thalamus/hypothalamus of the forebrain and the pons of the hindbrain.\nStep 2: The dorsal surface of the midbrain consists of four round swellings (lobes) called corpora quadrigemina (superior and inferior colliculi).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பார்வை மற்றும் கேட்டல் அனிச்சை மையங்களைக் கொண்டுள்ள நான்கு உருண்டை அமைப்புகளான கார்ப்போரா குவாட்ரிஜெமினா (Corpora quadrigemina) மூளையின் எந்தப் பகுதியில் அமைந்துள்ளது?",
+        "optionTexts": [
+          "முன் மூளை",
+          "நடு மூளை (Midbrain)",
+          "பின் மூளை",
+          "முகுளம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In rod photoreceptor cells of the retina, light absorption induces the dissociation of the photopigment rhodopsin into which two components?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retinal (an aldehyde of Vitamin A) and Opsin (a protein)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Iodopsin and Retinol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Melanin and Carotene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Porphyropsin and Riboflavin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Visual photopigment rhodopsin (visual purple) in rod cells is a conjugated protein.\nStep 2: It consists of opsin (protein) and retinal (an aldehyde of vitamin A).\nStep 3: Light induces dissociation of retinal from opsin, causing structural changes in opsin that generate action potentials transmitted via optic nerve.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விழித்திரையின் குச்சி செல்களில் உள்ள ரோடாப்சின் நிறமி மீது ஒளி படும்போது, அது எந்த இரு கூறுகளாகப் பிரிகிறது?",
+        "optionTexts": [
+          "ரெட்டினல் (வைட்டமின் A ஆல்டிஹைட்) மற்றும் ஆப்சின் (புரதம்)",
+          "அயோடாப்சின் மற்றும் ரெட்டினால்",
+          "மெலனின் மற்றும் கரோட்டின்",
+          "போர்பைராப்சின் மற்றும் ரிபோஃபிளேவின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which hormone is secreted by the adrenal medulla during acute stress ('fight-or-flight' situations) to increase heart rate, breathing rate, and glycogenolysis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aldosterone",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Epinephrine (Adrenaline)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cortisol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thyroxine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Adrenal medulla secretes two catecholamines: Epinephrine (adrenaline) and Norepinephrine (noradrenaline).\nStep 2: They are rapidly secreted in response to stress (emergency hormones), causing pupillary dilation, increased heart rate, cardiac output, and glycogenolysis.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அவசர காலங்களில் ('சண்டை அல்லது ஓட்டம்') அட்ரீனல் மெடுல்லா சுரக்கும், இதயத் துடிப்பு மற்றும் சுவாச வீதத்தை அதிகரிக்கும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "ஆல்டோஸ்டீரோன்",
+          "எபினெப்ரின் / அட்ரினலின் (Epinephrine)",
+          "கார்டிசோல்",
+          "தைராக்ஸின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The transparent anterior portion of the fibrous tunic of the human eye which lacks blood vessels and can be transplanted without immune rejection is the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Choroid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ciliary body",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sclera",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The outer fibrous coat of the eye consists of posterior opaque sclera and anterior transparent cornea.\nStep 2: The cornea is avascular (nourished by aqueous humor and lacrimal fluid), which makes corneal grafts immunologically privileged and highly successful.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரத்த நாளங்களற்ற, எளிதில் ஒட்டறுவை (transplantation) செய்யக்கூடிய கண்ணின் முன்புற ஒளிபுகும் படலம் எது?",
+        "optionTexts": [
+          "கார்னியா (Cornea)",
+          "கோராய்டு",
+          "சிலியரி உடலம்",
+          "ஸ்கிளீரா (வெழிப்படலம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which hormone acts directly on the distal convoluted tubule (DCT) and collecting duct of the nephron to stimulate water reabsorption, preventing diuresis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vasopressin / Antidiuretic Hormone (ADH)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oxytocin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Prolactin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Somatostatin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Vasopressin (ADH) is synthesized in the hypothalamus and released from the neurohypophysis in response to hyperosmolarity.\nStep 2: It inserts aquaporin channels into the apical membrane of the DCT and collecting duct, facilitating water reabsorption.\nStep 3: Deficiency of ADH leads to diabetes insipidus (excretion of large volumes of dilute urine).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிறுநீரக நுண்குழலின் தொலை வளைகுழல் மற்றும் சேகரிப்புக் குழலில் நீர் மீள உறிஞ்சப்படுவதைத் தூண்டி நீர் இழப்பைத் தடுக்கும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "வாசோபிரசின் / ஆண்டிடையூரிடிக் ஹார்மோன் (ADH)",
+          "ஆக்ஸிடாசின்",
+          "புரோலாக்டின்",
+          "சோமாட்டோஸ்டேட்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an electrical synapse, transmission of action potential is faster than in a chemical synapse primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pre- and post-synaptic neurons are connected directly by gap junctions allowing direct local ionic current flow",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Neurotransmitter molecules diffuse across a larger synaptic cleft",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "It requires ATP-dependent exocytosis of vesicle packets",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Postsynaptic ligand-gated receptors have higher binding affinity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At electrical synapses, membranes of pre- and post-synaptic neurons are in close physical contact via gap junction connexons.\nStep 2: Electrical current flows directly from one neuron to the next without the synaptic delay associated with chemical neurotransmitter release.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின் சினாப்ஸ்களில் (electrical synapses) நரம்பு தூண்டல் கடத்தல் வேதியியல் சினாப்ஸ்களை விட வேகமாக இருப்பதற்கான முக்கிய காரணம் என்ன?",
+        "optionTexts": [
+          "சினாப்ஸுக்கு முந்தைய மற்றும் பிந்தைய நியூரான்கள் இடைவெளி சந்திப்புகளால் (gap junctions) நேரடியாக இணைக்கப்பட்டு அயனிகள் நேரடியாகப் பாய்வது",
+          "நரம்பு தூதுவர்கள் பெரிய சினாப்ஸ் பிளவில் பரவுவது",
+          "ATP சார்ந்த வெசிகிள் வெளியேற்றம் தேவைப்படுவது",
+          "பிந்தைய ஏற்பிகளின் அதிக கவர்ச்சித் திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which structure of the mammalian brain serves as the major relay station for sensory and motor signals directed to the cerebral cortex?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thalamus",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hypothalamus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cerebellum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pons",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The cerebrum wraps around a structure called the thalamus.\nStep 2: The thalamus is a major coordinating relay center for sensory and motor signaling heading to and from the cerebral cortex.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெருமூளைப் புறணிக்குச் செல்லும் மற்றும் அங்கிருந்து வரும் உணர்வு மற்றும் இயக்க சமிக்ஞைகளுக்கான முதன்மை அஞ்சல் மையமாகச் செயல்படும் மூளைப் பகுதி எது?",
+        "optionTexts": [
+          "தலாமஸ் (Thalamus)",
+          "ஹைப்போதலாமஸ்",
+          "சிறுமூளை",
+          "பான்ஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which hormone promotes the secretion of hydrochloric acid (HCl) and pepsinogen from gastric glands of the stomach mucosa?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gastrin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Secretin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cholecystokinin (CCK)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gastric Inhibitory Peptide (GIP)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gastrin is a peptide hormone secreted by G-cells in the gastric mucosa.\nStep 2: It stimulates parietal cells to secrete hydrochloric acid (HCl) and chief cells to secrete pepsinogen.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரைப்பை சுரப்பிகளில் ஹைட்ரோகுளோரிக் அமிலம் (HCl) மற்றும் பெப்சினோஜென் சுரப்பைத் தூண்டும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "கேஸ்ட்ரின் (Gastrin)",
+          "செக்ரிட்டின்",
+          "கோலிசிஸ்டோகைனின்",
+          "GIP"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A tract of nerve fibers connecting the left and right cerebral hemispheres in mammalian brains is called the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Corpus luteum",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Corpus albicans",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Corpus callosum",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Corpora quadrigemina",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The human cerebrum is divided longitudinally into left and right cerebral hemispheres.\nStep 2: These two hemispheres are interconnected by a thick curved band of myelinated nerve fibers called the corpus callosum.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலூட்டிகளின் மூளையில் இடது மற்றும் வலது பெருமூளை அரைக்கோளங்களை இணைக்கும் அடர்த்தியான நரம்பிழை கற்றை எது?",
+        "optionTexts": [
+          "கார்பஸ் லூட்டியம்",
+          "கார்பஸ் அல்பிகான்ஸ்",
+          "கார்பஸ் கலோசம் (Corpus callosum)",
+          "கார்ப்போரா குவாட்ரிஜெமினா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO01-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Glucocorticoids (primarily cortisol) produced by the adrenal cortex exhibit which combination of physiological functions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stimulate gluconeogenesis, lipolysis, and proteolysis, while exerting anti-inflammatory and immunosuppressive actions",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Stimulate cellular glucose uptake and glycogenesis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Promote bone calcification and sodium excretion",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Induce milk secretion and uterine contractions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cortisol stimulates gluconeogenesis, lipolysis, and proteolysis, and inhibits cellular uptake and utilization of amino acids.\nStep 2: Cortisol is also involved in maintaining the cardiovascular system, kidney function, and producing anti-inflammatory responses (suppressing the immune response).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அட்ரீனல் கார்டெக்ஸ் சுரக்கும் குளுக்கோகார்டிகாய்டுகள் (முக்கியமாக கார்டிசோல்) கீழ்க்கண்ட எந்த உடலியல் பணிகளை மேற்கொள்கின்றன?",
+        "optionTexts": [
+          "குளுக்கோனியோஜெனிசிஸ், கொழுப்பு சிதைவு, புரத சிதைவு ஆகியவற்றைத் தூண்டுதல் மற்றும் அழற்சி எதிர்ப்பு, நோயெதிர்ப்பு ஒடுக்குதல் பணிகளைச் செய்தல்",
+          "செல்களின் குளுக்கோஸ் பயன்பாட்டை அதிகரித்தல்",
+          "எலும்புகளில் கால்சியம் சேர்வதை அதிகரித்தல் மற்றும் Na+ வெளியேற்றுதல்",
+          "பால் சுரப்பு மற்றும் கருப்பை சுருங்குதலைத் தூண்டுதல்"
+        ]
+      }
+    ]
+  }
+]

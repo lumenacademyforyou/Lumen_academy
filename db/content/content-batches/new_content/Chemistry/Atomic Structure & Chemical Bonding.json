@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE04-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the energy of a photon of light having a wavelength of 300 nm? (Planck's constant h = 6.626 * 10^-34 J s, c = 3.0 * 10^8 m/s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.63 * 10^-19 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3.32 * 10^-19 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.98 * 10^-18 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.63 * 10^-28 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for photon energy: E = (h * c) / lambda.\nStep 2: Convert wavelength to meters: lambda = 300 nm = 300 * 10^-9 m = 3.0 * 10^-7 m.\nStep 3: E = (6.626 * 10^-34 * 3.0 * 10^8) / (3.0 * 10^-7) = (1.9878 * 10^-25) / (3.0 * 10^-7) = 6.63 * 10^-19 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 nm அலைநீளம் கொண்ட ஒளி ஃபோட்டானின் ஆற்றல் என்ன? (h = 6.626 * 10^-34 J s, c = 3.0 * 10^8 m/s)",
+        "optionTexts": [
+          "6.63 * 10^-19 J",
+          "3.32 * 10^-19 J",
+          "1.98 * 10^-18 J",
+          "6.63 * 10^-28 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric effect experiment, when light of frequency 2 * nu_0 (where nu_0 is threshold frequency) strikes a metal surface, the maximum kinetic energy of emitted electrons is K1. When frequency is increased to 5 * nu_0, the maximum kinetic energy K2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 K1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.5 K1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 K1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 K1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Einstein's photoelectric equation: K_max = h*nu - h*nu_0.\nStep 2: Case 1: K1 = h(2*nu_0) - h*nu_0 = h*nu_0.\nStep 3: Case 2: K2 = h(5*nu_0) - h*nu_0 = 4 h*nu_0 = 4 K1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் விளைவு சோதனையில், 2 * nu_0 அதிர்வெண் கொண்ட ஒளி படும்போது வெளியாகும் எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் K1. அதிர்வெண் 5 * nu_0 ஆக அதிகரிக்கும் போது பெரும இயக்க ஆற்றல் K2 இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "4 K1",
+          "2.5 K1",
+          "5 K1",
+          "2 K1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's model, the radius of the second stationary orbit (n = 2) for a singly ionized helium ion (He+, Z = 2) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1058 nm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.0529 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.2116 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.0265 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Bohr radius formula: r_n = 0.0529 * (n^2 / Z) nm.\nStep 2: For He+, atomic number Z = 2; for orbit n = 2.\nStep 3: r_2 = 0.0529 * (2^2 / 2) = 0.0529 * 2 = 0.1058 nm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போர் மாதிரியின்படி, ஹீலியம் அயனியின் (He+, Z = 2) இரண்டாவது நிலைச் சுற்றுப்பாதையின் (n = 2) ஆரம் என்ன?",
+        "optionTexts": [
+          "0.1058 nm",
+          "0.0529 nm",
+          "0.2116 nm",
+          "0.0265 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the wavelength of the spectral line corresponding to the transition from n = 3 to n = 1 in a hydrogen atom? (Rydberg constant R_H = 1.097 * 10^7 m^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "102.6 nm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "121.6 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "656.3 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "91.2 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Rydberg formula: 1 / lambda = R_H * Z^2 * (1/n1^2 - 1/n2^2).\nStep 2: For H (Z = 1), n1 = 1, n2 = 3: 1 / lambda = R_H * (1/1 - 1/9) = (8/9) * R_H.\nStep 3: lambda = 9 / (8 * 1.097 * 10^7) = 1.0255 * 10^-7 m = 102.6 nm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவில் n = 3 இலிருந்து n = 1 நிலைக்கு எலக்ட்ரான் தாவும்போது வெளியாகும் நிறமாலை வரியின் அலைநீளம் என்ன? (R_H = 1.097 * 10^7 m^-1)",
+        "optionTexts": [
+          "102.6 nm",
+          "121.6 nm",
+          "656.3 nm",
+          "91.2 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The de Broglie wavelength of an electron moving with a velocity of 6.0 * 10^5 m/s is: (Mass of electron m = 9.1 * 10^-31 kg, h = 6.626 * 10^-34 J s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.21 nm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.60 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.42 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.12 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: de Broglie wavelength formula: lambda = h / (m * v).\nStep 2: lambda = (6.626 * 10^-34) / (9.1 * 10^-31 * 6.0 * 10^5).\nStep 3: lambda = (6.626 * 10^-34) / (5.46 * 10^-25) = 1.2135 * 10^-9 m = 1.21 nm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6.0 * 10^5 m/s திசைவேகத்தில் இயங்கும் எலக்ட்ரானின் டி பிராய் அலைநீளம் என்ன? (m = 9.1 * 10^-31 kg, h = 6.626 * 10^-34 J s)",
+        "optionTexts": [
+          "1.21 nm",
+          "0.60 nm",
+          "2.42 nm",
+          "0.12 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the uncertainty in position of an electron is equal to its de Broglie wavelength (lambda), the minimum uncertainty in its velocity (Delta v) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "v / (4 pi)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v / (2 pi)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 pi v",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v / pi",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Heisenberg's uncertainty principle: Delta x * m * Delta v >= h / (4 pi).\nStep 2: Given Delta x = lambda = h / (m * v).\nStep 3: Substitute: [h / (m * v)] * m * Delta v >= h / (4 pi) => (h / v) * Delta v >= h / (4 pi).\nStep 4: Dividing both sides by h gives Delta v >= v / (4 pi). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரானின் நிலையை அறிவதில் உள்ள நிச்சயமற்ற தன்மை அதன் டி பிராய் அலைநீளத்திற்கு (lambda) சமமாக இருந்தால், அதன் திசைவேகத்தில் உள்ள குறைந்தபட்ச நிச்சயமற்ற தன்மை (Delta v) என்ன?",
+        "optionTexts": [
+          "v / (4 pi)",
+          "v / (2 pi)",
+          "4 pi v",
+          "v / pi"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The orbital angular momentum of an electron in a 3d orbital is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(6) * (h / (2 pi))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(2) * (h / (2 pi))",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) * (h / (2 pi))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for orbital angular momentum L = sqrt(l(l + 1)) * (h / 2pi).\nStep 2: For a d-orbital, azimuthal quantum number l = 2.\nStep 3: L = sqrt(2(2 + 1)) * (h / 2pi) = sqrt(6) * (h / 2pi).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3d ஆர்பிட்டாலில் உள்ள ஒரு எலக்ட்ரானின் ஆர்பிட்டால் கோண உந்தத்தின் மதிப்பு என்ன?",
+        "optionTexts": [
+          "sqrt(6) * (h / (2 pi))",
+          "sqrt(2) * (h / (2 pi))",
+          "sqrt(3) * (h / (2 pi))",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of radial nodes and angular nodes for a 4d orbital are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 and 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 and 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 and 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0 and 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a 4d orbital: principal quantum number n = 4, azimuthal quantum number l = 2.\nStep 2: Number of angular nodes = l = 2.\nStep 3: Number of radial nodes = n - l - 1 = 4 - 2 - 1 = 1.\nStep 4: Radial nodes = 1 and angular nodes = 2. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4d ஆர்பிட்டாலுக்கான ஆரை கணுக்கள் மற்றும் கோண கணுக்களின் எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "1 மற்றும் 2",
+          "2 மற்றும் 1",
+          "2 மற்றும் 2",
+          "0 மற்றும் 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The correct ground state electronic configuration of chromium atom (Cr, Z = 24) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Ar] 3d5 4s1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[Ar] 3d4 4s2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Ar] 3d6 4s0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Ar] 3d3 4s2 4p1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to Aufbau principle, the expected configuration is [Ar] 3d4 4s2.\nStep 2: However, half-filled (d5) and completely filled (d10) subshells possess extra stability due to symmetrical distribution of electrons and maximum exchange energy.\nStep 3: An electron shifts from 4s to 3d to achieve the stable half-filled 3d5 4s1 configuration.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குரோமியம் அணுவின் (Cr, Z = 24) சரியான அடிநிலை எலக்ட்ரான் அமைப்பு எது?",
+        "optionTexts": [
+          "[Ar] 3d5 4s1",
+          "[Ar] 3d4 4s2",
+          "[Ar] 3d6 4s0",
+          "[Ar] 3d3 4s2 4p1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of ionic radii among isoelectronic ions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "N3- > O2- > F- > Na+ > Mg2+ > Al3+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Al3+ > Mg2+ > Na+ > F- > O2- > N3-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "N3- > F- > O2- > Mg2+ > Na+ > Al3+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O2- > N3- > F- > Na+ > Mg2+ > Al3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: All listed ions have 10 electrons (isoelectronic species).\nStep 2: As nuclear charge (atomic number Z) increases, effective nuclear pull on the same number of electrons increases, decreasing ionic radius.\nStep 3: Z values: N(7) < O(8) < F(9) < Na(11) < Mg(12) < Al(13).\nStep 4: Ionic radii decrease in the order: N3- > O2- > F- > Na+ > Mg2+ > Al3+ (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒத்த எலக்ட்ரான் அமைப்பைப் பெற்ற அயனிகளின் அயனி ஆரம் குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "N3- > O2- > F- > Na+ > Mg2+ > Al3+",
+          "Al3+ > Mg2+ > Na+ > F- > O2- > N3-",
+          "N3- > F- > O2- > Mg2+ > Na+ > Al3+",
+          "O2- > N3- > F- > Na+ > Mg2+ > Al3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The first ionization enthalpy of nitrogen (N) is greater than that of oxygen (O) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrogen has a stable half-filled 2p3 subshell",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oxygen has higher effective nuclear charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nitrogen has smaller atomic size than oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen is a diatomic gas",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Electronic configuration of N (Z = 7) is 1s2 2s2 2p3; oxygen (Z = 8) is 1s2 2s2 2p4.\nStep 2: Nitrogen has an exactly half-filled 2p subshell (2px1 2py1 2pz1), which imparts extra thermodynamic stability.\nStep 3: In oxygen, removing an electron relieves interelectronic repulsion in the paired 2p4 configuration to yield a stable 2p3 ion.\nStep 4: Therefore, removing an electron from nitrogen requires more energy. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜனின் முதல் அயனியாக்கும் என்தால்பி ஆக்ஸிஜனை விட அதிகமாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "நைட்ரஜன் நிலையான பாதி நிரப்பப்பட்ட 2p3 துணைக் கூட்டைக் கொண்டுள்ளது",
+          "ஆக்ஸிஜன் அதிக பயனுறு அணுக்கரு மின்சுமையைக் கொண்டுள்ளது",
+          "நைட்ரஜன் ஆக்ஸிஜனை விட சிறிய அணு ஆரத்தைக் கொண்டுள்ளது",
+          "ஆக்ஸிஜன் ஒரு ஈரணு வாயு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following elements has the most negative electron gain enthalpy in the entire periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine (F)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chlorine (Cl)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Bromine (Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen (O)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Halogens have the highest negative electron gain enthalpies in their respective periods.\nStep 2: Fluorine has an extremely compact 2p subshell with high electron density, resulting in strong interelectronic repulsions when an incoming electron is added.\nStep 3: Chlorine has larger 3p orbitals with lower electron density, accepting an electron more readily (-349 kJ/mol vs -328 kJ/mol for F).\nStep 4: Conclude Chlorine has the highest negative electron gain enthalpy (Option B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் மிக அதிக எதிர்மறை எலக்ட்ரான் நாட்ட என்தால்பியைக் கொண்டுள்ள தனிமம் எது?",
+        "optionTexts": [
+          "புளோரின் (F)",
+          "குளோரின் (Cl)",
+          "புரோமின் (Br)",
+          "ஆக்ஸிஜன் (O)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Fajans' rules, covalent character in an ionic bond is favored by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Small cation, large anion, and high charge on both ions",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Large cation, small anion, and low charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Large cation, large anion, and noble gas electron configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Small cation, small anion, and low charge",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fajans' rules state that polarization of the anion by the cation increases electron sharing, introducing covalent character.\nStep 2: A small cation with high positive charge has high polarizing power.\nStep 3: A large anion with high negative charge is easily polarizable.\nStep 4: Therefore, small cation, large anion, and high ionic charges favor covalency (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபஜான்ஸ் விதிகளின்படி, ஒரு அயனிப் பிணைப்பில் சகப்பிணைப்புத் தன்மை எதனால் சாதகமாகிறது?",
+        "optionTexts": [
+          "சிறிய நேர்மின் அயனி, பெரிய எதிர்மின் அயனி மற்றும் அதிக மின்சுமை",
+          "பெரிய நேர்மின் அயனி, சிறிய எதிர்மின் அயனி மற்றும் குறைந்த மின்சுமை",
+          "பெரிய நேர்மின் அயனி, பெரிய எதிர்மின் அயனி மற்றும் மந்த வாயு அமைப்பு",
+          "சிறிய நேர்மின் அயனி, சிறிய எதிர்மின் அயனி மற்றும் குறைந்த மின்சுமை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the formal charge on the central oxygen atom in the ozone (O3) molecule?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for formal charge: FC = V - L - 1/2 B.\nStep 2: For the central oxygen in ozone (O=O+-O-): Valence electrons V = 6.\nStep 3: Non-bonding lone pair electrons L = 2 (one lone pair). Shared bonding electrons B = 6 (one double bond + one single bond = 3 bonds).\nStep 4: FC = 6 - 2 - 1/2(6) = 4 - 3 = +1 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓசோன் (O3) மூலக்கூறில் உள்ள மைய ஆக்ஸிஜன் அணுவின் முறைசார் மின்சுமை (Formal charge) என்ன?",
+        "optionTexts": [
+          "+1",
+          "-1",
+          "0",
+          "+2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to VSEPR theory, what are the geometry and shape of the sulfur tetrafluoride (SF4) molecule?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Trigonal bipyramidal geometry, See-saw shape",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tetrahedral geometry, Tetrahedral shape",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Square planar geometry, Square planar shape",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Octahedral geometry, See-saw shape",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Valence electrons of central sulfur = 6. Forms 4 single bonds with F and has 1 lone pair.\nStep 2: Steric number = 4 bond pairs + 1 lone pair = 5.\nStep 3: The electron pair geometry is trigonal bipyramidal (sp3d hybridization).\nStep 4: The lone pair occupies an equatorial position to minimize repulsions, producing a See-saw molecular shape (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "VSEPR கொள்கையின்படி, சல்பர் டெட்ராபுளோரைடு (SF4) மூலக்கூறின் வடிவியல் மற்றும் மூலக்கூறு வடிவம் என்ன?",
+        "optionTexts": [
+          "முக்கோண இருபிரமிடு வடிவியல், சீ-சா (See-saw) வடிவம்",
+          "நான்முகி வடிவியல், நான்முகி வடிவம்",
+          "சதுர தள வடிவியல், சதுர தள வடிவம்",
+          "எண்முகி வடிவியல், சீ-சா வடிவம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following molecules has a net zero dipole moment (mu = 0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "BF3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "SO2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A molecule has zero dipole moment if the vector sum of its individual bond dipoles cancel out.\nStep 2: BF3 has sp2 hybridization with a symmetrical trigonal planar geometry (120° bond angles).\nStep 3: The three identical B-F bond dipoles cancel each other completely, yielding mu = 0.\nStep 4: NH3, H2O, and SO2 are unsymmetrical with lone pairs, resulting in non-zero dipole moments. Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் மூலக்கூறுகளில் நிகர இருமுனைத் திருப்புத்திறன் பூஜ்ஜியமாக (mu = 0) உள்ள மூலக்கூறு எது?",
+        "optionTexts": [
+          "BF3",
+          "NH3",
+          "H2O",
+          "SO2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Although nitrogen and fluorine have a large electronegativity difference, the dipole moment of NH3 (1.47 D) is significantly higher than that of NF3 (0.24 D) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "In NH3, the orbital dipole of the lone pair and the N-H bond dipoles reinforce each other, while in NF3 they oppose each other",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NH3 is planar while NF3 is pyramidal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "N-F bond is non-polar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NF3 has two lone pairs on nitrogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In NH3, nitrogen is more electronegative than hydrogen, so N-H bond dipoles point towards nitrogen, reinforcing the lone pair dipole pointing away from N.\nStep 2: In NF3, fluorine is more electronegative than nitrogen, so N-F bond dipoles point away from nitrogen, opposing the lone pair dipole.\nStep 3: This partial cancellation dramatically reduces the resultant dipole moment of NF3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "NF3 ஐ விட NH3 இன் இருமுனைத் திருப்புத்திறன் மிக அதிகமாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "NH3 இல் தனித்த இரட்டை மற்றும் N-H பிணைப்புத் திருப்புத்திறன்கள் ஒரே திசையில் செயல்படுகின்றன, ஆனால் NF3 இல் எதிர் திசையில் செயல்படுகின்றன",
+          "NH3 தள அமைப்பானது, NF3 பிரமிடு அமைப்பானது",
+          "N-F பிணைப்பு முனைவற்றது",
+          "NF3 இல் நைட்ரஜனில் இரண்டு தனித்த இரட்டைகள் உள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Molecular Orbital Theory (MOT), the bond order of diatomic nitrogen (N2) and diatomic oxygen (O2) are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 and 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.5 and 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 and 1.5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 and 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for bond order: BO = 1/2 (N_b - N_a).\nStep 2: For N2 (14 electrons): Configuration has 10 bonding and 4 antibonding electrons. BO = 1/2 (10 - 4) = 3.\nStep 3: For O2 (16 electrons): Configuration has 10 bonding and 6 antibonding electrons. BO = 1/2 (10 - 6) = 2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி (MOT), N2 மற்றும் O2 மூலக்கூறுகளின் பிணைப்புத் தரம் முறையே:",
+        "optionTexts": [
+          "3 மற்றும் 2",
+          "2.5 மற்றும் 2",
+          "3 மற்றும் 1.5",
+          "2 மற்றும் 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Why is the diatomic oxygen molecule (O2) paramagnetic according to Molecular Orbital Theory?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It has two unpaired electrons in degenerate pi* antibonding molecular orbitals",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "It has an odd number of total electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "It contains unpaired electrons in sigma bonding orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "It forms coordinate bonds between oxygen atoms",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Electronic configuration of O2 (16 electrons): sigma1s^2 sigma*1s^2 sigma2s^2 sigma*2s^2 sigma2pz^2 (pi2px^2 = pi2py^2) (pi*2px^1 = pi*2py^1).\nStep 2: The two highest-energy electrons occupy the degenerate pi*2px and pi*2py orbitals with parallel spins according to Hund's rule.\nStep 3: The presence of 2 unpaired electrons confers paramagnetism.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி O2 மூலக்கூறு பாராகாந்தப் பண்பைப் பெற்றிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "இது pi* எதிர்பிணைப்பு மூலக்கூறு ஆர்பிட்டால்களில் இரண்டு ஜோடியற்ற எலக்ட்ரான்களைக் கொண்டுள்ளது",
+          "இது ஒற்றைப்படை எண்ணிக்கையிலான எலக்ட்ரான்களைக் கொண்டுள்ளது",
+          "இது சிக்மா பிணைப்பு ஆர்பிட்டால்களில் ஜோடியற்ற எலக்ட்ரான்களைக் கொண்டுள்ளது",
+          "இது ஆக்ஸிஜன் அணுக்களிடையே ஈதல் பிணைப்புகளை உருவாக்குகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of bond order and stability among oxygen species?",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2+ > O2 > O2- > O2^2-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "O2^2- > O2- > O2 > O2+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "O2 > O2+ > O2- > O2^2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O2+ > O2- > O2 > O2^2-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Calculate bond order for each species from MOT:\n- O2+ (15 e-): BO = (10 - 5)/2 = 2.5\n- O2 (16 e-): BO = (10 - 6)/2 = 2.0\n- O2- (17 e-): BO = (10 - 7)/2 = 1.5\n- O2^2- (18 e-): BO = (10 - 8)/2 = 1.0\nStep 2: Higher bond order corresponds to higher bond dissociation energy and greater stability.\nStep 3: Stability order: O2+ (2.5) > O2 (2.0) > O2- (1.5) > O2^2- (1.0).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆக்ஸிஜன் வகைகளின் பிணைப்புத் தரம் மற்றும் நிலைப்புத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "O2+ > O2 > O2- > O2^2-",
+          "O2^2- > O2- > O2 > O2+",
+          "O2 > O2+ > O2- > O2^2-",
+          "O2+ > O2- > O2 > O2^2-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The hybridization of central phosphorus atom and the shape of PCl5 in gaseous state are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sp3d, Trigonal bipyramidal",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sp3d2, Octahedral",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "dsp2, Square planar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp3, Tetrahedral",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phosphorus has 5 valence electrons and forms 5 single bonds with Cl atoms (0 lone pairs).\nStep 2: Steric number = 5 (sp3d hybridization).\nStep 3: Geometry is trigonal bipyramidal with three equatorial bonds (120°) and two axial bonds (90°).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாயு நிலையில் PCl5 இன் மைய பாஸ்பரஸ் அணுவின் இனக்கலப்பு மற்றும் மூலக்கூறு வடிவம் என்ன?",
+        "optionTexts": [
+          "sp3d, முக்கோண இருபிரமிடு",
+          "sp3d2, எண்முகி",
+          "dsp2, சதுர தளம்",
+          "sp3, நான்முகி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the PCl5 molecule, why are the axial P-Cl bonds longer and weaker than the equatorial P-Cl bonds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Axial bond pairs experience greater repulsion from equatorial bond pairs at 90°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Equatorial bonds are formed by pure p orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Axial bonds are formed by d-d overlap",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorine atoms in axial positions are ionized",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In trigonal bipyramidal PCl5, each axial bond pair is at 90° to three equatorial bond pairs, suffering three 90° repulsions.\nStep 2: Each equatorial bond pair experiences only two 90° repulsions (from the two axial bonds).\nStep 3: Due to greater electron repulsion, axial bonds are pushed outward, becoming longer (240 pm) and weaker than equatorial bonds (202 pm).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCl5 மூலக்கூறில் அச்சு (axial) P-Cl பிணைப்புகள் கிடைமட்ட (equatorial) பிணைப்புகளை விட நீளமாகவும் பலவீனமாகவும் இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அச்சு பிணைப்பு இரட்டைகள் கிடைமட்ட பிணைப்பு இரட்டைகளிடமிருந்து 90° கோணத்தில் அதிக விலக்கு விசையை எதிர்கொள்கின்றன",
+          "கிடைமட்ட பிணைப்புகள் தூய p ஆர்பிட்டால்களால் உருவாகின்றன",
+          "அச்சு பிணைப்புகள் d-d மேற்பொருந்துதலால் உருவாகின்றன",
+          "அச்சு நிலையில் உள்ள குளோரின் அணுக்கள் அயனியாக்கம் அடைந்துள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "o-Nitrophenol is more steam volatile and has a lower boiling point than p-nitrophenol because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "o-Nitrophenol has intramolecular hydrogen bonding while p-nitrophenol has intermolecular hydrogen bonding",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "p-Nitrophenol has lower molecular mass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "o-Nitrophenol is an ionic compound",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "p-Nitrophenol has intramolecular hydrogen bonding",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In o-nitrophenol, the -OH and -NO2 groups are adjacent, forming a stable 6-membered ring via intramolecular H-bonding (chelation).\nStep 2: This prevents association with neighboring molecules, keeping it monomeric and steam volatile.\nStep 3: In p-nitrophenol, the groups are far apart, leading to extensive intermolecular H-bonding and molecular association, resulting in a higher boiling point.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p-நைட்ரோபீனாலை விட o-நைட்ரோபீனால் அதிக நீராவி எளிதில் ஆவியாகும் தன்மையையும் குறைந்த கொதிநிலையையும் கொண்டிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "o-நைட்ரோபீனாலில் மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்பும், p-நைட்ரோபீனாலில் மூலக்கூறுகளுக்கு இடையே ஹைட்ரஜன் பிணைப்பும் உள்ளது",
+          "p-நைட்ரோபீனால் குறைந்த மூலக்கூறு நிறை கொண்டது",
+          "o-நைட்ரோபீனால் ஒரு அயனிச் சேர்மம்",
+          "p-நைட்ரோபீனாலில் மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்பு உள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "All three carbon-oxygen (C-O) bonds in the carbonate ion (CO3^2-) have identical bond lengths (128 pm) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The ion exists as a resonance hybrid of three equivalent canonical structures",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Carbon forms sp3 hybrid orbitals",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Carbon-oxygen bonds are purely ionic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen atoms undergo rapid tautomerism",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the Lewis structure of CO3^2-, one C=O double bond and two C-O- single bonds are drawn.\nStep 2: Due to delocalization of pi-electrons, carbonate exists as a resonance hybrid of three equivalent canonical structures.\nStep 3: The bond order of each C-O bond is 4/3 = 1.33, making all three C-O bond lengths identical.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பனேட் அயனியில் (CO3^2-) உள்ள மூன்று கார்பன்-ஆக்ஸிஜன் (C-O) பிணைப்புகளும் ஒரே நீளத்தைப் (128 pm) பெற்றிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அயனி மூன்று சமமான உடனிசைவு அமைப்புகளின் கலப்பாக உள்ளது",
+          "கார்பன் sp3 இனக்கலப்படைந்த ஆர்பிட்டால்களை உருவாக்குகிறது",
+          "கார்பன்-ஆக்ஸிஜன் பிணைப்புகள் முற்றிலும் அயனித் தன்மை கொண்டவை",
+          "ஆக்ஸிஜன் அணுக்கள் விரைவான இயங்கு சமநிலையைக் கொண்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following molecules has an expanded octet (more than 8 valence electrons around the central atom)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SF6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "BF3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The octet rule limits atoms to 8 valence electrons.\nStep 2: In SF6, sulfur forms 6 covalent bonds with six fluorine atoms.\nStep 3: Sulfur shares 12 valence electrons in its outer shell (hypervalent molecule with expanded octet).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் மூலக்கூறுகளில் மைய அணுவைச் சுற்றி விரிவாக்கப்பட்ட எண்ம அமைப்பைக் (8-க்கு மேற்பட்ட எலக்ட்ரான்கள்) கொண்டுள்ள மூலக்கூறு எது?",
+        "optionTexts": [
+          "SF6",
+          "CH4",
+          "NH3",
+          "BF3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In which of the following pairs do both species have identical bond order and are isoelectronic?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CO and NO+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "O2 and NO",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "N2 and O2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CN- and O2+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total electrons in CO = 6 (C) + 8 (O) = 14 electrons.\nStep 2: Total electrons in NO+ = 7 (N) + 8 (O) - 1 = 14 electrons.\nStep 3: Both are isoelectronic with 14 electrons (same as N2), and both have a bond order of 3.0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இணைகளில் இரண்டுமே ஒத்த எலக்ட்ரான் எண்ணிக்கையையும் ஒரே பிணைப்புத் தரத்தையும் கொண்டுள்ள இணை எது?",
+        "optionTexts": [
+          "CO மற்றும் NO+",
+          "O2 மற்றும் NO",
+          "N2 மற்றும் O2",
+          "CN- மற்றும் O2+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following diatomic species does not exist according to Molecular Orbital Theory?",
+    "options": [
+      {
+        "label": "A",
+        "text": "He2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "He2+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Li2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A molecule cannot exist stably if its bond order is zero.\nStep 2: Electronic configuration of He2 (4 electrons): sigma1s^2 sigma*1s^2.\nStep 3: Bonding electrons N_b = 2, Antibonding electrons N_a = 2.\nStep 4: Bond order = 1/2 (2 - 2) = 0. Therefore, He2 does not exist (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி பின்வரும் ஈரணு மூலக்கூறுகளில் நிலைத்தன்மை அற்று இல்லாத ஒன்று எது?",
+        "optionTexts": [
+          "He2",
+          "He2+",
+          "H2-",
+          "Li2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The types of bonds present in solid ammonium chloride (NH4Cl) are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic, Covalent, and Coordinate covalent bonds",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ionic and Covalent only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Covalent and Coordinate only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ionic and Hydrogen bonds only",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In NH4Cl, the bond between NH4+ cation and Cl- anion is an ionic bond.\nStep 2: Within the NH4+ cation, three N-H bonds are polar covalent bonds.\nStep 3: The fourth N-H bond is formed by the donation of the lone pair of electrons from ammonia to H+ (coordinate covalent bond).\nStep 4: All three types of bonds (ionic, covalent, coordinate) are present (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட அம்மோனியம் குளோரைடில் (NH4Cl) உள்ள பிணைப்புகளின் வகைகள் யாவை?",
+        "optionTexts": [
+          "அயனி, சகப்பிணைப்பு மற்றும் ஈதல் சகப்பிணைப்புகள்",
+          "அயனி மற்றும் சகப்பிணைப்பு மட்டுமே",
+          "சகப்பிணைப்பு மற்றும் ஈதல் பிணைப்பு மட்டுமே",
+          "அயனி மற்றும் ஹைட்ரஜன் பிணைப்புகள் மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The diagonal relationship of beryllium (Be) with aluminum (Al) is primarily due to their similar:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Charge-to-radius ratio (polarizing power)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Atomic numbers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Number of valence electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Crystal structures",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Diagonal relationship occurs between certain elements of Period 2 and diagonally adjacent elements of Period 3.\nStep 2: Beryllium (Group 2) and Aluminum (Group 13) share striking chemical similarities (amphoteric oxides, covalent chlorides, polymeric hydrides).\nStep 3: This similarity is due to their nearly identical ionic charge-to-radius ratios (polarizing power: Be2+ = 2/31 = 0.064, Al3+ = 3/53.5 = 0.060).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெரிலியம் (Be) அலுமினியத்துடன் (Al) மூலைவிட்டத் தொடர்பு கொண்டிருப்பதற்கு முதன்மைக் காரணம் அவற்றின் ஒத்த:",
+        "optionTexts": [
+          "மின்சுமை/ஆரம் விகிதம் (முனைவுறுத்தும் திறன்)",
+          "அணு எண்கள்",
+          "இணைதிறன் எலக்ட்ரான்களின் எண்ணிக்கை",
+          "படிக அமைப்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE04-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following compounds exhibits the strongest intermolecular hydrogen bonding?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HF",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HCl",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The strength of a single hydrogen bond depends on the electronegativity and small size of the atom bonded to hydrogen.\nStep 2: Fluorine has the highest electronegativity (4.0 on Pauling scale), creating the highest partial positive charge on H and largest partial negative charge on F.\nStep 3: Consequently, the individual H...F bond is the strongest among all hydrogen bonds (~41.8 kJ/mol, compared to ~29 kJ/mol for O...H).\nStep 4: Conclude Option A is correct. (Note: H2O has a higher boiling point due to forming 4 H-bonds per molecule, but each individual H-bond in HF is stronger).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் சேர்மங்களில் மிக வலிமையான மூலக்கூறுகளுக்கு இடையேயான ஹைட்ரஜன் பிணைப்பைக் கொண்டுள்ளது எது?",
+        "optionTexts": [
+          "HF",
+          "H2O",
+          "NH3",
+          "HCl"
+        ]
+      }
+    ]
+  }
+]

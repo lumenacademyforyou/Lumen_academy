@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE10-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Why do elements of the 4d and 5d transition series belonging to the same vertical group possess nearly identical atomic radii (e.g., Zr ≈ 160 pm and Hf ≈ 159 pm)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Due to Lanthanoid contraction (poor shielding by intervening 4f electrons)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Due to actinoid contraction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Due to identical effective nuclear charges",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Due to diagonal relationship",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the 5d transition series, the filling of the 4f subshell precedes hafnium (Hf, Z = 72).\nStep 2: The 4f electrons possess poor shielding capability due to their diffused spatial distribution.\nStep 3: Consequently, the steady increase in nuclear charge pulls the valence electrons inward (Lanthanoid contraction).\nStep 4: This size reduction completely compensates for the normal increase in radius down the group, making Zr and Hf almost identical in size (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே செங்குத்துத் தொகுதியைச் சேர்ந்த 4d மற்றும் 5d இடைநிலைத் தனிமங்கள் ஒத்த அணு ஆரத்தைப் பெற்றிருப்பதன் (எ.கா., Zr ≈ Hf) காரணம் என்ன?",
+        "optionTexts": [
+          "லாந்தனைடு குறுக்கம் காரணமாக (4f எலக்ட்ரான்களின் பலவீன மறைப்பு விளைவு)",
+          "ஆக்டினைடு குறுக்கம் காரணமாக",
+          "ஒரே மாதிரியான அணுக்கரு மின்சுமை காரணமாக",
+          "மூலைவிட்டத் தொடர்பு காரணமாக"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Among the 3d transition series elements, which metal exhibits the maximum number of oxidation states?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Manganese (Mn, from +2 to +7)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chromium (Cr)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Iron (Fe)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vanadium (V)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oxidation state variability in transition metals depends on the availability of electrons in both (n-1)d and ns subshells.\nStep 2: Manganese has the valence configuration 3d5 4s2 with 5 unpaired d-electrons and 2 s-electrons.\nStep 3: By participating sequentially, manganese displays all oxidation states from +2 up to +7 (e.g. in KMnO4).\nStep 4: Conclude Manganese (Option A) exhibits the maximum oxidation states in the 3d series.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3d இடைநிலைத் தொடர் தனிமங்களில், அதிக எண்ணிக்கையிலான ஆக்சிஜனேற்ற நிலைகளைக் காட்டும் உலோகம் எது?",
+        "optionTexts": [
+          "மாங்கனீசு (Mn, +2 முதல் +7 வரை)",
+          "குரோமியம் (Cr)",
+          "இரும்பு (Fe)",
+          "வனேடியம் (V)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the 3d transition series, only copper has a positive standard electrode potential (E°_Cu2+/Cu = +0.34 V). This positive value is due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "High enthalpy of atomization and high ionization enthalpy of copper not being balanced by its hydration enthalpy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Copper having an exceptionally high hydration enthalpy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Copper having low ionization energy",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Copper reacting with atmospheric nitrogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The standard electrode potential E° relates to Delta H_total = Delta_a H° + Delta_i H°1 + Delta_i H°2 + Delta_hyd H°.\nStep 2: Copper has an exceptionally high enthalpy of atomization and high second ionization enthalpy (removing an electron from stable 3d10).\nStep 3: The hydration enthalpy of Cu2+ is not sufficiently negative to compensate for these large energy inputs.\nStep 4: As a result, the conversion Cu(s) -> Cu2+(aq) is endothermic and E°_Cu2+/Cu is positive (+0.34 V). Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3d தொடரில் தாமிரம் மட்டுமே நேர்மறை திட்ட மின்முனை அழுத்தத்தைக் (E°_Cu2+/Cu = +0.34 V) கொண்டிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அதிக அணுவாக்கல் மற்றும் அயனியாக்கும் என்தால்பியை அதன் நீரேற்ற என்தால்பியால் ஈடுசெய்ய முடியாதது",
+          "தாமிரத்தின் மிக அதிக நீரேற்ற என்தால்பி",
+          "தாமிரத்தின் குறைந்த அயனியாக்கும் ஆற்றல்",
+          "தாமிரம் வளிமண்டல நைட்ரஜனுடன் வினைபுரிவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In aqueous solution, Cu2+ is more stable than Cu+ because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The much more negative hydration enthalpy of Cu2+ overcomes its high second ionization enthalpy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cu2+ has a fully filled 3d10 configuration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cu+ undergoes sublimation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cu2+ has a lower charge density than Cu+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Although Cu+ has a stable 3d10 configuration, in aqueous solution it disproportionates: 2 Cu+ -> Cu2+ + Cu.\nStep 2: Cu2+ has a smaller ionic radius and double the charge of Cu+, resulting in a much higher charge density.\nStep 3: The hydration enthalpy of Cu2+ is vastly more negative (exothermic) than that of Cu+, more than compensating for the second ionization energy of copper.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்க்கரைசலில் Cu+ ஐ விட Cu2+ அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "Cu2+ அயனியின் அதிக நீரேற்ற என்தால்பி அதன் இரண்டாவது அயனியாக்கும் ஆற்றலை ஈடுசெய்கிறது",
+          "Cu2+ முழுமையாக நிரப்பப்பட்ட 3d10 அமைப்பைக் கொண்டுள்ளது",
+          "Cu+ பதங்கமாதல் அடைகிறது",
+          "Cu2+ அயனி Cu+ ஐ விட குறைந்த மின்சுமை அடர்த்தி கொண்டது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the spin-only magnetic moment of a divalent ion of an element with atomic number 27 (Co2+)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.87 BM",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4.90 BM",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.73 BM",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.92 BM",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Atomic number Z = 27 is Cobalt (Co). Configuration: [Ar] 3d7 4s2.\nStep 2: Divalent cation Co2+ = [Ar] 3d7.\nStep 3: In a 3d7 subshell, there are 3 unpaired electrons (n = 3).\nStep 4: Spin-only magnetic moment mu = sqrt(n(n+2)) = sqrt(3(5)) = sqrt(15) = 3.87 BM (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணு எண் 27 கொண்ட தனிமத்தின் இருஇணைதிறன் அயனியின் (Co2+) தற்சுழற்சி மட்டுமேயான காந்தத் திருப்புத்திறன் என்ன?",
+        "optionTexts": [
+          "3.87 BM",
+          "4.90 BM",
+          "1.73 BM",
+          "5.92 BM"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following transition metal ions is colorless in aqueous solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sc3+",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ti3+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "V3+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fe2+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Transition metal ions are colored in aqueous solution due to d-d transitions, which require partially filled d-orbitals (d1 to d9).\nStep 2: Scandium (Z = 21) configuration: [Ar] 3d1 4s2. Sc3+ = [Ar] 3d0.\nStep 3: Since Sc3+ has an empty d-subshell (d0), no d-d transition is possible.\nStep 4: Hence, Sc3+ is completely colorless (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்க்கரைசலில் நிறமற்றதாக இருக்கும் இடைநிலை உலோக அயனி எது?",
+        "optionTexts": [
+          "Sc3+",
+          "Ti3+",
+          "V3+",
+          "Fe2+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Potassium permanganate (KMnO4) exhibits an intense dark purple color despite manganese having a d0 electronic configuration in Mn(VII). This intense color is due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Charge transfer from oxygen (ligand) to manganese (metal) [L -> M charge transfer]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "d-d electronic transition",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Presence of unpaired electrons in 4s orbital",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Magnetic dipole interactions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In KMnO4, Mn is in the +7 oxidation state with an empty 3d0 configuration; therefore, d-d transitions cannot occur.\nStep 2: Absorption of visible light occurs via a Ligand-to-Metal Charge Transfer (LMCT) mechanism.\nStep 3: An electron is momentarily transferred from the filled 2p molecular orbital of oxygen (O2-) to the empty 3d orbital of Mn(VII).\nStep 4: This Laporte-allowed charge transfer produces the intense purple color (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "KMnO4 இல் மாங்கனீசு d0 எலக்ட்ரான் அமைப்பைப் பெற்றிருந்த போதிலும், அடர் ஊதா நிறத்தைக் கொண்டிருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "ஆக்ஸிஜனிலிருந்து மாங்கனீசுக்கு நிகழும் மின்சுமை இடமாற்றம் (L -> M charge transfer)",
+          "d-d எலக்ட்ரான் பரிமாற்றம்",
+          "4s ஆர்பிட்டாலில் ஜோடியற்ற எலக்ட்ரான் இருப்பது",
+          "காந்த இருமுனை இடைவினைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is NOT a characteristic property of interstitial compounds formed by transition metals?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They are chemically very reactive compared to pure metals",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "They have high melting points, higher than those of pure metals",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "They are extremely hard, some approaching diamond in hardness",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "They retain metallic electrical conductivity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Interstitial compounds are formed when small non-metal atoms (H, C, N) are trapped in voids of transition metal lattices.\nStep 2: They are non-stoichiometric, extremely hard, have very high melting points, and retain metallic electrical conductivity.\nStep 3: They are chemically inert (unreactive), not chemically reactive.\nStep 4: Statement A is false and therefore the correct option.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடைநிலை உலோகங்கள் உருவாக்கும் இடைச்செருகல் சேர்மங்களின் (Interstitial compounds) தவறான பண்பு எது?",
+        "optionTexts": [
+          "அவை தூய உலோகங்களை விட அதிக வேதி வினைதிறன் கொண்டவை",
+          "அவை தூய உலோகங்களை விட அதிக உருகுநிலையைக் கொண்டுள்ளன",
+          "அவை வைரத்தைப் போன்ற மிக அதிக கடினத்தன்மை கொண்டவை",
+          "அவை உலோகக் கடத்துத்திறனைத் தக்க வைத்துக் கொள்கின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the industrial preparation of potassium dichromate (K2Cr2O7) from chromite ore (FeCr2O4), the initial fusion with sodium carbonate in the presence of air yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sodium chromate (Na2CrO4, yellow)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sodium dichromate (Na2Cr2O7)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chromic oxide (Cr2O3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chromium trioxide (CrO3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The roasting of chromite ore with sodium carbonate in excess air: 4 FeCr2O4 + 8 Na2CO3 + 7 O2 -> 8 Na2CrO4 + 2 Fe2O3 + 8 CO2.\nStep 2: The yellow solution of sodium chromate (Na2CrO4) is filtered and acidified with H2SO4 to yield orange sodium dichromate.\nStep 3: Treatment of sodium dichromate with KCl crystallizes out potassium dichromate (K2Cr2O7).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குரோமைட் தாதுவிலிருந்து (FeCr2O4) பொட்டாசியம் டைகுரோமேட் தயாரிப்பில், காற்று முன்னிலையில் சோடியம் கார்பனேட்டுடன் உருக்கும் போது கிடைப்பது எது?",
+        "optionTexts": [
+          "சோடியம் குரோமேட் (Na2CrO4, மஞ்சள்)",
+          "சோடியம் டைகுரோமேட் (Na2Cr2O7)",
+          "குரோமிக் ஆக்சைடு (Cr2O3)",
+          "குரோமியம் டிரையாக்சைடு (CrO3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In aqueous solution, chromate ion (CrO4^2-, yellow) and dichromate ion (Cr2O7^2-, orange) interconvert depending on pH. What is the oxidation state of chromium in CrO4^2- and Cr2O7^2-, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+6 and +6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+3 and +6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+6 and +7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+4 and +6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In CrO4^2-: x + 4(-2) = -2 => x = +6.\nStep 2: In Cr2O7^2-: 2x + 7(-2) = -2 => 2x = 12 => x = +6.\nStep 3: The interconversion 2 CrO4^2- + 2 H+ <=> Cr2O7^2- + H2O is an acid-base equilibrium, not a redox reaction.\nStep 4: The oxidation state of chromium is +6 in both species (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "CrO4^2- (மஞ்சள்) மற்றும் Cr2O7^2- (ஆரஞ்சு) அயனிகளில் குரோமியத்தின் ஆக்சிஜனேற்ற எண்கள் முறையே:",
+        "optionTexts": [
+          "+6 மற்றும் +6",
+          "+3 மற்றும் +6",
+          "+6 மற்றும் +7",
+          "+4 மற்றும் +6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the dichromate dianion (Cr2O7^2-), what is the structural nature of the chromium-oxygen bonds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Six equivalent terminal Cr-O bonds and two bridge Cr-O-Cr bonds with a bond angle of 126°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "All seven Cr-O bonds are identical in length",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "The Cr-O-Cr bridge bond angle is 180° (linear)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "It consists of planar CrO3 units",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The structure of Cr2O7^2- consists of two tetrahedral CrO4 units sharing a single oxygen atom at a corner.\nStep 2: The six terminal Cr-O bonds have identical lengths (163 pm) due to resonance delocalization.\nStep 3: The bridging Cr-O-Cr bond length is longer (179 pm) with a bent bridge angle of 126°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டைகுரோமேட் எதிரயனியில் (Cr2O7^2-) குரோமியம்-ஆக்ஸிஜன் பிணைப்புகளின் அமைப்பு எவ்வாறு உள்ளது?",
+        "optionTexts": [
+          "ஆறு சமமான முனைய Cr-O பிணைப்புகள் மற்றும் 126° பிணைப்புக் கோணம் கொண்ட இரண்டு பால Cr-O-Cr பிணைப்புகள்",
+          "அனைத்து ஏழு Cr-O பிணைப்புகளும் ஒரே நீளம் கொண்டவை",
+          "Cr-O-Cr பால பிணைப்புக் கோணம் 180° (நேர்கோடு)",
+          "இது தள CrO3 அமைப்புகளைக் கொண்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "How many moles of electrons are involved when 1 mole of potassium dichromate (K2Cr2O7) acts as an oxidizing agent in acidic medium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 moles of electrons",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 moles of electrons",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "5 moles of electrons",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "1 mole of electrons",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ionic half-reaction in acidic medium: Cr2O7^2- + 14 H+ + 6 e- -> 2 Cr3+ + 7 H2O.\nStep 2: Two chromium atoms change from +6 to +3, each accepting 3 electrons.\nStep 3: Total electrons gained per mole of Cr2O7^2- is 2 * 3 = 6 electrons (n-factor = 6).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமில ஊடகத்தில் 1 மோல் பொட்டாசியம் டைகுரோமேட் (K2Cr2O7) ஆக்சிஜனேற்றியாக செயல்படும் போது எத்தனை மோல் எலக்ட்ரான்கள் ஏற்கப்படுகின்றன?",
+        "optionTexts": [
+          "6 மோல் எலக்ட்ரான்கள்",
+          "3 மோல் எலக்ட்ரான்கள்",
+          "5 மோல் எலக்ட்ரான்கள்",
+          "1 மோல் எலக்ட்ரான்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Pyrolusite ore (MnO2) is converted into potassium permanganate by first fusing with KOH in the presence of air to form a green compound 'X'. Compound 'X' is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "K2MnO4 (Potassium manganate)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mn2O7",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "KMnO4",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Mn3O4",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fusion of MnO2 with caustic potash (KOH) in the presence of atmospheric oxygen or an oxidizing agent like KNO3: 2 MnO2 + 4 KOH + O2 -> 2 K2MnO4 + 2 H2O.\nStep 2: The product is potassium manganate (K2MnO4), which is dark green.\nStep 3: Disproportionation or electrolytic oxidation of manganate (MnO4^2-) then yields purple permanganate (KMnO4).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பைரோலுசைட் தாது (MnO2) காற்று முன்னிலையில் KOH உடன் உருகும்போது உருவாகும் பச்சை நிற சேர்மம் 'X' எது?",
+        "optionTexts": [
+          "K2MnO4 (பொட்டாசியம் மாங்கனேட்)",
+          "Mn2O7",
+          "KMnO4",
+          "Mn3O4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In neutral or faintly alkaline medium, KMnO4 oxidizes potassium iodide (KI) quantitatively into:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Potassium iodate (KIO3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Iodine gas (I2)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Potassium periodate (KIO4)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Potassium hypoiodite (KIO)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In acidic medium, permanganate oxidizes iodide (I-) to iodine (I2): 2 MnO4^- + 16 H+ + 10 I- -> 2 Mn2+ + 5 I2 + 8 H2O.\nStep 2: In neutral or faintly alkaline medium, permanganate oxidizes iodide directly to iodate (IO3-): 2 MnO4^- + H2O + I- -> 2 MnO2 + 2 OH^- + IO3^-.\nStep 3: Iodate is KIO3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நடுநிலை அல்லது கார ஊடகத்தில், KMnO4 பொட்டாசியம் அயோடைடை (KI) எவ்வாறு ஆக்சிஜனேற்றம் செய்கிறது?",
+        "optionTexts": [
+          "பொட்டாசியம் அயோடேட் (KIO3)",
+          "அயோடின் (I2)",
+          "பொட்டாசியம் பெர்அயோடேட் (KIO4)",
+          "பொட்டாசியம் ஹைப்போஅயோடைட் (KIO)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The equivalent weight of potassium permanganate (molar mass = M) when acting as an oxidizing agent in acidic solution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "M / 5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M / 3",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "M / 1",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "M / 6",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Half-reaction in acidic medium: MnO4^- + 8 H+ + 5 e- -> Mn2+ + 4 H2O.\nStep 2: Oxidation state of Mn changes from +7 to +2, gaining 5 electrons (n-factor = 5).\nStep 3: Equivalent weight = Molar mass / n-factor = M / 5.\nStep 4: (In neutral medium, n-factor is 3 -> M/3; in strongly alkaline, n-factor is 1 -> M/1). Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமிலக் கரைசலில் பொட்டாசியம் பெர்மாங்கனேட்டின் (மோலார் நிறை = M) சமான நிறை என்ன?",
+        "optionTexts": [
+          "M / 5",
+          "M / 3",
+          "M / 1",
+          "M / 6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the chromyl chloride test for chloride ions, heating solid chloride with K2Cr2O7 and concentrated H2SO4 evolves deep red vapors of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chromyl chloride (CrO2Cl2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chlorine gas (Cl2)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Chromic chloride (CrCl3)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Chromyl fluoride",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Solid ionic chloride reacts with potassium dichromate and conc. H2SO4: 4 NaCl + K2Cr2O7 + 6 H2SO4 -> 2 CrO2Cl2(g) + 2 KHSO4 + 4 NaHSO4 + 3 H2O.\nStep 2: The deep red vapors evolved are chromyl chloride (CrO2Cl2).\nStep 3: When passed into NaOH solution, it forms yellow Na2CrO4, confirmed by lead acetate giving yellow PbCrO4 precipitate.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரைடு அயனிகளுக்கான குரோமைல் குளோரைடு சோதனையில், திட குளோரைடை K2Cr2O7 மற்றும் அடர் H2SO4 உடன் சூடுபடுத்தும்போது வெளியாகும் அடர் சிவப்பு நிற ஆவி எது?",
+        "optionTexts": [
+          "குரோமைல் குளோரைடு (CrO2Cl2)",
+          "குளோரின் வாயு (Cl2)",
+          "குரோமிக் குளோரைடு (CrCl3)",
+          "குரோமைல் புளோரைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is the most common and stable oxidation state exhibited by all lanthanoids?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+2",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "+4",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "+5",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The general valence shell configuration of lanthanoids is 4f^(1-14) 5d^(0-1) 6s^2.\nStep 2: All lanthanoids readily lose their two 6s electrons and one 5d (or 4f) electron.\nStep 3: The +3 oxidation state is predominantly stable across the entire 4f series in both solid state and aqueous solutions.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து லாந்தனைடுகளாலும் பொதுவாகக் காட்டப்படும் மிகவும் நிலையான முதன்மை ஆக்சிஜனேற்ற நிலை எது?",
+        "optionTexts": [
+          "+3",
+          "+2",
+          "+4",
+          "+5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Cerium (Z = 58) exhibits a stable +4 oxidation state (Ce4+) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "It attains the stable noble gas electronic configuration of xenon ([Xe] 4f0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "It has a half-filled 4f7 configuration",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "It has empty 5d orbitals",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "It has high sublimation enthalpy",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Electronic configuration of neutral Cerium (Z = 58): [Xe] 4f1 5d1 6s2.\nStep 2: By losing four electrons (two 6s, one 5d, one 4f), Ce4+ attains the noble gas configuration of Xenon ([Xe] 4f0).\nStep 3: This empty f-subshell confers exceptional thermodynamic stability, making Ce(IV) a well-known analytical oxidizing agent.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரியம் (Z = 58) நிலையான +4 ஆக்சிஜனேற்ற நிலையைக் (Ce4+) காட்டுவதற்கான காரணம் என்ன?",
+        "optionTexts": [
+          "இது செனானின் நிலையான மந்த வாயு எலக்ட்ரான் அமைப்பைப் ([Xe] 4f0) பெறுகிறது",
+          "இது பாதி நிரப்பப்பட்ட 4f7 அமைப்பைக் கொண்டுள்ளது",
+          "இது காலியான 5d ஆர்பிட்டால்களைக் கொண்டுள்ளது",
+          "இது அதிக பதங்கமாதல் என்தால்பியைக் கொண்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Europium(II) (Eu2+, Z = 63) is a strong reducing agent in aqueous solution because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "It readily oxidizes to the more stable +3 state (Eu3+) which is the dominant state for lanthanoids",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "It has a d0 configuration",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "It is radioactive",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "It has completely filled 4f14 subshell",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Eu2+ has the half-filled configuration [Xe] 4f7.\nStep 2: However, for all lanthanoids, the +3 oxidation state is thermodynamically the most stable in aqueous solution.\nStep 3: Hence, Eu2+ has a strong propensity to lose one electron to form Eu3+, acting as a powerful reducing agent.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்க்கரைசலில் யூரோப்பியம்(II) (Eu2+, Z = 63) ஒரு வலிமையான ஒடுக்கும் காரணியாகச் செயல்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "இது லாந்தனைடுகளின் மிகவும் நிலையான +3 நிலைக்கு (Eu3+) எளிதில் ஆக்சிஜனேற்றம் அடைகிறது",
+          "இது d0 அமைப்பைக் கொண்டுள்ளது",
+          "இது கதிரியக்கத் தன்மை கொண்டது",
+          "இது முழுமையாக நிரப்பப்பட்ட 4f14 துணைக் கூட்டைக் கொண்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "As a consequence of the Lanthanoid contraction, the basic strength of the lanthanoid hydroxides Ln(OH)3 from La(OH)3 to Lu(OH)3:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decreases progressively (La(OH)3 is most basic, Lu(OH)3 is least basic)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increases progressively",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Remains unchanged",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "First decreases then increases",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Across the lanthanoid series from La3+ to Lu3+, ionic radius decreases steadily due to lanthanoid contraction.\nStep 2: According to Fajans' rules, a smaller cation polarizes the hydroxide (OH-) ion more effectively, increasing covalent character of the Ln-OH bond.\nStep 3: Increasing covalent character reduces cleavage of the O-H bond to release OH- ions in water.\nStep 4: Therefore, basic strength decreases from La(OH)3 to Lu(OH)3 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லாந்தனைடு குறுக்கத்தின் காரணமாக, La(OH)3 முதல் Lu(OH)3 வரை உள்ள லாந்தனைடு ஹைட்ராக்சைடுகளின் கார வலிமை:",
+        "optionTexts": [
+          "தொடர்ந்து குறைகிறது (La(OH)3 அதிக காரத்தன்மை, Lu(OH)3 குறைந்த காரத்தன்மை)",
+          "தொடர்ந்து அதிகரிக்கிறது",
+          "மாறாமல் உள்ளது",
+          "முதலில் குறைந்து பின்னர் அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Mischmetal is a commercially important pyrophoric alloy consisting primarily of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "~95% Lanthanoid metals (chiefly Ce and La) and ~5% Iron, with traces of S, C, Ca, and Al",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50% Lead and 50% Tin",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Copper and Zinc with traces of Nickel",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "90% Titanium and 10% Aluminum",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mischmetal is an alloy consisting of rare earth (lanthanoid) metals (~95%, particularly ~50% cerium, ~40% lanthanum and neodymium) and ~5% iron.\nStep 2: Traces of sulfur, carbon, calcium, and aluminum are present as impurities.\nStep 3: It produces hot sparks when struck and is used in cigarette lighters, flintlock ignition devices, and tracer bullets.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிஷ் உலோகம் (Mischmetal) என்பது முதன்மையாக எவற்றைக் கொண்டுள்ள ஒரு கலப்புலோகமாகும்?",
+        "optionTexts": [
+          "~95% லாந்தனைடு உலோகங்கள் (முக்கியமாக Ce மற்றும் La) மற்றும் ~5% இரும்பு",
+          "50% காரீயம் மற்றும் 50% தகரம்",
+          "தாமிரம் மற்றும் துத்தநாகம்",
+          "90% டைட்டானியம் மற்றும் 10% அலுமினியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Actinoids exhibit a much greater range of oxidation states (such as +3, +4, +5, +6, and +7 in U, Np, Pu) than lanthanoids because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The energy gap between 5f, 6d, and 7s subshells in actinoids is very small, allowing electrons from all three to participate",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Actinoids are all radioactive",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "5f electrons have greater shielding effect than 4f electrons",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Actinoids have higher ionization energies than lanthanoids",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In lanthanoids, the 4f subshell is buried deep inside the core and has much lower energy than 5d and 6s, restricting participation mainly to +3.\nStep 2: In actinoids, the energy levels of 5f, 6d, and 7s are comparable in energy.\nStep 3: Consequently, electrons from 5f, 6d, and 7s can all take part in bond formation, generating high oxidation states up to +7.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லாந்தனைடுகளை விட ஆக்டினைடுகள் அதிக அளவிலான ஆக்சிஜனேற்ற நிலைகளைக் (+3, +4, +5, +6, +7) காட்டுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "5f, 6d, மற்றும் 7s துணைக் கூடுகளுக்கு இடையேயான ஆற்றல் வேறுபாடு மிகக் குறைவு என்பதால்",
+          "ஆக்டினைடுகள் அனைத்தும் கதிரியக்கத் தன்மை கொண்டவை என்பதால்",
+          "5f எலக்ட்ரான்கள் 4f ஐ விட அதிக மறைப்பு விளைவைக் கொண்டுள்ளன என்பதால்",
+          "ஆக்டினைடுகள் அதிக அயனியாக்கும் ஆற்றலைக் கொண்டுள்ளன என்பதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The actinoid contraction from element to element is greater than the lanthanoid contraction because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5f orbitals have poorer shielding effect than 4f orbitals",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5f orbitals are more spherical than 4f orbitals",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Actinoid nuclear charges are smaller",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "4f electrons have zero shielding",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The 5f electrons extend further from the nucleus into space than 4f electrons.\nStep 2: Because 5f orbitals are more diffuse, their shielding power against the nuclear charge is even poorer than that of 4f electrons.\nStep 3: Consequently, the effective nuclear charge experienced across the 5f series increases more rapidly.\nStep 4: This produces an actinoid contraction that is greater than the lanthanoid contraction (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லாந்தனைடு குறுக்கத்தை விட ஆக்டினைடு குறுக்கம் அதிகமாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "4f ஆர்பிட்டால்களை விட 5f ஆர்பிட்டால்கள் குறைந்த மறைப்பு விளைவைக் கொண்டுள்ளன",
+          "5f ஆர்பிட்டால்கள் 4f ஐ விட அதிக கோள வடிவம் கொண்டவை",
+          "ஆக்டினைடுகளின் அணுக்கரு மின்சுமை குறைவு",
+          "4f எலக்ட்ரான்கள் பூஜ்ஜிய மறைப்பைக் கொண்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Zinc, Cadmium, and Mercury are placed in Group 12 of the periodic table but are NOT regarded as typical transition elements because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "They have completely filled (d10) subshells in their ground states as well as in their common oxidation states",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "They are non-metals",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "They do not form complexes",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "They have high melting points",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: IUPAC defines a transition element as an element whose atom has a partially filled d subshell, or which can give rise to cations with an incomplete d subshell.\nStep 2: Zn, Cd, and Hg have full (n-1)d10 ns2 ground state configurations.\nStep 3: In their common oxidation state (+2), they lose two s-electrons, retaining a completely filled (n-1)d10 subshell (e.g. Zn2+ = [Ar] 3d10).\nStep 4: Lacking partially filled d-orbitals, they do not show typical transition properties (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துத்தநாகம், காட்மியம் மற்றும் பாதரசம் ஆகியவை இடைநிலைத் தனிமங்களாகக் கருதப்படாததன் காரணம் என்ன?",
+        "optionTexts": [
+          "அவை அவற்றின் அடிநிலை மற்றும் பொதுவான ஆக்சிஜனேற்ற நிலைகளில் முழுமையாக நிரப்பப்பட்ட (d10) துணைக் கூட்டைக் கொண்டுள்ளன",
+          "அவை அலோகங்கள் என்பதால்",
+          "அவை அணைவுச் சேர்மங்களை உருவாக்குவதில்லை",
+          "அவை அதிக உருகுநிலையைக் கொண்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In acidic solution, green manganate ion (MnO4^2-) is unstable and spontaneously disproportionates to form:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Purple permanganate ion (MnO4^-) and brown manganese dioxide (MnO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mn2+ and O2 gas",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "K2MnO4 and H2",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Mn(OH)2 only",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The manganate(VI) ion (MnO4^2-) is stable only in strongly alkaline solution (pH > 12).\nStep 2: In neutral or acidic solutions, it undergoes disproportionation: 3 MnO4^2- + 4 H+ -> 2 MnO4^- + MnO2 + 2 H2O.\nStep 3: Manganese(+6) is simultaneously oxidized to manganese(+7) (MnO4^-, purple) and reduced to manganese(+4) (MnO2, brown).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமிலக் கரைசலில், பச்சை நிற மாங்கனேட் அயனி (MnO4^2-) தன்னிச்சையாக விகிதச்சிதைவு (disproportionation) அடைந்து எதனைத் தருகிறது?",
+        "optionTexts": [
+          "ஊதா நிற பெர்மாங்கனேட் (MnO4^-) மற்றும் பழுப்பு நிற மாங்கனீசு டை ஆக்சைடு (MnO2)",
+          "Mn2+ மற்றும் O2 வாயு",
+          "K2MnO4 மற்றும் H2",
+          "Mn(OH)2 மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Among the oxides of chromium: CrO, Cr2O3, and CrO3, what is the nature of their acid-base character in increasing order of oxidation state?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CrO is basic, Cr2O3 is amphoteric, and CrO3 is acidic",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CrO is acidic, Cr2O3 is amphoteric, and CrO3 is basic",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "All three oxides are basic",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "All three oxides are amphoteric",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The oxidation states of chromium are +2 (in CrO), +3 (in Cr2O3), and +6 (in CrO3).\nStep 2: In lower oxidation states (+2), the oxide has predominantly ionic character and acts as a basic oxide (CrO is basic).\nStep 3: In intermediate states (+3), the oxide displays amphoteric properties (Cr2O3 dissolves in both acids and bases).\nStep 4: In higher oxidation states (+6), covalent character dominates due to strong polarization, making CrO3 an acidic oxide (forms H2CrO4 in water). Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குரோமியத்தின் ஆக்சைடுகளான CrO, Cr2O3, மற்றும் CrO3 ஆகியவற்றின் அமில-காரப் பண்பு முறையே எவ்வாறு அமைகிறது?",
+        "optionTexts": [
+          "CrO காரத்தன்மை, Cr2O3 ஈரியல்புத்தன்மை, மற்றும் CrO3 அமிலத்தன்மை",
+          "CrO அமிலத்தன்மை, Cr2O3 ஈரியல்புத்தன்மை, மற்றும் CrO3 காரத்தன்மை",
+          "மூன்று ஆக்சைடுகளும் காரத்தன்மை கொண்டவை",
+          "மூன்று ஆக்சைடுகளும் ஈரியல்புத்தன்மை கொண்டவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which transition metal in the 3d series has the highest melting point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chromium (Cr)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Iron (Fe)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Zinc (Zn)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Copper (Cu)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The melting point of transition metals depends directly on the strength of metallic bonding.\nStep 2: Metallic bonding strength increases with the number of unpaired d-electrons available for interatomic bonding.\nStep 3: Chromium has the maximum number of unpaired electrons (3d5 4s1 = 6 unpaired electrons) in the 3d series.\nStep 4: Hence, chromium possesses the strongest metallic bonding and highest melting point (~1907 °C) in the 3d series (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3d இடைநிலைத் தொடரில் மிக அதிக உருகுநிலையைக் கொண்டுள்ள உலோகம் எது?",
+        "optionTexts": [
+          "குரோமியம் (Cr)",
+          "இரும்பு (Fe)",
+          "துத்தநாகம் (Zn)",
+          "தாமிரம் (Cu)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Alloy formation is very common among transition metals because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Their atomic sizes are very similar (within 15%), allowing mutual substitution in the crystal lattice",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "They all have the same density",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "They react violently with each other",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Their electronegativity values are identical to alkali metals",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Alloys are homogeneous solid solutions where atoms of one metal are distributed randomly among the atoms of another.\nStep 2: According to the Hume-Rothery rules, solid solubility is favored when the atomic radii of the two metals differ by no more than ~15%.\nStep 3: Transition metals of similar series have almost identical radii, allowing one metal atom to readily substitute for another in the metallic crystal lattice.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடைநிலை உலோகங்களுக்கிடையே கலப்புலோக உருவாக்கம் எளிதாக நிகழ்வதற்குக் காரணம் என்ன?",
+        "optionTexts": [
+          "அவற்றின் அணு ஆரங்கள் ஏறக்குறைய ஒரே மாதிரியாக (15% வேறுபாட்டிற்குள்) இருப்பதால் படிக அமைப்பில் ஒன்றுக்கொன்று எளிதில் பதிலீடு செய்ய முடிகிறது",
+          "அனைத்தும் ஒரே அடர்த்தியைக் கொண்டுள்ளன",
+          "அவை தங்களுக்குள் தீவிரமாக வினைபுரிகின்றன",
+          "அவற்றின் எலக்ட்ரான் கவர்தன்மை கார உலோகங்களுக்கு சமமாக உள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the highest oxidation state exhibited by any transition metal in the periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+8 in OsO4 and RuO4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+7 in KMnO4",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "+6 in K2Cr2O7",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "+9 in IrO4+",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: While the maximum oxidation state in the 3d series is +7 (in Mn), heavier transition metals can achieve higher states.\nStep 2: Ruthenium (Ru) and Osmium (Os) of Group 8 utilize all their valence d and s electrons to form tetroxides: RuO4 and OsO4.\nStep 3: In OsO4 and RuO4, the metal exhibits the formal +8 oxidation state.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிம வரிசை அட்டவணையில் இடைநிலை உலோகங்களால் காட்டப்படும் அதிகபட்ச ஆக்சிஜனேற்ற நிலை எது?",
+        "optionTexts": [
+          "OsO4 மற்றும் RuO4 இல் +8",
+          "KMnO4 இல் +7",
+          "K2Cr2O7 இல் +6",
+          "IrO4+ இல் +9"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE10-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following lanthanoid ions is diamagnetic in its ground state?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lu3+ (Z = 71, [Xe] 4f14)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ce3+ (Z = 58, [Xe] 4f1)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Eu3+ (Z = 63, [Xe] 4f6)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Gd3+ (Z = 64, [Xe] 4f7)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A species is diamagnetic when all its electrons are paired (zero unpaired electrons, n = 0).\nStep 2: Lutetium (Lu, Z = 71) has configuration [Xe] 4f14 5d1 6s2. Lu3+ = [Xe] 4f14.\nStep 3: The 4f subshell is completely filled with 14 paired electrons, meaning zero unpaired electrons.\nStep 4: Therefore, Lu3+ (and La3+ with 4f0) is diamagnetic. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் லாந்தனைடு அயனிகளில் எது அதன் அடிநிலையில் டயாகாந்தப் பண்பைக் (Diamagnetic) கொண்டுள்ளது?",
+        "optionTexts": [
+          "Lu3+ (Z = 71, [Xe] 4f14)",
+          "Ce3+ (Z = 58, [Xe] 4f1)",
+          "Eu3+ (Z = 63, [Xe] 4f6)",
+          "Gd3+ (Z = 64, [Xe] 4f7)"
+        ]
+      }
+    ]
+  }
+]

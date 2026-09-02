@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY08-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A charged particle of charge q and mass m enters a uniform magnetic field B with velocity v perpendicular to the field lines. What is the radius of its circular trajectory?",
+    "options": [
+      {
+        "label": "A",
+        "text": "m v / (q B)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "q B / (m v)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "q v / (m B)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "m B / (q v)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnetic Lorentz force provides the necessary centripetal force: q v B = m v^2 / r.\nStep 2: Rearranging for radius r: r = m v / (q B).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையும் q மின்னூட்டமும் கொண்ட ஒரு துகள் B சீரான காந்தப்புலத்தில் செங்குத்தாக v திசைவேகத்துடன் நுழைகிறது. அதன் வட்டப்பாதையின் ஆரம் என்ன?",
+        "optionTexts": [
+          "m v / (q B)",
+          "q B / (m v)",
+          "q v / (m B)",
+          "m B / (q v)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the magnetic field intensity at the center of a circular loop of radius R carrying a steady current I?",
+    "options": [
+      {
+        "label": "A",
+        "text": "μ₀ I / (2 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "μ₀ I / (4π R)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "μ₀ I / (2π R)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "μ₀ I / (4 R)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From Biot-Savart Law: B = (μ₀ / 4π) * (I ∫ dl / R^2) = (μ₀ / 4π) * (I * 2π R / R^2).\nStep 2: Simplifying gives B = μ₀ I / (2 R).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய வட்டக்கம்பிச் சுருளில் I மாறா மின்னோட்டம் பாயும்போது அதன் மையத்தில் உருவாகும் காந்தப்புலம் என்ன?",
+        "optionTexts": [
+          "μ₀ I / (2 R)",
+          "μ₀ I / (4π R)",
+          "μ₀ I / (2π R)",
+          "μ₀ I / (4 R)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer of internal resistance 50 Ω gives full-scale deflection for a current of 2.0 mA. What shunt resistance must be connected across it to convert it into an ammeter of range 0 to 5.0 A?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.020 Ω (approx)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.20 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.0 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.002 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for shunt resistance: S = (I_g * G) / (I - I_g).\nStep 2: Here G = 50 Ω, I_g = 2.0 mA = 0.002 A, I = 5.0 A.\nStep 3: S = (0.002 * 50) / (5.0 - 0.002) = 0.10 / 4.998 ≈ 0.020 Ω.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "50 Ω அக மின்தடை கொண்ட கால்வனோமீட்டர் 2.0 mA மின்னோட்டத்திற்கு முழு அளவீட்டு விலகலைக் காட்டுகிறது. அதை 0 முதல் 5.0 A அளவிடும் அம்மீட்டராக மாற்ற இணைக்கப்பட வேண்டிய ஷண்ட் மின்தடை என்ன?",
+        "optionTexts": [
+          "0.020 Ω (தோராயமாக)",
+          "0.20 Ω",
+          "2.0 Ω",
+          "0.002 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two long parallel straight wires separated by a distance d in vacuum carry equal currents I in the same direction. What is the nature and magnitude of the magnetic force per unit length between them?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Attractive, with magnitude μ₀ I^2 / (2π d)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Repulsive, with magnitude μ₀ I^2 / (2π d)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Attractive, with magnitude μ₀ I^2 / (4π d)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Currents flowing in the same direction attract each other due to magnetic interaction.\nStep 2: Force per unit length F/L = μ₀ I1 I2 / (2π d) = μ₀ I^2 / (2π d).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் d இடைவெளியில் உள்ள இரு நீண்ட இணையான கம்பிகளில் ஒரே திசையில் I மின்னோட்டம் பாய்கிறது. அவற்றுக்கு இடையேயான ஓரலகு நீளத்திற்கான காந்த விசை என்ன?",
+        "optionTexts": [
+          "ஈர்ப்பு விசை, எண்மதிப்பு μ₀ I^2 / (2π d)",
+          "விலக்கு விசை, எண்மதிப்பு μ₀ I^2 / (2π d)",
+          "ஈர்ப்பு விசை, எண்மதிப்பு μ₀ I^2 / (4π d)",
+          "பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A series LCR circuit has R = 30 Ω, inductive reactance X_L = 80 Ω, and capacitive reactance X_C = 40 Ω connected across an AC voltage source of V_rms = 200 V. What is the impedance of the circuit and the power factor?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Z = 50 Ω, Power factor = 0.60 (lagging)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Z = 70 Ω, Power factor = 0.80",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Z = 50 Ω, Power factor = 0.80",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Z = 150 Ω, Power factor = 0.50",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Impedance Z = sqrt(R^2 + (X_L - X_C)^2) = sqrt(30^2 + (80 - 40)^2) = sqrt(900 + 1600) = sqrt(2500) = 50 Ω.\nStep 2: Power factor cos φ = R / Z = 30 / 50 = 0.60.\nStep 3: Since X_L > X_C, current lags voltage.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R = 30 Ω, X_L = 80 Ω, X_C = 40 Ω கொண்ட தொடர் LCR சுற்றில் 200 V AC மூலத்துடன் இணைக்கப்பட்டுள்ளது. சுற்றின் மின்மறுப்பு மற்றும் திறன் காரணி என்ன?",
+        "optionTexts": [
+          "Z = 50 Ω, திறன் காரணி = 0.60",
+          "Z = 70 Ω, திறன் காரணி = 0.80",
+          "Z = 50 Ω, திறன் காரணி = 0.80",
+          "Z = 150 Ω, திறன் காரணி = 0.50"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Lenz's law of electromagnetic induction is a direct consequence of which fundamental conservation principle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conservation of Energy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Conservation of Electric Charge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Conservation of Linear Momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Conservation of Magnetic Flux",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Lenz's law states that the polarity of induced EMF is such that it opposes the change in magnetic flux producing it.\nStep 2: Mechanical work must be done against this opposing magnetic force, which is converted into electrical energy.\nStep 3: This ensures total energy is conserved.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்காந்தத் தூண்டலின் லென்ஸ் விதி எந்த அடிப்படை அழியா விதியின் நேரடி விளைவாகும்?",
+        "optionTexts": [
+          "ஆற்றல் மாறா விதி",
+          "மின்னூட்ட மாறா விதி",
+          "நேர்கோட்டு உந்த மாறா விதி",
+          "காந்தப்பாய மாறா விதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A conducting rod of length L = 1.0 m rotates in a horizontal plane with a constant angular frequency ω = 100 rad/s about one of its ends in a vertical uniform magnetic field B = 0.5 T. What is the magnitude of the EMF induced between the two ends of the rod?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12.5 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for motional EMF in a rotating rod: e = (1/2) B ω L^2.\nStep 2: Substitute B = 0.5 T, ω = 100 rad/s, L = 1.0 m.\nStep 3: e = (1/2) * 0.5 * 100 * (1.0)^2 = 25 V.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.0 m நீளமுள்ள கடத்தும் தண்டு 0.5 T செங்குத்து சீரான காந்தப்புலத்தில் ஒரு முனையைப் பற்றி 100 rad/s கோண வேகத்தில் கிடைமட்டத் தளத்தில் சுழல்கிறது. தண்டின் இரு முனைகளுக்கு இடையே தூண்டப்படும் மின்னியக்கு விசை என்ன?",
+        "optionTexts": [
+          "25 V",
+          "50 V",
+          "12.5 V",
+          "100 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A magnetic material has a relative permeability μ_r slightly less than 1 (μ_r = 0.9999) and a small negative magnetic susceptibility (χ < 0). This material is classified as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Diamagnetic",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Paramagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ferromagnetic",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ferrimagnetic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Diamagnetic substances are weakly repelled by magnetic fields and have negative susceptibility χ (typically -10^-5 to -10^-9).\nStep 2: Since μ_r = 1 + χ, μ_r is slightly less than 1.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒப்பு உட்புகுதிறன் ஒன்றை விட சற்று குறைவாகவும் (μ_r < 1) மற்றும் சிறிய எதிர்மறை ஏற்புத்திறன் (χ < 0) கொண்ட காந்தப் பொருள் எவ்வாறு வகைப்படுத்தப்படுகிறது?",
+        "optionTexts": [
+          "டயாகாந்தப் பொருள்",
+          "பாராகாந்தப் பொருள்",
+          "ஃபெர்ரோகாந்தப் பொருள்",
+          "ஃபெர்ரிகாந்தப் பொருள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At what resonant angular frequency ω₀ will a series circuit containing an inductor L = 20 mH and capacitor C = 5.0 μF exhibit maximum current resonance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3162 rad/s (10^4 / sqrt(10) ≈ 3.16 x 10^3 rad/s)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1000 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5000 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 rad/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Resonant angular frequency: ω₀ = 1 / sqrt(L C).\nStep 2: L C = (20 x 10^-3 H) * (5.0 x 10^-6 F) = 100 x 10^-9 = 10^-7 s^2.\nStep 3: ω₀ = 1 / sqrt(10^-7) = sqrt(10^7) = sqrt(10) x 10^3 = 3.162 x 10^3 = 3162 rad/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L = 20 mH மற்றும் C = 5.0 μF கொண்ட தொடர் சுற்றில் பெரும மின்னோட்ட ஒத்ததிர்வு ஏற்படும் கோண அதிர்வெண் ω₀ என்ன?",
+        "optionTexts": [
+          "3162 rad/s",
+          "1000 rad/s",
+          "5000 rad/s",
+          "100 rad/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An ideal step-down transformer connected to a 220 V AC mains supply operates an electric heater rated at 11 V, 44 W. What is the current in the primary winding and the transformation ratio (N_s / N_p)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I_p = 0.20 A, N_s / N_p = 1 / 20",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I_p = 4.0 A, N_s / N_p = 20",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I_p = 0.50 A, N_s / N_p = 1 / 10",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I_p = 0.20 A, N_s / N_p = 20",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Secondary voltage V_s = 11 V, Primary voltage V_p = 220 V => N_s / N_p = V_s / V_p = 11 / 220 = 1/20.\nStep 2: Secondary current I_s = P / V_s = 44 W / 11 V = 4.0 A.\nStep 3: For an ideal transformer (100% efficiency): Power_in = Power_out => V_p * I_p = 44 W.\nStep 4: I_p = 44 W / 220 V = 0.20 A. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "220 V AC விநியோகத்துடன் இணைக்கப்பட்ட ஒரு மின்மாற்றி 11 V, 44 W வெப்பமூட்டியை இயக்குகிறது. முதன்மைச் சுருளின் மின்னோட்டம் மற்றும் சுற்றுகளின் விகிதம் (N_s / N_p) என்ன?",
+        "optionTexts": [
+          "I_p = 0.20 A, N_s / N_p = 1 / 20",
+          "I_p = 4.0 A, N_s / N_p = 20",
+          "I_p = 0.50 A, N_s / N_p = 1 / 10",
+          "I_p = 0.20 A, N_s / N_p = 20"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At a geographic location on Earth, the horizontal component of Earth's magnetic field B_H is equal to the vertical component B_V. What is the angle of magnetic dip (inclination δ) at this place?",
+    "options": [
+      {
+        "label": "A",
+        "text": "45°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0°",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "90°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "60°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Dip angle formula: tan δ = B_V / B_H.\nStep 2: Given B_V = B_H, tan δ = 1.\nStep 3: δ = tan^-1(1) = 45°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறிப்பிட்ட இடத்தில் பூமியின் காந்தப்புலத்தின் கிடைமட்டக் கூறு (B_H) மற்றும் செங்குத்துக் கூறு (B_V) சமமாக உள்ளன. அவ்விடத்தின் சரிவுக் கோணம் (δ) என்ன?",
+        "optionTexts": [
+          "45°",
+          "0°",
+          "90°",
+          "60°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An air-core solenoid of length 0.5 m, cross-sectional area 20 cm^2 and 500 total turns has a self-inductance L. What is the value of L? (Take μ₀ = 4π x 10^-7 T m/A)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.26 mH (4π x 10^-4 H)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.52 mH",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.63 mH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.28 mH",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Self-inductance of solenoid: L = μ₀ N^2 A / l.\nStep 2: Substitute N = 500, A = 20 x 10^-4 m^2 = 2 x 10^-3 m^2, l = 0.5 m.\nStep 3: L = (4π x 10^-7) * (25 x 10^4) * (2 x 10^-3) / 0.5 = (4π x 10^-7) * (500) / 0.5 = (4π x 10^-7) * 1000 = 4π x 10^-4 H = 1.257 x 10^-3 H ≈ 1.26 mH.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.5 m நீளமும், 20 cm^2 குறுக்குவெட்டுப் பரப்பும், 500 சுற்றுகளும் கொண்ட காற்று உள்ளக வரிச்சுருளின் தன்மின் தூண்டல் எண் L என்ன?",
+        "optionTexts": [
+          "1.26 mH (4π x 10^-4 H)",
+          "2.52 mH",
+          "0.63 mH",
+          "6.28 mH"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular coil of radius 10 cm and 100 turns carries a current of 3.2 A. What is the magnetic dipole moment of the coil?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10.05 A m^2 (≈ 10.1 J/T)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3.2 A m^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "32.0 A m^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 A m^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnetic moment M = N * I * A.\nStep 2: Area of loop A = π R^2 = π * (0.10 m)^2 = 0.01 π m^2.\nStep 3: M = 100 * 3.2 A * (0.01 π m^2) = 3.2 π A m^2 = 3.2 * 3.1416 = 10.053 A m^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 cm ஆரமும் 100 சுற்றுகளும் கொண்ட வட்டக்கம்பிச் சுருளில் 3.2 A மின்னோட்டம் பாய்கிறது. கம்பிச்சுருளின் காந்த இருமுனைத் திருப்புத்திறன் என்ன?",
+        "optionTexts": [
+          "10.05 A m^2",
+          "3.2 A m^2",
+          "32.0 A m^2",
+          "1.0 A m^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In an AC circuit containing only a pure ideal capacitor of capacitance C connected to source V = V₀ sin(ω t), the alternating current I:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Leads the voltage by phase angle π / 2 (90°)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lags behind the voltage by phase angle π / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Is in phase with the voltage",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lags behind the voltage by phase angle π",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a pure capacitor: q = C V = C V₀ sin(ω t).\nStep 2: Current I = dq/dt = ω C V₀ cos(ω t) = I₀ sin(ω t + π/2).\nStep 3: Current leads the alternating voltage by π/2 radians (90°).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தூய மின்தேக்கி மட்டுமே உள்ள AC சுற்றில் மின்னோட்டம் I மின்னழுத்தத்தை விட:",
+        "optionTexts": [
+          "மின்னழுத்தத்தை விட π / 2 (90°) கட்டத்தில் முந்துகிறது",
+          "மின்னழுத்தத்தை விட π / 2 கட்டத்தில் பின்தங்குகிறது",
+          "மின்னழுத்தத்துடன் ஒரே கட்டத்தில் உள்ளது",
+          "மின்னழுத்தத்தை விட π கட்டத்தில் பின்தங்குகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A magnetic field B = 0.2 T is directed perpendicular to the plane of a circular loop of wire of radius 10 cm and resistance 2.0 Ω. If the magnetic field decreases uniformly to zero in 0.1 s, what is the total charge that flows through the wire loop during this time?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.14 x 10^-3 C (3.14 mC)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.28 x 10^-3 C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.57 x 10^-3 C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.14 x 10^-2 C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total charge flowing Δq = ΔΦ / R (independent of time taken).\nStep 2: Initial flux Φ1 = B * A = 0.2 T * (π * 0.10^2) = 0.2 * 0.01 π = 0.002 π Wb.\nStep 3: Final flux Φ2 = 0 => ΔΦ = 0.002 π Wb.\nStep 4: Δq = 0.002 π / 2.0 = 0.001 π C = 3.14 x 10^-3 C = 3.14 mC. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 cm ஆரமும் 2.0 Ω மின்தடையும் கொண்ட வட்டக்கம்பியின் தளத்திற்கு செங்குத்தாக 0.2 T காந்தப்புலம் செயல்படுகிறது. காந்தப்புலம் 0.1 s இல் சீராக பூஜ்ஜியமாகக் குறைந்தால், கம்பி வழியே பாயும் மொத்த மின்னூட்டம் என்ன?",
+        "optionTexts": [
+          "3.14 x 10^-3 C (3.14 mC)",
+          "6.28 x 10^-3 C",
+          "1.57 x 10^-3 C",
+          "3.14 x 10^-2 C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Curie's law for a paramagnetic material states that magnetic susceptibility χ is inversely proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Absolute temperature T (χ = C / T)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Square of absolute temperature (T^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Applied magnetic field B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Density of the material",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Curie's law for paramagnets relates magnetization susceptibility to absolute temperature.\nStep 2: χ = C / T, where C is Curie's constant.\nStep 3: As temperature increases, thermal agitation disrupts magnetic dipole alignment, decreasing susceptibility.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாராகாந்தப் பொருட்களுக்கான கியூரி விதிப்படி காந்த ஏற்புத்திறன் χ எதற்கு எதிர்த்தகவில் இருக்கும்?",
+        "optionTexts": [
+          "தனி வெப்பநிலை T (χ = C / T)",
+          "வெப்பநிலையின் இருமடி (T^2)",
+          "செலுத்தப்பட்ட காந்தப்புலம் B",
+          "பொருளின் அடர்த்தி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A cyclotron is used to accelerate protons (charge q, mass m) in a magnetic field B. What is the kinetic energy of the accelerated protons when they exit at the dees radius R?",
+    "options": [
+      {
+        "label": "A",
+        "text": "q^2 B^2 R^2 / (2 m)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "q B R / (2 m)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "q^2 B R^2 / m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "q B^2 R^2 / (2 m)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Velocity at radius R: v = q B R / m.\nStep 2: Kinetic energy K = (1/2) m v^2 = (1/2) m [ q B R / m ]^2.\nStep 3: K = q^2 B^2 R^2 / (2 m).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட சைக்ளோட்ரானில் B காந்தப்புலத்தில் புரோட்டான்கள் முடுக்கப்படுகின்றன. அவை வெளியேறும் போது பெறும் இயக்க ஆற்றல் என்ன?",
+        "optionTexts": [
+          "q^2 B^2 R^2 / (2 m)",
+          "q B R / (2 m)",
+          "q^2 B R^2 / m",
+          "q B^2 R^2 / (2 m)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a series LCR resonant circuit, quality factor Q is given by which of the following expressions in terms of L, C, and R?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1 / R) sqrt(L / C)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R sqrt(L / C)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1 / R) sqrt(C / L)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R sqrt(C / L)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Quality factor Q = ω₀ L / R = (1 / sqrt(L C)) * (L / R).\nStep 2: Q = (1 / R) * (L / sqrt(L C)) = (1 / R) sqrt(L / C).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொடர் LCR ஒத்ததிர்வு சுற்றில் தரக் காரணி Q இன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "(1 / R) sqrt(L / C)",
+          "R sqrt(L / C)",
+          "(1 / R) sqrt(C / L)",
+          "R sqrt(C / L)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the magnetic field inside an infinitely long ideal solenoid of n turns per unit length carrying a steady current I?",
+    "options": [
+      {
+        "label": "A",
+        "text": "μ₀ n I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "μ₀ n I / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 μ₀ n I",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Applying Ampere's circuital law around a rectangular loop through the solenoid.\nStep 2: B * L = μ₀ * (n L I) => B = μ₀ n I.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரலகு நீளத்தில் n சுற்றுகள் கொண்டு I மின்னோட்டம் பாயும் ஒரு நீண்ட நல்லியல்பு வரிச்சுருளின் உள்ளே காந்தப்புலம் என்ன?",
+        "optionTexts": [
+          "μ₀ n I",
+          "μ₀ n I / 2",
+          "2 μ₀ n I",
+          "பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An alternating voltage source given by V = 282.8 sin(100π t) volts is connected across a pure resistor of 100 Ω. What is the reading of an AC ammeter connected in the circuit?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 A",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.83 A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.41 A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.0 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Peak voltage V₀ = 282.8 V = 200 sqrt(2) V.\nStep 2: RMS voltage V_rms = V₀ / sqrt(2) = 200 V.\nStep 3: AC ammeters always measure the RMS current: I_rms = V_rms / R = 200 V / 100 Ω = 2.0 A.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V = 282.8 sin(100π t) வோல்ட் AC மூலம் 100 Ω மின்தடையுடன் இணைக்கப்பட்டுள்ளது. சுற்றில் உள்ள AC அம்மீட்டரின் அளவீடு என்ன?",
+        "optionTexts": [
+          "2.0 A",
+          "2.83 A",
+          "1.41 A",
+          "4.0 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two coaxial circular coils of radii r1 and r2 (r1 << r2) are placed with their centers coinciding in the same plane. What is the mutual inductance M between the two coils?",
+    "options": [
+      {
+        "label": "A",
+        "text": "μ₀ π r1^2 / (2 r2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "μ₀ π r2^2 / (2 r1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "μ₀ r1 r2 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "μ₀ π r1 r2 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Current I2 in outer coil produces magnetic field at center: B2 = μ₀ I2 / (2 r2).\nStep 2: Since r1 << r2, field B2 is uniform across inner coil area A1 = π r1^2.\nStep 3: Magnetic flux through inner coil: Φ1 = B2 * A1 = [ μ₀ I2 / (2 r2) ] * (π r1^2).\nStep 4: Mutual inductance M = Φ1 / I2 = μ₀ π r1^2 / (2 r2). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே தளத்தில் பொது மையத்தைக் கொண்ட r1 மற்றும் r2 (r1 << r2) ஆரமுடைய இரு வட்டக் கம்பிச்சுருள்களுக்கு இடையேயான பரிமாற்றுத் தூண்டல் எண் M என்ன?",
+        "optionTexts": [
+          "μ₀ π r1^2 / (2 r2)",
+          "μ₀ π r2^2 / (2 r1)",
+          "μ₀ r1 r2 / 2",
+          "μ₀ π r1 r2 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the average power dissipated over a complete cycle in an AC circuit when the phase difference between voltage and current is π / 2 (90°)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero (Wattless current)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "V_rms * I_rms",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) V_rms * I_rms",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "V_rms * I_rms / sqrt(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Average power P_avg = V_rms * I_rms * cos φ.\nStep 2: Phase angle φ = π/2 => cos(π/2) = 0.\nStep 3: P_avg = 0 (Wattless current in pure L or pure C circuits).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்னழுத்தம் மற்றும் மின்னோட்டத்திற்கு இடையே கட்ட வேறுபாடு π / 2 (90°) உள்ள ஒரு AC சுற்றில் ஒரு முழு சுழற்சியில் செலவிடப்படும் சராசரி திறன் என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜியம் (திறனற்ற மின்னோட்டம்)",
+          "V_rms * I_rms",
+          "(1/2) V_rms * I_rms",
+          "V_rms * I_rms / sqrt(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron and a proton having equal kinetic energies enter perpendicularly into a uniform magnetic field. If r_e and r_p are the radii of their circular paths, what is the ratio r_e / r_p? (m_e < m_p)",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(m_e / m_p)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(m_p / m_e)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "m_e / m_p",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Radius in terms of kinetic energy K: r = m v / (q B) = sqrt(2 m K) / (q B).\nStep 2: Since K and charge magnitude q are equal for both, r ∝ sqrt(m).\nStep 3: r_e / r_p = sqrt(m_e / m_p).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம இயக்க ஆற்றல் கொண்ட ஓர் எலக்ட்ரான் மற்றும் புரோட்டான் சீரான காந்தப்புலத்தில் செங்குத்தாக நுழைகின்றன. அவற்றின் வட்டப்பாதை ஆரங்களின் விகிதம் r_e / r_p என்ன?",
+        "optionTexts": [
+          "sqrt(m_e / m_p)",
+          "sqrt(m_p / m_e)",
+          "m_e / m_p",
+          "1 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The core of an electromagnet and transformer is made of soft iron rather than steel because soft iron has:",
+    "options": [
+      {
+        "label": "A",
+        "text": "High permeability and low retentivity / low hysteresis loss",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Low permeability and high coercivity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "High retentivity and high coercivity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero magnetic susceptibility",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Soft iron is easily magnetized (high permeability μ_r) and easily demagnetized.\nStep 2: Its hysteresis loop has a narrow area, minimizing energy loss per AC cycle.\nStep 3: High coercivity and retentivity are desired for permanent magnets (steel), while soft iron is optimal for transformers.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்மாற்றி மற்றும் மின்காந்தங்களின் உள்ளகம் எஃகுக்கு பதிலாக மென்மையான இரும்பினால் செய்யப்படுவதன் காரணம், மென்மையான இரும்பு:",
+        "optionTexts": [
+          "அதிக உட்புகுதிறன் மற்றும் குறைந்த காந்தத் தேக்குதிறன் / குறைந்த காந்த தயக்க இழப்பு",
+          "குறைந்த உட்புகுதிறன் மற்றும் அதிக காந்த நீக்குதிறன்",
+          "அதிக காந்தத் தேக்குதிறன் மற்றும் அதிக காந்த நீக்குதிறன்",
+          "பூஜ்ஜிய காந்த ஏற்புத்திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A series circuit consists of an AC source (220 V, 50 Hz), a non-inductive resistor R = 50 Ω, and an inductor with self-inductance L = 0.2 H. What is the peak current in the circuit?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.87 A (≈ 3.9 A)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.74 A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5.50 A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.40 A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Inductive reactance: X_L = 2π f L = 2 * 3.1416 * 50 * 0.2 = 62.83 Ω.\nStep 2: Impedance Z = sqrt(R^2 + X_L^2) = sqrt(50^2 + 62.83^2) = sqrt(2500 + 3948) = sqrt(6448) ≈ 80.3 Ω.\nStep 3: Peak voltage V₀ = V_rms * sqrt(2) = 220 * 1.414 = 311.1 V.\nStep 4: Peak current I₀ = V₀ / Z = 311.1 V / 80.3 Ω ≈ 3.87 A. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "220 V, 50 Hz AC மூலத்துடன் 50 Ω மின்தடை மற்றும் 0.2 H தூண்டல் எண் கொண்ட மின்தூண்டி தொடரிணைப்பில் உள்ளன. சுற்றின் பெரும மின்னோட்டம் என்ன?",
+        "optionTexts": [
+          "3.87 A",
+          "2.74 A",
+          "5.50 A",
+          "4.40 A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The magnetic force acting on a stationary electric charge in a strong uniform magnetic field is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Strictly zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "q B",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "q / B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Infinite",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnetic Lorentz force F = q (v x B).\nStep 2: For a stationary charge, velocity v = 0.\nStep 3: Therefore, magnetic force F = 0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வலிமையான சீரான காந்தப்புலத்தில் ஓய்வு நிலையில் உள்ள ஒரு மின்னூட்டத்தின் மீது செயல்படும் காந்த விசை என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜியம்",
+          "q B",
+          "q / B",
+          "முடிவிலி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A bar magnet of magnetic dipole moment M is cut into two equal halves along its length (longitudinally). What is the magnetic dipole moment of each half?",
+    "options": [
+      {
+        "label": "A",
+        "text": "M / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnetic dipole moment M = m * 2l (where m is pole strength, 2l is magnetic length).\nStep 2: When cut longitudinally along the length, length remains 2l, but pole strength is halved: m' = m / 2.\nStep 3: New magnetic moment M' = (m / 2) * 2l = M / 2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M காந்த இருமுனைத் திருப்புத்திறன் கொண்ட ஒரு சட்டக் காந்தம் அதன் நீளவாக்கில் இரு சம பாகங்களாக வெட்டப்படுகிறது. ஒவ்வொரு பாகத்தின் காந்த திருப்புத்திறன் என்ன?",
+        "optionTexts": [
+          "M / 2",
+          "M",
+          "M / 4",
+          "2 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A rectangular loop of sides a and b carrying a steady current I is placed in a uniform magnetic field B parallel to the plane of the loop. What is the net torque acting on the loop?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I a b B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) I a b B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 I a b B",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Area of loop A = a * b => Magnetic moment M = I A = I a b directed perpendicular to the loop plane.\nStep 2: When magnetic field B is parallel to the plane of the loop, the angle between normal vector M and B is θ = 90°.\nStep 3: Torque τ = M B sin 90° = I a b B * 1 = I a b B (maximum torque).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a மற்றும் b பக்கங்களைக் கொண்ட செவ்வகக் கம்பிச்சுருளில் I மின்னோட்டம் பாய்கிறது. கம்பிச்சுருளின் தளத்திற்கு இணையாக B காந்தப்புலம் செயல்பட்டால் அதன் மீதான தொகுபயன் முறுக்குவிசை என்ன?",
+        "optionTexts": [
+          "I a b B",
+          "பூஜ்ஜியம்",
+          "(1/2) I a b B",
+          "2 I a b B"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Eddy currents are minimized in the iron core of an electric transformer by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Using a laminated core made of thin insulated sheets",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Using solid thick copper core",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increasing the AC frequency",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cooling the transformer with water",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Eddy currents circulate in closed loops perpendicular to the magnetic flux.\nStep 2: Laminating the core with thin sheets coated with insulating varnish breaks continuous conduction paths.\nStep 3: This dramatically increases resistance to eddy currents, minimizing thermal energy loss.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்மாற்றியின் இரும்பு உள்ளகத்தில் சுழல் மின்னோட்ட இழப்பைக் குறைக்க:",
+        "optionTexts": [
+          "மெல்லிய மின்காப்பிடப்பட்ட தகடுகளால் ஆன மெல்லிய அடுக்கு உள்ளகத்தைப் பயன்படுத்துவது",
+          "திண்ம தடிமனான தாமிர உள்ளகத்தைப் பயன்படுத்துவது",
+          "AC அதிர்வெண்ணை அதிகரிப்பது",
+          "நீரினால் மின்மாற்றியைக் குளிர்விப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY08-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A horizontal telephone wire 1 km long stretched in East-West direction falls freely under gravity from a height. If the horizontal component of Earth's magnetic field is B_H = 0.3 x 10^-4 T, what is the induced EMF across the wire when its falling speed is 20 m/s?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.60 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.30 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.20 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.0 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Motional EMF e = B_H * L * v.\nStep 2: Substitute B_H = 0.3 x 10^-4 T, L = 1000 m, v = 20 m/s.\nStep 3: e = (0.3 x 10^-4 T) * (1000 m) * (20 m/s) = 0.03 * 20 = 0.60 V.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிழக்கு-மேற்கு திசையில் 1 km நீளமுள்ள கம்பி 20 m/s வேகத்தில் கீழ்நோக்கி விழுகிறது. பூமியின் கிடைமட்டக் காந்தப்புலம் 0.3 x 10^-4 T எனில் கம்பியின் முனைகளுக்கு இடையே தூண்டப்படும் மின்னியக்கு விசை என்ன?",
+        "optionTexts": [
+          "0.60 V",
+          "0.30 V",
+          "1.20 V",
+          "6.0 V"
+        ]
+      }
+    ]
+  }
+]

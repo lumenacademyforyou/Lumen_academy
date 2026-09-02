@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY09-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the critical angle for total internal reflection at a diamond-air interface if the refractive index of diamond is 2.42?",
+    "options": [
+      {
+        "label": "A",
+        "text": "24.4° (sin^-1(1 / 2.42))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "45.0°",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "30.0°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "60.0°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for critical angle: sin θ_c = 1 / μ.\nStep 2: Substitute μ = 2.42: sin θ_c = 1 / 2.42 ≈ 0.4132.\nStep 3: θ_c = sin^-1(0.4132) ≈ 24.41°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வைரத்தின் ஒளிவிலகல் எண் 2.42 எனில், வைரம்-காற்று இடைமுகத்தில் முழு அக எதிரொளிப்பிற்கான மாறுநிலைக் கோணம் என்ன?",
+        "optionTexts": [
+          "24.4°",
+          "45.0°",
+          "30.0°",
+          "60.0°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An equiconvex thin lens made of glass of refractive index μ = 1.5 has focal length f = +20 cm in air. What will be its focal length when completely immersed in water of refractive index μ_w = 4/3?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+80 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+40 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+10 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+160 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Lens maker's formula in air: 1/f_air = (μ_g - 1) (1/R1 - 1/R2) = (1.5 - 1) K = 0.5 K => K = 1 / (0.5 * 20) = 1/10.\nStep 2: In water: 1/f_water = (μ_g / μ_w - 1) K = (1.5 / (4/3) - 1) K = (9/8 - 1) K = (1/8) K.\nStep 3: 1/f_water = (1/8) * (1/10) = 1/80 => f_water = +80 cm (focal length quadruples in water).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கண்ணாடியால் (μ = 1.5) செய்யப்பட்ட இருபுற குவி லென்சின் குவியத் தொலைவு காற்றில் +20 cm ஆகும். அது நீரில் (μ = 4/3) மூழ்க வைக்கப்படும் போது அதன் குவியத் தொலைவு என்ன?",
+        "optionTexts": [
+          "+80 cm",
+          "+40 cm",
+          "+10 cm",
+          "+160 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double-slit experiment, monochromatic light of wavelength 600 nm illuminates slits separated by 0.5 mm. If the interference fringes are observed on a screen placed 1.0 m away, what is the fringe width?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.2 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.6 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.4 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.3 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fringe width formula: β = λ D / d.\nStep 2: Substitute λ = 600 x 10^-9 m, D = 1.0 m, d = 0.5 x 10^-3 m.\nStep 3: β = (600 x 10^-9 * 1.0) / (0.5 x 10^-3) = 1200 x 10^-6 m = 1.2 x 10^-3 m = 1.2 mm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு ஆய்வில் 600 nm அலைநீள ஒளி பயன்படுத்தப்படுகிறது. பிளவுகளுக்கு இடையே உள்ள தொலைவு 0.5 mm மற்றும் திரை 1.0 m தொலைவில் உள்ளது எனில், பட்டை அகலம் என்ன?",
+        "optionTexts": [
+          "1.2 mm",
+          "0.6 mm",
+          "2.4 mm",
+          "0.3 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Brewster's law, when unpolarized light is incident on a transparent dielectric medium at the polarizing angle i_p, the reflected and refracted rays are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mutually perpendicular (90° apart)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Parallel to each other",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Antiparallel (180° apart)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Separated by 45°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Brewster's law states μ = tan i_p = sin i_p / cos i_p.\nStep 2: From Snell's law: μ = sin i_p / sin r => sin i_p / cos i_p = sin i_p / sin r => sin r = cos i_p = sin(90° - i_p).\nStep 3: r = 90° - i_p => i_p + r = 90°.\nStep 4: The angle between reflected and refracted rays is 180° - (i_p + r) = 180° - 90° = 90°. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ப்ரூஸ்டர் விதிப்படி, தளவிளைவுக் கோணத்தில் (i_p) ஒளி படும்போது எதிரொளிப்பு மற்றும் ஒளிவிலகல் கதிர்களுக்கு இடையே உள்ள கோணம்:",
+        "optionTexts": [
+          "ஒன்றுக்கொன்று செங்குத்தாக (90°) இருக்கும்",
+          "இணையாக இருக்கும்",
+          "எதிரெதிராக இருக்கும்",
+          "45° கோணத்தில் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An astronomical telescope has an objective lens of focal length 100 cm and an eyepiece of focal length 5.0 cm. What is the magnifying power and length of the telescope tube in normal adjustment (relaxed eye)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Magnification = 20, Tube length = 105 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Magnification = 25, Tube length = 100 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Magnification = 20, Tube length = 95 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Magnification = 500, Tube length = 105 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In normal adjustment (final image at infinity), magnifying power m = f_o / f_e = 100 cm / 5.0 cm = 20.\nStep 2: Tube length L = f_o + f_e = 100 cm + 5.0 cm = 105 cm.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வானியல் தொலைநோக்கியின் பொருள் வில்லை மற்றும் பார்வை வில்லையின் குவியத் தொலைவுகள் முறையே 100 cm மற்றும் 5.0 cm ஆகும். இயல்பு அமைப்பில் அதன் உருப்பெருக்கம் மற்றும் குழாயின் நீளம் என்ன?",
+        "optionTexts": [
+          "உருப்பெருக்கம் = 20, குழாய் நீளம் = 105 cm",
+          "உருப்பெருக்கம் = 25, குழாய் நீளம் = 100 cm",
+          "உருப்பெருக்கம் = 20, குழாய் நீளம் = 95 cm",
+          "உருப்பெருக்கம் = 500, குழாய் நீளம் = 105 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which region of the electromagnetic spectrum is used in thermal imaging night-vision cameras and greenhouse heating?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Infrared rays",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ultraviolet rays",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "X-rays",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gamma rays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Infrared waves (heat waves) are emitted by hot objects and molecules.\nStep 2: They are widely utilized in thermal night-vision devices, remote controls, and greenhouse heat trapping.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரவு நேர வெப்பப் படமாக்கல் கேமராக்கள் மற்றும் பசுமைக்குடில் வெப்பமூட்டலில் பயன்படும் மின்காந்த கதிர்வீச்சு எது?",
+        "optionTexts": [
+          "அகச்சிவப்புக் கதிர்கள்",
+          "புற ஊதாக் கதிர்கள்",
+          "எக்ஸ் கதிர்கள்",
+          "காமாக் கதிர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A ray of light is incident on an equilateral glass prism of refracting angle A = 60° at the angle of minimum deviation δ_m = 30°. What is the refractive index of the glass material?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2) (≈ 1.414)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(3) (≈ 1.732)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.50",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Prism formula: μ = sin[(A + δ_m) / 2] / sin(A / 2).\nStep 2: Substitute A = 60°, δ_m = 30°: μ = sin[(60° + 30°) / 2] / sin(60° / 2) = sin 45° / sin 30°.\nStep 3: μ = (1 / sqrt(2)) / (1 / 2) = 2 / sqrt(2) = sqrt(2) ≈ 1.414.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "60° கோணமுடைய சமபக்க முப்பட்டகத்தில் சிறும திசைமாறுபாட்டுக் கோணம் 30° எனில், முப்பட்டகப் பொருளின் ஒளிவிலகல் எண் என்ன?",
+        "optionTexts": [
+          "sqrt(2) (≈ 1.414)",
+          "sqrt(3) (≈ 1.732)",
+          "1.50",
+          "2.0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two thin convex lenses of focal lengths f1 = +30 cm and f2 = +20 cm are placed in coaxial contact with each other. What is the equivalent power of the lens combination?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+8.33 D (+25/3 D)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+5.0 D",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+12.0 D",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+2.5 D",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Equivalent focal length: 1 / f_eq = 1/f1 + 1/f2 = 1/30 + 1/20 = (2 + 3) / 60 = 5/60 = 1/12 cm^-1 => f_eq = +12 cm = +0.12 m.\nStep 2: Power P = 1 / f_eq(m) = 1 / 0.12 = 100 / 12 = 25 / 3 D ≈ +8.33 Diopters.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f1 = +30 cm மற்றும் f2 = +20 cm குவியத் தொலைவு கொண்ட இரு மெல்லிய குவி லென்ஸ்கள் தொட்டுக்கொண்டிருக்கும் போது அவற்றின் தொகுபயன் திறன் என்ன?",
+        "optionTexts": [
+          "+8.33 D (+25/3 D)",
+          "+5.0 D",
+          "+12.0 D",
+          "+2.5 D"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a single slit diffraction experiment, light of wavelength 500 nm illuminates a slit of width a = 0.2 mm. What is the total angular width of the central diffraction maximum?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.0 x 10^-3 rad (5.0 mrad)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.5 x 10^-3 rad",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.0 x 10^-2 rad",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.25 x 10^-3 rad",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Angular half-width to first minimum: θ = λ / a.\nStep 2: Total angular width of central maximum: 2θ = 2 λ / a.\nStep 3: 2θ = (2 * 500 x 10^-9 m) / (0.2 x 10^-3 m) = 1000 x 10^-9 / (2 x 10^-4) = 5.0 x 10^-3 rad = 5.0 mrad.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.2 mm அகலமுள்ள ஒற்றைப் பிளவில் 500 nm அலைநீள ஒளி படும்போது உருவாகும் மைய பெருமத்தின் மொத்தக் கோண அகலம் என்ன?",
+        "optionTexts": [
+          "5.0 x 10^-3 rad",
+          "2.5 x 10^-3 rad",
+          "1.0 x 10^-2 rad",
+          "1.25 x 10^-3 rad"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Unpolarized light of intensity I₀ passes through two ideal polarizers whose transmission axes are oriented at an angle of 60° to each other. According to Malus's law, what is the intensity of light transmitted through the second polarizer?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I₀ / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I₀ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I₀ / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 I₀ / 8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: After passing through the first polarizer, unpolarized light becomes linearly polarized with intensity I1 = I₀ / 2.\nStep 2: By Malus's Law, after the second polarizer: I2 = I1 cos^2(60°).\nStep 3: cos 60° = 1/2 => cos^2(60°) = 1/4.\nStep 4: I2 = (I₀ / 2) * (1/4) = I₀ / 8. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I₀ செறிவுள்ள தளவிளைவற்ற ஒளி ஒன்றோடொன்று 60° கோணத்தில் உள்ள இரு போலராய்டுகள் வழியே செல்கிறது. மாலஸ் விதிப்படி இரண்டாவது போலராய்டிலிருந்து வெளியேறும் ஒளியின் செறிவு என்ன?",
+        "optionTexts": [
+          "I₀ / 8",
+          "I₀ / 4",
+          "I₀ / 2",
+          "3 I₀ / 8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A plane electromagnetic wave propagating in vacuum along the +x direction has an electric field vector oscillating along the y-axis: E = E₀ sin(k x - ω t) j. Along which axis does the magnetic field vector B oscillate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+z axis (k_hat x j_hat = -i_hat, so E x B is along +x)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+y axis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-y axis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+x axis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Poynting vector direction (wave propagation direction) is given by E x B.\nStep 2: E is along +j, wave propagates along +i.\nStep 3: Since j x k = +i, B must oscillate along the +k (+z) direction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+x திசையில் வெற்றிடத்தில் பரவும் மின்காந்த அலையின் மின்புலம் y-அச்சில் அலையுறும் போது அதன் காந்தப்புலம் எந்த அச்சில் அலையுறும்?",
+        "optionTexts": [
+          "+z அச்சு",
+          "+y அச்சு",
+          "-y அச்சு",
+          "+x அச்சு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A convex lens of focal length f = +15 cm forms a real, inverted image on a screen that is 3 times the size of the object (magnification m = -3). What is the distance of the object from the lens?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "30 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "45 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnification formula for lens: m = f / (f + u).\nStep 2: For real image, m = -3 and f = +15 cm.\nStep 3: -3 = 15 / (15 + u) => -3(15 + u) = 15 => -45 - 3u = 15 => -3u = 60 => u = -20 cm.\nStep 4: Object distance is 20 cm in front of the lens. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+15 cm குவியத் தொலைவு கொண்ட குவி லென்ஸ் பொருளைப் போல 3 மடங்கு பெரிய மெய்ப் பிம்பத்தை உருவாக்குகிறது (m = -3). லென்சிலிருந்து பொருளின் தொலைவு என்ன?",
+        "optionTexts": [
+          "20 cm",
+          "10 cm",
+          "30 cm",
+          "45 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Maxwell displacement current I_D inside a charging parallel plate capacitor is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "ε₀ (dΦ_E / dt)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "μ₀ (dΦ_E / dt)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "ε₀ (dΦ_B / dt)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1 / ε₀) (dΦ_E / dt)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Maxwell introduced the displacement current arising from a time-varying electric flux.\nStep 2: I_D = ε₀ (dΦ_E / dt).\nStep 3: Inside a charging capacitor, displacement current is exactly equal to the conduction current in connecting wires.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்னூட்டம் செய்யப்படும் தட்டு மின்தேக்கியில் மேக்ஸ்வெல்லின் இடப்பெயர்ச்சி மின்னோட்டம் I_D இன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "ε₀ (dΦ_E / dt)",
+          "μ₀ (dΦ_E / dt)",
+          "ε₀ (dΦ_B / dt)",
+          "(1 / ε₀) (dΦ_E / dt)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double-slit experiment using light of wavelength λ, when a thin transparent mica sheet of thickness t and refractive index μ is placed in front of one of the slits, the central bright fringe shifts by a distance equal to 5 fringe widths (5β). What is the thickness t of the sheet in terms of λ and μ?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 λ / (μ - 1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 λ (μ - 1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "λ / (5 (μ - 1))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(μ - 1) / (5 λ)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fringe shift formula: Δy = (D / d) (μ - 1) t.\nStep 2: Fringe width: β = λ D / d => D / d = β / λ.\nStep 3: Δy = (β / λ) (μ - 1) t.\nStep 4: Given Δy = 5β => 5β = (β / λ) (μ - 1) t => 5 = (μ - 1) t / λ => t = 5 λ / (μ - 1). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு ஆய்வில் ஒரு பிளவின் முன் μ ஒளிவிலகல் எண் கொண்ட t தடிமனுள்ள மைக்கா தகடு வைக்கப்படும் போது மையப் பட்டை 5 பட்டை அகலம் நகர்கிறது. t இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "5 λ / (μ - 1)",
+          "5 λ (μ - 1)",
+          "λ / (5 (μ - 1))",
+          "(μ - 1) / (5 λ)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A concave mirror of radius of curvature R = 40 cm forms an erect virtual image that is twice the size of the object (m = +2). What is the object distance u?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-10 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-20 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-15 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-30 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Focal length of concave mirror f = - R / 2 = - 40 / 2 = - 20 cm.\nStep 2: Mirror magnification formula: m = - v / u = +2 => v = -2u.\nStep 3: Mirror formula: 1/f = 1/v + 1/u => 1/(-20) = 1/(-2u) + 1/u = 1/(2u).\nStep 4: - 1/20 = 1 / (2u) => 2u = -20 => u = -10 cm. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "40 cm வளைவு ஆரம் கொண்ட குழி ஆடி பொருளைப் போல் இருமடங்கு பெரிய மாய பிம்பத்தை உருவாக்குகிறது (m = +2). பொருளின் தொலைவு u என்ன?",
+        "optionTexts": [
+          "-10 cm",
+          "-20 cm",
+          "-15 cm",
+          "-30 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The ratio of peak electric field amplitude E₀ to peak magnetic field amplitude B₀ in a plane electromagnetic wave propagating in free space is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Speed of light in vacuum c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / c",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "c^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(c)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From Maxwell's equations for electromagnetic waves: E₀ / B₀ = c = 1 / sqrt(μ₀ ε₀).\nStep 2: The ratio of electric field to magnetic field amplitude is exactly the speed of light in vacuum.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் பரவும் மின்காந்த அலையில் மின்புல பெரும மதிப்பு E₀ மற்றும் காந்தப்புல பெரும மதிப்பு B₀ ஆகியவற்றின் விகிதம் எதற்குச் சமம்?",
+        "optionTexts": [
+          "வெற்றிடத்தில் ஒளியின் வேகம் c",
+          "1 / c",
+          "c^2",
+          "sqrt(c)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A compound microscope has an objective lens of focal length 1.0 cm and an eyepiece of focal length 2.5 cm. If an object is placed at 1.2 cm from the objective lens and final image is formed at near point D = 25 cm, what is the total magnifying power?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55 (m_o * m_e = 5 * 11 = 55)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "45",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For objective lens: 1/f_o = 1/v_o - 1/u_o => 1/1.0 = 1/v_o - 1/(-1.2) => 1/v_o = 1 - 1/1.2 = 0.2/1.2 = 1/6 => v_o = 6.0 cm.\nStep 2: Objective magnification: m_o = |v_o / u_o| = 6.0 / 1.2 = 5.\nStep 3: Eyepiece magnification at near point: m_e = 1 + D / f_e = 1 + 25 / 2.5 = 1 + 10 = 11.\nStep 4: Total magnification M = m_o * m_e = 5 * 11 = 55. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொருள் வில்லை குவியத்தூரம் 1.0 cm மற்றும் பார்வை வில்லை குவியத்தூரம் 2.5 cm கொண்ட கூட்டு நுண்ணோக்கியில் பொருள் 1.2 cm தொலைவில் வைக்கப்பட்டு பிம்பம் 25 cm இல் கிடைத்தால் மொத்த உருப்பெருக்கம் என்ன?",
+        "optionTexts": [
+          "55",
+          "50",
+          "60",
+          "45"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When two coherent light waves of intensities I and 4I interfere, what are the maximum and minimum intensities produced in the interference pattern?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I_max = 9I, I_min = I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I_max = 5I, I_min = 3I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I_max = 9I, I_min = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I_max = 16I, I_min = I",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula: I_max = (sqrt(I1) + sqrt(I2))^2 = (sqrt(I) + sqrt(4I))^2 = (sqrt(I) + 2 sqrt(I))^2 = (3 sqrt(I))^2 = 9I.\nStep 2: Formula: I_min = (sqrt(I1) - sqrt(I2))^2 = (2 sqrt(I) - sqrt(I))^2 = (sqrt(I))^2 = I.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I மற்றும் 4I செறிவு கொண்ட இரு ஓரியல் ஒளி அலைகள் குறுக்கீட்டு விளைவை ஏற்படுத்தினால் உருவாகும் பெரும மற்றும் சிறும செறிவுகள் என்ன?",
+        "optionTexts": [
+          "I_max = 9I, I_min = I",
+          "I_max = 5I, I_min = 3I",
+          "I_max = 9I, I_min = 0",
+          "I_max = 16I, I_min = I"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A ray of light traveling inside water (refractive index 4/3) strikes a glass plate (refractive index 1.5) submerged in water. What is the polarizing angle i_p for light reflected from the glass surface?",
+    "options": [
+      {
+        "label": "A",
+        "text": "tan^-1(9 / 8) ≈ 48.4°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "tan^-1(8 / 9)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "tan^-1(1.5)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tan^-1(1.33)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Brewster's Law for interface between medium 1 and medium 2: tan i_p = μ2 / μ1.\nStep 2: Here μ1 = 4/3 (water) and μ2 = 1.5 = 3/2 (glass).\nStep 3: tan i_p = (3/2) / (4/3) = 9 / 8 = 1.125.\nStep 4: i_p = tan^-1(9/8) ≈ 48.37°. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரில் (4/3) இருந்து கண்ணாடியின் (1.5) மீது படும் ஒளியின் தளவிளைவுக் கோணம் i_p என்ன?",
+        "optionTexts": [
+          "tan^-1(9 / 8) ≈ 48.4°",
+          "tan^-1(8 / 9)",
+          "tan^-1(1.5)",
+          "tan^-1(1.33)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the shape of the wavefront originating from a distant point light source (such as a star) when observed on Earth?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Plane wavefront",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Spherical wavefront",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cylindrical wavefront",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Elliptical wavefront",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A point source produces spherical wavefronts locally.\nStep 2: At very large distances from the source, the radius of curvature becomes extremely large.\nStep 3: A small portion of a sphere with infinite radius of curvature is essentially a flat plane (Plane wavefront).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விண்மீன் போன்ற தொலைதூர புள்ளி ஒளி மூலத்திலிருந்து பூமியை வந்தடையும் அலைமுகப்பின் வடிவம் என்ன?",
+        "optionTexts": [
+          "சமதள அலைமுகம்",
+          "கோள அலைமுகம்",
+          "உருளை அலைமுகம்",
+          "நீள்வட்ட அலைமுகம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An optical fiber works on the principle of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Total internal reflection at the core-cladding interface",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Diffraction of light waves",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Scattering of light",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Optical dispersion",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An optical fiber has a denser core surrounded by a rarer cladding (μ_core > μ_cladding).\nStep 2: Light entering the core undergoes repeated total internal reflections at angles greater than the critical angle, propagating with negligible loss.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளியியல் இழை (Optical fiber) செயல்படும் அடிப்படைத் தத்துவம்:",
+        "optionTexts": [
+          "உள்ளகம்-உறை இடைமுகத்தில் முழு அக எதிரொளிப்பு",
+          "ஒளி விளிம்பு விளைவு",
+          "ஒளிச்சிதறல்",
+          "ஒளி நிறப்பிரிகை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A biconcave lens of power -5 D made of glass (μ = 1.5) has equal radii of curvature R on both surfaces. What is the value of R?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "40 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Focal length f = 1 / P = 1 / (-5 D) = -0.20 m = -20 cm.\nStep 2: Lens maker's formula for biconcave lens: 1/f = (μ - 1) [ -1/R - 1/R ] = - 2 (μ - 1) / R.\nStep 3: - 1/20 = - 2 (1.5 - 1) / R = - 2(0.5) / R = - 1 / R.\nStep 4: R = 20 cm. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "-5 D திறன் கொண்ட கண்ணாடியாலான (μ = 1.5) இருபுற குழி லென்சின் வளைவு ஆரம் R என்ன?",
+        "optionTexts": [
+          "20 cm",
+          "10 cm",
+          "40 cm",
+          "5 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Young's double-slit experiment, the intensity at the central bright maximum is I₀. What is the intensity at a point on the screen where the path difference between the interfering waves is λ / 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 I₀ / 4 (0.75 I₀)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I₀ / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I₀ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I₀ / sqrt(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Phase difference Δφ = (2π / λ) * Δx = (2π / λ) * (λ / 6) = 2π / 6 = π / 3 (60°).\nStep 2: Intensity formula: I = I₀ cos^2(Δφ / 2).\nStep 3: Δφ / 2 = (π/3) / 2 = π/6 (30°).\nStep 4: I = I₀ cos^2(30°) = I₀ * (sqrt(3)/2)^2 = (3/4) I₀ = 0.75 I₀. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு ஆய்வில் மைய பெருமத்தின் செறிவு I₀ ஆகும். பாதை வேறுபாடு λ / 6 உள்ள புள்ளியில் ஒளியின் செறிவு என்ன?",
+        "optionTexts": [
+          "3 I₀ / 4 (0.75 I₀)",
+          "I₀ / 2",
+          "I₀ / 4",
+          "I₀ / sqrt(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which phenomenon of light proves conclusively that light is a transverse wave rather than a longitudinal wave?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Polarization",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Interference",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Diffraction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Refraction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Interference and diffraction are exhibited by all types of waves (both transverse and longitudinal).\nStep 2: Polarization can occur only if oscillations are strictly perpendicular to the direction of propagation (transverse).\nStep 3: Thus, polarization is the definitive proof of the transverse nature of light.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளி ஒரு நெட்டலை அல்ல, குறுக்கலை என்பதை உறுதியாக நிரூபிக்கும் ஒளியியல் நிகழ்வு எது?",
+        "optionTexts": [
+          "தளவிளைவு",
+          "குறுக்கீட்டு விளைவு",
+          "விளிம்பு விளைவு",
+          "ஒளிவிலகல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A convex lens of focal length f forms a real image on a screen with object and screen fixed at a distance D apart. If the two positions of the lens for sharp image formation on the screen are separated by distance d (displacement method), the focal length f is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(D^2 - d^2) / (4 D)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(D^2 + d^2) / (4 D)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(D - d) / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(D d) / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the displacement method, object distance in position 1 is u1 = (D - d)/2, and image distance is v1 = (D + d)/2.\nStep 2: Using lens formula 1/f = 1/v1 - 1/u1 = 2/(D+d) - (- 2/(D-d)) = 2/(D+d) + 2/(D-d).\nStep 3: 1/f = 2 [(D-d) + (D+d)] / (D^2 - d^2) = 4D / (D^2 - d^2).\nStep 4: f = (D^2 - d^2) / (4 D). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொருளுக்கும் திரைக்கும் இடையே உள்ள தொலைவு D ஆகும். லென்சின் இரு நிலைகளுக்கு இடையே உள்ள தூரம் d எனில், குவியத் தொலைவு f இன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "(D^2 - d^2) / (4 D)",
+          "(D^2 + d^2) / (4 D)",
+          "(D - d) / 4",
+          "sqrt(D d) / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The speed of electromagnetic waves in vacuum is given by which fundamental relation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / sqrt(μ₀ ε₀)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(μ₀ / ε₀)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(μ₀ ε₀)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / (μ₀ ε₀)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Maxwell derived the wave equation from his four electromagnetic equations.\nStep 2: The wave speed c emerged as c = 1 / sqrt(μ₀ ε₀) ≈ 3.0 x 10^8 m/s.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் மின்காந்த அலையின் வேகத்திற்கான அடிப்படை சமன்பாடு எது?",
+        "optionTexts": [
+          "1 / sqrt(μ₀ ε₀)",
+          "sqrt(μ₀ / ε₀)",
+          "sqrt(μ₀ ε₀)",
+          "1 / (μ₀ ε₀)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A tank is filled with water to a depth of 16 cm. What is the apparent depth of a coin resting on the bottom of the tank when viewed normally from above? (Refractive index of water = 4/3)",
+    "options": [
+      {
+        "label": "A",
+        "text": "12 cm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "14 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "21.3 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Apparent depth formula: d_apparent = Real depth / μ.\nStep 2: d_apparent = 16 cm / (4/3) = 16 * (3/4) = 12 cm.\nStep 3: The coin appears raised by 16 - 12 = 4 cm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "16 cm ஆழத்திற்கு நீர் நிரப்பப்பட்ட தொட்டியின் அடியில் உள்ள ஒரு நாணயத்தின் தோற்ற ஆழம் என்ன? (நீரின் ஒளிவிலகல் எண் = 4/3)",
+        "optionTexts": [
+          "12 cm",
+          "14 cm",
+          "21.3 cm",
+          "8 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An unpolarized light beam of intensity I₀ passes through a stack of three polarizers P1, P2, and P3. The transmission axis of P2 is oriented at 45° to P1, and the transmission axis of P3 is oriented at 90° to P1 (perpendicular to P1). What is the intensity of light transmitted through P3?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I₀ / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I₀ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I₀ / 16",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: After P1: I1 = I₀ / 2.\nStep 2: After P2 (at 45° to P1): I2 = I1 cos^2(45°) = (I₀ / 2) * (1 / sqrt(2))^2 = (I₀ / 2) * (1/2) = I₀ / 4.\nStep 3: Angle between P2 and P3 = 90° - 45° = 45°.\nStep 4: After P3: I3 = I2 cos^2(45°) = (I₀ / 4) * (1/2) = I₀ / 8. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I₀ செறிவுள்ள ஒளி P1, P2 (45°), P3 (90°) ஆகிய மூன்று போலராய்டுகள் வழியே செல்கிறது. P3 இலிருந்து வெளியேறும் ஒளியின் செறிவு என்ன?",
+        "optionTexts": [
+          "I₀ / 8",
+          "பூஜ்ஜியம்",
+          "I₀ / 4",
+          "I₀ / 16"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A glass slab of thickness t and refractive index μ is placed in the path of a converging light beam. The point of convergence shifts by distance:",
+    "options": [
+      {
+        "label": "A",
+        "text": "t (1 - 1/μ) in the direction of light",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "t (1 + 1/μ) in opposite direction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "t / μ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "μ t",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Normal shift produced by a transparent slab: Δx = t (1 - 1/μ).\nStep 2: The shift is always in the direction of propagation of incident light.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குவியும் ஒளிக் கற்றையின் பாதையில் t தடிமனும் μ ஒளிவிலகல் எண்ணும் கொண்ட கண்ணாடித் தகடு வைக்கப்படும் போது குவியப் புள்ளி எவ்வளவு தூரம் நகரும்?",
+        "optionTexts": [
+          "ஒளி செல்லும் திசையில் t (1 - 1/μ)",
+          "எதிர் திசையில் t (1 + 1/μ)",
+          "t / μ",
+          "μ t"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the resolving power of an optical microscope having objective numerical aperture NA = n sin θ with light of wavelength λ?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 n sin θ / (1.22 λ)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.22 λ / (2 n sin θ)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n sin θ / λ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.22 λ / (n sin θ)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Minimum resolvable separation: d_min = 1.22 λ / (2 n sin θ).\nStep 2: Resolving Power = 1 / d_min = 2 n sin θ / (1.22 λ).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "NA எண் துளை மற்றும் λ அலைநீளம் கொண்ட ஒளியியல் நுண்ணோக்கியின் பிரிதிறன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "2 n sin θ / (1.22 λ)",
+          "1.22 λ / (2 n sin θ)",
+          "n sin θ / λ",
+          "1.22 λ / (n sin θ)"
+        ]
+      }
+    ]
+  }
+]

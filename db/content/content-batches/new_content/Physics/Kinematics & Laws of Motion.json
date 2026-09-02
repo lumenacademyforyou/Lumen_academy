@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY02-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m is placed on a smooth inclined plane of inclination θ. What horizontal acceleration 'a' must be given to the incline so that the block remains stationary relative to the incline?",
+    "options": [
+      {
+        "label": "A",
+        "text": "g tan θ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "g sin θ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "g cos θ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "g cot θ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the accelerating frame of the incline, a pseudo force 'm a' acts horizontally backwards on the block.\nStep 2: Component of pseudo force up the incline is m a cos θ.\nStep 3: Component of gravity down the incline is m g sin θ.\nStep 4: For relative rest: m a cos θ = m g sin θ => a = g tan θ. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "θ சாய்வுக் கோணமுடைய வழுவழுப்பான சாய்தளத்தில் m நிறைகொண்ட ஒரு பொருள் வைக்கப்பட்டுள்ளது. சாய்தளத்தைப் பொறுத்து பொருள் நிலையாக இருக்க, சாய்தளத்திற்கு அளிக்கப்பட வேண்டிய கிடைமட்ட முடுக்கம் 'a' என்ன?",
+        "optionTexts": [
+          "g tan θ",
+          "g sin θ",
+          "g cos θ",
+          "g cot θ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two blocks of masses m1 = 4 kg and m2 = 6 kg are connected by a light inextensible string passing over a frictionless, massless pulley (Atwood's machine). What is the acceleration of the masses and tension in the string? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "a = 2 m/s², T = 48 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "a = 1 m/s², T = 50 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "a = 2 m/s², T = 24 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a = 4 m/s², T = 48 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Acceleration a = (m2 - m1) g / (m1 + m2) = (6 - 4) * 10 / (6 + 4) = 20 / 10 = 2 m/s².\nStep 2: Tension T = 2 m1 m2 g / (m1 + m2) = 2 * 4 * 6 * 10 / 10 = 48 N.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m1 = 4 kg மற்றும் m2 = 6 kg நிறைகொண்ட இரு பொருட்கள் உராய்வற்ற, நிறையற்ற கப்பி வழியாக செல்லும் லேசான இழையால் இணைக்கப்பட்டுள்ளன. நிறைகளின் முடுக்கம் மற்றும் இழையின் இழுவிசை என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "a = 2 m/s², T = 48 N",
+          "a = 1 m/s², T = 50 N",
+          "a = 2 m/s², T = 24 N",
+          "a = 4 m/s², T = 48 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A person of mass 60 kg stands on a weighing scale inside an elevator. If the elevator accelerates downwards with a constant acceleration of 2.0 m/s², what is the apparent weight reading on the scale? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "480 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "720 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "600 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "120 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For downward acceleration 'a', apparent weight N = m (g - a).\nStep 2: Substitute m = 60 kg, g = 10 m/s², a = 2.0 m/s².\nStep 3: N = 60 * (10 - 2) = 60 * 8 = 480 N.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "60 kg எடையுள்ள ஒருவர் மின்தூக்கியில் உள்ள எடை பார்க்கும் கருவியில் நிற்கிறார். மின்தூக்கி 2.0 m/s² மாறா முடுக்கத்தில் கீழ்நோக்கி இயங்கினால் அளவீட்டில் காட்டும் தோற்ற எடை என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "480 N",
+          "720 N",
+          "600 N",
+          "120 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A variable force F = (3 x^2 + 2x - 7) N acts on a particle of mass 2 kg, moving along the x-axis. What is the total work done by this force in displacing the particle from x = 0 to x = 3 m?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "36 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "27 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Work done W = ∫[0 to 3] F dx = ∫[0 to 3] (3x^2 + 2x - 7) dx.\nStep 2: W = [x^3 + x^2 - 7x] from 0 to 3.\nStep 3: W = (3^3 + 3^2 - 7*3) - 0 = 27 + 9 - 21 = 15 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சில் இயங்கும் 2 kg நிறையுள்ள ஒரு துகளின் மீது F = (3 x^2 + 2x - 7) N என்ற மாறும் விசை செயல்படுகிறது. x = 0 முதல் x = 3 m வரை துகளை இடப்பெயர்ச்சி செய்ய விசை செய்த மொத்த வேலை என்ன?",
+        "optionTexts": [
+          "15 J",
+          "36 J",
+          "27 J",
+          "9 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A ball of mass 0.5 kg moving at 10 m/s collides head-on and elastically with an identical ball at rest. What are the velocities of the two balls immediately after the collision?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 m/s and 10 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 m/s and 5 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 m/s and 0 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-5 m/s and 5 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a 1D elastic collision between two bodies of equal mass (m1 = m2), the bodies completely exchange their velocities.\nStep 2: Initial velocities: u1 = 10 m/s, u2 = 0 m/s.\nStep 3: Final velocities: v1 = u2 = 0 m/s, v2 = u1 = 10 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 m/s வேகத்தில் செல்லும் 0.5 kg நிறையுள்ள ஒரு பந்து, ஓய்வு நிலையில் உள்ள அதே நிறைகொண்ட மற்றொரு பந்தின் மீது நேருக்கு நேர் மீட்சி மோதல் அடைகிறது. மோதலுக்குப் பின் இரு பந்துகளின் திசைவேகங்கள் முறையே:",
+        "optionTexts": [
+          "0 m/s மற்றும் 10 m/s",
+          "5 m/s மற்றும் 5 m/s",
+          "10 m/s மற்றும் 0 m/s",
+          "-5 m/s மற்றும் 5 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 1.0 kg travels in a circle of radius 0.5 m in a vertical plane. What is the minimum speed the body must have at the lowest point so that it can complete the full vertical circle? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.0 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7.07 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.24 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10.0 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Condition to complete a vertical circle: v_lowest = sqrt(5 g R).\nStep 2: Substitute g = 10 m/s² and R = 0.5 m.\nStep 3: v_lowest = sqrt(5 * 10 * 0.5) = sqrt(25) = 5.0 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.0 kg நிறையுள்ள ஒரு பொருள் 0.5 m ஆரமுடைய செங்குத்து வட்டப்பாதையில் சுழற்றப்படுகிறது. அது செங்குத்து வட்டத்தை முழுமையாக நிறைவு செய்ய அதன் கீழ்புள்ளியில் இருக்க வேண்டிய குறைந்தபட்ச வேகம் என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "5.0 m/s",
+          "7.07 m/s",
+          "2.24 m/s",
+          "10.0 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An engine pumps water continuously through a hose pipe. Water leaves the pipe with velocity v and mass per unit length of the water stream is m. What is the rate at which kinetic energy is imparted to water (power of engine)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) m v^3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "m v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) m v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "m v^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mass of water exiting per second: dm/dt = m * v (where m is mass per unit length).\nStep 2: Kinetic energy per second (Power) = dK/dt = (1/2) (dm/dt) v^2.\nStep 3: Power = (1/2) (m v) v^2 = (1/2) m v^3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு இயந்திரம் குழாய் வழியாக நீரை தொடர்ந்து இறைக்கிறது. நீர் v திசைவேகத்தில் வெளியேறுகிறது மற்றும் ஓரலகு நீளத்திற்கான நீரின் நிறை m ஆகும். நீருக்கு அளிக்கப்படும் இயக்க ஆற்றலின் வீதம் (இயந்திரத்தின் திறன்) என்ன?",
+        "optionTexts": [
+          "(1/2) m v^3",
+          "m v^2",
+          "(1/2) m v^2",
+          "m v^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 2 kg rests on a rough horizontal surface with coefficient of static friction μ_s = 0.4. A horizontal force of 6 N is applied to the block. What is the frictional force acting on the block? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "8 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Maximum static friction (limiting friction): f_max = μ_s * m * g = 0.4 * 2 * 10 = 8 N.\nStep 2: Applied force F = 6 N is less than limiting friction f_max (8 N).\nStep 3: Since applied force is less than limiting friction, the block remains at rest and static friction self-adjusts to equal applied force: f = F = 6 N.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "μ_s = 0.4 நிலை உராய்வுக் குணகம் கொண்ட ஒரு பரப்பில் 2 kg நிறையுள்ள மரக்கட்டை வைக்கப்பட்டுள்ளது. அதன் மீது 6 N கிடைமட்ட விசை செலுத்தப்பட்டால், மரக்கட்டை மீது செயல்படும் உராய்வு விசை என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "6 N",
+          "8 N",
+          "0 N",
+          "2 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m is moving in a horizontal circle of radius r under a central attractive force F(r) = - k / r, where k is a constant. What is the total mechanical energy of the particle (taking potential energy U = 0 at r = r₀)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "k / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "k / r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "k / (2r)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Centripetal force: m v^2 / r = k / r => m v^2 = k.\nStep 2: Kinetic energy K = (1/2) m v^2 = (1/2) k.\nStep 3: Kinetic energy is independent of radius r and equal to k/2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F(r) = - k / r என்ற மைய ஈர்ப்பு விசைக்கு உட்பட்டு r ஆரமுடைய கிடைமட்ட வட்டத்தில் m நிறைகொண்ட துகள் சுழல்கிறது. துகளின் இயக்க ஆற்றல் K இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "k / 2",
+          "k",
+          "k / r",
+          "k / (2r)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A spring with spring constant k is compressed by a distance x against a block of mass m on a smooth horizontal floor. When released, the block leaves the spring and slides up a frictionless circular track of radius R. What is the minimum compression x required for the block to reach the top of the loop?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(5 m g R / k)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(2 m g R / k)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(4 m g R / k)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 m g R / k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: To reach the top and complete the vertical loop, the minimum speed at bottom must be v = sqrt(5 g R).\nStep 2: Kinetic energy at bottom: K = (1/2) m v^2 = (1/2) m (5 g R).\nStep 3: Initial potential energy of compressed spring: U = (1/2) k x^2.\nStep 4: Equating energies: (1/2) k x^2 = (5/2) m g R => x = sqrt(5 m g R / k). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k சுருள் மாறிலி கொண்ட சுருள்வில் x தொலைவிற்கு அழுத்தப்பட்டு m நிறைகொண்ட பொருளின் மீது வைக்கப்பட்டுள்ளது. விடுவிக்கப்பட்டவுடன், பொருள் R ஆரமுடைய வழுவழுப்பான செங்குத்து வட்ட வளையத்தில் நுழைகிறது. வளையத்தின் உச்சியை அடைய சுருள்வில்லில் தேவையான குறைந்தபட்ச அழுத்தம் x என்ன?",
+        "optionTexts": [
+          "sqrt(5 m g R / k)",
+          "sqrt(2 m g R / k)",
+          "sqrt(4 m g R / k)",
+          "5 m g R / k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A bullet of mass m moving with speed v strikes a stationary wooden block of mass M suspended by a light vertical cord of length L and gets embedded in it. What is the maximum angle θ by which the cord swings from the vertical?",
+    "options": [
+      {
+        "label": "A",
+        "text": "cos^-1 [ 1 - m^2 v^2 / (2 (m + M)^2 g L) ]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sin^-1 [ m v / ((m + M) sqrt(2 g L)) ]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "cos^-1 [ m v / ((m + M) g L) ]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tan^-1 [ m^2 v^2 / (2 M^2 g L) ]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By conservation of linear momentum: m v = (m + M) V => V = m v / (m + M).\nStep 2: By conservation of mechanical energy: (1/2) (m + M) V^2 = (m + M) g h => h = V^2 / (2g) = m^2 v^2 / [2 (m + M)^2 g].\nStep 3: Height related to swing angle: h = L (1 - cos θ) => 1 - cos θ = h / L.\nStep 4: cos θ = 1 - m^2 v^2 / [2 (m + M)^2 g L] => θ = cos^-1 [1 - m^2 v^2 / (2 (m + M)^2 g L)]. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமுள்ள இழையில் தொங்கவிடப்பட்ட M நிறையுள்ள மரக்கட்டையில், v வேகத்தில் வரும் m நிறையுள்ள தோட்டா பாய்ந்து உள்ளே புதைந்துவிடுகிறது. செங்குத்து நிலையிலிருந்து இழை விலகும் பெருமக் கோணம் θ என்ன?",
+        "optionTexts": [
+          "cos^-1 [ 1 - m^2 v^2 / (2 (m + M)^2 g L) ]",
+          "sin^-1 [ m v / ((m + M) sqrt(2 g L)) ]",
+          "cos^-1 [ m v / ((m + M) g L) ]",
+          "tan^-1 [ m^2 v^2 / (2 M^2 g L) ]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the optimal banking angle θ of a curved road of radius r designed for vehicles moving safely at design speed v without relying on friction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "tan^-1(v^2 / (r g))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sin^-1(v^2 / (r g))",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "tan^-1(v / (r g))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "cos^-1(v^2 / (r g))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a banked road without friction, the horizontal component of normal force provides centripetal force: N sin θ = m v^2 / r.\nStep 2: The vertical component balances weight: N cos θ = m g.\nStep 3: Dividing gives tan θ = v^2 / (r g).\nStep 4: Banking angle θ = tan^-1(v^2 / (r g)). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உராய்வைச் சாராமல், v வடிவமைப்பு வேகத்தில் வாகனங்கள் பாதுகாப்பாகச் செல்ல r ஆரமுடைய வளைவுச் சாலையில் அமைக்கப்பட வேண்டிய சிறந்த சாய்வுக் கோணம் θ என்ன?",
+        "optionTexts": [
+          "tan^-1(v^2 / (r g))",
+          "sin^-1(v^2 / (r g))",
+          "tan^-1(v / (r g))",
+          "cos^-1(v^2 / (r g))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F = (4 i + 3 j) N acts on a particle, displacing it from position r1 = (i + 2 j) m to r2 = (3 i + 6 j) m. What is the total work done by the force?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "28 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement vector Δr = r2 - r1 = (3i + 6j) - (i + 2j) = (2i + 4j) m.\nStep 2: Work done W = F · Δr = (4i + 3j) · (2i + 4j).\nStep 3: W = 4*2 + 3*4 = 8 + 12 = 20 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F = (4 i + 3 j) N என்ற விசை செயல்பட்டு ஒரு துகளை r1 = (i + 2 j) m இலிருந்து r2 = (3 i + 6 j) m நிலைக்கு இடப்பெயர்ச்சி செய்கிறது. விசை செய்த மொத்த வேலை என்ன?",
+        "optionTexts": [
+          "20 J",
+          "12 J",
+          "28 J",
+          "15 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m moving with velocity v collides with a stationary particle of mass 2m. If the collision is completely inelastic (particles stick together), what percentage of the initial kinetic energy is lost as heat/deformation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "66.7% (2/3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "33.3% (1/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50.0% (1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "75.0% (3/4)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Initial momentum = m v; Combined mass = 3m => common velocity V = m v / (3m) = v / 3.\nStep 2: Initial KE = K_i = (1/2) m v^2.\nStep 3: Final KE = K_f = (1/2) (3m) (v/3)^2 = (1/2) (3m) (v^2 / 9) = (1/6) m v^2 = K_i / 3.\nStep 4: Loss in KE = K_i - K_f = (2/3) K_i = 66.7%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "v திசைவேகத்தில் செல்லும் m நிறையுள்ள துகள் ஓய்விலுள்ள 2m நிறையுள்ள துகளுடன் முழு மீட்சியற்ற மோதல் அடைந்து ஒன்றாக இணைகிறது. தொடக்க இயக்க ஆற்றலில் இழக்கப்படும் விழுக்காடு என்ன?",
+        "optionTexts": [
+          "66.7% (2/3)",
+          "33.3% (1/3)",
+          "50.0% (1/2)",
+          "75.0% (3/4)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When linear momentum of a body increases by 50%, what is the percentage increase in its kinetic energy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "125%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "225%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Kinetic energy K = p^2 / (2m).\nStep 2: New momentum p' = 1.5 p.\nStep 3: New kinetic energy K' = (1.5 p)^2 / (2m) = 2.25 * (p^2 / 2m) = 2.25 K.\nStep 4: Percentage increase = [(K' - K) / K] * 100% = [(2.25 - 1)] * 100% = 125%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருளின் நேர்கோட்டு உந்தம் 50% அதிகரித்தால், அதன் இயக்க ஆற்றலில் ஏற்படும் விழுக்காடு அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "125%",
+          "100%",
+          "50%",
+          "225%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 1000 kg car accelerates uniformly from rest to a speed of 20 m/s in 5.0 seconds. What is the average power delivered by the engine during this time?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40 kW",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "80 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100 kW",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Work done = Change in kinetic energy = (1/2) m v^2 - 0 = (1/2) * 1000 * (20)^2 = 500 * 400 = 200,000 J.\nStep 2: Average power P = Work / time = 200,000 J / 5.0 s = 40,000 W = 40 kW.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1000 kg நிறையுள்ள ஒரு மகிழுந்து ஓய்வு நிலையிலிருந்து 5.0 வினாடிகளில் 20 m/s வேகத்திற்கு சீராக முடுக்கமடைகிறது. இந்த நேரத்தில் இயந்திரம் அளித்த சராசரி திறன் என்ன?",
+        "optionTexts": [
+          "40 kW",
+          "20 kW",
+          "80 kW",
+          "100 kW"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A chain of mass M and length L is held on a smooth horizontal table such that 1/n fraction of its length hangs freely over the table's edge. What is the work done in pulling the hanging part of the chain back onto the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "M g L / (2 n^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M g L / (n^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M g L / (2 n)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "M g L / (4 n^2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mass of hanging part: m_hang = M / n.\nStep 2: Center of mass of the hanging part is at distance y_cm = (L/n) / 2 = L / (2n) below the table edge.\nStep 3: Work done to lift the hanging portion = m_hang * g * y_cm = (M / n) * g * (L / (2n)).\nStep 4: W = M g L / (2 n^2). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட சங்கிலி ஒன்றின் 1/n பகுதி மேசையின் விளிம்பில் செங்குத்தாகத் தொங்குகிறது. தொங்கும் பகுதியை மீண்டும் மேசையின் மீது இழுக்க செய்யப்படும் வேலை என்ன?",
+        "optionTexts": [
+          "M g L / (2 n^2)",
+          "M g L / (n^2)",
+          "M g L / (2 n)",
+          "M g L / (4 n^2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cricketer catches a ball of mass 150 g moving at 20 m/s in 0.1 s. What is the average impulsive force exerted by the ball on the cricketer's hands?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "300 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Change in momentum Δp = m (v - u) = 0.150 kg * (0 - 20 m/s) = -3.0 kg m/s.\nStep 2: Average force F = |Δp / Δt| = 3.0 / 0.1 = 30 N.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 m/s வேகத்தில் வரும் 150 g நிறையுள்ள கிரிக்கெட் பந்தை 0.1 s இல் ஒரு வீரர் பிடிக்கிறார். பந்தினால் வீரரின் கைகளில் செலுத்தப்படும் சராசரி கணத்தாக்கு விசை என்ன?",
+        "optionTexts": [
+          "30 N",
+          "300 N",
+          "3 N",
+          "15 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 2 kg moving under a conservative force has potential energy U(x) = (x^2 - 4x + 3) J. What is the equilibrium position and nature of equilibrium of the particle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = 2 m, Stable equilibrium",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "x = 2 m, Unstable equilibrium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x = 4 m, Stable equilibrium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x = 0 m, Neutral equilibrium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Force F = - dU/dx = - (2x - 4) = 4 - 2x.\nStep 2: For equilibrium, F = 0 => 4 - 2x = 0 => x = 2 m.\nStep 3: Second derivative d^2U/dx^2 = d/dx(2x - 4) = +2 > 0 (minimum potential energy).\nStep 4: Positive second derivative indicates stable equilibrium at x = 2 m. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "U(x) = (x^2 - 4x + 3) J என்ற நிலையாற்றல் கொண்ட அமைப்பில் 2 kg நிறையுள்ள ஒரு துகள் இயங்குகிறது. துகளின் சமநிலை நிலை மற்றும் அதன் சமநிலையின் தன்மை என்ன?",
+        "optionTexts": [
+          "x = 2 m, நிலையான சமநிலை",
+          "x = 2 m, நிலையற்ற சமநிலை",
+          "x = 4 m, நிலையான சமநிலை",
+          "x = 0 m, நடுநிலை சமநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m is attached to a vertical light spring of force constant k and held at the position where the spring is unstretched. If the block is released suddenly, what is the maximum elongation produced in the spring?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 m g / k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "m g / k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "m g / (2 k)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 m g / k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Let maximum elongation be x_max. At maximum extension, velocity v = 0.\nStep 2: Decrease in gravitational PE = Increase in spring elastic PE.\nStep 3: m g x_max = (1/2) k x_max^2.\nStep 4: Solving for x_max yields x_max = 2 m g / k. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k சுருள் மாறிலி கொண்ட செங்குத்து சுருள்வில்லில் m நிறைகொண்ட பொருள் கட்டப்பட்டு, சுருள்வில் நீட்சியடையாத நிலையில் பிடித்து வைக்கப்பட்டுள்ளது. திடீரென விடுவிக்கப்பட்டால், சுருள்வில்லில் ஏற்படும் பெரும நீட்சி என்ன?",
+        "optionTexts": [
+          "2 m g / k",
+          "m g / k",
+          "m g / (2 k)",
+          "4 m g / k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A sandbag of mass M is suspended by a rope. A bullet of mass m moving horizontally with speed v hits the bag and gets embedded in it. What is the loss of kinetic energy during the impact?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) * [m M / (m + M)] * v^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) m v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) * [m^2 / (m + M)] * v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/2) M v^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for loss of kinetic energy in perfectly inelastic collision: ΔK = (1/2) * (m1 * m2 / (m1 + m2)) * (u1 - u2)^2.\nStep 2: Here m1 = m, m2 = M, u1 = v, u2 = 0.\nStep 3: ΔK = (1/2) * [m M / (m + M)] * v^2 (using reduced mass μ = m M / (m + M)).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையுள்ள மணல் மூட்டையில் v வேகத்தில் வரும் m நிறையுள்ள தோட்டா பாய்ந்து புதைந்துவிடுகிறது. மோதலில் ஏற்படும் இயக்க ஆற்றல் இழப்பு என்ன?",
+        "optionTexts": [
+          "(1/2) * [m M / (m + M)] * v^2",
+          "(1/2) m v^2",
+          "(1/2) * [m^2 / (m + M)] * v^2",
+          "(1/2) M v^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a non-conservative force?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Viscous drag force",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Electrostatic force",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gravitational force",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Spring restoring force",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conservative forces are path-independent and conserve mechanical energy (Gravitational, Electrostatic, Spring forces).\nStep 2: Viscous and friction forces are path-dependent and dissipate mechanical energy into heat.\nStep 3: Thus, viscous drag is a non-conservative dissipative force.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றில் எது ஆற்றல் மாற்றா (ஆற்றல் அழியும்) விசை?",
+        "optionTexts": [
+          "பாகுநிலை விசை",
+          "நிலைமின்னியல் விசை",
+          "ஈர்ப்பு விசை",
+          "சுருள்வில் மீள் விசை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body is dropped from a height h above a hard horizontal floor. If the coefficient of restitution for the impact is e, to what height will the body rebound after the first bounce?",
+    "options": [
+      {
+        "label": "A",
+        "text": "e^2 h",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "e h",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "e^4 h",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "h / e^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Impact velocity on striking floor: v = sqrt(2 g h).\nStep 2: Rebound velocity: v' = e * v = e * sqrt(2 g h).\nStep 3: Height of first rebound: h1 = (v')^2 / (2g) = e^2 (2gh) / (2g) = e^2 h.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தரையிலிருந்து h உயரத்தில் இருந்து ஒரு பொருள் விழுகிறது. தரைக்கும் பொருளுக்கும் இடையேயான மீட்சியளிப்புக் குணகம் e எனில், முதல் மோதலுக்குப் பின் பொருள் எழும்பும் உயரம் என்ன?",
+        "optionTexts": [
+          "e^2 h",
+          "e h",
+          "e^4 h",
+          "h / e^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two masses m1 and m2 (m1 > m2) connected by an inextensible string over a frictionless pulley have total mass M = m1 + m2. What is the acceleration of the center of mass of the system?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[ (m1 - m2) / (m1 + m2) ]^2 * g downwards",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[ (m1 - m2) / (m1 + m2) ] * g downwards",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "g downwards",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Individual acceleration of both blocks is a = [ (m1 - m2) / (m1 + m2) ] g (m1 accelerates downward, m2 upward).\nStep 2: Acceleration of center of mass: a_cm = (m1 a1 + m2 a2) / (m1 + m2) = [m1 (-a) + m2 (+a)] / (m1 + m2) = - [(m1 - m2) / (m1 + m2)] a.\nStep 3: Substitute a: a_cm = - [ (m1 - m2) / (m1 + m2) ]^2 g.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உராய்வற்ற கப்பி மீது தொங்கும் m1 மற்றும் m2 (m1 > m2) நிறைகளின் அமைப்பின் நிறை மையத்தின் முடுக்கம் என்ன?",
+        "optionTexts": [
+          "[ (m1 - m2) / (m1 + m2) ]^2 * g கீழ்நோக்கி",
+          "[ (m1 - m2) / (m1 + m2) ] * g கீழ்நோக்கி",
+          "பூஜ்ஜியம்",
+          "g கீழ்நோக்கி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A pump is required to lift 600 kg of water per minute from a well of depth 20 m and eject it with a speed of 20 m/s. What is the power rating of the pump? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 kW",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.0 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8.0 kW",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mass lifted per second: dm/dt = 600 kg / 60 s = 10 kg/s.\nStep 2: Rate of potential energy imparted: P_pe = (dm/dt) * g * h = 10 * 10 * 20 = 2000 W.\nStep 3: Rate of kinetic energy imparted: P_ke = (1/2) (dm/dt) v^2 = (1/2) * 10 * 400 = 2000 W.\nStep 4: Total Power = P_pe + P_ke = 2000 + 2000 = 4000 W = 4.0 kW. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 m ஆழமுள்ள கிணற்றிலிருந்து நிமிடத்திற்கு 600 kg நீரை வெளியேற்றி 20 m/s வேகத்தில் பீய்ச்சி அடிக்க தேவையான இறைப்பானின் திறன் என்ன? (g = 10 m/s²)",
+        "optionTexts": [
+          "4.0 kW",
+          "2.0 kW",
+          "6.0 kW",
+          "8.0 kW"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m slides down an inclined plane of slope angle θ with constant velocity. What is the coefficient of kinetic friction μ_k between the block and the incline?",
+    "options": [
+      {
+        "label": "A",
+        "text": "tan θ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sin θ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "cos θ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "cot θ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Constant velocity implies acceleration a = 0 (net force along incline is zero).\nStep 2: Downward component of gravity = Kinetic friction: m g sin θ = f_k = μ_k N.\nStep 3: Normal force N = m g cos θ => m g sin θ = μ_k m g cos θ.\nStep 4: μ_k = sin θ / cos θ = tan θ. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "θ சாய்வுக் கோணமுடைய சாய்தளத்தில் m நிறைகொண்ட ஒரு மரக்கட்டை மாறா திசைவேகத்தில் கீழ்நோக்கி நழுவுகிறது. சாய்தளத்திற்கும் பொருளுக்கும் இடையேயான இயக்க உராய்வுக் குணகம் μ_k என்ன?",
+        "optionTexts": [
+          "tan θ",
+          "sin θ",
+          "cos θ",
+          "cot θ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform flexible rope of mass M and length L rests on a frictionless horizontal table with length l hanging over the edge. What is the speed of the rope at the moment the last segment leaves the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt( (g / L) * (L^2 - l^2) )",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt( 2g (L - l) )",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt( g (L + l) )",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt( (g / 2L) * (L^2 - l^2) )",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Let the table surface be reference level U = 0.\nStep 2: Initial potential energy: U_i = - (M l / L) * g * (l / 2) = - M g l^2 / (2L).\nStep 3: Final potential energy when whole rope hangs: U_f = - M g (L / 2) = - M g L^2 / (2L).\nStep 4: Loss in PE = Gain in KE: (1/2) M v^2 = U_i - U_f = (M g / 2L) (L^2 - l^2) => v = sqrt[ (g/L) (L^2 - l^2) ]. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட கயிறு ஒன்றின் l பகுதி மேசையின் விளிம்பில் தொங்குகிறது. கயிறு மேசையை முழுமையாக விட்டு வெளியேறும் கணத்தில் அதன் வேகம் என்ன?",
+        "optionTexts": [
+          "sqrt( (g / L) * (L^2 - l^2) )",
+          "sqrt( 2g (L - l) )",
+          "sqrt( g (L + l) )",
+          "sqrt( (g / 2L) * (L^2 - l^2) )"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the angle between force vector F = (2 i + 3 j - 4 k) N and displacement vector d = (4 i + 4 j + 5 k) m?",
+    "options": [
+      {
+        "label": "A",
+        "text": "90° (Zero work done)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0°",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "45°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Compute scalar dot product: F · d = (2)(4) + (3)(4) + (-4)(5) = 8 + 12 - 20 = 0.\nStep 2: Since F · d = |F| |d| cos θ = 0 and magnitudes are non-zero, cos θ = 0.\nStep 3: θ = 90°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விசை வெக்டர் F = (2 i + 3 j - 4 k) N மற்றும் இடப்பெயர்ச்சி வெக்டர் d = (4 i + 4 j + 5 k) m இவற்றுக்கு இடையேயான கோணம் என்ன?",
+        "optionTexts": [
+          "90° (வேலை பூஜ்ஜியம்)",
+          "0°",
+          "60°",
+          "45°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A bullet of mass 10 g leaves the barrel of a rifle of mass 4 kg with a muzzle velocity of 400 m/s. What is the recoil velocity of the rifle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1.0 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-0.5 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-2.0 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-4.0 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By conservation of linear momentum: m_bullet * v_bullet + M_rifle * V_rifle = 0.\nStep 2: V_rifle = - (m_bullet * v_bullet) / M_rifle.\nStep 3: Substitute values: V_rifle = - (0.010 kg * 400 m/s) / 4.0 kg = - 4.0 / 4.0 = -1.0 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 kg நிறையுள்ள துப்பாக்கியிலிருந்து 10 g நிறையுள்ள தோட்டா 400 m/s திசைவேகத்தில் வெளியேறுகிறது. துப்பாக்கியின் பின்னோக்கிய உதைப்புத் திசைவேகம் என்ன?",
+        "optionTexts": [
+          "-1.0 m/s",
+          "-0.5 m/s",
+          "-2.0 m/s",
+          "-4.0 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY02-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A heavy iron box of mass 50 kg is pushed along a horizontal surface at a constant speed of 2.0 m/s by a horizontal force of 100 N. What is the power expended in moving the box?",
+    "options": [
+      {
+        "label": "A",
+        "text": "200 W",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100 W",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "500 W",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1000 W",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Power P = Force * Velocity = F * v.\nStep 2: P = 100 N * 2.0 m/s = 200 W.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "50 kg நிறையுள்ள கனமான இரும்புப் பெட்டி 100 N கிடைமட்ட விசையால் 2.0 m/s மாறா வேகத்தில் கிடைமட்டப் பரப்பில் தள்ளப்படுகிறது. பெட்டியை நகர்த்துவதற்கு செலவிடப்படும் திறன் என்ன?",
+        "optionTexts": [
+          "200 W",
+          "100 W",
+          "500 W",
+          "1000 W"
+        ]
+      }
+    ]
+  }
+]

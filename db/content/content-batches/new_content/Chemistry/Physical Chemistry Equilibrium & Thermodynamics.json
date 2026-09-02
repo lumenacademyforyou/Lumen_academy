@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE03-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas expands isothermally and reversibly from 10 L to 100 L at 300 K. The work done by 1 mole of the gas is: (R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-5.74 kJ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+5.74 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-11.49 kJ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-2.87 kJ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for work done in isothermal reversible expansion: w = -2.303 n R T log10(V2 / V1).\nStep 2: Substitute n = 1 mol, R = 8.314 J K^-1 mol^-1, T = 300 K, V2/V1 = 100/10 = 10 (log10 10 = 1).\nStep 3: w = -2.303 * 1 * 8.314 * 300 * 1 = -5744 J = -5.74 kJ.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K மாறா வெப்பநிலையில் 1 மோல் நல்லியல்பு வாயு 10 L இலிருந்து 100 L ஆக மீள்முறையில் விரிவடையும் போது செய்யப்பட்ட வேலை என்ன? (R = 8.314 J K^-1 mol^-1)",
+        "optionTexts": [
+          "-5.74 kJ",
+          "+5.74 kJ",
+          "-11.49 kJ",
+          "-2.87 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pairs contains state functions only?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Heat (q) and Work (w)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy (H) and Internal energy (U)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Work (w) and Enthalpy (H)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Heat (q) and Entropy (S)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: State functions depend only on the current state of the system and not on the path taken.\nStep 2: U, H, S, and G are state functions.\nStep 3: Heat (q) and work (w) are path functions because their values depend on the specific path/process.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இணைகளில் நிலைச் சார்புகளை மட்டுமே கொண்டுள்ள இணை எது?",
+        "optionTexts": [
+          "வெப்பம் (q) மற்றும் வேலை (w)",
+          "என்தால்பி (H) மற்றும் அக ஆற்றல் (U)",
+          "வேலை (w) மற்றும் என்தால்பி (H)",
+          "வெப்பம் (q) மற்றும் என்ட்ரோபி (S)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the combustion of gaseous propane: C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(l) at 298 K, the value of (Delta H - Delta U) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-3 RT",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+RT",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-RT",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+3 RT",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Relationship between Delta H and Delta U is Delta H = Delta U + Delta n_g RT, so (Delta H - Delta U) = Delta n_g RT.\nStep 2: Calculate Delta n_g (moles of gaseous products - moles of gaseous reactants).\nStep 3: Gaseous products = 3 (CO2); H2O is liquid. Gaseous reactants = 1 (C3H8) + 5 (O2) = 6.\nStep 4: Delta n_g = 3 - 6 = -3. Therefore, (Delta H - Delta U) = -3 RT (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் புரோப்பேன் வாயுவின் எரிதல் வினைக்கு: C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(l), (Delta H - Delta U) இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "-3 RT",
+          "+RT",
+          "-RT",
+          "+3 RT"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following properties of a thermodynamic system is an intensive property?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volume",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Density",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Heat capacity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Intensive properties are independent of the amount or size of matter present in the system.\nStep 2: Volume, Enthalpy, and Heat capacity are extensive properties as they depend directly on the mass/quantity.\nStep 3: Density (mass/volume) is a ratio of two extensive properties and is independent of total quantity, making it intensive.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வெப்ப இயக்கவியல் அமைப்பின் பின்வரும் பண்புகளில் எது பொருண்மை சாரா (Intensive) பண்பாகும்?",
+        "optionTexts": [
+          "கனஅளவு",
+          "என்தால்பி",
+          "அடர்த்தி",
+          "வெப்ப ஏற்புத்திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During an adiabatic expansion of an ideal gas against a non-zero opposing pressure, the temperature of the gas:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increases",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decreases",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Remains constant",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Becomes zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In an adiabatic process, there is no heat exchange with the surroundings (q = 0).\nStep 2: According to the first law of thermodynamics: Delta U = q + w = w.\nStep 3: During expansion, the system does work on the surroundings (w < 0), which means Delta U < 0.\nStep 4: Since Delta U = n Cv Delta T, a decrease in internal energy causes a decrease in temperature (cooling effect). Conclude Option B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயுவின் வெப்பப் பரிமாற்றமில்லா (adiabatic) விரிவடைதலின் போது, வாயுவின் வெப்பநிலை:",
+        "optionTexts": [
+          "அதிகரிக்கும்",
+          "குறையும்",
+          "மாறாமல் இருக்கும்",
+          "பூஜ்ஜியமாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "By thermodynamic convention, the standard enthalpy of formation (Delta_f H°) is assigned a value of zero for which substance at 298 K and 1 bar?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CO2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Br2(l)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Diamond (C)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2O(l)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By convention, standard enthalpy of formation (Delta_f H°) is taken as zero for an element in its most stable reference state of aggregation at 298 K and 1 bar.\nStep 2: Bromine exists naturally as a liquid: Br2(l) has Delta_f H° = 0 (for Br2(g), Delta_f H° != 0).\nStep 3: For carbon, graphite is the standard reference state (Delta_f H° = 0), not diamond.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்ப இயக்கவியல் முறைப்படி, 298 K மற்றும் 1 பார் அழுத்தத்தில் எந்தப் பொருளின் திட்ட உருவாதல் என்தால்பி (Delta_f H°) மதிப்பு பூஜ்ஜியமாகக் கருதப்படுகிறது?",
+        "optionTexts": [
+          "CO2(g)",
+          "Br2(l)",
+          "வைரம் (C)",
+          "H2O(l)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Given bond enthalpies: H-H = 435 kJ/mol, Cl-Cl = 243 kJ/mol, and H-Cl = 431 kJ/mol. The enthalpy of formation of HCl(g) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-92 kJ/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-184 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+92 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+184 kJ/mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reaction for formation of 1 mole of HCl: 1/2 H2(g) + 1/2 Cl2(g) -> HCl(g).\nStep 2: Delta_f H° = [1/2 B.E.(H-H) + 1/2 B.E.(Cl-Cl)] - [B.E.(H-Cl)].\nStep 3: Delta_f H° = [0.5 * 435 + 0.5 * 243] - 431 = [217.5 + 121.5] - 431 = 339 - 431 = -92 kJ/mol.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பிணைப்பு என்தால்பி மதிப்புகள் கொடுக்கப்பட்டுள்ளன: H-H = 435 kJ/mol, Cl-Cl = 243 kJ/mol, மற்றும் H-Cl = 431 kJ/mol. HCl(g) இன் உருவாதல் என்தால்பி என்ன?",
+        "optionTexts": [
+          "-92 kJ/mol",
+          "-184 kJ/mol",
+          "+92 kJ/mol",
+          "+184 kJ/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The enthalpy of neutralization of a strong acid with a strong base is -57.1 kJ/mol. The enthalpy of neutralization of HCN with NaOH is -12.1 kJ/mol. The enthalpy of ionization of HCN is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+45.0 kJ/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-45.0 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+69.2 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-69.2 kJ/mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Enthalpy of neutralization for weak acid = Enthalpy of ionization + Enthalpy of neutralization of strong acid.\nStep 2: -12.1 kJ/mol = Delta H_ion + (-57.1 kJ/mol).\nStep 3: Delta H_ion = -12.1 - (-57.1) = +45.0 kJ/mol.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வலிமைமிகு அமிலம் மற்றும் காரத்தின் நடுநிலையாக்கல் என்தால்பி -57.1 kJ/mol. HCN மற்றும் NaOH இன் நடுநிலையாக்கல் என்தால்பி -12.1 kJ/mol எனில், HCN இன் அயனியாதல் என்தால்பி மதிப்பு என்ன?",
+        "optionTexts": [
+          "+45.0 kJ/mol",
+          "-45.0 kJ/mol",
+          "+69.2 kJ/mol",
+          "-69.2 kJ/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the entropy of vaporization of water if its enthalpy of vaporization is 40.63 kJ/mol at its normal boiling point (100 °C)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "108.9 J K^-1 mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "406.3 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "273.1 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "85.4 J K^-1 mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for entropy of vaporization: Delta S_vap = Delta H_vap / T_b.\nStep 2: Convert temperature to Kelvin: T_b = 100 °C = 373.15 K.\nStep 3: Convert Delta H_vap to Joules: 40.63 kJ/mol = 40630 J/mol.\nStep 4: Delta S_vap = 40630 / 373.15 = 108.9 J K^-1 mol^-1 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரின் கொதிநிலையில் (100 °C) ஆவியாதல் என்தால்பி 40.63 kJ/mol எனில், அதன் ஆவியாதல் என்ட்ரோபி மதிப்பு என்ன?",
+        "optionTexts": [
+          "108.9 J K^-1 mol^-1",
+          "406.3 J K^-1 mol^-1",
+          "273.1 J K^-1 mol^-1",
+          "85.4 J K^-1 mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a reaction to be spontaneous at all temperatures, the thermodynamic signs of Delta H and Delta S must be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta H < 0 and Delta S > 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Delta H > 0 and Delta S < 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Delta H > 0 and Delta S > 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Delta H < 0 and Delta S < 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gibbs-Helmholtz equation: Delta G = Delta H - T Delta S.\nStep 2: A reaction is spontaneous when Delta G < 0.\nStep 3: If Delta H is negative (exothermic) and Delta S is positive, -T Delta S is always negative at any absolute temperature T > 0.\nStep 4: Therefore, Delta G is negative at all temperatures. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எல்லா வெப்பநிலைகளிலும் ஒரு வினை தன்னிச்சையாக நிகழ, Delta H மற்றும் Delta S ஆகியவற்றின் குறியீடுகள் எவ்வாறு இருக்க வேண்டும்?",
+        "optionTexts": [
+          "Delta H < 0 மற்றும் Delta S > 0",
+          "Delta H > 0 மற்றும் Delta S < 0",
+          "Delta H > 0 மற்றும் Delta S > 0",
+          "Delta H < 0 மற்றும் Delta S < 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a reaction with Delta H = +30 kJ/mol and Delta S = +100 J K^-1 mol^-1, at what minimum temperature does the reaction become spontaneous?",
+    "options": [
+      {
+        "label": "A",
+        "text": "300 K",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "300 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 K",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3000 K",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At equilibrium, Delta G = 0 => Delta H = T Delta S.\nStep 2: Minimum temperature for spontaneity T = Delta H / Delta S.\nStep 3: Convert Delta H to J: 30 kJ = 30000 J.\nStep 4: T = 30000 / 100 = 300 K. For T > 300 K, Delta G becomes negative (spontaneous). Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வினைக்கு Delta H = +30 kJ/mol மற்றும் Delta S = +100 J K^-1 mol^-1 எனில், இவ்வினை தன்னிச்சையாக நிகழத் தொடங்கும் குறைந்தபட்ச வெப்பநிலை என்ன?",
+        "optionTexts": [
+          "300 K",
+          "300 °C",
+          "100 K",
+          "3000 K"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the equilibrium constant for a reaction is K = 10^4 at 300 K, what is the standard Gibbs free energy change (Delta G°)? (2.303 * R * 300 = 5.74 kJ/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-22.96 kJ/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+22.96 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-11.48 kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-5.74 kJ/mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The thermodynamic relation is Delta G° = -2.303 R T log10(K).\nStep 2: Substitute K = 10^4, so log10(10^4) = 4.\nStep 3: Delta G° = -(2.303 * R * 300) * 4 = -5.74 kJ/mol * 4 = -22.96 kJ/mol.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K இல் ஒரு வினையின் சமநிலை மாறிலி K = 10^4 எனில், அதன் திட்ட கிப்ஸ் கட்டிலா ஆற்றல் மாற்றம் (Delta G°) என்ன? (2.303 * R * 300 = 5.74 kJ/mol)",
+        "optionTexts": [
+          "-22.96 kJ/mol",
+          "+22.96 kJ/mol",
+          "-11.48 kJ/mol",
+          "-5.74 kJ/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the Third Law of Thermodynamics, the absolute entropy of which substance is zero at 0 K?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perfect crystalline substance",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Amorphous glass",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Liquid helium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Solid CO containing orientation disorder",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Third Law states that the entropy of any pure, perfectly crystalline substance approaches zero as absolute temperature approaches 0 K.\nStep 2: Substances with residual disorder (like CO, NO, N2O) or amorphous solids do not have zero entropy at 0 K.\nStep 3: Only perfectly ordered crystalline substances have S = 0 at 0 K.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்ப இயக்கவியலின் மூன்றாம் விதியின்படி, 0 K வெப்பநிலையில் எந்தப் பொருளின் என்ட்ரோபி பூஜ்ஜியமாகும்?",
+        "optionTexts": [
+          "குறைபாடற்ற படிகப் பொருள்",
+          "வடிவமற்ற கண்ணாடி",
+          "திரவ ஹீலியம்",
+          "திசை அமைப்பு சீரற்ற திட CO"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For which of the following equilibrium reactions does Kp = Kc?",
+    "options": [
+      {
+        "label": "A",
+        "text": "PCl5(g) <=> PCl3(g) + Cl2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "N2(g) + 3H2(g) <=> 2NH3(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2(g) + I2(g) <=> 2HI(g)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2SO2(g) + O2(g) <=> 2SO3(g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The relation between Kp and Kc is Kp = Kc (RT)^Delta n_g.\nStep 2: Kp = Kc when Delta n_g = 0.\nStep 3: In H2(g) + I2(g) <=> 2HI(g), Delta n_g = 2 - (1 + 1) = 0.\nStep 4: Therefore, (RT)^0 = 1, so Kp = Kc (Option C).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எந்த சமநிலை வினைக்கு Kp = Kc ஆகும்?",
+        "optionTexts": [
+          "PCl5(g) <=> PCl3(g) + Cl2(g)",
+          "N2(g) + 3H2(g) <=> 2NH3(g)",
+          "H2(g) + I2(g) <=> 2HI(g)",
+          "2SO2(g) + O2(g) <=> 2SO3(g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the reaction quotient (Qc) of a reversible reaction is greater than its equilibrium constant (Kc), the reaction will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Proceed in the reverse direction to form more reactants",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Proceed in the forward direction to form more products",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remain in dynamic equilibrium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Stop completely",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reaction quotient Qc compares the current concentrations with the equilibrium constant Kc.\nStep 2: If Qc > Kc, the concentration of products is higher than at equilibrium.\nStep 3: To attain equilibrium, the system shifts in the reverse (backward) direction consuming products to produce more reactants.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மீள்வினையின் வினை ஈவு (Qc) அதன் சமநிலை மாறிலியை (Kc) விட அதிகமாக இருந்தால், அவ்வினை எவ்வாறு நிகழும்?",
+        "optionTexts": [
+          "அதிக வினைபடு பொருட்களை உருவாக்க பின்னோக்கிய திசையில் நிகழும்",
+          "அதிக விளைபொருட்களை உருவாக்க முன்னோக்கிய திசையில் நிகழும்",
+          "இயங்கு சமநிலையில் இருக்கும்",
+          "முழுமையாக நின்றுவிடும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Le Chatelier's principle, an increase in pressure on the gaseous equilibrium N2(g) + 3H2(g) <=> 2NH3(g) will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shift the equilibrium in the forward direction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Shift the equilibrium in the backward direction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Have no effect on equilibrium position",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Change the value of equilibrium constant Kc",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An increase in external pressure shifts the equilibrium towards the direction having fewer moles of gas.\nStep 2: Reactant moles = 1 + 3 = 4 mol; Product moles = 2 mol.\nStep 3: Forward direction has fewer gaseous moles (4 -> 2), relieving the applied pressure.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லீ-சாட்லியர் கொள்கையின்படி, N2(g) + 3H2(g) <=> 2NH3(g) என்ற சமநிலை வினையில் அழுத்தத்தை அதிகரிக்கும் போது:",
+        "optionTexts": [
+          "சமநிலை முன்னோக்கிய திசையில் நகரும்",
+          "சமநிலை பின்னோக்கிய திசையில் நகரும்",
+          "சமநிலை நிலையில் எவ்வித மாற்றமும் இருக்காது",
+          "சமநிலை மாறிலி Kc இன் மதிப்பு மாறும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the equilibrium constant for N2(g) + O2(g) <=> 2NO(g) is K, what is the equilibrium constant for NO(g) <=> 1/2 N2(g) + 1/2 O2(g)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / sqrt(K)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / K",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(K)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / K^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reversing the original reaction inverts the equilibrium constant: K_rev = 1/K.\nStep 2: Multiplying the coefficients of the reversed equation by 1/2 raises K_rev to the power 1/2.\nStep 3: New equilibrium constant K' = (1/K)^(1/2) = 1 / sqrt(K).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "N2(g) + O2(g) <=> 2NO(g) என்ற வினையின் சமநிலை மாறிலி K எனில், NO(g) <=> 1/2 N2(g) + 1/2 O2(g) என்ற வினையின் சமநிலை மாறிலி என்ன?",
+        "optionTexts": [
+          "1 / sqrt(K)",
+          "1 / K",
+          "sqrt(K)",
+          "1 / K^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the thermal dissociation PCl5(g) <=> PCl3(g) + Cl2(g), if the initial vapor density is D and the observed vapor density at equilibrium is d, the degree of dissociation (alpha) is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(D - d) / d",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(d - D) / D",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(D - d) / D",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "D / (D - d)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total moles at equilibrium for 1 mole of PCl5: 1 - alpha + alpha + alpha = 1 + alpha.\nStep 2: Since molecular mass is inversely proportional to number of moles, D / d = 1 + alpha.\nStep 3: Rearranging for degree of dissociation: alpha = (D / d) - 1 = (D - d) / d.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCl5(g) <=> PCl3(g) + Cl2(g) என்ற வெப்பச்சிதைவு வினையில், ஆரம்ப ஆவி அடர்த்தி D மற்றும் சமநிலையில் உள்ள ஆவி அடர்த்தி d எனில், பிரிகை வீதம் (alpha) என்ன?",
+        "optionTexts": [
+          "(D - d) / d",
+          "(d - D) / D",
+          "(D - d) / D",
+          "D / (D - d)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which species acts as the conjugate base of HCO3^- and conjugate acid of O^2-, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CO3^2- and OH^-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2CO3 and H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CO2 and OH^-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CO3^2- and H3O+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A conjugate base is formed by removing a proton (H+) from an acid: HCO3^- - H+ -> CO3^2-.\nStep 2: A conjugate acid is formed by adding a proton (H+) to a base: O^2- + H+ -> OH^-.\nStep 3: Therefore, the conjugate base of HCO3^- is CO3^2- and the conjugate acid of O^2- is OH^-.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முறையே HCO3^- இன் இணை காரமாகவும், O^2- இன் இணை அமிலமாகவும் செயல்படும் அயனிகள் யாவை?",
+        "optionTexts": [
+          "CO3^2- மற்றும் OH^-",
+          "H2CO3 மற்றும் H2O",
+          "CO2 மற்றும் OH^-",
+          "CO3^2- மற்றும் H3O+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The pH of a 0.01 M aqueous solution of a weak monoprotic acid with ionization constant Ka = 1.0 * 10^-6 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3.0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a weak acid, [H+] = sqrt(Ka * C).\nStep 2: Substitute Ka = 10^-6 and C = 0.01 M = 10^-2 M.\nStep 3: [H+] = sqrt(10^-6 * 10^-2) = sqrt(10^-8) = 10^-4 M.\nStep 4: pH = -log10[H+] = -log10(10^-4) = 4.0. Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயனியாதல் மாறிலி Ka = 1.0 * 10^-6 கொண்ட 0.01 M வலிமை குறைந்த ஒற்றைக்கார அமிலக் கரைசலின் pH மதிப்பு என்ன?",
+        "optionTexts": [
+          "4.0",
+          "3.0",
+          "6.0",
+          "2.0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At 350 K, the ionic product of water is Kw = 1.0 * 10^-12. The pH of pure neutral water at this temperature is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7.0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In pure neutral water, [H+] = [OH-].\nStep 2: Kw = [H+][OH-] = [H+]^2 = 1.0 * 10^-12.\nStep 3: [H+] = sqrt(10^-12) = 1.0 * 10^-6 M.\nStep 4: pH = -log10[H+] = -log10(10^-6) = 6.0. (Water remains neutral because [H+] = [OH-]). Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "350 K வெப்பநிலையில் நீரின் அயனிப் பெருக்கம் Kw = 1.0 * 10^-12 எனில், இந்நிலையின் தூய நடுநிலை நீரின் pH மதிப்பு என்ன?",
+        "optionTexts": [
+          "6.0",
+          "7.0",
+          "12.0",
+          "6.5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 100 mL of 0.1 M HCl is mixed with 100 mL of 0.05 M NaOH, what is the pH of the resulting solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.60",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.00",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.30",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7.00",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Millimoles of HCl = 100 * 0.1 = 10 mmol.\nStep 2: Millimoles of NaOH = 100 * 0.05 = 5 mmol.\nStep 3: Excess HCl remaining = 10 - 5 = 5 mmol in total volume (100 + 100) = 200 mL.\nStep 4: [H+] = 5 / 200 = 0.025 M = 2.5 * 10^-2 M. pH = -log(2.5 * 10^-2) = 2 - log(2.5) = 2 - 0.398 = 1.60 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 mL 0.1 M HCl கரைசலை 100 mL 0.05 M NaOH கரைசலுடன் கலக்கும் போது கிடைக்கும் கரைசலின் pH மதிப்பு என்ன?",
+        "optionTexts": [
+          "1.60",
+          "2.00",
+          "1.30",
+          "7.00"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The addition of solid ammonium chloride (NH4Cl) to an aqueous ammonium hydroxide (NH4OH) solution causes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decrease in [OH-] concentration due to common ion effect",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increase in pH of the solution",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increase in ionization of NH4OH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Precipitation of ammonium metal",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: NH4OH is a weak base in equilibrium: NH4OH <=> NH4+ + OH-.\nStep 2: NH4Cl is a strong electrolyte that dissociates completely to provide a large concentration of common NH4+ ions.\nStep 3: By Le Chatelier's principle, the equilibrium shifts to the left, suppressing the ionization of NH4OH.\nStep 4: This decreases [OH-] and lowers the pH. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய அம்மோனியம் ஹைட்ராக்சைடு (NH4OH) கரைசலில் திட அம்மோனியம் குளோரைடை (NH4Cl) சேர்க்கும்போது:",
+        "optionTexts": [
+          "பொது அயனி விளைவால் [OH-] செறிவு குறைகிறது",
+          "கரைசலின் pH அதிகரிக்கிறது",
+          "NH4OH இன் அயனியாதல் அதிகரிக்கிறது",
+          "அம்மோனியம் உலோகம் வீழ்படிவாகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A buffer solution contains 0.1 M CH3COOH and 0.1 M CH3COONa. If pKa of CH3COOH is 4.74, what is the pH of the buffer?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.74",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.74",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.74",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7.00",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Apply Henderson-Hasselbalch equation: pH = pKa + log10([Salt] / [Acid]).\nStep 2: Substitute [Salt] = [CH3COONa] = 0.1 M and [Acid] = [CH3COOH] = 0.1 M.\nStep 3: [Salt]/[Acid] = 1, and log10(1) = 0.\nStep 4: pH = 4.74 + 0 = 4.74 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தாங்கல் கரைசல் 0.1 M CH3COOH மற்றும் 0.1 M CH3COONa ஆகியவற்றைக் கொண்டுள்ளது. CH3COOH இன் pKa மதிப்பு 4.74 எனில், அத்தாங்கல் கரைசலின் pH என்ன?",
+        "optionTexts": [
+          "4.74",
+          "5.74",
+          "3.74",
+          "7.00"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An acidic buffer solution with maximum buffer capacity has a pH equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "pKa",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pKa + 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "pKa - 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Buffer capacity is defined as the resistance to change in pH upon adding small amounts of acid or base.\nStep 2: Buffer capacity is maximum when the molar concentrations of the weak acid and its conjugate base are equal: [Salt] = [Acid].\nStep 3: From Henderson-Hasselbalch: pH = pKa + log(1) = pKa.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அதிகபட்ச தாங்கல் திறன் கொண்ட ஒரு அமிலத் தாங்கல் கரைசலின் pH மதிப்பு எதற்குச் சமமாக இருக்கும்?",
+        "optionTexts": [
+          "pKa",
+          "pKa + 1",
+          "7.0",
+          "pKa - 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The pH of an aqueous solution of sodium acetate (CH3COONa, a salt of weak acid and strong base) is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 + 1/2 pKa + 1/2 log C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7 - 1/2 pKb - 1/2 log C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7 + 1/2 pKa - 1/2 pKb",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1/2 (pKa - log C)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sodium acetate undergoes anionic hydrolysis: CH3COO- + H2O <=> CH3COOH + OH-.\nStep 2: The solution becomes alkaline due to excess OH- ions (pH > 7).\nStep 3: Hydrolysis constant Kh = Kw / Ka and [OH-] = sqrt(Kh * C) = sqrt((Kw * C) / Ka).\nStep 4: Expressing in pH terms gives pH = 7 + 1/2 pKa + 1/2 log C (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சோடியம் அசிட்டேட் (வலிமை குறைந்த அமிலம் மற்றும் வலிமைமிகு காரத்தின் உப்பு) நீர்க்கரைசலின் pH மதிப்பைத் தரும் சமன்பாடு எது?",
+        "optionTexts": [
+          "7 + 1/2 pKa + 1/2 log C",
+          "7 - 1/2 pKb - 1/2 log C",
+          "7 + 1/2 pKa - 1/2 pKb",
+          "1/2 (pKa - log C)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The pH of an aqueous solution of ammonium acetate (CH3COONH4) at 298 K is independent of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Concentration of the salt",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pKa of CH3COOH",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "pKb of NH4OH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ammonium acetate is a salt of a weak acid (CH3COOH) and a weak base (NH4OH).\nStep 2: The pH formula for a salt of weak acid and weak base is pH = 7 + 1/2 (pKa - pKb).\nStep 3: Notice that the concentration term 'C' does not appear anywhere in this formula.\nStep 4: Hence, the pH is independent of the concentration of the salt (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K இல் அம்மோனியம் அசிட்டேட் (CH3COONH4) நீர்க்கரைசலின் pH மதிப்பு எதனைச் சார்ந்து இருப்பதில்லை?",
+        "optionTexts": [
+          "உப்பின் செறிவு",
+          "CH3COOH இன் pKa",
+          "NH4OH இன் pKb",
+          "வெப்பநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the solubility product (Ksp) of zirconium phosphate Zr3(PO4)4 is denoted by Ksp, its molar solubility (S) is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "S = (Ksp / 6912)^(1/7)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "S = (Ksp / 108)^(1/5)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "S = (Ksp / 144)^(1/7)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "S = (Ksp / 256)^(1/6)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Dissociation equilibrium: Zr3(PO4)4(s) <=> 3 Zr^4+(aq) + 4 PO4^3-(aq).\nStep 2: If solubility is S: [Zr^4+] = 3S and [PO4^3-] = 4S.\nStep 3: Ksp = [Zr^4+]^3 * [PO4^3-]^4 = (3S)^3 * (4S)^4 = (27 S^3) * (256 S^4) = 6912 S^7.\nStep 4: Solving for S gives S = (Ksp / 6912)^(1/7) (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிர்கோனியம் பாஸ்பேட்டின் [Zr3(PO4)4] கரைதிறன் பெருக்கம் Ksp எனில், அதன் மோலார் கரைதிறன் (S) மதிப்பு என்ன?",
+        "optionTexts": [
+          "S = (Ksp / 6912)^(1/7)",
+          "S = (Ksp / 108)^(1/5)",
+          "S = (Ksp / 144)^(1/7)",
+          "S = (Ksp / 256)^(1/6)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The solubility of AgCl in 0.1 M aqueous NaCl solution (Ksp of AgCl = 1.6 * 10^-10) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.6 * 10^-9 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.26 * 10^-5 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.6 * 10^-10 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.6 * 10^-8 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: AgCl(s) <=> Ag+(aq) + Cl-(aq). In 0.1 M NaCl, [Cl-] is dominated by the strong electrolyte: [Cl-] approx 0.1 M.\nStep 2: Ksp = [Ag+] * [Cl-] = S' * (0.1) = 1.6 * 10^-10.\nStep 3: Solubility S' = (1.6 * 10^-10) / 0.1 = 1.6 * 10^-9 M.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.1 M NaCl நீர்க்கரைசலில் AgCl இன் கரைதிறன் என்ன? (AgCl இன் Ksp = 1.6 * 10^-10)",
+        "optionTexts": [
+          "1.6 * 10^-9 M",
+          "1.26 * 10^-5 M",
+          "1.6 * 10^-10 M",
+          "1.6 * 10^-8 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE03-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Precipitation of a sparingly soluble salt occurs from solution when the ionic product (Qsp) and solubility product (Ksp) satisfy:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Qsp > Ksp",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Qsp < Ksp",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Qsp = Ksp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Qsp = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When Qsp < Ksp, the solution is unsaturated and no precipitate forms.\nStep 2: When Qsp = Ksp, the solution is saturated and dynamic equilibrium exists.\nStep 3: When Qsp > Ksp, the solution is supersaturated with respect to the ions, causing precipitation until Qsp = Ksp.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயனிப் பெருக்கம் (Qsp) மற்றும் கரைதிறன் பெருக்கம் (Ksp) ஆகியவற்றுக்கு இடையேயான எந்த நிபந்தனையில் ஒரு உப்பு கரைசலில் இருந்து வீழ்படிவாகும்?",
+        "optionTexts": [
+          "Qsp > Ksp",
+          "Qsp < Ksp",
+          "Qsp = Ksp",
+          "Qsp = 0"
+        ]
+      }
+    ]
+  }
+]

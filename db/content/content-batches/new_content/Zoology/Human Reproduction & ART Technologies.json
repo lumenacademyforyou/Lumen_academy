@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the mid-cycle (around day 14) of the 28-day human menstrual cycle, which hormonal surge directly triggers the rupture of the mature Graafian follicle and the subsequent release of the secondary oocyte (ovulation)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "LH Surge (rapid peak secretion of Luteinizing Hormone from anterior pituitary)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "hCG surge from endometrium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Progesterone surge from corpus albicans",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Prolactin surge from mammary glands",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During the follicular phase, growing ovarian follicles secrete increasing levels of Estrogen.\nStep 2: High estrogen levels exert positive feedback on the hypothalamus and anterior pituitary, triggering a sharp mid-cycle release of gonadotropins.\nStep 3: The rapid maximum surge of Luteinizing Hormone (LH surge) induces ovulation: the Graafian follicle ruptures, releasing the secondary oocyte into the fallopian tube.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மாதவிடாய் சுழற்சியின் மத்தியில் (14-வது நாளில்), முதிர்ந்த கிராஃபியன் பாலிக்கிளை வெடிக்கச் செய்து இரண்டாம் நிலை அண்ட செல்லை வெளியேற்றும் (அண்ட விடுபடுதல்) ஹார்மோன் எழுச்சி எது?",
+        "optionTexts": [
+          "LH எழுச்சி (முன் பிட்யூட்டரி சுரக்கும் லூட்டினைசிங் ஹார்மோனின் அதிகபட்ச உச்ச வெளியீடு)",
+          "hCG எழுச்சி",
+          "புரோஜெஸ்டிரோன் உச்சம்",
+          "புரோலாக்டின் எழுச்சி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "How do Copper-releasing Intrauterine Devices (Cu-IUDs, such as CuT, Cu7, and Multiload 375) function as highly effective contraceptive methods inside the female uterus?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They permanently block ovulation by destroying the ovarian germinal epithelium",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "They act as synthetic barriers preventing semen entry into the vagina",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "They continuously release copper ions (Cu2+) that suppress sperm motility and inhibit the fertilizing capacity of spermatozoa, while stimulating phagocytosis of sperms within the uterus",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "They induce surgical closure of the fallopian tubes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Intrauterine Devices (IUDs) are inserted by doctors through the cervix into the uterine cavity.\nStep 2: Copper-releasing IUDs (CuT, Cu7, Multiload 375) induce a sterile inflammatory response in the endometrium that promotes macrophage phagocytosis of sperms.\nStep 3: Free Cu2+ ions directly impair sperm motility, metabolic activity, and acrosomal reaction necessary for fertilization.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கருப்பை உள் சாதனங்களான காப்பர்-T (CuT), Cu7 மற்றும் மல்டிலோட் 375 ஆகியவை பெண்களின் கருப்பையில் எவ்வாறு கருத்தடை சாதனமாகச் செயல்படுகின்றன?",
+        "optionTexts": [
+          "இவை அண்ட வெளியீட்டை முற்றிலும் தடுக்கின்றன",
+          "இவை விந்து செல்கள் யோனிக்குள் நுழைவதைத் தடுக்கும் தடுப்புகளாகச் செயல்படுகின்றன",
+          "இவை தாமிர அயனிகளை (Cu2+) விடுவித்து விந்து செல்களின் நகரும் திறனையும் கருவுறச் செய்யும் திறனையும் ஒடுக்குகின்றன, மேலும் கருப்பையினுள் விந்து செல்கள் விழுங்கப்படுவதை அதிகரிக்கின்றன",
+          "இவை பெலோப்பியன் குழாய்களை அடைக்கின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the human testes, Leydig cells (interstitial cells) located in the interstitial spaces between seminiferous tubules are stimulated by LH to synthesize and secrete:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Inhibin",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Androgens (principally Testosterone)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Estrogen and Progesterone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Follicle Stimulating Hormone (FSH)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Leydig cells (interstitial cells) lie in the connective tissue spaces between seminiferous tubules.\nStep 2: Under the stimulation of Luteinizing Hormone (LH / ICSH) from the anterior pituitary, Leydig cells synthesize and secrete testicular hormones called androgens, mainly testosterone.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித விந்தகங்களில், விந்து நுண்குழல்களுக்கு இடையே உள்ள இடைசெல்கள் (லெய்டிக் செல்கள்) LH தூண்டுதலால் எதைச் சுரக்கின்றன?",
+        "optionTexts": [
+          "இன்ஹிபின்",
+          "ஆண்ட்ரோஜன்கள் (முக்கியமாக டெஸ்டோஸ்டிரோன்)",
+          "ஈஸ்ட்ரோஜன் மற்றும் புரோஜெஸ்டிரோன்",
+          "FSH"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Sertoli cells (nurse cells) present in the lining of seminiferous tubules perform which vital function during spermatogenesis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Secrete testosterone into blood capillaries",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Provide structural support and nutrition to developing germ cells and secrete inhibin",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Undergo meiotic divisions to form spermatids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Produce alkaline seminal fluid in the urethra",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Seminiferous tubules are lined by spermatogenic cells and Sertoli cells.\nStep 2: Sertoli cells nurse and provide nourishment to developing spermatids and spermatozoa, form the blood-testis barrier, and secrete inhibin and androgen-binding protein (ABP).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விந்து நுண்குழல்களில் காணப்படும் செர்டோலி செல்கள் (செவிலி செல்கள்) எந்த முக்கிய பணியைச் செய்கின்றன?",
+        "optionTexts": [
+          "டெஸ்டோஸ்டிரோனை இரத்தத்தில் சுரப்பது",
+          "வளரும் விந்து செல்களுக்கு ஊட்டமளித்து ஆதரிப்பது மற்றும் இன்ஹிபினைச் சுரப்பது",
+          "குன்றல் பிரிவு மூலம் விந்தணுக்களை உருவாக்குவது",
+          "கார விந்து திரவத்தை உருவாக்குவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the correct chronological sequence of cell stages during human spermatogenesis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spermatogonia (2n) -> Primary spermatocyte (2n) -> Secondary spermatocytes (n) -> Spermatids (n) -> Spermatozoa (n)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Spermatids -> Spermatogonia -> Primary spermatocytes -> Spermatozoa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Spermatogonia -> Spermatids -> Secondary spermatocytes -> Spermatozoa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Primary spermatocytes -> Secondary spermatocytes -> Spermatogonia -> Spermatozoa",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Spermatogonia (2n) differentiate into primary spermatocytes (2n).\nStep 2: Primary spermatocytes complete Meiosis I to form two haploid secondary spermatocytes (n).\nStep 3: Secondary spermatocytes undergo Meiosis II to form four haploid spermatids (n).\nStep 4: Spermatids transform into mature spermatozoa (n) through spermiogenesis.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித விந்து உருவாக்கத்தின் சரியான காலவரிசைப் படிநிலை எது?",
+        "optionTexts": [
+          "ஸ்பெர்மேட்டோகோனியா (2n) -> முதல்நிலை விந்து செல் (2n) -> இரண்டாம்நிலை விந்து செல் (n) -> ஸ்பெர்மேட்டிட் (n) -> முதிர்ந்த விந்து செல் (n)",
+          "ஸ்பெர்மேட்டிட் -> ஸ்பெர்மேட்டோகோனியா -> முதல்நிலை விந்து செல் -> விந்து செல்",
+          "ஸ்பெர்மேட்டோகோனியா -> ஸ்பெர்மேட்டிட் -> இரண்டாம்நிலை விந்து செல் -> விந்து செல்",
+          "முதல்நிலை விந்து செல் -> இரண்டாம்நிலை விந்து செல் -> ஸ்பெர்மேட்டோகோனியா -> விந்து செல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The acrosome of a human spermatozoon is a cap-like structure derived from which cellular organelle that contains hydrolytic enzymes for egg penetration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mitochondria",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Golgi apparatus (Golgi complex)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Centrosome",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Endoplasmic reticulum",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The acrosome is located at the anterior portion of the sperm head.\nStep 2: It is modified from the Golgi apparatus during spermiogenesis.\nStep 3: It is packed with sperm lysins (hyaluronidase, corona penetrating enzyme, acrosin) that dissolve the egg coverings for fertilization.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அண்ட சவ்வுகளைக் கரைக்கும் நொதிகளைக் கொண்ட விந்து செல்லின் அக்ரோசோம் (Acrosome) எந்த செல் உறுப்பிலிருந்து உருவாகிறது?",
+        "optionTexts": [
+          "மைட்டோகாண்ட்ரியா",
+          "கோல்கை உடலம் (Golgi apparatus)",
+          "சென்ட்ரோசோம்",
+          "எண்டோபிளாச வலைப்பின்னல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In human females, primary oocytes are formed during embryonic development and remain arrested at which specific stage of cell division until puberty?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Metaphase II of Meiosis II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Diplotene stage of Prophase I of Meiosis I",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Anaphase I of Meiosis I",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Telophase II",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Oogenesis begins before birth; millions of oogonia start Meiosis I and transform into primary oocytes.\nStep 2: These primary oocytes get temporarily arrested at the diplotene stage of Prophase I.\nStep 3: They resume and complete Meiosis I only after puberty, just prior to ovulation.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித பெண்களில், கரு வளர்ச்சியின் போது உருவாகும் முதல்நிலை அண்ட செல்கள் பூப்படையும் வரை எந்த செல் பிரிதல் நிலையில் நிறுத்தி வைக்கப்படுகின்றன?",
+        "optionTexts": [
+          "குன்றல் பிரிவு II இன் மெட்டாபேஸ் II",
+          "குன்றல் பிரிவு I இன் புரோபேஸ் I இல் உள்ள டிப்ளோடீன் நிலை",
+          "அனாபேஸ் I",
+          "டீலோபேஸ் II"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "After ovulation, the ruptured Graafian follicle transforms into a temporary yellow endocrine gland called the Corpus Luteum, which primarily secretes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Estrogen only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Luteinizing Hormone (LH)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Progesterone (essential for maintaining the endometrium)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Human Chorionic Gonadotropin (hCG)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Following ovulation, granulosa and theca cells of the ruptured follicle form the Corpus Luteum under LH stimulation.\nStep 2: The corpus luteum secretes large amounts of progesterone.\nStep 3: Progesterone maintains the vascularized uterine endometrium for blastocyst implantation and pregnancy.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அண்ட விடுபடுதலுக்குப் பின் வெடித்த கிராஃபியன் பாலிக்கிள் கார்பஸ் லூட்டியமாக மாறி எதனை அதிக அளவில் சுரக்கிறது?",
+        "optionTexts": [
+          "ஈஸ்ட்ரோஜன் மட்டும்",
+          "லூட்டினைசிங் ஹார்மோன்",
+          "புரோஜெஸ்டிரோன் (கருப்பை எண்டோமெட்ரியத்தைப் பராமரிக்க அவசியமானது)",
+          "hCG"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At which anatomical site of the female reproductive tract does natural fertilization of the ovum by a spermatozoon normally take place?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cervical canal",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ampullary region of the fallopian tube (oviduct)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Fundus of the uterus",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vagina",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During coitus, sperm travel through the cervix and uterus to enter the fallopian tube.\nStep 2: The released secondary oocyte enters the infundibulum and moves to the ampulla.\nStep 3: Fertilization takes place at the ampullary region of the fallopian tube.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெண் இனப்பெருக்க மண்டலத்தில் விந்து மற்றும் அண்ட செல் கருவுறுதல் சாதாரணமாக நிகழும் பகுதி எது?",
+        "optionTexts": [
+          "கருப்பை வாய் கால்வாய்",
+          "பெலோப்பியன் குழாயின் ஆம்புல்லா பகுதி (Ampullary region)",
+          "கருப்பையின் ஃபண்டஸ் பகுதி",
+          "யோனி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "During human fertilization, what mechanism prevents polyspermy when the first sperm contacts the plasma membrane of the secondary oocyte?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Release of cortical granules causing alteration and hardening of the zona pellucida (zona reaction)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rapid dissolution of the corona radiata",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Degeneration of the female pronucleus",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Immediate expulsion of the polar body out of the perivitelline space",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Contact of sperm with the oocyte plasma membrane induces depolarization and exocytosis of cortical granules into the perivitelline space.\nStep 2: These enzymes chemically modify the glycoproteins of the zona pellucida (zona reaction), making it impermeable to additional sperm.\nStep 3: This permanent block prevents polyspermy.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கருவுறுதலின் போது கூடுதல் விந்து செல்கள் நுழைவதைத் தடுக்கும் (Polyspermy தடுப்பு) செயல்முறை எது?",
+        "optionTexts": [
+          "கார்டிகல் துகள்கள் வெளியாகி ஜோனா பெலுசிடா சவ்வை கடினமாக்கி மாற்றியமைத்தல் (Zona reaction)",
+          "கொரோனா ரேடியேட்டா வேகமாக கரைதல்",
+          "பெண் உட்கரு சிதைவடைதல்",
+          "துருவ உடலம் வெளியேற்றப்படுதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In human embryonic development, the blastocyst implants into the uterine endometrium around day 6-7. Which cell layer of the blastocyst attaches to the endometrium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Inner cell mass (Embryoblast)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Trophoblast",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Zona pellucida",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Corona radiata",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The blastocyst consists of an outer epithelial layer called the trophoblast and an inner cell mass.\nStep 2: The trophoblast secretes proteolytic enzymes that invade and attach to the uterine endometrium, establishing implantation.\nStep 3: The inner cell mass develops into the embryo proper.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித கரு வளர்ச்சியில், பிளாஸ்டோசிஸ்ட் கருப்பை எண்டோமெட்ரியத்தில் பதியும் போது எந்த செல் அடுக்கு எண்டோமெட்ரியத்துடன் இணைகிறது?",
+        "optionTexts": [
+          "உள் செல் திரள்",
+          "ட்ரோபோபிளாஸ்ட் (Trophoblast)",
+          "ஜோனா பெலுசிடா",
+          "கொரோனா ரேடியேட்டா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which group of hormones is produced exclusively during pregnancy by the human placenta?",
+    "options": [
+      {
+        "label": "A",
+        "text": "hCG (Human Chorionic Gonadotropin), hPL (Human Placental Lactogen), and Relaxin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Estrogen and Progesterone only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "FSH and LH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxytocin and Vasopressin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Placenta acts as a temporary endocrine tissue.\nStep 2: It secretes hCG, hPL, estrogens, and progesterone.\nStep 3: hCG, hPL, and relaxin (produced by placenta and ovary) are synthesized exclusively during pregnancy.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கர்ப்ப காலத்தில் மட்டும் தாய்-சேய் இணைப்புத் திசுவினால் (பிளசன்டா) உற்பத்தி செய்யப்படும் ஹார்மோன்கள் எவை?",
+        "optionTexts": [
+          "hCG, hPL மற்றும் ரிலாக்சின்",
+          "ஈஸ்ட்ரோஜன் மற்றும் புரோஜெஸ்டிரோன் மட்டும்",
+          "FSH மற்றும் LH",
+          "ஆக்ஸிடாசின் மற்றும் வாசோபிரசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The yellow colostrum secreted by the mammary glands during the initial few days of lactation provides passive immunity to the newborn because it is exceptionally rich in which antibody?",
+    "options": [
+      {
+        "label": "A",
+        "text": "IgG",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "IgA",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "IgM",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "IgE",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Colostrum is the initial yellowish milk produced by mothers after parturition.\nStep 2: It is rich in secretory IgA (Immunoglobulin A) antibodies.\nStep 3: IgA protects the infant's gastrointestinal and respiratory tract, providing natural passive immunity.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குழந்தை பிறந்த முதல் சில நாட்களில் தாய்ப்பாலில் சுரக்கும் சீம்பாலில் (Colostrum) குழந்தைக்கு நோயெதிர்ப்பை வழங்க அதிகளவில் காணப்படும் ஆன்டிபாடி எது?",
+        "optionTexts": [
+          "IgG",
+          "IgA",
+          "IgM",
+          "IgE"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "'Saheli', a revolutionary non-steroidal oral contraceptive pill taken once a week with very few side effects, was developed in India by scientists at:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Central Drug Research Institute (CDRI), Lucknow",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Indian Council of Medical Research (ICMR), New Delhi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "National Institute of Immunology (NII), New Delhi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bhabha Atomic Research Centre (BARC), Mumbai",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 'Saheli' is an oral contraceptive containing centchroman (a selective estrogen receptor modulator).\nStep 2: It is non-steroidal and taken once a week.\nStep 3: It was developed by scientists at Central Drug Research Institute (CDRI) in Lucknow, India.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாரத்திற்கு ஒருமுறை உட்கொள்ளும் ஸ்டீராய்டு அல்லாத 'சஹேலி' (Saheli) கருத்தடை மாத்திரை இந்தியாவில் எந்த நிறுவனத்தால் உருவாக்கப்பட்டது?",
+        "optionTexts": [
+          "மத்திய மருந்து ஆராய்ச்சி நிறுவனம் (CDRI), லக்னோ",
+          "இந்திய மருத்துவ ஆராய்ச்சி கவுன்சில் (ICMR), புது தில்லி",
+          "தேசிய நோயெதிர்ப்பியல் நிறுவனம் (NII), புது தில்லி",
+          "பாபா அணு ஆராய்ச்சி மையம் (BARC), மும்பை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which hormone-releasing Intrauterine Devices (IUDs) make the uterus unsuitable for implantation and the cervix hostile to sperms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Progestasert and LNG-20",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lippes loop",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CuT and Cu7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Multiload 375",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: IUDs are classified into non-medicated (Lippes loop), copper-releasing (CuT, Cu7, Multiload 375), and hormone-releasing.\nStep 2: Hormone-releasing IUDs include Progestasert and LNG-20.\nStep 3: They release levonorgestrel/progesterone that thins the endometrium and thickens cervical mucus, preventing sperm entry and implantation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கருப்பையை கரு பதித்தலுக்கு தகுதியற்றதாகவும், கருப்பை வாயை விந்தணுக்களுக்கு எதிரானதாகவும் மாற்றும் ஹார்மோன் வெளியிடும் IUD க்கள் யாவை?",
+        "optionTexts": [
+          "புரோஜெஸ்டாசெர்ட் மற்றும் LNG-20",
+          "லிப்பஸ் லூப்",
+          "CuT மற்றும் Cu7",
+          "மல்டிலோட் 375"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Assisted Reproductive Technology (ART), the procedure in which a zygote or early embryo up to 8 blastomeres is transferred directly into the fallopian tube is termed:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Intra-Uterine Transfer (IUT)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zygote Intra-Fallopian Transfer (ZIFT)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Gamete Intra-Fallopian Transfer (GIFT)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Intra-Cytoplasmic Sperm Injection (ICSI)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In IVF (Test Tube Baby program), fertilization occurs in vitro.\nStep 2: The zygote or early embryo with up to 8 blastomeres is transferred into the fallopian tube (ZIFT - Zygote Intra Fallopian Transfer).\nStep 3: Embryos with more than 8 blastomeres are transferred directly into the uterus (IUT - Intra Uterine Transfer).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உதவி பெறும் இனப்பெருக்கத் தொழில்நுட்பத்தில் (ART), 8 பிளாஸ்டோமியர்கள் வரையிலான கருவை நேரடியாக பெலோப்பியன் குழாயினுள் செலுத்தும் முறை எது?",
+        "optionTexts": [
+          "IUT (கருப்பையினுள் செலுத்துதல்)",
+          "ZIFT (சைகோட் பெலோப்பியன் குழாய் இடமாற்றம்)",
+          "GIFT (கேமீட் பெலோப்பியன் குழாய் இடமாற்றம்)",
+          "ICSI"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which surgical sterilization procedure involves making a small incision in the scrotum to cut and tie a small portion of both vasa deferentia?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tubectomy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Vasectomy",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Castration",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Orchidectomy",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Surgical methods of contraception block gamete transport.\nStep 2: In males, vasectomy involves removing or tying off a small part of the vas deferens through an incision in the scrotum.\nStep 3: Spermatogenesis continues, but sperm cannot enter the semen.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆண்களில் விந்து நாளத்தின் ஒரு பகுதியை வெட்டி முடிச்சிடும் நிரந்தர கருத்தடை அறுவை சிகிச்சை முறை எது?",
+        "optionTexts": [
+          "டியூபெக்டமி",
+          "வாசெக்டமி (Vasectomy)",
+          "விந்தக நீக்கம்",
+          "ஆர்க்கிடெக்டமி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which accessory genital gland in human males secretes an alkaline, mucus-rich fluid that lubricates the penis prior to copulation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seminal vesicles",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Prostate gland",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bulbourethral (Cowper's) glands",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bartholin's glands",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Male accessory sex glands include paired seminal vesicles, a single prostate gland, and paired bulbourethral glands.\nStep 2: Bulbourethral (Cowper's) glands secrete mucus that helps in lubrication of the penis during intercourse.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆண் இனப்பெருக்க மண்டலத்தில் உடலுறவுக்கு முன் உயவுப் பொருளாகச் செயல்படும் கார திரவத்தைச் சுரக்கும் துணைச் சுரப்பி எது?",
+        "optionTexts": [
+          "விந்துப் பை",
+          "புரோஸ்டேட் சுரப்பி",
+          "பல்போயுரித்ரல் (கௌப்பர்) சுரப்பிகள் (Bulbourethral glands)",
+          "பார்த்தோலின் சுரப்பிகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which sexually transmitted infection (STI) is incurable even when detected early?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gonorrhea",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Syphilis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Genital Herpes (along with HIV infection and Hepatitis-B)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Chlamydiasis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Most bacterial STIs (Gonorrhea, Syphilis, Chlamydia) are completely curable with antibiotics if detected early.\nStep 2: Viral infections such as Genital herpes, Hepatitis-B, and HIV infection are non-curable.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரம்ப நிலையிலேயே கண்டறிந்தாலும் முழுமையாகக் குணப்படுத்த முடியாத பால்வினைத் தொற்று (STI) எது?",
+        "optionTexts": [
+          "கொனோரியா",
+          "சிபிலிஸ்",
+          "பிறப்புறுப்பு ஹெர்பஸ் (Genital Herpes)",
+          "கிளாமிடியாசிஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Lactational amenorrhea functions as a natural contraceptive method for up to 6 months post-delivery because intense suckling by the infant:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stimulates high prolactin secretion, which suppresses GnRH and gonadotropins (LH/FSH), preventing ovulation",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Directly destroys primary ovarian follicles",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Induces premature sloughing of the uterine endometrium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Increases phagocytosis of sperms in the vagina",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During intense lactation, high prolactin levels inhibit hypothalamic pulsatile secretion of GnRH.\nStep 2: Decreased GnRH lowers LH and FSH secretion from the anterior pituitary, halting follicular development and ovulation.\nStep 3: This natural contraception (lactational amenorrhea) is effective for up to six months after parturition.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலூட்டும் கால மாதவிடாயின்மை (Lactational amenorrhea) இயற்கை கருத்தடை முறையாகச் செயல்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அதிக புரோலாக்டின் சுரப்பு GnRH மற்றும் பிட்யூட்டரி ஹார்மோன்களை (LH/FSH) ஒடுக்கி அண்ட விடுபடுதலைத் தடுப்பது",
+          "அண்ட பாலிக்கிள்களை நேரடியாக அழிப்பது",
+          "கருப்பை எண்டோமெட்ரியத்தை உடனடியாக வெளியேற்றுவது",
+          "யோனியில் விந்து விழுங்குதலை அதிகரிப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Assisted Reproductive Technology (ART), when a single spermatozoon is directly microinjected into the cytoplasm of an ovum in the laboratory, the technique is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "GIFT (Gamete Intra-Fallopian Transfer)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ICSI (Intra-Cytoplasmic Sperm Injection)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "IUI (Intra-Uterine Insemination)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "ZIFT (Zygote Intra-Fallopian Transfer)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Intra-Cytoplasmic Sperm Injection (ICSI) is a specialized in vitro fertilization technique.\nStep 2: A single healthy sperm is microinjected directly into the cytoplasm of an egg in the laboratory.\nStep 3: It is especially used when male sperm count is extremely low (oligospermia) or motility is severely defective (asthenospermia).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆய்வகத்தில் ஒரு விந்து செல்லை நேரடியாக அண்ட செல்லின் சைட்டோபிளாசத்தினுள் செலுத்தும் முறை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "GIFT",
+          "ICSI (சைட்டோபிளாசத்தினுள் விந்து செலுத்துதல்)",
+          "IUI",
+          "ZIFT"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Medical Termination of Pregnancy (MTP) Act was legalized by the Government of India with strict conditions to prevent misuse in the year:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1951",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1971",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1981",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1991",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Induced abortion or Medical Termination of Pregnancy (MTP) was legalized in India in 1971.\nStep 2: Strict guidelines were enacted to prevent female foeticide and ensure maternal health.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இந்திய அரசால் மருத்துவ ரீதியான கருக்கலைப்பு சட்டம் (MTP சட்டம்) எந்த ஆண்டு சட்டப்பூர்வமாக்கப்பட்டது?",
+        "optionTexts": [
+          "1951",
+          "1971",
+          "1981",
+          "1991"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which non-cellular glycoprotein layer directly surrounds the mammalian secondary oocyte and must be penetrated by the sperm during fertilization?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Corona radiata",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zona pellucida",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Theca interna",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Membrana granulosa",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The secondary oocyte is enveloped by a primary non-cellular glycoprotein coat called the zona pellucida.\nStep 2: Sperm binding to ZP3 receptors on the zona pellucida triggers the acrosome reaction, allowing the sperm to penetrate through.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலூட்டிகளின் இரண்டாம் நிலை அண்ட செல்லைச் சூழ்ந்துள்ள செல் அல்லாத கிளைக்கோபுரத அடுக்கு எது?",
+        "optionTexts": [
+          "கொரோனா ரேடியேட்டா",
+          "ஜோனா பெலுசிடா (Zona pellucida)",
+          "தீகா இன்டர்னா",
+          "கிரானுலோசா சவ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The physiological maturation and preparation process that mammalian spermatozoa undergo inside the female reproductive tract before gaining the capacity to fertilize an egg is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spermiation",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Spermiogenesis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Capacitation",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Insemination",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sperm in the ejaculate cannot immediately fertilize an egg.\nStep 2: Inside the female reproductive tract, secretions remove inhibitory glycoprotein coats and cholesterol from the sperm membrane (Capacitation, ~5-6 hours).\nStep 3: This increases sperm membrane fluidity and motility for acrosome reaction.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெண் இனப்பெருக்கப் பாதையினுள் விந்து செல்கள் கருவுறும் திறனைப் பெறுவதற்காக அடையும் உடலியல் மாற்றம் எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "விந்து வெளியேறுதல் (Spermiation)",
+          "ஸ்பெர்மியோஜெனிசிஸ்",
+          "திறனேற்றம் (Capacitation)",
+          "விந்து உட்புகுத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which hormone tested in urine samples serves as the basis for modern home pregnancy test kits?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Human Chorionic Gonadotropin (hCG)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Human Placental Lactogen (hPL)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Progesterone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Estrogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: After blastocyst implantation, syncytiotrophoblast cells of the developing placenta secrete hCG.\nStep 2: hCG appears in maternal blood and is excreted in urine.\nStep 3: Pregnancy test kits use monoclonal anti-hCG antibodies to detect hCG in urine.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிறுநீர் பரிசோதனை மூலம் கர்ப்பத்தை உறுதிசெய்யும் சோதனைக் கருவிகளில் கண்டறியப்படும் ஹார்மோன் எது?",
+        "optionTexts": [
+          "மனித கோரியானிக் கொனடோட்ரோபின் (hCG)",
+          "hPL",
+          "புரோஜெஸ்டிரோன்",
+          "ஈஸ்ட்ரோஜன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The fetal ejection reflex during human parturition is initiated by signals originating from:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maternal pituitary oxytocin release",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fully developed fetus and the placenta",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ovarian relaxin secretion",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mammary gland prolactin surge",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Parturition is induced by a complex neuroendocrine mechanism.\nStep 2: Signals for parturition originate from the fully developed fetus and placenta, which induce mild uterine contractions (fetal ejection reflex).\nStep 3: This reflex triggers release of maternal oxytocin from the posterior pituitary, leading to stronger contractions.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித பிரசவத்தின் போது கரு வெளியேற்றும் அனிச்சை சமிக்ஞைகள் (Fetal ejection reflex) எங்கிருந்து உருவாகின்றன?",
+        "optionTexts": [
+          "தாயின் பிட்யூட்டரி ஆக்ஸிடாசின் சுரப்பிலிருந்து",
+          "முழுமையாக வளர்ந்த கரு மற்றும் தாய்-சேய் இணைப்புத் திசுவிலிருந்து (Placenta)",
+          "அண்டக ரிலாக்சின் சுரப்பிலிருந்து",
+          "புரோலாக்டின் எழுச்சியிலிருந்து"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which structure connects the developing mammalian fetus directly to the placenta for nutrient transport and metabolic waste removal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Umbilical cord",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yolk sac",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Amniotic cavity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chorionic villi",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The placenta is connected to the embryo through an umbilical cord.\nStep 2: The umbilical cord contains umbilical arteries and vein that transport oxygen, nutrients, and waste substances between fetus and placenta.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளரும் கருவை தாய்-சேய் இணைப்புத் திசுவுடன் இணைத்து ஊட்டச்சத்து மற்றும் கழிவுப் பொருட்கள் பரிமாற்றத்திற்கு உதவும் அமைப்பு எது?",
+        "optionTexts": [
+          "தொப்புள் கொடி (Umbilical cord)",
+          "கருவுணவுப் பை",
+          "பனிக்குடக் குழி",
+          "கோரியானிக் வில்லைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During the human menstrual cycle, the secretory phase of the endometrium is maintained by high circulating levels of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Progesterone",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "FSH",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Prolactin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxytocin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The secretory (luteal) phase corresponds to days 15-28 of the menstrual cycle.\nStep 2: The corpus luteum secretes large amounts of progesterone.\nStep 3: Progesterone causes the endometrial glands to become tortuous and secretory, preparing for blastocyst implantation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாதவிடாய் சுழற்சியில் எண்டோமெட்ரியத்தின் சுரப்பு நிலை (Secretory phase) எந்த ஹார்மோனின் அதிகபட்ச அளவால் பராமரிக்கப்படுகிறது?",
+        "optionTexts": [
+          "புரோஜெஸ்டிரோன் (Progesterone)",
+          "FSH",
+          "புரோலாக்டின்",
+          "ஆக்ஸிடாசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a female with blocked fallopian tubes who can produce healthy ova, which Assisted Reproductive Technology is most suitable using her own husband's sperm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GIFT (Gamete Intra-Fallopian Transfer)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "In Vitro Fertilization and Embryo Transfer (IVF-ET / Test Tube Baby)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Artificial Insemination (IUI)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lactational amenorrhea",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In cases of bilateral fallopian tube blockage, fertilization cannot take place inside the oviduct.\nStep 2: Ova are retrieved from the ovary and fertilized in vitro with husband's sperm (IVF).\nStep 3: The resulting embryo is transferred into the uterus (IUT) for successful pregnancy.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெலோப்பியன் குழாய்களில் அடைப்பு உள்ள ஆனால் ஆரோக்கியமான அண்ட செல்களை உருவாக்கும் ஒரு பெண்ணிற்கு ஏற்ற உதவி பெறும் இனப்பெருக்க முறை எது?",
+        "optionTexts": [
+          "GIFT",
+          "உடல் வெளி கருவுறுதல் மற்றும் கரு இடமாற்றம் (IVF-ET)",
+          "செயற்கை விந்து உட்புகுத்தல் (IUI)",
+          "இயற்கை முறை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO02-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Amniocentesis is a medical prenatal diagnostic procedure. For which purpose is its statutory ban enforced in India under the PC-PNDT Act?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To prevent sex determination leading to female foeticide",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "To prevent detection of Down's syndrome",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "To prevent detection of Klinefelter's syndrome",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "To stop diagnosis of inborn metabolic disorders",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Amniocentesis is a procedure used to analyze fetal cells in amniotic fluid for chromosomal abnormalities (e.g., Down syndrome, hemophilia).\nStep 2: However, it was widely misused for prenatal sex determination leading to female foeticide.\nStep 3: Hence, statutory bans legally prohibit fetal sex determination using amniocentesis.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பனிக்குடத் துளைப்பு (Amniocentesis) முறை இந்தியாவில் சட்டப்பூர்வமாகத் தடை செய்யப்பட்டுள்ளதன் முக்கிய நோக்கம் என்ன?",
+        "optionTexts": [
+          "பாலின நிர்ணயம் செய்யப்பட்டு பெண் சிசுக்கொலை செய்யப்படுவதைத் தடுக்க",
+          "டவுன் சின்ட்ரோம் கண்டறிவதைத் தடுக்க",
+          "கிளைன்பெல்டர் நோயைக் கண்டறிவதைத் தடுக்க",
+          "வளர்சிதை மாற்றக் கோளாறுகளைக் கண்டறிவதைத் தடுக்க"
+        ]
+      }
+    ]
+  }
+]

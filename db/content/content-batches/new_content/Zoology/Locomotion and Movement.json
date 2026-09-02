@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the Sliding Filament Theory of skeletal muscle contraction, what occurs at the molecular level when calcium ions (Ca2+) are released from the sarcoplasmic reticulum into the sarcoplasm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ca2+ binds to myosin light chains to permanently inactivate the ATPase enzyme",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ca2+ prevents ATP binding to the myosin cross-bridge",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ca2+ binds to Troponin-C, inducing a conformational change that moves tropomyosin away to unmask the active myosin-binding sites on actin filaments",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ca2+ hydrolyzes the Z-line proteins, causing sarcomere elongation",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In resting muscle, the fibrous protein tropomyosin blocks the active binding sites for myosin on the actin filament.\nStep 2: Action potential triggers Ca2+ efflux from the sarcoplasmic reticulum into the sarcoplasm.\nStep 3: Ca2+ binds to the subunit Troponin-C, causing a structural shift in the troponin-tropomyosin complex.\nStep 4: This conformational change unmasks the myosin-binding sites on actin, allowing cross-bridge formation and power stroke contraction.\nStep 5: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எலும்புத் தசை சுருங்குதலின் நெகிழ்வு இழை கொள்கைப்படி, சார்கோபிளாச வலைப்பின்னலிலிருந்து கால்சியம் அயனிகள் (Ca2+) வெளிப்படும் போது மூலக்கூறு மட்டத்தில் என்ன நிகழ்கிறது?",
+        "optionTexts": [
+          "Ca2+ மயோசினுடன் இணைந்து ATPase என்சைமை முற்றிலும் செயலிழக்கச் செய்கிறது",
+          "Ca2+ மயோசின் தலையில் ATP இணைவதைத் தடுக்கிறது",
+          "Ca2+ அயனிகள் ட்ரோபோனின்-C உடன் இணைந்து, ஆக்டின் இழைகளில் மயோசின் இணையும் செயல் தளங்களை மூடியுள்ள ட்ரோபோமயோசினை விலக்கி செயல் தளங்களை வெளிப்படுத்துகின்றன",
+          "Ca2+ Z-கோடு புரதங்களை அழித்து சார்கோமியரை நீளமாக்குகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The functional anatomical unit of contraction in a skeletal muscle myofibril, located between two successive Z-lines, is called the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sarcomere",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sarcolemma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sarcoplasmic reticulum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fascicle",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A myofibril has alternate dark (A-band) and light (I-band) striations.\nStep 2: The portion of the myofibril between two successive Z-lines is considered as the functional unit of contraction and is called a Sarcomere.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எலும்புத் தசை நுண் இழையில் அடுத்தடுத்த இரண்டு Z-கோடுகளுக்கு இடைப்பட்ட தசை சுருக்கத்தின் செயல்பாட்டு அலகு எது?",
+        "optionTexts": [
+          "சார்கோமியர் (Sarcomere)",
+          "சார்கோலெம்மா",
+          "சார்கோபிளாச வலைப்பின்னல்",
+          "பேசிக்கிள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During skeletal muscle contraction, which of the following bands/zones shortens and eventually disappears while the A-band retains its original length?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I-band shortens and H-zone disappears",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A-band shortens and I-band remains unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H-zone widens and Z-lines move apart",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both A-band and M-line disappear",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the sliding filament mechanism, thin actin filaments slide past thick myosin filaments toward the M-line.\nStep 2: The length of the A-band (myosin length) remains constant.\nStep 3: The I-band (actin-only region) shortens, and the central H-zone (un-overlapped myosin) progressively narrows and disappears during maximal contraction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எலும்புத் தசை சுருங்குதலின் போது, A-பட்டை மாறாமல் இருக்கும் போது குறுகி மறையும் பகுதிகள் யாவை?",
+        "optionTexts": [
+          "I-பட்டை குறுகுகிறது மற்றும் H-மண்டலம் மறைகிறது",
+          "A-பட்டை குறுகுகிறது மற்றும் I-பட்டை மாறாமல் உள்ளது",
+          "H-மண்டலம் விரிவடைகிறது மற்றும் Z-கோடுகள் விலகுகின்றன",
+          "A-பட்டை மற்றும் M-கோடு இரண்டும் மறைகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The globular head of a myosin monomer (Heavy Meromyosin / HMM) possesses active binding sites for which two essential molecules?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Actin-binding site and an active ATPase enzyme site for ATP binding",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Troponin-C site and Calcium site",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tropomyosin site and Glucose site",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Z-line binding site and myoglobin site",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Each thick filament is a polymer of meromyosin molecules.\nStep 2: The globular head of Heavy Meromyosin (HMM) acts as an active ATPase enzyme.\nStep 3: It has specific binding sites for ATP and active sites for binding with Actin to form cross-bridges.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மயோசின் மூலக்கூறின் உருண்டை வடிவத் தலைப் பகுதி (HMM) எந்த இரண்டு மூலக்கூறுகளுக்கான பிணைப்புத் தளங்களைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "ஆக்டின் பிணைப்புத் தளம் மற்றும் ATP க்கான செயல்படு ATPase நொதித் தளம்",
+          "ட்ரோபோனின்-C தளம் மற்றும் கால்சியம் தளம்",
+          "ட்ரோபோமயோசின் தளம் மற்றும் குளுக்கோஸ் தளம்",
+          "Z-கோடு தளம் மற்றும் மயோகுளோபின் தளம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Red muscle fibers differ functionally from White muscle fibers because Red fibers possess:",
+    "options": [
+      {
+        "label": "A",
+        "text": "High myoglobin content, abundant mitochondria, rich blood capillaries, and perform sustained aerobic work without rapid fatigue",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Low myoglobin content and rely exclusively on fast anaerobic lactic fermentation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Abundant sarcoplasmic reticulum with very few mitochondria",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fast-twitch fibers that fatigue in seconds",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Red muscle fibers contain high concentrations of the oxygen-storing pigment myoglobin, giving them a red appearance.\nStep 2: They contain large numbers of mitochondria that utilize O2 for aerobic ATP production.\nStep 3: They can contract for prolonged periods without fatigue (slow twitch fibers).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிவப்புத் தசை இழைகள் வெள்ளைத் தசை இழைகளிலிருந்து எவ்வாறு வேறுபடுகின்றன?",
+        "optionTexts": [
+          "அதிக மயோகுளோபின், அதிக மைட்டோகாண்ட்ரியாக்களைக் கொண்டு காற்றில்லா சோர்வின்றி நீண்ட நேரம் செயல்படுதல்",
+          "குறைந்த மயோகுளோபின் கொண்டு காற்றில்லா சுவாசத்தை மட்டுமே நம்பியிருத்தல்",
+          "அதிக சார்கோபிளாச வலைப்பின்னல் மற்றும் குறைந்த மைட்டோகாண்ட்ரியாக்கள் கொண்டிருத்தல்",
+          "விரைவில் சோர்வடையும் வேகத் துடிப்பு இழைகளாக இருத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many total bones constitute the human axial skeleton and appendicular skeleton respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Axial = 80 bones and Appendicular = 126 bones (Total = 206 bones)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Axial = 126 bones and Appendicular = 80 bones",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Axial = 100 bones and Appendicular = 106 bones",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Axial = 60 bones and Appendicular = 146 bones",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The human skeleton has 206 bones.\nStep 2: The axial skeleton comprises 80 bones distributed along the main longitudinal axis of the body (skull, vertebral column, sternum, and ribs).\nStep 3: The appendicular skeleton comprises 126 bones (limbs and girdles).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித உடலின் அச்சுச் சட்டகம் (Axial skeleton) மற்றும் இணைப்புச் சட்டகத்தில் (Appendicular skeleton) உள்ள மொத்த எலும்புகளின் எண்ணிக்கை முறையே யாவை?",
+        "optionTexts": [
+          "அச்சுச் சட்டகம் = 80 எலும்புகள் மற்றும் இணைப்புச் சட்டகம் = 126 எலும்புகள் (மொத்தம் = 206)",
+          "அச்சுச் சட்டகம் = 126 மற்றும் இணைப்புச் சட்டகம் = 80",
+          "அச்சுச் சட்டகம் = 100 மற்றும் இணைப்புச் சட்டகம் = 106",
+          "அச்சுச் சட்டகம் = 60 மற்றும் இணைப்புச் சட்டகம் = 146"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which is the smallest bone in the human body, located within the middle ear cavity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Malleus",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Incus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Stapes (Stirrup)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Patella",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Each middle ear contains three tiny bones called ear ossicles: Malleus (hammer), Incus (anvil), and Stapes (stirrup).\nStep 2: The stapes is attached to the oval window (fenestra ovalis) of the cochlea and is the smallest bone in the human body.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித உடலின் மிகச்சிறிய எலும்பான நடுச்செவி எலும்பு எது?",
+        "optionTexts": [
+          "சுத்தி எலும்பு (Malleus)",
+          "பட்டடை எலும்பு (Incus)",
+          "அங்குச எலும்பு / ஸ்டேபிஸ் (Stapes)",
+          "பட்டெல்லா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The first cervical vertebra (C1) which articulates directly with the two occipital condyles of the human skull to form the atlanto-occipital joint is the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Axis",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Atlas",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Vertebra prominens",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Coccyx",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The human skull is dicondylic (articulates with two occipital condyles).\nStep 2: The first cervical vertebra is the Atlas (C1).\nStep 3: Atlas articulates with the occipital condyles, allowing 'nodding' (yes) movements of the head.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மண்டையோட்டின் இரண்டு ஆக்சிபிடல் மூட்டுக் குமிழ்களுடன் இணையும் முதல் கழுத்து முள்ளெலும்பு (C1) எது?",
+        "optionTexts": [
+          "அச்சு முள்ளெலும்பு (Axis)",
+          "அட்லஸ் முள்ளெலும்பு (Atlas)",
+          "ஏழாவது கழுத்து முள்ளெலும்பு",
+          "வால் எலும்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the human thoracic rib cage, which pairs of ribs are known as 'True Ribs' (Vertebrosternal ribs) because they attach dorsally to thoracic vertebrae and ventrally to the sternum via hyaline costal cartilage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1st to 7th pairs",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "8th, 9th, and 10th pairs (Vertebrochondral / False ribs)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "11th and 12th pairs (Floating ribs)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1st to 10th pairs",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Humans have 12 pairs of ribs.\nStep 2: 1st to 7th pairs are True Ribs (vertebrosternal ribs) because dorsally they attach to thoracic vertebrae and ventrally directly to the sternum with hyaline cartilage.\nStep 3: 8th, 9th, and 10th pairs are false ribs (vertebrochondral ribs) that join the 7th rib.\nStep 4: 11th and 12th pairs are floating ribs.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மார்புக் கூட்டில் மார்பெலும்புடன் (Sternum) நேரடியாக ஹைலின் குருத்தெலும்பு மூலம் இணையும் 'உண்மையான விலா எலும்புகள்' (True ribs) எவை?",
+        "optionTexts": [
+          "1 முதல் 7 வது இணை விலா எலும்புகள்",
+          "8, 9 மற்றும் 10 வது இணை விலா எலும்புகள் (பொய் விலா எலும்புகள்)",
+          "11 மற்றும் 12 வது இணை விலா எலும்புகள் (மிதக்கும் விலா எலும்புகள்)",
+          "1 முதல் 10 வது இணை விலா எலும்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The head of the humerus articulates with which shallow depression on the pectoral girdle scapula to form the shoulder ball-and-socket joint?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetabulum",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Glenoid cavity",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Obturator foramen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Olecranon fossa",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Below the acromion process of the scapula is a depression called the Glenoid Cavity.\nStep 2: The rounded head of the humerus articulates with the glenoid cavity to form the shoulder (ball and socket) joint.\nStep 3: (Acetabulum is in the pelvic girdle for the femur).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தோள்பட்டை பந்து கிண்ண மூட்டை உருவாக்க மேற்கை எலும்பின் (Humerus) தலைப் பகுதி ஸ்கேபுலாவின் எந்தக் குழியுடன் இணைகிறது?",
+        "optionTexts": [
+          "அசிடாபுலம் குழி",
+          "கிளினாய்டு குழி (Glenoid cavity)",
+          "ஆப்டுரேட்டர் துளை",
+          "ஒலிக்ரானன் குழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Each coxal bone of the pelvic girdle is formed by the fusion of which three bones?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ilium, Ischium, and Pubis",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Scapula, Clavicle, and Coracoid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Femur, Patella, and Tibia",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Malleus, Incus, and Stapes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The pelvic girdle consists of two coxal (hip) bones.\nStep 2: Each coxal bone is formed by the fusion of three bones: Ilium, Ischium, and Pubis.\nStep 3: At the point of fusion of these three bones is a deep socket called the Acetabulum.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடுப்பு வளையத்தின் இடுப்பு எலும்பு (Coxal bone) எந்த மூன்று எலும்புகளின் இணைப்பால் உருவாகிறது?",
+        "optionTexts": [
+          "இலியம், இஸ்சியம் மற்றும் பியூபிஸ் (Ilium, Ischium, and Pubis)",
+          "ஸ்கேபுலா, கிளாவிக்கிள் மற்றும் கோரக்காய்டு",
+          "பீமர், பட்டெல்லா மற்றும் டிபியா",
+          "சுத்தி, பட்டடை மற்றும் அங்குச எலும்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The joint between the carpal and metacarpal of the human thumb that allows extensive multidirectional opposable movement is a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hinge joint",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pivot joint",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Saddle joint",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Fibrous joint",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Synovial joints are classified into several types based on structural movement.\nStep 2: Saddle joint is a specialized synovial joint where one bone fits into the concave surface of another like a rider in a saddle.\nStep 3: The classic example is the joint between the trapezium carpal and 1st metacarpal of the thumb.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித கட்டைவிரலின் கார்பல் மற்றும் மெட்டாகார்பல் எலும்புகளுக்கு இடையே காணப்படும் அசையும் மூட்டு எது?",
+        "optionTexts": [
+          "கீல் மூட்டு",
+          "முளை அச்சு மூட்டு",
+          "சேண மூட்டு / சேடில் மூட்டு (Saddle joint)",
+          "நார் மூட்டு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Gout is a painful clinical inflammatory condition of joints caused by the accumulation and deposition of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uric acid crystals",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Calcium phosphate crystals",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lactic acid deposits",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Excess synovial fluid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gout is a form of arthritis.\nStep 2: It is caused by hyperuricemia leading to the crystallization and deposition of monosodium urate (uric acid crystals) in joint synovial spaces, causing acute pain and inflammation.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூட்டுகளில் தீவிர வலியை ஏற்படுத்தும் கவுட் (Gout) என்ற வாத நோய் எதன் படிவுகளால் உண்டாகிறது?",
+        "optionTexts": [
+          "யூரிக் அமிலப் படிகங்கள் (Uric acid crystals)",
+          "கால்சியம் பாஸ்பேட் படிகங்கள்",
+          "லாக்டிக் அமிலப் படிவுகள்",
+          "அதிகப்படியான சினோவியல் திரவம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Osteoporosis, an age-related musculoskeletal disorder characterized by decreased bone mass and increased fragility fractures, is commonly associated with a deficiency of which hormone in postmenopausal females?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Estrogen",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Progesterone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Prolactin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aldosterone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Osteoporosis is an age-related systemic bone disease.\nStep 2: Decreased bone mass density increases the risk of fractures.\nStep 3: Decreased levels of Estrogen in postmenopausal women is a major causative factor for osteoporosis.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாதவிடாய் நின்ற பெண்களில் எலும்பு அடர்த்தி குறைந்து எளிதில் முறியும் ஆஸ்டியோபோரோசிஸ் (Osteoporosis) நோய் எந்த ஹார்மோன் குறைபாட்டினால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "ஈஸ்ட்ரோஜன் (Estrogen)",
+          "புரோஜெஸ்டிரோன்",
+          "புரோலாக்டின்",
+          "ஆல்டோஸ்டீரோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Tetany, manifested as sustained painful involuntary muscle spasms and twitches, is caused by which electrolyte disturbance in body fluids?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hypocalcemia (Low Ca2+ concentration in extracellular body fluids)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hypercalcemia (Excess Ca2+ in blood)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hyperkalemia (Excess K+ in blood)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hyponatremia (Low Na+ in blood)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Tetany is characterized by wild spasms (rapid contractions) in skeletal muscles.\nStep 2: It is caused by low calcium (hypocalcemia) in body fluids (often due to hypoparathyroidism), which increases neuronal excitability.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தசைகளில் கடுமையான தன்னிச்சையற்ற சுளுக்கு மற்றும் இழுப்பு நோயான டெட்டனி (Tetany) உடல் திரவங்களில் எதன் குறைபாட்டால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "ஹைப்போகால்சீமியா / குறைந்த Ca2+ அளவு (Hypocalcemia)",
+          "அதிக Ca2+ அளவு",
+          "அதிக K+ அளவு",
+          "குறைந்த Na+ அளவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of joint connects adjacent flat cranial bones of the human skull, showing no movement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fibrous joint (Sutures of dense collagenous tissue)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Synovial joint",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cartilaginous joint",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Saddle joint",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fibrous joints do not allow any movement.\nStep 2: Flat skull bones fuse end-to-end with dense fibrous connective tissues in the form of sutures to form the cranium.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மண்டையோட்டு எலும்புகளை இணைக்கும் எந்த ஒரு இயக்கமும் அனுமதிக்காத அசையா மூட்டு வகை எது?",
+        "optionTexts": [
+          "நார் மூட்டுகள் / தையல் மூட்டுகள் (Fibrous joints / Sutures)",
+          "சினோவியல் மூட்டுகள்",
+          "குருத்தெலும்பு மூட்டுகள்",
+          "சேடில் மூட்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The pivot joint that allows rotational 'No' movement of the human head is located between which two vertebrae?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Atlas (C1) and Axis (C2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C7 and T1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Between any two adjacent lumbar vertebrae",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sacrum and Coccyx",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A pivot joint allows uniaxial rotation.\nStep 2: The joint between the first cervical vertebra (Atlas) and the second cervical vertebra (Axis) with its odontoid process is a pivot joint.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலையின் பக்கவாட்டு சுழற்சி இயக்கத்தை அனுமதிக்கும் முளை அச்சு மூட்டு (Pivot joint) எந்த இரு முள்ளெலும்புகளுக்கு இடையே அமைந்துள்ளது?",
+        "optionTexts": [
+          "அட்லஸ் (C1) மற்றும் ஆக்சிஸ் (C2)",
+          "C7 மற்றும் T1",
+          "இடுப்பு முள்ளெலும்புகளுக்கு இடையே",
+          "திருவெலும்பு மற்றும் வால் எலும்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cup-shaped sesamoid bone that covers and protects the human knee joint anteriorly is the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Patella (Kneecap)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Scapula",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Clavicle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fibula",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The patella is a cup-shaped bone that covers the knee ventrally (knee cap).\nStep 2: It is a sesamoid bone formed by ossification within the quadriceps tendon.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித முழங்கால் மூட்டை முன்புறமாகப் பாதுகாக்கும் கிண்ண வடிவ எலும்பு எது?",
+        "optionTexts": [
+          "பட்டெல்லா / முழங்கால் சில்லு (Patella)",
+          "ஸ்கேபுலா",
+          "கிளாவிக்கிள்",
+          "ஃபிபுலா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "During vigorous strenuous physical exercise, skeletal muscles produce energy via anaerobic glycolysis, causing the accumulation of which chemical compound that leads to muscle fatigue?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lactic acid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pyruvic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetoacetic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Uric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During repeated strenuous muscle activation, oxygen delivery becomes insufficient.\nStep 2: Glycogen is broken down anaerobically to lactic acid.\nStep 3: Accumulation of lactic acid lowers intracellular pH, impairing enzyme function and leading to muscle fatigue.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கடுமையான உடற்பயிற்சியின் போது காற்றில்லா சுவாசத்தினால் தசைகளில் சேர்ந்து தசை சோர்வை (Muscle fatigue) உண்டாக்கும் வேதிப்பொருள் எது?",
+        "optionTexts": [
+          "லாக்டிக் அமிலம் (Lactic acid)",
+          "பைருவிக் அமிலம்",
+          "அசிட்டோஅசிட்டிக் அமிலம்",
+          "யூரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of human bone is classified as a flat bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sternum and Cranial bones",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Femur and Humerus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Carpals and Tarsals",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vertebrae",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Bones are classified anatomically into long bones (femur, humerus), short bones (carpals, tarsals), flat bones (sternum, ribs, cranial bones, scapula), and irregular bones (vertebrae).\nStep 2: Sternum and cranial vault bones are flat bones.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித உடலில் தட்டையான எலும்புகளுக்கு (Flat bones) சரியான உதாரணம் எது?",
+        "optionTexts": [
+          "மார்பெலும்பு (Sternum) மற்றும் மண்டையோட்டு எலும்புகள்",
+          "பீமர் மற்றும் ஹியூமரஸ்",
+          "கார்பல் மற்றும் டார்சல் எலும்புகள்",
+          "முள்ளெலும்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many total phalanges are present in one complete human hand (fingers + thumb)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14 phalanges (formula: 2, 3, 3, 3, 3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 phalanges",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 phalanges",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12 phalanges",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the human hand, the thumb has 2 phalanges (proximal and distal).\nStep 2: The remaining four digits have 3 phalanges each (proximal, middle, and distal).\nStep 3: Total phalanges = 2 + 3 + 3 + 3 + 3 = 14.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மனித கையில் உள்ள மொத்த விரலெலும்புகளின் (Phalanges) எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "14 விரலெலும்புகள் (விகிதம்: 2, 3, 3, 3, 3)",
+          "15 விரலெலும்புகள்",
+          "10 விரலெலும்புகள்",
+          "12 விரலெலும்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the sliding filament mechanism of muscle contraction, what causes the detachment of the myosin head from the actin filament?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Binding of a fresh molecule of ATP to the myosin head",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Release of ADP and inorganic phosphate (Pi)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Binding of Calcium to myosin light chains",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hydrolysis of acetylcholine by acetylcholinesterase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During cross-bridge cycling, the power stroke occurs when ADP and Pi are released from the myosin head.\nStep 2: To break the cross-bridge and detach the myosin head from actin, a new ATP molecule must bind to the nucleotide-binding pocket of myosin.\nStep 3: (If ATP is depleted post-mortem, myosin remains locked to actin, causing Rigor Mortis).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தசை சுருக்க சுழற்சியில் ஆக்டின் இழையிலிருந்து மயோசின் தலை விடுபடுவதற்கு (Detachment) எது காரணமாகிறது?",
+        "optionTexts": [
+          "புதிய ATP மூலக்கூறு மயோசின் தலையுடன் இணைவது",
+          "ADP மற்றும் பாஸ்பேட் வெளியேறுவது",
+          "கால்சியம் மயோசினுடன் இணைவது",
+          "அசிட்டைல்கோலின் சிதைவடைவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Muscular dystrophy, a progressive genetic disease characterized by the degeneration of skeletal muscle fibers, is primarily caused by a mutation in the gene encoding which structural cytoskeletal protein?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dystrophin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Actin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Myosin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tropomyosin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Progressive degeneration of skeletal muscle mostly due to genetic disorder is Muscular Dystrophy (e.g., Duchenne muscular dystrophy).\nStep 2: It is caused by mutations in the DMD gene on the X chromosome encoding the protein Dystrophin, which anchors the sarcomere to the sarcolemma.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எலும்புத் தசைகளின் படிப்படியான சிதைவை ஏற்படுத்தும் தசை சிதைவு நோய் (Muscular dystrophy) எந்த புரதத்தின் மரபணு திடீர்மாற்றத்தால் உண்டாகிறது?",
+        "optionTexts": [
+          "டிஸ்ட்ரோபின் (Dystrophin)",
+          "ஆக்டின்",
+          "மயோசின்",
+          "ட்ரோபோமயோசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many cervical vertebrae are typically found in the neck region of almost all mammals (including humans and giraffes)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 cervical vertebrae",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12 cervical vertebrae",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 cervical vertebrae",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 cervical vertebrae",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The human vertebral formula is C7 T12 L5 S(5) Co(4).\nStep 2: Almost all mammals (including humans and giraffes) have exactly 7 cervical vertebrae.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனிதன் மற்றும் ஒட்டகச்சிவிங்கி உட்பட பெரும்பாலான பாலூட்டிகளில் காணப்படும் கழுத்து முள்ளெலும்புகளின் எண்ணிக்கை என்ன?",
+        "optionTexts": [
+          "7 கழுத்து முள்ளெலும்புகள் (Cervical vertebrae)",
+          "12 முள்ளெலும்புகள்",
+          "5 முள்ளெலும்புகள்",
+          "8 முள்ளெலும்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of joint is present between the adjacent vertebrae in the vertebral column, allowing limited movement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cartilaginous joint (Intervertebral discs of fibrocartilage)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fibrous joint",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ball and socket joint",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Saddle joint",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cartilaginous joints connect bones tightly with cartilage.\nStep 2: Adjacent vertebrae in the vertebral column are joined by intervertebral discs made of fibrocartilage, allowing limited flexibility.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முள்ளெலும்புத் தொடரில் அடுத்தடுத்த முள்ளெலும்புகளுக்கு இடையே குறைந்த அளவிலான அசைவை அனுமதிக்கும் மூட்டு வகை எது?",
+        "optionTexts": [
+          "குருத்தெலும்பு மூட்டு / முள்ளெலும்பிடை தட்டுகள் (Cartilaginous joints)",
+          "நார் மூட்டு",
+          "பந்து கிண்ண மூட்டு",
+          "சேடில் மூட்டு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following bones does NOT belong to the appendicular skeleton of humans?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sternum",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Clavicle",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Scapula",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ilium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The appendicular skeleton consists of pectoral and pelvic girdles and limb bones (Clavicle, Scapula, Ilium, Humerus, Femur, etc.).\nStep 2: The Sternum belongs to the axial skeleton along with skull, ribs, and vertebral column.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்டவற்றுள் மனித இணைப்புச் சட்டகத்தைச் (Appendicular skeleton) சேராத எலும்பு எது?",
+        "optionTexts": [
+          "மார்பெலும்பு / ஸ்டெர்னம் (Sternum - அச்சுச் சட்டகத்தைச் சேர்ந்தது)",
+          "கிளாவிக்கிள் (காரை எலும்பு)",
+          "ஸ்கேபுலா (தோள்பட்டை எலும்பு)",
+          "இலியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The longest, heaviest, and strongest bone in the human body is the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Femur (Thigh bone)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tibia",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Humerus",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fibula",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The femur (thigh bone) is the single bone of the thigh.\nStep 2: It is the longest, heaviest, and strongest bone in the human body.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித உடலின் மிக நீண்ட, கனமான மற்றும் வலிமையான எலும்பு எது?",
+        "optionTexts": [
+          "பீமர் / தொடை எலும்பு (Femur)",
+          "டிபியா",
+          "ஹியூமரஸ்",
+          "ஃபிபுலா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Knee joint and elbow joint in the human skeleton are classic examples of which type of synovial joint?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hinge joint",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pivot joint",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gliding joint",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ball and socket joint",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A hinge joint allows movement primarily in one single plane (flexion and extension), similar to a door hinge.\nStep 2: Knee joint and elbow joint are typical hinge joints.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித முழங்கால் மூட்டு மற்றும் முழங்கை மூட்டு எந்த சினோவியல் மூட்டு வகைக்கு உதாரணமாகும்?",
+        "optionTexts": [
+          "கீல் மூட்டு (Hinge joint)",
+          "முளை அச்சு மூட்டு",
+          "வழுக்கு மூட்டு",
+          "பந்து கிண்ண மூட்டு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In skeletal muscle fibers, the storehouse of calcium ions (Ca2+) essential for excitation-contraction coupling is the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sarcoplasmic reticulum (modified smooth endoplasmic reticulum)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Golgi apparatus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mitochondrial matrix",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lysosomes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The sarcoplasmic reticulum of muscle fibers is a modified smooth endoplasmic reticulum.\nStep 2: It actively sequesters and stores calcium ions (Ca2+) and releases them upon action potential arrival via T-tubules.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எலும்புத் தசை செல்களில் தசை சுருக்கத்திற்குத் தேவையான கால்சியம் அயனிகளின் (Ca2+) சேமிப்புக் கிடங்காகச் செயல்படும் உறுப்பு எது?",
+        "optionTexts": [
+          "சார்கோபிளாச வலைப்பின்னல் (Sarcoplasmic reticulum)",
+          "கோல்கை உடலம்",
+          "மைட்டோகாண்ட்ரியா மேட்ரிக்ஸ்",
+          "லைசோசோம்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO08-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The gliding joint present between the adjacent carpal bones of the human wrist allows bones to slide past one another. This is an example of a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Synovial joint",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cartilaginous joint",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fibrous joint",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Suture",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gliding joints are synovial joints characterized by flat articular surfaces that slide over one another.\nStep 2: The joint between carpals (intercarpal joint) is a classic gliding joint.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மணிக்கட்டின் கார்பல் எலும்புகளுக்கு இடையே காணப்படும் வழுக்கு மூட்டு (Gliding joint) எந்த வகை மூட்டாகும்?",
+        "optionTexts": [
+          "சினோவியல் மூட்டு (Synovial joint)",
+          "குருத்தெலும்பு மூட்டு",
+          "நார் மூட்டு",
+          "தையல் மூட்டு"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which combination of physiological factors in metabolically active systemic tissues shifts the oxygen-hemoglobin dissociation curve to the right (Bohr effect), promoting the rapid unloading of O2 to tissue cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "High pO2 and High pH exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "High pCO2, High H+ concentration (Low pH / Acidosis), High Temperature, and High 2,3-BPG",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Low pCO2, Low Temperature, and Low 2,3-BPG",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "High pO2, Low pCO2, Low H+ (Alkaline pH), and Low Temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In actively respiring tissues, metabolic activity consumes O2 and generates CO2, heat, and lactic/carbonic acid (H+).\nStep 2: Binding of CO2 and H+ to hemoglobin stabilizes the low-affinity deoxygenated T-state (tense conformation).\nStep 3: This rightward shift of the oxygen dissociation curve decreases hemoglobin's affinity for O2, facilitating O2 release.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளர்சிதை மாற்றத்தில் தீவிரமாக ஈடுபடும் திசுக்களில், ஆக்ஸிஜன்-ஹிமோகுளோபின் பிரிகை வளைகோட்டை வலதுபுறமாக நகர்த்தி (போர் விளைவு / Bohr effect) திசுக்களுக்கு O2 வெளியீட்டை அதிகரிக்கும் உடலியங்கியல் காரணிகளின் சரியான தொகுப்பு எது?",
+        "optionTexts": [
+          "அதிக pO2 மற்றும் அதிக pH மட்டுமே",
+          "அதிக pCO2, அதிக H+ செறிவு (குறைந்த pH / அமிலத்தன்மை), அதிக வெப்பநிலை மற்றும் அதிக 2,3-BPG",
+          "குறைந்த pCO2 மற்றும் குறைந்த வெப்பநிலை",
+          "அதிக pO2, குறைந்த pCO2, கார pH மற்றும் குறைந்த வெப்பநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a standard clinical Electrocardiogram (ECG), which electrical event in the cardiac conduction cycle is directly represented by the QRS complex?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Repolarization of the ventricles (return to resting state)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Repolarization of the sinoatrial (SA) node",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Depolarization of the atria (atrial contraction)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Depolarization of the ventricles (which triggers ventricular systole/contraction)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a normal surface ECG lead trace:\n- P wave represents atrial depolarization (atrial activation).\n- QRS complex represents rapid ventricular depolarization preceding ventricular systole.\n- T wave represents ventricular repolarization.\nStep 2: Ventricular contraction begins shortly after the Q wave.\nStep 3: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வழக்கமான மருத்துவ மின்னியக்க இதய வரைபடத்தில் (ECG), QRS அலை வளாகம் இதய சுழற்சியின் எந்த மின் நிகழ்வைக் குறிக்கிறது?",
+        "optionTexts": [
+          "வென்ட்ரிக்கிள்களின் மறுமுனைவாக்கம் (T அலை)",
+          "சைனோஆரிக்குலார் முடிச்சின் மறுமுனைவாக்கம்",
+          "ஆரிக்கிள்களின் முனைவியக்க நீக்கம் (P அலை)",
+          "வென்ட்ரிக்கிள்களின் முனைவியக்க நீக்கம் (வென்ட்ரிக்கிள் சுருங்குதலைத் தூண்டுகிறது)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the mammalian kidney, what physiological role is played by the countercurrent multiplier mechanism between the loop of Henle and the vasa recta?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To actively secrete excess glucose into the collecting duct",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "To prevent filtration of plasma proteins through the glomerulus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "To establish and maintain an increasing hyperosmotic concentration gradient in the medullary interstitium (from 300 mOsm/L in cortex to 1200 mOsm/L in inner medulla), enabling maximum water reabsorption and urine concentration",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "To synthesize urea from ammonia in renal tubules",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The flow of filtrate in Henle's loop and blood flow in vasa recta run in opposite directions (countercurrent flow).\nStep 2: NaCl and urea transport establishes an osmotic gradient from 300 mOsmol/L in the renal cortex to 1200 mOsmol/L in the inner medulla.\nStep 3: This hypertonic interstitium draws water out of the collecting duct by osmosis under ADH control, concentrating urine up to 4 times (1200 mOsmol/L).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலூட்டிகளின் சிறுநீரகத்தில், ஹென்லே வளைவு மற்றும் வாஸா ரெக்டா இடையே உள்ள எதிர் மின்னோட்ட வழிமுறையின் (countercurrent mechanism) முதன்மை உடலியங்கியல் பணி என்ன?",
+        "optionTexts": [
+          "குளுக்கோஸை நேரடியாக சிறுநீரில் வெளியேற்றுவது",
+          "பிளாஸ்மா புரதங்கள் வடிகட்டப்படுவதைத் தடுப்பது",
+          "சிறுநீரக மெடுல்லா பகுதியில் சவ்வூடுபரவல் சாய்வை (கார்டெக்ஸில் 300 இலிருந்து மெடுல்லாவில் 1200 mOsm/L வரை) பராமரித்து, அதிகபட்ச நீர் உறிஞ்சுதலை ஏற்படுத்தி அடர் சிறுநீரை உருவாக்குவது",
+          "சிறுநீரகக் குழல்களில் யூரினிலிருந்து யூரிக் அமிலத்தை உருவாக்குவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Erythroblastosis foetalis (severe hemolytic disease of the newborn) can occur under which specific maternal-fetal Rh factor incompatibility?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rh-negative mother pregnant with an Rh-positive fetus (during second and subsequent Rh+ pregnancies)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rh-positive mother pregnant with an Rh-negative fetus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both mother and fetus are Rh-positive",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both mother and fetus are Rh-negative",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: During first delivery of an Rh+ baby to an Rh- mother, fetal Rh+ RBCs enter maternal blood, stimulating production of anti-Rh IgG antibodies.\nStep 2: In a subsequent Rh+ pregnancy, maternal anti-Rh IgG antibodies cross the placenta into fetal circulation.\nStep 3: These antibodies destroy fetal Rh+ RBCs, causing severe hemolytic anemia and jaundice (Erythroblastosis foetalis).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எரித்ரோபிளாஸ்டோசிஸ் ஃபீட்டலிஸ் (கருச்சிதைவு இரத்த சோகை நோய்) தாய் மற்றும் கருவின் எந்த குறிப்பிட்ட Rh காரணி பொருத்தமின்மையின் போது ஏற்படுகிறது?",
+        "optionTexts": [
+          "Rh-எதிர்மறை தாய் Rh-நேர்மறை கருவை சுமக்கும் போது (இரண்டாவது மற்றும் அடுத்தடுத்த Rh+ கர்ப்பங்களில்)",
+          "Rh-நேர்மறை தாய் Rh-எதிர்மறை கருவை சுமக்கும் போது",
+          "தாய் மற்றும் கரு இருவருமே Rh-நேர்மறையாக இருக்கும் போது",
+          "தாய் மற்றும் கரு இருவருமே Rh-எதிர்மறையாக இருக்கும் போது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the Vital Capacity (VC) of human lungs in terms of standard pulmonary respiratory volumes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "VC = TV + IRV + ERV (Tidal Volume + Inspiratory Reserve Volume + Expiratory Reserve Volume ≈ 4000 to 4600 mL)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "VC = TV + IRV + RV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "VC = ERV + RV (Functional Residual Capacity)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "VC = TLC - ERV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Vital Capacity (VC) is the maximum volume of air a person can breathe out after a forced inspiration.\nStep 2: It includes normal tidal inhalation/exhalation (TV ≈ 500 mL), extra inspiratory effort (IRV ≈ 2500-3000 mL), and extra expiratory effort (ERV ≈ 1000-1100 mL).\nStep 3: VC = TV + IRV + ERV (approximately 4000-4600 mL in a healthy adult).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித நுரையீரலின் முக்கியக் கொள்ளளவு (Vital Capacity - VC) என்பது எந்த சுவாசக் கனஅளவுகளின் கூடுதல் ஆகும்?",
+        "optionTexts": [
+          "VC = TV + IRV + ERV (மூச்சுக்காற்றுக் கனஅளவு + உட்சுவாச சேமிப்புக் கனஅளவு + வெளிச்சுவாச சேமிப்புக் கனஅளவு ≈ 4000 முதல் 4600 mL)",
+          "VC = TV + IRV + RV",
+          "VC = ERV + RV (செயல்மிகு எஞ்சிய கொள்ளளவு)",
+          "VC = TLC - ERV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Approximately 70% of Carbon Dioxide (CO2) is transported in human blood in which form?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dissolved physically in blood plasma gas phase",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "As Bicarbonate ions (HCO3-) in plasma, catalyzed by red blood cell Carbonic Anhydrase",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "As Carbamino-hemoglobin bound to heme iron",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "As Carbonic acid precipitates",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: CO2 is transported in three forms:\n- 7% dissolved in plasma\n- 20-25% bound to amino groups of hemoglobin as Carbamino-hemoglobin\n- Nearly 70% as bicarbonate ions (HCO3-).\nStep 2: RBCs contain high concentrations of carbonic anhydrase that rapidly converts CO2 + H2O <-> H2CO3 <-> H+ + HCO3-.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித இரத்தத்தில் சுமார் 70% கார்பன் டை ஆக்சைடு (CO2) எந்த வடிவில் கடத்தப்படுகிறது?",
+        "optionTexts": [
+          "பிளாஸ்மாவில் கரைந்த வாயுவாக",
+          "RBC இன் கார்போனிக் அன்ஹைட்ரேஸ் என்சைமால் உருவாக்கப்பட்ட பைகார்பனேட் (HCO3-) அயனிகளாக",
+          "கார்பமினோ-ஹிமோகுளோபினாக",
+          "கார்போனிக் அமிலப் படிவுகளாக"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Emphysema is a chronic respiratory disorder commonly caused by cigarette smoking. What is its main pathological characteristic?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Allergic spasm of the smooth muscles of the bronchi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Damage and destruction of alveolar walls resulting in decreased respiratory exchange surface area",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Accumulation of fibrous tissue in the pleura",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bacterial infection filling alveoli with pus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Emphysema is a chronic obstructive pulmonary disease mainly caused by cigarette smoking.\nStep 2: Breakdown of alveolar septa occurs, leading to abnormally enlarged air spaces and loss of surface area for gas exchange.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புகைபிடித்தலால் ஏற்படும் எம்பிஸிமா (Emphysema) என்ற நாள்பட்ட சுவாசக் கோளாறின் முக்கிய நோயியல் பண்பு என்ன?",
+        "optionTexts": [
+          "மூச்சுக்குழல் தசைகளில் ஏற்படும் ஒவ்வாமை சுருக்கம்",
+          "ஆல்வியோலை சுவர்கள் சிதைந்து வாயுப் பரிமாற்றத்திற்கான பரப்பு குறைதல்",
+          "நுரையீரல் உரையில் நார்ச்சத்து உருவாதல்",
+          "ஆல்வியோலையினுள் சீழ் நிரம்புதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which specialized nodal tissue located in the upper right corner of the right atrium is known as the natural 'Pacemaker' of the human heart?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Atrioventricular (AV) node",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sinoatrial (SA) node (generates 70-75 action potentials per minute)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Bundle of His",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Purkinje fibers",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Sinoatrial (SA) node is located in the upper right corner of the right atrium.\nStep 2: It has the highest intrinsic rate of auto-rhythmicity, generating 70-75 action potentials per minute.\nStep 3: It initiates and maintains the rhythmic contractile activity of the heart, hence called the Pacemaker.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித இதயத்தின் வலது ஏட்ரியத்தின் மேல் வலது மூலையில் அமைந்துள்ள இயற்கை பேஸ்மேக்கர் (Pacemaker) எது?",
+        "optionTexts": [
+          "ஏட்ரியோவென்ட்ரிக்குலார் (AV) முடிச்சு",
+          "சைனோஏட்ரியல் (SA) முடிச்சு (நிமிடத்திற்கு 70-75 தூண்டல்களை உருவாக்குகிறது)",
+          "ஹிஸ் கற்றை",
+          "பர்கின்ஜி இழைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The first heart sound ('LUB') and second heart sound ('DUB') are associated with which cardiac mechanical events respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Closure of atrioventricular (tricuspid and bicuspid) valves and closure of semilunar valves respectively",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Opening of semilunar valves and opening of AV valves respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Closure of semilunar valves and closure of AV valves respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rapid rush of blood into atria and ventricles respectively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The first heart sound (LUB) is produced by the closure of the tricuspid and bicuspid (mitral) valves at the onset of ventricular systole.\nStep 2: The second heart sound (DUB) is produced by the closure of the aortic and pulmonary semilunar valves at the onset of ventricular diastole.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முதல் இதய ஒலி ('லப்') மற்றும் இரண்டாவது இதய ஒலி ('டப்') ஆகியவை இதயத்தின் எந்த வால்வுகள் மூடுவதால் உருவாகின்றன?",
+        "optionTexts": [
+          "முறையே மூவிதழ்/ஈரிதழ் (AV) வால்வுகள் மூடுதல் மற்றும் பிறைச்சந்திர (Semilunar) வால்வுகள் மூடுதல்",
+          "முறையே பிறைச்சந்திர வால்வுகள் திறத்தல் மற்றும் AV வால்வுகள் திறத்தல்",
+          "முறையே பிறைச்சந்திர வால்வுகள் மூடுதல் மற்றும் AV வால்வுகள் மூடுதல்",
+          "இரத்தம் ஆரிக்கிள் மற்றும் வென்ட்ரிக்கிள்களில் பாய்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a healthy adult human, what is the standard Cardiac Output if the Stroke Volume is 70 mL and Heart Rate is 72 beats per minute?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Approximately 5040 mL (5 Litres / minute)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Approximately 2500 mL / minute",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Approximately 7200 mL / minute",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Approximately 1200 mL / minute",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cardiac Output = Stroke Volume × Heart Rate.\nStep 2: Stroke volume = 70 mL; Heart rate = 72 beats/min.\nStep 3: Cardiac Output = 70 mL × 72 = 5040 mL/min ≈ 5 Litres/min.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஆரோக்கியமான மனிதனில் வீச்சு கொள்ளளவு (Stroke Volume) 70 mL மற்றும் இதயத் துடிப்பு 72/நிமிடம் எனில், இதய வெளியீட்டுத் திறன் (Cardiac Output) என்ன?",
+        "optionTexts": [
+          "சுமார் 5040 mL (5 லிட்டர் / நிமிடம்)",
+          "சுமார் 2500 mL / நிமிடம்",
+          "சுமார் 7200 mL / நிமிடம்",
+          "சுமார் 1200 mL / நிமிடம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which segment of the human nephron is lined by simple cuboidal brush border epithelium with extensive microvilli that reabsorbs nearly 70-80% of electrolytes and water?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Distal Convoluted Tubule (DCT)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Proximal Convoluted Tubule (PCT)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ascending limb of Henle's loop",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Collecting duct",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Proximal Convoluted Tubule (PCT) is lined by simple cuboidal brush border epithelium.\nStep 2: The brush border microvilli greatly increase the surface area for reabsorption.\nStep 3: Nearly all essential nutrients (100% glucose, amino acids) and 70-80% of electrolytes and water are reabsorbed in the PCT.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிறுநீரக நுண்குழலின் எந்தப் பகுதி தூரிகை விளிம்பு கொண்ட எளிய கனசதுர எபிதீலியத்தால் சூழப்பட்டு 70-80% எலக்ட்ரோலைட்டுகள் மற்றும் நீரை மீள உறிஞ்சுகிறது?",
+        "optionTexts": [
+          "சேய்மை சுருள் நுண்குழல் (DCT)",
+          "அண்மை சுருள் நுண்குழல் (PCT)",
+          "ஹென்லே வளைவின் ஏறு கிளை",
+          "சேகரிப்புக் குழல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Renin-Angiotensin-Aldosterone System (RAAS), a fall in glomerular blood pressure or GFR stimulates the Juxtaglomerular (JG) cells to release which enzyme into circulation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rennin (a proteolytic gastric enzyme)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Renin",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Angiotensin II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Erythropoietin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A fall in glomerular blood flow/pressure stimulates JG cells to release Renin.\nStep 2: Renin converts hepatic Angiotensinogen to Angiotensin I, which ACE converts to Angiotensin II.\nStep 3: Angiotensin II is a powerful vasoconstrictor and stimulates the adrenal cortex to release Aldosterone.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோமரூலர் இரத்த அழுத்தம் குறையும் போது சிறுநீரகத்தின் JG செல்கள் எதனை இரத்தத்தில் சுரக்கின்றன?",
+        "optionTexts": [
+          "ரென்னின் (இரைப்பை நொதி)",
+          "ரெனின் (Renin)",
+          "ஆஞ்சியோடென்சின் II",
+          "எரித்ரோபாயிட்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which animal group excretes nitrogenous waste predominantly in the form of insoluble, non-toxic Uric Acid pellets/paste with minimal water loss (Uricotelism)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aquatic amphibians and bony fishes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Reptiles, Birds, Land snails, and Insects",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Mammals and terrestrial amphibians",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cartilaginous sharks and rays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Animals that excrete uric acid in pellet or paste form with minimal water loss are uricotelic.\nStep 2: Reptiles, birds, land snails, and insects are classic examples of uricotelic organisms.\nStep 3: Mammals are ureotelic; aquatic fishes are ammonotelic.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குறைந்தபட்ச நீர் இழப்புடன் யூரிக் அமிலத்தை கழிவாக வெளியேற்றும் யூரிகோடெலிக் (Uricotelic) விலங்குகள் யாவை?",
+        "optionTexts": [
+          "நீர் இருவாழ்விகள் மற்றும் எலும்பு மீன்கள்",
+          "ஊர்வன, பறவைகள், நில நத்தைகள் மற்றும் பூச்சிகள்",
+          "பாலூட்டிகள் மற்றும் நில இருவாழ்விகள்",
+          "சுறா மீன்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The podocytes that form the visceral layer of Bowman's capsule are specialized epithelial cells that wrap around glomerular capillaries leaving intricate spaces termed:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Filtration slits (Slit pores)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fenestrae of endothelium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Haversian canals",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Canaliculi",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The inner visceral epithelium of Bowman's capsule consists of specialized podocytes.\nStep 2: Podocytes have interdigitating pedicels (foot processes) that leave narrow gaps called filtration slits (slit pores).\nStep 3: Blood is filtered so finely through these slits that almost all plasma constituents except proteins pass into the capsular lumen.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பௌமானின் கிண்ணத்தின் உட்சுவரில் உள்ள போடோசைட்டுகள் (Podocytes) தங்களுக்கு இடையே உருவாக்கும் நுண் வடிகட்டும் துளைகள் எவ்வாறு அழைக்கப்படுகின்றன?",
+        "optionTexts": [
+          "வடிகட்டும் பிளவுகள் / ஸ்லிட் துளைகள் (Filtration slits)",
+          "எண்டோதீலிய துளைகள்",
+          "ஹாவர்சியன் கால்வாய்கள்",
+          "கனாலிக்குலி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What are the partial pressures of Oxygen (pO2) and Carbon Dioxide (pCO2) in human alveolar air compared to systemic deoxygenated blood?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alveoli: pO2 = 104 mmHg, pCO2 = 40 mmHg; Deoxygenated blood: pO2 = 40 mmHg, pCO2 = 45 mmHg",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Alveoli: pO2 = 40 mmHg, pCO2 = 45 mmHg; Deoxygenated blood: pO2 = 104 mmHg, pCO2 = 40 mmHg",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Alveoli: pO2 = 95 mmHg, pCO2 = 40 mmHg; Deoxygenated blood: pO2 = 40 mmHg, pCO2 = 40 mmHg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Alveoli: pO2 = 159 mmHg, pCO2 = 0.3 mmHg; Deoxygenated blood: pO2 = 45 mmHg, pCO2 = 40 mmHg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In alveoli: pO2 = 104 mmHg and pCO2 = 40 mmHg.\nStep 2: In deoxygenated blood entering pulmonary capillaries: pO2 = 40 mmHg and pCO2 = 45 mmHg.\nStep 3: This partial pressure gradient drives O2 from alveoli into blood and CO2 from blood into alveoli.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நுரையீரல் ஆல்வியோலை காற்று மற்றும் சிரை இரத்தத்தில் ஆக்ஸிஜன் (pO2) மற்றும் CO2 (pCO2) பகுதி அழுத்தங்கள் முறையே என்ன?",
+        "optionTexts": [
+          "ஆல்வியோலை: pO2 = 104 mmHg, pCO2 = 40 mmHg; சிரை இரத்தம்: pO2 = 40 mmHg, pCO2 = 45 mmHg",
+          "ஆல்வியோலை: pO2 = 40 mmHg, pCO2 = 45 mmHg; சிரை இரத்தம்: pO2 = 104 mmHg, pCO2 = 40 mmHg",
+          "ஆல்வியோலை: pO2 = 95 mmHg, pCO2 = 40 mmHg; சிரை இரத்தம்: pO2 = 40 mmHg, pCO2 = 40 mmHg",
+          "ஆல்வியோலை: pO2 = 159 mmHg, pCO2 = 0.3 mmHg; சிரை இரத்தம்: pO2 = 45 mmHg, pCO2 = 40 mmHg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of white blood cells (leukocytes) constitutes the largest percentage (60-65%) of total WBCs in healthy human blood?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Basophils",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Neutrophils",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Monocytes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Eosinophils",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Normal differential WBC count:\n- Neutrophils: 60-65%\n- Lymphocytes: 20-25%\n- Monocytes: 6-8%\n- Eosinophils: 2-3%\n- Basophils: 0.5-1%.\nStep 2: Neutrophils are the most abundant leukocytes.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித இரத்தத்தில் உள்ள மொத்த வெள்ளை அணுக்களில் அதிக எண்ணிக்கையில் (60-65%) காணப்படும் வெள்ளை அணுக்கள் யாவை?",
+        "optionTexts": [
+          "பேசோஃபில்கள்",
+          "நியூட்ரோபில்கள் (Neutrophils)",
+          "மோனோசைட்டுகள்",
+          "ஈசினோபில்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the human cardiac cycle, the duration of an entire single cardiac cycle and the volume of blood pumped by each ventricle per stroke are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8 seconds and 70 mL respectively",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.1 seconds and 120 mL respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.2 seconds and 50 mL respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.4 seconds and 100 mL respectively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The heart beats ~72 times/min, meaning one cardiac cycle takes 60/72 = 0.8 seconds.\nStep 2: During each cycle, each ventricle ejects ~70 mL of blood (Stroke Volume).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித இதயத்தில் ஒரு முழுமையான இதய சுழற்சியின் கால அளவு மற்றும் ஒரு துடிப்பில் வெளியேற்றப்படும் வீச்சு கொள்ளளவு என்ன?",
+        "optionTexts": [
+          "முறையே 0.8 வினாடிகள் மற்றும் 70 mL",
+          "முறையே 0.1 வினாடிகள் மற்றும் 120 mL",
+          "முறையே 1.2 வினாடிகள் மற்றும் 50 mL",
+          "முறையே 0.4 வினாடிகள் மற்றும் 100 mL"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which blood vessel carries deoxygenated nutrient-rich blood from the gastrointestinal digestive tract directly to the liver before returning it to the systemic circulation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hepatic artery",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hepatic portal vein",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Renal vein",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Inferior vena cava",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A portal system is a vascular connection where blood from one capillary bed is carried to a second capillary bed before reaching the heart.\nStep 2: The hepatic portal vein carries blood from the intestine to the liver for metabolic processing before it enters the systemic circulation.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செரிமானப் பாதையிலிருந்து ஊட்டச்சத்துக்கள் நிறைந்த இரத்தத்தை நேரடியாக கல்லீரலுக்கு எடுத்துச் செல்லும் இரத்தக் குழாய் எது?",
+        "optionTexts": [
+          "கல்லீரல் தமனி",
+          "கல்லீரல் போர்ட்டல் சிரை (Hepatic portal vein)",
+          "சிறுநீரக சிரை",
+          "கீழ் பெருஞ்சிரை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During blood coagulation, conversion of soluble plasma fibrinogen into an insoluble fibrin thread mesh is catalyzed by which active enzyme?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thrombin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Prothrombin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thrombokinase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Heparin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Injured platelets and tissues release thromboplastin, which forms thrombokinase (prothrombinase).\nStep 2: Prothrombinase converts inactive prothrombin into active Thrombin in the presence of Ca2+.\nStep 3: Thrombin converts soluble fibrinogen into insoluble fibrin monomers that polymerize to form the blood clot.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரத்தம் உறைதலின் போது கரையும் பைபிரினோஜெனை கரையாத பைபிரின் இழைகளாக மாற்றும் என்சைம் எது?",
+        "optionTexts": [
+          "திராம்பின் (Thrombin)",
+          "புரோதிராம்பின்",
+          "திராம்போகைனேஸ்",
+          "ஹெப்பாரின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which statement correctly describes the differential permeability of the descending and ascending limbs of the Loop of Henle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Descending limb is permeable to water but almost impermeable to electrolytes; Ascending limb is impermeable to water but allows active/passive transport of electrolytes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Descending limb is impermeable to water; Ascending limb is permeable to water",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both limbs are freely permeable to water and electrolytes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both limbs are completely impermeable to both water and electrolytes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The descending limb of Henle's loop is permeable to water and impermeable to salts, so filtrate concentrates as water leaves.\nStep 2: The ascending limb is impermeable to water and transports electrolytes (NaCl) out, diluting the filtrate.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹென்லே வளைவின் இறங்கு மற்றும் ஏறு கிளைகளின் ஊடுருவும் தன்மை பற்றிய சரியான கூற்று எது?",
+        "optionTexts": [
+          "இறங்கு கிளை நீருக்கு ஊடுருவும் திறன் கொண்டது ஆனால் எலக்ட்ரோலைட்டுகளுக்கு அல்ல; ஏறு கிளை நீருக்கு ஊடுருவாது ஆனால் எலக்ட்ரோலைட்டுகளை வெளியேற்றுகிறது",
+          "இறங்கு கிளை நீருக்கு ஊடுருவாது; ஏறு கிளை நீருக்கு ஊடுருவும்",
+          "இரு கிளைகளும் நீருக்கும் உப்புகளுக்கும் சமமாக ஊடுருவும்",
+          "இரு கிளைகளும் எதற்கும் ஊடுருவாது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the volume of Residual Volume (RV) that always remains in human lungs even after a forceful maximal expiration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "500 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1100 to 1200 mL",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2500 to 3000 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1000 to 1100 mL",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Residual volume (RV) is the volume of air remaining in lungs even after a forcible expiration.\nStep 2: Its normal value averages 1100 mL to 1200 mL.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தீவிர வெளிச்சுவாசத்திற்குப் பிறகும் நுரையீரலில் எஞ்சி நிற்கும் எஞ்சிய கொள்ளளவு (Residual Volume - RV) எவ்வளவு?",
+        "optionTexts": [
+          "500 mL",
+          "1100 முதல் 1200 mL",
+          "2500 முதல் 3000 mL",
+          "1000 முதல் 1100 mL"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A person with blood group 'O-negative' is considered a Universal Donor because their red blood cells possess:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both A and B antigens on RBC membrane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "No A, B, or Rh surface antigens on RBCs, preventing antibody-mediated agglutination in any recipient",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Neither anti-A nor anti-B antibodies in plasma",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Only Rh surface antigen without ABO antigens",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: O-negative RBCs lack A antigen, B antigen, and the Rh antigen on their membrane.\nStep 2: When transfused, recipient antibodies have no surface antigens to attack, preventing fatal hemolytic agglutination.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "'O-எதிர்மறை' (O-negative) இரத்த வகை கொண்டவர் 'அனைவருக்கும் இரத்த கொடையாளி' எனக் கருதப்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "RBC இல் A மற்றும் B ஆன்டிஜென்கள் இருப்பது",
+          "RBC சவ்வில் A, B மற்றும் Rh ஆன்டிஜென்கள் எதுவும் இல்லாமல் இருப்பதால் பெறுநரின் உடலில் இரத்தத் திரட்சி ஏற்படாமல் இருப்பது",
+          "பிளாஸ்மாவில் ஆன்டிபாடிகள் இல்லாமை",
+          "Rh ஆன்டிஜென் மட்டும் இருப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the human brain, the chemosensitive area located adjacent to the respiratory rhythm center is highly sensitive to increases in which blood parameters to regulate ventilation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Arterial pO2 levels only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Carbon dioxide (CO2) and Hydrogen ion (H+) concentration",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Blood glucose and urea concentration",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Blood sodium and potassium levels",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A chemosensitive area is situated adjacent to the rhythm center in the medulla.\nStep 2: It is highly sensitive to increases in CO2 and H+ ions.\nStep 3: Increase in these substances activates this center to signal the rhythm center to increase rate of breathing. (The role of oxygen is quite insignificant).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுவாச இயக்கத்தை ஒழுங்குபடுத்தும் முகுளத்தின் வேதி உணர்வு மையம் எந்த காரணிகளின் அதிகரிப்புக்கு அதிக உணர்திறன் கொண்டது?",
+        "optionTexts": [
+          "இரத்த pO2 அளவு மட்டும்",
+          "கார்பன் டை ஆக்சைடு (CO2) மற்றும் ஹைட்ரஜன் அயனி (H+) செறிவு",
+          "இரத்த சர்க்கரை மற்றும் யூரியா",
+          "சோடியம் மற்றும் பொட்டாசியம் அளவுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which pathological condition of the excretory system is characterized by the accumulation of high levels of urea in blood due to kidney failure?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uremia",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Renal calculi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Glomerulonephritis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glycosuria",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Malfunctioning of kidneys leads to accumulation of urea in blood, a condition called Uremia.\nStep 2: Uremia is highly toxic and can lead to kidney failure; it is treated by hemodialysis.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிறுநீரக செயலிழப்பினால் இரத்தத்தில் அதிக அளவு யூரியா சேரும் நச்சு நிலை எது?",
+        "optionTexts": [
+          "யுரேமியா (Uremia)",
+          "சிறுநீரகக் கற்கள்",
+          "குளோமரூலோநெப்ரிடிஸ்",
+          "கிளைக்கோசூரியா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which cardiovascular clinical condition is characterized by acute crushing chest pain resulting from inadequate myocardial blood flow and oxygen supply to heart muscles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Heart failure",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cardiac arrest",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Angina pectoris",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Rheumatic fever",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Angina (angina pectoris) presents as a symptom of acute chest pain.\nStep 2: It occurs when no enough oxygen is reaching the heart muscle due to impaired coronary blood flow.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இதயத் தசைகளுக்குப் போதுமான ஆக்ஸிஜன் கிடைக்காததால் ஏற்படும் தீவிர மார்பு வலி எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "இதய செயலிழப்பு",
+          "மாரடைப்பு",
+          "ஆன்ஜைனா பெக்டோரிஸ் (Angina pectoris)",
+          "ருமாட்டிக் காய்ச்சல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Glomerular Filtration Rate (GFR) in a healthy human adult is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "125 mL/minute (180 Litres per day)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50 mL/minute (70 Litres per day)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "500 mL/minute (700 Litres per day)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12.5 mL/minute (18 Litres per day)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Glomerular filtration rate (GFR) is the amount of filtrate formed by both kidneys per minute.\nStep 2: In a healthy individual, GFR is approximately 125 mL/min, which equals 180 Litres per day.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரோக்கியமான மனிதனில் சிறுநீரகங்களால் உருவாக்கப்படும் குளோமரூலர் வடிகட்டுதல் வீதம் (GFR) எவ்வளவு?",
+        "optionTexts": [
+          "நிமிடத்திற்கு 125 mL (நாளைக்கு 180 லிட்டர்)",
+          "நிமிடத்திற்கு 50 mL (நாளைக்கு 70 லிட்டர்)",
+          "நிமிடத்திற்கு 500 mL",
+          "நிமிடத்திற்கு 12.5 mL"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Sympathetic neural signals increase heart rate and cardiac output by acting through:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vagus nerve releasing Acetylcholine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Adrenergic nerves releasing Noradrenaline (Norepinephrine) to stimulate the SA node and ventricular myocardium",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Secretion of Atrial Natriuretic Factor",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Inhibition of the AV bundle",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Autonomic nervous system regulates heart rate via the cardiac center in the medulla.\nStep 2: Sympathetic nerves release noradrenaline, which stimulates the SA node and enhances ventricular contractility, increasing heart rate and cardiac output.\nStep 3: Parasympathetic signals (vagus nerve) decrease heart rate via acetylcholine.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பரிவு நரம்பு சமிக்ஞைகள் (Sympathetic signals) இதயத் துடிப்பு மற்றும் இதய வெளியீட்டை எவ்வாறு அதிகரிக்கின்றன?",
+        "optionTexts": [
+          "வேகஸ் நரம்பு மூலம் அசிட்டைல்கோலினைச் சுரந்து",
+          "நார்-அட்ரினலின் மூலம் SA முடிச்சு மற்றும் வென்ட்ரிக்கிள் தசை சுருங்குதலைத் தூண்டி",
+          "ANF காரணியைச் சுரந்து",
+          "AV முடிச்சை ஒடுக்கி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a standard ECG recording, the T-wave represents which cardiac electrical event?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ventricular repolarization (return of ventricles from excited to normal resting state)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Atrial depolarization",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ventricular depolarization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Atrial repolarization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: P wave = Atrial depolarization.\nStep 2: QRS complex = Ventricular depolarization.\nStep 3: T wave = Ventricular repolarization (the end of the T-wave marks the end of ventricular systole).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வழக்கமான ECG பதிவில், T-அலை எந்த மின் நிகழ்வைக் குறிக்கிறது?",
+        "optionTexts": [
+          "வென்ட்ரிக்கிள்களின் மறுமுனைவாக்கம் / அமைதி நிலை திரும்புதல் (Ventricular repolarization)",
+          "ஆரிக்கிள்களின் முனைவியக்க நீக்கம்",
+          "வென்ட்ரிக்கிள்களின் முனைவியக்க நீக்கம்",
+          "ஆரிக்கிள்களின் மறுமுனைவாக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Renal calculi (kidney stones) are primarily composed of insoluble crystallized masses of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Calcium oxalates",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sodium chloride",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Potassium carbonate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bicarbonate salts",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Renal calculi refers to stone or insoluble mass of crystallized salts formed within the kidney.\nStep 2: They are most commonly formed of calcium oxalate crystals.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிறுநீரகத்தில் உருவாகும் சிறுநீரகக் கற்கள் (Renal calculi) முக்கியமாக எதனால் ஆனவை?",
+        "optionTexts": [
+          "கால்சியம் ஆக்சலேட் படிகங்கள் (Calcium oxalates)",
+          "சோடியம் குளோரைடு",
+          "பொட்டாசியம் கார்பனேட்",
+          "பைகார்பனேட் உப்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO07-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a healthy human, what is the value of Functional Residual Capacity (FRC) of the lungs?",
+    "options": [
+      {
+        "label": "A",
+        "text": "FRC = ERV + RV (Expiratory Reserve Volume + Residual Volume ≈ 2100 to 2300 mL)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "FRC = TV + IRV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "FRC = TV + ERV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "FRC = TLC - RV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Functional Residual Capacity (FRC) is the volume of air that remains in the lungs after a normal expiration.\nStep 2: FRC includes Expiratory Reserve Volume (ERV ≈ 1000-1100 mL) + Residual Volume (RV ≈ 1100-1200 mL).\nStep 3: FRC = ERV + RV (approximately 2100-2300 mL).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயல்பான வெளிச்சுவாசத்திற்குப் பிறகு நுரையீரலில் எஞ்சியிருக்கும் செயல்மிகு எஞ்சிய கொள்ளளவு (Functional Residual Capacity - FRC) எவற்றின் கூடுதல் ஆகும்?",
+        "optionTexts": [
+          "FRC = ERV + RV (வெளிச்சுவாச சேமிப்புக் கனஅளவு + எஞ்சிய கனஅளவு ≈ 2100 முதல் 2300 mL)",
+          "FRC = TV + IRV",
+          "FRC = TV + ERV",
+          "FRC = TLC - RV"
+        ]
+      }
+    ]
+  }
+]

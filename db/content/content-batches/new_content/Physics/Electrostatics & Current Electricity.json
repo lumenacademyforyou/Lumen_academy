@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY07-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two point charges +q and +4q are placed at a distance d apart. Where should a third charge Q be placed on the line joining them so that the net electrostatic force on Q is zero?",
+    "options": [
+      {
+        "label": "A",
+        "text": "At distance d/3 from charge +q",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "At distance d/2 from charge +q",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "At distance 2d/3 from charge +q",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "At distance d/4 from charge +q",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Let Q be at distance x from +q. Distance from +4q is (d - x).\nStep 2: Equating Coulomb forces: k q Q / x^2 = k (4q) Q / (d - x)^2 => 1 / x^2 = 4 / (d - x)^2.\nStep 3: Taking square root: 1 / x = 2 / (d - x) => d - x = 2x => 3x = d.\nStep 4: x = d / 3. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+q மற்றும் +4q ஆகிய இரு புள்ளி மின்னூட்டங்கள் d இடைவெளியில் வைக்கப்பட்டுள்ளன. அவைகளை இணைக்கும் கோட்டில் மூன்றாவது மின்னூட்டம் Q எந்த இடத்தில் வைக்கப்பட்டால் அதன் மீதான தொகுபயன் நிலைமின்னியல் விசை பூஜ்ஜியமாகும்?",
+        "optionTexts": [
+          "+q மின்னூட்டத்திலிருந்து d/3 தொலைவில்",
+          "+q மின்னூட்டத்திலிருந்து d/2 தொலைவில்",
+          "+q மின்னூட்டத்திலிருந்து 2d/3 தொலைவில்",
+          "+q மின்னூட்டத்திலிருந்து d/4 தொலைவில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the net electric flux through a closed spherical Gaussian surface of radius R enclosing an electric dipole of charges +q and -q separated by distance 2a (2a < R)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "q / ε₀",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2q / ε₀",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "q / (2 ε₀)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gauss's Law states: Total electric flux Φ = q_enclosed / ε₀.\nStep 2: Net charge enclosed by the surface = (+q) + (-q) = 0.\nStep 3: Therefore, total electric flux Φ = 0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+q மற்றும் -q மின்னூட்டங்களால் ஆன மின் இருமுனையை உள்ளடக்கிய R ஆரமுடைய மூடிய காஸியன் பரப்பின் வழியே பாயும் மொத்த மின்பாயம் என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜியம்",
+          "q / ε₀",
+          "2q / ε₀",
+          "q / (2 ε₀)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor with air between plates has a capacitance C₀ = 10 μF. The space between the plates is filled completely with a dielectric slab of dielectric constant K = 4. If the capacitor remains connected to a battery of constant voltage V, what is the new stored energy compared to initial stored energy U₀?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 U₀",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "U₀ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16 U₀",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 U₀",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Stored energy in capacitor at constant voltage V: U = (1/2) C V^2.\nStep 2: New capacitance with dielectric: C' = K * C₀ = 4 C₀.\nStep 3: New energy U' = (1/2) C' V^2 = (1/2) (4 C₀) V^2 = 4 * [ (1/2) C₀ V^2 ] = 4 U₀.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C₀ = 10 μF மின்தேக்குத்திறன் கொண்ட ஒரு காற்று மின்தேக்கியில் K = 4 மின்காப்புப் பொருள் நிரப்பப்படுகிறது. மின்தேக்கி மாறா மின்னழுத்தம் V கொண்ட மின்கலத்துடன் இணைக்கப்பட்டிருந்தால், சேமிக்கப்படும் ஆற்றல் தொடக்க ஆற்றல் U₀ வைப் போல் எத்தனை மடங்காகும்?",
+        "optionTexts": [
+          "4 U₀",
+          "U₀ / 4",
+          "16 U₀",
+          "2 U₀"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform metallic wire of resistance R is stretched uniformly such that its length increases by 10%. What is the approximate percentage increase in its resistance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "11%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Volume V = A * L remains constant during stretching, so A ∝ 1 / L.\nStep 2: Resistance R = ρ L / A = ρ L^2 / V => R ∝ L^2.\nStep 3: New length L' = 1.10 L => New resistance R' = (1.10)^2 R = 1.21 R.\nStep 4: Percentage increase = (1.21 - 1.00) * 100% = 21%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R மின்தடை கொண்ட ஒரு சீரான உலோகக் கம்பியின் நீளம் 10% சீராக இழுக்கப்படுகிறது. அதன் மின்தடையில் ஏற்படும் தோராயமான விழுக்காடு அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "21%",
+          "10%",
+          "20%",
+          "11%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a meter bridge experiment, a null point is obtained at a length of 40 cm from the left end when an unknown resistance R is in the left gap and standard resistance S = 12 Ω is in the right gap. What is the value of R?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "18 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Meter bridge balancing condition: R / S = l / (100 - l).\nStep 2: Here l = 40 cm, so 100 - l = 60 cm.\nStep 3: R / 12 = 40 / 60 = 2 / 3.\nStep 4: R = 12 * (2 / 3) = 8 Ω. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீட்டர் சமனச்சுற்றில் இடது இடைவெளியில் தெரியாத மின்தடை R மற்றும் வலது இடைவெளியில் S = 12 Ω இருக்கும்போது இடது முனையிலிருந்து 40 cm இல் சமன்செய் புள்ளி கிடைக்கிறது. R இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "8 Ω",
+          "18 Ω",
+          "6 Ω",
+          "4 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A potentiometer wire of length 10 m and resistance 20 Ω is connected in series with a battery of EMF 5.0 V (negligible internal resistance) and an external resistance of 480 Ω. What is the potential gradient along the potentiometer wire?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.02 V/m (0.2 mV/cm)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.05 V/m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.2 V/m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.01 V/m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total resistance of primary circuit: R_total = 20 + 480 = 500 Ω.\nStep 2: Current in potentiometer wire: I = E / R_total = 5.0 V / 500 Ω = 0.01 A.\nStep 3: Potential difference across wire: V_wire = I * R_wire = 0.01 A * 20 Ω = 0.20 V.\nStep 4: Potential gradient k = V_wire / L = 0.20 V / 10 m = 0.02 V/m. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 m நீளமும் 20 Ω மின்தடையும் கொண்ட மின்னழுத்தமானி கம்பி 5.0 V மின்கலன் மற்றும் 480 Ω வெளிப்புற மின்தடையுடன் தொடரிணைப்பில் இணைக்கப்பட்டுள்ளது. கம்பியின் மின்னழுத்த சாய்வு என்ன?",
+        "optionTexts": [
+          "0.02 V/m (0.2 mV/cm)",
+          "0.05 V/m",
+          "0.2 V/m",
+          "0.01 V/m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An electric dipole of dipole moment p is placed in a uniform electric field E at an angle θ. What is the torque τ and electrostatic potential energy U of the dipole?",
+    "options": [
+      {
+        "label": "A",
+        "text": "τ = p x E and U = - p · E",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "τ = p · E and U = p x E",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "τ = p x E and U = + p · E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "τ = - p x E and U = - p · E",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Torque on dipole τ = p x E (magnitude τ = p E sin θ).\nStep 2: Potential energy of dipole U = - p · E = - p E cos θ.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E சீரான மின்புலத்தில் θ கோணத்தில் வைக்கப்பட்டுள்ள p திருப்புத்திறன் கொண்ட மின் இருமுனையின் முறுக்குவிசை τ மற்றும் நிலை ஆற்றல் U என்ன?",
+        "optionTexts": [
+          "τ = p x E மற்றும் U = - p · E",
+          "τ = p · E மற்றும் U = p x E",
+          "τ = p x E மற்றும் U = + p · E",
+          "τ = - p x E மற்றும் U = - p · E"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Three capacitors of capacitances 2 μF, 3 μF, and 6 μF are connected in series across a 120 V DC supply. What is the charge on each capacitor and the potential drop across the 2 μF capacitor?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Q = 120 μC, V_2μF = 60 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Q = 240 μC, V_2μF = 40 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Q = 120 μC, V_2μF = 30 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Q = 60 μC, V_2μF = 60 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Equivalent series capacitance: 1 / C_eq = 1/2 + 1/3 + 1/6 = (3 + 2 + 1) / 6 = 6/6 = 1 => C_eq = 1 μF.\nStep 2: Total charge Q = C_eq * V = 1 μF * 120 V = 120 μC (same on each capacitor in series).\nStep 3: Voltage across 2 μF capacitor: V1 = Q / C1 = 120 μC / 2 μF = 60 V.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 μF, 3 μF, 6 μF மின்தேக்கிகள் தொடரிணைப்பில் 120 V மின்கலத்துடன் இணைக்கப்பட்டுள்ளன. ஒவ்வொரு மின்தேக்கியிலும் உள்ள மின்னூட்டம் மற்றும் 2 μF மின்தேக்கியின் குறுக்கே உள்ள மின்னழுத்த வேறுபாடு என்ன?",
+        "optionTexts": [
+          "Q = 120 μC, V_2μF = 60 V",
+          "Q = 240 μC, V_2μF = 40 V",
+          "Q = 120 μC, V_2μF = 30 V",
+          "Q = 60 μC, V_2μF = 60 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A hollow charged conducting sphere of radius R has an electric potential V₀ at its surface. What is the electric field and electric potential at a point located at distance r = R/2 from its center?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electric field E = 0, Potential V = V₀",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Electric field E = 2 V₀ / R, Potential V = 2 V₀",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Electric field E = 0, Potential V = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Electric field E = V₀ / R, Potential V = V₀ / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Inside a charged hollow conducting sphere, all excess charge resides strictly on the outer surface.\nStep 2: By Gauss's Law, electric field inside is zero everywhere: E = 0 for r < R.\nStep 3: Since E = - dV/dr = 0, electric potential is strictly constant throughout the interior and equal to surface potential V₀.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய மின்னூட்டம் பெற்ற உள்ளீடற்ற கடத்துக் கோளத்தின் மேற்பரப்பில் மின்னழுத்தம் V₀ ஆகும். அதன் மையத்திலிருந்து r = R/2 தொலைவில் உள்ள புள்ளியில் மின்புலம் மற்றும் மின்னழுத்தம் என்ன?",
+        "optionTexts": [
+          "மின்புலம் E = 0, மின்னழுத்தம் V = V₀",
+          "மின்புலம் E = 2 V₀ / R, மின்னழுத்தம் V = 2 V₀",
+          "மின்புலம் E = 0, மின்னழுத்தம் V = 0",
+          "மின்புலம் E = V₀ / R, மின்னழுத்தம் V = V₀ / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If n identical resistors each of resistance R are first connected in series to give equivalent resistance R_s and then connected in parallel to give equivalent resistance R_p, what is the ratio R_s / R_p?",
+    "options": [
+      {
+        "label": "A",
+        "text": "n^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / n^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2n",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In series: R_s = n * R.\nStep 2: In parallel: R_p = R / n.\nStep 3: Ratio R_s / R_p = (n R) / (R / n) = n^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R மின்தடை கொண்ட n சம மின்தடையாக்கிகள் முதலில் தொடரிணைப்பிலும் (R_s) பின்னர் பக்க இணைப்பிலும் (R_p) இணைக்கப்பட்டால், R_s / R_p விகிதம் என்ன?",
+        "optionTexts": [
+          "n^2",
+          "n",
+          "1 / n^2",
+          "2n"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A cell of EMF E and internal resistance r is connected across an external variable load resistance R. What is the condition for maximum power transfer to the load resistor R, and what is this maximum power?",
+    "options": [
+      {
+        "label": "A",
+        "text": "R = r, P_max = E^2 / (4r)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R = 2r, P_max = E^2 / (2r)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R = r / 2, P_max = E^2 / r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R = r, P_max = E^2 / (2r)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Power delivered to load: P = I^2 R = [ E / (R + r) ]^2 * R.\nStep 2: Differentiating P with respect to R and setting dP/dR = 0 yields R = r (Maximum Power Transfer Theorem).\nStep 3: Substitute R = r: P_max = E^2 * r / (2r)^2 = E^2 r / (4 r^2) = E^2 / (4r).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E மின்சார உந்துவிசை மற்றும் r அக மின்தடை கொண்ட ஒரு மின்கலம் R மாறும் வெளிப்புற மின்தடையுடன் இணைக்கப்பட்டுள்ளது. வெளிப்புற மின்தடைக்கு பெரும திறன் மாற்றப்படுவதற்கான நிபந்தனை மற்றும் பெரும திறன் என்ன?",
+        "optionTexts": [
+          "R = r, P_max = E^2 / (4r)",
+          "R = 2r, P_max = E^2 / (2r)",
+          "R = r / 2, P_max = E^2 / r",
+          "R = r, P_max = E^2 / (2r)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A copper wire carries a current of 1.0 A. If the cross-sectional area of the wire is 1.0 mm^2 and electron number density is 8.5 x 10^28 m^-3, what is the drift velocity of free electrons? (e = 1.6 x 10^-19 C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "7.35 x 10^-5 m/s (≈ 0.074 mm/s)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.25 x 10^-3 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.0 x 10^8 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.4 x 10^-2 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Current relation: I = n e A v_d => v_d = I / (n e A).\nStep 2: Area A = 1.0 mm^2 = 1.0 x 10^-6 m^2.\nStep 3: v_d = 1.0 / [ (8.5 x 10^28) * (1.6 x 10^-19) * (1.0 x 10^-6) ] = 1.0 / [ 1.36 x 10^4 ] = 7.35 x 10^-5 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.0 mm^2 குறுக்குவெட்டுப் பரப்புள்ள தாமிரக் கம்பியில் 1.0 A மின்னோட்டம் பாய்கிறது. எலக்ட்ரான் எண் அடர்த்தி 8.5 x 10^28 m^-3 எனில், கட்டுறா எலக்ட்ரான்களின் இழுப்பு திசைவேகம் என்ன? (e = 1.6 x 10^-19 C)",
+        "optionTexts": [
+          "7.35 x 10^-5 m/s (≈ 0.074 mm/s)",
+          "1.25 x 10^-3 m/s",
+          "3.0 x 10^8 m/s",
+          "5.4 x 10^-2 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Twelve identical resistors each of resistance R are connected to form the edges of a cube. What is the equivalent resistance of the cube network across body diagonal opposite corners?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/6) R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(3/4) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/12) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Entering vertex splits total current I equally into 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 2: Next intermediate layer splits into 6 branches (each carrying I/6, voltage drop = (I/6) R).\nStep 3: Final converging layer has 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 4: Total potential drop V = (I/3) R + (I/6) R + (I/3) R = (5/6) I R => R_eq = V / I = (5/6) R. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R மின்தடை கொண்ட 12 சம மின்தடையாக்கிகள் ஒரு கனசதுரத்தின் விளிம்புகளாக இணைக்கப்பட்டுள்ளன. கனசதுரத்தின் முதன்மை மூலைவிட்டத்தின் எதிரெதிர் முனைகளுக்கு இடையே உள்ள தொகுபயன் மின்தடை என்ன?",
+        "optionTexts": [
+          "(5/6) R",
+          "(3/4) R",
+          "(7/12) R",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The electric potential at an equatorial point of an electric dipole of dipole moment p at distance r from the dipole center is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k p / r^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2k p / r^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "k p / r^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for dipole potential: V(r, θ) = (k p cos θ) / r^2.\nStep 2: On the equatorial plane, θ = 90°, so cos 90° = 0.\nStep 3: Distance from +q equals distance from -q, so V = (+q / 4πε₀d) + (-q / 4πε₀d) = 0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p திருப்புத்திறன் கொண்ட மின் இருமுனையின் மையத்திலிருந்து r தொலைவில் உள்ள நடுவரைக் கோட்டுப் புள்ளியில் மின் அழுத்தம் என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜியம்",
+          "k p / r^2",
+          "2k p / r^2",
+          "k p / r^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A carbon resistor has color bands in the sequence: Yellow, Violet, Brown, and Gold. What is its resistance and tolerance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "470 Ω ± 5%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "47 Ω ± 10%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.7 kΩ ± 5%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "570 Ω ± 5%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Band 1: Yellow = 4.\nStep 2: Band 2: Violet = 7.\nStep 3: Band 3: Multiplier Brown = 10^1 = 10.\nStep 4: Band 4: Tolerance Gold = ± 5%.\nStep 5: Resistance = 47 x 10^1 Ω ± 5% = 470 Ω ± 5%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்பன் மின்தடையாக்கியில் மஞ்சள், ஊதா, பழுப்பு மற்றும் தங்கம் ஆகிய வண்ணப்பட்டைகள் வரிசையாக உள்ளன. அதன் மின்தடை மற்றும் மாறுபடும் எல்லை என்ன?",
+        "optionTexts": [
+          "470 Ω ± 5%",
+          "47 Ω ± 10%",
+          "4.7 kΩ ± 5%",
+          "570 Ω ± 5%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An infinite line charge produces an electric field of 9.0 x 10^4 N/C at a perpendicular distance of 2.0 cm. What is the linear charge density λ of the line? (1 / (4πε₀) = 9.0 x 10^9 N m^2/C^2)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 x 10^-7 C/m (0.1 μC/m)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 x 10^-7 C/m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.5 x 10^-6 C/m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 x 10^-6 C/m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Electric field of infinite line charge: E = λ / (2πε₀ r) = 2 k λ / r.\nStep 2: Rearrange for λ: λ = E * r / (2k).\nStep 3: Substitute E = 9.0 x 10^4 N/C, r = 0.02 m, k = 9.0 x 10^9: λ = (9.0 x 10^4 * 0.02) / (2 * 9.0 x 10^9) = 1800 / (18 x 10^9) = 1.0 x 10^-7 C/m.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முடிவிலா நீளமுள்ள ஒரு நேர்கோட்டு மின்னூட்டம் 2.0 cm செங்குத்துத் தொலைவில் 9.0 x 10^4 N/C மின்புலத்தை உருவாக்குகிறது. அதன் நீள் மின்னூட்ட அடர்த்தி λ என்ன?",
+        "optionTexts": [
+          "1.0 x 10^-7 C/m (0.1 μC/m)",
+          "2.0 x 10^-7 C/m",
+          "4.5 x 10^-6 C/m",
+          "1.0 x 10^-6 C/m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A fully charged capacitor of capacitance C₁ with initial charge Q₀ is disconnected from the battery and connected in parallel to an uncharged capacitor of capacitance C₂. What is the loss of electrostatic energy during charge redistribution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2 = [ C₂ / (2 (C₁ + C₂)) ] * (Q₀^2 / C₁)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Zero (Electrostatic energy is strictly conserved)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) (C₁ + C₂) V₀^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Q₀^2 / (2 C₂)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Initial energy U_i = Q₀^2 / (2 C₁) = (1/2) C₁ V₀^2.\nStep 2: Common potential V = Q₀ / (C₁ + C₂).\nStep 3: Final energy U_f = (1/2) (C₁ + C₂) V^2 = (1/2) Q₀^2 / (C₁ + C₂).\nStep 4: Energy lost ΔU = U_i - U_f = (1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Q₀ மின்னூட்டம் கொண்ட C₁ மின்தேக்கி மின்கலத்திலிருந்து துண்டிக்கப்பட்டு மின்னூட்டமற்ற C₂ மின்தேக்கியுடன் பக்க இணைப்பில் இணைக்கப்படுகிறது. மின்னூட்ட பகிர்வின் போது ஏற்படும் நிலைமின்னியல் ஆற்றல் இழப்பு என்ன?",
+        "optionTexts": [
+          "(1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2",
+          "பூஜ்ஜியம் (ஆற்றல் மாறாது)",
+          "(1/2) (C₁ + C₂) V₀^2",
+          "Q₀^2 / (2 C₂)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Kirchhoff's first law (Junction rule, Σ I = 0) and second law (Loop rule, Σ V = 0) are based on the fundamental conservation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electric Charge and Energy respectively",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Energy and Electric Charge respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Electric Charge and Linear Momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Energy and Angular Momentum",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Kirchhoff's Junction rule (current in = current out) is a direct consequence of Conservation of Electric Charge.\nStep 2: Kirchhoff's Loop rule (net EMF = net IR drops around a closed path) is a direct consequence of Conservation of Energy.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிர்க்காஃபின் முதல் விதி (சந்திப்பு விதி) மற்றும் இரண்டாம் விதி (சுற்று விதி) முறையே எவற்றின் அழியா விதிகளை அடிப்படையாகக் கொண்டவை?",
+        "optionTexts": [
+          "மின்னூட்டம் மற்றும் ஆற்றல் முறையே",
+          "ஆற்றல் மற்றும் மின்னூட்டம் முறையே",
+          "மின்னூட்டம் மற்றும் நேர்கோட்டு உந்தம்",
+          "ஆற்றல் மற்றும் கோண உந்தம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The resistance of a platinum resistance thermometer is 2.00 Ω at 0 °C and 2.80 Ω at 100 °C. When the thermometer is inserted in a hot bath, its resistance is 3.20 Ω. What is the temperature of the bath?",
+    "options": [
+      {
+        "label": "A",
+        "text": "150 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "120 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "160 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula: t = [ (R_t - R₀) / (R_100 - R₀) ] * 100 °C.\nStep 2: Substitute R_t = 3.20 Ω, R₀ = 2.00 Ω, R_100 = 2.80 Ω.\nStep 3: t = [ (3.20 - 2.00) / (2.80 - 2.00) ] * 100 = (1.20 / 0.80) * 100 = 1.5 * 100 = 150 °C.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பிளாட்டினம் மின்தடை வெப்பமானியின் மின்தடை 0 °C இல் 2.00 Ω மற்றும் 100 °C இல் 2.80 Ω ஆகும். ஒரு திரவத்தில் வைக்கப்படும் போது அதன் மின்தடை 3.20 Ω எனில், திரவத்தின் வெப்பநிலை என்ன?",
+        "optionTexts": [
+          "150 °C",
+          "120 °C",
+          "160 °C",
+          "200 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electric dipole of moment p is oriented along the x-axis. What is the ratio of electric field intensity at an axial point (E_axial) to that at an equatorial point (E_equatorial) at the same distance r (r >> a)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a short dipole: E_axial = 2 k p / r^3.\nStep 2: E_equatorial = k p / r^3.\nStep 3: Ratio E_axial / E_equatorial = (2 k p / r^3) / (k p / r^3) = 2 : 1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p திருப்புத்திறன் கொண்ட மின் இருமுனையிலிருந்து சம தொலைவு r இல் உள்ள அச்சுக்கோட்டுப் புள்ளியின் மின்புலத்திற்கும் (E_axial) நடுவரைக் கோட்டுப் புள்ளியின் மின்புலத்திற்கும் (E_equatorial) உள்ள விகிதம்:",
+        "optionTexts": [
+          "2 : 1",
+          "1 : 2",
+          "4 : 1",
+          "1 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements about equipotential surfaces is FALSE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electric field lines are always parallel to equipotential surfaces",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Work done in moving a test charge between any two points on an equipotential surface is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Two equipotential surfaces can never intersect each other",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Equipotential surfaces are closer together in regions of strong electric fields",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Electric field lines are always strictly perpendicular (normal) to equipotential surfaces at every point (since E = - dV/dr and tangential component of E is zero).\nStep 2: Claim A says field lines are parallel, which is false.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சமமின்னழுத்தப் பரப்புகள் பற்றிய பின்வரும் கூற்றுகளில் எது தவறானது?",
+        "optionTexts": [
+          "மின்புலக் கோடுகள் எப்போதும் சமமின்னழுத்தப் பரப்பிற்கு இணையாக இருக்கும்",
+          "சமமின்னழுத்தப் பரப்பில் இரு புள்ளிகளுக்கு இடையே சோதனை மின்னூட்டத்தை நகர்த்த செய்யப்படும் வேலை பூஜ்ஜியம்",
+          "இரு சமமின்னழுத்தப் பரப்புகள் ஒன்றை ஒன்று ஒருபோதும் வெட்டிக்கொள்ளாது",
+          "வலிமையான மின்புலப் பகுதிகளில் சமமின்னழுத்தப் பரப்புகள் நெருக்கமாக இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two cells of EMFs E1 = 2.0 V and E2 = 1.0 V with internal resistances r1 = 1.0 Ω and r2 = 2.0 Ω are connected in parallel with positive terminals connected together. What is the equivalent EMF and equivalent internal resistance of the combination?",
+    "options": [
+      {
+        "label": "A",
+        "text": "E_eq = 5/3 V (≈ 1.67 V), r_eq = 2/3 Ω",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "E_eq = 1.5 V, r_eq = 0.5 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "E_eq = 3.0 V, r_eq = 3.0 Ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "E_eq = 1.0 V, r_eq = 0.67 Ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Equivalent internal resistance in parallel: 1 / r_eq = 1/r1 + 1/r2 = 1/1 + 1/2 = 3/2 => r_eq = 2/3 Ω.\nStep 2: Equivalent EMF: E_eq = [ (E1 / r1) + (E2 / r2) ] * r_eq = [ (2/1) + (1/2) ] * (2/3) = (5/2) * (2/3) = 5/3 V.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E1 = 2.0 V (r1 = 1.0 Ω) மற்றும் E2 = 1.0 V (r2 = 2.0 Ω) கொண்ட இரு மின்கலன்கள் பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் மின்னியக்கு விசை மற்றும் தொகுபயன் அக மின்தடை என்ன?",
+        "optionTexts": [
+          "E_eq = 5/3 V (≈ 1.67 V), r_eq = 2/3 Ω",
+          "E_eq = 1.5 V, r_eq = 0.5 Ω",
+          "E_eq = 3.0 V, r_eq = 3.0 Ω",
+          "E_eq = 1.0 V, r_eq = 0.67 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a Wheatstone bridge with four arms P, Q, R, and S, the bridge is balanced when:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P / Q = R / S",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P * Q = R * S",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P + Q = R + S",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P / R = S / Q",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a balanced Wheatstone bridge, the potential at opposite galvanometer junctions is equal (galvanometer current I_g = 0).\nStep 2: The ratio of resistances in adjacent arms must be equal: P / Q = R / S.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P, Q, R, S ஆகிய நான்கு கரங்களைக் கொண்ட வீட்ஸ்டோன் சமனச்சுற்று சமநிலையில் இருக்க நிபந்தனை:",
+        "optionTexts": [
+          "P / Q = R / S",
+          "P * Q = R * S",
+          "P + Q = R + S",
+          "P / R = S / Q"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor has plate area A and separation d. A conducting metal slab of thickness t (t < d) is inserted between the plates. What is the new capacitance?",
+    "options": [
+      {
+        "label": "A",
+        "text": "ε₀ A / (d - t)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "ε₀ A / (d + t)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "ε₀ A / d",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 ε₀ A / (d - t)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Inside a conductor, electric field is zero (dielectric constant K -> ∞).\nStep 2: Effective air gap between plates reduces from d to (d - t).\nStep 3: Capacitance C = ε₀ A / (d - t + t/K) = ε₀ A / (d - t + 0) = ε₀ A / (d - t).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A பரப்பும் d இடைவெளியும் கொண்ட தட்டு மின்தேக்கியில் t (t < d) தடிமனுள்ள உலோகத் தகடு வைக்கப்படுகிறது. புதிய மின்தேக்குத்திறன் என்ன?",
+        "optionTexts": [
+          "ε₀ A / (d - t)",
+          "ε₀ A / (d + t)",
+          "ε₀ A / d",
+          "2 ε₀ A / (d - t)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A charge Q is enclosed by a Gaussian spherical surface of radius R. If the radius of the sphere is doubled to 2R, what will happen to the outward electric flux through the surface?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remains unchanged",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Becomes 4 times",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Becomes 1/4th",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Doubles",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to Gauss's Law, Φ = Q_enclosed / ε₀.\nStep 2: Total flux depends exclusively on the total net enclosed charge, not on the geometric shape or size of the Gaussian surface.\nStep 3: Since Q_enclosed is constant, electric flux remains unchanged.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய காஸியன் கோளத்தால் Q மின்னூட்டம் சூழப்பட்டுள்ளது. கோளத்தின் ஆரம் இருமடங்காக (2R) உயர்த்தப்பட்டால், பரப்பின் வழியே வெளியேறும் மின்பாயம் என்னவாகும்?",
+        "optionTexts": [
+          "மாற்றமின்றி அதே அளவில் இருக்கும்",
+          "4 மடங்கு அதிகரிக்கும்",
+          "1/4 பங்காகக் குறையும்",
+          "இருமடங்காகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Three identical point charges each of charge +q are placed at the vertices of an equilateral triangle of side a. What is the total electrostatic potential energy of this system of charges?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 q^2 / (4πε₀ a)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "q^2 / (4πε₀ a)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) q^2 / (4πε₀ a)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 q^2 / (4πε₀ a)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total potential energy is the sum of pairwise interaction energies: U = U12 + U23 + U13.\nStep 2: For 3 charges, number of distinct pairs = 3*2 / 2 = 3 pairs.\nStep 3: Each pair has separation a, so U_pair = k q^2 / a = q^2 / (4πε₀ a).\nStep 4: Total energy U = 3 * [ q^2 / (4πε₀ a) ]. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a பக்கமுள்ள சமபக்க முக்கோணத்தின் மூன்று உச்சிகளில் +q புள்ளி மின்னூட்டங்கள் வைக்கப்பட்டுள்ளன. இந்த மின்னூட்ட அமைப்பின் மொத்த நிலைமின்னியல் நிலை ஆற்றல் என்ன?",
+        "optionTexts": [
+          "3 q^2 / (4πε₀ a)",
+          "q^2 / (4πε₀ a)",
+          "sqrt(3) q^2 / (4πε₀ a)",
+          "6 q^2 / (4πε₀ a)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The SI unit of electrical conductivity (σ) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Siemens per meter (S m^-1 or Ω^-1 m^-1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ohm meter (Ω m)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ohm per meter (Ω m^-1)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Volt per meter (V m^-1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conductivity σ is the reciprocal of resistivity ρ: σ = 1 / ρ.\nStep 2: SI unit of resistivity is Ω m.\nStep 3: Unit of conductivity = 1 / (Ω m) = Ω^-1 m^-1 = S m^-1 (Siemens per meter).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின் கடத்துத்திறனின் (σ) SI அலகு என்ன?",
+        "optionTexts": [
+          "சீமென்ஸ் / மீட்டர் (S m^-1 அல்லது Ω^-1 m^-1)",
+          "ஓம் மீட்டர் (Ω m)",
+          "ஓம் / மீட்டர் (Ω m^-1)",
+          "வோல்ட் / மீட்டர் (V m^-1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two point charges +8 μC and -2 μC are placed 12 cm apart in air. At what point on the line joining them (other than infinity) is the net electric potential zero?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9.6 cm from +8 μC (between charges) and 24 cm from +8 μC (outside)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.0 cm from +8 μC",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 cm from +8 μC",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8.0 cm from +8 μC",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Potential V = k q1 / x + k q2 / (d - x) = 0 => 8 / x = 2 / (12 - x) => 4(12 - x) = x => 48 - 4x = x => 5x = 48 => x = 9.6 cm (internal point).\nStep 2: External point (distance x' from +8 μC where x' > 12): 8 / x' = 2 / (x' - 12) => 4(x' - 12) = x' => 4x' - 48 = x' => 3x' = 48 => x' = 16 cm (wait: 48/3 = 16 cm or from -2 μC distance is 4 cm => x' = 16 cm from +8 μC).\nStep 3: Point between them at 9.6 cm is an exact zero potential point.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+8 μC மற்றும் -2 μC மின்னூட்டங்கள் 12 cm இடைவெளியில் வைக்கப்பட்டுள்ளன. அவைகளை இணைக்கும் கோட்டில் எந்தப் புள்ளியில் மின் அழுத்தம் பூஜ்ஜியமாகும்?",
+        "optionTexts": [
+          "+8 μC இலிருந்து 9.6 cm (இடையில்) மற்றும் 24 cm (வெளியே)",
+          "+8 μC இலிருந்து 6.0 cm",
+          "+8 μC இலிருந்து 4.0 cm",
+          "+8 μC இலிருந்து 8.0 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When temperature of a metallic conductor is increased, its electrical resistivity:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increases because relaxation time of free electrons decreases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Decreases because electron density increases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remains unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "First decreases then increases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Resistivity ρ = m / (n e^2 τ).\nStep 2: In metals, free electron density n is almost constant with temperature.\nStep 3: Increasing temperature increases lattice ion vibrations, causing more frequent collisions and decreasing relaxation time τ.\nStep 4: As τ decreases, resistivity ρ increases linearly (positive temperature coefficient α). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகக் கடத்தியின் வெப்பநிலை உயர்த்தப்படும் போது, அதன் மின்தடை எண்:",
+        "optionTexts": [
+          "கட்டுறா எலக்ட்ரான்களின் தளர்வு நேரம் குறைவதால் அதிகரிக்கிறது",
+          "எலக்ட்ரான் அடர்த்தி அதிகரிப்பதால் குறைகிறது",
+          "மாற்றமின்றி இருக்கும்",
+          "முதலில் குறைந்து பின் அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A capacitor of capacitance 20 μF is charged to a potential difference of 500 V and then connected across a resistor of 10 kΩ. What is the initial discharge current through the resistor?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 mA (0.05 A)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "500 mA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Initial potential difference across resistor V₀ = 500 V.\nStep 2: Initial discharge current I₀ = V₀ / R.\nStep 3: I₀ = 500 V / (10 x 10^3 Ω) = 500 / 10000 = 0.05 A = 50 mA.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 μF மின்தேக்கி 500 V வரை மின்னூட்டம் செய்யப்பட்டு 10 kΩ மின்தடையுடன் இணைக்கப்படுகிறது. மின்தடை வழியே பாயும் தொடக்க மின்னிறக்க மின்னோட்டம் என்ன?",
+        "optionTexts": [
+          "50 mA (0.05 A)",
+          "25 mA",
+          "100 mA",
+          "500 mA"
+        ]
+      }
+    ]
+  }
+]

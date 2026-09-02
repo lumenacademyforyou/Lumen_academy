@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY05-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A Carnot engine operates between a heat source at 500 K and a heat sink at 300 K. If it absorbs 1000 J of heat from the source in each cycle, what is the work output per cycle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "400 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "600 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "200 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "500 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carnot efficiency η = 1 - T_C / T_H = 1 - 300 / 500 = 1 - 0.60 = 0.40 (40%).\nStep 2: Work done W = η * Q_in = 0.40 * 1000 J = 400 J.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K வெப்பமூலம் மற்றும் 300 K வெப்ப ஏற்பிக்கு இடையே ஒரு கார்னோ இயந்திரம் செயல்படுகிறது. ஒவ்வொரு சுழற்சியிலும் மூலத்திலிருந்து 1000 J வெப்பத்தை உறிஞ்சினால், இயந்திரத்தின் பயனுள்ள வேலை என்ன?",
+        "optionTexts": [
+          "400 J",
+          "600 J",
+          "200 J",
+          "500 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In which thermodynamic process is the change in internal energy (ΔU) of an ideal gas strictly equal to zero?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Isothermal process",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Adiabatic process",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Isobaric process",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Isochoric process",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Internal energy of an ideal gas depends solely on absolute temperature: U = n C_v T => ΔU = n C_v ΔT.\nStep 2: In an isothermal process, temperature T is constant, so ΔT = 0.\nStep 3: Therefore, ΔU = 0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எந்த வெப்ப இயக்கவியல் நிகழ்வில் ஒரு நல்லியல்பு வாயுவின் அக ஆற்றல் மாற்றம் (ΔU) பூஜ்ஜியமாக இருக்கும்?",
+        "optionTexts": [
+          "சமவெப்ப நிகழ்வு",
+          "வெப்பப் பரிமாற்றமில்லா நிகழ்வு",
+          "சமஅழுத்த நிகழ்வு",
+          "சமபருமன் நிகழ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ideal monoatomic gas (γ = 5/3) initially at temperature T1 and volume V1 is compressed adiabatically to 1/8th of its initial volume. What is its final temperature T2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 T1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "8 T1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 T1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "16 T1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For an adiabatic process: T V^(γ - 1) = constant => T2 = T1 * (V1 / V2)^(γ - 1).\nStep 2: γ = 5/3 => γ - 1 = 2/3.\nStep 3: V1 / V2 = 8.\nStep 4: T2 = T1 * (8)^(2/3) = T1 * (2^3)^(2/3) = T1 * 2^2 = 4 T1. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொடக்கத்தில் T1 வெப்பநிலை மற்றும் V1 பருமன் கொண்ட ஒரு நல்லியல்பு ஓரணு வாயு (γ = 5/3) வெப்பப்பரிமாற்றமின்றி தொடக்க பருமனில் 1/8 பங்காக சுருக்கப்படுகிறது. அதன் இறுதி வெப்பநிலை T2 என்ன?",
+        "optionTexts": [
+          "4 T1",
+          "8 T1",
+          "2 T1",
+          "16 T1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A diatomic gas molecule has 5 active degrees of freedom at room temperature (3 translational + 2 rotational). What is the ratio of molar heat capacities γ = C_p / C_v for this gas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 / 5 (1.40)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 / 3 (1.67)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 / 3 (1.33)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9 / 7 (1.29)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: C_v = (f / 2) R = (5/2) R.\nStep 2: C_p = C_v + R = (5/2) R + R = (7/2) R.\nStep 3: γ = C_p / C_v = [(7/2) R] / [(5/2) R] = 7 / 5 = 1.40.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் 5 சுதந்திர இயக்க கூறுகளைக் கொண்ட ஈரணு வாயுவிற்கு மோலார் வெப்ப ஏற்புத்திறன்களின் விகிதம் γ = C_p / C_v என்ன?",
+        "optionTexts": [
+          "7 / 5 (1.40)",
+          "5 / 3 (1.67)",
+          "4 / 3 (1.33)",
+          "9 / 7 (1.29)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The root-mean-square (RMS) speed of gas molecules of an ideal gas at 27 °C is v_rms. At what temperature will the RMS speed become 2 v_rms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "927 °C (1200 K)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "108 °C (381 K)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "54 °C (327 K)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "600 °C (873 K)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: RMS speed formula: v_rms = sqrt(3 R T / M) => v_rms ∝ sqrt(T).\nStep 2: Initial absolute temperature T1 = 27 + 273 = 300 K.\nStep 3: To double v_rms (v2 = 2 v1), temperature must quadruple: T2 = 4 * T1 = 4 * 300 K = 1200 K.\nStep 4: In Celsius: T2 = 1200 - 273 = 927 °C. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "27 °C வெப்பநிலையில் ஒரு நல்லியல்பு வாயு மூலக்கூறுகளின் சராசரி இருமடி மூல (RMS) வேகம் v_rms ஆகும். எந்த வெப்பநிலையில் RMS வேகம் 2 v_rms ஆக மாறும்?",
+        "optionTexts": [
+          "927 °C (1200 K)",
+          "108 °C (381 K)",
+          "54 °C (327 K)",
+          "600 °C (873 K)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Wien's displacement law, the wavelength λ_max corresponding to maximum spectral radiance of a blackbody is related to absolute temperature T by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "λ_max * T = constant (b)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "λ_max / T = constant",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "λ_max * T^4 = constant",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "λ_max * T^2 = constant",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Wien's displacement law states that λ_max is inversely proportional to absolute temperature T.\nStep 2: λ_max ∝ 1 / T => λ_max * T = b (Wien's constant ≈ 2.898 x 10^-3 m K).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வீனின் இடப்பெயர்ச்சி விதிப்படி, கரும்பொருளின் பெரும கதிர்வீச்சுக்குரிய அலைநீளம் λ_max மற்றும் தனி வெப்பநிலை T ஆகியவற்றுக்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "λ_max * T = மாறிலி (b)",
+          "λ_max / T = மாறிலி",
+          "λ_max * T^4 = மாறிலி",
+          "λ_max * T^2 = மாறிலி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A hot liquid cools from 80 °C to 60 °C in 5.0 minutes in a room maintained at constant ambient temperature of 20 °C. Using Newton's law of cooling, how long will it take to cool further from 60 °C to 40 °C?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8.33 minutes (25/3 min)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.0 minutes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10.0 minutes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.25 minutes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Newton's cooling approximation: (T1 - T2) / t = K [ (T1 + T2)/2 - T₀ ].\nStep 2: First case: (80 - 60) / 5 = K [ (80 + 60)/2 - 20 ] => 20 / 5 = K [ 70 - 20 ] => 4 = 50 K => K = 4/50 = 2/25.\nStep 3: Second case: (60 - 40) / t' = K [ (60 + 40)/2 - 20 ] => 20 / t' = (2/25) [ 50 - 20 ] => 20 / t' = (2/25) * 30 = 60 / 25 = 12 / 5.\nStep 4: t' = 20 * (5 / 12) = 100 / 12 = 25 / 3 ≈ 8.33 minutes. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 °C அறை வெப்பநிலையில் உள்ள ஒரு சூடான திரவம் 80 °C இலிருந்து 60 °C ஆகக் குளிர 5.0 நிமிடங்கள் ஆகிறது. நியூட்டனின் குளிர்ச்சி விதிப்படி, அது மேலும் 60 °C இலிருந்து 40 °C ஆகக் குளிர எவ்வளவு நேரம் ஆகும்?",
+        "optionTexts": [
+          "8.33 நிமிடங்கள் (25/3 நிமி)",
+          "5.0 நிமிடங்கள்",
+          "10.0 நிமிடங்கள்",
+          "6.25 நிமிடங்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas absorbs 300 J of heat and simultaneously expands against external pressure, doing 120 J of work. What is the change in internal energy of the gas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+180 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+420 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-180 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+300 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From the First Law of Thermodynamics: ΔQ = ΔU + ΔW.\nStep 2: Heat absorbed ΔQ = +300 J; Work done by gas ΔW = +120 J.\nStep 3: ΔU = ΔQ - ΔW = 300 J - 120 J = +180 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயு 300 J வெப்பத்தை உறிஞ்சி, அதே நேரத்தில் வெளிப்புற அழுத்தத்திற்கு எதிராக 120 J வேலை செய்கிறது. வாயுவின் அக ஆற்றல் மாற்றம் என்ன?",
+        "optionTexts": [
+          "+180 J",
+          "+420 J",
+          "-180 J",
+          "+300 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two rods of identical length and cross-sectional area with thermal conductivities K1 and K2 are joined end-to-end in series. What is the effective equivalent thermal conductivity K_eq of the composite rod?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 K1 K2 / (K1 + K2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(K1 + K2) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(K1 K2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "K1 K2 / (K1 + K2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In series, total thermal resistance R_eq = R1 + R2.\nStep 2: Thermal resistance R = L / (K A). Total length = 2L.\nStep 3: 2L / (K_eq A) = L / (K1 A) + L / (K2 A) => 2 / K_eq = 1/K1 + 1/K2 = (K1 + K2) / (K1 K2).\nStep 4: K_eq = 2 K1 K2 / (K1 + K2) (Harmonic mean). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம நீளமும் குறுக்குவெட்டுப் பரப்பும் கொண்ட இரு தண்டுகள் (வெப்பக் கடத்துத்திறன் K1 மற்றும் K2) தொடரிணைப்பில் இணைக்கப்படுகின்றன. இக்கூட்டுத் தண்டின் தொகுபயன் வெப்பக் கடத்துத்திறன் K_eq என்ன?",
+        "optionTexts": [
+          "2 K1 K2 / (K1 + K2)",
+          "(K1 + K2) / 2",
+          "sqrt(K1 K2)",
+          "K1 K2 / (K1 + K2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A refrigerator works between 0 °C (freezer) and 27 °C (room). What is the theoretical maximum coefficient of performance (COP / β) of this Carnot refrigerator?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10.1 (273 / 27)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.10",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "9.0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Temperatures in Kelvin: T_C = 0 + 273 = 273 K; T_H = 27 + 273 = 300 K.\nStep 2: COP for Carnot refrigerator: β = T_C / (T_H - T_C).\nStep 3: β = 273 / (300 - 273) = 273 / 27 ≈ 10.11.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0 °C மற்றும் 27 °C வெப்பநிலைகளுக்கு இடையே செயல்படும் ஒரு கார்னோ குளிர்பதனப் பெட்டியின் கோட்பாட்டு பெரும செயல்திறன் குணகம் (COP / β) என்ன?",
+        "optionTexts": [
+          "10.1 (273 / 27)",
+          "0.10",
+          "9.0",
+          "1.0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the total translational kinetic energy of 1.0 mole of an ideal gas at 300 K? (Take gas constant R = 8.31 J/(mol K))",
+    "options": [
+      {
+        "label": "A",
+        "text": "3740 J (3.74 kJ)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2493 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6232 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1246 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Translational kinetic energy for any ideal gas (regardless of atomicity) is E_trans = (3/2) n R T.\nStep 2: For n = 1 mole and T = 300 K: E_trans = (3/2) * (8.31 J/mol K) * 300 K.\nStep 3: E_trans = 1.5 * 2493 J = 3739.5 J ≈ 3.74 kJ.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K வெப்பநிலையில் 1.0 மோல் நல்லியல்பு வாயுவின் மொத்த இடப்பெயர்வு இயக்க ஆற்றல் என்ன? (R = 8.31 J/(mol K))",
+        "optionTexts": [
+          "3740 J (3.74 kJ)",
+          "2493 J",
+          "6232 J",
+          "1246 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mean free path λ of gas molecules of diameter d in a gas at molecular number density n is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / (sqrt(2) π n d^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / (π n d^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(2) / (π n d^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / (sqrt(2) π n^2 d)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Derivation from kinetic theory considering relative velocity between colliding molecules introduces a factor of sqrt(2).\nStep 2: Mean free path λ = 1 / [ sqrt(2) * n * π d^2 ].\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு எண் அடர்த்தி n மற்றும் விட்டம் d கொண்ட வாயு மூலக்கூறுகளின் சராசரி மோதல் இடைவெளி (λ) சமன்பாடு என்ன?",
+        "optionTexts": [
+          "1 / (sqrt(2) π n d^2)",
+          "1 / (π n d^2)",
+          "sqrt(2) / (π n d^2)",
+          "1 / (sqrt(2) π n^2 d)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During an adiabatic expansion of an ideal gas, its temperature:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decreases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remains constant",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "First increases then decreases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In adiabatic expansion, heat exchange ΔQ = 0.\nStep 2: From first law: ΔQ = ΔU + ΔW = 0 => ΔU = - ΔW.\nStep 3: During expansion, work done by gas ΔW > 0, which means ΔU < 0.\nStep 4: Since ΔU = n C_v ΔT < 0, temperature decreases (cooling occurs). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயுவின் வெப்பப்பரிமாற்றமில்லா விரிவடைதலின் போது, அதன் வெப்பநிலை:",
+        "optionTexts": [
+          "குறைகிறது",
+          "அதிகரிக்கிறது",
+          "மாறாமல் இருக்கும்",
+          "முதலில் உயர்ந்து பின் குறைகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A spherical blackbody of radius 12 cm radiates 450 W of power at 500 K. If the radius is halved and the temperature is doubled, what will be the radiated power?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1800 W",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "900 W",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3600 W",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "450 W",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Stefan-Boltzmann Law: Radiated power P = σ A T^4 = σ (4π R^2) T^4 => P ∝ R^2 T^4.\nStep 2: New power P' / P = (R' / R)^2 * (T' / T)^4 = (1/2)^2 * (2)^4 = (1/4) * 16 = 4.\nStep 3: P' = 4 * 450 W = 1800 W.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "12 cm ஆரமுள்ள ஒரு கோள கரும்பொருள் 500 K வெப்பநிலையில் 450 W திறனை கதிர்வீசுகிறது. ஆரம் பாதியாகக் குறைக்கப்பட்டு வெப்பநிலை இருமடங்காக உயர்த்தப்பட்டால், கதிர்வீசப்படும் திறன் என்ன?",
+        "optionTexts": [
+          "1800 W",
+          "900 W",
+          "3600 W",
+          "450 W"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two ideal gases 1 and 2 at temperatures T1 and T2 contain n1 and n2 moles with molar heat capacities at constant volume C_v1 and C_v2 respectively. When mixed without heat loss, what is the equilibrium temperature T_mix of the mixture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(n1 T1 + n2 T2) / (n1 + n2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(C_v1 T1 + C_v2 T2) / (C_v1 + C_v2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(T1 T2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total internal energy is conserved: U_total = U1 + U2.\nStep 2: (n1 C_v1 + n2 C_v2) T_mix = n1 C_v1 T1 + n2 C_v2 T2.\nStep 3: T_mix = (n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T1 மற்றும் T2 வெப்பநிலைகளில் n1 மற்றும் n2 மோல்கள் (மோலார் வெப்ப ஏற்புத்திறன் C_v1 மற்றும் C_v2) கொண்ட இரு நல்லியல்பு வாயுக்கள் வெப்ப இழப்பின்றி கலக்கப்படுகின்றன. கலவையின் சமநிலை வெப்பநிலை T_mix என்ன?",
+        "optionTexts": [
+          "(n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2)",
+          "(n1 T1 + n2 T2) / (n1 + n2)",
+          "(C_v1 T1 + C_v2 T2) / (C_v1 + C_v2)",
+          "sqrt(T1 T2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The ratio of most probable speed (v_mp), average speed (v_avg), and root-mean-square speed (v_rms) for an ideal gas at temperature T is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2) : sqrt(8/π) : sqrt(3) (≈ 1 : 1.128 : 1.224)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(3) : sqrt(8/π) : sqrt(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 : 1 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(8/π) : sqrt(2) : sqrt(3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formulas: v_mp = sqrt(2 R T / M); v_avg = sqrt(8 R T / (π M)); v_rms = sqrt(3 R T / M).\nStep 2: Ratio v_mp : v_avg : v_rms = sqrt(2) : sqrt(8/π) : sqrt(3) ≈ 1.414 : 1.596 : 1.732 => 1 : 1.128 : 1.224.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T வெப்பநிலையில் உள்ள நல்லியல்பு வாயுவின் அதிக சாத்தியமுள்ள வேகம் (v_mp), சராசரி வேகம் (v_avg), மற்றும் RMS வேகம் (v_rms) ஆகியவற்றின் விகிதம்:",
+        "optionTexts": [
+          "sqrt(2) : sqrt(8/π) : sqrt(3) (≈ 1 : 1.128 : 1.224)",
+          "sqrt(3) : sqrt(8/π) : sqrt(2)",
+          "1 : 1 : 1",
+          "sqrt(8/π) : sqrt(2) : sqrt(3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "One mole of an ideal monoatomic gas undergoes a cyclic process consisting of an isobaric expansion from (P₀, V₀) to (P₀, 2V₀), an isochoric cooling to (P₀/2, 2V₀), an isobaric compression to (P₀/2, V₀), and an isochoric heating back to (P₀, V₀). What is the thermal efficiency of this cycle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15.4% (2/13 ≈ 15.4%)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "33.3%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50.0%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Net work done W = Area of rectangle = (P₀ - P₀/2) * (2V₀ - V₀) = (P₀/2) * V₀ = (1/2) P₀ V₀.\nStep 2: Heat absorbed Q_in occurs in isobaric expansion (1->2) and isochoric heating (4->1).\nStep 3: Q_12 = n C_p ΔT = (5/2) P₀ (2V₀ - V₀) = (5/2) P₀ V₀; Q_41 = n C_v ΔT = (3/2) (P₀ - P₀/2) V₀ = (3/4) P₀ V₀.\nStep 4: Total Q_in = 5/2 + 3/4 = 13/4 P₀ V₀. Efficiency η = W / Q_in = (1/2) / (13/4) = 2/13 ≈ 15.38%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(P₀, V₀) இலிருந்து தொடங்கும் ஓரணு நல்லியல்பு வாயுவின் ஒரு செவ்வக சுழற்சி நிகழ்வின் பயனுறு திறன் என்ன?",
+        "optionTexts": [
+          "15.4% (2/13 ≈ 15.4%)",
+          "25.0%",
+          "33.3%",
+          "50.0%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas undergoes an isothermal expansion at temperature T during which its volume doubles from V to 2V. What is the entropy change (ΔS) of the gas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "n R ln(2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n R ln(1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n C_p ln(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In an isothermal process, heat absorbed Q = W = n R T ln(V_f / V_i) = n R T ln(2).\nStep 2: Change in entropy ΔS = Q / T = [ n R T ln(2) ] / T = n R ln(2).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T வெப்பநிலையில் ஒரு நல்லியல்பு வாயு சமவெப்ப விரிவடைதலின் போது அதன் பருமன் V இலிருந்து 2V ஆக மாறுகிறது. வாயுவின் என்ட்ரோபி மாற்றம் (ΔS) என்ன?",
+        "optionTexts": [
+          "n R ln(2)",
+          "n R ln(1/2)",
+          "பூஜ்ஜியம்",
+          "n C_p ln(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which law of thermodynamics establishes the concept of temperature as a fundamental property for thermal equilibrium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zeroth Law of Thermodynamics",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "First Law of Thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Second Law of Thermodynamics",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Third Law of Thermodynamics",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Zeroth Law states: If two systems A and B are each in thermal equilibrium with a third system C, then A and B are in thermal equilibrium with each other.\nStep 2: This law provides the formal basis for defining and measuring temperature.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்பச் சமநிலையை விவரித்து வெப்பநிலையின் கருத்தை நிறுவும் வெப்ப இயக்கவியல் விதி எது?",
+        "optionTexts": [
+          "வெப்ப இயக்கவியலின் சுழி விதி",
+          "வெப்ப இயக்கவியலின் முதல் விதி",
+          "வெப்ப இயக்கவியலின் இரண்டாம் விதி",
+          "வெப்ப இயக்கவியலின் மூன்றாம் விதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A mass of 50 g of water at 80 °C is mixed with 50 g of ice at 0 °C in an insulated calorimeter. What is the final equilibrium temperature of the mixture? (Latent heat of fusion of ice L = 80 cal/g, specific heat of water c = 1 cal/(g °C))",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 °C (all ice just melts into water)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "40 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Heat released by 50 g water in cooling from 80 °C to 0 °C: Q_released = m c ΔT = 50 g * 1 cal/(g °C) * 80 °C = 4000 cal.\nStep 2: Heat required to completely melt 50 g of ice at 0 °C: Q_required = m L = 50 g * 80 cal/g = 4000 cal.\nStep 3: Since Q_released = Q_required, all ice melts into water at 0 °C, with no surplus heat to raise the temperature.\nStep 4: Final temperature = 0 °C. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "80 °C வெப்பநிலையில் உள்ள 50 g நீர், 0 °C வெப்பநிலையில் உள்ள 50 g பனிக்கட்டியுடன் கலக்கப்படுகிறது. கலவையின் இறுதி சமநிலை வெப்பநிலை என்ன? (L = 80 cal/g, c = 1 cal/(g °C))",
+        "optionTexts": [
+          "0 °C (அனைத்து பனிக்கட்டியும் உருகி நீராக மாறும்)",
+          "40 °C",
+          "20 °C",
+          "10 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For an adiabatic process of an ideal gas, which of the following relations between pressure P and temperature T is correct?",
+    "options": [
+      {
+        "label": "A",
+        "text": "P^(1 - γ) * T^γ = constant",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P^γ * T^(1 - γ) = constant",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P * T^γ = constant",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P^(γ - 1) * T = constant",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ideal gas law: V = n R T / P.\nStep 2: Substitute into adiabatic equation P V^γ = const => P (T / P)^γ = const.\nStep 3: P^(1 - γ) * T^γ = constant (or T^γ / P^(γ - 1) = constant).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நல்லியல்பு வாயுவின் வெப்பப்பரிமாற்றமில்லா நிகழ்வில் அழுத்தம் P மற்றும் வெப்பநிலை T ஆகியவற்றிற்கு இடையேயான சரியான தொடர்பு எது?",
+        "optionTexts": [
+          "P^(1 - γ) * T^γ = மாறிலி",
+          "P^γ * T^(1 - γ) = மாறிலி",
+          "P * T^γ = மாறிலி",
+          "P^(γ - 1) * T = மாறிலி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The slope of an adiabatic curve (dP/dV)_ad on an indicator (P-V) diagram compared to the slope of an isothermal curve (dP/dV)_iso at the same point is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "γ times steeper",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1/γ times",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Identical",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "γ^2 times",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Isothermal slope: (dP/dV)_iso = - P / V.\nStep 2: Adiabatic slope: (dP/dV)_ad = - γ (P / V).\nStep 3: Ratio (dP/dV)_ad / (dP/dV)_iso = γ.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P-V வரைபடத்தில் ஒரே புள்ளியில் சமவெப்ப வளைகோட்டின் சாய்வை விட வெப்பப்பரிமாற்றமில்லா வளைகோட்டின் சாய்வு எத்தனை மடங்கு அதிகம்?",
+        "optionTexts": [
+          "γ மடங்கு அதிகம்",
+          "1/γ மடங்கு",
+          "சமமானது",
+          "γ^2 மடங்கு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A gas mixture consists of 2 moles of helium (monoatomic, C_v = 1.5R) and 1 mole of oxygen (diatomic, C_v = 2.5R). What is the effective molar specific heat capacity at constant volume (C_v_mix) for the mixture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(11/6) R (≈ 1.83 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/3) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.5 R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for mixture: C_v_mix = (n1 C_v1 + n2 C_v2) / (n1 + n2).\nStep 2: C_v_mix = [ 2(1.5R) + 1(2.5R) ] / (2 + 1) = [ 3.0R + 2.5R ] / 3 = 5.5R / 3 = 11R / 6 ≈ 1.83 R.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 மோல்கள் ஹீலியம் மற்றும் 1 மோல் ஆக்சிஜன் கொண்ட ஒரு வாயு கலவையின் தொகுபயன் மோலார் வெப்ப ஏற்புத்திறன் (C_v_mix) என்ன?",
+        "optionTexts": [
+          "(11/6) R (≈ 1.83 R)",
+          "2.0 R",
+          "(7/3) R",
+          "1.5 R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A cylinder with a movable piston contains 3 moles of hydrogen at standard temperature and pressure. The walls of the cylinder are made of a heat insulator, and the piston is insulated by a heat-resisting material. If the gas is compressed to half its original volume adiabatically, by what factor does the pressure increase? (Take γ = 1.4 for H2, 2^1.4 ≈ 2.64)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.64 times",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 times",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.4 times",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.0 times",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For adiabatic process: P1 V1^γ = P2 V2^γ => P2 = P1 * (V1 / V2)^γ.\nStep 2: Given V1 / V2 = 2 and γ = 1.4.\nStep 3: P2 / P1 = (2)^1.4 ≈ 2.64.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு ஈரணு வாயு (γ = 1.4) வெப்பப்பரிமாற்றமின்றி பாதியாகச் சுருக்கப்படுகிறது. அதன் அழுத்தம் தொடக்க மதிப்பை விட எத்தனை மடங்கு அதிகரிக்கும்? (2^1.4 ≈ 2.64)",
+        "optionTexts": [
+          "2.64 மடங்கு",
+          "2.0 மடங்கு",
+          "1.4 மடங்கு",
+          "4.0 மடங்கு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of linear expansion of brass and steel are α1 and α2. If we require the difference in length between the two rods to remain independent of temperature at all temperatures, the ratio of their initial lengths L1/L2 must be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "α2 / α1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "α1 / α2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "α1^2 / α2^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(α2 / α1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Increase in length of rod 1: ΔL1 = L1 α1 ΔT.\nStep 2: Increase in length of rod 2: ΔL2 = L2 α2 ΔT.\nStep 3: For the difference (L1 - L2) to be constant: ΔL1 = ΔL2 => L1 α1 ΔT = L2 α2 ΔT.\nStep 4: L1 / L2 = α2 / α1. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பித்தளை மற்றும் எஃகின் நீள் விரிவுக் குணகங்கள் முறையே α1 மற்றும் α2 ஆகும். அவற்றின் நீளங்களின் வித்தியாசம் அனைத்து வெப்பநிலைகளிலும் மாறிலியாக இருக்க தொடக்க நீளங்களின் விகிதம் L1/L2 என்னவாக இருக்க வேண்டும்?",
+        "optionTexts": [
+          "α2 / α1",
+          "α1 / α2",
+          "α1^2 / α2^2",
+          "sqrt(α2 / α1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to the kinetic theory of gases, the pressure P exerted by an ideal gas of density ρ and mean squared speed <v^2> is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/3) ρ <v^2>",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2/3) ρ <v^2>",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) ρ <v^2>",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "ρ <v^2>",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Kinetic theory pressure formula: P = (1/3) (N m / V) <v^2>.\nStep 2: Since total mass / Volume = density ρ = N m / V.\nStep 3: P = (1/3) ρ <v^2> = (1/3) ρ v_rms^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாயுக்களின் இயக்கவியல் கொள்கைப்படி, ρ அடர்த்தி கொண்ட நல்லியல்பு வாயுவின் அழுத்தம் P இன் சமன்பாடு என்ன?",
+        "optionTexts": [
+          "(1/3) ρ <v^2>",
+          "(2/3) ρ <v^2>",
+          "(1/2) ρ <v^2>",
+          "ρ <v^2>"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Work done during an isothermal expansion of n moles of an ideal gas from initial volume V1 to final volume V2 at absolute temperature T is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n R T ln(V2 / V1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n R T (V2 - V1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n R T ln(V1 / V2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n C_v T ln(V2 / V1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Work done W = ∫[V1 to V2] P dV.\nStep 2: Using ideal gas equation P = n R T / V.\nStep 3: W = ∫[V1 to V2] (n R T / V) dV = n R T [ln V] from V1 to V2 = n R T ln(V2 / V1).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T மாறா வெப்பநிலையில் n மோல்கள் கொண்ட நல்லியல்பு வாயு V1 இலிருந்து V2 பருமனுக்கு விரிவடையும் போது செய்யப்படும் வேலை:",
+        "optionTexts": [
+          "n R T ln(V2 / V1)",
+          "n R T (V2 - V1)",
+          "n R T ln(V1 / V2)",
+          "n C_v T ln(V2 / V1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Under which conditions does a real gas behave most closely like an ideal gas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Low pressure and High temperature",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "High pressure and Low temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Low pressure and Low temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "High pressure and High temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At low pressure, intermolecular separation is very large, making intermolecular attraction negligible.\nStep 2: At high temperature, molecular kinetic energy dominates over potential energy, and molecular volume is negligible compared to total volume.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எந்த நிபந்தனைகளில் ஒரு உண்மை வாயு நல்லியல்பு வாயுவைப் போல மிகச் சரியாகச் செயல்படுகிறது?",
+        "optionTexts": [
+          "குறைந்த அழுத்தம் மற்றும் அதிக வெப்பநிலை",
+          "அதிக அழுத்தம் மற்றும் குறைந்த வெப்பநிலை",
+          "குறைந்த அழுத்தம் மற்றும் குறைந்த வெப்பநிலை",
+          "அதிக அழுத்தம் மற்றும் அதிக வெப்பநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A metal rod cools from 62 °C to 50 °C in 10 minutes and to 42 °C in the next 10 minutes. What is the ambient room temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "26 °C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "30 °C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15 °C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: First interval: (62 - 50) / 10 = K [ (62 + 50)/2 - T₀ ] => 1.2 = K [ 56 - T₀ ].\nStep 2: Second interval: (50 - 42) / 10 = K [ (50 + 42)/2 - T₀ ] => 0.8 = K [ 46 - T₀ ].\nStep 3: Ratio: 1.2 / 0.8 = (56 - T₀) / (46 - T₀) => 1.5 = (56 - T₀) / (46 - T₀).\nStep 4: 1.5(46 - T₀) = 56 - T₀ => 69 - 1.5 T₀ = 56 - T₀ => 0.5 T₀ = 13 => T₀ = 26 °C. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகத் தண்டு 62 °C இலிருந்து 50 °C ஆகக் குளிர 10 நிமிடங்களும், அடுத்த 10 நிமிடங்களில் 42 °C ஆகவும் மாறுகிறது. அறை வெப்பநிலை என்ன?",
+        "optionTexts": [
+          "26 °C",
+          "20 °C",
+          "30 °C",
+          "15 °C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the molar specific heat capacity at constant pressure C_p for an ideal monoatomic gas (such as Helium or Argon)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/2) R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(3/2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Degrees of freedom for monoatomic gas f = 3 (translational).\nStep 2: Molar specific heat at constant volume C_v = (f / 2) R = (3/2) R.\nStep 3: From Mayer's relation: C_p = C_v + R = (3/2) R + R = (5/2) R.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரணு நல்லியல்பு வாயுவின் (ஹீலியம் அல்லது ஆர்கான்) மாறா அழுத்த மோலார் வெப்ப ஏற்புத்திறன் C_p என்ன?",
+        "optionTexts": [
+          "(5/2) R",
+          "(3/2) R",
+          "(7/2) R",
+          "3 R"
+        ]
+      }
+    ]
+  }
+]

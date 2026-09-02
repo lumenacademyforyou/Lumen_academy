@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE05-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the correct IUPAC name of the compound (CH3)2CH-CH2-CH(CH3)-CH=CH2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3,5-Dimethylhex-1-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2,4-Dimethylhex-5-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1,3,5-Trimethylpent-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3,5-Dimethylhexane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The longest carbon chain containing the principal functional group (C=C double bond) has 6 carbon atoms (hexene).\nStep 2: Number the carbon chain from the end nearest to the double bond: C1 is the alkene carbon CH2=.\nStep 3: Methyl substituents are located at carbon-3 and carbon-5.\nStep 4: The IUPAC name is 3,5-Dimethylhex-1-ene (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(CH3)2CH-CH2-CH(CH3)-CH=CH2 என்ற சேர்மத்தின் சரியான IUPAC பெயர் என்ன?",
+        "optionTexts": [
+          "3,5-டைமெத்தில்ஹெக்ஸ்-1-ஈன்",
+          "2,4-டைமெத்தில்ஹெக்ஸ்-5-ஈன்",
+          "1,3,5-டிரைமெத்தில்பென்ட்-1-ஈன்",
+          "3,5-டைமெத்தில்ஹெக்சேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following conformations of ethane is the most stable and possesses the lowest torsional strain?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Staggered conformation (dihedral angle = 60°)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Eclipsed conformation (dihedral angle = 0°)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Skew conformation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All conformations have equal stability",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the staggered conformation of ethane, adjacent C-H bonds are as far apart as possible with a dihedral angle of 60°.\nStep 2: This arrangement minimizes electron-pair repulsions between adjacent C-H sigma bonds (minimum torsional strain).\nStep 3: The eclipsed conformation has maximum torsional strain due to bond alignment.\nStep 4: Conclude staggered conformation is the most stable (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈத்தேனின் பின்வரும் அமைப்பமைப்புகளில் (conformations) எது அதிக நிலைப்புத்தன்மையும் மிகக் குறைந்த முறுக்குத் திரிபும் (torsional strain) கொண்டது?",
+        "optionTexts": [
+          "மீளமைவு அமைப்பமைப்பு (Staggered, இருமுகக் கோணம் = 60°)",
+          "மறைத்தல் அமைப்பமைப்பு (Eclipsed, இருமுகக் கோணம் = 0°)",
+          "சாய்வு அமைப்பமைப்பு (Skew)",
+          "அனைத்து அமைப்பமைப்புகளும் சம நிலைப்புத்தன்மை கொண்டவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In n-butane, which conformer corresponds to the absolute potential energy minimum?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Anti-conformation (dihedral angle between methyls = 180°)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Gauche conformation (dihedral angle = 60°)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Partially eclipsed conformation (dihedral angle = 120°)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fully eclipsed conformation (dihedral angle = 0°)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In n-butane, rotation around the C2-C3 single bond generates four key conformations: fully eclipsed, gauche, partially eclipsed, and anti.\nStep 2: In the anti-conformation, the two bulky methyl groups are at opposite ends (180° dihedral angle).\nStep 3: This maximizes spatial separation, eliminating steric hindrance and minimizing torsional strain.\nStep 4: Therefore, the anti-conformation has the lowest potential energy and maximum stability (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "n-பியூட்டேனில், எந்த அமைப்பமைப்பு முழுமையான குறைந்த நிலை ஆற்றலைக் (அதிக நிலைப்புத்தன்மை) கொண்டுள்ளது?",
+        "optionTexts": [
+          "ஆன்டி அமைப்பமைப்பு (Anti, மெத்தில் தொகுதிகளுக்கு இடையே இருமுகக் கோணம் = 180°)",
+          "காச் அமைப்பமைப்பு (Gauche, இருமுகக் கோணம் = 60°)",
+          "பகுதி மறைத்தல் அமைப்பமைப்பு (இருமுகக் கோணம் = 120°)",
+          "முழு மறைத்தல் அமைப்பமைப்பு (Fully eclipsed, இருமுகக் கோணம் = 0°)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of -I (electron-withdrawing inductive) effect?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-NO2 > -CN > -COOH > -F > -Cl > -Br > -I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-I > -Br > -Cl > -F > -COOH > -CN > -NO2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-NO2 > -F > -CN > -COOH > -Cl > -Br > -I",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-COOH > -NO2 > -CN > -F > -Cl > -Br > -I",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The -I (negative inductive) effect reflects electron withdrawal through sigma bonds based on electronegativity and formal charge.\nStep 2: Strongly electron-withdrawing groups follow the established sequence:\n-NO2 > -CN > -COOH > -F > -Cl > -Br > -I > -OCH3 > -C6H5 > -H.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றில் -I (எலக்ட்ரான் கவரும் தூண்டல்) விளைவு குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "-NO2 > -CN > -COOH > -F > -Cl > -Br > -I",
+          "-I > -Br > -Cl > -F > -COOH > -CN > -NO2",
+          "-NO2 > -F > -CN > -COOH > -Cl > -Br > -I",
+          "-COOH > -NO2 > -CN > -F > -Cl > -Br > -I"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The tertiary carbocation (CH3)3C+ is more stable than the secondary carbocation (CH3)2CH+ primarily due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Greater number of hyperconjugative structures (9 alpha-hydrogens vs 6 alpha-hydrogens)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-I effect of methyl groups",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Resonance stabilization across pi bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Steric hindrance",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbocation stability is primarily governed by hyperconjugation (delocalization of C(alpha)-H sigma electrons into the vacant p-orbital of the carbocation carbon).\nStep 2: (CH3)3C+ possesses 3 methyl groups with a total of 9 alpha-hydrogens (9 hyperconjugative structures).\nStep 3: (CH3)2CH+ has only 6 alpha-hydrogens (6 hyperconjugative structures).\nStep 4: More hyperconjugative structures impart greater thermodynamic stability (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரிணைய கார்போகேட்டயானை ((CH3)2CH+) விட மூவிணைய கார்போகேட்டயான் ((CH3)3C+) அதிக நிலைப்புத்தன்மை கொண்டிருப்பதன் முதன்மைக் காரணம் என்ன?",
+        "optionTexts": [
+          "அதிக எண்ணிக்கையிலான பிணைப்பில்லா உடனிசைவு (ஹைப்பர்கான்ஜுகேஷன்) அமைப்புகள் (9 ஆல்ஃபா-ஹைட்ரஜன்கள்)",
+          "மெத்தில் தொகுதிகளின் -I விளைவு",
+          "pi பிணைப்புகளின் வழியேயான உடனிசைவு நிலைப்புத்தன்மை",
+          "இடநெருக்கடி விளைவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following carbanions is the most stable?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HC≡C^- (Ethynide ion)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH2=CH^- (Ethenide ion)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3-CH2^- (Ethyl carbanion)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)2CH^- (Isopropyl carbanion)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carbanion stability increases with increasing s-character of the carbon holding the lone pair.\nStep 2: Carbon hybridization: HC≡C^- is sp (50% s-character); CH2=CH^- is sp2 (33.3% s-character); CH3-CH2^- is sp3 (25% s-character).\nStep 3: Higher s-character brings the lone pair closer to the positively charged nucleus, stabilizing the negative charge.\nStep 4: Stability order: HC≡C^- > CH2=CH^- > CH3-CH2^- > (CH3)2CH^-. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் கார்பயான்களில் எது அதிக நிலைப்புத்தன்மை உடையது?",
+        "optionTexts": [
+          "HC≡C^- (எத்தைனைடு அயனி)",
+          "CH2=CH^- (எத்தீனைடு அயனி)",
+          "CH3-CH2^- (எத்தில் கார்பயான்)",
+          "(CH3)2CH^- (ஐசோபுரோப்பைல் கார்பயான்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following species acts as an electrophile in organic reactions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "BF3 (Boron trifluoride)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NH3 (Ammonia)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "H2O (Water)",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "CH3-O- (Methoxide ion)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An electrophile is an electron-deficient species (Lewis acid) capable of accepting an electron pair.\nStep 2: In BF3, boron has only 6 valence electrons (incomplete octet) and possesses a vacant 2p orbital.\nStep 3: It readily accepts an electron pair, acting as a neutral electrophile.\nStep 4: NH3, H2O, and CH3O- have unshared lone pairs and act as nucleophiles. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரிம வினைகளில் எலக்ட்ரான் கவர் காரணியாக (Electrophile) செயல்படும் பொருள் எது?",
+        "optionTexts": [
+          "BF3 (போரான் டிரைபுளோரைடு)",
+          "NH3 (அம்மோனியா)",
+          "H2O (நீர்)",
+          "CH3-O- (மெத்தாக்சைடு அயனி)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Why cannot methane (CH4) be prepared by the Wurtz reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wurtz reaction involves coupling of two alkyl groups, producing alkanes with at least two carbon atoms",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Methane is a gas at room temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Methyl halides do not react with sodium metal",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methane decomposes in dry ether",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Wurtz reaction involves the coupling of two alkyl radicals: 2 R-X + 2 Na -> R-R + 2 NaX.\nStep 2: The simplest starting material is methyl halide (CH3-X).\nStep 3: Coupling two methyl radicals yields ethane (CH3-CH3), which has two carbons.\nStep 4: It is impossible to form a one-carbon alkane (CH4) through this coupling. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வூர்ட்ஸ் வினையைப் பயன்படுத்தி மீத்தேனை (CH4) ஏன் தயாரிக்க முடியாது?",
+        "optionTexts": [
+          "வூர்ட்ஸ் வினை இரண்டு ஆல்கைல் தொகுதிகளின் இணைப்பை உள்ளடக்கியதால் குறைந்தபட்சம் இரண்டு கார்பன்களைக் கொண்ட ஆல்கேன்களையே தரும்",
+          "மீத்தேன் அறை வெப்பநிலையில் ஒரு வாயு என்பதால்",
+          "மெத்தில் ஹாலைடுகள் சோடியத்துடன் வினைபுரிவதில்லை என்பதால்",
+          "மீத்தேன் உலர் ஈதரில் சிதைவடைகிறது என்பதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the free radical chlorination of methane, which of the following steps is a chain-terminating step?",
+    "options": [
+      {
+        "label": "A",
+        "text": "•CH3 + •CH3 -> CH3-CH3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cl2 -> 2 •Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "•Cl + CH4 -> •CH3 + HCl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "•CH3 + Cl2 -> CH3Cl + •Cl",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Free radical chain mechanism consists of initiation, propagation, and termination.\nStep 2: Chain initiation is the homolytic cleavage of Cl2 into chlorine radicals: Cl2 -> 2 •Cl.\nStep 3: Chain propagation steps consume one radical and generate another radical.\nStep 4: Chain termination occurs when two radicals combine to form a neutral molecule without generating new radicals: •CH3 + •CH3 -> CH3-CH3 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் தனி உறுப்பு குளோரினேற்ற வினையில், பின்வருவனவற்றில் எது சங்கிலி முடிவடையும் படி (chain-terminating step) ஆகும்?",
+        "optionTexts": [
+          "•CH3 + •CH3 -> CH3-CH3",
+          "Cl2 -> 2 •Cl",
+          "•Cl + CH4 -> •CH3 + HCl",
+          "•CH3 + Cl2 -> CH3Cl + •Cl"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Controlled catalytic oxidation of methane by passing it with oxygen through a copper tube at 523 K and 100 atm produces:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methanol (CH3OH)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Methanal (HCHO)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Methanoic acid (HCOOH)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carbon dioxide and water",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Controlled catalytic oxidation of alkanes depends on the catalyst used.\nStep 2: When a mixture of methane and oxygen (9:1 by volume) is passed through a heated copper tube at 523 K and 100 atm: 2 CH4 + O2 -(Cu/523 K/100 atm)-> 2 CH3OH.\nStep 3: Mo2O3 catalyst produces methanal (HCHO), whereas Cu produces methanol (CH3OH).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "523 K வெப்பநிலை மற்றும் 100 வளிமண்டல அழுத்தத்தில் தாமிரக் குழாயின் வழியே மீத்தேன் மற்றும் ஆக்ஸிஜனைச் செலுத்தி கட்டுப்படுத்தப்பட்ட ஆக்சிஜனேற்றம் செய்யும்போது கிடைப்பது எது?",
+        "optionTexts": [
+          "மெத்தனால் (CH3OH)",
+          "மெத்தனால் (HCHO, பார்மால்டிஹைடு)",
+          "மெத்தனாயிக் அமிலம் (HCOOH)",
+          "கார்பன் டை ஆக்சைடு மற்றும் நீர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When n-hexane is heated at 773 K and 10-20 atm pressure in the presence of Cr2O3, V2O5, or Mo2O3 supported over alumina, the major product is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzene (Aromatization)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cyclohexane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hex-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Toluene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: n-Alkanes having 6 or more carbon atoms on heating to 773 K at 10-20 atm over Cr2O3/V2O5/Mo2O3 catalysts undergo dehydrogenation and cyclization.\nStep 2: This process is known as aromatization (or reforming).\nStep 3: n-Hexane (C6H14) undergoes cyclization followed by dehydrogenation to produce benzene (C6H6).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "773 K வெப்பநிலை மற்றும் 10-20 வளிமண்டல அழுத்தத்தில் Cr2O3 அல்லது V2O5 முன்னிலையில் n-ஹெக்சேனை சூடுபடுத்தும்போது (அரோமேட்டிக்காக்கல்) கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பென்சீன்",
+          "சைக்ளோஹெக்சேன்",
+          "ஹெக்ஸ்-1-ஈன்",
+          "டொலுவீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Markovnikov's rule, addition of HBr to propene in the absence of peroxides yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Bromopropane",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1-Bromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1,2-Dibromopropane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Markovnikov's rule states that the negative part of the addendum (Br-) attaches to the double-bonded carbon with fewer hydrogen atoms.\nStep 2: Electrophilic addition of H+ to propene (CH3-CH=CH2) forms the more stable 2° carbocation (CH3-CH+-CH3) rather than the less stable 1° carbocation.\nStep 3: Attack of Br- on the 2° carbocation produces 2-bromopropane as the major product.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெராக்சைடு இல்லாத நிலையில், புரோப்பீனுடன் HBr சேர்க்கப்படும் போது மார்க்கோனிகோவ் விதியின்படி கிடைக்கும் விளைபொருள் எது?",
+        "optionTexts": [
+          "2-புரோமோபுரோப்பேன்",
+          "1-புரோமோபுரோப்பேன்",
+          "1,2-டைபுரோமோபுரோப்பேன்",
+          "புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Why does the peroxide effect (Kharasch effect) operate exclusively for HBr and not for HCl or HI?",
+    "options": [
+      {
+        "label": "A",
+        "text": "For HCl, the H-Cl bond is too strong to be cleaved homolytically; for HI, I• radicals combine to form I2 rather than adding to the double bond",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "HCl and HI are gases while HBr is a liquid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Peroxide reacts vigorously with HCl and HI",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HBr is a strong reducing agent",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For the free-radical chain addition to proceed, both propagation steps must be exothermic.\nStep 2: For HCl, the H-Cl bond is extremely strong (430.5 kJ/mol), making the first propagation step endothermic.\nStep 3: For HI, the H-I bond is weak, but the addition of I• to the double bond is endothermic; instead, iodine radicals rapidly recombine to form I2.\nStep 4: Only for HBr are both propagation steps exothermic. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெராக்சைடு விளைவு (கராஷ் விளைவு) HBr உடன் மட்டுமே நிகழ்ந்து HCl மற்றும் HI உடன் நிகழாததன் காரணம் என்ன?",
+        "optionTexts": [
+          "HCl பிணைப்பு மிகவும் வலிமையானது; HI இல் அயோடின் தனி உறுப்புகள் ஆல்கீனுடன் சேராமல் தங்களுக்குள் இணைந்து I2 ஆக மாறுகின்றன",
+          "HCl மற்றும் HI வாயுக்கள் ஆனால் HBr திரவம்",
+          "பெராக்சைடு HCl மற்றும் HI உடன் தீவிரமாக வினைபுரிகிறது",
+          "HBr வலிமையான ஒடுக்கும் காரணி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Baeyer's reagent, used to test for unsaturation in alkenes and alkynes, is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cold dilute alkaline KMnO4 solution",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Acidified K2Cr2O7 solution",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bromine in CCl4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hot concentrated KMnO4 solution",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Baeyer's reagent is a 1% cold, dilute, alkaline potassium permanganate (KMnO4) solution.\nStep 2: When reacted with an alkene, it causes syn-hydroxylation to form vicinal glycols.\nStep 3: The characteristic purple color of KMnO4 disappears with the formation of a brown precipitate of MnO2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆல்கீன்களின் நிறைவுறாத் தன்மையைக் கண்டறியப் பயன்படும் பேயர் காரணி (Baeyer's reagent) என்பது:",
+        "optionTexts": [
+          "குளிர்ந்த நீர்த்த கார KMnO4 கரைசல்",
+          "அமிலமாக்கப்பட்ட K2Cr2O7 கரைசல்",
+          "CCl4 இல் உள்ள புரோமின்",
+          "சூடான அடர் KMnO4 கரைசல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An alkene on reductive ozonolysis (O3 followed by Zn/H2O) gives a mixture of propanone and methanal. The alkene is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Methylprop-1-ene (Isobutylene)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "But-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "But-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2-Methylbut-2-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Products of ozonolysis are propanone ((CH3)2C=O) and methanal (H2C=O).\nStep 2: To find the original alkene, remove the oxygen atoms and join the two carbonyl carbons with a double bond.\nStep 3: (CH3)2C= + =CH2 -> (CH3)2C=CH2 (2-Methylprop-1-ene).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓசோனேற்ற வினையில் புரோப்பனோன் மற்றும் மெத்தனாலக் கலவையைத் தரும் ஆல்கீன் எது?",
+        "optionTexts": [
+          "2-மெத்தில்புரோப்-1-ஈன் (ஐசோபியூட்டிலீன்)",
+          "பியூட்-1-ஈன்",
+          "பியூட்-2-ஈன்",
+          "2-மெத்தில்பியூட்-2-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkynes reacts with sodium metal in liquid ammonia to release hydrogen gas and forms a precipitate with ammoniacal cuprous chloride?",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-1-yne",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "But-2-yne",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pent-2-yne",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hex-3-yne",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Only terminal alkynes containing an acidic acetylenic hydrogen atom attached to an sp-hybridized carbon (RC≡C-H) exhibit acidic properties.\nStep 2: But-1-yne (CH3-CH2-C≡C-H) is a terminal alkyne and reacts with Na/NaNH2 or ammoniacal Cu2Cl2.\nStep 3: Internal alkynes like But-2-yne lack an acidic hydrogen and do not give these reactions.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திரவ அம்மோனியாவில் சோடியம் உலோகத்துடன் வினைபுரிந்து H2 வாயுவை வெளியேற்றி, அம்மோனியா கலந்த குப்ரஸ் குளோரைடுடன் வீழ்படிவைத் தரும் ஆல்கைன் எது?",
+        "optionTexts": [
+          "பியூட்-1-ஐன்",
+          "பியூட்-2-ஐன்",
+          "பென்ட்-2-ஐன்",
+          "ஹெக்ஸ்-3-ஐன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Hydration of propyne in the presence of dilute H2SO4 and HgSO4 at 333 K (Kucherov reaction) yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propanone (Acetone)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Propanal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propan-1-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Propyne (CH3-C≡CH) adds a water molecule across the triple bond according to Markovnikov's rule in the presence of HgSO4/H2SO4.\nStep 2: H+ adds to C1 and OH- adds to C2 to form the unstable enol: CH3-C(OH)=CH2 (prop-1-en-2-ol).\nStep 3: The enol rapidly tautomerizes to the more stable keto form: Propanone (CH3-CO-CH3).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "333 K இல் நீர்த்த H2SO4 மற்றும் HgSO4 முன்னிலையில் புரோப்பைனை நீரேற்றம் செய்யும்போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பனோன் (அசிட்டோன்)",
+          "புரோப்பனால்",
+          "புரோப்பனாயிக் அமிலம்",
+          "புரோப்பன்-1-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When ethyne (acetylene) gas is passed through a red hot iron tube at 873 K, it undergoes cyclic polymerization to produce:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Toluene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cyclohexane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Naphthalene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Three molecules of ethyne (HC≡CH) undergo cyclic trimerization when passed through a red hot iron tube at 873 K.\nStep 2: 3 HC≡CH -(red hot Fe, 873 K)-> C6H6 (Benzene).\nStep 3: This reaction provides an aromatic hydrocarbon directly from an aliphatic precursor.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "873 K வெப்பநிலையில் பழுக்கக் காய்ச்சிய இரும்புக் குழாயின் வழியே எத்தைன் வாயுவைச் செலுத்தும்போது வளைய பலபடியாக்கல் அடைந்து கிடைப்பது எது?",
+        "optionTexts": [
+          "பென்சீன்",
+          "டொலுவீன்",
+          "சைக்ளோஹெக்சேன்",
+          "நாப்தலீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Huckel's rule, an organic compound is aromatic if it is cyclic, planar, fully conjugated, and contains:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(4n + 2) pi-electrons (where n = 0, 1, 2, ...)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4n pi-electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2n + 2) pi-electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(4n + 1) pi-electrons",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Huckel's rule states that cyclic, planar, completely conjugated systems possess aromatic stability if they contain (4n + 2) delocalized pi-electrons.\nStep 2: For n = 0, 1, 2, 3: pi-electron counts are 2, 6, 10, 14, etc.\nStep 3: Planar rings with 4n pi-electrons are anti-aromatic and highly destabilized.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹக்கல் விதியின்படி, ஒரு வளைய, தள அமைப்புடைய, முழுமையான உடனிசைவு கொண்ட சேர்மம் அரோமேட்டிக் தன்மை பெற எத்தனை pi-எலக்ட்ரான்களைப் பெற்றிருக்க வேண்டும்?",
+        "optionTexts": [
+          "(4n + 2) pi-எலக்ட்ரான்கள் (n = 0, 1, 2, ...)",
+          "4n pi-எலக்ட்ரான்கள்",
+          "(2n + 2) pi-எலக்ட்ரான்கள்",
+          "(4n + 1) pi-எலக்ட்ரான்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following cyclic species is aromatic?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cyclopentadienyl anion (C5H5^-)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cyclopentadienyl cation (C5H5^+)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cyclooctatetraene (C8H8)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cyclobutadiene (C4H4)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the cyclopentadienyl anion, all 5 carbon atoms are sp2 hybridized in a planar ring.\nStep 2: The system contains 4 pi-electrons from two double bonds and 2 electrons from the carbanion lone pair, giving a total of 6 pi-electrons.\nStep 3: 6 pi-electrons satisfies Huckel's rule (4n + 2 = 6, for n = 1).\nStep 4: Cyclobutadiene (4 pi) and cyclopentadienyl cation (4 pi) are anti-aromatic. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வளைய அமைப்புகளில் அரோமேட்டிக் தன்மை கொண்டது எது?",
+        "optionTexts": [
+          "சைக்ளோபென்டாடையீனைல் எதிரயனி (C5H5^-)",
+          "சைக்ளோபென்டாடையீனைல் நேர்மின் அயனி (C5H5^+)",
+          "சைக்ளோஆக்டாடெட்ராயீன் (C8H8)",
+          "சைக்ளோபியூட்டாடையீன் (C4H4)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the nitration of benzene using a mixture of concentrated HNO3 and concentrated H2SO4, the active electrophile is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitronium ion (NO2^+)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nitrate ion (NO3^-)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nitrosonium ion (NO^+)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen dioxide (NO2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the nitrating mixture, concentrated H2SO4 acts as a Bronsted-Lowry acid and protonates HNO3 (which acts as a base).\nStep 2: HNO3 + 2 H2SO4 <=> NO2^+ + H3O^+ + 2 HSO4^-.\nStep 3: Loss of water from protonated nitric acid generates the linear nitronium ion (NO2^+).\nStep 4: NO2^+ acts as the electrophile attacking the benzene ring. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர் HNO3 மற்றும் அடர் H2SO4 கலவையைப் பயன்படுத்தி பென்சீனை நைட்ரோஏற்றம் செய்யும் வினையில் உருவாகும் எலக்ட்ரான் கவர் காரணி எது?",
+        "optionTexts": [
+          "நைட்ரோனியம் அயனி (NO2^+)",
+          "நைட்ரேட் அயனி (NO3^-)",
+          "நைட்ரோசோனியம் அயனி (NO^+)",
+          "நைட்ரஜன் டை ஆக்சைடு (NO2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following substituents on a benzene ring acts as a ring-deactivating, meta-directing group for electrophilic aromatic substitution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-NO2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-OH",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-NH2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-OCH3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Substituents with powerful -M and -I electron-withdrawing effects withdraw electron density from the aromatic ring, deactivating it.\nStep 2: Electron withdrawal is especially pronounced at ortho and para positions.\nStep 3: The meta position retains comparatively higher electron density, directing incoming electrophiles to meta.\nStep 4: -NO2 is a strongly deactivating meta-directing group. -OH, -NH2, and -OCH3 are activating ortho/para-directors. Conclude Option A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீன் வளையத்தில் எலக்ட்ரான் கவர் பதிலீட்டு வினைகளில், வளையத்தை செயலிழக்கச் செய்து மெட்டா-வழிகாட்டும் தொகுதியாக செயல்படுவது எது?",
+        "optionTexts": [
+          "-NO2",
+          "-OH",
+          "-NH2",
+          "-OCH3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In chlorobenzene, electrophilic aromatic substitution occurs predominantly at ortho and para positions because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The +R (resonance) effect of chlorine increases electron density specifically at ortho and para positions",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chlorine has a strong +I effect",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorine completely activates the aromatic ring",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meta positions are sterically blocked",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Halogens have competing effects on the benzene ring: a strong electron-withdrawing -I effect and a weak electron-donating +R resonance effect.\nStep 2: The -I effect dominates overall reactivity, causing overall ring deactivation.\nStep 3: However, resonance (+R) delocalizes the halogen lone pair into the ring, creating partial negative charges at the ortho and para positions.\nStep 4: Therefore, attack occurs preferentially at ortho and para positions (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோபென்சீனில் எலக்ட்ரான் கவர் பதிலீட்டு வினைகள் ஆர்த்தோ மற்றும் பாரா நிலைகளில் மட்டுமே முதன்மையாக நிகழ்வதற்குக் காரணம் என்ன?",
+        "optionTexts": [
+          "குளோரினின் +R உடனிசைவு விளைவு ஆர்த்தோ மற்றும் பாரா நிலைகளில் எலக்ட்ரான் அடர்த்தியை அதிகரிக்கிறது",
+          "குளோரின் வலிமையான +I விளைவைக் கொண்டுள்ளது",
+          "குளோரின் பென்சீன் வளையத்தை முழுமையாக செயல்படுத்தும் தொகுதியாகும்",
+          "மெட்டா நிலைகள் இடநெருக்கடியால் தடுக்கப்பட்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following compounds does NOT undergo Friedel-Crafts alkylation reaction with CH3Cl and anhydrous AlCl3?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrobenzene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Toluene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Anisole",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Friedel-Crafts reaction requires an activated or moderately reactive aromatic ring.\nStep 2: Strongly deactivating groups (like -NO2) withdraw electron density so powerfully that the aromatic ring cannot attack the carbocation electrophile.\nStep 3: Additionally, nitrobenzene coordinates with the Lewis acid catalyst AlCl3.\nStep 4: Nitrobenzene is used as a solvent in Friedel-Crafts reactions because it does not react (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரற்ற AlCl3 முன்னிலையில் CH3Cl உடன் ஃப்ரீடல்-கிராஃப்ட்ஸ் ஆல்கைலேற்ற வினைக்கு உட்படாத சேர்மம் எது?",
+        "optionTexts": [
+          "நைட்ரோபென்சீன்",
+          "டொலுவீன்",
+          "பென்சீன்",
+          "அனிசோல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the major organic product formed when 3,3-dimethylbut-1-ene reacts with HCl?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Chloro-2,3-dimethylbutane (Rearranged product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2-Chloro-3,3-dimethylbutane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1-Chloro-3,3-dimethylbutane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2,3-Dimethylbut-2-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Protonation of 3,3-dimethylbut-1-ene gives a 2° carbocation: (CH3)3C-CH(+)-CH3.\nStep 2: A 1,2-methyl shift occurs from the adjacent quaternary carbon to form a far more stable 3° carbocation: (CH3)2C(+)-CH(CH3)2.\nStep 3: Nucleophilic attack of Cl- on the 3° carbocation gives 2-chloro-2,3-dimethylbutane.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3,3-டைமெத்தில்பியூட்-1-ஈன் HCl உடன் வினைபுரியும்போது கிடைக்கும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "2-குளோரோ-2,3-டைமெத்தில்பியூட்டேன் (மறுசீரமைப்பு விளைபொருள்)",
+          "2-குளோரோ-3,3-டைமெத்தில்பியூட்டேன்",
+          "1-குளோரோ-3,3-டைமெத்தில்பியூட்டேன்",
+          "2,3-டைமெத்தில்பியூட்-2-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkenes exhibits geometrical (cis-trans) isomerism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-2-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Propene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Methylprop-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "But-1-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Geometrical isomerism requires restricted rotation about C=C where each doubly bonded carbon carries two different substituents (abC=Ccd).\nStep 2: In propene, but-1-ene, and 2-methylprop-1-ene, one of the alkene carbons carries two identical groups (=CH2), preventing cis-trans isomerism.\nStep 3: In but-2-ene (CH3-CH=CH-CH3), each alkene carbon is bonded to -H and -CH3.\nStep 4: It exists as cis-but-2-ene and trans-but-2-ene (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் ஆல்கீன்களில் வடிவ (சிஸ்-டிரான்ஸ்) மாற்றியத்தைக் காட்டக்கூடியது எது?",
+        "optionTexts": [
+          "பியூட்-2-ஈன்",
+          "புரோப்பீன்",
+          "2-மெத்தில்புரோப்-1-ஈன்",
+          "பியூட்-1-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Methoxyethane (CH3-O-C2H5) and 1-methoxypropane (CH3-O-C3H7) are related as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Homologues",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Metamers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Functional isomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tautomers",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Methoxyethane has molecular formula C3H8O and 1-methoxypropane has C4H10O.\nStep 2: They differ by a -CH2- unit and have different molecular formulas.\nStep 3: Since metamers must possess the same molecular formula with different alkyl chains attached to the polyvalent functional group, these two are members of the same homologous series differing by a -CH2- unit.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெத்தாக்சிஈத்தேன் (CH3-O-C2H5) மற்றும் 1-மெத்தாக்சிபுரோப்பேன் (CH3-O-C3H7) ஆகியவை எவ்வாறு தொடர்புடையவை?",
+        "optionTexts": [
+          "படிவரிசைச் சேர்மங்கள் (Homologues)",
+          "மெட்டாமெர்கள் (Metamers)",
+          "செயல்முறை மாற்றியங்கள்",
+          "டாட்டோமெர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following compounds displays keto-enol tautomerism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetone (CH3COCH3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Benzophenone (C6H5COC6H5)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzaldehyde (C6H5CHO)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trimethylacetaldehyde ((CH3)3CCHO)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Keto-enol tautomerism requires the presence of at least one alpha-hydrogen atom on an sp3-hybridized carbon adjacent to the carbonyl group.\nStep 2: Acetone (CH3-CO-CH3) has 6 alpha-hydrogens and readily establishes dynamic equilibrium with its enol form: CH2=C(OH)-CH3.\nStep 3: Benzaldehyde, benzophenone, and trimethylacetaldehyde lack alpha-hydrogens.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் சேர்மங்களில் எது கீட்டோ-ஈனால் டாட்டோமெரிசத்தைக் (இயங்கு சமநிலை மாற்றியம்) காட்டுகிறது?",
+        "optionTexts": [
+          "அசிட்டோன் (CH3COCH3)",
+          "பென்சோஃபீனோன் (C6H5COC6H5)",
+          "பென்சால்டிஹைடு (C6H5CHO)",
+          "டிரைமெத்தில்அசிட்டால்டிஹைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Electrolysis of an aqueous solution of potassium succinate (Kolbe's electrolytic method) yields which unsaturated hydrocarbon at the anode?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethene (CH2=CH2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ethyne (CH≡CH)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ethane (CH3-CH3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butane (C4H10)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Potassium succinate is the dipotassium salt of succinic acid: KOOC-CH2-CH2-COOK.\nStep 2: In aqueous solution, succinate dianions (-OOC-CH2-CH2-COO-) migrate to the anode and lose 2 electrons to form diradicals (•OOC-CH2-CH2-COO•).\nStep 3: Decarboxylation of both carboxyl radicals eliminates 2 CO2 molecules and forms the biradical •CH2-CH2•, which closes to form ethene (CH2=CH2).\nStep 4: Potassium maleate/fumarate yields ethyne; potassium succinate yields ethene (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொட்டாசியம் சக்சினேட்டின் நீர்க்கரைசலை கோல்ப் மின்னாற்பகுப்புக்கு உட்படுத்தும் போது நேர்மின்வாயில் (ஆனோடு) வெளியாகும் நிறைவுறா ஹைட்ரோகார்பன் எது?",
+        "optionTexts": [
+          "ஈத்தீன் (CH2=CH2)",
+          "ஈத்தைன் (CH≡CH)",
+          "ஈத்தேன் (CH3-CH3)",
+          "பியூட்டேன் (C4H10)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE05-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following free radicals is the most stable?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(C6H5)3C• (Triphenylmethyl radical)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3C• (tert-Butyl radical)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C6H5-CH2• (Benzyl radical)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH2=CH-CH2• (Allyl radical)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The stability of free radicals increases with the extent of conjugation and delocalization of the unpaired electron.\nStep 2: In the triphenylmethyl radical (C6H5)3C•, the unpaired electron is delocalized over three aromatic benzene rings (generating 10 resonance structures).\nStep 3: Resonance stabilization across 3 phenyl rings is overwhelmingly superior to hyperconjugation (in tert-butyl) or single-ring resonance (in benzyl).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் தனி உறுப்புகளில் (free radicals) எது அதிக நிலைப்புத்தன்மை கொண்டது?",
+        "optionTexts": [
+          "(C6H5)3C• (டிரைபீனைல்மெத்தில் தனி உறுப்பு)",
+          "(CH3)3C• (டெர்ட்-பியூட்டைல் தனி உறுப்பு)",
+          "C6H5-CH2• (பென்சைல் தனி உறுப்பு)",
+          "CH2=CH-CH2• (அல்லைல் தனி உறுப்பு)"
+        ]
+      }
+    ]
+  }
+]

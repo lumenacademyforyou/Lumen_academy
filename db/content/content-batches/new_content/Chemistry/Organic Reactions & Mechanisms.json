@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE01-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkyl halides undergoes SN1 hydrolysis most rapidly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3-CH2-Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)2CH-Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)3C-Cl",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "C6H5-CH2-CH2-Cl",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: SN1 reactions proceed via the formation of a carbocation intermediate in the rate-determining step.\nStep 2: (CH3)3C-Cl forms a 3° carbocation (CH3)3C+, which is stabilized by 9 alpha-hydrogens via hyperconjugation and +I inductive effects.\nStep 3: 3° carbocations are far more stable than 2° or 1° carbocations.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் ஆல்கைல் ஹாலைடுகளில் எது SN1 நீராற்பகுப்பு வினைக்கு மிக வேகமாக உட்படுகிறது?",
+        "optionTexts": [
+          "CH3-CH2-Cl",
+          "(CH3)2CH-Cl",
+          "(CH3)3C-Cl",
+          "C6H5-CH2-CH2-Cl"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The major product obtained when 2-bromobutane is heated with alcoholic KOH is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "But-2-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Butan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butan-1-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Alcoholic KOH acts as a base and causes dehydrohalogenation (E2 elimination).\nStep 2: According to Saytzeff's (Zaitsev's) rule, the more highly substituted, thermodynamically stable alkene is the major product.\nStep 3: Elimination of beta-hydrogen from C3 gives But-2-ene (predominantly trans-but-2-ene).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-புரோமோபியூட்டேனை ஆல்கஹால் கலந்த KOH உடன் சூடுபடுத்தும்போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "பியூட்-1-ஈன்",
+          "பியூட்-2-ஈன்",
+          "பியூட்டன்-2-ஆல்",
+          "பியூட்டன்-1-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The electrophilic intermediate formed in the Reimer-Tiemann reaction of phenol with CHCl3 and aqueous NaOH is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbocation (+CHCl2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Dichlorocarbene (:CCl2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Trichloromethyl radical (.CCl3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carbanion (-CHCl2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the Reimer-Tiemann reaction, hydroxide ion (OH-) abstracts a proton from CHCl3 to generate the trichloromethyl carbanion (-CCl3).\nStep 2: Loss of a chloride ion (Cl-) from -CCl3 produces neutral, electron-deficient dichlorocarbene (:CCl2).\nStep 3: Dichlorocarbene acts as an electrophile attacking the ortho position of the phenoxide ion.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பீனால், CHCl3 மற்றும் நீரிய NaOH உடனான ரீமர்-டீமன் வினையில் உருவாகும் எலக்ட்ரான் கவர் இடைநிலைப்பொருள் எது?",
+        "optionTexts": [
+          "கார்போகேட்டயான் (+CHCl2)",
+          "டைகுளோரோகார்பீன் (:CCl2)",
+          "டிரைகுளோரோமெத்தில் தனி உறுப்பு (.CCl3)",
+          "கார்பயான் (-CHCl2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Williamson ether synthesis, the reaction of sodium tert-butoxide with methyl bromide yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Methylprop-1-ene (Isobutylene)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "tert-Butyl methyl ether",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Di-tert-butyl ether",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Methanol and 2-methylpropane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Williamson synthesis proceeds via an SN2 displacement mechanism.\nStep 2: Methyl bromide (CH3Br) is an unhindered primary alkyl halide that readily undergoes SN2 attack by the bulky tert-butoxide ion (CH3)3C-O-.\nStep 3: The nucleophilic substitution gives tert-butyl methyl ether (CH3)3C-O-CH3 as the major product.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வில்லியம்சன் ஈதர் தொகுப்பு முறையில், சோடியம் டெர்ட்-பியூட்டாக்சைடு மெத்தில் புரோமைடுடன் வினைபுரியும்போது கிடைப்பது எது?",
+        "optionTexts": [
+          "2-மெத்தில்புரோப்-1-ஈன் (ஐசோபியூட்டிலீன்)",
+          "டெர்ட்-பியூட்டைல் மெத்தில் ஈதர்",
+          "டை-டெர்ட்-பியூட்டைல் ஈதர்",
+          "மெத்தனால் மற்றும் 2-மெத்தில்புரோப்பேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An alcohol 'X' gives turbidity immediately at room temperature upon treatment with Lucas reagent (conc. HCl + anhydrous ZnCl2). Alcohol 'X' is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Butanol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2-Butanol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Methylpropan-2-ol",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ethanol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Lucas reagent tests for alcohols based on the rate of formation of insoluble alkyl chloride.\nStep 2: 3° alcohols react immediately at room temperature to produce cloudiness/turbidity because 3° carbocations form very rapidly.\nStep 3: 2-Methylpropan-2-ol is a tertiary (3°) alcohol.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லூகாஸ் காரணியுடன் (அடர் HCl + நீரற்ற ZnCl2) அறை வெப்பநிலையில் உடனடியாக கலங்கல் தன்மையைத் தரும் ஆல்கஹால் 'X' எது?",
+        "optionTexts": [
+          "1-பியூட்டனால்",
+          "2-பியூட்டனால்",
+          "2-மெத்தில்புரோப்பன்-2-ஆல்",
+          "எத்தனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following compounds undergoes the Cannizzaro reaction when treated with concentrated aqueous alkali?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3CHO",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C6H5CHO",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "CH3CH2CHO",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH3COCH3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Cannizzaro reaction is characteristic of aldehydes that lack alpha-hydrogen atoms.\nStep 2: Benzaldehyde (C6H5CHO) has no alpha-hydrogen atom on the carbonyl alpha carbon.\nStep 3: In conc. NaOH, one molecule of C6H5CHO is oxidized to sodium benzoate and another is reduced to benzyl alcohol (disproportionation).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர் காரக் கரைசலுடன் சூடுபடுத்தும்போது பின்வரும் சேர்மங்களில் எது கான்னிசரோ வினைக்கு உட்படுகிறது?",
+        "optionTexts": [
+          "CH3CHO",
+          "C6H5CHO",
+          "CH3CH2CHO",
+          "CH3COCH3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When acetaldehyde is warmed with dilute NaOH followed by heating, the final dehydration product is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Crotonaldehyde (But-2-enal)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3-Hydroxybutanal (Acetaldol)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Butan-1-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethyl ethanoate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Acetaldehyde contains alpha-hydrogens and undergoes aldol condensation in the presence of dilute NaOH to form 3-hydroxybutanal.\nStep 2: Subsequent heating causes dehydration with the loss of H2O.\nStep 3: This forms the conjugated alpha,beta-unsaturated aldehyde: But-2-enal (Crotonaldehyde, CH3-CH=CH-CHO).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அசிட்டால்டிகைடு நீர்த்த NaOH உடன் வினைபுரிந்து பின்னர் சூடுபடுத்தப்படும் போது கிடைக்கும் இறுதி நீர்நீக்க விளைபொருள் எது?",
+        "optionTexts": [
+          "குரோட்டனால்டிஹைடு (பியூட்-2-ஈனால்)",
+          "3-ஹைட்ராக்ஸிபியூட்டனால் (அசிட்டால்டால்)",
+          "பியூட்டன்-1-ஆல்",
+          "எத்தில் எத்தனோயேட்டு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The reduction of a carbonyl compound (>C=O) to a methylene group (-CH2-) using Zn-Hg and concentrated HCl is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wolff-Kishner reduction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Clemmensen reduction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Rosenmund reduction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Stephen reduction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Reduction of aldehydes and ketones to hydrocarbons using zinc amalgam (Zn-Hg) and concentrated hydrochloric acid (HCl) is the Clemmensen reduction.\nStep 2: Wolff-Kishner uses hydrazine (NH2NH2) and KOH/glycol.\nStep 3: Rosenmund reduces acyl chlorides using H2/Pd-BaSO4.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Zn-Hg மற்றும் அடர் HCl ஐப் பயன்படுத்தி கார்பனைல் தொகுதியை (>C=O) மெத்திலீன் தொகுதியாக (-CH2-) ஒடுக்கும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "உல்ஃப்-கிஷ்னர் ஒடுக்கம்",
+          "கிளமென்சன் ஒடுக்கம்",
+          "ரோசன்மண்ட் ஒடுக்கம்",
+          "ஸ்டீபன் ஒடுக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Hell-Volhard-Zelinsky (HVZ) reaction, carboxylic acids having an alpha-hydrogen react with Cl2/Br2 in the presence of red phosphorus to form:",
+    "options": [
+      {
+        "label": "A",
+        "text": "alpha-Halocarboxylic acids",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Acid halides exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "beta-Halocarboxylic acids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Haloalkanes with loss of CO2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The HVZ reaction selectively halogens the alpha-position of carboxylic acids containing alpha-hydrogens.\nStep 2: Reaction with X2 (Cl2 or Br2) in the presence of catalytic red phosphorus followed by hydrolysis yields alpha-halocarboxylic acids.\nStep 3: Carboxylic acids without alpha-hydrogen do not undergo this reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹெல்-வோல்ஹார்ட்-ஜெலின்ஸ்கி (HVZ) வினையில், ஆல்ஃபா-ஹைட்ரஜனைக் கொண்டுள்ள கார்பாக்சிலிக் அமிலங்கள் சிவப்பு பாஸ்பரஸ் முன்னிலையில் Cl2/Br2 உடன் வினைபுரிந்து எதனைத் தருகின்றன?",
+        "optionTexts": [
+          "ஆல்ஃபா-ஹாலோகார்பாக்சிலிக் அமிலங்கள்",
+          "அமில ஹாலைடுகள் மட்டுமே",
+          "பீட்டா-ஹாலோகார்பாக்சிலிக் அமிலங்கள்",
+          "CO2 இழப்புடன் கூடிய ஹாலோஆல்கேன்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Carbylamine test (isocyanide test) is positive for which class of organic nitrogen compounds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary (1°) aliphatic and aromatic amines only",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Secondary (2°) amines only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tertiary (3°) amines only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Amides and nitriles",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The carbylamine test involves heating an amine with chloroform (CHCl3) and alcoholic KOH.\nStep 2: Extremely foul-smelling isocyanides (carbylamines, R-NC) are formed exclusively by 1° aliphatic and 1° aromatic amines.\nStep 3: 2° and 3° amines do not give this reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பைலமீன் சோதனை (ஐசோசயனைடு சோதனை) எந்த வகையான கரிம நைட்ரஜன் சேர்மங்களுக்கு நேர்மறை முடிவைத் தரும்?",
+        "optionTexts": [
+          "ஓரிணைய (1°) அலிஃபாட்டிக் மற்றும் அரோமேட்டிக் அமீன்கள் மட்டுமே",
+          "ஈரிணைய (2°) அமீன்கள் மட்டுமே",
+          "மூவிணைய (3°) அமீன்கள் மட்டுமே",
+          "அமைடுகள் மற்றும் நைட்ரைல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A primary amine on reaction with Hinsberg's reagent (benzenesulphonyl chloride) gives a product that:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Is completely insoluble in aqueous KOH",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Dissolves in aqueous KOH due to acidic hydrogen on nitrogen",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Does not react at all",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Forms an unstable diazonium salt",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Primary amine (R-NH2) reacts with benzenesulphonyl chloride (C6H5SO2Cl) to form N-alkylbenzenesulphonamide (C6H5SO2NHR).\nStep 2: The hydrogen attached to nitrogen is strongly acidic due to the powerful electron-withdrawing sulphonyl (-SO2-) group.\nStep 3: Consequently, it easily dissolves in aqueous alkali (KOH/NaOH) to form a soluble potassium salt.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஓரிணைய அமீன் ஹின்ஸ்பெர்க் காரணியுடன் (பென்சீன்சல்பனைல் குளோரைடு) வினைபுரிந்து தரும் விளைபொருளின் பண்பு என்ன?",
+        "optionTexts": [
+          "நீரிய KOH கரைசலில் முற்றிலும் கரையாது",
+          "நைட்ரஜனில் உள்ள அமில ஹைட்ரஜனால் நீரிய KOH இல் கரைகிறது",
+          "எவ்வித வினையிலும் ஈடுபடாது",
+          "நிலையற்ற டயசோனியம் உப்பை உருவாக்குகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Coupling reaction of benzene diazonium chloride with phenol in a mildly alkaline medium (pH 9-10) at 273-278 K yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "p-Hydroxyazobenzene (Orange dye)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "p-Aminoazobenzene (Yellow dye)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chlorobenzene and nitrogen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phenyl benzoate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In mildly basic medium (pH 9-10), phenol is converted to the more strongly activating phenoxide ion.\nStep 2: Benzene diazonium cation acts as an electrophile and couples at the para-position of phenoxide.\nStep 3: The product is p-hydroxyazobenzene (an orange azo dye).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "273-278 K வெப்பநிலையில் கார ஊடகத்தில் (pH 9-10) பென்சீன் டயசோனியம் குளோரைடு பீனாலுடன் இணையும் வினையில் கிடைக்கும் விளைபொருள் எது?",
+        "optionTexts": [
+          "p-ஹைட்ராக்ஸிஅசோபென்சீன் (ஆரஞ்சு சாயப்பொருள்)",
+          "p-அமினோஅசோபென்சீன் (மஞ்சள் சாயப்பொருள்)",
+          "குளோரோபென்சீன் மற்றும் நைட்ரஜன்",
+          "பீனைல் பென்சோயேட்டு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Gabriel phthalimide synthesis cannot be used for the preparation of aromatic primary amines (like aniline) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aryl halides do not undergo nucleophilic substitution (SN2) with phthalimide anion under normal conditions",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Aromatic amines are explosive",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phthalimide cannot form potassium salt",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aromatic amines cannot be hydrolyzed by hydrazine or alkali",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Gabriel phthalimide synthesis involves an SN2 attack of potassium phthalimide anion on an alkyl halide.\nStep 2: Aryl halides (like chlorobenzene) do not undergo SN2 substitution with nucleophiles due to partial double-bond character of C-X bond and steric repulsion from the pi-electron cloud.\nStep 3: Hence, N-arylphthalimide cannot be prepared, preventing the synthesis of pure primary aromatic amines.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேப்ரியல் தாலிமைடு தொகுப்பு முறையைப் பயன்படுத்தி அரோமேட்டிக் ஓரிணைய அமீன்களை (அனிலின் போன்றவை) தயாரிக்க முடியாததன் காரணம் என்ன?",
+        "optionTexts": [
+          "அரைல் ஹாலைடுகள் தாலிமைடு எதிரயனியுடன் SN2 நியூக்ளியோஃபிலிக் பதிலீட்டு வினைக்கு உட்படாது",
+          "அரோமேட்டிக் அமீன்கள் வெடிக்கும் தன்மை கொண்டவை",
+          "தாலிமைடு பொட்டாசியம் உப்பை உருவாக்க முடியாது",
+          "அரோமேட்டிக் அமீன்களை காரத்தால் நீராற்பகுக்க முடியாது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Conversion of benzene diazonium chloride to chlorobenzene using Cu2Cl2 / HCl is named as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gattermann reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sandmeyer reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Finkelstein reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Wurtz-Fittig reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The replacement of the diazonium group by -Cl or -Br using cuprous salts (Cu2Cl2/HCl or Cu2Br2/HBr) is called the Sandmeyer reaction.\nStep 2: The reaction that uses copper powder and halogen acid (Cu/HCl) instead of cuprous salt is the Gattermann reaction.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Cu2Cl2 / HCl ஐப் பயன்படுத்தி பென்சீன் டயசோனியம் குளோரைடை குளோரோபென்சீனாக மாற்றும் வினையின் பெயர் என்ன?",
+        "optionTexts": [
+          "காட்டர்மேன் வினை",
+          "சாண்ட்மேயர் வினை",
+          "ஃபின்கெல்ஸ்டீன் வினை",
+          "வூர்ட்ஸ்-ஃபிட்டிக் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Heating alkyl chlorides or bromides in the presence of metallic fluorides like AgF, Hg2F2, or CoF3 to prepare alkyl fluorides is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Finkelstein reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Swarts reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Frankland reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hunsdiecker reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Swarts reaction is the most convenient method for synthesizing alkyl fluorides.\nStep 2: Alkyl bromides or chlorides undergo halogen exchange when heated with inorganic metallic fluorides such as AgF, Hg2F2, CoF3, or SbF3.\nStep 3: Finkelstein reaction uses NaI in dry acetone for preparing alkyl iodides.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "AgF, Hg2F2 அல்லது CoF3 போன்ற உலோக புளோரைடுகளின் முன்னிலையில் ஆல்கைல் குளோரைடுகள்/புரோமைடுகளைச் சூடுபடுத்தி ஆல்கைல் புளோரைடுகளைத் தயாரிக்கும் வினை:",
+        "optionTexts": [
+          "ஃபின்கெல்ஸ்டீன் வினை",
+          "ஸ்வார்ட்ஸ் வினை",
+          "ஃபிராங்க்லாண்ட் வினை",
+          "ஹன்ஸ்டிக்கர் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When phenol is treated with concentrated HNO3 in the presence of concentrated H2SO4, the product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "o-Nitrophenol only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2,4,6-Trinitrophenol (Picric acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "p-Nitrophenol only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1,4-Benzoquinone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The -OH group in phenol strongly activates the benzene ring towards electrophilic aromatic substitution.\nStep 2: Reaction with concentrated nitrating mixture (conc. HNO3 + conc. H2SO4) nitrates all activated ortho and para positions.\nStep 3: This produces 2,4,6-trinitrophenol (commonly known as picric acid).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பீனால் அடர் H2SO4 முன்னிலையில் அடர் HNO3 உடன் வினைபுரியும்போது உருவாகும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "o-நைட்ரோபீனால் மட்டுமே",
+          "2,4,6-டிரைநைட்ரோபீனால் (பிக்ரிக் அமிலம்)",
+          "p-நைட்ரோபீனால் மட்டுமே",
+          "1,4-பென்சோகுயினோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Hydroboration-oxidation of propene (reaction with B2H6/THF followed by alkaline H2O2) yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propan-1-ol",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Propane-1,2-diol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propanone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Diborane (B2H6) reacts with propene (CH3-CH=CH2) to form tripropylborane (CH3-CH2-CH2)3B.\nStep 2: Oxidation with alkaline H2O2 replaces the boron atom with an -OH group.\nStep 3: The net result is anti-Markovnikov hydration of the alkene to yield Propan-1-ol without carbocation rearrangement.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரோப்பீனின் ஹைட்ரோபோரோனேஷன்-ஆக்சிஜனேற்ற வினையில் (B2H6/THF மற்றும் கார H2O2) கிடைக்கும் விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பன்-2-ஆல்",
+          "புரோப்பன்-1-ஆல்",
+          "புரோப்பேன்-1,2-டையால்",
+          "புரோப்பனோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Reductive ozonolysis (O3 followed by Zn/H2O) of 2-methylbut-2-ene produces:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propanone and Ethanal",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Two moles of Ethanal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanal and Methanal",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butanone and Methanal",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Write the structural formula of 2-methylbut-2-ene: (CH3)2C=CH-CH3.\nStep 2: Ozonolysis cleaves the double bond into two carbonyl fragments.\nStep 3: (CH3)2C= yields propanone (acetone, (CH3)2C=O) and =CH-CH3 yields ethanal (acetaldehyde, CH3CHO).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-மெத்தில்பியூட்-2-ஈனின் ஒடுக்கும் ஓசோனேற்ற வினையில் (O3 மற்றும் Zn/H2O) கிடைக்கும் விளைபொருட்கள் யாவை?",
+        "optionTexts": [
+          "புரோப்பனோன் மற்றும் எத்தனால் (அசிட்டால்டிஹைடு)",
+          "இரண்டு மோல் எத்தனால்",
+          "புரோப்பனால் மற்றும் மெத்தனால்",
+          "பியூட்டனோன் மற்றும் மெத்தனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Reaction of an aryl halide and an alkyl halide with sodium metal in dry ether to form an alkylbenzene is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wurtz reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fittig reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Wurtz-Fittig reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Kolbe's reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Coupling of two alkyl halides using Na in dry ether is the Wurtz reaction.\nStep 2: Coupling of two aryl halides using Na in dry ether is the Fittig reaction.\nStep 3: Coupling of a mixture of an alkyl halide and an aryl halide using Na in dry ether to yield an alkylbenzene is the Wurtz-Fittig reaction.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உலர் ஈதரில் சோடியம் உலோகத்தின் முன்னிலையில் அரைல் ஹாலைடு மற்றும் ஆல்கைல் ஹாலைடு இணைந்து ஆல்கைல்பென்சீனைத் தரும் வினை:",
+        "optionTexts": [
+          "வூர்ட்ஸ் வினை",
+          "ஃபிட்டிக் வினை",
+          "வூர்ட்ஸ்-ஃபிட்டிக் வினை",
+          "கோல்ப் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the correct increasing order of acidic strength for the following carboxylic acids?\nI: CH3COOH, II: ClCH2COOH, III: FCH2COOH, IV: NO2CH2COOH",
+    "options": [
+      {
+        "label": "A",
+        "text": "I < II < III < IV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "IV < III < II < I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I < III < II < IV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II < I < III < IV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Acid strength of carboxylic acids increases with the presence of electron-withdrawing groups (-I effect) that stabilize the conjugate carboxylate anion.\nStep 2: Order of -I effect is: -NO2 > -F > -Cl > -H.\nStep 3: Therefore, acidic strength increases in the order: CH3COOH < ClCH2COOH < FCH2COOH < NO2CH2COOH.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் கார்பாக்சிலிக் அமிலங்களின் அமில வலிமை அதிகரிக்கும் சரியான வரிசை எது?\nI: CH3COOH, II: ClCH2COOH, III: FCH2COOH, IV: NO2CH2COOH",
+        "optionTexts": [
+          "I < II < III < IV",
+          "IV < III < II < I",
+          "I < III < II < IV",
+          "II < I < III < IV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of acidity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phenol > Water > Ethanol > Acetic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Acetic acid > Phenol > Water > Ethanol",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Acetic acid > Water > Phenol > Ethanol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethanol > Water > Phenol > Acetic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carboxylic acids are more acidic than phenols because the carboxylate anion delocalizes negative charge over two electronegative oxygen atoms.\nStep 2: Phenol is more acidic than water because phenoxide ion is resonance-stabilized over the aromatic ring.\nStep 3: Water is more acidic than aliphatic alcohols (like ethanol) because the alkyl group has a +I electron-releasing effect.\nStep 4: Conclude Acetic acid > Phenol > Water > Ethanol (Option B is correct).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றில் அமிலத்தன்மை குறையும் சரியான வரிசை எது?",
+        "optionTexts": [
+          "பீனால் > நீர் > எத்தனால் > அசிட்டிக் அமிலம்",
+          "அசிட்டிக் அமிலம் > பீனால் > நீர் > எத்தனால்",
+          "அசிட்டிக் அமிலம் > நீர் > பீனால் > எத்தனால்",
+          "எத்தனால் > நீர் > பீனால் > அசிட்டிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Rosenmund reduction of benzoyl chloride (C6H5COCl) with H2 in the presence of Pd/BaSO4 poisoned with sulfur yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzaldehyde",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Benzyl alcohol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Benzophenone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Rosenmund reduction is a catalytic hydrogenation of acyl chlorides to aldehydes.\nStep 2: The catalyst Pd is supported on BaSO4 and partially poisoned with sulfur or quinoline to prevent further reduction of the aldehyde to primary alcohol.\nStep 3: Benzoyl chloride gives benzaldehyde (C6H5CHO).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கந்தகத்தால் மட்டுப்படுத்தப்பட்ட Pd/BaSO4 முன்னிலையில் பென்சாயில் குளோரைடு (C6H5COCl) H2 உடன் ரோசன்மண்ட் ஒடுக்கமடையும் போது உருவாவது எது?",
+        "optionTexts": [
+          "பென்சால்டிஹைடு",
+          "பென்சைல் ஆல்கஹால்",
+          "பென்சோயிக் அமிலம்",
+          "பென்சோஃபீனோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The oxidation of toluene to benzaldehyde using chromyl chloride (CrO2Cl2) in CS2 followed by hydrolysis is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gattermann-Koch reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Etard reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Stephen reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cannizzaro reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Chromyl chloride (CrO2Cl2) oxidizes methyl group of toluene to a brown chromium complex in CS2/CCl4.\nStep 2: Hydrolysis of the brown chromium complex yields benzaldehyde.\nStep 3: This specific partial oxidation is known as the Etard reaction.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "CS2 இல் குரோமைல் குளோரைடைப் (CrO2Cl2) பயன்படுத்தி டொலுவீனை பென்சால்டிஹைடாக ஆக்சிஜனேற்றம் செய்யும் வினையின் பெயர் என்ன?",
+        "optionTexts": [
+          "காட்டர்மேன்-கோச் வினை",
+          "எட்டார்ட் வினை",
+          "ஸ்டீபன் வினை",
+          "கான்னிசரோ வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Decarboxylation of sodium ethanoate (CH3COONa) by heating with soda lime (NaOH + CaO in 3:1 ratio) gives:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethane",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Methane",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Propane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethyne",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Soda lime decarboxylation removes the -COONa group as sodium carbonate (Na2CO3).\nStep 2: CH3COONa + NaOH -(CaO, heat)-> CH4 + Na2CO3.\nStep 3: The product is methane, containing one carbon atom fewer than the starting carboxylate salt.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சோடா சுண்ணாம்பு (NaOH + CaO) உடன் சோடியம் எத்தனோயேட்டை (CH3COONa) சூடுபடுத்தி கார்பாக்சில் நீக்கம் செய்யும்போது கிடைக்கும் வாயு எது?",
+        "optionTexts": [
+          "ஈத்தேன்",
+          "மீத்தேன்",
+          "புரோப்பேன்",
+          "ஈத்தைன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The correct order of basic strength of methyl-substituted amines and ammonia in aqueous solution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2NH > CH3NH2 > (CH3)3N > NH3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3N > (CH3)2NH > CH3NH2 > NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3NH2 > (CH3)2NH > (CH3)3N > NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3N > CH3NH2 > (CH3)2NH > NH3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In aqueous solution, the basicity of aliphatic amines is determined by the combined effects of +I inductive effect, steric hindrance, and hydration of the substituted ammonium cation.\nStep 2: For methyl-substituted amines, the combined effect results in the order: 2° > 1° > 3° > NH3.\nStep 3: Therefore: (CH3)2NH > CH3NH2 > (CH3)3N > NH3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்க்கரைசலில் மெத்தில் பதிலீடு செய்யப்பட்ட அமீன்கள் மற்றும் அம்மோனியாவின் கார வலிமையின் சரியான வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2NH > CH3NH2 > (CH3)3N > NH3",
+          "(CH3)3N > (CH3)2NH > CH3NH2 > NH3",
+          "CH3NH2 > (CH3)2NH > (CH3)3N > NH3",
+          "(CH3)3N > CH3NH2 > (CH3)2NH > NH3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Aniline fails to undergo Friedel-Crafts alkylation and acylation reactions because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The -NH2 group is an ortho-para director",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The basic amino group reacts with the Lewis acid catalyst (AlCl3) to form a deactivating complex",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Aniline undergoes rapid polymerization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aniline is insoluble in anhydrous AlCl3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Aniline possesses a basic -NH2 group with a lone pair on nitrogen.\nStep 2: Anhydrous AlCl3 is a strong Lewis acid catalyst used in Friedel-Crafts reactions.\nStep 3: The lone pair on nitrogen coordinates with AlCl3 to form the complex [C6H5NH2-AlCl3]-, placing a strong positive charge next to the ring which drastically deactivates the aromatic ring towards electrophilic attack.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனிலின் ஃப்ரீடல்-கிராஃப்ட்ஸ் ஆல்கைலேற்றம் மற்றும் அசைலேற்ற வினைகளில் ஈடுபடாததன் காரணம் என்ன?",
+        "optionTexts": [
+          "-NH2 தொகுதி ஒரு ஆர்த்தோ-பாரா வழிகாட்டி என்பதால்",
+          "காரத் தன்மை கொண்ட -NH2 தொகுதி லூயிஸ் அமில வினையூக்கியான AlCl3 உடன் இணைந்து வளையத்தை செயலிழக்கச் செய்யும் அணைவை உருவாக்குகிறது",
+          "அனிலின் வேகமாக பலபடியாக்கல் அடைகிறது",
+          "அனிலின் நீரற்ற AlCl3 இல் கரையாது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following carbonyl compounds is most reactive towards nucleophilic addition reactions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HCHO (Formaldehyde)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH3CHO (Acetaldehyde)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3COCH3 (Acetone)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C6H5COCH3 (Acetophenone)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nucleophilic addition reactivity depends on steric hindrance and the electrophilicity of the carbonyl carbon.\nStep 2: Formaldehyde (HCHO) has no alkyl groups (+I effect), making its carbonyl carbon the most electrophilic, and has minimum steric crowding.\nStep 3: Ketones and aromatic carbonyls are far less reactive due to steric and resonance donation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் கார்பனைல் சேர்மங்களில் நியூக்ளியோஃபிலிக் சேர்க்கை வினைகளில் அதிக வினைதிறன் கொண்டது எது?",
+        "optionTexts": [
+          "HCHO (ஃபார்மால்டிஹைடு)",
+          "CH3CHO (அசிட்டால்டிஹைடு)",
+          "CH3COCH3 (அசிட்டோன்)",
+          "C6H5COCH3 (அசிட்டோஃபீனோன்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's electrolytic synthesis, electrolysis of an aqueous solution of sodium ethanoate yields which gas/hydrocarbon at the anode?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methane and O2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ethane and CO2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ethyne and H2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethene and CO",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At the anode, acetate ions (CH3COO-) lose electrons to form acetate free radicals (CH3COO.).\nStep 2: Acetate radicals rapidly eliminate CO2 to produce methyl radicals (.CH3).\nStep 3: Two methyl radicals combine to produce ethane (CH3-CH3) alongside CO2 at the anode.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் மின்னாற்பகுப்பு முறையில், சோடியம் எத்தனோயேட்டின் நீர்க்கரைசலை மின்னாற்பகுக்கும் போது நேர்மின்வாயில் (ஆனோடு) வெளியாகும் வாயுக்கள் யாவை?",
+        "optionTexts": [
+          "மீத்தேன் மற்றும் O2",
+          "ஈத்தேன் மற்றும் CO2",
+          "ஈத்தைன் மற்றும் H2",
+          "ஈத்தீன் மற்றும் CO"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Reaction of anisole (methoxybenzene, C6H5OCH3) with concentrated HI at 373 K yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iodobenzene and Methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phenol and Methyl iodide (CH3I)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Benzyl iodide and Water",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phenol and Methanol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Protonation of anisole gives the methylphenyl oxonium ion [C6H5-O+(H)-CH3].\nStep 2: The C(sp2)-O bond between benzene ring and oxygen has partial double bond character due to resonance and cannot be cleaved.\nStep 3: Iodide ion (I-) attacks the methyl group via an SN2 mechanism to form CH3I and Phenol.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "373 K வெப்பநிலையில் அனிசோல் (மெத்தாக்சிபென்சீன்) அடர் HI உடன் வினைபுரியும்போது கிடைக்கும் முதன்மை விளைபொருட்கள் யாவை?",
+        "optionTexts": [
+          "அயோடோபென்சீன் மற்றும் மெத்தனால்",
+          "பீனால் மற்றும் மெத்தில் அயோடைடு (CH3I)",
+          "பென்சைல் அயோடைடு மற்றும் நீர்",
+          "பீனால் மற்றும் மெத்தனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE01-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Reduction of nitrobenzene (C6H5NO2) with Sn and concentrated HCl gives:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrosobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "N-Phenylhydroxylamine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Aniline (C6H5NH2)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Azobenzene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nitrobenzene contains an oxidized nitrogen group (-NO2).\nStep 2: Treatment with active reducing metals in acidic medium (Sn/HCl or Fe/HCl) completely reduces the nitro group to primary aromatic amine.\nStep 3: The reaction yields aniline (C6H5NH2).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Sn மற்றும் அடர் HCl ஐப் பயன்படுத்தி நைட்ரோபென்சீனை (C6H5NO2) ஒடுக்கும் போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "optionTexts": [
+          "நைட்ரோசோபென்சீன்",
+          "N-பீனைல்ஹைட்ராக்சிலமீன்",
+          "அனிலின் (C6H5NH2)",
+          "அசோபென்சீன்"
+        ]
+      }
+    ]
+  }
+]

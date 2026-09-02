@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY10-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric experiment, when light of frequency ν is incident on a metal surface of work function Φ₀ (hν > Φ₀), what is the maximum kinetic energy K_max of the emitted photoelectrons?",
+    "options": [
+      {
+        "label": "A",
+        "text": "hν - Φ₀",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "hν + Φ₀",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Φ₀ - hν",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "hν / Φ₀",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Einstein's photoelectric equation states that the incident photon energy (hν) is split into the work function (Φ₀) and maximum kinetic energy (K_max).\nStep 2: hν = Φ₀ + K_max.\nStep 3: K_max = hν - Φ₀.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் விளைவு சோதனையில் Φ₀ வெளியேற்று ஆற்றல் கொண்ட உலோகப் பரப்பில் ν அதிர்வெண் கொண்ட ஒளி படும்போது வெளியேறும் ஒளி எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் K_max என்ன?",
+        "optionTexts": [
+          "hν - Φ₀",
+          "hν + Φ₀",
+          "Φ₀ - hν",
+          "hν / Φ₀"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through a potential difference of V = 100 volts. What is the de Broglie wavelength associated with the electron?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1227 nm (1.227 Å)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.227 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.0123 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12.27 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: De Broglie wavelength of an electron: λ = h / sqrt(2 m e V) = 1.227 / sqrt(V) nm.\nStep 2: Substitute V = 100 V: sqrt(100) = 10.\nStep 3: λ = 1.227 / 10 = 0.1227 nm = 1.227 Å.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓய்வு நிலையிலிருந்து 100 வோல்ட் மின்னழுத்த வேறுபாட்டில் முடுக்கப்படும் ஓர் எலக்ட்ரானின் டி பிராய் அலைநீளம் என்ன?",
+        "optionTexts": [
+          "0.1227 nm (1.227 Å)",
+          "1.227 nm",
+          "0.0123 nm",
+          "12.27 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Bohr model of the hydrogen atom, what is the ratio of the radius of the third orbit (n = 3) to that of the ground state orbit (n = 1)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "27 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 9",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Bohr radius formula: r_n = r₁ * n^2 / Z.\nStep 2: For hydrogen (Z = 1), r_n ∝ n^2.\nStep 3: For n = 3: r3 / r1 = (3)^2 / (1)^2 = 9 / 1 = 9 : 1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போர் அணு மாதிரியில் ஹைட்ரஜன் அணுவின் மூன்றாவது சுற்றுப்பாதையின் (n = 3) ஆரத்திற்கும் அடிமட்ட சுற்றுப்பாதையின் (n = 1) ஆரத்திற்கும் உள்ள விகிதம் என்ன?",
+        "optionTexts": [
+          "9 : 1",
+          "3 : 1",
+          "27 : 1",
+          "1 : 9"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the shortest wavelength (series limit) of the Lyman spectral series in atomic hydrogen? (Rydberg constant R = 1.097 x 10^7 m^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "91.2 nm (912 Å, equal to 1/R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "121.6 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "364.6 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "820.4 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Rydberg formula for Lyman series: 1/λ = R [ 1/1^2 - 1/n^2 ].\nStep 2: Shortest wavelength occurs for transition from n = ∞ to n = 1: 1/λ_min = R [ 1 - 0 ] = R.\nStep 3: λ_min = 1 / R = 1 / (1.097 x 10^7 m^-1) ≈ 9.116 x 10^-8 m = 91.2 nm = 912 Å (in ultraviolet region).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் நிறமாலையில் லைமன் தொடரின் குறுகிய அலைநீளம் (தொடர் எல்லை) என்ன? (R = 1.097 x 10^7 m^-1)",
+        "optionTexts": [
+          "91.2 nm (912 Å)",
+          "121.6 nm",
+          "364.6 nm",
+          "820.4 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A radioactive sample has a half-life of 20 days. What fraction of the original radioactive nuclei will remain undecayed after 60 days?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/8 (12.5%)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1/4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1/16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1/3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Number of half-lives n = total time / half-life = 60 days / 20 days = 3.\nStep 2: Undecayed fraction N / N₀ = (1/2)^n = (1/2)^3 = 1/8.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்க மாதிரியின் அரை ஆயுட்காலம் 20 நாட்கள் ஆகும். 60 நாட்களுக்குப் பிறகு சிதையாமல் இருக்கும் தொடக்க உட்கருக்களின் பின்னம் என்ன?",
+        "optionTexts": [
+          "1/8 (12.5%)",
+          "1/4",
+          "1/16",
+          "1/3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The nuclear radius R of an atom with mass number A is given by R = R₀ A^(1/3), where R₀ ≈ 1.2 x 10^-15 m. What does this formula imply about the nuclear density of all stable nuclei?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nuclear density is constant and independent of mass number A (≈ 2.3 x 10^17 kg/m^3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nuclear density increases linearly with A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nuclear density is inversely proportional to A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nuclear density is proportional to A^(1/3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nuclear mass M ≈ A * m_nucleon.\nStep 2: Nuclear volume V = (4/3) π R^3 = (4/3) π (R₀ A^(1/3))^3 = (4/3) π R₀^3 A.\nStep 3: Nuclear density ρ = M / V = [ A * m_nucleon ] / [ (4/3) π R₀^3 A ] = m_nucleon / [ (4/3) π R₀^3 ] = constant.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R = R₀ A^(1/3) என்ற சமன்பாடு அனைத்து நிலையான உட்கருக்களின் உட்கரு அடர்த்தி பற்றி எதை உணர்த்துகிறது?",
+        "optionTexts": [
+          "உட்கரு அடர்த்தி மாறிலியாகும் மற்றும் நிறை எண் A-ஐச் சார்ந்திருக்காது",
+          "நிறை எண் A உடன் நேர்விகிதத்தில் அதிகரிக்கும்",
+          "நிறை எண் A-க்கு எதிர்த்தகவில் இருக்கும்",
+          "A^(1/3) க்கு நேர்விகிதத்தில் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An intrinsic silicon semiconductor at room temperature is doped with pentavalent phosphorus atoms. The resulting extrinsic semiconductor is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n-type semiconductor with electrons as majority carriers",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "p-type semiconductor with holes as majority carriers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "p-type with positive net electrical charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An electrical insulator",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Pentavalent dopants (P, As, Sb) provide extra conduction electrons, forming an n-type semiconductor.\nStep 2: Conduction electrons are majority carriers, and holes are minority carriers.\nStep 3: The crystal as a whole remains electrically neutral.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் உள்ள தூய சிலிக்கானுடன் ஐந்து இணைதிறன் கொண்ட பாஸ்பரஸ் அணுக்கள் மாசூட்டப்பட்டால் உருவாகும் குறைடத்தி:",
+        "optionTexts": [
+          "எலக்ட்ரான்களை பெரும்பான்மை ஊர்திகளாகக் கொண்ட n-வகை குறைக்கடத்தி",
+          "துளைகளை பெரும்பான்மை ஊர்திகளாகக் கொண்ட p-வகை குறைக்கடத்தி",
+          "நேர்மின்சுமை கொண்ட p-வகை",
+          "மின் கடத்தாப் பொருள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which logic gate produces an output of logic '1' ONLY when both of its inputs A and B are simultaneously '0'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NOR gate (Y = NOT(A OR B))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NAND gate",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "AND gate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "XOR gate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Truth table of NOR gate: (0,0)->1, (0,1)->0, (1,0)->0, (1,1)->0.\nStep 2: A NOR gate gives high output (1) if and only if all inputs are low (0).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B ஆகிய இரு உள்ளீடுகளும் ஒரே நேரத்தில் '0' ஆக இருக்கும் போது மட்டுமே வெளியீடு '1' ஐத் தரும் தருக்க வாயில் எது?",
+        "optionTexts": [
+          "NOR வாயில் (Y = NOT(A OR B))",
+          "NAND வாயில்",
+          "AND வாயில்",
+          "XOR வாயில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Zener diode with breakdown voltage V_z = 6.0 V is used as a voltage regulator across a load resistance R_L = 1.0 kΩ with an input unregulated DC voltage of 10.0 V through a series resistor R_s = 200 Ω. What is the current through the Zener diode?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14 mA",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 mA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Voltage across series resistor: V_s = V_in - V_z = 10.0 V - 6.0 V = 4.0 V.\nStep 2: Total supply current through R_s: I_total = V_s / R_s = 4.0 V / 200 Ω = 0.020 A = 20 mA.\nStep 3: Load current through R_L: I_L = V_z / R_L = 6.0 V / 1000 Ω = 0.006 A = 6 mA.\nStep 4: Zener diode current: I_z = I_total - I_L = 20 mA - 6 mA = 14 mA. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V_z = 6.0 V முறிவு மின்னழுத்தம் கொண்ட ஜீனர் டையோடு 1.0 kΩ பளு மின்தடை மற்றும் 200 Ω தொடர் மின்தடையுடன் 10.0 V DC உள்ளீட்டுடன் இணைக்கப்பட்டுள்ளது. ஜீனர் டையோடு வழியே பாயும் மின்னோட்டம் என்ன?",
+        "optionTexts": [
+          "14 mA",
+          "20 mA",
+          "6 mA",
+          "10 mA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When a p-n junction diode is forward biased by applying positive potential to the p-side and negative potential to the n-side:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The depletion layer width decreases and barrier potential decreases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The depletion layer width increases and barrier potential increases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The barrier potential remains completely unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Diffusion current drops to zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In forward bias, the applied electric field opposes the built-in junction electric field.\nStep 2: Majority carriers (holes from p and electrons from n) are pushed across the junction toward the depletion region.\nStep 3: This reduces both the depletion layer width and the effective barrier height (V_barrier = V₀ - V_applied).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு p-n சந்தி டையோடு முன்னோக்கு சார்புடையதாக்கப்படும் போது:",
+        "optionTexts": [
+          "அயனியடுக்கு தடிமன் குறைகிறது மற்றும் மின்னழுத்த அரண் குறைகிறது",
+          "அயனியடுக்கு தடிமன் அதிகரிக்கிறது மற்றும் மின்னழுத்த அரண் அதிகரிக்கிறது",
+          "மின்னழுத்த அரண் மாற்றமின்றி இருக்கும்",
+          "விரவல் மின்னோட்டம் பூஜ்ஜியமாகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the energy of a photon emitted during an electron transition from n = 4 to n = 2 in a hydrogen atom? (Rydberg energy hcR = 13.6 eV)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.55 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.20 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.85 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.40 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Energy of level n: E_n = - 13.6 / n^2 eV.\nStep 2: E2 = - 13.6 / 2^2 = - 3.40 eV.\nStep 3: E4 = - 13.6 / 4^2 = - 0.85 eV.\nStep 4: Emitted photon energy ΔE = E4 - E2 = - 0.85 - (- 3.40) = 3.40 - 0.85 = 2.55 eV (Balmer H-beta line). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவில் எலக்ட்ரான் n = 4 இலிருந்து n = 2 நிலைக்குத் தாவும்போது வெளிப்படும் ஃபோட்டானின் ஆற்றல் என்ன?",
+        "optionTexts": [
+          "2.55 eV",
+          "10.20 eV",
+          "0.85 eV",
+          "3.40 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a nuclear reaction, 1.0 milligram of mass is completely converted into energy. How much electrical energy is released in kilowatt-hours (kWh)? (c = 3.0 x 10^8 m/s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.5 x 10^4 kWh (25,000 kWh)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "9.0 x 10^10 kWh",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.5 x 10^7 kWh",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9.0 x 10^7 kWh",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mass m = 1.0 mg = 1.0 x 10^-6 kg.\nStep 2: Energy E = m c^2 = (1.0 x 10^-6 kg) * (3.0 x 10^8 m/s)^2 = 9.0 x 10^10 J.\nStep 3: Conversion: 1 kWh = 3.6 x 10^6 J.\nStep 4: E in kWh = (9.0 x 10^10 J) / (3.6 x 10^6 J/kWh) = 2.5 x 10^4 kWh = 25,000 kWh. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.0 மில்லிகிராம் நிறை முழுமையாக ஆற்றலாக மாற்றப்படும் போது வெளிப்படும் ஆற்றல் கிலோவாட்-மணி (kWh) அலகில் என்ன?",
+        "optionTexts": [
+          "2.5 x 10^4 kWh (25,000 kWh)",
+          "9.0 x 10^10 kWh",
+          "2.5 x 10^7 kWh",
+          "9.0 x 10^7 kWh"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The stopping potential V₀ in a photoelectric experiment depends on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Frequency of incident light and work function of emitter material",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Intensity of incident light only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Distance between light source and photosensitive plate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Surface area of emitter plate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Einstein's relation: e V₀ = K_max = hν - Φ₀ => V₀ = (h/e) ν - (Φ₀/e).\nStep 2: Stopping potential is independent of light intensity and depends solely on incident frequency ν and work function Φ₀.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் விளைவு சோதனையில் நிறுத்து மின்னழுத்தம் V₀ எதனைப் பொறுத்தது?",
+        "optionTexts": [
+          "படுகதிர் அதிர்வெண் மற்றும் உமிழ்வானின் வெளியேற்று ஆற்றல்",
+          "படுகதிர் செறிவு மட்டுமே",
+          "ஒளி மூலத்திற்கும் தகட்டிற்கும் இடையே உள்ள தொலைவு",
+          "உமிழ்வான் தகட்டின் பரப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When an unstable nucleus _92U^238 undergoes radioactive alpha decay followed by two successive beta-minus (β-) decays, what are the mass number A and atomic number Z of the resulting daughter nucleus?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A = 234, Z = 92 (Uranium isotope)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A = 234, Z = 90 (Thorium)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A = 236, Z = 92",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A = 238, Z = 90",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: One alpha decay decreases A by 4 and Z by 2: _92U^238 -> _90Th^234 + _2He^4.\nStep 2: Two β- decays leave A unchanged and increase Z by 1 each (total +2): _90Th^234 -> _92U^234 + 2 e^- + 2 ν_bar.\nStep 3: Final nucleus has A = 234, Z = 92.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "_92U^238 உட்கரு ஒரு ஆல்ஃபா சிதைவு மற்றும் அதைத் தொடர்ந்து இரண்டு பீட்டா-மைனஸ் (β-) சிதைவுகளுக்கு உட்பட்டால் உருவாகும் மகள் உட்கருவின் நிறை எண் A மற்றும் அணு எண் Z என்ன?",
+        "optionTexts": [
+          "A = 234, Z = 92",
+          "A = 234, Z = 90",
+          "A = 236, Z = 92",
+          "A = 238, Z = 90"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The forbidden energy band gap (E_g) for pure diamond at room temperature is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.0 eV (Electrical insulator)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.1 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.7 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Insulators have large forbidden energy band gaps (E_g > 3 eV).\nStep 2: For diamond, E_g ≈ 5.4 to 6.0 eV.\nStep 3: Silicon has E_g ≈ 1.1 eV, Germanium has E_g ≈ 0.7 eV.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் தூய வைரத்தின் விலக்கப்பட்ட ஆற்றல் இடைவெளி (E_g) தோராயமாக:",
+        "optionTexts": [
+          "6.0 eV (மின் கடத்தாப் பொருள்)",
+          "1.1 eV",
+          "0.7 eV",
+          "0 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A radioactive isotope has a decay constant λ = 0.05 day^-1. What is its mean life (average lifetime τ)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 days",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "13.86 days",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50 days",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 days",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mean life τ is defined as the reciprocal of decay constant: τ = 1 / λ.\nStep 2: τ = 1 / 0.05 day^-1 = 20 days.\nStep 3: (Note that half-life T_half = 0.693 * τ = 13.86 days).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிதைவு மாறிலி λ = 0.05 day^-1 கொண்ட கதிரியக்க தனிமத்தின் சராசரி ஆயுட்காலம் (τ) என்ன?",
+        "optionTexts": [
+          "20 நாட்கள்",
+          "13.86 நாட்கள்",
+          "50 நாட்கள்",
+          "10 நாட்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the de Broglie wavelength of a thermal neutron of mass m = 1.67 x 10^-27 kg at absolute temperature T = 300 K? (Boltzmann constant k_B = 1.38 x 10^-23 J/K, h = 6.63 x 10^-34 J s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.145 nm (1.45 Å)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.45 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.015 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "14.5 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Average thermal kinetic energy of neutron: E = (3/2) k_B T.\nStep 2: De Broglie wavelength: λ = h / sqrt(2 m E) = h / sqrt(3 m k_B T).\nStep 3: 3 m k_B T = 3 * (1.67 x 10^-27) * (1.38 x 10^-23) * 300 = 2.074 x 10^-47.\nStep 4: sqrt(3 m k_B T) = 4.554 x 10^-24 kg m/s.\nStep 5: λ = (6.63 x 10^-34) / (4.554 x 10^-24) = 1.455 x 10^-10 m = 0.145 nm = 1.45 Å. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K வெப்பநிலையில் உள்ள வெப்ப நியூட்ரானின் டி பிராய் அலைநீளம் என்ன?",
+        "optionTexts": [
+          "0.145 nm (1.45 Å)",
+          "1.45 nm",
+          "0.015 nm",
+          "14.5 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The binding energy per nucleon is maximum (approximately 8.8 MeV/nucleon) for which of the following nuclei?",
+    "options": [
+      {
+        "label": "A",
+        "text": "_26Fe^56 (Iron-56)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "_92U^238",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "_2He^4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "_1H^2 (Deuterium)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: On the binding energy per nucleon versus mass number curve, the maximum occurs at A = 56 for Iron-56 (Fe-56).\nStep 2: Its binding energy per nucleon is about 8.75 MeV/nucleon, making it the most tightly bound and stable nucleus.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நியூக்ளியானுக்கான பிணைப்பு ஆற்றல் பெருமமாக (சுமார் 8.8 MeV) உள்ள உட்கரு எது?",
+        "optionTexts": [
+          "_26Fe^56 (இரும்பு-56)",
+          "_92U^238",
+          "_2He^4",
+          "_1H^2 (டியூட்டீரியம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a full-wave rectifier operating from 50 Hz AC mains supply, what is the fundamental ripple frequency of the output DC voltage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "25 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A full-wave rectifier conducts during both the positive and negative half-cycles of input AC.\nStep 2: Therefore, output pulses occur at twice the input frequency: f_ripple = 2 * f_in.\nStep 3: f_ripple = 2 * 50 Hz = 100 Hz.\nStep 4: (In contrast, half-wave rectifier ripple frequency equals input frequency = 50 Hz). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "50 Hz AC மூலத்தில் செயல்படும் முழு அலை திருத்தியின் வெளியீட்டு சிற்றலை அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "100 Hz",
+          "50 Hz",
+          "25 Hz",
+          "200 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The universal logic gate from which ANY other logic gate (AND, OR, NOT) can be constructed solely by combination is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "NAND gate (or NOR gate)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "AND gate",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "OR gate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "XOR gate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: NAND and NOR gates are termed universal gates because repeated combinations of either gate alone can synthesize all standard Boolean logic operations (NOT, AND, OR, XOR).\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மற்ற அனைத்து தருக்க வாயில்களையும் (AND, OR, NOT) உருவாக்கப் பயன்படும் பொதுமை வாயில் எது?",
+        "optionTexts": [
+          "NAND வாயில் (அல்லது NOR வாயில்)",
+          "AND வாயில்",
+          "OR வாயில்",
+          "XOR வாயில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The threshold wavelength for photoelectric emission from a metal is 6000 Å. When light of wavelength 4000 Å is incident on the metal, what is the maximum kinetic energy of emitted photoelectrons? (hc = 12400 eV Å)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.03 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3.10 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.07 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.52 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Incident photon energy: E = 12400 / 4000 = 3.10 eV.\nStep 2: Work function: Φ₀ = 12400 / 6000 = 2.067 eV.\nStep 3: Maximum kinetic energy K_max = E - Φ₀ = 3.10 - 2.067 = 1.033 eV ≈ 1.03 eV.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகத்தின் ஒளிமின் பயன்தொடக்க அலைநீளம் 6000 Å ஆகும். 4000 Å அலைநீள ஒளி அதன் மீது பட்டால் வெளியேறும் எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் என்ன?",
+        "optionTexts": [
+          "1.03 eV",
+          "3.10 eV",
+          "2.07 eV",
+          "0.52 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a nuclear reactor, fission of one U-235 nucleus releases 200 MeV of energy. How many fission reactions must occur per second to generate a continuous thermal power output of 1000 MW?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.125 x 10^19 fissions/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.0 x 10^18 fissions/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.25 x 10^20 fissions/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.25 x 10^19 fissions/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Power P = 1000 MW = 10^9 J/s.\nStep 2: Energy per fission = 200 MeV = 200 x 10^6 x 1.6 x 10^-19 J = 3.2 x 10^-11 J.\nStep 3: Number of fissions per second n = P / E_fission = 10^9 / (3.2 x 10^-11) = 0.3125 x 10^20 = 3.125 x 10^19.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு U-235 உட்கரு பிளவின் போது 200 MeV ஆற்றல் வெளிப்படுகிறது. 1000 MW வெப்பத் திறனைப் பெற வினாடிக்கு எத்தனை பிளவுகள் நிகழ வேண்டும்?",
+        "optionTexts": [
+          "3.125 x 10^19 பிளவுகள்/வி",
+          "5.0 x 10^18 பிளவுகள்/வி",
+          "1.25 x 10^20 பிளவுகள்/வி",
+          "6.25 x 10^19 பிளவுகள்/வி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A photodiode is always operated under which biasing condition to detect light optical signals?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Reverse bias",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Forward bias",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero bias",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Alternating AC bias",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In reverse bias, the dark current is very small (microamperes) and dominated by minority carriers.\nStep 2: Incident light generates electron-hole pairs, producing a fractional change in reverse current that is easily measurable and directly proportional to light intensity.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளி சமிக்ஞைகளைக் கண்டறிய போட்டோடையோடு எப்போதும் எந்த சார்பு நிலையில் இயக்கப்படுகிறது?",
+        "optionTexts": [
+          "பின்னோக்கு சார்பு",
+          "முன்னோக்கு சார்பு",
+          "சார்பற்ற நிலை",
+          "AC சார்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the ratio of angular momentum of an electron in the 4th orbit to that in the 2nd orbit of a hydrogen atom according to Bohr's postulate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Bohr's quantization condition: L_n = n h / (2π).\nStep 2: Angular momentum is directly proportional to principal quantum number n: L_n ∝ n.\nStep 3: Ratio L4 / L2 = 4 / 2 = 2 : 1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவில் 4-வது சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் கோண உந்தத்திற்கும் 2-வது சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் கோண உந்தத்திற்கும் உள்ள விகிதம் என்ன?",
+        "optionTexts": [
+          "2 : 1",
+          "4 : 1",
+          "16 : 1",
+          "1 : 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A light-emitting diode (LED) emits visible light when it is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Forward biased, due to recombination of electrons and holes across junction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Reverse biased near Zener breakdown",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Unbiased at high temperatures",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Reverse biased under dark conditions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When an LED is forward biased, electrons from the n-side cross into the p-side and recombine with holes.\nStep 2: The excess energy corresponding to the semiconductor band gap (E_g = hν) is released as visible photons.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளி உமிழ் டையோடு (LED) எப்போது கண்ணுறு ஒளியை உமிழ்கிறது?",
+        "optionTexts": [
+          "முன்னோக்கு சார்புடையதாக இருக்கும் போது, எலக்ட்ரான்-துளை மீளிணைவால்",
+          "பின்னோக்கு சார்புடையதாக இருக்கும் போது",
+          "சார்பற்ற நிலையில் அதிக வெப்பநிலையில்",
+          "இருட்டில் பின்னோக்கு சார்புடையதாக இருக்கும் போது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the activity of a radioactive sample drops to 1/16th of its initial value in 80 minutes, what is the decay constant λ of the sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.0347 min^-1 (ln 2 / 20 min)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.0500 min^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.0125 min^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.0866 min^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Activity A = A₀ (1/2)^n = A₀ / 16 = A₀ / 2^4 => number of half-lives n = 4.\nStep 2: Half-life T_half = 80 min / 4 = 20 minutes.\nStep 3: Decay constant λ = ln 2 / T_half = 0.69315 / 20 min = 0.03466 min^-1 ≈ 0.0347 min^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "80 நிமிடங்களில் ஒரு கதிரியக்க மாதிரியின் செயல்பாடு தொடக்க மதிப்பில் 1/16 ஆகக் குறைந்தால், சிதைவு மாறிலி λ என்ன?",
+        "optionTexts": [
+          "0.0347 min^-1",
+          "0.0500 min^-1",
+          "0.0125 min^-1",
+          "0.0866 min^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Davisson-Germer experiment provided direct experimental confirmation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wave nature of electrons (de Broglie hypothesis)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Particle nature of light",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quantization of charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nuclear fission",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Davisson and Germer observed diffraction of slow electrons scattered by a nickel crystal lattice.\nStep 2: The measured diffraction peaks matched Bragg's law for the de Broglie wavelength λ = h / p.\nStep 3: This experimentally confirmed the wave nature of matter.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேவிசன்-ஜெர்மர் சோதனை எதற்கு நேரடி சோதனையியல் சான்றை வழங்கியது?",
+        "optionTexts": [
+          "எலக்ட்ரான்களின் அலைப்பண்பு (டி பிராய் கொள்கை)",
+          "ஒளியின் துகள் பண்பு",
+          "மின்னூட்டத்தின் குவாண்டமாக்கல்",
+          "அணுக்கரு பிளவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two nuclei have mass numbers in the ratio 1 : 27. What is the ratio of their nuclear radii?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 9",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 : 27",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nuclear radius relation: R ∝ A^(1/3).\nStep 2: R1 / R2 = (A1 / A2)^(1/3) = (1 / 27)^(1/3) = 1 / 3.\nStep 3: Ratio is 1 : 3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு உட்கருக்களின் நிறை எண்களின் விகிதம் 1 : 27 எனில், அவற்றின் உட்கரு ஆரங்களின் விகிதம் என்ன?",
+        "optionTexts": [
+          "1 : 3",
+          "1 : 9",
+          "1 : 27",
+          "3 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a solar cell, electricity is generated from sunlight based on the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Photovoltaic effect at a p-n junction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Seebeck thermoelectric effect",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thermionic emission",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Photoemission of electrons into vacuum",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Solar cells utilize the photovoltaic effect.\nStep 2: Incident photons generate electron-hole pairs near the junction, which are separated by the built-in electric field, creating a photovoltage across the terminals without any external bias.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சூரிய மின்கலத்தில் சூரிய ஒளியிலிருந்து மின்சாரம் உருவாக்கப்படும் தத்துவம்:",
+        "optionTexts": [
+          "p-n சந்தியில் ஒளிமின்னழுத்த விளைவு",
+          "சீபெக் விளைவு",
+          "வெப்ப உமிழ்வு",
+          "வெற்றிடத்தில் ஒளி எலக்ட்ரான் உமிழ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a transistor amplifier circuit operating in Common Emitter (CE) configuration, the base current changes by 20 μA, producing a collector current change of 2.0 mA. If the input resistance is 1.0 kΩ and load resistance is 5.0 kΩ, what is the voltage gain of the amplifier?",
+    "options": [
+      {
+        "label": "A",
+        "text": "500",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "250",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1000",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Current gain β = ΔI_c / ΔI_b = (2.0 x 10^-3 A) / (20 x 10^-6 A) = 2000 / 20 = 100.\nStep 2: Resistance gain = R_load / R_in = 5.0 kΩ / 1.0 kΩ = 5.\nStep 3: Voltage gain A_v = Current gain * Resistance gain = β * (R_load / R_in) = 100 * 5 = 500.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது உமிழ்ப்பான் (CE) பெருக்கி சுற்றில் அடிவாய் மின்னோட்டம் 20 μA மாறும்போது ஏற்பி மின்னோட்டம் 2.0 mA மாறுகிறது. உள்ளீட்டு மின்தடை 1.0 kΩ மற்றும் பளு மின்தடை 5.0 kΩ எனில் மின்னழுத்தப் பெருக்கம் என்ன?",
+        "optionTexts": [
+          "500",
+          "100",
+          "250",
+          "1000"
+        ]
+      }
+    ]
+  }
+]

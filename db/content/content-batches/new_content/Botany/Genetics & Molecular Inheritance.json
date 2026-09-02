@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-BOT-BOT01-000001",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In four o'clock plants (Mirabilis jalapa) and Snapdragon (Antirrhinum majus), crossing a pure red-flowered plant (RR) with a pure white-flowered plant (rr) produces all pink-flowered F1 progeny (Rr). When the F1 pink plants are self-pollinated, what are the phenotypic and genotypic ratios obtained in the F2 generation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phenotypic ratio = 9:3:3:1 and Genotypic ratio = 1:2:1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phenotypic ratio = 3 Red : 1 White and Genotypic ratio = 1:2:1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phenotypic ratio = 1:1 and Genotypic ratio = 1:1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phenotypic ratio = 1 Red : 2 Pink : 1 White (1:2:1) and Genotypic ratio = 1 RR : 2 Rr : 1 rr (1:2:1)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Incomplete dominance occurs when the dominant allele (R) cannot fully mask the recessive allele (r) in the heterozygous state (Rr).\nStep 2: Selfing Rr × Rr yields offspring: 1/4 RR (Red), 2/4 Rr (Pink), and 1/4 rr (White).\nStep 3: Because heterozygotes have a distinct intermediate pink phenotype, the phenotypic ratio matches the genotypic ratio exactly: 1:2:1.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அந்திமந்தாரை (Mirabilis jalapa) மற்றும் ஸ்னாப்டிராகன் தாவரங்களில் தூய சிவப்பு மலர் (RR) மற்றும் தூய வெள்ளை மலர் (rr) கலப்பில் F1 இல் இளஞ்சிவப்பு மலர்கள் (Rr) தோன்றுகின்றன. F1 தாவரங்களை சுயகலப்பு செய்யும்போது F2 சந்ததியில் கிடைக்கும் புறத்தோற்ற மற்றும் மரபணுத்தோற்ற விகிதங்கள் யாவை?",
+        "optionTexts": [
+          "புறத்தோற்ற விகிதம் = 9:3:3:1 மற்றும் மரபணு விகிதம் = 1:2:1",
+          "புறத்தோற்ற விகிதம் = 3 சிவப்பு : 1 வெள்ளை மற்றும் மரபணு விகிதம் = 1:2:1",
+          "புறத்தோற்ற விகிதம் = 1:1 மற்றும் மரபணு விகிதம் = 1:1",
+          "புறத்தோற்ற விகிதம் = 1 சிவப்பு : 2 இளஞ்சிவப்பு : 1 வெள்ளை (1:2:1) மற்றும் மரபணு விகிதம் = 1 RR : 2 Rr : 1 rr (1:2:1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000002",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the classic Meselson and Stahl experiment (1958) on E. coli grown in 15N heavy isotope medium and subsequently transferred to 14N medium, what was the composition of the DNA molecules observed after two generations (40 minutes) of replication?",
+    "options": [
+      {
+        "label": "A",
+        "text": "75% Heavy (15N/15N) DNA and 25% Light (14N/14N) DNA",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100% Hybrid (15N/14N) DNA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100% Light (14N/14N) DNA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50% Hybrid (15N/14N) DNA and 50% Light (14N/14N) DNA",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Generation 0 (0 min): 100% Heavy DNA (15N/15N).\nStep 2: Generation 1 (20 min): 100% Hybrid intermediate density DNA (15N/14N).\nStep 3: Generation 2 (40 min): Replicating two 15N/14N duplexes in 14N yields 2 hybrid duplexes (15N/14N) and 2 light duplexes (14N/14N), giving an exact 1:1 ratio (50% hybrid : 50% light).\nStep 4: This unequivocally proved semiconservative replication. Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "15N கன ஐசோடோப்பில் வளர்க்கப்பட்டு பின்னர் 14N ஊடகத்திற்கு மாற்றப்பட்ட E. coli பாக்டீரியாவில் நிகழ்த்தப்பட்ட மெசல்சன் மற்றும் ஸ்டால் சோதனையில், 2-வது தலைமுறைக்கு (40 நிமிடங்கள்) பிறகு பெறப்பட்ட DNA மூலக்கூறுகளின் கலவை என்ன?",
+        "optionTexts": [
+          "75% கனரக DNA மற்றும் 25% இலகுவான DNA",
+          "100% கலப்பின (15N/14N) DNA",
+          "100% இலகுவான (14N/14N) DNA",
+          "50% கலப்பின (15N/14N) DNA மற்றும் 50% இலகுவான (14N/14N) DNA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000003",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the expected phenotypic ratio in the F2 generation of a Mendelian dihybrid cross involving two heterozygous individuals (AaBb × AaBb)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9:3:3:1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1:2:1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3:1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1:1:1:1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A dihybrid cross between two heterozygous parents (AaBb × AaBb) produces 16 combinations.\nStep 2: According to the Law of Independent Assortment, alleles of two independent gene pairs assort independently.\nStep 3: The resulting phenotypic ratio is 9 (dominant-dominant) : 3 (dominant-recessive) : 3 (recessive-dominant) : 1 (recessive-recessive).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெண்டலின் இருபண்பு கலப்பில் (AaBb × AaBb) F2 சந்ததியில் கிடைக்கும் எதிர்பார்க்கப்படும் புறத்தோற்ற விகிதம் என்ன?",
+        "optionTexts": [
+          "9:3:3:1",
+          "1:2:1",
+          "3:1",
+          "1:1:1:1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000004",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A test cross is performed to determine the genotype of an organism exhibiting a dominant phenotype. Which cross correctly represents a test cross?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dominant phenotype individual × Homozygous recessive individual",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Dominant phenotype individual × Homozygous dominant individual",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Heterozygous individual × Heterozygous individual",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Homozygous recessive individual × Homozygous recessive individual",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A test cross is a cross between an individual with an unknown dominant genotype (either homozygous dominant AA or heterozygous Aa) and a homozygous recessive individual (aa).\nStep 2: If the progeny shows a 1:1 ratio, the unknown parent is heterozygous. If 100% dominant, it is homozygous dominant.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓங்கு பண்புடைய ஒரு உயிரினத்தின் மரபணு வகையைக் கண்டறிய சோதனை கலப்பு செய்யப்படுகிறது. கீழ்வருவனவற்றில் எது சரியான சோதனை கலப்பைக் குறிக்கிறது?",
+        "optionTexts": [
+          "ஓங்கு புறத்தோற்ற தனி உயிரி × ஒடுங்கு ஒத்த மரபணு கொண்ட தனி உயிரி",
+          "ஓங்கு புறத்தோற்ற தனி உயிரி × ஓங்கு ஒத்த மரபணு கொண்ட தனி உயிரி",
+          "மாறுபட்ட மரபணு கொண்ட உயிரி × மாறுபட்ட மரபணு கொண்ட உயிரி",
+          "ஒடுங்கு ஒத்த மரபணு கொண்ட உயிரி × ஒடுங்கு ஒத்த மரபணு கொண்ட உயிரி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000005",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In human ABO blood groups, alleles IA and IB are codominant over allele i. How many genotypes and phenotypes are possible in the human population for ABO blood types?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 genotypes and 4 phenotypes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 genotypes and 6 phenotypes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 genotypes and 3 phenotypes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 genotypes and 6 phenotypes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The ABO blood group system is governed by gene I with 3 alleles: IA, IB, and i.\nStep 2: The number of possible genotypes is given by n(n+1)/2 = 3(4)/2 = 6 (IAIA, IAi, IBIB, IBi, IAIB, ii).\nStep 3: These 6 genotypes express 4 distinct phenotypes (Blood groups A, B, AB, and O).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித ABO இரத்த வகை அமைப்பில் IA மற்றும் IB அலீல்கள் i அலீலின் மீது இணை ஓங்குதன்மை காட்டுகின்றன. மனித மக்கள்தொகையில் சாத்தியமான மரபணு வகையங்கள் மற்றும் புறத்தோற்ற வகையங்கள் எத்தனை?",
+        "optionTexts": [
+          "6 மரபணு வகையங்கள் மற்றும் 4 புறத்தோற்ற வகையங்கள்",
+          "4 மரபணு வகையங்கள் மற்றும் 6 புறத்தோற்ற வகையங்கள்",
+          "3 மரபணு வகையங்கள் மற்றும் 3 புறத்தோற்ற வகையங்கள்",
+          "6 மரபணு வகையங்கள் மற்றும் 6 புறத்தோற்ற வகையங்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000006",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Who experimentally proved the Chromosomal Theory of Inheritance using Drosophila melanogaster and demonstrated that genes are located on chromosomes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gregor Mendel",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Walter Sutton and Theodor Boveri",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thomas Hunt Morgan",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Alfred Sturtevant",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sutton and Boveri formulated the Chromosomal Theory of Inheritance in 1902.\nStep 2: Thomas Hunt Morgan and his colleagues provided experimental verification of this theory using the fruit fly (Drosophila melanogaster).\nStep 3: Morgan's experiments also led to the discovery of linkage and sex-linked inheritance.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ட்ரோசோபிலா மெலனோகாஸ்டரைப் பயன்படுத்தி குரோமோசோம் மரபுக் கொள்கையை பரிசோதனை மூலம் நிரூபித்து, மரபணுக்கள் குரோமோசோம்களில் அமைந்துள்ளன என்பதை நிறுவியவர் யார்?",
+        "optionTexts": [
+          "கிரிகோர் மெண்டல்",
+          "வால்டர் சட்டன் மற்றும் தியோடர் போவரி",
+          "தாமஸ் ஹன்ட் மார்கன்",
+          "ஆல்ஃபிரட் ஸ்டர்ட்டிவென்ட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000007",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Alfred Sturtevant utilized the frequency of crossing over / recombination between gene pairs on the same chromosome to construct the first:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Genetic map (chromosome map) showing linear arrangement of genes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "DNA fingerprinting profile",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Structure of the double helix",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pedigree chart for Mendelian disorders",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Alfred Sturtevant, a student of T.H. Morgan, discovered that the frequency of recombination between two genes on the same chromosome is directly proportional to the physical distance between them.\nStep 2: He defined 1% recombination frequency as 1 map unit (centiMorgan / cM) and constructed the first genetic maps.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆல்ஃபிரட் ஸ்டர்ட்டிவென்ட் ஒரே குரோமோசோமில் உள்ள மரபணுக்களுக்கு இடையேயான மறுசேர்க்கை அதிர்வெண்ணைப் பயன்படுத்தி எதனை முதன்முதலில் உருவாக்கினார்?",
+        "optionTexts": [
+          "மரபணுக்களின் நேர்கோட்டு அமைவைக் காட்டும் மரபணு வரைபடம் (குரோமோசோம் வரைபடம்)",
+          "DNA கைரேகை விவரக்குறிப்பு",
+          "இரட்டை சுருள் கட்டமைப்பு",
+          "மெண்டலியன் குறைபாடுகளுக்கான மரபுவழிப் பட்டியல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000008",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In honeybees, sex determination occurs via haplodiploidy. Which of the following statements regarding sex determination in honeybees is correct?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Males (drones) develop parthenogenetically from unfertilized eggs and are haploid (n = 16)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Males develop from fertilized eggs and undergo meiosis during spermatogenesis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Females are haploid while males are diploid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Males have a father and produce sons directly",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Female honeybees (Queen/Workers) are diploid (2n = 32) produced from fertilized eggs.\nStep 2: Male honeybees (Drones) develop by arrhenotokus parthenogenesis from unfertilized haploid eggs (n = 16).\nStep 3: Drones produce sperm by mitosis without meiosis. Thus, drones have no father and cannot have sons, but they have a grandfather and can have grandsons.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தேனீக்களில் பாலினம் ஒற்றை-இரட்டைமய (haplodiploidy) முறையில் தீர்மானிக்கப்படுகிறது. தேனீக்களின் பாலின நிர்ணயம் குறித்த சரியான கூற்று எது?",
+        "optionTexts": [
+          "ஆண் தேனீக்கள் (ட்ரோன்கள்) கருவுறாத முட்டைகளிலிருந்து கன்னிப்பெருக்கம் மூலம் உருவாகி ஒற்றைமயமானவை (n = 16)",
+          "ஆண் தேனீக்கள் கருவுற்ற முட்டைகளிலிருந்து உருவாகி விந்தணுவாக்கத்தின் போது மியாசிஸ் அடைகின்றன",
+          "பெண் தேனீக்கள் ஒற்றைமயமானவை மற்றும் ஆண் தேனீக்கள் இரட்டைமயமானவை",
+          "ஆண் தேனீக்களுக்கு தந்தை உண்டு மற்றும் அவை நேரடியாக மகன்களை உருவாக்குகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000009",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In sickle cell anemia, a point mutation in the beta-globin gene causes substitution of which amino acid at the 6th position of the beta-globin chain?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Glutamic acid is substituted by Valine (due to GAG to GUG codon change)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Valine is substituted by Glutamic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Glutamic acid is substituted by Lysine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Leucine is substituted by Proline",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sickle-cell anemia is an autosomal recessive Mendelian disorder.\nStep 2: It is caused by a single base substitution at the 6th codon of the beta-globin gene from GAG (coding for Glutamic acid) to GUG (coding for Valine).\nStep 3: This substitution causes HbS polymerisation under low oxygen tension, distorting RBCs into a sickle shape.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கதிர்அரிவாள் இரத்த சோகையில், பீட்டா-குளோபின் மரபணுவில் ஏற்படும் புள்ளி சடுதிமாற்றத்தால் 6-வது இடத்தில் எந்த அமினோ அமிலம் எதனால் மாற்றீடு செய்யப்படுகிறது?",
+        "optionTexts": [
+          "குளூட்டாமிக் அமிலம் வாலினால் மாற்றீடு செய்யப்படுகிறது (GAG குறியீடு GUG ஆக மாறுவதால்)",
+          "வாலின் குளூட்டாமிக் அமிலத்தால் மாற்றீடு செய்யப்படுகிறது",
+          "குளூட்டாமிக் அமிலம் லைசினால் மாற்றீடு செய்யப்படுகிறது",
+          "லியூசின் புரோலினால் மாற்றீடு செய்யப்படுகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000010",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which chromosomal disorder is characterized by the karyotype 45 with XO, resulting in sterile females with webbed neck and rudimentary ovaries?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Turner's syndrome",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Klinefelter's syndrome (47, XXY)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Down's syndrome (Trisomy 21)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Edwards syndrome (Trisomy 18)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Turner's syndrome is caused by the monosomy of the X chromosome in females (karyotype 45, XO).\nStep 2: Affected females exhibit short stature, webbed neck, underdeveloped breasts, and sterile rudimentary ovaries.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "45, XO என்ற குரோமோசோம் அமைப்பைக் கொண்ட, மடிந்த கழுத்து மற்றும் வளர்ச்சியடையாத சூலகங்களைக் கொண்ட மலட்டுத்தன்மை உடைய பெண்களை உருவாக்கும் குரோமோசோம் குறைபாடு எது?",
+        "optionTexts": [
+          "டர்னர் குறைபாடு (Turner's syndrome)",
+          "கிளைன்பெல்டர் குறைபாடு (47, XXY)",
+          "டவுன் குறைபாடு (டிரைசோமி 21)",
+          "எட்வர்ட் குறைபாடு (டிரைசோமி 18)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000011",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In their 1952 Hershey-Chase blender experiment on T2 bacteriophages infecting E. coli, which radioactive isotopes were used to label phage DNA and phage protein coat respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32P for DNA and 35S for protein coat",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "35S for DNA and 32P for protein coat",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "15N for DNA and 14C for protein coat",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3H for DNA and 32P for protein coat",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: DNA contains phosphorus but no sulfur; proteins contain sulfur (in methionine/cysteine) but no phosphorus.\nStep 2: Hershey and Chase labelled DNA with radioactive 32P and protein capsule with radioactive 35S.\nStep 3: Radioactive 32P was detected inside bacterial cells after infection, proving DNA is the genetic material.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1952 ஆம் ஆண்டு ஹெர்ஷி மற்றும் சேஸ் T2 பாக்டீரியோபேஜ் சோதனையில், பேஜ் DNA மற்றும் பேஜ் புரத உறையைக் குறிக்கப் பயன்படுத்திய கதிரியக்க ஐசோடோப்புகள் முறையே யாவை?",
+        "optionTexts": [
+          "DNA-விற்கு 32P மற்றும் புரத உறைக்கு 35S",
+          "DNA-விற்கு 35S மற்றும் புரத உறைக்கு 32P",
+          "DNA-விற்கு 15N மற்றும் புரத உறைக்கு 14C",
+          "DNA-விற்கு 3H மற்றும் புரத உறைக்கு 32P"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000012",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Chargaff's rule for double-stranded DNA, which of the following quantitative relationships is universally true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A + G = T + C (Purines = Pyrimidines)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A + T = G + C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A / G = 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T + C = 2 (A + G)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Erwin Chargaff formulated that in double-stranded DNA, Adenine pairs with Thymine (A = T) and Guanine pairs with Cytosine (G = C).\nStep 2: Therefore, total purines (A + G) equals total pyrimidines (T + C), meaning (A + G)/(T + C) = 1.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரட்டை இழை DNA-விற்கான சார்காஃப் விதியின்படி, கீழ்வருவனவற்றில் எந்த அளவுசார் தொடர்பு எப்போதும் உண்மையாகும்?",
+        "optionTexts": [
+          "A + G = T + C (பியூரின்கள் = பிரிமிடின்கள்)",
+          "A + T = G + C",
+          "A / G = 1",
+          "T + C = 2 (A + G)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000013",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a nucleosome core particle of eukaryotic chromatin, how many base pairs of DNA are wrapped around the octamer of histone proteins (two copies each of H2A, H2B, H3, and H4)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Approximately 200 base pairs",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Approximately 400 base pairs",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Approximately 100 base pairs",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Approximately 50 base pairs",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Positively charged basic histone octamer (H2A, H2B, H3, H4) binds negatively charged acidic DNA.\nStep 2: A typical nucleosome contains approximately 200 base pairs of DNA helix wrapped around the histone core.\nStep 3: Histone H1 seals the DNA where it enters and exits the core particle.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யூகேரியோட் குரோமேட்டினின் நியூக்ளியோசோம் துகள்களில், ஹிஸ்டோன் ஆக்டாமரைச் சுற்றி எத்தனை கார இணைகள் (base pairs) DNA சுற்றப்பட்டுள்ளது?",
+        "optionTexts": [
+          "தோராயமாக 200 கார இணைகள் (bp)",
+          "தோராயமாக 400 கார இணைகள் (bp)",
+          "தோராயமாக 100 கார இணைகள் (bp)",
+          "தோராயமாக 50 கார இணைகள் (bp)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000014",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During DNA replication in E. coli, which enzyme is responsible for joining the Okazaki fragments on the lagging strand by catalyzing phosphodiester bond formation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "DNA Ligase",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "DNA Polymerase I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "DNA Helicase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Topoisomerase (DNA Gyrase)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Synthesis on the lagging strand occurs discontinuously as short Okazaki fragments in the 5'→3' direction.\nStep 2: RNA primers are removed and replaced with deoxynucleotides by DNA polymerase I.\nStep 3: DNA ligase seals the remaining nicks by forming covalent phosphodiester bonds between adjacent 3'-OH and 5'-phosphate groups.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E. coli பாக்டீரியாவில் DNA இரட்டிப்பாதலின் போது, பின் தங்கிய இழையில் (lagging strand) உருவாகும் ஒகசாகி துண்டுகளை பாஸ்போடைஎஸ்டர் பிணைப்பால் இணைக்கும் என்சைம் எது?",
+        "optionTexts": [
+          "DNA லிகேஸ்",
+          "DNA பாலிமரேஸ் I",
+          "DNA ஹெலிகேஸ்",
+          "டோபோஐசோமரேஸ் (DNA கைரேஸ்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000015",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In prokaryotic transcription, which subunit of the RNA polymerase holoenzyme is responsible for recognizing the promoter sequence and initiating transcription?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sigma (σ) factor",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rho (ρ) factor",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Beta (β) subunit",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Alpha (α) subunit",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The RNA polymerase core enzyme (α2ββ'ω) can synthesize RNA but cannot recognize specific promoter sites.\nStep 2: Association with the Sigma (σ) factor forms the complete holoenzyme and enables specific promoter binding for initiation.\nStep 3: Once initiation occurs, the sigma factor dissociates.\nStep 4: (Rho factor mediates termination).\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரோகேரியோட்டுகளின் படியெடுத்தலில் (transcription), புரோமோட்டர் பகுதியை அடையாளம் கண்டு படியெடுத்தலைத் தொடங்குவதற்கு காரணமான RNA பாலிமரேஸின் துணை அலகு எது?",
+        "optionTexts": [
+          "சிக்மா (σ) காரணி",
+          "ரோ (ρ) காரணி",
+          "பீட்டா (β) துணை அலகு",
+          "ஆல்ஃபா (α) துணை அலகு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000016",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In eukaryotic post-transcriptional processing of heterogeneous nuclear RNA (hnRNA), what chemical modification is added at the 5'-end during the 'capping' reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methyl guanosine triphosphate (7-methylguanosine)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Polyadenylate residues (200-300 adenylate residues)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Deoxyribose nucleotides",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aminoacyl tRNA complex",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Eukaryotic primary transcript (hnRNA) undergoes three processing steps: splicing, capping, and tailing.\nStep 2: In capping, an unusual nucleotide, methyl guanosine triphosphate (m7Gppp), is added to the 5'-end of hnRNA.\nStep 3: In tailing, 200-300 poly-A residues are added to the 3'-end.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யூகேரியோட்டுகளின் படியெடுத்தலுக்கு பிந்தைய செயலாக்கத்தில் (hnRNA), 'தொப்பி இடுதல்' (capping) நிகழ்வின் போது 5'-முனையில் சேர்க்கப்படும் வேதிப்பொருள் எது?",
+        "optionTexts": [
+          "மெத்தில் குவானோசின் டிரைபாஸ்பேட் (7-மெத்தில் குவானோசின்)",
+          "பாலி அடினைலேட் எச்சங்கள் (200-300 அடினைலேட் எச்சங்கள்)",
+          "டிஆக்சிரைபோஸ் நியூக்ளியோடைடுகள்",
+          "அமினோஅசைல் tRNA கூட்டமைப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000017",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which codon serves a dual function by coding for the amino acid Methionine as well as acting as the universal initiator codon for protein translation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "AUG",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "UAA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "UAG",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "UGA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: AUG has dual functions in the genetic code.\nStep 2: It codes for the amino acid Methionine (Met).\nStep 3: It also functions as the initiation codon (start codon) where the ribosome begins translation.\nStep 4: UAA, UAG, and UGA are stop (nonsense) codons.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெத்தியோனின் அமினோ அமிலத்தைக் குறியிடுவதுடன், புரதச் சேர்க்கையின் உலகளாவிய தொடக்கக் குறியீடாகவும் (initiator codon) செயல்படும் இரட்டைப் பணி கொண்ட குறியீடு எது?",
+        "optionTexts": [
+          "AUG",
+          "UAA",
+          "UAG",
+          "UGA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000018",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During translation elongation in bacterial cells, which ribosomal RNA acts as a ribozyme (peptidyl transferase) to catalyze peptide bond formation between amino acids?",
+    "options": [
+      {
+        "label": "A",
+        "text": "23S rRNA in the 50S large subunit",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "16S rRNA in the 30S small subunit",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5S rRNA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "18S rRNA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In bacteria, the large 50S ribosomal subunit contains 23S rRNA and 5S rRNA.\nStep 2: The 23S rRNA acts as an RNA-based enzyme (ribozyme) called peptidyl transferase.\nStep 3: It catalyzes the condensation reaction that forms the peptide bond between adjacent amino acids.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாக்டீரியா செல்களில் மொழிபெயர்ப்பு நீட்சியின் போது அமினோ அமிலங்களுக்கு இடையே பெப்டைட் பிணைப்பை உருவாக்க ரைபோசைமாக (பெப்டிடைல் டிரான்ஸ்பெரேஸ்) செயல்படும் ரைபோசோம் RNA எது?",
+        "optionTexts": [
+          "50S பெரிய துணை அலகில் உள்ள 23S rRNA",
+          "30S சிறிய துணை அலகில் உள்ள 16S rRNA",
+          "5S rRNA",
+          "18S rRNA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000019",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the regulation of the lac operon in E. coli, what is the specific function of the product encoded by the lacZ structural gene?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hydrolyzes lactose into galactose and glucose (Beta-galactosidase)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increases cell permeability to beta-galactosides (Permease)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Transfers an acetyl group to beta-galactosides (Transacetylase)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Synthesizes the repressor protein",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The lac operon contains three structural genes: lacZ, lacY, and lacA.\nStep 2: lacZ encodes Beta-galactosidase, which hydrolyzes lactose (disaccharide) into glucose and galactose.\nStep 3: lacY encodes Permease; lacA encodes Transacetylase.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E. coli-யின் லாக் ஓபரான் ஒழுங்குமுறையில், lacZ கட்டமைப்பு மரபணுவால் குறியிடப்படும் புரதத்தின் குறிப்பிட்ட செயல்பாடு என்ன?",
+        "optionTexts": [
+          "லாக்டோஸை கேலக்டோஸ் மற்றும் குளுக்கோஸாக நீராற்பகுத்தல் (பீட்டா-கேலக்டோசிடேஸ்)",
+          "செல்லுக்குள் பீட்டா-கேலக்டோசைடுகளின் ஊடுருவலை அதிகரித்தல் (பெர்மியேஸ்)",
+          "அசிட்டைல் தொகுதியை மாற்றுதல் (டிரான்ஸ்அசிட்டைலேஸ்)",
+          "ஒடுக்கிப் புரதத்தை உருவாக்குதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000020",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the lac operon, when an inducer (lactose / allolactose) binds to the repressor protein, what happens next?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The repressor is inactivated and cannot bind the operator, allowing RNA polymerase to transcribe the structural genes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The repressor binds irreversibly to the promoter region",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "RNA polymerase is degraded by cellular proteases",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The operator gene is permanently excised from the operon",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The lacI gene constitutively produces the active repressor protein.\nStep 2: In the presence of lactose, allolactose acts as the inducer and binds the repressor protein.\nStep 3: Inducer-repressor binding causes a conformational change that prevents the repressor from binding the operator (O).\nStep 4: RNA polymerase transcribes the polycistronic lac operon.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லாக் ஓபரானில், தூண்டி (லாக்டோஸ் / அல்லோலாக்டோஸ்) ஒடுக்கி புரதத்துடன் இணையும் போது அடுத்து நிகழ்வது என்ன?",
+        "optionTexts": [
+          "ஒடுக்கி புரதம் செயலிழந்து இயக்கு தளத்துடன் இணைய முடிவதில்லை, இதனால் RNA பாலிமரேஸ் கட்டமைப்பு மரபணுக்களைப் படியெடுக்கிறது",
+          "ஒடுக்கி புரதம் புரோமோட்டருடன் மீளமுடியாமல் இணைகிறது",
+          "RNA பாலிமரேஸ் செல் புரோட்டீஸால் அழிக்கப்படுகிறது",
+          "இயக்கு மரபணு ஓபரானிலிருந்து நிரந்தரமாக நீக்கப்படுகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000021",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In DNA fingerprinting, which specific class of repetitive non-coding tandem DNA sequences is used as radioactive probes due to high degree of polymorphism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Variable Number of Tandem Repeats (VNTRs / Minisatellites)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Single nucleotide introns",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Promoter-operator consensus sequences",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Exonic structural genes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Alec Jeffreys developed DNA fingerprinting using Variable Number of Tandem Repeats (VNTRs).\nStep 2: VNTRs are minisatellites (10-60 bp repeats) that show very high copy-number variation and polymorphism among individuals.\nStep 3: Radioactively labelled VNTR probes hybridize to Southern blotted restriction fragments to produce distinct individual band patterns.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "DNA கைரேகை தொழில்நுட்பத்தில், அதிகளவு பல்லுருவமைப்பை வெளிப்படுத்துவதால் கதிரியக்க ஆய்வுப்பொருளாக (probe) பயன்படுத்தப்படும் தொடர் வரிசை அடுக்கு DNA எது?",
+        "optionTexts": [
+          "மாறுபடும் எண்ணிக்கையிலான தொடர் அடுக்குகள் (VNTRs / மினிசாட்டிலைட்டுகள்)",
+          "ஒற்றை நியூக்ளியோடைடு இன்ட்ரான்கள்",
+          "புரோமோட்டர்-இயக்கு மரபணு வரிசைகள்",
+          "எக்ஸான் கட்டமைப்பு மரபணுக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000022",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a classic example of pleiotropy, where a single mutated gene manifests multiple phenotypic expressions in an organism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phenylketonuria (PKU)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Human skin color inheritance",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "ABO blood grouping",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Incomplete dominance in Mirabilis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Pleiotropy is the phenomenon where a single gene influences multiple unrelated phenotypic traits.\nStep 2: Phenylketonuria is caused by mutation in the gene coding for phenylalanine hydroxylase.\nStep 3: This single mutation causes mental retardation, reduction in hair pigmentation, and skin pigmentation changes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஒற்றை மரபணு பல புறத்தோற்றப் பண்புகளைக் கட்டுப்படுத்தும் பிளேயோட்ரோபிக்கு (Pleiotropy) சிறந்த உதாரணம் எது?",
+        "optionTexts": [
+          "ஃபீனைல்கீட்டோநியூரியா (PKU)",
+          "மனித தோல் நிற மரபுக்கடத்தல்",
+          "ABO இரத்த வகை அமைப்பு",
+          "அந்திமந்தாரையில் முழுமையற்ற ஓங்குதன்மை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000023",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In his transformation experiment with Streptococcus pneumoniae (1928), Frederick Griffith observed that non-virulent R-strain bacteria were transformed into virulent S-strain when mixed with:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Heat-killed virulent S-strain bacteria",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Live non-capsulated R-strain bacteria",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bacteriophage T2 particles",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Purified ribonuclease enzyme",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Griffith injected mice with a mixture of live R-strain (non-virulent) and heat-killed S-strain (virulent).\nStep 2: The mice died of pneumonia, and living virulent smooth S-strain cells were recovered from their blood.\nStep 3: Griffith concluded that a 'transforming principle' was transferred from heat-killed S to live R cells.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஸ்ட்ரெப்டோகாக்கஸ் நிமோனியாவில் ஃபிரடெரிக் கிரிஃபித் மேற்கொண்ட உருமாற்ற பரிசோதனையில் (1928), நச்சுத்தன்மையற்ற R-வகை பாக்டீரியாக்கள் எதனுடன் கலக்கப்பட்ட போது நச்சுத்தன்மையுடைய S-வகையாக உருமாறின?",
+        "optionTexts": [
+          "வெப்பத்தால் கொல்லப்பட்ட நச்சுத்தன்மையுடைய S-வகை பாக்டீரியா",
+          "உயிருள்ள உறை இல்லாத R-வகை பாக்டீரியா",
+          "பாக்டீரியோபேஜ் T2 துகள்கள்",
+          "சுத்திகரிக்கப்பட்ட ரைபோநியூக்ளியேஸ் என்சைம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000024",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Avery, MacLeod, and McCarty (1944) biochemically characterized the transforming principle of Griffith's experiment by proving that transformation was abolished ONLY by treatment with:",
+    "options": [
+      {
+        "label": "A",
+        "text": "DNase (Deoxyribonuclease)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Protease",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "RNase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lipase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Avery, MacLeod, and McCarty purified proteins, RNA, and DNA from heat-killed S-cells.\nStep 2: Proteases and RNases did not affect the ability of the extract to transform R-cells to S-cells.\nStep 3: Digestion with DNase completely inhibited transformation, proving that DNA is the transforming substance.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிரிஃபித்தின் பரிசோதனையில் உருமாற்றத்திற்கு காரணமான மூலக்கூறை உயிரிவேதியியல் முறையில் ஆய்வு செய்த அவேரி, மெக்லியாய்டு மற்றும் மெக்கார்ட்டி, எந்த என்சைமால் சிகிச்சை அளித்தபோது மட்டுமே உருமாற்றம் தடுக்கப்பட்டது என்பதை நிரூபித்தனர்?",
+        "optionTexts": [
+          "DNase (டிஆக்சிரைபோநியூக்ளியேஸ்)",
+          "புரோட்டீயேஸ் (Protease)",
+          "RNase (ரைபோநியூக்ளியேஸ்)",
+          "லிபேஸ் (Lipase)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000025",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Taylor and colleagues (1958) demonstrated semiconservative replication of chromosomes in eukaryotes by incorporating radioactive thymidine into which plant system?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vicia faba (Faba beans)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pisum sativum (Garden pea)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Arabidopsis thaliana",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Allium cepa (Onion)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: J. Herbert Taylor and co-workers performed experiments using radioactive tritiated thymidine.\nStep 2: They analyzed root tip dividing cells of Vicia faba (broad bean).\nStep 3: Autoradiography proved that DNA replication in eukaryotic chromosomes is semiconservative.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டெய்லர் மற்றும் அவரது குழுவினர் (1958) கதிரியக்க தைமிடினைப் பயன்படுத்தி யூகேரியோட்டுகளில் குரோமோசோம்கள் பாதி-பழமை பேணும் முறையில் இரட்டிப்பாகின்றன என்பதை எந்தத் தாவரத்தில் நிரூபித்தனர்?",
+        "optionTexts": [
+          "விசியா ஃபாபா (Vicia faba)",
+          "பைசம் சட்டைவம் (பட்டாணி)",
+          "அரபிடாப்சிஸ் தாலியானா",
+          "அல்லியம் சீபா (வெங்காயம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000026",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which property of the genetic code explains why multiple different triplet codons can specify the exact same amino acid (e.g., 6 different codons code for Leucine)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Degeneracy of the genetic code",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Unambiguous nature",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Universality",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Non-overlapping reading frame",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The genetic code consists of 64 triplet codons, of which 61 code for 20 amino acids.\nStep 2: Because some amino acids are coded by more than one codon, the genetic code is said to be 'degenerate'.\nStep 3: 'Unambiguous' means one specific codon codes for only one amino acid.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒன்றுக்கு மேற்பட்ட மும்மைக் குறியீடுகள் ஒரே அமினோ அமிலத்தைக் குறியிடும் பண்பு (எ.கா. 6 வெவ்வேறு குறியீடுகள் லியூசினைக் குறியிடுகின்றன) மரபணுக் குறியீட்டின் எந்தப் பண்பைக் குறிக்கிறது?",
+        "optionTexts": [
+          "மரபணுக் குறியீட்டின் சிதைவுறும் தன்மை (Degeneracy)",
+          "தெளிவான தன்மை (Unambiguous)",
+          "உலகளாவிய தன்மை (Universality)",
+          "ஒன்றின்மீது ஒன்று படியாத வாசிப்பு முறை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000027",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In eukaryotic transcription, which specific RNA polymerase enzyme is responsible for synthesizing precursor of messenger RNA (hnRNA)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "RNA Polymerase II",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "RNA Polymerase I (transcribes 28S, 18S, and 5.8S rRNAs)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "RNA Polymerase III (transcribes tRNA, 5S rRNA, and snRNAs)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "DNA Polymerase gamma",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Eukaryotic nuclei possess three distinct RNA polymerases:\n- RNA Polymerase I: Transcribes rRNAs (28S, 18S, 5.8S)\n- RNA Polymerase II: Transcribes precursor mRNA (heterogeneous nuclear RNA / hnRNA)\n- RNA Polymerase III: Transcribes tRNA, 5S rRNA, and snRNAs.\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யூகேரியோட்டுகளின் படியெடுத்தலில் தூது RNA-வின் முன்னோடியான hnRNA-வை படியெடுக்கும் குறிப்பிட்ட RNA பாலிமரேஸ் என்சைம் எது?",
+        "optionTexts": [
+          "RNA பாலிமரேஸ் II",
+          "RNA பாலிமரேஸ் I (28S, 18S, மற்றும் 5.8S rRNA-க்களை படியெடுக்கிறது)",
+          "RNA பாலிமரேஸ் III (tRNA, 5S rRNA மற்றும் snRNA-க்களை படியெடுக்கிறது)",
+          "DNA பாலிமரேஸ் காமா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000028",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In cloverleaf model of transfer RNA (tRNA), at which specific site does the activated amino acid covalently attach?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3'-end with CCA sequence",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5'-end with G sequence",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Anticodon loop",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T-psi-C loop",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The tRNA adapter molecule has a secondary cloverleaf structure and a tertiary inverted L-shape.\nStep 2: The 3'-hydroxyl terminal end contains the conserved unpaired sequence 5'-CCA-3'.\nStep 3: Aminoacyl-tRNA synthetase attaches the specific amino acid to the 3'-CCA terminal adenosine via an ester bond.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "tRNA-வின் கிராம்பு இலை அமைப்பில், செயல்படுத்தப்பட்ட அமினோ அமிலம் சகப்பிணைப்பால் இணையும் குறிப்பிட்ட பகுதி எது?",
+        "optionTexts": [
+          "CCA வரிசையைக் கொண்ட 3'-முனை",
+          "G வரிசையைக் கொண்ட 5'-முனை",
+          "எதிர் குறியீட்டு வளையம் (Anticodon loop)",
+          "T-சை-C வளையம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000029",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to the Human Genome Project (HGP), which chromosome in the human genome has the maximum number of genes, and which has the fewest genes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chromosome 1 has the most (2968 genes) and Chromosome Y has the fewest (231 genes)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Chromosome X has the most and Chromosome Y has the fewest",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chromosome 21 has the most and Chromosome 1 has the fewest",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chromosome 1 has the most and Chromosome 22 has the fewest",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Human Genome Project sequenced approximately 3 × 10^9 base pairs containing ~30,000 genes.\nStep 2: Chromosome 1 has the highest gene density with 2,968 genes.\nStep 3: Chromosome Y contains the fewest genes with only 231 genes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மரபணுத் திட்டத்தின் (HGP) முடிவுகளின்படி, மனித மரபணுத்தொகையில் அதிக மரபணுக்களைக் கொண்ட குரோமோசோம் மற்றும் மிகக் குறைந்த மரபணுக்களைக் கொண்ட குரோமோசோம் முறையே யாவை?",
+        "optionTexts": [
+          "குரோமோசோம் 1 அதிக எண்ணிக்கையிலும் (2968 மரபணுக்கள்) மற்றும் குரோமோசோம் Y குறைந்த எண்ணிக்கையிலும் (231 மரபணுக்கள்) கொண்டுள்ளன",
+          "குரோமோசோம் X அதிக எண்ணிக்கையிலும் மற்றும் குரோமோசோம் Y குறைந்த எண்ணிக்கையிலும் கொண்டுள்ளன",
+          "குரோமோசோம் 21 அதிக எண்ணிக்கையிலும் மற்றும் குரோமோசோம் 1 குறைந்த எண்ணிக்கையிலும் கொண்டுள்ளன",
+          "குரோமோசோம் 1 அதிக எண்ணிக்கையிலும் மற்றும் குரோமோசோம் 22 குறைந்த எண்ணிக்கையிலும் கொண்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT01-000030",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In polygenic inheritance, human skin color is controlled by three distinct genes (A, B, C). Which genotype produces the darkest skin pigmentation, and which produces the lightest (albino) pigmentation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "AABBCC (darkest) and aabbcc (lightest)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "AaBbCc (darkest) and aabbcc (lightest)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "AABBCC (darkest) and AaBbCc (lightest)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "aabbcc (darkest) and AABBCC (lightest)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Polygenic inheritance involves traits controlled by multiple additive genes.\nStep 2: In human skin color (Davison), dominant alleles (A, B, C) additively synthesize melanin.\nStep 3: Genotype AABBCC has all 6 dominant alleles resulting in maximum melanin (darkest).\nStep 4: Genotype aabbcc has 0 dominant alleles resulting in minimum melanin (lightest/albino).\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பல்பண்புக்கூறு மரபுக்கடத்தலில் (Polygenic inheritance), மனித தோல் நிறம் மூன்று தனித்த மரபணுக்களால் (A, B, C) கட்டுப்படுத்தப்படுகிறது. எந்த மரபணு வகை அடர்ந்த தோல் நிறத்தையும், எது மிக வெளிறிய நிறத்தையும் உருவாக்குகிறது?",
+        "optionTexts": [
+          "AABBCC (மிக அடர்ந்த நிறம்) மற்றும் aabbcc (மிக வெளிறிய நிறம்)",
+          "AaBbCc (மிக அடர்ந்த நிறம்) மற்றும் aabbcc (மிக வெளிறிய நிறம்)",
+          "AABBCC (மிக அடர்ந்த நிறம்) மற்றும் AaBbCc (மிக வெளிறிய நிறம்)",
+          "aabbcc (மிக அடர்ந்த நிறம்) மற்றும் AABBCC (மிக வெளிறிய நிறம்)"
+        ]
+      }
+    ]
+  }
+]

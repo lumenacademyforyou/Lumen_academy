@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY06-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A particle executing simple harmonic motion (SHM) has maximum velocity v_max and maximum acceleration a_max. What is the amplitude A of its oscillation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_max^2 / a_max",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "a_max / v_max^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v_max / a_max",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a_max^2 / v_max",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Maximum velocity in SHM: v_max = A ω.\nStep 2: Maximum acceleration in SHM: a_max = A ω^2.\nStep 3: Ratio: v_max^2 / a_max = (A^2 ω^2) / (A ω^2) = A.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான தனிச்சீரிசை இயக்கம் (SHM) மேற்கொள்ளும் ஒரு துகளின் பெரும திசைவேகம் v_max மற்றும் பெரும முடுக்கம் a_max ஆகும். அதன் அலைவீச்சு A என்ன?",
+        "optionTexts": [
+          "v_max^2 / a_max",
+          "a_max / v_max^2",
+          "v_max / a_max",
+          "a_max^2 / v_max"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At what displacement x from the mean equilibrium position is the kinetic energy of a particle in SHM equal to its potential energy? (A is the amplitude)",
+    "options": [
+      {
+        "label": "A",
+        "text": "A / sqrt(2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A sqrt(3) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Kinetic energy K = (1/2) m ω^2 (A^2 - x^2).\nStep 2: Potential energy U = (1/2) m ω^2 x^2.\nStep 3: Equating K = U: A^2 - x^2 = x^2 => 2x^2 = A^2.\nStep 4: x = A / sqrt(2). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிச்சீரிசை இயக்கத்தில் சமநிலை புள்ளியிலிருந்து எந்த இடப்பெயர்ச்சியில் x இயக்க ஆற்றல் நிலை ஆற்றலுக்குச் சமமாக இருக்கும்? (A என்பது அலைவீச்சு)",
+        "optionTexts": [
+          "A / sqrt(2)",
+          "A / 2",
+          "A sqrt(3) / 2",
+          "A / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A simple pendulum has a time period T = 2.0 s on Earth's surface. What will be its time period inside an elevator ascending vertically with a constant acceleration of a = g / 3? (Take g as standard gravity)",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(3) s (≈ 1.73 s)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 / sqrt(3) s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Effective acceleration in upward accelerating frame: g_eff = g + a = g + g/3 = 4g / 3.\nStep 2: Time period T' = 2π sqrt(L / g_eff) = 2π sqrt[ L / (4g/3) ] = sqrt(3/4) * (2π sqrt(L/g)) = (sqrt(3)/2) * T.\nStep 3: T' = (sqrt(3)/2) * 2.0 s = sqrt(3) s ≈ 1.732 s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமியின் மேற்பரப்பில் ஒரு தனி ஊசலின் அலைவு நேரம் 2.0 s ஆகும். a = g / 3 மாறா முடுக்கத்தில் மேல்நோக்கிச் செல்லும் மின்தூக்கியின் உள்ளே அதன் அலைவு நேரம் என்னவாக இருக்கும்?",
+        "optionTexts": [
+          "sqrt(3) s (≈ 1.73 s)",
+          "2.0 s",
+          "4.0 / sqrt(3) s",
+          "1.0 s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two identical light helical springs of force constant k are connected in parallel to support a mass m. What is the frequency of oscillation of the system?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1 / 2π) sqrt(2k / m)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1 / 2π) sqrt(k / 2m)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1 / 2π) sqrt(k / m)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1 / π) sqrt(k / m)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In parallel combination, equivalent spring constant: k_eq = k + k = 2k.\nStep 2: Angular frequency ω = sqrt(k_eq / m) = sqrt(2k / m).\nStep 3: Frequency f = ω / (2π) = (1 / 2π) sqrt(2k / m).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k சுருள் மாறிலி கொண்ட இரு ஒரே மாதிரியான சுருள்வில்கள் பக்க இணைப்பில் m நிறையைத் தாங்குகின்றன. இந்த அமைப்பின் அலைவு அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "(1 / 2π) sqrt(2k / m)",
+          "(1 / 2π) sqrt(k / 2m)",
+          "(1 / 2π) sqrt(k / m)",
+          "(1 / π) sqrt(k / m)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A closed organ pipe of length L1 and an open organ pipe of length L2 resonate at their respective fundamental frequencies. If their fundamental frequencies are equal, what is the ratio of their lengths L1 / L2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fundamental frequency of closed pipe: f_closed = v / (4 L1).\nStep 2: Fundamental frequency of open pipe: f_open = v / (2 L2).\nStep 3: Equating: v / (4 L1) = v / (2 L2) => 4 L1 = 2 L2 => L1 / L2 = 2 / 4 = 1/2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L1 நீளமுள்ள ஒரு மூடிய குழாய் மற்றும் L2 நீளமுள்ள ஒரு திறந்த குழாய் அவற்றின் அடிப்படை அதிர்வெண்களில் ஒத்ததிர்வு பெறுகின்றன. அவற்றின் அடிப்படை அதிர்வெண்கள் சமம் எனில், நீளங்களின் விகிதம் L1 / L2 என்ன?",
+        "optionTexts": [
+          "1 : 2",
+          "1 : 4",
+          "2 : 1",
+          "1 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A train blowing its whistle of frequency 300 Hz moves at a speed of 36 km/h (10 m/s) towards a vertical cliff. What is the beat frequency heard by an observer standing on the train between the direct sound and the echo reflected from the cliff? (Speed of sound in air v = 330 m/s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "18.75 Hz (≈ 19 Hz)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "9.1 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "30 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Direct sound frequency heard by passenger = source frequency = f₀ = 300 Hz (since observer and source travel together).\nStep 2: Frequency received at cliff (stationary observer): f_cliff = f₀ * [ v / (v - v_s) ] = 300 * [ 330 / (330 - 10) ] = 300 * (330 / 320) = 309.375 Hz.\nStep 3: Cliff reflects this sound as stationary source, heard by moving observer on train: f_echo = f_cliff * [ (v + v_s) / v ] = 300 * [ (330 + 10) / (330 - 10) ] = 300 * (340 / 320) = 318.75 Hz.\nStep 4: Beat frequency f_beat = f_echo - f₀ = 318.75 - 300 = 18.75 Hz. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 Hz அதிர்வெண் கொண்ட விசில் ஒலிக்கும் ஒரு தொடர்வண்டி 10 m/s வேகத்தில் செங்குத்துப் பாறையை நோக்கிச் செல்கிறது. ரயிலில் உள்ள ஒருவரால் கேட்கப்படும் நேரடி ஒலிக்கும் எதிரொலிக்கும் இடையேயான விம்மல் அதிர்வெண் என்ன? (ஒலியின் வேகம் = 330 m/s)",
+        "optionTexts": [
+          "18.75 Hz (≈ 19 Hz)",
+          "9.1 Hz",
+          "30 Hz",
+          "0 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A travelling transverse harmonic wave on a string is represented by y(x, t) = 0.05 sin(200 t - 4 x), where x and y are in meters and t in seconds. What is the propagation speed of the wave?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "200 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "800 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.05 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Comparing with standard wave equation y = A sin(ω t - k x).\nStep 2: Angular frequency ω = 200 rad/s; wave number k = 4 m^-1.\nStep 3: Wave propagation speed v = ω / k = 200 / 4 = 50 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "y(x, t) = 0.05 sin(200 t - 4 x) என்ற சமன்பாட்டால் குறிக்கப்படும் குறுக்கலையின் பரவுதல் வேகம் என்ன?",
+        "optionTexts": [
+          "50 m/s",
+          "200 m/s",
+          "800 m/s",
+          "0.05 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform taut string of length L = 0.6 m and mass 3.0 g is fixed at both ends under a tension of 80 N. What is the fundamental frequency of transverse standing waves on this string?",
+    "options": [
+      {
+        "label": "A",
+        "text": "105.4 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "210.8 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "52.7 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "126.5 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Linear mass density μ = mass / length = (3.0 x 10^-3 kg) / 0.6 m = 5.0 x 10^-3 kg/m.\nStep 2: Transverse wave speed v = sqrt(T / μ) = sqrt(80 / 0.005) = sqrt(16000) = 126.49 m/s.\nStep 3: Fundamental frequency f1 = v / (2L) = 126.49 / (2 * 0.6) = 126.49 / 1.2 = 105.41 Hz.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.6 m நீளமும் 3.0 g நிறையும் கொண்ட ஒரு கம்பி 80 N இழுவிசையில் இரு முனைகளும் கட்டப்பட்டுள்ளது. கம்பியின் அடிப்படை குறுக்கலை அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "105.4 Hz",
+          "210.8 Hz",
+          "52.7 Hz",
+          "126.5 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two tuning forks A and B produce 4 beats per second when sounded together. When fork A is slightly filed, the beat frequency increases to 6 beats per second. If the original frequency of B is 256 Hz, what was the original frequency of fork A?",
+    "options": [
+      {
+        "label": "A",
+        "text": "260 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "252 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "250 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "262 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Original frequency of A could be f_A = 256 + 4 = 260 Hz or f_A = 256 - 4 = 252 Hz.\nStep 2: Filing a tuning fork decreases its mass, which increases its frequency (f_A increases).\nStep 3: If f_A was 260 Hz, increasing f_A increases the difference |f_A - 256| to 6 Hz (consistent with observation).\nStep 4: If f_A was 252 Hz, increasing f_A would decrease the beat frequency first.\nStep 5: Conclude original f_A = 260 Hz. Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு இசைக்கவைகள் ஒன்றாக ஒலிக்கப்படும்போது வினாடிக்கு 4 விம்மல்களை உண்டாக்குகின்றன. A இசைக்கவை சற்று தேய்க்கப்படும் போது விம்மல் அதிர்வெண் 6 ஆக அதிகரிக்கிறது. B இன் அதிர்வெண் 256 Hz எனில், A இன் தொடக்க அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "260 Hz",
+          "252 Hz",
+          "250 Hz",
+          "262 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total energy of a particle executing simple harmonic motion of amplitude A is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total mechanical energy in SHM: E = (1/2) m ω^2 A^2.\nStep 2: E is directly proportional to the square of amplitude: E ∝ A^2.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A அலைவீச்சுடன் தனிச்சீரிசை இயக்கம் மேற்கொள்ளும் ஒரு துகளின் மொத்த ஆற்றல் எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "A^2",
+          "A",
+          "1 / A",
+          "A^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When an acoustic sound wave travels from warm air into cold water, which of the following wave properties remains strictly constant?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Frequency",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Wavelength",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Speed",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Intensity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Frequency is determined solely by the vibrating source producing the wave.\nStep 2: When a wave crosses from one medium to another, speed and wavelength change proportionally (v = f λ), but frequency remains unchanged.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஒலி அலை காற்றில் இருந்து நீருக்குள் செல்லும்போது பின்வரும் எந்த அலைப்பண்பு மாறாமல் இருக்கும்?",
+        "optionTexts": [
+          "அதிர்வெண்",
+          "அலைநீளம்",
+          "வேகம்",
+          "செறிவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform thin spring of force constant k and unstretched length L is cut into two pieces of lengths L1 and L2 such that L1 = 2 L2. What is the force constant k1 of the longer spring segment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/2) k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2/3) k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The force constant of a spring is inversely proportional to its length: k * L = constant.\nStep 2: Total length L = L1 + L2 = 2 L2 + L2 = 3 L2 => L1 = (2/3) L.\nStep 3: k1 * L1 = k * L => k1 * (2/3 L) = k * L.\nStep 4: k1 = (3/2) k = 1.5 k. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k சுருள் மாறிலி கொண்ட சுருள்வில் L1 = 2 L2 என்ற விகிதத்தில் இரு துண்டுகளாக வெட்டப்படுகிறது. நீண்ட பகுதியின் (L1) சுருள் மாறிலி k1 என்ன?",
+        "optionTexts": [
+          "(3/2) k",
+          "3 k",
+          "(2/3) k",
+          "2 k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a stationary (standing) wave, the distance between any two consecutive nodes is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "λ / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "λ / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "λ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 λ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nodes are points of permanent zero amplitude.\nStep 2: The distance between two successive nodes is half a wavelength: d = λ / 2.\nStep 3: The distance between a node and an adjacent antinode is λ / 4.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலை அலையில் அடுத்தடுத்த இரு கணுக்களுக்கு (nodes) இடையே உள்ள தொலைவு:",
+        "optionTexts": [
+          "λ / 2",
+          "λ / 4",
+          "λ",
+          "2 λ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two simple harmonic motions are represented by y1 = 5 sin(ω t + π/6) and y2 = 5 cos(ω t). What is the phase difference between the two motions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "π / 3 (60°)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "π / 6 (30°)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "π / 2 (90°)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2π / 3 (120°)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Convert y2 to sine form: y2 = 5 sin(ω t + π/2).\nStep 2: Phase of motion 1: φ1 = ω t + π/6.\nStep 3: Phase of motion 2: φ2 = ω t + π/2.\nStep 4: Phase difference Δφ = φ2 - φ1 = π/2 - π/6 = 3π/6 - π/6 = 2π/6 = π/3 (60°). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "y1 = 5 sin(ω t + π/6) மற்றும் y2 = 5 cos(ω t) என்ற சமன்பாடுகளால் குறிக்கப்படும் இரு தனிச்சீரிசை இயக்கங்களுக்கு இடையே உள்ள கட்ட வேறுபாடு என்ன?",
+        "optionTexts": [
+          "π / 3 (60°)",
+          "π / 6 (30°)",
+          "π / 2 (90°)",
+          "2π / 3 (120°)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A source of sound of frequency 500 Hz is moving towards a stationary observer with a speed of 30 m/s. What is the apparent frequency heard by the observer? (Speed of sound in air = 330 m/s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "550 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "450 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "530 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "600 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Doppler formula for source approaching stationary observer: f' = f₀ * [ v / (v - v_s) ].\nStep 2: Substitute f₀ = 500 Hz, v = 330 m/s, v_s = 30 m/s.\nStep 3: f' = 500 * [ 330 / (330 - 30) ] = 500 * (330 / 300) = 500 * 1.1 = 550 Hz.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 Hz அதிர்வெண் கொண்ட ஒரு ஒலி மூலம் 30 m/s வேகத்தில் ஓய்விலுள்ள கேட்பவரை நோக்கி நகர்கிறது. கேட்பவரால் உணரப்படும் தோற்ற அதிர்வெண் என்ன? (ஒலியின் வேகம் = 330 m/s)",
+        "optionTexts": [
+          "550 Hz",
+          "450 Hz",
+          "530 Hz",
+          "600 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Laplace corrected Newton's formula for the speed of sound in a gas by assuming that sound propagation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An adiabatic process (v = sqrt(γ P / ρ))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "An isothermal process (v = sqrt(P / ρ))",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "An isobaric process",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An isochoric process",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sound compressions and rarefactions occur so rapidly that heat has no time to transfer between adjacent layers.\nStep 2: Therefore, sound propagation is strictly an adiabatic process.\nStep 3: Corrected formula: v = sqrt(B_adiabatic / ρ) = sqrt(γ P / ρ).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நியூட்டனின் வாயுக் கொள்கையில் ஒலியின் வேகத்திற்கான சமன்பாட்டை லாப்லாஸ் எந்த அனுமானத்தின் மூலம் திருத்தினார்?",
+        "optionTexts": [
+          "வெப்பப்பரிமாற்றமில்லா நிகழ்வு (v = sqrt(γ P / ρ))",
+          "சமவெப்ப நிகழ்வு (v = sqrt(P / ρ))",
+          "சமஅழுத்த நிகழ்வு",
+          "சமபருமன் நிகழ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m executing SHM has amplitude A and period T. What is the magnitude of average force acting on the particle during its motion from the mean position to the extreme position?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8 m A / T^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 π^2 m A / T^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 m A ω / T",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 π m A / T^2",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Time taken from mean (x = 0, v = A ω) to extreme (x = A, v = 0) is Δt = T / 4.\nStep 2: Change in linear momentum: Δp = m (0 - A ω) = - m A (2π / T) = - 2π m A / T.\nStep 3: Average force F_avg = |Δp / Δt| = (2π m A / T) / (T / 4) = 8 π m A / T^2.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A அலைவீச்சு மற்றும் T அலைவு நேரம் கொண்ட SHM துகள் சமநிலையிலிருந்து பெரும நிலைக்குச் செல்லும்போது அதன் மீது செயல்படும் சராசரி விசையின் எண்மதிப்பு என்ன?",
+        "optionTexts": [
+          "8 m A / T^2",
+          "4 π^2 m A / T^2",
+          "4 m A ω / T",
+          "8 π m A / T^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An open pipe resonates at 350 Hz and 420 Hz in two consecutive harmonic modes. What is the fundamental frequency of this open organ pipe?",
+    "options": [
+      {
+        "label": "A",
+        "text": "70 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "35 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "140 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "105 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In an open organ pipe, all integer harmonics exist: f_n = n * f1.\nStep 2: Consecutive harmonics difference: f_(n+1) - f_n = (n + 1) f1 - n f1 = f1.\nStep 3: f1 = 420 Hz - 350 Hz = 70 Hz.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திறந்த குழாய் அடுத்தடுத்த இரு சீரிசை முறைகளில் 350 Hz மற்றும் 420 Hz அதிர்வெண்களில் ஒத்ததிர்வு பெறுகிறது. இக்குழாயின் அடிப்படை அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "70 Hz",
+          "35 Hz",
+          "140 Hz",
+          "105 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the phase difference between the displacement and acceleration of a particle executing simple harmonic motion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "π radians (180°)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "π / 2 radians (90°)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero radians (0°)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2π radians (360°)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Displacement: x(t) = A sin(ω t).\nStep 2: Acceleration: a(t) = - ω^2 x(t) = - ω^2 A sin(ω t) = ω^2 A sin(ω t + π).\nStep 3: The phase difference between displacement and acceleration is strictly π radians (180° out of phase).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிச்சீரிசை இயக்கம் மேற்கொள்ளும் ஒரு துகளின் இடப்பெயர்ச்சி மற்றும் முடுக்கத்திற்கு இடையே உள்ள கட்ட வேறுபாடு என்ன?",
+        "optionTexts": [
+          "π ரேடியன் (180°)",
+          "π / 2 ரேடியன் (90°)",
+          "பூஜ்ஜிய ரேடியன் (0°)",
+          "2π ரேடியன் (360°)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body executes SHM with amplitude 4 cm. At what displacement from the mean position is its speed half of its maximum speed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 sqrt(3) cm (≈ 3.46 cm)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 cm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) cm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 cm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Velocity in SHM: v = ω sqrt(A^2 - x^2).\nStep 2: Maximum velocity: v_max = ω A.\nStep 3: Given v = v_max / 2 => ω sqrt(A^2 - x^2) = (1/2) ω A => sqrt(A^2 - x^2) = A / 2.\nStep 4: A^2 - x^2 = A^2 / 4 => x^2 = 3 A^2 / 4 => x = A sqrt(3) / 2 = 4 * sqrt(3) / 2 = 2 sqrt(3) cm. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 cm அலைவீச்சுடன் ஒரு பொருள் SHM மேற்கொள்கிறது. சமநிலையிலிருந்து எந்த இடப்பெயர்ச்சியில் அதன் வேகம் பெரும வேகத்தில் பாதியாக இருக்கும்?",
+        "optionTexts": [
+          "2 sqrt(3) cm (≈ 3.46 cm)",
+          "2.0 cm",
+          "sqrt(3) cm",
+          "1.0 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An observer moves towards a stationary sound source with a speed equal to 1/5th the speed of sound. What is the percentage increase in the apparent frequency heard by the observer?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16.7%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Apparent frequency for moving observer: f' = f₀ * [ (v + v₀) / v ].\nStep 2: Given v₀ = v / 5 => f' = f₀ * [ (v + v/5) / v ] = f₀ * (6/5) = 1.20 f₀.\nStep 3: Fractional increase = (f' - f₀) / f₀ = (1.20 - 1) = 0.20 = 20%.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேட்பவர் ஒருவர் ஒலியின் வேகத்தில் 1/5 பங்கு வேகத்தில் ஓய்விலுள்ள ஒலி மூலத்தை நோக்கி நகர்கிறார். அவரால் கேட்கப்படும் தோற்ற அதிர்வெண்ணில் ஏற்படும் விழுக்காடு அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "20%",
+          "25%",
+          "16.7%",
+          "10%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A tube open at only one end has a fundamental resonance frequency of 220 Hz. Which of the following frequencies CANNOT be produced by this closed pipe as a harmonic overtone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "440 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "660 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1100 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1540 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A closed pipe supports ONLY odd harmonics: f_n = (2n - 1) f1 for n = 1, 2, 3, ...\nStep 2: Supported frequencies: 1*220 = 220 Hz, 3*220 = 660 Hz, 5*220 = 1100 Hz, 7*220 = 1540 Hz.\nStep 3: 440 Hz is the 2nd harmonic (even), which is physically absent in a closed pipe.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முனை மூடிய குழாயின் அடிப்படை அதிர்வெண் 220 Hz ஆகும். பின்வரும் எந்த அதிர்வெண் இக்குழாயில் உருவாக இயலாது?",
+        "optionTexts": [
+          "440 Hz",
+          "660 Hz",
+          "1100 Hz",
+          "1540 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the length of a simple pendulum is increased by 44%, what is the percentage increase in its time period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "44%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "22%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Time period formula: T = 2π sqrt(L / g) => T ∝ sqrt(L).\nStep 2: New length L' = 1.44 L.\nStep 3: New period T' = sqrt(1.44) T = 1.20 T.\nStep 4: Percentage increase = (1.20 - 1.00) * 100% = 20%. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனி ஊசலின் நீளம் 44% அதிகரிக்கப்பட்டால், அதன் அலைவு நேரத்தில் ஏற்படும் விழுக்காடு அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "20%",
+          "44%",
+          "22%",
+          "10%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A transverse sinusoidal wave is propagating along a positive x-axis on a string. If the maximum particle velocity is 4 times the wave velocity, what is the value of wave number k in terms of amplitude A?",
+    "options": [
+      {
+        "label": "A",
+        "text": "k = 4 / A",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k = 2 / A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "k = 1 / (4 A)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "k = π / (4 A)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Maximum particle velocity v_p_max = A ω.\nStep 2: Wave propagation velocity v = ω / k.\nStep 3: Given v_p_max = 4 v => A ω = 4 (ω / k).\nStep 4: A = 4 / k => k = 4 / A. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறுக்கலையில் துகளின் பெரும திசைவேகம் அலை திசைவேகத்தைப் போல் 4 மடங்கு எனில், அலை எண் k மற்றும் அலைவீச்சு A இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "k = 4 / A",
+          "k = 2 / A",
+          "k = 1 / (4 A)",
+          "k = π / (4 A)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two simple harmonic motions of same frequency have equations x1 = 3 sin(ω t) and x2 = 4 cos(ω t). What is the amplitude of the resultant motion upon superposition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 units",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7 units",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 unit",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.5 units",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Rewrite x2: x2 = 4 sin(ω t + π/2).\nStep 2: Phase difference Δφ = π/2 (90°).\nStep 3: Resultant amplitude A = sqrt(A1^2 + A2^2 + 2 A1 A2 cos 90°) = sqrt(3^2 + 4^2 + 0) = sqrt(9 + 16) = sqrt(25) = 5.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x1 = 3 sin(ω t) மற்றும் x2 = 4 cos(ω t) ஆகிய இரு தனிச்சீரிசை இயக்கங்களின் மேற்பொருந்துதலால் உண்டாகும் தொகுபயன் அலைவீச்சு என்ன?",
+        "optionTexts": [
+          "5 அலகுகள்",
+          "7 அலகுகள்",
+          "1 அலகு",
+          "3.5 அலகுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The frequency of oscillation of a simple pendulum inside a freely falling elevator is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero (Time period is infinitely long)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Infinite",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Equal to standard frequency on ground",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Doubled",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a freely falling elevator, effective acceleration due to gravity is g_eff = g - g = 0.\nStep 2: Time period T = 2π sqrt(L / g_eff) = 2π sqrt(L / 0) -> ∞ (does not oscillate).\nStep 3: Frequency f = 1 / T = 0.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தானாக கீழே விழும் மின்தூக்கியின் உள்ளே உள்ள தனி ஊசலின் அலைவு அதிர்வெண் என்ன?",
+        "optionTexts": [
+          "பூஜ்ஜியம் (அலைவு காலம் முடிவிலி)",
+          "முடிவிலி",
+          "நிலையான அதிர்வெண்ணுக்கு சமம்",
+          "இருமடங்கு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The intensity of a sound wave is increased by a factor of 100. What is the corresponding increase in sound level measured in decibels (dB)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 dB",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100 dB",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 dB",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "40 dB",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Sound level in decibels: β = 10 log10(I / I₀).\nStep 2: Change in sound level: Δβ = 10 log10(I_final / I_initial).\nStep 3: Δβ = 10 log10(100) = 10 * 2 = 20 dB.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஒலி அலையின் செறிவு 100 மடங்கு உயர்த்தப்பட்டால், டெசிபல் (dB) அலகில் ஒலி மட்டத்தில் ஏற்படும் அதிகரிப்பு என்ன?",
+        "optionTexts": [
+          "20 dB",
+          "100 dB",
+          "10 dB",
+          "40 dB"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m is suspended from two springs of force constants k1 and k2 connected in series. What is the time period of vertical oscillation of the mass?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2π sqrt[ m (k1 + k2) / (k1 k2) ]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2π sqrt[ m / (k1 + k2) ]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2π sqrt[ m k1 k2 / (k1 + k2) ]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2π sqrt[ 2m / (k1 + k2) ]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In series combination, effective spring constant: 1 / k_eq = 1/k1 + 1/k2 => k_eq = (k1 k2) / (k1 + k2).\nStep 2: Time period formula: T = 2π sqrt(m / k_eq).\nStep 3: T = 2π sqrt[ m / ((k1 k2) / (k1 + k2)) ] = 2π sqrt[ m (k1 + k2) / (k1 k2) ].\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k1 மற்றும் k2 சுருள் மாறிலிகள் கொண்ட தொடரிணைப்பு சுருள்வில்களில் m நிறை தொங்கவிடப்பட்டுள்ளது. அதன் செங்குத்து அலைவு நேரம் என்ன?",
+        "optionTexts": [
+          "2π sqrt[ m (k1 + k2) / (k1 k2) ]",
+          "2π sqrt[ m / (k1 + k2) ]",
+          "2π sqrt[ m k1 k2 / (k1 + k2) ]",
+          "2π sqrt[ 2m / (k1 + k2) ]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What type of wave cannot be polarized?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Longitudinal sound waves in air",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Transverse light waves",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Radio waves",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Transverse waves on a violin string",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Polarization is a characteristic property exclusive to transverse waves where vibrations are perpendicular to wave propagation.\nStep 2: In longitudinal waves (like sound in air), vibrations are parallel to wave propagation, so they cannot be polarized.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எந்த வகையான அலையைத் தளவிளைவுக்கு உட்படுத்த முடியாது?",
+        "optionTexts": [
+          "காற்றில் பரவும் நெட்டலை ஒலி அலைகள்",
+          "குறுக்கலை ஒளி அலைகள்",
+          "ரேடியோ அலைகள்",
+          "வயலின் கம்பியில் குறுக்கலைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A whistle of frequency 600 Hz revolves in a circle of radius 1.0 m with an angular velocity of 10 rad/s. What is the lowest frequency heard by a distant stationary observer in the plane of rotation? (Speed of sound = 340 m/s)",
+    "options": [
+      {
+        "label": "A",
+        "text": "583 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "618 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "550 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "600 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Speed of source on circle: v_s = r ω = 1.0 m * 10 rad/s = 10 m/s.\nStep 2: Lowest frequency occurs when source moves directly away from observer: f_min = f₀ * [ v / (v + v_s) ].\nStep 3: f_min = 600 * [ 340 / (340 + 10) ] = 600 * (340 / 350) = 600 * 0.9714 = 582.85 Hz ≈ 583 Hz.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "600 Hz அதிர்வெண் கொண்ட விசில் ஒன்று 1.0 m ஆரமுள்ள வட்டத்தில் 10 rad/s கோண வேகத்தில் சுழற்றப்படுகிறது. தளத்தில் உள்ள ஒரு தொலைதூர கேட்பவரால் உணரப்படும் குறைந்தபட்ச அதிர்வெண் என்ன? (ஒலியின் வேகம் = 340 m/s)",
+        "optionTexts": [
+          "583 Hz",
+          "618 Hz",
+          "550 Hz",
+          "600 Hz"
+        ]
+      }
+    ]
+  }
+]

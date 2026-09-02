@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-BOT-BOT09-000001",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which plant hormone is universally recognized as the 'stress hormone' because it triggers rapid closing of stomata during drought, induces seed dormancy, and inhibits precocious germination?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Indole-3-acetic acid (IAA / Auxin)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gibberellic acid (GA3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zeatin (Cytokinin)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Abscisic acid (ABA)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Under water stress, roots synthesize Abscisic Acid (ABA) and transport it to leaves.\nStep 2: ABA triggers K+ efflux from guard cells, causing loss of turgor and stomatal closure to conserve water.\nStep 3: ABA also promotes desiccation tolerance and seed dormancy, acting as an antagonist to gibberellins.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வறட்சியின் போது இலைத்துளைகளை விரைவாக மூடி, விதை உறக்கத்தைத் தூண்டி, முன்கூட்டிய முளைத்தலைத் தடுப்பதால் 'தகைவு ஹார்மோன்' (stress hormone) என அழைக்கப்படும் தாவர ஹார்மோன் எது?",
+        "optionTexts": [
+          "இண்டோல்-3-அசிட்டிக் அமிலம் (ஆக்சின்)",
+          "ஜிப்ரல்லிக் அமிலம் (GA3)",
+          "சியாட்டீன் (சைட்டோகைனின்)",
+          "அப்சிசிக் அமிலம் (ABA)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000002",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which bioactive microbial product produced by the fungus Trichoderma polysporum is widely used as an immunosuppressive agent in organ-transplant patients to prevent organ rejection?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Citric acid (from Aspergillus niger)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Statins (from Monascus purpureus)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cyclosporin A",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Streptokinase (from Streptococcus)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cyclosporin A is a cyclic peptide produced by the fungus Trichoderma polysporum.\nStep 2: It selectively suppresses T-helper cell activation without damaging bone marrow stem cells, preventing graft rejection in organ transplantation.\nStep 3: (Statins lower blood cholesterol by inhibiting HMG-CoA reductase; Streptokinase dissolves blood clots).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உறுப்பு மாற்று அறுவை சிகிச்சையின் போது உறுப்பு நிராகரிப்பைத் தடுக்க நோயெதிர்ப்பைக் கட்டுப்படுத்தும் காரணியாகப் (immunosuppressive agent) பயன்படுத்தப்படும் டிரைக்கோடெர்மா பாலிஸ்போரம் பூஞ்சையிலிருந்து பெறப்படும் உயிரிய மூலப்பொருள் எது?",
+        "optionTexts": [
+          "சிட்ரிக் அமிலம்",
+          "ஸ்டேடின்கள்",
+          "சைக்ளோஸ்போரின் A",
+          "ஸ்ட்ரெப்டோகைனேஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000003",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In recombinant DNA technology, what is the specific palindromic DNA recognition sequence cleaved by the restriction endonuclease enzyme EcoRI to generate complementary 5'-sticky (cohesive) overhangs?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5'-G G A T C C-3' (BamHI recognition site)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5'-A A G C T T-3' (HindIII recognition site)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5'-G A A T T C-3' (and 3'-C T T A A G-5')",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5'-C C C G G G-3' (SmaI recognition site)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: EcoRI was isolated from Escherichia coli RY 13.\nStep 2: It specifically scans double-stranded DNA for the hexanucleotide palindromic sequence 5'-GAATTC-3'.\nStep 3: EcoRI cuts the phosphodiester backbone between G and A on both opposing antiparallel strands, leaving 5'-AATT single-stranded sticky overhangs.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மறுசேர்க்கை DNA தொழில்நுட்பத்தில், EcoRI என்ற ரெஸ்ட்ரிக்ஷன் எண்டோநியூக்ளியேஸ் என்சைமால் அடையாளம் காணப்பட்டு ஒட்டும் முனைகளை (sticky ends) உருவாக்கும் குறிப்பிட்ட பாலிண்ட்ரோமிக் வரிசை எது?",
+        "optionTexts": [
+          "5'-G G A T C C-3' (BamHI தளம்)",
+          "5'-A A G C T T-3' (HindIII தளம்)",
+          "5'-G A A T T C-3' (மற்றும் 3'-C T T A A G-5')",
+          "5'-C C C G G G-3' (SmaI தளம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000004",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In pest-resistant transgenic Bt crops (such as Bt cotton), why does the crystalline Cry protein endotoxin produced by Bacillus thuringiensis kill target lepidopteran insect pests but remain completely harmless to the bacterium itself?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Cry toxin is synthesized as an inactive protoxin and is only converted into its active toxic form by the alkaline pH of the insect midgut which solubilizes the crystals and creates fatal epithelial membrane pores",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The toxin is immediately degraded by bacterial lysosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The bacterium lacks any cell wall for the toxin to bind",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The toxin requires human body temperature of 37 °C to activate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Bacillus thuringiensis produces crystalline insecticidal Cry proteins during sporulation as inactive protoxins.\nStep 2: Ingestion by insects exposes the crystal to the alkaline pH of the insect midgut (pH > 9.0).\nStep 3: The alkaline environment solubilizes the protoxin and midgut proteases cleave it into an active toxic core.\nStep 4: Active Cry toxin binds to midgut epithelial cadherin receptors, forming pores that cause cell swelling, lysis, and insect death.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Bt பருத்தி போன்ற மரபணு மாற்றப்பட்ட பயிர்களில், பேசில்லஸ் துரிஞ்சியென்சிஸ் பாக்டீரியா உருவாக்கும் படிக கிரை புரத நச்சு பூச்சிகளைக் கொல்லும் போது பாக்டீரியாவை பாதிக்காமல் இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "கிரை நச்சு செயலற்ற புரோடாக்சினாக உற்பத்தி செய்யப்படுகிறது; பூச்சியின் நடுக்குடலில் உள்ள கார pH மட்டுமே படிகங்களைக் கரைத்து நச்சாக மாற்றி எபிதீலியல் செல்களில் துளைகளை ஏற்படுத்துகிறது",
+          "நச்சு பாக்டீரியாவின் லைசோசோம்களால் அழிக்கப்படுவதால்",
+          "பாக்டீரியாவில் செல் சுவர் இல்லாததால்",
+          "நச்சு செயல்பட 37 °C வெப்பநிலை தேவைப்படுவதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000005",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which blood-cholesterol lowering statin is produced commercially from the yeast Monascus purpureus by competitively inhibiting the enzyme HMG-CoA reductase?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Statins",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cyclosporin A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Streptokinase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Penicillin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Statins produced by the yeast Monascus purpureus have been commercialized as blood-cholesterol lowering agents.\nStep 2: They act by competitively inhibiting HMG-CoA reductase, the rate-limiting enzyme responsible for de novo cholesterol synthesis in the liver.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மொனாஸ்கஸ் பர்பூரியஸ் (Monascus purpureus) என்ற ஈஸ்ட்டிலிருந்து பெறப்பட்டு, இரத்த கொழுப்பைக் குறைக்கும் முகவராகப் பயன்படும் உயிரிய மூலப்பொருள் எது?",
+        "optionTexts": [
+          "ஸ்டேடின்கள் (Statins)",
+          "சைக்ளோஸ்போரின் A",
+          "ஸ்ட்ரெப்டோகைனேஸ்",
+          "பெனிசிலின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000006",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Polymerase Chain Reaction (PCR), which thermostable DNA polymerase enzyme is used during the extension step, and from which thermophilic bacterium was it isolated?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Taq DNA polymerase isolated from Thermus aquaticus",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pfu polymerase from Pyrococcus furiosus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "RNA Polymerase II from E. coli",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "DNA Polymerase I from Bacillus thuringiensis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In PCR, repeated cycles of high-temperature denaturation (94 °C) would denature conventional DNA polymerases.\nStep 2: Thermostable Taq DNA polymerase was isolated from the thermophilic bacterium Thermus aquaticus.\nStep 3: It remains active at 72 °C during the extension phase to synthesize new DNA strands.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCR தொழில்நுட்பத்தில் (Polymerase Chain Reaction) நீட்சி நிலையில் பயன்படுத்தப்படும் அதிக வெப்பநிலையைத் தாங்கக்கூடிய Taq பாலிமரேஸ் எந்த பாக்டீரியாவிலிருந்து பிரித்தெடுக்கப்பட்டது?",
+        "optionTexts": [
+          "தெர்மஸ் அக்வாடிகஸ் (Thermus aquaticus)",
+          "பைரோகாக்கஸ் ஃபியூரியோசஸ்",
+          "ஈகோலை (E. coli)",
+          "பேசில்லஸ் துரிஞ்சியென்சிஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000007",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the cloning vector pBR322, if a foreign gene of interest is inserted at the BamHI restriction site, what selectable marker phenotype will the recombinant plasmid exhibit?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Resistance to ampicillin but sensitivity to tetracycline (due to insertional inactivation of tetR gene)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Resistance to both ampicillin and tetracycline",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sensitivity to both ampicillin and tetracycline",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Resistance to tetracycline but sensitivity to ampicillin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In pBR322, the BamHI site is located within the tetracycline-resistance (tetR) gene.\nStep 2: Ligation of alien DNA at the BamHI site disrupts the coding sequence of the tetR gene, causing insertional inactivation.\nStep 3: The recombinant plasmid retains ampicillin resistance (ampR) but loses tetracycline resistance (tetR).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "pBR322 பிளாஸ்மிட் தாங்கியில் உள்ள BamHI தளத்தில் ஒரு வெளி மரபணு இணைக்கப்பட்டால், மறுசேர்க்கை பிளாஸ்மிட் எவ்வகை எதிர்ப்பண்பை வெளிப்படுத்தும்?",
+        "optionTexts": [
+          "ஆம்பிசிலினுக்கு எதிர்ப்புத் தன்மையும் டெட்ராசைக்ளினுக்கு உணர்திறனும் (tetR மரபணு செயலிழப்பால்)",
+          "ஆம்பிசிலின் மற்றும் டெட்ராசைக்ளின் இரண்டிற்கும் எதிர்ப்புத் தன்மை",
+          "இரண்டிற்கும் உணர்திறன்",
+          "டெட்ராசைக்ளினுக்கு எதிர்ப்புத் தன்மையும் ஆம்பிசிலினுக்கு உணர்திறனும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000008",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In agarose gel electrophoresis, DNA fragments migrate toward which electrode and are separated based on what physical property?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Migrate toward the positive anode (+) and are separated based on size through the sieving effect of agarose",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Migrate toward the negative cathode (-) based on base sequence",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Migrate toward the anode based strictly on AT/GC ratio",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Remain stationary at the center of the gel",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: DNA fragments are negatively charged molecules due to phosphate backbones.\nStep 2: Under an electric field in agarose gel, they move toward the positive electrode (anode).\nStep 3: The agarose matrix acts as a molecular sieve; smaller fragments migrate faster and farther than larger fragments.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அகரோஸ் ஜெல் எலக்ட்ரோபோரேசிஸில், DNA துண்டுகள் எந்த மின்முனையை நோக்கி நகர்கின்றன மற்றும் எதன் அடிப்படையில் பிரிக்கப்படுகின்றன?",
+        "optionTexts": [
+          "நேர் மின்முனையை (Anode +) நோக்கி நகர்கின்றன மற்றும் அகரோஸ் ஜெல் சல்லடை விளைவு மூலம் அளவின் அடிப்படையில் பிரிக்கப்படுகின்றன",
+          "எதிர் மின்முனையை நோக்கி கார வரிசையின் அடிப்படையில் நகர்கின்றன",
+          "AT/GC விகிதத்தின் அடிப்படையில் நேர் மின்முனையை நோக்கி நகர்கின்றன",
+          "ஜெல்லின் மையப்பகுதியில் நகராமல் நிலைத்திருக்கின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000009",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "DNA fragments separated on an agarose gel can only be visualized after staining with which compound followed by exposure to ultraviolet (UV) radiation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethidium bromide (giving bright orange colored bands)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Methylene blue (giving dark blue bands under white light)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetocarmine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Safranin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Pure DNA fragments cannot be seen in visible light without staining.\nStep 2: The gel is stained with Ethidium Bromide (EtBr), an intercalating fluorescent dye.\nStep 3: When exposed to UV light, DNA bands appear as bright orange fluorescent bands.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அகரோஸ் ஜெல்லில் பிரிக்கப்பட்ட DNA துண்டுகளை UV கதிரியக்கத்தின் கீழ் பார்க்க எந்த சாயத்தால் நிறமேற்ற வேண்டும்?",
+        "optionTexts": [
+          "எத்திடியம் புரோமைடு / EtBr (பிரகாசமான ஆரஞ்சு நிற பட்டைகளைத் தருகிறது)",
+          "மெத்திலீன் நீலம்",
+          "அசிட்டோகார்மைன்",
+          "சாப்ரனின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000010",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The method of gene transfer in plant biotechnology where high-velocity micro-particles of gold or tungsten coated with recombinant DNA are bombarded into host plant cells is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Biolistics (Gene gun method)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Microinjection (used in animal eggs)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Electroporation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lipofection",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the biolistic or gene gun method suitable for plants, cells are bombarded with high-velocity microparticles of gold or tungsten coated with DNA.\nStep 2: Microinjection is directly injecting DNA into the nucleus of animal cells.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாவர செல்களில் DNA-வைச் செலுத்த தங்கம் அல்லது டங்ஸ்டன் துகள்களைப் பயன்படுத்தி அதிவேகமாக செலுத்தும் மரபணு துப்பாக்கி முறை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "பயோலிஸ்டிக்ஸ் / மரபணு துப்பாக்கி முறை (Biolistics / Gene gun)",
+          "நுண் உட்செலுத்துதல் (Microinjection)",
+          "எலக்ட்ரோபோரேஷன்",
+          "லிப்போஃபெக்ஷன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000011",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which natural bacterial plant pathogen is termed 'Nature's Genetic Engineer' and widely modified as a disarmed cloning vector for delivering foreign genes into dicotyledonous plants?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Agrobacterium tumefaciens (Ti plasmid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rhizobium leguminosarum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bacillus thuringiensis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pseudomonas putida",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Agrobacterium tumefaciens naturally infects dicot plants by transferring a piece of DNA (T-DNA) from its tumor-inducing (Ti) plasmid to transform normal plant cells into crown gall tumors.\nStep 2: In genetic engineering, the tumor-inducing genes are disarmed while retaining the T-DNA borders, making it an ideal vector for plant genetic transformation.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இருவித்திலைத் தாவரங்களுக்குள் விரும்பிய மரபணுக்களைச் செலுத்த பயன்படும் 'இயற்கையின் மரபணுப் பொறியாளர்' என அழைக்கப்படும் பாக்டீரிய தாங்கி எது?",
+        "optionTexts": [
+          "அக்ரோபாக்டீரியம் டுமிஃபேசியன்ஸ் (Ti பிளாஸ்மிட்)",
+          "ரைசோபியம் லெகுமினோசாரம்",
+          "பேசில்லஸ் துரிஞ்சியென்சிஸ்",
+          "சூடோமோனாஸ் புட்டிடா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000012",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In pest-resistant transgenic tobacco plants developed against the nematode parasite Meloidogyne incognita, which cellular gene-silencing mechanism is engineered using Agrobacterium vectors?",
+    "options": [
+      {
+        "label": "A",
+        "text": "RNA interference (RNAi: double-stranded RNA silencing specific nematode mRNA)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bt endotoxin crystal synthesis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CRISPR-Cas9 gene deletion",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Antibiotic resistance marker inactivation",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Meloidogyne incognita is a nematode parasite that infects tobacco roots, causing reduction in yield.\nStep 2: Agrobacterium vectors were used to introduce nematode-specific genes producing both sense and anti-sense RNA in the host cells.\nStep 3: These two complementary RNAs form double-stranded RNA (dsRNA) that triggers RNA interference (RNAi), silencing specific parasite mRNA and preventing nematode survival.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெலாய்டோகைன் இன்காக்னிட்டா நெமட்டோடு புழுக்களுக்கு எதிராக மரபணு மாற்றப்பட்ட புகையிலைத் தாவரத்தில் பயன்படுத்தப்பட்ட செல்லுலார் பாதுகாப்பு முறை எது?",
+        "optionTexts": [
+          "RNA குறுக்கீடு / RNAi (இரட்டை இழை RNA குறிப்பிட்ட நெமட்டோடு mRNA-வை செயலிழக்கச் செய்தல்)",
+          "Bt எண்டோடாக்சின் படிக உருவாக்கம்",
+          "CRISPR-Cas9 மரபணு நீக்கம்",
+          "நுண்ணுயிர்க்கொல்லி எதிர்ப்பு மார்க்கர் செயலிழப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000013",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "How did the American company Eli Lilly produce genetically engineered human insulin (Humulin) in E. coli in 1983?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Synthesized two DNA sequences corresponding to A and B chains of human insulin separately in E. coli, extracted them, and linked them by chemical disulfide bonds",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Extracted proinsulin directly from slaughterhouse cattle pancreases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Inserted the complete human C-peptide gene into yeast plasmids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Engineered human liver cells to secrete active proinsulin into bloodstream",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Human proinsulin contains an extra stretch of C-peptide that is absent in mature functional insulin.\nStep 2: In 1983, Eli Lilly synthesized two artificial DNA sequences coding for the A-chain (21 amino acids) and B-chain (30 amino acids) of human insulin.\nStep 3: These were expressed separately in E. coli, purified, and combined by forming disulfide bonds to produce mature Humulin.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1983 இல் எலி லில்லி (Eli Lilly) நிறுவனம் E. coli பாக்டீரியாவில் மரபணு மாற்றப்பட்ட மனித இன்சுலினை (ஹியூமுலின்) எவ்வாறு தயாரித்தது?",
+        "optionTexts": [
+          "மனித இன்சுலினின் A மற்றும் B சங்கிலிகளுக்கான DNA வரிசைகளை E. coli-ல் தனித்தனியாக உற்பத்தி செய்து, பிரித்தெடுத்து, டைசல்பைடு பிணைப்புகளால் இணைத்தது",
+          "மாடுகளின் கணையத்திலிருந்து புரோஇன்சுலினை நேரடியாகப் பிரித்தெடுத்தது",
+          "முழுமையான மனித C-பெப்டைடு மரபணுவை ஈஸ்ட் பிளாஸ்மிடுகளில் சேர்த்தது",
+          "மனித கல்லீரல் செல்களைப் பயன்படுத்தி இரத்தத்தில் புரோஇன்சுலினைச் சுரக்கச் செய்தது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000014",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In 1990, the first clinical gene therapy was administered to a 4-year-old girl suffering from Severe Combined Immunodeficiency (SCID) caused by the deficiency of which critical enzyme?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adenosine Deaminase (ADA)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Alpha-1-antitrypsin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tyrosinase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glucocerebrosidase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The first clinical gene therapy was given in 1990 to a 4-year-old girl with Adenosine Deaminase (ADA) deficiency.\nStep 2: ADA enzyme is crucial for normal immune system function; its deletion causes SCID.\nStep 3: Lymphocytes extracted from the patient were grown in culture and transformed with functional ADA cDNA using a retroviral vector before re-infusion.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1990 ஆம் ஆண்டு கடுமையான ஒருங்கிணைந்த நோயெதிர்ப்பு குறைபாடு (SCID) கொண்ட 4 வயது சிறுமிக்கு அளிக்கப்பட்ட முதல் மரபணு சிகிச்சையில் எந்த என்சைம் குறைபாடு சரிசெய்யப்பட்டது?",
+        "optionTexts": [
+          "அடினோசின் டிஅமினேஸ் (ADA)",
+          "ஆல்ஃபா-1-ஆன்டிடிரிப்சின்",
+          "டைரோசினேஸ்",
+          "குளூக்கோசெரிப்ரோசிடேஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000015",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which specific Cry genes from Bacillus thuringiensis encode insecticidal endotoxins that control cotton bollworms and corn borer respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CryIAc and CryIIAb control cotton bollworms; CryIAb controls corn borer",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CryIAb controls cotton bollworms; CryIAc controls corn borer",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CryIIAb controls corn borer; CryIAb controls cotton bollworms",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CryIIAc controls cotton bollworms; CryIAb controls beetles",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The proteins encoded by the genes CryIAc and CryIIAb control cotton bollworms.\nStep 2: The protein encoded by CryIAb controls corn borer.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பேசில்லஸ் துரிஞ்சியென்சிஸின் எந்த கிரை (Cry) மரபணுக்கள் முறையே பருத்தி காய்ப்புழுக்கள் மற்றும் சோளத் துளைப்பானைக் கட்டுப்படுத்துகின்றன?",
+        "optionTexts": [
+          "CryIAc மற்றும் CryIIAb பருத்தி காய்ப்புழுக்களையும், CryIAb சோளத் துளைப்பானையும் கட்டுப்படுத்துகின்றன",
+          "CryIAb பருத்தி காய்ப்புழுக்களையும், CryIAc சோளத் துளைப்பானையும் கட்டுப்படுத்துகின்றன",
+          "CryIIAb சோளத் துளைப்பானையும், CryIAb பருத்தி காய்ப்புழுக்களையும் கட்டுப்படுத்துகின்றன",
+          "CryIIAc பருத்தி காய்ப்புழுக்களையும், CryIAb வண்டுகளையும் கட்டுப்படுத்துகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000016",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which microbial enzyme obtained from the bacterium Streptococcus is modified by genetic engineering and used as a 'clot buster' medication to dissolve fibrin blood clots in myocardial infarction patients?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Streptokinase",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lipase",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pectinase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Amylase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Streptokinase is an enzyme produced by the bacterium Streptococcus.\nStep 2: Modified by genetic engineering, it is used as a thrombolytic 'clot buster' agent to dissolve blood clots in coronary blood vessels of patients who have suffered myocardial infarction.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஸ்ட்ரெப்டோகாக்கஸ் பாக்டீரியாவிலிருந்து பெறப்பட்டு, மாரடைப்பு ஏற்பட்ட நோயாளிகளின் இரத்தக் குழாய்களில் உள்ள இரத்தக் கட்டிகளைக் கரைக்கும் 'க்ளாட் பஸ்டர்' (clot buster) என்சைம் எது?",
+        "optionTexts": [
+          "ஸ்ட்ரெப்டோகைனேஸ் (Streptokinase)",
+          "லிபேஸ்",
+          "பெக்டினேஸ்",
+          "அமைலேஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000017",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In bottled commercial fruit juice preparation, why are bottled juices clearer compared to freshly squeezed homemade fruit juices?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They are clarified by treatment with pectinases and proteases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "They are boiled to evaporate all suspended fibers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "They are treated with concentrated sulfuric acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "They are filtered through ultra-fine asbestos mesh",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Commercial bottled juices are treated with pectinases and proteases.\nStep 2: These enzymes break down pectin and protein colloids, clarifying the juice and preventing haziness.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாட்டில்களில் அடைக்கப்பட்ட வணிகப் பழச்சாறுகள் வீட்டில் தயாரிக்கப்படும் பழச்சாறுகளை விட மிகத் தெளிவாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அவை பெக்டினேஸ்கள் மற்றும் புரோட்டியேஸ்கள் என்சைம்களால் தெளிவாக்கப்படுவதால்",
+          "அனைத்து நார்களும் ஆவியாகும் வரை கொதிக்க வைக்கப்படுவதால்",
+          "அடர்ந்த கந்தக அமிலத்தால் சுத்திகரிக்கப்படுவதால்",
+          "அஸ்பெஸ்டாஸ் வலை மூலம் வடிகட்டப்படுவதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000018",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The large holes in 'Swiss cheese' are produced by the release of large amounts of carbon dioxide (CO2) during fermentation by which bacterium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propionibacterium sharmanii",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Penicillium roqueforti",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lactobacillus acidophilus",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Streptococcus thermophilus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The large characteristic holes in Swiss cheese are due to the production of a large amount of CO2 gas.\nStep 2: This is produced by the bacterium Propionibacterium sharmanii.\nStep 3: (Roquefort cheese is ripened by Penicillium roqueforti fungus).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "'ஸ்விஸ் பாலாடைக்கட்டியில்' (Swiss cheese) காணப்படும் பெரிய துளைகள் எந்த பாக்டீரியாவால் CO2 வெளியேற்றப்படுவதால் ஏற்படுகின்றன?",
+        "optionTexts": [
+          "புரோபியானிபாக்டீரியம் ஷெர்மானி (Propionibacterium sharmanii)",
+          "பெனிசிலியம் ராக்ஃபோர்ட்டி",
+          "லாக்டோபேசில்லஸ் அசிடோஃபிலஸ்",
+          "ஸ்ட்ரெப்டோகாக்கஸ் தெர்மோபிலஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000019",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In biological wastewater treatment (secondary sewage treatment), what does a high value of Biological Oxygen Demand (BOD) in water indicate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "High polluting potential and high amount of organic matter present in the water",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Completely pure potable drinking water",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Absence of any decomposer bacteria in sewage",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "High concentration of dissolved oxygen available for fishes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: BOD refers to the amount of oxygen consumed by aerobic microorganisms to oxidize all organic matter in 1 liter of water.\nStep 2: The higher the BOD of wastewater, the greater its polluting potential and organic load.\nStep 3: Once BOD is significantly reduced, the treated water can be discharged into rivers.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கழிவுநீர் சுத்திகரிப்பில், கழிவுநீரின் அதிக உயிரியல் ஆக்ஸிஜன் தேவை (BOD மதிப்பு) எதனைக் குறிக்கிறது?",
+        "optionTexts": [
+          "அதிக மாசுபாடு மற்றும் கழிவுநீரில் அதிக கரிமப் பொருட்கள் உள்ளதைக் குறிக்கிறது",
+          "தூய்மையான குடிநீரைக் குறிக்கிறது",
+          "கழிவுநீரில் சிதைக்கும் பாக்டீரியாக்கள் இல்லை என்பதைக் குறிக்கிறது",
+          "மீன்களுக்கு அதிக கரைந்த ஆக்ஸிஜன் இருப்பதைக் குறிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000020",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Baculoviruses of the genus Nucleopolyhedrovirus are desirable biocontrol agents in integrated pest management (IPM) programs because they are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Species-specific, narrow-spectrum insecticidal agents with no negative impacts on non-target insects, mammals, birds, or fishes",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Broad-spectrum chemical poisons killing all insects indiscriminately",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pathogens of cereal crop roots",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Symbiotic nitrogen-fixing plant viruses",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Baculoviruses are pathogens that attack insects and other arthropods.\nStep 2: The majority of baculoviruses used as biological control agents belong to the genus Nucleopolyhedrovirus.\nStep 3: They exhibit high species-specificity and narrow spectrum insecticidal action without affecting beneficial insects, plants, mammals, or birds.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒருங்கிணைந்த பூச்சி மேலாண்மையில் (IPM) நியூக்ளியோபாலிஹெட்ரோவைரஸ் (Baculoviruses) சிறந்த உயிரியல் கட்டுப்பாட்டு காரணியாகப் பயன்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "குறிப்பிட்ட பூச்சிகளை மட்டுமே தாக்கும் குறுகிய வரம்புடையவை; இலக்கு அல்லாத பிற பூச்சிகள், பாலூட்டிகள், பறவைகளை பாதிக்காது",
+          "அனைத்துப் பூச்சிகளையும் கண்மூடித்தனமாக அழிக்கும் பரந்த வரம்புடைய வேதிப்பொருட்கள்",
+          "தானியப் பயிர்களின் வேர்களைத் தாக்கும் நோய்க்கிருமிகள்",
+          "நைட்ரஜனை நிலைநிறுத்தும் தாவர வைரஸ்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000021",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which fungal genus forms symbiotic mycorrhizal associations with plant roots, specifically absorbing phosphorus from the soil and passing it to the host plant?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Glomus",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rhizopus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Trichoderma",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aspergillus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mycorrhiza is a symbiotic association between a fungus and plant roots.\nStep 2: Many members of the genus Glomus form endomycorrhizae.\nStep 3: The fungal symbiont absorbs phosphorus from soil and transfers it to the plant, conferring disease resistance and salinity tolerance.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாவர வேர்களுடன் மைக்கோரைசா கூட்டுயிரி அமைப்பை ஏற்படுத்தி, மண்ணிலிருந்து பாஸ்பரஸை உறிஞ்சி தாவரத்திற்கு அளிக்கும் பூஞ்சை பேரினம் எது?",
+        "optionTexts": [
+          "குளோமஸ் (Glomus)",
+          "ரைசோபஸ்",
+          "டிரைக்கோடெர்மா",
+          "ஆஸ்பர்ஜிலஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000022",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The illegal exploitation and commercial patenting of bio-resources and traditional knowledge belonging to indigenous communities without proper authorization and compensation is termed:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Biopiracy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bioremediation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Biofortification",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Biomagnification",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Biopiracy is the term used to refer to the use of bio-resources by multinational companies without proper authorization from the countries and people concerned without compensatory payment (e.g., Basmati rice patent in 1997).\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பழங்குடி மக்களின் பாரம்பரிய அறிவையும் உயிரி வளங்களையும் உரிய அனுமதியின்றி பன்னாட்டு நிறுவனங்கள் காப்புரிமை பெற்று சுரண்டுவது எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "உயிரிக் கொள்ளை / பயோபைரசி (Biopiracy)",
+          "உயிரி சீரமைப்பு (Bioremediation)",
+          "உயிரி ஊட்டமேற்றம் (Biofortification)",
+          "உயிரிப் பெருக்கம் (Biomagnification)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000023",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In India, which statutory government organization is responsible for evaluating the safety and validity of Genetically Modified (GM) research and approving GM crops for commercial release?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GEAC (Genetic Engineering Appraisal Committee)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "ICAR (Indian Council of Agricultural Research)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CSIR",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "KVIC",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Indian Government established the Genetic Engineering Appraisal Committee (GEAC).\nStep 2: GEAC makes decisions regarding the validity of GM research and the safety of introducing GM-organisms for public services and agriculture.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இந்தியாவில் மரபணு மாற்றப்பட்ட பயிர்களின் பாதுகாப்பு மற்றும் வணிக வெளியீட்டை ஒழுங்குபடுத்தும் அரசு அமைப்பு எது?",
+        "optionTexts": [
+          "GEAC (மரபணு பொறியியல் மதிப்பீட்டுக் குழு)",
+          "ICAR (இந்திய வேளாண் ஆராய்ச்சிக் கழகம்)",
+          "CSIR",
+          "KVIC"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000024",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a stirred-tank bioreactor, what is the primary purpose of the motorized agitator (stirrer) and the air sparger?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ensuring even mixing and continuous, uniform oxygen availability throughout the large culture volume",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Electrophoresing recombinant proteins to the vessel wall",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Irradiating the cells with UV light to induce mutations",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Filtering out dead cells through centrifugal force",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A stirred-tank bioreactor is designed to process large volumes (100-1000 L).\nStep 2: The stirrer facilitates even mixing and oxygen availability throughout the bioreactor.\nStep 3: The sparger bubbles sterile air through the medium to ensure high oxygen transfer efficiency.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயிரி உலைகளில் (Stirred-tank bioreactor) பொருத்தப்பட்டுள்ள கலக்கி மற்றும் காற்று தெளிப்பானின் (sparger) முதன்மை நோக்கம் என்ன?",
+        "optionTexts": [
+          "ஊடகம் முழுவதும் சீரான கலவை மற்றும் ஆக்ஸிஜன் சீராக கிடைப்பதை உறுதி செய்தல்",
+          "மறுசேர்க்கை புரதங்களை மின்புலம் மூலம் பிரித்தல்",
+          "சடுதிமாற்றத்தை உருவாக்க செல்களை UV ஒளியில் வெளிப்படுத்துதல்",
+          "மையவிலக்கு விசை மூலம் இறந்த செல்களை வடிகட்டுதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000025",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In 1997, the first transgenic cow, Rosie, was engineered to produce human protein-enriched milk (2.4 grams per liter) containing which human protein?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Human alpha-lactalbumin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Alpha-1-antitrypsin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Human insulin A-chain",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Interferon gamma",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In 1997, the first transgenic cow, Rosie, produced human protein-enriched milk (2.4 g/L).\nStep 2: The milk contained the human gene for alpha-lactalbumin, making it nutritionally more balanced for human babies than natural cow milk.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1997 இல் உருவாக்கப்பட்ட முதல் மரபணு மாற்றப்பட்ட பசுவான ரோசி (Rosie), எந்த மனித புரதம் நிறைந்த பாலை (2.4 g/L) உற்பத்தி செய்தது?",
+        "optionTexts": [
+          "மனித ஆல்ஃபா-லாக்டால்புமின் (Human alpha-lactalbumin)",
+          "ஆல்ஃபா-1-ஆன்டிடிரிப்சின்",
+          "மனித இன்சுலின் A சங்கிலி",
+          "இன்டர்ஃபெரான் காமா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000026",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which organic acid is produced industrially by the aerobic fermentation of the filamentous ascomycete fungus Aspergillus niger?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Citric acid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Acetic acid (from Acetobacter aceti)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Butyric acid (from Clostridium butylicum)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lactic acid (from Lactobacillus)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Aspergillus niger (fungus) produces Citric acid.\nStep 2: Acetobacter aceti (bacterium) produces Acetic acid.\nStep 3: Clostridium butylicum (bacterium) produces Butyric acid.\nStep 4: Lactobacillus (bacterium) produces Lactic acid.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆஸ்பர்ஜிலஸ் நைஜர் (Aspergillus niger) என்ற பூஞ்சையின் மூலம் வணிக ரீதியாக உற்பத்தி செய்யப்படும் கரிம அமிலம் எது?",
+        "optionTexts": [
+          "சிட்ரிக் அமிலம் (Citric acid)",
+          "அசிட்டிக் அமிலம்",
+          "பியூட்ரிக் அமிலம்",
+          "லாக்டிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000027",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What are the three essential sequential thermal steps performed in each cycle of Polymerase Chain Reaction (PCR)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Denaturation (~94 °C) -> Primer Annealing (~50-60 °C) -> Primer Extension (~72 °C)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Annealing -> Denaturation -> Extension",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Extension -> Annealing -> Ligation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Electrophoresis -> Hybridization -> Blotting",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Each cycle of PCR consists of three steps:\n1. Denaturation: High heat (94-96 °C) melts hydrogen bonds to separate dsDNA strands.\n2. Annealing: Cooling (50-60 °C) allows oligonucleotide primers to bind to complementary template strands.\n3. Extension: Taq polymerase (72 °C) extends primers by adding dNTPs.\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCR வினையின் (Polymerase Chain Reaction) ஒவ்வொரு சுழற்சியிலும் நிகழும் மூன்று தொடர் வெப்ப நிலைகள் யாவை?",
+        "optionTexts": [
+          "இயல்பிழத்தல் (~94 °C) -> பிரைமர் இணைதல் (~50-60 °C) -> பிரைமர் நீட்சி (~72 °C)",
+          "பிரைமர் இணைதல் -> இயல்பிழத்தல் -> நீட்சி",
+          "நீட்சி -> இணைதல் -> லிகேஷன்",
+          "எலக்ட்ரோபோரேசிஸ் -> கலப்பினமாதல் -> பிளாட்டிங்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000028",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In screening recombinant colonies using blue-white color selection, what enzyme is insertional-inactivated when foreign DNA is cloned into the beta-galactosidase (lacZ) gene?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Beta-galactosidase (recombinants form white colonies in X-gal medium)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Permease (recombinants form blue colonies)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Taq polymerase",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "DNA Topoisomerase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A recombinant DNA is inserted within the coding sequence of an enzyme, beta-galactosidase (lacZ gene).\nStep 2: This causes insertional inactivation of the beta-galactosidase enzyme.\nStep 3: In the presence of chromogenic substrate (X-gal), non-recombinants produce active enzyme and turn blue, while recombinants with inserted genes form white colonies.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீல-வெள்ளை காலனி தேர்வில் (Blue-white screening), lacZ மரபணுவில் வெளி DNA செருகப்படும் போது செயலிழக்கச் செய்யப்படும் என்சைம் எது?",
+        "optionTexts": [
+          "பீட்டா-கேலக்டோசிடேஸ் (மறுசேர்க்கை காலனிகள் வெள்ளை நிறத்தில் தோன்றுகின்றன)",
+          "பெர்மியேஸ் (மறுசேர்க்கை காலனிகள் நீல நிறத்தில் தோன்றுகின்றன)",
+          "Taq பாலிமரேஸ்",
+          "DNA டோபோஐசோமரேஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000029",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which free-living nitrogen-fixing cyanobacteria serve as an important biofertilizer particularly in waterlogged paddy (rice) agricultural fields?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Anabaena, Nostoc, and Oscillatoria",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Rhizobium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Glomus",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Azotobacter",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cyanobacteria are autotrophic microbes widely distributed in aquatic and terrestrial environments.\nStep 2: Anabaena, Nostoc, and Oscillatoria fix atmospheric nitrogen.\nStep 3: In paddy fields, cyanobacteria serve as an essential biofertilizer and add organic matter to the soil.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நெல் வயல்களில் நைட்ரஜனை நிலைநிறுத்தி மிக முக்கியமான உயிரி உரமாகச் செயல்படும் நீலப்பசும் பாசிகள் (சயனோபாக்டீரியாக்கள்) யாவை?",
+        "optionTexts": [
+          "அனபினா, நாஸ்டாக் மற்றும் ஆஸிலேட்டோரியா (Anabaena, Nostoc, Oscillatoria)",
+          "ரைசோபியம்",
+          "குளோமஸ்",
+          "அசோடோபாக்டர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT09-000030",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In downstream processing of biotechnology products, what are the primary steps involved before marketing the finished product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Separation, purification of the biosynthetic product, formulation with preservatives, and stringent quality control testing",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Gene cloning and transformation of competent bacterial host",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Polymerase Chain Reaction amplification in thermal cycler",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Agarose gel electrophoresis and Southern blotting",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: After completion of the biosynthetic stage in a bioreactor, the product is processed before marketing.\nStep 2: The processes include separation and purification, collectively referred to as Downstream Processing.\nStep 3: The product is formulated with suitable preservatives and undergoes strict clinical trials and quality control testing.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயிரித் தொழில்நுட்ப உற்பத்தியில் இறுதிப் பொருளை சந்தைப்படுத்துவதற்கு முன் மேற்கொள்ளப்படும் கீழ்நிலை செயலாக்கத்தின் (Downstream processing) முக்கிய படிகள் யாவை?",
+        "optionTexts": [
+          "பிரித்தெடுத்தல், தூய்மையாக்குதல், பாதுகாக்கும் காரணிகளைச் சேர்த்தல் மற்றும் கடுமையான தரக் கட்டுப்பாட்டு சோதனை",
+          "மரபணு நகலாக்கம் மற்றும் பாக்டீரியா செல்களுக்குள் செலுத்துதல்",
+          "PCR பெருக்கம் செய்தல்",
+          "அகரோஸ் ஜெல் எலக்ட்ரோபோரேசிஸ் மற்றும் சதர்ன் பிளாட்டிங்"
+        ]
+      }
+    ]
+  }
+]

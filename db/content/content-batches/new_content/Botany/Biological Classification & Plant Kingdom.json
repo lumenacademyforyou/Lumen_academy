@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-BOT-BOT07-000001",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In cyanobacteria like Nostoc and Anabaena, which specialized, thick-walled cells are responsible for biological nitrogen fixation under anaerobic conditions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Endospores",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Heterocysts (containing the oxygen-sensitive enzyme nitrogenase)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Akinetes (thick-walled resting spores)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hormogonia (fragmentation filaments)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Heterocysts are specialized pale, thick-walled vegetative cells in cyanobacteria.\nStep 2: They create an impermeable barrier to atmospheric oxygen.\nStep 3: This protects the nitrogenase enzyme from irreversible oxygen inactivation, allowing conversion of N2 to NH3.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நாஸ்டாக் மற்றும் அனபினா போன்ற சயனோபாக்டீரியாக்களில், காற்றில்லா சூழலில் உயிரியல் நைட்ரஜன் நிலைநிறுத்தத்திற்கு காரணமான சிறப்பு தடித்த சுவர் கொண்ட செல்கள் யாவை?",
+        "optionTexts": [
+          "எண்டோஸ்போர்கள்",
+          "ஹெட்டிரோசிஸ்ட்டுகள் (ஆக்ஸிஜன் உணர்திறன் கொண்ட நைட்ரோஜினேஸ் என்சைமைப் பெற்றுள்ளன)",
+          "அகினீட்டுகள் (ஓய்வுநிலை ஸ்போர்கள்)",
+          "ஹார்மோகோனியா (துண்டாதல் இழைகள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000002",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which group of fungi is commonly known as 'Fungi Imperfecti' because they reproduce exclusively through asexual spores (conidia) and completely lack any known sexual stage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deuteromycetes (e.g., Alternaria, Colletotrichum, Trichoderma)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phycomycetes (Algal fungi)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Basidiomycetes (Club fungi)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ascomycetes (Sac fungi)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Deuteromycetes is an artificial fungal class for fungi that lack a known teleomorph (sexual stage).\nStep 2: They reproduce solely by asexual conidiospores.\nStep 3: When a sexual stage is discovered, they are transferred to Ascomycetes or Basidiomycetes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலினப் பெருக்க நிலைகள் கண்டறியப்படாமல், பாலிலா வித்துக்கள் (கொனிடியா) மூலம் மட்டுமே பெருக்கமடைவதால் 'முழுமையற்ற பூஞ்சைகள்' (Fungi Imperfecti) என அழைக்கப்படும் பூஞ்சை வகுப்பு எது?",
+        "optionTexts": [
+          "டியூட்டீரோமைசீட்ஸ் (எ.கா. ஆல்டர்நேரியா, கொல்லிடோட்ரைக்கம், டிரைக்கோடெர்மா)",
+          "ஃபைகோமைசீட்ஸ் (பாசிப் பூஞ்சைகள்)",
+          "பெசிடியோமைசீட்ஸ் (குழல் பூஞ்சைகள்)",
+          "அஸ்கோமைசீட்ஸ் (பை பூஞ்சைகள்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000003",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In R.H. Whittaker's Five Kingdom Classification (1969), which of the following criteria was NOT used as a primary basis for classification?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Presence or absence of red blood cells (Enaima vs Anaima)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cell structure and complexity (Prokaryotic vs Eukaryotic)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mode of nutrition (Autotrophic vs Heterotrophic absorption/ingestion)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Body organization and phylogenetic relationships",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: R.H. Whittaker (1969) proposed the Five Kingdom system (Monera, Protista, Fungi, Plantae, Animalia).\nStep 2: The main criteria used were: (1) Cell structure, (2) Body organization/thallus structure, (3) Mode of nutrition, (4) Reproduction, and (5) Phylogenetic relationships.\nStep 3: Red blood cell presence (Anaima/Enaima) was Aristotle's animal classification criterion, not Whittaker's.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R.H. விட்டேக்கரின் ஐந்து உலக வகைப்பாட்டில் (1969), கீழ்வருவனவற்றில் எந்தப் பண்பு முதன்மை அளவுகோலாகப் பயன்படுத்தப்படவில்லை?",
+        "optionTexts": [
+          "சிவப்பு ரத்த அணுக்கள் இருத்தல் அல்லது இல்லாமை (எனைமா vs அணைமா)",
+          "செல் அமைப்பு மற்றும் சிக்கல்தன்மை (புரோகேரியோட் vs யூகேரியோட்)",
+          "உணவூட்ட முறை (தற்சார்பு vs சாற்றுண்ணி / விழுங்குதல்)",
+          "உடல அமைப்பு மற்றும் பரிணாம மரபுவழி தொடர்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000004",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which group of archaebacteria is responsible for the production of methane (biogas) from the dung of ruminant animals (like cows and buffaloes) in marshy areas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methanogens (e.g., Methanobacterium)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Halophiles (salt lovers)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Thermoacidophiles (hot sulfur spring bacteria)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cyanobacteria",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Archaebacteria differ from other bacteria in having a different cell wall structure without peptidoglycan.\nStep 2: Methanogens are obligate anaerobes present in the gut of several ruminant animals such as cows and buffaloes.\nStep 3: They produce methane (biogas) from animal dung.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அசைபோடும் விலங்குகளின் (பசு, எருமை) குடலிலும் சதுப்புநிலங்களிலும் வாழ்ந்து சாணத்திலிருந்து மீத்தேன் (உயிரி வாயு) உற்பத்திக்கு காரணமான ஆர்க்கிபாக்டீரியா எது?",
+        "optionTexts": [
+          "மெத்தனோஜென்கள் (Methanogens)",
+          "ஹாலோஃபைல்கள் (உவர்நில பாக்டீரியாக்கள்)",
+          "தெர்மோஅசிடோஃபைல்கள் (வெப்ப அமில பாக்டீரியாக்கள்)",
+          "சயனோபாக்டீரியாக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000005",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which organism completely lacks a cell wall, is the smallest known living cellular entity (0.3 µm), and can survive anaerobically while causing diseases in plants and animals?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mycoplasma (PPLO)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nostoc",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bacillus subtilis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Euglena",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Mycoplasmas are organisms that completely lack a cell wall.\nStep 2: They are the smallest living cells known (0.1 to 0.3 µm in size).\nStep 3: They are pleomorphic (joker of plant kingdom), can survive without oxygen, and are pathogenic in plants and animals.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செல் சுவரே இல்லாத, மிகச்சிறிய உயிருள்ள செல்லாகவும் (0.3 µm), காற்றில்லா சூழலில் வாழக்கூடியதாகவும், தாவரங்கள் மற்றும் விலங்குகளில் நோய்களை உண்டாக்குவதாகவும் உள்ள நுண்ணுயிரி எது?",
+        "optionTexts": [
+          "மைக்கோபிளாஸ்மா (Mycoplasma / PPLO)",
+          "நாஸ்டாக்",
+          "பேசில்லஸ் சப்டிலிஸ்",
+          "யூக்ளினா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000006",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Chrysophytes (Diatoms), the cell walls form two thin overlapping shells fitting together like a soap box, embedded with which indestructible substance that forms 'diatomaceous earth' over billions of years?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Silica (Silicon dioxide)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Calcium carbonate",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sporopollenin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chitin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In diatoms, the cell walls form two thin overlapping shells (epitheca and hypotheca) fitting like a soap box.\nStep 2: The walls are embedded with silica and are indestructible.\nStep 3: Over millions of years, accumulated cell wall deposits at the sea bed form 'diatomaceous earth', used in polishing and filtration of oils.\nStep 4: Diatoms are the chief producers in oceans.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டயட்டம்களின் செல் சுவர்கள் சோப்புப் பெட்டி போல ஒன்றோடொன்று பொருந்தும் இரண்டு தட்டுகளாக எந்த அழியாத தனிமத்தால் பதிக்கப்பட்டு பில்லியன் கணக்கான ஆண்டுகளில் 'டயட்டமேசியஸ் பூமி'யை உருவாக்குகின்றன?",
+        "optionTexts": [
+          "சிலிக்கா (Silica / சிலிக்கான் டை ஆக்சைடு)",
+          "கால்சியம் கார்பனேட்",
+          "ஸ்போரோபோலனின்",
+          "கைட்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000007",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which red dinoflagellate undergoes rapid population explosion multiplying so rapidly that it turns the sea water red ('red tides') and releases toxins that kill marine fishes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gonyaulax",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Euglena",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Noctiluca",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Trichodesmium erythraeum",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Dinoflagellates are mostly marine photosynthetic organisms with two flagella.\nStep 2: Red dinoflagellates like Gonyaulax undergo rapid population blooms that color the ocean surface red, causing 'red tides'.\nStep 3: Toxins (saxitoxin) released in large amounts can kill large numbers of marine fishes and invertebrates.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கடல் நீரில் மிக வேகமாகப் பெருகி 'சிவப்பு அலைகளை' (red tides) ஏற்படுத்தி, மீன்களைக் கொல்லும் நச்சுக்களை வெளியிடும் சிவப்பு டைனோஃப்ளாஜெல்லேட் எது?",
+        "optionTexts": [
+          "கோனியாக்ஸ் (Gonyaulax)",
+          "யூக்ளினா (Euglena)",
+          "நாக்டிலூகா (Noctiluca)",
+          "டிரைகோடெஸ்மியம் எரித்ரியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000008",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Euglenoids (e.g., Euglena), the cell wall is absent and replaced by a flexible, protein-rich outer covering layer called the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pellicle",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Theca",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Capsule",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Periplast",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Euglenoids are freshwater flagellated protists found in stagnant water.\nStep 2: Instead of a rigid cellulose cell wall, they have a protein-rich flexible layer called the Pellicle, which makes their body flexible.\nStep 3: They exhibit mixotrophic nutrition.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யூக்ளினாய்டுகளில் (எ.கா. யூக்ளினா) செல் சுவருக்குப் பதிலாக அமைந்துள்ள புரதம் நிறைந்த நெகிழ்வான வெளிப்புற அடுக்கு எது?",
+        "optionTexts": [
+          "பெல்லிக்கிள் (Pellicle)",
+          "தீக்கா (Theca)",
+          "கேப்சூல் (உறை)",
+          "பெரிபிளாஸ்ட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000009",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Under favorable conditions, saprophytic slime moulds form a multinucleate amoeboid creeping mass of protoplasm called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Plasmodium",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Protonema",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pseudopodium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mycelium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Slime moulds are saprophytic protists moving along decaying twigs and leaves engulfing organic material.\nStep 2: Under favorable conditions, they aggregate to form a multinucleate slimy mass called Plasmodium, which may grow several feet.\nStep 3: Under unfavorable conditions, the plasmodium differentiates into fruiting bodies bearing true-walled spores.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சாதகமான சூழலில் சாற்றுண்ணி வகை ஸ்லைம் மோல்டுகள் ஒன்றிணைந்து உருவாக்கும் பல உட்கரு கொண்ட நகரும் புரோட்டோபிளாசத் திரள் எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "பிளாஸ்மோடியம் (Plasmodium)",
+          "புரோட்டோனிமா",
+          "போலிகால்கள் (Pseudopodia)",
+          "மைசீலியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000010",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which ascomycete fungus is widely utilized as an experimental model organism in genetics and biochemical research, earning the title 'Drosophila of the plant kingdom'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neurospora crassa",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Penicillium notatum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Claviceps purpurea",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aspergillus niger",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Neurospora crassa (pink bread mould) is a member of Ascomycetes.\nStep 2: Because it grows rapidly on simple minimal media, has haploid genetics, and produces ordered meiotic tetrads (ascospores in asci), it is used extensively in biochemical and genetic research.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மரபியல் மற்றும் உயிர்வேதியியல் ஆய்வுகளில் பரவலாகப் பயன்படுத்தப்பட்டு 'தாவர உலகின் ட்ரோசோபிலா' என அழைக்கப்படும் அஸ்கோமைசீட் பூஞ்சை எது?",
+        "optionTexts": [
+          "நியூரோஸ்போரா கிராஸா (Neurospora crassa)",
+          "பெனிசிலியம் நோட்டேட்டம்",
+          "கிளாவிசெப்ஸ் பர்பூரியா",
+          "ஆஸ்பர்ஜிலஸ் நைஜர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000011",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Basidiomycetes (e.g., Agaricus, Puccinia), sexual reproduction does not involve sex organs; instead, basidiospores are produced exogenously on the basidium following:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Plasmogamy of two vegetative/somatic cells followed by karyogamy and meiosis in the basidium",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Endogenous production of spores within a closed ascus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Binary fission of haploid conidiophores",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gametic copulation between antheridia and oogonia",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In Basidiomycetes, sex organs are absent.\nStep 2: Plasmogamy occurs by the fusion of two vegetative/somatic cells of different strains to give rise to a dikaryotic mycelium.\nStep 3: Karyogamy and meiosis take place in the basidium to produce 4 haploid basidiospores exogenously.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெசிடியோமைசீட்ஸ் பூஞ்சைகளில் (அகாரிகஸ், பக்ஸினியா) இனப்பெருக்க உறுப்புகள் இல்லாத நிலையில், பெசிடியத்தின் மீது பெசிடியோஸ்போர்கள் வெளித்தோன்றலாக எவ்வாறு உருவாகின்றன?",
+        "optionTexts": [
+          "இரண்டு உடல செல்கள் இணைந்து பிளாஸ்மோகேமி நிகழ்ந்து, பின்னர் பெசிடியத்தினுள் உட்கரு இணைவு (Karyogamy) மற்றும் மியாசிஸ் பகுப்பு நிகழ்வதன் மூலம்",
+          "அஸ்கஸினுள் வித்துக்கள் உள்தோன்றலாக உருவாதல்",
+          "கொனிடியோஃபோர்களின் இருபிளவுறுதல் மூலம்",
+          "ஆன்தரிடியம் மற்றும் ஊகோனியம் இடையே கேமீட் இணைவு மூலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000012",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Who coined the phrase 'Contagium vivum fluidum' (infectious living fluid) in 1898 to describe the filtered extract of tobacco mosaic virus that could infect healthy tobacco plants?",
+    "options": [
+      {
+        "label": "A",
+        "text": "M.W. Beijerinck",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Dmitri Ivanowsky (1892)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "W.M. Stanley (1935)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T.O. Diener (1971)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Dmitri Ivanowsky (1892) recognized tobacco mosaic disease was caused by microbes smaller than bacteria.\nStep 2: M.W. Beijerinck (1898) demonstrated that the extract of infected tobacco plants could infect healthy plants and called the fluid 'Contagium vivum fluidum' (infectious living fluid).\nStep 3: W.M. Stanley (1935) crystallized viruses.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புகையிலை மொசைக் வைரஸ் வடிகட்டப்பட்ட திரவத்தை 'கண்டாஜியம் வைவம் ஃப்ளூயிடா' (தொற்றுத்தன்மையுள்ள உயிருள்ள திரவம்) என 1898-ல் அழைத்தவர் யார்?",
+        "optionTexts": [
+          "M.W. பெய்ஜரிங்க் (M.W. Beijerinck)",
+          "டிமிட்ரி இவானோவ்ஸ்கி (1892)",
+          "W.M. ஸ்டான்லி (1935)",
+          "T.O. டைனர் (1971)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000013",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Viroids, discovered by T.O. Diener in 1971 as the causative agent of Potato Spindle Tuber disease, differ from viruses in being:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Free infectious single-stranded RNA of low molecular weight, completely devoid of a protein capsid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Infectious double-stranded DNA surrounded by a glycoprotein envelope",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Abnormally folded infectious protein prions without nucleic acids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aseptate fungal spores without cell walls",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In 1971, T.O. Diener discovered a new infectious agent smaller than viruses that caused potato spindle tuber disease.\nStep 2: It was found to be a free RNA molecule lacking the protein coat (capsid) found in viruses.\nStep 3: The RNA of the viroid was of low molecular weight.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1971 இல் T.O. டைனரால் கண்டறியப்பட்ட உருளைக்கிழங்கு கதிர் வடிவ கிழங்கு நோயை உண்டாக்கும் வைராய்டுகள் (Viroids) வைரஸ்களிலிருந்து எவ்வாறு வேறுபடுகின்றன?",
+        "optionTexts": [
+          "புரத உறை (capsid) ஏதுமின்றி, குறைந்த மூலக்கூறு எடை கொண்ட தனித்த ஒற்றை இழை தொற்று RNA மட்டுமே கொண்டுள்ளன",
+          "கிளைகோபுரத உறையால் சூழப்பட்ட இரட்டை இழை DNA கொண்டுள்ளன",
+          "நியூக்ளிக் அமிலமற்ற அசாதாரண மடிந்த புரதங்களை (Prions) கொண்டுள்ளன",
+          "செல் சுவர் இல்லாத பூஞ்சை ஸ்போர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000014",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Prions are infectious agents responsible for Bovine Spongiform Encephalopathy (BSE / Mad Cow Disease) in cattle and Cr-Jacob disease (CJD) in humans. What is their chemical nature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Abnormally folded protein molecules without any nucleic acid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Single-stranded naked DNA fragments",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Circular double-stranded RNA plasmids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lipoprotein encapsulated retroviruses",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Prions are neurological infectious agents composed entirely of abnormally folded proteins.\nStep 2: They transmit misfolding to normal cellular prion proteins without possessing any DNA or RNA genome.\nStep 3: They cause BSE (Mad cow disease) in cattle and CJD in humans.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாடுகளில் பைத்திய மாட்டு நோய் (Mad cow disease) மற்றும் மனிதர்களில் CJD குறைபாட்டை உண்டாக்கும் பிரியான்களின் (Prions) வேதியியல் தன்மை என்ன?",
+        "optionTexts": [
+          "எந்தவொரு நியூக்ளிக் அமிலமும் இல்லாத அசாதாரணமாக மடிந்த தொற்று புரத மூலக்கூறுகள்",
+          "உறையற்ற ஒற்றை இழை DNA துண்டுகள்",
+          "வட்ட வடிவ இரட்டை இழை RNA பிளாஸ்மிடுகள்",
+          "லிப்போபுரத உறை கொண்ட ரெட்ரோவைரஸ்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000015",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Lichens are mutually symbiotic composite organisms of an alga and a fungus. Why are lichens universally recognized as excellent bio-indicators of atmospheric pollution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They are extremely sensitive to air pollution and do not grow in areas polluted with sulfur dioxide (SO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "They grow exclusively in sewage-contaminated water",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "They absorb carbon monoxide and release methane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Their fungal phycobiont mutates rapidly in heavy metal soil",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Lichens consist of a photosynthetic phycobiont (algae) and a heterotrophic mycobiont (fungi).\nStep 2: Lichens are very sensitive to atmospheric pollutants, especially Sulfur Dioxide (SO2).\nStep 3: They do not grow in polluted areas (e.g., industrial cities) and serve as excellent natural air pollution bio-indicators.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாசி மற்றும் பூஞ்சையின் கூட்டுயிரி அமைப்பான லைக்கன்கள் (Lichens) சுற்றுச்சூழல் மாசுபாட்டின் சிறந்த உயிரி-சுட்டிக்காட்டிகளாகக் கருதப்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அவை காற்று மாசுபாட்டிற்கு அதிக உணர்திறன் கொண்டவை; சல்பர் டை ஆக்சைடு (SO2) காற்று மாசுபாடு உள்ள பகுதிகளில் அவை வளர்வதில்லை",
+          "அவை கழிவுநீர் கலந்த நீரில் மட்டுமே வளரும்",
+          "அவை கார்பன் மோனாக்சைடை உறிஞ்சி மீத்தேனை வெளியிடுகின்றன",
+          "கன உலோக மண்ணில் அவற்றின் பாசிப் பகுதி விரைவாக சடுதிமாற்றம் அடைகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000016",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Bacteriophages (viruses that infect bacteria) generally possess which type of genetic material?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Double-stranded DNA (dsDNA)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Single-stranded RNA (ssRNA)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Single-stranded DNA (ssDNA)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both DNA and RNA together",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In general, plant viruses have single-stranded RNA (ssRNA).\nStep 2: Animal viruses have either single/double-stranded RNA or double-stranded DNA.\nStep 3: Bacterial viruses (Bacteriophages) usually possess double-stranded DNA (dsDNA).\nStep 4: No virus contains both RNA and DNA.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாக்டீரியாக்களைத் தாக்கி அழிக்கும் பாக்டீரியோபேஜ் வைரஸ்கள் பொதுவாக எவ்வகை மரபணுப் பொருளைப் பெற்றுள்ளன?",
+        "optionTexts": [
+          "இரட்டை இழை DNA (dsDNA)",
+          "ஒற்றை இழை RNA (ssRNA)",
+          "ஒற்றை இழை DNA (ssDNA)",
+          "DNA மற்றும் RNA ஆகிய இரண்டும் சேர்ந்து"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000017",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which plant disease is caused by the bacterium Xanthomonas axonopodis (Xanthomonas citri)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Citrus canker",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Late blight of potato (caused by Phytophthora infestans)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Black rust of wheat (caused by Puccinia graminis)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tobacco mosaic disease",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Xanthomonas axonopodis pv. citri is a rod-shaped Gram-negative bacterium.\nStep 2: It causes Citrus canker disease in lemons, oranges, and limes, producing raised necrotic lesions on leaves, stems, and fruits.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சாந்தோமோனாஸ் ஆக்சோனோபோடிஸ் (Xanthomonas citri) பாக்டீரியாவால் தாவரங்களில் உண்டாக்கப்படும் நோய் எது?",
+        "optionTexts": [
+          "சிட்ரஸ் கேன்கர் (Citrus canker - எலுமிச்சை புண் நோய்)",
+          "உருளைக்கிழங்கு பின் பருவ கருகல் நோய்",
+          "கோதுமையின் கருந்துரு நோய்",
+          "புகையிலை மொசைக் நோய்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000018",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Phycomycetes (e.g., Mucor, Rhizopus, Albugo), what are the structural characteristics of the fungal hyphae and mycelium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aseptate and Coenocytic (multinucleate without cross-walls)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Septate and Uninucleate",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Septate with clamp connections",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Unicellular with pseudohyphae",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Members of Phycomycetes are lower fungi found in aquatic habitats and decaying wood in moist/damp places.\nStep 2: The mycelium is aseptate and coenocytic (continuous tubes filled with multinucleate cytoplasm without septa).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபைகோமைசீட்ஸ் பூஞ்சைகளில் (மியூகார், ரைசோபஸ், அல்புகோ) பூஞ்சை இழைகள் மற்றும் மைசீலியத்தின் கட்டமைப்புப் பண்பு என்ன?",
+        "optionTexts": [
+          "தடுப்புச்சுவரற்ற பல உட்கரு கொண்ட சீனோசைட்டிக் அமைப்பு (Aseptate and Coenocytic)",
+          "தடுப்புச்சுவர் கொண்ட ஒற்றை உட்கரு அமைப்பு",
+          "கிளாம்ப் இணைப்புகள் கொண்ட தடுப்புச்சுவர் அமைப்பு",
+          "போலி பூஞ்சை இழை கொண்ட ஒருசெல் அமைப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000019",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which protozoan group uses pseudopodia for capturing prey, lives in freshwater, seawater, or moist soil, and includes parasites like Entamoeba histolytica?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Amoeboid protozoans",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Flagellated protozoans (e.g., Trypanosoma)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ciliated protozoans (e.g., Paramecium)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sporozoans (e.g., Plasmodium)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Amoeboid protozoans move and capture prey by putting out pseudopodia (false feet) as in Amoeba.\nStep 2: Marine forms have silica shells on their surface.\nStep 3: Some like Entamoeba are human internal parasites causing amoebic dysentery.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போலிகால்கள் (pseudopodia) மூலம் உணவைப் பிடித்து வாழும், எண்டமீபா ஹிஸ்டோலிடிகா போன்ற ஒட்டுண்ணிகளை உள்ளடக்கிய புரோட்டோசோவா பிரிவு எது?",
+        "optionTexts": [
+          "அமீபாய்டு புரோட்டோசோவாக்கள் (Amoeboid protozoans)",
+          "கசையிழை புரோட்டோசோவாக்கள் (டிரிபனோசோமா)",
+          "குறுயிழை புரோட்டோசோவாக்கள் (பாரமீசியம்)",
+          "ஸ்போரோசோவாக்கள் (பிளாஸ்மோடியம்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000020",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Ascomycetes (e.g., Penicillium, Aspergillus), how are asexual spores (conidia) and sexual spores (ascospores) produced respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conidia are produced exogenously on conidiophores, and ascospores are produced endogenously inside sac-like asci",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Conidia are produced endogenously, and ascospores are produced exogenously",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both conidia and ascospores are produced endogenously",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both conidia and ascospores are produced exogenously",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In Ascomycetes, asexual reproduction is by conidia produced exogenously on the tips of special hyphae called conidiophores.\nStep 2: Sexual spores are called ascospores, produced endogenously in sac-like asci (singular ascus).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அஸ்கோமைசீட்ஸ் பூஞ்சைகளில் (பெனிசிலியம், ஆஸ்பர்ஜிலஸ்) பாலிலா வித்துக்களான கொனிடியா மற்றும் பாலின வித்துக்களான அஸ்கோஸ்போர்கள் முறையே எவ்வாறு உற்பத்தி செய்யப்படுகின்றன?",
+        "optionTexts": [
+          "கொனிடியா வித்துக்கள் கொனிடியோஃபோர்களின் நுனியில் வெளித்தோன்றலாகவும், அஸ்கோஸ்போர்கள் பை போன்ற அஸ்கஸினுள் உள்தோன்றலாகவும் உருவாகின்றன",
+          "கொனிடியா உள்தோன்றலாகவும், அஸ்கோஸ்போர்கள் வெளித்தோன்றலாகவும் உருவாகின்றன",
+          "கொனிடியா மற்றும் அஸ்கோஸ்போர்கள் இரண்டும் உள்தோன்றலாக உருவாகின்றன",
+          "கொனிடியா மற்றும் அஸ்கோஸ்போர்கள் இரண்டும் வெளித்தோன்றலாக உருவாகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000021",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which scientist demonstrated in 1935 that viruses could be crystallized and that the crystals consist largely of proteins?",
+    "options": [
+      {
+        "label": "A",
+        "text": "W.M. Stanley",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "D.J. Ivanowsky",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M.W. Beijerinck",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Robert Koch",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: W.M. Stanley (1935) showed that viruses could be crystallized.\nStep 2: The viral crystals consist largely of structural coat proteins.\nStep 3: Outside the host, viruses are inert particles.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1935 ஆம் ஆண்டு வைரஸ்களை படிகமாக்க முடியும் என்றும், அந்த படிகங்கள் பெரும்பாலும் புரதங்களால் ஆனவை என்றும் நிரூபித்தவர் யார்?",
+        "optionTexts": [
+          "W.M. ஸ்டான்லி (W.M. Stanley)",
+          "D.J. இவானோவ்ஸ்கி",
+          "M.W. பெய்ஜரிங்க்",
+          "ராபர்ட் கோச்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000022",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which edible members of Ascomycetes are considered prized gastronomic delicacies worldwide?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Morels (Morchella) and Truffles",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Toadstools and Puffballs",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bracket fungi and Smuts",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rust fungi and Bread mould",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Many members of Ascomycetes such as morels (Morchella) and truffles are edible.\nStep 2: They are considered expensive culinary delicacies.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அஸ்கோமைசீட்ஸ் வகுப்பில் உணவாகப் பயன்படும் உலகப் புகழ்பெற்ற உண்ணக்கூடிய சுவையான பூஞ்சைகள் எவை?",
+        "optionTexts": [
+          "மோரல்கள் (Morels) மற்றும் ட்ரஃபிள்கள் (Truffles)",
+          "நாய்க்குடைகள் மற்றும் பஃப்பந்துகள்",
+          "மர அடைப்பு பூஞ்சைகள் மற்றும் கரிப்பூட்டை பூஞ்சைகள்",
+          "துருப் பூஞ்சைகள் மற்றும் ரொட்டி பூஞ்சை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000023",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which chemosynthetic autotrophic bacteria oxidize inorganic ammonia into nitrite during the biological nitrogen cycle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrosomonas and Nitrococcus",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nitrobacter (oxidizes nitrite to nitrate)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pseudomonas and Thiobacillus (denitrifying bacteria)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rhizobium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nitrification is a two-step oxidative process:\n- Step 1: 2 NH3 + 3 O2 → 2 NO2- + 2 H+ + 2 H2O (catalyzed by Nitrosomonas / Nitrococcus).\n- Step 2: 2 NO2- + O2 → 2 NO3- (catalyzed by Nitrobacter).\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜன் சுழற்சியில் அம்மோனியாவை நைட்ரைட்டாக ஆக்சிஜனேற்றம் செய்யும் வேதி தற்சார்பு பாக்டீரியாக்கள் யாவை?",
+        "optionTexts": [
+          "நைட்ரோசோமோனாஸ் மற்றும் நைட்ரோகாக்கஸ்",
+          "நைட்ரோபாக்டர் (நைட்ரைட்டை நைட்ரேட்டாக மாற்றுகிறது)",
+          "சூடோமோனாஸ் மற்றும் தயோபாக்டீரியா (நைட்ரஜன் வெளியேற்ற பாக்டீரியாக்கள்)",
+          "ரைசோபியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000024",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What type of flagellation is found in dinoflagellates?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two flagella: one lies longitudinally and the other transversely in a furrow between the wall plates",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A single anterior flagellum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Numerous cilia covering the entire surface in longitudinal rows",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tuf of flagella distributed around the posterior pole",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Most dinoflagellates possess two flagella.\nStep 2: One flagellum lies longitudinally while the other lies transversely in a groove/furrow between the stiff cellulosic wall plates.\nStep 3: This arrangement causes a characteristic spinning locomotion (whirling whips).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டைனோஃப்ளாஜெல்லேட்டுகளில் காணப்படும் கசையிழைகளின் கட்டமைப்பு எவ்வாறு அமைந்துள்ளது?",
+        "optionTexts": [
+          "இரண்டு கசையிழைகள்: ஒன்று நீள்வாக்கிலும் மற்றொன்று செல்சுவர் தட்டுகளுக்கு இடையேயான பள்ளத்தில் குறுக்காகவும் அமைந்துள்ளது",
+          "ஒற்றை முன்புற கசையிழை",
+          "உடலின் மேற்பரப்பு முழுவதும் நீள்வரிசையில் அமைந்த பல குறுயிழைகள்",
+          "பின்புறத்தில் மட்டும் கொத்தாக அமைந்த கசையிழைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000025",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the fungal cell wall, what is the principal structural polysaccharide polymer present?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chitin (a polymer of N-acetylglucosamine) and glucans",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Peptidoglycan (Murein)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pure Cellulose and Pectin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Silica and Lignin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Unlike plant cell walls made of cellulose, the cell walls of fungi are composed of Chitin and polysaccharides (glucans).\nStep 2: Chitin is a linear polymer of N-acetylglucosamine (NAG).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூஞ்சைகளின் செல் சுவரில் காணப்படும் முதன்மையான கட்டமைப்பு பாலிசாக்கரைடு மூலக்கூறு எது?",
+        "optionTexts": [
+          "கைட்டின் (N-அசிட்டைல்குளூக்கோசமைன் பாலிமர்) மற்றும் குளூக்கான்கள்",
+          "பெப்டிடோகிளைக்கான் (மியூரின்)",
+          "தூய செல்லுலோஸ் மற்றும் பெக்டின்",
+          "சிலிக்கா மற்றும் லிக்னின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000026",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following parasitic fungi is responsible for causing the 'Black Rust of Wheat' disease?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Puccinia graminis",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ustilago maydis (causes smut)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Albugo candida (causes white rust of mustard)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Alternaria solani",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Puccinia graminis is a heteroecious macrocyclic rust fungus belonging to Basidiomycetes.\nStep 2: It causes the devastating Black Rust / Stem Rust disease of wheat crops.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோதுமைப் பயிரில் 'கோதுமை கருந்துரு நோய்' (Black Rust of Wheat) உண்டாக்குவதற்கு காரணமான ஒட்டுண்ணிப் பூஞ்சை எது?",
+        "optionTexts": [
+          "பக்சீனியா கிராமினிஸ் (Puccinia graminis)",
+          "உஸ்டிலாகோ (கரிப்பூட்டை நோய்)",
+          "அல்புகோ கேண்டிடா (கடுகின் வெண்துரு நோய்)",
+          "ஆல்டர்நேரியா சொலானி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000027",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In ciliated protozoans like Paramecium caudatum, which cavity opens to the outside of the cell surface and is swept with food by coordinated movement of cilia rows?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gullet (Cytopharynx)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Contractile vacuole",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pseudopodium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pellicle",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ciliated protozoans (e.g., Paramecium) are aquatic organisms possessing thousands of cilia.\nStep 2: They have a cell mouth/gullet (cytopharynx) that opens to the outside.\nStep 3: Coordinated beating of rows of cilia drives water laden with food particles directly into the gullet.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாரமீசியம் போன்ற குறுயிழை புரோட்டோசோவாக்களில், குறுயிழைகளின் ஒருங்கிணைந்த அசைவால் உணவு உட்செலுத்தப்படும் செல் தொண்டை பகுதி எது?",
+        "optionTexts": [
+          "சைட்டோபாரிங்ஸ் / செல் வாய் (Gullet)",
+          "சுருங்கு வாக்குவோல்",
+          "போலிகால்",
+          "பெல்லிக்கிள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000028",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which unicellular fungus is widely used in commercial brewing of alcoholic beverages and baking of bread?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Saccharomyces cerevisiae (Brewer's / Baker's Yeast)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Penicillium chrysogenum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Aspergillus niger",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Agaricus bisporus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: While most fungi are filamentous, yeasts are unicellular Ascomycetes.\nStep 2: Saccharomyces cerevisiae is known as Brewer's yeast for alcoholic fermentation and Baker's yeast for leavening bread dough by producing CO2.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ரொட்டி தயாரிப்பிலும் மதுபான நொதித்தலிலும் வணிக ரீதியாகப் பரவலாகப் பயன்படுத்தப்படும் ஒருசெல் பூஞ்சை எது?",
+        "optionTexts": [
+          "சாக்கரோமைசீஸ் செரிவிசியே (ஈஸ்ட் / Baker's Yeast)",
+          "பெனிசிலியம் கிரைசோஜீனம்",
+          "ஆஸ்பர்ஜிலஸ் நைஜர்",
+          "அகாரிகஸ் பைஸ்போரஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000029",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which parasitic flagellated protozoan is transmitted by the bite of the Tsetse fly (Glossina) and causes African Sleeping Sickness in humans?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Trypanosoma gambiense",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Leishmania donovani (causes Kala-azar)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Entamoeba histolytica",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Plasmodium vivax",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Flagellated protozoans possess flagella and are either free-living or parasitic.\nStep 2: Trypanosoma is a blood parasite transmitted by the tsetse fly causing African sleeping sickness (trypanosomiasis).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செட்சே ஈ (Tsetse fly) கடிப்பதன் மூலம் பரவி, மனிதர்களில் ஆப்பிரிக்க தூக்க நோயை (Sleeping Sickness) உண்டாக்கும் கசையிழை புரோட்டோசோவா எது?",
+        "optionTexts": [
+          "டிரிபனோசோமா கேம்பியன்ஸ் (Trypanosoma)",
+          "லீஷ்மேனியா டோனோவானி (காலா-அசார்)",
+          "எண்டமீபா ஹிஸ்டோலிடிகா",
+          "பிளாஸ்மோடியம் வைவாக்ஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-BOT-BOT07-000030",
+    "examCode": "NEET",
+    "subjectCode": "BOT",
+    "nodeTagCode": "bot_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Carl Woese's Three-Domain classification system based on 16S rRNA gene sequences, how is the Kingdom Monera divided?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Into two separate domains: Domain Archaea and Domain Bacteria, while all eukaryotes are placed in Domain Eukarya",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Into Monera, Protista, and Fungi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Into Autotrophs, Heterotrophs, and Saprophytes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Into Viruses, Viroids, and Prions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Carl Woese proposed the Three-Domain system based on 16S rRNA sequence divergence.\nStep 2: The Monera kingdom is split into two distinct domains: Archaea and Bacteria.\nStep 3: All eukaryotic kingdoms (Protista, Fungi, Plantae, Animalia) are unified into the third domain: Eukarya (yielding a 6-kingdom system).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்ல் வோஸின் 16S rRNA அடிப்படையிலான மூன்று பேரரசு (Three-Domain) வகைப்பாட்டில் மொனிரா உலகம் எவ்வாறு பிரிக்கப்பட்டுள்ளது?",
+        "optionTexts": [
+          "இரண்டு தனித்த பேரரசுகளாக: ஆர்க்கியா மற்றும் பாக்டீரியா என பிரிக்கப்பட்டு, அனைத்து யூகேரியோட்டுகளும் யூகேரியா பேரரசில் வைக்கப்பட்டுள்ளன",
+          "மொனிரா, புரோட்டிஸ்டா மற்றும் பூஞ்சை என பிரிக்கப்பட்டுள்ளது",
+          "தற்சார்பு, பிறசார்பு மற்றும் சாற்றுண்ணி என பிரிக்கப்பட்டுள்ளது",
+          "வைரஸ்கள், வைராய்டுகள் மற்றும் பிரியான்கள் என பிரிக்கப்பட்டுள்ளது"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-CHE-CHE08-000001",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the total number of atoms present in 4.4 g of carbon dioxide (CO2) gas? (Molar mass of CO2 = 44 g/mol, N_A = 6.022 * 10^23 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.806 * 10^23 atoms",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.022 * 10^22 atoms",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.022 * 10^23 atoms",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.204 * 10^23 atoms",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Calculate moles of CO2: n = mass / molar mass = 4.4 / 44 = 0.1 mol.\nStep 2: Number of CO2 molecules = n * N_A = 0.1 * 6.022 * 10^23 = 6.022 * 10^22 molecules.\nStep 3: Each CO2 molecule contains 3 atoms (1 C atom + 2 O atoms).\nStep 4: Total number of atoms = 3 * 6.022 * 10^22 = 1.8066 * 10^23 atoms (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4.4 g கார்பன் டை ஆக்சைடு (CO2) வாயுவில் உள்ள மொத்த அணுக்களின் எண்ணிக்கை என்ன? (CO2 மோலார் நிறை = 44 g/mol, N_A = 6.022 * 10^23)",
+        "optionTexts": [
+          "1.806 * 10^23 அணுக்கள்",
+          "6.022 * 10^22 அணுக்கள்",
+          "6.022 * 10^23 அணுக்கள்",
+          "1.204 * 10^23 அணுக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000002",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The law of multiple proportions is illustrated by which of the following pairs of compounds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CO and CO2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NaCl and NaBr",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2O and D2O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH4 and CCl4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The law of multiple proportions states that when two elements combine to form more than one compound, the masses of one element that combine with a fixed mass of the other are in a ratio of small whole numbers.\nStep 2: In CO, 12 g of carbon combines with 16 g of oxygen.\nStep 3: In CO2, 12 g of carbon combines with 32 g of oxygen. Ratio of oxygen masses = 16:32 = 1:2 (a simple whole number ratio).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெருக்கல் விகித விதியை (Law of multiple proportions) விளக்கும் சேர்மங்களின் இணை எது?",
+        "optionTexts": [
+          "CO மற்றும் CO2",
+          "NaCl மற்றும் NaBr",
+          "H2O மற்றும் D2O",
+          "CH4 மற்றும் CCl4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000003",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An organic compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. If its vapor density is 30, its molecular formula is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "C2H4O2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH2O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C3H6O3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C2H6O",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Relative moles of elements: C = 40.0/12 = 3.33; H = 6.7/1 = 6.70; O = 53.3/16 = 3.33.\nStep 2: Simplest atomic ratio: C : H : O = 3.33/3.33 : 6.70/3.33 : 3.33/3.33 = 1 : 2 : 1. Empirical formula = CH2O.\nStep 3: Empirical formula mass = 12 + 2 + 16 = 30 g/mol.\nStep 4: Molar mass = 2 * Vapor density = 2 * 30 = 60 g/mol. n = 60 / 30 = 2. Molecular formula = (CH2O)2 = C2H4O2 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கரிமச் சேர்மம் நிறையின் அடிப்படையில் 40.0% கார்பன், 6.7% ஹைட்ரஜன், மற்றும் 53.3% ஆக்ஸிஜனைக் கொண்டுள்ளது. அதன் ஆவி அடர்த்தி 30 எனில், அதன் மூலக்கூறு வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "C2H4O2",
+          "CH2O",
+          "C3H6O3",
+          "C2H6O"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000004",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 20.0 g of H2 reacts with 32.0 g of O2 to form water: 2 H2(g) + O2(g) -> 2 H2O(l), the limiting reagent and the maximum mass of water produced are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2 is the limiting reagent, and 36.0 g of water is formed",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2 is the limiting reagent, and 180.0 g of water is formed",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "O2 is the limiting reagent, and 18.0 g of water is formed",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Neither is limiting, and 52.0 g of water is formed",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moles of H2 = 20.0 / 2.0 = 10.0 mol. Moles of O2 = 32.0 / 32.0 = 1.0 mol.\nStep 2: According to the stoichiometry 2 H2 + O2 -> 2 H2O, 1.0 mol of O2 requires only 2.0 mol of H2.\nStep 3: O2 is completely consumed first and is the limiting reagent (H2 is in large excess: 10 - 2 = 8 mol left).\nStep 4: 1.0 mol of O2 produces 2.0 mol of H2O = 2.0 * 18.0 g = 36.0 g of water (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20.0 g H2 வாயு 32.0 g O2 வாயுவுடன் வினைபுரிந்து நீரைத் தரும் வினையில்: 2 H2 + O2 -> 2 H2O, வினைக்கட்டுப்பாட்டுக் காரணி (limiting reagent) மற்றும் உருவாகும் நீரின் பெரும நிறை என்ன?",
+        "optionTexts": [
+          "O2 வினைக்கட்டுப்பாட்டுக் காரணி, மற்றும் 36.0 g நீர் உருவாகும்",
+          "H2 வினைக்கட்டுப்பாட்டுக் காரணி, மற்றும் 180.0 g நீர் உருவாகும்",
+          "O2 வினைக்கட்டுப்பாட்டுக் காரணி, மற்றும் 18.0 g நீர் உருவாகும்",
+          "இரண்டுமே அல்ல, மற்றும் 52.0 g நீர் உருவாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000005",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following concentration terms does NOT change with temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Molality and Mole fraction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Molarity and Normality",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Molarity and Formality",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mass by volume percentage (w/v)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Liquid volume expands or contracts with changes in temperature, making volume-dependent units (molarity, normality, w/v%) temperature-dependent.\nStep 2: Molality (moles of solute / kg of solvent) and mole fraction (ratio of moles) depend strictly on mass.\nStep 3: Mass is independent of temperature.\nStep 4: Therefore, molality and mole fraction do not change with temperature (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் செறிவு அலகுகளில் வெப்பநிலையைப் பொருத்து மாறாத அலகு எது?",
+        "optionTexts": [
+          "மோலாலிட்டி மற்றும் மோல் பின்னம்",
+          "மோலாரிட்டி மற்றும் நார்மாலிட்டி",
+          "மோலாரிட்டி மற்றும் பார்மாலிட்டி",
+          "நிறை/கனஅளவு சதவீதம் (w/v)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000006",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the molarity of pure liquid water at 277 K (density = 1.00 g/mL)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55.55 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "18.00 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.00 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100.0 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Consider 1 liter (1000 mL) of pure water.\nStep 2: Mass of 1000 mL water = Volume * density = 1000 mL * 1.00 g/mL = 1000 g.\nStep 3: Moles of water in 1000 g = mass / molar mass = 1000 / 18.015 = 55.51 mol approx 55.55 mol.\nStep 4: Molarity = moles / volume in L = 55.55 mol / 1 L = 55.55 M (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "277 K வெப்பநிலையில் தூய நீரின் (அடர்த்தி = 1.00 g/mL) மோலாரிட்டி மதிப்பு என்ன?",
+        "optionTexts": [
+          "55.55 M",
+          "18.00 M",
+          "1.00 M",
+          "100.0 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000007",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If 250 mL of 0.5 M HCl is mixed with 750 mL of 0.1 M HCl, what is the final molarity of the resulting mixture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.20 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.30 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.15 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.25 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total millimoles of HCl = M1 * V1 + M2 * V2.\nStep 2: mmol = (0.5 * 250) + (0.1 * 750) = 125 + 75 = 200 mmol.\nStep 3: Total volume of mixture V_total = 250 + 750 = 1000 mL.\nStep 4: Final molarity M3 = total mmol / total mL = 200 / 1000 = 0.20 M (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "250 mL 0.5 M HCl கரைசலுடன் 750 mL 0.1 M HCl கரைசலைக் கலக்கும் போது கிடைக்கும் இறுதி கரைசலின் மோலாரிட்டி என்ன?",
+        "optionTexts": [
+          "0.20 M",
+          "0.30 M",
+          "0.15 M",
+          "0.25 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000008",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Boyle's law, for a fixed mass of gas at constant temperature, the graphical plot of Pressure (P) versus Volume (V) gives a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rectangular hyperbola (Isotherm)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Straight line passing through the origin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Parabola",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Horizontal straight line",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Boyle's law states that P is inversely proportional to V at constant temperature (P * V = constant).\nStep 2: The equation x * y = constant is the mathematical equation of a rectangular hyperbola.\nStep 3: Each curve on a P versus V plot at a given constant temperature is called an isotherm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாயில் விதியின்படி, மாறா வெப்பநிலையில் குறிப்பிட்ட நிறையுள்ள வாயுவின் அழுத்தம் (P) மற்றும் கனஅளவு (V) இடையேயான வரைபடம் எதனைக் குறிக்கிறது?",
+        "optionTexts": [
+          "செவ்வக அதிபரவளையம் (Isotherm)",
+          "ஆதிப்புள்ளி வழியே செல்லும் நேர்கோடு",
+          "பரவளையம்",
+          "கிடைமட்ட நேர்கோடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000009",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Charles's law, the absolute zero of temperature (-273.15 °C) is the theoretical temperature at which:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The volume of an ideal gas becomes zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "All liquids freeze into solids",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "The pressure of a gas becomes infinite",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Water boils at standard pressure",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Charles's law states V_t = V_0 * (1 + t / 273.15).\nStep 2: When temperature t = -273.15 °C: V_t = V_0 * (1 - 273.15 / 273.15) = V_0 * 0 = 0.\nStep 3: Extrapolation of isobars on the volume-temperature axis shows that all ideal gases theoretically achieve zero volume at -273.15 °C (0 Kelvin).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சார்லஸ் விதியின்படி, தனிச்சுழி வெப்பநிலை (-273.15 °C) என்பது எந்தக் கோட்பாட்டு வெப்பநிலையைக் குறிக்கிறது?",
+        "optionTexts": [
+          "ஒரு நல்லியல்பு வாயுவின் கனஅளவு பூஜ்ஜியமாகும் நிலை",
+          "அனைத்து திரவங்களும் திடப்பொருளாக மாறும் நிலை",
+          "வாயுவின் அழுத்தம் முடிவிலியாகும் நிலை",
+          "நிலையான அழுத்தத்தில் நீர் கொதிக்கும் நிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000010",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The density of an ideal gas at 27 °C and 2.0 atm pressure is 2.60 g/L. What is the molar mass of the gas? (R = 0.0821 L atm K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "32.0 g/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "64.0 g/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "28.0 g/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "44.0 g/mol",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula relating gas density (d) and molar mass (M): d = (P * M) / (R * T) => M = (d * R * T) / P.\nStep 2: Given: d = 2.60 g/L, P = 2.0 atm, T = 27 + 273.15 = 300.15 K (approx 300 K), R = 0.0821 L atm K^-1 mol^-1.\nStep 3: M = (2.60 * 0.0821 * 300) / 2.0 = (64.038) / 2.0 = 32.02 g/mol.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "27 °C மற்றும் 2.0 வளிமண்டல அழுத்தத்தில் ஒரு நல்லியல்பு வாயுவின் அடர்த்தி 2.60 g/L எனில், அதன் மோலார் நிறை என்ன? (R = 0.0821 L atm K^-1 mol^-1)",
+        "optionTexts": [
+          "32.0 g/mol",
+          "64.0 g/mol",
+          "28.0 g/mol",
+          "44.0 g/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000011",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A gaseous mixture contains 8.0 g of O2 and 14.0 g of N2 in a closed vessel at total pressure P. What is the partial pressure of oxygen (p_O2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "P / 3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P / 2",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "2P / 3",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "P / 4",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Calculate moles: n_O2 = 8.0 / 32 = 0.25 mol; n_N2 = 14.0 / 28 = 0.50 mol.\nStep 2: Total moles n_total = 0.25 + 0.50 = 0.75 mol.\nStep 3: Mole fraction of O2: x_O2 = 0.25 / 0.75 = 1 / 3.\nStep 4: By Dalton's law: Partial pressure p_O2 = x_O2 * P_total = (1/3) * P = P / 3 (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மூடிய கலனில் 8.0 g O2 மற்றும் 14.0 g N2 கொண்ட வாயுக்கலவையின் மொத்த அழுத்தம் P எனில், ஆக்ஸிஜனின் பகுதி அழுத்தம் (p_O2) என்ன?",
+        "optionTexts": [
+          "P / 3",
+          "P / 2",
+          "2P / 3",
+          "P / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000012",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Under identical conditions of temperature and pressure, 50 mL of hydrogen gas effuses through a pinhole in 20 seconds. How long will it take for 50 mL of oxygen gas to effuse through the same pinhole?",
+    "options": [
+      {
+        "label": "A",
+        "text": "80 seconds",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "40 seconds",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "320 seconds",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "10 seconds",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Graham's Law of Effusion for identical volumes: t2 / t1 = sqrt(M2 / M1).\nStep 2: Given t1 (for H2) = 20 s, M1 = 2.0 g/mol, M2 (for O2) = 32.0 g/mol.\nStep 3: t(O2) / 20 = sqrt(32 / 2) = sqrt(16) = 4.\nStep 4: t(O2) = 20 * 4 = 80 seconds. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே வெப்பநிலை மற்றும் அழுத்தத்தில், 50 mL ஹைட்ரஜன் வாயு ஒரு நுண்ணிய துளை வழியே விரவ 20 நொடிகள் ஆகிறது எனில், அதே அளவு (50 mL) ஆக்ஸிஜன் வாயு விரவ எவ்வளவு நேரம் ஆகும்?",
+        "optionTexts": [
+          "80 நொடிகள்",
+          "40 நொடிகள்",
+          "320 நொடிகள்",
+          "10 நொடிகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000013",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the ratio of most probable speed (u_mp), average speed (u_avg), and root mean square speed (u_rms) for an ideal gas at a given temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 1.128 : 1.224",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.224 : 1.128 : 1",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "1 : 1 : 1",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "1.128 : 1 : 1.224",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for molecular speeds:\n- u_mp = sqrt(2RT/M) = sqrt(2) * sqrt(RT/M) = 1.414\n- u_avg = sqrt(8RT/pi M) = sqrt(8/pi) * sqrt(RT/M) = 1.596\n- u_rms = sqrt(3RT/M) = sqrt(3) * sqrt(RT/M) = 1.732\nStep 2: Ratio u_mp : u_avg : u_rms = sqrt(2) : sqrt(8/pi) : sqrt(3) = 1 : 1.128 : 1.224.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறிப்பிட்ட வெப்பநிலையில் நல்லியல்பு வாயுவின் அதிகபட்ச சாத்தியமுள்ள வேகம் (u_mp), சராசரி வேகம் (u_avg) மற்றும் சராசரி இருமடி மூல வேகம் (u_rms) ஆகியவற்றின் விகிதம் என்ன?",
+        "optionTexts": [
+          "1 : 1.128 : 1.224",
+          "1.224 : 1.128 : 1",
+          "1 : 1 : 1",
+          "1.128 : 1 : 1.224"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000014",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For an ideal gas, the total translational kinetic energy of 2 moles of gas at temperature T is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 RT",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3/2 RT",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "2 RT",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "5/2 RT",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to kinetic theory of gases, the average kinetic energy per mole of an ideal gas is E_k = 3/2 RT.\nStep 2: For n moles of gas, total translational kinetic energy = n * (3/2 RT).\nStep 3: For n = 2 moles: E_total = 2 * (3/2 RT) = 3 RT.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T வெப்பநிலையில் 2 மோல் நல்லியல்பு வாயுவின் மொத்த இடப்பெயர்வு இயக்க ஆற்றல் என்ன?",
+        "optionTexts": [
+          "3 RT",
+          "3/2 RT",
+          "2 RT",
+          "5/2 RT"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000015",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At very high pressures, the compressibility factor (Z = PV / RT) for one mole of a real gas is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 + (Pb / RT)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 - (a / VRT)",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "1 - (Pb / RT)",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: van der Waals equation for 1 mole: (P + a/V^2)(V - b) = RT.\nStep 2: At very high pressures, P is very large compared to a/V^2, so a/V^2 can be neglected: P(V - b) = RT.\nStep 3: PV - Pb = RT => PV = RT + Pb.\nStep 4: Dividing by RT: Z = PV / RT = 1 + (Pb / RT). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிக உயர் அழுத்தத்தில், ஒரு மோல் இயல்பு வாயுவின் அமுக்கத்திறன் காரணி (Z = PV / RT) மதிப்பு என்ன?",
+        "optionTexts": [
+          "1 + (Pb / RT)",
+          "1 - (a / VRT)",
+          "1",
+          "1 - (Pb / RT)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000016",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the van der Waals equation of state, the constant 'a' provides a measure of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Magnitude of intermolecular attractive forces",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Effective volume of gas molecules",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Molecular kinetic energy",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Collision frequency",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In the van der Waals equation (P + an^2/V^2)(V - nb) = nRT, the term an^2/V^2 corrects for attractive forces.\nStep 2: The constant 'a' reflects the strength of intermolecular attraction between gas molecules.\nStep 3: A gas with a higher 'a' value has stronger attractive forces and is more easily liquefied (e.g., NH3, SO2).\nStep 4: The constant 'b' accounts for the co-volume (size of molecules). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வான்டர்வால்ஸ் சமன்பாட்டில் உள்ள 'a' என்ற மாறிலி எதனைக் குறிக்கிறது?",
+        "optionTexts": [
+          "மூலக்கூறுகளுக்கு இடையேயான கவர்ச்சி விசைகளின் அளவு",
+          "வாயு மூலக்கூறுகளின் பயனுறு கனஅளவு",
+          "மூலக்கூறு இயக்க ஆற்றல்",
+          "மோதல் அதிர்வெண்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000017",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What are the SI units of the van der Waals constants 'a' and 'b', respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "N m^4 mol^-2 and m^3 mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "atm L mol^-1 and L mol^-1",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "N m^-2 and m^3",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "J mol^-1 and m^3 mol^-1",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Pressure correction term: P_internal = a * n^2 / V^2 => a = (P * V^2) / n^2.\nStep 2: SI unit of a = (N m^-2) * (m^3)^2 / mol^2 = N m^4 mol^-2 (or bar dm^6 mol^-2).\nStep 3: Volume correction: nb has units of volume, so b = V / n = m^3 / mol = m^3 mol^-1.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வான்டர்வால்ஸ் மாறிலிகளான 'a' மற்றும் 'b' ஆகியவற்றின் SI அலகுகள் முறையே:",
+        "optionTexts": [
+          "N m^4 mol^-2 மற்றும் m^3 mol^-1",
+          "atm L mol^-1 மற்றும் L mol^-1",
+          "N m^-2 மற்றும் m^3",
+          "J mol^-1 மற்றும் m^3 mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000018",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The critical temperature (Tc) of a gas is the temperature:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Above which the gas cannot be liquefied, no matter how high the applied pressure is",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "At which the liquid boils at 1 atm",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Below which the gas cannot exist",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "At which the gas density equals liquid density at 1 atm",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Critical temperature Tc is a characteristic property of each real gas (Tc = 8a / 27Rb).\nStep 2: Above Tc, thermal kinetic energy of the molecules exceeds intermolecular attractions, making liquefaction impossible at any pressure.\nStep 3: A gas must be cooled to or below its critical temperature before it can be liquefied by pressure.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வாயுவின் நிலைமாறு வெப்பநிலை (Tc) என்பது:",
+        "optionTexts": [
+          "எவ்வளவுதான் அழுத்தம் செலுத்தினாலும் வாயுவை திரவமாக்க முடியாத மேல் வெப்பநிலை",
+          "1 வளிமண்டல அழுத்தத்தில் திரவம் கொதிக்கும் வெப்பநிலை",
+          "வாயு இருக்க முடியாத கீழ் வெப்பநிலை",
+          "1 வளிமண்டல அழுத்தத்தில் வாயுவின் அடர்த்தி திரவத்தின் அடர்த்திக்கு சமமாகும் வெப்பநிலை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000019",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Liquid droplets of water and mercury assume a spherical shape naturally because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Surface tension forces the liquid to minimize its surface area, and a sphere has the minimum surface area for a given volume",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Gravitational pull pushes outward equally",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Viscosity prevents liquid distortion",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Atmospheric pressure is uniform in all directions",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Molecules on the surface of a liquid experience an inward net attractive pull towards the bulk.\nStep 2: This inward pull creates surface tension, which drives the liquid to assume a state of minimum surface area.\nStep 3: For a given volume, a sphere has the smallest surface area-to-volume ratio.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர் மற்றும் பாதரசத் துளிகள் இயல்பாகவே கோள வடிவத்தை அடைவதற்கான காரணம் என்ன?",
+        "optionTexts": [
+          "பரப்பு இழுவிசை திரவத்தின் பரப்பளவைக் குறைக்க முயல்கிறது, குறிப்பிட்ட கனஅளவிற்கு கோளமே மிகக் குறைந்த பரப்பளவைக் கொண்டுள்ளது",
+          "புவியீர்ப்பு விசை அனைத்து திசைகளிலும் சமமாகத் தள்ளுகிறது",
+          "பாகுத்தன்மை திரவத்தின் வடிவ மாற்றத்தைத் தடுக்கிறது",
+          "வளிமண்டல அழுத்தம் எல்லா திசைகளிலும் ஒரே மாதிரியாக உள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000020",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "With an increase in temperature, the surface tension and viscosity of a liquid, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both decrease",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Both increase",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Surface tension increases, viscosity decreases",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Surface tension decreases, viscosity increases",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Increasing temperature increases the kinetic energy of liquid molecules.\nStep 2: Higher kinetic energy overcomes intermolecular cohesive forces between molecules.\nStep 3: Weaker cohesive forces lead to lower surface tension and lower resistance to fluid flow (decreased viscosity).\nStep 4: Both surface tension and viscosity decrease with increasing temperature (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்பநிலை அதிகரிக்கும் போது, ஒரு திரவத்தின் பரப்பு இழுவிசை மற்றும் பாகுத்தன்மை முறையே:",
+        "optionTexts": [
+          "இரண்டுமே குறைகின்றன",
+          "இரண்டுமே அதிகரிக்கின்றன",
+          "பரப்பு இழுவிசை அதிகரிக்கிறது, பாகுத்தன்மை குறைகிறது",
+          "பரப்பு இழுவிசை குறைகிறது, பாகுத்தன்மை அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000021",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many significant figures are present in the measured quantities 0.0025 and 2.500 * 10^3, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 and 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 and 4",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "2 and 2",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "3 and 4",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For 0.0025: Zeros preceding the first non-zero digit are not significant. Only 2 and 5 are significant (2 significant figures).\nStep 2: For 2.500 * 10^3: Terminal zeros after a decimal point in scientific notation are significant (2, 5, 0, 0 = 4 significant figures).\nStep 3: Significant figures are 2 and 4.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.0025 மற்றும் 2.500 * 10^3 ஆகிய அளவீடுகளில் உள்ள முக்கிய எண்ணுருக்களின் (significant figures) எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "2 மற்றும் 4",
+          "4 மற்றும் 4",
+          "2 மற்றும் 2",
+          "3 மற்றும் 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000022",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Chlorine has two naturally occurring isotopes: 35Cl (atomic mass = 34.97 u, 75.77% abundance) and 37Cl (atomic mass = 36.97 u, 24.23% abundance). The average atomic mass of chlorine is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "35.45 u",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "36.00 u",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "35.00 u",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "35.97 u",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Average atomic mass = (fraction1 * mass1) + (fraction2 * mass2).\nStep 2: Average mass = (0.7577 * 34.97) + (0.2423 * 36.97).\nStep 3: Average mass = 26.497 + 8.958 = 35.455 u approx 35.45 u.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரின் இரண்டு ஐசோடோப்புகளைக் கொண்டுள்ளது: 35Cl (75.77%) மற்றும் 37Cl (24.23%). குளோரினின் சராசரி அணு நிறை மதிப்பு என்ன?",
+        "optionTexts": [
+          "35.45 u",
+          "36.00 u",
+          "35.00 u",
+          "35.97 u"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000023",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What volume of 0.2 M NaOH solution is required to neutralize completely 25.0 mL of 0.1 M H2SO4 solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25.0 mL",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "50.0 mL",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "12.5 mL",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "75.0 mL",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Neutralization condition: Milliequivalents of acid = Milliequivalents of base (N1 * V1 = N2 * V2).\nStep 2: For H2SO4 (dibasic acid, n-factor = 2): Normality N1 = 2 * 0.1 = 0.2 N. V1 = 25.0 mL. meq of acid = 0.2 * 25 = 5.0.\nStep 3: For NaOH (monoacidic base, n-factor = 1): Normality N2 = 1 * 0.2 = 0.2 N.\nStep 4: 0.2 * V2 = 5.0 => V2 = 5.0 / 0.2 = 25.0 mL (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "25.0 mL 0.1 M H2SO4 கரைசலை முழுமையாக நடுநிலையாக்க தேவையான 0.2 M NaOH கரைசலின் கனஅளவு என்ன?",
+        "optionTexts": [
+          "25.0 mL",
+          "50.0 mL",
+          "12.5 mL",
+          "75.0 mL"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000024",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At standard temperature and pressure (STP: 273.15 K and 1 bar), the molar volume of an ideal gas is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "22.71 L/mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "22.40 L/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "24.45 L/mol",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "11.20 L/mol",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to IUPAC definition of standard temperature and pressure (STP: T = 273.15 K and P = 1 bar = 10^5 Pa).\nStep 2: V_m = R * T / P = (0.08314 bar L K^-1 mol^-1 * 273.15 K) / 1 bar = 22.71 L/mol.\nStep 3: (Note: At 1 atm and 273.15 K, molar volume is 22.4 L/mol; at 1 bar, it is 22.71 L/mol).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட்ட வெப்பநிலை மற்றும் அழுத்தத்தில் (STP: 273.15 K மற்றும் 1 பார்) ஒரு நல்லியல்பு வாயுவின் மோலார் கனஅளவு என்ன?",
+        "optionTexts": [
+          "22.71 L/mol",
+          "22.40 L/mol",
+          "24.45 L/mol",
+          "11.20 L/mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000025",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A sample of nitrogen gas collected over water at 300 K exerts a total pressure of 755 mm Hg. If the aqueous tension of water at 300 K is 25 mm Hg, what is the partial pressure of dry nitrogen gas?",
+    "options": [
+      {
+        "label": "A",
+        "text": "730 mm Hg",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "780 mm Hg",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "755 mm Hg",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "760 mm Hg",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: When a gas is collected over water, it becomes saturated with water vapor.\nStep 2: Total pressure P_total = P_dry gas + Aqueous tension.\nStep 3: P_dry nitrogen = P_total - Aqueous tension = 755 mm Hg - 25 mm Hg = 730 mm Hg.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K இல் நீரின் மேல் சேகரிக்கப்பட்ட நைட்ரஜன் வாயுவின் மொத்த அழுத்தம் 755 mm Hg. நீரின் ஆவி அழுத்தம் (aqueous tension) 25 mm Hg எனில், உலர் நைட்ரஜன் வாயுவின் பகுதி அழுத்தம் என்ன?",
+        "optionTexts": [
+          "730 mm Hg",
+          "780 mm Hg",
+          "755 mm Hg",
+          "760 mm Hg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000026",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At what temperature will the root mean square velocity (u_rms) of SO2 molecules be equal to that of O2 molecules at 300 K? (Molar mass of SO2 = 64 g/mol, O2 = 32 g/mol)",
+    "options": [
+      {
+        "label": "A",
+        "text": "600 K",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "150 K",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "300 K",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "1200 K",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for rms velocity: u_rms = sqrt(3RT / M).\nStep 2: Condition: u_rms(SO2) = u_rms(O2) => sqrt(3 R T_SO2 / 64) = sqrt(3 R * 300 / 32).\nStep 3: Squaring both sides: T_SO2 / 64 = 300 / 32 => T_SO2 = 300 * (64 / 32) = 300 * 2 = 600 K.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K இல் உள்ள O2 மூலக்கூறுகளின் சராசரி இருமடி மூல வேகத்திற்கு (u_rms) சமமாக SO2 மூலக்கூறுகளின் வேகம் அமைய எந்த வெப்பநிலை தேவைப்படுகிறது? (SO2 = 64 g/mol, O2 = 32 g/mol)",
+        "optionTexts": [
+          "600 K",
+          "150 K",
+          "300 K",
+          "1200 K"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000027",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For hydrogen and helium gases at room temperature (298 K), the compressibility factor (Z) is always greater than 1 at all pressures because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Intermolecular attractive forces are extremely weak, so repulsive forces dominate (Z = 1 + Pb/RT)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Their critical temperatures are very high",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Their van der Waals constant 'a' is exceptionally large",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "They undergo spontaneous chemical reaction",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hydrogen and helium are tiny, non-polar molecules with very few electrons, making London dispersion forces negligible (van der Waals constant 'a' is nearly zero).\nStep 2: Neglecting 'a' in the van der Waals equation: P(V - b) = RT.\nStep 3: PV = RT + Pb => Z = PV / RT = 1 + (Pb / RT).\nStep 4: Since Pb/RT > 0, Z is greater than 1 at all pressures at room temperature (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் ஹைட்ரஜன் மற்றும் ஹீலியம் வாயுக்களின் அமுக்கத்திறன் காரணி (Z) எப்போதும் 1-ஐ விட அதிகமாக இருப்பதன் காரணம் என்ன?",
+        "optionTexts": [
+          "மூலக்கூறுகளுக்கு இடையேயான கவர்ச்சி விசை மிகக் குறைவு என்பதால் விலக்கு விசையே ஆதிக்கம் செலுத்துகிறது (Z = 1 + Pb/RT)",
+          "அவற்றின் நிலைமாறு வெப்பநிலை மிக அதிகம்",
+          "அவற்றின் வான்டர்வால்ஸ் மாறிலி 'a' மிக அதிகம்",
+          "அவை தன்னிச்சையான வேதிவினையில் ஈடுபடுகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000028",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The four gases O2, N2, NH3, and CH4 have van der Waals constant 'a' values of 1.36, 1.39, 4.17, and 2.25 L^2 atm mol^-2, respectively. Which gas will liquefy most easily?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NH3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "CH4",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "O2",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "N2",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The van der Waals constant 'a' measures the magnitude of attractive intermolecular forces.\nStep 2: Stronger intermolecular forces lead to a higher critical temperature and make the gas liquefy more easily.\nStep 3: NH3 has the highest 'a' value (4.17 L^2 atm mol^-2) due to hydrogen bonding and dipole interactions.\nStep 4: Therefore, NH3 liquefies most easily (Option A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "O2, N2, NH3, மற்றும் CH4 ஆகிய வாயுக்களின் வான்டர்வால்ஸ் மாறிலி 'a' மதிப்புகள் முறையே 1.36, 1.39, 4.17, மற்றும் 2.25 எனில், மிக எளிதில் திரவமாகும் வாயு எது?",
+        "optionTexts": [
+          "NH3",
+          "CH4",
+          "O2",
+          "N2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000029",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The rise of liquid in a narrow glass capillary tube against gravity is driven by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adhesive forces between liquid and glass being stronger than cohesive forces within the liquid (surface tension)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Atmospheric pressure pushing down on the capillary top",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "Liquid evaporation from the capillary tip",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "Zero viscosity of the liquid",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Capillary rise occurs when a wetting liquid (like water) is placed in a narrow glass tube.\nStep 2: Adhesive forces between water molecules and the polar glass surface exceed cohesive forces among water molecules.\nStep 3: This creates a concave meniscus; surface tension acts upward along the circumference, drawing the liquid column up until balanced by gravity.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நுண்புழைக் குழாயில் புவியீர்ப்புக்கு எதிராக நீர் மேலேறுவதற்குக் காரணமான முதன்மை விசை எது?",
+        "optionTexts": [
+          "நீர் மற்றும் கண்ணாடிக்கு இடையேயான ஒட்டுதல் விசை நீரின் ஓரினக் கவர்ச்சி விசையை விட அதிகமாக இருப்பது",
+          "வளிமண்டல அழுத்தம் குழாயின் மேற்புறத்தைத் தள்ளுவது",
+          "குழாயின் முனையிலிருந்து நீர் ஆவியாதல்",
+          "நீரின் பூஜ்ஜிய பாகுத்தன்மை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-CHE08-000030",
+    "examCode": "NEET",
+    "subjectCode": "CHE",
+    "nodeTagCode": "chem_08",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the mass of one molecule of glucose (C6H12O6)? (Avogadro constant N_A = 6.022 * 10^23 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.989 * 10^-22 g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.800 * 10^-22 g",
+        "isCorrect": False
+      },
+      {
+        "label": "C",
+        "text": "3.344 * 10^-23 g",
+        "isCorrect": False
+      },
+      {
+        "label": "D",
+        "text": "6.022 * 10^-23 g",
+        "isCorrect": False
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Molecular mass of glucose (C6H12O6) = 6(12.011) + 12(1.008) + 6(15.999) = 180.16 g/mol.\nStep 2: One mole contains N_A molecules (6.022 * 10^23 molecules).\nStep 3: Mass of 1 molecule = Molar mass / N_A = 180.16 / (6.022 * 10^23) = 2.9893 * 10^-22 g.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குளுக்கோஸ் (C6H12O6) மூலக்கூறின் நிறை என்ன? (N_A = 6.022 * 10^23)",
+        "optionTexts": [
+          "2.989 * 10^-22 g",
+          "1.800 * 10^-22 g",
+          "3.344 * 10^-23 g",
+          "6.022 * 10^-23 g"
+        ]
+      }
+    ]
+  }
+]

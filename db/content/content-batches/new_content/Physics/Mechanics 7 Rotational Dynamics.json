@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY03-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A thin uniform circular disc of mass M and radius R has a moment of inertia about its diameter axis equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/4) M R^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(2/5) M R^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: By perpendicular axis theorem: I_z = I_x + I_y.\nStep 2: By symmetry for a planar disc, I_x = I_y = I_diameter.\nStep 3: Since I_z = (1/2) M R^2, we have 2 I_diameter = (1/2) M R^2.\nStep 4: Therefore, I_diameter = (1/4) M R^2. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு மெல்லிய சீரான வட்ட வட்டின் விட்டம் வழியாக செல்லும் அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன்:",
+        "optionTexts": [
+          "(1/4) M R^2",
+          "(1/2) M R^2",
+          "M R^2",
+          "(2/5) M R^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls without slipping down an inclined plane of inclination angle θ. What is the linear acceleration of its center of mass?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/7) g sin θ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2/3) g sin θ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) g sin θ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "g sin θ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for acceleration in pure rolling down an incline: a = g sin θ / (1 + I / (M R^2)) = g sin θ / (1 + k^2 / R^2).\nStep 2: For a solid sphere, I = (2/5) M R^2, so k^2 / R^2 = 2/5 = 0.4.\nStep 3: a = g sin θ / (1 + 2/5) = g sin θ / (7/5) = (5/7) g sin θ.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு திண்மக் கோளம் θ சாய்வுக் கோணமுடைய சாய்தளத்தில் நழுவாமல் உருளுகிறது. அதன் நிறை மையத்தின் நேர்கோட்டு முடுக்கம் என்ன?",
+        "optionTexts": [
+          "(5/7) g sin θ",
+          "(2/3) g sin θ",
+          "(1/2) g sin θ",
+          "g sin θ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two particles of masses 2 kg and 6 kg are located at positions r1 = (3i + 2j - k) m and r2 = (i - 2j + 3k) m. What is the position vector of their center of mass?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1.5 i - 1.0 j + 2.0 k) m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2.0 i + 0.0 j + 1.0 k) m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1.0 i - 2.0 j + 3.0 k) m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(3.0 i + 2.0 j - 1.0 k) m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for center of mass: R_cm = (m1 r1 + m2 r2) / (m1 + m2).\nStep 2: R_cm = [ 2(3i + 2j - k) + 6(i - 2j + 3k) ] / (2 + 6).\nStep 3: R_cm = [ (6i + 4j - 2k) + (6i - 12j + 18k) ] / 8 = (12i - 8j + 16k) / 8.\nStep 4: R_cm = (1.5 i - 1.0 j + 2.0 k) m. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 kg மற்றும் 6 kg நிறைகொண்ட இரு துகள்கள் r1 = (3i + 2j - k) m மற்றும் r2 = (i - 2j + 3k) m ஆகிய நிலைகளில் உள்ளன. அவற்றின் நிறை மையத்தின் நிலை வெக்டர் என்ன?",
+        "optionTexts": [
+          "(1.5 i - 1.0 j + 2.0 k) m",
+          "(2.0 i + 0.0 j + 1.0 k) m",
+          "(1.0 i - 2.0 j + 3.0 k) m",
+          "(3.0 i + 2.0 j - 1.0 k) m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A constant torque of 50 N m is applied to a stationary flywheel of moment of inertia 10 kg m^2. What is its angular kinetic energy after 4.0 seconds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2000 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1000 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4000 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "500 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Angular acceleration α = τ / I = 50 N m / 10 kg m^2 = 5.0 rad/s².\nStep 2: Angular velocity after 4.0 s: ω = ω₀ + α t = 0 + 5.0 * 4.0 = 20 rad/s.\nStep 3: Rotational kinetic energy K_rot = (1/2) I ω^2 = (1/2) * 10 * (20)^2 = 5 * 400 = 2000 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 kg m^2 நிலைமத் திருப்புத்திறன் கொண்ட ஓய்விலுள்ள ஒரு சுழல்சக்கரத்தின் மீது 50 N m மாறா முறுக்குவிசை செலுத்தப்படுகிறது. 4.0 வினாடிகளுக்குப் பிறகு அதன் சுழற்சி இயக்க ஆற்றல் என்ன?",
+        "optionTexts": [
+          "2000 J",
+          "1000 J",
+          "4000 J",
+          "500 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A person standing on a rotating platform with outstretched arms holds weights in each hand. When the person pulls the weights inwards towards the chest, which of the following quantities remains strictly conserved and which increases?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Angular momentum is conserved, and rotational kinetic energy increases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Angular momentum increases, and rotational kinetic energy is conserved",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both angular momentum and kinetic energy are strictly conserved",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both angular momentum and kinetic energy decrease",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: No external torque acts on the system (τ_ext = 0), so angular momentum L = I ω is strictly conserved.\nStep 2: Pulling hands inward decreases moment of inertia (I_final < I_initial), so angular velocity ω increases.\nStep 3: Rotational kinetic energy K = L^2 / (2I). Since I decreases and L is constant, K increases (work is done by muscles).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுழலும் தளத்தில் கைகளை நீட்டி நின்றுகொண்டிருக்கும் ஒருவர் தனது கைகளை மார்போடு மடக்கும்போது, பின்வரும் எந்த அளவு மாறாமல் இருக்கும் மற்றும் எது அதிகரிக்கும்?",
+        "optionTexts": [
+          "கோண உந்தம் மாறாது, சுழற்சி இயக்க ஆற்றல் அதிகரிக்கும்",
+          "கோண உந்தம் அதிகரிக்கும், சுழற்சி இயக்க ஆற்றல் மாறாது",
+          "கோண உந்தம் மற்றும் இயக்க ஆற்றல் இரண்டும் மாறாது",
+          "கோண உந்தம் மற்றும் இயக்க ஆற்றல் இரண்டும் குறையும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the ratio of rotational kinetic energy to total kinetic energy for a uniform solid cylinder rolling purely without slipping on a horizontal surface?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1/2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2/5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2/7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: For a solid cylinder, moment of inertia I = (1/2) M R^2, so k^2 / R^2 = 1/2.\nStep 2: Rotational KE K_rot = (1/2) I ω^2 = (1/4) M v^2.\nStep 3: Total KE K_total = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Ratio K_rot / K_total = (1/4) / (3/4) = 1/3. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிடைமட்டத் தளத்தில் நழுவாமல் உருளும் ஒரு சீரான திண்ம உருளைக்கு சுழற்சி இயக்க ஆற்றலுக்கும் மொத்த இயக்க ஆற்றலுக்கும் உள்ள விகிதம் என்ன?",
+        "optionTexts": [
+          "1/3",
+          "1/2",
+          "2/5",
+          "2/7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F = (i + 2j - 3k) N acts at a point whose position vector with respect to origin is r = (2i - j + k) m. What is the torque vector about the origin?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(i + 7j + 5k) N m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(i - 7j + 5k) N m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2i + 5j + 7k) N m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(-i + 7j - 5k) N m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Torque vector τ = r x F.\nStep 2: Determinant form: |i j k; 2 -1 1; 1 2 -3|.\nStep 3: i((-1)(-3) - (1)(2)) - j((2)(-3) - (1)(1)) + k((2)(2) - (-1)(1)).\nStep 4: i(3 - 2) - j(-6 - 1) + k(4 + 1) = i + 7j + 5k N m. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆதியைப் பொறுத்து r = (2i - j + k) m நிலை வெக்டர் கொண்ட புள்ளியில் F = (i + 2j - 3k) N விசை செயல்படுகிறது. ஆதிப்புள்ளியைப் பற்றிய முறுக்குவிசை வெக்டர் என்ன?",
+        "optionTexts": [
+          "(i + 7j + 5k) N m",
+          "(i - 7j + 5k) N m",
+          "(2i + 5j + 7k) N m",
+          "(-i + 7j - 5k) N m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform thin rod of mass M and length L has a moment of inertia I₀ = (1/12) M L^2 about an axis passing through its center of mass perpendicular to its length. What is its moment of inertia about a parallel axis passing through one of its ends?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/3) M L^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/4) M L^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2/3) M L^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(7/12) M L^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use the parallel axis theorem: I = I_cm + M d^2.\nStep 2: Distance from center of mass to one end is d = L / 2.\nStep 3: I = (1/12) M L^2 + M (L/2)^2 = (1/12) M L^2 + (1/4) M L^2.\nStep 4: I = (1/12 + 3/12) M L^2 = (4/12) M L^2 = (1/3) M L^2. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட ஒரு சீரான மெல்லிய தண்டின் நிறை மையம் வழியாக செல்லும் செங்குத்து அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன் (1/12) M L^2 ஆகும். அதன் ஒரு முனை வழியாக செல்லும் இணை அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன் என்ன?",
+        "optionTexts": [
+          "(1/3) M L^2",
+          "(1/4) M L^2",
+          "(2/3) M L^2",
+          "(7/12) M L^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "From a uniform solid circular disc of radius R and mass 9M, a small circular disc of radius R/3 is removed whose center is located at a distance 2R/3 from the disc's center. What is the moment of inertia of the remaining portion about an axis passing through the center of the original disc and perpendicular to its plane?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 M R^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(9/2) M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(37/9) M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(7/2) M R^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total disc mass = 9M, radius = R => Area = π R^2. Removed portion area = π (R/3)^2 = π R^2 / 9 => mass of removed disc m = (9M) / 9 = M.\nStep 2: Moment of inertia of original disc about central axis: I_total = (1/2) (9M) R^2 = (9/2) M R^2.\nStep 3: Moment of inertia of removed disc about central axis (using parallel axis theorem): I_removed = (1/2) m r^2 + m d^2 = (1/2) M (R/3)^2 + M (2R/3)^2 = M R^2 [ 1/18 + 4/9 ] = M R^2 [ 1/18 + 8/18 ] = (9/18) M R^2 = (1/2) M R^2.\nStep 4: I_remaining = I_total - I_removed = (9/2) M R^2 - (1/2) M R^2 = (8/2) M R^2 = 4 M R^2. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "9M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான திண்ம வட்ட வட்டில் இருந்து, மையத்திலிருந்து 2R/3 தொலைவில் உள்ள R/3 ஆரமுடைய ஒரு சிறிய வட்ட வட்டு வெட்டி எடுக்கப்படுகிறது. மீதமுள்ள பகுதியின் நிலைமத் திருப்புத்திறன் தொடக்க வட்டின் மையம் வழியாக அதன் தளத்திற்கு செங்குத்தான அச்சை பொறுத்து என்ன?",
+        "optionTexts": [
+          "4 M R^2",
+          "(9/2) M R^2",
+          "(37/9) M R^2",
+          "(7/2) M R^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere, a solid cylinder, and a thin hoop (ring) of identical mass and radius are released from rest at the top of an inclined plane. In which order do they reach the bottom of the incline (without slipping)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Solid sphere, Solid cylinder, Thin hoop",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Thin hoop, Solid cylinder, Solid sphere",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Solid cylinder, Solid sphere, Thin hoop",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All three reach simultaneously",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Linear acceleration down the incline is a = g sin θ / (1 + k^2 / R^2).\nStep 2: Values of k^2/R^2: Solid sphere = 2/5 = 0.40; Solid cylinder = 1/2 = 0.50; Hoop = 1.0.\nStep 3: Smaller k^2/R^2 yields higher acceleration: a_sphere > a_cylinder > a_hoop.\nStep 4: Therefore, the sphere arrives first, the cylinder second, and the hoop last. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே நிறையும் ஆரமும் கொண்ட ஒரு திண்மக் கோளம், திண்ம உருளை மற்றும் மெல்லிய வளையம் ஆகியவை சாய்தளத்தில் ஓய்விலிருந்து உருளத் தொடங்குகின்றன. அவை அடிப்பகுதியை அடையும் வரிசை என்ன?",
+        "optionTexts": [
+          "திண்மக் கோளம், திண்ம உருளை, மெல்லிய வளையம்",
+          "மெல்லிய வளையம், திண்ம உருளை, திண்மக் கோளம்",
+          "திண்ம உருளை, திண்மக் கோளம், மெல்லிய வளையம்",
+          "மூன்றும் ஒரே நேரத்தில் அடையும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The radius of gyration of a uniform thin spherical shell of mass M and radius R about its diameter axis is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2/3) R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(2/5) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(1/2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moment of inertia of a spherical shell about diameter: I = (2/3) M R^2.\nStep 2: Relate to radius of gyration: I = M k^2 => M k^2 = (2/3) M R^2.\nStep 3: k = sqrt(2/3) R.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு மெல்லிய சீரான கோளக் கூட்டின் விட்டம் பற்றிய சுழற்சி ஆரம் (k) என்ன?",
+        "optionTexts": [
+          "sqrt(2/3) R",
+          "sqrt(2/5) R",
+          "sqrt(1/2) R",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform meter rule of mass 100 g is balanced horizontally on a knife-edge placed at the 40 cm mark. What mass must be suspended at the 20 cm mark to maintain the meter rule in horizontal equilibrium?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25 g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "40 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Center of gravity of the uniform 100 g rule lies at the 50 cm mark.\nStep 2: Pivot is at 40 cm, so the rule's weight acts at distance (50 - 40) = 10 cm to the right of the pivot, exerting clockwise torque = 100 g * 10 cm = 1000 g cm.\nStep 3: The suspended mass m at 20 cm lies at distance (40 - 20) = 20 cm to the left of the pivot, exerting counter-clockwise torque = m * 20 cm.\nStep 4: For rotational equilibrium: m * 20 cm = 1000 g cm => m = 50 g. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 g நிறையுள்ள ஒரு சீரான மீட்டர் அளவுகோல் 40 cm குறிமுள்ள கத்தி முனையில் கிடைமட்டமாக வைக்கப்பட்டுள்ளது. அளவுகோலை கிடைமட்ட சமநிலையில் வைக்க 20 cm குறிப்பில் தொங்கவிடப்பட வேண்டிய நிறை என்ன?",
+        "optionTexts": [
+          "50 g",
+          "25 g",
+          "100 g",
+          "40 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular ring of mass M and radius R rotates with angular velocity ω about its central axis. Two identical small pieces of mass m are gently attached to diametrically opposite points of the ring. What is the new angular velocity of the ring?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[ M / (M + 2m) ] * ω",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[ M / (M + m) ] * ω",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[ (M + 2m) / M ] * ω",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[ (M - 2m) / M ] * ω",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conservation of angular momentum: I1 ω1 = I2 ω2.\nStep 2: Initial moment of inertia I1 = M R^2.\nStep 3: Final moment of inertia I2 = M R^2 + 2(m R^2) = (M + 2m) R^2.\nStep 4: ω2 = (I1 / I2) ω = [ M R^2 / ((M + 2m) R^2) ] ω = [ M / (M + 2m) ] ω. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட வட்ட வளையம் அதன் மைய அச்சை பொறுத்து ω கோண வேகத்தில் சுழல்கிறது. வளையத்தின் விட்டத்தின் எதிரெதிர் முனைகளில் m நிறையுள்ள இரு சிறு துண்டுகள் மெதுவாக இணைக்கப்படுகின்றன. வளையத்தின் புதிய கோண வேகம் என்ன?",
+        "optionTexts": [
+          "[ M / (M + 2m) ] * ω",
+          "[ M / (M + m) ] * ω",
+          "[ (M + 2m) / M ] * ω",
+          "[ (M - 2m) / M ] * ω"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid cylinder of mass M and radius R is pulled horizontally by a constant force F applied at its top edge. If it rolls purely without slipping on a horizontal surface, what is the magnitude and direction of the friction force acting on it?",
+    "options": [
+      {
+        "label": "A",
+        "text": "F / 3 in the forward direction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "F / 3 in the backward direction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "F / 2 in the forward direction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Let friction force f act forward. Linear equation: F + f = M a.\nStep 2: Torque equation about center of mass: F R - f R = I α = ((1/2) M R^2) (a / R) = (1/2) M a R => F - f = (1/2) M a.\nStep 3: Multiply (F - f) by 2: 2F - 2f = M a = F + f => F = 3f => f = F / 3.\nStep 4: Since f > 0, it acts in the forward direction with magnitude F/3. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு திண்ம உருளையின் மேல் விளிம்பில் F கிடைமட்ட விசை செலுத்தப்படுகிறது. அது கிடைமட்டப் பரப்பில் நழுவாமல் உருளினால், அதன் மீது செயல்படும் உராய்வு விசையின் மதிப்பு மற்றும் திசை என்ன?",
+        "optionTexts": [
+          "முன்னோக்கிய திசையில் F / 3",
+          "பின்னோக்கிய திசையில் F / 3",
+          "முன்னோக்கிய திசையில் F / 2",
+          "பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the physical meaning of the vector cross product of position vector r and linear force F (i.e., r x F)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Torque (Moment of force)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Angular momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Work done",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Power",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Torque τ is defined as the rotational analog of force.\nStep 2: Mathematically, torque about a reference origin is the vector cross product τ = r x F.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிலை வெக்டர் r மற்றும் நேர்கோட்டு விசை F ஆகியவற்றின் வெக்டர் பெருக்கலின் (r x F) இயற்பியல் பொருள் என்ன?",
+        "optionTexts": [
+          "முறுக்குவிசை (விசையின் திருப்புத்திறன்)",
+          "கோண உந்தம்",
+          "செய்யப்பட்ட வேலை",
+          "திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The center of mass of a system of three particles of masses 1 kg, 2 kg, and 3 kg situated at the vertices of an equilateral triangle of side 1 m with mass 1 kg at origin (0, 0), mass 2 kg on x-axis at (1, 0), and mass 3 kg at (0.5, sqrt(3)/2) has coordinates:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(7/12 m, sqrt(3)/4 m)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2 m, sqrt(3)/6 m)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(5/12 m, sqrt(3)/3 m)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(2/3 m, 1/2 m)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total mass M = 1 + 2 + 3 = 6 kg.\nStep 2: X_cm = [1(0) + 2(1) + 3(0.5)] / 6 = [0 + 2 + 1.5] / 6 = 3.5 / 6 = 7/12 m.\nStep 3: Y_cm = [1(0) + 2(0) + 3(sqrt(3)/2)] / 6 = [1.5 sqrt(3)] / 6 = sqrt(3) / 4 m.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 m பக்கமுள்ள சமபக்க முக்கோணத்தின் உச்சிகளில் 1 kg (0,0), 2 kg (1,0), 3 kg (0.5, sqrt(3)/2) நிறைகள் வைக்கப்பட்டுள்ளன. அவற்றின் நிறை மையத்தின் ஆயத்தொலைவுகள் என்ன?",
+        "optionTexts": [
+          "(7/12 m, sqrt(3)/4 m)",
+          "(1/2 m, sqrt(3)/6 m)",
+          "(5/12 m, sqrt(3)/3 m)",
+          "(2/3 m, 1/2 m)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a given body of mass M and radius R, the ratio of moment of inertia about diameter for a solid sphere to that for a thin spherical shell is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 : 5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 : 3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 : 5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moment of inertia of solid sphere: I_solid = (2/5) M R^2.\nStep 2: Moment of inertia of spherical shell: I_shell = (2/3) M R^2.\nStep 3: Ratio I_solid / I_shell = (2/5) / (2/3) = 3/5.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம நிறையும் ஆரமும் கொண்ட திண்மக் கோளத்தின் விட்டம் பற்றிய நிலைமத் திருப்புத்திறனுக்கும், மெல்லிய கோளக் கூட்டின் நிலைமத் திருப்புத்திறனுக்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "3 : 5",
+          "5 : 3",
+          "2 : 5",
+          "1 : 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular disc of radius R and mass M rolls purely on a horizontal surface with linear velocity v. What is the total kinetic energy of the rolling disc?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/4) M v^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) M v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/10) M v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "M v^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total kinetic energy K_total = K_trans + K_rot = (1/2) M v^2 + (1/2) I ω^2.\nStep 2: For a disc, I = (1/2) M R^2 and pure rolling gives ω = v / R.\nStep 3: K_total = (1/2) M v^2 + (1/2) ((1/2) M R^2) (v/R)^2 = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட வட்ட வட்டு v நேர்கோட்டு திசைவேகத்துடன் நழுவாமல் கிடைமட்டப் பரப்பில் உருளுகிறது. உருளும் வட்டின் மொத்த இயக்க ஆற்றல் என்ன?",
+        "optionTexts": [
+          "(3/4) M v^2",
+          "(1/2) M v^2",
+          "(7/10) M v^2",
+          "M v^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform rod of length L and mass M is free to rotate in a vertical plane about a smooth horizontal axis through its upper end. It is held vertically upside down (unstable equilibrium) and released. What is the angular velocity of the rod when it passes through the lowest vertical position?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(6 g / L)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(3 g / L)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(12 g / L)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 sqrt(g / L)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fall in center of mass from top vertical to bottom vertical: h = L/2 - (-L/2) = L.\nStep 2: Loss in gravitational PE = M g h = M g L.\nStep 3: Gain in rotational KE about pivot = (1/2) I ω^2 = (1/2) ((1/3) M L^2) ω^2 = (1/6) M L^2 ω^2.\nStep 4: Equating energies: (1/6) M L^2 ω^2 = M g L => ω^2 = 6 g / L => ω = sqrt(6 g / L). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமும் M நிறையும் கொண்ட சீரான தண்டு மேல் முனையில் பொருத்தப்பட்டு சுழலக் கூடியது. அது உச்சியில் நிலையற்ற செங்குத்து நிலையிலிருந்து விடுவிக்கப்படுகிறது. அது கீழ்நோக்கிய செங்குத்து நிலையைக் கடக்கும் போது அதன் கோண வேகம் என்ன?",
+        "optionTexts": [
+          "sqrt(6 g / L)",
+          "sqrt(3 g / L)",
+          "sqrt(12 g / L)",
+          "2 sqrt(g / L)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A constant force F acts at the circumference of a stationary wheel of radius R and moment of inertia I for time t. What is the angular speed acquired by the wheel?",
+    "options": [
+      {
+        "label": "A",
+        "text": "F R t / I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "F t / (I R)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "F R / (I t)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I / (F R t)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Torque applied τ = F * R.\nStep 2: Angular impulse = τ * t = F * R * t.\nStep 3: Change in angular momentum: ΔL = I ω - 0 = I ω => I ω = F R t.\nStep 4: ω = F R t / I. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I நிலைமத் திருப்புத்திறனும் R ஆரமும் கொண்ட ஓய்விலுள்ள சக்கரத்தின் விளிம்பில் F மாறா விசை t நேரத்திற்குச் செலுத்தப்படுகிறது. சக்கரம் அடையும் கோண வேகம் என்ன?",
+        "optionTexts": [
+          "F R t / I",
+          "F t / (I R)",
+          "F R / (I t)",
+          "I / (F R t)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the earth suddenly shrinks to half of its present radius without any change in its total mass, what will be the new duration of one day?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 hours",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "48 hours",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Conservation of angular momentum: I1 ω1 = I2 ω2 => I1 (2π / T1) = I2 (2π / T2) => T2 = T1 * (I2 / I1).\nStep 2: Moment of inertia of sphere I = (2/5) M R^2 ∝ R^2.\nStep 3: When R becomes R/2, I becomes I/4.\nStep 4: T2 = T1 * (1/4) = 24 hours / 4 = 6 hours. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூமி தனது நிறையில் மாற்றமின்றி தனது தற்போதைய ஆரத்தில் பாதியாக திடீரென சுருங்கினால், ஒரு நாளின் புதிய கால அளவு என்னவாக இருக்கும்?",
+        "optionTexts": [
+          "6 மணி நேரம்",
+          "12 மணி நேரம்",
+          "3 மணி நேரம்",
+          "48 மணி நேரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid cylinder and a hollow cylinder of equal masses and identical outer radii roll down an inclined plane without slipping. Which one arrives at the bottom with greater kinetic energy and greater speed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Solid cylinder has greater speed, but both have identical total kinetic energy",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hollow cylinder has greater speed and greater kinetic energy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Solid cylinder has both greater speed and greater kinetic energy",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both have identical speeds and identical kinetic energy",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Total kinetic energy at bottom = Initial potential energy = M g h, which is identical for both.\nStep 2: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ].\nStep 3: For solid cylinder k^2/R^2 = 0.5; for hollow cylinder k^2/R^2 = 1.0.\nStep 4: Solid cylinder has lower k^2/R^2, so it has greater linear speed v_solid = sqrt(4gh/3) > v_hollow = sqrt(gh). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம நிறையும் சம வெளிப்புற ஆரமும் கொண்ட திண்ம உருளை மற்றும் உள்ளீடற்ற உருளை சாய்தளத்தில் நழுவாமல் உருளுகின்றன. எது அதிக வேகம் மற்றும் அதிக இயக்க ஆற்றலுடன் அடிப்பகுதியை அடையும்?",
+        "optionTexts": [
+          "திண்ம உருளை அதிக வேகம் பெறும், ஆனால் இரண்டின் மொத்த இயக்க ஆற்றலும் சமம்",
+          "உள்ளீடற்ற உருளை அதிக வேகம் மற்றும் இயக்க ஆற்றல் பெறும்",
+          "திண்ம உருளை அதிக வேகம் மற்றும் அதிக இயக்க ஆற்றல் பெறும்",
+          "இரண்டும் சம வேகம் மற்றும் சம இயக்க ஆற்றல் பெறும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the moment of inertia of a uniform circular ring of mass M and radius R about a tangent in its own plane?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/2) M R^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 M R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/4) M R^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Moment of inertia of ring about diameter: I_diameter = (1/2) M R^2.\nStep 2: By parallel axis theorem, tangent in plane is parallel to diameter at distance d = R.\nStep 3: I_tangent = I_diameter + M R^2 = (1/2) M R^2 + M R^2 = (3/2) M R^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான வட்ட வளையத்தின் தளத்தில் உள்ள தொடுகோட்டைப் பற்றிய நிலைமத் திருப்புத்திறன் என்ன?",
+        "optionTexts": [
+          "(3/2) M R^2",
+          "(1/2) M R^2",
+          "2 M R^2",
+          "(5/4) M R^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A particle moves with constant velocity parallel to the x-axis along the line y = 4 m. How does its angular momentum about the origin change with time?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remains constant in both magnitude and direction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Increases linearly with time",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Decreases as distance from origin increases",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Is strictly zero at all times",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Angular momentum L = r x p = (x i + 4 j) x (m v i) = - 4 m v k.\nStep 2: Magnitude |L| = 4 m v (constant) and direction is along -z direction (constant).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "y = 4 m என்ற கோட்டில் x-அச்சுக்கு இணையாக ஒரு துகள் மாறா திசைவேகத்தில் இயங்குகிறது. ஆதிப்புள்ளியைப் பற்றிய அதன் கோண உந்தம் நேரத்தைப் பொறுத்து எவ்வாறு மாறுகிறது?",
+        "optionTexts": [
+          "எண்மதிப்பு மற்றும் திசை இரண்டிலும் மாறிலியாக இருக்கும்",
+          "நேரத்துடன் நேர்விகிதத்தில் அதிகரிக்கும்",
+          "தொலைவு அதிகரிக்கும் போது குறையும்",
+          "எப்போதும் பூஜ்ஜியமாக இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere rolls down two different inclined planes of equal heights but different inclinations θ1 and θ2. Which of the following statements is true regarding the speed v and time of descent t?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Speeds at bottom are equal, but time of descent is shorter for the steeper incline",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Both speed and time of descent are identical on both inclines",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Steeper incline gives both greater speed and shorter time",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gentler incline gives greater speed at bottom",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ] depends only on vertical height h, so speeds are equal.\nStep 2: Length of incline s = h / sin θ; acceleration a = g sin θ / (1 + k^2/R^2).\nStep 3: Time t = sqrt(2s / a) = [ 1 / sin θ ] * sqrt[ 2h(1 + k^2/R^2) / g ].\nStep 4: Greater θ (steeper incline) gives larger sin θ, hence smaller time t. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே உயரமும் வெவ்வேறு சாய்வுக் கோணங்களும் (θ1 மற்றும் θ2) கொண்ட இரு சாய்தளங்களில் ஒரு திண்மக் கோளம் நழுவாமல் உருளுகிறது. கீழ்ப்பகுதியை அடையும் வேகம் v மற்றும் நேரம் t பற்றிய சரியான கூற்று எது?",
+        "optionTexts": [
+          "அடிப்பகுதியில் வேகங்கள் சமம், ஆனால் அதிக சாய்வுள்ள தளத்தில் நேரம் குறைவாக இருக்கும்",
+          "வேகம் மற்றும் நேரம் இரண்டும் இரு தளங்களிலும் சமம்",
+          "அதிக சாய்வுள்ள தளத்தில் அதிக வேகமும் குறைந்த நேரமும் கிடைக்கும்",
+          "குறைந்த சாய்வுள்ள தளத்தில் அதிக வேகம் கிடைக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The center of mass of a body:",
+    "options": [
+      {
+        "label": "A",
+        "text": "May lie within or outside the material body",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Must always lie inside the material of the body",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Must always coincide with its geometric center",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Must always lie on the surface of the body",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The center of mass is a point where the whole mass of the system can be assumed to be concentrated.\nStep 2: For hollow objects like a ring, hollow sphere, or hollow cylinder, the center of mass lies in empty space outside the material.\nStep 3: For solid objects, it lies within the material.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருளின் நிறை மையம்:",
+        "optionTexts": [
+          "பொருளின் உட்பகுதியிலோ அல்லது வெளிப்புறத்திலோ அமையலாம்",
+          "எப்போதும் பொருளின் உள்ளே மட்டுமே அமைய வேண்டும்",
+          "எப்போதும் அதன் வடிவியல் மையத்துடன் பொருந்த வேண்டும்",
+          "எப்போதும் பொருளின் மேற்பரப்பில் மட்டுமே அமைய வேண்டும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m is projected with speed u at angle 45° to the horizontal. What is the magnitude of angular momentum of the projectile about the point of projection when it is at its maximum height?",
+    "options": [
+      {
+        "label": "A",
+        "text": "m u^3 / (4 sqrt(2) g)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "m u^3 / (2 g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "m u^2 / (2 g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "m u^3 / (sqrt(2) g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At maximum height, velocity is purely horizontal: v = u cos 45° = u / sqrt(2).\nStep 2: Maximum height is H = u^2 sin^2 45° / (2g) = u^2 (1/2) / (2g) = u^2 / (4g).\nStep 3: Angular momentum about point of projection: L = m * v_horizontal * H = m * (u / sqrt(2)) * (u^2 / (4g)).\nStep 4: L = m u^3 / (4 sqrt(2) g). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள துகள் கிடைமட்டத்திற்கு 45° கோணத்தில் u வேகத்தில் எறியப்படுகிறது. அது தனது பெரும உயரத்தை அடையும் போது, எறியப்பட்ட புள்ளியைப் பற்றிய அதன் கோண உந்தத்தின் எண்மதிப்பு என்ன?",
+        "optionTexts": [
+          "m u^3 / (4 sqrt(2) g)",
+          "m u^3 / (2 g)",
+          "m u^2 / (2 g)",
+          "m u^3 / (sqrt(2) g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid disc of mass M and radius R rolls without slipping down an incline of angle θ. What is the minimum coefficient of static friction μ_s required to prevent slipping?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/3) tan θ",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) tan θ",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2/7) tan θ",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tan θ",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Friction required for pure rolling down an incline: f = M g sin θ / [ 1 + M R^2 / I ].\nStep 2: For a disc, I = (1/2) M R^2, so f = M g sin θ / [ 1 + 2 ] = (1/3) M g sin θ.\nStep 3: Normal force N = M g cos θ.\nStep 4: Condition for no slip: f <= μ_s N => (1/3) M g sin θ <= μ_s M g cos θ => μ_s >= (1/3) tan θ. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு திண்ம வட்டு θ சாய்வுக் கோணமுடைய சாய்தளத்தில் நழுவாமல் உருள தேவையான குறைந்தபட்ச நிலை உராய்வுக் குணகம் μ_s என்ன?",
+        "optionTexts": [
+          "(1/3) tan θ",
+          "(1/2) tan θ",
+          "(2/7) tan θ",
+          "tan θ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two point masses m and 2m are separated by a distance d. The moment of inertia of the system about an axis passing through their center of mass and perpendicular to the line joining them is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2/3) m d^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/3) m d^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "m d^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(3/2) m d^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Distance of mass m from center of mass: r1 = [2m / (m + 2m)] d = 2d / 3.\nStep 2: Distance of mass 2m from center of mass: r2 = [m / (m + 2m)] d = d / 3.\nStep 3: Moment of inertia I = m r1^2 + 2m r2^2 = m (2d/3)^2 + 2m (d/3)^2 = m (4d^2/9) + 2m (d^2/9) = (6/9) m d^2 = (2/3) m d^2 (or μ d^2 where μ = 2m/3).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m மற்றும் 2m புள்ளி நிறைகள் d இடைவெளியில் உள்ளன. அவற்றின் நிறை மையம் வழியாகவும் அவைகளை இணைக்கும் கோட்டிற்கு செங்குத்தாகவும் செல்லும் அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன்:",
+        "optionTexts": [
+          "(2/3) m d^2",
+          "(1/3) m d^2",
+          "m d^2",
+          "(3/2) m d^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A wheel of radius 0.4 m starts from rest and rotates with a constant angular acceleration of 2.0 rad/s². What is the linear velocity of a point on the rim of the wheel after 5.0 seconds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "8.0 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.0 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10.0 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Angular velocity at t = 5.0 s: ω = ω₀ + α t = 0 + (2.0 rad/s²)(5.0 s) = 10 rad/s.\nStep 2: Linear velocity v = r * ω.\nStep 3: v = 0.4 m * 10 rad/s = 4.0 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.4 m ஆரமுடைய ஒரு சக்கரம் ஓய்விலிருந்து புறப்பட்டு 2.0 rad/s² மாறா கோண முடுக்கத்தில் சுழல்கிறது. 5.0 வினாடிகளுக்குப் பிறகு சக்கரத்தின் விளிம்பில் உள்ள ஒரு புள்ளியின் நேர்கோட்டு திசைவேகம் என்ன?",
+        "optionTexts": [
+          "4.0 m/s",
+          "8.0 m/s",
+          "2.0 m/s",
+          "10.0 m/s"
+        ]
+      }
+    ]
+  }
+]

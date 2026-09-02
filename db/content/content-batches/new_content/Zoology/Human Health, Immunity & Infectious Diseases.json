@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Why is the human immunodeficiency virus (HIV) classified as a retrovirus, and what critical enzyme does it utilize to integrate its viral genome into the host helper T-cell DNA?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It utilizes Topoisomerase to replicate without host ribosomes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "It integrates directly as RNA without forming DNA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "It uses DNA-dependent RNA polymerase exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "It possesses an RNA genome and utilizes Reverse Transcriptase to synthesize complementary viral DNA (cDNA) from its single-stranded RNA template",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Retroviruses contain single-stranded RNA as genetic material wrapped in a protein capsid with viral enzymes.\nStep 2: Upon infecting host macrophages or CD4+ T-helper lymphocytes, HIV uses its viral Reverse Transcriptase to synthesize double-stranded viral cDNA from viral RNA.\nStep 3: Viral Integrase incorporates this viral DNA into the host chromosome, converting the host cell into an HIV-producing factory.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித நோயெதிர்ப்புக் குறைபாட்டு வைரஸ் (HIV) ஏன் ஒரு ரெட்ரோவைரஸ் என வகைப்படுத்தப்படுகிறது, மேலும் அது மனித T-உதவி செல்களின் DNA உடன் இணைய எந்த என்சைமைப் பயன்படுத்துகிறது?",
+        "optionTexts": [
+          "இது டோபோஐசோமரேஸ் என்சைமைப் பயன்படுத்துகிறது",
+          "இது DNA உருவாக்காமல் நேரடியாக RNA ஆகவே இணைகிறது",
+          "இது RNA பாலிமரேஸ் என்சைமை மட்டுமே பயன்படுத்துகிறது",
+          "இது ஒற்றை இழை RNA மரபுப் பொருளைக் கொண்டுள்ளதால் ரிவர்ஸ் டிரான்ஸ்கிரிப்டேஸ் என்சைம் மூலம் RNA இலிருந்து நிரப்பு DNA (cDNA) ஐ உருவாக்குகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which diagnostic serological test is standardly employed in clinical laboratories for the definitive confirmation of Typhoid fever caused by Salmonella typhi?",
+    "options": [
+      {
+        "label": "A",
+        "text": "ELISA test",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Widal test",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Mantoux test",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Western Blot test",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Typhoid fever is caused by the pathogenic bacterium Salmonella typhi.\nStep 2: It enters the small intestine through contaminated food and water.\nStep 3: Typhoid is diagnosed and confirmed in the laboratory using the Widal test (an agglutination reaction).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சால்மோனெல்லா டைபியால் உண்டாகும் டைபாய்டு காய்ச்சலை உறுதி செய்ய பயன்படும் மருத்துவ பரிசோதனை எது?",
+        "optionTexts": [
+          "எலிசா (ELISA) சோதனை",
+          "வைடால் (Widal) சோதனை",
+          "மான்டாக்ஸ் சோதனை",
+          "வெஸ்டர்ன் பிளாட் சோதனை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the life cycle of the human malarial parasite Plasmodium falciparum, which toxic crystalline substance released upon the synchronous rupture of infected human erythrocytes is responsible for the recurring periodic chills and high fever?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hemozoin (derived from the toxic breakdown of host hemoglobin heme)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Schüffner's dots",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Interferon-alpha",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aflatoxin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Plasmodium sporozoites infect liver hepatocytes, reproduce asexually, and release merozoites into the blood.\nStep 2: Merozoites invade erythrocytes (RBCs) and feed on hemoglobin globins, converting toxic free heme into insoluble hemozoin granules.\nStep 3: Lysis of infected RBCs synchronously expels merozoites and hemozoin into the bloodstream every 48-72 hours, triggering intense immune release of pyrogens (chills and fever paroxysms).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித மலேரியா ஒட்டுண்ணியான பிளாஸ்மோடியத்தின் வாழ்க்கைச் சுழற்சியில், பாதிக்கப்பட்ட இரத்த சிவப்பு செல்கள் வெடிக்கும் போது வெளிப்பட்டு குளிர்காய்ச்சலை ஏற்படுத்தும் நச்சுப் படிகப் பொருள் எது?",
+        "optionTexts": [
+          "ஹீமோசோயின் நச்சு (ஹிமோகுளோபின் சிதைவின் போது வெளியாகும் நச்சுப் பொருள்)",
+          "ஷாஃப்னரின் புள்ளிகள்",
+          "இன்டர்ஃபெரான்-ஆல்ஃபா",
+          "அஃப்லாடாக்சின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of immunity is primarily responsible for the rejection of kidney, heart, and corneal allografts in transplanted human patients?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Humoral (antibody-mediated) immune response",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cell-Mediated Immune response (CMI mediated by T-lymphocytes)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Innate physiological barrier immunity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Passive maternal immunity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Graft rejection is mediated by the recipient's immune system recognizing foreign HLA/MHC antigens.\nStep 2: Cytotoxic T-lymphocytes (CD8+) differentiate self from non-self and destroy foreign graft cells.\nStep 3: Thus, cell-mediated immunity (CMI) is responsible for graft rejection, requiring immunosuppressants like Cyclosporin-A.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உறுப்பு மாற்று அறுவை சிகிச்சையின் போது மாற்று உறுப்பு நிராகரிக்கப்படுவதற்கு காரணமான முதன்மை நோயெதிர்ப்பு அமைப்பு எது?",
+        "optionTexts": [
+          "திரவ வழி நோயெதிர்ப்பு (ஆன்டிபாடி வழி)",
+          "செல் வழி நோயெதிர்ப்பு (T-லிம்போசைட்டுகள் வழி செயல்படும் CMI)",
+          "இயற்கை உடலியல் தடை",
+          "தாயிடமிருந்து பெறும் மந்த நோயெதிர்ப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Interferons produced by virus-infected cells to protect healthy neighboring uninfected cells from viral infection are examples of which innate immune barrier?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Physical barriers",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cytokine barriers",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cellular barriers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Physiological barriers",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Innate immunity consists of four types of barriers: Physical, Physiological, Cellular, and Cytokine.\nStep 2: Virus-infected cells secrete glycoproteins called interferons.\nStep 3: Interferons protect non-infected cells from further viral infection and represent cytokine barriers.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வைரஸால் பாதிக்கப்பட்ட செல்களால் சுரக்கப்பட்டு அருகிலுள்ள ஆரோக்கியமான செல்களைப் பாதுகாக்கும் இன்டர்ஃபெரான்கள் எந்த வகை நோயெதிர்ப்புத் தடையாகும்?",
+        "optionTexts": [
+          "இயற்பியல் தடைகள்",
+          "சைட்டோகைன் தடைகள் (Cytokine barriers)",
+          "செல்சார் தடைகள்",
+          "உடலியல் தடைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which basic molecular formula correctly represents the monomeric structure of a standard immunoglobulin (antibody) molecule?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H4L2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H2L2 (two heavy polypeptide chains and two light polypeptide chains linked by disulfide bonds)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "H1L3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2L4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Each antibody molecule has four polypeptide chains: two identical small light (L) chains and two identical longer heavy (H) chains.\nStep 2: These chains are held together by interchain disulfide bonds forming a Y-shaped structure.\nStep 3: Hence, an antibody is represented as H2L2.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வழக்கமான ஆன்டிபாடி (இம்யூனோகுளோபுலின்) மூலக்கூறின் சரியான மூலக்கூறு குறியீடு எது?",
+        "optionTexts": [
+          "H4L2",
+          "H2L2 (டைசல்பைடு பிணைப்புகளால் இணைக்கப்பட்ட இரண்டு கனமான மற்றும் இரண்டு லேசான பாலிபெப்டைட் இழைகள்)",
+          "H1L3",
+          "H2L4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which class of immunoglobulins is primarily produced during allergic hypersensitivity reactions and binds to Fc receptors on tissue mast cells and basophils?",
+    "options": [
+      {
+        "label": "A",
+        "text": "IgG",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "IgA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "IgE",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "IgM",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Allergy is an exaggerated immune response to allergens (e.g., pollen, dust, animal dander).\nStep 2: The antibodies produced against allergens are of the IgE type.\nStep 3: Allergen binding to IgE on mast cells triggers degranulation and release of histamine and serotonin.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒவ்வாமை (Allergy) வினைகளின் போது அதிக அளவில் உற்பத்தி செய்யப்பட்டு மாஸ்ட் செல்களுடன் இணையும் ஆன்டிபாடி வகை எது?",
+        "optionTexts": [
+          "IgG",
+          "IgA",
+          "IgE",
+          "IgM"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which autoimmune disease is characterized by antibodies directed against acetylcholine receptors at the neuromuscular junction, leading to progressive muscle weakness and paralysis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Muscular dystrophy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Rheumatoid arthritis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Myasthenia gravis",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Multiple sclerosis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Myasthenia gravis is an autoimmune disorder affecting neuromuscular junctions.\nStep 2: Autoantibodies block and destroy nicotinic acetylcholine receptors on the sarcolemma.\nStep 3: This leads to fatigue, muscle weakness, and paralysis of skeletal muscles.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நரம்பு தசை சந்திப்பில் அசிட்டைல்கோலின் ஏற்பிகளுக்கு எதிராக ஆன்டிபாடிகள் உருவாகி தசை சோர்வு மற்றும் பக்கவாதத்தை ஏற்படுத்தும் சுயநோயெதிர்ப்பு நோய் எது?",
+        "optionTexts": [
+          "தசை சிதைவு நோய்",
+          "முடக்கு வாதம் (Rheumatoid arthritis)",
+          "மயஸ்தீனியா கிராவிஸ் (Myasthenia gravis)",
+          "மல்டிபிள் ஸ்களீரோசிஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which pair represents the primary lymphoid organs where immature lymphocytes differentiate and mature into antigen-sensitive lymphocytes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spleen and Lymph nodes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bone marrow and Thymus",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Tonsils and Peyer's patches",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Appendix and Spleen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Primary lymphoid organs are the sites where stem cells divide and mature into immunocompetent B and T cells.\nStep 2: Bone marrow (B-cell maturation) and Thymus (T-cell maturation) are the primary lymphoid organs.\nStep 3: Spleen, lymph nodes, tonsils, and Peyer's patches are secondary lymphoid organs.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முதிர்ச்சியடையாத லிம்போசைட்டுகள் உருவாகி முதிர்ச்சியடையும் முதன்மை நிணநீர் உறுப்புகள் (Primary lymphoid organs) எவை?",
+        "optionTexts": [
+          "மண்ணீரல் மற்றும் நிணநீர் முடிச்சுகள்",
+          "எலும்பு மஜ்ஜை மற்றும் தைமஸ் (Bone marrow and Thymus)",
+          "டான்சில்கள் மற்றும் பேயர் திட்டுகள்",
+          "குடல்வால் மற்றும் மண்ணீரல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Mucosa-Associated Lymphoid Tissue (MALT) is located within the lining of major tracts (respiratory, digestive, urogenital). What percentage of total lymphoid tissue in the human body does MALT constitute?",
+    "options": [
+      {
+        "label": "A",
+        "text": "About 20%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "About 50%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "About 70%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "About 10%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: MALT consists of lymphoid follicles situated in the mucosa lining of the digestive, respiratory, and urogenital tracts.\nStep 2: MALT constitutes about 50 percent of the total lymphoid tissue in the human body.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுவாச, செரிமான மற்றும் சிறுநீரகப் பாதைகளின் கோழைப் படலத்தில் காணப்படும் MALT, மனித உடலின் மொத்த நிணநீர் திசுவில் எத்தனை சதவீதத்தைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "சுமார் 20%",
+          "சுமார் 50%",
+          "சுமார் 70%",
+          "சுமார் 10%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "What is the hallmark pathological property of malignant cancerous tumors that distinguishes them from benign tumors and makes them life-threatening?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Contact inhibition with surrounding healthy tissue",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Metastasis (sloughing and spreading of neoplastic cells via blood/lymph to seed distant organs)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Strict encapsulation by connective tissue",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Programmed apoptotic cell death",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Benign tumors remain confined to their original location and do not spread.\nStep 2: Malignant tumor cells (neoplastic cells) proliferate rapidly, invade surrounding tissues, and enter blood or lymph.\nStep 3: Cells lodged at distant sites initiate secondary tumors; this property is called Metastasis (the most dreaded property of cancer).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தீங்கற்ற கட்டிகளை விட வீரியம் மிக்க புற்றுநோய் கட்டிகளின் (Malignant tumors) மிகவும் அச்சுறுத்தும் தனித்துவமான பண்பு எது?",
+        "optionTexts": [
+          "தொடர்பு ஒடுக்கப் பண்பு",
+          "மெட்டாஸ்டாஸிஸ் (Metastasis - புற்று செல்கள் இரத்தம்/நிணநீர் மூலம் பிற உடற்பாகங்களுக்கு பரவுதல்)",
+          "இணைப்புத் திசு உறைக்குள் அடங்கி இருத்தல்",
+          "திட்டமிடப்பட்ட செல் இறப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Heroin (commonly known as 'smack') is chemically diacetylmorphine. It is synthesized by acetylation of morphine extracted from the latex of which plant?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannabis sativa",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Papaver somniferum (Opium poppy)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Erythroxylum coca",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Atropa belladonna",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Morphine is extracted from the unripened capsule latex of the poppy plant, Papaver somniferum.\nStep 2: Acetylation of morphine yields diacetylmorphine, white, odorless, bitter crystalline heroin (smack).\nStep 3: Heroin is a depressant that slows down body functions.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹெராயின் (ஸ்மாக் - டைஅசிடைல்மார்ஃபின்) எந்த தாவரத்தின் பால் போன்ற திரவத்திலிருந்து (latex) பெறப்படும் மார்ஃபினை அசிடைலேற்றம் செய்வதன் மூலம் பெறப்படுகிறது?",
+        "optionTexts": [
+          "கஞ்சா (Cannabis sativa)",
+          "பப்பாவர் சோம்னிபெரம் / அபின் பாப்பி (Papaver somniferum)",
+          "எரித்ராக்ஸைலம் கோகோ",
+          "அட்ரோபா பெல்லடோனா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Elephantiasis (Lymphatic Filariasis), characterized by chronic inflammation and severe swelling of lower limbs and genital organs, is caused by which nematode parasite?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ascaris lumbricoides",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Wuchereria bancrofti and Wuchereria malayi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ancylostoma duodenale",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Enterobius vermicularis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Wuchereria (W. bancrofti and W. malayi), the filarial worms, cause chronic inflammation in organs over years.\nStep 2: They reside in the lymphatic vessels of the lower limbs, causing massive swelling termed Elephantiasis or Filariasis.\nStep 3: The pathogen is transmitted by female Culex mosquito vectors.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கால் மற்றும் பிறப்புறுப்பு நிணநீர் நாளங்களில் நாள்பட்ட வீக்கத்தை ஏற்படுத்தும் யானைக்கால் நோய் (Filariasis) எந்த உருளைப் புழுவால் உண்டாகிறது?",
+        "optionTexts": [
+          "அஸ்காரிஸ் லும்ப்ரிகாய்டிஸ்",
+          "உச்சரேரியா பான்கிராப்டி மற்றும் உச்சரேரியா மலாயி (Wuchereria)",
+          "அன்சைலோஸ்டோமா",
+          "என்டரோபியஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Ringworm infection in humans, characterized by dry, scaly, intensely itchy lesions on skin, nails, and scalp, is caused by which genera of fungi?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Microsporum, Trichophyton, and Epidermophyton",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Aspergillus, Penicillium, and Neurospora",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Rhizopus, Mucor, and Albugo",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Puccinia, Ustilago, and Agaricus",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ringworm is one of the most common infectious fungal diseases in humans.\nStep 2: Fungi belonging to the genera Microsporum, Trichophyton, and Epidermophyton are responsible for ringworm.\nStep 3: Heat and moisture help these fungi thrive in skin folds, groin, and between toes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தோல் மற்றும் நகங்களில் அரிப்புடன் கூடிய செதில் போன்ற புண்களை ஏற்படுத்தும் படர்தாமரை (Ringworm) நோய் எந்த பூஞ்சை பேரினங்களால் உண்டாகிறது?",
+        "optionTexts": [
+          "மைக்ரோஸ்போரம், டிரைக்கோபைட்டான் மற்றும் எபிடெர்மோபைட்டான் (Microsporum, Trichophyton, Epidermophyton)",
+          "ஆஸ்பெர்கில்லஸ் மற்றும் பெனிசிலியம்",
+          "ரைசோபஸ் மற்றும் மியூக்கார்",
+          "பக்சீனியா மற்றும் அஸ்டிலாகோ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Cocaine (coke/crack) is a potent central nervous system stimulant that produces a sense of euphoria and energy. It exerts this action primarily by interfering with the reuptake of which neurotransmitter?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetylcholine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Dopamine",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "GABA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glycine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Coca alkaloid or cocaine is obtained from the South American plant Erythroxylum coca.\nStep 2: It interferes with the transport and synaptic reuptake of the neurotransmitter Dopamine.\nStep 3: This results in excessive dopamine signaling, producing central stimulation, euphoria, and increased energy (excessive doses cause hallucinations).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோகைன் (Cocaine) மனித மத்திய நரம்பு மண்டலத்தைத் தூண்டி மிதமிஞ்சிய உற்சாகத்தை ஏற்படுத்த எந்த நரம்பு கடத்து பொருளின் மறு-உறிஞ்சுதலைத் தடுக்கிறது?",
+        "optionTexts": [
+          "அசிட்டைல்கோலின்",
+          "டோபமைன் (Dopamine)",
+          "GABA",
+          "கிளைசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Smoking tobacco leads to an increased risk of cardiovascular disease primarily because Carbon Monoxide (CO) in tobacco smoke:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Binds to hemoglobin with high affinity to form carboxyhemoglobin, reducing oxygen-carrying capacity of blood",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Directly destroys blood platelets",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Inhibits gastric acid secretion",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Increases blood glucose clearance",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Tobacco smoke contains nicotine and carbon monoxide (CO).\nStep 2: CO binds to hemoglobin with ~200 times higher affinity than O2, forming carboxyhemoglobin.\nStep 3: This drastically reduces the concentration of haem-bound oxygen, causing tissue hypoxia and cardiovascular strain.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புகையிலைப் புகையில் உள்ள கார்பன் மோனாக்சைடு (CO) இதய நோய்களை உண்டாக்குவதற்கான முக்கிய உடலியல் காரணம் என்ன?",
+        "optionTexts": [
+          "ஹிமோகுளோபினுடன் இணைந்து கார்பாக்ஸிஹிமோகுளோபினை உருவாக்கி இரத்தத்தின் ஆக்ஸிஜன் சுமக்கும் திறனைக் குறைப்பது",
+          "இரத்த தட்டணுக்களை நேரடியாக அழிப்பது",
+          "இரைப்பை அமிலச் சுரப்பைத் தடுப்பது",
+          "குளுக்கோஸ் பயன்பாட்டை அதிகரிப்பது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which biological response modifier is clinically administered to cancer patients to activate their immune system and help destroy tumors?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alpha-Interferon (α-interferon)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Morphine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Histamine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cyclosporin-A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Tumor cells often evade detection and destruction by the host immune system.\nStep 2: Cancer patients are given biological response modifiers such as α-interferon.\nStep 3: α-interferon activates natural killer cells and macrophages to target and destroy tumor cells.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புற்றுநோய் கட்டிகளை அழிக்க நோயாளியின் நோயெதிர்ப்பு மண்டலத்தைத் தூண்ட பயன்படும் உயிரியல் மாற்றியமைப்பான் (Biological response modifier) எது?",
+        "optionTexts": [
+          "ஆல்ஃபா-இன்டர்பெரான் (α-interferon)",
+          "மார்ஃபின்",
+          "ஹிஸ்டமைன்",
+          "சைக்ளோஸ்போரின்-A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Amoebiasis (Amoebic dysentery) is an intestinal infection caused by the protozoan parasite Entamoeba histolytica. What serves as the primary mechanical carrier transmitting this parasite from infected stools to food?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Female Anopheles mosquito",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Houseflies (Musca domestica)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Aedes mosquito",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tsetse fly",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Entamoeba histolytica infects the large intestine, causing stools with excess mucus and blood clots.\nStep 2: Houseflies act as mechanical carriers, transferring cysts from faecal matter to drinking water and food items.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "என்டமீபா ஹிஸ்டோலைடிகாவால் ஏற்படும் அமீபியாசிஸ் நோயைப் பரப்பும் முதன்மை கடத்தியாகச் செயல்படும் பூச்சி எது?",
+        "optionTexts": [
+          "பெண் அனோபிலஸ் கொசு",
+          "வீட்டு ஈக்கள் (Musca domestica)",
+          "ஏடிஸ் கொசு",
+          "ட்சேட்சே ஈ"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an infected person, which cells of the immune system are progressively depleted in number by HIV, leading to severe immunodeficiency and opportunistic infections?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Erythrocytes",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CD4+ T-helper (TH) lymphocytes",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Basophils",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Platelets",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: HIV enters macrophages and helper T-lymphocytes (CD4+ TH cells).\nStep 2: Progeny HIV viruses released into the blood attack and destroy other helper T-lymphocytes.\nStep 3: The progressive decline in CD4+ helper T cell count causes severe immune collapse, rendering the patient vulnerable to opportunistic pathogens (Mycobacterium, Toxoplasma, fungi).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "HIV தொற்றினால் படிப்படியாக அழிக்கப்பட்டு எண்ணிக்கை குறைவதால் கடுமையான நோயெதிர்ப்புக் குறைபாடு ஏற்படும் செல்கள் யாவை?",
+        "optionTexts": [
+          "இரத்த சிவப்பணுக்கள்",
+          "CD4+ T-உதவி செல்கள் (T-helper lymphocytes)",
+          "பேசோஃபில்கள்",
+          "இரத்த தட்டணுக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Cannabinoids (e.g., marijuana, hashish, charas, ganja) extracted from the inflorescences of Cannabis sativa primarily affect which system in the human body?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cardiovascular system",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Digestive system",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Excretory system",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Skeletal system",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Natural cannabinoids are obtained from Cannabis sativa inflorescences.\nStep 2: They interact with cannabinoid receptors present principally in the brain.\nStep 3: These drugs are well known for their marked effects on the cardiovascular system (e.g., tachycardia, altered blood pressure).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கஞ்சா செடியிலிருந்து (Cannabis sativa) பெறப்படும் கன்னாபினாய்டுகள் மனித உடலில் முதன்மையாக எந்த மண்டலத்தைப் பாதிக்கின்றன?",
+        "optionTexts": [
+          "இரத்த ஓட்ட மண்டலம் (Cardiovascular system)",
+          "செரிமான மண்டலம்",
+          "கழிவுநீக்க மண்டலம்",
+          "எலும்பு மண்டலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Injection of anti-tetanus serum (ATS) or anti-venom after a snakebite is an example of which type of immunization?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Natural active immunity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Artificial passive immunity",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Artificial active immunity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Innate cellular immunity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In active immunity, the individual's own body produces antibodies upon antigen exposure.\nStep 2: When pre-formed antibodies are directly injected to provide immediate protection against deadly toxins (like tetanus or snake venom), it provides artificial passive immunity.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாம்புக்கடிக்கு பின் செலுத்தப்படும் எதிர்-நஞ்சு ஊசி (Anti-venom) எந்த வகை நோயெதிர்ப்பிற்கு உதாரணமாகும்?",
+        "optionTexts": [
+          "இயற்கை தீவிர நோயெதிர்ப்பு",
+          "செயற்கை மந்த நோயெதிர்ப்பு (Artificial passive immunity)",
+          "செயற்கை தீவிர நோயெதிர்ப்பு",
+          "இயற்கை செல்சார் நோயெதிர்ப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Pneumonia caused by Streptococcus pneumoniae and Haemophilus influenzae, which respiratory structures get filled with fluid, causing severe breathing difficulties?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nasal chamber and pharynx only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Alveoli (air-filled sacs) of the lungs",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Trachea exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Larynx",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Pneumonia infects the alveoli of the lungs.\nStep 2: As a result of infection, the alveoli get filled with fluid, leading to severe respiratory compromise (fever, chills, cough, grey/bluish nails in severe cases).\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஸ்ட்ரெப்டோகாக்கஸ் நிமோனியாவால் ஏற்படும் நிமோனியா தொற்றில் திரவம் நிரம்பி சுவாசக் கோளாறை ஏற்படுத்தும் நுரையீரல் பகுதி எது?",
+        "optionTexts": [
+          "நாசி மற்றும் தொண்டை மட்டுமே",
+          "நுரையீரலின் காற்று நுண்ணறைகள் / ஆல்வியோலை (Alveoli)",
+          "மூச்சுக்குழல் மட்டுமே",
+          "குரல்வளை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which diagnostic imaging technique utilizes powerful magnetic fields and non-ionizing radiations to accurately detect pathological and physiological changes in internal cancerous tissues?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Computed Tomography (CT scan)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Magnetic Resonance Imaging (MRI)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Standard Radiography (X-rays)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Positron Emission Tomography with gamma rays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: CT scans and X-rays use ionizing radiation (X-rays) to generate 3D/2D images.\nStep 2: MRI uses strong magnetic fields and non-ionizing radio waves to safely and accurately detect physiological and pathological alterations in soft tissues.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புற்றுநோயைக் கண்டறிய வலிமையான காந்தப்புலங்களையும் அயனியாக்காத கதிர்வீச்சுகளையும் பயன்படுத்தும் மருத்துவ இமேஜிங் முறை எது?",
+        "optionTexts": [
+          "CT ஸ்கேன்",
+          "காந்த அதிர்வு பிம்பமாக்கல் / MRI (Magnetic Resonance Imaging)",
+          "எக்ஸ்-கதிர் பரிசோதனை",
+          "PET ஸ்கேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which organ acts as a large reservoir of erythrocytes (RBC graveyard) and contains phagocytic macrophages that filter blood-borne microorganisms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spleen",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Thymus",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tonsils",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Appendix",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The spleen is a bean-shaped secondary lymphoid organ.\nStep 2: It filters blood by trapping blood-borne microbes with phagocytes and serves as a major reservoir of erythrocytes (RBC graveyard).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரத்த சிவப்பணுக்களின் சேமிப்புக்கிடங்காகவும், இரத்தத்தில் உள்ள நுண்ணுயிரிகளை வடிகட்டும் உறுப்பாகவும் செயல்படும் நிணநீர் உறுப்பு எது?",
+        "optionTexts": [
+          "மண்ணீரல் (Spleen)",
+          "தைமஸ்",
+          "டான்சில்கள்",
+          "குடல்வால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Normal cellular genes that have the potential to convert into oncogenes and cause cancer when mutated or abnormally expressed are called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Proto-oncogenes (Cellular oncogenes / c-onc)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Viral oncogenes (v-onc)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Transposons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pseudogenes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Normal cells contain several genes called cellular oncogenes (c-onc) or proto-oncogenes.\nStep 2: Under certain conditions (mutations, carcinogens), these genes are activated to oncogenes, leading to oncogenic transformation of the cell.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திடீர்மாற்றமடையும் போது புற்றுநோய் உண்டாக்கும் ஆன்கோஜீன்களாக மாறும் திறன் கொண்ட இயல்பான செல் மரபணுக்கள் யாவை?",
+        "optionTexts": [
+          "புரோட்டோ-ஆன்கோஜீன்கள் / செல் ஆன்கோஜீன்கள் (Proto-oncogenes)",
+          "வைரஸ் ஆன்கோஜீன்கள்",
+          "டிரான்ஸ்போசான்கள்",
+          "சூடோஜீன்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Plants with hallucinogenic properties that are often abused include Atropa belladonna and which other member of family Solanaceae?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Datura",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Erythroxylum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Papaver",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cannabis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hallucinogens are drugs that alter perceptions, thoughts, and feelings without sensory stimulation.\nStep 2: Natural plants like Atropa belladonna and Datura contain tropane alkaloids (atropine, scopolamine) that possess potent hallucinogenic properties.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாயத்தோற்றத்தை (Hallucination) உண்டாக்கும் பண்புகளைக் கொண்ட அட்ரோபா பெல்லடோனா மற்றும் மற்றொரு சோலனேசி தாவர இனம் எது?",
+        "optionTexts": [
+          "ஊமத்தை / டாட்டூரா (Datura)",
+          "எரித்ராக்ஸைலம்",
+          "பப்பாவர்",
+          "கஞ்சா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which cellular component of innate immunity acts as the first line of phagocytic cellular defense against invading bacteria in blood?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Polymorphonuclear leukocytes (PMNL-neutrophils)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Basophils",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Erythrocytes",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B-lymphocytes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cellular barriers in innate immunity include phagocytic white blood cells.\nStep 2: Polymorphonuclear leukocytes (PMNL-neutrophils) and monocytes in blood, as well as macrophages in tissues, phagocytose and destroy microbes.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரத்தத்தில் நுழையும் பாக்டீரியாக்களை விழுங்கி அழிக்கும் முதன்மை செல்சார் தடுப்பாகச் செயல்படும் வெள்ளை அணுக்கள் யாவை?",
+        "optionTexts": [
+          "நியூட்ரோபில்கள் / PMNL (Polymorphonuclear leukocytes)",
+          "பேசோஃபில்கள்",
+          "இரத்த சிவப்பணுக்கள்",
+          "B-லிம்போசைட்டுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Common cold (Rhinitis) differs from Pneumonia in that the Rhino virus infects:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The nose and respiratory passage, but does not infect the lungs",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The alveoli exclusively, causing alveolar fluid buildup",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Blood vessels leading to intestinal bleeding",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The pleura surrounding the pericardium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Rhino viruses cause the common cold, one of the most infectious human ailments.\nStep 2: They infect the nose and upper respiratory passage but do not infect the lungs.\nStep 3: Pneumonia infects the alveoli of the lungs.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சாதாரண சளி (Rhinitis) நிமோனியாவிலிருந்து எவ்வாறு வேறுபடுகிறது?",
+        "optionTexts": [
+          "ரைனோ வைரஸ் மூக்கு மற்றும் மேல் சுவாசப் பாதையை மட்டுமே பாதிக்கிறது, நுரையீரலை பாதிப்பதில்லை",
+          "இது ஆல்வியோலை பகுதியை மட்டும் பாதிக்கிறது",
+          "இரத்த நாளங்களை பாதிக்கிறது",
+          "இதய உரையை பாதிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an antibody molecule, the specific antigen-binding site (paratope) is located in which structural region?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Constant region of the heavy chain (Fc fragment)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Variable regions of both the Heavy (VH) and Light (VL) chains at the N-terminal (Fab region)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Constant region of the light chain only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hinge region disulfide bond core",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: An antibody has a constant region (Fc) and variable regions (Fab).\nStep 2: The hypervariable loops (CDRs) of both the variable heavy (VH) and variable light (VL) chains form the unique antigen-binding cleft.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆன்டிபாடி மூலக்கூறில் ஆன்டிஜென் இணையும் குறிப்பிட்ட தளம் (Paratope) எங்கு அமைந்துள்ளது?",
+        "optionTexts": [
+          "கனமான இழையின் மாறா பகுதி",
+          "கனமான மற்றும் லேசான இழைகளின் N-முனைய மாறுபடும் பகுதிகள் (Fab பகுதி)",
+          "லேசான இழையின் மாறா பகுதி மட்டும்",
+          "டைசல்பைடு பிணைப்பு மையம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO04-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Repeated alcohol intake leads to tolerance and dependence. Chronic alcohol abuse primarily damages which vital metabolic organ, resulting in Cirrhosis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kidney",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Liver",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Spleen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pancreas",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Chronic alcohol abuse causes accumulation of fat in hepatocytes (fatty liver syndrome).\nStep 2: Continued abuse leads to fibrous tissue proliferation and permanent liver cell death, called Liver Cirrhosis.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொடர்ச்சியான அதிகப்படியான மது அருந்துதலால் ஈரல் அழற்சி மற்றும் கல்லீரல் சிதைவு (Cirrhosis) எந்த உறுப்பில் ஏற்படுகிறது?",
+        "optionTexts": [
+          "சிறுநீரகம்",
+          "கல்லீரல் (Liver)",
+          "மண்ணீரல்",
+          "கணையம்"
+        ]
+      }
+    ]
+  }
+]

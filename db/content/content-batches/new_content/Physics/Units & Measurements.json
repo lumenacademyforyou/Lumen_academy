@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY01-000001",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A physical quantity X is given by the relation X = (A^2 * B^3) / (C * sqrt(D)). If the percentage errors in the measurement of A, B, C, and D are 1%, 2%, 3%, and 4% respectively, what is the maximum percentage error in the measurement of X?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "16%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for fractional error: (ΔX/X) = 2(ΔA/A) + 3(ΔB/B) + 1(ΔC/C) + (1/2)(ΔD/D).\nStep 2: Substitute percentage errors: % error in X = 2(1%) + 3(2%) + 1(3%) + (1/2)(4%).\nStep 3: Calculate: 2% + 6% + 3% + 2% = 13%.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு இயற்பியல் அளவு X = (A^2 * B^3) / (C * sqrt(D)) என்ற சமன்பாட்டால் குறிக்கப்படுகிறது. A, B, C மற்றும் D அளவீடுகளில் உள்ள விழுக்காடு பிழைகள் முறையே 1%, 2%, 3% மற்றும் 4% எனில், X அளவீட்டில் ஏற்படும் பெரும விழுக்காடு பிழை என்ன?",
+        "optionTexts": [
+          "13%",
+          "16%",
+          "10%",
+          "7%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000002",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The dimensional formula of Planck's constant (h) is identical to the dimensional formula of which of the following physical quantities?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Linear momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Angular momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Work",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Power",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Energy of photon E = h * nu => [h] = [E] / [nu] = [M L^2 T^-2] / [T^-1] = [M L^2 T^-1].\nStep 2: Angular momentum L = m * v * r => [L] = [M] [L T^-1] [L] = [M L^2 T^-1].\nStep 3: Both have identical dimensional formula [M L^2 T^-1].\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பிளாங்க் மாறிலியின் (h) பரிமாண வாய்ப்பாடு பின்வரும் எந்த இயற்பியல் அளவின் பரிமாண வாய்ப்பாட்டிற்குச் சமமானது?",
+        "optionTexts": [
+          "நேர்கோட்டு உந்தம்",
+          "கோண உந்தம்",
+          "வேலை",
+          "திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000003",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A screw gauge has a pitch of 1.0 mm and 100 divisions on its circular scale. When measuring the diameter of a wire with no zero error, the main scale reads 2 mm and the 45th circular division coincides with the reference line. What is the measured diameter of the wire?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.45 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.045 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.90 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.245 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Least count (LC) = Pitch / Total circular divisions = 1.0 mm / 100 = 0.01 mm.\nStep 2: Reading = Main Scale Reading (MSR) + (Circular Scale Reading * LC).\nStep 3: Reading = 2 mm + (45 * 0.01 mm) = 2.45 mm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திருகு அளவியின் புscratch அளவு 1.0 mm மற்றும் அதன் வட்ட அளவுகோலில் 100 பிரிவுகள் உள்ளன. பூஜ்ஜியப் பிழை இல்லாத நிலையில், ஒரு கம்பியின் விட்டம் அளவிடும்போது முதன்மை அளவுகோல் 2 mm மற்றும் 45-வது வட்டப்பிரிவு குறிக்கோட்டுடன் பொருந்துகிறது. கம்பியின் விட்டம் என்ன?",
+        "optionTexts": [
+          "2.45 mm",
+          "2.045 mm",
+          "2.90 mm",
+          "0.245 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000004",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A car travelling at 72 km/h is brought to rest over a distance of 40 m by applying constant braking. What will be the stopping distance if the car travels at 144 km/h under the same constant braking deceleration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "80 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "120 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "160 m",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "200 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From v^2 = u^2 - 2as, when v = 0, stopping distance s = u^2 / (2a).\nStep 2: Stopping distance is directly proportional to the square of initial speed: s ∝ u^2.\nStep 3: When initial speed doubles from 72 km/h to 144 km/h, s increases by a factor of 2^2 = 4.\nStep 4: New stopping distance = 40 m * 4 = 160 m. Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "72 km/h வேகத்தில் செல்லும் மகிழுந்து பிரேக் பயன்படுத்தப்பட்டு 40 m தூரத்தில் நிறுத்தப்படுகிறது. அதே மாறா பிரேக்கிங் முடுக்கத்தில் மகிழுந்து 144 km/h வேகத்தில் சென்றால் அதன் நிறுத்தத் தொலைவு என்னவாக இருக்கும்?",
+        "optionTexts": [
+          "80 m",
+          "120 m",
+          "160 m",
+          "200 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000005",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A ball is thrown vertically upwards with velocity u from the top of a tower of height H. It reaches the ground with velocity 3u. What is the height H of the tower in terms of u and acceleration due to gravity g?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4u^2 / g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3u^2 / g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2u^2 / g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8u^2 / g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Use third equation of motion v^2 = u^2 + 2as with downward direction as positive.\nStep 2: Initial velocity upwards: u_initial = -u; Final velocity downwards: v = 3u; acceleration a = g, displacement s = H.\nStep 3: (3u)^2 = (-u)^2 + 2gH => 9u^2 = u^2 + 2gH => 8u^2 = 2gH.\nStep 4: H = 4u^2 / g. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "H உயரமுள்ள கோபுரத்தின் உச்சியிலிருந்து ஒரு பந்து u திசைவேகத்துடன் செங்குத்தாக மேல்நோக்கி எறியப்படுகிறது. அது 3u திசைவேகத்துடன் தரையை அடைகிறது. கோபுரத்தின் உயரம் H இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "4u^2 / g",
+          "3u^2 / g",
+          "2u^2 / g",
+          "8u^2 / g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000006",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body is projected with initial speed u at an angle θ with the horizontal. What is the radius of curvature of its trajectory at the highest point of its flight?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(u^2 cos^2 θ) / g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(u^2 sin^2 θ) / g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "u^2 / g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(u^2 cos θ) / g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: At the highest point, the velocity of the projectile is purely horizontal: v = u cos θ.\nStep 2: The acceleration perpendicular to the velocity is the full acceleration due to gravity: a_n = g.\nStep 3: The radius of curvature R is given by R = v^2 / a_n.\nStep 4: R = (u cos θ)^2 / g = (u^2 cos^2 θ) / g. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் கிடைமட்டத்துடன் θ கோணத்தில் u தொடக்க வேகத்துடன் எறியப்படுகிறது. அதன் பாதையின் உச்சப் புள்ளியில் வளைவு ஆரம் என்ன?",
+        "optionTexts": [
+          "(u^2 cos^2 θ) / g",
+          "(u^2 sin^2 θ) / g",
+          "u^2 / g",
+          "(u^2 cos θ) / g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000007",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two vectors A and B are such that |A + B| = |A - B|. What is the angle between vectors A and B?",
+    "options": [
+      {
+        "label": "A",
+        "text": "90°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0°",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "180°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Square both sides: |A + B|^2 = |A - B|^2.\nStep 2: A^2 + B^2 + 2A·B = A^2 + B^2 - 2A·B.\nStep 3: 4(A·B) = 0 => A·B = AB cos θ = 0.\nStep 4: Since A, B ≠ 0, cos θ = 0 => θ = 90°. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B ஆகிய இரு வெக்டர்களுக்கு |A + B| = |A - B| எனில், A மற்றும் B இவற்றுக்கு இடையேயான கோணம் என்ன?",
+        "optionTexts": [
+          "90°",
+          "0°",
+          "60°",
+          "180°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000008",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A projectile is fired from the ground with an initial kinetic energy K. What is its kinetic energy at the highest point of its trajectory if the angle of projection is 60°?",
+    "options": [
+      {
+        "label": "A",
+        "text": "K / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "K / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3K / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Initial kinetic energy K = (1/2) m u^2.\nStep 2: At maximum height, vertical velocity is zero, and horizontal velocity is v_x = u cos 60° = u / 2.\nStep 3: Kinetic energy at apex K_top = (1/2) m (u cos 60°)^2 = (1/2) m (u/2)^2 = (1/4) * (1/2 m u^2) = K / 4.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "K தொடக்க இயக்க ஆற்றலுடன் தரையிலிருந்து 60° எறிகோணத்தில் ஒரு எறிபொருள் வீசப்படுகிறது. அதன் பாதையின் உச்சியில் இயக்க ஆற்றல் என்னவாக இருக்கும்?",
+        "optionTexts": [
+          "K / 4",
+          "K / 2",
+          "3K / 4",
+          "பூஜ்ஜியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000009",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The position of a particle moving along the x-axis depends on time t according to x(t) = 9t^2 - t^3, where x is in meters and t is in seconds. What is the position of the particle when it achieves its maximum speed in the positive x-direction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54 m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "81 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "27 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "36 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Velocity v = dx/dt = 18t - 3t^2.\nStep 2: Speed is maximum when acceleration a = dv/dt = 0 => 18 - 6t = 0 => t = 3 s.\nStep 3: Substitute t = 3 s into x(t): x(3) = 9(3)^2 - (3)^3 = 9(9) - 27 = 81 - 27 = 54 m.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சில் இயங்கும் ஒரு துகளின் நிலை x(t) = 9t^2 - t^3 என அமைகிறது. நேர்மறை x-திசையில் துகள் தனது பெரும வேகத்தை அடையும் போது அதன் நிலை என்ன?",
+        "optionTexts": [
+          "54 m",
+          "81 m",
+          "27 m",
+          "36 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000010",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following combinations of base units represents the unit of electrical permittivity of free space (ε₀)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A^2 s^4 kg^-1 m^-3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A^2 s^2 kg^-1 m^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "kg m^3 s^-4 A^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A s^2 kg^-1 m^-3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: From Coulomb's law, F = q_1 q_2 / (4π ε₀ r^2) => ε₀ = q^2 / (F r^2).\nStep 2: Dimensions of charge q = [I T] = A s; Force F = kg m s^-2; distance r = m.\nStep 3: Units of ε₀ = (A s)^2 / [(kg m s^-2) * m^2] = A^2 s^4 kg^-1 m^-3.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தின் மின்தேக்குத்திறனின் (ε₀) அடிப்படை அலகுகளின் சரியான சேர்க்கை எது?",
+        "optionTexts": [
+          "A^2 s^4 kg^-1 m^-3",
+          "A^2 s^2 kg^-1 m^-2",
+          "kg m^3 s^-4 A^-2",
+          "A s^2 kg^-1 m^-3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000011",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle starts from the origin at t = 0 with an initial velocity v₀ = 5.0 i m/s and moves in the x-y plane with a constant acceleration a = (3.0 i + 2.0 j) m/s². What is the y-coordinate of the particle at the instant its x-coordinate is 84 m?",
+    "options": [
+      {
+        "label": "A",
+        "text": "36 m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "24 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "48 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "18 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Motion along x-axis: x(t) = u_x t + (1/2) a_x t^2 => 84 = 5t + (1/2)(3)t^2 => 1.5t^2 + 5t - 84 = 0 => 3t^2 + 10t - 168 = 0.\nStep 2: Solve quadratic: (3t + 28)(t - 6) = 0 => t = 6 s.\nStep 3: Motion along y-axis: y(t) = u_y t + (1/2) a_y t^2 = 0 + (1/2)(2.0)(6)^2 = 36 m.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் t = 0 இல் தொடக்க திசைவேகம் v₀ = 5.0 i m/s உடன் ஆதியிலிருந்து புறப்பட்டு மாறா முடுக்கம் a = (3.0 i + 2.0 j) m/s² உடன் xy-தளத்தில் இயங்குகிறது. துகளின் x-அச்சு தொலைவு 84 m ஆக இருக்கும் தருணத்தில் அதன் y-அச்சு தொலைவு என்ன?",
+        "optionTexts": [
+          "36 m",
+          "24 m",
+          "48 m",
+          "18 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000012",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A river 400 m wide flows at a speed of 3.0 m/s. A swimmer capable of swimming at 5.0 m/s in still water crosses the river to reach a point directly opposite the starting point on the other bank. In what direction should the swimmer head, and what is the time taken to cross?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Upstream at angle sin^-1(0.6) with the normal to bank, taking 100 s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Downstream at 37° to bank, taking 80 s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Directly perpendicular to the bank, taking 80 s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Upstream at 45° to bank, taking 120 s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: To reach directly opposite, the resultant velocity must be perpendicular to river flow: v_resultant = sqrt(v_swimmer^2 - v_river^2).\nStep 2: v_resultant = sqrt(5.0^2 - 3.0^2) = sqrt(25 - 9) = 4.0 m/s.\nStep 3: Angle with normal upstream: sin θ = v_river / v_swimmer = 3/5 = 0.6 => θ = sin^-1(0.6).\nStep 4: Time taken = Width / v_resultant = 400 m / 4.0 m/s = 100 s. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "400 m அகலமுள்ள ஓர் ஆறு 3.0 m/s வேகத்தில் பாய்கிறது. அமைதியான நீரில் 5.0 m/s வேகத்தில் நீந்தக்கூடிய ஒருவர் தொடக்கப் புள்ளிக்கு நேர் எதிரே உள்ள கரையை அடைய எந்தக் கோணத்தில் நீந்த வேண்டும், மற்றும் ஆற்றைக் கடக்க ஆகும் நேரம் என்ன?",
+        "optionTexts": [
+          "கரைக்கு செங்குத்தான கோட்டுடன் எதிர்நீச்சலில் sin^-1(0.6) கோணத்தில், 100 s நேரம்",
+          "நீரோட்ட திசையில் கரைக்கு 37° கோணத்தில், 80 s நேரம்",
+          "கரைக்கு நேர் செங்குத்தாக, 80 s நேரம்",
+          "எதிர்நீச்சலில் கரைக்கு 45° கோணத்தில், 120 s நேரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000013",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The velocity-time graph of a body moving in a straight line is a straight line passing through the origin with a positive slope. What does this indicate about the body's motion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uniform acceleration with zero initial velocity",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Uniform velocity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Non-uniform acceleration",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Increasing acceleration",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In a v-t graph, slope represents acceleration: a = dv/dt = constant.\nStep 2: Since it passes through the origin (0, 0), at t = 0, v = 0.\nStep 3: Constant slope means uniform acceleration.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நேர்கோட்டில் இயங்கும் ஒரு பொருளின் திசைவேக-நேர வரைபடம் ஆதி வழியாக செல்லும் நேர்மறை சாய்வு கொண்ட நேர்கோடாகும். இது பொருளின் எந்த வகையான இயக்கத்தைக் குறிக்கிறது?",
+        "optionTexts": [
+          "பூஜ்ஜிய தொடக்க திசைவேகத்துடன் சீரான முடுக்கம்",
+          "சீரான திசைவேகம்",
+          "சீரற்ற முடுக்கம்",
+          "அதிகரிக்கும் முடுக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000014",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the angle of projection for which the horizontal range of a projectile is equal to four times its maximum height?",
+    "options": [
+      {
+        "label": "A",
+        "text": "45°",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "30°",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "75°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Formula for Range: R = (2 u^2 sin θ cos θ) / g; Maximum Height: H = (u^2 sin^2 θ) / (2g).\nStep 2: Relation between R and H is R = 4 H cot θ.\nStep 3: Given R = 4H => 4H = 4H cot θ => cot θ = 1 => tan θ = 1.\nStep 4: θ = 45°. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எறிபொருளின் கிடைமட்ட வீச்சு அதன் பெரும உயரத்தைப் போல் நான்கு மடங்கு சமமாக இருக்க தேவையான எறிகோணம் என்ன?",
+        "optionTexts": [
+          "45°",
+          "30°",
+          "60°",
+          "75°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000015",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A stone dropped from the top of a cliff falls through a height h in time t. If it falls through the first h/2 in time t1 and the remaining h/2 in time t2, what is the relation between t, t1, and t2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "t1 = t / sqrt(2) and t2 = t (1 - 1/sqrt(2))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "t1 = t2 = t / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "t1 = 2 t2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "t2 = sqrt(2) t1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Height fallen from rest in time t: h = (1/2) g t^2 => t = sqrt(2h / g).\nStep 2: For first half height h/2: h/2 = (1/2) g t1^2 => t1 = sqrt(h / g) = t / sqrt(2).\nStep 3: Time for second half: t2 = t - t1 = t - t / sqrt(2) = t (1 - 1/sqrt(2)).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு செங்குத்துப் பாறையின் உச்சியிலிருந்து விழும் கல் t நேரத்தில் h உயரத்தைக் கடக்கிறது. முதல் h/2 உயரத்தை t1 நேரத்திலும், மீதமுள்ள h/2 உயரத்தை t2 நேரத்திலும் கடந்தால் t, t1 மற்றும் t2 இடையே உள்ள தொடர்பு என்ன?",
+        "optionTexts": [
+          "t1 = t / sqrt(2) மற்றும் t2 = t (1 - 1/sqrt(2))",
+          "t1 = t2 = t / 2",
+          "t1 = 2 t2",
+          "t2 = sqrt(2) t1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000016",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If velocity v, force F, and time T are chosen as fundamental physical quantities, what is the dimensional formula for mass M?",
+    "options": [
+      {
+        "label": "A",
+        "text": "[F v^-1 T]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[F v T^-1]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[F v^-2 T]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[F v T]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Express Force: F = M * a = M * (v / T).\nStep 2: Rearrange for Mass: M = F * T / v = F v^-1 T.\nStep 3: Dimensions of mass: [M] = [F v^-1 T].\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசைவேகம் v, விசை F மற்றும் காலம் T ஆகியவை அடிப்படை இயற்பியல் அளவுகளாக எடுத்துக்கொள்ளப்பட்டால், நிறையின் (M) பரிமாண வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "[F v^-1 T]",
+          "[F v T^-1]",
+          "[F v^-2 T]",
+          "[F v T]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000017",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A particle moves along a circular path of radius R with constant speed v. What is the magnitude of the change in velocity of the particle when it turns through an angle of 60°?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2v",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The magnitude of change in velocity for rotation by angle θ is |Δv| = 2v sin(θ / 2).\nStep 2: Here θ = 60°, so θ / 2 = 30°.\nStep 3: |Δv| = 2v sin 30° = 2v * (1/2) = v.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய வட்டப்பாதையில் v மாறா வேகத்தில் ஒரு துகள் இயங்குகிறது. துகள் 60° கோணம் திரும்பும்போது அதன் திசைவேக மாற்றத்தின் எண்மதிப்பு என்ன?",
+        "optionTexts": [
+          "v",
+          "v sqrt(3)",
+          "v / 2",
+          "2v"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000018",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A vernier callipers has 1 mm main scale divisions, and 20 vernier scale divisions coincide with 19 main scale divisions. What is the least count of the instrument?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.05 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.01 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.02 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.1 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: 1 Main Scale Division (MSD) = 1 mm.\nStep 2: 20 Vernier Scale Divisions (VSD) = 19 MSD => 1 VSD = 19/20 MSD = 0.95 mm.\nStep 3: Least Count (LC) = 1 MSD - 1 VSD = 1 mm - 0.95 mm = 0.05 mm (or 1/20 mm).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வெர்னியர் அளவியின் முதன்மை அளவுகோல் பிரிவு 1 mm ஆகும். 20 வெர்னியர் அளவுகோல் பிரிவுகள் 19 முதன்மை அளவுகோல் பிரிவுகளுடன் பொருந்துகின்றன. இந்த கருவியின் மீச்சிற்றளவு என்ன?",
+        "optionTexts": [
+          "0.05 mm",
+          "0.01 mm",
+          "0.02 mm",
+          "0.1 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000019",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A train of length 200 m traveling at 72 km/h completely overtakes another train of length 300 m traveling in the same direction on a parallel track at 36 km/h. How long does the overtaking process take?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "25 s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "60 s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Relative velocity v_rel = v1 - v2 = 72 - 36 = 36 km/h = 36 * (5/18) = 10 m/s.\nStep 2: Total relative distance to cover for complete overtaking d = L1 + L2 = 200 + 300 = 500 m.\nStep 3: Time taken t = d / v_rel = 500 m / 10 m/s = 50 s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "72 km/h வேகத்தில் செல்லும் 200 m நீளமுள்ள தொடர்வண்டி ஒன்று, அதே திசையில் இணையான தண்டவாளத்தில் 36 km/h வேகத்தில் செல்லும் 300 m நீளமுள்ள மற்றொரு தொடர்வண்டியை முழுமையாக முந்திச் செல்ல எவ்வளவு நேரம் ஆகும்?",
+        "optionTexts": [
+          "50 s",
+          "25 s",
+          "100 s",
+          "60 s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000020",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A particle is moving in a circle of radius R with a constant tangential acceleration a_t. If the particle starts from rest, at what time t will its radial (centripetal) acceleration be equal to its tangential acceleration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(R / a_t)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R / a_t",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(2R / a_t)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 sqrt(R / a_t)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Speed at time t starting from rest: v = a_t * t.\nStep 2: Radial acceleration a_r = v^2 / R = (a_t * t)^2 / R = (a_t^2 * t^2) / R.\nStep 3: Equate a_r = a_t: (a_t^2 * t^2) / R = a_t => t^2 = R / a_t.\nStep 4: t = sqrt(R / a_t). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய வட்டத்தில் a_t மாறா தொடுகோட்டு முடுக்கத்துடன் ஓய்வு நிலையிலிருந்து ஒரு துகள் இயங்கத் தொடங்குகிறது. எந்த நேரத்தில் t அதன் ஆர (மையநோக்கு) முடுக்கம் தொடுகோட்டு முடுக்கத்திற்குச் சமமாக இருக்கும்?",
+        "optionTexts": [
+          "sqrt(R / a_t)",
+          "R / a_t",
+          "sqrt(2R / a_t)",
+          "2 sqrt(R / a_t)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000021",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two bullets are fired simultaneously, horizontally and with different speeds from the same height above level ground. Which bullet hits the ground first (neglecting air resistance)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both hit the ground simultaneously",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The faster bullet hits first",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The slower bullet hits first",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Depends on the masses of the bullets",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The vertical motion is completely independent of the horizontal velocity.\nStep 2: Both bullets have zero initial vertical velocity (u_y = 0) and fall through the same vertical height H under identical acceleration g.\nStep 3: Time of flight t = sqrt(2H / g) is identical for both.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தரைக்கு மேலே ஒரே உயரத்தில் இருந்து வெவ்வேறு கிடைமட்ட வேகங்களில் ஒரே நேரத்தில் இரு தோட்டாக்கள் கிடைமட்டமாக சுடப்படுகின்றன. எந்த தோட்டா முதலில் தரையைத் தொடும் (காற்று உராய்வைப் புறக்கணிக்க)?",
+        "optionTexts": [
+          "இரண்டும் ஒரே நேரத்தில் தரையைத் தொடும்",
+          "அதிக வேகமுடைய தோட்டா முதலில் தொடும்",
+          "குறைந்த வேகமுடைய தோட்டா முதலில் தொடும்",
+          "தோட்டாக்கள் நிறையைப் பொறுத்தது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000022",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of significant figures in the measured value 0.005080 kg is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Leading zeros before the first non-zero digit are not significant (the three leading zeros in 0.00...).\nStep 2: Non-zero digits (5, 8) are significant.\nStep 3: The zero between 5 and 8 is captive and significant; the trailing zero after 8 is in decimal portion and significant.\nStep 4: Total significant digits = 4 (5, 0, 8, 0). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.005080 kg என்ற அளவிடப்பட்ட மதிப்பில் உள்ள முக்கிய எண்ணுருக்களின் எண்ணிக்கை:",
+        "optionTexts": [
+          "4",
+          "6",
+          "3",
+          "7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000023",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A balloon starts rising from the ground with a constant vertical acceleration of 1.25 m/s². After 8 seconds, a stone is released from the balloon. How long after its release does the stone strike the ground? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Height reached in 8 s: h = (1/2) * a * t^2 = 0.5 * 1.25 * 64 = 40 m.\nStep 2: Velocity of balloon and stone at release: u = a * t = 1.25 * 8 = 10 m/s upwards.\nStep 3: Equation for stone falling to ground: -h = u*t' - (1/2) g t'^2 => -40 = 10 t' - 5 t'^2.\nStep 4: 5 t'^2 - 10 t' - 40 = 0 => t'^2 - 2t' - 8 = 0 => (t' - 4)(t' + 2) = 0 => t' = 4 s. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பலூன் தரையிலிருந்து 1.25 m/s² மாறா செங்குத்து முடுக்கத்துடன் மேலே எழும்புகிறது. 8 வினாடிகளுக்குப் பிறகு பலூனிலிருந்து ஒரு கல் விடுவிக்கப்படுகிறது. கல் விடுவிக்கப்பட்ட எத்தனை வினாடிகளுக்குப் பிறகு தரையை அடையும்? (g = 10 m/s²)",
+        "optionTexts": [
+          "4 s",
+          "2 s",
+          "6 s",
+          "8 s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000024",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The displacement x of a particle varies with time t as x = a e^(-α t) + b e^(β t), where a, b, α, and β are positive constants. The velocity of the particle will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increase continuously with time",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Decrease continuously to zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remain independent of time",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Drop to zero at t = α / β",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Velocity v = dx/dt = -a α e^(-α t) + b β e^(β t).\nStep 2: Acceleration a_acc = dv/dt = a α^2 e^(-α t) + b β^2 e^(β t).\nStep 3: Since all constants a, b, α, β are positive and exponentials are positive, acceleration dv/dt > 0 for all t.\nStep 4: Therefore, velocity increases continuously with time. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகளின் இடப்பெயர்ச்சி x = a e^(-α t) + b e^(β t) என அமைகிறது (a, b, α, β நேர்மறை மாறிலிகள்). துகளின் திசைவேகம்:",
+        "optionTexts": [
+          "நேரத்துடன் தொடர்ந்து அதிகரிக்கும்",
+          "பூஜ்ஜியத்தை நோக்கி தொடர்ந்து குறையும்",
+          "நேரத்தைச் சார்ந்திராமல் மாறிலியாக இருக்கும்",
+          "t = α / β நேரத்தில் பூஜ்ஜியமாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000025",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following physical quantities has the dimensions of [M^1 L^2 T^-3 A^-2]?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electrical resistance",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Electrical resistivity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Magnetic flux",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Self-inductance",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Resistance R = Potential / Current = V / I = (Work / Charge) / I = W / (I^2 * t).\nStep 2: [W] = [M L^2 T^-2], [I^2] = [A^2], [t] = [T].\nStep 3: [R] = [M L^2 T^-2] / [A^2 T] = [M L^2 T^-3 A^-2].\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எந்த இயற்பியல் அளவு [M^1 L^2 T^-3 A^-2] என்ற பரிமாணத்தைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "மின் தடை",
+          "மின்தடை எண்",
+          "காந்தப் பாயம்",
+          "தன்மின் தூண்டல் எண்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000026",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body moves in a straight line with deceleration proportional to its velocity: a = -k v, where k is a positive constant. If the initial velocity is v₀, what is the distance covered by the body before coming to rest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "v₀ / k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v₀^2 / (2k)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "k v₀",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v₀ / (2k)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Acceleration a = v (dv/dx) = -k v.\nStep 2: Dividing by v yields dv/dx = -k => dv = -k dx.\nStep 3: Integrate from v = v₀ to v = 0 and x = 0 to x = s: ∫[v₀ to 0] dv = -k ∫[0 to s] dx => 0 - v₀ = -k s.\nStep 4: s = v₀ / k. Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் a = -k v என்ற திசைவேகத்திற்கு நேர்விகித எதிர்முடுக்கத்துடன் நேர்கோட்டில் இயங்குகிறது. தொடக்க திசைவேகம் v₀ எனில், ஓய்வு நிலைக்கு வரும் முன் அது கடந்த மொத்த தூரம் என்ன?",
+        "optionTexts": [
+          "v₀ / k",
+          "v₀^2 / (2k)",
+          "k v₀",
+          "v₀ / (2k)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000027",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A = 3i + 4j and B = 7i + 24j, what is the vector having the same magnitude as B and parallel to A?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15i + 20j",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3i + 4j",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7i + 24j",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "20i + 15j",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Magnitude of B: |B| = sqrt(7^2 + 24^2) = sqrt(49 + 576) = sqrt(625) = 25.\nStep 2: Unit vector along A: A_hat = (3i + 4j) / sqrt(3^2 + 4^2) = (3i + 4j) / 5.\nStep 3: Desired vector = |B| * A_hat = 25 * (3i + 4j) / 5 = 5 * (3i + 4j) = 15i + 20j.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = 3i + 4j மற்றும் B = 7i + 24j எனில், B இன் அளவைக் கொண்டு A க்கு இணையாக உள்ள வெக்டர் எது?",
+        "optionTexts": [
+          "15i + 20j",
+          "3i + 4j",
+          "7i + 24j",
+          "20i + 15j"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000028",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle moves along a circular path of radius r with speed v varying with time as v = 2t. What is the magnitude of total acceleration of the particle at t = 2 s?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(4 + (16/r)^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 / r",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "16 / r",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Tangential acceleration a_t = dv/dt = d/dt(2t) = 2 m/s².\nStep 2: Speed at t = 2 s is v = 2(2) = 4 m/s.\nStep 3: Centripetal acceleration a_c = v^2 / r = 4^2 / r = 16 / r.\nStep 4: Total acceleration a_total = sqrt(a_t^2 + a_c^2) = sqrt(2^2 + (16/r)^2) = sqrt(4 + (16/r)^2). Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r ஆரமுடைய வட்டப்பாதையில் v = 2t என்ற திசைவேகத்துடன் ஒரு துகள் இயங்குகிறது. t = 2 s தருணத்தில் துகளின் மொத்த முடுக்கத்தின் எண்மதிப்பு என்ன?",
+        "optionTexts": [
+          "sqrt(4 + (16/r)^2)",
+          "4 / r",
+          "2 m/s²",
+          "16 / r"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000029",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A stone is thrown with speed u at angle θ to the horizontal. If the speed of the stone becomes u / sqrt(2) when it reaches height h, what is the maximum height H of the projectile in terms of h?",
+    "options": [
+      {
+        "label": "A",
+        "text": "h / sin^2 θ",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "u^2 sin^2 θ / (2g)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2h",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4h",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Using conservation of mechanical energy: (1/2) m u^2 = (1/2) m v^2 + m g h.\nStep 2: Given v = u / sqrt(2), so (1/2) m u^2 = (1/2) m (u^2 / 2) + m g h => (1/4) m u^2 = m g h => h = u^2 / (4g).\nStep 3: Maximum height H = (u^2 sin^2 θ) / (2g).\nStep 4: Conclude Option B is the exact formula for H (or H = 2h sin^2 θ). Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிடைமட்டத்துடன் θ கோணத்தில் u வேகத்தில் ஒரு கல் எறியப்படுகிறது. h உயரத்தை அடையும் போது அதன் வேகம் u / sqrt(2) ஆக மாறினால், எறிபொருளின் பெரும உயரம் H இன் மதிப்பு என்ன?",
+        "optionTexts": [
+          "h / sin^2 θ",
+          "u^2 sin^2 θ / (2g)",
+          "2h",
+          "4h"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000030",
+    "examCode": "NEET",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pairs of physical quantities has the same dimensions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Impulse and Linear Momentum",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Work and Power",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Torque and Pressure",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Force and Stress",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Impulse J = Force * time = [M L T^-2] * [T] = [M L T^-1].\nStep 2: Linear momentum p = mass * velocity = [M] * [L T^-1] = [M L T^-1].\nStep 3: Both have identical dimensions [M L T^-1].\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எந்த இயற்பியல் அளவுகளின் ஜோடி ஒரே பரிமாணத்தைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "கணத்தாக்கு விசை மற்றும் நேர்கோட்டு உந்தம்",
+          "வேலை மற்றும் திறன்",
+          "முறுக்குவிசை மற்றும் அழுத்தம்",
+          "விசை மற்றும் தகைவு"
+        ]
+      }
+    ]
+  }
+]

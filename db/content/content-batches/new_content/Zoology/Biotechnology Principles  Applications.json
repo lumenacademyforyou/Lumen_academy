@@ -1,0 +1,1472 @@
+[
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000001",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Malonate acts as a classical competitive inhibitor of the enzyme succinate dehydrogenase in the Krebs cycle. What effect does the addition of malonate have on the kinetic parameters Vmax and Km of the reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Apparent Km increases (lower substrate affinity), while Vmax remains completely unchanged at saturating substrate concentrations",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Vmax increases, while Km decreases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vmax decreases, while Km remains unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both Vmax and Km decrease equally",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Malonate structurally resembles the natural substrate succinate and competes for the enzyme's catalytic active site.\nStep 2: Competitive inhibition can be fully overcome by increasing the substrate concentration [S], so the maximum velocity Vmax is unaltered.\nStep 3: Higher substrate is needed to achieve half-maximal velocity, raising the Michaelis constant (apparent Km increases).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிரப்ஸ் சுழற்சியில் சக்சினேட் டிஹைட்ரஜனேஸ் என்சைமின் போட்டித் தடுப்பானாக மேலோனேட் செயல்படுகிறது. மேலோனேட்டைச் சேர்ப்பது வினையின் இயக்கவியல் மாறிலிகளான Vmax மற்றும் Km மதிப்புகளில் என்ன மாற்றத்தை ஏற்படுத்துகிறது?",
+        "optionTexts": [
+          "தோற்ற நிலை Km மதிப்பு அதிகரிக்கிறது (குறைந்த கவர்ச்சித் திறன்), ஆனால் அதிக அடி மூலக்கூறு செறிவில் Vmax மதிப்பு மாறாமல் அப்படியே இருக்கும்",
+          "Vmax அதிகரிக்கிறது, ஆனால் Km குறைகிறது",
+          "Vmax குறைகிறது, ஆனால் Km மாறாமல் உள்ளது",
+          "Vmax மற்றும் Km ஆகிய இரண்டும் சமமாகக் குறைகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000002",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which is the most abundant protein in the entire animal world?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hemoglobin",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Collagen",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "RuBisCO",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Insulin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Collagen is the major extracellular structural protein in connective tissues, skin, bones, and tendons.\nStep 2: It is the most abundant protein in the animal world.\nStep 3: (RuBisCO is the most abundant protein in the entire biosphere).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு உலகில் மிக அதிக அளவில் காணப்படும் புரதம் எது?",
+        "optionTexts": [
+          "ஹிமோகுளோபின்",
+          "கொலாஜன் (Collagen)",
+          "ருபிஸ்கோ (RuBisCO)",
+          "இன்சுலின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000003",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following is a plant-derived secondary metabolite that belongs to the category of Lectins?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Morphine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Abrin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Concanavalin A",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Vinblastin",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Secondary metabolites are classified by biochemical category in NCERT:\n- Alkaloids: Morphine, Codeine\n- Toxins: Abrin, Ricin\n- Lectins: Concanavalin A\n- Drugs: Vinblastin, Curcumin\nStep 2: Concanavalin A is a carbohydrate-binding protein (lectin).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கீழ்க்கண்ட தாவர இரண்டாம் நிலை வளர்சிதை மாற்றப் பொருட்களில் லெக்டின் (Lectin) வகையைச் சார்ந்தது எது?",
+        "optionTexts": [
+          "மார்ஃபின்",
+          "ஆப்ரின்",
+          "கான்கனவாலின் A (Concanavalin A)",
+          "வின்பிளாஸ்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000004",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Palmitic acid and Arachidonic acid contain how many total carbon atoms respectively (including the carboxyl carbon)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "16 and 20 carbons respectively",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 and 19 carbons respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "18 and 22 carbons respectively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "14 and 18 carbons respectively",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Fatty acids have a hydrocarbon chain ending in a carboxyl group (-COOH).\nStep 2: Palmitic acid has 16 carbons including the carboxyl carbon (CH3-(CH2)14-COOH).\nStep 3: Arachidonic acid has 20 carbon atoms including the carboxyl carbon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பாக்சில் கார்பன் உட்பட பால்மிடிக் அமிலம் மற்றும் அராக்கிடோனிக் அமிலத்தில் உள்ள மொத்த கார்பன் அணுக்களின் எண்ணிக்கை முறையே யாவை?",
+        "optionTexts": [
+          "16 மற்றும் 20 கார்பன்கள்",
+          "15 மற்றும் 19 கார்பன்கள்",
+          "18 மற்றும் 22 கார்பன்கள்",
+          "14 மற்றும் 18 கார்பன்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000005",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Lecithin is a crucial structural component of animal cell membranes. Chemically, lecithin is a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phosphoglyceride (Phospholipid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Simple triglyceride",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Steroid hormone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sphingoglycolipid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Some lipids have phosphorus and a phosphorylated organic compound in them.\nStep 2: These are phospholipids or phosphoglycerides.\nStep 3: Lecithin (phosphatidylcholine) is a major phospholipid found in plasma membranes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விலங்கு பிளாஸ்மா சவ்வுகளில் காணப்படும் லெசித்தின் (Lecithin) வேதியியல் ரீதியாக எந்த வகை கொழுப்பு மூலக்கூறாகும்?",
+        "optionTexts": [
+          "பாஸ்போகிளிசரைடு / பாஸ்போலிப்பிட் (Phosphoglyceride)",
+          "எளிய ட்ரைகிளிசரைடு",
+          "ஸ்டீராய்டு ஹார்மோன்",
+          "கிளைக்கோலிப்பிட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000006",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which non-protein organic chemical component of an enzyme is tightly and permanently bound to the apoenzyme protein?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Prosthetic group (e.g., Haem in peroxidase and catalase)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Co-enzyme (e.g., NAD+)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Metal ion activator (e.g., Zn2+)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Competitive inhibitor",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Cofactors are non-protein constituents bound to apoenzymes to make them catalytically active.\nStep 2: Prosthetic groups are organic compounds distinguished by being tightly and permanently bound to the apoenzyme (e.g., Haem in catalase).\nStep 3: Coenzymes bind only transiently during catalysis.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "என்சைமின் அப்போஎன்சைம் புரதப் பகுதியுடன் இறுக்கமாகவும் நிரந்தரமாகவும் பிணைக்கப்பட்டுள்ள புரதமல்லாத கரிமப் பகுதி எது?",
+        "optionTexts": [
+          "புரோஸ்தடிக் தொகுதி (Prosthetic group - எ.கா. கேடலேஸில் உள்ள ஹீம்)",
+          "துணை என்சைம் (Co-enzyme)",
+          "உலோக அயனி",
+          "போட்டித் தடுப்பான்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000007",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Coenzymes NAD (Nicotinamide Adenine Dinucleotide) and NADP contain which essential water-soluble B-complex vitamin?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thiamine (Vitamin B1)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Niacin (Nicotinic acid / Vitamin B3)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Riboflavin (Vitamin B2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Biotin (Vitamin B7)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Many coenzymes contain vitamins as their essential chemical components.\nStep 2: Coenzyme NAD and NADP contain the vitamin niacin (Vitamin B3 / nicotinic acid).\nStep 3: FAD contains riboflavin (Vitamin B2).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "NAD மற்றும் NADP ஆகிய இணை நொதிகளில் அடங்கியுள்ள வைட்டமின் எது?",
+        "optionTexts": [
+          "தயமின் (வைட்டமின் B1)",
+          "நியாசின் (Niacin / வைட்டமின் B3)",
+          "ரிபோஃபிளேவின் (வைட்டமின் B2)",
+          "பயோட்டின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000008",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which metal ion acts as an essential cofactor for the proteolytic enzyme carboxypeptidase and carbonic anhydrase?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zinc (Zn2+)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Magnesium (Mg2+)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Copper (Cu2+)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Iron (Fe2+)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Metal ions form coordination bonds with side chains at the active site.\nStep 2: Zinc (Zn2+) is a mandatory cofactor for Carboxypeptidase, Carbonic Anhydrase, and Alcohol Dehydrogenase.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பாக்சிபெப்டிடேஸ் மற்றும் கார்போனிக் அன்ஹைட்ரேஸ் ஆகிய என்சைம்களின் இன்றியமையாத உலோக இணை காரணியாகச் செயல்படும் அயனி எது?",
+        "optionTexts": [
+          "துத்தநாகம் / ஜிங்க் (Zn2+)",
+          "மெக்னீசியம் (Mg2+)",
+          "தாமிரம் (Cu2+)",
+          "இரும்பு (Fe2+)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000009",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When living tissue is homogenized in trichloroacetic acid (Cl3CCOOH) and filtered, which biomolecules are recovered in the acid-insoluble retentate fraction despite having a molecular weight below 800 Da?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Amino acids",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Monosaccharides",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lipids (due to assembly into insoluble membrane vesicles during cell disruption)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nucleotides",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The acid-insoluble fraction contains macromolecules with MW > 10,000 Da (proteins, nucleic acids, polysaccharides).\nStep 2: Lipids have molecular weights under 800 Da, but because cell membranes fragment into water-insoluble vesicles, they are retained on the filter paper with macromolecules.\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயிருள்ள திசுவை டிரைகுளோரோஅசிட்டிக் அமிலத்தில் அரைத்து வடிகட்டும் போது, 800 டால்டனுக்கு குறைவான மூலக்கூறு எடை கொண்டிருப்பினும் அமிலத்தில் கரையாத பகுதியில் பெறப்படும் மூலக்கூறு எது?",
+        "optionTexts": [
+          "அமினோ அமிலங்கள்",
+          "ஒற்றைச் சர்க்கரைகள்",
+          "கொழுப்புகள் / லிப்பிடுகள் (Lipids - சவ்வு குமிழ்களாக ஒன்றுசேர்வதால்)",
+          "நியூக்ளியோடைடுகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000010",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a right-handed B-DNA double helix, what is the pitch of the helix and the distance between two adjacent base pairs?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pitch = 3.4 nm (34 Å) and distance between base pairs = 0.34 nm (3.4 Å)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pitch = 2.0 nm and distance between base pairs = 0.20 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pitch = 34 nm and distance between base pairs = 3.4 nm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pitch = 0.34 nm and distance between base pairs = 3.4 nm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In B-DNA, each complete helical turn (pitch) measures 3.4 nm (34 Å).\nStep 2: There are 10 base pairs per helical turn.\nStep 3: Distance between two adjacent base pairs is 3.4 nm / 10 = 0.34 nm (3.4 Å).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வலஞ்சுழி B-DNA இரட்டைச் சுருளில், ஒரு முழுச் சுற்றின் சுருள் சுருதி (Pitch) மற்றும் அடுத்தடுத்த கார இணைகளுக்கு இடையிலான தொலைவு என்ன?",
+        "optionTexts": [
+          "சுருள் சுருதி = 3.4 nm (34 Å) மற்றும் கார இணைகளுக்கு இடையிலான தொலைவு = 0.34 nm (3.4 Å)",
+          "சுருள் சுருதி = 2.0 nm மற்றும் தொலைவு = 0.20 nm",
+          "சுருள் சுருதி = 34 nm மற்றும் தொலைவு = 3.4 nm",
+          "சுருள் சுருதி = 0.34 nm மற்றும் தொலைவு = 3.4 nm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000011",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Non-competitive enzyme inhibition is characterized by an inhibitor that binds to an allosteric site (outside the active site). What effect does this have on Vmax and Km?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vmax decreases, while Km remains unchanged",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Km increases, while Vmax remains unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both Vmax and Km increase proportionally",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both Vmax and Km decrease",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: In non-competitive inhibition, the inhibitor binds to an allosteric regulatory site on both free enzyme and ES complex.\nStep 2: This alters the catalytic conformation, permanently inactivating a fraction of enzymes regardless of substrate concentration.\nStep 3: Hence, the maximum velocity Vmax is reduced, but the substrate affinity for remaining active sites (Km) is unchanged.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போட்டியற்ற என்சைம் தடுப்பில் (Non-competitive inhibition) தடுப்பான் அலோஸ்டீரிக் தளத்தில் இணையும் போது Vmax மற்றும் Km மதிப்புகளில் என்ன மாற்றம் ஏற்படுகிறது?",
+        "optionTexts": [
+          "Vmax குறைகிறது, ஆனால் Km மாறாமல் உள்ளது",
+          "Km அதிகரிக்கிறது, ஆனால் Vmax மாறாமல் உள்ளது",
+          "Vmax மற்றும் Km இரண்டும் அதிகரிக்கின்றன",
+          "Vmax மற்றும் Km இரண்டும் குறைகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000012",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which homopolysaccharide is composed of N-acetylglucosamine (NAG) units linked by beta-1,4-glycosidic bonds and forms the hard exoskeleton of arthropods and cell walls of fungi?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cellulose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chitin",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Inulin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glycogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Chitin is a complex structural polysaccharide containing nitrogen.\nStep 2: It is a homopolymer of N-acetyl-D-glucosamine (NAG).\nStep 3: Chitin forms the tough exoskeleton of arthropods and the cell walls of fungi.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "N-அசிட்டைல் குளூக்கோசமைன் (NAG) அலகுகளால் ஆன, கணுக்காலிகளின் புறச்சட்டகம் மற்றும் பூஞ்சை செல் சுவரை உருவாக்கும் பாலிசாக்கரைடு எது?",
+        "optionTexts": [
+          "செல்லுலோஸ்",
+          "கைட்டின் (Chitin)",
+          "இனுலின்",
+          "கிளைக்கோஜன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000013",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The tertiary structure of a protein, which is essential for its biological and enzymatic catalytic activity, represents:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The linear sequence of amino acids in a polypeptide chain",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Extensive 3-dimensional folding of the polypeptide chain upon itself, stabilized by disulfide bridges, ionic, hydrogen, and hydrophobic bonds",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Regular folding into alpha-helices and beta-pleated sheets",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Spatial assembly of multiple polypeptide subunits",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The primary structure is the amino acid sequence.\nStep 2: Secondary structure includes alpha-helices and beta-sheets.\nStep 3: Tertiary structure is the overall 3D conformational folding of the polypeptide creating active clefts (catalytic sites), stabilized by disulfide, ionic, and hydrophobic interactions.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "என்சைம்களின் உயிரியல் வினைவேக மாற்றச் செயல்பாட்டிற்கு அவசியமான புரதத்தின் மூன்றாம் நிலை கட்டமைப்பு (Tertiary structure) எதைக் குறிக்கிறது?",
+        "optionTexts": [
+          "அமினோ அமிலங்களின் நேர்கோட்டு வரிசை",
+          "பாலிபெப்டைட் இழை முப்பரிமாண மடிப்புகளாக மடிந்து டைசல்பைடு, ஹைட்ரஜன், அயனிப் பிணைப்புகளால் நிலைப்படுத்தப்படுதல்",
+          "ஆல்ஃபா-சுருள் மற்றும் பீட்டா-தாள்கள் மடிப்பு மட்டும்",
+          "பல பாலிபெப்டைட் இழைகளின் தொகுப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000014",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which is an aromatic amino acid possessing a benzene ring in its side chain (R-group)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tyrosine, Phenylalanine, and Tryptophan",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Glycine, Alanine, and Valine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lysine, Arginine, and Histidine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glutamic acid and Aspartic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Amino acids with aromatic side chains are Tyrosine, Phenylalanine, and Tryptophan.\nStep 2: Glycine and Alanine have aliphatic side chains.\nStep 3: Lysine and Arginine are basic amino acids.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீன் வளையத்தைக் பக்கச் சங்கிலியில் கொண்டுள்ள அரோமேட்டிக் அமினோ அமிலங்கள் யாவை?",
+        "optionTexts": [
+          "டைரோசின், ஃபினைல்அலனைன் மற்றும் டிரிப்டோபான்",
+          "கிளைசின், அலனைன் மற்றும் வேலைன்",
+          "லைசின், அர்ஜினின் மற்றும் ஹிஸ்டிடின்",
+          "குளூட்டாமிக் அமிலம் மற்றும் அஸ்பார்டிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000015",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "How do biological biocatalysts (enzymes) accelerate the rate of chemical reactions in living cells?",
+    "options": [
+      {
+        "label": "A",
+        "text": "By increasing the overall standard free energy difference (ΔG) between reactants and products",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "By lowering the activation energy barrier required to reach the transition state",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "By raising the temperature of the intracellular medium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "By shifting the chemical equilibrium constant toward the product side",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Enzymes bind substrates at their catalytic active site to form a transition state.\nStep 2: Enzymes stabilize this transition state and substantially lower the activation energy required for the reaction.\nStep 3: They do not alter the net ΔG or the chemical equilibrium.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உயிரியல் வினையூக்கிகளான என்சைம்கள் செல்கள் நடைபெறும் வேதி வினைகளின் வேகத்தை எவ்வாறு அதிகரிக்கின்றன?",
+        "optionTexts": [
+          "வினைபடு மற்றும் வினைவிளை பொருட்களுக்கு இடையேயான கட்டற்ற ஆற்றல் மாற்றத்தை (ΔG) அதிகரிப்பதன் மூலம்",
+          "மாற்று நிலையை அடையத் தேவையான கிளர்வுறு ஆற்றலைக் (Activation energy) குறைப்பதன் மூலம்",
+          "செல் வெப்பநிலையை அதிகரிப்பதன் மூலம்",
+          "வேதிச் சமநிலை மாறிலியை மாற்றுவதன் மூலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000016",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the catalytic formation of a dinucleotide or nucleic acid strand, the phosphodiester bond links:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The 3'-hydroxyl group of one sugar to the 5'-phosphate group of the adjacent sugar",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The 1'-carbon of sugar to the purine/pyrimidine nitrogen base",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Two complementary nitrogen bases via hydrogen bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Two amino acid alpha-carboxyl groups",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: A nucleotide consists of a nitrogenous base attached to C1' of sugar by an N-glycosidic bond, and a phosphate attached to C5'-OH by a phosphoester bond.\nStep 2: When two nucleotides polymerize, a phosphodiester bond forms between the 3'-OH of one pentose sugar and the 5'-phosphate group of the next nucleotide.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நியூக்ளிக் அமில இழையில் அடுத்தடுத்த நியூக்ளியோடைடுகளை இணைக்கும் பாஸ்போடைஎஸ்டர் பிணைப்பு எந்த கார்பன்களுக்கு இடையே உருவாகிறது?",
+        "optionTexts": [
+          "ஒரு சர்க்கரையின் 3'-ஹைட்ராக்சில் தொகுதி மற்றும் அடுத்த சர்க்கரையின் 5'-பாஸ்பேட் தொகுதி",
+          "சர்க்கரையின் 1'-கார்பன் மற்றும் நைட்ரஜன் காரம்",
+          "இரண்டு நிரப்பு நைட்ரஜன் காரங்கள்",
+          "இரண்டு அமினோ அமிலங்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000017",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which type of enzyme catalyzes the transfer of a chemical group (other than hydrogen) between a pair of substrates?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Transferases",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hydrolases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Lyases",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Isomerases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: According to the IUBMB enzyme classification:\n- Class 1: Oxidoreductases\n- Class 2: Transferases (transfer of groups like methyl, phosphate, amino, etc.)\n- Class 3: Hydrolases\n- Class 4: Lyases\n- Class 5: Isomerases\n- Class 6: Ligases\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜனைத் தவிர பிற வேதித் தொகுதிகளை ஒரு மூலக்கூறிலிருந்து மற்றொன்றுக்கு இடமாற்றம் செய்யும் வினையை ஊக்குவிக்கும் என்சைம்கள் எவை?",
+        "optionTexts": [
+          "டிரான்ஸ்ஃபெரேஸ்கள் (Transferases)",
+          "ஹைட்ரோலேஸ்கள்",
+          "லையேஸ்கள்",
+          "ஐசோமெரேஸ்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000018",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At a specific pH known as the isoelectric point (pI), an amino acid carries both a positive and negative charge simultaneously with a net charge of zero. This dipolar ionic form is called a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cationic form",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zwitterion",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Anionic form",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Apolar molecule",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Amino acids contain both ionizable amino (-NH2) and carboxyl (-COOH) groups.\nStep 2: In aqueous solution at its isoelectric pH, the carboxyl group loses a proton (-COO-) and the amino group gains a proton (-NH3+).\nStep 3: This dipolar ion with net zero electrical charge is termed a Zwitterion.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குறிப்பிட்ட pH மதிப்பில் நேர் மற்றும் எதிர் மின்சுமைகளை ஒரே நேரத்தில் கொண்டு நிகர மின்சுமையற்றதாகக் காணப்படும் அமினோ அமில வடிவம் எது?",
+        "optionTexts": [
+          "நேர்மின் அயனி வடிவம்",
+          "ஸ்விட்டர் அயனி வடிவம் (Zwitterion)",
+          "எதிர்மின் அயனி வடிவம்",
+          "துருவமற்ற வடிவம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000019",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The Michaelis-Menten constant (Km) of an enzyme represents:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The substrate concentration at which the enzymatic reaction velocity reaches half of its maximum velocity (Vmax/2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The maximum reaction velocity at infinite substrate concentration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The activation energy barrier in kJ/mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The inhibitor concentration required to cause 50% inhibition",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The Michaelis constant (Km) is an intrinsic kinetic parameter of an enzyme-substrate system.\nStep 2: Mathematically, Km is defined as the substrate concentration [S] at which the reaction velocity v = Vmax / 2.\nStep 3: A low Km reflects higher affinity of the enzyme for its substrate.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "என்சைமின் மைக்கேலிஸ் மாறிலி (Km) எதனைக் குறிக்கிறது?",
+        "optionTexts": [
+          "என்சைம் வினை வேகம் அதன் அதிகபட்ச வேகத்தில் பாதியை (Vmax/2) அடையும் போதுள்ள அடி மூலக்கூறு செறிவு",
+          "முடிவிலா செறிவில் அதிகபட்ச வினை வேகம்",
+          "கிளர்வுறு ஆற்றல்",
+          "50% தடுப்பிற்குத் தேவையான தடுப்பான் செறிவு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000020",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Starch gives a characteristic intense deep blue color when treated with iodine solution, whereas cellulose does not. What structural feature accounts for this difference?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Starch forms helical secondary structures that can trap iodine (I2) molecules, whereas cellulose has straight linear chains",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Starch is composed of fructose monomers",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cellulose is an animal polysaccharide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Starch lacks glycosidic bonds",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Starch forms helical secondary structures.\nStep 2: Starch can hold I2 molecules in the helical portion, forming a blue-colored complex.\nStep 3: Cellulose does not contain complex helices and hence cannot hold I2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஸ்டார்ச் அயோடின் கரைசலுடன் நீல நிறத்தைத் தருகிறது, ஆனால் செல்லுலோஸ் தருவதில்லை. இதற்கு காரணமான கட்டமைப்பு வேறுபாடு என்ன?",
+        "optionTexts": [
+          "ஸ்டார்ச் சுருள் வடிவ இரண்டாம் நிலை கட்டமைப்பைக் கொண்டு அயோடின் மூலக்கூறுகளை உள்ளே பிடித்து வைக்கிறது, ஆனால் செல்லுலோஸ் நேர்கோட்டு அமைப்பைக் கொண்டுள்ளது",
+          "ஸ்டார்ச் பிரக்டோஸால் ஆனது",
+          "செல்லுலோஸ் ஒரு விலங்கு பாலிசாக்கரைடு",
+          "ஸ்டார்ச்சில் கிளைக்கோசிடிக் பிணைப்புகள் இல்லை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000021",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which catalytic RNA molecule acts as a ribozyme during bacterial protein translation to catalyze peptide bond formation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "16S rRNA",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "23S rRNA (Peptidyl transferase)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5S rRNA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tRNA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ribozymes are non-protein RNA molecules that possess catalytic enzyme activity.\nStep 2: In prokaryotes, 23S rRNA of the large 50S ribosomal subunit acts as the peptidyl transferase ribozyme for peptide bond formation.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாக்டீரியா புரதச்சேர்க்கையில் பெப்டைட் பிணைப்பை உருவாக்கும் ரைபோசைம் (Ribozyme) நொதியாகச் செயல்படும் RNA எது?",
+        "optionTexts": [
+          "16S rRNA",
+          "23S rRNA (பெப்டிடைல் டிரான்ஸ்ஃபரேஸ்)",
+          "5S rRNA",
+          "tRNA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000022",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which nitrogenous base is present exclusively in RNA and is replaced by thymine (5-methyl uracil) in DNA?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adenine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Guanine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Uracil",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Cytosine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Nitrogenous bases are purines (Adenine, Guanine) and pyrimidines (Cytosine, Thymine, Uracil).\nStep 2: Uracil is present in RNA at the place of Thymine (5-methyluracil).\nStep 3: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "RNA இல் மட்டும் காணப்பட்டு, DNA இல் அதற்குப் பதிலாக தயமின் காணப்படும் நைட்ரஜன் காரம் எது?",
+        "optionTexts": [
+          "அடினைன்",
+          "குவானைன்",
+          "யுராசில் (Uracil)",
+          "சைட்டோசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000023",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Inulin is a storage fructan polysaccharide composed of repeating polymer units of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Glucose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fructose",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Galactose",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mannose",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Inulin is a naturally occurring storage homopolysaccharide found in roots/tubers of plants (e.g., Dahlia).\nStep 2: It is an unbranched polymer composed entirely of fructose monomers.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இனுலின் (Inulin) என்பது எந்த ஒற்றைச் சர்க்கரை அலகுகளால் ஆன பாலிசாக்கரைடு ஆகும்?",
+        "optionTexts": [
+          "குளுக்கோஸ்",
+          "பிரக்டோஸ் (Fructose)",
+          "கேலக்டோஸ்",
+          "மேனோஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000024",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of chemical bond stabilizes the secondary structure (alpha-helix and beta-pleated sheet) of a polypeptide chain?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Intrachain and interchain Hydrogen bonds between -C=O and -NH- groups",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Covalent disulfide bonds exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phosphodiester bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Glycosidic ether linkages",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: The secondary structure of proteins involves regular, local folding patterns.\nStep 2: The alpha-helix and beta-pleated sheets are held and stabilized by hydrogen bonds between the carbonyl oxygen (-C=O) of one peptide bond and the amino hydrogen (-NH-) of another.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிபெப்டைட் இழையின் இரண்டாம் நிலை கட்டமைப்பை (ஆல்ஃபா-சுருள் மற்றும் பீட்டா-தாள்கள்) நிலைப்படுத்தும் பிணைப்பு எது?",
+        "optionTexts": [
+          "-C=O மற்றும் -NH- தொகுதிகளுக்கு இடையே உள்ள ஹைட்ரஜன் பிணைப்புகள்",
+          "டைசல்பைடு பிணைப்புகள் மட்டும்",
+          "பாஸ்போடைஎஸ்டர் பிணைப்புகள்",
+          "கிளைக்கோசிடிக் பிணைப்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000025",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which class of enzymes catalyzes the hydrolytic cleavage of ester, ether, peptide, glycosidic, C-C, or P-N bonds using water?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lyases",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hydrolases",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ligases",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Transferases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Hydrolases are Class 3 enzymes.\nStep 2: They catalyze the cleavage of covalent bonds (ester, peptide, glycosidic, etc.) by the addition of water (hydrolysis).\nStep 3: Digestive enzymes like amylase, lipase, and pepsin are classic hydrolases.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரைச் சேர்த்து எஸ்டர், பெப்டைட், கிளைக்கோசிடிக் பிணைப்புகளை உடைக்கும் என்சைம்கள் எந்த வகுப்பைச் சார்ந்தவை?",
+        "optionTexts": [
+          "லையேஸ்கள்",
+          "ஹைட்ரோலேஸ்கள் (Hydrolases)",
+          "லிகேஸ்கள்",
+          "டிரான்ஸ்ஃபெரேஸ்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000026",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which statement correctly describes the nature of Adenylic acid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It is a purine nitrogen base",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "It is a ribonucleoside",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "It is a phosphorylated nucleotide (Adenosine monophosphate)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "It is a pyrimidine nucleoside",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Adenine is a nitrogen base.\nStep 2: Adenine + Ribose = Adenosine (a nucleoside).\nStep 3: Adenosine + Phosphate = Adenylic acid (AMP, a nucleotide).\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடினிலிக் அமிலம் (Adenylic acid) பற்றிய சரியான விளக்கம் எது?",
+        "optionTexts": [
+          "இது ஒரு பியூரின் நைட்ரஜன் காரம்",
+          "இது ஒரு நியூக்ளியோசைடு",
+          "இது ஒரு பாஸ்பேட்டேற்றம் அடைந்த நியூக்ளியோடைடு (Adenosine monophosphate)",
+          "இது ஒரு பிரிமிடைன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000027",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which type of enzyme catalyzes the joining of two molecules by forming C-O, C-S, C-N, or C-C bonds coupled with ATP hydrolysis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ligases (e.g., DNA ligase, Glutamine synthetase)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lyases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hydrolases",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Isomerases",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Ligases (Class 6 enzymes) catalyze the linking together of two compounds.\nStep 2: Examples include enzymes catalyzing joining of C-O, C-S, C-N, P-O bonds with cleavage of high-energy ATP bonds (e.g., DNA ligase).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ATP பிளவோடு இரண்டு மூலக்கூறுகளை இணைக்கும் வினைகளை ஊக்குவிக்கும் என்சைம் வகுப்பு எது?",
+        "optionTexts": [
+          "லிகேஸ்கள் (Ligases - எ.கா. DNA லிகேஸ்)",
+          "லையேஸ்கள்",
+          "ஹைட்ரோலேஸ்கள்",
+          "ஐசோமெரேஸ்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000028",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The simple basic amino acid containing a positively charged epsilon-amino group in its side chain is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lysine",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Valine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Glutamic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Serine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Lysine and Arginine are positively charged basic amino acids.\nStep 2: Glutamic acid and Aspartic acid are acidic amino acids.\nStep 3: Valine is neutral and Serine is a hydroxy-amino acid.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார அமினோ அமிலத்திற்கு (Basic amino acid) சரியான உதாரணம் எது?",
+        "optionTexts": [
+          "லைசின் (Lysine)",
+          "வேலைன்",
+          "குளூட்டாமிக் அமிலம்",
+          "செரின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000029",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In adult human hemoglobin (HbA), which level of protein structural organization is exhibited by its four polypeptide subunits (2 alpha and 2 beta chains)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary structure",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Secondary structure",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quaternary structure",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tertiary structure of a single monomer",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Some proteins are an assembly of more than one polypeptide or subunit.\nStep 2: Adult human hemoglobin consists of 4 subunits: two α-type and two β-type chains arranged together.\nStep 3: This spatial assembly of multiple subunits represents the quaternary structure of proteins.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மனித ஹிமோகுளோபினில் உள்ள நான்கு பாலிபெப்டைட் இழைகள் (2 ஆல்ஃபா மற்றும் 2 பீட்டா) புரதத்தின் எந்த நிலைக் கட்டமைப்பைக் குறிக்கின்றன?",
+        "optionTexts": [
+          "முதல் நிலை கட்டமைப்பு",
+          "இரண்டாம் நிலை கட்டமைப்பு",
+          "நான்காம் நிலை கட்டமைப்பு (Quaternary structure)",
+          "மூன்றாம் நிலை கட்டமைப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-ZOO-ZOO06-000030",
+    "examCode": "NEET",
+    "subjectCode": "ZOO",
+    "nodeTagCode": "zoo_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which pair represents plant-derived secondary metabolites that act as potent anticancer drugs?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vinblastin and Curcumin",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Abrin and Ricin",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Morphine and Codeine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Concanavalin A and Gums",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Step 1: Secondary metabolites listed under 'Drugs' in NCERT Table 9.3 are Vinblastin (from Catharanthus roseus / Vinca) and Curcumin (from turmeric).\nStep 2: Vinblastin is a mitotic inhibitor widely used as an anticancer chemotherapeutic drug.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாவரங்களிலிருந்து பெறப்படும் மருந்துகளாகப் பயன்படும் இரண்டாம் நிலை வளர்சிதை மாற்றப் பொருட்கள் யாவை?",
+        "optionTexts": [
+          "வின்பிளாஸ்டின் மற்றும் குர்குமின் (Vinblastin and Curcumin)",
+          "ஆப்ரின் மற்றும் ரிசின்",
+          "மார்ஃபின் மற்றும் கோடீன்",
+          "கான்கனவாலின் A மற்றும் பிசின்கள்"
+        ]
+      }
+    ]
+  }
+]
