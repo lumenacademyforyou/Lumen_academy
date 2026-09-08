@@ -1,5 +1,16 @@
 import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
+// LA-UX-REFRESH-002 G1 — html2canvas-pro, not html2canvas.
+//
+// This project is on Tailwind CSS v4, whose palette is emitted in the
+// oklch() color space (109 occurrences in the built stylesheet).
+// html2canvas@1.4.1 (unreleased since 2022) cannot parse oklch/oklab/lab/
+// color-mix and throws "Attempting to parse an unsupported color function"
+// as soon as it walks a styled node — which is why every PDF button in the
+// app silently failed, and why the scorecard share reported "couldn't create
+// the image". html2canvas-pro is the maintained fork of the same codebase
+// with support for those color functions; the API is identical, so this is
+// an import swap, not a rewrite.
+import html2canvas from "html2canvas-pro";
 
 export async function exportAnalyticsPdf(elementId: string, filename = "Lumen_Academy_Analytics_Report.pdf"): Promise<void> {
   const element = document.getElementById(elementId);

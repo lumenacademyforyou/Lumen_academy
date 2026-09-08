@@ -126,6 +126,12 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   // docs/test-engine-fix-prompt.md Defect 3 — Exit is a three-way choice, not
   // a native yes/no confirm(). See the modal at the bottom of this file.
   const [showExitModal, setShowExitModal] = useState(false);
+  // LA-UX-REFRESH-002 G6 — Exit and Pause are two separate, adjacent controls
+  // now, so each gets its own confirmation. Both still confirm:
+  // docs/test-engine-fix-prompt.md Defect 3 exists precisely because an
+  // unconfirmed exit mid-attempt was a real defect, and splitting the button
+  // in two is not a reason to reintroduce it.
+  const [showPauseModal, setShowPauseModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -340,6 +346,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
   // is now reached from a real dialog.
   const handleExitAndPause = async () => {
     setShowExitModal(false);
+    setShowPauseModal(false);
     exitingLifecycleRef.current = true;
     setIsExiting(true);
     try {
@@ -883,13 +890,30 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
             >
               {isSubmitting ? t("Submitting...") : t("Submit Test?")}
             </button>
-            <button
-              onClick={() => setShowExitModal(true)}
-              disabled={isExiting}
-              className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer text-center block disabled:opacity-60 disabled:cursor-not-allowed"
-            >
-              {isExiting ? t("Exiting...") : t("Exit & Pause Test")}
-            </button>
+            {/* LA-UX-REFRESH-002 G6 — two separate, adjacent controls in place
+                of the single "Exit & Pause Test" button. Pause keeps the
+                attempt for later (resumable from My Results); Exit ends the
+                exam by submitting it. Neither ever discards an answer. */}
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={() => setShowPauseModal(true)}
+                disabled={isExiting || isSubmitting}
+                title={t("Save your answers and come back to this test later")}
+                className="py-3 bg-[var(--teal)]/10 dark:bg-[#FCB824]/10 text-[var(--teal)] dark:text-[#FCB824] border border-[var(--teal)]/40 dark:border-[#FCB824]/40 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-[var(--teal)]/20 dark:hover:bg-[#FCB824]/20 transition-colors cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                <span className="material-symbols-outlined text-base">pause_circle</span>
+                {isExiting ? t("Pausing...") : t("Pause")}
+              </button>
+              <button
+                onClick={() => setShowExitModal(true)}
+                disabled={isExiting || isSubmitting}
+                title={t("Finish this test and leave")}
+                className="py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-bold text-xs uppercase tracking-wide rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                <span className="material-symbols-outlined text-base">logout</span>
+                {t("Exit")}
+              </button>
+            </div>
           </div>
         </div>
       </main>
@@ -968,7 +992,7 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
           <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white w-full max-w-md rounded-[32px] p-7 md:p-9 shadow-2xl border border-slate-200 dark:border-slate-700">
             <h2 className="font-sans font-extrabold text-2xl mb-2">{t("Exit this test?")}</h2>
             <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 leading-relaxed font-medium">
-              {t("Your answers are already saved. Choose whether to finish now or keep this test for later — nothing is discarded either way.")}
+              {t("Exiting submits this test and scores it, so you cannot come back to it. If you meant to carry on later, use Pause instead.")}
             </p>
             <div className="space-y-3">
               <button
@@ -979,14 +1003,16 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                 disabled={isSubmitting || isExiting}
                 className="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
               >
-                {t("Submit and exit")}
+                {isSubmitting ? t("Submitting...") : t("Submit and exit")}
               </button>
+              {/* Still offered here, not only behind the Pause button: this is
+                  the moment a student realises Exit was not what they wanted. */}
               <button
                 onClick={() => void handleExitAndPause()}
                 disabled={isSubmitting || isExiting}
-                className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
+                className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white dark:text-[#00243B] font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
               >
-                {isExiting ? t("Saving...") : t("Save and exit")}
+                {isExiting ? t("Saving...") : t("Pause and keep for later")}
               </button>
               <button
                 onClick={() => setShowExitModal(false)}
@@ -994,6 +1020,36 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                 className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-[#00243B] dark:text-white border border-slate-300 dark:border-slate-700 font-bold text-sm rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer disabled:opacity-60"
               >
                 {t("Cancel")}
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
+
+      {/* G6 — Pause has its own confirmation. Same no-backdrop-dismiss,
+          no-escape rules as the Exit dialog: a stray click during a live
+          attempt must not decide anything. */}
+      {showPauseModal && (
+        <Modal onClose={() => setShowPauseModal(false)} closeOnBackdropClick={false} closeOnEscape={false}>
+          <div className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white w-full max-w-md rounded-[32px] p-7 md:p-9 shadow-2xl border border-slate-200 dark:border-slate-700">
+            <h2 className="font-sans font-extrabold text-2xl mb-2">{t("Pause this test?")}</h2>
+            <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 leading-relaxed font-medium">
+              {t("Everything you have answered is saved. Pick this test up exactly where you left off from My Results.")}
+            </p>
+            <div className="space-y-3">
+              <button
+                onClick={() => void handleExitAndPause()}
+                disabled={isSubmitting || isExiting}
+                className="w-full py-3.5 bg-[var(--teal)] dark:bg-[#FCB824] hover:bg-[var(--teal-2)] text-white dark:text-[#00243B] font-bold text-sm rounded-2xl shadow-lg transition-all cursor-pointer disabled:opacity-60"
+              >
+                {isExiting ? t("Saving...") : t("Pause and leave")}
+              </button>
+              <button
+                onClick={() => setShowPauseModal(false)}
+                disabled={isSubmitting || isExiting}
+                className="w-full py-3 bg-slate-100 dark:bg-slate-800 text-[#00243B] dark:text-white border border-slate-300 dark:border-slate-700 font-bold text-sm rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer disabled:opacity-60"
+              >
+                {t("Keep going")}
               </button>
             </div>
           </div>

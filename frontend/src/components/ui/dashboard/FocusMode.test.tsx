@@ -3,11 +3,12 @@ import { render, screen, act, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import FocusMode from "./FocusMode";
 
-// LA-UX-REFRESH-001 F9. The parts worth pinning down are the ones with
-// consequences outside the component: that a real study stretch is logged
-// through the pomodoro API (so it counts toward the streak), that a mis-click
-// is NOT logged, and that Esc gets you out — the exit LeetCode's focus mode
-// trains people to reach for.
+// LA-UX-REFRESH-001 F9, rebuilt as a corner panel in LA-UX-REFRESH-002 G2.
+// The parts worth pinning down are the ones with consequences outside the
+// component: that a real study stretch is logged through the pomodoro API (so
+// it counts toward the streak), that a mis-click is NOT logged, that Esc gets
+// you out, and — new in G2 — that it never locks page scrolling, since being
+// able to keep using the app behind it is the whole point of the rebuild.
 
 const createPomodoroSession = vi.fn();
 
@@ -18,17 +19,13 @@ vi.mock("../../../services/pomodoroApi", () => ({
 beforeEach(() => {
   createPomodoroSession.mockReset();
   createPomodoroSession.mockResolvedValue({});
-  // requestFullscreen doesn't exist in jsdom; the component treats a
-  // rejection as non-fatal, and so should the test environment.
-  (HTMLElement.prototype as unknown as { requestFullscreen: () => Promise<void> }).requestFullscreen = () =>
-    Promise.resolve();
 });
 
 afterEach(() => {
   vi.useRealTimers();
 });
 
-describe("FocusMode (LA-UX-REFRESH-001 F9)", () => {
+describe("FocusMode (LA-UX-REFRESH-001 F9 / LA-UX-REFRESH-002 G2)", () => {
   it("renders nothing until it is opened", () => {
     const { container } = render(<FocusMode open={false} onClose={() => {}} />);
     expect(container).toBeEmptyDOMElement();
@@ -77,7 +74,7 @@ describe("FocusMode (LA-UX-REFRESH-001 F9)", () => {
     });
 
     await act(async () => {
-      fireEvent.click(screen.getByRole("button", { name: /End session/i }));
+      fireEvent.click(screen.getByRole("button", { name: /^End$/i }));
     });
 
     expect(createPomodoroSession).toHaveBeenCalledTimes(1);
@@ -103,11 +100,52 @@ describe("FocusMode (LA-UX-REFRESH-001 F9)", () => {
     });
 
     await act(async () => {
-      fireEvent.click(screen.getByRole("button", { name: /End session/i }));
+      fireEvent.click(screen.getByRole("button", { name: /^End$/i }));
     });
 
     expect(createPomodoroSession).not.toHaveBeenCalled();
     expect(onClose).toHaveBeenCalled();
+  });
+
+  it("never locks page scrolling (G2 — the app stays usable behind it)", () => {
+    const { unmount } = render(<FocusMode open onClose={() => {}} />);
+    // The v1 full-screen version set body overflow to hidden, which is exactly
+    // what made it unusable as something to study alongside.
+    expect(document.body.style.overflow).not.toBe("hidden");
+    unmount();
+  });
+
+  it("accepts a manual duration outside the presets", async () => {
+    const user = userEvent.setup();
+    render(<FocusMode open onClose={() => {}} defaultMinutes={25} />);
+
+    await user.type(screen.getByLabelText("Custom duration in minutes"), "7");
+
+    expect(screen.getByText("07:00")).toBeInTheDocument();
+  });
+
+  it("clamps a manual duration to a sane range", async () => {
+    const user = userEvent.setup();
+    render(<FocusMode open onClose={() => {}} defaultMinutes={25} />);
+
+    // 900 is past the 600-minute ceiling; it must land on the ceiling rather
+    // than starting a ten-hour countdown nobody asked for.
+    await user.type(screen.getByLabelText("Custom duration in minutes"), "900");
+
+    expect(screen.getByText("10:00:00")).toBeInTheDocument();
+  });
+
+  it("collapses to a pill that still shows the clock, and expands again", async () => {
+    const user = userEvent.setup();
+    render(<FocusMode open onClose={() => {}} defaultMinutes={30} />);
+
+    await user.click(screen.getByRole("button", { name: /Minimise focus timer/i }));
+
+    expect(screen.getByText("30:00")).toBeInTheDocument();
+    expect(screen.queryByPlaceholderText("What are you working on?")).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Expand focus timer/i }));
+    expect(screen.getByPlaceholderText("What are you working on?")).toBeInTheDocument();
   });
 
   it("exits on Escape without ever having started", async () => {

@@ -86,14 +86,34 @@ beforeEach(() => {
 describe("MyResultsView — paused attempts (Defect 3)", () => {
   it("offers a Resume button on a paused row", async () => {
     renderView();
-    expect(await screen.findByRole("button", { name: /Resume/ })).toBeInTheDocument();
+    expect(await screen.findByRole("button", { name: /Resume$/ })).toBeInTheDocument();
+  });
+
+  // LA-UX-REFRESH-002 G7 — the row button is easy to page past in a filtered,
+  // paginated table, so an unfinished test also gets a banner at the top.
+  it("surfaces the unfinished test in a banner above the table (G7)", async () => {
+    renderView();
+    const banner = await screen.findByRole("button", { name: /Resume Test$/ });
+    expect(banner).toBeInTheDocument();
+    expect(screen.getByText("Paused test")).toBeInTheDocument();
+    expect(screen.getAllByText("Physics Practice").length).toBeGreaterThan(0);
+  });
+
+  it("resumes from the banner too, not just the row (G7)", async () => {
+    const onResume = renderView();
+    const user = userEvent.setup();
+
+    await user.click(await screen.findByRole("button", { name: /Resume Test$/ }));
+
+    await waitFor(() => expect(resumeSessionById).toHaveBeenCalledWith("att-paused"));
+    await waitFor(() => expect(onResume).toHaveBeenCalledWith(expect.objectContaining({ attemptId: "att-paused" })));
   });
 
   it("resumes straight from the row and hands the live session up to the router", async () => {
     const onResume = renderView();
     const user = userEvent.setup();
 
-    await user.click(await screen.findByRole("button", { name: /Resume/ }));
+    await user.click(await screen.findByRole("button", { name: /Resume$/ }));
 
     await waitFor(() => expect(resumeSessionById).toHaveBeenCalledWith("att-paused"));
     await waitFor(() => expect(onResume).toHaveBeenCalledWith(expect.objectContaining({ attemptId: "att-paused", status: "in_progress" })));
@@ -164,6 +184,8 @@ describe("MyResultsView — paused attempts (Defect 3)", () => {
     await user.click(screen.getByRole("button", { name: "Yes, submit" }));
 
     await waitFor(() => expect(listMyAttempts).toHaveBeenCalledTimes(2));
+    // Neither the row button nor the G7 banner: the attempt is no longer
+    // resumable, so every way back into it must be gone.
     await waitFor(() => expect(screen.queryByRole("button", { name: /Resume/ })).not.toBeInTheDocument());
   });
 
@@ -172,7 +194,7 @@ describe("MyResultsView — paused attempts (Defect 3)", () => {
     const onResume = renderView();
     const user = userEvent.setup();
 
-    await user.click(await screen.findByRole("button", { name: /Resume/ }));
+    await user.click(await screen.findByRole("button", { name: /Resume$/ }));
 
     expect(await screen.findByText("This test has already expired.")).toBeInTheDocument();
     expect(onResume).not.toHaveBeenCalled();

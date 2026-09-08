@@ -6,7 +6,6 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
 import { TestAttempt, CatalogTree, SessionResult, UnitAccuracy } from "../types";
-import { PomodoroTimer } from "../components/ui/dashboard/PomodoroTimer";
 import { DailyFlashcard } from "../components/ui/dashboard/DailyFlashcard";
 import { calculateStudyStreak } from "../services/studySessionService";
 import { listMyPomodoroSessions, toStudySessions } from "../services/pomodoroApi";
@@ -22,8 +21,7 @@ import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
 const AttemptReviewView = lazy(() => import("./AttemptReviewView"));
 import { pluralize } from "../utils/pluralize";
 import { getMotivationalMessage } from "../utils/motivationalMessage";
-import { shareElementAsImage } from "../services/shareScorecard";
-import FocusMode from "../components/ui/dashboard/FocusMode";
+import { shareElementAsImage, getLastShareFailureReason } from "../services/shareScorecard";
 
 // Marks come off the wire as numeric strings (they are Postgres `numeric`,
 // kept as strings end to end so nothing rounds them in transit). Trailing
@@ -93,10 +91,7 @@ export default function DashboardView({ attempt, studentName, onTakeTest, catalo
   // F6 — the node html2canvas rasterises when the student shares their card.
   const scorecardRef = useRef<HTMLDivElement | null>(null);
   const [shareState, setShareState] = useState<"idle" | "working" | "done" | "failed">("idle");
-
-  // F9 — LeetCode-style focus mode, launched from the hero.
-  const [focusModeOpen, setFocusModeOpen] = useState(false);
-  const [dailyTargetMinutes, setDailyTargetMinutes] = useState<number | null>(null);
+  const [shareError, setShareError] = useState<string | null>(null);
 
   const handleShareScorecard = async () => {
     if (!scorecardRef.current) return;
@@ -107,6 +102,10 @@ export default function DashboardView({ attempt, studentName, onTakeTest, catalo
     });
     // "cancelled" is the user closing the share sheet — not a failure, and
     // not something to congratulate them for either.
+    // G1 — show what actually went wrong; "couldn't create the image" with no
+    // reason is what made the original failure impossible for the user to act
+    // on or report usefully.
+    setShareError(result === "failed" ? getLastShareFailureReason() : null);
     setShareState(result === "failed" ? "failed" : result === "cancelled" ? "idle" : "done");
     if (result !== "failed") setTimeout(() => setShareState("idle"), 2500);
   };
@@ -199,9 +198,6 @@ useEffect(() => {
       .then((me) => {
         if (!isMounted) return;
         setProfileIncomplete(!me.studentProfile?.targetYear || !me.studentProfile?.classLevel);
-        // F9 — focus mode opens on the student's own daily target rather than
-        // an arbitrary default (F2 stores it as a time tag on the profile).
-        setDailyTargetMinutes(me.studentProfile?.dailyStudyMinutes ?? null);
       })
       .catch((err) => console.error("Failed to load profile completeness:", err));
     return () => {
@@ -291,18 +287,6 @@ useEffect(() => {
                 <span className="material-symbols-outlined text-sm animate-pulse">stars</span>
                 <span>{t("Journey to 720 starts here")}</span>
               </span>
-
-              {/* LA-UX-REFRESH-001 F9 — focus mode, in the hero panel, the
-                  way LeetCode puts it on the problem page: one control that
-                  takes the whole interface away and leaves the work. */}
-              <button
-                onClick={() => setFocusModeOpen(true)}
-                className="print:hidden inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-colors cursor-pointer"
-                title={t("Enter distraction-free focus mode")}
-              >
-                <span className="material-symbols-outlined text-sm">center_focus_strong</span>
-                <span>{t("Focus Mode")}</span>
-              </button>
             </div>
             {hasRealAttempt && motivational ? (
               <>
@@ -477,7 +461,10 @@ useEffect(() => {
             </div>
 
             {shareState === "failed" && (
-              <p className="text-[11px] font-semibold text-rose-300">{t("Couldn't create the scorecard image. Please try again.")}</p>
+              <p className="text-[11px] font-semibold text-rose-300">
+                {t("Couldn't create the scorecard image.")}
+                {shareError ? ` ${shareError}` : ` ${t("Please try again.")}`}
+              </p>
             )}
           </div>
         )}
@@ -614,10 +601,13 @@ useEffect(() => {
         </motion.div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
-        <PomodoroTimer studentName={studentName} />
-        <DailyFlashcard />
-      </div>
+      {/* LA-UX-REFRESH-002 G4 — the Pomodoro timer is gone from this screen.
+          Focus Mode (now in the header, reachable from every tab) is the one
+          study-timer surface; two of them on one page was the duplication the
+          user asked to remove. The component and its session API are
+          untouched — the history it already wrote is still what the study
+          streak reads. DailyFlashcard takes the full width it used to share. */}
+      <DailyFlashcard />
 
       {/* Subject Wise Performance — real, SQL-aggregated (Phase G) across
           every scored attempt the student has, not just the one just-taken
@@ -794,9 +784,6 @@ useEffect(() => {
       </>
       )}
 
-      {/* F9 — rendered last so it layers over everything on this screen; it
-          owns its own fixed full-screen surface and body-scroll lock. */}
-      <FocusMode open={focusModeOpen} onClose={() => setFocusModeOpen(false)} defaultMinutes={dailyTargetMinutes} />
     </div>
   );
 }

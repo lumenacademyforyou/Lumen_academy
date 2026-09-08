@@ -10,6 +10,7 @@ import { fetchMe, updateMe, MeProfile } from "../../services/meApi";
 import NotificationBell from "../ui/NotificationBell";
 import { pluralize } from "../../utils/pluralize";
 import { isDemoEmail } from "../../services/demoSession";
+import FocusMode from "../ui/dashboard/FocusMode";
 
 // F3 — plan dates arrive as plain YYYY-MM-DD (core.subscription stores a
 // `date`), so they are parsed as local calendar parts rather than through
@@ -41,6 +42,13 @@ export default function Header({ currentTab, setTab, studentName, setStudentName
   // document-level listener closes on any click (or touch) outside the
   // menu while letting the click reach whatever it was aimed at.
   const profileMenuRef = useRef<HTMLDivElement | null>(null);
+
+  // LA-UX-REFRESH-002 G3 — focus mode is launched from here, next to the
+  // dark-mode toggle, rather than from the dashboard hero. The header is
+  // mounted on every screen, so the timer keeps running across tab changes
+  // instead of unmounting the moment the student navigates away from the
+  // dashboard to actually study.
+  const [focusModeOpen, setFocusModeOpen] = useState(false);
   const [studyStreak, setStudyStreak] = useState(0);
   const navigate = useNavigate();
   const handleNavigation = (tab: string) => {
@@ -287,6 +295,20 @@ const handleSaveProfile = async (e: React.FormEvent) => {
               choice only — TestTakingView's own questionLanguage selector
               (en/ta/bilingual), which this control never drove anyway
               (BUG-16/BUG-17 kept the two deliberately separate). */}
+
+          {/* G3 — Focus Mode, beside the theme toggle. */}
+          <button
+            onClick={() => setFocusModeOpen((prev) => !prev)}
+            className={`w-9 h-9 flex items-center justify-center rounded-2xl border transition-all cursor-pointer select-none shadow-sm shrink-0 ${
+              focusModeOpen
+                ? "bg-[#FCB824] text-[#00243B] border-[#FCB824]"
+                : "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200"
+            }`}
+            title={focusModeOpen ? t("Close focus timer") : t("Start a focus session")}
+            aria-pressed={focusModeOpen}
+          >
+            <span className="material-symbols-outlined text-lg">center_focus_strong</span>
+          </button>
 
           {/* Global Dark Mode Theme Toggle */}
           <button
@@ -836,6 +858,13 @@ const handleSaveProfile = async (e: React.FormEvent) => {
           UI reaches it anymore — removing only the button here would leave
           the API exposed to a direct call, which the plan explicitly warns
           against. */}
+      {/* G3 — corner-pinned focus timer. It deliberately does not lock page
+          scrolling or paint a backdrop: the app must stay usable behind it. */}
+      <FocusMode
+        open={focusModeOpen}
+        onClose={() => setFocusModeOpen(false)}
+        defaultMinutes={profile?.studentProfile?.dailyStudyMinutes ?? null}
+      />
     </>
   );
 }

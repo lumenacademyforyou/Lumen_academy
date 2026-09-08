@@ -2,18 +2,23 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { createPomodoroSession } from "../../../services/pomodoroApi";
 
 /**
- * LA-UX-REFRESH-001 F9 — "a focus mode in the hero panel exactly like in the
- * LeetCode website."
+ * LA-UX-REFRESH-002 G2 — Focus Mode, rebuilt.
  *
- * LeetCode's focus mode does one thing: it takes everything that is not the
- * work away. That is the whole idea reproduced here — the app's chrome, nav,
- * cards, notifications and streak badges all disappear behind a full-screen
- * surface carrying only the clock, what you said you were working on, and the
- * way out. Esc exits, exactly as it does there.
+ * The first version (LA-UX-REFRESH-001 F9) was a full-screen takeover with a
+ * large progress dial. The user's verdict was fair: that is a Pomodoro timer
+ * wearing a different name, and worse, it locked page scrolling — so you
+ * could not actually study *in the app* while it ran.
  *
- * A completed stretch is written through the same pomodoro-session API the
- * dashboard timer already uses, so time spent here counts toward the study
- * streak instead of being a decorative timer that records nothing.
+ * This version is a compact, notification-shaped panel pinned to a corner:
+ *   - no backdrop and no body-scroll lock, so the app stays fully live and
+ *     scrollable behind it (the "add scrolling feature" ask),
+ *   - fixed presets AND a manual minutes entry, side by side,
+ *   - collapses to a small pill showing just the remaining time, so it can
+ *     sit there for a whole session without being in the way,
+ *   - scrolls internally when the viewport is too short for the panel.
+ *
+ * Completed stretches still log through the same pomodoro-session API, so
+ * time spent here counts toward the study streak rather than evaporating.
  */
 
 interface FocusModeProps {
@@ -25,6 +30,7 @@ interface FocusModeProps {
 
 const DURATION_CHOICES = [25, 30, 45, 60, 90];
 const SUBJECT_CHOICES = ["Physics", "Chemistry", "Botany", "Zoology", "General Study"];
+const MAX_MANUAL_MINUTES = 600;
 
 function formatClock(totalSeconds: number): string {
   const safe = Math.max(0, totalSeconds);
@@ -39,25 +45,24 @@ function formatClock(totalSeconds: number): string {
 /** Nearest offered length to the student's own daily target, so the default is theirs rather than ours. */
 function pickDefaultDuration(target: number | null | undefined): number {
   if (!target) return 25;
-  return DURATION_CHOICES.reduce((best, choice) =>
-    Math.abs(choice - target) < Math.abs(best - target) ? choice : best
-  );
+  return DURATION_CHOICES.reduce((best, choice) => (Math.abs(choice - target) < Math.abs(best - target) ? choice : best));
 }
 
 export default function FocusMode({ open, onClose, defaultMinutes }: FocusModeProps) {
   const [targetMinutes, setTargetMinutes] = useState(() => pickDefaultDuration(defaultMinutes));
+  const [manualMinutes, setManualMinutes] = useState("");
   const [secondsLeft, setSecondsLeft] = useState(() => pickDefaultDuration(defaultMinutes) * 60);
   const [isRunning, setIsRunning] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   const [subject, setSubject] = useState(SUBJECT_CHOICES[0]);
   const [taskTitle, setTaskTitle] = useState("");
   const [finished, setFinished] = useState(false);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "failed">("idle");
 
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  // Wall-clock start, kept in a ref: the elapsed time that gets logged must
-  // be real time, not a count of setInterval ticks — a backgrounded tab
-  // throttles those, and the student did not stop studying because Chrome
-  // deprioritised the timer.
+  // Wall-clock start, kept in a ref: the elapsed time that gets logged must be
+  // real time, not a count of setInterval ticks — a backgrounded tab throttles
+  // those, and the student did not stop studying because Chrome deprioritised
+  // the timer.
   const startedAtRef = useRef<string | null>(null);
   const startedMsRef = useRef<number | null>(null);
 
@@ -66,13 +71,15 @@ export default function FocusMode({ open, onClose, defaultMinutes }: FocusModePr
     return Math.max(0, Math.round((Date.now() - startedMsRef.current) / 1000));
   }, []);
 
-  // Reset to a clean slate every time the overlay opens.
+  // Reset to a clean slate every time the panel opens.
   useEffect(() => {
     if (!open) return;
     const initial = pickDefaultDuration(defaultMinutes);
     setTargetMinutes(initial);
+    setManualMinutes("");
     setSecondsLeft(initial * 60);
     setIsRunning(false);
+    setCollapsed(false);
     setFinished(false);
     setSaveState("idle");
     startedAtRef.current = null;
@@ -119,49 +126,42 @@ export default function FocusMode({ open, onClose, defaultMinutes }: FocusModePr
     }
   }, [elapsedSeconds, subject, taskTitle]);
 
-  const exitFullscreen = useCallback(() => {
-    if (typeof document !== "undefined" && document.fullscreenElement) {
-      document.exitFullscreen().catch(() => {
-        /* the browser may refuse; the overlay closes either way */
-      });
-    }
-  }, []);
-
   const handleClose = useCallback(async () => {
     if (startedMsRef.current !== null && saveState === "idle") {
       await saveSession();
     }
-    exitFullscreen();
     onClose();
-  }, [saveSession, saveState, exitFullscreen, onClose]);
+  }, [saveSession, saveState, onClose]);
 
-  // Esc exits, as it does on LeetCode. Bound while open only.
+  // Esc closes it. Bound while open only. Note there is deliberately no
+  // body-scroll lock and no backdrop: the whole point of this rebuild is that
+  // the app stays usable behind the timer.
   useEffect(() => {
     if (!open) return;
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        void handleClose();
-      }
+      if (event.key === "Escape") void handleClose();
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open, handleClose]);
 
-  // Nothing behind the overlay should scroll while it is up.
-  useEffect(() => {
-    if (!open) return;
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previous;
-    };
-  }, [open]);
-
   // Log the session when the countdown reaches zero on its own.
   useEffect(() => {
     if (finished && saveState === "idle") void saveSession();
   }, [finished, saveState, saveSession]);
+
+  const applyDuration = (minutes: number) => {
+    setTargetMinutes(minutes);
+    setSecondsLeft(minutes * 60);
+  };
+
+  const handleManualMinutes = (raw: string) => {
+    setManualMinutes(raw);
+    const parsed = Number(raw);
+    if (!raw.trim() || !Number.isFinite(parsed)) return;
+    const clamped = Math.min(MAX_MANUAL_MINUTES, Math.max(1, Math.round(parsed)));
+    applyDuration(clamped);
+  };
 
   const handleStart = () => {
     if (startedMsRef.current === null) {
@@ -169,147 +169,170 @@ export default function FocusMode({ open, onClose, defaultMinutes }: FocusModePr
       startedMsRef.current = Date.now();
     }
     setIsRunning(true);
-    // Real fullscreen if the browser allows it — a request outside a user
-    // gesture, or with the feature disabled, simply rejects, and the overlay
-    // is already visually full-screen regardless.
-    containerRef.current?.requestFullscreen?.().catch(() => {
-      /* not fatal */
-    });
   };
 
   if (!open) return null;
 
   const totalSeconds = targetMinutes * 60;
-  const progress = totalSeconds > 0 ? ((totalSeconds - secondsLeft) / totalSeconds) * 100 : 0;
+  const progress = totalSeconds > 0 ? Math.min(100, ((totalSeconds - secondsLeft) / totalSeconds) * 100) : 0;
   const hasStarted = startedMsRef.current !== null;
+
+  // Collapsed: a pill with the clock and nothing else.
+  if (collapsed) {
+    return (
+      <div className="fixed bottom-5 right-5 z-[90] print:hidden">
+        <button
+          onClick={() => setCollapsed(false)}
+          aria-label="Expand focus timer"
+          className="flex items-center gap-2 pl-3.5 pr-4 py-2.5 rounded-full bg-[#06121c]/95 text-white border border-white/15 shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-md hover:border-[#FCB824]/60 transition-colors cursor-pointer"
+        >
+          <span className={`material-symbols-outlined text-[18px] text-[#FCB824] ${isRunning ? "animate-pulse" : ""}`}>
+            center_focus_strong
+          </span>
+          <span className="text-sm font-black tabular-nums tracking-tight">{formatClock(secondsLeft)}</span>
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div
-      ref={containerRef}
       role="dialog"
-      aria-modal="true"
       aria-label="Focus mode"
-      className="fixed inset-0 z-[100] bg-[#06121c] text-white flex flex-col items-center justify-center px-6 py-10 select-none"
+      // Notification-shaped, corner-pinned, and capped to the viewport with
+      // its own overflow — never a full-screen surface, and never taller than
+      // the window on a short screen.
+      className="fixed bottom-5 right-5 z-[90] w-[min(20rem,calc(100vw-2.5rem))] max-h-[min(32rem,calc(100vh-2.5rem))] overflow-y-auto rounded-3xl bg-[#06121c]/97 text-white border border-white/15 shadow-[0_18px_50px_rgba(0,0,0,0.45)] backdrop-blur-md print:hidden"
     >
-      {/* Exit — the only chrome on the surface. */}
-      <button
-        onClick={() => void handleClose()}
-        className="absolute top-5 right-5 flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors cursor-pointer"
-        title="Exit focus mode (Esc)"
-      >
-        <span className="material-symbols-outlined text-[16px]">close_fullscreen</span>
-        Exit
-      </button>
-
-      <div className="w-full max-w-lg flex flex-col items-center gap-8">
-        <p className="text-[10px] font-black uppercase tracking-[0.35em] text-[#FCB824]">Focus Mode</p>
-
-        {/* Clock */}
-        <div className="relative flex items-center justify-center">
-          <svg className="w-64 h-64 md:w-72 md:h-72 -rotate-90" viewBox="0 0 240 240">
-            <circle cx="120" cy="120" r="108" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="10" />
-            <circle
-              cx="120"
-              cy="120"
-              r="108"
-              fill="none"
-              stroke="#FCB824"
-              strokeWidth="10"
-              strokeLinecap="round"
-              strokeDasharray={2 * Math.PI * 108}
-              strokeDashoffset={2 * Math.PI * 108 * (1 - progress / 100)}
-              style={{ transition: "stroke-dashoffset 1s linear" }}
-            />
-          </svg>
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-5xl md:text-6xl font-black tabular-nums tracking-tight">{formatClock(secondsLeft)}</span>
-            <span className="mt-2 text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400">
-              {finished ? "Session complete" : isRunning ? "Stay with it" : "Ready when you are"}
-            </span>
-          </div>
-        </div>
-
-        {/* Setup — hidden once the clock is running, because it is exactly the
-            kind of thing focus mode exists to get out of the way. */}
-        {!hasStarted && (
-          <div className="w-full space-y-4">
-            <div className="flex flex-wrap justify-center gap-2">
-              {DURATION_CHOICES.map((minutes) => (
-                <button
-                  key={minutes}
-                  onClick={() => {
-                    setTargetMinutes(minutes);
-                    setSecondsLeft(minutes * 60);
-                  }}
-                  className={`px-4 py-1.5 rounded-full text-xs font-bold border transition-colors cursor-pointer ${
-                    targetMinutes === minutes
-                      ? "bg-[#FCB824] text-[#00243B] border-transparent"
-                      : "bg-white/5 text-slate-300 border-white/10 hover:border-[#FCB824]/60"
-                  }`}
-                >
-                  {minutes} min
-                </button>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <select
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                className="bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 text-xs font-semibold text-white outline-none focus:border-[#FCB824] sm:w-44"
-              >
-                {SUBJECT_CHOICES.map((s) => (
-                  <option key={s} value={s} className="bg-[#06121c]">
-                    {s}
-                  </option>
-                ))}
-              </select>
-              <input
-                type="text"
-                value={taskTitle}
-                onChange={(e) => setTaskTitle(e.target.value)}
-                placeholder="What are you working on?"
-                className="flex-1 bg-white/5 border border-white/10 rounded-xl px-3.5 py-2.5 text-xs font-semibold text-white placeholder:text-slate-500 outline-none focus:border-[#FCB824]"
-              />
-            </div>
-          </div>
-        )}
-
-        {hasStarted && (taskTitle.trim() || subject) && (
-          <p className="text-sm font-semibold text-slate-300 text-center">
-            {subject}
-            {taskTitle.trim() ? ` • ${taskTitle.trim()}` : ""}
-          </p>
-        )}
-
-        {/* Controls */}
-        <div className="flex items-center gap-3">
-          {!finished && (
-            <button
-              onClick={() => (isRunning ? setIsRunning(false) : handleStart())}
-              className="px-8 py-3.5 rounded-2xl bg-[#FCB824] text-[#00243B] font-black text-xs uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all cursor-pointer"
-            >
-              {isRunning ? "Pause" : hasStarted ? "Resume" : "Start"}
-            </button>
-          )}
-          <button
-            onClick={() => void handleClose()}
-            className="px-6 py-3.5 rounded-2xl border border-white/15 text-slate-300 font-bold text-xs uppercase tracking-widest hover:bg-white/5 transition-colors cursor-pointer"
-          >
-            {finished ? "Done" : "End session"}
-          </button>
-        </div>
-
-        {saveState !== "idle" && (
-          <p className="text-[11px] font-semibold text-slate-400">
-            {saveState === "saving" && "Logging this session…"}
-            {saveState === "saved" && "Session logged — it counts toward your study streak."}
-            {saveState === "failed" && "Couldn't log this session, but your time still counted."}
-          </p>
-        )}
-
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-600">Press Esc to exit</p>
+      {/* Header strip */}
+      <div className="flex items-center gap-2 px-4 pt-4 pb-2">
+        <span className={`material-symbols-outlined text-[18px] text-[#FCB824] ${isRunning ? "animate-pulse" : ""}`}>
+          center_focus_strong
+        </span>
+        <p className="flex-1 text-[10px] font-black uppercase tracking-[0.22em] text-[#FCB824]">Focus Mode</p>
+        <button
+          onClick={() => setCollapsed(true)}
+          aria-label="Minimise focus timer"
+          title="Minimise"
+          className="w-7 h-7 flex items-center justify-center rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+        >
+          <span className="material-symbols-outlined text-[16px]">remove</span>
+        </button>
+        <button
+          onClick={() => void handleClose()}
+          aria-label="Close focus mode"
+          title="Close (Esc)"
+          className="w-7 h-7 flex items-center justify-center rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+        >
+          <span className="material-symbols-outlined text-[16px]">close</span>
+        </button>
       </div>
+
+      {/* Clock */}
+      <div className="px-4">
+        <p className="text-4xl font-black tabular-nums tracking-tight leading-none">{formatClock(secondsLeft)}</p>
+        <p className="mt-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+          {finished ? "Session complete" : isRunning ? "Stay with it" : hasStarted ? "Paused" : "Ready when you are"}
+        </p>
+        {/* A thin bar, not a dial — this is a notification, not a dashboard. */}
+        <div className="mt-3 h-1 w-full rounded-full bg-white/10 overflow-hidden">
+          <div
+            className="h-full rounded-full bg-[#FCB824]"
+            style={{ width: `${progress}%`, transition: "width 1s linear" }}
+          />
+        </div>
+      </div>
+
+      {/* Setup — presets and manual entry. Hidden once running, which is
+          exactly what focus mode exists to do. */}
+      {!hasStarted && (
+        <div className="px-4 pt-4 space-y-3">
+          <div className="flex flex-wrap gap-1.5">
+            {DURATION_CHOICES.map((minutes) => (
+              <button
+                key={minutes}
+                onClick={() => {
+                  setManualMinutes("");
+                  applyDuration(minutes);
+                }}
+                className={`px-2.5 py-1 rounded-full text-[11px] font-bold border transition-colors cursor-pointer ${
+                  targetMinutes === minutes && !manualMinutes
+                    ? "bg-[#FCB824] text-[#00243B] border-transparent"
+                    : "bg-white/5 text-slate-300 border-white/10 hover:border-[#FCB824]/60"
+                }`}
+              >
+                {minutes}m
+              </button>
+            ))}
+            <input
+              type="number"
+              min={1}
+              max={MAX_MANUAL_MINUTES}
+              value={manualMinutes}
+              onChange={(e) => handleManualMinutes(e.target.value)}
+              placeholder="Custom"
+              aria-label="Custom duration in minutes"
+              className="w-20 bg-white/5 border border-white/10 rounded-full px-3 py-1 text-[11px] font-bold text-white placeholder:text-slate-500 outline-none focus:border-[#FCB824]"
+            />
+          </div>
+
+          <select
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            aria-label="Subject"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-[11px] font-semibold text-white outline-none focus:border-[#FCB824]"
+          >
+            {SUBJECT_CHOICES.map((s) => (
+              <option key={s} value={s} className="bg-[#06121c]">
+                {s}
+              </option>
+            ))}
+          </select>
+
+          <input
+            type="text"
+            value={taskTitle}
+            onChange={(e) => setTaskTitle(e.target.value)}
+            placeholder="What are you working on?"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-[11px] font-semibold text-white placeholder:text-slate-500 outline-none focus:border-[#FCB824]"
+          />
+        </div>
+      )}
+
+      {hasStarted && (
+        <p className="px-4 pt-3 text-[11px] font-semibold text-slate-300 truncate">
+          {subject}
+          {taskTitle.trim() ? ` • ${taskTitle.trim()}` : ""}
+        </p>
+      )}
+
+      {/* Controls */}
+      <div className="flex items-center gap-2 px-4 py-4">
+        {!finished && (
+          <button
+            onClick={() => (isRunning ? setIsRunning(false) : handleStart())}
+            className="flex-1 py-2.5 rounded-xl bg-[#FCB824] text-[#00243B] font-black text-[11px] uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+          >
+            {isRunning ? "Pause" : hasStarted ? "Resume" : "Start"}
+          </button>
+        )}
+        <button
+          onClick={() => void handleClose()}
+          className={`py-2.5 rounded-xl border border-white/15 text-slate-300 font-bold text-[11px] uppercase tracking-widest hover:bg-white/5 transition-colors cursor-pointer ${
+            finished ? "flex-1" : "px-4"
+          }`}
+        >
+          {finished ? "Done" : "End"}
+        </button>
+      </div>
+
+      {saveState !== "idle" && (
+        <p className="px-4 pb-4 -mt-2 text-[10px] font-semibold text-slate-400">
+          {saveState === "saving" && "Logging this session…"}
+          {saveState === "saved" && "Logged — it counts toward your streak."}
+          {saveState === "failed" && "Couldn't log this session, but your time still counted."}
+        </p>
+      )}
     </div>
   );
 }

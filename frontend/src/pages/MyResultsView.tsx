@@ -129,6 +129,24 @@ export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = 
     return copy;
   }, [filtered, sortKey, sortDir]);
 
+  // LA-UX-REFRESH-002 G7 — the most recent attempt the student can carry on
+  // with. A per-row Resume already existed, but it only appears on the paused
+  // row itself, which can be anywhere in a filtered, paginated table — easy to
+  // page straight past. This drives a banner at the top of the page instead.
+  // Deliberately computed over the unfiltered `attempts`, not `sorted`: a type
+  // or date filter that happens to exclude the paused test must not make the
+  // way back into it disappear.
+  const resumableAttempt = useMemo(() => {
+    if (!attempts || !onResumeAttempt) return null;
+    const resumable = attempts.filter((a) => a.attemptState === "paused" || a.attemptState === "in_progress");
+    if (resumable.length === 0) return null;
+    return resumable.reduce((latest, a) => {
+      const at = a.startedAt ?? "";
+      const lt = latest.startedAt ?? "";
+      return at > lt ? a : latest;
+    });
+  }, [attempts, onResumeAttempt]);
+
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
   const pageSlice = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
@@ -201,6 +219,32 @@ export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = 
         <h2 className="text-xl md:text-2xl font-bold text-[#00243B] dark:text-white">{t("View Results")}</h2>
         <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400">{t("Every test you've attempted, in one place")}</p>
       </div>
+
+      {/* G7 — one unmissable way back into an unfinished test. */}
+      {resumableAttempt && (
+        <div className="flex flex-wrap items-center gap-4 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50/60 dark:from-amber-950/40 dark:to-slate-900/60 border border-amber-200 dark:border-amber-800/60">
+          <div className="w-11 h-11 rounded-full bg-amber-100 dark:bg-amber-900/60 text-amber-600 dark:text-[#FCB824] flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-xl">pending_actions</span>
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-[#FCB824]">
+              {resumableAttempt.attemptState === "paused" ? t("Paused test") : t("Test in progress")}
+            </p>
+            <p className="text-sm font-bold text-[#00243B] dark:text-white truncate">{resumableAttempt.testTitle}</p>
+            <p className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+              {t("Your answers are saved — pick up exactly where you left off.")}
+            </p>
+          </div>
+          <button
+            onClick={() => void handleResumeRow(resumableAttempt)}
+            disabled={resumingId !== null}
+            className="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5 shrink-0"
+          >
+            <span className="material-symbols-outlined text-base">play_arrow</span>
+            {resumingId === resumableAttempt.attemptId ? t("Resuming...") : t("Resume Test")}
+          </button>
+        </div>
+      )}
 
       <div className="flex flex-wrap items-end gap-4 p-4 bg-white dark:bg-[var(--navy)] rounded-2xl border border-slate-200 dark:border-slate-700">
         <div className="space-y-1">

@@ -291,7 +291,9 @@ describe('TestTakingView', () => {
     // critically, nothing is paused or abandoned until they choose.
     expect(screen.getByText('Exit this test?')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Submit and exit' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Save and exit' })).toBeInTheDocument();
+    // LA-UX-REFRESH-002 G6 renamed this option: Pause is now its own button in
+    // the console footer, and the dialog names the same action the same way.
+    expect(screen.getByRole('button', { name: 'Pause and keep for later' })).toBeInTheDocument();
     expect(pauseAttempt).not.toHaveBeenCalled();
     expect(onCancel).not.toHaveBeenCalled();
 
@@ -302,7 +304,7 @@ describe('TestTakingView', () => {
 
     // Choosing "Save and exit" runs the unchanged flush -> pause -> leave flow.
     await act(async () => {
-      screen.getByRole('button', { name: 'Save and exit' }).click();
+      screen.getByRole('button', { name: 'Pause and keep for later' }).click();
     });
     expect(pauseAttempt).toHaveBeenCalledWith('attempt-1');
     expect(onCancel).toHaveBeenCalled();

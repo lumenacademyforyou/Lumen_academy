@@ -91,3 +91,71 @@ Verification at the end of the pass: `npm run typecheck` clean;
   inputs, the new analytics SQL reconciles on every real scored attempt, and
   the profile round-trip + constraint rejections were proven inside a
   rolled-back transaction (no data changed).
+
+---
+
+# LA-UX-REFRESH-002 — Round 2
+
+Spec: `docs/ux-refresh-round2-prompt.md`.
+
+## Status
+
+| # | Feature | Status | Evidence |
+|---|---|---|---|
+| G1 | Fix screenshot/PDF capture | **done** | Root cause proven in a real browser both ways: with `html2canvas@1.4.1` the same oklch/color-mix markup throws `Attempting to parse an unsupported color function "oklch"`; with `html2canvas-pro` it rasterises. Pinned by `tests/capture-oklch.spec.ts` |
+| G2 | Focus Mode rebuilt as a notification-style timer | **done** | Corner panel, no scroll lock, presets + manual entry, collapses to a pill; 11 passing vitest cases |
+| G3 | Focus Mode control moved to the header | **done** | Beside the dark-mode toggle in `Header.tsx`; owned by the always-mounted header so it survives tab changes |
+| G4 | Pomodoro timer removed from the dashboard | **done** | `<PomodoroTimer />` off `DashboardView`; `DailyFlashcard` takes the full width |
+| G5 | PDF export working everywhere | **done (same fix as G1)** | All three surfaces route through `pdfExport.ts`, now on `html2canvas-pro` |
+| G6 | Separate adjacent Exit / Pause in the test console | **done** | Two-column footer, one confirmation dialog each; existing Defect-3 tests updated and passing |
+| G7 | Prominent Resume on the results page | **done** | Banner above the table when a resumable attempt exists; 2 new tests, computed over unfiltered attempts |
+
+Verification: `npm run typecheck` clean; `npm run test:frontend` 82/82;
+`npm run test:unit` exit 0; `npm run build` succeeds; the Playwright capture
+regression test passes.
+
+## Round 2 deviations from the spec
+
+1. **G1 — `html2canvas` was removed from `package.json`, not left alongside
+   the fork.** Nothing imports it any more, and keeping both would ship two
+   copies of the same ~200KB library and leave the broken one one careless
+   import away from coming back.
+2. **G1 — `shareElementAsImage` now reports *why* a capture failed.** The
+   original swallowed every error into a generic "failed", which is why the
+   user's report was "it shows couldn't create the score card image" with
+   nothing actionable behind it.
+3. **G6 — "Pause and keep for later" stays inside the Exit dialog** as well
+   as being its own button. Exit is the moment a student discovers it was not
+   what they wanted, and that is the wrong moment to have removed the way out.
+4. **G6 — both buttons still confirm.** The user asked for two buttons, not
+   for unconfirmed ones; `docs/test-engine-fix-prompt.md` Defect 3 exists
+   because an unconfirmed exit mid-attempt was a real defect.
+5. **G7 — the existing per-row Resume was kept, and a banner added.** The ask
+   read as "there is no Resume on the results page"; there was one, but only
+   on the paused row, which is easy to page past in a filtered table. The
+   banner is computed over the *unfiltered* attempt list so a type or date
+   filter cannot hide the way back into an unfinished test.
+
+## Round 2 open items
+
+- **The three PDF buttons and the share button have not been clicked in the
+  running app.** The library-level cause is fixed and proven in a browser, and
+  the build is clean, but each surface mounts different content (charts,
+  images) and only a signed-in pass confirms them end to end.
+
+## Session log (round 2)
+
+### Session 2 — 2026-09-08
+
+- Diagnosed the capture failure properly rather than patching the symptom:
+  Tailwind v4 emits `oklch()` (109 occurrences in the built CSS) and
+  `html2canvas@1.4.1` cannot parse it, which broke the scorecard share and all
+  three PDF buttons with one error. Swapped both `shareScorecard.ts` and
+  `pdfExport.ts` to `html2canvas-pro@2.4.2`, removed the old dependency, and
+  added `tests/capture-oklch.spec.ts` so a regression is caught.
+- Rebuilt Focus Mode as a compact corner panel that does not lock page
+  scrolling, moved its control into the header next to the theme toggle, and
+  removed the dashboard Pomodoro timer.
+- Split the test console's single "Exit & Pause Test" button into adjacent
+  Pause and Exit buttons, each with its own confirmation.
+- Added a Resume banner to My Results.

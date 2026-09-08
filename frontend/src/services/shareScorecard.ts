@@ -7,11 +7,26 @@
  * the browser supports sharing files — which is what makes this useful on the
  * phone students actually screenshot from — and a download everywhere else.
  *
- * html2canvas is imported dynamically so the ~200KB library is fetched the
- * first time somebody shares, not in the dashboard chunk every user loads.
+ * The renderer is html2canvas-pro, not html2canvas: Tailwind v4 emits its
+ * palette as oklch(), which html2canvas@1.4.1 cannot parse — it throws on the
+ * first styled node, which is exactly the "couldn't create the scorecard
+ * image" failure this replaced (LA-UX-REFRESH-002 G1).
+ *
+ * It is imported dynamically so the library is fetched the first time
+ * somebody shares, not in the dashboard chunk every user loads.
  */
 
 export type ShareResult = "shared" | "downloaded" | "cancelled" | "failed";
+
+// G1 — the previous version collapsed every failure into "failed", so the
+// user saw "Couldn't create the scorecard image" with no way to tell a
+// missing-node bug from an unsupported-CSS one. The reason is kept here for
+// the caller to show; the console still gets the full error object.
+let lastFailureReason: string | null = null;
+
+export function getLastShareFailureReason(): string | null {
+  return lastFailureReason;
+}
 
 interface ShareOptions {
   /** File name for the download fallback (no extension). */
@@ -25,8 +40,9 @@ interface ShareOptions {
 export async function shareElementAsImage(element: HTMLElement, options: ShareOptions = {}): Promise<ShareResult> {
   const { fileName = "lumen-scorecard", shareText = "My Lumen Academy scorecard", backgroundColor = "#00243B" } = options;
 
+  lastFailureReason = null;
   try {
-    const { default: html2canvas } = await import("html2canvas");
+    const { default: html2canvas } = await import("html2canvas-pro");
     const canvas = await html2canvas(element, {
       backgroundColor,
       // 2x so the image is legible when a messaging app scales it down and
@@ -37,7 +53,10 @@ export async function shareElementAsImage(element: HTMLElement, options: ShareOp
     });
 
     const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
-    if (!blob) return "failed";
+    if (!blob) {
+      lastFailureReason = "The browser could not turn the rendered card into an image.";
+      return "failed";
+    }
 
     const file = new File([blob], `${fileName}.png`, { type: "image/png" });
 
@@ -60,6 +79,7 @@ export async function shareElementAsImage(element: HTMLElement, options: ShareOp
     return "downloaded";
   } catch (err) {
     console.error("Failed to share scorecard image:", err);
+    lastFailureReason = err instanceof Error ? err.message : String(err);
     return "failed";
   }
 }
