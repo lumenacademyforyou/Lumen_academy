@@ -1,0 +1,668 @@
+[
+ {
+  "questionUid": "LMN-CHEM-CHEM08-000108",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_08",
+  "questionType": "single_choice",
+  "difficultyBand": "medium",
+  "stemFormat": "plain",
+  "stemText": "The mole-relationship diagram shows how mass, number of particles, and gas volume at STP are all connected through the molar mass (M), Avogadro's number (NA), and molar volume (22.4 L/mol). Using the relationships shown, find the volume occupied at STP by 8.5 g of NH3. (Molar mass of NH3 = 17 g/mol)",
+  "options": [
+   {
+    "label": "A",
+    "text": "5.6 L",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "11.2 L",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "22.4 L",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "4.48 L",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: n = mass / M = 8.5 / 17 = 0.5 mol.\nStep 2: V = n × 22.4 L/mol = 0.5 × 22.4 = 11.2 L.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_SOMBAS_DIAG_0002.png",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": [
+   {
+    "languageCode": "ta",
+    "stemText": "மோல்-தொடர்பு வரைபடம், நிறை, துகள்களின் எண்ணிக்கை மற்றும் STP இல் வாயு கனஅளவு ஆகியவை மோலார் நிறை (M), அவகாத்ரோ எண் (NA) மற்றும் மோலார் கனஅளவு (22.4 L/mol) மூலம் எவ்வாறு இணைக்கப்பட்டுள்ளன என்பதைக் காட்டுகிறது. காட்டப்பட்டுள்ள தொடர்புகளைப் பயன்படுத்தி, 8.5 g NH3 STP இல் ஆக்கிரமிக்கும் கனஅளவைக் காண்க. (NH3 இன் மோலார் நிறை = 17 g/mol)",
+    "optionTexts": [
+     "5.6 L",
+     "11.2 L",
+     "22.4 L",
+     "4.48 L"
+    ]
+   }
+  ]
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM08-000113",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_08",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "The pie chart shows the percentage composition by mass of a compound containing only carbon, hydrogen, and oxygen: C = 40.0%, H = 6.7%, O = 53.3%. Find its empirical formula. (Atomic mass: C = 12, H = 1, O = 16)",
+  "options": [
+   {
+    "label": "A",
+    "text": "CH2O",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "C2H4O2",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "CH3O",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "C3H6O3",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: Moles: C = 40.0/12 = 3.33; H = 6.7/1 = 6.70; O = 53.3/16 = 3.33.\nStep 2: Divide by smallest (3.33): C = 1, H = 2, O = 1.\nStep 3: Empirical formula = CH2O.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_SOMBAS_DIAG_0003.png",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": [
+   {
+    "languageCode": "ta",
+    "stemText": "வட்ட விளக்கப்படம், கார்பன், ஹைட்ரஜன் மற்றும் ஆக்சிஜன் மட்டும் கொண்ட ஒரு கூட்டின் நிறையால் சதவீத கலவையைக் காட்டுகிறது: C = 40.0%, H = 6.7%, O = 53.3%. அதன் அனுபவ சூத்திரத்தை காண்க. (அணு நிறை: C = 12, H = 1, O = 16)",
+    "optionTexts": [
+     "CH2O",
+     "C2H4O2",
+     "CH3O",
+     "C3H6O3"
+    ]
+   }
+  ]
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM08-000119",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_08",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "The diagram shows the molecules available before the reaction 2H2 + O2 → 2H2O: 6 molecules of H2 and 2 molecules of O2. Based on the diagram, identify the limiting reagent and the number of H2O molecules formed.",
+  "options": [
+   {
+    "label": "A",
+    "text": "O2 is limiting; 4 H2O molecules",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "H2 is limiting; 6 H2O molecules",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "O2 is limiting; 2 H2O molecules",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "H2 is limiting; 4 H2O molecules",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: 2 molecules of O2 need 4 molecules of H2; 6 molecules of H2 are available, so H2 is in excess and O2 is limiting.\nStep 2: H2O molecules formed = 2 × O2 molecules used = 2 × 2 = 4.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_SOMBAS_DIAG_0001.png",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": [
+   {
+    "languageCode": "ta",
+    "stemText": "2H2 + O2 → 2H2O வினைக்கு முன் கிடைக்கும் மூலக்கூறுகள் படம் காட்டுகிறது: 6 H2 மூலக்கூறுகள் மற்றும் 2 O2 மூலக்கூறுகள். படத்தின் அடிப்படையில், குறைந்தளவு வினைப்பொருளையும் உருவாகும் H2O மூலக்கூறுகளின் எண்ணிக்கையையும் காண்க.",
+    "optionTexts": [
+     "O2 is limiting; 4 H2O molecules",
+     "H2 is limiting; 6 H2O molecules",
+     "O2 is limiting; 2 H2O molecules",
+     "H2 is limiting; 4 H2O molecules"
+    ]
+   }
+  ]
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM08-000120",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_08",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "The bar graph shows the moles of reactants X and Y available for the reaction X + 2Y → Z: 5 mol of X and 8 mol of Y. Based on the graph, find the maximum moles of Z that can be formed.",
+  "options": [
+   {
+    "label": "A",
+    "text": "2.5 mol",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "4.0 mol",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "5.0 mol",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "8.0 mol",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: 5 mol X needs 10 mol Y, but only 8 mol Y is available, so Y is the limiting reagent.\nStep 2: mol Z = mol Y used / 2 = 8 / 2 = 4.0 mol.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_SOMBAS_DIAG_0005.png",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": [
+   {
+    "languageCode": "ta",
+    "stemText": "X + 2Y → Z வினைக்கு கிடைக்கும் X மற்றும் Y வினைப்பொருட்களின் மோல்களைப் பட்டை வரைபடம் காட்டுகிறது: 5 mol X மற்றும் 8 mol Y. வரைபடத்தின் அடிப்படையில், உருவாகக்கூடிய அதிகபட்ச Z மோல்களைக் காண்க.",
+    "optionTexts": [
+     "2.5 mol",
+     "4.0 mol",
+     "5.0 mol",
+     "8.0 mol"
+    ]
+   }
+  ]
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM08-000128",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_08",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "The diagram shows a titration set-up: a burette containing NaOH solution positioned above a conical flask containing HCl solution. If 25.0 mL of 0.100 M HCl exactly neutralises 20.0 mL of the NaOH solution, find the molarity of the NaOH solution. (HCl + NaOH → NaCl + H2O, 1:1 mole ratio)",
+  "options": [
+   {
+    "label": "A",
+    "text": "0.100 M",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "0.125 M",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "0.150 M",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "0.200 M",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: moles HCl = 0.100 M × 0.0250 L = 0.00250 mol.\nStep 2: By 1:1 ratio, moles NaOH = 0.00250 mol.\nStep 3: M(NaOH) = 0.00250 / 0.0200 = 0.125 M.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_SOMBAS_DIAG_0004.png",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": [
+   {
+    "languageCode": "ta",
+    "stemText": "ஒரு டிட்ரேஷன் அமைப்பு படம் காட்டுகிறது: NaOH கரைசல் கொண்ட பியூரெட் என்பது HCl கரைசல் கொண்ட கூம்பு குடுவைக்கு மேல் வைக்கப்பட்டுள்ளது. 25.0 mL, 0.100 M HCl சரியாக 20.0 mL NaOH கரைசலை நடுநிலையாக்கினால், NaOH கரைசலின் மோலாரிக்கியை காண்க. (HCl + NaOH → NaCl + H2O, 1:1 மோல் விகிதம்)",
+    "optionTexts": [
+     "0.100 M",
+     "0.125 M",
+     "0.150 M",
+     "0.200 M"
+    ]
+   }
+  ]
+ },
+ {
+  "questionUid": "LMN-PHY-PHY07-001057",
+  "examCode": "NEET",
+  "subjectCode": "PHY",
+  "nodeTagCode": "phy_07",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "In the frictionless ideal pulley system shown in the figure, two masses m1 = 3 kg and m2 = 5 kg are connected by a light inextensible string passing over a frictionless pulley (Atwood machine). What is the magnitude of the acceleration of the system when released? Take g = 10 m/s^2.",
+  "options": [
+   {
+    "label": "A",
+    "text": "1.25 m/s^2",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "2.5 m/s^2",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "5 m/s^2",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "10 m/s^2",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: For an Atwood machine, a = (m2 - m1)g / (m1 + m2), taking m2 > m1.\nStep 2: a = (5-3)(10)/(5+3) = 20/8 = 2.5 m/s^2.\nStep 3: Conclude Option B is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "PHY_NLM_DIAG_0001.png",
+    "altText": "Atwood machine showing a fixed pulley with mass m1 = 3 kg hanging on the left and mass m2 = 5 kg hanging on the right",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-PHY-PHY07-001058",
+  "examCode": "NEET",
+  "subjectCode": "PHY",
+  "nodeTagCode": "phy_07",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "In the frictionless pulley system shown in the figure, a block of mass m1 = 2 kg rests on a smooth horizontal table and is connected by a light string over a pulley at the table's edge to a block of mass m2 = 3 kg hanging vertically. What is the acceleration of the system? Take g = 10 m/s^2.",
+  "options": [
+   {
+    "label": "A",
+    "text": "2 m/s^2",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "4 m/s^2",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "5 m/s^2",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "6 m/s^2",
+    "isCorrect": true
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: Only the hanging mass's weight drives the system (table is smooth, no friction).\nStep 2: a = m2 g / (m1 + m2) = 3(10)/(2+3) = 30/5 = 6 m/s^2.\nStep 3: Conclude Option D is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "PHY_NLM_DIAG_0002.png",
+    "altText": "A 2 kg block on a horizontal table connected by a string over a pulley at the table edge to a 3 kg block hanging vertically off the edge",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM04-001036",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_04",
+  "questionType": "single_choice",
+  "difficultyBand": "easy",
+  "stemFormat": "plain",
+  "stemText": "Based on the VSEPR structural diagram shown, boron trifluoride (BF3) has three bond pairs and no lone pairs around the central boron atom. What is its molecular shape?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tetrahedral",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Trigonal pyramidal",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Trigonal planar",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Bent",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: Boron in BF3 has only 3 valence electrons available for bonding and forms 3 bond pairs with no lone pair (steric number 3).\nStep 2: With 3 identical bond pairs and no lone pairs, the electron pairs arrange in a flat, trigonal planar geometry with 120 degree bond angles.\nStep 3: Conclude Option C is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_CHEBON_DIAG_0001.png",
+    "altText": "Central B atom with 3 F atoms arranged symmetrically in a flat triangular plane, all B-F bond angles equal to 120 degrees",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM04-001037",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_04",
+  "questionType": "single_choice",
+  "difficultyBand": "medium",
+  "stemFormat": "plain",
+  "stemText": "Based on the VSEPR structural diagram shown, phosphorus pentachloride (PCl5) has five bond pairs and no lone pairs around the central phosphorus atom. What is its molecular shape?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Octahedral",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Trigonal bipyramidal",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Square planar",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Tetrahedral",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: Phosphorus in PCl5 has 5 bond pairs and no lone pair (steric number 5).\nStep 2: With 5 identical bond pairs and no lone pairs, the electron pairs arrange in a trigonal bipyramidal geometry - 3 equatorial positions at 120 degrees and 2 axial positions at 90 degrees to the equatorial plane.\nStep 3: Conclude Option B is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_CHEBON_DIAG_0002.png",
+    "altText": "Central P atom with 3 Cl atoms in an equatorial triangular plane (120 degrees apart) and 2 Cl atoms in axial positions perpendicular to that plane, 90 degrees from the equatorial plane",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-CHEM-CHEM04-001038",
+  "examCode": "NEET",
+  "subjectCode": "CHEM",
+  "nodeTagCode": "chem_04",
+  "questionType": "single_choice",
+  "difficultyBand": "easy",
+  "stemFormat": "plain",
+  "stemText": "Based on the VSEPR structural diagram shown, sulphur hexafluoride (SF6) has six bond pairs and no lone pairs around the central sulphur atom. What is its molecular shape?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Trigonal bipyramidal",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Square planar",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Octahedral",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Pentagonal bipyramidal",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: Sulphur in SF6 has 6 bond pairs and no lone pair (steric number 6).\nStep 2: With 6 identical bond pairs and no lone pairs, the electron pairs arrange in a regular octahedral geometry with all bond angles equal to 90 degrees.\nStep 3: Conclude Option C is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "CHE_CHEBON_DIAG_0003.png",
+    "altText": "Central S atom with 6 F atoms arranged at the vertices of an octahedron, 4 in a square plane and 1 each above and below, all S-F bond angles equal to 90 degrees",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-BOT-BOT02-000253",
+  "examCode": "NEET",
+  "subjectCode": "BOT",
+  "nodeTagCode": "bot_02",
+  "questionType": "single_choice",
+  "difficultyBand": "medium",
+  "stemFormat": "plain",
+  "stemText": "Based on the diagram of Kranz anatomy shown, the bundle sheath cells surrounding the vascular bundles in a C4 leaf are structurally specialised with:",
+  "options": [
+   {
+    "label": "A",
+    "text": "Thin walls with abundant intercellular spaces and no chloroplasts",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Thick walls impervious to gaseous exchange, large chloroplasts, and no intercellular spaces",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "No cell wall at all",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Chloroplasts identical in structure to the mesophyll chloroplasts",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: The bundle sheath cells in Kranz anatomy form a compact wreath-like layer around the vascular bundle, with thick walls that are impervious to gases and lack intercellular air spaces.\nStep 2: They contain numerous large chloroplasts (often agranal), which concentrate the CO2 released by decarboxylation right around RuBisCO, minimising its leakage and suppressing photorespiration.\nStep 3: Conclude Option B is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "BOT_PHOIN_DIAG_0001.png",
+    "altText": "Transverse section of a C4 leaf showing mesophyll cells and a wreath (Kranz) of large bundle sheath cells with prominent chloroplasts encircling a central vascular bundle",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-BOT-BOT02-000254",
+  "examCode": "NEET",
+  "subjectCode": "BOT",
+  "nodeTagCode": "bot_02",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "Based on the diagram of the C4 pathway shown, tracing the flow of the carbon-fixing intermediate from the mesophyll cell to the bundle sheath cell, the correct sequence is:",
+  "options": [
+   {
+    "label": "A",
+    "text": "RuBP -> 3-PGA -> glucose, all within the mesophyll cell",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "CO2 + PEP -> OAA (mesophyll) -> malic/aspartic acid -> transported to bundle sheath -> decarboxylated to release CO2 for the Calvin cycle",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "CO2 directly enters the bundle sheath without any mesophyll step",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "OAA is directly used in the Calvin cycle without decarboxylation",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: In the mesophyll cell, PEP carboxylase fixes CO2 onto PEP to form OAA, which is then converted to a transportable 4-carbon acid (malic or aspartic acid).\nStep 2: This 4-carbon acid diffuses through plasmodesmata into the bundle sheath cell, where it is decarboxylated to release CO2 for fixation by RuBisCO in the Calvin cycle.\nStep 3: Conclude Option B is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "BOT_PHOIN_DIAG_0002.png",
+    "altText": "C4 pathway flowchart showing CO2 + PEP forming OAA in the mesophyll cell, conversion to malic/aspartic acid, transport via plasmodesmata to the bundle sheath cell, and decarboxylation releasing CO2 into the Calvin cycle",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-ZOO-ZOO07-000237",
+  "examCode": "NEET",
+  "subjectCode": "ZOO",
+  "nodeTagCode": "zoo_07",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "Based on the spirometer trace diagram shown, identify the labelled volume that represents the air remaining in the lungs after the deepest possible forced expiration, which cannot be directly measured by a simple spirometer.",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tidal Volume (TV)",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Inspiratory Reserve Volume (IRV)",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Residual Volume (RV)",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Expiratory Reserve Volume (ERV)",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: A spirometer can trace and measure TV, IRV, and ERV directly, since these volumes involve air actually moving in or out of the lungs.\nStep 2: The air left behind after the deepest possible expiration never leaves the lungs, so it cannot be traced by a simple spirometer - this is the Residual Volume (RV).\nStep 3: Conclude Option C is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "ZOO_BREAND_DIAG_0001.png",
+    "altText": "Spirometer trace graph with volume (mL) on the y-axis and time on the x-axis, showing labelled segments for Tidal Volume, Inspiratory Reserve Volume, Expiratory Reserve Volume, and a dashed baseline segment below the ERV trough labelled 'X' representing Residual Volume",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ },
+ {
+  "questionUid": "LMN-ZOO-ZOO07-000242",
+  "examCode": "NEET",
+  "subjectCode": "ZOO",
+  "nodeTagCode": "zoo_07",
+  "questionType": "single_choice",
+  "difficultyBand": "hard",
+  "stemFormat": "plain",
+  "stemText": "Based on the oxygen-haemoglobin dissociation curve diagram shown, comparing Curve A (normal) and Curve B (shifted right relative to Curve A), Curve B most likely represents conditions of:",
+  "options": [
+   {
+    "label": "A",
+    "text": "Lower temperature and lower pCO2 (resting conditions)",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Higher pCO2, higher H+ (lower pH), and higher temperature (as in exercising muscle)",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Complete absence of carbon dioxide",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "A curve identical to Curve A, just relabelled",
+    "isCorrect": false
+   }
+  ],
+  "solution": {
+   "explanationText": "Step 1: A rightward shift of the oxygen dissociation curve means that, at any given pO2, haemoglobin holds less oxygen (lower saturation).\nStep 2: This rightward shift (the Bohr effect) is caused by higher pCO2, higher H+ concentration (lower pH), and higher temperature - exactly the conditions found in actively exercising muscle tissue, which needs more oxygen released to it.\nStep 3: Conclude Option B is correct.",
+   "solutionFormat": "plain"
+  },
+  "images": [
+   {
+    "fileName": "ZOO_BREAND_DIAG_0002.png",
+    "altText": "Two sigmoid oxygen-haemoglobin dissociation curves on axes of % saturation (y) vs pO2 (x); Curve A is the normal reference curve, Curve B is shifted to the right of Curve A",
+    "targetRole": "stem"
+   }
+  ],
+  "translations": []
+ }
+]

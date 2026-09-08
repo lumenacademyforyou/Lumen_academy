@@ -12,6 +12,15 @@ import { startExpirySweeper, stopExpirySweeper } from "./jobs/expirySweeper.js";
 
 const app = express();
 
+// LA-UX-REFRESH-003 H9 — without this, req.ip is the proxy's address for
+// every request behind Render/Vercel/Cloudflare, so the per-IP rate limiter
+// on /auth/email-exists (emailAvailability.service.ts) degrades into a single
+// global bucket: one busy visitor throttles everybody, and a distributed
+// sweep is not slowed at all. `1` (trust the first hop) rather than `true`,
+// which would trust a client-supplied X-Forwarded-For outright and let a
+// caller spoof its way into a fresh bucket per request.
+app.set("trust proxy", 1);
+
 // Real, previously-undetected production defect found live while writing
 // Phase F6's Playwright journeys (LA-APP-COMPLETION-001): helmet()'s default
 // CSP restricts connect-src/img-src to 'self' only, but auth in this app is

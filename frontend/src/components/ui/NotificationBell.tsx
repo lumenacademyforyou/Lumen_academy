@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
 import { MeProfile, getMissingProfileFields } from "../../services/meApi";
+import { useResumableAttempt } from "../../hooks/useResumableAttempt";
 import {
   Notification,
   fetchNotifications,
@@ -26,11 +27,23 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
   const { t } = useLanguage();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+  // LA-UX-REFRESH-003 H9 (bug sweep) — this panel still used the
+  // `fixed inset-0` backdrop that F5 removed from the Header's profile menu,
+  // and carried the same defect the user reported there: the backdrop
+  // swallows the click that dismisses it, so closing the panel and pressing
+  // something else takes two clicks. Same document-level listener as the
+  // Header, so both menus now behave identically.
+  const panelRef = useRef<HTMLDivElement | null>(null);
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [loading, setLoading] = useState(false);
 
   const missingFields = getMissingProfileFields(profile);
   const hasIncompleteProfile = missingFields.length > 0;
+
+  // LA-UX-REFRESH-003 H3 — an unfinished test is the single most actionable
+  // thing this bell can tell someone, so it sits at the top of the list and
+  // counts toward the dot. Computed, not stored — see useResumableAttempt.
+  const { resumable } = useResumableAttempt();
 
   useEffect(() => {
     if (!profile) return;
@@ -49,8 +62,28 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
     };
   }, [profile]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (target && panelRef.current?.contains(target)) return;
+      setIsOpen(false);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
+
   const unreadCount = notifications.filter((n) => !n.read_at).length;
-  const hasAnything = hasIncompleteProfile || notifications.length > 0;
+  const hasAnything = hasIncompleteProfile || notifications.length > 0 || resumable !== null;
 
   // P0-5 (docs/assessment-tool-fix-prompt.md): every mutation here is
   // optimistic-with-rollback — update local state immediately (so the badge
@@ -108,7 +141,7 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
   };
 
   return (
-    <div className="relative shrink-0">
+    <div ref={panelRef} className="relative shrink-0">
       <button
         onClick={() => setIsOpen((prev) => !prev)}
         className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors relative cursor-pointer flex items-center justify-center"
@@ -117,15 +150,13 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
         <span className="material-symbols-outlined text-slate-700 dark:text-slate-200 text-[24px]">
           notifications
         </span>
-        {(hasIncompleteProfile || unreadCount > 0) && (
+        {(hasIncompleteProfile || unreadCount > 0 || resumable !== null) && (
           <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-white dark:border-[var(--navy)]"></span>
         )}
       </button>
 
       {isOpen && (
         <>
-          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-
           <div className="absolute right-0 mt-2 w-80 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 p-4 z-50 animate-in fade-in slide-in-from-top-2 duration-200 max-h-[70vh] overflow-y-auto">
             <h4 className="font-bold text-sm text-[#00243B] dark:text-white mb-3 flex justify-between items-center">
               <span>{t("Notifications")}</span>
@@ -157,6 +188,25 @@ export default function NotificationBell({ profile }: NotificationBellProps) {
 
             {hasAnything ? (
               <div className="space-y-1.5">
+                {/* H3 — first, because it is the only item here that is a
+                    task left half-finished rather than a suggestion. */}
+                {resumable && (
+                  <div
+                    onClick={() => {
+                      navigate("/results");
+                      setIsOpen(false);
+                    }}
+                    className="p-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl text-xs transition-colors border-l-2 border-amber-500 cursor-pointer"
+                  >
+                    <p className="font-semibold text-[#00243B] dark:text-white flex items-center gap-1.5">
+                      <span className="material-symbols-outlined text-[14px] text-amber-500">pending_actions</span>
+                      {resumable.attemptState === "paused" ? t("You have a paused test") : t("You have a test in progress")}
+                    </p>
+                    <p className="text-slate-500 dark:text-slate-400 mt-0.5 truncate">{resumable.testTitle}</p>
+                    <p className="text-[10px] font-semibold text-amber-600 dark:text-amber-400 mt-0.5">{t("Tap to resume it")}</p>
+                  </div>
+                )}
+
                 {hasIncompleteProfile && (
                   <div
                     onClick={() => {

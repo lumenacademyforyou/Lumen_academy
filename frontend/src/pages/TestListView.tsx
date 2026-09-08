@@ -98,6 +98,11 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
   }, []);
   const fullMockUnlocked = syllabusGateUnlocked && hasCompletedPractice === true;
   const [view, setView] = useState<"directory" | "subject-wise" | "custom">("directory");
+  // LA-UX-REFRESH-003 H8 — "there must be three tabs like neet, jee mains,
+  // jee advanced". Only NEET has content: `catalog.exam` holds one exam and
+  // the bank has no JEE questions, so the other two tabs say so rather than
+  // offering test cards that would fail on Start.
+  const [examTab, setExamTab] = useState<"NEET" | "JEE_MAINS" | "JEE_ADVANCED">("NEET");
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState<string | null>(null);
   async function launch(body: CreateSessionRequest) {
@@ -386,6 +391,61 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
         )}
       </div>
 
+      {/* H8 — exam tabs. Switching away from NEET also drops any half-built
+          subject-wise/custom configuration back to the directory, so a
+          builder for one exam is never left on screen under another's tab. */}
+      <div className="px-2">
+        <div className="inline-flex items-center gap-1 p-1 rounded-2xl bg-slate-100 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+          {([
+            { id: "NEET", label: "NEET" },
+            { id: "JEE_MAINS", label: "JEE Mains" },
+            { id: "JEE_ADVANCED", label: "JEE Advanced" },
+          ] as const).map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => {
+                setExamTab(tab.id);
+                setView("directory");
+                setCreateError(null);
+              }}
+              aria-current={examTab === tab.id ? "page" : undefined}
+              className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+                examTab === tab.id
+                  ? "bg-[var(--navy)] dark:bg-[#FCB824] text-white dark:text-[#00243B] shadow-sm"
+                  : "text-slate-500 dark:text-slate-400 hover:text-[#00243B] dark:hover:text-white"
+              }`}
+            >
+              {t(tab.label)}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {examTab !== "NEET" && (
+        <div className="bg-white dark:bg-[var(--navy)] rounded-[28px] border border-dashed border-slate-300 dark:border-slate-600 p-10 md:p-16 text-center">
+          <div className="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-5">
+            <span className="material-symbols-outlined text-3xl text-slate-400">hourglass_empty</span>
+          </div>
+          <h3 className="text-xl md:text-2xl font-black text-[#00243B] dark:text-white mb-2">
+            {examTab === "JEE_MAINS" ? t("JEE Mains") : t("JEE Advanced")} {t("tests aren't available yet")}
+          </h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+            {t("The question bank currently holds NEET content only. This tab is ready for")}{" "}
+            {examTab === "JEE_MAINS" ? t("JEE Mains") : t("JEE Advanced")}{" "}
+            {t("papers as soon as questions for it are published — until then there is nothing here to assemble a real test from.")}
+          </p>
+          <button
+            onClick={() => setExamTab("NEET")}
+            className="mt-7 px-6 py-3 bg-[var(--navy)] dark:bg-[#FCB824] text-white dark:text-[#00243B] rounded-xl font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center gap-2 cursor-pointer"
+          >
+            <span className="material-symbols-outlined text-lg">quiz</span>
+            {t("Back to NEET tests")}
+          </button>
+        </div>
+      )}
+
+      {examTab === "NEET" && (
+      <>
       {createError && (
         <div className="px-4 py-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-400 text-sm font-semibold">{createError}</div>
       )}
@@ -513,6 +573,17 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
                   </button>
                 );
               })()}
+              {/* LA-UX-REFRESH-003 H2 — say WHY it is empty. A disabled button
+                  over four zeroes reads as a broken feature; it is actually a
+                  correct empty state. content.question.has_image is a
+                  trigger-maintained mirror of "owns a content.asset row"
+                  (migration 028), and the bank currently has no image assets
+                  at all, so there is genuinely nothing to assemble. */}
+              {catalogTree.subjects.reduce((sum, s) => sum + s.imageQuestionCount, 0) === 0 && (
+                <p className="mt-3 text-[11px] font-semibold text-slate-500 dark:text-slate-400 leading-relaxed">
+                  {t("No published question carries a diagram or figure yet. This unlocks by itself as soon as image-bearing questions are added to the bank — nothing here needs configuring.")}
+                </p>
+              )}
             </motion.div>
           </div>
 
@@ -745,6 +816,8 @@ export default function TestListView({ attempts, catalogTree, catalogError, isSy
         />
       )}
 
+      </>
+      )}
     </div>
   );
 }

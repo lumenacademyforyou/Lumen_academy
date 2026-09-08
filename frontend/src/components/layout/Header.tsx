@@ -457,7 +457,7 @@ const handleSaveProfile = async (e: React.FormEvent) => {
                     className="w-full flex items-center gap-3.5 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 rounded-xl transition-all text-left text-sm font-semibold text-[#00243B] dark:text-white group cursor-pointer"
                   >
                     <span className="material-symbols-outlined text-slate-400 group-hover:text-[var(--teal)] dark:group-hover:text-[#FCB824] transition-colors text-[20px]">bar_chart</span>
-                    <span>{t("View Results")}</span>
+                    <span>{t("Recent Test & Results")}</span>
                   </button>
                   
                   <button 

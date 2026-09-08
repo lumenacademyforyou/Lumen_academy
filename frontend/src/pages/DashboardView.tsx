@@ -14,6 +14,8 @@ import { fetchMe, MeProfile } from "../services/meApi";
 import { createSession } from "../services/sessionApi";
 import { ApiError } from "../services/api";
 import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
+import { useResumableAttempt, clearResumableAttemptCache } from "../hooks/useResumableAttempt";
+import { resumeSessionById } from "../services/sessionApi";
 // P2-13: this view now pulls in recharts + jsPDF/html2canvas (IrtSection,
 // ReportSummary, PDF export) — code-split so DashboardView's own chunk (the
 // very first thing loaded post-login) doesn't carry that weight for every
@@ -87,6 +89,29 @@ export default function DashboardView({ attempt, studentName, onTakeTest, catalo
     analytics?.attemptHistory.find((a) => a.testTitle === attempt.title) ?? analytics?.attemptHistory[0] ?? null;
 
   const [studyStreak, setStudyStreak] = useState(0);
+
+  // LA-UX-REFRESH-003 H3 — an unfinished test is surfaced here as well as in
+  // the bell, because the dashboard is where a student lands and the paused
+  // attempt is the thing they most likely came back to finish.
+  const { resumable } = useResumableAttempt();
+  const [resumingPaused, setResumingPaused] = useState(false);
+  const [resumeError, setResumeError] = useState<string | null>(null);
+
+  const handleResumePaused = async () => {
+    if (!resumable) return;
+    setResumingPaused(true);
+    setResumeError(null);
+    try {
+      const session = await resumeSessionById(resumable.attemptId);
+      // The attempt is live again, so the banner and the bell must stop
+      // advertising it the moment we hand the session to the router.
+      clearResumableAttemptCache();
+      onSessionCreated(session);
+    } catch (err) {
+      setResumeError(err instanceof Error ? err.message : "Could not resume this test.");
+      setResumingPaused(false);
+    }
+  };
 
   // F6 — the node html2canvas rasterises when the student shares their card.
   const scorecardRef = useRef<HTMLDivElement | null>(null);
@@ -469,6 +494,33 @@ useEffect(() => {
           </div>
         )}
       </div>
+
+      {/* H3 — the paused-test banner, above the profile nudge: finishing a
+          test you already started outranks filling in a form. */}
+      {resumable && (
+        <div className="flex flex-wrap items-center gap-4 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50/60 dark:from-amber-950/40 dark:to-slate-900/60 border border-amber-200 dark:border-amber-800/60">
+          <div className="w-11 h-11 rounded-full bg-amber-100 dark:bg-amber-900/60 text-amber-600 dark:text-[#FCB824] flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-xl">pending_actions</span>
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-[10px] font-black uppercase tracking-widest text-amber-700 dark:text-[#FCB824]">
+              {resumable.attemptState === "paused" ? t("You have a paused test") : t("You have a test in progress")}
+            </p>
+            <p className="text-sm font-bold text-[#00243B] dark:text-white truncate">{resumable.testTitle}</p>
+            <p className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+              {resumeError ?? t("Your answers are saved — pick up exactly where you left off.")}
+            </p>
+          </div>
+          <button
+            onClick={() => void handleResumePaused()}
+            disabled={resumingPaused}
+            className="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5 shrink-0"
+          >
+            <span className="material-symbols-outlined text-base">play_arrow</span>
+            {resumingPaused ? t("Resuming...") : t("Resume Test")}
+          </button>
+        </div>
+      )}
 
       {profileIncomplete && (
         <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-200 rounded-2xl p-4 flex items-center gap-3 text-sm font-semibold">

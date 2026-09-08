@@ -6,6 +6,7 @@ import { TestAttempt, ChapterGoal, CatalogTree, SessionResult, Scorecard } from 
 import Header from "./components/layout/Header";
 import DailyReminderModal from "./components/layout/DailyReminderModal";
 import LumenLogo from "./components/ui/LumenLogo";
+import ErrorBoundary from "./components/layout/ErrorBoundary";
 import { supabase } from "./services/supabase";
 // import { useLocation, useNavigate } from "react-router-dom";
 
@@ -736,6 +737,11 @@ useEffect(() => {
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full"
               >
+                {/* LA-UX-REFRESH-003 H9 — a render error in any one view used
+                    to blank the whole app to a white page. Keyed on the
+                    current screen/tab so navigating away from a broken view
+                    clears the error instead of stranding the user on it. */}
+                <ErrorBoundary resetKey={`${currentScreen}:${currentTab}`}>
                 <Suspense fallback={<AppLoadingFallback />}>
                 {currentScreen === "system_check" && activeSession ? (
                   <SystemCheckView
@@ -824,6 +830,7 @@ useEffect(() => {
               </>
             )}
                 </Suspense>
+                </ErrorBoundary>
               </motion.div>
             </AnimatePresence>
           </main>

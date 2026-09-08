@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState, lazy, Suspense } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { listMyAttempts, resumeSessionById } from "../services/sessionApi";
+import { clearResumableAttemptCache } from "../hooks/useResumableAttempt";
 import { exportAnalyticsPdf } from "../services/pdfExport";
 import type { AttemptSummary, SessionResult } from "../types";
 import { pluralize } from "../utils/pluralize";
@@ -53,6 +54,28 @@ interface MyResultsViewProps {
   onResumeAttempt?: (session: SessionResult) => void;
 }
 
+/**
+ * H9 — waits for the report to be genuinely on screen before it is captured.
+ *
+ * "Rendered" means the node exists and has laid out to a real height; a
+ * mounted-but-empty container has a height of ~0 and would rasterise to a
+ * blank page. Gives up after `timeoutMs` and lets the caller proceed anyway,
+ * so a slow report degrades to the old behaviour rather than hanging: the
+ * capture then either works or throws its own clear error.
+ */
+async function waitForReportToRender(elementId: string, timeoutMs = 8000): Promise<void> {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    const el = document.getElementById(elementId);
+    if (el && el.offsetHeight > 200) {
+      // One more frame so the last paint (fonts, charts) lands before capture.
+      await new Promise((resolve) => requestAnimationFrame(() => resolve(null)));
+      return;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+}
+
 export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = {}) {
   const { t } = useLanguage();
   const [attempts, setAttempts] = useState<AttemptSummary[] | null>(null);
@@ -94,7 +117,12 @@ export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = 
     setResumingId(attempt.attemptId);
     setError(null);
     try {
-      onResumeAttempt(await resumeSessionById(attempt.attemptId));
+      const session = await resumeSessionById(attempt.attemptId);
+      // H3 — the dashboard banner and the bell both read a short-lived cache
+      // of "is there an unfinished attempt"; resuming here must invalidate it
+      // or they keep advertising a test that is now live.
+      clearResumableAttemptCache();
+      onResumeAttempt(session);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not resume this test.");
       setResumingId(null);
@@ -167,19 +195,23 @@ export default function MyResultsView({ onResumeAttempt }: MyResultsViewProps = 
     if (attempt.attemptState !== "scored") return;
     setDownloadingId(attempt.attemptId);
     setSelectedAttempt(attempt);
-    // The report needs to actually be on screen for the PDF capture to have
-    // something to render — mount it, wait a beat for its own data fetch +
-    // paint, then capture. exportAnalyticsPdf itself throws a clear error
-    // if the element never appears.
-    setTimeout(async () => {
+    // The report needs to actually be on screen for the capture to have
+    // something to render. This used to be a flat 800ms setTimeout, which is
+    // a race rather than a wait: on a slow connection the capture fired
+    // against a still-loading report and produced a blank or half-empty PDF
+    // with no error (LA-UX-REFRESH-003 H9 bug sweep). Poll for the element to
+    // exist AND to have real height, with a ceiling so it can never hang.
+    void (async () => {
       try {
+        await waitForReportToRender("attempt-report-content");
         await exportAnalyticsPdf("attempt-report-content", `Lumen_Academy_${attempt.testTitle.replace(/\s+/g, "_")}.pdf`);
       } catch (err) {
         console.error("Failed to download report PDF:", err);
+        setError(err instanceof Error ? err.message : "Could not generate the report PDF.");
       } finally {
         setDownloadingId(null);
       }
-    }, 800);
+    })();
   };
 
   if (pausedAttempt) {
