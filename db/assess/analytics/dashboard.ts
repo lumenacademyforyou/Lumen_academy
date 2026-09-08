@@ -28,6 +28,19 @@ export interface AttemptHistoryEntry {
   obtainedMarks: string;
   totalMarks: string;
   accuracyPercent: string;
+  // LA-UX-REFRESH-001 F6 — the scorecard's per-outcome breakdown, including
+  // what each outcome was actually worth. Counts and marks both come from the
+  // same rows the scoring engine wrote (assess.attempt_response.marks_awarded
+  // per served question), so `correctMarks - penaltyMarks` reconciles with
+  // obtainedMarks under every scoring rule the engine supports — a client-side
+  // `correct * 4 - incorrect * 1` would only ever be right for one of them.
+  correctCount: number;
+  incorrectCount: number;
+  unattemptedCount: number;
+  /** Marks earned on correct/partially-correct answers. */
+  correctMarks: string;
+  /** Marks lost to negative marking, as a positive magnitude ("what it cost you"). */
+  penaltyMarks: string;
 }
 
 export interface ScoreTrendPoint {
@@ -124,12 +137,40 @@ async function getAttemptHistory(client: QueryClient, userId: string, limit: num
     obtained_marks: string;
     total_marks: string;
     accuracy_percent: string;
+    correct_count: string;
+    incorrect_count: string;
+    unattempted_count: string;
+    correct_marks: string;
+    penalty_marks: string;
   }>(
+    // The lateral runs once per returned attempt (at most `limit` of them)
+    // and aggregates that attempt's served questions: every question the
+    // student was given is an assess.attempt_question row, and the left join
+    // is what makes a never-answered question count as unattempted rather
+    // than vanishing. `is_correct is null` is the same unattempted test
+    // getUnattemptedRate uses, so the two never disagree.
+    //
+    // The marks split is by sign of the awarded value, not by outcome flag:
+    // that is what makes it correct for partial credit and for rules with no
+    // negative marking at all, instead of assuming NEET's +4/-1.
     `select a.attempt_id, a.test_id, t.title as test_title, t.test_code, a.submitted_at,
-            sc.obtained_marks, sc.total_marks, sc.accuracy_percent
+            sc.obtained_marks, sc.total_marks, sc.accuracy_percent,
+            b.correct_count, b.incorrect_count, b.unattempted_count,
+            b.correct_marks, b.penalty_marks
        from assess.attempt a
        join assess.test t on t.test_id = a.test_id
        join assess.scorecard sc on sc.attempt_id = a.attempt_id
+       left join lateral (
+         select count(*) filter (where ar.is_correct is true)  as correct_count,
+                count(*) filter (where ar.is_correct is false) as incorrect_count,
+                count(*) filter (where ar.is_correct is null)  as unattempted_count,
+                coalesce(sum(ar.marks_awarded) filter (where ar.marks_awarded > 0), 0) as correct_marks,
+                coalesce(-sum(ar.marks_awarded) filter (where ar.marks_awarded < 0), 0) as penalty_marks
+           from assess.attempt_question aq
+           left join assess.attempt_response ar
+                  on ar.attempt_id = aq.attempt_id and ar.question_id = aq.question_id
+          where aq.attempt_id = a.attempt_id
+       ) b on true
       where a.user_id = $1 and a.attempt_state = 'scored'
       order by a.submitted_at desc
       limit $2`,
@@ -145,6 +186,14 @@ async function getAttemptHistory(client: QueryClient, userId: string, limit: num
     obtainedMarks: r.obtained_marks,
     totalMarks: r.total_marks,
     accuracyPercent: r.accuracy_percent,
+    correctCount: Number(r.correct_count ?? 0),
+    incorrectCount: Number(r.incorrect_count ?? 0),
+    unattemptedCount: Number(r.unattempted_count ?? 0),
+    // Kept as strings end to end, like every other marks field here: these
+    // are numeric(…) values and the display layer formats them; parsing them
+    // into JS floats would be the one place rounding could creep in.
+    correctMarks: String(r.correct_marks ?? "0"),
+    penaltyMarks: String(r.penalty_marks ?? "0"),
   }));
 }
 

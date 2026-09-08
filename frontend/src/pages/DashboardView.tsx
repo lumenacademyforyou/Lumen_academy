@@ -1,7 +1,7 @@
 
 
 
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "motion/react";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
@@ -22,6 +22,18 @@ import { useDashboardAnalytics } from "../hooks/useDashboardAnalytics";
 const AttemptReviewView = lazy(() => import("./AttemptReviewView"));
 import { pluralize } from "../utils/pluralize";
 import { getMotivationalMessage } from "../utils/motivationalMessage";
+import { shareElementAsImage } from "../services/shareScorecard";
+import FocusMode from "../components/ui/dashboard/FocusMode";
+
+// Marks come off the wire as numeric strings (they are Postgres `numeric`,
+// kept as strings end to end so nothing rounds them in transit). Trailing
+// zeros are noise on a scorecard — "180" reads better than "180.00" — but a
+// genuinely fractional award (partial credit) must keep its decimals.
+function formatMarks(value: string | number | null | undefined): string {
+  const n = Number(value ?? 0);
+  if (!Number.isFinite(n)) return "0";
+  return Number.isInteger(n) ? String(n) : String(Number(n.toFixed(2)));
+}
 
 const SUBJECT_STYLE: Record<string, { icon: string; color: string; label: string }> = {
   PHY: { icon: "bolt", color: "#f59e0b", label: "Physics" },
@@ -67,19 +79,44 @@ export default function DashboardView({ attempt, studentName, onTakeTest, catalo
   // taken a test yet.
   const hasRealAttempt = attempt.date !== "Available";
 
+  // F6 — the real, server-scored row behind the hero's numbers. Matched to
+  // the attempt this screen is displaying by title where possible (the user
+  // can select an older attempt from the test list), falling back to the most
+  // recent scored attempt, which is what the hero shows by default. Rendered
+  // with its own title and date so it can never silently claim to describe a
+  // different attempt than the one it came from.
+  const scorecardEntry =
+    analytics?.attemptHistory.find((a) => a.testTitle === attempt.title) ?? analytics?.attemptHistory[0] ?? null;
+
   const [studyStreak, setStudyStreak] = useState(0);
 
-  const [dailyStudyGoal, setDailyStudyGoal] = useState<string>(() => {
-    return localStorage.getItem("lumen_daily_study_goal") || "";
-  });
-  const [tempStudyGoal, setTempStudyGoal] = useState<string>(dailyStudyGoal);
-  const [isEditingGoal, setIsEditingGoal] = useState<boolean>(!dailyStudyGoal);
+  // F6 — the node html2canvas rasterises when the student shares their card.
+  const scorecardRef = useRef<HTMLDivElement | null>(null);
+  const [shareState, setShareState] = useState<"idle" | "working" | "done" | "failed">("idle");
 
-  const handleSaveGoal = () => {
-    setDailyStudyGoal(tempStudyGoal);
-    localStorage.setItem("lumen_daily_study_goal", tempStudyGoal);
-    setIsEditingGoal(false);
+  // F9 — LeetCode-style focus mode, launched from the hero.
+  const [focusModeOpen, setFocusModeOpen] = useState(false);
+  const [dailyTargetMinutes, setDailyTargetMinutes] = useState<number | null>(null);
+
+  const handleShareScorecard = async () => {
+    if (!scorecardRef.current) return;
+    setShareState("working");
+    const result = await shareElementAsImage(scorecardRef.current, {
+      fileName: `lumen-scorecard-${new Date().toISOString().slice(0, 10)}`,
+      shareText: `I scored ${attempt.totalScore} marks with ${attempt.accuracy}% accuracy on Lumen Academy.`,
+    });
+    // "cancelled" is the user closing the share sheet — not a failure, and
+    // not something to congratulate them for either.
+    setShareState(result === "failed" ? "failed" : result === "cancelled" ? "idle" : "done");
+    if (result !== "failed") setTimeout(() => setShareState("idle"), 2500);
   };
+
+  // LA-UX-REFRESH-001 F10 — the "Daily Study Goal" card (a free-text goal
+  // kept only in localStorage) is gone from this screen. The study-time
+  // target is a real, server-stored profile field now (F2: a time tag on
+  // core.student_profile.daily_study_minutes), which is where the user asked
+  // for it; a second, unrelated, device-local copy of "today's goal" here was
+  // never connected to anything else in the app.
 
   // P1-8: launches a real session scoped to exactly this weakest unit
   // (subjectId + syllabusNodeId), not a hand-off to the generic test
@@ -162,6 +199,9 @@ useEffect(() => {
       .then((me) => {
         if (!isMounted) return;
         setProfileIncomplete(!me.studentProfile?.targetYear || !me.studentProfile?.classLevel);
+        // F9 — focus mode opens on the student's own daily target rather than
+        // an arbitrary default (F2 stores it as a time tag on the profile).
+        setDailyTargetMinutes(me.studentProfile?.dailyStudyMinutes ?? null);
       })
       .catch((err) => console.error("Failed to load profile completeness:", err));
     return () => {
@@ -176,18 +216,6 @@ useEffect(() => {
   const circumference = 691.15;
   const strokeDashoffset = circumference - (animatedPercentage / 100) * circumference;
   
-  // Real, SQL-aggregated time-per-question distribution (Phase G) — replaces
-  // a prior fake per-subject fastest/slowest computation that fell back to
-  // hardcoded "Biology 45s" / "Physics 112s" constants whenever
-  // questionTimeData was empty (which it always was post-Phase-D; that field
-  // is never populated by any real code path).
-  const weightedAverageSeconds = analytics && analytics.timeDistribution.length > 0
-    ? Math.round(
-        analytics.timeDistribution.reduce((sum, b) => sum + (b.averageSeconds ?? 0) * b.questionCount, 0) /
-          analytics.timeDistribution.reduce((sum, b) => sum + b.questionCount, 0)
-      )
-    : null;
-
   useEffect(() => {
     // Reset and animate the total score percentage on mount or when the attempt changes
     setAnimatedScore(0);
@@ -246,7 +274,10 @@ useEffect(() => {
     <div className="space-y-12 max-w-[1280px] mx-auto animate-in fade-in duration-500">
       
       {/* Hero Score Section */}
-      <div className="relative overflow-hidden rounded-[32px] md:rounded-[40px] bg-[var(--navy)] p-8 md:p-12 shadow-2xl border border-[#FCB824]/20">
+      <div
+        ref={scorecardRef}
+        className="relative overflow-hidden rounded-[32px] md:rounded-[40px] bg-[var(--navy)] p-8 md:p-12 shadow-2xl border border-[#FCB824]/20"
+      >
         {/* Background ambient blurs */}
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/30 rounded-full blur-3xl pointer-events-none"></div>
@@ -260,6 +291,18 @@ useEffect(() => {
                 <span className="material-symbols-outlined text-sm animate-pulse">stars</span>
                 <span>{t("Journey to 720 starts here")}</span>
               </span>
+
+              {/* LA-UX-REFRESH-001 F9 — focus mode, in the hero panel, the
+                  way LeetCode puts it on the problem page: one control that
+                  takes the whole interface away and leaves the work. */}
+              <button
+                onClick={() => setFocusModeOpen(true)}
+                className="print:hidden inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-colors cursor-pointer"
+                title={t("Enter distraction-free focus mode")}
+              >
+                <span className="material-symbols-outlined text-sm">center_focus_strong</span>
+                <span>{t("Focus Mode")}</span>
+              </button>
             </div>
             {hasRealAttempt && motivational ? (
               <>
@@ -353,6 +396,91 @@ useEffect(() => {
             )}
           </div>
         </div>
+
+        {/* LA-UX-REFRESH-001 F6 — the mark breakdown behind the total: how
+            many questions each outcome accounted for, what the correct ones
+            earned, and what the wrong ones cost. Every figure here is
+            SQL-aggregated from the marks the scoring engine actually awarded
+            (db/assess/analytics/dashboard.ts), so it reconciles with the
+            attempt's obtained marks under any scoring rule — a client-side
+            "correct x 4 - incorrect x 1" would only be right for one of
+            them. */}
+        {scorecardEntry && (
+          <div className="relative z-10 mt-8 pt-8 border-t border-white/10 space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">{t("Mark Breakdown")}</p>
+                <p className="text-xs font-semibold text-blue-100/90 truncate">
+                  {scorecardEntry.testTitle} • {new Date(scorecardEntry.submittedAt).toLocaleDateString()}
+                </p>
+              </div>
+
+              {/* Share as an image — html2canvas over the hero node above. */}
+              <button
+                onClick={handleShareScorecard}
+                disabled={shareState === "working"}
+                className="print:hidden flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white text-[11px] font-bold uppercase tracking-wider transition-colors disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer shrink-0"
+                title={t("Share your scorecard as an image")}
+              >
+                <span className={`material-symbols-outlined text-sm ${shareState === "working" ? "animate-spin" : ""}`}>
+                  {shareState === "working" ? "progress_activity" : shareState === "done" ? "check" : "ios_share"}
+                </span>
+                {shareState === "working" ? t("Preparing...") : shareState === "done" ? t("Ready") : t("Share Scorecard")}
+              </button>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="bg-white/10 border border-emerald-300/25 rounded-2xl p-4">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">check_circle</span>
+                  {t("Correct")}
+                </p>
+                <p className="text-2xl font-black text-white mt-1">{scorecardEntry.correctCount}</p>
+                <p className="text-[11px] font-bold text-emerald-300 mt-0.5">+{formatMarks(scorecardEntry.correctMarks)} {t("marks")}</p>
+              </div>
+
+              <div className="bg-white/10 border border-rose-300/25 rounded-2xl p-4">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-rose-300 flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">cancel</span>
+                  {t("Incorrect")}
+                </p>
+                <p className="text-2xl font-black text-white mt-1">{scorecardEntry.incorrectCount}</p>
+                <p className="text-[11px] font-bold text-rose-300 mt-0.5">
+                  {Number(scorecardEntry.penaltyMarks) > 0
+                    ? `-${formatMarks(scorecardEntry.penaltyMarks)} ${t("marks lost")}`
+                    : t("No negative marking")}
+                </p>
+              </div>
+
+              <div className="bg-white/10 border border-white/20 rounded-2xl p-4">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-300 flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">do_not_disturb_on</span>
+                  {t("Skipped")}
+                </p>
+                <p className="text-2xl font-black text-white mt-1">{scorecardEntry.unattemptedCount}</p>
+                <p className="text-[11px] font-bold text-slate-300 mt-0.5">0 {t("marks")}</p>
+              </div>
+
+              <div className="bg-[#FCB824]/15 border border-[#FCB824]/40 rounded-2xl p-4">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-[#FCB824] flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">functions</span>
+                  {t("Total")}
+                </p>
+                <p className="text-2xl font-black text-white mt-1">
+                  {formatMarks(scorecardEntry.obtainedMarks)}
+                  <span className="text-sm font-bold text-white/60"> / {formatMarks(scorecardEntry.totalMarks)}</span>
+                </p>
+                <p className="text-[11px] font-bold text-[#FCB824] mt-0.5">
+                  +{formatMarks(scorecardEntry.correctMarks)} − {formatMarks(scorecardEntry.penaltyMarks)}
+                </p>
+              </div>
+            </div>
+
+            {shareState === "failed" && (
+              <p className="text-[11px] font-semibold text-rose-300">{t("Couldn't create the scorecard image. Please try again.")}</p>
+            )}
+          </div>
+        )}
       </div>
 
       {profileIncomplete && (
@@ -362,119 +490,10 @@ useEffect(() => {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Daily Study Goal */}
-        <motion.div 
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] p-6 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col items-center justify-between gap-4 h-full"
-        >
-          <div className="flex items-center gap-4 w-full">
-            <div className="w-12 h-12 bg-amber-50 dark:bg-amber-950/40 text-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="material-symbols-outlined text-2xl">flag</span>
-            </div>
-            <div className="flex-1 min-w-0">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">{t("Daily Study Goal")}</h3>
-              {isEditingGoal ? (
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mt-1.5 w-full">
-                  <input 
-                    type="text" 
-                    value={tempStudyGoal} 
-                    onChange={(e) => setTempStudyGoal(e.target.value)} 
-                    onKeyDown={(e) => e.key === "Enter" && handleSaveGoal()}
-                    placeholder={t("e.g. Solve 50 MCQs")}
-                    className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold px-3.5 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--teal)] w-full text-[#00243B] dark:text-white"
-                    autoFocus
-                  />
-                  <button 
-                    onClick={handleSaveGoal}
-                    className="bg-[var(--teal)] dark:bg-[#FCB824] text-white dark:text-[#00243B] px-4 py-2 rounded-xl text-xs font-bold transition-transform hover:scale-105 shrink-0 w-full sm:w-auto"
-                  >
-                    {t("Save")}
-                  </button>
-                </div>
-              ) : (
-                <div className="flex items-center gap-3 mt-1 justify-between w-full">
-                  <span className="text-lg font-bold text-[#00243B] dark:text-white truncate">
-                    {dailyStudyGoal || t("No goal set for today")}
-                  </span>
-                  <button 
-                    onClick={() => setIsEditingGoal(true)}
-                    className="text-slate-400 hover:text-[var(--teal)] dark:hover:text-[#FCB824] transition-colors p-1 flex-shrink-0"
-                  >
-                    <span className="material-symbols-outlined text-[18px]">edit</span>
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-          
-          {/* Progress Chip */}
-          {!isEditingGoal && dailyStudyGoal && (
-            <div className="flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider w-full justify-center">
-              <span className="material-symbols-outlined text-[18px]">track_changes</span>
-              {t("Goal Active")}
-            </div>
-          )}
-        </motion.div>
-
-        {/* Achievements Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] p-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full flex flex-col"
-        >
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
-            <span className="material-symbols-outlined text-lg">emoji_events</span>
-            {t("Recent Achievements")}
-          </h3>
-          <div className="flex flex-wrap gap-4 overflow-hidden flex-1 items-start content-start">
-            {studyStreak >= 3 && (
-              <div className="flex items-center gap-3 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border border-amber-200 dark:border-amber-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
-                <div className="w-10 h-10 rounded-full bg-amber-100 dark:bg-amber-900/60 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-sm border border-amber-200 dark:border-amber-700 shrink-0">
-                  <span className="material-symbols-outlined text-xl">local_fire_department</span>
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs font-black uppercase tracking-wider text-amber-700 dark:text-amber-500 truncate">{t("Streak Master")}</p>
-                  <p className="text-[10px] font-semibold text-amber-600 dark:text-amber-400/80 truncate">{studyStreak} {t("Day Streak")}</p>
-                </div>
-              </div>
-            )}
-            {attemptsCount > 0 && (
-              <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 border border-blue-200 dark:border-blue-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
-                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/60 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200 dark:border-blue-700 shrink-0">
-                  <span className="material-symbols-outlined text-xl">lightbulb</span>
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs font-black uppercase tracking-wider text-blue-700 dark:text-blue-500 truncate">{t("Early Bird")}</p>
-                  <p className="text-[10px] font-semibold text-blue-600 dark:text-blue-400/80 truncate">{t("Completed session")}</p>
-                </div>
-              </div>
-            )}
-            {attempt.accuracy >= 90 && (
-              <div className="flex items-center gap-3 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-200 dark:border-emerald-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
-                <div className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-sm border border-emerald-200 dark:border-emerald-700 shrink-0">
-                  <span className="material-symbols-outlined text-xl">military_tech</span>
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-500 truncate">{t("High Scorer")}</p>
-                  <p className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400/80 truncate">{t("90%+ Accuracy")}</p>
-                </div>
-              </div>
-            )}
-            
-            {!(studyStreak >= 3 || attemptsCount > 0 || attempt.accuracy >= 90) && (
-              <div className="w-full flex items-center justify-center h-20 text-slate-400 dark:text-slate-500 text-xs font-semibold italic bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800">
-                {t("Keep studying to unlock achievements!")}
-              </div>
-            )}
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Quick Stats Bento Grid */}
+      {/* Quick Stats Bento Grid — LA-UX-REFRESH-001 F7: moved directly
+          under the hero, above Recent Achievements, so the four numbers
+          that describe the last attempt sit next to the scorecard that
+          produced them rather than below the achievement badges. */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 ">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -536,6 +555,62 @@ useEffect(() => {
             {attempt.timeTakenMinutes}<span className="text-lg md:text-xl ml-0.5 font-normal">m</span>
           </span>
           <span className="text-on-surface-variant dark:text-slate-300 font-bold text-[10px] md:text-xs tracking-wider uppercase">{t("Time Taken")}</span>
+        </motion.div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6">
+        {/* Achievements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] p-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full flex flex-col"
+        >
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
+            <span className="material-symbols-outlined text-lg">emoji_events</span>
+            {t("Recent Achievements")}
+          </h3>
+          <div className="flex flex-wrap gap-4 overflow-hidden flex-1 items-start content-start">
+            {studyStreak >= 3 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border border-amber-200 dark:border-amber-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-amber-100 dark:bg-amber-900/60 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-sm border border-amber-200 dark:border-amber-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">local_fire_department</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-amber-700 dark:text-amber-500 truncate">{t("Streak Master")}</p>
+                  <p className="text-[10px] font-semibold text-amber-600 dark:text-amber-400/80 truncate">{studyStreak} {t("Day Streak")}</p>
+                </div>
+              </div>
+            )}
+            {attemptsCount > 0 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 border border-blue-200 dark:border-blue-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/60 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200 dark:border-blue-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">lightbulb</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-blue-700 dark:text-blue-500 truncate">{t("Early Bird")}</p>
+                  <p className="text-[10px] font-semibold text-blue-600 dark:text-blue-400/80 truncate">{t("Completed session")}</p>
+                </div>
+              </div>
+            )}
+            {attempt.accuracy >= 90 && (
+              <div className="flex items-center gap-3 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-200 dark:border-emerald-800 px-4 py-3 rounded-2xl flex-1 min-w-[180px]">
+                <div className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-sm border border-emerald-200 dark:border-emerald-700 shrink-0">
+                  <span className="material-symbols-outlined text-xl">military_tech</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-500 truncate">{t("High Scorer")}</p>
+                  <p className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400/80 truncate">{t("90%+ Accuracy")}</p>
+                </div>
+              </div>
+            )}
+            
+            {!(studyStreak >= 3 || attemptsCount > 0 || attempt.accuracy >= 90) && (
+              <div className="w-full flex items-center justify-center h-20 text-slate-400 dark:text-slate-500 text-xs font-semibold italic bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800">
+                {t("Keep studying to unlock achievements!")}
+              </div>
+            )}
+          </div>
         </motion.div>
       </div>
 
@@ -613,82 +688,11 @@ useEffect(() => {
       {/* Item Response Theory (IRT) Advanced Analytics */}
       
 
-      {/* 3D Temporal Analytics Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        style={{ perspective: 1000 }}
-      >
-        <motion.div 
-          whileHover={{ rotateX: 2, rotateY: -2, z: 20, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="p-6 md:p-10 rounded-[32px] md:rounded-[40px] bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 relative shadow-xl space-y-8"
-        >
-          <div className="">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-full flex items-center justify-center shadow-inner">
-                <span className="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-2xl">timelapse</span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-black text-[#00243B] dark:text-white tracking-tight drop-shadow-sm">{t("Temporal Analytics")}</h3>
-            </div>
-            <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed">{t("Real-time chronometrics mapping your cognitive velocity across different subjects and difficulty tiers.")}</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
-            {/* Average Time Stat — real weighted average over the actual
-                per-question time_spent_seconds recorded across every scored
-                attempt (db/assess/analytics/dashboard.ts's timeDistribution),
-                not the always-0 attempt.averageTimePerQuestionSeconds field. */}
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
-              <div className="absolute -right-6 -top-6 w-24 h-24 bg-indigo-500/10 dark:bg-indigo-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="flex items-center gap-2 mb-4 relative z-10">
-                <span className="material-symbols-outlined text-indigo-500 text-lg">speed</span>
-                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Average Time / Question")}</h4>
-              </div>
-              <div className="flex items-end gap-2 relative z-10">
-                <p className="text-4xl font-black text-[#00243B] dark:text-white">{weightedAverageSeconds ?? "—"}</p>
-                {weightedAverageSeconds !== null && <p className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">{t("seconds")}</p>}
-              </div>
-            </div>
-
-            {/* Unattempted rate — real, across every served question in every
-                scored attempt. */}
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
-              <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#FCB824]/10 dark:bg-[#FCB824]/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="flex items-center gap-2 mb-4 relative z-10">
-                <span className="material-symbols-outlined text-[#FCB824] text-lg">do_not_disturb_on</span>
-                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Unattempted Rate")}</h4>
-              </div>
-              <div className="flex flex-col relative z-10">
-                <p className="text-2xl font-black text-[#00243B] dark:text-white">{analytics ? `${analytics.unattemptedRate.unattemptedPercent}%` : "—"}</p>
-                <p className="text-xs font-bold text-[#ffd15c] dark:text-[#FCB824] mt-1">
-                  {analytics ? `${analytics.unattemptedRate.unattemptedCount} / ${analytics.unattemptedRate.servedCount} ${t("questions")}` : ""}
-                </p>
-              </div>
-            </div>
-
-            {/* Weakest unit — real, thresholded to units with at least 3
-                attempted questions (db/assess/analytics/dashboard.ts's
-                pickWeakestUnits) so a single unlucky question never reads as
-                "your weakest topic." */}
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
-              <div className="absolute -right-6 -top-6 w-24 h-24 bg-rose-500/10 dark:bg-rose-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="flex items-center gap-2 mb-4 relative z-10">
-                <span className="material-symbols-outlined text-rose-500 text-lg">hourglass_bottom</span>
-                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Weakest Unit")}</h4>
-              </div>
-              <div className="flex flex-col relative z-10">
-                <p className="text-lg font-black text-[#00243B] dark:text-white">{analytics && analytics.weakestUnits.length > 0 ? analytics.weakestUnits[0].unitTitle : t("Not enough data yet")}</p>
-                {analytics && analytics.weakestUnits.length > 0 && (
-                  <p className="text-xs font-bold text-rose-600 dark:text-rose-400 mt-1">{analytics.weakestUnits[0].accuracyPercent}% {t("accuracy")}</p>
-                )}
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </motion.div>
-
+      {/* LA-UX-REFRESH-001 F8 — the Temporal Analytics panel that used to
+          sit here now lives only in the Analytics tab (AnalyticsView), per
+          "move temporal analytics to the analytics tab completely." It reads
+          the same useDashboardAnalytics data there, so nothing was lost in
+          the move — only the duplication. */}
 
       {/* Recent Tests + Weakest Units — real (Phase G). Replaces the fake IRT
           Profiling card (hardcoded θ=+1.84, "Top 5%", a=0.92, c=12%, static
@@ -789,6 +793,10 @@ useEffect(() => {
       )}
       </>
       )}
+
+      {/* F9 — rendered last so it layers over everything on this screen; it
+          owns its own fixed full-screen surface and body-scroll lock. */}
+      <FocusMode open={focusModeOpen} onClose={() => setFocusModeOpen(false)} defaultMinutes={dailyTargetMinutes} />
     </div>
   );
 }

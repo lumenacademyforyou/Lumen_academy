@@ -96,6 +96,16 @@ export default function AnalyticsView({ shareText, isExportingPdf, onShareReport
   };
 
   const timeBars = (analytics?.timeDistribution ?? []).map((b) => ({ label: b.bucketLabel, count: b.questionCount, avg: b.averageSeconds }));
+  // F8: moved here with the Temporal Analytics panel. Real, SQL-aggregated
+  // time-per-question distribution (Phase G) weighted by how many questions
+  // fell in each bucket — not a mean of bucket means.
+  const weightedAverageSeconds =
+    analytics && analytics.timeDistribution.length > 0
+      ? Math.round(
+          analytics.timeDistribution.reduce((sum, b) => sum + (b.averageSeconds ?? 0) * b.questionCount, 0) /
+            analytics.timeDistribution.reduce((sum, b) => sum + b.questionCount, 0)
+        )
+      : null;
   const radarData = (analytics?.subjectAccuracy ?? []).map((s) => ({ subject: s.subjectName, score: s.accuracyPercent }));
   const BUCKET_COLORS = ["#10B981", "#FCB824", "#1A7A99", "#F97316", "#F43F5E"];
 
@@ -214,6 +224,85 @@ export default function AnalyticsView({ shareText, isExportingPdf, onShareReport
           </div>
         </div>
       </div>
+
+      {/* Temporal Analytics — LA-UX-REFRESH-001 F8. Moved here verbatim
+          from DashboardView, which no longer carries it: the dashboard is
+          the "what happened" summary, this tab is where the time-based
+          diagnostics belong. Same useDashboardAnalytics data, same numbers. */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        style={{ perspective: 1000 }}
+      >
+        <motion.div 
+          whileHover={{ rotateX: 2, rotateY: -2, z: 20, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          className="p-6 md:p-10 rounded-[32px] md:rounded-[40px] bg-white dark:bg-[var(--navy)] border border-slate-200 dark:border-slate-700 relative shadow-xl space-y-8"
+        >
+          <div className="">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-full flex items-center justify-center shadow-inner">
+                <span className="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-2xl">timelapse</span>
+              </div>
+              <h3 className="text-xl md:text-2xl font-black text-[#00243B] dark:text-white tracking-tight drop-shadow-sm">{t("Temporal Analytics")}</h3>
+            </div>
+            <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed">{t("Real-time chronometrics mapping your cognitive velocity across different subjects and difficulty tiers.")}</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+            {/* Average Time Stat — real weighted average over the actual
+                per-question time_spent_seconds recorded across every scored
+                attempt (db/assess/analytics/dashboard.ts's timeDistribution),
+                not the always-0 attempt.averageTimePerQuestionSeconds field. */}
+            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
+              <div className="absolute -right-6 -top-6 w-24 h-24 bg-indigo-500/10 dark:bg-indigo-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="flex items-center gap-2 mb-4 relative z-10">
+                <span className="material-symbols-outlined text-indigo-500 text-lg">speed</span>
+                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Average Time / Question")}</h4>
+              </div>
+              <div className="flex items-end gap-2 relative z-10">
+                <p className="text-4xl font-black text-[#00243B] dark:text-white">{weightedAverageSeconds ?? "—"}</p>
+                {weightedAverageSeconds !== null && <p className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-1">{t("seconds")}</p>}
+              </div>
+            </div>
+
+            {/* Unattempted rate — real, across every served question in every
+                scored attempt. */}
+            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
+              <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#FCB824]/10 dark:bg-[#FCB824]/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="flex items-center gap-2 mb-4 relative z-10">
+                <span className="material-symbols-outlined text-[#FCB824] text-lg">do_not_disturb_on</span>
+                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Unattempted Rate")}</h4>
+              </div>
+              <div className="flex flex-col relative z-10">
+                <p className="text-2xl font-black text-[#00243B] dark:text-white">{analytics ? `${analytics.unattemptedRate.unattemptedPercent}%` : "—"}</p>
+                <p className="text-xs font-bold text-[#ffd15c] dark:text-[#FCB824] mt-1">
+                  {analytics ? `${analytics.unattemptedRate.unattemptedCount} / ${analytics.unattemptedRate.servedCount} ${t("questions")}` : ""}
+                </p>
+              </div>
+            </div>
+
+            {/* Weakest unit — real, thresholded to units with at least 3
+                attempted questions (db/assess/analytics/dashboard.ts's
+                pickWeakestUnits) so a single unlucky question never reads as
+                "your weakest topic." */}
+            <div className="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-3xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between group hover:border-[#FCB824]/50 transition-colors relative overflow-hidden shadow-sm">
+              <div className="absolute -right-6 -top-6 w-24 h-24 bg-rose-500/10 dark:bg-rose-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="flex items-center gap-2 mb-4 relative z-10">
+                <span className="material-symbols-outlined text-rose-500 text-lg">hourglass_bottom</span>
+                <h4 className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">{t("Weakest Unit")}</h4>
+              </div>
+              <div className="flex flex-col relative z-10">
+                <p className="text-lg font-black text-[#00243B] dark:text-white">{analytics && analytics.weakestUnits.length > 0 ? analytics.weakestUnits[0].unitTitle : t("Not enough data yet")}</p>
+                {analytics && analytics.weakestUnits.length > 0 && (
+                  <p className="text-xs font-bold text-rose-600 dark:text-rose-400 mt-1">{analytics.weakestUnits[0].accuracyPercent}% {t("accuracy")}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
         {/* Time-per-question distribution */}

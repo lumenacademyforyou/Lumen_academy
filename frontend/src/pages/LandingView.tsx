@@ -1698,6 +1698,7 @@ import {
   signInWithLinkedIn,
 } from "../services/supabaseAuth";
 import { checkSendAllowed, recordSend, describeSendGuardRefusal, formatRetryAfter } from "../services/emailSendGuard";
+import { checkEmailRegistered } from "../services/emailAvailabilityApi";
 import { ensureDemoSession, resetDemoAccountData, setDemoLoginInFlight } from "../services/demoSession";
 import { tryGoogleOneTap } from "../services/googleOneTap";
 
@@ -1718,6 +1719,14 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
 
   // Registration Form State
   const [regEmail, setRegEmail] = useState("");
+  // LA-UX-REFRESH-001 F4 — "if the email id already exists it must show a
+  // message that the user email already exists." Checked against the backend
+  // as the field loses focus and again right before submit, so the duplicate
+  // is reported inline instead of surfacing as a failed signUp — or, with
+  // e-mail confirmation enabled, not surfacing at all: Supabase deliberately
+  // returns a success-shaped response for an address that already exists.
+  const [regEmailTaken, setRegEmailTaken] = useState(false);
+  const [isCheckingRegEmail, setIsCheckingRegEmail] = useState(false);
   const [regPassword, setRegPassword] = useState("");
   const [regConfirmPassword, setRegConfirmPassword] = useState("");
   const [isSubmittingAuth, setIsSubmittingAuth] = useState(false);
@@ -1810,6 +1819,29 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Cleared the moment the address changes: a stale "already exists" against
+  // an address the user has since corrected would block a legitimate signup.
+  const handleRegEmailChange = (value: string) => {
+    setRegEmail(value);
+    if (regEmailTaken) setRegEmailTaken(false);
+  };
+
+  const verifyRegEmailAvailable = async (email: string): Promise<boolean> => {
+    const normalized = email.trim().toLowerCase();
+    if (!normalized.includes("@")) return true;
+    setIsCheckingRegEmail(true);
+    try {
+      const exists = await checkEmailRegistered(normalized);
+      // null = the check itself failed (offline, rate limited, backend down).
+      // Treat that as "no objection" — signUpWithPassword still reports a
+      // duplicate afterwards, so a flaky lookup must never block registration.
+      setRegEmailTaken(exists === true);
+      return exists !== true;
+    } finally {
+      setIsCheckingRegEmail(false);
+    }
+  };
+
   const handleOpenRegister = () => {
     setAuthMode("register");
     setShowAuthModal(true);
@@ -1853,6 +1885,15 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
     }
 
     const normalizedEmail = regEmail.trim().toLowerCase();
+
+    // F4 — asked again here, not just on blur: the field may never have lost
+    // focus (Enter straight from the password box), and this runs before the
+    // send guard below so a duplicate never burns one of the two-per-hour
+    // confirmation e-mails.
+    if (!(await verifyRegEmailAvailable(normalizedEmail))) {
+      setFormError("");
+      return;
+    }
 
     // Guard the send with an idempotency-style check before Supabase is
     // ever contacted — a double-submitted form or a retried request must
@@ -3246,9 +3287,36 @@ export default function LandingView({ onLoginSuccess, onQuickDemoFlowC, authMess
                           type="email"
                           placeholder="e.g. prince@lumenacademy.edu"
                           value={regEmail}
-                          onChange={(e) => setRegEmail(e.target.value)}
-                          className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border border-slate-300 dark:border-slate-700 rounded-xl text-xs font-semibold text-[#00243B] dark:text-white focus:border-[var(--teal)] dark:focus:border-[#FCB824] outline-none"
+                          onChange={(e) => handleRegEmailChange(e.target.value)}
+                          onBlur={(e) => void verifyRegEmailAvailable(e.target.value)}
+                          aria-invalid={regEmailTaken}
+                          className={`w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/40 border rounded-xl text-xs font-semibold text-[#00243B] dark:text-white outline-none ${
+                            regEmailTaken
+                              ? "border-rose-400 dark:border-rose-500 focus:border-rose-500"
+                              : "border-slate-300 dark:border-slate-700 focus:border-[var(--teal)] dark:focus:border-[#FCB824]"
+                          }`}
                         />
+                        {isCheckingRegEmail && (
+                          <p className="text-[10px] font-semibold text-slate-400">Checking this email…</p>
+                        )}
+                        {regEmailTaken && (
+                          <p className="text-[10px] font-bold text-rose-600 dark:text-rose-400 flex flex-wrap items-center gap-1.5">
+                            <span className="material-symbols-outlined text-[14px]">error</span>
+                            An account with this email already exists.
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setLoginPhoneOrEmail(regEmail.trim().toLowerCase());
+                                setRegEmailTaken(false);
+                                setFormError("");
+                                setAuthMode("login");
+                              }}
+                              className="underline underline-offset-2 hover:text-rose-700 dark:hover:text-rose-300 cursor-pointer"
+                            >
+                              Sign in instead
+                            </button>
+                          </p>
+                        )}
                       </div>
                       <div className="space-y-1">
                         <label htmlFor="reg-password" className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>

@@ -19,10 +19,15 @@ interface LanguageContextType {
 
 const UI_LANG_STORAGE_KEY = 'lumen_ui_lang';
 
+// LA-UX-REFRESH-001 F1: the app no longer exposes a chrome-language switch
+// anywhere (Tamil is a question-display choice inside the test console only),
+// so chrome is always English. This deliberately IGNORES a previously stored
+// 'ta' rather than honouring it — without a toggle in the UI, an account that
+// had switched to Tamil before this change would otherwise be stranded there
+// with no way back. setLanguage/toggleLanguage below are kept so the context
+// contract and its ~450 t() call sites are untouched; nothing calls them now.
 function readStoredLanguage(): Language {
-  if (typeof window === 'undefined') return 'en';
-  const stored = window.localStorage.getItem(UI_LANG_STORAGE_KEY);
-  return stored === 'ta' ? 'ta' : 'en';
+  return 'en';
 }
 
 function persistLanguage(lang: Language): void {

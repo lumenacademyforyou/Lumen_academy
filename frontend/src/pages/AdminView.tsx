@@ -52,7 +52,7 @@ export default function AdminView({ onLogout, adminName }: AdminViewProps) {
             className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
           >
             <LogOut size={18} />
-            Logout
+            Sign Out
           </button>
         </div>
       </aside>

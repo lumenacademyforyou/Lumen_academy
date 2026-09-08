@@ -43,7 +43,20 @@ const COMPLETE_PROFILE: MeProfile = {
   roles: [],
   targetExam: "NEET",
   locale: "en",
-  studentProfile: { targetYear: 2027, classLevel: "12", guardianContact: null, dailyStudyMinutes: null, onboardingState: "complete" },
+  studentProfile: {
+    targetYear: 2027,
+    classLevel: "12",
+    guardianContact: null,
+    dailyStudyMinutes: null,
+    onboardingState: "complete",
+    institutionKind: null,
+    institutionName: null,
+    institutionLocation: null,
+    studyStage: null,
+    studyYear: null,
+    dateOfBirth: null,
+  },
+  subscription: null,
 };
 
 function makeNotification(overrides: Partial<Notification>): Notification {

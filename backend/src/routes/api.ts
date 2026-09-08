@@ -8,9 +8,10 @@ import { prisma } from "../lib/db.js";
 import { requireAuth } from "../middleware/requireAuth.js";
 import { requirePermission } from "../middleware/requirePermission.js";
 import { validate } from "../middleware/validate.js";
-import { getFullProfile, updateProfile, updateProfileSchema } from "../services/meProfile.service.js";
+import { getFullProfile, updateProfile, updateProfileSchema, syncOnboardingState } from "../services/meProfile.service.js";
 import { requireRecentOtpReauthentication, deleteOwnAccount } from "../services/deleteAccount.service.js";
 import { getSessionStatus, heartbeat, logoutSession } from "../controllers/authSessionController.js";
+import { isEmailRegistered, checkEmailLookupAllowed } from "../services/emailAvailability.service.js";
 import { resetDemoAccountData } from "../controllers/demoController.js";
 import catalogRouter from "./catalog.routes.js";
 import contentRouter from "./content.routes.js";
@@ -31,7 +32,25 @@ const router = Router();
 // from the browser and are why S-3 was slow.
 router.get("/me", requireAuth, async (req: Request, res: Response, next) => {
   try {
-    const profile = await getFullProfile(req.user!.appUserId, req.user!.id);
+    let profile = await getFullProfile(req.user!.appUserId, req.user!.id);
+
+    // LA-UX-REFRESH-001 F3 — onboarding completes itself once a plan is
+    // active and the required profile fields are in. Checked here (rather
+    // than inside getFullProfile) so the common case — already completed, or
+    // no active plan — costs nothing: the UPDATE only runs when this exact
+    // read shows it would actually change something.
+    const needsOnboardingSync =
+      profile.subscription?.isActive === true &&
+      profile.studentProfile !== null &&
+      profile.studentProfile.onboardingState !== "completed" &&
+      profile.studentProfile.targetYear !== null &&
+      profile.studentProfile.classLevel !== null;
+
+    if (needsOnboardingSync) {
+      await syncOnboardingState(req.user!.appUserId);
+      profile = await getFullProfile(req.user!.appUserId, req.user!.id);
+    }
+
     res.json({ user: profile });
   } catch (err) {
     next(err);
@@ -69,6 +88,34 @@ router.delete("/me", requireAuth, requireUserManagePermission(), async (req: Req
     await requireRecentOtpReauthentication(req.accessToken!);
     await deleteOwnAccount(req.user!.id, req.user!.appUserId);
     res.status(204).send();
+  } catch (err) {
+    next(err);
+  }
+});
+
+// LA-UX-REFRESH-001 F4 — the register form asks this before it ever tries a
+// signup, so an already-registered address is reported as a plain inline
+// message instead of a failed signUp (or, worse, a silently-swallowed one:
+// with e-mail confirmation on, Supabase deliberately returns a *success* for
+// an existing address, so the client cannot tell from the signUp response
+// alone). Deliberately unauthenticated — it runs on a form nobody has an
+// account for yet — and deliberately answers nothing but a boolean, rate
+// limited per IP so it can't be swept.
+router.get("/auth/email-exists", async (req: Request, res: Response, next) => {
+  try {
+    const email = typeof req.query.email === "string" ? req.query.email : "";
+    if (!email.includes("@") || email.length > 254) {
+      res.status(400).json({ error: { code: "INVALID_EMAIL", message: "Provide a valid email address." } });
+      return;
+    }
+
+    const clientKey = req.ip ?? "unknown";
+    if (!checkEmailLookupAllowed(clientKey)) {
+      res.status(429).json({ error: { code: "RATE_LIMITED", message: "Too many lookups. Try again in a minute." } });
+      return;
+    }
+
+    res.json({ exists: await isEmailRegistered(email) });
   } catch (err) {
     next(err);
   }

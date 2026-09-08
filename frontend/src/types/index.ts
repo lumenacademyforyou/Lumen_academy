@@ -308,6 +308,15 @@ export interface AttemptHistoryEntry {
   obtainedMarks: string;
   totalMarks: string;
   accuracyPercent: string;
+  // LA-UX-REFRESH-001 F6 — mirrors db/assess/analytics/dashboard.ts. Counts
+  // and marks are both SQL-aggregated from the marks the scoring engine
+  // actually awarded, so they hold under any scoring rule, not just +4/-1.
+  correctCount: number;
+  incorrectCount: number;
+  unattemptedCount: number;
+  correctMarks: string;
+  /** Marks lost to negative marking, as a positive magnitude. */
+  penaltyMarks: string;
 }
 
 export interface ScoreTrendPoint {

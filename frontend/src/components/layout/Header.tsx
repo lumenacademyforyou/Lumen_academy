@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import LumenLogo from "../ui/LumenLogo";
 import Modal from "./Modal";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -11,6 +11,16 @@ import NotificationBell from "../ui/NotificationBell";
 import { pluralize } from "../../utils/pluralize";
 import { isDemoEmail } from "../../services/demoSession";
 
+// F3 — plan dates arrive as plain YYYY-MM-DD (core.subscription stores a
+// `date`), so they are parsed as local calendar parts rather than through
+// `new Date(string)`, which reads a bare date as UTC midnight and can render
+// the previous day for anyone west of UTC.
+function formatPlanDate(isoDate: string): string {
+  const [year, month, day] = isoDate.split("-").map(Number);
+  if (!year || !month || !day) return isoDate;
+  return new Date(year, month - 1, day).toLocaleDateString(undefined, { month: "short", year: "numeric" });
+}
+
 interface HeaderProps {
   currentTab: string;
   setTab: (tab: string) => void;
@@ -20,9 +30,17 @@ interface HeaderProps {
 }
 
 export default function Header({ currentTab, setTab, studentName, setStudentName, onSignOut }: HeaderProps) {
-  const { t, language, toggleLanguage } = useLanguage();
- 
+  const { t } = useLanguage();
+
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  // LA-UX-REFRESH-001 F5: "clicking anywhere must close the profile menu."
+  // The previous implementation was a `fixed inset-0` overlay rendered
+  // alongside the dropdown — it closed the menu only for clicks that landed
+  // on the overlay itself, and it *swallowed* that click, so dismissing the
+  // menu and then pressing a header button took two clicks. A
+  // document-level listener closes on any click (or touch) outside the
+  // menu while letting the click reach whatever it was aimed at.
+  const profileMenuRef = useRef<HTMLDivElement | null>(null);
   const [studyStreak, setStudyStreak] = useState(0);
   const navigate = useNavigate();
   const handleNavigation = (tab: string) => {
@@ -121,6 +139,33 @@ const [profileSuccessMsg, setProfileSuccessMsg] = useState("");
     window.addEventListener("lumen_session_saved", handleSessionSaved);
     return () => window.removeEventListener("lumen_session_saved", handleSessionSaved);
   }, []);
+
+  // LA-UX-REFRESH-001 F5 — close the profile menu on any click/tap outside
+  // it, and on Escape. Bound on `mousedown` rather than `click` so the menu
+  // is already gone by the time the click lands on whatever was pressed
+  // (the old overlay intercepted that click instead). Listeners are only
+  // attached while the menu is actually open.
+  useEffect(() => {
+    if (!showProfileDropdown) return;
+
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (target && profileMenuRef.current?.contains(target)) return;
+      setShowProfileDropdown(false);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setShowProfileDropdown(false);
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [showProfileDropdown]);
 
 
 useEffect(() => {
@@ -237,18 +282,11 @@ const handleSaveProfile = async (e: React.FormEvent) => {
             </span>
           )}
 
-          {/* BUG-16/BUG-17 (docs/assessment-tool-debug-plan.md): the one
-              global app-language toggle — chrome only (ui_lang), always
-              available everywhere. Question-display mode (en/ta/bilingual)
-              is a separate control that only exists inside TestTakingView;
-              this one must never affect it, and vice versa. */}
-          <button
-            onClick={toggleLanguage}
-            className="w-9 h-9 flex items-center justify-center rounded-2xl border transition-all cursor-pointer select-none shadow-sm shrink-0 bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-black text-[11px]"
-            title={language === "en" ? "தமிழுக்கு மாற்று (Switch to Tamil)" : "Switch to English"}
-          >
-            {language === "en" ? "EN" : "தமி"}
-          </button>
+          {/* LA-UX-REFRESH-001 F1: the global EN/தமி chrome-language toggle
+              that used to live here is gone. Tamil is now a question-display
+              choice only — TestTakingView's own questionLanguage selector
+              (en/ta/bilingual), which this control never drove anyway
+              (BUG-16/BUG-17 kept the two deliberately separate). */}
 
           {/* Global Dark Mode Theme Toggle */}
           <button
@@ -265,19 +303,19 @@ const handleSaveProfile = async (e: React.FormEvent) => {
             </span>
           </button>
 
-          {/* Quick Log Out Button */}
+          {/* Quick Sign Out Button */}
           <button
             onClick={onSignOut}
             className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 dark:bg-amber-950/50 hover:bg-amber-100 dark:hover:bg-amber-900/60 text-amber-900 dark:text-[#FCB824] border border-amber-200 dark:border-amber-800/60 rounded-xl text-xs font-bold transition-all cursor-pointer shrink-0"
-            title="Log Out"
+            title="Sign Out"
           >
             <span className="material-symbols-outlined text-sm text-amber-700 dark:text-[#FCB824]">logout</span>
-            <span>{t("Log Out")}</span>
+            <span>{t("Sign Out")}</span>
           </button>
 
        <NotificationBell profile={profile} />
 
-          <div className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700 relative shrink-0">
+          <div ref={profileMenuRef} className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700 relative shrink-0">
             {studyStreak > 0 && (
               <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800 rounded-full text-orange-600 dark:text-orange-400 font-bold text-[10px] shadow-sm" title={`${studyStreak} ${pluralize(studyStreak, "Day")} Study Streak`}>
                 <span className="material-symbols-outlined text-[14px] text-orange-500">local_fire_department</span>
@@ -308,23 +346,49 @@ const handleSaveProfile = async (e: React.FormEvent) => {
 
             {showProfileDropdown && (
               <>
-                {/* Overlay backdrop to close dropdown when clicking outside */}
-                <div 
-                  className="fixed inset-0 z-40" 
-                  onClick={() => setShowProfileDropdown(false)}
-                />
-                
+                {/* F5: no backdrop element — the document-level mousedown
+                    listener above closes this on a click anywhere outside,
+                    without eating that click. */}
                 <div className="absolute right-0 top-14 w-72 bg-white dark:bg-[var(--navy)] text-[#00243B] dark:text-white rounded-[24px] shadow-[0_12px_40px_rgba(0,0,0,0.15)] border border-slate-200 dark:border-slate-700 p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                  {/* Current Active Package Card inside Dropdown */}
-                  <div className="mb-2 p-3 bg-gradient-to-r from-amber-50 to-orange-50/50 dark:from-amber-950/40 dark:to-slate-900/60 border border-amber-200/80 dark:border-amber-800/50 rounded-2xl">
+                  {/* LA-UX-REFRESH-001 F3 — the real plan on this account.
+                      This card used to read "Achiever Pro Plan • Active •
+                      Valid till May 2026" for every user, subscribed or not;
+                      it now renders core.subscription joined to
+                      core.subscription_plan (GET /api/me), including an
+                      honest "No active plan" state. */}
+                  <div
+                    className={`mb-2 p-3 border rounded-2xl ${
+                      profile?.subscription?.isActive
+                        ? "bg-gradient-to-r from-amber-50 to-orange-50/50 dark:from-amber-950/40 dark:to-slate-900/60 border-amber-200/80 dark:border-amber-800/50"
+                        : "bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-700"
+                    }`}
+                  >
                     <div className="flex items-center justify-between text-xs font-black text-[#00243B] dark:text-white">
-                      <span className="flex items-center gap-1 text-[11px] text-[var(--teal)] dark:text-[#FCB824]">
-                        <span className="material-symbols-outlined text-[16px]">verified</span>
-                        Achiever Pro Plan
+                      <span className="flex items-center gap-1 text-[11px] text-[var(--teal)] dark:text-[#FCB824] min-w-0">
+                        <span className="material-symbols-outlined text-[16px] shrink-0">
+                          {profile?.subscription?.isActive ? "verified" : "workspace_premium"}
+                        </span>
+                        <span className="truncate">{profile?.subscription?.tierName ?? t("No active plan")}</span>
                       </span>
-                      <span className="bg-[#FCB824] text-[#00243B] text-[8px] font-black uppercase px-2 py-0.5 rounded-full">{t("Active")}</span>
+                      {profile?.subscription && (
+                        <span
+                          className={`text-[8px] font-black uppercase px-2 py-0.5 rounded-full shrink-0 ml-1.5 ${
+                            profile.subscription.isActive
+                              ? "bg-[#FCB824] text-[#00243B]"
+                              : "bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300"
+                          }`}
+                        >
+                          {profile.subscription.isActive ? t("Active") : profile.subscription.status}
+                        </span>
+                      )}
                     </div>
-                    <p className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 mt-1">{t("Valid till May 2026 • Full Test Series")}</p>
+                    <p className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                      {profile?.subscription
+                        ? profile.subscription.expiresOn
+                          ? `${profile.subscription.isActive ? t("Valid till") : t("Expired on")} ${formatPlanDate(profile.subscription.expiresOn)}`
+                          : t("No expiry date on record")
+                        : t("Explore the plans to unlock the full test series")}
+                    </p>
                   </div>
 
                   <button 

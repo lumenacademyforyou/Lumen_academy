@@ -25,8 +25,28 @@ export interface MeProfile {
     guardianContact: string | null;
     dailyStudyMinutes: number | null;
     onboardingState: string | null;
+    // LA-UX-REFRESH-001 F2 (migration 048)
+    institutionKind: string | null;
+    institutionName: string | null;
+    institutionLocation: string | null;
+    studyStage: string | null;
+    studyYear: string | null;
+    dateOfBirth: string | null; // YYYY-MM-DD
+  } | null;
+  // LA-UX-REFRESH-001 F3 — real plan behind the header's profile bar.
+  subscription: {
+    subscriptionId: string;
+    tierCode: string;
+    tierName: string;
+    status: string;
+    startedOn: string | null;
+    expiresOn: string | null;
+    isActive: boolean;
   } | null;
 }
+
+export type InstitutionKind = "school" | "college" | "university" | "coaching_centre" | "other";
+export type StudyStage = "secondary" | "higher_secondary" | "undergraduate" | "postgraduate" | "dropper" | "other";
 
 export interface UpdateMeInput {
   fullName?: string;
@@ -42,8 +62,14 @@ export interface UpdateMeInput {
     // read shape a draft is usually built from) types this as plain string,
     // and the backend's zod schema is the actual source of truth for which
     // values are valid — matching it here just avoids an awkward cast at
-    // every call site.
+    // every call site. Same reasoning for the two enum-backed fields below.
     onboardingState?: string;
+    institutionKind?: string | null;
+    institutionName?: string | null;
+    institutionLocation?: string | null;
+    studyStage?: string | null;
+    studyYear?: string | null;
+    dateOfBirth?: string | null;
   };
 }
 
