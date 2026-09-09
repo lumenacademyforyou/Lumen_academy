@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY10-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the length of a simple pendulum is increased by four times its initial length, its time period of oscillation will become:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Half",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Double",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Four times",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "One-fourth",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The time period of a simple pendulum is given by T = 2 pi sqrt(L / g), which means T is directly proportional to sqrt(L). If length L becomes 4L, the new period is T' = 2 pi sqrt(4L / g) = 2 T. Thus, the time period doubles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனி ஊசலின் நீளம் அதன் தொடக்க நீளத்தைப் போல நான்கு மடங்காக அதிகரிக்கப்பட்டால், அதன் அலைவுக்காலம்:",
+        "optionTexts": [
+          "பாதியாகும்",
+          "இரு மடங்காகும்",
+          "நான்கு மடங்காகும்",
+          "நான்கில் ஒரு பங்காகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In simple harmonic motion, the phase difference between displacement x(t) and acceleration a(t) of the oscillating particle is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 radians",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "pi / 2 radians",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "pi radians",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3 pi / 2 radians",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In simple harmonic motion, displacement is x(t) = A sin(omega t) and acceleration is a(t) = - omega^2 x(t) = omega^2 A sin(omega t + pi). Therefore, the phase difference between displacement and acceleration is identically pi radians (or 180 degrees).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான தனிச் சீரிசை இயக்கத்தில், அலையுறும் துகளின் இடப்பெயர்ச்சி x(t) மற்றும் முடுக்கம் a(t) ஆகியவற்றிற்கு இடையேயான கட்ட வேறுபாடு:",
+        "optionTexts": [
+          "0 ரேடியன்",
+          "pi / 2 ரேடியன்",
+          "pi ரேடியன்",
+          "3 pi / 2 ரேடியன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two identical light springs, each of spring constant k, are connected in parallel to support a mass m. The effective spring constant of the combination is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "k / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2k",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When two springs are connected in parallel, the total restoring force is F = F1 + F2 = - (k1 + k2) x. Since the springs are identical (k1 = k2 = k), the effective spring constant is k_eff = k + k = 2k.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒவ்வொன்றும் k சுருள்வில் மாறிலி கொண்ட இரு ஒத்த லேசான சுருள்வில்கள் m நிறையுடன் பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் சுருள்வில் மாறிலி:",
+        "optionTexts": [
+          "k / 2",
+          "k",
+          "2k",
+          "4k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A sound wave of frequency 440 Hz travels through air with a speed of 330 m/s. The wavelength of this sound wave is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.50 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.75 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.33 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.50 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relationship between wave speed v, frequency f, and wavelength lambda is v = f * lambda. Therefore, lambda = v / f = (330 m/s) / (440 Hz) = 3 / 4 = 0.75 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "440 Hz அதிர்வெண் கொண்ட ஒரு ஒலி அலை காற்றில் 330 m/s வேகத்தில் பரவுகிறது. இந்த ஒலி அலையின் அலைநீளம்:",
+        "optionTexts": [
+          "0.50 m",
+          "0.75 m",
+          "1.33 m",
+          "1.50 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a stationary (standing) wave of wavelength lambda, the spatial distance between any two successive nodes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "lambda / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "lambda / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 lambda",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a standing wave, the distance between any two consecutive nodes (or two consecutive antinodes) is lambda / 2, while the distance between an adjacent node and antinode is lambda / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "lambda அலைநீளம் கொண்ட ஒரு நிலை அலையில் (stationary wave), அடுத்தடுத்த இரு கணுக்களுக்கு (nodes) இடையேயான தொலைவு:",
+        "optionTexts": [
+          "lambda",
+          "lambda / 2",
+          "lambda / 4",
+          "2 lambda"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An open organ pipe of length L has fundamental frequency f_open. If one end of this pipe is closed, its new fundamental frequency f_closed will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 f_open",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "f_open",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "f_open / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "f_open / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The fundamental frequency of an open organ pipe is f_open = v / (2L). For a pipe closed at one end of the same length L, the fundamental frequency is f_closed = v / (4L) = (1/2) * (v / (2L)) = f_open / 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமுள்ள ஒரு திறந்த குழாயின் அடிப்படை அதிர்வெண் f_open ஆகும். இக்குழாயின் ஒரு முனை மூடப்பட்டால், அதன் புதிய அடிப்படை அதிர்வெண் f_closed:",
+        "optionTexts": [
+          "2 f_open",
+          "f_open",
+          "f_open / 2",
+          "f_open / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle executes simple harmonic motion of amplitude A. At what displacement from the mean equilibrium position is its kinetic energy equal to its potential energy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = A / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "x = A / sqrt(2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "x = A / sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x = (sqrt(3)/2) A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In SHM with potential energy referenced to zero at the mean position: Kinetic Energy K = (1/2) m omega^2 (A^2 - x^2) and Potential Energy U = (1/2) m omega^2 x^2. Setting K = U gives A^2 - x^2 = x^2 => 2x^2 = A^2 => x = A / sqrt(2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் A வீச்சுடன் தனிச் சீரிசை இயக்கத்தை மேற்கொள்கிறது. நடுநிலைச் சமநிலையிலிருந்து எந்த இடப்பெயர்ச்சியில் அதன் இயக்க ஆற்றல் நிலை ஆற்றலுக்குச் சமமாக இருக்கும்?",
+        "optionTexts": [
+          "x = A / 2",
+          "x = A / sqrt(2)",
+          "x = A / sqrt(3)",
+          "x = (sqrt(3)/2) A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle executes simple harmonic motion with time period T and amplitude A starting from the mean position at t = 0. The time taken by the particle to travel directly from x = 0 to x = A / 2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T / 6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "T / 8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T / 12",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The displacement equation starting from the mean position is x(t) = A sin(omega t). When x = A / 2: A / 2 = A sin(omega t) => sin(omega t) = 1/2 => omega t = pi / 6. Since omega = 2 pi / T, we have (2 pi / T) t = pi / 6 => t = T / 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "t = 0 இல் நடுநிலையிலிருந்து தொடங்கும் ஒரு துகள் T அலைவுக்காலம் மற்றும் A வீச்சுடன் தனிச் சீரிசை இயக்கத்தை மேற்கொள்கிறது. துகள் x = 0 இலிருந்து x = A / 2 வரை நேரடியாகச் செல்ல எடுக்கும் காலம்:",
+        "optionTexts": [
+          "T / 4",
+          "T / 6",
+          "T / 8",
+          "T / 12"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle is simultaneously subjected to two perpendicular simple harmonic motions given by x = A sin(omega t) and y = A sin(omega t + pi / 2). The trajectory followed by the particle in the xy-plane is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A straight line inclined at 45 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "An ellipse",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A circle",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "A parabola",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "We have x = A sin(omega t) and y = A sin(omega t + pi / 2) = A cos(omega t). Squaring and adding the two parametric equations gives x^2 + y^2 = A^2 sin^2(omega t) + A^2 cos^2(omega t) = A^2. This is the equation of a circle of radius A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் ஒரே நேரத்தில் x = A sin(omega t) மற்றும் y = A sin(omega t + pi / 2) என்ற இரு செங்குத்து தனிச் சீரிசை இயக்கங்களுக்கு உட்படுத்தப்படுகிறது. xy-தளத்தில் துகள் மேற்கொள்ளும் பாதை:",
+        "optionTexts": [
+          "45 டிகிரி சாய்வு கொண்ட நேர்கோடு",
+          "நீள்வட்டம்",
+          "வட்டம்",
+          "பரவளையம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform string of mass M and length L hangs vertically under its own weight from a rigid ceiling. A transverse wave pulse is generated at the bottom of the string. The time taken by the pulse to reach the top of the string is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(L / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 sqrt(L / g)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sqrt(2L / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(L / (2g))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At a distance x from the bottom, the tension is due to the weight of the string below it: T(x) = (M / L) * x * g = mu * g * x. The speed of the wave pulse at height x is v(x) = sqrt(T / mu) = sqrt(g x). Since v = dx/dt, dt = dx / sqrt(g x). Integrating from x = 0 to x = L: t = (1 / sqrt(g)) * [2 sqrt(x)]_{0}^{L} = 2 sqrt(L / g).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட ஒரு சீரான கம்பி கூரையிலிருந்து செங்குத்தாகத் தொங்குகிறது. கம்பியின் கீழ் முனையில் ஒரு குறுக்கலைத் துடிப்பு உருவாக்கப்படுகிறது. இத்துடிப்பு கம்பியின் மேல் முனையை அடைய எடுக்கும் நேரம்:",
+        "optionTexts": [
+          "sqrt(L / g)",
+          "2 sqrt(L / g)",
+          "sqrt(2L / g)",
+          "sqrt(L / (2g))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A tuning fork A produces 4 beats per second when sounded together with another tuning fork B of frequency 256 Hz. When a small amount of wax is attached to a prong of fork A, the beat frequency decreases to 2 beats per second. The original frequency of tuning fork A was:",
+    "options": [
+      {
+        "label": "A",
+        "text": "252 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "260 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "258 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "254 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The possible original frequencies of fork A are f_A = 256 +/- 4 = 260 Hz or 252 Hz. When wax is attached to fork A, its mass increases, causing its frequency to decrease (f_A decreases). If f_A was 260 Hz, decreasing f_A makes it closer to 256 Hz, thereby reducing the beat frequency from 4 to 2 Hz. (If f_A were 252 Hz, decreasing it would increase the beat frequency). Hence, original f_A = 260 Hz.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "256 Hz அதிர்வெண் கொண்ட B என்ற இசைக்கவையுடன் சேர்த்து இசைக்கப்படும் போது A என்ற இசைக்கவை வினாடிக்கு 4 துடிப்புகளை உருவாக்குகிறது. இசைக்கவை A-ன் ஒரு கிளையில் சிறிதளவு மெழுகு ஒட்டப்படும் போது, துடிப்பு அதிர்வெண் வினாடிக்கு 2 ஆக குறைகிறது. இசைக்கவை A-ன் அசல் அதிர்வெண்:",
+        "optionTexts": [
+          "252 Hz",
+          "260 Hz",
+          "258 Hz",
+          "254 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For an organ pipe of internal radius r, the acoustic antinode is formed slightly outside the open boundary. According to Lord Rayleigh, the end correction e for one open end is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.3 r",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.6 r",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.2 r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.8 r",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Theoretical and experimental investigations by Lord Rayleigh show that sound waves reflect at an effective boundary situated just outside the open physical end. The end correction for a single open end of radius r is e approx 0.6 r (more precisely 0.61 r).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உள் ஆரம் r கொண்ட ஒரு குழாயில், ஒலி எதிர்ப்பு முனை திறந்த முனைக்கு வெளியே உருவாகிறது. லார்ட் ரேலியின் கூற்றுப்படி, ஒரு திறந்த முனைக்கான முனைத் திருத்தம் (end correction e):",
+        "optionTexts": [
+          "0.3 r",
+          "0.6 r",
+          "1.2 r",
+          "0.8 r"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A train whistle emits sound of frequency f0. The train approaches a stationary observer on a platform with speed v_s = (1/10) v, where v is the speed of sound in air. The frequency heard by the observer is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(9/10) f0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(10/9) f0",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(11/10) f0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(10/11) f0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By the Doppler effect formula when the source moves towards a stationary observer: f' = f0 * [v / (v - v_s)]. Given v_s = 0.1 v: f' = f0 * [v / (v - 0.1 v)] = f0 * [v / (0.9 v)] = f0 * (10 / 9) = (10/9) f0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தொடர்வண்டியின் சைரன் f0 அதிர்வெண் கொண்ட ஒலியை எழுப்புகிறது. தொடர்வண்டி v_s = (1/10) v வேகத்தில் நடைமேடையில் நிற்கும் பார்வையாளரை நோக்கி வருகிறது (v என்பது ஒலியின் வேகம்). பார்வையாளரால் கேட்கப்படும் அதிர்வெண்:",
+        "optionTexts": [
+          "(9/10) f0",
+          "(10/9) f0",
+          "(11/10) f0",
+          "(10/11) f0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A traveling wave is represented by y(x, t) = 0.05 sin(40 pi t - 2 pi x) in SI units. The wave velocity and its direction of propagation are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 m/s along positive x-axis",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20 m/s along negative x-axis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "40 m/s along positive x-axis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.05 m/s along positive x-axis",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The standard form of a progressive wave traveling along the positive x-direction is y = A sin(omega t - k x). Here omega = 40 pi rad/s and k = 2 pi rad/m. The wave speed is v = omega / k = (40 pi) / (2 pi) = 20 m/s. The minus sign in (omega t - k x) indicates propagation along the positive x-axis.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "SI அலகுகளில் ஒரு முன்னேறு அலை y(x, t) = 0.05 sin(40 pi t - 2 pi x) எனக் குறிக்கப்படுகிறது. இவ்வலையின் வேகம் மற்றும் அதன் பரவும் திசை:",
+        "optionTexts": [
+          "நேர் x-அச்சின் வழியே 20 m/s",
+          "எதிர் x-அச்சின் வழியே 20 m/s",
+          "நேர் x-அச்சின் வழியே 40 m/s",
+          "நேர் x-அச்சின் வழியே 0.05 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In weakly damped harmonic oscillations, the amplitude decreases to half of its initial value in 10 seconds. The time taken for the amplitude to drop to one-eighth of its initial value is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "30 s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "40 s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "80 s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The amplitude of a damped oscillator decays exponentially as A(t) = A0 * e^(-b t / (2m)). This represents a constant half-life for amplitude: t_{1/2} = 10 s. To reduce to (1/8) = (1/2)^3 of the initial amplitude requires 3 successive half-lives: t = 3 * t_{1/2} = 3 * 10 = 30 seconds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வலுக்குறைந்த தணிவுறு சீரிசை இயக்கத்தில், வீச்சானது 10 விநாடிகளில் ஆரம்ப மதிப்பில் பாதியாக குறைகிறது. வீச்சு ஆரம்ப மதிப்பில் எட்டில் ஒரு பங்காக குறைய எடுக்கும் நேரம்:",
+        "optionTexts": [
+          "20 s",
+          "30 s",
+          "40 s",
+          "80 s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A sound source of frequency f0 and an observer are moving towards each other, each with speed u with respect to the ground in still air. If v is the speed of sound in air, the apparent frequency f' heard by the observer is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "f0 * (v + u) / (v - u)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "f0 * (v - u) / (v + u)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "f0 * v / (v - u)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "f0 * (v + u) / v",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the general Doppler effect formula: f' = f0 * [(v +/- v_o) / (v -/+ v_s)]. Here the observer moves towards the source (v_o = +u) and the source moves towards the observer (v_s = +u in the denominator with a minus sign). Therefore, f' = f0 * [(v + u) / (v - u)].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f0 அதிர்வெண் கொண்ட ஒரு ஒலி மூலமும் ஒரு பார்வையாளரும் அமைதியான காற்றில் தரையைப் பொறுத்து தலா u வேகத்துடன் ஒருவரையொருவர் நோக்கி நகர்கின்றனர். காற்றில் ஒலியின் வேகம் v எனில், பார்வையாளரால் கேட்கப்படும் தோற்ற அதிர்வெண்:",
+        "optionTexts": [
+          "f0 * (v + u) / (v - u)",
+          "f0 * (v - u) / (v + u)",
+          "f0 * v / (v - u)",
+          "f0 * (v + u) / v"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A tube closed at one end has two consecutive resonant frequencies of 450 Hz and 750 Hz. The fundamental frequency of the tube is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "150 Hz",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "300 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "75 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "225 Hz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a pipe closed at one end, only odd harmonics are present: f_n = n * f1, where n = 1, 3, 5, 7, ... Two consecutive resonant frequencies are f_n = n f1 and f_{n+2} = (n + 2) f1. The difference between consecutive frequencies is f_{n+2} - f_n = 2 f1. Here, 750 Hz - 450 Hz = 300 Hz = 2 f1 => f1 = 300 / 2 = 150 Hz. (Checking harmonics: 450 = 3 * 150, 750 = 5 * 150, which are the 3rd and 5th harmonics).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முனை மூடப்பட்ட ஒரு குழாய் 450 Hz மற்றும் 750 Hz ஆகிய அடுத்தடுத்த இரு ஒத்ததிர்வு அதிர்வெண்களைக் கொண்டுள்ளது. அக்குழாயின் அடிப்படை அதிர்வெண்:",
+        "optionTexts": [
+          "150 Hz",
+          "300 Hz",
+          "75 Hz",
+          "225 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m is attached to three identical springs of force constant k as follows: two springs in parallel are connected in series with the third spring. The time period of horizontal oscillation of the block is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 pi sqrt(3m / (2k))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 pi sqrt(2m / (3k))",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 pi sqrt(m / (3k))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 pi sqrt(3m / k)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "First, the two springs in parallel have an equivalent stiffness k_p = k + k = 2k. This combination is connected in series with the third spring of stiffness k: 1 / k_eff = 1 / k_p + 1 / k = 1 / (2k) + 1 / k = 3 / (2k) => k_eff = 2k / 3. The time period is T = 2 pi sqrt(m / k_eff) = 2 pi sqrt(m / (2k / 3)) = 2 pi sqrt(3m / (2k)).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு மரக்கட்டை k மாறிலி கொண்ட மூன்று ஒத்த சுருள்வில்களுடன் பின்வருமாறு இணைக்கப்பட்டுள்ளது: இரு சுருள்வில்கள் பக்க இணைப்பில் இணைக்கப்பட்டு, மூன்றாவது சுருள்வில்லுடன் தொடரிணைப்பில் உள்ளன. மரக்கட்டையின் அலைவுக்காலம்:",
+        "optionTexts": [
+          "2 pi sqrt(3m / (2k))",
+          "2 pi sqrt(2m / (3k))",
+          "2 pi sqrt(m / (3k))",
+          "2 pi sqrt(3m / k)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A standing wave on a string fixed at both ends is described by y(x, t) = 2 A sin(k x) cos(omega t). The locations of the nodes along the string (where x >= 0) are given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = n pi / k, where n = 0, 1, 2, ...",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "x = (2n + 1) pi / (2k), where n = 0, 1, 2, ...",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x = n pi / (2k), where n = 0, 1, 2, ...",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x = (2n + 1) pi / k, where n = 0, 1, 2, ...",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Nodes occur where the amplitude is permanently zero: 2 A sin(k x) = 0 => sin(k x) = 0 => k x = n pi for n = 0, 1, 2, ... Therefore, x = n pi / k. Since k = 2 pi / lambda, this gives x = n (lambda / 2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு முனைகளிலும் கட்டப்பட்ட ஒரு கம்பியில் உள்ள நிலை அலை y(x, t) = 2 A sin(k x) cos(omega t) என விவரிக்கப்படுகிறது. கம்பியின் வழியே கணுக்கள் (nodes) அமையும் நிலைகள் (x >= 0):",
+        "optionTexts": [
+          "x = n pi / k, n = 0, 1, 2, ...",
+          "x = (2n + 1) pi / (2k), n = 0, 1, 2, ...",
+          "x = n pi / (2k), n = 0, 1, 2, ...",
+          "x = (2n + 1) pi / k, n = 0, 1, 2, ..."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two coherent sound waves of amplitudes A1 = 3a and A2 = 4a interfere at a point. If the phase difference between them at that point is 90 degrees (pi / 2 rad), the resulting intensity is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 a^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "25 a^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "49 a^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The resultant amplitude of two interfering waves with phase difference delta is A_res = sqrt(A1^2 + A2^2 + 2 A1 A2 cos delta). For delta = 90 deg, cos delta = 0, so A_res = sqrt((3a)^2 + (4a)^2) = sqrt(9a^2 + 16a^2) = sqrt(25a^2) = 5a. Since intensity I is proportional to A_res^2, I is proportional to (5a)^2 = 25 a^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A1 = 3a மற்றும் A2 = 4a வீச்சுகளைக் கொண்ட இரு ஒத்திசைந்த ஒலி அலைகள் ஒரு புள்ளியில் குறுக்கீட்டு விளைவை ஏற்படுத்துகின்றன. அப்புள்ளியில் அவற்றுக்கிடையேயான கட்ட வேறுபாடு 90 டிகிரி எனில், தொகுபயன் செறிவு எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "7 a^2",
+          "25 a^2",
+          "49 a^2",
+          "a^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A particle executes simple harmonic motion with an amplitude of 0.4 m and an oscillation frequency of (5 / pi) Hz. The maximum speed of the particle during its motion is _____ m/s.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The maximum speed in simple harmonic motion occurs at the mean position and is given by v_max = omega * A = 2 pi f * A. Substituting A = 0.4 m and f = 5 / pi Hz: v_max = 2 pi * (5 / pi) * 0.4 = 10 * 0.4 = 4 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் 0.4 m வீச்சு மற்றும் (5 / pi) Hz அலைவு அதிர்வெண்ணுடன் தனிச் சீரிசை இயக்கத்தை மேற்கொள்கிறது. இயக்கத்தின் போது துகளின் பெரும வேகம் _____ m/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 0.5 kg oscillates in simple harmonic motion with an angular frequency omega = 5 rad/s and an amplitude of 0.2 m. The magnitude of the maximum acceleration experienced by the body is _____ m/s^2.",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The maximum acceleration in SHM occurs at the extreme positions and is given by a_max = omega^2 * A. Substituting omega = 5 rad/s and A = 0.2 m: a_max = (5)^2 * 0.2 = 25 * 0.2 = 5 m/s^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.5 kg நிறையுள்ள ஒரு பொருள் omega = 5 rad/s கோண அதிர்வெண் மற்றும் 0.2 m வீச்சுடன் தனிச் சீரிசை இயக்கத்தில் அலைவுறுகிறது. அப்பொருள் உணரும் பெரும முடுக்கத்தின் எண்மதிப்பு _____ m/s^2.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two tuning forks vibrating simultaneously produce sound waves of frequencies 256 Hz and 262 Hz respectively. The number of beats heard per second by a nearby listener is _____.",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Beat frequency is the absolute difference between the frequencies of the two interfering waves: f_beat = |f2 - f1| = |262 Hz - 256 Hz| = 6 beats/second.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே நேரத்தில் அதிரும் இரு இசைக்கவைகள் முறையே 256 Hz மற்றும் 262 Hz அதிர்வெண் கொண்ட ஒலி அலைகளை உருவாக்குகின்றன. அருகிலுள்ள ஒருவரால் ஒரு வினாடியில் கேட்கப்படும் துடிப்புகளின் எண்ணிக்கை _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of unknown mass m attached to a light ideal spring oscillates with a time period of 2 seconds. When an additional mass of 3 kg is added to the block, the time period of oscillation becomes 4 seconds. The value of the initial mass m is _____ kg.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The time period of a spring-mass oscillator is T = 2 pi sqrt(m / k). Thus, T is proportional to sqrt(m), which means T^2 is proportional to m. Setting up the ratio: (T2 / T1)^2 = (m + 3) / m. Substituting T1 = 2 s and T2 = 4 s: (4 / 2)^2 = (m + 3) / m => 4 = (m + 3) / m => 4m = m + 3 => 3m = 3 => m = 1 kg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லேசான சுருள்வில்லில் இணைக்கப்பட்ட m நிறையுள்ள ஒரு மரக்கட்டை 2 விநாடிகள் அலைவுக்காலத்துடன் அலைவுறுகிறது. அதனுடன் 3 kg கூடுதல் நிறை இணைக்கப்படும் போது, அலைவுக்காலம் 4 விநாடிகளாக மாறுகிறது. ஆரம்ப நிறை m இன் மதிப்பு _____ kg.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A steel wire of length 4 m and total mass 0.04 kg is held under a constant tension of 100 N. The speed of transverse waves traveling along this wire is _____ m/s.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Linear mass density of the wire is mu = mass / length = 0.04 kg / 4 m = 0.01 kg/m. The speed of transverse waves on a stretched string is v = sqrt(T / mu). Substituting T = 100 N and mu = 0.01 kg/m: v = sqrt(100 / 0.01) = sqrt(10000) = 100 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 m நீளமும் 0.04 kg மொத்த நிறையும் கொண்ட ஒரு எஃகுக் கம்பி 100 N மாறா இழுவிசையில் வைக்கப்பட்டுள்ளது. இக்கம்பியின் வழியே செல்லும் குறுக்கலைகளின் வேகம் _____ m/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An organ pipe open at both ends has a length of 0.85 m. If the speed of sound in air is 340 m/s, the fundamental frequency of resonance for this pipe is _____ Hz.",
+    "correctAnswer": 200,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For an organ pipe open at both ends, the fundamental frequency is given by f = v / (2L). Substituting the speed of sound v = 340 m/s and length L = 0.85 m: f = 340 / (2 * 0.85) = 340 / 1.70 = 200 Hz.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு முனைகளும் திறந்த ஒரு குழாயின் நீளம் 0.85 m ஆகும். காற்றில் ஒலியின் வேகம் 340 m/s எனில், இக்குழாயின் அடிப்படை ஒத்ததிர்வு அதிர்வெண் _____ Hz.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A standing wave is set up in a medium by sound waves of frequency 500 Hz traveling at a speed of 300 m/s. The distance between a node and the immediately adjacent antinode is _____ cm.",
+    "correctAnswer": 15,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The wavelength of the wave is lambda = v / f = (300 m/s) / (500 Hz) = 0.6 m = 60 cm. In a stationary wave, the distance between any node and its immediately adjacent antinode is Delta x = lambda / 4 = 60 cm / 4 = 15 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 m/s வேகத்தில் செல்லும் 500 Hz அதிர்வெண் கொண்ட ஒலி அலைகளால் ஒரு ஊடகத்தில் நிலை அலை உருவாக்கப்படுகிறது. ஒரு கணுவிற்கும் (node) அதைத் தொடர்ந்து வரும் எதிர்க்கணுவிற்கும் (antinode) இடையேயான தொலைவு _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle executes simple harmonic motion with amplitude A. When its displacement from the mean position is x = A / 2, the percentage of its total mechanical energy that exists as kinetic energy is _____ %.",
+    "correctAnswer": 75,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total mechanical energy of a simple harmonic oscillator is E = (1/2) k A^2. At displacement x = A / 2, the potential energy is U = (1/2) k x^2 = (1/2) k (A / 2)^2 = (1/4) * ((1/2) k A^2) = E / 4. By energy conservation, the kinetic energy is K = E - U = E - E / 4 = (3/4) E. Expressed as a percentage of total energy: (K / E) * 100% = (3/4) * 100% = 75%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் A வீச்சுடன் தனிச் சீரிசை இயக்கத்தை மேற்கொள்கிறது. நடுநிலையிலிருந்து அதன் இடப்பெயர்ச்சி x = A / 2 ஆக இருக்கும் போது, அதன் மொத்த இயக்கமுறை ஆற்றலில் இயக்க ஆற்றலின் சதவீதம் _____ %.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a resonance tube experiment conducted with a tuning fork of frequency 500 Hz, the first and second resonances are obtained at air column lengths of l1 = 16 cm and l2 = 50 cm respectively. The speed of sound in air determined from this experiment is _____ m/s.",
+    "correctAnswer": 340,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Accounting for the end correction e: l1 + e = lambda / 4 and l2 + e = 3 lambda / 4. Subtracting the two resonance conditions eliminates the end correction: l2 - l1 = (3 lambda / 4) - (lambda / 4) = lambda / 2 => lambda = 2 (l2 - l1). Given l1 = 16 cm = 0.16 m and l2 = 50 cm = 0.50 m: lambda = 2 * (0.50 m - 0.16 m) = 2 * (0.34 m) = 0.68 m. The speed of sound is v = f * lambda = 500 Hz * 0.68 m = 340 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 Hz அதிர்வெண் கொண்ட இசைக்கவையைக் கொண்டு செய்யப்பட்ட ஒத்ததிர்வுக் குழாய் சோதனையில், முதல் மற்றும் இரண்டாவது ஒத்ததிர்வுகள் முறையே l1 = 16 cm மற்றும் l2 = 50 cm காற்றுத் தம்ப நீளங்களில் ஏற்படுகின்றன. இச்சோதனையிலிருந்து கணக்கிடப்படும் காற்றில் ஒலியின் வேகம் _____ m/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY10-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m attached to a light spring of force constant k oscillates with a time period T0 = 8 seconds. The spring is now cut into two equal halves, and both halves are connected in parallel to support the same mass m. The new time period of oscillation of the mass is _____ seconds.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "When a spring of constant k and length L is cut into two equal halves of length L / 2, the spring constant of each half doubles: k' = 2k. When these two halves are connected in parallel, their equivalent spring constant is k_parallel = k' + k' = 2k + 2k = 4k. The new time period of the oscillator is T_new = 2 pi sqrt(m / k_parallel) = 2 pi sqrt(m / (4k)) = (1/2) * [2 pi sqrt(m / k)] = T0 / 2. Given T0 = 8 seconds: T_new = 8 / 2 = 4 seconds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "k மாறிலி கொண்ட சுருள்வில்லில் இணைக்கப்பட்ட m நிறையுள்ள ஒரு மரக்கட்டை T0 = 8 விநாடிகள் அலைவுக்காலத்துடன் அலைவுறுகிறது. அச்சுருள்வில் இரு சம பாதிகளாக வெட்டப்பட்டு, அவ்விரு பாதிகளும் பக்க இணைப்பில் இணைக்கப்பட்டு அதே m நிறையைத் தாங்குகின்றன. நிறையின் புதிய அலைவுக்காலம் _____ விநாடிகள்.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

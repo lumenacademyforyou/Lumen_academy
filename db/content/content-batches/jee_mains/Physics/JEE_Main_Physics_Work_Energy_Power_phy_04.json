@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY04-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A constant force F = (4i + 3j - 2k) N acts on a particle, displacing it from position r1 = (2i - j + k) m to r2 = (5i + 2j + 4k) m. The work done by this force on the particle is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "12 J",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15 J",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "18 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "21 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The displacement vector is dr = r2 - r1 = (5 - 2)i + (2 - (-1))j + (4 - 1)k = (3i + 3j + 3k) m. The work done by the constant force is W = F . dr = (4)(3) + (3)(3) + (-2)(3) = 12 + 9 - 6 = 15 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F = (4i + 3j - 2k) N என்ற மாறா விசை ஒரு துகளின் மீது செயல்பட்டு, அதை r1 = (2i - j + k) m இலிருந்து r2 = (5i + 2j + 4k) m நிலைக்கு இடப்பெயர்ச்சி செய்கிறது. இந்த விசை துகளின் மீது செய்த வேலை:",
+        "optionTexts": [
+          "12 J",
+          "15 J",
+          "18 J",
+          "21 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A particle moves along the x-axis from x = 0 to x = 2 m under the action of a position-dependent force F(x) = (6x^2 - 4x + 2) N. The work done by this force during the displacement is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 J",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12 J",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Work done by a variable force is W = integral_{0}^{2} (6x^2 - 4x + 2) dx = [2x^3 - 2x^2 + 2x]_{0}^{2} = 2(8) - 2(4) + 2(2) = 16 - 8 + 4 = 12 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் x = 0 இலிருந்து x = 2 m வரை F(x) = (6x^2 - 4x + 2) N என்ற மாறக்கூடிய விசையின் கீழ் x-அச்சின் வழியே இயங்குகிறது. இந்த இடப்பெயர்ச்சியின் போது விசை செய்த வேலை:",
+        "optionTexts": [
+          "10 J",
+          "12 J",
+          "16 J",
+          "8 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the linear momentum of a moving body is increased by 50%, the percentage increase in its kinetic energy is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "50%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "100%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "125%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "225%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Kinetic energy K = p^2 / (2m). When linear momentum increases by 50%, the new momentum becomes p' = 1.5 p. The new kinetic energy is K' = (1.5 p)^2 / (2m) = 2.25 K. The percentage increase is ((K' - K) / K) * 100% = ((2.25 - 1) / 1) * 100% = 125%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயங்கும் ஒரு பொருளின் நேரியல் உந்தம் 50% அதிகரித்தால், அதன் இயக்க ஆற்றலில் ஏற்படும் சதவீத அதிகரிப்பு:",
+        "optionTexts": [
+          "50%",
+          "100%",
+          "125%",
+          "225%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two identical ideal springs A and B are stretched such that spring A is extended by x and spring B is extended by 2x. If the elastic potential energy stored in spring A is U, the potential energy stored in spring B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "U/2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2U",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4U",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "8U",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The elastic potential energy of an ideal spring of stiffness k extended by x is U = (1/2) k x^2. For spring B with extension 2x, U_B = (1/2) k (2x)^2 = 4 * (1/2 k x^2) = 4U.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு ஒத்த சுருள்வில்கள் நீட்டிக்கப்படுகின்றன; இதில் சுருள்வில் A ஆனது x அளவும், சுருள்வில் B ஆனது 2x அளவும் நீட்சியடைகிறது. சுருள்வில் A இல் சேமிக்கப்பட்ட மீள் நிலை ஆற்றல் U எனில், சுருள்வில் B இல் உள்ள நிலை ஆற்றல்:",
+        "optionTexts": [
+          "U/2",
+          "2U",
+          "4U",
+          "8U"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 4 kg sliding on a rough horizontal surface has an initial speed of 6 m/s. It comes to rest after travelling a distance of 9 m. The magnitude of the net work done by friction on the block is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "72 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "36 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "18 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "144 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By the work-energy theorem, W_net = Delta K = K_f - K_i. Here K_f = 0 and K_i = (1/2) m v^2 = (1/2)(4)(6)^2 = 72 J. Thus W_friction = 0 - 72 = -72 J. The magnitude of the work done is |-72 J| = 72 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சொரசொரப்பான கிடைமட்டத் தளத்தில் சறுக்கும் 4 kg நிறையுள்ள ஒரு மரக்கட்டை 6 m/s ஆரம்ப வேகத்தைக் கொண்டுள்ளது. 9 m தொலைவு சென்ற பிறகு அது ஓய்வு நிலைக்கு வருகிறது. உராய்வு விசை மரக்கட்டையின் மீது செய்த நிகர வேலையின் எண்மதிப்பு:",
+        "optionTexts": [
+          "72 J",
+          "36 J",
+          "18 J",
+          "144 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents a non-conservative force?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electrostatic force between two charges",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gravitational force between two planets",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Viscous force in a fluid",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Restoring force of an ideal spring",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A conservative force is path-independent and the total work done along a closed loop is zero. Gravitational, electrostatic, and ideal spring forces are conservative forces. The viscous drag force dissipates mechanical energy into thermal energy and is non-conservative.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் எது ஆற்றல் மாற்றா விசை (non-conservative force) ஆகும்?",
+        "optionTexts": [
+          "இரு மின்னூட்டங்களுக்கு இடையிலான நிலைமின்னியல் விசை",
+          "இரு கோள்களுக்கு இடையிலான ஈர்ப்பு விசை",
+          "பாய்மத்தில் உள்ள பாகுநிலை விசை",
+          "ஒரு சிறந்த சுருள்வில்லின் மீள் விசை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The potential energy function of a particle moving along the x-axis in a conservative field is given by U(x) = (2x^4 - 16x^2 + 25) J, where x is in meters. The positions of stable equilibrium are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = 0 only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "x = +2 m and x = -2 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "x = +4 m and x = -4 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x = +1 m and x = -1 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Equilibrium occurs where F = -dU/dx = 0. Here dU/dx = 8x^3 - 32x = 8x(x^2 - 4) = 0, giving x = 0, +2, -2 m. For stable equilibrium, d^2U/dx^2 > 0. Differentiating: d^2U/dx^2 = 24x^2 - 32. At x = 0, d^2U/dx^2 = -32 < 0 (unstable). At x = +2 or -2, d^2U/dx^2 = 24(4) - 32 = 64 > 0 (stable). Hence, stable equilibrium points are x = +2 m and x = -2 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆற்றல் மாறா விசைப்புலத்தில் x-அச்சில் இயங்கும் ஒரு துகளின் நிலை ஆற்றல் சார்பு U(x) = (2x^4 - 16x^2 + 25) J (இங்கு x மீட்டரில் உள்ளது). துகளின் நிலையான சமநிலை நிலைகள்:",
+        "optionTexts": [
+          "x = 0 மட்டும்",
+          "x = +2 m மற்றும் x = -2 m",
+          "x = +4 m மற்றும் x = -4 m",
+          "x = +1 m மற்றும் x = -1 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A vehicle of mass m starts from rest and is driven along a straight horizontal road by an engine supplying constant power P. Neglecting friction, the distance s covered by the vehicle as a function of time t is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "t^(1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "t^(3/2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "t^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "t^(2/3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Power P = F v = m v (dv/dt) = constant. Separating variables and integrating gives v dv = (P/m) dt => (1/2)v^2 = (P/m)t => v = sqrt(2P/m) t^(1/2). Since v = ds/dt, integrating again gives s = integral sqrt(2P/m) t^(1/2) dt = (2/3) sqrt(2P/m) t^(3/2). Thus s is proportional to t^(3/2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓய்வு நிலையிலிருந்து தொடங்கும் m நிறையுள்ள ஒரு வாகனத்திற்கு அதன் இயந்திரம் மாறாத் திறன் P ஐ வழங்குகிறது. உராய்வைப் புறக்கணித்தால், நேரம் t இன் சார்பாக வாகனம் கடந்த தொலைவு s எதற்கு நேர்விகிதத்தில் இருக்கும்:",
+        "optionTexts": [
+          "t^(1/2)",
+          "t^(3/2)",
+          "t^2",
+          "t^(2/3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A small body of mass m is tied to a light inextensible string of length L and rotated in a vertical circle. The difference between the tension in the string at the bottom-most point and the top-most point is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 mg",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 mg",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 mg",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "mg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the bottom, T_b - mg = m v_b^2 / L => T_b = mg + m v_b^2 / L. At the top, T_t + mg = m v_t^2 / L => T_t = m v_t^2 / L - mg. By conservation of mechanical energy between bottom and top, (1/2) m v_b^2 = (1/2) m v_t^2 + mg(2L) => v_b^2 - v_t^2 = 4gL. Therefore, T_b - T_t = 2mg + m(v_b^2 - v_t^2)/L = 2mg + 4mg = 6mg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு சிறு பொருள் L நீளமுள்ள லேசான கயிற்றில் கட்டப்பட்டு செங்குத்து வட்டத்தில் சுழற்றப்படுகிறது. பாதையின் மிகத் தாழ்ந்த புள்ளிக்கும் மிக உயர்ந்த புள்ளிக்கும் இடையே உள்ள கயிற்றின் இழுவிசைகளின் வித்தியாசம்:",
+        "optionTexts": [
+          "3 mg",
+          "4 mg",
+          "6 mg",
+          "mg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass m moving with speed u collides head-on elastically with a stationary body of mass 3m. The fraction of initial kinetic energy retained by the incoming body of mass m after the collision is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1/2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3/4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1/16",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a 1D elastic collision with a stationary target, the velocity of mass m1 after collision is v1 = ((m1 - m2)/(m1 + m2)) u = ((m - 3m)/(m + 3m)) u = -u/2. The kinetic energy retained is K1' = (1/2) m v1^2 = (1/2) m (-u/2)^2 = (1/4) * (1/2 m u^2) = K_i / 4. Thus the fraction retained is 1/4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "u வேகத்துடன் இயங்கும் m நிறையுள்ள ஒரு பொருள், ஓய்வில் உள்ள 3m நிறையுள்ள மற்றொரு பொருளின் மீது நேருக்கு நேர் மீள் மோதல் கொள்கிறது. மோதலுக்குப் பிறகு m நிறையுள்ள பொருள் தக்கவைத்துக் கொள்ளும் ஆரம்ப இயக்க ஆற்றலின் பின்னம்:",
+        "optionTexts": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1/16"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F = (y i + x j) N acts on a particle moving in the xy-plane from the origin (0, 0) to the point (2 m, 3 m) along the parabolic path y = (3/4) x^2. The work done by this force is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 J",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6 J",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "9 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The infinitesimal work done is dW = F . dr = y dx + x dy = d(xy). Since the differential is exact, the force is conservative and work done is independent of the path taken. W = integral_{(0,0)}^{(2,3)} d(xy) = [xy]_{(0,0)}^{(2,3)} = (2)(3) - (0)(0) = 6 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F = (y i + x j) N என்ற விசை xy-தளத்தில் இயங்கும் ஒரு துகளின் மீது செயல்படுகிறது. துகள் y = (3/4) x^2 என்ற பரவளையப் பாதையில் ஆதிப்புள்ளி (0, 0) இலிருந்து (2 m, 3 m) புள்ளிக்கு நகரும் போது இந்த விசை செய்த வேலை:",
+        "optionTexts": [
+          "3 J",
+          "6 J",
+          "9 J",
+          "12 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A small ball is dropped from a height H onto a fixed horizontal rigid floor. If the coefficient of restitution between the ball and floor is e = 0.5, the total distance travelled by the ball before coming to rest is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/3) H",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(4/3) H",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 H",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(7/5) H",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The total distance is H_total = H + 2 H1 + 2 H2 + ... = H + 2 (e^2 H) + 2 (e^4 H) + ... = H [ 1 + 2 e^2 / (1 - e^2) ] = H [ (1 + e^2) / (1 - e^2) ]. For e = 0.5, e^2 = 0.25. Therefore H_total = H [ (1 + 0.25) / (1 - 0.25) ] = H (1.25 / 0.75) = (5/3) H.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சிறு பந்து H உயரத்திலிருந்து நிலையான கிடைமட்டத் தளத்தின் மீது கைவிடப்படுகிறது. பந்துக்கும் தரைக்கும் இடையேயான மீட்சியளிப்புக் குணகம் e = 0.5 எனில், பந்து ஓய்வுக்கு வருவதற்கு முன்பு கடந்த மொத்தத் தொலைவு:",
+        "optionTexts": [
+          "(5/3) H",
+          "(4/3) H",
+          "2 H",
+          "(7/5) H"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electric motor pumps 1200 kg of water per minute from a well of depth 10 m and ejects it through a nozzle with a speed of 10 m/s. Assuming g = 10 m/s^2, the useful output power developed by the motor is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.5 kW",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.0 kW",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3.5 kW",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Mass flow rate dm/dt = 1200 kg / 60 s = 20 kg/s. The work done per second to lift water is P1 = (dm/dt) g h = (20)(10)(10) = 2000 W. The kinetic energy imparted per second is P2 = (1/2) (dm/dt) v^2 = (1/2)(20)(10)^2 = 1000 W. Total output power P = P1 + P2 = 2000 W + 1000 W = 3000 W = 3.0 kW.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின் மோட்டார் 10 m ஆழமுள்ள கிணற்றிலிருந்து நிமிடத்திற்கு 1200 kg நீரை மேலே ஏற்றி, 10 m/s வேகத்தில் வெளியேற்றுகிறது. g = 10 m/s^2 எனில், மோட்டாரின் பயனுள்ள வெளியீட்டுத் திறன்:",
+        "optionTexts": [
+          "2.0 kW",
+          "2.5 kW",
+          "3.0 kW",
+          "3.5 kW"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m is suspended from the ceiling by an ideal vertical spring of spring constant k. Initially the spring is unstretched and the block is released from rest. The maximum elongation of the spring during the subsequent motion is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "mg/k",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2mg/k",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "mg/(2k)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4mg/k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the maximum elongation be x_max. At this lowest position, the block momentarily comes to rest, so the change in kinetic energy is zero (Delta K = 0). By the work-energy theorem: W_gravity + W_spring = 0 => mg x_max - (1/2) k x_max^2 = 0. Since x_max > 0, we get x_max = 2mg/k.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு மரக்கட்டை k மாறிலி கொண்ட செங்குத்து சுருள்வில்லின் மூலம் கூரையிலிருந்து தொங்கவிடப்பட்டுள்ளது. தொடக்கத்தில் சுருள்வில் நீட்சியடையாத நிலையில் இருந்து மரக்கட்டை விடப்படுகிறது. இயக்கத்தின் போது சுருள்வில்லில் ஏற்படும் பெரும நீட்சி:",
+        "optionTexts": [
+          "mg/k",
+          "2mg/k",
+          "mg/(2k)",
+          "4mg/k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A smooth sphere of mass m moving with speed u collides elastically but glancingly (obliquely) with an identical stationary smooth sphere. After collision, both spheres continue to move. The angle between their final velocity vectors is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "30 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "45 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "60 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "90 degrees",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Let final velocities be v1 and v2. Conservation of linear momentum gives u = v1 + v2. Taking dot product of u with itself: u^2 = v1^2 + v2^2 + 2 (v1 . v2). Conservation of kinetic energy gives (1/2) m u^2 = (1/2) m v1^2 + (1/2) m v2^2 => u^2 = v1^2 + v2^2. Subtracting gives 2 (v1 . v2) = 0 => v1 . v2 = 0. Since neither velocity is zero, the angle between them is 90 degrees.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "u வேகத்தில் இயங்கும் m நிறையுள்ள ஒரு வழவழப்பான கோளம், ஓய்வில் உள்ள ஒத்த கோளத்தின் மீது சாய்வாக மீள் மோதல் கொள்கிறது. மோதலுக்குப் பின் இரு கோளங்களும் இயங்கினால், அவற்றின் இறுதித் திசைவேக வெக்டர்களுக்கு இடைப்பட்ட கோணம்:",
+        "optionTexts": [
+          "30 டிகிரி",
+          "45 டிகிரி",
+          "60 டிகிரி",
+          "90 டிகிரி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Sand falls vertically at a constant rate of dm/dt = 2 kg/s onto a horizontal conveyor belt moving horizontally with a constant speed v = 3 m/s. The extra power required from the driving motor to maintain the constant speed of the conveyor belt is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "9 W",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "18 W",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "27 W",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "36 W",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The rate of momentum imparted to the dropped sand in the horizontal direction requires a horizontal force F = v (dm/dt) = (3 m/s)(2 kg/s) = 6 N. To maintain constant speed, the motor must supply this force. The extra power delivered by the motor is P = F * v = (dm/dt) v^2 = (2 kg/s)(3 m/s)^2 = 18 W. Note: half of this power ((1/2)(dm/dt)v^2 = 9 W) goes into the kinetic energy of the sand, and the other half is dissipated as heat by friction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிடைமட்டமாக v = 3 m/s மாறா வேகத்தில் இயங்கும் ஒரு நகரும் பட்டையின் மீது dm/dt = 2 kg/s என்ற மாறா வீதத்தில் மணல் செங்குத்தாக விழுகிறது. பட்டையின் மாறா வேகத்தைத் தக்கவைக்க மோட்டார் அளிக்க வேண்டிய கூடுதல் திறன்:",
+        "optionTexts": [
+          "9 W",
+          "18 W",
+          "27 W",
+          "36 W"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A small bob of mass m is fixed to one end of a light rigid rod of length R pivoted at the other end. The minimum horizontal speed that must be imparted to the bob at its lowest point so that it describes a complete vertical circular loop is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(5 g R)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 sqrt(g R)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3 g R)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(6 g R)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Because the bob is attached to a rigid rod rather than a flexible string, it cannot go slack; the rod can support compression at the topmost position. Therefore, the minimum condition to complete the loop is that the speed at the highest point satisfies v_top >= 0. Setting v_top = 0 and applying conservation of mechanical energy from bottom to top: (1/2) m v_min^2 = mg(2R) => v_min = sqrt(4 g R) = 2 sqrt(g R).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R நீளமுள்ள ஒரு லேசான திடமான கம்பியின் ஒரு முனையில் m நிறையுள்ள சிறு குண்டு பொருத்தப்பட்டு மறுமுனை சுழல வைக்கப்பட்டுள்ளது. அது முழுமையான செங்குத்து வட்டத்தை நிறைவு செய்ய அதன் அடிப்புள்ளியில் அளிக்கப்பட வேண்டிய குறைந்தபட்ச கிடைமட்ட வேகம்:",
+        "optionTexts": [
+          "sqrt(5 g R)",
+          "2 sqrt(g R)",
+          "sqrt(3 g R)",
+          "sqrt(6 g R)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass M = 3 kg is connected to a horizontal spring of spring constant k = 400 N/m resting on a frictionless surface. A bullet of mass m = 1 kg moving horizontally with speed v0 = 8 m/s strikes the block and gets embedded in it. The maximum compression of the spring is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.2 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.3 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.4 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "During the rapid impact, linear momentum is conserved: m v0 = (M + m) V => V = (1 * 8) / (3 + 1) = 2 m/s. After collision, mechanical energy is conserved: (1/2)(M + m)V^2 = (1/2) k x_max^2 => (1/2)(4)(2)^2 = (1/2)(400) x_max^2 => 16 = 400 x_max^2 => x_max = sqrt(16/400) = 4/20 = 0.2 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உராய்வற்ற கிடைமட்டத் தளத்தில் k = 400 N/m மாறிலி கொண்ட சுருள்வில்லுடன் M = 3 kg நிறையுள்ள மரக்கட்டை இணைக்கப்பட்டுள்ளது. v0 = 8 m/s கிடைமட்ட வேகத்துடன் வரும் m = 1 kg குண்டு மரக்கட்டையைத் தாக்கி அதனுள் புதைந்து கொள்கிறது. சுருள்வில்லில் ஏற்படும் பெரும சுருக்கம்:",
+        "optionTexts": [
+          "0.1 m",
+          "0.2 m",
+          "0.3 m",
+          "0.4 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A particle moves in a central potential field described by U(r) = -a/r + b/(2 r^2), where a and b are positive constants and r is the radial distance. The value of r at which the particle is in stable equilibrium is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "b/a",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "a/b",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2b/a",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "b/(2a)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For equilibrium, F = -dU/dr = 0. Differentiating U(r) with respect to r gives dU/dr = a r^(-2) - b r^(-3) = (a r - b)/r^3. Setting dU/dr = 0 gives r = b/a. The second derivative is d^2U/dr^2 = -2a r^(-3) + 3b r^(-4) = (3b - 2a r)/r^4. Substituting r = b/a gives d^2U/dr^2 = (3b - 2b)/(b/a)^4 = b / (b/a)^4 > 0 since b > 0. Therefore, r = b/a corresponds to a stable equilibrium position.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகள் U(r) = -a/r + b/(2 r^2) என்ற நிலை ஆற்றல் புலத்தில் இயங்குகிறது (இங்கு a மற்றும் b நேர்மறை மாறிலிகள், r என்பது தொலைவு). துகள் நிலையான சமநிலையில் இருக்கும் r இன் மதிப்பு:",
+        "optionTexts": [
+          "b/a",
+          "a/b",
+          "2b/a",
+          "b/(2a)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A ballistic pendulum consists of a wooden block of mass M = 0.99 kg suspended by a light cord of length L = 1.0 m. A bullet of mass m = 0.01 kg travelling horizontally strikes the block and remains embedded in it. If the pendulum swings up through a maximum angle theta = 60 degrees from the vertical, the initial speed of the bullet is (take g = 10 m/s^2):",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "316 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "450 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let V be the speed of the combined system immediately after collision. Linear momentum is conserved: m v = (M + m) V => V = [m / (M + m)] v = (0.01 / 1.00) v = v / 100. During the swing, mechanical energy is conserved: (1/2)(M + m)V^2 = (M + m) g h, where h = L(1 - cos 60 deg) = 1.0(1 - 0.5) = 0.5 m. Thus V^2 = 2 g h = 2(10)(0.5) = 10 m^2/s^2 => V = sqrt(10) m/s. Therefore v = 100 V = 100 sqrt(10) approx 100 * 3.162 = 316.2 m/s approx 316 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M = 0.99 kg நிறையுள்ள ஒரு மரக்கட்டை L = 1.0 m நீளமுள்ள நூலினால் செங்குத்தாக தொங்கவிடப்பட்டுள்ளது. கிடைமட்டமாக வரும் m = 0.01 kg குண்டு மரக்கட்டையைத் தாக்கி அதனுள் புதைந்து கொள்கிறது. ஊசல் செங்குத்துடன் பெரும கோணம் theta = 60 டிகிரியை உருவாக்கும் உயரத்திற்கு சென்றால், குண்டின் ஆரம்ப வேகம் (g = 10 m/s^2 எனக்கொள்க):",
+        "optionTexts": [
+          "100 m/s",
+          "200 m/s",
+          "316 m/s",
+          "450 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A force F acting on a particle moving along the x-axis increases linearly from F = 0 N at x = 0 m to F = 20 N at x = 4 m, and then remains constant at 20 N from x = 4 m to x = 7 m. The total work done by the force from x = 0 m to x = 7 m is _____ J.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total work done is the area under the F-x curve. From x = 0 to x = 4 m, the area is a triangle: Area_1 = (1/2) * 4 * 20 = 40 J. From x = 4 m to x = 7 m, the area is a rectangle: Area_2 = (7 - 4) * 20 = 60 J. Total work done W = Area_1 + Area_2 = 40 + 60 = 100 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சில் இயங்கும் ஒரு துகளின் மீது செயல்படும் விசை F ஆனது x = 0 m இல் F = 0 N இலிருந்து x = 4 m இல் F = 20 N வரை நேரியலாக அதிகரிக்கிறது, பின்னர் x = 7 m வரை 20 N என மாறாமல் உள்ளது. x = 0 m இலிருந்து x = 7 m வரை விசை செய்த மொத்த வேலை _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A car of mass 1200 kg is moving at a speed of 20 m/s on a straight level road. When the brakes are applied, a constant opposing resistive force of 3000 N acts on the car until it comes to a complete halt. The stopping distance of the car is _____ m.",
+    "correctAnswer": 80,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the work-energy theorem, W_net = Delta K. Here -F_stop * d = 0 - (1/2) m v^2. Substituting the values: (3000) d = (1/2)(1200)(20)^2 = 600 * 400 = 240000 J. Therefore, d = 240000 / 3000 = 80 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1200 kg நிறையுள்ள ஒரு கார் 20 m/s வேகத்தில் நேர்கோட்டுச் சாலையில் செல்கிறது. பிரேக் செலுத்தப்படும்போது 3000 N மாறா எதிர்ப்பு விசை செயல்பட்டு காரை நிறுத்துகிறது. கார் நிற்கும் முன் கடந்த தொலைவு _____ m.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 5 kg is raised vertically upwards through a height of 8 m at a constant velocity. The work done by the lifting force on the block is _____ J (take g = 10 m/s^2).",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Since the block moves with constant velocity, the lifting force equals the gravitational force: F = mg = (5 kg)(10 m/s^2) = 50 N. The work done by the lifting force is W = F * h = (50 N)(8 m) = 400 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "5 kg நிறையுள்ள ஒரு மரக்கட்டை 8 m உயரத்திற்கு மாறா திசைவேகத்தில் செங்குத்தாக மேலே உயர்த்தப்படுகிறது. தூக்கும் விசை மரக்கட்டையின் மீது செய்த வேலை _____ J (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An elevator of mass 800 kg ascends vertically with a constant speed of 3 m/s while experiencing a constant frictional resistance of 2000 N. Taking g = 10 m/s^2, the power delivered by the motor hoisting the elevator is _____ kW.",
+    "correctAnswer": 30,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total downward resistive force acting on the elevator is F_down = mg + F_friction = (800 * 10) + 2000 = 8000 + 2000 = 10000 N. Since it ascends at a constant velocity of 3 m/s, the upward tension provided by the cable is T = 10000 N. The power developed is P = T * v = (10000 N)(3 m/s) = 30000 W = 30 kW.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "800 kg நிறையுள்ள ஒரு மின்தூக்கி 2000 N மாறா உராய்வு எதிர்ப்பை எதிர்கொண்டு 3 m/s மாறா வேகத்தில் செங்குத்தாக மேல்நோக்கி இயங்குகிறது. g = 10 m/s^2 எனக் கொண்டால், மின்தூக்கியை உயர்த்தும் மோட்டார் வழங்கும் திறன் _____ kW.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 2 kg moving with a velocity of 6 m/s collides head-on with a stationary body of mass 4 kg. The two bodies stick together after impact. The loss in kinetic energy of the system during this collision is _____ J.",
+    "correctAnswer": 24,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The loss in kinetic energy during a completely inelastic collision is Delta K = (1/2) * [ (m1 * m2) / (m1 + m2) ] * (u1 - u2)^2. Substituting m1 = 2 kg, m2 = 4 kg, u1 = 6 m/s, and u2 = 0: Delta K = (1/2) * [ (2 * 4) / (2 + 4) ] * (6)^2 = (1/2) * (8/6) * 36 = (4/6) * 36 = 24 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6 m/s திசைவேகத்துடன் இயங்கும் 2 kg நிறையுள்ள ஒரு பொருள், ஓய்வில் உள்ள 4 kg நிறையுள்ள மற்றொரு பொருளின் மீது மோதி அதனுடன் ஒட்டிக்கொள்கிறது. இந்த மோதலின் போது அமைப்பில் ஏற்படும் இயக்க ஆற்றல் இழப்பு _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 0.5 kg moving horizontally on a frictionless surface with a speed of 4 m/s compresses a horizontal spring of spring constant k = 200 N/m. The maximum compression produced in the spring is _____ cm.",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of mechanical energy, the initial kinetic energy of the block equals the elastic potential energy stored in the spring at maximum compression: (1/2) m v^2 = (1/2) k x_max^2. Substituting values: (0.5)(4)^2 = (200) x_max^2 => (0.5)(16) = 200 x_max^2 => 8 = 200 x_max^2 => x_max^2 = 8/200 = 0.04 m^2. Thus, x_max = 0.2 m = 20 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உராய்வற்ற கிடைமட்டத் தளத்தில் 4 m/s வேகத்தில் இயங்கும் 0.5 kg நிறையுள்ள ஒரு மரக்கட்டை, k = 200 N/m மாறிலி கொண்ட ஒரு கிடைமட்ட சுருள்வில்லை சுருக்குகிறது. சுருள்வில்லில் ஏற்படும் பெரும சுருக்கம் _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m = 0.2 kg tied to a light string of length L = 0.5 m rotates in a vertical circle. The minimum speed at the lowest point required so that the particle completes the vertical circular loop without the string becoming slack is _____ m/s (take g = 10 m/s^2).",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "To complete the vertical loop with a light string, the minimum speed required at the lowest point is given by v_min = sqrt(5 g L). Substituting g = 10 m/s^2 and L = 0.5 m: v_min = sqrt(5 * 10 * 0.5) = sqrt(25) = 5 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L = 0.5 m நீளமுள்ள லேசான கயிற்றில் கட்டப்பட்ட m = 0.2 kg நிறையுள்ள ஒரு துகள் செங்குத்து வட்டத்தில் சுழல்கிறது. கயிறு தளர்வடையாமல் துகள் செங்குத்து வட்டத்தை நிறைவு செய்ய அதன் மிகத் தாழ்ந்த புள்ளியில் தேவையான குறைந்தபட்ச வேகம் _____ m/s (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A conservative force acting on a particle is given by F = (-k x) i, where k = 50 N/m. If the potential energy is chosen to be zero at x = 0, the potential energy of the particle at x = 0.4 m is _____ J.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a conservative force, Delta U = -integral F dx = -integral_{0}^{x} (-k x) dx = (1/2) k x^2. Since U(0) = 0, U(x) = (1/2) k x^2. At x = 0.4 m: U = (1/2)(50)(0.4)^2 = 25 * 0.16 = 4 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துகளின் மீது செயல்படும் ஆற்றல் மாறா விசை F = (-k x) i (இங்கு k = 50 N/m). x = 0 இல் நிலை ஆற்றல் சுழி எனக் கொண்டால், x = 0.4 m இல் துகளின் நிலை ஆற்றல் _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass m = 2 kg is dropped from a height h = 0.1 m above a vertical spring of force constant k = 800 N/m standing vertically on the floor. If the block momentarily comes to rest when the spring is compressed by a maximum distance x, then x is _____ cm (take g = 10 m/s^2).",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Total vertical descent from initial position to maximum compression is (h + x). Since initial and final speeds are both zero, Delta K = 0. By conservation of mechanical energy: mg(h + x) = (1/2) k x^2. Substituting values: (2)(10)(0.1 + x) = (1/2)(800) x^2 => 20(0.1 + x) = 400 x^2 => 2 + 20x = 400 x^2 => 200 x^2 - 10x - 1 = 0. Factoring: (20x + 1)(10x - 1) = 0. Since compression x must be positive, 10x - 1 = 0 => x = 0.1 m = 10 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m = 2 kg நிறையுள்ள ஒரு மரக்கட்டை, தரையில் செங்குத்தாக நிற்கும் k = 800 N/m விசை மாறிலி கொண்ட சுருள்வில்லின் மீது h = 0.1 m உயரத்திலிருந்து விடப்படுகிறது. சுருள்வில் பெரும தூரம் x சுருங்கும் போது மரக்கட்டை கணநேர ஓய்வுக்கு வந்தால், x இன் மதிப்பு _____ cm (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY04-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 2 kg released from rest from a height h = 5 m on a curved frictionless track slides down and enters a rough horizontal track with coefficient of kinetic friction mu = 0.2. The distance the block travels on the rough horizontal track before coming to rest is _____ m (take g = 10 m/s^2).",
+    "correctAnswer": 25,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of energy, the kinetic energy of the block at the bottom of the curved frictionless track is K = m g h = (2 kg)(10 m/s^2)(5 m) = 100 J. On the rough horizontal surface, work done by friction brings the block to rest: W_f = -f_k * d = -mu * m * g * d. By work-energy theorem: Delta K = W_f => 0 - 100 = -(0.2)(2)(10) * d => 100 = 4 * d => d = 25 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உராய்வற்ற வளைந்த பாதையில் h = 5 m உயரத்திலிருந்து ஓய்விலிருந்து விடப்படும் 2 kg நிறையுள்ள ஒரு மரக்கட்டை கீழே சறுக்கி வந்து, இயக்க உராய்வுக் குணகம் mu = 0.2 கொண்ட சொரசொரப்பான கிடைமட்டப் பாதையில் நுழைகிறது. மரக்கட்டை ஓய்வுக்கு வருவதற்கு முன் கிடைமட்டப் பாதையில் செல்லும் தொலைவு _____ m (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  }
+]

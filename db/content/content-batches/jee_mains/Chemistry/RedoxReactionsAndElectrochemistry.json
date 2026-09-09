@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che07-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "What is the oxidation state of chromium in the dichromate anion, Cr2O7^2-?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+6",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "+7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the oxidation number of chromium be x. In Cr2O7^2-, oxygen has an oxidation state of -2. The algebraic sum of oxidation states is: 2(x) + 7(-2) = -2 => 2x - 14 = -2 => 2x = +12 => x = +6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டைக்ரோமேட் எதிரயனியில் (Cr2O7^2-) குரோமியத்தின் ஆக்சிஜனேற்ற நிலை என்ன?",
+        "optionTexts": [
+          "+3",
+          "+4",
+          "+6",
+          "+7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following units represents molar conductivity (Lambda_m)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "S cm^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "S cm^2 mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "S cm^-2 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "S mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Molar conductivity is defined as Lambda_m = kappa / c. Since electrolytic conductivity kappa is measured in S cm^-1 and concentration c in mol cm^-3 (or mol L^-1 with conversion factors), the resulting SI-derived unit for molar conductivity is S cm^2 mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மோலார் கடத்துத்திறனின் (Lambda_m) சரியான அலகு எது?",
+        "optionTexts": [
+          "S cm^-1",
+          "S cm^2 mol^-1",
+          "S cm^-2 mol",
+          "S mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During the charging of a secondary lead storage battery, which chemical reaction occurs at the anode?",
+    "options": [
+      {
+        "label": "A",
+        "text": "PbSO4(s) + 2e^- -> Pb(s) + SO4^2-(aq)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Pb(s) + SO4^2-(aq) -> PbSO4(s) + 2e^-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "PbSO4(s) + 2H2O(l) -> PbO2(s) + SO4^2-(aq) + 4H+(aq) + 2e^-",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "PbO2(s) + 4H+(aq) + SO4^2-(aq) + 2e^- -> PbSO4(s) + 2H2O(l)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "During recharging, an external potential reverses the electrode processes. Oxidation occurs at the anode, where solid lead sulfate (PbSO4) is oxidized back into lead dioxide (PbO2): PbSO4(s) + 2H2O(l) -> PbO2(s) + SO4^2-(aq) + 4H+(aq) + 2e^-.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காரீய அமிலச் சேமிப்புக் கலனை மீண்டும் மின்னேற்றம் (charging) செய்யும்போது நேர்மின்வாயில் (anode) நிகழும் வேதிவினை எது?",
+        "optionTexts": [
+          "PbSO4(s) + 2e^- -> Pb(s) + SO4^2-(aq)",
+          "Pb(s) + SO4^2-(aq) -> PbSO4(s) + 2e^-",
+          "PbSO4(s) + 2H2O(l) -> PbO2(s) + SO4^2-(aq) + 4H+(aq) + 2e^-",
+          "PbO2(s) + 4H+(aq) + SO4^2-(aq) + 2e^- -> PbSO4(s) + 2H2O(l)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a Daniel cell operating under standard state conditions, Zn(s) | Zn2+(aq, 1 M) || Cu2+(aq, 1 M) | Cu(s), which of the following statements is INCORRECT? (Given: E°(Zn2+/Zn) = -0.76 V, E°(Cu2+/Cu) = +0.34 V)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zinc electrode acts as the negative terminal (anode).",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Electrons flow in the external circuit from the copper electrode to the zinc electrode.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The standard electromotive force (E°_cell) of the cell is +1.10 V.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Copper ions are reduced to metallic copper at the cathode.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since E°(Cu2+/Cu) = +0.34 V is more positive than E°(Zn2+/Zn) = -0.76 V, zinc undergoes spontaneous oxidation at the anode, releasing electrons. These electrons flow through the external circuit from the zinc anode to the copper cathode. Statement B is incorrect because it describes the reverse direction of electron flow.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட்ட நிலையில் செயல்படும் டேனியல் மின்கலனில், Zn(s) | Zn2+(aq, 1 M) || Cu2+(aq, 1 M) | Cu(s), தவறான கூற்று எது? (தரவு: E°(Zn2+/Zn) = -0.76 V, E°(Cu2+/Cu) = +0.34 V)",
+        "optionTexts": [
+          "துத்தநாக மின்முனை எதிர்மின் முனையமாக (நேர்மின்வாய்/anode) செயல்படுகிறது.",
+          "வெளிப்புற மின்சுற்றில் எலக்ட்ரான்கள் தாமிர மின்முனையிலிருந்து துத்தநாக மின்முனைக்கு பாய்கின்றன.",
+          "மின்கலனின் திட்ட மின்னியக்கு விசை (E°_cell) +1.10 V ஆகும்.",
+          "எதிர்மின்வாயில் (cathode) தாமிர அயனிகள் உலோகத் தாமிரமாக ஒடுக்கமடைகின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following redox reactions is classified as an intramolecular redox reaction?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2KClO3(s) -> 2KCl(s) + 3O2(g)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cl2(g) + 2NaOH(aq) -> NaCl(aq) + NaOCl(aq) + H2O(l)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In an intramolecular redox reaction, one element of a compound is oxidized while another element of the same compound is reduced. In KClO3, chlorine (+5) is reduced to chloride (-1) in KCl, while oxygen (-2) is oxidized to elemental dioxygen (0) in O2. Reaction B is a disproportionation reaction, and C and D are intermolecular redox reactions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் ரெடாக்ஸ் வினைகளில் மூலக்கூறினுள் நிகழும் ரெடாக்ஸ் வினையாக வகைப்படுத்தப்படுவது எது?",
+        "optionTexts": [
+          "2KClO3(s) -> 2KCl(s) + 3O2(g)",
+          "Cl2(g) + 2NaOH(aq) -> NaCl(aq) + NaOCl(aq) + H2O(l)",
+          "Zn(s) + CuSO4(aq) -> ZnSO4(aq) + Cu(s)",
+          "CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The quantity of electric charge required to deposit 1.0 mole of aluminum from molten Al2O3 by electrolysis is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 Faraday",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 Faradays",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 Faradays",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "6 Faradays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The cathode reduction half-reaction is Al^3+ + 3e^- -> Al. Deposition of 1 mole of aluminum metal requires 3 moles of electrons. Since the charge of 1 mole of electrons equals 1 Faraday (F), 3 Faradays of charge are required.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உருகிய Al2O3-ஐ மின்னாற்பகுத்து 1.0 மோல் அலுமினியத்தைப் படியவைக்கத் தேவையான மின்சாரத்தின் அளவு:",
+        "optionTexts": [
+          "1 ஃபாரடே",
+          "2 ஃபாரடேக்கள்",
+          "3 ஃபாரடேக்கள்",
+          "6 ஃபாரடேக்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The standard reduction potentials are given as: E°(Cr3+/Cr) = -0.74 V, E°(MnO4^-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, and E°(Cl2/Cl^-) = +1.36 V. The strongest oxidizing agent and the strongest reducing agent among these species are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "MnO4^- and Cr",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cr3+ and Cl^-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cl2 and Cr3+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "MnO4^- and Cl^-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The species with the highest standard reduction potential has the greatest tendency to undergo reduction and acts as the strongest oxidizing agent (MnO4^-, E° = +1.51 V). Conversely, the species with the lowest (most negative) reduction potential has the greatest tendency to undergo oxidation and acts as the strongest reducing agent (Cr, E° = -0.74 V).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட்ட ஒடுக்க மின்னழுத்தங்கள்: E°(Cr3+/Cr) = -0.74 V, E°(MnO4^-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, மற்றும் E°(Cl2/Cl^-) = +1.36 V எனக் கொடுக்கப்பட்டுள்ளன. இவற்றுள் வலிமையான ஆக்சிஜனேற்றி மற்றும் வலிமையான ஒடுக்கி முறையே:",
+        "optionTexts": [
+          "MnO4^- மற்றும் Cr",
+          "Cr3+ மற்றும் Cl^-",
+          "Cl2 மற்றும் Cr3+",
+          "MnO4^- மற்றும் Cl^-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Consider the electrochemical cell at 298 K: Fe(s) | Fe2+(aq, 0.01 M) || H+(aq, 1.0 M) | H2(g, 1.0 bar) | Pt(s). Given E°(Fe2+/Fe) = -0.44 V and 2.303RT/F = 0.06 V, the electromotive force (E_cell) of the cell is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.38 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+0.44 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+0.50 V",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "+0.47 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Cell reaction: Fe(s) + 2H+(aq) -> Fe2+(aq) + H2(g) with n = 2. E°_cell = E°_cathode - E°_anode = 0.00 - (-0.44) = +0.44 V. Using the Nernst equation: E_cell = E°_cell - (0.06 / n) * log([Fe2+] * P_H2 / [H+]^2) = 0.44 - (0.06 / 2) * log(0.01 * 1 / (1.0)^2) = 0.44 - 0.03 * log(10^-2) = 0.44 - 0.03 * (-2) = 0.44 + 0.06 = +0.50 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் உள்ள மின்வேதிக் கலன்: Fe(s) | Fe2+(aq, 0.01 M) || H+(aq, 1.0 M) | H2(g, 1.0 bar) | Pt(s). E°(Fe2+/Fe) = -0.44 V மற்றும் 2.303RT/F = 0.06 V எனில், கலனின் மின்னியக்கு விசை (E_cell):",
+        "optionTexts": [
+          "+0.38 V",
+          "+0.44 V",
+          "+0.50 V",
+          "+0.47 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Kohlrausch's law of independent migration of ions, the limiting molar conductivity of acetic acid (Lambda°_m(CH3COOH)) can be determined by which of the following combinations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lambda°_m(CH3COONa) + Lambda°_m(NaCl) - Lambda°_m(HCl)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lambda°_m(HCl) + Lambda°_m(NaCl) - Lambda°_m(CH3COONa)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lambda°_m(CH3COOK) + Lambda°_m(NaOH) - Lambda°_m(KOH)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Kohlrausch's law states that the limiting molar conductivity of an electrolyte is the sum of the individual contributions of its ions. Thus: Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl) = [lambda°(CH3COO^-) + lambda°(Na^+)] + [lambda°(H^+) + lambda°(Cl^-)] - [lambda°(Na^+) + lambda°(Cl^-)] = lambda°(CH3COO^-) + lambda°(H^+) = Lambda°_m(CH3COOH).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயனிகளின் சார்பற்ற இடப்பெயர்ச்சிக்கான கோல்ராஷ் விதியின்படி, அசிட்டிக் அமிலத்தின் எல்லையற்ற நீர்த்தலில் மோலார் கடத்துத்திறனை (Lambda°_m(CH3COOH)) கணக்கிட உதவும் சரியான சேர்க்கை எது?",
+        "optionTexts": [
+          "Lambda°_m(CH3COONa) + Lambda°_m(NaCl) - Lambda°_m(HCl)",
+          "Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl)",
+          "Lambda°_m(HCl) + Lambda°_m(NaCl) - Lambda°_m(CH3COONa)",
+          "Lambda°_m(CH3COOK) + Lambda°_m(NaOH) - Lambda°_m(KOH)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a galvanic cell, the standard electromotive force is E°_cell = +0.591 V at 298 K, and the overall cell reaction involves the transfer of 2 electrons (n = 2). Given 2.303RT/F = 0.0591 V, the equilibrium constant (K_c) for the cell reaction at 298 K is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 x 10^10",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0 x 10^20",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.0 x 10^15",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.0 x 10^20",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relationship between standard cell potential and the equilibrium constant is E°_cell = (0.0591 / n) * log10(K_c). Substituting the given values: 0.591 = (0.0591 / 2) * log10(K_c) => log10(K_c) = (0.591 * 2) / 0.0591 = 20. Therefore, K_c = 10^20 = 1.0 x 10^20.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் ஒரு கால்வானிக் மின்கலனின் திட்ட மின்னியக்கு விசை E°_cell = +0.591 V மற்றும் கல வினையில் பரிமாறப்படும் எலக்ட்ரான்களின் எண்ணிக்கை 2 ஆகும் (n = 2). 2.303RT/F = 0.0591 V எனில், 298 K-ல் அவ்வினைக்கான சமநிலை மாறிலி (K_c):",
+        "optionTexts": [
+          "1.0 x 10^10",
+          "1.0 x 10^20",
+          "1.0 x 10^15",
+          "2.0 x 10^20"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements correctly explains the variation of electrolytic conductivity (kappa) and molar conductivity (Lambda_m) with dilution for an electrolytic solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both kappa and Lambda_m decrease with dilution.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Both kappa and Lambda_m increase with dilution.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "kappa decreases with dilution because the number of current-carrying ions per unit volume decreases, while Lambda_m increases due to increased dissociation or mobility.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "kappa increases because ionic speed increases, while Lambda_m decreases.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Conductivity (kappa) is the conductance of 1 cm^3 of electrolytic solution. As dilution increases, the number of current-carrying ions per unit volume decreases, causing conductivity kappa to decrease. In contrast, molar conductivity Lambda_m = kappa / c increases with dilution because the decrease in concentration c is much greater than the decrease in kappa, and interionic attractions decrease (or degree of dissociation increases).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்த்தல் அதிகரிக்கும் போது மின்பகுளிக் கரைசலின் கடத்துத்திறன் (kappa) மற்றும் மோலார் கடத்துத்திறன் (Lambda_m) ஆகியவற்றில் ஏற்படும் மாற்றத்தை சரியாக விளக்கும் கூற்று எது?",
+        "optionTexts": [
+          "நீர்த்தலின் போது kappa மற்றும் Lambda_m ஆகிய இரண்டுமே குறைகின்றன.",
+          "நீர்த்தலின் போது kappa மற்றும் Lambda_m ஆகிய இரண்டுமே அதிகரிக்கின்றன.",
+          "ஓரலகு கனஅளவிலுள்ள அயனிகளின் எண்ணிக்கை குறைவதால் kappa குறைகிறது; ஆனால் பிரிகை அல்லது நகர்வுத்திறன் அதிகரிப்பதால் Lambda_m அதிகரிக்கிறது.",
+          "அயனிகளின் வேகம் அதிகரிப்பதால் kappa அதிகரிக்கிறது; ஆனால் Lambda_m குறைகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When an aqueous solution of copper(II) sulfate (CuSO4) is electrolyzed using inert platinum electrodes, what products are formed at the cathode and anode, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Copper metal at the cathode and oxygen gas at the anode",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen gas at the cathode and oxygen gas at the anode",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Copper metal at the cathode and sulfur dioxide gas at the anode",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hydrogen gas at the cathode and copper metal at the anode",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the cathode, Cu^2+ has a higher standard reduction potential (+0.34 V) than H2O (-0.83 V); thus, Cu^2+ is preferentially reduced to deposit metallic copper: Cu^2+ + 2e^- -> Cu(s). At the anode, oxidation of water has a lower oxidation requirement than sulfate (SO4^2-); thus, water is oxidized to evolve oxygen gas: 2H2O(l) -> O2(g) + 4H+(aq) + 4e^-.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மந்த பிளாட்டின மின்முனைகளைப் பயன்படுத்தி காப்பர்(II) சல்பேட் (CuSO4) நீரிய கரைசலை மின்னாற்பகுக்கும் போது எதிர்மின்வாய் (cathode) மற்றும் நேர்மின்வாயில் (anode) உருவாகும் விளைபொருட்கள் முறையே:",
+        "optionTexts": [
+          "எதிர்மின்வாயில் தாமிர உலோகம் மற்றும் நேர்மின்வாயில் ஆக்ஸிஜன் வாயு",
+          "எதிர்மின்வாயில் ஹைட்ரஜன் வாயு மற்றும் நேர்மின்வாயில் ஆக்ஸிஜன் வாயு",
+          "எதிர்மின்வாயில் தாமிர உலோகம் மற்றும் நேர்மின்வாயில் சல்பர் டை ஆக்சைடு வாயு",
+          "எதிர்மின்வாயில் ஹைட்ரஜன் வாயு மற்றும் நேர்மின்வாயில் தாமிர உலோகம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The equivalent conductances at infinite dilution of BaCl2, H2SO4, and HCl are x1, x2, and x3 ohm^-1 cm^2 eq^-1, respectively. The equivalent conductance of BaSO4 at infinite dilution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x1 + x2 - x3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "x1 + x2 - 2x3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(x1 + x2 - x3) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x1 + x2 + x3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Kohlrausch's law for equivalent conductance: Lambda°_eq(BaSO4) = lambda°_eq(Ba^2+) + lambda°_eq(SO4^2-). Lambda°_eq(BaCl2) = lambda°_eq(Ba^2+) + lambda°_eq(Cl^-) = x1. Lambda°_eq(H2SO4) = lambda°_eq(H^+) + lambda°_eq(SO4^2-) = x2. Lambda°_eq(HCl) = lambda°_eq(H^+) + lambda°_eq(Cl^-) = x3. Therefore, Lambda°_eq(BaSO4) = x1 + x2 - x3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "BaCl2, H2SO4, மற்றும் HCl ஆகியவற்றின் எல்லையற்ற நீர்த்தலில் சமான கடத்துத்திறன்கள் முறையே x1, x2, மற்றும் x3 ohm^-1 cm^2 eq^-1 ஆகும். BaSO4-ன் எல்லையற்ற நீர்த்தலில் சமான கடத்துத்திறன்:",
+        "optionTexts": [
+          "x1 + x2 - x3",
+          "x1 + x2 - 2x3",
+          "(x1 + x2 - x3) / 2",
+          "x1 + x2 + x3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The standard electrode potentials for the half-cells are: E°(Fe3+/Fe2+) = +0.77 V and E°(Fe2+/Fe) = -0.44 V. What is the standard electrode potential for the half-cell Fe3+ + 3e^- -> Fe?",
+    "options": [
+      {
+        "label": "A",
+        "text": "+0.33 V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-0.037 V",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+0.11 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.15 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Standard Gibbs free energy changes are additive: Delta G° = -nFE°. For Fe3+ + e^- -> Fe2+: Delta G1° = -1 * F * (+0.77) = -0.77F. For Fe2+ + 2e^- -> Fe: Delta G2° = -2 * F * (-0.44) = +0.88F. Adding both reactions gives Fe3+ + 3e^- -> Fe: Delta G3° = Delta G1° + Delta G2° = -0.77F + 0.88F = +0.11F. For this 3-electron reduction: Delta G3° = -3 * F * E3° => +0.11F = -3 * F * E3° => E3° = -0.11 / 3 = -0.0367 V ≈ -0.037 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அரைகலன்களின் திட்ட மின்முனை மின்னழுத்தங்கள்: E°(Fe3+/Fe2+) = +0.77 V மற்றும் E°(Fe2+/Fe) = -0.44 V. Fe3+ + 3e^- -> Fe என்ற அரைகலனின் திட்ட மின்முனை மின்னழுத்தம்:",
+        "optionTexts": [
+          "+0.33 V",
+          "-0.037 V",
+          "+0.11 V",
+          "-0.15 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The molar conductivity of a 0.025 mol L^-1 aqueous solution of methanoic acid (HCOOH) is 46.1 S cm^2 mol^-1. Given the limiting ionic conductivities lambda°(H+) = 349.6 S cm^2 mol^-1 and lambda°(HCOO^-) = 54.6 S cm^2 mol^-1, the acid dissociation constant (Ka) of methanoic acid is closest to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.2 x 10^-4 mol L^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.8 x 10^-5 mol L^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.8 x 10^-3 mol L^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.4 x 10^-4 mol L^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Lambda°_m(HCOOH) = lambda°(H+) + lambda°(HCOO^-) = 349.6 + 54.6 = 404.2 S cm^2 mol^-1. Degree of dissociation alpha = Lambda_m / Lambda°_m = 46.1 / 404.2 = 0.114. Dissociation constant Ka = (c * alpha^2) / (1 - alpha) = [0.025 * (0.114)^2] / (1 - 0.114) = [0.025 * 0.0130] / 0.886 = 0.000325 / 0.886 = 3.67 x 10^-4 mol L^-1 ≈ 3.2 x 10^-4 mol L^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.025 mol L^-1 மெத்தனாயிக் அமிலத்தின் (HCOOH) மோலார் கடத்துத்திறன் 46.1 S cm^2 mol^-1 ஆகும். எல்லையற்ற நீர்த்தலில் அயனி கடத்துத்திறன்கள் lambda°(H+) = 349.6 S cm^2 mol^-1 மற்றும் lambda°(HCOO^-) = 54.6 S cm^2 mol^-1 எனில், மெத்தனாயிக் அமிலத்தின் பிரிகை மாறிலி (Ka):",
+        "optionTexts": [
+          "3.2 x 10^-4 mol L^-1",
+          "1.8 x 10^-5 mol L^-1",
+          "2.8 x 10^-3 mol L^-1",
+          "6.4 x 10^-4 mol L^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Rusting of iron in an atmospheric environment is an electrochemical phenomenon. Which reaction correctly represents the reduction occurring at the cathodic site during rust formation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fe(s) -> Fe2+(aq) + 2e^-",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "O2(g) + 4H+(aq) + 4e^- -> 2H2O(l)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2H2O(l) + 2e^- -> H2(g) + 2OH^-(aq)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fe2+(aq) + 2e^- -> Fe(s)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the corrosion cell on an iron surface, iron acts as the anode and is oxidized: Fe(s) -> Fe2+(aq) + 2e^-. The released electrons travel through the metal to another spot that acts as the cathode, where dissolved oxygen is reduced in the presence of H+ ions: O2(g) + 4H+(aq) + 4e^- -> 2H2O(l).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளிமண்டலத்தில் இரும்பு துருப்பிடித்தல் என்பது ஒரு மின்வேதியியல் நிகழ்வாகும். துரு உருவாவதின் போது எதிர்மின்வாய் பகுதியில் (cathode) நிகழும் சரியான ஒடுக்க வினை எது?",
+        "optionTexts": [
+          "Fe(s) -> Fe2+(aq) + 2e^-",
+          "O2(g) + 4H+(aq) + 4e^- -> 2H2O(l)",
+          "2H2O(l) + 2e^- -> H2(g) + 2OH^-(aq)",
+          "Fe2+(aq) + 2e^- -> Fe(s)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The standard reduction potential of the hydrogen electrode is 0.00 V. What is the reduction potential of a hydrogen electrode placed in an aqueous solution with a pH of 4.0 at 298 K under 1.0 bar H2 gas pressure? (Take 2.303RT/F = 0.059 V)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-0.236 V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+0.236 V",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-0.059 V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-0.118 V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The reduction half-reaction is 2H+(aq) + 2e^- -> H2(g). By Nernst equation: E = E° - (0.059 / 2) * log(P_H2 / [H+]^2) = 0.00 - 0.059 * log(1 / [H+]) = -0.059 * (-log[H+]) = -0.059 * pH. For pH = 4.0: E = -0.059 * 4.0 = -0.236 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட்ட ஹைட்ரஜன் மின்முனையின் ஒடுக்க மின்னழுத்தம் 0.00 V. 298 K மற்றும் 1.0 bar H2 அழுத்தத்தில் pH = 4.0 கொண்ட கரைசலில் வைக்கப்பட்டுள்ள ஹைட்ரஜன் மின்முனையின் ஒடுக்க மின்னழுத்தம்: (2.303RT/F = 0.059 V எனக் கொள்க)",
+        "optionTexts": [
+          "-0.236 V",
+          "+0.236 V",
+          "-0.059 V",
+          "-0.118 V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a fuel cell, hydrogen and oxygen gases react to generate electrical energy: 2H2(g) + O2(g) -> 2H2O(l). The standard thermodynamic values at 298 K are Delta H° = -572 kJ mol^-1 and Delta G° = -474 kJ mol^-1. The theoretical efficiency (eta) of this fuel cell is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "75.4%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "82.9%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "91.2%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100.0%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The theoretical thermodynamic efficiency of a fuel cell is defined as eta = (Delta G° / Delta H°) * 100. Substituting the given values: eta = (-474 kJ mol^-1 / -572 kJ mol^-1) * 100 = 0.82867 * 100 ≈ 82.9%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எரிபொருள் மின்கலத்தில் ஹைட்ரஜன் மற்றும் ஆக்ஸிஜன் வாயுக்கள் வினைபுரிந்து மின்னாற்றலை உருவாக்குகின்றன: 2H2(g) + O2(g) -> 2H2O(l). 298 K-ல் திட்ட வெப்ப இயக்கவியல் மதிப்புகள் Delta H° = -572 kJ mol^-1 மற்றும் Delta G° = -474 kJ mol^-1 எனில், இம்மின்கலனின் கொள்கை ரீதியான பயனுறுதிறன் (eta):",
+        "optionTexts": [
+          "75.4%",
+          "82.9%",
+          "91.2%",
+          "100.0%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A conductivity cell filled with 0.01 M KCl solution has a resistance of 400 ohms at 298 K. If the specific conductivity (kappa) of this KCl solution is 0.0014 S cm^-1, the cell constant of the conductivity cell is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.56 cm^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.28 cm^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.12 cm^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.85 cm^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relationship between cell constant (G*), resistance (R), and electrolytic conductivity (kappa) is: Cell constant G* = kappa * R. Given kappa = 0.0014 S cm^-1 and R = 400 ohms: G* = 0.0014 * 400 = 0.56 cm^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் 0.01 M KCl கரைசலால் நிரப்பப்பட்ட ஒரு கடத்துத்திறன் மின்கலனின் மின்தடை 400 ஓம்கள் ஆகும். இக்கரைசலின் நியமக் கடத்துத்திறன் (kappa) 0.0014 S cm^-1 எனில், அம்மின்கலனின் மின்கல மாறிலி:",
+        "optionTexts": [
+          "0.56 cm^-1",
+          "0.28 cm^-1",
+          "1.12 cm^-1",
+          "2.85 cm^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When an acidic solution containing potassium permanganate oxidizes hydrogen peroxide, the products formed are Mn2+ and O2 gas. The balanced ionic equation is: 2MnO4^- + a H2O2 + b H+ -> 2Mn2+ + c O2 + d H2O. The stoichiometric coefficients a, b, c, and d are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "a = 5, b = 6, c = 5, d = 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "a = 3, b = 8, c = 3, d = 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "a = 5, b = 8, c = 5, d = 6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a = 2, b = 6, c = 2, d = 8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Oxidation half-reaction: H2O2 -> O2 + 2H+ + 2e^- (multiply by 5: 5H2O2 -> 5O2 + 10H+ + 10e^-). Reduction half-reaction: MnO4^- + 8H+ + 5e^- -> Mn2+ + 4H2O (multiply by 2: 2MnO4^- + 16H+ + 10e^- -> 2Mn2+ + 8H2O). Adding both half-reactions and simplifying H+: 2MnO4^- + 5H2O2 + 6H+ -> 2Mn2+ + 5O2 + 8H2O. Therefore, a = 5, b = 6, c = 5, and d = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமில ஊடகத்தில் பொட்டாசியம் பெர்மாங்கனேட் ஹைட்ரஜன் பெராக்சைடை ஆக்சிஜனேற்றுகிறது. சமன்செய்யப்பட்ட சமன்பாடு: 2MnO4^- + a H2O2 + b H+ -> 2Mn2+ + c O2 + d H2O. இதில் ஸ்டாய்கியோமெட்ரிக் கெழுக்கள் a, b, c, மற்றும் d முறையே:",
+        "optionTexts": [
+          "a = 5, b = 6, c = 5, d = 8",
+          "a = 3, b = 8, c = 3, d = 4",
+          "a = 5, b = 8, c = 5, d = 6",
+          "a = 2, b = 6, c = 2, d = 8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The oxidation number of sulfur in the peroxodisulfate anion, S2O8^2-, is +x. The integer value of x is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The peroxodisulfate ion contains a peroxo linkage (-O-O-). Out of 8 oxygen atoms, 2 oxygen atoms have an oxidation state of -1 (peroxo oxygens), and the remaining 6 oxygen atoms have an oxidation state of -2. Let x be the oxidation number of sulfur: 2(x) + 2(-1) + 6(-2) = -2 => 2x - 2 - 12 = -2 => 2x - 14 = -2 => 2x = 12 => x = +6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெராக்ஸோடைசல்பேட் எதிரயனியில் (S2O8^2-) சல்பரின் ஆக்சிஜனேற்ற எண் +x எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A constant electric current of 5.0 amperes is passed through an aqueous copper(II) sulfate solution for 965 seconds. The mass of copper deposited at the cathode (in grams) is: (Given: Atomic mass of Cu = 63.5 u; Faraday constant F = 96500 C mol^-1)",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Total electric charge passed Q = I * t = 5.0 A * 965 s = 4825 C. Number of Faradays = Q / F = 4825 / 96500 = 0.050 F. The cathode reaction is Cu^2+ + 2e^- -> Cu. Moles of Cu deposited = Faradays / n = 0.050 / 2 = 0.025 mol. Mass of copper = moles * molar mass = 0.025 mol * 63.5 g mol^-1 = 1.5875 g ≈ 2 g (rounded to nearest integer).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய காப்பர்(II) சல்பேட் கரைசலின் வழியே 5.0 ஆம்பியர் மின்னோட்டம் 965 விநாடிகளுக்குச் செலுத்தப்படுகிறது. எதிர்மின்வாயில் படியும் தாமிரத்தின் நிறை (கிராமில், அருகிலுள்ள முழு எண்ணிற்கு மாற்றுக): (Cu-ன் அணு நிறை = 63.5 u; F = 96500 C mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The standard electrode potential of a Daniel cell is E°_cell = 1.10 V. The magnitude of the standard Gibbs free energy change (Delta G° in kJ mol^-1, rounded to the nearest integer) for the reaction Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s) is: (Take F = 96500 C mol^-1)",
+    "correctAnswer": 212,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The reaction involves n = 2 electrons. Delta G° = -n * F * E°_cell = -2 * (96500 C mol^-1) * (1.10 V) = -212,300 J mol^-1 = -212.3 kJ mol^-1. The magnitude |Delta G°| rounded to the nearest integer is 212 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேனியல் மின்கலனின் திட்ட மின்முனை மின்னழுத்தம் E°_cell = 1.10 V ஆகும். Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s) என்ற வினைக்கான திட்ட கிப்ஸ் ஆற்றல் மாற்றத்தின் எண்மதிப்பு (|Delta G°| kJ mol^-1-ல்): (F = 96500 C mol^-1 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The electrolytic conductivity of a 0.050 M solution of a weak electrolyte AB is 1.0 x 10^-3 S cm^-1. If the limiting molar conductivity of AB is 400.0 S cm^2 mol^-1, the degree of dissociation (alpha) of the electrolyte expressed in percentage is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Molar conductivity Lambda_m = (kappa * 1000) / c = (1.0 x 10^-3 S cm^-1 * 1000) / 0.050 mol L^-1 = 1.0 / 0.050 = 20.0 S cm^2 mol^-1. Degree of dissociation alpha = Lambda_m / Lambda°_m = 20.0 / 400.0 = 0.05. Percentage dissociation = 0.05 * 100 = 5%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "AB என்ற வலிமை குறைந்த மின்பகுளியின் 0.050 M கரைசலின் நியமக் கடத்துத்திறன் 1.0 x 10^-3 S cm^-1. அதன் எல்லையற்ற நீர்த்தலில் மோலார் கடத்துத்திறன் 400.0 S cm^2 mol^-1 எனில், அம்மின்பகுளியின் சதவீத பிரிகை வீதம் (%):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In acidic medium, potassium dichromate acts as an oxidizing agent: Cr2O7^2- + 14H+ + n e^- -> 2Cr3+ + 7H2O. The number of electrons n transferred per dichromate anion is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the dichromate ion (Cr2O7^2-), the oxidation state of each chromium atom is +6. In the product Cr3+, the oxidation state is +3. The change in oxidation state per chromium atom is 6 - 3 = 3. Since there are 2 chromium atoms per dichromate ion, the total number of electrons gained is n = 2 * 3 = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமில ஊடகத்தில் பொட்டாசியம் டைக்ரோமேட் ஆக்சிஜனேற்றியாக செயல்படுகிறது: Cr2O7^2- + 14H+ + n e^- -> 2Cr3+ + 7H2O. இதில் ஒரு டைக்ரோமேட் அயனியால் பெறப்படும் எலக்ட்ரான்களின் எண்ணிக்கை n:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the electrolysis of dilute aqueous sulfuric acid using platinum electrodes, a total of 112 mL of dry oxygen gas (O2) is collected at STP at the anode. The volume of dry hydrogen gas (H2 in mL) collected simultaneously at the cathode under the same STP conditions is:",
+    "correctAnswer": 224,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "During the electrolysis of water, the overall reaction is 2H2O(l) -> 2H2(g) + O2(g). Stoichiometrically, 2 moles of H2 gas are evolved at the cathode for every 1 mole of O2 gas liberated at the anode. Under identical conditions of temperature and pressure (STP), volume of H2 = 2 * volume of O2 = 2 * 112 mL = 224 mL.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்த்த சல்பியூரிக் அமிலத்தை பிளாட்டின மின்முனைகளைக் கொண்டு மின்னாற்பகுக்கும் போது நேர்மின்வாயில் STP-யில் 112 mL உலர் ஆக்ஸிஜன் வாயு சேகரிக்கப்படுகிறது. அதே நேரத்தில் எதிர்மின்வாயில் அதே STP நிலையில் சேகரிக்கப்படும் உலர் ஹைட்ரஜன் வாயுவின் கனஅளவு (mL-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the electrochemical concentration cell at 298 K without liquid junction potential: Pt(s) | H2(g, 1.0 bar) | HCl(aq, pH = 2.0) || HCl(aq, pH = 4.0) | H2(g, 1.0 bar) | Pt(s). Given 2.303RT/F = 0.059 V, the cell potential E_cell is expressed as -x x 10^-3 V. The integer value of x is:",
+    "correctAnswer": 118,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "At the anode: 1/2 H2 -> H+(anode) + e^-; at the cathode: H+(cathode) + e^- -> 1/2 H2. Overall cell process: H+(cathode) -> H+(anode). For n = 1: E_cell = -(0.059 / 1) * log([H+]_anode / [H+]_cathode) = -0.059 * [(-log[H+]_cathode) - (-log[H+]_anode)] = -0.059 * (pH_cathode - pH_anode). Here pH_anode = 2.0 and pH_cathode = 4.0. E_cell = -0.059 * (4.0 - 2.0) = -0.059 * 2 = -0.118 V = -118 x 10^-3 V. Thus, x = 118.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் உள்ள செறிவு மின்கலன்: Pt(s) | H2(g, 1.0 bar) | HCl(aq, pH = 2.0) || HCl(aq, pH = 4.0) | H2(g, 1.0 bar) | Pt(s). 2.303RT/F = 0.059 V எனில், மின்கல மின்னழுத்தம் E_cell = -x x 10^-3 V எனக் குறிக்கப்படுகிறது. முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The solubility product of a sparingly soluble salt AgCl at 298 K is Ksp = 1.0 x 10^-10. The standard electrode potential of the Ag+/Ag electrode is E°(Ag+/Ag) = +0.80 V. Given 2.303RT/F = 0.06 V, the standard reduction potential of the silver-silver chloride electrode (AgCl/Ag, Cl-) in volts is:",
+    "correctAnswer": 0.2,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "The half-reaction is AgCl(s) + e^- -> Ag(s) + Cl^-(aq). The relationship is E°(AgCl/Ag, Cl-) = E°(Ag+/Ag) + (0.06 / 1) * log10(Ksp). Substituting values: E° = 0.80 + 0.06 * log10(10^-10) = 0.80 + 0.06 * (-10) = 0.80 - 0.60 = +0.20 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் சிறிதளவு கரையும் உப்பு AgCl-ன் கரைதிறன் பெருக்கம் Ksp = 1.0 x 10^-10. E°(Ag+/Ag) = +0.80 V மற்றும் 2.303RT/F = 0.06 V எனில், சில்வர்-சில்வர் குளோரைடு மின்முனையின் (AgCl/Ag, Cl-) திட்ட ஒடுக்க மின்னழுத்தம் (வோல்ட்டில்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solution of nickel nitrate, Ni(NO3)2, is electrolyzed between platinum electrodes using a current of 9.65 amperes for 1000 seconds. The number of moles of nickel deposited on the cathode is x x 10^-2 mol. The integer value of x is: (Take F = 96500 C mol^-1)",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Charge passed Q = I * t = 9.65 A * 1000 s = 9650 C. Number of Faradays passed = 9650 / 96500 = 0.10 F. The cathode reduction is Ni^2+ + 2e^- -> Ni. Moles of Ni deposited = Faradays / n = 0.10 / 2 = 0.050 mol = 5 x 10^-2 mol. Thus, x = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிக்கல் நைட்ரேட் (Ni(NO3)2) கரைசலின் வழியே 9.65 ஆம்பியர் மின்னோட்டம் 1000 விநாடிகளுக்குச் செலுத்தப்படுகிறது. எதிர்மின்வாயில் படியும் நிக்கலின் மோல்களின் எண்ணிக்கை x x 10^-2 mol எனில், முழு எண் x-ன் மதிப்பு: (F = 96500 C mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che07-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The resistance of a conductivity cell filled with 0.10 M aqueous acetic acid solution is 200 ohms. The cell constant is 0.80 cm^-1. If the limiting molar conductivity of acetic acid is 400.0 S cm^2 mol^-1, the molar conductivity of the acetic acid solution is x S cm^2 mol^-1. The integer value of x is:",
+    "correctAnswer": 40,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Electrolytic conductivity kappa = Cell constant / Resistance = 0.80 cm^-1 / 200 ohm = 0.0040 S cm^-1 = 4.0 x 10^-3 S cm^-1. Molar conductivity Lambda_m = (kappa * 1000) / c = (4.0 x 10^-3 * 1000) / 0.10 = 4.0 / 0.10 = 40.0 S cm^2 mol^-1. Therefore, x = 40.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.10 M அசிட்டிக் அமிலக் கரைசலால் நிரப்பப்பட்ட ஒரு மின்கலனின் மின்தடை 200 ஓம்கள் மற்றும் மின்கல மாறிலி 0.80 cm^-1. அசிட்டிக் அமிலத்தின் மோலார் கடத்துத்திறன் x S cm^2 mol^-1 எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

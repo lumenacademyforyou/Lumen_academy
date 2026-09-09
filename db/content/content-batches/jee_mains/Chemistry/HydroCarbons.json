@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che15-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An alkane with an odd number of carbon atoms, such as propane (CH3CH2CH3), is prepared in very poor yield by the Wurtz reaction primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propane decomposes rapidly in the presence of dry ether solvent.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Using a mixture of two different alkyl halides (CH3X and CH3CH2X) yields a mixture of three different alkanes (ethane, propane, and butane) whose boiling points are very close and difficult to separate.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Sodium metal reacts violently with propane gas to form sodium acetylide.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The activation energy for coupling methyl and ethyl radicals is exceptionally high.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When two different alkyl halides (e.g., CH3X and CH3CH2X) are reacted with sodium in dry ether to synthesize an unsymmetrical alkane with an odd number of carbons (propane), cross-coupling occurs alongside self-coupling. This results in a mixture of three alkanes: ethane (CH3-CH3), propane (CH3-CH2CH3), and butane (CH3CH2-CH2CH3). Because their boiling points are close, isolating pure propane is extremely difficult, making the yield poor.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரோப்பேன் (CH3CH2CH3) போன்ற ஒற்றைப்படை எண்ணிக்கையிலான கார்பன் அணுக்களைக் கொண்ட ஓர் ஆல்கேனை வுர்ட்ஸ் வினை மூலம் தயாரிக்கும் போது மிகக் குறைந்த விளைச்சல் கிடைப்பதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "உலர் ஈதர் கரைப்பானின் முன்னிலையில் புரோப்பேன் வேகமாக சிதைவடைகிறது.",
+          "இரண்டு வெவ்வேறு ஆல்கைல் ஹாலைடுகளின் கலவையைப் (CH3X மற்றும் CH3CH2X) பயன்படுத்தும் போது மிக நெருக்கமான கொதிநிலைகளைக் கொண்ட மூன்று வெவ்வேறு ஆல்கேன்களின் (ஈத்தேன், புரோப்பேன், பியூட்டேன்) கலவை கிடைத்து அவற்றைப் பிரிப்பது கடினமாகிறது.",
+          "உலோக சோடியம் புரோப்பேன் வாயுவுடன் தீவிரமாக வினைபுரிந்து சோடியம் அசிட்டலைடை உருவாக்குகிறது.",
+          "மெத்தில் மற்றும் எத்தில் தீவிரவாதிகளை இணைப்பதற்கான கிளர்வுறு ஆற்றல் மிக அதிகமாக உள்ளது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When 2-methylbut-2-ene is subjected to reductive ozonolysis with O3 followed by Zn/H2O, the products formed are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two molecules of acetone",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Acetone (propan-2-one) and acetaldehyde (ethanal)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Formaldehyde and butanone",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Acetic acid and acetone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Reductive ozonolysis cleaves the carbon-carbon double bond cleanly. The structure of 2-methylbut-2-ene is (CH3)2C=CH-CH3. Cleaving the double bond and capping each carbon with a carbonyl oxygen gives acetone ((CH3)2C=O) and acetaldehyde (CH3-CHO). Zn dust prevents the oxidation of acetaldehyde to acetic acid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-மெத்தில்பியூட்-2-ஈன் சேர்மமானது O3 மற்றும் Zn/H2O முன்னிலையில் ஒடுக்க ஓசோனாற்பகுப்பிற்கு உட்படுத்தப்படும் போது உருவாகும் விளைபொருட்கள்:",
+        "optionTexts": [
+          "இரண்டு மூலக்கூறுகள் அசிட்டோன்",
+          "அசிட்டோன் (புரோப்பன்-2-ஒன்) மற்றும் அசிட்டால்டிஹைடு (எத்தனால்)",
+          "பார்மால்டிஹைடு மற்றும் பியூட்டனோன்",
+          "அசிட்டிக் அமிலம் மற்றும் அசிட்டோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkynes reacts with Tollens' reagent (ammoniacal AgNO3) to form a white precipitate of silver acetylide?",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-2-yne",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hex-3-yne",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pent-2-yne",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "But-1-yne",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Terminal alkynes (containing a -C#C-H unit) possess acidic sp-hybridized terminal hydrogen atoms (pK_a ~ 25). They react with Tollens' reagent [Ag(NH3)2]+ to form insoluble silver acetylides as white precipitates. But-1-yne (CH3CH2-C#C-H) is a terminal alkyne and gives this positive test. But-2-yne, hex-3-yne, and pent-2-yne are internal alkynes and lack acidic acetylenic protons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டாலன்ஸ் காரணியுடன் (அம்மோனியா கலந்த AgNO3) வினைபுரிந்து சில்வர் அசிட்டலைடின் வெண்மையான வீழ்படிவைத் தரும் ஆல்கைன் எது?",
+        "optionTexts": [
+          "பியூட்-2-ஐன்",
+          "ஹெக்ஸ்-3-ஐன்",
+          "பென்ட்-2-ஐன்",
+          "பியூட்-1-ஐன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the laboratory preparation of methane, solid anhydrous sodium acetate is heated strongly with soda lime (NaOH + CaO). The primary role of calcium oxide (CaO) in soda lime is to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Catalyze the decarboxylation of sodium acetate.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Keep NaOH dry due to its hygroscopic nature and raise the fusion temperature while preventing glass corrosion.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Act as an oxidizing agent to oxidize methane into methanol.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Absorb methane gas as it is formed.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the decarboxylation reaction CH3COONa + NaOH --(CaO, heat)--> CH4 + Na2CO3, sodium hydroxide is highly deliquescent. Calcium oxide (CaO) acts as a drying agent to keep the mixture dry, reduces the hygroscopic nature of NaOH, and raises the fusion temperature, which prevents the strongly caustic molten NaOH from attacking and corroding the glass test tube.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சோடா சுண்ணாம்பு (NaOH + CaO) மற்றும் நீரற்ற சோடியம் அசிட்டேட்டைச் சூடுபடுத்தி மீத்தேன் தயாரிக்கும் ஆய்வக வினையில் கால்சியம் ஆக்சைடின் (CaO) முதன்மைப் பணி என்ன?",
+        "optionTexts": [
+          "சோடியம் அசிட்டேட்டின் கார்பாக்சில் நீக்க வினையை வினையூக்குவது.",
+          "நீருறிஞ்சும் தன்மை கொண்ட NaOH-ஐ உலர்ந்த நிலையில் வைத்திருப்பதுடன் உருகு வெப்பநிலையை உயர்த்தி கண்ணாடிக் குழாய் அரிக்கப்படுவதைத் தடுப்பது.",
+          "மீத்தேனை மெத்தனாலாக ஆக்சிஜனேற்றும் ஆக்சிஜனேற்றியாகச் செயல்படுவது.",
+          "உருவாகும் மீத்தேன் வாயுவை உறிஞ்சுவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When 2-bromobutane is heated with alcoholic potassium hydroxide (alc. KOH), the major alkene product obtained is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-1-ene (Hofmann product)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "But-2-ene (Saytzeff product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2-Methylprop-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butan-2-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dehydrohalogenation of 2-bromobutane with a small, unhindered base like alcoholic KOH proceeds via an E2 mechanism following Saytzeff's (Zaitsev's) rule: elimination of hydrogen occurs preferentially from the beta-carbon with fewer hydrogen atoms to yield the more substituted, thermodynamically more stable alkene. Thus, but-2-ene (predominantly trans-but-2-ene, ~80%) is the major product, while but-1-ene (~20%) is minor.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-புரோமோபியூட்டேன் ஆல்கஹால் கலந்த பொட்டாசியம் ஹைட்ராக்சைடுடன் (alc. KOH) சூடுபடுத்தப்படும் போது பெறப்படும் முதன்மை ஆல்கீன் விளைபொருள்:",
+        "optionTexts": [
+          "பியூட்-1-ஈன் (ஹாஃப்மன் விளைபொருள்)",
+          "பியூட்-2-ஈன் (செய்ட்ஸெஃப் விளைபொருள்)",
+          "2-மெத்தில்புரோப்-1-ஈன்",
+          "பியூட்டேன்-2-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When propyne (CH3-C#CH) is passed through dilute sulfuric acid at 333 K in the presence of mercuric sulfate (HgSO4) catalyst, the final stable carbonyl product obtained is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propanal (CH3CH2CHO)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propanoic acid (CH3CH2COOH)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetone / Propanone (CH3COCH3)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Allyl alcohol (CH2=CH-CH2OH)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hydration of alkynes using Kucherov's reaction (aqueous H2SO4 + HgSO4 at 333 K) follows Markovnikov's rule. Electrophilic addition of H2O to propyne (CH3-C#CH) forms an unstable intermediate enol, prop-1-en-2-ol: CH3-C(OH)=CH2. This enol undergoes rapid keto-enol tautomerism to yield acetone (propanone, CH3COCH3) as the stable final product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெர்குரிக் சல்பேட் (HgSO4) வினையூக்கியின் முன்னிலையில் 333 K-ல் புரோப்பைன் (CH3-C#CH) நீர்த்த கந்தக அமிலத்துடன் வினைபுரியும் போது கிடைக்கும் நிலையான கார்பனைல் விளைபொருள் எது?",
+        "optionTexts": [
+          "புரோப்பனல் (CH3CH2CHO)",
+          "புரோப்பனாயிக் அமிலம் (CH3CH2COOH)",
+          "அசிட்டோன் / புரோப்பனோன் (CH3COCH3)",
+          "அல்லைல் ஆல்கஹால் (CH2=CH-CH2OH)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The addition of hydrogen bromide (HBr) to propene in the presence of benzoyl peroxide yields 1-bromopropane as the major product (peroxide/Kharasch effect). Under identical conditions, adding hydrogen chloride (HCl) or hydrogen iodide (HI) does NOT show the peroxide effect and yields 2-halopropanes. This difference occurs because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "HCl and HI are strong gases that decompose peroxides instantaneously.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "For HCl, the attack of the chlorine radical on the double bond is endothermic; for HI, the H-I bond is weak but the addition of the iodine radical is endothermic and iodine radicals readily dimerize into I2.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Chlorine radicals are too bulky to attack the terminal carbon of propene.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HI undergoes homolytic cleavage so slowly that only ionic addition takes place.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a free radical chain addition to proceed, both propagation steps must be exothermic: (1) addition of halogen radical to alkene, and (2) abstraction of hydrogen from HX by the carbon radical. For HBr, both propagation steps are exothermic. For HCl, the H-Cl bond is very strong (~431 kJ mol^-1), making step 2 endothermic. For HI, step 1 is endothermic because the C-I bond formed is very weak, and iodine radicals preferentially combine to form I2 molecules. Therefore, only HBr exhibits the peroxide effect.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சாயில் பெராக்சைடு முன்னிலையில் புரோப்பீனுடன் HBr சேரும்போது 1-புரோமோபுரோப்பேன் கிடைக்கிறது (பெராக்சைடு விளைவு). ஆனால் இதே நிபந்தனைகளில் HCl அல்லது HI பெராக்சைடு விளைவைக் காட்டாமல் 2-ஹேலோபுரோப்பேன்களைத் தருவதற்கான காரணம்:",
+        "optionTexts": [
+          "HCl மற்றும் HI ஆகியவை பெராக்சைடுகளை உடனடியாகச் சிதைத்துவிடும் வலிமையான வாயுக்களாகும்.",
+          "HCl-ல் ஆல்கீன் மீது குளோரின் தீவிரவாதியின் தாக்குதல் வெப்ப ஏற்பு வினையாகும்; HI-ல் H-I பிணைப்பு பலவீனமாக இருந்தாலும் அயோடின் தீவிரவாதியின் சேர்க்கை வெப்ப ஏற்பு வினையாக அமைவதுடன் அயோடின் தீவிரவாதிகள் தங்களுக்குள் இணைந்து I2 ஆக மாறுகின்றன.",
+          "குளோரின் தீவிரவாதிகள் அதிக உருவளவு கொண்டவை என்பதால் முனை கார்பனைத் தாக்க முடிவதில்லை.",
+          "HI சீரான பிளவிற்கு மிக மெதுவாக உட்படுவதால் அயனி சேர்க்கை மட்டுமே நிகழ்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Hydroboration-oxidation of propene with diborane ((BH3)2) followed by treatment with alkaline hydrogen peroxide (H2O2 / OH-) produces:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propan-2-ol as the major product via syn-addition with net anti-Markovnikov hydration.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Propan-1-ol as the major product via syn-addition with net anti-Markovnikov hydration.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Propane-1,2-diol via anti-dihydroxylation.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propan-1-ol via an intermediate carbocation rearrangement.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hydroboration of propene involves a concerted, four-centered cyclic transition state where boron attaches to the less hindered terminal carbon (anti-Markovnikov regioselectivity) and hydrogen attaches to the adjacent carbon from the same face (syn-stereospecificity). Subsequent oxidation and hydrolysis with alkaline H2O2 replaces the C-B bond with a C-OH bond with complete retention of configuration, yielding propan-1-ol without any carbocation intermediate or rearrangement.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டைபோரேன் ((BH3)2) மற்றும் காரத்தன்மை கொண்ட H2O2 / OH- கொண்டு புரோப்பீனை ஹைட்ரோபோரோனேற்றம்-ஆக்சிஜனேற்றம் செய்யும் போது கிடைக்கும் விளைபொருள்:",
+        "optionTexts": [
+          "சின்-சேர்க்கை மற்றும் நிகர ஆண்டி-மார்கோவ்னிகாவ் நீரேற்றம் மூலம் முதன்மை விளைபொருளாக புரோப்பன்-2-ஆல்.",
+          "சின்-சேர்க்கை மற்றும் நிகர ஆண்டி-மார்கோவ்னிகாவ் நீரேற்றம் மூலம் முதன்மை விளைபொருளாக புரோப்பன்-1-ஆல்.",
+          "ஆண்டி-டைஹைட்ராக்சிலேற்றம் மூலம் புரோப்பேன்-1,2-டையால்.",
+          "கார்பன் நேர்அயனி மறுசீரமைப்பு மூலம் புரோப்பன்-1-ஆல்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Benzene undergoes nitration when heated with a mixture of concentrated nitric acid and concentrated sulfuric acid (nitrating mixture). The active electrophilic attacking species generated in this mixture is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitronium ion (NO2+)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nitrosonium ion (NO+)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nitrate ion (NO3-)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrous acid (HNO2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the nitrating mixture, concentrated sulfuric acid acts as a Bronsted acid and protonates the nitric acid molecule: HNO3 + 2H2SO4 <=> NO2+ + H3O+ + 2HSO4-. The protonated nitric acid loses water to produce the linear, reactive nitronium ion (NO2+), which serves as the active electrophile that attacks the aromatic pi-electron system of benzene.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர் நைட்ரிக் அமிலம் மற்றும் அடர் கந்தக அமிலக் கலவையுடன் சூடுபடுத்தப்படும் போது பென்சீன் நைட்ரோவாக்கமடைகிறது. இக்கலவையில் உருவாகும் வினையுறு எலக்ட்ரான் கவர் காரணி எது?",
+        "optionTexts": [
+          "நைட்ரோனியம் அயனி (NO2+)",
+          "நைட்ரோசோனியம் அயனி (NO+)",
+          "நைட்ரேட் அயனி (NO3-)",
+          "நைட்ரஸ் அமிலம் (HNO2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the stereoselective reduction of but-2-yne to but-2-ene, which reagents produce trans-but-2-ene and cis-but-2-ene, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Na in liquid NH3 for trans-but-2-ene, and H2 over Pd/CaCO3 (Lindlar's catalyst) for cis-but-2-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lindlar's catalyst for trans-but-2-ene, and Birch reduction for cis-but-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "H2 over Raney Ni for trans-but-2-ene, and Na in liquid NH3 for cis-but-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zn/HCl for trans-but-2-ene, and H2/Pt for cis-but-2-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Reduction of an internal alkyne with sodium or lithium in liquid ammonia (Birch reduction) proceeds via anti-addition through a radical anion intermediate, yielding the trans-alkene (trans-but-2-ene). Partial catalytic hydrogenation using Lindlar's catalyst (palladium supported on CaCO3 poisoned with quinoline or lead acetate) involves syn-addition of hydrogen atoms from the metallic catalyst surface, yielding the cis-alkene (cis-but-2-ene).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பியூட்-2-ஐன் சேர்மத்தை பியூட்-2-ஈனாக ஸ்டீரியோசெலக்டிவ் ஒடுக்கம் செய்யும் போது trans-பியூட்-2-ஈன் மற்றும் cis-பியூட்-2-ஈன் ஆகியவற்றைத் தரும் வினைக் காரணிகள் முறையே:",
+        "optionTexts": [
+          "trans-பியூட்-2-ஈனுக்கு திரவ NH3-ல் Na; cis-பியூட்-2-ஈனுக்கு Pd/CaCO3 மீது H2 (லிண்ட்லர் வினையூக்கி)",
+          "trans-பியூட்-2-ஈனுக்கு லிண்ட்லர் வினையூக்கி; cis-பியூட்-2-ஈனுக்கு பிர்ச் ஒடுக்கம்",
+          "trans-பியூட்-2-ஈனுக்கு ரானி Ni மீது H2; cis-பியூட்-2-ஈனுக்கு திரவ NH3-ல் Na",
+          "trans-பியூட்-2-ஈனுக்கு Zn/HCl; cis-பியூட்-2-ஈனுக்கு H2/Pt"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Chlorobenzene is synthesized by reacting benzene with chlorine gas in the dark in the presence of anhydrous FeCl3. The specific function of anhydrous FeCl3 is to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Act as a Lewis base to donate electrons to chlorine.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Act as a Lewis acid to polarize the Cl-Cl bond and generate the chloronium ion electrophile (Cl+).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Absorb the evolved HCl gas.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Initiate a free-radical chain reaction.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the electrophilic aromatic chlorination of benzene, anhydrous iron(III) chloride (FeCl3) acts as a Lewis acid halogen carrier. It coordinates to one of the chlorine atoms of Cl2, heterolytically polarizing the Cl-Cl bond: Cl2 + FeCl3 <=> [Cl···Cl···FeCl3] <=> Cl+ + [FeCl4]-. This generates the electrophilic chloronium species (Cl+) that attacks the benzene ring.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரற்ற FeCl3 முன்னிலையில் இருளில் பென்சீன் குளோரின் வாயுவுடன் வினைபுரிந்து குளோரோபென்சீனை உருவாக்குகிறது. இதில் நீரற்ற FeCl3-ன் குறிப்பிட்ட பணி என்ன?",
+        "optionTexts": [
+          "லூயிஸ் காரமாகச் செயல்பட்டு குளோரினுக்கு எலக்ட்ரான்களை வழங்குவது.",
+          "லூயிஸ் அமிலமாகச் செயல்பட்டு Cl-Cl பிணைப்பை முனைவுறச் செய்து குளோரோனியம் அயனி (Cl+) என்ற எலக்ட்ரான் கவர் காரணியை உருவாக்குவது.",
+          "வெளியாகும் HCl வாயுவை உறிஞ்சுவது.",
+          "ஒரு தனி தீவிரவாத சங்கிலி வினையைத் தொடங்குவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1-chloropropane is reacted with benzene in the presence of anhydrous AlCl3 at room temperature, the major alkylated product obtained is isopropylbenzene (cumene) rather than n-propylbenzene. This occurs primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Chloropropane undergoes elimination to propene before reacting.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The primary propyl carbocation (CH3CH2CH2+) rearranges via a 1,2-hydride shift into a thermodynamically more stable secondary isopropyl carbocation ((CH3)2CH+).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Benzene reacts exclusively with tertiary halides.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Anhydrous AlCl3 selectively hydrolyzes primary alkyl halides.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In Friedel-Crafts alkylation, 1-chloropropane reacts with anhydrous AlCl3 to initially generate an incipient 1° carbocation-complex: CH3CH2CH2+···AlCl4-. The primary propyl carbocation readily undergoes an intramolecular 1,2-hydride shift (H- migration) to form the more stable secondary carbocation: CH3CH2CH2+ -> (CH3)2CH+. Electrophilic attack of this secondary isopropyl carbocation on benzene produces isopropylbenzene (cumene) as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரற்ற AlCl3 முன்னிலையில் அறை வெப்பநிலையில் 1-குளோரோபுரோப்பேன் பென்சீனுடன் வினைபுரியும் போது n-புரோப்பைல்பென்சீனுக்குப் பதிலாக ஐசோபுரோப்பைல்பென்சீன் (கியூமின்) முதன்மை விளைபொருளாகக் கிடைப்பதன் காரணம்:",
+        "optionTexts": [
+          "1-குளோரோபுரோப்பேன் வினைபுரிவதற்கு முன் நீக்க வினைக்கு உட்பட்டு புரோப்பீனாக மாறுகிறது.",
+          "ஓரிணைய புரோப்பைல் கார்பன் நேர்அயனி (CH3CH2CH2+) 1,2-ஹைட்ரைடு நகர்வு மூலம் அதிக நிலைப்புத்தன்மை கொண்ட ஈரிணைய ஐசோபுரோப்பைல் கார்பன் நேர்அயனியாக ((CH3)2CH+) மறுசீரமைப்படைகிறது.",
+          "பென்சீன் மூவிணைய ஹாலைடுகளுடன் மட்டுமே வினைபுரியும்.",
+          "நீரற்ற AlCl3 ஓரிணைய ஆல்கைல் ஹாலைடுகளை மட்டுமே தேர்ந்தெடுக்கப்பட்ட முறையில் நீராற்பகுக்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Electrophilic aromatic substitution of toluene with a nitrating mixture produces ortho- and para-nitrotoluene as major products, whereas nitration of nitrobenzene yields meta-dinitrobenzene. This directional difference is attributed to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-CH3 activates the ring and directs substitution to ortho/para positions via +I and hyperconjugation, whereas -NO2 deactivates the ring via -M and -I effects, directing to the meta position.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-CH3 is a strong -I group, while -NO2 is a strong +M group.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Steric hindrance prevents substitution at the meta position of toluene.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Toluene is an anti-aromatic hydrocarbon, while nitrobenzene is fully aromatic.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The methyl group (-CH3) in toluene donates electron density into the benzene ring through hyperconjugation and inductive effect (+I), increasing electron density selectively at the ortho and para positions, making it an activating, ortho/para-directing group. The nitro group (-NO2) is strongly electron-withdrawing through resonance (-M) and inductive (-I) effects; it deactivates the ring, withdrawing electron density from the ortho and para positions so that the meta position remains relatively less deactivated.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டொலுவீன் நைட்ரோவாக்கமடையும் போது ஆர்த்தோ- மற்றும் பாரா-நைட்ரோடொலுவீனை முதன்மை விளைபொருளாகத் தருகிறது; ஆனால் நைட்ரோபென்சீன் நைட்ரோவாக்கமடையும் போது மெட்டா-டைநைட்ரோபென்சீனைத் தருகிறது. இத்திசைப்போக்கு வேறுபாட்டிற்குக் காரணம்:",
+        "optionTexts": [
+          "-CH3 தொகுதியானது வளையத்தைக் கிளர்வுறச் செய்து +I மற்றும் ஹைப்பர்கான்ஜுகேஷன் மூலம் ஆர்த்தோ/பாரா நிலைகளுக்கு வழிநடத்துகிறது; -NO2 தொகுதியானது -M மற்றும் -I விளைவுகளால் வளையத்தின் கிளர்வை நீக்கி மெட்டா நிலைக்கு வழிநடத்துகிறது.",
+          "-CH3 ஒரு வலிமையான -I தொகுதி, மற்றும் -NO2 ஒரு வலிமையான +M தொகுதி.",
+          "புறவெளித் தடையானது டொலுவீனின் மெட்டா நிலையில் பதிலீடு ஏற்படுவதைத் தடுக்கிறது.",
+          "டொலுவீன் ஓர் எதிர்-அரோமேட்டிக் சேர்மம், ஆனால் நைட்ரோபென்சீன் முழுமையான அரோமேட்டிக் சேர்மம்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 3,3-dimethylbut-1-ene is treated with aqueous dilute sulfuric acid (H2SO4 / H2O), the major alcohol formed after rearrangement is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3,3-Dimethylbutan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3,3-Dimethylbutan-1-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2,3-Dimethylbutan-2-ol",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2,3-Dimethylbutan-1-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Protonation of 3,3-dimethylbut-1-ene ((CH3)3C-CH=CH2) by H+ forms a secondary carbocation at C2: (CH3)3C-C+H-CH3. To achieve greater thermodynamic stability, this carbocation undergoes a 1,2-methide shift (-CH3: migration) from C3 to C2, forming the more stable tertiary carbocation: (CH3)2C+-CH(CH3)2. Nucleophilic attack of water on this tertiary carbocation followed by deprotonation yields 2,3-dimethylbutan-2-ol as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3,3-டைமெத்தில்பியூட்-1-ஈன் நீர்த்த கந்தக அமிலத்துடன் (H2SO4 / H2O) வினைபுரியும் போது மறுசீரமைப்பிற்குப் பிறகு உருவாகும் முதன்மை ஆல்கஹால் விளைபொருள்:",
+        "optionTexts": [
+          "3,3-டைமெத்தில்பியூட்டேன்-2-ஆல்",
+          "3,3-டைமெத்தில்பியூட்டேன்-1-ஆல்",
+          "2,3-டைமெத்தில்பியூட்டேன்-2-ஆல்",
+          "2,3-டைமெத்தில்பியூட்டேன்-1-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1-methylcyclohexene is treated with cold dilute alkaline potassium permanganate solution (Baeyer's reagent), the product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "trans-1-Methylcyclohexane-1,2-diol via anti-addition",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "cis-1-Methylcyclohexane-1,2-diol via syn-addition",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6-Oxoheptanoic acid via oxidative cleavage",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Methylcyclohexanol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Baeyer's reagent (cold, dilute, neutral or alkaline KMnO4) reacts with alkenes through a cyclic manganate ester intermediate that bridges both carbon atoms of the double bond from the same face. Hydrolysis of this cyclic ester cleaves the Mn-O bonds without inverting the configuration, delivering two hydroxyl groups from the same face (syn-dihydroxylation). Thus, 1-methylcyclohexene produces cis-1-methylcyclohexane-1,2-diol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1-மெத்தில்சைக்ளோஹெக்சீன் குளிர்ந்த கார பொட்டாசியம் பெர்மாங்கனேட் கரைசலுடன் (பேயரின் காரணி) வினைபுரியும் போது கிடைக்கும் விளைபொருள்:",
+        "optionTexts": [
+          "ஆண்டி-சேர்க்கை மூலம் trans-1-மெத்தில்சைக்ளோஹெக்சேன்-1,2-டையால்",
+          "சின்-சேர்க்கை மூலம் cis-1-மெத்தில்சைக்ளோஹெக்சேன்-1,2-டையால்",
+          "ஆக்சிஜனேற்ற பிளவு மூலம் 6-ஆக்ஸோஹெப்டனாயிக் அமிலம்",
+          "1-மெத்தில்சைக்ளோஹெக்சனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When acetylene (ethyne, C2H2) is passed through a red-hot iron tube at 873 K, it undergoes cyclic polymerization to produce:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cyclooctatetraene (C8H8)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Polyacetylene polymer",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzene (C6H6)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Toluene (C7H8)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When ethyne gas is passed through a red-hot iron or copper tube at 873 K, three molecules of ethyne undergo cyclic trimerization to yield aromatic benzene: 3HC#CH --(red-hot Fe, 873 K)--> C6H6. If propyne is used under similar conditions, 1,3,5-trimethylbenzene (mesitylene) is formed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அசிட்டிலீன் (ஈத்தைன், C2H2) 873 K வெப்பநிலையில் செஞ்சூடான இரும்புக் குழாயின் வழியே செலுத்தப்படும் போது, வளைய பலபடியாக்கல் மூலம் எதனை உருவாக்குகிறது?",
+        "optionTexts": [
+          "சைக்ளோஆக்டாடெட்ராயீன் (C8H8)",
+          "பாலிஅசிட்டிலீன் பலபடி",
+          "பென்சீன் (C6H6)",
+          "டொலுவீன் (C7H8)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Oxymercuration-demercuration of an alkene is a two-step sequence: (1) Hg(OAc)2, H2O; (2) NaBH4. When 3,3-dimethylbut-1-ene undergoes oxymercuration-demercuration, the major product is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3,3-Dimethylbutan-2-ol without any skeletal rearrangement",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2,3-Dimethylbutan-2-ol via a 1,2-methide shift",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3,3-Dimethylbutan-1-ol via anti-Markovnikov addition",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2,3-Dimethylbutan-1-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Oxymercuration proceeds through a bridged, cyclic mercurinium ion intermediate rather than an open carbocation. Because an open carbocation is not generated, skeletal rearrangements (such as 1,2-hydride or 1,2-methide shifts) do not occur. Water attacks the more substituted carbon of the three-membered cyclic intermediate, and subsequent reduction with NaBH4 yields the unrearranged Markovnikov alcohol: 3,3-dimethylbutan-2-ol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3,3-டைமெத்தில்பியூட்-1-ஈன் சேர்மமானது ஆக்ஸிமெர்குரேஷன்-டிமெர்குரேஷன் ((1) Hg(OAc)2, H2O; (2) NaBH4) வினைக்கு உட்படுத்தப்படும் போது கிடைக்கும் முதன்மை விளைபொருள்:",
+        "optionTexts": [
+          "கட்டமைப்பு மறுசீரமைப்பு ஏதுமின்றி 3,3-டைமெத்தில்பியூட்டேன்-2-ஆல்",
+          "1,2-மெத்தைடு நகர்வு மூலம் 2,3-டைமெத்தில்பியூட்டேன்-2-ஆல்",
+          "ஆண்டி-மார்கோவ்னிகாவ் சேர்க்கை மூலம் 3,3-டைமெத்தில்பியூட்டேன்-1-ஆல்",
+          "2,3-டைமெத்தில்பியூட்டேன்-1-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Halogenation of alkanes in the presence of light proceeds by a free-radical chain mechanism. Comparing the chlorination and bromination of 2-methylpropane (isobutane):",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorination is highly selective for the tertiary halide, whereas bromination gives predominantly the primary halide.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bromination is exceptionally regioselective, giving >99% 2-bromo-2-methylpropane (tertiary halide), whereas chlorination is less selective, yielding significant amounts of both 1-chloro-2-methylpropane (64%) and 2-chloro-2-methylpropane (36%).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Both chlorination and bromination yield exclusively 100% tertiary halides.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bromination is exothermic and faster than chlorination in the chain-propagation steps.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the Hammond postulate, bromination is endothermic in the hydrogen abstraction step; its transition state occurs late and closely resembles the fully formed carboradical intermediate. Consequently, bromination is governed by the difference in stability between 3° and 1° radicals (reactivity ratio 3° : 2° : 1° ≈ 1600 : 82 : 1), making bromination highly regioselective (>99% tertiary bromide). Chlorination is exothermic in the propagation step with an early transition state (reactivity ratio 3° : 2° : 1° ≈ 5.0 : 3.8 : 1), so statistical factors dominate, producing mostly 1-chloro-2-methylpropane (64%) and only 36% tertiary chloride.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளியின் முன்னிலையில் 2-மெத்தில்புரோப்பேனை (ஐசோபியூட்டேன்) குளோரினேற்றம் மற்றும் புரோமினேற்றம் செய்யும் போது நிகழும் விளைபொருள் பகிர்வு குறித்த சரியான விளக்கம்:",
+        "optionTexts": [
+          "குளோரினேற்றம் மூவிணைய ஹாலைடுக்கு அதிக தேர்வைக் காட்டுகிறது; புரோமினேற்றம் ஓரிணைய ஹாலைடை மட்டுமே முதன்மையாகத் தருகிறது.",
+          "புரோமினேற்றம் மிக அதிக தேர்வுத்திறன் கொண்டு >99% 2-புரோமோ-2-மெத்தில்புரோப்பேனைத் (மூவிணைய) தருகிறது; ஆனால் குளோரினேற்றம் குறைந்த தேர்வுத்திறன் கொண்டு 1-குளோரோ-2-மெத்தில்புரோப்பேன் (64%) மற்றும் 2-குளோரோ-2-மெத்தில்புரோப்பேன் (36%) ஆகிய இரண்டையும் கணிசமாகத் தருகிறது.",
+          "குளோரினேற்றம் மற்றும் புரோமினேற்றம் ஆகிய இரண்டுமே 100% மூவிணைய ஹாலைடுகளை மட்டுமே தருகின்றன.",
+          "சங்கிலி தொடர் வினைகளில் புரோமினேற்றம் வெப்ப உமிழ் வினையாகவும் குளோரினேற்றத்தை விட வேகமாகவும் நிகழ்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When 1,3-butadiene is reacted with 1 equivalent of HBr at a low temperature of 193 K (-80 °C), product A is formed as the major product. When the reaction is carried out at a higher temperature of 313 K (40 °C), product B is formed as the major product. Products A and B are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A is 3-bromobut-1-ene (1,2-addition product, kinetic product) and B is 1-bromobut-2-ene (1,4-addition product, thermodynamic product)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A is 1-bromobut-2-ene and B is 3-bromobut-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both A and B are identical 1,4-dibromobut-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A is 2,3-dibromobutane and B is 1,4-dibromobutane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Protonation of 1,3-butadiene generates a resonance-stabilized allylic carbocation: [CH3-CH+-CH=CH2 <-> CH3-CH=CH-CH2+]. At low temperature (193 K), the reaction is kinetically controlled: the bromide ion attacks the carbocation site adjacent to where the proton added (C2) because it has a lower activation energy, yielding 3-bromobut-1-ene (1,2-addition product) as the major product A. At higher temperature (313 K), the reaction is reversible and thermodynamically controlled; the equilibrium favors the more substituted and stable internal alkene, 1-bromobut-2-ene (1,4-addition product) as major product B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1,3-பியூட்டாடையீன் 193 K (-80 °C) குறைந்த வெப்பநிலையில் 1 சமான HBr உடன் வினைபுரியும் போது முதன்மை விளைபொருள் A-வும், 313 K (40 °C) உயர் வெப்பநிலையில் முதன்மை விளைபொருள் B-யும் கிடைக்கின்றன. A மற்றும் B முறையே:",
+        "optionTexts": [
+          "A என்பது 3-புரோமோபியூட்-1-ஈன் (1,2-சேர்க்கை, இயக்கவியல் விளைபொருள்) மற்றும் B என்பது 1-புரோமோபியூட்-2-ஈன் (1,4-சேர்க்கை, வெப்ப இயக்கவியல் விளைபொருள்)",
+          "A என்பது 1-புரோமோபியூட்-2-ஈன் மற்றும் B என்பது 3-புரோமோபியூட்-1-ஈன்",
+          "A மற்றும் B ஆகிய இரண்டுமே 1,4-டைபுரோமோபியூட்-2-ஈன் ஆகும்",
+          "A என்பது 2,3-டைபுரோமோபியூட்டேன் மற்றும் B என்பது 1,4-டைபுரோமோபியூட்டேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When benzene is treated with carbon monoxide (CO) and hydrogen chloride (HCl) gas in the presence of anhydrous AlCl3 and a catalytic amount of CuCl under pressure, benzaldehyde is formed. This synthetic reaction is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Etard reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gattermann-Koch reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Stephen reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rosenmund reduction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The formylation of benzene or alkylbenzenes using CO + HCl in the presence of anhydrous AlCl3 and CuCl catalyst under pressure to yield benzaldehyde is the Gattermann-Koch reaction. In this reaction, formyl chloride (HCOCl, unstable) is generated in situ and coordinated to AlCl3 to act as an active electrophilic formylating intermediate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரற்ற AlCl3 மற்றும் CuCl வினையூக்கி முன்னிலையில் அழுத்தத்தில் கார்பன் மோனாக்சைடு (CO) மற்றும் HCl வாயுக்களுடன் பென்சீன் வினைபுரிந்து பென்சால்டிஹைடைத் தரும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "எட்டார்ட் வினை",
+          "கேட்டர்மேன்-கோச் வினை",
+          "ஸ்டீபன் வினை",
+          "ரோசன்மண்ட் ஒடுக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of sigma (sigma) bonds present in a single molecule of prop-1-yne (CH3-C#CH) is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The expanded structure of propyne is H3C-C#C-H. There are 3 C-H sigma bonds on the methyl group, 1 C-C single sigma bond connecting the methyl to the acetylenic carbon, 1 sigma bond in the C#C triple bond, and 1 C-H sigma bond on the terminal acetylenic carbon. Total number of sigma bonds = 3 + 1 + 1 + 1 = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரோப்-1-ஐன் (CH3-C#CH) மூலக்கூறில் உள்ள மொத்த சிக்மா (sigma) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of constitutional (structural) isomers possible for an alkene having the molecular formula C4H8 is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Acyclic alkene isomers of C4H8 are: (1) But-1-ene: CH2=CH-CH2-CH3; (2) But-2-ene: CH3-CH=CH-CH3 (irrespective of cis/trans stereoisomers); (3) 2-Methylprop-1-ene: CH2=C(CH3)2. Therefore, there are exactly 3 structural (constitutional) alkene isomers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H8 என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட ஆல்கீனுக்கு சாத்தியமான கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Kolbe's electrolytic synthesis, an aqueous solution of potassium acetate is electrolyzed: 2CH3COOK + 2H2O -> CH3-CH3 + 2CO2 + H2 + 2KOH. The total number of moles of gaseous products (ethane + CO2 + H2) evolved collectively per 2 moles of potassium acetate electrolyzed is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "At the anode: 2CH3COO- -> C2H6(g) + 2CO2(g) + 2e^- (1 mole of ethane and 2 moles of CO2 are produced, totaling 3 moles of gas). At the cathode: 2H2O + 2e^- -> H2(g) + 2OH^- (1 mole of H2 gas is evolved). Total moles of gas produced per 2 moles of potassium acetate = 1 (C2H6) + 2 (CO2) + 1 (H2) = 4 moles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோல்ப் மின்னாற்பகுப்பு முறையில், 2 மோல் பொட்டாசியம் அசிட்டேட் மின்னாற்பகுக்கப்படும் போது வெளிவரும் மொத்த வாயு விளைபொருட்களின் (ஈத்தேன் + CO2 + H2) மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 2-methylbut-2-ene is subjected to complete catalytic hydrogenation over a platinum catalyst, 2-methylbutane is formed. The number of stereocenters (chiral carbons) present in the resulting product molecule is:",
+    "correctAnswer": 0,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The reaction is (CH3)2C=CH-CH3 + H2 --(Pt)--> (CH3)2CH-CH2-CH3 (2-methylbutane). In 2-methylbutane, C1 and C1' are methyls attached to C2; C2 is bonded to two identical -CH3 groups, one -H, and one -CH2CH3, so it is achiral. C3 is bonded to two identical hydrogens (-CH2-), so it is achiral. C4 is a methyl group (-CH3). There are no carbon atoms bonded to four different groups. Therefore, the number of chiral centers is 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பிளாட்டின வினையூக்கி முன்னிலையில் 2-மெத்தில்பியூட்-2-ஈன் முழுமையான ஹைட்ரஜனேற்றத்திற்கு உட்பட்டு 2-மெத்தில்பியூட்டேனைத் தருகிறது. கிடைக்கும் விளைபொருள் மூலக்கூறில் உள்ள கைரல் கார்பன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of monochloro derivatives (including all constitutional and stereoisomers) formed upon photochemical free-radical chlorination of 2-methylbutane is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "2-Methylbutane is CH3-CH(CH3)-CH2-CH3. Monochlorination can replace hydrogen at four different positions: (1) At C1 (one of the equivalent C1 methyls): ClCH2-CH(CH3)-CH2-CH3 (1-chloro-2-methylbutane); C2 is chiral, producing a pair of enantiomers (d and l) = 2 isomers. (2) At C2: (CH3)2C(Cl)-CH2-CH3 (2-chloro-2-methylbutane, achiral) = 1 isomer. (3) At C3: (CH3)2CH-C*H(Cl)-CH3 (2-chloro-3-methylbutane); C3 is chiral, producing a pair of enantiomers (d and l) = 2 isomers. (4) At C4: (CH3)2CH-CH2-CH2Cl (1-chloro-3-methylbutane, achiral) = 1 isomer. Total number of monochloro derivatives = 2 + 1 + 2 + 1 = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-மெத்தில்பியூட்டேனை ஒளிவேதி தனி தீவிரவாத குளோரினேற்றத்திற்கு உட்படுத்தும் போது உருவாகும் மொத்த மோனோகுளோரோ வழிப்பொருட்களின் எண்ணிக்கை (அனைத்து புறவெளி மாற்றியங்கள் உட்பட):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An alkyne having the molecular formula C5H8 yields acetic acid and propanoic acid upon vigorous oxidation with hot alkaline KMnO4. The total number of acidic acetylenic hydrogen atoms present in one molecule of this alkyne is:",
+    "correctAnswer": 0,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Vigorous oxidative cleavage of an alkyne cleaves the triple bond into two carboxylic acids: R-C#C-R' + [O] -> RCOOH + R'COOH. Because the products are acetic acid (CH3COOH) and propanoic acid (CH3CH2COOH), the starting alkyne must be pent-2-yne: CH3-C#C-CH2CH3. Pent-2-yne is an internal alkyne and contains no terminal sp C-H bond. Therefore, the number of acidic acetylenic hydrogens is 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C5H8 என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட ஓர் ஆல்கைன் சூடான கார KMnO4 கரைசலால் ஆக்சிஜனேற்றப்பட்டு அசிட்டிக் அமிலம் மற்றும் புரோப்பனாயிக் அமிலத்தைத் தருகிறது. இந்த ஆல்கைன் மூலக்கூறில் உள்ள அமிலத்தன்மை வாய்ந்த அசிட்டிலினிக் ஹைட்ரஜன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A gaseous hydrocarbon contains 85.7% carbon and 14.3% hydrogen by mass. Its vapor density is 28. On reductive ozonolysis with O3 and Zn/H2O, one mole of this hydrocarbon produces exactly two moles of acetaldehyde (CH3CHO). The total number of sp3 hybridized carbon atoms present in one molecule of this hydrocarbon is: (Atomic masses: C = 12 u, H = 1 u)",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of C = 85.7 / 12 = 7.14; Moles of H = 14.3 / 1 = 14.3. Ratio C : H = 1 : 2. Empirical formula = CH2 (formula mass = 14). Molecular mass = 2 * Vapor density = 2 * 28 = 56 g mol^-1. Molecular formula = (CH2)n where n = 56 / 14 = 4, so C4H8. Reductive ozonolysis yields two moles of CH3CHO: this identifies the hydrocarbon as but-2-ene, CH3-CH=CH-CH3. In but-2-ene, the two methyl carbons (C1 and C4) are sp3 hybridized, while C2 and C3 are sp2 hybridized. Thus, the total number of sp3 carbons is 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வாயு நிலை ஹைட்ரோகார்பனில் நிறையின் அடிப்படையில் 85.7% கார்பன் மற்றும் 14.3% ஹைட்ரஜன் உள்ளன. அதன் ஆவி அடர்த்தி 28. ஒரு மோல் இந்த ஹைட்ரோகார்பன் ஒடுக்க ஓசோனாற்பகுப்பில் சரியாக இரு மோல் அசிட்டால்டிஹைடைத் (CH3CHO) தருகிறது எனில், இந்த மூலக்கூறில் உள்ள sp3 இனக்கலப்படைந்த கார்பன் அணுக்களின் மொத்த எண்ணிக்கை: (அணு நிறைகள்: C = 12 u, H = 1 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the complete combustion of one mole of cyclohexane (C6H12) in excess oxygen gas to produce CO2(g) and H2O(l): C6H12(l) + x O2(g) -> 6CO2(g) + 6H2O(l), the stoichiometric coefficient x representing the moles of O2 gas consumed is:",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Balancing the combustion equation for C6H12: C6H12 + x O2 -> 6CO2 + 6H2O. Carbon balance: 6 carbons on each side. Hydrogen balance: 12 hydrogens on each side. Total oxygen atoms on product side = 6 * 2 (from CO2) + 6 * 1 (from H2O) = 12 + 6 = 18 oxygen atoms. Because oxygen is diatomic (O2), the moles of O2 required is x = 18 / 2 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மோல் சைக்ளோஹெக்சேன் (C6H12) அதிகளவு ஆக்ஸிஜன் வாயுவில் முழுமையாக எரிக்கப்படும் போது நுகரப்படும் O2 வாயுவின் மோல்களின் எண்ணிக்கை x: C6H12(l) + x O2(g) -> 6CO2(g) + 6H2O(l):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of cyclic isomers (including cycloalkanes and alkenes that contain a ring, but excluding stereoisomers) having the molecular formula C5H10 is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Cyclic isomers with formula C5H10 (Degree of unsaturation = 5 + 1 - 5 = 1 ring): (1) Five-membered ring: Cyclopentane; (2) Four-membered ring: Methylcyclobutane; (3) Three-membered ring with two carbons in one branch: Ethylcyclopropane; (4) Three-membered ring with two methyls on the same carbon: 1,1-Dimethylcyclopropane; (5) Three-membered ring with two methyls on adjacent carbons: 1,2-Dimethylcyclopropane. Therefore, exactly 5 cyclic constitutional isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C5H10 என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட வளைய கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை (புறவெளி மாற்றியங்களைத் தவிர்த்து):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che15-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the chlorination of benzene in the presence of ultraviolet light at 500 K, benzene undergoes additive chlorination with three moles of Cl2 to yield benzene hexachloride (BHC, gammexane, C6H6Cl6). The number of pi (pi) bonds remaining in a single molecule of BHC is:",
+    "correctAnswer": 0,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Under UV irradiation or direct sunlight, benzene undergoes free-radical addition with three chlorine molecules: C6H6 + 3Cl2 --(UV light)--> C6H6Cl6. During this reaction, all three conjugated double bonds of the benzene ring undergo addition. The product is 1,2,3,4,5,6-hexachlorocyclohexane (BHC / gammexane / lindane), a saturated cyclohexane derivative containing zero pi bonds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புறஊதாக் கதிரின் முன்னிலையில் பென்சீன் மூன்று மோல் Cl2 உடன் சேர்க்கை வினையில் ஈடுபட்டு பென்சீன் ஹெக்ஸாகுளோரைடைத் (BHC, காமாக்சீன், C6H6Cl6) தருகிறது. ஒரு BHC மூலக்கூறில் எஞ்சியிருக்கும் பை (pi) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

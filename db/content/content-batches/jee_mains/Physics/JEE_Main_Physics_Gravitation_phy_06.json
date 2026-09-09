@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY06-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two point masses are separated by a distance d and experience a mutual gravitational attractive force F. If the separation distance between them is increased to 3d, the new gravitational force between them will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "F / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "F / 9",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3 F",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9 F",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Newton's law of universal gravitation, F = G * m1 * m2 / d^2. When the separation distance becomes d' = 3d, the new force is F' = G * m1 * m2 / (3d)^2 = (1/9) * (G * m1 * m2 / d^2) = F / 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு புள்ளி நிறைகள் d தொலைவில் பிரிக்கப்பட்டு, அவற்றுக்கிடையே F என்ற ஈர்ப்பு விசையை உணர்கின்றன. அவற்றிற்கு இடையேயான தொலைவு 3d ஆக அதிகரிக்கப்பட்டால், புதிய ஈர்ப்பு விசை:",
+        "optionTexts": [
+          "F / 3",
+          "F / 9",
+          "3 F",
+          "9 F"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At what height h above the surface of the Earth (radius R) does the acceleration due to gravity become g/4, where g is the acceleration due to gravity on the Earth's surface?",
+    "options": [
+      {
+        "label": "A",
+        "text": "h = R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "h = R",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "h = 2 R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "h = 4 R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The variation of acceleration due to gravity with height is g_h = g * [R / (R + h)]^2. Given g_h = g / 4: g / 4 = g * [R / (R + h)]^2 => R / (R + h) = 1 / 2 => R + h = 2R => h = R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிலிருந்து (ஆரம் R) எந்த உயரத்தில் புவியீர்ப்பு முடுக்கம் g/4 ஆக குறையும்? (இங்கு g என்பது புவி மேற்பரப்பில் உள்ள முடுக்கம்):",
+        "optionTexts": [
+          "h = R / 2",
+          "h = R",
+          "h = 2 R",
+          "h = 4 R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of acceleration due to gravity at a depth d below the surface of the Earth of radius R is given by g_d = g * (1 - d/R). The depth at which the acceleration due to gravity becomes half its value on the Earth's surface is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "R / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3R / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given g_d = g / 2. Using the formula g_d = g * (1 - d/R): g / 2 = g * (1 - d/R) => 1 - d/R = 1/2 => d/R = 1/2 => d = R / 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட புவியின் மேற்பரப்பிற்கு கீழே d ஆழத்தில் புவியீர்ப்பு முடுக்கம் g_d = g * (1 - d/R) எனத் தரப்படுகிறது. புவியீர்ப்பு முடுக்கம் மேற்பரப்பில் உள்ள மதிப்பில் பாதியாக மாறும் ஆழம்:",
+        "optionTexts": [
+          "R / 4",
+          "R / 2",
+          "R / 3",
+          "3R / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Kepler's third law of planetary motion, the orbital period T of a planet revolving around the Sun is related to the semi-major axis a of its elliptical orbit as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T^2 proportional to a^3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T^3 proportional to a^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "T proportional to a^(3/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both A and C are correct",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Kepler's third law states that the square of the orbital period T is directly proportional to the cube of the semi-major axis a: T^2 proportional to a^3, which also mathematically implies T proportional to a^(3/2). Hence, both statements A and C are correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோள்களின் இயக்கத்திற்கான கெப்ளரின் மூன்றாம் விதியின்படி, சூரியனைச் சுற்றி வரும் ஒரு கோளின் சுற்றுக் காலம் T அதன் நீள்வட்டப் பாதையின் அரை-பெரும் அச்சு a உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "T^2 proportional to a^3",
+          "T^3 proportional to a^2",
+          "T proportional to a^(3/2)",
+          "A மற்றும் C இரண்டும் சரி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The escape speed of a projectile from the Earth's surface depends on the mass m of the projected body as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "m^0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "m^1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "m^(1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "m^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The escape speed from the surface of a planet is given by v_e = sqrt(2 G M / R), where M is the mass of the planet and R is its radius. It is completely independent of the mass m of the projected body, meaning it is proportional to m^0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிலிருந்து எறியப்படும் ஒரு பொருளின் விடுபடு வேகம், எறியப்படும் பொருளின் நிறை m-ஐ எவ்வாறு சார்ந்துள்ளது?",
+        "optionTexts": [
+          "m^0",
+          "m^1",
+          "m^(1/2)",
+          "m^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Taking the reference gravitational potential at an infinite distance from the Earth to be zero, the gravitational potential at the surface of the Earth of mass M and radius R is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-G M / R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+G M / R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-G M / R^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By definition, gravitational potential V(r) at a distance r >= R from the centre of a spherical mass M is given by V(r) = -G M / r. At the surface (r = R), V = -G M / R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியிலிருந்து முடிவிலாத் தொலைவில் உள்ள ஈர்ப்பு மின்னழுத்தம் சுழி எனக் கொண்டால், M நிறையும் R ஆரமும் கொண்ட புவியின் மேற்பரப்பில் ஈர்ப்பு மின்னழுத்தம்:",
+        "optionTexts": [
+          "-G M / R",
+          "+G M / R",
+          "-G M / R^2",
+          "சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a satellite revolving close to the surface of the Earth (radius R), the ratio of the escape speed from the Earth's surface to the orbital speed of the satellite is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : sqrt(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt(2) : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a satellite orbiting very close to the Earth's surface, the orbital speed is v_o = sqrt(G M / R) = sqrt(g R). The escape speed from the surface is v_e = sqrt(2 G M / R) = sqrt(2 g R). Therefore, v_e / v_o = sqrt(2) / 1 = sqrt(2) : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிற்கு (ஆரம் R) மிக அருகில் சுற்றும் ஒரு செயற்கைக்கோளுக்கு, புவி மேற்பரப்பிலிருந்து விடுபடு வேகத்திற்கும் செயற்கைக்கோளின் சுற்றுப்பாதை வேகத்திற்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "1 : sqrt(2)",
+          "sqrt(2) : 1",
+          "2 : 1",
+          "1 : 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform spherical shell of mass M and radius R has a concentric cavity. Which of the following graphs correctly describes the variation of gravitational potential V(r) with radial distance r from the center?",
+    "options": [
+      {
+        "label": "A",
+        "text": "V is constant and non-zero for r <= R, and increases towards zero as -1/r for r > R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "V is zero for r <= R, and varies as -1/r for r > R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "V is proportional to r for r <= R, and varies as -1/r^2 for r > R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "V is zero everywhere",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Inside a uniform thin spherical shell, the gravitational field is E = -dV/dr = 0 everywhere. Consequently, the gravitational potential is uniform and constant throughout the interior, equal to its value on the surface: V = -G M / R for r <= R. Outside (r > R), V(r) = -G M / r, increasing asymptotically to 0 as r goes to infinity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான மெல்லிய கோளக் கூட்டின் மையத்திலிருந்து உள்ள ஆரம் r-ஐ பொறுத்து ஈர்ப்பு மின்னழுத்தம் V(r) எவ்வாறு மாறுபடும்?",
+        "optionTexts": [
+          "r <= R க்கு V மாறிலியாக இருக்கும் (சுழியல்ல), r > R க்கு -1/r என சுழியை நோக்கி அதிகரிக்கும்",
+          "r <= R க்கு V சுழியாக இருக்கும், r > R க்கு -1/r என மாறுபடும்",
+          "r <= R க்கு V என்பது r-க்கு நேர்விகிதத்தில் இருக்கும்",
+          "அனைத்து இடங்களிலும் V சுழியாக இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Due to the rotation of the Earth with angular velocity omega, the apparent acceleration due to gravity at latitude lambda is g' = g - omega^2 R cos^2(lambda). At what latitude does the Earth's rotation have no effect on the value of g?",
+    "options": [
+      {
+        "label": "A",
+        "text": "At the equator (lambda = 0 deg)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "At the poles (lambda = 90 deg)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "At latitude lambda = 45 deg)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "At latitude lambda = 60 deg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the poles, latitude lambda = 90 degrees, which gives cos(90 deg) = 0. Therefore, g' = g - omega^2 R (0)^2 = g. Thus, the centrifugal effect due to Earth's rotation is zero at the poles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி omega கோணத் திசைவேகத்துடன் சுழல்வதால், lambda அட்சரேகையில் தோற்ற புவியீர்ப்பு முடுக்கம் g' = g - omega^2 R cos^2(lambda) ஆகும். எந்த அட்சரேகையில் புவியின் சுழற்சி g-ன் மதிப்பில் எவ்வித பாதிப்பையும் ஏற்படுத்தாது?",
+        "optionTexts": [
+          "நிலநடுக்கோட்டில் (lambda = 0 deg)",
+          "துருவங்களில் (lambda = 90 deg)",
+          "அட்சரேகை lambda = 45 deg இல்",
+          "அட்சரேகை lambda = 60 deg இல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A satellite of mass m is to be moved from a circular orbit of radius 2R to another circular orbit of radius 3R around the Earth (mass M, radius R). The minimum external work required to be done is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "G M m / (6 R)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "G M m / (12 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "G M m / (2 R)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "G M m / (3 R)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The total mechanical energy of a satellite in a circular orbit of radius r is E = -G M m / (2r). In orbit 1 (r1 = 2R): E1 = -G M m / (4R). In orbit 2 (r2 = 3R): E2 = -G M m / (6R). The work required is W = E2 - E1 = (-G M m / 6R) - (-G M m / 4R) = G M m / R * (1/4 - 1/6) = G M m / (12 R).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு செயற்கைக்கோளை புவியை (நிறை M, ஆரம் R) சுற்றும் 2R ஆரம் கொண்ட வட்டப்பாதையிலிருந்து 3R ஆரம் கொண்ட மற்றொரு வட்டப்பாதைக்கு மாற்ற தேவைப்படும் குறைந்தபட்ச வெளிப்புற வேலை:",
+        "optionTexts": [
+          "G M m / (6 R)",
+          "G M m / (12 R)",
+          "G M m / (2 R)",
+          "G M m / (3 R)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A satellite orbits very close to the surface of a spherical planet of uniform density rho. The orbital period of the satellite depends on density rho as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "proportional to rho^(1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "proportional to rho^(-1/2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "proportional to rho",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "independent of rho",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The orbital speed is v = sqrt(G M / R) and orbital period is T = 2 pi R / v = 2 pi sqrt(R^3 / (G M)). Mass of the planet is M = (4/3) pi R^3 rho. Substituting M gives T = 2 pi sqrt( R^3 / (G * (4/3) pi R^3 rho) ) = sqrt( (3 pi) / (G rho) ). Therefore, T is proportional to rho^(-1/2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான அடர்த்தி rho கொண்ட ஒரு கோள வடிவக் கோளின் மேற்பரப்பிற்கு மிக அருகில் ஒரு செயற்கைக்கோள் சுற்றுகிறது. அச்செயற்கைக்கோளின் சுற்றுக் காலம் அடர்த்தி rho-ஐ எவ்வாறு சார்ந்துள்ளது?",
+        "optionTexts": [
+          "rho^(1/2) க்கு நேர்விகிதத்தில்",
+          "rho^(-1/2) க்கு நேர்விகிதத்தில்",
+          "rho க்கு நேர்விகிதத்தில்",
+          "rho-வை சார்ந்தது அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following conditions is NOT required for a satellite to be geostationary?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Its orbital period must be 24 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Its orbital plane must coincide with the Earth's equatorial plane",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Its sense of rotation must be from West to East",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Its mass must be equal to a specific critical threshold mass",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "A geostationary satellite must orbit in the equatorial plane from west to east with a period of 24 hours (synchronous with the Earth's rotation). The orbit and motion are completely independent of the satellite's mass; any mass will maintain the orbit provided it has the appropriate orbital speed at that altitude.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு செயற்கைக்கோள் புவிநிலைச் செயற்கைக்கோளாக (geostationary) இருப்பதற்கு பின்வருவனவற்றில் எந்த நிபந்தனை அவசியமற்றது?",
+        "optionTexts": [
+          "அதன் சுற்றுக் காலம் 24 மணி நேரமாக இருக்க வேண்டும்",
+          "அதன் சுற்றுப்பாதை தளம் புவியின் நிலநடுக்கோட்டு தளத்துடன் பொருந்த வேண்டும்",
+          "அதன் சுழற்சி திசை மேற்கிலிருந்து கிழக்காக இருக்க வேண்டும்",
+          "அதன் நிறை ஒரு குறிப்பிட்ட வரம்பு நிறைக்கு சமமாக இருக்க வேண்டும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Assuming the Earth to be a uniform solid sphere of mass M and radius R, the gravitational force exerted on a point mass m at a distance r from the centre of the Earth (where r < R) is directly proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / r^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / r",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "r",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "r^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Inside a uniform solid sphere, only the mass enclosed within a sphere of radius r attracts the point mass: M_enclosed = M * (r/R)^3. The gravitational force is F = G * M_enclosed * m / r^2 = G * [M (r^3/R^3)] * m / r^2 = (G M m / R^3) * r. Thus, F is directly proportional to r.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியை M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான திண்மக் கோளமாகக் கருதினால், புவியின் மையத்திலிருந்து r தொலைவில் (r < R) உள்ள m புள்ளி நிறையின் மீது செயல்படும் ஈர்ப்பு விசை எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "1 / r^2",
+          "1 / r",
+          "r",
+          "r^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A hypothetical planet has a mass equal to twice the mass of the Earth and a radius equal to half the radius of the Earth. If the escape speed from Earth is v_e = 11.2 km/s, the escape speed from the surface of this planet will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "11.2 km/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "22.4 km/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.6 km/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "44.8 km/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Escape speed is v_e = sqrt(2 G M / R). For the hypothetical planet: M_p = 2 M_e and R_p = R_e / 2. Therefore, v_p = sqrt( 2 G (2 M_e) / (R_e / 2) ) = sqrt(4 * (2 G M_e / R_e)) = 2 * v_e = 2 * (11.2 km/s) = 22.4 km/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கற்பனைக் கோளின் நிறை புவியின் நிறையைப் போல இருமடங்காகவும், அதன் ஆரம் புவியின் ஆரத்தில் பாதியாகவும் உள்ளது. புவியின் விடுபடு வேகம் v_e = 11.2 km/s எனில், அக்கோளின் மேற்பரப்பிலிருந்து விடுபடு வேகம்:",
+        "optionTexts": [
+          "11.2 km/s",
+          "22.4 km/s",
+          "5.6 km/s",
+          "44.8 km/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two bodies of masses M and 16M are fixed at a distance d apart. The distance from the mass M where the net gravitational field intensity due to both masses is zero is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "d / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "d / 5",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "d / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "d / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the neutral point be at a distance x from mass M. The distance from mass 16M is (d - x). Equating the gravitational fields: G M / x^2 = G (16 M) / (d - x)^2 => 1 / x = 4 / (d - x) => d - x = 4x => 5x = d => x = d / 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M மற்றும் 16M நிறையுள்ள இரு பொருள்கள் d தொலைவில் நிலைநிறுத்தப்பட்டுள்ளன. இரு நிறைகளாலும் உருவாகும் நிகர ஈர்ப்புப் புல செறிவு சுழியாக இருக்கும் புள்ளி, நிறை M இலிருந்து உள்ள தொலைவு:",
+        "optionTexts": [
+          "d / 3",
+          "d / 5",
+          "d / 4",
+          "d / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A body is projected vertically upwards from the surface of the Earth with a speed equal to (1/2) of the escape velocity v_e. The maximum height h reached by the body above the Earth's surface (radius R) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R / 3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "R / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Initial velocity u = v_e / 2 = (1/2) sqrt(2 G M / R). By conservation of mechanical energy: (1/2) m u^2 - G M m / R = 0 - G M m / (R + h). Substituting u^2 = (1/4)(2 G M / R) = G M / (2 R): (1/2) m (G M / 2R) - G M m / R = - G M m / (R + h) => (1/4 - 1) / R = -1 / (R + h) => -3 / (4R) = -1 / (R + h) => 3(R + h) = 4R => 3h = R => h = R / 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிலிருந்து விடுபடு வேகத்தின் v_e பாதியளவு (1/2) வேகத்துடன் ஒரு பொருள் செங்குத்தாக மேல்நோக்கி எறியப்படுகிறது. புவி மேற்பரப்பிற்கு (ஆரம் R) மேலே அப்பொருள் அடையும் பெரும உயரம் h:",
+        "optionTexts": [
+          "R / 2",
+          "R / 3",
+          "R / 4",
+          "R / 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A straight frictionless tunnel is bored through the Earth along a chord at an arbitrary distance from the Earth's center. A particle dropped into the tunnel executes simple harmonic motion. The time period of this oscillation depends on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The length of the chord only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The radius R and mass M of the Earth, independent of the chord chosen",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The mass of the particle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The distance of the chord from the Earth's centre",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a particle in any straight tunnel through the Earth, the restoring force along the tunnel at a displacement x from the midpoint of the tunnel is F_x = - (G M m / R^3) * x. This is an SHM equation with force constant k = G M m / R^3. The time period is T = 2 pi sqrt(m / k) = 2 pi sqrt(R^3 / (G M)) = 2 pi sqrt(R / g). This period is completely independent of the path or chord chosen and the mass of the particle.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியின் மையத்திலிருந்து ஏதேனும் ஒரு தொலைவில் உள்ள ஒரு நாணின் வழியே உராய்வற்ற நேரான சுரங்கம் ஒன்று தோண்டப்படுகிறது. அச்சுரங்கத்தில் விடப்படும் ஒரு துகள் சீரிசை இயக்கத்தை மேற்கொள்கிறது. இந்த அலைவின் அலைவுக்காலம் எதனைச் சார்ந்தது?",
+        "optionTexts": [
+          "நாணின் நீளத்தை மட்டும்",
+          "தேர்ந்தெடுக்கப்பட்ட நாணைச் சாராமல், புவியின் ஆரம் R மற்றும் நிறை M-ஐ மட்டும்",
+          "துகளின் நிறையை",
+          "புவி மையத்திலிருந்து நாண் உள்ள தொலைவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of uniform density rho and radius R has a spherical cavity of radius R/2 centered at a distance R/2 from the center of the sphere. The magnitude of the gravitational field intensity inside the cavity at any arbitrary point is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uniform and equal to (2/3) pi G rho R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Uniform and equal to (4/3) pi G rho R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero everywhere inside the cavity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Non-uniform and proportional to distance from the cavity center",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The gravitational field at any point r inside the cavity is the superposition of the field of the full sphere E1 = - (4/3) pi G rho r and the field of the removed cavity mass E2 = + (4/3) pi G rho r' = (4/3) pi G rho (r - d), where d is the position vector of the center of the cavity. Thus E_net = E1 + E2 = - (4/3) pi G rho d. The magnitude is E = (4/3) pi G rho (R/2) = (2/3) pi G rho R, which is completely uniform in magnitude and direction throughout the cavity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான அடர்த்தி rho மற்றும் ஆரம் R கொண்ட ஒரு திண்மக் கோளத்தில், அதன் மையத்திலிருந்து R/2 தொலைவில் மையத்தைக் கொண்ட R/2 ஆரம் கொண்ட ஒரு கோளக் குழிவு (cavity) உள்ளது. இக்குழிவின் உள்ளே உள்ள எந்த ஒரு புள்ளியிலும் ஈர்ப்புப் புல செறிவு:",
+        "optionTexts": [
+          "சீரானது மற்றும் (2/3) pi G rho R-க்கு சமமானது",
+          "சீரானது மற்றும் (4/3) pi G rho R-க்கு சமமானது",
+          "குழிவின் உள்ளே அனைத்து இடங்களிலும் சுழி",
+          "சீரற்றது மற்றும் குழிவின் மையத்திலிருந்து உள்ள தொலைவுக்கு நேர்விகிதத்தில் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A comet revolves around the Sun in an eccentric elliptical orbit. The perihelion distance (closest approach) is r1 and the aphelion distance (farthest approach) is r2. The ratio of the linear speed at perihelion v1 to that at aphelion v2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "r1 / r2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "r2 / r1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sqrt(r2 / r1)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(r2 / r1)^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Because the gravitational force exerted by the Sun is a central force, the torque about the Sun is zero, meaning the angular momentum of the comet is conserved: L = m * r1 * v1 = m * r2 * v2. Therefore, v1 / v2 = r2 / r1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வால்மீன் நீள்வட்டப் பாதையில் சூரியனைச் சுற்றி வருகிறது. சூரியனுக்கு மிக அருகில் உள்ள தொலைவு r1 மற்றும் மிக தொலைவில் உள்ள தொலைவு r2 ஆகும். அண்மை நிலையில் அதன் நேரியல் வேகம் v1-க்கும் சேய்மை நிலையில் அதன் வேகம் v2-க்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "r1 / r2",
+          "r2 / r1",
+          "sqrt(r2 / r1)",
+          "(r2 / r1)^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the Earth suddenly contracts to one-third of its present radius without any change in its mass, the duration of a day on Earth would become:",
+    "options": [
+      {
+        "label": "A",
+        "text": "72 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8 hours",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.67 hours",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "24 hours",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since no external torque acts during the contraction, the angular momentum of the Earth is conserved: I1 omega1 = I2 omega2 => I1 (2 pi / T1) = I2 (2 pi / T2) => T2 = T1 * (I2 / I1). Treating Earth as a uniform sphere, I = (2/5) M R^2. When R becomes R/3, I2 = (2/5) M (R/3)^2 = I1 / 9. Therefore, T2 = T1 / 9 = 24 hours / 9 = 8 / 3 hours = 2.67 hours.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி தனது நிறையில் எவ்வித மாற்றமும் இல்லாமல் தற்போதைய ஆரத்தில் மூன்றில் ஒரு பங்காக திடீரென சுருங்கினால், புவியில் ஒரு நாளின் கால அளவு என்னவாக மாறும்?",
+        "optionTexts": [
+          "72 மணி நேரம்",
+          "8 மணி நேரம்",
+          "2.67 மணி நேரம்",
+          "24 மணி நேரம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body weighs 72 N on the surface of the Earth. Its weight at a height h = R / 2 above the surface of the Earth (where R is the Earth's radius) is _____ N.",
+    "correctAnswer": 32,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Weight at height h is W_h = m * g_h = m * g * [R / (R + h)]^2 = W_surface * [R / (R + h)]^2. Substituting h = R / 2: W_h = 72 * [R / (3R / 2)]^2 = 72 * (2/3)^2 = 72 * (4/9) = 32 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் புவி மேற்பரப்பில் 72 N எடையைக் கொண்டுள்ளது. புவி மேற்பரப்பிலிருந்து h = R / 2 உயரத்தில் (R என்பது புவியின் ஆரம்) அப்பொருளின் எடை _____ N.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body weighs 100 N on the surface of the Earth. Assuming the radius of the Earth is R = 6400 km, the depth below the surface at which its weight becomes 60 N is _____ km.",
+    "correctAnswer": 2560,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Weight at depth d is W_d = W_surface * (1 - d/R). Given W_surface = 100 N, W_d = 60 N, and R = 6400 km: 60 = 100 * (1 - d/6400) => 0.6 = 1 - d/6400 => d/6400 = 0.4 => d = 0.4 * 6400 = 2560 km.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் புவி மேற்பரப்பில் 100 N எடையைக் கொண்டுள்ளது. புவியின் ஆரம் R = 6400 km எனக் கொண்டால், அப்பொருளின் எடை 60 N ஆக மாறும் ஆழம் _____ km.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The radius of the Earth is R = 6400 km. The percentage decrease in the acceleration due to gravity at an altitude of 32 km above the Earth's surface is _____ %.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For small heights h << R, the acceleration due to gravity is g_h = g(1 - 2h/R). The fractional decrease is (g - g_h) / g = 2h / R. Percentage decrease = (2h / R) * 100% = [2 * 32 km / 6400 km] * 100% = (64 / 6400) * 100% = 1%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியின் ஆரம் R = 6400 km. புவி மேற்பரப்பிற்கு மேலே 32 km உயரத்தில் புவியீர்ப்பு முடுக்கத்தில் ஏற்படும் சதவீதக் குறைவு _____ %.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The orbital period of a planet revolving around a star is 8 years. If the distance of the Earth from the Sun is 1 AU and the Earth's orbital period is 1 year, the orbital radius of this planet in an identical stellar system is _____ AU.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By Kepler's third law, T^2 is proportional to a^3. Thus, (T_planet / T_earth)^2 = (a_planet / a_earth)^3. Given T_planet = 8 years, T_earth = 1 year, and a_earth = 1 AU: (8 / 1)^2 = (a_planet / 1)^3 => 64 = a_planet^3 => a_planet = (64)^(1/3) = 4 AU.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு விண்மீனைச் சுற்றி வரும் ஒரு கோளின் சுற்றுக் காலம் 8 ஆண்டுகள் ஆகும். புவிக்கும் சூரியனுக்கும் இடைப்பட்ட தொலைவு 1 AU மற்றும் புவியின் சுற்றுக் காலம் 1 ஆண்டு எனில், அக்கோளின் சுற்றுப்பாதை ஆரம் _____ AU.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body is projected vertically upwards from the surface of the Earth (radius R) with an initial velocity v = sqrt(g R), where g is the acceleration due to gravity on the surface. The maximum height reached by the body above the Earth's surface is h = N * R. Find the integer value of N.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of mechanical energy: (1/2) m v^2 - G M m / R = 0 - G M m / (R + h). Using G M = g R^2: (1/2) m (g R) - m g R = - m g R^2 / (R + h) => - (1/2) m g R = - m g R^2 / (R + h) => 1 / (2 R) = 1 / (R + h) => R + h = 2R => h = R. Comparing h = N * R, we find N = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிலிருந்து (ஆரம் R) ஒரு பொருள் ஆரம்ப திசைவேகம் v = sqrt(g R) உடன் செங்குத்தாக மேல்நோக்கி எறியப்படுகிறது. புவி மேற்பரப்பிற்கு மேலே அப்பொருள் அடையும் பெரும உயரம் h = N * R எனில், N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The orbital speed of a satellite revolving in a circular orbit close to the Earth's surface is 8 km/s. The orbital speed of another satellite revolving in a circular orbit at an altitude h = 3R above the Earth's surface (where R is the Earth's radius) is _____ km/s.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Orbital speed at radius r is v = sqrt(G M / r). For a close orbit (r1 = R), v1 = sqrt(G M / R) = 8 km/s. For an orbit at height h = 3R, orbital radius is r2 = R + 3R = 4R. Thus, v2 = sqrt(G M / 4R) = (1/2) * sqrt(G M / R) = (1/2) * (8 km/s) = 4 km/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிற்கு மிக அருகில் வட்டப்பாதையில் சுற்றும் ஒரு செயற்கைக்கோளின் சுற்றுப்பாதை வேகம் 8 km/s ஆகும். புவி மேற்பரப்பிற்கு மேலே h = 3R உயரத்தில் (R என்பது புவியின் ஆரம்) சுற்றும் மற்றொரு செயற்கைக்கோளின் சுற்றுப்பாதை வேகம் _____ km/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A satellite of mass m is revolving in a stable circular orbit of radius r around a planet. Its kinetic energy in this orbit is K. The minimum additional kinetic energy that must be imparted to the satellite so that it completely escapes from the gravitational pull of the planet is N * K. Find the value of N.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In a circular orbit of radius r, the kinetic energy is K = G M m / (2r) and the potential energy is U = - G M m / r = -2K. The total mechanical energy of the satellite in orbit is E = K + U = K - 2K = -K. To escape the gravitational field of the planet, the final total energy must be at least zero (E_final = 0). The additional energy required is Delta E = E_final - E = 0 - (-K) = K. Thus, the required additional energy is 1 * K, so N = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு செயற்கைக்கோள் ஒரு கோளைச் சுற்றி r ஆரம் கொண்ட நிலையான வட்டப்பாதையில் சுற்றுகிறது. இந்த சுற்றுப்பாதையில் அதன் இயக்க ஆற்றல் K ஆகும். கோளின் ஈர்ப்புப் பிடியிலிருந்து முழுமையாக விடுபட செயற்கைக்கோளுக்கு அளிக்கப்பட வேண்டிய குறைந்தபட்ச கூடுதல் இயக்க ஆற்றல் N * K எனில், N இன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two satellites S1 and S2 revolve around the Earth in concentric circular orbits of radii r1 = R and r2 = 4R respectively. If the orbital period of satellite S1 is 2 hours, the orbital period of satellite S2 is _____ hours.",
+    "correctAnswer": 16,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By Kepler's third law, T^2 is proportional to r^3. Therefore, (T2 / T1)^2 = (r2 / r1)^3 = (4R / R)^3 = 4^3 = 64. Taking square root on both sides: T2 / T1 = sqrt(64) = 8. Given T1 = 2 hours, we get T2 = 8 * T1 = 8 * 2 = 16 hours.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "S1 மற்றும் S2 என்ற இரு செயற்கைக்கோள்கள் புவியை முறையே r1 = R மற்றும் r2 = 4R ஆரங்கள் கொண்ட பொதுமைய வட்டப்பாதைகளில் சுற்றுகின்றன. செயற்கைக்கோள் S1 இன் சுற்றுக் காலம் 2 மணி நேரம் எனில், செயற்கைக்கோள் S2 இன் சுற்றுக் காலம் _____ மணி நேரம்.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A body is projected vertically upwards from the surface of the Earth (radius R) with an initial speed v = sqrt(1.5 * g * R), where g is the acceleration due to gravity on the Earth's surface. The maximum height reached by the body above the Earth's surface is h = N * R. Find the integer value of N.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of mechanical energy: (1/2) m v^2 - G M m / R = 0 - G M m / (R + h). Using G M = g R^2, this becomes (1/2) m (1.5 g R) - m g R = - m g R^2 / (R + h) => (3/4) m g R - m g R = - m g R^2 / (R + h) => - (1/4) m g R = - m g R^2 / (R + h) => 1 / (4R) = 1 / (R + h) => R + h = 4R => h = 3R. Comparing with h = N * R, we get N = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பிலிருந்து (ஆரம் R) ஒரு பொருள் ஆரம்ப வேகம் v = sqrt(1.5 * g * R) உடன் செங்குத்தாக மேல்நோக்கி எறியப்படுகிறது (இங்கு g என்பது புவி மேற்பரப்பில் புவியீர்ப்பு முடுக்கம்). புவி மேற்பரப்பிற்கு மேலே அப்பொருள் அடையும் பெரும உயரம் h = N * R எனில், N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY06-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A narrow tunnel is drilled through the center of the Earth along a diameter. A particle is dropped from rest into the tunnel from the Earth's surface. Neglecting friction and air resistance, the speed with which the particle passes through the center of the Earth is v = sqrt(k * g * R), where R is the radius of the Earth and g is the acceleration due to gravity on the surface. Find the integer value of k.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The gravitational potential at the surface of a uniform solid sphere is V_surface = -G M / R = -g R. The gravitational potential at the center is V_center = - (3/2) G M / R = - (3/2) g R. By conservation of mechanical energy: 0 + m * V_surface = (1/2) m v^2 + m * V_center => (1/2) m v^2 = m (V_surface - V_center) = m [-g R - (-1.5 g R)] = (1/2) m g R. Solving for v: v^2 = g R => v = sqrt(1 * g R). Therefore, comparing with v = sqrt(k * g * R), the integer value of k is 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியின் விட்டத்தின் வழியே மையத்தைக் கடந்து செல்லுமாறு குறுகிய சுரங்கம் ஒன்று தோண்டப்படுகிறது. புவி மேற்பரப்பிலிருந்து ஒரு துகள் சுரங்கத்தினுள் ஓய்விலிருந்து விடப்படுகிறது. துகள் புவியின் மையத்தைக் கடக்கும் போது அதன் வேகம் v = sqrt(k * g * R) எனில் (இங்கு R என்பது புவியின் ஆரம், g என்பது மேற்பரப்பு புவியீர்ப்பு முடுக்கம்), k இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che18-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following classes of amines gives a foul-smelling carbylamine (isocyanide) when warmed with chloroform and ethanolic potassium hydroxide?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary aliphatic and aromatic amines only",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Secondary aliphatic amines only",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tertiary amines only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both secondary and tertiary amines",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The carbylamine test (isocyanide test) is specific to primary amines (both aliphatic and aromatic). When heated with chloroform and alcoholic KOH, primary amines react via a dichlorocarbene intermediate to form extremely foul-smelling isocyanides (carbylamines): R-NH2 + CHCl3 + 3KOH -> R-NC + 3KCl + 3H2O. Secondary and tertiary amines do not show this reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோபார்ம் மற்றும் எத்தனால் கலந்த பொட்டாசியம் ஹைட்ராக்சைடுடன் சூடுபடுத்தும் போது அருவருக்கத்தக்க மணமுடைய கார்பைலமீனைத் (ஐசோசயனைடு) தரும் அமீன்களின் வகை எது?",
+        "optionTexts": [
+          "ஓரிணைய அலிபாடிக் மற்றும் அரோமேட்டிக் அமீன்கள் மட்டுமே",
+          "ஈரிணைய அலிபாடிக் அமீன்கள் மட்டுமே",
+          "மூவிணைய அமீன்கள் மட்டுமே",
+          "ஈரிணைய மற்றும் மூவிணைய அமீன்கள் இரண்டும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The reduction of nitrobenzene with iron scrap and concentrated hydrochloric acid (Fe + HCl) is preferred over tin and hydrochloric acid (Sn + HCl) in commercial manufacturing primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iron scrap is a stronger oxidizing agent than tin.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "FeCl2 formed gets hydrolyzed to release HCl, requiring only a small initiator amount of hydrochloric acid.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Sn + HCl produces explosive by-products.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fe + HCl selectively yields N-phenylhydroxylamine.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the reduction of nitrobenzene to aniline using scrap iron and HCl, the ferrous chloride (FeCl2) generated during the reaction undergoes aqueous hydrolysis to regenerate hydrochloric acid: FeCl2 + 2H2O -> Fe(OH)2 + 2HCl. As a consequence, only a catalytic or small initiating amount of hydrochloric acid is required, making the industrial process highly economical.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரோபென்சீனை அனிலீனாக ஒடுக்கும் தொழிற்சாலைத் தயாரிப்பில் Sn + HCl-ஐ விட Fe + HCl விரும்புவதற்கான முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "இரும்புத் துண்டுகள் வெள்ளீயத்தை விட வலிமையான ஆக்சிஜனேற்றியாகும்.",
+          "உருவாகும் FeCl2 நீராற்பகுப்படைந்து HCl-ஐ மீண்டும் உருவாக்குவதால், தொடங்குவதற்கு மிகக் குறைந்த அளவு அமிலமே போதுமானது.",
+          "Sn + HCl வெடிக்கும் தன்மை கொண்ட துணை விளைபொருட்களைத் தருகிறது.",
+          "Fe + HCl தேர்ந்தெடுத்து N-ஃபீனைல்ஹைட்ராக்சிலமீனைத் தருகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Hinsberg's reagent, used to distinguish between primary, secondary, and tertiary amines, is chemically:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Benzenesulfonyl chloride (C6H5SO2Cl)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "p-Toluenesulfonic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoyl chloride (C6H5COCl)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phosgene (COCl2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hinsberg's reagent is benzenesulfonyl chloride (C6H5SO2Cl). It reacts with primary amines to form N-alkylbenzenesulfonamides having an acidic hydrogen (soluble in aqueous alkali), with secondary amines to form N,N-dialkylbenzenesulfonamides lacking acidic hydrogen (insoluble in alkali), and fails to react with tertiary amines.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரிணைய, ஈரிணைய மற்றும் மூவிணைய அமீன்களை வேறுபடுத்தி அறியப் பயன்படும் ஹின்ஸ்பெர்க் காரணியின் வேதிப்பெயர்:",
+        "optionTexts": [
+          "பென்சீன்சல்போனைல் குளோரைடு (C6H5SO2Cl)",
+          "p-டொலுவீன்சல்போனிக் அமிலம்",
+          "பென்சாயில் குளோரைடு (C6H5COCl)",
+          "பாஸ்ஜீன் (COCl2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Gabriel phthalimide synthesis, which class of amines is prepared in high purity without contamination from higher alkylated products?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary aromatic amines",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Primary aliphatic amines",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Secondary aliphatic amines",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tertiary amines",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Gabriel phthalimide synthesis is exclusively used for the preparation of pure primary aliphatic amines (R-NH2). Potassium phthalimide undergoes SN2 displacement with primary alkyl halides followed by hydrazinolysis or alkaline hydrolysis. Aromatic primary amines cannot be prepared this way because aryl halides do not undergo nucleophilic substitution (SN2) with potassium phthalimide under mild conditions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேப்ரியல் தாலிமைடு தொகுப்பு முறையில் அதிக தூய்மையுடன் தயாரிக்கப்படும் அமீன்களின் வகை எது?",
+        "optionTexts": [
+          "ஓரிணைய அரோமேட்டிக் அமீன்கள்",
+          "ஓரிணைய அலிபாடிக் அமீன்கள்",
+          "ஈரிணைய அலிபாடிக் அமீன்கள்",
+          "மூவிணைய அமீன்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Aniline is significantly less basic than cyclohexylamine or ammonia primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The nitrogen atom in aniline is sp hybridized.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The lone pair of electrons on nitrogen in aniline is delocalized into the benzene ring through resonance, diminishing its availability for protonation.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Aniline forms strong intramolecular hydrogen bonding.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cyclohexylamine is an anti-aromatic amine.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In aniline, the lone pair on nitrogen enters into resonance with the conjugated pi-system of the aromatic ring, dispersing electron density over the ortho and para carbons. Consequently, the lone pair is less available to donate to a proton (Lewis base property). Furthermore, protonation yields the anilinium ion, which has only two resonating structures, whereas unprotonated aniline has five, making protonation thermodynamically less favorable.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சைக்ளோஹெக்ஸைலமீன் அல்லது அம்மோனியாவை விட அனிலீன் மிகக் குறைந்த காரத்தன்மையைக் கொண்டிருப்பதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "அனிலீனில் உள்ள நைட்ரஜன் அணு sp இனக்கலப்படைந்துள்ளது.",
+          "அனிலீனின் நைட்ரஜன் மீதான தனித்த எலக்ட்ரான் இரட்டை உடனிசைவு மூலம் பென்சீன் வளையத்திற்குள் உள்ளடங்காமல் பரவுவதால் புரோட்டானேற்றத்திற்கு எளிதில் கிடைப்பதில்லை.",
+          "அனிலீன் மூலக்கூறினுள் வலுவான ஹைட்ரஜன் பிணைப்பை உருவாக்குகிறது.",
+          "சைக்ளோஹெக்ஸைலமீன் ஓர் எதிர்-அரோமேட்டிக் அமீன் ஆகும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hofmann bromamide degradation reaction, an aliphatic or aromatic acid amide is converted into a primary amine containing:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The same number of carbon atoms as the parent amide.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "One carbon atom more than the parent amide.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "One carbon atom less than the parent amide.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Two carbon atoms less than the parent amide.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Hofmann bromamide degradation reaction treats an amide with bromine and aqueous alkali: R-CONH2 + Br2 + 4NaOH -> R-NH2 + Na2CO3 + 2NaBr + 2H2O. The carbonyl carbon of the amide is eliminated as carbonate ion (Na2CO3), producing a primary amine with exactly one carbon atom fewer than the starting amide.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹாஃப்மன் புரோமமைடு இறக்க வினையில், ஓர் அமைடானது எந்த வகையான ஓரிணைய அமீனாக மாற்றப்படுகிறது?",
+        "optionTexts": [
+          "மூல அமைடில் உள்ள அதே எண்ணிக்கையிலான கார்பன் அணுக்களைக் கொண்டது.",
+          "மூல அமைடை விட ஒரு கார்பன் அணு அதிகமாகக் கொண்டது.",
+          "மூல அமைடை விட ஒரு கார்பன் அணு குறைவாகக் கொண்டது.",
+          "மூல அமைடை விட இரண்டு கார்பன் அணுக்கள் குறைவாகக் கொண்டது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of basic strength of methyl-substituted amines in aqueous solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2NH > CH3NH2 > (CH3)3N > NH3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(CH3)3N > (CH3)2NH > CH3NH2 > NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)2NH > (CH3)3N > CH3NH2 > NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NH3 > CH3NH2 > (CH3)2NH > (CH3)3N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In aqueous solution, the basicity of aliphatic amines is dictated by an interplay of three factors: inductive effect (+I), steric hindrance, and hydration enthalpy of the conjugate ammonium cation. For methyl-substituted amines, the balance of these factors makes the secondary amine most basic, followed by the primary amine, tertiary amine, and lastly ammonia: (CH3)2NH > CH3NH2 > (CH3)3N > NH3 (2° > 1° > 3° > NH3). For ethyl-substituted amines, the order is 2° > 3° > 1° > NH3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய கரைசலில் மெத்தில் பதிலீடு செய்யப்பட்ட அமீன்களின் கார வலிமையின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "(CH3)2NH > CH3NH2 > (CH3)3N > NH3",
+          "(CH3)3N > (CH3)2NH > CH3NH2 > NH3",
+          "(CH3)2NH > (CH3)3N > CH3NH2 > NH3",
+          "NH3 > CH3NH2 > (CH3)2NH > (CH3)3N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When aniline is reacted with nitrous acid (NaNO2 + dil. HCl) at 273-278 K (0-5 °C), benzenediazonium chloride is formed. When aliphatic ethylamine is treated under identical conditions, the major product observed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stable ethyldiazonium chloride",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ethanol, accompanied by rapid quantitative evolution of nitrogen gas (N2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Nitroethane",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethyl isocyanide",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Aliphatic diazonium salts (e.g., CH3CH2-N2+ Cl-) are unstable even at 0 °C due to the lack of resonance stabilization with an aromatic ring. They decompose spontaneously to release N2 gas and form an ethyl carbocation (CH3CH2+), which reacts with water to yield ethanol as the main product, along with small amounts of ethene and chloroethane.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "273-278 K வெப்பநிலையில் எத்திலமீன் நைட்ரஸ் அமிலத்துடன் (NaNO2 + dil. HCl) வினைபுரியும் போது பெறப்படும் முதன்மை விளைபொருள்:",
+        "optionTexts": [
+          "நிலையான எத்தில்டையசோனியம் குளோரைடு",
+          "வேகமாக நைட்ரஜன் வாயுவை (N2) வெளியிட்டு உருவாகும் எத்தனால்",
+          "நைட்ரோஈத்தேன்",
+          "எத்தில் ஐசோசயனைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Direct nitration of aniline using a concentrated HNO3 / concentrated H2SO4 mixture yields an unexpectedly large proportion (~47%) of meta-nitroaniline alongside ortho and para isomers. This anomalous meta-substitution occurs because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "In strongly acidic nitrating mixture, aniline is extensively protonated to the anilinium ion (-NH3+), which is strongly deactivating and meta-directing.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The amino group (-NH2) is intrinsically a meta-directing group.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nitric acid acts as a reducing agent toward the benzene ring.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Aniline undergoes rapid sulfonation prior to nitration.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the strongly acidic nitrating medium, the basic amino group of aniline is protonated to form the anilinium ion: C6H5NH2 + H+ <=> C6H5NH3+. The positively charged -NH3+ group exerts a strong -I effect and removes electron density from the aromatic ring, deactivating the ortho and para positions and directing electrophilic substitution predominantly to the meta position (~47%).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர் நைட்ரோவாக்க கலவையால் அனிலீனை நேரடியாக நைட்ரோவாக்கம் செய்யும்போது எதிர்பாராதவிதமாக அதிக அளவில் (~47%) மெட்டா-நைட்ரோஅனிலீன் உருவாவதன் காரணம்:",
+        "optionTexts": [
+          "வலிமையான அமில ஊடகத்தில் அனிலீன் புரோட்டானேற்றமடைந்து அனிலீனியம் அயனியாக (-NH3+) மாறுகிறது, இது வளையத்தின் கிளர்வை நீக்கும் மெட்டா-வழிநடத்தும் தொகுதியாகும்.",
+          "அமினோ தொகுதி (-NH2) இயல்பாகவே மெட்டா-வழிநடத்தும் தொகுதியாகும்.",
+          "நைட்ரிக் அமிலம் பென்சீன் வளையத்திற்கு எதிராக ஒடுக்கும் காரணியாகச் செயல்படுகிறது.",
+          "நைட்ரோவாக்கத்திற்கு முன் அனிலீன் சல்போனேற்றத்திற்கு உள்ளாகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "To prepare monobromoaniline (predominantly 4-bromoaniline) rather than 2,4,6-tribromoaniline from aniline, the amino group (-NH2) must first be protected by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetylation with acetic anhydride in pyridine to form acetanilide.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Methylation using excess methyl iodide.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Diazotization with nitrous acid.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxidation with alkaline potassium permanganate.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The -NH2 group in aniline is strongly activating; bromination with bromine water causes instantaneous trisubstitution to yield 2,4,6-tribromoaniline. To moderate this activating power, aniline is acetylated with acetic anhydride to form acetanilide (C6H5NHCOCH3). The lone pair on nitrogen is now delocalized by the carbonyl group of the acetyl moiety through resonance, decreasing electron donation to the benzene ring. Subsequent bromination gives 4-bromoacetanilide, which upon acidic or basic hydrolysis yields 4-bromoaniline.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனிலீனிலிருந்து 2,4,6-டிரைபுரோமோஅனிலீனுக்குப் பதிலாக 4-புரோமோஅனிலீனைத் தேர்ந்தெடுக்கப்பட்ட முறையில் தயாரிக்க அமினோ தொகுதியை முதலில் எவ்வாறு பாதுகாக்க வேண்டும்?",
+        "optionTexts": [
+          "பிரிடீன் முன்னிலையில் அசிட்டிக் அன்ஹைட்ரைடு கொண்டு அசிட்டைலேற்றம் செய்து அசிட்டனிலைடாக மாற்றுவது.",
+          "அதிகளவு மெத்தில் அயோடைடைப் பயன்படுத்தி மெத்திலேற்றம் செய்வது.",
+          "நைட்ரஸ் அமிலத்தைக் கொண்டு டையசோவாக்கம் செய்வது.",
+          "கார பொட்டாசியம் பெர்மாங்கனேட் கொண்டு ஆக்சிஜனேற்றம் செய்வது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Sandmeyer reaction, freshly prepared benzenediazonium chloride is treated with Cu2Cl2 / HCl, Cu2Br2 / HBr, or CuCN / KCN to yield chlorobenzene, bromobenzene, or benzonitrile, respectively. When benzenediazonium chloride is instead treated with copper powder and hydrochloric acid (Cu / HCl), the reaction is designated as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gattermann reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Stephen reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Balz-Schiemann reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ullmann reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The substitution of the diazonium group by chlorine or bromine using copper metal powder in the presence of the corresponding halogen acid (Cu/HCl or Cu/HBr) is the Gattermann reaction. When cuprous salts (Cu2Cl2 or Cu2Br2) are used, it is termed the Sandmeyer reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீன்டையசோனியம் குளோரைடானது காப்பர் தூள் மற்றும் HCl (Cu / HCl) உடன் வினைபுரிந்து குளோரோபென்சீனைத் தரும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "கேட்டர்மேன் வினை",
+          "ஸ்டீபன் வினை",
+          "பால்ஸ்-ஷிமேன் வினை",
+          "உல்மேன் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Fluorobenzene is conveniently synthesized in the laboratory by treating benzenediazonium chloride with fluoroboric acid (HBF4) to precipitate benzenediazonium fluoroborate, followed by gentle thermal decomposition. This conversion is known as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Swarts reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Finkelstein reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Balz-Schiemann reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Etard reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The preparation of aryl fluorides by precipitating benzenediazonium fluoroborate (C6H5N2+ BF4-) upon treatment with HBF4 followed by dry thermal decomposition to yield fluorobenzene (C6H5F), BF3, and N2 is the Balz-Schiemann reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீன்டையசோனியம் குளோரைடை புளூரோபோரிக் அமிலத்துடன் (HBF4) வினைப்படுத்தி, கிடைக்கும் உப்பை வெப்பச்சிதைவு செய்து புளூரோபென்சீன் தயாரிக்கும் வினை:",
+        "optionTexts": [
+          "சுவார்ட்ஸ் வினை",
+          "ஃபின்கெல்ஸ்டீன் வினை",
+          "பால்ஸ்-ஷிமேன் வினை",
+          "எட்டார்ட் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When benzenediazonium chloride is coupled with phenol in an alkaline medium (pH 9-10), a brilliant orange-colored azo dye is formed. The chemical structure of this dye is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "p-Hydroxyazobenzene (4-(phenyldiazenyl)phenol)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "p-Aminoazobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "o-Hydroxyazobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Diphenyl ether",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Azo coupling between benzenediazonium chloride and phenol is an electrophilic aromatic substitution occurring at the less hindered, electron-rich para position of the phenoxide ion in mildly alkaline solution (pH 9-10): C6H5N2+ Cl- + C6H5OH + OH- -> p-HO-C6H4-N=N-C6H5 (p-hydroxyazobenzene, an orange dye) + Cl- + H2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார ஊடகத்தில் (pH 9-10) பென்சீன்டையசோனியம் குளோரைடு பீனாலுடன் இணையும் போது உருவாகும் ஆரஞ்சு நிற அசோ சாயத்தின் பெயர்:",
+        "optionTexts": [
+          "p-ஹைட்ராக்ஸிஅசோபென்சீன் (4-(ஃபீனைல்டையசெனைல்)பீனால்)",
+          "p-அமினோஅசோபென்சீன்",
+          "o-ஹைட்ராக்ஸிஅசோபென்சீன்",
+          "டைஃபீனைல் ஈதர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Sulphanilic acid (4-aminobenzenesulfonic acid) exists predominantly in solid state and aqueous medium not as an uncharged molecule, but as a dipolar internal salt known as a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zwitterion (+H3N-C6H4-SO3-)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Meisenheimer complex",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Quaternary ammonium hydroxide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carbocation-carbanion pair",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Sulphanilic acid contains both an acidic sulfonic group (-SO3H) and a basic amino group (-NH2) within the same molecule. An internal proton transfer occurs where the strongly acidic -SO3H transfers its proton to the basic -NH2 group, forming an internal dipolar ion (zwitterion): +H3N-C6H4-SO3-. This high-melting, water-soluble dipolar salt form explains its high melting point and insolubility in organic solvents.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பானிலிக் அமிலம் (4-அமினோபென்சீன்சல்போனிக் அமிலம்) கரைசலிலும் படிக நிலையிலும் எந்த இருமுனை அயனி அமைப்பில் (zwitterion) காணப்படுகிறது?",
+        "optionTexts": [
+          "சுவிட்டர் அயனி (+H3N-C6H4-SO3-)",
+          "மெய்சன்ஹைமர் அணைவு",
+          "நான்கிணைய அம்மோனியம் ஹைட்ராக்சைடு",
+          "கார்பன் நேர்அயனி-எதிர்அயனி இணை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of benzenediazonium chloride is warmed with hypophosphorous acid (H3PO2) in the presence of copper(I) ions, the aromatic product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phenol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Benzene",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phosphobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorobenzene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hypophosphorous acid (H3PO2, phosphinic acid) or ethanol acts as a mild reducing agent that replaces the diazonium group (-N2+ Cl-) with hydrogen (deamination): C6H5N2+ Cl- + H3PO2 + H2O --(Cu+)--> C6H6 + N2 + H3PO3 + HCl. The product is pure benzene.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Cu+ முன்னிலையில் பென்சீன்டையசோனியம் குளோரைடு ஹைபோபாஸ்போரஸ் அமிலத்துடன் (H3PO2) வினைபுரியும் போது கிடைக்கும் அரோமேட்டிக் விளைபொருள்:",
+        "optionTexts": [
+          "பீனால்",
+          "பென்சீன்",
+          "பாஸ்போபென்சீன்",
+          "குளோரோபென்சீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A secondary amine reacts with nitrous acid (NaNO2 + dil. HCl) at room temperature to form an oily, yellow, water-insoluble compound X. When compound X is warmed with a crystal of phenol and concentrated sulfuric acid, it gives a green-blue color that turns deep blue upon dilution with water and addition of excess alkali (Liebermann nitroso reaction). Compound X is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An N-nitrosoamine (R2N-NO)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "An aliphatic diazonium salt",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A nitroalkane (R-NO2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A quaternary ammonium salt",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Secondary aliphatic and aromatic amines react with nitrous acid to yield yellow, water-insoluble oily N-nitrosoamines: R2NH + HNO2 -> R2N-N=O + H2O. These N-nitroso compounds respond to the Liebermann nitroso test: heating with phenol and concentrated H2SO4 produces indophenol, which exhibits a green/blue coloration turning deep blue in alkaline medium.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓர் ஈரிணைய அமீன் நைட்ரஸ் அமிலத்துடன் வினைபுரிந்து மஞ்சள் நிற எண்ணெய் போன்ற சேர்மம் X-ஐத் தருகிறது. இது லிபர்மான் நைட்ரோசோ சோதனைக்கு உட்படுகிறது எனில், சேர்மம் X என்பது:",
+        "optionTexts": [
+          "N-நைட்ரோசோஅமீன் (R2N-NO)",
+          "அலிபாடிக் டையசோனியம் உப்பு",
+          "நைட்ரோஆல்கேன் (R-NO2)",
+          "நான்கிணைய அம்மோனியம் உப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following isomeric amines has the LOWEST boiling point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "n-Butylamine (CH3CH2CH2CH2NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Diethylamine ((CH3CH2)2NH)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "tert-Butylamine ((CH3)3CNH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethyldimethylamine (CH3CH2N(CH3)2)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Boiling points of amines depend heavily on intermolecular hydrogen bonding and surface area. Primary amines have two N-H bonds and form strong intermolecular hydrogen-bonded networks. Secondary amines have one N-H bond and form weaker associations. Tertiary amines (such as ethyldimethylamine) possess no hydrogen attached to the electronegative nitrogen atom (no N-H bond); therefore, they cannot form intermolecular hydrogen bonds among themselves, resulting in the lowest boiling point among constitutional isomers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் மாற்றிய அமீன்களில் மிகக் குறைந்த கொதிநிலையைக் கொண்டுள்ள அமீன் எது?",
+        "optionTexts": [
+          "n-பியூட்டைலமீன் (CH3CH2CH2CH2NH2)",
+          "டைஎத்திலமீன் ((CH3CH2)2NH)",
+          "tert-பியூட்டைலமீன் ((CH3)3CNH2)",
+          "எத்தில்டைமெத்திலமீன் (CH3CH2N(CH3)2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When nitrobenzene is reduced with zinc dust in the presence of neutral ammonium chloride solution (Zn / NH4Cl), the major product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aniline",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "N-Phenylhydroxylamine (C6H5NHOH)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hydrazobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Azobenzene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The product of reduction of nitrobenzene depends strictly on the reaction medium: (1) Acidic medium (Sn/HCl or Fe/HCl) gives aniline; (2) Strongly alkaline medium (Zn/NaOH) gives hydrazo-, azo-, or azoxybenzene depending on conditions; (3) Neutral medium (Zn dust + aqueous NH4Cl) performs selective 4-electron reduction, yielding N-phenylhydroxylamine (C6H5NHOH).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நடுநிலை அம்மோனியம் குளோரைடு கரைசலின் முன்னிலையில் துத்தநாகத் தூள் கொண்டு (Zn / NH4Cl) நைட்ரோபென்சீன் ஒடுக்கப்படும் போது கிடைக்கும் முதன்மை விளைபொருள்:",
+        "optionTexts": [
+          "அனிலீன்",
+          "N-ஃபீனைல்ஹைட்ராக்சிலமீன் (C6H5NHOH)",
+          "ஹைட்ரசோபென்சீன்",
+          "அசோபென்சீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Reaction of an aliphatic primary amine with benzenesulfonyl chloride (Hinsberg reagent) produces an N-alkylbenzenesulfonamide that dissolves in aqueous NaOH. It dissolves in alkali because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The sulfonyl oxygen atoms undergo rapid nucleophilic displacement by hydroxide.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The hydrogen attached to the nitrogen atom is strongly acidic due to the powerful electron-withdrawing effect of the adjacent -SO2- group.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The benzene ring carries an activating amino substituent.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The sulfonamide undergoes hydrolysis back to free amine.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In N-alkylbenzenesulfonamide (C6H5SO2-NH-R), the hydrogen atom attached directly to nitrogen is acidic because the strong electron-withdrawing sulfonyl group (-SO2-) heavily delocalizes the negative charge of the conjugate base anion (C6H5SO2-N^--R). Because this hydrogen is acidic, the compound readily dissolves in aqueous alkali (NaOH) by forming a water-soluble sodium salt.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரிணைய அமீன் பென்சீன்சல்போனைல் குளோரைடுடன் வினைபுரிந்து தரும் N-ஆல்கைல்பென்சீன்சல்போனமைடு காரத்தில் (NaOH) கரைவதன் காரணம்:",
+        "optionTexts": [
+          "சல்போனைல் ஆக்ஸிஜன் அணுக்கள் ஹைட்ராக்சைடால் எளிதில் பதிலீடு செய்யப்படுவது.",
+          "அருகிலுள்ள -SO2- தொகுதியின் வலிமையான எலக்ட்ரான் கவரும் தன்மையால் நைட்ரஜனுடன் இணைந்த ஹைட்ரஜன் அதிக அமிலத்தன்மை கொண்டிருப்பது.",
+          "பென்சீன் வளையம் கிளர்வுறும் அமினோ தொகுதியைப் பெற்றுள்ளது.",
+          "சல்போனமைடு நீராற்பகுப்படைந்து தனித்த அமீனாக மாறுவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When quaternary ammonium hydroxides containing different alkyl groups are pyrolyzed (Hofmann elimination), the major alkene formed is the least substituted alkene. In the thermal decomposition of [(CH3)2CH-CH(CH3)-N+(CH3)3] OH-, the major alkene formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethene (from elimination on an ethyl group, if present)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3-Methylbut-1-ene (least substituted Hofmann product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2-Methylbut-2-ene (Saytzeff product)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2-Methylbut-1-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the Hofmann elimination of quaternary ammonium hydroxides, the leaving group (-NMe3) is bulky and exerts strong steric hindrance and electron withdrawal. Base (OH-) abstracts the most acidic, least sterically hindered beta-hydrogen (located on the less substituted beta-carbon), forming the least substituted, least stable alkene (Hofmann rule). For 1,2-dimethylpropyltrimethylammonium hydroxide, elimination from C1 gives 3-methylbut-1-ene as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நான்கிணைய அம்மோனியம் ஹைட்ராக்சைடு வெப்பச்சிதைவடையும் போது (ஹாஃப்மன் நீக்கல்) குறைந்த பதிலீடு பெற்ற ஆல்கீன் முதன்மையாக உருவாகிறது. [(CH3)2CH-CH(CH3)-N+(CH3)3] OH- சிதைவடையும் போது கிடைக்கும் முதன்மை ஆல்கீன்:",
+        "optionTexts": [
+          "ஈத்தீன்",
+          "3-மெத்தில்பியூட்-1-ஈன் (குறைந்த பதிலீடு பெற்ற ஹாஃப்மன் விளைபொருள்)",
+          "2-மெத்தில்பியூட்-2-ஈன் (செய்ட்ஸெஃப் விளைபொருள்)",
+          "2-மெத்தில்பியூட்-1-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of isomeric primary aliphatic amines possible for the molecular formula C4H11N is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Primary aliphatic amines of formula C4H11N contain a -NH2 group attached to a butyl skeleton: (1) Butan-1-amine: CH3CH2CH2CH2NH2; (2) Butan-2-amine: CH3CH2CH(NH2)CH3; (3) 2-Methylpropan-1-amine: (CH3)2CHCH2NH2; (4) 2-Methylpropan-2-amine: (CH3)3CNH2. Exactly 4 constitutional primary amine isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H11N என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட சாத்தியமான ஓரிணைய அலிபாடிக் அமீன் கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Hofmann bromamide degradation reaction: R-CONH2 + Br2 + 4KOH -> R-NH2 + K2CO3 + 2KBr + 2H2O, the stoichiometric number of moles of KOH consumed per mole of amide is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "From the balanced chemical equation for the Hofmann bromamide degradation, 1 mole of acid amide reacts with 1 mole of bromine and exactly 4 moles of potassium hydroxide (KOH) to yield 1 mole of primary amine, 1 mole of K2CO3, 2 moles of KBr, and 2 moles of water.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹாஃப்மன் புரோமமைடு இறக்க வினையில் 1 மோல் அமில அமைடிற்கு நுகரப்படும் KOH-ன் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of constitutional isomers (including primary, secondary, and tertiary amines) having the molecular formula C3H9N is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Amines with formula C3H9N: Primary amines (1°): (1) Propan-1-amine: CH3CH2CH2NH2; (2) Propan-2-amine: (CH3)2CHNH2. Secondary amines (2°): (3) N-Methylethanamine: CH3CH2NHCH3. Tertiary amines (3°): (4) N,N-Dimethylmethanamine (trimethylamine): (CH3)3N. Total constitutional isomers = 2 (1°) + 1 (2°) + 1 (3°) = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C3H9N என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட சாத்தியமான அனைத்து அமீன் கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Aniline (molar mass = 93 g mol^-1) is acetylated with acetic anhydride to produce acetanilide (molar mass = 135 g mol^-1). If 9.3 g of aniline produces 10.8 g of pure acetanilide, the percentage yield of the reaction is:",
+    "correctAnswer": 80,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of aniline reacted = 9.3 g / 93 g mol^-1 = 0.10 mol. Theoretical yield of acetanilide = 0.10 mol * 135 g mol^-1 = 13.5 g. Actual yield obtained = 10.8 g. Percentage yield = (Actual mass / Theoretical mass) * 100 = (10.8 / 13.5) * 100 = 80%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "9.3 g அனிலீனானது அசிட்டிக் அன்ஹைட்ரைடுடன் வினைபுரிந்து 10.8 g தூய அசிட்டனிலைடைத் தருகிறது எனில், வினையின் சதவீத விளைச்சல்: (அனிலீன் மோலார் நிறை = 93 g mol^-1, அசிட்டனிலைடு = 135 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of benzenoid structural isomers possible for the molecular formula C7H9N is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Benzenoid isomers of formula C7H9N: (1) Benzylamine: C6H5-CH2NH2; (2) 2-Methylaniline (o-toluidine): o-CH3-C6H4-NH2; (3) 3-Methylaniline (m-toluidine): m-CH3-C6H4-NH2; (4) 4-Methylaniline (p-toluidine): p-CH3-C6H4-NH2; (5) N-Methylaniline: C6H5-NHCH3. Exactly 5 benzenoid constitutional isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C7H9N என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட சாத்தியமான பென்சீன் வளைய கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of ethylamine reacts completely with excess nitrous acid (HNO2) at 0 °C, the volume of nitrogen gas (N2) evolved at STP (in liters, rounded to one decimal place) is: (Molar volume at STP = 22.4 L mol^-1)",
+    "correctAnswer": 22.4,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Reaction: CH3CH2NH2 + HNO2 -> CH3CH2OH + N2(g) + H2O. One mole of primary aliphatic amine decomposes quantitatively to liberate exactly 1 mole of N2 gas. At STP, 1 mole of an ideal gas occupies 22.4 liters.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0 °C-ல் 1 மோல் எத்திலமீன் அதிகளவு நைட்ரஸ் அமிலத்துடன் முழுமையாக வினைபுரியும் போது STP-யில் வெளிவரும் நைட்ரஜன் வாயுவின் கனஅளவு (லிட்டரில்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of pi (pi) bonds present in a single molecule of the azo dye p-hydroxyazobenzene is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The chemical structure of p-hydroxyazobenzene is C6H5-N=N-C6H4-OH. It contains: two benzene rings, each contributing 3 pi bonds (2 * 3 = 6 pi bonds); and one azo linkage (-N=N-), which contains 1 pi bond. Total number of pi bonds = 6 + 1 = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p-ஹைட்ராக்ஸிஅசோபென்சீன் என்ற அசோ சாய மூலக்கூறில் உள்ள மொத்த பை (pi) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the reduction of 1 mole of nitrobenzene to aniline using metallic tin and concentrated hydrochloric acid: C6H5NO2 + 3Sn + 6HCl -> C6H5NH2 + 3SnCl2 + 2H2O, the number of moles of electrons transferred to reduce one mole of nitrobenzene is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In nitrobenzene (C6H5NO2), the formal oxidation state of nitrogen is +3. In aniline (C6H5NH2), the oxidation state of nitrogen is -3. The reduction involves: C6H5NO2 + 6H+ + 6e^- -> C6H5NH2 + 2H2O. Therefore, exactly 6 moles of electrons are transferred per mole of nitrobenzene reduced.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் நைட்ரோபென்சீன் அனிலீனாக ஒடுக்கமடையும் வினையில் பரிமாறப்படும் எலக்ட்ரான்களின் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A chiral primary amine having the molecular formula C4H11N on reaction with nitrous acid gives an alcohol with retention and inversion of configuration. The number of stereoisomers (enantiomers) possible for this chiral amine is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The only chiral primary amine with formula C4H11N is butan-2-amine: CH3-C*H(NH2)-CH2CH3. The C2 carbon is attached to four distinct groups: -H, -NH2, -CH3, and -CH2CH3. Because it contains one asymmetric center, it exists as a pair of non-superimposable mirror-image enantiomers ((R)-butan-2-amine and (S)-butan-2-amine). Thus, exactly 2 stereoisomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H11N என்ற வாய்ப்பாட்டைக் கொண்ட ஒரு கைரல் ஓரிணைய அமீனிற்கு சாத்தியமான புறவெளி மாற்றியங்களின் (எனான்சியோமர்கள்) எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che18-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following five amines: (1) Aniline, (2) N-Methylaniline, (3) N,N-Dimethylaniline, (4) Ethylamine, and (5) Diethylamine. The total number of amines among these that will release an insoluble solid/oil or form a soluble salt upon reaction with benzenesulfonyl chloride (Hinsberg reagent) is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Hinsberg's reagent reacts with primary and secondary amines, but does not react with tertiary amines. (1) Aniline (1° aromatic) reacts to give an alkali-soluble sulfonamide; (2) N-Methylaniline (2° aromatic) reacts to give an alkali-insoluble sulfonamide; (3) N,N-Dimethylaniline (3° aromatic) does NOT react; (4) Ethylamine (1° aliphatic) reacts to give an alkali-soluble sulfonamide; (5) Diethylamine (2° aliphatic) reacts to give an alkali-insoluble sulfonamide. Exactly 4 amines (1, 2, 4, and 5) react with Hinsberg's reagent.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனிலீன் (1), N-மெத்தில்அனிலீன் (2), N,N-டைமெத்தில்அனிலீன் (3), எத்திலமீன் (4), மற்றும் டைஎத்திலமீன் (5) ஆகிய ஐந்து அமீன்களில் ஹின்ஸ்பெர்க் காரணியுடன் (C6H5SO2Cl) வினைபுரியும் அமீன்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

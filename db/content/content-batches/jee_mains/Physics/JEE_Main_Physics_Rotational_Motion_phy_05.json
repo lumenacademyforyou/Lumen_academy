@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY05-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two particles of masses 2 kg and 3 kg are located at positions (1 m, 2 m) and (4 m, 7 m) respectively in the xy-plane. The coordinates of the centre of mass of the system are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2.8 m, 5.0 m)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2.5 m, 4.5 m)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(3.0 m, 5.2 m)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(2.6 m, 4.8 m)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "x_cm = (m1*x1 + m2*x2)/(m1 + m2) = (2*1 + 3*4)/(2 + 3) = 14/5 = 2.8 m. y_cm = (m1*y1 + m2*y2)/(m1 + m2) = (2*2 + 3*7)/(2 + 3) = 25/5 = 5.0 m. Thus, the centre of mass coordinates are (2.8 m, 5.0 m).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "xy-தளத்தில் முறையே (1 m, 2 m) மற்றும் (4 m, 7 m) நிலைகளில் 2 kg மற்றும் 3 kg நிறையுள்ள இரு துகள்கள் அமைந்துள்ளன. இந்த அமைப்பின் நிறை மையத்தின் ஆயத்தொலைவுகள்:",
+        "optionTexts": [
+          "(2.8 m, 5.0 m)",
+          "(2.5 m, 4.5 m)",
+          "(3.0 m, 5.2 m)",
+          "(2.6 m, 4.8 m)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A uniform thin rod of mass M and length L has a moment of inertia I0 about an axis perpendicular to its length and passing through its centre. Its moment of inertia about a parallel axis passing through one of its ends is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 I0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 I0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 I0",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5 I0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The moment of inertia about the center is I0 = (1/12) M L^2. By the parallel axes theorem, I_end = I0 + M (L/2)^2 = (1/12) M L^2 + (1/4) M L^2 = (1/3) M L^2 = 4 * (1/12 M L^2) = 4 I0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட ஒரு சீரான மெல்லிய கம்பியின் மையத்தின் வழியே அதன் நீளத்திற்கு செங்குத்தாகச் செல்லும் அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன் I0 ஆகும். அதன் ஒரு முனை வழியே செல்லும் இணை அச்சைப் பற்றிய நிலைமத் திருப்புத்திறன்:",
+        "optionTexts": [
+          "2 I0",
+          "3 I0",
+          "4 I0",
+          "5 I0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A force F = (2i - 3j + 4k) N acts at a position vector r = (3i + 2j + 3k) m with respect to the origin. The torque acting about the origin is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(17i - 6j - 13k) N m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(17i + 6j - 13k) N m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(13i - 6j + 17k) N m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(-17i + 6j + 13k) N m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Torque tau = r x F. Using determinant expansion: tau_x = (2)(4) - (3)(-3) = 8 - (-9) = 17. tau_y = (3)(2) - (3)(4) = 6 - 12 = -6. tau_z = (3)(-3) - (2)(2) = -9 - 4 = -13. Hence tau = (17i - 6j - 13k) N m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆதிப்புள்ளியைப் பொறுத்து r = (3i + 2j + 3k) m என்ற நிலை வெக்டரில் F = (2i - 3j + 4k) N என்ற விசை செயல்படுகிறது. ஆதிப்புள்ளியைப் பற்றிய திருப்புவிசை:",
+        "optionTexts": [
+          "(17i - 6j - 13k) N m",
+          "(17i + 6j - 13k) N m",
+          "(13i - 6j + 17k) N m",
+          "(-17i + 6j + 13k) N m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The ratio of the radius of gyration of a thin uniform circular ring to that of a uniform circular disc of the same radius about their respective central perpendicular axes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2) : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : sqrt(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a circular ring, I_ring = M R^2 => k_ring = R. For a circular disc, I_disc = (1/2) M R^2 => k_disc = R / sqrt(2). Therefore, k_ring / k_disc = R / (R / sqrt(2)) = sqrt(2) / 1 = sqrt(2) : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே ஆரமுடைய ஒரு சீரான வட்ட வளையம் மற்றும் வட்டத் தட்டு ஆகியவற்றின் மைய செங்குத்து அச்சைப் பற்றிய சுழற்சி ஆரங்களின் விகிதம்:",
+        "optionTexts": [
+          "sqrt(2) : 1",
+          "1 : sqrt(2)",
+          "2 : 1",
+          "1 : 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body rotates with angular momentum L and moment of inertia I. If its angular momentum is doubled while keeping its moment of inertia constant, its rotational kinetic energy becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two times",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Four times",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Eight times",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Half",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Rotational kinetic energy is given by K = L^2 / (2I). If L is doubled (L' = 2L) while I remains constant, K' = (2L)^2 / (2I) = 4 * (L^2 / (2I)) = 4 K. Thus, the rotational kinetic energy increases by a factor of 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பொருள் L கோண உந்தத்துடனும் I நிலைமத் திருப்புத்திறனுடனும் சுழல்கிறது. அதன் நிலைமத் திருப்புத்திறன் மாறாமல் இருக்கையில் கோண உந்தம் இரட்டிப்பாக்கப்பட்டால், அதன் சுழற்சி இயக்க ஆற்றல்:",
+        "optionTexts": [
+          "இரு மடங்கு",
+          "நான்கு மடங்கு",
+          "எட்டு மடங்கு",
+          "பாதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A constant torque of 40 N m is applied to a flywheel of moment of inertia 5 kg m^2 initially at rest. The angular velocity of the flywheel after 3 seconds is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "16 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "24 rad/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "30 rad/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "48 rad/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Angular acceleration alpha = tau / I = (40 N m) / (5 kg m^2) = 8 rad/s^2. From rotational kinematics, omega = omega_0 + alpha * t = 0 + (8)(3) = 24 rad/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓய்வில் உள்ள 5 kg m^2 நிலைமத் திருப்புத்திறன் கொண்ட ஒரு இயக்கச் சக்கரத்தின் (flywheel) மீது 40 N m மாறா திருப்புவிசை செலுத்தப்படுகிறது. 3 விநாடிகளுக்குப் பிறகு அச்சக்கரத்தின் கோணத் திசைவேகம்:",
+        "optionTexts": [
+          "16 rad/s",
+          "24 rad/s",
+          "30 rad/s",
+          "48 rad/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "From a uniform circular disc of radius R and mass M, a circular hole of radius R/2 is cut out such that the rim of the hole touches the rim of the disc. The distance of the centre of mass of the remaining portion from the centre of the original disc is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R/3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R/4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R/6",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "R/8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the centre of the original disc be at the origin (0, 0). Mass of original disc is M with area pi R^2. The removed circular part has radius R/2, so its area is pi (R/2)^2 = (1/4) pi R^2 and mass is m = M/4. Its centre is located at x = R/2. By the centre of mass formula for a removed mass: x_remaining = (M * 0 - m * (R/2)) / (M - m) = - (M/4 * R/2) / (3M/4) = - R/6. Hence, the distance is R/6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான வட்டத் தட்டிலிருந்து, அதன் விளிம்பைத் தொடுமாறு R/2 ஆரம் கொண்ட ஒரு வட்டப்பகுதி வெட்டி எடுக்கப்படுகிறது. மீதமுள்ள பகுதியின் நிறை மையம் அசல் தட்டின் மையத்திலிருந்து உள்ள தொலைவு:",
+        "optionTexts": [
+          "R/3",
+          "R/4",
+          "R/6",
+          "R/8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A horizontal circular platform of moment of inertia I is rotating with angular velocity omega0 about a vertical frictionless axis. A child of mass m, initially standing at the center of the platform, walks radially outward to a distance R from the center. The new angular velocity of the platform is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "I omega0 / (I + m R^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(I + m R^2) omega0 / I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I omega0 / (I - m R^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "omega0 / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since no external torque acts on the system about the vertical axis, total angular momentum is conserved: L_initial = L_final. Initially, the child is at the axis (r = 0), so I_initial = I. When the child reaches distance R, I_final = I + m R^2. Therefore, I omega0 = (I + m R^2) omega => omega = I omega0 / (I + m R^2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I நிலைமத் திருப்புத்திறன் கொண்ட ஒரு கிடைமட்ட வட்ட மேடை செங்குத்தான உராய்வற்ற அச்சைப் பற்றி omega0 கோணத் திசைவேகத்துடன் சுழல்கிறது. தொடக்கத்தில் மையத்தில் நிற்கும் m நிறையுள்ள ஒரு குழந்தை மையத்திலிருந்து R தொலைவுக்கு ஆரவழியே நடந்து செல்கிறது. மேடையின் புதிய கோணத் திசைவேகம்:",
+        "optionTexts": [
+          "I omega0 / (I + m R^2)",
+          "(I + m R^2) omega0 / I",
+          "I omega0 / (I - m R^2)",
+          "omega0 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The moment of inertia of a uniform circular disc of mass M and radius R about a diameter is I_d. Its moment of inertia about a tangent in the plane of the disc is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/2) I_d",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 I_d",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 I_d",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2 I_d",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a circular disc, the moment of inertia about a diameter in its plane is I_d = (1/4) M R^2. A tangent in the plane of the disc is parallel to a diameter and at a distance R from it. By the parallel axes theorem: I_tangent = I_d + M R^2 = (1/4) M R^2 + M R^2 = (5/4) M R^2 = 5 * ((1/4) M R^2) = 5 I_d.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான வட்டத் தட்டின் விட்டம் பற்றிய நிலைமத் திருப்புத்திறன் I_d ஆகும். தட்டின் தளத்தில் உள்ள தொடுகோடு பற்றிய அதன் நிலைமத் திருப்புத்திறன்:",
+        "optionTexts": [
+          "(3/2) I_d",
+          "3 I_d",
+          "5 I_d",
+          "2 I_d"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid cylinder and a hollow cylinder of identical masses and radii are released simultaneously from rest at the top of an inclined plane of inclination theta. Both roll down without slipping. The ratio of the acceleration of the solid cylinder to that of the hollow cylinder is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 : 3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) : sqrt(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The acceleration of an object rolling without slipping down an inclined plane is a = (g sin theta) / (1 + k^2/R^2). For a solid cylinder, k^2/R^2 = 1/2, so a_solid = (g sin theta) / (1 + 1/2) = (2/3) g sin theta. For a hollow thin cylinder, k^2/R^2 = 1, so a_hollow = (g sin theta) / (1 + 1) = (1/2) g sin theta. The ratio is a_solid / a_hollow = (2/3) / (1/2) = 4/3 = 4 : 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே நிறையும் ஆரமும் கொண்ட ஒரு திண்ம உருளையும் உள்ளீடற்ற உருளையும் theta சாய்வுக் கோணம் கொண்ட சாய்தளத்தின் உச்சியிலிருந்து ஒரே நேரத்தில் ஓய்விலிருந்து நழுவாமல் உருண்டு வருகின்றன. திண்ம உருளையின் முடுக்கத்திற்கும் உள்ளீடற்ற உருளையின் முடுக்கத்திற்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "4 : 3",
+          "3 : 2",
+          "sqrt(3) : sqrt(2)",
+          "2 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform solid sphere of mass M and radius R rolls without slipping on a horizontal plane. The fraction of its total kinetic energy associated with rotational motion is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2/5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2/7",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5/7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1/2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total kinetic energy in pure rolling is K_total = K_trans + K_rot = (1/2) M v^2 + (1/2) I omega^2. For a solid sphere, I = (2/5) M R^2 and v = R omega. Thus K_rot = (1/2) * (2/5 M R^2) * (v/R)^2 = (1/5) M v^2. Total kinetic energy K_total = (1/2) M v^2 + (1/5) M v^2 = (7/10) M v^2. The fraction of rotational kinetic energy is K_rot / K_total = ((1/5) M v^2) / ((7/10) M v^2) = (1/5) * (10/7) = 2/7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான திண்மக் கோளம் கிடைமட்டத் தளத்தில் நழுவாமல் உருளுகிறது. அதன் மொத்த இயக்க ஆற்றலில் சுழற்சி இயக்க ஆற்றலின் பின்னம்:",
+        "optionTexts": [
+          "2/5",
+          "2/7",
+          "5/7",
+          "1/2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m is projected from the origin on a level horizontal ground with velocity u at an angle theta with the horizontal. The magnitude of the angular momentum of the particle about the point of projection when it reaches its maximum height is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(m u^3 sin theta cos^2 theta) / (2g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(m u^3 sin^2 theta cos theta) / (2g)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(m u^3 sin theta cos theta) / g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(m u^3 cos^2 theta) / (2g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At maximum height, the particle's velocity is horizontal: v_x = u cos theta, and its vertical height is H = (u^2 sin^2 theta) / (2g). The perpendicular distance from the line of velocity to the projection point is H. Therefore, the magnitude of angular momentum about the projection point is L = m * v_x * H = m * (u cos theta) * [ (u^2 sin^2 theta) / (2g) ] = (m u^3 sin^2 theta cos theta) / (2g).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையுள்ள ஒரு துகள் கிடைமட்டத் தளத்தில் உள்ள ஆதிப்புள்ளியிலிருந்து u திசைவேகத்துடன் கிடைமட்டத்துடன் theta கோணத்தில் எறியப்படுகிறது. அது தனது பெரும உயரத்தை அடையும் போது எறிபுள்ளியைப் பற்றிய துகளின் கோண உந்தத்தின் எண்மதிப்பு:",
+        "optionTexts": [
+          "(m u^3 sin theta cos^2 theta) / (2g)",
+          "(m u^3 sin^2 theta cos theta) / (2g)",
+          "(m u^3 sin theta cos theta) / g",
+          "(m u^3 cos^2 theta) / (2g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform rod of length L and mass M is hinged smoothly at one end. If it is released from rest from a horizontal position, the initial angular acceleration of the rod is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3g / (2L)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "g / (2L)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2g / (3L)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3g / L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When released from the horizontal position, the torque about the hinge is due to gravity acting at the centre of mass (L/2 from the hinge): tau = M g (L/2). The moment of inertia of the rod about the hinged end is I = (1/3) M L^2. Using tau = I alpha: M g (L/2) = ((1/3) M L^2) alpha => alpha = [M g (L/2)] / [(1/3) M L^2] = 3g / (2L).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமும் M நிறையும் கொண்ட ஒரு சீரான கம்பி ஒரு முனையில் மென்மையாக இணைக்கப்பட்டுள்ளது. அது கிடைமட்ட நிலையிலிருந்து ஓய்விலிருந்து விடுவிக்கப்பட்டால், கம்பியின் ஆரம்ப கோண முடுக்கம்:",
+        "optionTexts": [
+          "3g / (2L)",
+          "g / (2L)",
+          "2g / (3L)",
+          "3g / L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular disc of moment of inertia I1 rotates with angular velocity omega1 about a vertical axis through its center. Another disc of moment of inertia I2 initially at rest is dropped coaxially onto the first disc. If the two discs eventually rotate together with common angular velocity, the fractional loss in rotational kinetic energy is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "I2 / (I1 + I2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I1 / (I1 + I2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I1 I2 / (I1 + I2)^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I2 / (2(I1 + I2))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By conservation of angular momentum: I1 omega1 = (I1 + I2) omega => omega = I1 omega1 / (I1 + I2). Initial kinetic energy K_i = (1/2) I1 omega1^2. Final kinetic energy K_f = (1/2) (I1 + I2) omega^2 = (1/2) [I1^2 / (I1 + I2)] omega1^2. Loss in kinetic energy Delta K = K_i - K_f = (1/2) [ (I1 I2) / (I1 + I2) ] omega1^2. Fractional loss Delta K / K_i = [ (1/2) (I1 I2)/(I1 + I2) omega1^2 ] / [ (1/2) I1 omega1^2 ] = I2 / (I1 + I2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I1 நிலைமத் திருப்புத்திறன் கொண்ட ஒரு வட்டத் தட்டு தனது மைய அச்சைச் சுற்றி omega1 கோணத் திசைவேகத்துடன் சுழல்கிறது. ஓய்வில் உள்ள I2 நிலைமத் திருப்புத்திறன் கொண்ட மற்றொரு தட்டு அதன் மீது அதே அச்சில் விடப்படுகிறது. இரு தட்டுகளும் ஒன்றாக சுழன்றால், சுழற்சி இயக்க ஆற்றலில் ஏற்படும் பின்ன இழப்பு:",
+        "optionTexts": [
+          "I2 / (I1 + I2)",
+          "I1 / (I1 + I2)",
+          "I1 I2 / (I1 + I2)^2",
+          "I2 / (2(I1 + I2))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere of mass M and radius R rolls without slipping down an inclined plane of angle theta. The minimum coefficient of static friction mu_s required between the sphere and the incline to prevent slipping is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2/7) tan theta",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/3) tan theta",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2/5) tan theta",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/7) tan theta",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The required frictional force for pure rolling of a body of radius of gyration k on an incline is f = [M g sin theta] / [1 + R^2/k^2]. For a solid sphere, k^2/R^2 = 2/5 => R^2/k^2 = 5/2. Thus f = [M g sin theta] / [1 + 5/2] = (2/7) M g sin theta. To avoid slipping, f <= mu_s N = mu_s M g cos theta. Therefore, mu_s >= f / (M g cos theta) = [(2/7) M g sin theta] / [M g cos theta] = (2/7) tan theta.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு திண்மக் கோளம் theta சாய்வுக் கோணம் கொண்ட சாய்தளத்தில் நழுவாமல் உருளுகிறது. நழுவுதலைத் தடுக்க கோளத்திற்கும் சாய்தளத்திற்கும் இடையே தேவையான குறைந்தபட்ச நிலை உராய்வுக் குணகம் mu_s:",
+        "optionTexts": [
+          "(2/7) tan theta",
+          "(1/3) tan theta",
+          "(2/5) tan theta",
+          "(5/7) tan theta"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solid uniform sphere of radius R is projected horizontally with initial linear speed v0 and zero initial angular velocity onto a rough horizontal surface with kinetic friction coefficient mu. The linear speed of the sphere when it starts pure rolling is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/7) v0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2/7) v0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(3/5) v0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/9) v0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "During the slipping phase, kinetic friction acts in backward direction. About any point on the horizontal contact surface, the torque of the frictional force and normal/gravitational forces is zero. Thus, the total angular momentum of the sphere about a point on the surface remains conserved. Initial angular momentum about contact point: L_i = M v0 R. When pure rolling begins: L_f = I_cm omega + M v R = ((2/5) M R^2)(v/R) + M v R = (7/5) M v R. Conserving angular momentum: M v0 R = (7/5) M v R => v = (5/7) v0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய ஒரு சீரான திண்மக் கோளம் ஆரம்ப நேரியல் வேகம் v0 மற்றும் சுழி கோணத் திசைவேகத்துடன் mu இயக்க உராய்வுக் குணகம் கொண்ட சொரசொரப்பான கிடைமட்டத் தளத்தின் மீது செலுத்தப்படுகிறது. அது தூய உருளலைத் தொடங்கும் போது அதன் நேரியல் வேகம்:",
+        "optionTexts": [
+          "(5/7) v0",
+          "(2/7) v0",
+          "(3/5) v0",
+          "(5/9) v0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform solid cube of side a and mass M rests on a rough horizontal floor with coefficient of friction mu. A horizontal force F is applied at the top edge of the cube. If the cube topples before it slides, the coefficient of static friction mu must satisfy:",
+    "options": [
+      {
+        "label": "A",
+        "text": "mu > 1/2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "mu > 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "mu > 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "mu > 1/3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For sliding to occur, F >= mu M g, so the threshold force for sliding is F_slide = mu M g. For toppling about the front bottom edge, torque of F about that edge must exceed torque of gravity about that edge: F * a >= M g * (a/2) => F_topple = (1/2) M g. For the cube to topple before sliding, F_topple < F_slide => (1/2) M g < mu M g => mu > 1/2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a பக்க அளவும் M நிறையும் கொண்ட ஒரு சீரான திண்மக் கனசதுரம் mu உராய்வுக் குணகம் கொண்ட கிடைமட்டத் தரையில் உள்ளது. கனசதுரத்தின் மேல் விளிம்பில் F என்ற கிடைமட்ட விசை செலுத்தப்படுகிறது. கனசதுரம் சறுக்குவதற்கு முன் கவிழ்ந்தால் (topples), நிலை உராய்வுக் குணகம் mu எதனை பூர்த்தி செய்ய வேண்டும்:",
+        "optionTexts": [
+          "mu > 1/2",
+          "mu > 1",
+          "mu > 2",
+          "mu > 1/3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A thin rod of length L lies along the x-axis with one end at x = 0. Its linear mass density varies as lambda(x) = lambda0 * (x / L)^2, where lambda0 is a constant. The position of the centre of mass of the rod is at x equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2/3) L",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(3/4) L",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(4/5) L",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/6) L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The x-coordinate of the centre of mass is x_cm = [integral_{0}^{L} x lambda(x) dx] / [integral_{0}^{L} lambda(x) dx]. Numerator = integral_{0}^{L} lambda0 (x^3 / L^2) dx = (lambda0 / L^2) * [x^4 / 4]_{0}^{L} = (1/4) lambda0 L^2. Denominator = integral_{0}^{L} lambda0 (x^2 / L^2) dx = (lambda0 / L^2) * [x^3 / 3]_{0}^{L} = (1/3) lambda0 L. Therefore, x_cm = [(1/4) lambda0 L^2] / [(1/3) lambda0 L] = (3/4) L.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L நீளமுள்ள ஒரு மெல்லிய கம்பி x-அச்சில் x = 0 முனையிலிருந்து அமைந்துள்ளது. அதன் நீள் நிறை அடர்த்தி lambda(x) = lambda0 * (x / L)^2 என மாறுகிறது. கம்பியின் நிறை மையம் x சமமாகும் இடம்:",
+        "optionTexts": [
+          "(2/3) L",
+          "(3/4) L",
+          "(4/5) L",
+          "(5/6) L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform rod of mass M and length L is free to rotate in a horizontal plane about a fixed vertical axis through one end. A horizontal impulse J is delivered perpendicular to the rod at a distance x from the hinged end. If the impulsive reaction at the hinge immediately after the blow is zero, then x is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "L / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "L / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2/3) L",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "(3/4) L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the impulsive reaction at the hinge be R. Then linear impulse gives J - R = M v_cm = M (omega * L/2). Angular impulse about the hinge gives J * x = I_hinge * omega = ((1/3) M L^2) omega => omega = 3 J x / (M L^2). Substituting omega into linear impulse: J - R = M * (L/2) * [3 J x / (M L^2)] = (3 J x) / (2 L). For the impulsive reaction at the hinge to be zero (R = 0): J = (3 J x) / (2 L) => 1 = 3x / (2L) => x = (2/3) L. (This point is known as the center of percussion).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் L நீளமும் கொண்ட ஒரு சீரான கம்பி ஒரு முனையில் உள்ள நிலையான செங்குத்து அச்சைப் பற்றி கிடைமட்டத் தளத்தில் சுழல முடிகிறது. சுழல் முனையிலிருந்து x தொலைவில் கம்பியின் நீளத்திற்கு செங்குத்தாக J என்ற கிடைமட்ட கணத்தாக்கு விசை செலுத்தப்படுகிறது. தாக்குதலுக்குப் பிறகு சுழல் முனையில் கணத்தாக்கு எதிர்வினை சுழியாக இருந்தால், x இன் மதிப்பு:",
+        "optionTexts": [
+          "L / 3",
+          "L / 2",
+          "(2/3) L",
+          "(3/4) L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A light inextensible string passes over a pulley of mass M and radius R, which is a uniform disc free to rotate about its horizontal axle. Blocks of masses m1 = 3 kg and m2 = 1 kg are attached to the two ends. If the pulley has mass M = 2 kg and the string does not slip on the pulley, the acceleration of the system is (take g = 10 m/s^2):",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3.0 m/s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 m/s^2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5.0 m/s^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For the two hanging blocks: m1 g - T1 = m1 a, and T2 - m2 g = m2 a. For the pulley disc: (T1 - T2) R = I alpha = ((1/2) M R^2) (a / R) => T1 - T2 = (1/2) M a. Adding the three equations eliminates tensions: (m1 - m2) g = (m1 + m2 + M/2) a. Substituting m1 = 3 kg, m2 = 1 kg, M = 2 kg, g = 10 m/s^2: (3 - 1)(10) = (3 + 1 + 2/2) a => 20 = (4 + 1) a => 20 = 5 a => a = 4.0 m/s^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு சீரான வட்டத் தட்டு வடிவிலான கப்பியானது கிடைமட்ட அச்சைப் பற்றி சுழல முடிகிறது. அதன் மீது செல்லும் ஒரு லேசான கயிற்றின் இரு முனைகளில் m1 = 3 kg மற்றும் m2 = 1 kg நிறைகள் இணைக்கப்பட்டுள்ளன. கப்பியின் நிறை M = 2 kg மற்றும் கயிறு நழுவாமல் இயங்கினால், அமைப்பின் முடுக்கம் (g = 10 m/s^2 எனக்கொள்க):",
+        "optionTexts": [
+          "2.0 m/s^2",
+          "3.0 m/s^2",
+          "4.0 m/s^2",
+          "5.0 m/s^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Four point masses of 1 kg each are placed at the four corners of a light square frame of side 2 m. The moment of inertia of the system about an axis perpendicular to the plane of the square and passing through its centre is _____ kg m^2.",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The distance of each corner from the center of the square of side a = 2 m is r = a / sqrt(2) = 2 / sqrt(2) = sqrt(2) m. The moment of inertia of each particle about the perpendicular central axis is m r^2 = (1 kg) * (sqrt(2) m)^2 = 2 kg m^2. For four identical masses, the total moment of inertia is I = 4 * (m r^2) = 4 * 2 = 8 kg m^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 m பக்க அளவு கொண்ட ஒரு லேசான சதுர சட்டத்தின் நான்கு மூலைகளில் தலா 1 kg கொண்ட நான்கு புள்ளி நிறைகள் வைக்கப்பட்டுள்ளன. சதுரத்தின் தளத்திற்கு செங்குத்தாக அதன் மையத்தின் வழியே செல்லும் அச்சைப் பற்றிய அமைப்பின் நிலைமத் திருப்புத்திறன் _____ kg m^2.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A constant torque of 25 N m acts on a wheel, rotating it from rest through an angular displacement of 8 radians. The kinetic energy gained by the wheel is _____ J.",
+    "correctAnswer": 200,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the work-energy theorem for rotational motion, the work done by the torque equals the change in rotational kinetic energy: W = tau * theta = Delta K. Here tau = 25 N m and theta = 8 rad. Since it starts from rest, K_initial = 0. Therefore K_final = W = 25 * 8 = 200 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சக்கரத்தின் மீது 25 N m மாறா திருப்புவிசை செயல்பட்டு, அதை ஓய்விலிருந்து 8 ரேடியன் கோண இடப்பெயர்ச்சிக்கு சுழற்றுகிறது. சக்கரம் பெற்ற இயக்க ஆற்றல் _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A wheel rotating at an initial angular speed of 40 rad/s is brought to rest by a uniform retarding torque in 20 seconds. The total angular displacement of the wheel during this time is _____ radians.",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Since the angular deceleration is constant, the average angular speed is omega_avg = (omega_0 + omega) / 2 = (40 + 0) / 2 = 20 rad/s. The angular displacement is theta = omega_avg * t = (20 rad/s) * (20 s) = 400 radians.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "40 rad/s ஆரம்ப கோண வேகத்தில் சுழலும் ஒரு சக்கரம் சீரான எதிர் திருப்புவிசையினால் 20 விநாடிகளில் ஓய்வுக்கு கொண்டுவரப்படுகிறது. இந்த நேரத்தில் சக்கரத்தின் மொத்த கோண இடப்பெயர்ச்சி _____ ரேடியன்.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform thin rod of length L = 1.2 m is hinged at one end and released from rest from a horizontal position. The angular velocity of the rod as it passes through the vertical position is _____ rad/s (take g = 10 m/s^2).",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of mechanical energy, the decrease in gravitational potential energy of the centre of mass equals the increase in rotational kinetic energy. The centre of mass descends by h = L/2. Thus, M g (L/2) = (1/2) I_hinge omega^2 = (1/2) ((1/3) M L^2) omega^2 = (1/6) M L^2 omega^2. This gives omega^2 = 3g / L. Substituting g = 10 m/s^2 and L = 1.2 m: omega^2 = 3(10) / 1.2 = 30 / 1.2 = 25 (rad/s)^2. Therefore, omega = 5 rad/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "L = 1.2 m நீளமுள்ள ஒரு சீரான மெல்லிய கம்பி ஒரு முனையில் சுழலக்கூடியவாறு பொருத்தப்பட்டு, கிடைமட்ட நிலையிலிருந்து ஓய்விலிருந்து விடுவிக்கப்படுகிறது. அது செங்குத்து நிலையைக் கடக்கும் போது அதன் கோணத் திசைவேகம் _____ rad/s (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform circular disc of mass 4 kg rolls without slipping on a horizontal flat surface with a linear speed of 6 m/s. The total kinetic energy of the disc is _____ J.",
+    "correctAnswer": 108,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For pure rolling of a disc without slipping, the total kinetic energy is the sum of translational and rotational kinetic energies: K_total = (1/2) M v^2 + (1/2) I omega^2. For a circular disc, I = (1/2) M R^2 and omega = v / R, so K_rot = (1/4) M v^2. Therefore, K_total = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2. Substituting M = 4 kg and v = 6 m/s: K_total = (3/4)(4)(6)^2 = 3 * 36 = 108 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 kg நிறையுள்ள ஒரு சீரான வட்டத் தட்டு கிடைமட்டத் தளத்தில் 6 m/s நேரியல் வேகத்துடன் நழுவாமல் உருளுகிறது. அத்தட்டின் மொத்த இயக்க ஆற்றல் _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform horizontal circular disc of mass 6 kg and radius 2 m is rotating freely about its central vertical axis at an angular speed of 10 rad/s. A small mass of 2 kg is placed gently on the outer rim of the disc and sticks to it. The new angular speed of the disc is _____ rad/s.",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Since no external torque acts about the vertical axis of rotation, the total angular momentum of the system is conserved: I_initial * omega_initial = I_final * omega_final. The initial moment of inertia is I_initial = (1/2) M R^2 = (1/2)(6)(2)^2 = 12 kg m^2. When the mass m = 2 kg is placed at the rim (distance R = 2 m), I_final = I_initial + m R^2 = 12 + (2)(2)^2 = 12 + 8 = 20 kg m^2. Hence, omega_final = (I_initial / I_final) * omega_initial = (12 / 20) * 10 = 6 rad/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6 kg நிறையும் 2 m ஆரமும் கொண்ட ஒரு கிடைமட்ட வட்டத் தட்டு அதன் மைய செங்குத்து அச்சைப் பற்றி 10 rad/s கோண வேகத்தில் சுழல்கிறது. 2 kg நிறையுள்ள ஒரு சிறு பொருள் தட்டின் வெளி விளிம்பில் மெதுவாக வைக்கப்பட்டு அதனுடன் ஒட்டிக்கொள்கிறது. தட்டின் புதிய கோண வேகம் _____ rad/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A boy of mass 40 kg stands at one end of a uniform boat of mass 160 kg and length 10 m floating on still water. Neglecting water resistance, if the boy walks from one end of the boat to the other end, the distance moved by the boat relative to the water is _____ m.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Since no external horizontal force acts on the (boy + boat) system, the centre of mass of the system remains stationary: Delta x_cm = 0. Let the boat move by a distance d in the opposite direction. Then m_boy * (L - d) - M_boat * d = 0 => d = (m_boy * L) / (m_boy + M_boat). Substituting m_boy = 40 kg, M_boat = 160 kg, and L = 10 m: d = (40 * 10) / (40 + 160) = 400 / 200 = 2 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமைதியான நீரில் மிதக்கும் 160 kg நிறையும் 10 m நீளமும் கொண்ட ஒரு படகின் ஒரு முனையில் 40 kg நிறையுள்ள ஒரு சிறுவன் நிற்கிறான். நீரின் எதிர்ப்பைப் புறக்கணித்தால், சிறுவன் படகின் ஒரு முனையிலிருந்து மறுமுனைக்கு நடந்து செல்லும்போது படகு நீரினைப் பொறுத்து நகர்ந்த தொலைவு _____ m.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid sphere rolls down without slipping from rest from a vertical height h = 7 m on an inclined plane. The linear speed of the center of mass of the sphere when it reaches the bottom of the incline is _____ m/s (take g = 10 m/s^2).",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By conservation of mechanical energy for pure rolling: M g h = (1/2) M v^2 + (1/2) I omega^2. For a solid sphere, I = (2/5) M R^2 and omega = v / R, which gives M g h = (1/2) M v^2 + (1/5) M v^2 = (7/10) M v^2. Solving for v: v = sqrt(10 g h / 7). Substituting g = 10 m/s^2 and h = 7 m: v = sqrt(10 * 10 * 7 / 7) = sqrt(100) = 10 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திண்மக் கோளம் சாய்தளத்தில் h = 7 m செங்குத்து உயரத்திலிருந்து ஓய்விலிருந்து நழுவாமல் உருண்டு வருகிறது. சாய்தளத்தின் அடியை அடையும் போது கோளத்தின் நிறை மையத்தின் நேரியல் வேகம் _____ m/s (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A small uniform solid sphere rolls without slipping from rest down an incline and into a vertical circular loop of radius R = 10 m. The minimum release height H above the lowest point of the loop required for the sphere to successfully complete the circular loop without losing contact is _____ m.",
+    "correctAnswer": 27,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "To maintain contact at the highest point of the vertical loop, the normal force N >= 0. At the critical threshold N = 0: M v_top^2 / R = M g => v_top^2 = g R. The total mechanical energy at the highest point (height = 2R) for a rolling solid sphere is E = M g (2R) + (1/2) M v_top^2 + (1/2) I omega^2 = 2 M g R + (7/10) M v_top^2 = 2 M g R + (7/10) M g R = 2.7 M g R. By conservation of energy from release height H: M g H = 2.7 M g R => H = 2.7 R. For R = 10 m, H = 2.7 * 10 = 27 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சிறு சீரான திண்மக் கோளம் சாய்தளத்திலிருந்து ஓய்விலிருந்து நழுவாமல் உருண்டு R = 10 m ஆரமுடைய செங்குத்து வட்டப் பாதையில் சுழல்கிறது. வட்டப் பாதையில் தொடர்பை இழக்காமல் முழுமையாக சுழற்சியை நிறைவு செய்ய தேவையான குறைந்தபட்ச வெளியீட்டு உயரம் H _____ m.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY05-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A uniform solid cylinder of mass 3 kg and radius 0.2 m has a light inextensible cord wrapped around its circumference. The free end of the cord is held fixed to the ceiling, and the cylinder is allowed to fall vertically from rest as the cord unwinds without slipping. The tension in the cord while it unwinds is _____ N (take g = 10 m/s^2).",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let T be the tension in the cord and a be the downward linear acceleration of the cylinder. Equation of translational motion: M g - T = M a. Equation of rotational motion about the centre of mass: tau = T * R = I * alpha = ((1/2) M R^2) * (a / R) => T = (1/2) M a => M a = 2T. Substituting M a into the translational equation gives M g - T = 2T => 3T = M g => T = M g / 3. Substituting M = 3 kg and g = 10 m/s^2: T = (3 * 10) / 3 = 10 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3 kg நிறையும் 0.2 m ஆரமும் கொண்ட ஒரு சீரான திண்ம உருளையின் சுற்றளவில் ஒரு லேசான கயிறு சுற்றப்பட்டுள்ளது. கயிற்றின் சுதந்திர முனை கூரையில் கட்டப்பட்டு, கயிறு நழுவாமல் அவிழும் வகையில் உருளை செங்குத்தாக கீழே விழ அனுமதிக்கப்படுகிறது. கயிறு அவிழும் போது அதில் உள்ள இழுவிசை _____ N (g = 10 m/s^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  }
+]

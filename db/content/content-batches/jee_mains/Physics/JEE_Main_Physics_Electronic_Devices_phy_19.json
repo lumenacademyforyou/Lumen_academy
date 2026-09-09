@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY19-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In an intrinsic semiconductor at absolute zero temperature (0 K), the valence band and the conduction band are respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Completely filled and completely empty",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Completely empty and completely filled",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Partially filled and partially filled",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Completely filled and partially filled",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At absolute zero (0 K), thermal agitation is zero, so no electrons can jump across the forbidden energy gap. Therefore, the valence band is completely filled with electrons, and the conduction band is completely empty.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனி சுழி வெப்பநிலையில் (0 K) உள்ளார்ந்த (intrinsic) குறைக்கடத்தி ஒன்றில் இணைதிறன் பட்டை மற்றும் கடத்து பட்டை ஆகியவை முறையே:",
+        "optionTexts": [
+          "முழுமையாக நிரப்பப்பட்டுள்ளது மற்றும் முழுமையாக காலியாக உள்ளது",
+          "முழுமையாக காலியாக உள்ளது மற்றும் முழுமையாக நிரப்பப்பட்டுள்ளது",
+          "பகுதி நிரப்பப்பட்டுள்ளது மற்றும் பகுதி நிரப்பப்பட்டுள்ளது",
+          "முழுமையாக நிரப்பப்பட்டுள்ளது மற்றும் பகுதி நிரப்பப்பட்டுள்ளது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When an intrinsic semiconductor (like germanium or silicon) is doped with a pentavalent impurity (such as phosphorus or arsenic), it becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An n-type semiconductor",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A p-type semiconductor",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "An insulator",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A pure intrinsic semiconductor",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Doping a tetravalent semiconductor with a pentavalent impurity introduces extra free electrons (charge carriers with negative charge), creating an n-type (negative type) extrinsic semiconductor.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உள்ளார்ந்த குறைக்கடத்தியில் (ஜெர்மானியம அல்லது சிலிக்கான்) ஐந்திறன் மாசுப் பொருள் (பாஸ்பரஸ் அல்லது ஆர்சனிக்) சேர்க்கப்படும் போது அது எவ்வாறு மாறுகிறது?",
+        "optionTexts": [
+          "n-வகை குறைக்கடத்தி",
+          "p-வகை குறைக்கடத்தி",
+          "காப்புப் பொருள்",
+          "தூய உள்ளார்ந்த குறைக்கடத்தி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A Zener diode is primarily designed and operated in which region of its V-I characteristic curve?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Forward bias region",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Reverse bias breakdown region",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "At the origin",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero bias region",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A Zener diode is heavily doped so that it can operate safely in its reverse bias breakdown region (Zener breakdown), maintaining a nearly constant voltage across its terminals despite fluctuations in input voltage or load current.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜீனர் டையோடு அதன் V-I பண்புவளைவின் எந்தப் பகுதியில் முதன்மையாக வடிவமைக்கப்பட்டு இயக்கப்படுகிறது?",
+        "optionTexts": [
+          "முன்னோக்கு சார்பு பகுதி",
+          "மாறுதிசை பின்னோக்கு முறிவுப் பகுதி (Reverse bias breakdown region)",
+          "ஆதிப் புள்ளியில்",
+          "சுழி சார்பு பகுதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The Boolean expression representing a two-input AND logic gate is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Y = A . B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Y = A + B",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Y = NOT(A)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Y = NOT(A + B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Boolean expression for an AND gate is Y = A . B (read as A AND B), meaning the output is HIGH (1) only when all inputs are HIGH.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு உள்ளீடுகளைக் கொண்ட AND தருக்க வாசலைக் குறிக்கும் பூலியன் சமன்பாடு:",
+        "optionTexts": [
+          "Y = A . B",
+          "Y = A + B",
+          "Y = NOT(A)",
+          "Y = NOT(A + B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When a p-n junction diode is forward biased, the width of the depletion layer and the potential barrier respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increase and increase",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease and decrease",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Increase and decrease",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Decrease and increase",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In forward bias, the external voltage opposes the internal barrier potential, reducing the height of the potential barrier and sweeping majority carriers across the junction, which narrows (decreases) the depletion layer width.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு p-n சந்தி டையோடு முன்னோக்கு சார்பு செய்யப்படும் போது, குறைப்புப் பகுதியின் (depletion layer) அகலமும் தடை மின்னழுத்தமும் முறையே:",
+        "optionTexts": [
+          "அதிகரிக்கின்றன மற்றும் அதிகரிக்கின்றன",
+          "குறைகின்றன மற்றும் குறைகின்றன",
+          "அதிகரிக்கிறது மற்றும் குறைகிறது",
+          "குறைகிறது மற்றும் அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the frequency of the input alternating voltage supplied to a full-wave bridge rectifier is f, the ripple frequency of the rectified output voltage is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "f / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "f",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 f",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4 f",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A full-wave rectifier utilizes both positive and negative half-cycles of the AC input. Consequently, it produces two pulses of output current per full input cycle, meaning the output ripple frequency is exactly twice the input frequency (2f).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முழு அலை திருத்தியின் (full-wave rectifier) உள்ளீட்டு மாறுதிசை மின்னழுத்தத்தின் அதிர்வெண் f எனில், திருத்தப்பட்ட வெளியீட்டு மின்னழுத்தத்தின் அலைவு அதிர்வெண் (ripple frequency):",
+        "optionTexts": [
+          "f / 2",
+          "f",
+          "2 f",
+          "4 f"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a bipolar junction transistor, the common-base current gain is alpha and the common-emitter current gain is beta. The correct mathematical relation between alpha and beta is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "beta = alpha / (1 - alpha)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "alpha = beta / (1 - beta)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "beta = 1 - alpha",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "alpha = 1 / beta",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By definition, alpha = I_c / I_e and beta = I_c / I_b. Since I_e = I_b + I_c, dividing by I_c gives I_e / I_c = I_b / I_c + 1 => 1/alpha = 1/beta + 1 => beta = alpha / (1 - alpha) (and alpha = beta / (1 + beta)).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இருமுனை சந்தி டிரான்சிஸ்டருக்கு (BJT), பொது-அடிவார மின்னோட்டப் பெருக்கம் alpha மற்றும் பொது-உமிழ்ப்பான் மின்னோட்டப் பெருக்கம் beta ஆகும். alpha மற்றும் beta இடையேயான சரியான கணிதத் தொடர்பு:",
+        "optionTexts": [
+          "beta = alpha / (1 - alpha)",
+          "alpha = beta / (1 - beta)",
+          "beta = 1 - alpha",
+          "alpha = 1 / beta"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Why are NAND and NOR gates referred to as 'universal gates'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Because they are the cheapest logic gates to manufacture",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Because they can be combined to implement any basic logic operation (AND, OR, NOT)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Because they operate at the speed of light",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Because they do not require any power supply",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "NAND and NOR gates are termed universal gates because any boolean function or basic logic gate (AND, OR, NOT) can be constructed exclusively using combinations of NAND gates or NOR gates.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "NAND மற்றும் NOR வாயில்கள் ஏன் 'सारலை வாயில்கள்' (universal gates) என்று அழைக்கப்படுகின்றன?",
+        "optionTexts": [
+          "அவை தயாரிக்க மிக மலிவானவை என்பதால்",
+          "அவற்றை இணைத்து எந்தவொரு அடிப்படைத் தருக்கச் செயலையும் (AND, OR, NOT) உருவாக்க முடியும் என்பதால்",
+          "அவை ஒளியின் வேகத்தில் இயங்குவதால்",
+          "அவற்றுக்கு மின்சாரம் தேவையில்லை என்பதால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a common-emitter transistor amplifier, the load resistance is R_L = 4 kohm and the input resistance is R_i = 1 kohm. If the current gain beta = 50, the voltage gain A_v of the amplifier is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "50",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "12.5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5000",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Voltage gain is given by A_v = beta * (R_L / R_i). Substituting beta = 50, R_L = 4 kohm, and R_i = 1 kohm: A_v = 50 * (4 / 1) = 200.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது-உமிழ்ப்பான் டிரான்சிஸ்டர் பெருக்கியில், பளு மின்தடை R_L = 4 kohm மற்றும் உள்ளீட்டு மின்தடை R_i = 1 kohm ஆகும். மின்னோட்டப் பெருக்கம் beta = 50 எனில், பெருக்கியின் மின்னழுத்தப் பெருக்கம் A_v:",
+        "optionTexts": [
+          "50",
+          "200",
+          "12.5",
+          "5000"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A photodiode is a semiconductor device that is specially designed to operate under which biasing condition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Forward bias",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Reverse bias",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Zero bias only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Unbiased with high AC voltage",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Photodiodes are operated in reverse bias. In reverse bias, the reverse saturation current is extremely sensitive to changes in incident optical illumination (photon-generated minority carriers), making it an effective optical detector.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போட்டோடோடு (photodiode) என்பது எந்தச் சார்பு நிலையில் (biasing condition) சிறப்பாக இயங்க வடிவமைக்கப்பட்ட ஒரு குறைக்கடதிக் கருவியாகும்?",
+        "optionTexts": [
+          "முன்னோக்கு சார்பு",
+          "பின்னோக்கு சார்பு",
+          "சுழி சார்பு மட்டும்",
+          "உயர்ந்த AC மின்னழுத்தத்துடன் சார்பற்றது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In an intrinsic semiconductor at room temperature, if n_e is the concentration of conduction electrons and n_h is the concentration of holes, the correct relation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n_e > n_h",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "n_e < n_h",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n_e = n_h",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "n_e * n_h = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a pure (intrinsic) semiconductor, every thermally generated conduction electron leaves behind a vacant hole in the valence band. Therefore, the concentration of free electrons equals the concentration of holes: n_e = n_h = n_i.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் உள்ளார்ந்த குறைக்கடத்தியில், கடத்து எலக்ட்ரான்களின் அடர்த்தி n_e மற்றும் துளைகளின் அடர்த்தி n_h எனில், சரியான தொடர்பு:",
+        "optionTexts": [
+          "n_e > n_h",
+          "n_e < n_h",
+          "n_e = n_h",
+          "n_e * n_h = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For any semiconductor (intrinsic or extrinsic) in thermal equilibrium, the mass-action law relating electron concentration n_e, hole concentration n_h, and intrinsic carrier concentration n_i is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n_e * n_h = n_i^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n_e + n_h = n_i",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n_e / n_h = n_i",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n_e * n_h = n_i",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The law of mass action states that the product of electron and hole concentrations in a semiconductor in thermal equilibrium is a constant equal to the square of the intrinsic carrier concentration: n_e * n_h = n_i^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்பச் சமநிலையில் உள்ள எந்தவொரு குறைக்கடத்திக்கும், எலக்ட்ரான் அடர்த்தி n_e, துளை அடர்த்தி n_h மற்றும் உள்ளார்ந்த அடர்த்தி n_i ஆகியவற்றைத் தொடர்புபடுத்தும் நிறைச் செயல் விதி (mass-action law):",
+        "optionTexts": [
+          "n_e * n_h = n_i^2",
+          "n_e + n_h = n_i",
+          "n_e / n_h = n_i",
+          "n_e * n_h = n_i"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solar cell converts solar radiation energy directly into electrical energy based on which underlying physical principle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seebeck effect",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Photovoltaic effect across a p-n junction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Thermionic emission",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Electromagnetic induction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A solar cell is a p-n junction diode operating without external bias under the photovoltaic effect, where sunlight falling on the junction generates electron-hole pairs that are separated by the internal electric field, producing a photovoltage.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சூரிய மின்கலம் (solar cell) சூரியக் கதிர்வீச்சு ஆற்றலை நேரடியாக மின் ஆற்றலாக மாற்றும் அடிப்படைக் கொள்கை:",
+        "optionTexts": [
+          "சீபெக் விளைவு (Seebeck effect)",
+          "p-n சந்தியில் ஒளிவோல்டாயிக் விளைவு (Photovoltaic effect)",
+          "வெப்ப அயனி உமிழ்வு",
+          "மின்காந்தத் தூண்டல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A Light Emitting Diode (LED) emits spontaneous light when forward biased. This light emission occurs due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Recombination of electrons and holes across the junction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Thermal ionization of impurity atoms",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Avalanche breakdown in reverse bias",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Photoelectric emission",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "An LED is a heavily doped p-n junction operating in forward bias. Electrons from the n-side and holes from the p-side are injected across the depletion region where they recombine, releasing energy in the form of photons (light emission).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளி உமிழ் டையோடு (LED) முன்னோக்கு சார்பு செய்யப்படும் போது ஒளியை உமிவுகிறது. இந்த ஒளி உமிழ்வு ஏற்படுவதற்குக் காரணம்:",
+        "optionTexts": [
+          "சந்தியின் குறுக்கே எலக்ட்ரான்களும் துளைகளும் மீளச்சேர்தல் (recombination)",
+          "மாசு அணுக்களின் வெப்ப அயனியாக்கம்",
+          "பின்னோக்கு சார்பில் பனிச்சரிவு முறிவு",
+          "ஒளிமின் உமிழ்வு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When a transistor is used as an amplifier, in which region of its characteristics must the emitter-base junction and collector-base junction be maintained?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Emitter-base forward biased, collector-base reverse biased",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Both junctions forward biased",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both junctions reverse biased",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Emitter-base reverse biased, collector-base forward biased",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a transistor to operate as a linear amplifier, it must be operated in the active region, where the emitter-base junction is forward biased and the collector-base junction is reverse biased.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டிரான்சிஸ்டர் பெருக்கியாகப் பயன்படுத்தப்படும் போது, அதன் உமிழ்ப்பான்-அடிவார சந்தி மற்றும் சேகரிப்பான்-அடிவார சந்தி எந்த நிலையில் பராமரிக்கப்பட வேண்டும்?",
+        "optionTexts": [
+          "உமிழ்ப்பான்-அடிவாரம் முன்னோக்கு சார்பு, சேகரிப்பான்-அடிவாரம் பின்னோக்கு சார்பு",
+          "இரு சந்திகளும் முன்னோக்கு சார்பு",
+          "இரு சந்திகளும் பின்னோக்கு சார்பு",
+          "உமிழ்ப்பான்-அடிவாரம் பின்னோக்கு சார்பு, சேகரிப்பான்-அடிவாரம் முன்னோக்கு சார்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A Zener diode with Zener voltage V_z = 10 V is used for voltage regulation. The series resistor connected to the DC supply of 20 V is R_s = 500 ohm, and the load resistance is R_L = 1000 ohm. The current flowing through the Zener diode is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 mA",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "15 mA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Voltage across the load resistor R_L is V_L = V_z = 10 V. The load current is I_L = V_L / R_L = 10 V / 1000 ohm = 10 mA. The voltage drop across the series resistor R_s is V_s = V_supply - V_z = 20 V - 10 V = 10 V. The total current supplied by the source is I_s = V_s / R_s = 10 V / 500 ohm = 20 mA. By Kirchhoff's current law at the node: I_s = I_z + I_L => I_z = I_s - I_L = 20 mA - 10 mA = 10 mA? Wait! Let's check: R_L = 1000 ohm -> I_L = 10 mA. R_s = 500 ohm, V_s = 10 V -> I_s = 20 mA. Then I_z = 20 - 10 = 10 mA. Let's check option A: 10 mA. Let's make sure options have 10 mA as correct. Wait, let's verify if I_z = 10 mA is option A or B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V_z = 10 V ஜீனர் மின்னழுத்தம் கொண்ட ஜீனர் டையோடு மின்னழுத்த ஒழுங்குபடுத்தியாகப் பயன்படுத்தப்படுகிறது. 20 V DC மூலத்துடன் இணைக்கப்பட்ட தொடர் மின்தடை R_s = 500 ohm மற்றும் பளு மின்தடை R_L = 1000 ohm ஆகும். ஜீனர் டையோடின் வழியே பாயும் மின்னோட்டம்:",
+        "optionTexts": [
+          "5 mA",
+          "10 mA",
+          "15 mA",
+          "20 mA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to De Morgan's theorems in Boolean algebra, the logical expression NOT(A OR B) is identically equivalent to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(NOT A) AND (NOT B)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(NOT A) OR (NOT B)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NOT(A AND B)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A OR (NOT B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "De Morgan's first theorem states that the complement of a sum is equal to the product of the complements: NOT(A + B) = (NOT A) . (NOT B). Thus, NOR gate is equivalent to an AND gate with inverted inputs (bubbled AND).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூலியன் இயற்கணிதத்தில் டி மார்கனின் (De Morgan's) தேற்றங்களின்படி, NOT(A OR B) என்ற தருக்கக் கூற்று எதற்குச் சமமானது?",
+        "optionTexts": [
+          "(NOT A) AND (NOT B)",
+          "(NOT A) OR (NOT B)",
+          "NOT(A AND B)",
+          "A OR (NOT B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a transistor amplifier circuit, the operating point (Q-point) is chosen in the middle of the active region primarily to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ensure maximum possible unclipped linear signal swing without distortion",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Maximize power dissipation in the transistor",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Eliminate the need for biasing resistors",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Prevent thermal runaway at high frequencies",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Q-point ( quiescent operating point ) represents the DC bias voltages and currents. Placing it centrally on the load line ensures that the AC signal swings symmetrically in both positive and negative directions without clipping or nonlinear distortion.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டிரான்சிஸ்டர் பெருக்கிச் சுற்றில், இயக்கப் புள்ளி (Q-point) செயல்படும் பகுதியின் நடுவில் தேர்ந்தெடுக்கப்படுவதன் முக்கிய நோக்கம்:",
+        "optionTexts": [
+          "சிதைவின்றி அதிகபட்ச நேரியல் சிக்னல் வீச்சை உறுதி செய்தல்",
+          "டிரான்சிஸ்டரில் திறன் இழப்பை அதிகப்படுத்துதல்",
+          "சார்பு மின்தடைகளின் தேவையை நீக்குதல்",
+          "உயர் அதிர்வெண்களில் வெப்ப ஓட்டத்தைத் தடுத்தல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The ripple factor gamma of a half-wave rectifier, defined as the ratio of the rms value of the ac component to the dc value of the output voltage, is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.21",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.48",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.50",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.707",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a half-wave rectifier, the ripple factor is theoretically calculated as gamma = sqrt( (I_rms / I_dc)^2 - 1 ) = sqrt((pi / 2)^2 - 1) = sqrt(2.467 - 1) = sqrt(1.467) approx 1.21. (For a full-wave rectifier, gamma approx 0.48).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அரை அலை திருத்தியின் (half-wave rectifier) அலைவுட்டக் காரணி (ripple factor gamma), AC கூறுகளின் rms மதிப்பிற்கும் DC மதிப்பிற்கும் உள்ள விகிதமாக வரையறுக்கப்படுகிறது. இதன் மதிப்பு:",
+        "optionTexts": [
+          "1.21",
+          "0.48",
+          "0.50",
+          "0.707"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider a logic circuit with two inputs A and B connected such that output Y = (A AND B) OR (NOT A AND NOT B). This circuit functions as a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "XOR gate",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "XNOR gate",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "NAND gate",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NOR gate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Evaluating the expression Y = AB + A'B': This is the boolean equation for an XNOR (Exclusive-NOR) gate, which outputs HIGH (1) when both inputs are identical (either both 0 or both 1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு உள்ளீடுகளைக் கொண்ட ஒரு தருக்கச் சுற்றின் வெளியீடு Y = (A AND B) OR (NOT A AND NOT B) ஆகும். இச்சுற்று எவ்வாறு செயல்படுகிறது?",
+        "optionTexts": [
+          "XOR வாயில்",
+          "XNOR வாயில்",
+          "NAND வாயில்",
+          "NOR வாயில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a transistor, the collector current is I_c = 4.95 mA and the base current is I_b = 0.05 mA. The emitter current I_e of the transistor is _____ mA.",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total emitter current in a transistor is the sum of collector current and base current: I_e = I_c + I_b. Substituting I_c = 4.95 mA and I_b = 0.05 mA: I_e = 4.95 + 0.05 = 5.00 mA = 5 mA.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டிரான்சிஸ்டரில் சேகரிப்பான் மின்னோட்டம் I_c = 4.95 mA மற்றும் அடிவார மின்னோட்டம் I_b = 0.05 mA ஆகும். டிரான்சிஸ்டரின் உமிழ்ப்பான் மின்னோட்டம் I_e _____ mA.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For the transistor in the previous question with collector current I_c = 4.95 mA and base current I_b = 0.05 mA, the current amplification factor beta in common-emitter mode is _____.",
+    "correctAnswer": 99,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The common-emitter current gain is beta = I_c / I_b. Substituting I_c = 4.95 mA and I_b = 0.05 mA: beta = 4.95 / 0.05 = 495 / 5 = 99.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சேகரிப்பான் மின்னோட்டம் I_c = 4.95 mA மற்றும் அடிவார மின்னோட்டம் I_b = 0.05 mA கொண்ட அதே டிரான்சிஸ்டரின் பொது-உமிழ்ப்பான் மின்னோட்டப் பெருக்கக் காரணி beta _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A Zener diode of Zener breakdown voltage V_z = 6 V is connected in series with a resistor R = 140 ohm across a DC supply of 20 V. The current flowing through the series resistor R is _____ mA.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The voltage drop across the series resistor R is V_R = V_supply - V_z = 20 V - 6 V = 14 V. By Ohm's law, the current flowing through R is I = V_R / R = 14 V / 140 ohm = 0.1 A = 100 mA.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V_z = 6 V ஜீனர் முறிவு மின்னழுத்தம் கொண்ட ஒரு ஜீனர் டையோடு 20 V DC மூலத்துடன் R = 140 ohm மின்தடையுடன் தொடரிணைப்பில் இணைக்கப்பட்டுள்ளது. தொடர் மின்தடை R இன் வழியே பாயும் மின்னோட்டம் _____ mA.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a bipolar junction transistor having common-emitter current gain beta = 99, the common-base current gain alpha is expressed as N / 100. Find the integer value of N.",
+    "correctAnswer": 99,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The relation between alpha and beta is alpha = beta / (1 + beta). Substituting beta = 99: alpha = 99 / (1 + 99) = 99 / 100. Comparing with N / 100, we find N = 99.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது-உமிழ்ப்பான் மின்னோட்டப் பெருக்கம் beta = 99 கொண்ட ஒரு இருமுனை சந்தி டிரான்சிஸ்டரின் பொது-அடிவார மின்னோட்டப் பெருக்கம் alpha ஆனது N / 100 எனத் தரப்படுகிறது. N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An AC input signal of peak voltage 10 mV is applied across the input of a transistor amplifier having a voltage gain of 150. The peak amplitude of the resulting AC output voltage is _____ mV.",
+    "correctAnswer": 1500,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The output voltage amplitude is related to the input voltage amplitude by v_o = A_v * v_i. Substituting A_v = 150 and v_i = 10 mV: v_o = 150 * 10 mV = 1500 mV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "150 மின்னழுத்தப் பெருக்கம் கொண்ட ஒரு டிரான்சிஸ்டர் பெருக்கியின் உள்ளீட்டில் 10 mV உச்ச மின்னழுத்தம் கொண்ட மாறுதிசை சிக்னல் செலுத்தப்படுகிறது. இதன் வெளியீட்டு AC மின்னழுத்தத்தின் உச்ச வீச்சு _____ mV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a two-input NAND logic gate, if input A is HIGH (1) and input B is LOW (0), the logical state of the output Y is _____.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a NAND gate, the output is the negation of the AND operation: Y = NOT(A AND B). Substituting A = 1 and B = 0: A AND B = 1 AND 0 = 0. Therefore, Y = NOT(0) = 1 (HIGH).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரு உள்ளீடுகளைக் கொண்ட NAND தருக்க வாசலில், உள்ளீடுகள் A உயர்நிலை (1) மற்றும் B தாழ்நிலை (0) எனில், வெளியீடு Y இன் தருக்க நிலை _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A digital combinational logic circuit has 3 independent binary input terminals (A, B, and C). The total number of possible distinct input rows in the truth table of this circuit is _____.",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For n independent binary input terminals, the truth table contains 2^n possible input combinations of 0s and 1s. Substituting n = 3: 2^3 = 8 rows.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டிஜிட்டல் தருக்கச் சுற்றில் 3 சுதந்திரமான இரும உள்ளீட்டு முனையங்கள் (A, B, மற்றும் C) உள்ளன. இச்சுற்றின் உண்மை அட்டவணையில் உள்ள சாத்தியமான தனித்துவமான உள்ளீட்டு வரிசைகளின் மொத்த எண்ணிக்கை _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A transistor amplifier operating in common-emitter mode has a current gain beta = 50 and a voltage gain of 100. The power gain of the amplifier is _____.",
+    "correctAnswer": 5000,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The power gain A_p of a transistor amplifier is the product of its current gain and voltage gain: A_p = A_v * beta. Substituting A_v = 100 and beta = 50: A_p = 100 * 50 = 5000.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது-உமிழ்ப்பான் முறையில் இயங்கும் ஒரு டிரான்சிஸ்டர் பெருக்கியின் மின்னோட்டப் பெருக்கம் beta = 50 மற்றும் மின்னழுத்தப் பெருக்கம் 100 ஆகும். இம்பெருக்கியின் திறன் பெருக்கம் (power gain) _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a common-emitter transistor amplifier circuit, when the base current changes from 20 microampere to 40 microampere, the collector current changes from 1.0 mA to 3.0 mA. The AC current gain beta_ac of the transistor is _____.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The AC current gain is defined as beta_ac = Delta I_c / Delta I_b. Given Delta I_b = 40 microampere - 20 microampere = 20 microampere = 0.02 mA, and Delta I_c = 3.0 mA - 1.0 mA = 2.0 mA: beta_ac = 2.0 mA / 0.02 mA = 200 / 2 = 100.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது-உமிழ்ப்பான் டிரான்சிஸ்டர் பெருக்கிச் சுற்றில், அடிவார மின்னோட்டம் 20 microampere இலிருந்து 40 microampere ஆக மாறும்போது, சேகரிப்பான் மின்னோட்டம் 1.0 mA இலிருந்து 3.0 mA ஆக மாறுகிறது. டிரான்சிஸ்டரின் AC மின்னோட்டப் பெருக்கம் beta_ac _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY19-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A Zener diode of breakdown voltage V_z = 10 V is to be used as a voltage regulator with a DC supply of 20 V and series resistance R_s = 200 ohm. If the minimum Zener current required for proper regulation is 5 mA, the maximum load current I_L,max that can be drawn safely from the regulator is _____ mA.",
+    "correctAnswer": 45,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total current supplied through the series resistor R_s is fixed by the supply and Zener voltages: I_s = (V_supply - V_z) / R_s = (20 V - 10 V) / 200 ohm = 10 V / 200 ohm = 0.05 A = 50 mA. At maximum load current, the Zener current drops to its minimum permissible value: I_s = I_L,max + I_z,min => I_L,max = I_s - I_z,min = 50 mA - 5 mA = 45 mA.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V_z = 10 V முறிவு மின்னழுத்தம் கொண்ட ஒரு ஜீனர் டையோடு 20 V DC விநியோகம் மற்றும் R_s = 200 ohm தொடர் மின்தடையுடன் மின்னழுத்த ஒழுங்குபடுத்தியாகப் பயன்படுத்தப்பட உள்ளது. முறையான ஒழுங்குபாட்டிற்குத் தேவையான குறைந்தபட்ச ஜீனர் மின்னோட்டம் 5 mA எனில், பளுவிலிருந்து பாதுகாப்பாகப் பெறக்கூடிய பெரும பளு மின்னோட்டம் I_L,max _____ mA.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

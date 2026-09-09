@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che05-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following conditions is NOT satisfied by an ideal binary solution obeying Raoult's law across the entire composition range?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta H_mixing = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Delta V_mixing = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Delta S_mixing = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "P_total = P_A° x_A + P_B° x_B",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For an ideal solution, the intermolecular forces between unlike components are identical to those between like components, leading to Delta H_mixing = 0 and Delta V_mixing = 0. However, the mixing of two liquids is an irreversible spontaneous process accompanied by an increase in disorder, meaning Delta S_mixing > 0. Therefore, Delta S_mixing = 0 is incorrect and not satisfied.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து செறிவு வரம்புகளிலும் ரவுல்ட் விதிக்கு உட்படும் ஒரு நல்லியல்பு இருகூறு கரைசலால் நிறைவு செய்யப்படாத நிபந்தனை எது?",
+        "optionTexts": [
+          "Delta H_mixing = 0",
+          "Delta V_mixing = 0",
+          "Delta S_mixing = 0",
+          "P_total = P_A° x_A + P_B° x_B"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following concentration units of a solution is independent of temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Molarity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Molality",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Normality",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Volume percentage (v/v)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Molality is defined as the number of moles of solute dissolved per kilogram of solvent. Because mass is invariant with temperature, molality does not change with temperature. In contrast, molarity, normality, and volume percentage depend on solution volume, which expands or contracts with temperature variations.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் கரைசலின் செறிவு அலகுகளில் வெப்பநிலையைச் சார்ந்திராத அலகு எது?",
+        "optionTexts": [
+          "மோலாரிட்டி",
+          "மோலாலிட்டி",
+          "நார்மாலிட்டி",
+          "கனஅளவு சதவீதம் (v/v)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A mixture of ethanol and acetone exhibits positive deviation from Raoult's law. The molecular-level explanation for this behavior is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetone molecules form strong ionic bonds with ethanol molecules.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Intermolecular hydrogen bonding between ethanol molecules is weakened by the insertion of acetone molecules.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The solute-solvent attractive interactions are stronger than pure component interactions.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The dissolution process is accompanied by significant release of heat (Delta H_mixing < 0).",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Pure ethanol molecules are associated through strong intermolecular hydrogen bonds. When acetone is introduced, its molecules get between ethanol molecules and partially break these hydrogen bonds. As a result, the ethanol-acetone attractive forces become weaker than ethanol-ethanol interactions, enabling molecules to escape into the vapor phase more readily and causing positive deviation from Raoult's law.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனால் மற்றும் அசிட்டோன் கலவையானது ரவுல்ட் விதியிலிருந்து நேர் விலகலைக் காட்டுகிறது. இந்த நடத்தைக்கான மூலக்கூறு அளவிலான சரியான விளக்கம்:",
+        "optionTexts": [
+          "அசிட்டோன் மூலக்கூறுகள் எத்தனால் மூலக்கூறுகளுடன் வலுவான அயனிப் பிணைப்புகளை உருவாக்குகின்றன.",
+          "எத்தனால் மூலக்கூறுகளுக்கு இடையே உள்ள மூலக்கூறுகளிடை ஹைட்ரஜன் பிணைப்பானது அசிட்டோன் மூலக்கூறுகள் நுழைவதால் பலவீனமடைகிறது.",
+          "கரைபொருள்-கரைப்பான் இடையேயான கவர்ச்சி விசைகள் தூய கூறுகளின் கவர்ச்சி விசைகளை விட வலிமையானவை.",
+          "கரைதல் செயல்முறையானது கணிசமான வெப்ப உமிழ்வுடன் (Delta H_mixing < 0) நிகழ்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Colligative properties of dilute solutions depend solely on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The chemical nature of the solute particles.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The nature of the solvent and solute molecules.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The total number of solute particles relative to the total number of solvent molecules.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The physical size and shape of the dissolved solute particles.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Colligative properties (relative lowering of vapor pressure, boiling point elevation, freezing point depression, and osmotic pressure) depend entirely on the number of solute particles present in a given amount of solvent and are independent of their chemical nature, identity, or size.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்த்த கரைசல்களின் தொகைசார் பண்புகள் எதனை மட்டுமே சார்ந்துள்ளன?",
+        "optionTexts": [
+          "கரைபொருள் துகள்களின் வேதிப்பண்பு.",
+          "கரைப்பான் மற்றும் கரைபொருள் மூலக்கூறுகளின் இயல்பு.",
+          "கரைப்பான் மூலக்கூறுகளின் எண்ணிக்கையுடன் ஒப்பிடும்போது உள்ள கரைபொருள் துகள்களின் மொத்த எண்ணிக்கை.",
+          "கரைக்கப்பட்ட கரைபொருள் துகள்களின் உருவ அளவு மற்றும் வடிவம்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the desalination of seawater using reverse osmosis, which condition must be applied to the seawater compartment?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A pressure strictly equal to atmospheric pressure must be maintained.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A hydrostatic pressure lower than the osmotic pressure must be applied.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A hydrostatic pressure greater than the osmotic pressure of seawater must be applied.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The temperature must be lowered below the freezing point of water.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In normal osmosis, pure solvent naturally flows into the concentrated solution across a semipermeable membrane. If a hydrostatic pressure greater than the osmotic pressure is applied to the concentrated solution (seawater), the direction of solvent flow is reversed: pure water molecules pass through the membrane into the pure solvent compartment, accomplishing desalination.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எதிர் சவ்வூடு பரவல் முறையில் கடல்நீரைக் குடிநீராக்கும் போது, கடல்நீர் உள்ள பகுதியில் செயல்படுத்தப்பட வேண்டிய நிபந்தனை எது?",
+        "optionTexts": [
+          "வளிமண்டல அழுத்தத்திற்குச் சரியாகச் சமமான அழுத்தம் பராமரிக்கப்பட வேண்டும்.",
+          "சவ்வூடு பரவல் அழுத்தத்தை விடக் குறைவான ஒரு நிலை அழுத்தம் செயல்படுத்தப்பட வேண்டும்.",
+          "கடல்நீரின் சவ்வூடு பரவல் அழுத்தத்தை விட அதிகமான ஒரு நிலை அழுத்தம் செயல்படுத்தப்பட வேண்டும்.",
+          "நீரின் உறைநிலைக்குக் கீழே வெப்பநிலை குறைக்கப்பட வேண்டும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A binary liquid mixture that displays a large negative deviation from Raoult's law forms:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A minimum boiling azeotrope at a specific composition.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "An ideal solution at elevated temperatures.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A maximum boiling azeotrope at a specific composition.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Two completely immiscible liquid layers.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A large negative deviation from Raoult's law means the total vapor pressure of the solution is significantly lower than predicted, creating a minimum in the vapor pressure curve. Consequently, the boiling point reaches a maximum at that composition, resulting in a maximum boiling azeotrope (e.g., 68% nitric acid and 32% water by mass).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ரவுல்ட் விதியிலிருந்து அதிக எதிர் விலகலைக் காட்டும் ஒரு இருகூறு திரவக் கலவை உருவாக்குவது:",
+        "optionTexts": [
+          "குறிப்பிட்ட இயைபில் குறைந்த கொதிநிலை மாறாக் கொதி கலவை.",
+          "உயர் வெப்பநிலைகளில் ஒரு நல்லியல்பு கரைசல்.",
+          "குறிப்பிட்ட இயைபில் அதிக கொதிநிலை மாறாக் கொதி கலவை.",
+          "முற்றிலும் கலக்காத இரண்டு தனித்தனி திரவ அடுக்குகள்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At 300 K, the vapour pressures of pure benzene (C6H6) and pure toluene (C7H8) are 120 mm Hg and 40 mm Hg, respectively. An ideal solution is prepared by mixing 78 g of benzene with 92 g of toluene. The total vapour pressure of the resulting solution at 300 K is: (Molar masses: benzene = 78 g mol^-1, toluene = 92 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "60 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "80 mm Hg",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "100 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "70 mm Hg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moles of benzene = 78 g / 78 g mol^-1 = 1.0 mol. Moles of toluene = 92 g / 92 g mol^-1 = 1.0 mol. Total moles in solution = 1.0 + 1.0 = 2.0 mol. Mole fraction of benzene (x_B) = 1.0 / 2.0 = 0.50. Mole fraction of toluene (x_T) = 1.0 / 2.0 = 0.50. According to Raoult's law: P_total = P_B° * x_B + P_T° * x_T = (120 mm Hg * 0.50) + (40 mm Hg * 0.50) = 60 + 20 = 80 mm Hg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K-ல் தூய பென்சீன் (C6H6) மற்றும் தூய டொலுவீன் (C7H8) ஆகியவற்றின் ஆவி அழுத்தங்கள் முறையே 120 mm Hg மற்றும் 40 mm Hg ஆகும். 78 g பென்சீன் மற்றும் 92 g டொலுவீன் கலந்து ஒரு நல்லியல்பு கரைசல் தயாரிக்கப்படுகிறது. 300 K-ல் அக்கரைசலின் மொத்த ஆவி அழுத்தம்: (மோலார் நிறைகள்: பென்சீன் = 78 g mol^-1, டொலுவீன் = 92 g mol^-1)",
+        "optionTexts": [
+          "60 mm Hg",
+          "80 mm Hg",
+          "100 mm Hg",
+          "70 mm Hg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two volatile liquids A and B form an ideal solution. At 350 K, pure liquid A has a vapour pressure of 300 mm Hg and pure liquid B has a vapour pressure of 100 mm Hg. In an equimolar liquid mixture of A and B, the mole fraction of component A in the vapour phase at equilibrium is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.50",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.60",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.75",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.80",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In an equimolar liquid mixture, x_A = 0.50 and x_B = 0.50. Partial pressures are: p_A = x_A * P_A° = 0.50 * 300 = 150 mm Hg; p_B = x_B * P_B° = 0.50 * 100 = 50 mm Hg. Total vapor pressure P_total = p_A + p_B = 150 + 50 = 200 mm Hg. The mole fraction of A in the vapor phase (y_A) is given by Dalton's law: y_A = p_A / P_total = 150 / 200 = 0.75.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு ஆவியாகும் திரவங்கள் ஒரு நல்லியல்பு கரைசலை உருவாக்குகின்றன. 350 K-ல் தூய திரவம் A-ன் ஆவி அழுத்தம் 300 mm Hg மற்றும் தூய திரவம் B-ன் ஆவி அழுத்தம் 100 mm Hg ஆகும். A மற்றும் B ஆகியவற்றின் சமமோலார் திரவக் கலவையில், சமநிலையில் ஆவி நிலையில் உள்ள கூறு A-ன் மோல் பின்னம்:",
+        "optionTexts": [
+          "0.50",
+          "0.60",
+          "0.75",
+          "0.80"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 3.0 g of a non-volatile, non-electrolyte solute is dissolved in 100 g of benzene, the boiling point of the solution increases by 0.52 K. Given that the molal boiling point elevation constant (Kb) of benzene is 2.60 K kg mol^-1, the molar mass of the solute is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "120 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "150 g mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "180 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "210 g mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Boiling point elevation is given by Delta Tb = Kb * m = Kb * (w2 / M2) * (1000 / w1). Rearranging for M2 gives: M2 = (Kb * w2 * 1000) / (Delta Tb * w1). Substituting the given values: M2 = (2.60 * 3.0 * 1000) / (0.52 * 100) = 7800 / 52 = 150 g mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 g பென்சீனில் 3.0 g ஆவியாகா, மின்பகுளியல்லா கரைபொருள் கரைக்கப்படும் போது, அக்கரைசலின் கொதிநிலை 0.52 K உயர்கிறது. பென்சீனின் மோலால் கொதிநிலை ஏற்ற மாறிலி (Kb) 2.60 K kg mol^-1 எனில், அக்கரைபொருளின் மோலார் நிறை:",
+        "optionTexts": [
+          "120 g mol^-1",
+          "150 g mol^-1",
+          "180 g mol^-1",
+          "210 g mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Benzoic acid undergoes dimerization in benzene: 2C6H5COOH <=> (C6H5COOH)2. A 0.10 m solution of benzoic acid in benzene exhibits a freezing point depression of 0.28 K. If the molal freezing point depression constant (Kf) for benzene is 5.12 K kg mol^-1, the degree of dimerization (alpha) of benzoic acid is closest to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.72",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.80",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.91",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.60",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Theoretical freezing point depression without association: Delta Tf(calc) = Kf * m = 5.12 * 0.10 = 0.512 K. Observed depression Delta Tf(obs) = 0.28 K. The van 't Hoff factor i = Delta Tf(obs) / Delta Tf(calc) = 0.28 / 0.512 = 0.547. For dimerization, i = 1 - alpha + (alpha / 2) = 1 - (alpha / 2). Equating: 1 - (alpha / 2) = 0.547 => alpha / 2 = 1 - 0.547 = 0.453 => alpha = 0.906 ≈ 0.91.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீனில் பென்சாயிக் அமிலம் இருபடியாக்கம் அடைகிறது: 2C6H5COOH <=> (C6H5COOH)2. பென்சீனில் உள்ள 0.10 m பென்சாயிக் அமிலக் கரைசல் 0.28 K உறைநிலைத் தாழ்வைக் காட்டுகிறது. பென்சீனின் மோலால் உறைநிலைத் தாழ்வு மாறிலி (Kf) 5.12 K kg mol^-1 எனில், பென்சாயிக் அமிலத்தின் இருபடியாக்கல் வீதம் (alpha) தோராயமாக:",
+        "optionTexts": [
+          "0.72",
+          "0.80",
+          "0.91",
+          "0.60"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution containing 6.0 g L^-1 of urea (molar mass = 60 g mol^-1) is isotonic with an aqueous solution containing 18.0 g L^-1 of an unknown non-volatile, non-electrolyte solute X at the same temperature. The molar mass of solute X is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "90 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "120 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "180 g mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "360 g mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Two solutions that are isotonic at the same temperature possess identical osmotic pressures (pi1 = pi2), which implies equal molar concentrations (C1 = C2). Molarity of urea = (6.0 g L^-1) / (60 g mol^-1) = 0.10 mol L^-1. Therefore, molarity of X must be 0.10 mol L^-1. Hence, (18.0 g L^-1) / M_X = 0.10 mol L^-1 => M_X = 18.0 / 0.10 = 180 g mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6.0 g L^-1 யூரியாவைக் (மோலார் நிறை = 60 g mol^-1) கொண்டுள்ள நீரிய கரைசல், அதே வெப்பநிலையில் 18.0 g L^-1 ஆவியாகா, மின்பகுளியல்லா கரைபொருள் X-ஐக் கொண்டுள்ள நீரிய கரைசலுடன் சம சவ்வூடு பரவல் அழுத்தத்தைக் (isotonic) கொண்டுள்ளது. கரைபொருள் X-ன் மோலார் நிறை:",
+        "optionTexts": [
+          "90 g mol^-1",
+          "120 g mol^-1",
+          "180 g mol^-1",
+          "360 g mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following 0.05 m aqueous solutions will exhibit the LOWEST freezing point, assuming complete ionization of electrolytes? (Kf for water = 1.86 K kg mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.05 m Glucose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.05 m NaCl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.05 m CaCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.05 m Fe2(SO4)3",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Freezing point Tf = Tf° - Delta Tf, so the solution with the largest freezing point depression (Delta Tf) will have the lowest freezing point. Since Delta Tf = i * Kf * m, we compare effective molality (i * m): Glucose (i = 1, i*m = 0.05 m); NaCl (i = 2, i*m = 0.10 m); CaCl2 (i = 3, i*m = 0.15 m); Fe2(SO4)3 (i = 2 + 3 = 5, i*m = 5 * 0.05 = 0.25 m). Fe2(SO4)3 has the largest effective molality, producing the largest depression and lowest freezing point.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்பகுளிகள் முழுமையாக அயனியடைவதாகக் கொண்டால், பின்வரும் 0.05 m நீரிய கரைசல்களில் மிகக் குறைந்த உறைநிலையைக் கொண்டிருக்கும் கரைசல் எது? (நீரின் Kf = 1.86 K kg mol^-1)",
+        "optionTexts": [
+          "0.05 m குளுக்கோஸ்",
+          "0.05 m NaCl",
+          "0.05 m CaCl2",
+          "0.05 m Fe2(SO4)3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 0.02 M aqueous solution of potassium ferricyanide, K3[Fe(CN)6], is 80% dissociated at 300 K. The van 't Hoff factor (i) for this solution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3.4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3.8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "K3[Fe(CN)6] ionizes as: K3[Fe(CN)6] -> 3K+ + [Fe(CN)6]^3-, producing n = 3 + 1 = 4 ions per formula unit. The relation between van 't Hoff factor and degree of dissociation is i = 1 + (n - 1) * alpha. With alpha = 0.80: i = 1 + (4 - 1) * 0.80 = 1 + 3 * 0.80 = 1 + 2.40 = 3.4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K-ல் பொட்டாசியம் ஃபெர்ரிசயனைடின் (K3[Fe(CN)6]) 0.02 M நீரிய கரைசல் 80% பிரிகையடைகிறது. அக்கரைசலுக்கான வாண்ட் ஹாஃப் காரணி (i):",
+        "optionTexts": [
+          "2.6",
+          "3.4",
+          "3.8",
+          "4.0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following liquid pairs forms a non-ideal solution exhibiting negative deviation from Raoult's law with Delta H_mixing < 0 and Delta V_mixing < 0?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chloroform and Acetone",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ethanol and Water",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzene and Carbon tetrachloride",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n-Hexane and n-Heptane",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When chloroform (CHCl3) and acetone (CH3COCH3) are mixed, a new intermolecular hydrogen bond forms between the acidic proton of chloroform and the carbonyl oxygen of acetone. Because these solute-solvent interactions are stronger than the original interactions within pure components, heat is evolved (Delta H_mix < 0) and volume contracts (Delta V_mix < 0), resulting in negative deviation from Raoult's law.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Delta H_mixing < 0 மற்றும் Delta V_mixing < 0 உடன் ரவுல்ட் விதியிலிருந்து எதிர் விலகலைக் காட்டும் ஒரு நல்லியல்பு அல்லாத கரைசலை உருவாக்கும் திரவ இணை எது?",
+        "optionTexts": [
+          "குளோரோபார்ம் மற்றும் அசிட்டோன்",
+          "எத்தனால் மற்றும் நீர்",
+          "பென்சீன் மற்றும் கார்பன் டெட்ராகுளோரைடு",
+          "n-ஹெக்சேன் மற்றும் n-ஹெப்டேன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution of sucrose (C12H22O11, molar mass = 342 g mol^-1) has a molality of 1.0 m. If the density of this solution is 1.12 g mL^-1, the molarity of the solution is closest to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.84 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.00 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.12 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.75 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A 1.0 m solution contains 1.0 mol sucrose in 1000 g of water. Mass of sucrose = 1.0 mol * 342 g mol^-1 = 342 g. Total mass of solution = 1000 g (water) + 342 g (sucrose) = 1342 g. Volume of solution = Mass / density = 1342 g / 1.12 g mL^-1 = 1198.2 mL = 1.198 L. Molarity = moles of solute / volume in L = 1.0 mol / 1.198 L = 0.835 M ≈ 0.84 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுக்ரோஸின் (C12H22O11, மோலார் நிறை = 342 g mol^-1) நீரிய கரைசலின் மோலாலிட்டி 1.0 m ஆகும். அக்கரைசலின் அடர்த்தி 1.12 g mL^-1 எனில், அதன் மோலாரிட்டி தோராயமாக:",
+        "optionTexts": [
+          "0.84 M",
+          "1.00 M",
+          "1.12 M",
+          "0.75 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The vapour pressure of pure water at 298 K is 23.8 mm Hg. When 18.0 g of glucose (C6H12O6, molar mass = 180 g mol^-1) is dissolved in 178.2 g of water, the vapour pressure of the resulting solution at 298 K is: (Molar mass of water = 18.0 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "21.42 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "23.56 mm Hg",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "22.80 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "23.80 mm Hg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moles of glucose = 18.0 g / 180 g mol^-1 = 0.10 mol. Moles of water = 178.2 g / 18.0 g mol^-1 = 9.90 mol. Total moles = 0.10 + 9.90 = 10.0 mol. Mole fraction of solvent (water), x_water = 9.90 / 10.0 = 0.990. According to Raoult's law: P_solution = x_water * P_water° = 0.990 * 23.8 mm Hg = 23.562 mm Hg ≈ 23.56 mm Hg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் தூய நீரின் ஆவி அழுத்தம் 23.8 mm Hg ஆகும். 178.2 g நீரில் 18.0 g குளுக்கோஸ் (C6H12O6, மோலார் நிறை = 180 g mol^-1) கரைக்கப்படும் போது, 298 K-ல் அக்கரைசலின் ஆவி அழுத்தம்: (நீரின் மோலார் நிறை = 18.0 g mol^-1)",
+        "optionTexts": [
+          "21.42 mm Hg",
+          "23.56 mm Hg",
+          "22.80 mm Hg",
+          "23.80 mm Hg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A solution prepared by dissolving 60.0 g of urea (molar mass = 60 g mol^-1) in 500 g of water is cooled to -4.65 °C. If the molal freezing point depression constant (Kf) for water is 1.86 K kg mol^-1, the mass of ice that separates out from the solution is: (Assume freezing point of pure water = 0 °C)",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "150 g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "200 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moles of urea = 60.0 g / 60 g mol^-1 = 1.0 mol. At -4.65 °C, the freezing point depression Delta Tf = 4.65 K. Molality of the remaining liquid solution m' = Delta Tf / Kf = 4.65 / 1.86 = 2.50 mol kg^-1. Mass of liquid solvent remaining = (moles of solute) / m' = 1.0 mol / 2.50 mol kg^-1 = 0.400 kg = 400 g. The mass of ice separated = initial mass of water - remaining liquid water = 500 g - 400 g = 100 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 g நீரில் 60.0 g யூரியாவைக் (மோலார் நிறை = 60 g mol^-1) கரைத்துத் தயாரிக்கப்பட்ட கரைசல் -4.65 °C-க்கு குளிர்விக்கப்படுகிறது. நீரின் மோலால் உறைநிலைத் தாழ்வு மாறிலி (Kf) 1.86 K kg mol^-1 எனில், கரைசலில் இருந்து பிரிந்து வரும் பனிக்கட்டியின் நிறை:",
+        "optionTexts": [
+          "100 g",
+          "150 g",
+          "200 g",
+          "50 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An ideal solution of two volatile liquids A and B has a total vapour pressure of 450 mm Hg at a given temperature when the mole fraction of A in the liquid is 0.40. When the mole fraction of A is changed to 0.70 at the same temperature, the total vapour pressure becomes 600 mm Hg. The pure component vapour pressures P_A° and P_B° at this temperature are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P_A° = 600 mm Hg, P_B° = 350 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "P_A° = 750 mm Hg, P_B° = 250 mm Hg",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "P_A° = 800 mm Hg, P_B° = 200 mm Hg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P_A° = 700 mm Hg, P_B° = 300 mm Hg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Raoult's law: P_total = P_A° * x_A + P_B° * (1 - x_A). Case 1: 450 = 0.40 * P_A° + 0.60 * P_B° (Eq. 1). Case 2: 600 = 0.70 * P_A° + 0.30 * P_B° (Eq. 2). Multiplying Eq. 2 by 2 gives: 1200 = 1.40 * P_A° + 0.60 * P_B°. Subtracting Eq. 1: 1200 - 450 = (1.40 - 0.40) * P_A° => 750 = 1.00 * P_A° => P_A° = 750 mm Hg. Substituting into Eq. 1: 450 = 0.40 * 750 + 0.60 * P_B° => 450 = 300 + 0.60 * P_B° => 0.60 * P_B° = 150 => P_B° = 250 mm Hg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B ஆகிய இரு ஆவியாகும் திரவங்களின் நல்லியல்பு கரைசலில் A-ன் மோல் பின்னம் 0.40 ஆக இருக்கும் போது ஒரு குறிப்பிட்ட வெப்பநிலையில் மொத்த ஆவி அழுத்தம் 450 mm Hg ஆகும். அதே வெப்பநிலையில் A-ன் மோல் பின்னம் 0.70 ஆக மாறும் போது மொத்த ஆவி அழுத்தம் 600 mm Hg ஆகிறது. தூய கூறுகளின் ஆவி அழுத்தங்கள் P_A° மற்றும் P_B° முறையே:",
+        "optionTexts": [
+          "P_A° = 600 mm Hg, P_B° = 350 mm Hg",
+          "P_A° = 750 mm Hg, P_B° = 250 mm Hg",
+          "P_A° = 800 mm Hg, P_B° = 200 mm Hg",
+          "P_A° = 700 mm Hg, P_B° = 300 mm Hg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 0.20 m aqueous solution of an electrolyte AB2 exhibits a freezing point of -0.4464 °C. Given that the molal freezing point depression constant (Kf) for water is 1.86 K kg mol^-1, the apparent degree of dissociation (alpha) of the electrolyte is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.05",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.10",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.15",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.20",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Observed freezing point depression Delta Tf = 0.4464 K. The relation is Delta Tf = i * Kf * m => 0.4464 = i * 1.86 * 0.20 = i * 0.372 => i = 0.4464 / 0.372 = 1.20. For electrolyte AB2 dissociating as AB2 -> A2+ + 2B-, total ions per formula unit n = 3. Using i = 1 + (n - 1) * alpha: 1.20 = 1 + (3 - 1) * alpha => 1.20 = 1 + 2 * alpha => 2 * alpha = 0.20 => alpha = 0.10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "AB2 என்ற மின்பகுளியின் 0.20 m நீரிய கரைசல் -0.4464 °C உறைநிலையைக் காட்டுகிறது. நீரின் மோலால் உறைநிலைத் தாழ்வு மாறிலி (Kf) 1.86 K kg mol^-1 எனில், அம்மின்பகுளியின் தோற்றப் பிரிகை வீதம் (alpha):",
+        "optionTexts": [
+          "0.05",
+          "0.10",
+          "0.15",
+          "0.20"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution containing 1.23 g of a synthetic polymer in 250 mL of solution exerts an osmotic pressure of 2.46 x 10^-3 atm at 300 K. The molar mass of the polymer is: (Take gas constant R = 0.082 L atm K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "24,600 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "49,200 g mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "61,500 g mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "98,400 g mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the osmotic pressure equation: pi = C * R * T = (w / M) * (1 / V) * R * T. Rearranging for molar mass M: M = (w * R * T) / (pi * V). Here, w = 1.23 g, V = 250 mL = 0.250 L, T = 300 K, R = 0.082 L atm K^-1 mol^-1, and pi = 2.46 x 10^-3 atm. Substituting values: M = (1.23 * 0.082 * 300) / (2.46 x 10^-3 * 0.250) = (1.23 * 24.6) / (0.615 x 10^-3) = 30.258 / (6.15 x 10^-4) = 49,200 g mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "250 mL கரைசலில் 1.23 g செயற்கை பாலிமரைக் கொண்டுள்ள ஒரு நீரிய கரைசல் 300 K-ல் 2.46 x 10^-3 atm சவ்வூடு பரவல் அழுத்தத்தை ஏற்படுத்துகிறது. அப்பாலிமரின் மோலார் நிறை: (R = 0.082 L atm K^-1 mol^-1 எனக் கொள்க)",
+        "optionTexts": [
+          "24,600 g mol^-1",
+          "49,200 g mol^-1",
+          "61,500 g mol^-1",
+          "98,400 g mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The mass of solid sodium hydroxide (NaOH) in grams required to prepare 250 mL of a 0.20 M aqueous solution is: (Given: Molar mass of NaOH = 40 g mol^-1)",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of NaOH required = Molarity * Volume in L = 0.20 mol L^-1 * 0.250 L = 0.050 mol. Mass of NaOH = moles * molar mass = 0.050 mol * 40 g mol^-1 = 2 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "250 mL 0.20 M நீரிய கரைசலைத் தயாரிக்கத் தேவையான திட சோடியம் ஹைட்ராக்சைடின் (NaOH) நிறை கிராமில்: (NaOH-ன் மோலார் நிறை = 40 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A solution is prepared by completely dissolving 90 g of glucose (C6H12O6, molar mass = 180 g mol^-1) in 500 g of pure water. The molality of this solution (in mol kg^-1) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of glucose = 90 g / 180 g mol^-1 = 0.50 mol. Mass of solvent (water) = 500 g = 0.500 kg. Molality m = moles of solute / mass of solvent in kg = 0.50 mol / 0.500 kg = 1 mol kg^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 g தூய நீரில் 90 g குளுக்கோஸை (C6H12O6, மோலார் நிறை = 180 g mol^-1) முழுமையாகக் கரைத்து ஒரு கரைசல் தயாரிக்கப்படுகிறது. அக்கரைசலின் மோலாலிட்டி (mol kg^-1-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A binary solution contains 36 g of water (H2O, molar mass = 18 g mol^-1) and 46 g of ethanol (C2H5OH, molar mass = 46 g mol^-1). The mole fraction of water in the mixture is represented as x / 3. The integer value of x is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of water = 36 g / 18 g mol^-1 = 2.0 mol. Moles of ethanol = 46 g / 46 g mol^-1 = 1.0 mol. Total moles in solution = 2.0 + 1.0 = 3.0 mol. Mole fraction of water = 2.0 / 3.0 = 2 / 3. Therefore, x = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு இருகூறு கரைசலில் 36 g நீர் (H2O, மோலார் நிறை = 18 g mol^-1) மற்றும் 46 g எத்தனால் (C2H5OH, மோலார் நிறை = 46 g mol^-1) உள்ளன. அக்கலவையில் நீரின் மோல் பின்னம் x / 3 எனக் குறிக்கப்படுகிறது எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The normal boiling point of pure water is 100.00 °C. The mass of non-volatile sucrose (C12H22O11, molar mass = 342 g mol^-1) in grams that must be dissolved in 500 g of water to raise its boiling point to 100.52 °C is: (Given: Kb for water = 0.52 K kg mol^-1)",
+    "correctAnswer": 171,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Elevation in boiling point Delta Tb = 100.52 - 100.00 = 0.52 °C = 0.52 K. Using Delta Tb = Kb * m: 0.52 = 0.52 * m => m = 1.00 mol kg^-1. Moles of sucrose required = molality * mass of water in kg = 1.00 mol kg^-1 * 0.500 kg = 0.50 mol. Mass of sucrose = 0.50 mol * 342 g mol^-1 = 171 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய நீரின் இயல்பு கொதிநிலை 100.00 °C ஆகும். 500 g நீரில் அதன் கொதிநிலையை 100.52 °C ஆக உயர்த்தக் கரைக்கப்பட வேண்டிய ஆவியாகா சுக்ரோஸின் (C12H22O11, மோலார் நிறை = 342 g mol^-1) நிறை கிராமில்: (நீரின் Kb = 0.52 K kg mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The freezing point depression of an aqueous solution prepared by dissolving 36 g of glucose (molar mass = 180 g mol^-1) in 200 g of water is x x 10^-2 K. Given that the molal depression constant (Kf) for water is 1.86 K kg mol^-1, the value of x is:",
+    "correctAnswer": 186,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of glucose = 36 g / 180 g mol^-1 = 0.20 mol. Mass of water = 200 g = 0.200 kg. Molality m = 0.20 mol / 0.200 kg = 1.00 mol kg^-1. Freezing point depression Delta Tf = Kf * m = 1.86 K kg mol^-1 * 1.00 mol kg^-1 = 1.86 K. Expressed as x x 10^-2 K, 1.86 K = 186 x 10^-2 K. Thus, x = 186.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "200 g நீரில் 36 g குளுக்கோஸைக் (மோலார் நிறை = 180 g mol^-1) கரைத்துத் தயாரிக்கப்பட்ட நீரிய கரைசலின் உறைநிலைத் தாழ்வு x x 10^-2 K ஆகும். நீரின் மோலால் தாழ்வு மாறிலி (Kf) 1.86 K kg mol^-1 எனில், x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The osmotic pressure (in atm) of an aqueous solution prepared by dissolving 18.0 g of glucose (C6H12O6, molar mass = 180 g mol^-1) in water to yield 820 mL of solution at 300 K is: (Take gas constant R = 0.082 L atm K^-1 mol^-1)",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of glucose = 18.0 g / 180 g mol^-1 = 0.10 mol. Volume of solution = 820 mL = 0.820 L. Molarity C = 0.10 mol / 0.820 L. Osmotic pressure pi = C * R * T = (0.10 / 0.820) * 0.082 * 300 = (0.10 * 24.6) / 0.820 = 2.46 / 0.820 = 3 atm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "18.0 g குளுக்கோஸை (C6H12O6, மோலார் நிறை = 180 g mol^-1) நீரில் கரைத்து 820 mL கரைசல் 300 K-ல் பெறப்பட்டால், அக்கரைசலின் சவ்வூடு பரவல் அழுத்தம் (atm-ல்): (R = 0.082 L atm K^-1 mol^-1 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The vapour pressure of pure water at 25 °C is 20.20 mm Hg. The mass of a non-volatile, non-electrolyte solute (molar mass = 60 g mol^-1) in grams that must be dissolved in 180 g of water (molar mass = 18 g mol^-1) to reduce the vapour pressure of water by 0.20 mm Hg is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Vapor pressure of pure water P° = 20.20 mm Hg; lowering Delta P = 0.20 mm Hg; vapor pressure of solution P = 20.20 - 0.20 = 20.00 mm Hg. Moles of solvent water n1 = 180 g / 18 g mol^-1 = 10.0 mol. According to Raoult's law: (P° - P) / P = n2 / n1 => 0.20 / 20.00 = n2 / 10.0 => 1 / 100 = n2 / 10.0 => n2 = 0.10 mol. Mass of solute = n2 * M2 = 0.10 mol * 60 g mol^-1 = 6 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "25 °C-ல் தூய நீரின் ஆவி அழுத்தம் 20.20 mm Hg ஆகும். நீரின் ஆவி அழுத்தத்தை 0.20 mm Hg குறைக்க 180 g நீரில் (மோலார் நிறை = 18 g mol^-1) கரைக்கப்பட வேண்டிய ஆவியாகா, மின்பகுளியல்லா கரைபொருளின் (மோலார் நிறை = 60 g mol^-1) நிறை கிராமில்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electrolyte AxBy dissociates in aqueous solution into 3 cations and 2 anions. If the degree of dissociation of the electrolyte in a 0.10 m solution is 80%, the van 't Hoff factor (i) is expressed as x x 10^-1. The integer value of x is:",
+    "correctAnswer": 42,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total number of ions produced per formula unit n = 3 (cations) + 2 (anions) = 5. Degree of dissociation alpha = 0.80. The van 't Hoff factor is i = 1 + (n - 1) * alpha = 1 + (5 - 1) * 0.80 = 1 + 4 * 0.80 = 1 + 3.2 = 4.2. Expressed as x x 10^-1: 4.2 = 42 x 10^-1. Hence, x = 42.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "AxBy என்ற மின்பகுளி நீரிய கரைசலில் 3 நேர்அயனிகள் மற்றும் 2 எதிர்அயனிகளாகப் பிரிகையடைகிறது. 0.10 m கரைசலில் அம்மின்பகுளியின் பிரிகை வீதம் 80% எனில், அதன் வாண்ட் ஹாஃப் காரணி (i) x x 10^-1 எனக் குறிப்பிடப்படுகிறது. முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two volatile liquids A and B form an ideal solution. At 300 K, the vapour pressures of pure A and pure B are 400 mm Hg and 100 mm Hg, respectively. An equimolar liquid mixture of A and B is brought to equilibrium with its vapour at 300 K. The vapour is completely removed and condensed in a separate vessel. The mole percentage of component A in this condensed liquid is:",
+    "correctAnswer": 80,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For an equimolar liquid mixture, x_A = 0.50 and x_B = 0.50. Partial pressures in equilibrium with the liquid: p_A = 0.50 * 400 = 200 mm Hg; p_B = 0.50 * 100 = 50 mm Hg. Total vapor pressure P_total = 200 + 50 = 250 mm Hg. The mole fraction of A in the vapor phase is y_A = p_A / P_total = 200 / 250 = 0.80. When this vapor is condensed, the mole fraction of A in the condensate is x'_A = 0.80. Mole percentage of A = 0.80 * 100 = 80%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B ஆகிய இரு ஆவியாகும் திரவங்கள் ஒரு நல்லியல்பு கரைசலை உருவாக்குகின்றன. 300 K-ல் தூய A மற்றும் தூய B ஆகியவற்றின் ஆவி அழுத்தங்கள் முறையே 400 mm Hg மற்றும் 100 mm Hg ஆகும். A மற்றும் B ஆகியவற்றின் சமமோலார் திரவக் கலவை 300 K-ல் அதன் ஆவியுடன் சமநிலையை அடைகிறது. அந்த ஆவி முழுமையாக வெளியேற்றப்பட்டு மற்றொரு கலனில் ஒடுக்கப்படுகிறது. ஒடுக்கப்பட்ட அத்திரவத்தில் கூறு A-ன் மோல் சதவீதம்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che05-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 0.05 m aqueous solution of a weak monobasic acid HA freezes at -0.1116 °C. The percentage dissociation of the acid in this solution is: (Given: Kf for water = 1.86 K kg mol^-1; freezing point of pure water = 0.00 °C)",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Observed freezing point depression Delta Tf(obs) = 0.1116 K. Theoretical depression without dissociation Delta Tf(calc) = Kf * m = 1.86 K kg mol^-1 * 0.05 mol kg^-1 = 0.0930 K. The van 't Hoff factor i = Delta Tf(obs) / Delta Tf(calc) = 0.1116 / 0.0930 = 1.20. For a weak monobasic acid HA <=> H+ + A-, n = 2. Thus, i = 1 + alpha => 1.20 = 1 + alpha => alpha = 0.20. Percentage dissociation = alpha * 100 = 20%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "HA என்ற வலிமை குறைந்த ஒருகாரத்துவ அமிலத்தின் 0.05 m நீரிய கரைசல் -0.1116 °C-ல் உறைகிறது. அக்கரைசலில் அமிலத்தின் சதவீத பிரிகை வீதம்: (நீரின் Kf = 1.86 K kg mol^-1; தூய நீரின் உறைநிலை = 0.00 °C)",
+        "optionTexts": []
+      }
+    ]
+  }
+]

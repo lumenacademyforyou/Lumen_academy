@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che10-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following Group 13 elements forms a +1 oxidation state that is more stable than its +3 oxidation state due to the inert pair effect?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Boron (B)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Aluminum (Al)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gallium (Ga)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Thallium (Tl)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "In Group 13, down the group, the stability of the +1 oxidation state increases relative to the +3 state due to the inert pair effect (the reluctance of the valence 6s electrons to participate in bond formation as a result of poor shielding by intervening 4f and 5d electrons). Consequently, for thallium (Tl), Tl+ is thermodynamically much more stable than Tl3+.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மந்த இணை விளைவின் காரணமாக +3 ஆக்சிஜனேற்ற நிலையை விட +1 ஆக்சிஜனேற்ற நிலை அதிக நிலைப்புத்தன்மை கொண்டதாக உள்ள 13-ஆம் தொகுதித் தனிமம் எது?",
+        "optionTexts": [
+          "போரான் (B)",
+          "அலுமினியம் (Al)",
+          "காலியம் (Ga)",
+          "தாலியம் (Tl)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In diborane (B2H6), which type of bonding describes the two bridging B-H-B linkages?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two-center two-electron (2c-2e) bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Three-center two-electron (3c-2e) bonds (banana bonds)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Three-center four-electron (3c-4e) bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Two-center one-electron (2c-1e) bonds",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Diborane has four terminal B-H bonds, which are normal 2-center 2-electron (2c-2e) covalent bonds. The two bridging hydrogen atoms each link two boron atoms via a delocalized 3-center 2-electron (3c-2e) bridge bond (also referred to as a banana bond).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டைபோரேனில் (B2H6) உள்ள இரண்டு பால B-H-B பிணைப்புகளை விவரிக்கும் பிணைப்பு வகை எது?",
+        "optionTexts": [
+          "இரு-மைய இரு-எலக்ட்ரான் (2c-2e) பிணைப்புகள்",
+          "மும்-மைய இரு-எலக்ட்ரான் (3c-2e) பிணைப்புகள் (வாழைப்பழ பிணைப்புகள்)",
+          "மும்-மைய நான்கு-எலக்ட்ரான் (3c-4e) பிணைப்புகள்",
+          "இரு-மைய ஓர்-எலக்ட்ரான் (2c-1e) பிணைப்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following compounds is commonly referred to as 'inorganic benzene' due to its cyclic, planar, isoelectronic, and isostructural relationship with benzene?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Borazole / Borazine (B3N3H6)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Diborane (B2H6)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Boron nitride (BN)x",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Boric acid (H3BO3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Borazine, B3N3H6, is a cyclic compound containing alternating boron and nitrogen atoms in a six-membered planar ring with delocalized pi-electrons. It is isoelectronic and isostructural with benzene (C6H6) and is widely known as inorganic benzene.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சீனுடன் ஒத்த எலக்ட்ரான் எண்ணிக்கை, சமவடிவம் மற்றும் வளைய அமைப்பைப் பெற்றுள்ளதால் 'கனிம பென்சீன்' என்று அழைக்கப்படும் சேர்மம் எது?",
+        "optionTexts": [
+          "போரசோல் / போரசின் (B3N3H6)",
+          "டைபோரேன் (B2H6)",
+          "போரான் நைட்ரைடு (BN)x",
+          "போரிக் அமிலம் (H3BO3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Orthoboric acid, H3BO3, acts in aqueous solution not as a conventional protonic Bronsted acid, but as a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tribasic Bronsted acid donating 3 protons sequentially.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Monobasic Lewis acid accepting a pair of electrons from a hydroxide ion of water.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Dibasic Lewis base donating two electron pairs.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Neutral species incapable of changing the pH of water.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Boric acid, B(OH)3, does not release protons from its own molecule. Instead, the electron-deficient boron atom accepts a lone pair from a hydroxide ion of a water molecule, acting as a monobasic Lewis acid: B(OH)3 + 2H2O <=> [B(OH)4]- + H3O+.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆர்த்தோபோரிக் அமிலம் (H3BO3) நீரிய கரைசலில் வழக்கமான புரோட்டான் வழங்கும் பிரான்ஸ்டெட் அமிலமாகச் செயல்படாமல் எவ்வாறு செயல்படுகிறது?",
+        "optionTexts": [
+          "தொடர்ச்சியாக 3 புரோட்டான்களை வழங்கும் முக்காரத்துவ பிரான்ஸ்டெட் அமிலம்.",
+          "நீரின் ஹைட்ராக்சைடு அயனியிலிருந்து ஓர் எலக்ட்ரான் இரட்டையை ஏற்கும் ஒருகாரத்துவ லூயிஸ் அமிலம்.",
+          "இரண்டு எலக்ட்ரான் இரட்டைகளை வழங்கும் இருகாரத்துவ லூயிஸ் காரம்.",
+          "நீரின் pH மதிப்பை மாற்ற இயலாத நடுநிலை மூலக்கூறு."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which allotrope of carbon is thermodynamically the most stable under standard conditions (298 K and 1 bar)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Diamond",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Graphite",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Buckminsterfullerene (C60)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carbon nanotubes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Thermodynamically, graphite is the standard, most stable allotrope of carbon at 298 K and 1 bar pressure. Its standard molar enthalpy of formation (Delta H_f°) is defined as zero. Diamond is metastable under standard conditions with a Delta H_f° of +1.9 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட்ட நிலையில் (298 K மற்றும் 1 bar) வெப்ப இயக்கவியல் ரீதியாக கார்பனின் மிகவும் நிலையான புறவேற்றுமை வடிவம் எது?",
+        "optionTexts": [
+          "வைரம்",
+          "கிராஃபைட்",
+          "பக்மின்ஸ்டர்புல்லரீன் (C60)",
+          "கார்பன் நானோகுழாய்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following neutral oxides of nitrogen contains a formal nitrogen-nitrogen single bond and is diamagnetic in the gas phase?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NO",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NO2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "N2O",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "N2O3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Nitrous oxide, N2O (laughing gas), has a linear structure with resonance forms (:N#N-O: <-> :N=N=O:). It has an even number of valence electrons (16 electrons), all paired up, making it diamagnetic and neutral. NO and NO2 are odd-electron paramagnetic molecules, while N2O3 is an acidic oxide.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜனின் பின்வரும் நடுநிலை ஆக்சைடுகளில் நைட்ரஜன்-நைட்ரஜன் பிணைப்பைக் கொண்டு வாயு நிலையில் டயாகாந்தத் தன்மையைப் பெற்றுள்ள ஆக்சைடு எது?",
+        "optionTexts": [
+          "NO",
+          "NO2",
+          "N2O",
+          "N2O3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The correct increasing order of Lewis acid strength among boron trihalides is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "BBr3 < BCl3 < BF3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "BF3 < BCl3 < BBr3 < BI3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "BI3 < BBr3 < BCl3 < BF3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "BF3 < BI3 < BCl3 < BBr3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Although fluorine is the most electronegative, BF3 is the weakest Lewis acid due to effective p_pi - p_pi back-bonding between the filled 2p orbital of fluorine and the empty 2p orbital of boron (identical size). In BCl3, BBr3, and BI3, back-bonding becomes progressively weaker due to poor overlap between the larger 3p, 4p, and 5p orbitals of halogens and the small 2p orbital of boron. Consequently, electron deficiency at boron increases, making the Lewis acid strength order: BF3 < BCl3 < BBr3 < BI3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரான் ட்ரைஹாலைடுகளின் லூயிஸ் அமில வலிமையின் சரியான ஏறுவரிசை எது?",
+        "optionTexts": [
+          "BBr3 < BCl3 < BF3",
+          "BF3 < BCl3 < BBr3 < BI3",
+          "BI3 < BBr3 < BCl3 < BF3",
+          "BF3 < BI3 < BCl3 < BBr3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which oxoacid of phosphorus is monobasic (monoprotic) and acts as a strong reducing agent due to the presence of two direct P-H bonds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Orthophosphoric acid (H3PO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phosphonic acid / Orthophosphorous acid (H3PO3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hypophosphorous acid / Phosphinic acid (H3PO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pyrophosphoric acid (H4P2O7)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hypophosphorous acid (phosphinic acid, H3PO2) has a tetrahedral structure with one P=O bond, one P-OH bond, and two direct P-H bonds. Because only protons attached to oxygen ionize, it is a monobasic acid. The two direct P-H bonds impart powerful reducing properties, allowing it to reduce silver nitrate to metallic silver.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டு நேரடி P-H பிணைப்புகளைக் கொண்டுள்ளதால் வலிமையான ஒடுக்கும் காரணியாகவும் ஒருகாரத்துவ (monobasic) அமிலமாகவும் செயல்படும் பாஸ்பரஸின் ஆக்ஸோ அமிலம் எது?",
+        "optionTexts": [
+          "ஆர்த்தோபாஸ்போரிக் அமிலம் (H3PO4)",
+          "பாஸ்போனிக் அமிலம் / ஆர்த்தோபாஸ்போரஸ் அமிலம் (H3PO3)",
+          "ஹைபோபாஸ்போரஸ் அமிலம் / பாஸ்பினிக் அமிலம் (H3PO2)",
+          "பைரோபாஸ்போரிக் அமிலம் (H4P2O7)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The thermal stability of Group 16 hydrides decreases down the group in the order H2O > H2S > H2Se > H2Te. This trend is primarily due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A continuous increase in the electronegativity of the central chalcogen atom.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A gradual decrease in the H-E bond dissociation enthalpy as the central atom size increases.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Stronger hydrogen bonding in hydrogen telluride.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An increase in the H-E-H bond angle from oxygen to tellurium.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Down Group 16 (from O to Te), the atomic size of the central chalcogen atom increases, resulting in poorer orbital overlap with hydrogen's 1s orbital. Consequently, the H-E bond length increases and the bond dissociation enthalpy decreases markedly, making H2Te decompose on heating much more readily than H2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "16-ஆம் தொகுதி ஹைட்ரைடுகளின் வெப்ப நிலைப்புத்தன்மை H2O > H2S > H2Se > H2Te என்ற வரிசையில் குறைவதற்கு முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "மைய அணுவின் எலக்ட்ரான் கவர்தன்மை தொடர்ந்து அதிகரிப்பது.",
+          "மைய அணுவின் உருவளவு அதிகரிப்பதால் H-E பிணைப்புப் பிளவு என்தால்பி படிப்படியாகக் குறைவது.",
+          "ஹைட்ரஜன் டெல்லூரைடில் வலுவான ஹைட்ரஜன் பிணைப்பு இருப்பது.",
+          "ஆக்ஸிஜனிலிருந்து டெல்லூரியம் வரை H-E-H பிணைப்புக் கோணம் அதிகரிப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following interhalogen compounds possesses a pentagonal bipyramidal molecular geometry according to VSEPR theory?",
+    "options": [
+      {
+        "label": "A",
+        "text": "BrF5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "IF5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "IF7",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "ClF3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In IF7, the central iodine atom has 7 valence electrons and forms 7 single sigma bonds with seven fluorine atoms with zero lone pairs. Steric number = 7, corresponding to sp3d3 hybridization and a regular pentagonal bipyramidal geometry with five equatorial bonds (72° angles) and two axial bonds (90° angles).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "VSEPR கொள்கையின்படி, ஐங்கோண இருபிரமிடு மூலக்கூறு வடிவத்தைக் கொண்டுள்ள ஹேலஜனிடைச் சேர்மம் எது?",
+        "optionTexts": [
+          "BrF5",
+          "IF5",
+          "IF7",
+          "ClF3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When white phosphorus is heated with concentrated aqueous sodium hydroxide in an inert atmosphere of CO2, which products are formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phosphine (PH3) and sodium hypophosphite (NaH2PO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phosphorous acid (H3PO3) and sodium phosphide (Na3P)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Phosphine (PH3) and sodium orthophosphate (Na3PO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phosphorus trichloride (PCl3) and hydrogen gas (H2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "White phosphorus undergoes disproportionation in hot aqueous alkali: P4 + 3NaOH + 3H2O -> PH3(g) + 3NaH2PO2. Phosphorus is simultaneously reduced from 0 to -3 in phosphine (PH3) and oxidized from 0 to +1 in sodium hypophosphite (NaH2PO2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெள்ளைப் பாஸ்பரஸ் CO2 மந்த வளிமண்டலத்தில் அடர் நீரிய சோடியம் ஹைட்ராக்சைடுடன் சூடுபடுத்தப்படும் போது உருவாகும் விளைபொருட்கள் எவை?",
+        "optionTexts": [
+          "பாஸ்பீன் (PH3) மற்றும் சோடியம் ஹைபோபாஸ்பைட் (NaH2PO2)",
+          "பாஸ்போரஸ் அமிலம் (H3PO3) மற்றும் சோடியம் பாஸ்பைடு (Na3P)",
+          "பாஸ்பீன் (PH3) மற்றும் சோடியம் ஆர்த்தோபாஸ்பேட் (Na3PO4)",
+          "பாஸ்பரஸ் ட்ரைகுளோரைடு (PCl3) மற்றும் ஹைட்ரஜன் வாயு (H2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The bleaching action of sulfur dioxide (SO2) in the presence of moisture differs from that of chlorine gas (Cl2) because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "SO2 bleaches by reduction and its effect is temporary, whereas Cl2 bleaches by oxidation and its effect is permanent.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "SO2 bleaches by oxidation and is permanent, whereas Cl2 bleaches by reduction and is temporary.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Both bleach by reduction, but SO2 is effective only on wool.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both bleach by catalytic dehydration.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moist SO2 generates nascent hydrogen (SO2 + 2H2O -> H2SO4 + 2[H]), bleaching coloring matter by reduction. Atmospheric oxygen can slowly re-oxidize the colorless reduced compound, making the bleaching temporary. In contrast, moist chlorine produces nascent oxygen (Cl2 + H2O -> 2HCl + [O]), bleaching coloring matter irreversibly by oxidation, making it permanent.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈரப்பதத்தின் முன்னிலையில் சல்பர் டை ஆக்சைடின் (SO2) வெளுTestAction குளோரின் வாயுவின் (Cl2) வெளுTestAction-லிருந்து எவ்வாறு வேறுபடுகிறது?",
+        "optionTexts": [
+          "SO2 ஒடுக்கம் மூலம் வெளுப்பதால் அதன் விளைவு தற்காலிகமானது, ஆனால் Cl2 ஆக்சிஜனேற்றம் மூலம் வெளுப்பதால் அதன் விளைவு நிரந்தரமானது.",
+          "SO2 ஆக்சிஜனேற்றம் மூலம் வெளுக்கிறது மற்றும் நிரந்தரமானது, ஆனால் Cl2 ஒடுக்கம் மூலம் வெளுக்கிறது மற்றும் தற்காலிகமானது.",
+          "இரண்டும் ஒடுக்கம் மூலமே வெளுக்கின்றன, ஆனால் SO2 கம்பளிக்கு மட்டுமே பயன்படுகிறது.",
+          "இரண்டும் வினையூக்க நீரிழப்பு மூலம் வெளுக்கின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Pure lead(IV) oxide (PbO2) reacts with concentrated nitric acid (HNO3) to evolve oxygen gas: 2PbO2 + 4HNO3 -> 2Pb(NO3)2 + 2H2O + O2. This redox reaction demonstrates that:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitric acid acts as a powerful reducing agent towards lead(IV).",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lead(IV) is unstable and acts as a powerful oxidizing agent, reducing to the more stable lead(II) oxidation state due to the inert pair effect.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lead(IV) oxide is a basic anhydride.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lead(II) nitrate is an explosive compound.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Due to the strong inert pair effect in Group 14, the +2 oxidation state is much more stable for lead than the +4 state. Consequently, lead(IV) in PbO2 acts as a strong oxidizing agent; it oxidizes the oxide ion of the lattice to elemental oxygen while reducing itself to the thermodynamically preferred Pb2+ state in lead(II) nitrate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய காரீயம்(IV) ஆக்சைடு (PbO2) அடர் நைட்ரிக் அமிலத்துடன் (HNO3) வினைபுரிந்து ஆக்ஸிஜன் வாயுவை வெளியிடுகிறது: 2PbO2 + 4HNO3 -> 2Pb(NO3)2 + 2H2O + O2. இந்த ரெடாக்ஸ் வினை எதனை நிரூபிக்கிறது?",
+        "optionTexts": [
+          "நைட்ரிக் அமிலம் காரீயம்(IV)-க்கு எதிராக வலிமையான ஒடுக்கியாகச் செயல்படுகிறது.",
+          "மந்த இணை விளைவின் காரணமாக காரீயம்(IV) நிலையற்றதாகி வலிமையான ஆக்சிஜனேற்றியாகச் செயல்பட்டு, அதிக நிலைப்புத்தன்மை கொண்ட காரீயம்(II) நிலைக்கு ஒடுக்கமடைகிறது.",
+          "காரீயம்(IV) ஆக்சைடு ஒரு கார நீரிலி ஆகும்.",
+          "காரீயம்(II) நைட்ரேட் ஒரு வெடிபொருளாகும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following noble gas compounds is isostructural and isoelectronic with the chlorate anion (ClO3-)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "XeO3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "XeF4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "XeOF4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "XeO4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In ClO3-, the total valence electrons = 7 (from Cl) + 3 * 6 (from O) + 1 (charge) = 26 electrons. In XeO3, the total valence electrons = 8 (from Xe) + 3 * 6 (from O) = 26 electrons. Both have 26 valence electrons (isoelectronic). Both central atoms have 3 bond pairs and 1 lone pair, adopting sp3 hybridization with a trigonal pyramidal shape (isostructural).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரேட் எதிரயனியுடன் (ClO3-) ஒத்த எலக்ட்ரான் எண்ணிக்கை மற்றும் சமவடிவத்தைக் கொண்டுள்ள மந்த வாயுச் சேர்மம் எது?",
+        "optionTexts": [
+          "XeO3",
+          "XeF4",
+          "XeOF4",
+          "XeO4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The anomalous high strength of perchloric acid (HClO4) compared to hypochlorous acid (HClO) is primarily explained by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Higher electronegativity of chlorine in HClO4.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Greater resonance delocalization of the negative charge over four equivalent oxygen atoms in the perchlorate conjugate base (ClO4-).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Presence of an intramolecular hydrogen bond in HClO.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Weaker O-H covalent bond energy in HClO.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Deprotonation of HClO4 produces the perchlorate anion (ClO4-), where the negative charge is delocalized over four highly electronegative oxygen atoms via resonance, distributing the charge and stabilizing the conjugate base. In hypochlorite (ClO-), the charge is localized on a single oxygen atom, making it less stable and making HClO a weak acid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைபோகுளோரஸ் அமிலத்தை (HClO) விட பெர்குளோரிக் அமிலத்தின் (HClO4) அசாதாரண அமில வலிமைக்கு முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "HClO4-ல் குளோரினின் அதிக எலக்ட்ரான் கவர்தன்மை.",
+          "பெர்குளோரேட் இணை காரத்தில் (ClO4-) எதிர்மின்சுமையானது நான்கு சமமான ஆக்ஸிஜன் அணுக்களில் உடனிசைவு மூலம் பரவி நிலைப்படுத்தப்படுவது.",
+          "HClO-ல் மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்பு இருப்பது.",
+          "HClO-ல் O-H சகப்பிணைப்பு ஆற்றல் பலவீனமாக இருப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Nitrogen exhibits an anomalous behavior compared to the heavier members of Group 15. Which of the following properties is INCORRECT for nitrogen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It can form strong p_pi - p_pi multiple bonds with itself and with carbon or oxygen.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Its maximum coordination number is strictly limited to 4 due to the absence of d-orbitals.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The single N-N bond is stronger and has a higher bond dissociation energy than the single P-P bond.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "It exists as a diatomic gas with a triple bond at room temperature.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The single N-N bond is actually weaker than the single P-P bond (bond dissociation energy: N-N ≈ 160 kJ mol^-1 vs P-P ≈ 200 kJ mol^-1). This is because the small atomic radius of nitrogen causes strong inter-electronic repulsion between the non-bonding lone pairs on adjacent nitrogen atoms. Thus, statement C is incorrect and the correct choice.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "15-ஆம் தொகுதியின் மற்ற தனிமங்களுடன் ஒப்பிடும்போது நைட்ரஜன் மாறுபட்ட பண்புகளை வெளிப்படுத்துகிறது. நைட்ரஜன் பற்றிய தவறான கூற்று எது?",
+        "optionTexts": [
+          "இது தன்னுடனும் கார்பன் மற்றும் ஆக்ஸிஜனுடனும் வலுவான p_pi - p_pi பல பிணைப்புகளை உருவாக்கக்கூடியது.",
+          "d-ஆர்பிட்டால்கள் இல்லாததால் இதன் அதிகபட்ச அணைவு எண் 4 ஆக மட்டுமே கட்டுப்படுத்தப்பட்டுள்ளது.",
+          "ஒற்றை N-N பிணைப்பானது ஒற்றை P-P பிணைப்பை விட வலிமையானது மற்றும் அதிக பிணைப்புப் பிளவு ஆற்றலைக் கொண்டது.",
+          "அறை வெப்பநிலையில் இது முப்பிணைப்பைக் கொண்ட ஈரணு வாயுவாகக் காணப்படுகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When silicon dioxide (quartz, SiO2) is reacted with hydrofluoric acid (HF), the reaction yields which soluble product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hexafluorosilicic acid (H2SiF6)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Silicon tetrafluoride gas exclusively (SiF4)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Silicic acid (H4SiO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sodium fluorosilicate (Na2SiF6)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "SiO2 is normally resistant to attack by acids, but it dissolves readily in HF. Initially, silicon tetrafluoride is formed: SiO2 + 4HF -> SiF4 + 2H2O. In the presence of excess aqueous HF, SiF4 coordinates with two additional HF molecules to yield soluble hexafluorosilicic acid: SiF4 + 2HF -> H2SiF6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிலிக்கான் டைஆக்சைடு (குவார்ட்ஸ், SiO2) ஹைட்ரோபுளூரிக் அமிலத்துடன் (HF) வினைபுரியும் போது கிடைக்கும் கரையக்கூடிய விளைபொருள் எது?",
+        "optionTexts": [
+          "ஹெக்ஸாபுளூரோசிலிசிக் அமிலம் (H2SiF6)",
+          "சிலிக்கான் டெட்ராபுளூரைடு வாயு மட்டும் (SiF4)",
+          "சிலிசிக் அமிலம் (H4SiO4)",
+          "சோடியம் புளூரோசிலிகேட் (Na2SiF6)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which halogen does NOT form any oxoacids other than a single unstable species HOF?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fluorine",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Bromine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Iodine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Due to its highest electronegativity and the absence of vacant d-orbitals in its valence shell, fluorine cannot show positive oxidation states (+1, +3, +5, +7). Therefore, it cannot form a series of oxoacids like other halogens and forms only one unstable oxoacid, hypofluorous acid (HOF), where fluorine is formally in the -1 oxidation state.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிலையற்ற HOF என்ற ஒற்றை அமிலத்தைத் தவிர வேறு எந்த ஆக்ஸோ அமிலங்களையும் உருவாக்காத ஹேலஜன் எது?",
+        "optionTexts": [
+          "குளோரின்",
+          "ஃபுளோரின்",
+          "புரோமின்",
+          "அயோடின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Complete hydrolysis of xenon hexafluoride (XeF6) under controlled conditions produces a colorless, explosive solid compound X. Compound X is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Xenon oxytetrafluoride (XeOF4)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Xenon dioxydifluoride (XeO2F2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Xenon trioxide (XeO3)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Perxenic acid (H4XeO6)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Partial hydrolysis of XeF6 gives XeOF4 and XeO2F2. Complete hydrolysis yields xenon trioxide: XeF6 + 3H2O -> XeO3 + 6HF. XeO3 is a colorless, hygroscopic, solid that is dangerously explosive.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் ஹெக்ஸாபுளூரைடின் (XeF6) முழுமையான நீராற்பகுப்பால் உருவாகும் நிறமற்ற, வெடிக்கக்கூடிய திடச் சேர்மம் X எது?",
+        "optionTexts": [
+          "செனான் ஆக்ஸிடெட்ராபுளூரைடு (XeOF4)",
+          "செனான் டைஆக்ஸிடைபுளூரைடு (XeO2F2)",
+          "செனான் ட்ரைஆக்சைடு (XeO3)",
+          "பெர்செனிக் அமிலம் (H4XeO6)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In pyrophosphoric acid (H4P2O7), what are the total numbers of P-OH bonds, P=O bonds, and P-O-P bridging linkages, respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 P-OH, 2 P=O, and 1 P-O-P",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 P-OH, 4 P=O, and 1 P-O-P",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 P-OH, 2 P=O, and 2 P-O-P",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 P-OH, 1 P=O, and 2 P-O-P",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Pyrophosphoric acid (H4P2O7) is formed by heating two molecules of orthophosphoric acid with the elimination of water: 2H3PO4 -> H4P2O7 + H2O. Its structure features two tetrahedral phosphorus atoms bridged by an oxygen atom: (HO)2(O)P-O-P(O)(OH)2. Thus, it contains 4 P-OH bonds (tetrabasic), 2 P=O bonds, and 1 P-O-P bridge.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பைரோபாஸ்போரிக் அமிலத்தில் (H4P2O7) காணப்படும் P-OH பிணைப்புகள், P=O பிணைப்புகள் மற்றும் P-O-P பாலப் பிணைப்புகளின் மொத்த எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "4 P-OH, 2 P=O, மற்றும் 1 P-O-P",
+          "2 P-OH, 4 P=O, மற்றும் 1 P-O-P",
+          "3 P-OH, 2 P=O, மற்றும் 2 P-O-P",
+          "4 P-OH, 1 P=O, மற்றும் 2 P-O-P"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The basicity (number of replaceable ionizable protons) of orthophosphoric acid, H3PO4, is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of H3PO4 contains one P=O double bond and three P-OH single bonds. All three hydrogen atoms are attached to electronegative oxygen atoms and are ionizable. Therefore, its basicity is 3 (tribasic acid).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆர்த்தோபாஸ்போரிக் அமிலத்தின் (H3PO4) காரத்துவ மதிப்பு (இடப்பெயர்ச்சி செய்யக்கூடிய புரோட்டான்களின் எண்ணிக்கை):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The formal oxidation state of sulfur in Marshall's acid (peroxodisulfuric acid, H2S2O8) is +x. The integer value of x is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Marshall's acid has the structure HO-SO2-O-O-SO2-OH. It contains one peroxo linkage (-O-O-), so 2 oxygen atoms are in the -1 state and the remaining 6 oxygen atoms are in the -2 state. Let x be the oxidation state of sulfur: 2(+1) + 2(x) + 2(-1) + 6(-2) = 0 => 2 + 2x - 2 - 12 = 0 => 2x = 12 => x = +6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மார்ஷல் அமிலத்தில் (H2S2O8) சல்பரின் முறையான ஆக்சிஜனேற்ற நிலை +x எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of lone pairs of electrons on the central xenon atom in xenon difluoride (XeF2) is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Xenon has 8 valence electrons. In XeF2, it forms 2 single covalent bonds with fluorine atoms, using 2 electrons. The remaining 6 electrons exist as 3 lone pairs in equatorial positions of a trigonal bipyramidal arrangement, resulting in a linear molecular shape. Number of lone pairs on Xe = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செனான் டைபுளூரைடில் (XeF2) மைய செனான் அணுவில் உள்ள தனித்த எலக்ட்ரான் இரட்டைகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A single molecule of white phosphorus (P4) has a tetrahedral geometry. The total number of P-P single covalent bonds present in one P4 molecule is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the P4 tetrahedron, each phosphorus atom is bonded to the other three phosphorus atoms. The total number of edges in a tetrahedron is 6. Each edge corresponds to a single P-P covalent bond. Thus, there are exactly 6 P-P single bonds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நான்முகி வடிவம் கொண்ட ஒரு வெள்ளைப் பாஸ்பரஸ் (P4) மூலக்கூறில் உள்ள P-P ஒற்றைச் சகப்பிணைப்புகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a molecule of cyclic trimetaphosphoric acid, (HPO3)3, the total number of bridging P-O-P oxygen linkages in the six-membered ring is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Cyclic trimetaphosphoric acid consists of a six-membered ring containing alternating phosphorus and oxygen atoms (-P-O-P-O-P-O-). There are 3 phosphorus atoms and 3 bridging oxygen atoms. Therefore, the total number of P-O-P oxygen bridges is 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளைய டிரைமெட்டாபாஸ்போரிக் அமில மூலக்கூறில் உள்ள (HPO3)3 பால P-O-P ஆக்ஸிஜன் பிணைப்புகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a single molecule of borax, Na2[B4O5(OH)4] · 8H2O, the number of boron atoms that are sp2 hybridized is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The borax anion [B4O5(OH)4]^2- consists of two tetrahedral [BO4] units (sp3 hybridized) and two planar triangular [BO3] units (sp2 hybridized). Thus, exactly 2 boron atoms are sp2 hybridized (and 2 are sp3 hybridized).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போராக்ஸ் Na2[B4O5(OH)4] · 8H2O மூலக்கூறில் sp2 இனக்கலப்படைந்துள்ள போரான் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the contact process, sulfur dioxide is catalytically oxidized to sulfur trioxide, which is absorbed in 98% H2SO4 to yield oleum (pyrosulfuric acid, H2S2O7). The total number of S=O double bonds present in a single molecule of pyrosulfuric acid is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of pyrosulfuric acid (oleum, H2S2O7) is HO-S(=O)2-O-S(=O)2-OH. Each sulfur atom is bonded to two terminal oxygen atoms via double bonds (S=O), one -OH group via a single bond, and the central bridging oxygen via a single bond (S-O-S). With two sulfur atoms, the total number of S=O double bonds is 2 * 2 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓலியம் (பைரோசல்பியூரிக் அமிலம், H2S2O7) மூலக்கூறில் உள்ள S=O இரட்டைப் பிணைப்புகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a molecule of tetraphosphorus decaoxide (P4O10), the total number of bridging P-O-P oxygen atoms is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In P4O10, each of the four phosphorus atoms is located at the vertex of a tetrahedron. There are 6 edges in the tetrahedron, and along each edge lies one bridging oxygen atom, forming 6 bridging P-O-P bonds. Additionally, each phosphorus atom has one terminal coordinate/double bond to an oxygen atom (4 terminal oxygens). Total bridging oxygens = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டெட்ராபாஸ்பரஸ் டெக்காக்சைடு (P4O10) மூலக்கூறில் உள்ள பால P-O-P ஆக்ஸிஜன் அணுக்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of lone pairs of electrons residing on the central iodine atom in the triiodide anion (I3-) is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The central iodine atom has 7 valence electrons, plus 1 electron from the negative charge, giving 8 electrons. It forms 2 single covalent bonds with the two terminal iodine atoms (using 2 electrons). The remaining 6 electrons form 3 lone pairs. Steric number = 2 bond pairs + 3 lone pairs = 5 (sp3d hybridization). The 3 lone pairs occupy the equatorial positions of a trigonal bipyramid, giving I3- a linear molecular shape.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டிரைஅயோடைடு எதிரயனியில் (I3-) மைய அயோடின் அணுவில் உள்ள தனித்த எலக்ட்ரான் இரட்டைகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che10-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_10",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a buckminsterfullerene molecule (C60), the total number of five-membered pentagonal rings is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Buckminsterfullerene (C60) has a truncated icosahedron geometry consisting of 32 faces in total. According to Euler's polyhedral formula, any fullerene composed of pentagons and hexagons must contain exactly 12 pentagonal rings to close the spherical cage. In C60, there are exactly 12 five-membered rings and 20 six-membered rings.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பக்மின்ஸ்டர்புல்லரீன் (C60) மூலக்கூறில் உள்ள ஐந்து உறுப்பினர் கொண்ட ஐங்கோண வளையங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

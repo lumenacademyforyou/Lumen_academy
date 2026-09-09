@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat01-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let A and B be two non-empty finite sets such that n(A) = 14, n(B) = 18, and n(A U B) = 26. The number of elements in the symmetric difference A Delta B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "20",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "22",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the principle of inclusion-exclusion: n(A ∩ B) = n(A) + n(B) - n(A U B) = 14 + 18 - 26 = 6. The symmetric difference is given by n(A Delta B) = n(A U B) - n(A ∩ B) = 26 - 6 = 20.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்பன n(A) = 14, n(B) = 18, மற்றும் n(A U B) = 26 என்றவாறுள்ள வெற்றில்லா கணங்கள் எனில், சமச்சீர் வித்தியாசம் A Delta B-ல் உள்ள உறுப்புகளின் எண்ணிக்கை:",
+        "optionTexts": [
+          "12",
+          "20",
+          "16",
+          "22"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let the relation R on the set of natural numbers N be defined by R = {(x, y) in N x N : 2x + y = 13}. The domain of the relation R is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "{1, 2, 3, 4, 5, 6}",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "{1, 2, 3, 4, 5, 6, 7}",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "{1, 3, 5, 7, 9, 11}",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "{2, 4, 6, 8, 10, 12}",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given 2x + y = 13 with x, y in N. Since y = 13 - 2x >= 1, we get 2x <= 12 => x <= 6. As x in N, x can take values in {1, 2, 3, 4, 5, 6}. The corresponding y values are 11, 9, 7, 5, 3, 1 (all in N). Hence, the domain is {1, 2, 3, 4, 5, 6}.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயல் எண்களின் கணம் N-ன் மீதான தொடர்பு R = {(x, y) in N x N : 2x + y = 13} என வரையறுக்கப்பட்டால், R-ன் சார்பகம்:",
+        "optionTexts": [
+          "{1, 2, 3, 4, 5, 6}",
+          "{1, 2, 3, 4, 5, 6, 7}",
+          "{1, 3, 5, 7, 9, 11}",
+          "{2, 4, 6, 8, 10, 12}"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The domain of the real-valued function f(x) = sqrt(x^2 - 7x + 10) / ln(x - 1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[5, infinity)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(1, 2] U [5, infinity) \\ {2}",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1, 2) U [5, infinity)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "[2, 5]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For f(x) to be defined: (1) Inside the square root: x^2 - 7x + 10 >= 0 => (x - 2)(x - 5) >= 0 => x in (-infinity, 2] U [5, infinity). (2) Inside the natural logarithm: x - 1 > 0 => x > 1. (3) Denominator must not vanish: ln(x - 1) != 0 => x - 1 != 1 => x != 2. Intersecting all conditions yields (1, 2) U [5, infinity).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = sqrt(x^2 - 7x + 10) / ln(x - 1) என்ற மெய்மதிப்புச் சார்பின் சார்பகம்:",
+        "optionTexts": [
+          "[5, infinity)",
+          "(1, 2] U [5, infinity) \\ {2}",
+          "(1, 2) U [5, infinity)",
+          "[2, 5]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let the function f: R -> R be defined by f(x) = 3x^3 - 5. Then f is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "one-one but not onto",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "onto but not one-one",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "neither one-one nor onto",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "both one-one and onto",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "f'(x) = 9x^2 >= 0 for all x in R, and f'(x) = 0 only at the isolated point x = 0. Thus, f is strictly increasing on R, meaning it is one-one (injective). Furthermore, as x -> infinity, f(x) -> infinity, and as x -> -infinity, f(x) -> -infinity. Since f is continuous, its range is R. Range = Codomain = R, so f is onto (surjective). Hence, f is both one-one and onto.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f: R -> R என்ற சார்பு f(x) = 3x^3 - 5 என வரையறுக்கப்பட்டால், f என்பது:",
+        "optionTexts": [
+          "ஒன்றுக்கு-ஒன்றான சார்பு ஆனால் மேல் சார்பு அல்ல",
+          "மேல் சார்பு ஆனால் ஒன்றுக்கு-ஒன்றான சார்பு அல்ல",
+          "ஒன்றுக்கு-ஒன்றானதும் அல்ல மற்றும் மேல் சார்பும் அல்ல",
+          "ஒன்றுக்கு-ஒன்று மற்றும் மேல் சார்பு இரண்டும் ஆகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let S be a set containing n elements. If the power set P(S) contains 112 more elements than the power set of another set T, the value of n is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let n(S) = n and n(T) = m. The sizes of their power sets are 2^n and 2^m respectively. Given 2^n - 2^m = 112 => 2^m(2^(n - m) - 1) = 16 * 7 = 2^4 * (2^3 - 1). Equating powers of 2 and odd factors gives m = 4 and n - m = 3 => n = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "S என்ற கணத்தில் n உறுப்புகள் உள்ளன. S-ன் அடுக்கு கணம் P(S)-ல் உள்ள உறுப்புகளின் எண்ணிக்கை T என்ற மற்றொரு கணத்தின் அடுக்கு கணத்தை விட 112 அதிகமாக இருப்பின், n-ன் மதிப்பு:",
+        "optionTexts": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The range of the function f(x) = (x^2 - 4) / (x - 2) defined on its natural domain is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R \\ {2}",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R \\ {4}",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "[4, infinity)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The natural domain of f(x) is R \\ {2}. For any x != 2, f(x) = ((x - 2)(x + 2)) / (x - 2) = x + 2. Since x != 2, f(x) cannot take the value 2 + 2 = 4. Thus, the range of f(x) is R \\ {4}.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயல்புச் சார்பகத்தில் வரையறுக்கப்பட்ட f(x) = (x^2 - 4) / (x - 2) என்ற சார்பின் வீச்சகம்:",
+        "optionTexts": [
+          "R",
+          "R \\ {2}",
+          "R \\ {4}",
+          "[4, infinity)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) = (2x + 1) / (x - 3) for x != 3. Then the composite function (f o f)(x) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(x - 1) / (x - 10)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(5x - 1) / (10 - x)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "x",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(2x - 3) / (x + 1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "(f o f)(x) = f(f(x)) = [2((2x + 1)/(x - 3)) + 1] / [((2x + 1)/(x - 3)) - 3] = [2(2x + 1) + (x - 3)] / [(2x + 1) - 3(x - 3)] = (4x + 2 + x - 3) / (2x + 1 - 3x + 9) = (5x - 1) / (10 - x).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x != 3-க்கு f(x) = (2x + 1) / (x - 3) எனில், சேர்ப்புச் சார்பு (f o f)(x):",
+        "optionTexts": [
+          "(x - 1) / (x - 10)",
+          "(5x - 1) / (10 - x)",
+          "x",
+          "(2x - 3) / (x + 1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let R be a relation on the set of integers Z defined by (a, b) in R if and only if a - b is divisible by 6. Then R is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "reflexive and symmetric but not transitive",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "reflexive and transitive but not symmetric",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "an equivalence relation",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "symmetric only",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "(1) Reflexive: a - a = 0 = 6(0), divisible by 6, so (a, a) in R. (2) Symmetric: If a - b = 6k, then b - a = 6(-k), so (b, a) in R. (3) Transitive: If a - b = 6k and b - c = 6m, adding gives a - c = 6(k + m), so (a, c) in R. Hence, R is an equivalence relation.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முழுக்களின் கணம் Z-ன் மீது (a, b) in R எனில் a - b என்பது 6-ஆல் வகுபடும் என வரையறுக்கப்பட்டால், R என்பது:",
+        "optionTexts": [
+          "தற்சுட்டு மற்றும் சமச்சீர் ஆனால் கடப்பு அல்ல",
+          "தற்சுட்டு மற்றும் கடப்பு ஆனால் சமச்சீர் அல்ல",
+          "ஒரு சமானத் தொடர்பு",
+          "சமச்சீர் மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A = {x in R : x^2 - 5x + 6 = 0} and B = {x in R : x^2 - 7x + 12 = 0}, then (A U B) \\ (A ∩ B) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "{3}",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "{2, 4}",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "{2, 3, 4}",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "{2}",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Solving x^2 - 5x + 6 = 0 gives (x - 2)(x - 3) = 0 => A = {2, 3}. Solving x^2 - 7x + 12 = 0 gives (x - 3)(x - 4) = 0 => B = {3, 4}. Then A U B = {2, 3, 4} and A ∩ B = {3}. Therefore, (A U B) \\ (A ∩ B) = {2, 4}.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = {x in R : x^2 - 5x + 6 = 0} மற்றும் B = {x in R : x^2 - 7x + 12 = 0} எனில், (A U B) \\ (A ∩ B) என்பது:",
+        "optionTexts": [
+          "{3}",
+          "{2, 4}",
+          "{2, 3, 4}",
+          "{2}"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let R be a relation defined on the set of real numbers R by R = {(a, b) : 1 + ab > 0}. Then the relation R is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "reflexive and transitive, but not symmetric",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "reflexive and symmetric, but not transitive",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "symmetric and transitive, but not reflexive",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "an equivalence relation",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "(1) Reflexive: 1 + a*a = 1 + a^2 > 0 for all a in R, so (a, a) in R. (2) Symmetric: 1 + ab > 0 implies 1 + ba > 0, so (b, a) in R. (3) Transitive: Choose a = 1, b = -0.5, c = -4. Then 1 + ab = 1 - 0.5 = 0.5 > 0 => (a, b) in R. And 1 + bc = 1 + (-0.5)(-4) = 3 > 0 => (b, c) in R. But 1 + ac = 1 + (1)(-4) = -3 < 0 => (a, c) not in R. Hence R is not transitive.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெய்யெண் கணம் R-ன் மீது R = {(a, b) : 1 + ab > 0} என வரையறுக்கப்பட்ட தொடர்பு R என்பது:",
+        "optionTexts": [
+          "தற்சுட்டு மற்றும் கடப்பு, ஆனால் சமச்சீர் அல்ல",
+          "தற்சுட்டு மற்றும் சமச்சீர், ஆனால் கடப்பு அல்ல",
+          "சமச்சீர் மற்றும் கடப்பு, ஆனால் தற்சுட்டு அல்ல",
+          "ஒரு சமானத் தொடர்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The domain of the function f(x) = sin^-1((x^2 - 3x + 2) / 6) + ln(4 - x) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[-1, 4)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[-1, 4]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[1, 4)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[-2, 4)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Condition 1: -1 <= (x^2 - 3x + 2)/6 <= 1 => -6 <= x^2 - 3x + 2 <= 6. The inequality x^2 - 3x + 2 >= -6 => x^2 - 3x + 8 >= 0 has D = 9 - 32 < 0, so it holds for all real x. The inequality x^2 - 3x + 2 <= 6 => x^2 - 3x - 4 <= 0 => (x - 4)(x + 1) <= 0 => x in [-1, 4]. Condition 2: 4 - x > 0 => x < 4. Intersecting [-1, 4] and (-infinity, 4) gives [-1, 4).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = sin^-1((x^2 - 3x + 2) / 6) + ln(4 - x) என்ற சார்பின் சார்பகம்:",
+        "optionTexts": [
+          "[-1, 4)",
+          "[-1, 4]",
+          "[1, 4)",
+          "[-2, 4)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The range of the function f(x) = x / (1 + x^2), defined for all x in R, is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[-1, 1]",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "[-1/2, 1/2]",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(-1/2, 1/2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(-infinity, infinity)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let y = x / (1 + x^2). If y = 0, x = 0 is a valid solution. If y != 0, y x^2 - x + y = 0. For real solutions x, the discriminant D >= 0: (-1)^2 - 4(y)(y) >= 0 => 1 - 4y^2 >= 0 => y^2 <= 1/4 => -1/2 <= y <= 1/2. Since y = 0 belongs to this interval, the range is [-1/2, 1/2].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து x in R-க்கும் வரையறுக்கப்பட்ட f(x) = x / (1 + x^2) என்ற சார்பின் வீச்சகம்:",
+        "optionTexts": [
+          "[-1, 1]",
+          "[-1/2, 1/2]",
+          "(-1/2, 1/2)",
+          "(-infinity, infinity)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let f: R \\ {2} -> R \\ {1} be defined by f(x) = (x - 1) / (x - 2). Then the inverse function f^-1(x) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2x - 1) / (x - 1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(x - 2) / (x - 1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2x + 1) / (x + 1)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(x + 1) / (x - 2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let y = (x - 1) / (x - 2). Solving for x: y(x - 2) = x - 1 => yx - 2y = x - 1 => yx - x = 2y - 1 => x(y - 1) = 2y - 1 => x = (2y - 1) / (y - 1). Therefore, f^-1(x) = (2x - 1) / (x - 1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f: R \\ {2} -> R \\ {1} என்ற சார்பு f(x) = (x - 1) / (x - 2) என வரையறுக்கப்பட்டால், அதன் நேர்மாறு சார்பு f^-1(x):",
+        "optionTexts": [
+          "(2x - 1) / (x - 1)",
+          "(x - 2) / (x - 1)",
+          "(2x + 1) / (x + 1)",
+          "(x + 1) / (x - 2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = {1, 2, 3, 4}. The total number of reflexive relations on A that are also symmetric is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "32",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "64",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "128",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "256",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a relation on a set of size n = 4: The 4 diagonal elements (a, a) must all be included for reflexivity (1 choice each). The remaining n(n - 1) = 12 non-diagonal pairs can be partitioned into n(n - 1)/2 = 6 unordered pairs of the form {(a, b), (b, a)}. For symmetry, either both pairs are included or neither is included (2 choices per pair). Thus, the number of such relations is 2^(n(n - 1)/2) = 2^6 = 64.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = {1, 2, 3, 4} என்க. A-ன் மீது தற்சுட்டு மற்றும் சமச்சீர் ஆகிய இரண்டையும் பூர்த்தி செய்யும் தொடர்புகளின் எண்ணிக்கை:",
+        "optionTexts": [
+          "32",
+          "64",
+          "128",
+          "256"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) = ln(x + sqrt(1 + x^2)). Then the function f(x) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "an even function",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "an odd function",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "neither even nor odd",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a periodic function",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "f(-x) = ln(-x + sqrt(1 + (-x)^2)) = ln(sqrt(1 + x^2) - x). Multiplying and dividing by (sqrt(1 + x^2) + x): [sqrt(1 + x^2) - x][sqrt(1 + x^2) + x] / [sqrt(1 + x^2) + x] = 1 / [x + sqrt(1 + x^2)]. Thus, f(-x) = ln([x + sqrt(1 + x^2)]^-1) = -ln(x + sqrt(1 + x^2)) = -f(x). Hence, f(x) is an odd function.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = ln(x + sqrt(1 + x^2)) எனில், f(x) என்ற சார்பானது:",
+        "optionTexts": [
+          "ஓர் இரட்டைச் சார்பு",
+          "ஓர் ஒற்றைச் சார்பு",
+          "இரட்டையுமல்ல ஒற்றையுமல்லாத சார்பு",
+          "ஒரு காலமுறைச் சார்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) be a function satisfying f(x + y) = f(x) * f(y) for all real x, y such that f(1) = 3. If sum_{k=1}^n f(k) = 3279, then the value of n is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From f(x + y) = f(x)f(y) and f(1) = 3, we have f(k) = 3^k. Then sum_{k=1}^n f(k) = sum_{k=1}^n 3^k = 3(3^n - 1) / (3 - 1) = 3(3^n - 1) / 2. Given 3(3^n - 1) / 2 = 3279 => 3(3^n - 1) = 6558 => 3^n - 1 = 2186 => 3^n = 2187 = 3^7. Therefore, n = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து மெய்யெண்கள் x, y-க்கும் f(x + y) = f(x) * f(y) மற்றும் f(1) = 3 என நிறைவுசெய்யும் சார்பு f(x) என்க. sum_{k=1}^n f(k) = 3279 எனில், n-ன் மதிப்பு:",
+        "optionTexts": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If [x] denotes the greatest integer function less than or equal to x, the domain of f(x) = 1 / sqrt([x]^2 - 5[x] + 6) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(-infinity, 2) U [4, infinity)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(-infinity, 2] U [3, infinity)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(-infinity, 2) U (3, infinity)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(-infinity, 1] U [4, infinity)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For f(x) to be real, [x]^2 - 5[x] + 6 > 0 => ([x] - 2)([x] - 3) > 0. Since [x] is an integer, this requires [x] < 2 or [x] > 3. If [x] < 2, then [x] <= 1 => x < 2. If [x] > 3, then [x] >= 4 => x >= 4. Combining both gives x in (-infinity, 2) U [4, infinity).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[x] என்பது x-க்குச் சமமான அல்லது குறைவான மீப்பெரு முழு எண் சார்பைக் குறித்தால், f(x) = 1 / sqrt([x]^2 - 5[x] + 6) என்ற சார்பின் சார்பகம்:",
+        "optionTexts": [
+          "(-infinity, 2) U [4, infinity)",
+          "(-infinity, 2] U [3, infinity)",
+          "(-infinity, 2) U (3, infinity)",
+          "(-infinity, 1] U [4, infinity)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) be a polynomial function satisfying f(x) * f(1/x) = f(x) + f(1/x) for all non-zero real numbers x. If f(3) = 82, then f(-2) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "17",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-15",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "65",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A polynomial satisfying f(x) * f(1/x) = f(x) + f(1/x) is of the form f(x) = 1 ± x^n. Since f(3) = 82: 1 ± 3^n = 82 => 3^n = 81 = 3^4 => n = 4 and f(x) = 1 + x^4. Thus, f(-2) = 1 + (-2)^4 = 1 + 16 = 17.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுழியற்ற அனைத்து x-க்கும் f(x) * f(1/x) = f(x) + f(1/x) என்ற சமன்பாட்டை நிறைவுசெய்யும் பல்லுறுப்புக் கோவைச் சார்பு f(x) என்க. f(3) = 82 எனில், f(-2)-ன் மதிப்பு:",
+        "optionTexts": [
+          "17",
+          "-15",
+          "65",
+          "-7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let R1 and R2 be two equivalence relations on a non-empty set X. Consider the following statements:\n(S1) R1 ∩ R2 is always an equivalence relation on X.\n(S2) R1 U R2 is always an equivalence relation on X.\nWhich of the following is correct?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both (S1) and (S2) are true",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(S1) is true but (S2) is false",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(S1) is false but (S2) is true",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both (S1) and (S2) are false",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "(S1) The intersection of two equivalence relations is always reflexive, symmetric, and transitive, hence an equivalence relation. (S2) The union of two equivalence relations need not be transitive (e.g., on X = {1, 2, 3}, with R1 having (1,2) and R2 having (2,3), R1 U R2 contains (1,2) and (2,3) but not (1,3)). Thus (S1) is true and (S2) is false.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றில்லா கணம் X-ன் மீது R1 மற்றும் R2 என்பன இரு சமானத் தொடர்புகள் என்க. பின்வரும் கூற்றுகளைக் கருதுக:\n(S1) R1 ∩ R2 எப்போதும் X-ன் மீதான ஒரு சமானத் தொடர்பாகும்.\n(S2) R1 U R2 எப்போதும் X-ன் மீதான ஒரு சமானத் தொடர்பாகும்.\nபின்வருவனவற்றுள் சரியானது எது?",
+        "optionTexts": [
+          "(S1) மற்றும் (S2) ஆகிய இரண்டும் உண்மை",
+          "(S1) உண்மை ஆனால் (S2) தவறு",
+          "(S1) தவறு ஆனால் (S2) உண்மை",
+          "(S1) மற்றும் (S2) ஆகிய இரண்டும் தவறு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The period of the function f(x) = sin(pi * x / 3) + {x / 2}, where {.} represents the fractional part function, is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "f(x) is not periodic",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Period of sin(pi * x / 3) is T1 = 2pi / (pi / 3) = 6. Period of {x / 2} is T2 = 1 / (1 / 2) = 2. The fundamental period of f(x) is LCM(6, 2) = 6. Testing f(x + 6) = sin(pi(x + 6)/3) + {(x + 6)/2} = sin(pi x / 3 + 2pi) + {x/2 + 3} = sin(pi x / 3) + {x / 2} = f(x). No smaller positive period exists, so the period is 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = sin(pi * x / 3) + {x / 2} என்ற சார்பின் அடிப்படை காலவட்டம் (இங்கு {.} என்பது பின்னப் பகுதி சார்பு):",
+        "optionTexts": [
+          "3",
+          "6",
+          "12",
+          "f(x) காலமுறைச் சார்பு அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = {1, 2, 3, 4, 5} and B = {1, 2, 3}. The total number of onto (surjective) functions from set A to set B is:",
+    "correctAnswer": 150,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The number of onto functions from a set of m elements to a set of n elements is sum_{j=0}^n (-1)^j * C(n, j) * (n - j)^m. For m = 5 and n = 3: C(3, 0)*3^5 - C(3, 1)*2^5 + C(3, 2)*1^5 = 1*(243) - 3*(32) + 3*(1) = 243 - 96 + 3 = 150.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = {1, 2, 3, 4, 5} மற்றும் B = {1, 2, 3} என்க. கணம் A-லிருந்து கணம் B-க்கு வரையறுக்கப்படும் மொத்த மேல் சார்புகளின் (onto functions) எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = {1, 2, 3, 4, 5}. The total number of one-to-one (injective) functions f: A -> A such that f(1) != 1 and f(2) != 2 is:",
+    "correctAnswer": 78,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Total one-to-one functions from A to A is 5! = 120. Let A1 be the set of functions with f(1) = 1, and A2 be the set with f(2) = 2. |A1| = 4! = 24, |A2| = 4! = 24, and |A1 ∩ A2| = 3! = 6. By inclusion-exclusion, the number of functions with f(1) = 1 or f(2) = 2 is 24 + 24 - 6 = 42. Therefore, functions with f(1) != 1 and f(2) != 2 = 120 - 42 = 78.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = {1, 2, 3, 4, 5} என்க. f(1) != 1 மற்றும் f(2) != 2 என்றவாறு அமையும் ஒன்றுக்கு-ஒன்றான சார்புகள் f: A -> A-ன் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = {1, 2, 3}. The total number of equivalence relations that can be defined on set A is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The number of equivalence relations on a set of size n equals the n-th Bell number B_n. For n = 3: B_3 = 5. The 5 partitions of {1, 2, 3} are: {{1}, {2}, {3}}, {{1, 2}, {3}}, {{1, 3}, {2}}, {{2, 3}, {1}}, and {{1, 2, 3}}.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = {1, 2, 3} என்ற கணத்தின் மீது வரையறுக்கப்படக்கூடிய மொத்த சமானத் தொடர்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a town of 1000 families, it was found that 400 families buy newspaper A, 300 buy newspaper B, and 200 buy newspaper C. 50 families buy both A and B, 40 buy both B and C, and 30 buy both A and C. If 20 families buy all three newspapers, the number of families that buy NONE of these three newspapers is:",
+    "correctAnswer": 200,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "n(A U B U C) = n(A) + n(B) + n(C) - [n(A ∩ B) + n(B ∩ C) + n(A ∩ C)] + n(A ∩ B ∩ C) = 400 + 300 + 200 - (50 + 40 + 30) + 20 = 900 - 120 + 20 = 800. Families buying none = 1000 - 800 = 200.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1000 குடும்பங்கள் கொண்ட ஒரு ஊரில், 400 குடும்பங்கள் செய்திப்பத்திரிகை A-வையும், 300 குடும்பங்கள் B-யையும், 200 குடும்பங்கள் C-யையும் வாங்குகின்றன. 50 குடும்பங்கள் A மற்றும் B ஆகிய இரண்டையும், 40 குடும்பங்கள் B மற்றும் C-யையும், 30 குடும்பங்கள் A மற்றும் C-யையும் வாங்குகின்றன. 20 குடும்பங்கள் இம்மூன்றையும் வாங்கினால், எச்செய்திப்பத்திரிகையையும் வாங்காத குடும்பங்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) = (4^x) / (4^x + 2). Then the value of the sum sum_{r=1}^{39} f(r / 40) is:",
+    "correctAnswer": 19.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "f(x) + f(1 - x) = (4^x)/(4^x + 2) + (4^(1-x))/(4^(1-x) + 2) = (4^x)/(4^x + 2) + 2/(2 + 4^x) = 1. Pairing terms f(r/40) + f((40 - r)/40) = 1 for r = 1 to 19 gives 19 * 1 = 19. The middle term is f(20/40) = f(1/2) = (4^(1/2))/(4^(1/2) + 2) = 2 / 4 = 0.5. Total sum = 19 + 0.5 = 19.5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = (4^x) / (4^x + 2) என்க. sum_{r=1}^{39} f(r / 40) என்ற கூடுதலின் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) = x^2 - 4x + 7 defined on the interval [1, 5]. If the range of f(x) is [m, M], then the value of m + M is:",
+    "correctAnswer": 15,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "f(x) = (x - 2)^2 + 3. The vertex is at x = 2 in [1, 5], giving minimum m = f(2) = 3. Evaluating endpoints: f(1) = 1 - 4 + 7 = 4, and f(5) = 25 - 20 + 7 = 12. Thus, maximum M = 12. Range is [3, 12], and m + M = 3 + 12 = 15.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[1, 5] என்ற இடைவெளியில் வரையறுக்கப்பட்ட f(x) = x^2 - 4x + 7 என்ற சார்பின் வீச்சகம் [m, M] எனில், m + M-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let f: R -> R be a differentiable function satisfying f(x + y) = f(x) + f(y) + 2xy - 1 for all x, y in R. If f'(0) = 3, then the value of f(4) is:",
+    "correctAnswer": 29,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Setting x = y = 0: f(0) = f(0) + f(0) - 1 => f(0) = 1. By definition of derivative: f'(x) = lim_{h->0} [f(x + h) - f(x)] / h = lim_{h->0} [f(h) - 1 + 2xh] / h = f'(0) + 2x = 2x + 3. Integrating: f(x) = x^2 + 3x + c. Since f(0) = 1, c = 1. Thus f(x) = x^2 + 3x + 1. For x = 4: f(4) = 4^2 + 3(4) + 1 = 16 + 12 + 1 = 29.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து x, y in R-க்கும் f(x + y) = f(x) + f(y) + 2xy - 1 மற்றும் f'(0) = 3 என நிறைவுசெய்யும் வகையிடத்தக்க சார்பு f: R -> R எனில், f(4)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let f(x) = x / (1 - x). If f_1(x) = f(x) and f_{n+1}(x) = f(f_n(x)) for all n >= 1, then the value of f_{2024}(1/2025) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "f_1(x) = x / (1 - x). f_2(x) = f(f_1(x)) = (x / (1 - x)) / [1 - x / (1 - x)] = x / (1 - 2x). By mathematical induction, f_n(x) = x / (1 - n*x). For n = 2024 and x = 1/2025: f_{2024}(1/2025) = (1/2025) / [1 - 2024*(1/2025)] = (1/2025) / (1/2025) = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = x / (1 - x) என்க. f_1(x) = f(x) மற்றும் அனைத்து n >= 1-க்கும் f_{n+1}(x) = f(f_n(x)) எனில், f_{2024}(1/2025)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let S = {1, 2, 3, 4}. The number of relations on S that are reflexive and symmetric, but NOT transitive is:",
+    "correctAnswer": 49,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Total reflexive and symmetric relations on a set of 4 elements is 2^(4*(4-1)/2) = 2^6 = 64. A relation that is reflexive, symmetric, and transitive is an equivalence relation. The number of equivalence relations on a set of 4 elements is the Bell number B_4 = 15. Hence, the number of relations that are reflexive and symmetric, but NOT transitive is 64 - 15 = 49.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "S = {1, 2, 3, 4} என்க. S-ன் மீது தற்சுட்டு மற்றும் சமச்சீராக இருந்து, ஆனால் கடப்புத் தொடர்புகளாக இல்லாத தொடர்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat01-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of integers in the domain of the real-valued function f(x) = sqrt(log_{0.5}( (x^2 - 5x + 6) / 2 )) is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For f(x) to be defined in real numbers: log_{0.5}((x^2 - 5x + 6)/2) >= 0. Since base 0.5 < 1, reversing inequality gives 0 < (x^2 - 5x + 6)/2 <= (0.5)^0 = 1 => 0 < x^2 - 5x + 6 <= 2. (1) x^2 - 5x + 6 > 0 => (x - 2)(x - 3) > 0 => x in (-infinity, 2) U (3, infinity). (2) x^2 - 5x + 6 <= 2 => x^2 - 5x + 4 <= 0 => (x - 1)(x - 4) <= 0 => x in [1, 4]. Intersecting both conditions gives x in [1, 2) U (3, 4]. The integers in this set are x = 1 and x = 4. Thus, there are exactly 2 integers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = sqrt(log_{0.5}( (x^2 - 5x + 6) / 2 )) என்ற சார்பின் சார்பகத்தில் உள்ள முழு எண்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che09-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the Modern Periodic Law proposed by Henry Moseley, the physical and chemical properties of elements are periodic functions of their:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Atomic masses",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Atomic numbers",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Mass numbers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Neutron-to-proton ratios",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moseley showed from characteristic X-ray spectra that sqrt(frequency) is linearly proportional to the atomic number (Z), establishing that atomic number, rather than atomic mass, is the fundamental property of an element. Hence, the Modern Periodic Law states that properties of elements are periodic functions of their atomic numbers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹென்றி மோஸ்லே முன்மொழிந்த நவீன ஆவர்த்தன விதியின்படி, தனிமங்களின் இயற்பியல் மற்றும் வேதியியல் பண்புகள் அவற்றின் எதன் ஆவர்த்தன செயல்பாடுகளாக அமைகின்றன?",
+        "optionTexts": [
+          "அணு நிறைகள்",
+          "அணு எண்கள்",
+          "நிறை எண்கள்",
+          "நியூட்ரான்கள் மற்றும் புரோட்டான்களின் விகிதம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to IUPAC systematic nomenclature for superheavy elements, the official temporary name for the element with atomic number 119 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ununennium",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ununoctium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Unnilennium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Unbiunium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using IUPAC numerical roots: 1 = 'un', 1 = 'un', 9 = 'enn'. Combining these roots with the suffix '-ium' gives 'un' + 'un' + 'enn' + 'ium' = Ununennium (symbol: Uue).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "IUPAC முறையான பெயரிடுதல் விதிகளின்படி, அணு எண் 119 கொண்ட தனிமத்தின் தற்காலிகப் பெயர் என்ன?",
+        "optionTexts": [
+          "அன்அன்என்னியம் (Ununennium)",
+          "அன்அன்ஆக்டியம் (Ununoctium)",
+          "அன்நில்என்னியம் (Unnilennium)",
+          "அன்பைஅன்னியம் (Unbiunium)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following elements possesses the highest first ionization enthalpy across the entire periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fluorine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Helium",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Neon",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hydrogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Helium (1s^2) has the highest first ionization enthalpy (2372 kJ mol^-1) among all elements. This is due to its smallest atomic radius, high effective nuclear charge, and exceptionally stable completely filled 1s shell.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆவர்த்தன அட்டவணை முழுவதிலும் மிக அதிக முதல் அயனியாக்கும் என்தால்பியைக் கொண்ட தனிமம் எது?",
+        "optionTexts": [
+          "ஃபுளோரின்",
+          "ஹீலியம்",
+          "நியான்",
+          "ஹைட்ரஜன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pairs of elements exhibits a diagonal relationship due to their similar polarizing power (ionic charge/ionic radius)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Li and Mg",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Be and Na",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "B and Mg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C and P",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Lithium (Group 1, Period 2) and Magnesium (Group 2, Period 3) display a strong diagonal relationship. Because moving across a period increases charge density and moving down a group decreases it, Li+ and Mg2+ have nearly identical polarizing powers, leading to remarkably similar chemical behaviors.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒத்த முனைவாக்கும் திறனின் (அயனி மின்சுமை/அயனி ஆரம்) காரணமாக மூலைவிட்டத் தொடர்பைக் காட்டும் தனிமங்களின் இணை எது?",
+        "optionTexts": [
+          "Li மற்றும் Mg",
+          "Be மற்றும் Na",
+          "B மற்றும் Mg",
+          "C மற்றும் P"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following oxides is amphoteric in nature, reacting readily with both acids and strong alkalis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Na2O",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "SO2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Al2O3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CaO",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Al2O3 is an amphoteric oxide that reacts with acids to yield aluminum salts (e.g., forming AlCl3 with HCl) and with alkalis to form aluminates (e.g., forming [Al(OH)4]- with NaOH). Na2O and CaO are basic oxides, while SO2 is acidic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமிலங்கள் மற்றும் காரங்கள் ஆகிய இரண்டோடும் வினைபுரியும் ஈரியல்பு ஆக்சைடு (amphoteric oxide) எது?",
+        "optionTexts": [
+          "Na2O",
+          "SO2",
+          "Al2O3",
+          "CaO"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of ionic radii for the isoelectronic series: N3-, O2-, F-, Na+, Mg2+, and Al3+?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Al3+ > Mg2+ > Na+ > F- > O2- > N3-",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "N3- > O2- > F- > Na+ > Mg2+ > Al3+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "N3- > F- > O2- > Na+ > Mg2+ > Al3+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O2- > N3- > F- > Al3+ > Mg2+ > Na+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For an isoelectronic series (all have 10 electrons here), ionic radius decreases as the atomic number (nuclear charge Z) increases. The nuclear charges are: N (Z = 7), O (Z = 8), F (Z = 9), Na (Z = 11), Mg (Z = 12), Al (Z = 13). Greater nuclear charge draws electrons closer to the nucleus, giving the decreasing order of radii: N3- > O2- > F- > Na+ > Mg2+ > Al3+.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒத்த எலக்ட்ரான் எண்ணிக்கை கொண்ட அயனிகளான N3-, O2-, F-, Na+, Mg2+, மற்றும் Al3+ ஆகியவற்றின் அயனி ஆரங்களின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "Al3+ > Mg2+ > Na+ > F- > O2- > N3-",
+          "N3- > O2- > F- > Na+ > Mg2+ > Al3+",
+          "N3- > F- > O2- > Na+ > Mg2+ > Al3+",
+          "O2- > N3- > F- > Al3+ > Mg2+ > Na+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The first ionization enthalpy of nitrogen (1402 kJ mol^-1) is higher than that of oxygen (1314 kJ mol^-1), despite oxygen having a higher nuclear charge. This occurs primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrogen has a smaller atomic size than oxygen.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nitrogen possesses an extra-stable exactly half-filled 2p subshell (2p^3), whereas oxygen has one paired 2p electron experiencing inter-electronic repulsion.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Oxygen has a greater shielding effect than nitrogen.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The 2s electrons in nitrogen have greater penetration power than those in oxygen.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Nitrogen has the electronic configuration 1s^2 2s^2 2p^3 with an exactly half-filled 2p subshell, which confers extra exchange energy and thermodynamic stability. Oxygen has the configuration 1s^2 2s^2 2p^4, where two electrons share a single 2p orbital, resulting in electron-electron repulsion that makes removal of the fourth 2p electron energetically easier.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆக்ஸிஜனை விட நைட்ரஜனின் முதல் அயனியாக்கும் என்தால்பி அதிகமாக இருப்பதற்கான முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "நைட்ரஜன் ஆக்ஸிஜனை விட சிறிய அணு அளவைக் கொண்டுள்ளது.",
+          "நைட்ரஜன் பாதி நிரப்பப்பட்ட நிலைப்புத்தன்மை கொண்ட 2p^3 அமைப்பைப் பெற்றுள்ளது, ஆனால் ஆக்ஸிஜனில் இரட்டையான 2p எலக்ட்ரான்களுக்கு இடையே விலக்கு விசை காணப்படுகிறது.",
+          "ஆக்ஸிஜன் நைட்ரஜனை விட அதிக மறைத்தல் விளைவைக் கொண்டுள்ளது.",
+          "நைட்ரஜனில் உள்ள 2s எலக்ட்ரான்கள் ஆக்ஸிஜனில் உள்ளவற்றை விட அதிக ஊடுருவல் திறனைக் கொண்டுள்ளன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Among the halogens, chlorine exhibits a more negative electron gain enthalpy (-349 kJ mol^-1) than fluorine (-328 kJ mol^-1). The scientific reason for this anomaly is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorine has higher electronegativity than fluorine.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The compact 2p subshell of fluorine causes strong inter-electronic repulsions that resist the addition of an extra electron, whereas the larger 3p subshell in chlorine accommodates the incoming electron more easily.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Fluorine has completely filled d-orbitals that shield the nucleus.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorine has a lower bond dissociation energy than fluorine.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Fluorine has an extremely small atomic radius, so its seven valence electrons are crowded into a compact 2p subshell. When an extra electron approaches, it experiences significant electron-electron repulsion, which reduces the net energy released upon electron capture. In chlorine, the incoming electron enters the larger, more diffuse 3p subshell where repulsions are minimal, making its electron gain enthalpy more negative.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹேலஜன்களில், ஃபுளோரினை விட (-328 kJ mol^-1) குளோரின் அதிக எதிர்மதிப்புடைய எலக்ட்ரான் நாட்ட என்தால்பியைப் (-349 kJ mol^-1) பெற்றிருப்பதற்கான அறிவியல் காரணம்:",
+        "optionTexts": [
+          "குளோரின் ஃபுளோரினை விட அதிக எலக்ட்ரான் கவர்தன்மையைக் கொண்டுள்ளது.",
+          "ஃபுளோரினின் சிறிய 2p கூட்டில் எலக்ட்ரான்களுக்கிடையேயான விலக்கு விசை அதிகமாக உள்ளது; ஆனால் குளோரினின் பரந்த 3p கூட்டில் சேர்க்கப்படும் எலக்ட்ரான் குறைந்த விலக்கு விசையை உணர்கிறது.",
+          "ஃபுளோரின் முழுமையாக நிரப்பப்பட்ட d-ஆர்பிட்டால்களைக் கொண்டுள்ளது.",
+          "குளோரின் ஃபுளோரினை விட குறைந்த பிணைப்புப் பிளவு ஆற்றலைக் கொண்டுள்ளது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following orders represents the correct increasing order of metallic character?",
+    "options": [
+      {
+        "label": "A",
+        "text": "P < Si < Be < Mg < Na",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Be < Mg < Na < P < Si",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Si < P < Be < Na < Mg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Na < Mg < Be < Si < P",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Metallic character decreases across a period (from alkali metals on the left to non-metals on the right) and increases down a group. Phosphorus (P) is a non-metal, silicon (Si) is a metalloid, beryllium (Be) is a Group 2 metal in Period 2, magnesium (Mg) is more metallic than Be (below it in Group 2), and sodium (Na) is an alkali metal with the lowest ionization energy. Thus, the increasing order is P < Si < Be < Mg < Na.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உலோகப் பண்பின் சரியான ஏறுவரிசை எது?",
+        "optionTexts": [
+          "P < Si < Be < Mg < Na",
+          "Be < Mg < Na < P < Si",
+          "Si < P < Be < Na < Mg",
+          "Na < Mg < Be < Si < P"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The first ionization enthalpy (IE1) of beryllium (899 kJ mol^-1) is greater than that of boron (801 kJ mol^-1). Which statement correctly accounts for this observation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Boron has a higher nuclear charge than beryllium.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Beryllium has a completely filled 2s subshell (2s^2) that possesses greater penetration and stability compared to the single 2p electron of boron.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Beryllium is an alkaline earth metal, whereas boron is a metalloid.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Boron forms stronger covalent bonds than beryllium.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Beryllium (1s^2 2s^2) has a completely filled 2s orbital. The 2s electrons penetrate closer to the nucleus and are shielded less than 2p electrons. In boron (1s^2 2s^2 2p^1), the outermost electron resides in a 2p orbital, which is higher in energy, experiences greater shielding from the inner 2s electrons, and is easier to remove.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரானை விட பெரிலியத்தின் முதல் அயனியாக்கும் என்தால்பி அதிகமாக இருப்பதற்கான சரியான விளக்கம்:",
+        "optionTexts": [
+          "போரான் பெரிலியத்தை விட அதிக அணுக்கரு மின்சுமையைக் கொண்டுள்ளது.",
+          "பெரிலியம் முழுமையாக நிரப்பப்பட்ட 2s^2 அமைப்பைக் கொண்டு அதிக ஊடுருவல் திறனையும் நிலைப்புத்தன்மையையும் பெற்றுள்ளது; ஆனால் போரானில் உள்ள ஒற்றை 2p எலக்ட்ரான் எளிதில் நீக்கப்படுகிறது.",
+          "பெரிலியம் ஒரு காரமண் உலோகம், ஆனால் போரான் ஓர் உலோகப்போலி.",
+          "போரான் பெரிலியத்தை விட வலுவான சகப்பிணைப்புகளை உருவாக்குகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following elements has a POSITIVE electron gain enthalpy (Delta_eg H > 0) due to its electronic configuration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitrogen",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Neon",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chlorine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Noble gases have stable, closed-shell octet configurations (1s^2 2s^2 2p^6 for Neon). An incoming electron must enter the next higher principal energy shell (3s), which is strongly shielded and unstable. Energy must be supplied to force an electron into the atom, making the electron gain enthalpy positive.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தன் எலக்ட்ரான் அமைப்பின் காரணமாக நேர்மதிப்புடைய எலக்ட்ரான் நாட்ட என்தால்பியைக் (Delta_eg H > 0) கொண்டுள்ள தனிமம் எது?",
+        "optionTexts": [
+          "நைட்ரஜன்",
+          "நியான்",
+          "ஆக்ஸிஜன்",
+          "குளோரின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The successive ionization enthalpies (in kJ mol^-1) for an element X are: IE1 = 738, IE2 = 1451, IE3 = 7733, IE4 = 10540, and IE5 = 13630. The formula of the stable ionic compound formed between element X and sulfate ion (SO4^2-) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "X2SO4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "XSO4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "X2(SO4)3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "X(SO4)2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The ionization enthalpy jumps from IE2 (1451 kJ mol^-1) to IE3 (7733 kJ mol^-1), indicating that the third electron is removed from an inner, stable noble gas core. This proves that element X has 2 valence electrons (such as Mg). Therefore, it forms a divalent cation X2+. Combining with SO4^2- gives the neutral compound XSO4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனிமம் X-ன் தொடர்ச்சியான அயனியாக்கும் என்தால்பிகள் (kJ mol^-1-ல்): IE1 = 738, IE2 = 1451, IE3 = 7733, IE4 = 10540, மற்றும் IE5 = 13630. தனிமம் X சல்பேட் அயனியுடன் (SO4^2-) இணைந்து உருவாக்கும் நிலையான சேர்மத்தின் வாய்ப்பாடு:",
+        "optionTexts": [
+          "X2SO4",
+          "XSO4",
+          "X2(SO4)3",
+          "X(SO4)2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The correct increasing order of acidic character for the Group 16 dioxides is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "SO2 < SeO2 < TeO2 < PoO2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "PoO2 < TeO2 < SeO2 < SO2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "SO2 < PoO2 < TeO2 < SeO2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "TeO2 < SeO2 < SO2 < PoO2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Down a group in the periodic table, metallic character increases and electronegativity decreases. Consequently, the oxides become increasingly basic (or less acidic). SO2 is strongly acidic, SeO2 is acidic, TeO2 is amphoteric, and PoO2 has pronounced basic character. Thus, the increasing order of acidic strength is PoO2 < TeO2 < SeO2 < SO2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொகுதி 16 டைஆக்சைடுகளின் அமிலத் தன்மையின் சரியான ஏறுவரிசை எது?",
+        "optionTexts": [
+          "SO2 < SeO2 < TeO2 < PoO2",
+          "PoO2 < TeO2 < SeO2 < SO2",
+          "SO2 < PoO2 < TeO2 < SeO2",
+          "TeO2 < SeO2 < SO2 < PoO2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "On the Pauling electronegativity scale, which element is assigned the maximum value of 4.0?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Chlorine",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fluorine",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Linus Pauling arbitrarily assigned fluorine the highest electronegativity value of 4.0 because it has the greatest attraction for bonding electron pairs. Oxygen is 3.5, and nitrogen and chlorine are approximately 3.0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாலிங் எலக்ட்ரான் கவர்தன்மை அளவீட்டில், அதிகபட்ச மதிப்பான 4.0 எந்தத் தனிமத்திற்கு வழங்கப்பட்டுள்ளது?",
+        "optionTexts": [
+          "ஆக்ஸிஜன்",
+          "குளோரின்",
+          "ஃபுளோரின்",
+          "நைட்ரஜன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following elements has the MOST negative electron gain enthalpy (Delta_eg H) among the chalcogens?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Oxygen",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sulfur",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Selenium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tellurium",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Due to the small size of the oxygen atom, adding an electron to its compact 2p subshell leads to high inter-electronic repulsion. In sulfur, the incoming electron enters the larger 3p subshell where repulsions are lower. Thus, sulfur has a more negative electron gain enthalpy (-200 kJ mol^-1) than oxygen (-141 kJ mol^-1) and is the most negative in Group 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சால் கோஜன் குடும்பத்தில் (தொகுதி 16) அதிக எதிர்மதிப்பு கொண்ட எலக்ட்ரான் நாட்ட என்தால்பியைப் (Delta_eg H) பெற்றுள்ள தனிமம் எது?",
+        "optionTexts": [
+          "ஆக்ஸிஜன்",
+          "சல்பர்",
+          "செலினியம்",
+          "டெலூரியம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The covalent atomic radius generally decreases across a period from left to right. This contraction is primarily attributed to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An increase in principal quantum number n.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A steady increase in effective nuclear charge while electrons enter the same valence shell.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Enhanced screening effect by inner core electrons.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An increase in the number of filled d-orbitals.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Across a period, each successive element adds one proton to the nucleus and one electron to the same principal energy level. Because electrons in the same shell do not screen each other effectively, the effective nuclear charge (Z_eff) increases, pulling the electron cloud closer to the nucleus and reducing the atomic radius.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தொடரில் இடமிருந்து வலமாகச் செல்லும்போது சகப்பிணைப்பு அணு ஆரம் பொதுவாகக் குறைவதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "முதன்மைக் குவாண்டம் எண் n அதிகரிப்பது.",
+          "எலக்ட்ரான்கள் ஒரே கூட்டில் சேரும்போது செயலுறு அணுக்கரு மின்சுமை சீராக அதிகரிப்பது.",
+          "உள்கூட்டு எலக்ட்ரான்களின் திரைமறைப்பு விளைவு அதிகரிப்பது.",
+          "நிரப்பப்பட்ட d-ஆர்பிட்டால்களின் எண்ணிக்கை அதிகரிப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following electronic configurations corresponds to the element that exhibits the HIGHEST second ionization enthalpy (IE2)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1s^2 2s^2 2p^6 3s^1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1s^2 2s^2 2p^6 3s^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1s^2 2s^2 2p^6 3s^2 3p^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Configuration A represents sodium (Na). Removal of the first electron yields the Na+ ion with a stable noble gas core: 1s^2 2s^2 2p^6. Removing a second electron requires disrupting this stable octet, requiring an extremely high amount of energy (IE2 ≈ 4562 kJ mol^-1). For the other elements (Mg, Al, Si), the second electron is removed from an s or p valence orbital.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிக அதிக இரண்டாவது அயனியாக்கும் என்தால்பியைப் (IE2) பெற்றுள்ள தனிமத்தின் எலக்ட்ரான் அமைப்பு எது?",
+        "optionTexts": [
+          "1s^2 2s^2 2p^6 3s^1",
+          "1s^2 2s^2 2p^6 3s^2",
+          "1s^2 2s^2 2p^6 3s^2 3p^1",
+          "1s^2 2s^2 2p^6 3s^2 3p^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The correct increasing order of basicity for the alkali metal hydroxides is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "CsOH < RbOH < KOH < NaOH < LiOH",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "LiOH < NaOH < KOH < RbOH < CsOH",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "LiOH < KOH < NaOH < CsOH < RbOH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NaOH < LiOH < KOH < RbOH < CsOH",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Down Group 1 from Li to Cs, atomic radius increases, causing the M-OH bond length to increase and bond strength to decrease. Consequently, the hydroxide bond cleaves more readily in aqueous solution to release OH- ions, making CsOH the strongest base and LiOH the weakest.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார உலோக ஹைட்ராக்சைடுகளின் கார வலிமையின் சரியான ஏறுவரிசை எது?",
+        "optionTexts": [
+          "CsOH < RbOH < KOH < NaOH < LiOH",
+          "LiOH < NaOH < KOH < RbOH < CsOH",
+          "LiOH < KOH < NaOH < CsOH < RbOH",
+          "NaOH < LiOH < KOH < RbOH < CsOH"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The element with atomic number Z = 35 belongs to which block and period of the modern periodic table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "p-block, Period 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "d-block, Period 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "p-block, Period 4",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "s-block, Period 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For Z = 35 (bromine), the electronic configuration is [Ar] 3d^10 4s^2 4p^5. The principal quantum number of the outermost shell is n = 4 (Period 4). The differentiating valence electron enters a p-orbital, classifying it as a p-block element.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணு எண் Z = 35 கொண்ட தனிமம் நவீன ஆவர்த்தன அட்டவணையில் எந்த தொகுதி மற்றும் தொடரில் அமைகிறது?",
+        "optionTexts": [
+          "p-தொகுதி, தொடர் 3",
+          "d-தொகுதி, தொடர் 4",
+          "p-தொகுதி, தொடர் 4",
+          "s-தொகுதி, தொடர் 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following factors is primarily responsible for the atomic radius of gallium (135 pm) being slightly smaller than that of aluminum (143 pm)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Inert pair effect in gallium.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Poor shielding effect of the ten intervening 3d electrons in gallium.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Higher electronegativity of aluminum.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lanthanoid contraction.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Gallium follows immediately after the 3d transition series and has the configuration [Ar] 3d^10 4s^2 4p^1. The ten 3d electrons exert poor electrostatic shielding on the outer valence electrons. As a result, the increased nuclear charge (+10) pulls the outer electrons inward more strongly, causing the atomic radius of gallium to be slightly smaller than that of aluminum.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காலியத்தின் அணு ஆரம் (135 pm) அலுமினியத்தை (143 pm) விட சற்று குறைவாக இருப்பதற்கு முதன்மைக் காரணம் எது?",
+        "optionTexts": [
+          "காலியத்தில் காணப்படும் மந்த இணை விளைவு.",
+          "காலியத்தில் உள்ள பத்து 3d எலக்ட்ரான்களின் மோசமான திரைமறைப்பு விளைவு.",
+          "அலுமினியத்தின் அதிக எலக்ட்ரான் கவர்தன்மை.",
+          "லாந்தனாய்டு குறுக்கம்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The group number of the element having the ground-state electronic configuration [Ar] 3d^6 4s^2 in the modern periodic table is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For d-block elements, the group number in the IUPAC periodic table is equal to (number of electrons in (n-1)d subshell + number of electrons in ns subshell). Here, group number = 6 + 2 = 8 (Iron, Fe).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நவீன ஆவர்த்தன அட்டவணையில் [Ar] 3d^6 4s^2 என்ற எலக்ட்ரான் அமைப்பைக் கொண்டுள்ள தனிமத்தின் தொகுதி எண்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of elements belonging to the 4th period of the modern periodic table is:",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Period 4 fills the 4s, 3d, and 4p orbitals. The capacity is: 2 electrons in 4s (K to Ca), 10 electrons in 3d (Sc to Zn), and 6 electrons in 4p (Ga to Kr). Total elements = 2 + 10 + 6 = 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நவீன ஆவர்த்தன அட்டவணையின் 4வது தொடரில் உள்ள தனிமங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The maximum covalency exhibited by the second-period element boron (B) is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Boron belongs to Period 2 and has only four valence orbitals available for bonding: one 2s and three 2p orbitals. Due to the absence of d-orbitals in the second shell, boron cannot expand its octet; hence, its maximum covalency is limited to 4 (as in [BF4]-).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டாவது தொடர் தனிமமான போரானின் (B) அதிகபட்ச சகப்பிணைப்புத் திறன் (covalency):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Among the following eight oxides: Na2O, MgO, Al2O3, SiO2, P4O10, SO3, Cl2O7, and BeO, the total number of AMPHOTERIC oxides is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Character of the oxides: Na2O (basic), MgO (basic), Al2O3 (amphoteric), SiO2 (weakly acidic), P4O10 (acidic), SO3 (acidic), Cl2O7 (strongly acidic), and BeO (amphoteric). Therefore, exactly 2 oxides (Al2O3 and BeO) are amphoteric.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Na2O, MgO, Al2O3, SiO2, P4O10, SO3, Cl2O7, மற்றும் BeO ஆகிய எட்டு ஆக்சைடுகளில், ஈரியல்பு ஆக்சைடுகளின் (amphoteric oxides) மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An element has atomic number Z = 114. The group number of this element in the periodic table is:",
+    "correctAnswer": 14,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Radon (Rn) has Z = 86. After Rn: 7s^2 (2 electrons), 5f^14 (14 electrons), 6d^10 (10 electrons), and 7p^2 (2 electrons). Total electrons = 86 + 2 + 14 + 10 + 2 = 114 (Flerovium). Since the valence configuration is 7s^2 7p^2, it belongs to the carbon family, Group 14 (group number = 10 + 4 = 14).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணு எண் Z = 114 கொண்ட தனிமத்தின் தொகுதி எண்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Consider the following gaseous elements: He, Ne, Ar, Kr, and Xe. The number of elements among these that have a POSITIVE electron gain enthalpy is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "All noble gases have fully filled stable valence shells (He: 1s^2; others: ns^2 np^6). The addition of an extra electron requires entry into the next higher unoccupied shell, which is energetically unfavorable and requires energy input. Hence, all 5 noble gases have positive electron gain enthalpies.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "He, Ne, Ar, Kr, மற்றும் Xe ஆகிய தனிமங்களில், நேர்மதிப்புடைய எலக்ட்ரான் நாட்ட என்தால்பியைக் கொண்டுள்ள தனிமங்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to the Mulliken scale, electronegativity is defined as the arithmetic mean of ionization energy (IE) and electron affinity (EA) in eV: EN_M = (IE + EA) / 2. Pauling electronegativity (EN_P) is related by EN_P = EN_M / 2.8. If an element has IE = 13.0 eV and EA = 3.8 eV, its Pauling electronegativity value is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "EN_M = (IE + EA) / 2 = (13.0 + 3.8) / 2 = 16.8 / 2 = 8.4 eV. Using the relation to Pauling's scale: EN_P = EN_M / 2.8 = 8.4 / 2.8 = 3.0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முல்லிகன் அளவீட்டில் எலக்ட்ரான் கவர்தன்மை EN_M = (IE + EA) / 2 (eV-ல்). பாலிங் எலக்ட்ரான் கவர்தன்மை EN_P = EN_M / 2.8 எனில், IE = 13.0 eV மற்றும் EA = 3.8 eV கொண்ட தனிமத்தின் பாலிங் எலக்ட்ரான் கவர்தன்மை மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of electrons present in the penultimate shell (n = 3) of a neutral copper atom (Z = 29) in its ground state is:",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The ground-state electronic configuration of copper is 1s^2 2s^2 2p^6 3s^2 3p^6 3d^10 4s^1. The penultimate shell corresponds to n = 3, which contains: 3s^2 (2 electrons), 3p^6 (6 electrons), and 3d^10 (10 electrons). Total = 2 + 6 + 10 = 18 electrons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடிநிலையில் உள்ள தாமிர அணுவின் (Cu, Z = 29) இறுதிக்கு முந்தைய கூட்டில் (n = 3) உள்ள மொத்த எலக்ட்ரான்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Among the first 30 elements of the periodic table (Z = 1 to 30), how many elements have an anomalous ground-state valence configuration with a singly occupied 4s orbital (4s^1)?",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Excluding potassium (which has 4s^1 as its expected configuration, not an anomalous one), the elements among Z = 1 to 30 that adopt an anomalous (exceptional) ground-state configuration with 4s^1 are Chromium (Cr, Z = 24: [Ar] 3d^5 4s^1) and Copper (Cu, Z = 29: [Ar] 3d^10 4s^1). Both gain extra stability from half-filled or completely filled d-subshells. Exactly 2 transition elements show this anomaly.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முதல் 30 தனிமங்களில் (Z = 1 முதல் 30 வரை), 4s^1 என்ற ஒழுங்கற்ற அடிநிலை எலக்ட்ரான் அமைப்பைக் கொண்டுள்ள இடைநிலைத் தனிமங்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che09-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following six elements: B, C, N, O, F, and Ne. The number of elements among these that have an experimental first ionization enthalpy greater than that of oxygen is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "First ionization enthalpies (in kJ mol^-1) across Period 2 are: B (801), C (1086), O (1314), N (1402), F (1681), and Ne (2080). The elements having IE1 greater than that of oxygen (1314 kJ mol^-1) are Nitrogen (1402), Fluorine (1681), and Neon (2080). Exactly 3 elements have a higher value.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "B, C, N, O, F, மற்றும் Ne ஆகிய ஆறு தனிமங்களில், ஆக்ஸிஜனை விட அதிக முதல் அயனியாக்கும் என்தால்பியைக் கொண்டுள்ள தனிமங்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

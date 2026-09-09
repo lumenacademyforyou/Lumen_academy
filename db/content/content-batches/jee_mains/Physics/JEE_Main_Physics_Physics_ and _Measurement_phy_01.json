@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY01-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following physical quantities represents a base (fundamental) quantity in the SI system?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electric charge",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Luminous intensity",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Force",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Magnetic flux",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the standard SI system, the seven base quantities are length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity. Electric charge (Coulomb = Ampere second), force, and magnetic flux are derived quantities.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் SI அமைப்பில் அடிப்படை அளவைக் குறிப்பது எது?",
+        "optionTexts": [
+          "மின்னுட்டம்",
+          "ஒளிச் செறிவு",
+          "விசை",
+          "காந்தப் பாயக் அடர்த்தி / காந்தப் பாயம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The dimensional formula for gravitational constant G is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "M^-1 L^3 T^-2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M^1 L^3 T^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M^-1 L^2 T^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "M^-2 L^3 T^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From Newton's law of gravitation, F = G * m1 * m2 / r^2. Therefore, G = F * r^2 / (m1 * m2). Substituting dimensions: [G] = [M L T^-2] * [L^2] / [M^2] = M^-1 L^3 T^-2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஈர்ப்பு மாறிலி G இன் பரிமாண வாய்ப்பாடு எது?",
+        "optionTexts": [
+          "M^-1 L^3 T^-2",
+          "M^1 L^3 T^-2",
+          "M^-1 L^2 T^-2",
+          "M^-2 L^3 T^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "How many significant figures are present in the measurement 0.004050 kg?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Leading zeros before the first non-zero digit are not significant. The non-zero digits (4, 5) and the zero trapped between them (0) are significant. The trailing zero after the decimal point is also significant. Thus, 4, 0, 5, 0 give 4 significant figures.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.004050 kg என்ற அளவீட்டில் உள்ள முக்கிய எண்ணுருக்களின் எண்ணிக்கை யாது?",
+        "optionTexts": [
+          "3",
+          "4",
+          "6",
+          "7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A screw gauge has a pitch of 1.0 mm and 100 divisions on its circular scale. What is the least count of the screw gauge?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.01 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.001 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.1 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.0001 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Least count (LC) of a screw gauge = Pitch / Number of circular scale divisions. LC = 1.0 mm / 100 = 0.01 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திருகு அளவியின் புரி இடைதூரம் 1.0 mm மற்றும் தலைக்கோல் பிரிவுகளின் எண்ணிக்கை 100 ஆகும். திருகு அளவியின் மீச்சிற்றளவு என்ன?",
+        "optionTexts": [
+          "0.01 mm",
+          "0.001 mm",
+          "0.1 mm",
+          "0.0001 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the length of a rod is measured as (10.0 +/- 0.1) cm, what is the percentage error in the measurement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.0%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.01%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Percentage error = (Absolute error / Measured value) * 100 = (0.1 / 10.0) * 100 = 1.0%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தண்டின் நீளம் (10.0 +/- 0.1) cm என அளவிடப்பட்டால், அளவீட்டின் சதவீதப் பிழை என்ன?",
+        "optionTexts": [
+          "0.1%",
+          "1.0%",
+          "10%",
+          "0.01%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The pair of physical quantities having the same dimensional formula is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Work and Torque",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Force and Stress",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Momentum and Moment of Force",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Power and Energy",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Work = Force * displacement -> [M L^2 T^-2]. Torque = Force * perpendicular distance -> [M L^2 T^-2]. Both have the same dimensional formula.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே பரிமாண வாய்ப்பாட்டைக் கொண்டுள்ள இயற்பியல் அளவுகளின் இணை எது?",
+        "optionTexts": [
+          "வேலை மற்றும் திருப்புத்திறன் (டார்க்)",
+          "விசை மற்றும் தக்காளி / தகைவு",
+          "உந்தம் மற்றும் விசையின் திருப்புத்திறன்",
+          "திறன் மற்றும் ஆற்றல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following units is supplementary in the SI system?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Radian",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Joule",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Watt",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Newton",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Radian (for plane angle) and Steradian (for solid angle) are supplementary units in the SI system.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றுள் SI அமைப்பில் துணை அலகு எது?",
+        "optionTexts": [
+          "ரேடியன்",
+          "ஜூல்",
+          "வாட்",
+          "நியூட்டன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A standard Vernier caliper has 1 MSD = 1 mm. If 10 Vernier scale divisions (VSD) coincide with 9 main scale divisions (MSD), what is its least count?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.1 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.01 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.05 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.2 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Least Count = 1 MSD - 1 VSD. Given 10 VSD = 9 MSD => 1 VSD = 0.9 MSD = 0.9 mm. Thus, LC = 1 mm - 0.9 mm = 0.1 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலையான வெர்னியர் அளவியின் 1 MSD = 1 mm. 10 வெர்னியர் அளவுகோல் பிரிவுகள் (VSD) 9 முதன்மை அளவுகோல் பிரிவுகளுடன் (MSD) ஒன்றிணைந்தால், இதன் மீச்சிற்றளவு என்ன?",
+        "optionTexts": [
+          "0.1 mm",
+          "0.01 mm",
+          "0.05 mm",
+          "0.2 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Round off the number 2.7465 to three significant figures.",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.74",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.75",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2.70",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.747",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "To round 2.7465 to 3 significant figures, we look at the 4th digit which is 6 (greater than 5). Hence, the 3rd digit 4 is increased by 1, resulting in 2.75.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2.7465 என்ற எண்ணை மூன்று முக்கிய எண்ணுருக்களுக்கு முழுமைப்படுத்துக.",
+        "optionTexts": [
+          "2.74",
+          "2.75",
+          "2.70",
+          "2.747"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The position x of a particle at time t is given by x = (a/b) * (1 - exp(-b*t)), where a and b are constants. The dimensional formula of a is equivalent to that of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Velocity",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Acceleration",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Force",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Frequency",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The exponent (-b*t) must be dimensionless, so [b] = T^-1. Now [x] = [a/b] * dimensionless => [x] = [a] / [b] => [a] = [x] * [b] = L * T^-1. This is the dimensional formula of velocity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "t நேரத்தில் ஒரு துகளின் நிலை x = (a/b) * (1 - exp(-b*t)) எனக் கொடுக்கப்பட்டுள்ளது, இங்கு a மற்றும் b மாறிலிகள். a இன் பரிமாண வாய்ப்பாடு எதற்குச் சமமானது?",
+        "optionTexts": [
+          "திசைவேகம்",
+          "முடுக்கம்",
+          "விசை",
+          "அதிர்வெண்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A physical quantity Z depends on four observable quantities a, b, c, and d as Z = (a^2 * b^(1/2)) / (c^3 * d). If the percentage errors in a, b, c, and d are 1%, 4%, 2%, and 3% respectively, what is the maximum percentage error in Z?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Maximum percentage error in Z = 2*(da/a) + (1/2)*(db/b) + 3*(dc/c) + 1*(dd/d). Substituting percentage errors: 2*(1%) + (1/2)*(4%) + 3*(2%) + 1*(3%) = 2% + 2% + 6% + 3% = 13%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Z என்ற இயற்பியல் அளவு Z = (a^2 * b^(1/2)) / (c^3 * d) என நான்கு அளவிடக்கூடிய அளவுகள் a, b, c, d ஐப் பொறுத்தது. a, b, c, d இன் சதவீதப் பிழைகள் முறையே 1%, 4%, 2%, மற்றும் 3% எனில், Z இன் பெரும சதவீதப் பிழை என்ன?",
+        "optionTexts": [
+          "13%",
+          "7%",
+          "10%",
+          "15%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When the jaws of a screw gauge are brought into contact, the zero of the circular scale lies 4 divisions below the reference line. The pitch is 0.5 mm and total circular divisions are 50. If the measured main scale reading is 2.5 mm and circular scale reading is 20 divisions, the corrected reading is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.66 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.74 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2.70 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.62 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Least count LC = 0.5 mm / 50 = 0.01 mm. Zero lies 4 divisions below reference line => negative zero error = -4 * 0.01 = -0.04 mm. Zero correction = +0.04 mm. Measured reading = 2.5 mm + 20 * 0.01 mm = 2.70 mm. Corrected reading = Measured reading + Zero correction = 2.70 + 0.04 = 2.74 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திருகு அளவியின் தாடைகள் இணைக்கப்படும் போது, தலைக்கோலின் சுழிப் பிரிவு குறிப்புக்கோட்டிற்கு 4 பிரிவுகள் கீழே உள்ளது. புரி இடைதூரம் 0.5 mm மற்றும் மொத்த தலைக்கோல் பிரிவுகள் 50. அளவிடப்பட்ட முதன்மைக்கோல் அளவு 2.5 mm மற்றும் தலைக்கோல் அளவு 20 பிரிவுகள் எனில், திருத்தப்பட்ட அளவு யாது?",
+        "optionTexts": [
+          "2.66 mm",
+          "2.74 mm",
+          "2.70 mm",
+          "2.62 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If force F, velocity V, and time T are taken as fundamental physical quantities, what is the dimensional formula of density?",
+    "options": [
+      {
+        "label": "A",
+        "text": "F V^-4 T^-2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "F V^-4 T^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "F^2 V^-4 T^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "F V^-2 T^-4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let Density = F^a * V^b * T^c. Dimensions: [Density] = M L^-3. [F] = M L T^-2, [V] = L T^-1, [T] = T. So M L^-3 = (M L T^-2)^a * (L T^-1)^b * T^c = M^a * L^(a+b) * T^(-2a - b + c). Equating exponents: a = 1; a + b = -3 => 1 + b = -3 => b = -4; -2a - b + c = 0 => -2(1) - (-4) + c = 0 => 2 + c = 0 => c = -2. Thus [Density] = F V^-4 T^-2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விசை F, திசைவேகம் V, மற்றும் காலம் T ஆகியவை அடிப்படை அளவுகளாகக் கருதப்பட்டால், அடர்த்தியின் பரிமாண வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "F V^-4 T^-2",
+          "F V^-4 T^2",
+          "F^2 V^-4 T^-2",
+          "F V^-2 T^-4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a Vernier caliper, 20 Vernier scale divisions equal 19 main scale divisions. If 1 MSD = 0.5 mm, what is the least count of this instrument?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.025 mm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.05 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.01 mm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.005 mm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "20 VSD = 19 MSD => 1 VSD = (19/20) MSD. Least count = 1 MSD - 1 VSD = 1 MSD - (19/20) MSD = (1/20) MSD. Given 1 MSD = 0.5 mm, LC = 0.5 / 20 = 0.025 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வெர்னியர் அளவியில், 20 வெர்னியர் பிரிவுகள் 19 முதன்மை பிரிவுகளுக்குச் சமம். 1 MSD = 0.5 mm எனில், இந்தக் கருவியின் மீச்சிற்றளவு என்ன?",
+        "optionTexts": [
+          "0.025 mm",
+          "0.05 mm",
+          "0.01 mm",
+          "0.005 mm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The resonant frequency f of an LC circuit is given by f = 1 / (2 * pi * sqrt(L * C)). The dimensional formula of sqrt(L * C) is identical to that of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Frequency",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Time period",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Inductance",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Capacitance",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From f = 1 / (2 * pi * sqrt(L * C)), we get sqrt(L * C) = 1 / (2 * pi * f). Since f has dimensions T^-1, the expression sqrt(L * C) has dimensions of (T^-1)^-1 = T, which is Time period.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு LC சுற்றின் ஒத்ததிர்வு அதிர்வெண் f = 1 / (2 * pi * sqrt(L * C)) எனக் கொடுக்கப்பட்டுள்ளது. sqrt(L * C) இன் பரிமாண வாய்ப்பாடு எதற்குச் சமமானது?",
+        "optionTexts": [
+          "அதிர்வெண்",
+          "அலைவுக்காலம்",
+          "மின் தூண்டல்",
+          "மின் தேக்குத்திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The length, breadth, and thickness of a rectangular block are measured as 12.0 cm, 6.0 cm, and 2.45 cm respectively. The volume of the block expressed with appropriate significant figures is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "176.4 cm^3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.8 x 10^2 cm^3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "176 cm^3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "180 cm^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Volume = length * breadth * thickness = 12.0 * 6.0 * 2.45 = 176.4 cm^3. In multiplication, the final result must be rounded to the least number of significant figures present in any input term. 6.0 has 2 significant figures. Rounding 176.4 to 2 significant figures gives 1.8 x 10^2 cm^3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு செவ்வகக் கட்டையின் நீளம், அகலம், மற்றும் தடிமன் முறையே 12.0 cm, 6.0 cm, மற்றும் 2.45 cm என அளவிடப்படுகின்றன. சரியான முக்கிய எண்ணுருக்களுடன் கட்டையின் கனஅளவு என்ன?",
+        "optionTexts": [
+          "176.4 cm^3",
+          "1.8 x 10^2 cm^3",
+          "176 cm^3",
+          "180 cm^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The energy E of a photon is given by E = h * f, where f is frequency and h is Planck's constant. The dimensional formula for Planck's constant h is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "M L^2 T^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M L^2 T^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M L T^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "M L^2 T^-3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Planck's constant h = E / f. [E] = M L^2 T^-2, and [f] = T^-1. Therefore, [h] = (M L^2 T^-2) / (T^-1) = M L^2 T^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு போட்டானின் ஆற்றல் E = h * f எனக் கொடுக்கப்பட்டுள்ளது, இங்கு f என்பது அதிர்வெண் மற்றும் h என்பது பிளாங்க் மாறிலி. பிளாங்க் மாறிலி h இன் பரிமாண வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "M L^2 T^-1",
+          "M L^2 T^-2",
+          "M L T^-1",
+          "M L^2 T^-3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In an experiment to measure the speed of sound v in a wire using tension T and linear mass density mu, the formula used is v = sqrt(T / mu). If the percentage error in measuring tension T is 2% and in linear mass density mu is 4%, what is the percentage error in the calculated speed of sound?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "v = (T / mu)^(1/2). Relative error (dv/v) = (1/2)*(dT/T) + (1/2)*(dmu/mu). Percentage error = (1/2)*(2%) + (1/2)*(4%) = 1% + 2% = 3%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கம்பியில் இழுவிசை T மற்றும் ஓரலகு நீளத்திற்கான நிறை mu வைப் பயன்படுத்தி ஒலியின் திசைவேகம் v = sqrt(T / mu) என கணக்கிடப்படுகிறது. T ஐ அளவிடுவதில் சதவீதப் பிழை 2% மற்றும் mu இல் 4% எனில், கணக்கிடப்பட்ட ஒலியின் திசைவேகத்தில் சதவீதப் பிழை என்ன?",
+        "optionTexts": [
+          "3%",
+          "1%",
+          "6%",
+          "2%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The viscous force F on a sphere moving through a fluid depends on viscosity coefficient eta, radius r, and velocity v as F = 6 * pi * eta * r * v. The dimensional formula of coefficient of viscosity eta is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "M L^-1 T^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "M L^-2 T^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "M L T^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "M L^-1 T^-2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "eta = F / (6 * pi * r * v). Dimensions: [eta] = [F] / ([r] * [v]) = (M L T^-2) / (L * L T^-1) = M L^-1 T^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பாய்மத்தின் வழியே இயங்கும் கோளத்தின் மீதான பாகியல் விசை F = 6 * pi * eta * r * v எனக் கொடுக்கப்பட்டுள்ளது. இங்கு eta என்பது பாகியல் எண், r ஆரம், v திசைவேகம். பாகியல் எண் eta இன் பரிமாண வாய்ப்பாடு என்ன?",
+        "optionTexts": [
+          "M L^-1 T^-1",
+          "M L^-2 T^-1",
+          "M L T^-2",
+          "M L^-1 T^-2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two quantities A and B have different dimensions. Which of the following mathematical operations is physically meaningful?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A / B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A + B",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A - B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "exp(A / B) when A and B have different dimensions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Quantities with different dimensions cannot be added or subtracted (homogeneity principle). Exponents must be dimensionless, so exp(A/B) is invalid if A/B is not dimensionless. However, division (A / B) or multiplication between physical quantities with different dimensions is always allowed and produces a new physical quantity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B ஆகிய இரண்டு அளவுகள் வெவ்வேறான பரிமாணங்களைக் கொண்டுள்ளன. பின்வரும் கணித செயல்பாடுகளில் எது இயற்பியல் ரீதியாக அர்த்தமுள்ளதாக இருக்கும்?",
+        "optionTexts": [
+          "A / B",
+          "A + B",
+          "A - B",
+          "A மற்றும் B வெவ்வேறு பரிமாணங்களைக் கொண்டிருக்கும் போது exp(A / B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In an experiment to measure density, mass is measured as (50.0 +/- 0.5) g and volume as (10.0 +/- 0.2) cm^3. Calculate the maximum percentage error in the density measurement.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Density rho = mass / volume. Maximum relative error (d_rho / rho) = (dm / m) + (dV / V) = (0.5 / 50.0) + (0.2 / 10.0) = 0.01 + 0.02 = 0.03. Percentage error = 0.03 * 100 = 3%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர்த்தியை அளவிடும் ஒரு சோதனையில், நிறை (50.0 +/- 0.5) g என்றும் கனஅளவு (10.0 +/- 0.2) cm^3 என்றும் அளவிடப்படுகிறது. அடர்த்தி அளவீட்டின் பெரும சதவீதப் பிழையைக் கணக்கிடுக.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The length of a simple pendulum is measured as 100.0 cm with an absolute accuracy of 0.1 cm, and its time period for 100 oscillations is measured as 200.0 s with a resolution of 0.2 s. What is the percentage error in the determination of acceleration due to gravity g?",
+    "correctAnswer": 0.3,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Time period T = total time t / N => dt/t = dT/T. Formula g = 4 * pi^2 * L / T^2. Relative error dg/g = dL/L + 2*(dT/T). dL/L = 0.1 / 100.0 = 0.001 (0.1%). dT/T = 0.2 / 200.0 = 0.001 (0.1%). Percentage error in g = 0.1% + 2*(0.1%) = 0.3%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனி ஊசலின் நீளம் 0.1 cm பிழையெல்லையுடன் 100.0 cm என அளவிடப்படுகிறது, மேலும் 100 அலைவுகளுக்கான காலம் 0.2 s மீச்சிற்றளவுடன் 200.0 s என அளவிடப்படுகிறது. புவிஈர்ப்பு முடுக்கம் g கணக்கிடுவதில் சதவீதப் பிழை என்ன?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F is given by F = a * t + b * t^2, where t is time in seconds. If F is in Newtons, what is the dimension exponent of T (time) in the constant b? (Write the absolute numerical value of the power of T in [b]).",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By principle of homogeneity, [b * t^2] = [F] => [b] * T^2 = M L T^-2 => [b] = M L T^-4. The exponent of T in [b] is -4, so its absolute value is 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F = a * t + b * t^2 என விசை F கொடுக்கப்பட்டுள்ளது, இங்கு t என்பது விநாடிகளில் காலம். F நியூட்டனில் இருந்தால், மாறிலி b இல் உள்ள T (காலம்) இன் பரிமாண அடுக்கின் எண் மதிப்பு என்ன?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the error in the measurement of radius of a sphere is 2%, the percentage error in the determination of its volume is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Volume V = (4/3) * pi * r^3. Percentage error in V = 3 * (percentage error in r) = 3 * 2% = 6%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கோளத்தின் ஆரத்தை அளவிடுவதில் உள்ள பிழை 2% எனில், அதன் கனஅளவைக் கண்டறிவதில் உள்ள சதவீதப் பிழை என்ன?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a custom Vernier system, 25 Vernier divisions coincide with 20 main scale divisions. If 1 main scale division represents 1 mm, calculate the least count of this system in mm.",
+    "correctAnswer": 0.2,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "25 VSD = 20 MSD => 1 VSD = (20/25) MSD = 0.8 MSD. Least count = 1 MSD - 1 VSD = 1 MSD - 0.8 MSD = 0.2 MSD. Since 1 MSD = 1 mm, LC = 0.2 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனிப்பயன் வெர்னியர் அமைப்பில், 25 வெர்னியர் பிரிவுகள் 20 முதன்மை அளவுகோல் பிரிவுகளுடன் ஒன்றிணைகின்றன. 1 முதன்மை அளவுகோல் பிரிவு 1 mm எனில், இந்த அமைப்பின் மீச்சிற்றளவை mm இல் கணக்கிடுக.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A traveling microscope is used to determine the refractive index of a glass slab. The main scale has 20 divisions per cm. 50 Vernier divisions coincide with 49 main scale divisions. The least count of the microscope is x * 10^-4 cm. Find x.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "1 cm has 20 divisions => 1 MSD = 1/20 cm = 0.05 cm = 0.5 mm. 50 VSD = 49 MSD => LC = (1/50) MSD = 0.05 cm / 50 = 0.001 cm = 1 * 10^-4 cm. Thus, x = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கண்ணாடிப் பட்டகத்தின் ஒளிவிலகல் எண்ணைக் கண்டறிய நகரும் நுண்ணோக்கி பயன்படுத்தப்படுகிறது. முதன்மை அளவுகோலில் ஒரு செ.மீ க்கு 20 பிரிவுகள் உள்ளன. 50 வெர்னியர் பிரிவுகள் 49 முதன்மை பிரிவுகளுடன் ஒன்றிணைகின்றன. நுண்ணோக்கியின் மீச்சிற்றளவு x * 10^-4 cm எனில், x இன் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The pressure P of a gas depends on temperature T and volume V as P = (R * T / (V - b)) * exp(-a / (R * T * V)), where R is gas constant. Find the exponent of length L in the dimensional formula of the constant ratio (a / b).",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "From term (V - b), dimension of b = [V] = L^3. Exponents must be dimensionless, so [a / (R * T * V)] = 1 => [a] = [R * T * V]. Ideal gas equation gives [R * T] = [P * V] = (M L^-1 T^-2) * L^3 = M L^2 T^-2. Thus [a] = (M L^2 T^-2) * L^3 = M L^5 T^-2. Now [a / b] = (M L^5 T^-2) / (L^3) = M L^2 T^-2. The exponent of L in [a/b] is 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வாயுவின் அழுத்தம் P, வெப்பநிலை T மற்றும் கனஅளவு V ஐப் பொறுத்து P = (R * T / (V - b)) * exp(-a / (R * T * V)) என மாறுகிறது, இங்கு R என்பது வாயு மாறிலி. மாறிலி விகிதம் (a / b) இன் பரிமாண வாய்ப்பாட்டில் நீளம் L இன் அடுக்கைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The velocity v of water waves depends on wavelength lambda, density rho, and acceleration due to gravity g as v^2 = (g * lambda / (2 * pi)) + (2 * pi * S / (rho * lambda)), where S is surface tension. The percentage errors in measuring lambda, rho, and S are 1%, 2%, and 3% respectively for a wave condition where the surface tension term contributes equally to the total v^2 as the gravity term. Calculate the maximum percentage error in velocity v.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let term 1 A = g * lambda / (2 * pi) and term 2 B = 2 * pi * S / (rho * lambda). Given A = B at this condition, so v^2 = 2A. Thus v = sqrt(2A) = sqrt(2 * g * lambda / (2 * pi)). Relative error in v depends on (1/2) relative error in A. Relative error in A = d_lambda / lambda = 1%. Therefore, maximum percentage error in v = (1/2) * (1%) = 0.5%. Considering full derivative v = (A + B)^(1/2): dv/v = (1/2) * (dA + dB) / (A + B) = (1/2) * (dA/A + dB/B) / 2 since A=B. dA/A = 1%. dB/B = (dS/S) + (d_rho/rho) + (d_lambda/lambda) = 3% + 2% + 1% = 6%. Thus dv/v = (1/2) * (1% + 6%) / 2 = 7/4 = 1.75%. Rounding off to nearest integer gives 2%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர் அலைகளின் திசைவேகம் v, அலைநீளம் lambda, அடர்த்தி rho, மற்றும் புவிஈர்ப்பு முடுக்கம் g ஐப் பொறுத்து v^2 = (g * lambda / (2 * pi)) + (2 * pi * S / (rho * lambda)) என அமைகிறது. பரப்பு இழுவிசை உறுப்பு புவிஈர்ப்பு உறுப்புக்குச் சமமாக பங்களிக்கும் நிலையில், lambda, rho, S ஆகியவற்றின் பிழைகள் முறையே 1%, 2%, 3% எனில் திசைவேகம் v இன் பெரும சதவீதப் பிழையைக் காண்க (முழு எண்ணாக).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a Screw Gauge experiment, the main scale reading is 2 mm and 45th division of circular scale coincides with reference line. Pitch is 0.5 mm and circular divisions are 50. If positive zero error of instrument is +0.05 mm, what is the true measured diameter of the wire in mm?",
+    "correctAnswer": 2.4,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Least count = 0.5 mm / 50 = 0.01 mm. Observed reading = MSR + (CSR * LC) = 2 mm + (45 * 0.01 mm) = 2.45 mm. True diameter = Observed reading - Positive zero error = 2.45 mm - 0.05 mm = 2.4 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திருகு அளவி சோதனையில், முதன்மை அளவுகோல் அளவு 2 mm மற்றும் தலைக்கோலின் 45-வது பிரிவு குறிப்புக்கோட்டுடன் ஒன்றிணைகிறது. புரி இடைதூரம் 0.5 mm மற்றும் தலைக்கோல் பிரிவுகள் 50. கருவியின் நேர் சுழிப்பிழை +0.05 mm எனில், கம்பியின் உண்மையான விட்டம் mm இல் என்ன?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY01-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The capacitance of a parallel plate capacitor is C = e_0 * A / d. If permittivity of free space e_0 has dimensions M^a L^b T^c A^d, evaluate the sum of exponent powers (a + b + c + d).",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "From Coulomb's Law F = (1 / (4 * pi * e_0)) * (q1 * q2 / r^2) => e_0 = q^2 / (F * r^2) = (A^2 T^2) / (M L T^-2 * L^2) = M^-1 L^-3 T^4 A^2. Thus a = -1, b = -3, c = 4, d = 2. Sum (a + b + c + d) = -1 - 3 + 4 + 2 = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணை தட்டு மின்தேக்கியின் மின்தேக்குத்திறன் C = e_0 * A / d. வெற்றிடத்தின் மின்விடுதிறன் e_0 இன் பரிமாண வாய்ப்பாடு M^a L^b T^c A^d எனில், அடுக்குகளின் கூடுதல் (a + b + c + d) இன் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

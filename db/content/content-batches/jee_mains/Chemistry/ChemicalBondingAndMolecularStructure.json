@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che03-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Lewis structure of the ozone molecule (O3), what is the formal charge on the central oxygen atom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+1",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "+2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Formal charge = V - L - (B / 2), where V is valence electrons of free atom, L is non-bonding lone pair electrons, and B is bonding electrons. In O3, the central oxygen has 1 lone pair (2 electrons), forms one double bond (4 electrons), and one single dative/covalent bond (2 electrons). Thus, V = 6, L = 2, B = 6. Formal charge = 6 - 2 - (6 / 2) = +1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓசோன் மூலக்கூறின் (O3) லூயிஸ் அமைப்பில், மைய ஆக்ஸிஜன் அணுவின் முறைசார் மின்சுமை (formal charge) என்ன?",
+        "optionTexts": [
+          "-1",
+          "0",
+          "+1",
+          "+2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Fajan's rules, which of the following alkali metal halides exhibits the highest degree of covalent character?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NaCl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "LiCl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NaI",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "LiI",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Fajan's rules, covalent character is favored by a small cation with high polarizing power and a large anion with high polarizability. Among the alkali metal ions, Li+ is the smallest cation, and among halide ions, I- is the largest anion. Hence, LiI has the maximum polarizing effect and highest covalent character.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபஜான் விதிகளின்படி, பின்வரும் கார உலோக ஹாலைடுகளில் அதிக சகப்பிணைப்புத் தன்மையைக் கொண்டிருப்பது எது?",
+        "optionTexts": [
+          "NaCl",
+          "LiCl",
+          "NaI",
+          "LiI"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Although nitrogen (electronegativity 3.0) is less electronegative than fluorine (electronegativity 4.0), the net dipole moment of ammonia (NH3, ~1.47 D) is significantly larger than that of nitrogen trifluoride (NF3, ~0.24 D). Which statement correctly accounts for this fact?",
+    "options": [
+      {
+        "label": "A",
+        "text": "In NH3, the orbital dipole of the lone pair and resultant dipole of N-H bonds reinforce each other, whereas in NF3 they oppose each other.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NF3 possesses a planar triangular geometry, whereas NH3 is trigonal pyramidal.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The N-F bond is non-polar due to back-bonding from fluorine to nitrogen orbitals.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Nitrogen has no lone pair of electrons in NF3 due to dative bond formation with fluorine.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Both NH3 and NF3 have pyramidal geometries with one lone pair on nitrogen. In NH3, nitrogen is more electronegative than hydrogen, so individual N-H bond dipoles point toward nitrogen in the same direction as the lone pair dipole, reinforcing each other. In NF3, fluorine is more electronegative than nitrogen, so the resultant dipole of the three N-F bonds points away from nitrogen, opposing the lone pair dipole and drastically diminishing the net dipole moment.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபுளூரினை (எலக்ட்ரான் கவர்தன்மை 4.0) விட நைட்ரஜன் (3.0) குறைவான எலக்ட்ரான் கவர்தன்மையைக் கொண்டிருந்தாலும், அம்மோனியாவின் இருமுனைத் திருப்புத்திறன் (NH3, ~1.47 D) நைட்ரஜன் ட்ரைபுளூரைடை (NF3, ~0.24 D) விட கணிசமாக அதிகமாக இருப்பதற்கான சரியான காரணம்:",
+        "optionTexts": [
+          "NH3-ல் தனித்த இரட்டையின் ஆர்பிட்டால் இருமுனையும் N-H பிணைப்புகளின் தொகுபயன் இருமுனையும் ஒரே திசையில் வலுப்படுத்துகின்றன; ஆனால் NF3-ல் அவை ஒன்றுக்கொன்று எதிராக அமைகின்றன.",
+          "NF3 தள முக்கோண வடிவத்தையும், NH3 முக்கோண பிரமிடு வடிவத்தையும் பெற்றுள்ளன.",
+          "ஃபுளூரினிலிருந்து நைட்ரஜனுக்கு நிகழும் பின்னோக்கிய பிணைப்பால் N-F பிணைப்பு முனைவற்றதாக மாறுகிறது.",
+          "ஃபுளூரினுடன் ஈதல் பிணைப்பு உருவாவதால் NF3-ல் நைட்ரஜனில் தனித்த எலக்ட்ரான் இரட்டை இருப்பதில்லை."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to VSEPR theory, the number of lone pairs on the central chlorine atom and the molecular shape of chlorine trifluoride (ClF3) are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 lone pair, Trigonal planar",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 lone pairs, Trigonal pyramidal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 lone pairs, T-shaped",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3 lone pairs, Linear",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Chlorine has 7 valence electrons. In ClF3, it forms 3 single sigma bonds with fluorine atoms, leaving 4 non-bonding electrons, which form 2 lone pairs. Steric number = 3 bond pairs + 2 lone pairs = 5 (trigonal bipyramidal electron geometry). The two lone pairs occupy equatorial positions to minimize lone pair-lone pair repulsions, resulting in a T-shaped molecular geometry.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "VSEPR கொள்கையின்படி, குளோரின் ட்ரைபுளூரைடில் (ClF3) மைய குளோரின் அணுவில் உள்ள தனித்த இரட்டைகளின் எண்ணிக்கை மற்றும் அதன் மூலக்கூறு வடிவம் முறையே:",
+        "optionTexts": [
+          "1 தனித்த இரட்டை, தள முக்கோணம்",
+          "2 தனித்த இரட்டைகள், முக்கோண பிரமிடு",
+          "2 தனித்த இரட்டைகள், T-வடிவம்",
+          "3 தனித்த இரட்டைகள், நேர்கோடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the formation of magnesium oxide from its elements: Mg(s) + 1/2 O2(g) -> MgO(s), with standard enthalpy of formation Delta H_f° = -602 kJ mol^-1. Given the following thermochemical data:\nEnthalpy of sublimation of Mg(s) = +148 kJ mol^-1\nFirst ionization enthalpy of Mg(g) = +738 kJ mol^-1\nSecond ionization enthalpy of Mg(g) = +1451 kJ mol^-1\nBond dissociation enthalpy of O2(g) = +498 kJ mol^-1\nFirst electron gain enthalpy of O(g) = -141 kJ mol^-1\nSecond electron gain enthalpy of O-(g) = +798 kJ mol^-1\nThe lattice enthalpy of MgO(s) (defined for MgO(s) -> Mg2+(g) + O2-(g)) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+3845 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+3243 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+2641 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+4094 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the Born-Haber cycle: Delta H_f° = Delta H_sub(Mg) + IE1(Mg) + IE2(Mg) + 0.5 * BDE(O2) + Delta_egH1(O) + Delta_egH2(O) - U_lattice. Substituting the values: -602 = 148 + 738 + 1451 + (0.5 * 498) - 141 + 798 - U_lattice => -602 = 148 + 738 + 1451 + 249 - 141 + 798 - U_lattice => -602 = 3243 - U_lattice => U_lattice = 3243 + 602 = +3845 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெக்னீசியம் ஆக்சைடு உருவாவதற்கான வினையைக் கருதுக: Mg(s) + 1/2 O2(g) -> MgO(s), திட்ட உருவாதல் என்தால்பி Delta H_f° = -602 kJ mol^-1. பின்வரும் வெப்ப இயக்கவியல் தரவுகள் கொடுக்கப்பட்டுள்ளன:\nMg(s)-ன் பதங்கமாதல் என்தால்பி = +148 kJ mol^-1\nMg(g)-ன் முதல் அயனியாக்கும் என்தால்பி = +738 kJ mol^-1\nMg(g)-ன் இரண்டாவது அயனியாக்கும் என்தால்பி = +1451 kJ mol^-1\nO2(g)-ன் பிணைப்புப் பிளவு என்தால்பி = +498 kJ mol^-1\nO(g)-ன் முதல் எலக்ட்ரான் நாட்ட என்தால்பி = -141 kJ mol^-1\nO-(g)-ன் இரண்டாவது எலக்ட்ரான் நாட்ட என்தால்பி = +798 kJ mol^-1\nMgO(s) சேர்மத்தின் படிகக்கூடு என்தால்பி (MgO(s) -> Mg2+(g) + O2-(g)):",
+        "optionTexts": [
+          "+3845 kJ mol^-1",
+          "+3243 kJ mol^-1",
+          "+2641 kJ mol^-1",
+          "+4094 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Molecular Orbital Theory, which of the following homonuclear diatomic molecules is diamagnetic in its ground state?",
+    "options": [
+      {
+        "label": "A",
+        "text": "B2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "O2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "S2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "C2 has 12 electrons. Its molecular orbital configuration is: sigma 1s^2, sigma* 1s^2, sigma 2s^2, sigma* 2s^2, (pi 2px^2 = pi 2py^2). All electrons are paired, making C2 diamagnetic. In contrast, B2 has 2 unpaired electrons in pi 2p orbitals, and O2 and S2 each have 2 unpaired electrons in pi* 2p / pi* 3p orbitals (paramagnetic).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி, பின்வரும் ஓரின ஈரணு மூலக்கூறுகளில் எது அடிநிலையில் டயாகாந்தத் தன்மையைப் பெற்றுள்ளது?",
+        "optionTexts": [
+          "B2",
+          "O2",
+          "C2",
+          "S2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct increasing order of bond lengths for the given oxygen species?",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2+ < O2 < O2- < O2^2-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "O2^2- < O2- < O2 < O2+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "O2 < O2+ < O2- < O2^2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O2+ < O2- < O2 < O2^2-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bond length is inversely proportional to bond order. Bond orders calculated from Molecular Orbital Theory are: O2+ (15 e-) = 2.5; O2 (16 e-) = 2.0; O2- (17 e-) = 1.5; O2^2- (18 e-) = 1.0. Thus, increasing order of bond length is: O2+ < O2 < O2- < O2^2-.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்டுள்ள ஆக்ஸிஜன் கூறுகளின் பிணைப்பு நீளங்களின் சரியான ஏறுவரிசை எது?",
+        "optionTexts": [
+          "O2+ < O2 < O2- < O2^2-",
+          "O2^2- < O2- < O2 < O2+",
+          "O2 < O2+ < O2- < O2^2-",
+          "O2+ < O2- < O2 < O2^2-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In valence bond theory, which type of orbital overlap results in the formation of a pi (pi) bond?",
+    "options": [
+      {
+        "label": "A",
+        "text": "End-to-end (coaxial) overlap along the internuclear axis",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Head-on overlap of s and p orbitals along the internuclear axis",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Overlap of an s orbital with a d orbital along the internuclear axis",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sideways (lateral) overlap of atomic orbitals perpendicular to the internuclear axis",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "A pi (pi) bond is formed by the lateral or sideways overlap of atomic orbitals whose axes remain parallel to each other and perpendicular to the internuclear axis. Coaxial or head-on overlap results in the formation of a sigma (sigma) bond.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணைதிறன் பிணைப்புக் கொள்கையில், எந்த வகையான ஆர்பிட்டால் மேற்பொருந்துதல் பை (pi) பிணைப்பை உருவாக்குகிறது?",
+        "optionTexts": [
+          "அணுக்கரு அச்சு வழியே முனையோடு முனை (ஒரே அச்சு) மேற்பொருந்துதல்",
+          "அணுக்கரு அச்சு வழியே s மற்றும் p ஆர்பிட்டால்களின் நேருக்கு நேர் மேற்பொருந்துதல்",
+          "அணுக்கரு அச்சு வழியே s ஆர்பிட்டால் d ஆர்பிட்டாலுடன் மேற்பொருந்துதல்",
+          "அணுக்கரு அச்சுக்கு செங்குத்தாக அணு ஆர்பிட்டால்களின் பக்கவாட்டு மேற்பொருந்துதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Ortho-nitrophenol has a significantly lower boiling point and is more steam-volatile than para-nitrophenol because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ortho-nitrophenol forms intermolecular hydrogen bonds, while para-nitrophenol forms intramolecular hydrogen bonds.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ortho-nitrophenol exhibits intramolecular hydrogen bonding (chelation), whereas para-nitrophenol undergoes extensive intermolecular hydrogen bonding.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Para-nitrophenol has a lower molecular mass than ortho-nitrophenol.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ortho-nitrophenol is completely non-polar, while para-nitrophenol exists as a zwitterion.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In ortho-nitrophenol, the -OH and -NO2 groups are adjacent, allowing the formation of an intramolecular hydrogen bond (chelation). This prevents association between separate molecules. In para-nitrophenol, the two groups are far apart, leading to strong intermolecular hydrogen bonding that links molecules into large aggregates, thereby raising its boiling point and reducing steam volatility.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆர்த்தோ-நைட்ரோபீனால் பாரா-நைட்ரோபீனாலை விட கணிசமாகக் குறைந்த கொதிநிலையையும் அதிக நீராவி ஆவியாகும் தன்மையையும் கொண்டிருப்பதன் காரணம்:",
+        "optionTexts": [
+          "ஆர்த்தோ-நைட்ரோபீனால் மூலக்கூறுகளுக்கிடையே ஹைட்ரஜன் பிணைப்பை உருவாக்குகிறது, ஆனால் பாரா-நைட்ரோபீனால் மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்பை உருவாக்குகிறது.",
+          "ஆர்த்தோ-நைட்ரோபீனால் மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்பை (கீலேஷன்) ஏற்படுத்துகிறது, ஆனால் பாரா-நைட்ரோபீனால் விரிவான மூலக்கூறுகளுக்கிடையேயான ஹைட்ரஜன் பிணைப்பிற்கு உட்படுகிறது.",
+          "பாரா-நைட்ரோபீனால் ஆர்த்தோ-நைட்ரோபீனாலை விட குறைந்த மூலக்கூறு நிறையைக் கொண்டுள்ளது.",
+          "ஆர்த்தோ-நைட்ரோபீனால் முற்றிலும் முனைவற்றது, ஆனால் பாரா-நைட்ரோபீனால் சுவிட்டர் அயனியாக உள்ளது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the square planar molecule xenon tetrafluoride (XeF4), what is the hybridization of the central xenon atom and the number of lone pairs residing on it?",
+    "options": [
+      {
+        "label": "A",
+        "text": "dsp2, 0 lone pairs",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp3d, 1 lone pair",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sp3d2, 2 lone pairs",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "sp3d2, 1 lone pair",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Xenon has 8 valence electrons. In XeF4, it forms 4 single sigma bonds with fluorine atoms, leaving 4 non-bonding electrons (2 lone pairs). The steric number is 4 bond pairs + 2 lone pairs = 6, corresponding to sp3d2 hybridization with octahedral electron geometry. The two lone pairs reside in trans axial positions to minimize repulsions, producing a square planar molecular geometry.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சதுர தள அமைப்புடைய செனான் டெட்ராபுளூரைடு (XeF4) மூலக்கூறில், மைய செனான் அணுவின் இனக்கலப்பு மற்றும் அதில் உள்ள தனித்த எலக்ட்ரான் இரட்டைகளின் எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "dsp2, 0 தனித்த இரட்டைகள்",
+          "sp3d, 1 தனித்த இரட்டை",
+          "sp3d2, 2 தனித்த இரட்டைகள்",
+          "sp3d2, 1 தனித்த இரட்டை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following sets correctly arranges the given nitrogen species in strictly decreasing order of their bond angles?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NO2+ > NO2 > NO2-",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "NO2- > NO2 > NO2+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NO2 > NO2+ > NO2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "NO2+ > NO2- > NO2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In NO2+, nitrogen is sp-hybridized with zero lone pairs, giving a linear geometry and a bond angle of 180°. In NO2, nitrogen has two sigma bonds and a single unpaired electron; the repulsion from a single electron is less than that from a full lone pair, giving a bond angle of ~134°. In NO2-, nitrogen has two sigma bonds and one complete lone pair, which exerts strong lone pair-bond pair repulsion, compressing the bond angle to ~115°. Hence, the decreasing order is NO2+ (180°) > NO2 (134°) > NO2- (115°).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்டுள்ள நைட்ரஜன் கூறுகளின் பிணைப்புக் கோணங்களின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "NO2+ > NO2 > NO2-",
+          "NO2- > NO2 > NO2+",
+          "NO2 > NO2+ > NO2-",
+          "NO2+ > NO2- > NO2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chemical species possesses an incomplete octet (electron-deficient central atom) in its Lewis structure?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CCl4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "PCl3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "BF3",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "In boron trifluoride (BF3), the central boron atom has 3 valence electrons and shares 3 electrons with three fluorine atoms, totaling only 6 electrons in its valence shell. Since it has fewer than 8 electrons, it represents an electron-deficient molecule with an incomplete octet. In CCl4, NH3, and PCl3, the central atoms possess complete octets.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் சேர்மங்களில் தன் லூயிஸ் அமைப்பில் முழுமையற்ற எண்மத்தைக் (எலக்ட்ரான் குறைபாடுடைய மைய அணு) கொண்டுள்ள சேர்மம் எது?",
+        "optionTexts": [
+          "CCl4",
+          "NH3",
+          "PCl3",
+          "BF3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following molecules has a non-zero permanent dipole moment (mu != 0)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SF6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "BeCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "BF3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "SF4",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "SF6 (regular octahedral), BeCl2 (linear), and BF3 (trigonal planar) are highly symmetric molecules whose individual bond dipole vectors cancel out completely, yielding a net dipole moment mu = 0. In SF4, the central sulfur atom has 4 bond pairs and 1 lone pair, adopting an asymmetric see-saw geometry where the bond dipoles do not cancel out, resulting in a non-zero permanent dipole moment.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் மூலக்கூறுகளில் சுழியற்ற நிலையான இருமுனைத் திருப்புத்திறனைக் (mu != 0) கொண்டுள்ள மூலக்கூறு எது?",
+        "optionTexts": [
+          "SF6",
+          "BeCl2",
+          "BF3",
+          "SF4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Molecular Orbital Theory, which of the following diatomic molecules has a double bond consisting entirely of two pi (pi) bonds with no sigma (sigma) bond?",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "N2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In C2 (12 electrons), the valence electronic configuration is (sigma 2s)^2 (sigma* 2s)^2 (pi 2px)^2 (pi 2py)^2. The four bonding electrons that determine the net bond order of 2 are situated entirely in the degenerate pi 2px and pi 2py molecular orbitals. Therefore, the double bond in C2 consists solely of two pi bonds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி, சிக்மா (sigma) பிணைப்பு ஏதுமின்றி இரண்டு பை (pi) பிணைப்புகளை மட்டுமே கொண்ட இரட்டைப் பிணைப்பைப் பெற்றுள்ள ஈரணு மூலக்கூறு எது?",
+        "optionTexts": [
+          "O2",
+          "C2",
+          "N2",
+          "B2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the carbonate ion (CO3^2-), all three carbon-oxygen bonds are experimentally found to be identical in length. The carbon-oxygen bond order calculated from its resonance structures is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.00",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1.50",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.33",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2.00",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The carbonate ion has three equivalent canonical resonance structures. In each structure, there is one double bond (C=O) and two single bonds (C-O) shared among the three C-O bond locations. Bond order = (Total number of covalent bonds between C and O in all resonance forms) / (Total number of resonating structures) = (2 + 1 + 1) / 3 = 4 / 3 = 1.33.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பனேட் அயனியில் (CO3^2-), மூன்று கார்பன்-ஆக்ஸிஜன் பிணைப்புகளும் சம நீளமுடையவை என கண்டறியப்பட்டுள்ளன. அதன் உடனிசைவு அமைப்புகளிலிருந்து கணக்கிடப்படும் கார்பன்-ஆக்ஸிஜன் பிணைப்புத் தரம்:",
+        "optionTexts": [
+          "1.00",
+          "1.50",
+          "1.33",
+          "2.00"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the phosphorus pentachloride (PCl5) molecule, the central phosphorus atom undergoes sp3d hybridization to produce a trigonal bipyramidal geometry. Which specific d-orbital is involved in this hybridization?",
+    "options": [
+      {
+        "label": "A",
+        "text": "d_xy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "d_x2-y2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "d_z2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "d_xz",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Trigonal bipyramidal sp3d hybridization is a combination of planar sp2 hybridization (formed by s, px, and py orbitals forming equatorial bonds in the xy-plane) and linear pd hybridization (formed by pz and dz2 orbitals oriented along the z-axis forming axial bonds). Therefore, the specific d-orbital involved is dz2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாஸ்பரஸ் பென்டாகுளோரைடு (PCl5) மூலக்கூறில், மைய பாஸ்பரஸ் அணு sp3d இனக்கலப்படைந்து முக்கோண இருபிரமிடு வடிவத்தைப் பெறுகிறது. இந்த இனக்கலப்பில் ஈடுபடும் குறிப்பிட்ட d-ஆர்பிட்டால் எது?",
+        "optionTexts": [
+          "d_xy",
+          "d_x2-y2",
+          "d_z2",
+          "d_xz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In terms of individual hydrogen bond dissociation energy, which of the following hydrogen bonds is the strongest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "O-H···O",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "F-H···F",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "N-H···N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "O-H···N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The strength of a hydrogen bond depends primarily on the electronegativity and small size of the electronegative atom attached to hydrogen. Because fluorine has the highest electronegativity (4.0) and smallest atomic radius, the F-H bond is the most highly polarized, making the F-H···F hydrogen bond the strongest (bond dissociation energy up to ~40-160 kJ mol^-1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனித்தனி ஹைட்ரஜன் பிணைப்பு பிரிகை ஆற்றலின் அடிப்படையில், பின்வருவனவற்றுள் மிக வலிமையான ஹைட்ரஜன் பிணைப்பு எது?",
+        "optionTexts": [
+          "O-H···O",
+          "F-H···F",
+          "N-H···N",
+          "O-H···N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to VSEPR theory, what is the correct decreasing order of repulsive interactions between valence shell electron pairs?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bond pair - Bond pair > Lone pair - Bond pair > Lone pair - Lone pair",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lone pair - Lone pair > Lone pair - Bond pair > Bond pair - Bond pair",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Lone pair - Bond pair > Lone pair - Lone pair > Bond pair - Bond pair",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lone pair - Lone pair > Bond pair - Bond pair > Lone pair - Bond pair",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A lone pair of electrons is influenced by only one nucleus and occupies a broader region of space compared to a bonding pair, which is held between two nuclei. As a result, electron repulsions follow the order: Lone pair - Lone pair > Lone pair - Bond pair > Bond pair - Bond pair.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "VSEPR கொள்கையின்படி, இணைதிறன் கூண்டு எலக்ட்ரான் இரட்டைகளுக்கு இடையேயான விலக்கு விசைகளின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "பிணைப்பு இரட்டை - பிணைப்பு இரட்டை > தனித்த இரட்டை - பிணைப்பு இரட்டை > தனித்த இரட்டை - தனித்த இரட்டை",
+          "தனித்த இரட்டை - தனித்த இரட்டை > தனித்த இரட்டை - பிணைப்பு இரட்டை > பிணைப்பு இரட்டை - பிணைப்பு இரட்டை",
+          "தனித்த இரட்டை - பிணைப்பு இரட்டை > தனித்த இரட்டை - தனித்த இரட்டை > பிணைப்பு இரட்டை - பிணைப்பு இரட்டை",
+          "தனித்த இரட்டை - தனித்த இரட்டை > பிணைப்பு இரட்டை - பிணைப்பு இரட்டை > தனித்த இரட்டை - பிணைப்பு இரட்டை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When a nitrogen molecule (N2) is ionized to form N2+, the electron is removed from which molecular orbital?",
+    "options": [
+      {
+        "label": "A",
+        "text": "pi*_2px",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "pi_2px",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sigma*_2s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sigma_2pz",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "For diatomic molecules with up to 14 electrons like N2, the MO energy ordering is: sigma 1s < sigma* 1s < sigma 2s < sigma* 2s < (pi 2px = pi 2py) < sigma 2pz. The highest occupied molecular orbital (HOMO) of N2 is sigma 2pz, containing two electrons. Hence, ionization removes an electron from the sigma 2pz orbital.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜன் மூலக்கூறானது (N2) அயனியுற்று N2+ ஆக மாறும் போது, எலக்ட்ரான் எந்த மூலக்கூறு ஆர்பிட்டாலில் இருந்து நீக்கப்படுகிறது?",
+        "optionTexts": [
+          "pi*_2px",
+          "pi_2px",
+          "sigma*_2s",
+          "sigma_2pz"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkaline earth metal chlorides has the lowest melting point primarily due to its predominantly covalent character?",
+    "options": [
+      {
+        "label": "A",
+        "text": "MgCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CaCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "SrCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "BeCl2",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Fajan's rules, the exceptionally small size and high charge density of the Be2+ ion impart it with very high polarizing power. It polarizes the electron cloud of the chloride ions strongly, introducing significant covalent character into BeCl2. As a consequence of this covalent nature, BeCl2 has a polymeric/covalent lattice with the lowest melting point (~405 °C) compared to the ionic chlorides MgCl2, CaCl2, and SrCl2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அதிக சகப்பிணைப்புத் தன்மையைக் கொண்டிருப்பதன் காரணமாக பின்வரும் காரமண் உலோக குளோரைடுகளில் மிகக் குறைந்த உருகுநிலையைக் கொண்டது எது?",
+        "optionTexts": [
+          "MgCl2",
+          "CaCl2",
+          "SrCl2",
+          "BeCl2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of sigma (sigma) bonds present in a single molecule of benzene (C6H6) is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Benzene has a planar hexagonal ring of 6 carbon atoms. There are 6 carbon-carbon (C-C) sigma bonds forming the ring and 6 carbon-hydrogen (C-H) sigma bonds attached to each vertex. Therefore, total number of sigma bonds = 6 + 6 = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பென்சீன் (C6H6) மூலக்கூறில் உள்ள மொத்த சிக்மா (sigma) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of lone pair(s) of electrons on the central sulfur atom in sulfur tetrafluoride (SF4) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Sulfur has 6 valence electrons. In SF4, sulfur forms 4 single covalent bonds with fluorine atoms, using 4 electrons. The remaining 2 valence electrons form exactly 1 lone pair on the sulfur atom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பர் டெட்ராபுளூரைடில் (SF4) மைய சல்பர் அணுவில் உள்ள தனித்த எலக்ட்ரான் இரட்டைகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Molecular Orbital Theory, the total number of antibonding valence electrons present in an oxygen molecule (O2) is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "An O2 molecule contains 12 valence electrons. Its valence molecular orbital configuration is: (sigma 2s)^2 (sigma* 2s)^2 (sigma 2pz)^2 (pi 2px)^2 (pi 2py)^2 (pi* 2px)^1 (pi* 2py)^1. The antibonding valence orbitals are sigma* 2s (with 2 electrons) and pi* 2px and pi* 2py (with 1 electron each, totaling 2 electrons). Thus, total antibonding valence electrons = 2 + 2 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின்படி, ஆக்ஸிஜன் மூலக்கூறில் (O2) உள்ள எதிர்பிணைப்பு இணைதிறன் எலக்ட்ரான்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a molecule of sulfur hexafluoride (SF6), the total number of F-S-F bond angles that are exactly equal to 90 degrees is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "SF6 possesses an octahedral geometry with 6 fluorine atoms located at the vertices. The 4 equatorial fluorine atoms form 4 bond angles of 90° among adjacent positions. Each of the 2 axial fluorine atoms forms a 90° angle with all 4 equatorial fluorine atoms (2 * 4 = 8 angles). Total number of 90° bond angles = 4 + 8 = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பர் ஹெக்ஸாபுளூரைடு (SF6) மூலக்கூறில், சரியாக 90 டிகிரி கொண்டுள்ள F-S-F பிணைப்புக் கோணங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Among the following chemical species: PCl5, SF4, ClF3, XeF2, SF6, and IF5, how many have an sp3d hybridized central atom?",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Steric number = bond pairs + lone pairs on the central atom: 1. PCl5: 5 bp + 0 lp = 5 -> sp3d; 2. SF4: 4 bp + 1 lp = 5 -> sp3d; 3. ClF3: 3 bp + 2 lp = 5 -> sp3d; 4. XeF2: 2 bp + 3 lp = 5 -> sp3d; 5. SF6: 6 bp + 0 lp = 6 -> sp3d2; 6. IF5: 5 bp + 1 lp = 6 -> sp3d2. Therefore, exactly 4 species (PCl5, SF4, ClF3, XeF2) have an sp3d hybridized central atom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCl5, SF4, ClF3, XeF2, SF6 மற்றும் IF5 ஆகிய வேதிக்கூறுகளில், sp3d இனக்கலப்புடைய மைய அணுவைக் கொண்டுள்ள கூறுகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A diatomic molecule H-X has an experimental dipole moment of 1.20 D and an equilibrium bond length of 1.25 Angstrom. Given that 1 D = 3.336 x 10^-30 C m, 1 Angstrom = 10^-10 m, and the elementary charge e = 1.602 x 10^-19 C, the percentage ionic character of the H-X bond (rounded to the nearest integer) is:",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For 100% ionic character: mu_ionic = e * d = (1.602 x 10^-19 C) * (1.25 x 10^-10 m) = 2.0025 x 10^-29 C m. In Debye units: mu_ionic = (2.0025 x 10^-29) / (3.336 x 10^-30) = 6.0027 D. Percentage ionic character = (mu_experimental / mu_ionic) * 100 = (1.20 / 6.0027) * 100 = 19.99% ≈ 20%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "H-X என்ற ஈரணு மூலக்கூறின் பரிசோதனை இருமுனைத் திருப்புத்திறன் 1.20 D மற்றும் பிணைப்பு நீளம் 1.25 Angstrom ஆகும். 1 D = 3.336 x 10^-30 C m, 1 Angstrom = 10^-10 m மற்றும் e = 1.602 x 10^-19 C எனில், H-X பிணைப்பின் சதவீத அயனித்தன்மை (அருகிலுள்ள முழு எண்ணிற்கு மாற்றுக):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Among the following homonuclear and heteronuclear diatomic species: B2, C2, N2, O2, O2^2-, and N2+, how many are paramagnetic in their ground electronic state?",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Molecular Orbital Theory: 1. B2 (10 e-): has two unpaired electrons in pi 2px and pi 2py (paramagnetic); 2. C2 (12 e-): all electrons paired (diamagnetic); 3. N2 (14 e-): all electrons paired (diamagnetic); 4. O2 (16 e-): has two unpaired electrons in pi* 2px and pi* 2py (paramagnetic); 5. O2^2- (18 e-): all electrons paired (diamagnetic); 6. N2+ (13 e-): has one unpaired electron in sigma 2pz (paramagnetic). Therefore, exactly 3 species (B2, O2, and N2+) are paramagnetic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "B2, C2, N2, O2, O2^2- மற்றும் N2+ ஆகிய ஈரணு கூறுகளில், எத்தனை கூறுகள் அடிநிலையில் பாராகாந்தத் தன்மையைப் பெற்றுள்ளன?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of lone pairs of electrons present on all the atoms combined in a single molecule of xenon tetrafluoride (XeF4) is:",
+    "correctAnswer": 14,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In XeF4, the central xenon atom has 8 valence electrons; 4 are used in forming single bonds with four fluorine atoms, leaving 4 electrons as 2 lone pairs on Xe. Each of the four fluorine atoms has 7 valence electrons, of which 1 is shared in a bond, leaving 6 non-bonding electrons as 3 lone pairs per fluorine atom. Total lone pairs on all 4 fluorine atoms = 4 * 3 = 12. Total lone pairs in the molecule = 2 (on Xe) + 12 (on F atoms) = 14.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு செனான் டெட்ராபுளூரைடு (XeF4) மூலக்கூறில் உள்ள அனைத்து அணுக்களிலும் காணப்படும் மொத்த தனித்த எலக்ட்ரான் இரட்டைகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Based on Molecular Orbital Theory, calculate the sum of the bond orders of the following four diatomic species: CO, NO+, O2+, and N2^-.",
+    "correctAnswer": 11,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Bond orders are calculated using (Nb - Na) / 2: 1. CO (14 electrons, isoelectronic with N2): Nb = 10, Na = 4, Bond order = (10 - 4) / 2 = 3.0; 2. NO+ (14 electrons): Nb = 10, Na = 4, Bond order = (10 - 4) / 2 = 3.0; 3. O2+ (15 electrons): Nb = 10, Na = 5, Bond order = (10 - 5) / 2 = 2.5; 4. N2^- (15 electrons): Nb = 10, Na = 5, Bond order = (10 - 5) / 2 = 2.5. Sum of bond orders = 3.0 + 3.0 + 2.5 + 2.5 = 11.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மூலக்கூறு ஆர்பிட்டால் கொள்கையின் அடிப்படையில், CO, NO+, O2+ மற்றும் N2^- ஆகிய நான்கு கூறுகளின் பிணைப்புத் தரங்களின் கூடுதல்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che03-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the open tetrahedral framework structure of ordinary crystalline ice, each individual water molecule is hydrogen-bonded to x neighboring water molecules. The value of x is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the hexagonal crystalline lattice of ice, each oxygen atom is tetrahedrally surrounded by four other oxygen atoms. The central water molecule participates in four hydrogen bonds: it donates two hydrogen bonds through its two covalent O-H protons and accepts two hydrogen bonds at the two lone pairs on its oxygen atom. Therefore, each water molecule forms exactly 4 hydrogen bonds.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பனிக்கட்டியின் திறந்த நான்முகி படிக அமைப்பில், ஒவ்வொரு நீர் மூலக்கூறும் அருகில் உள்ள x நீர் மூலக்கூறுகளுடன் ஹைட்ரஜன் பிணைப்பில் ஈடுபட்டுள்ளது எனில், x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

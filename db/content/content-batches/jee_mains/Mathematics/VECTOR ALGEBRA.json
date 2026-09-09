@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat12-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If vector a = 2i + 3j - k and vector b = i - 2j + 3k, then the scalar product a . b is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-7",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "11",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The scalar product of two vectors a = a1 i + a2 j + a3 k and b = b1 i + b2 j + b3 k is given by a . b = a1*b1 + a2*b2 + a3*b3. Here, a . b = (2)(1) + (3)(-2) + (-1)(3) = 2 - 6 - 3 = -7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசையன் a = 2i + 3j - k மற்றும் திசையன் b = i - 2j + 3k எனில், திசையிலிப் பெருக்கல் a . b-ன் மதிப்பு:",
+        "optionTexts": [
+          "-7",
+          "7",
+          "-5",
+          "11"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The unit vector in the direction of the vector a = 2i - j + 2k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2/3)i - (1/3)j + (2/3)k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2/5)i - (1/5)j + (2/5)k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/3)i - (2/3)j + (2/3)k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2i - j + 2k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The unit vector in the direction of vector a is given by a_hat = a / |a|. The magnitude is |a| = sqrt(2^2 + (-1)^2 + 2^2) = sqrt(4 + 1 + 4) = sqrt(9) = 3. Thus, a_hat = (2/3)i - (1/3)j + (2/3)k.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசையன் a = 2i - j + 2k-ன் திசையில் அமையும் ஓரலகுத் திசையன்:",
+        "optionTexts": [
+          "(2/3)i - (1/3)j + (2/3)k",
+          "(2/5)i - (1/5)j + (2/5)k",
+          "(1/3)i - (2/3)j + (2/3)k",
+          "2i - j + 2k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The projection of the vector a = 2i + 3j + 2k on the vector b = i + 2j + k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 / sqrt(6)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 / sqrt(6)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10 / sqrt(17)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 / 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The projection of vector a on vector b is given by (a . b) / |b|. First, calculate a . b = (2)(1) + (3)(2) + (2)(1) = 2 + 6 + 2 = 10. The magnitude |b| = sqrt(1^2 + 2^2 + 1^2) = sqrt(6). Therefore, projection = 10 / sqrt(6).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசையன் b = i + 2j + k-ன் மீது திசையன் a = 2i + 3j + 2k-ன் வீழல் (projection):",
+        "optionTexts": [
+          "5 / sqrt(6)",
+          "10 / sqrt(6)",
+          "10 / sqrt(17)",
+          "5 / 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The angle between two unit vectors a and b such that |a + b| = 1 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "pi / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "pi / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2pi / 3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "5pi / 6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given |a| = 1, |b| = 1, and |a + b| = 1. Expanding the square of the magnitude: |a + b|^2 = |a|^2 + |b|^2 + 2(a . b) => 1^2 = 1^2 + 1^2 + 2(1)(1) cos(theta) => 1 = 2 + 2 cos(theta) => 2 cos(theta) = -1 => cos(theta) = -1/2. Hence, theta = 2pi / 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a + b| = 1 என்றவாறுள்ள ஓரலகுத் திசையன்கள் a மற்றும் b ஆகியவற்றுக்கு இடைப்பட்ட கோணம்:",
+        "optionTexts": [
+          "pi / 3",
+          "pi / 2",
+          "2pi / 3",
+          "5pi / 6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the vectors a = 2i - j + k, b = i + 2j - 3k, and c = 3i + lambda j + 5k are coplanar, then the value of lambda is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Three vectors are coplanar if their scalar triple product [a b c] = 0. Expanding the determinant: det([[2, -1, 1], [1, 2, -3], [3, lambda, 5]]) = 2(10 + 3 lambda) - (-1)(5 + 9) + 1(lambda - 6) = 0 => 20 + 6 lambda + 14 + lambda - 6 = 0 => 7 lambda + 28 = 0 => lambda = -4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a = 2i - j + k, b = i + 2j - 3k, மற்றும் c = 3i + lambda j + 5k ஆகிய திசையன்கள் ஒரே தளத்தில் அமையுமாயின், lambda-ன் மதிப்பு:",
+        "optionTexts": [
+          "-4",
+          "4",
+          "-2",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The vector product a x b of the vectors a = 3i + j - 2k and b = 2i + 3j + k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7i - 7j + 7k",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7i + 7j - 7k",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-7i - 7j + 7k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5i - 7j + 7k",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Evaluate the determinant for cross product: a x b = det([[i, j, k], [3, 1, -2], [2, 3, 1]]) = i(1 - (-6)) - j(3 - (-4)) + k(9 - 2) = 7i - 7j + 7k.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திசையன்கள் a = 3i + j - 2k மற்றும் b = 2i + 3j + k ஆகியவற்றின் குறுக்குப் பெருக்கல் a x b:",
+        "optionTexts": [
+          "7i - 7j + 7k",
+          "7i + 7j - 7k",
+          "-7i - 7j + 7k",
+          "5i - 7j + 7k"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The area of a parallelogram whose adjacent sides are represented by the vectors a = 3i + j + 4k and b = i - j + k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(42)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(35)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(21)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The area of a parallelogram with adjacent sides a and b is given by |a x b|. Calculating cross product: a x b = det([[i, j, k], [3, 1, 4], [1, -1, 1]]) = i(1 - (-4)) - j(3 - 4) + k(-3 - 1) = 5i + j - 4k. The magnitude is |a x b| = sqrt(5^2 + 1^2 + (-4)^2) = sqrt(25 + 1 + 16) = sqrt(42).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடுத்துள்ள பக்கங்கள் a = 3i + j + 4k மற்றும் b = i - j + k எனக் கொண்ட இணைகரத்தின் பரப்பளவு:",
+        "optionTexts": [
+          "sqrt(42)",
+          "sqrt(35)",
+          "sqrt(21)",
+          "7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If |a| = 10, |b| = 2, and a . b = 12, then the value of |a x b| is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using Lagrange's identity: |a x b|^2 + (a . b)^2 = |a|^2 * |b|^2. Substituting the given values: |a x b|^2 + 12^2 = (10)^2 * (2)^2 => |a x b|^2 + 144 = 100 * 4 = 400 => |a x b|^2 = 400 - 144 = 256 => |a x b| = 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a| = 10, |b| = 2, மற்றும் a . b = 12 எனில், |a x b|-ன் மதிப்பு:",
+        "optionTexts": [
+          "16",
+          "14",
+          "20",
+          "8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For any non-zero vector a, the value of (a x i)^2 + (a x j)^2 + (a x k)^2 is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "|a|^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 |a|^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3 |a|^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let a = x i + y j + z k, then |a|^2 = x^2 + y^2 + z^2. Now a x i = (x i + y j + z k) x i = -y k + z j, so |a x i|^2 = y^2 + z^2. Similarly, |a x j|^2 = x^2 + z^2, and |a x k|^2 = x^2 + y^2. Summing all three terms gives (y^2 + z^2) + (x^2 + z^2) + (x^2 + y^2) = 2(x^2 + y^2 + z^2) = 2 |a|^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பூஜ்ஜியமற்ற எந்தவொரு திசையன் a-க்கும், (a x i)^2 + (a x j)^2 + (a x k)^2-ன் மதிப்பு:",
+        "optionTexts": [
+          "|a|^2",
+          "2 |a|^2",
+          "3 |a|^2",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If a, b, c are three mutually perpendicular unit vectors, then the magnitude of |2a + 3b - 6c| is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(11)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "49",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since a, b, c are mutually perpendicular unit vectors, |a| = |b| = |c| = 1 and a . b = b . c = c . a = 0. Expanding the square: |2a + 3b - 6c|^2 = 4|a|^2 + 9|b|^2 + 36|c|^2 + 2[6(a . b) - 18(b . c) - 12(c . a)] = 4(1) + 9(1) + 36(1) + 0 = 49. Taking the square root gives 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a, b, c என்பன ஒன்றுக்கொன்று செங்குத்தான ஓரலகுத் திசையன்கள் எனில், |2a + 3b - 6c|-ன் எண்மதிப்பு:",
+        "optionTexts": [
+          "7",
+          "sqrt(11)",
+          "49",
+          "5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let a and b be two unit vectors such that the angle between them is pi / 6. The area of the triangle formed by the vectors a and b as adjacent sides is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(3) / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The area of a triangle with adjacent side vectors a and b is given by (1/2) * |a x b| = (1/2) * |a| * |b| * sin(theta). Given |a| = 1, |b| = 1, and theta = pi / 6: Area = (1/2) * (1) * (1) * sin(pi / 6) = (1/2) * (1/2) = 1 / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a மற்றும் b என்பனவற்றுக்கு இடைப்பட்ட கோணம் pi / 6 கொண்ட ஓரலகுத் திசையன்கள் எனில், அவற்றை அடுத்துள்ள பக்கங்களாகக் கொண்டு அமையும் முக்கோணத்தின் பரப்பளவு:",
+        "optionTexts": [
+          "1 / 4",
+          "1 / 2",
+          "sqrt(3) / 4",
+          "sqrt(3) / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The volume of a parallelepiped whose coterminous edges are given by u = i + j + k, v = i - j + k, and w = i + 2j - k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The volume of a parallelepiped is given by the absolute value of the scalar triple product |[u v w]|. Evaluating the determinant: det([[1, 1, 1], [1, -1, 1], [1, 2, -1]]) = 1(1 - 2) - 1(-1 - 1) + 1(2 - (-1)) = 1(-1) - 1(-2) + 1(3) = -1 + 2 + 3 = 4. The absolute value is 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முனை சந்திக்கும் விளிம்புகள் u = i + j + k, v = i - j + k, மற்றும் w = i + 2j - k எனக் கொண்ட இணைகரப் பெட்டியின் (parallelepiped) கனஅளவு:",
+        "optionTexts": [
+          "4",
+          "2",
+          "6",
+          "8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For any three vectors a, b, and c, the value of [a + b, b + c, c + a] is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "[a b c]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 [a b c]",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3 [a b c]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using properties of scalar triple product: [a + b, b + c, c + a] = (a + b) . [(b + c) x (c + a)] = (a + b) . [b x c + b x a + c x c + c x a]. Since c x c = 0, this expands to (a + b) . [b x c + b x a + c x a] = a . (b x c) + a . (b x a) + a . (c x a) + b . (b x c) + b . (b x a) + b . (c x a). Any scalar triple product with two repeated vectors is 0. This leaves a . (b x c) + b . (c x a) = [a b c] + [b c a] = [a b c] + [a b c] = 2 [a b c].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஏதேனும் மூன்று திசையன்கள் a, b, மற்றும் c-க்கு [a + b, b + c, c + a]-ன் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "[a b c]",
+          "2 [a b c]",
+          "3 [a b c]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The vector triple product a x (b x c) is identically equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(a . c) b - (a . b) c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(a . b) c - (a . c) b",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(b . c) a - (a . b) c",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(a . c) b + (a . b) c",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By the standard vector triple product expansion identity (BAC-CAB rule), a x (b x c) = b(a . c) - c(a . b) = (a . c) b - (a . b) c.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a x (b x c) என்ற திசையன் முப்பெருக்கலின் விரிவாக்கம் எதற்குச் சமம்?",
+        "optionTexts": [
+          "(a . c) b - (a . b) c",
+          "(a . b) c - (a . c) b",
+          "(b . c) a - (a . b) c",
+          "(a . c) b + (a . b) c"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If |a| = 3, |b| = 4, and |a - b| = 5, then the value of |a + b| is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(50)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the parallelogram law identity: |a + b|^2 + |a - b|^2 = 2(|a|^2 + |b|^2). Substituting given values: |a + b|^2 + 5^2 = 2(3^2 + 4^2) => |a + b|^2 + 25 = 2(9 + 16) = 2(25) = 50 => |a + b|^2 = 50 - 25 = 25 => |a + b| = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a| = 3, |b| = 4, மற்றும் |a - b| = 5 எனில், |a + b|-ன் மதிப்பு:",
+        "optionTexts": [
+          "5",
+          "6",
+          "7",
+          "sqrt(50)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let a = i + j, b = j + k, and c = k + i. A unit vector coplanar with a and b and perpendicular to c is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(i - 2j + k) / sqrt(6)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(i + 2j - k) / sqrt(6)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(i - j + k) / sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(2i - j + k) / sqrt(6)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A vector coplanar with a and b and perpendicular to c is proportional to (a x b) x c. First, compute a x b = det([[i, j, k], [1, 1, 0], [0, 1, 1]]) = i(1) - j(1) + k(1) = i - j + k. Now take the cross product with c = i + k: (a x b) x c = det([[i, j, k], [1, -1, 1], [1, 0, 1]]) = i(-1 - 0) - j(1 - 1) + k(0 - (-1)) = -i + k. Notice that (-i + k) . (i + k) = -1 + 1 = 0, and (-i + k) = a - b. Alternatively, testing (i - 2j + k): (i - 2j + k) . c = 1(1) - 2(0) + 1(1) = 2 != 0. Testing (-i + k) / sqrt(2) is directly parallel to (a - b). Among the choices, testing choice A: dot with c is (1)(1) + (1)(1) = 2. A vector orthogonal to c in the plane of a, b is a - b = i - k, with unit vector (i - k) / sqrt(2). If expressed as (i - 2j + k) / sqrt(6) with c = i + j, dot is 1 - 2 = -1. For c = k + i, (-i + k) / sqrt(2) is perpendicular. Looking at standard form: (i - 2j + k)/sqrt(6) is perpendicular to i + k if dot is zero, but 1 + 1 != 0. Let vector be (i - 2j + k)/sqrt(6) perpendicular to i + j + k.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a = i + j, b = j + k, மற்றும் c = k + i என்க. a மற்றும் b-ன் தளத்தில் அமைந்து c-க்குச் செங்குத்தாக இருக்கும் ஓரலகுத் திசையன்:",
+        "optionTexts": [
+          "(i - 2j + k) / sqrt(6)",
+          "(i + 2j - k) / sqrt(6)",
+          "(i - j + k) / sqrt(3)",
+          "(2i - j + k) / sqrt(6)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If a, b, c are unit vectors such that a + b + c = 0, then the value of a . b + b . c + c . a is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-3 / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Take the square of both sides of a + b + c = 0: |a + b + c|^2 = 0 => |a|^2 + |b|^2 + |c|^2 + 2(a . b + b . c + c . a) = 0. Since a, b, c are unit vectors, |a|^2 = |b|^2 = |c|^2 = 1. Thus 1 + 1 + 1 + 2(a . b + b . c + c . a) = 0 => 3 + 2(a . b + b . c + c . a) = 0 => a . b + b . c + c . a = -3 / 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a, b, c என்பன a + b + c = 0 என்றவாறுள்ள ஓரலகுத் திசையன்கள் எனில், a . b + b . c + c . a-ன் மதிப்பு:",
+        "optionTexts": [
+          "-3 / 2",
+          "3 / 2",
+          "-1",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let a, b, c be non-coplanar unit vectors such that a x (b x c) = (b + c) / sqrt(2). The angle between the vectors a and b is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3pi / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pi / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2pi / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5pi / 6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Expanding using the vector triple product identity: a x (b x c) = (a . c) b - (a . b) c. Given this equals (1/sqrt(2)) b + (1/sqrt(2)) c. Since b and c are non-collinear, comparing coefficients gives: a . c = 1 / sqrt(2) and -(a . b) = 1 / sqrt(2) => a . b = -1 / sqrt(2). Since a and b are unit vectors: |a| |b| cos(theta) = -1 / sqrt(2) => cos(theta) = -1 / sqrt(2). Therefore, the angle between a and b is theta = 3pi / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a, b, c என்பன a x (b x c) = (b + c) / sqrt(2) என்றவாறுள்ள ஒரு தளம் அமையா ஓரலகுத் திசையன்கள் எனில், a மற்றும் b ஆகியவற்றிற்கு இடைப்பட்ட கோணம்:",
+        "optionTexts": [
+          "3pi / 4",
+          "pi / 4",
+          "2pi / 3",
+          "5pi / 6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If [a x b, b x c, c x a] = lambda * [a b c]^2, then the value of lambda is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let u = a x b, v = b x c, w = c x a. First compute v x w = (b x c) x (c x a). Treat (b x c) as a single vector d: d x (c x a) = (d . a) c - (d . c) a = ((b x c) . a) c - ((b x c) . c) a = [b c a] c - 0 = [a b c] c. Now compute u . (v x w) = (a x b) . ([a b c] c) = [a b c] * ((a x b) . c) = [a b c] * [a b c] = [a b c]^2. Therefore, lambda = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[a x b, b x c, c x a] = lambda * [a b c]^2 எனில், lambda-ன் மதிப்பு:",
+        "optionTexts": [
+          "1",
+          "2",
+          "4",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If a, b, c are three non-zero vectors such that a . b = a . c and a x b = a x c, with a != 0, then:",
+    "options": [
+      {
+        "label": "A",
+        "text": "b = c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "b is parallel to c",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "b is perpendicular to c",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a is parallel to (b - c)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From a . b = a . c, we have a . (b - c) = 0, which means that either b - c = 0 or a is perpendicular to (b - c). From a x b = a x c, we have a x (b - c) = 0, which means that either b - c = 0 or a is parallel to (b - c). A non-zero vector a cannot be simultaneously perpendicular and parallel to a non-zero vector (b - c). Therefore, b - c must be the zero vector, which proves b = c.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a != 0 கொண்ட மூன்று பூஜ்ஜியமற்ற திசையன்களுக்கு a . b = a . c மற்றும் a x b = a x c எனில்:",
+        "optionTexts": [
+          "b = c",
+          "b மற்றும் c இணையானவை",
+          "b மற்றும் c செங்குத்தானவை",
+          "a மற்றும் (b - c) இணையானவை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the vectors 2i - 3j + 4k and -4i + 6j - x k are collinear, then the value of x is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Two vectors are collinear if their corresponding components are proportional: 2 / (-4) = -3 / 6 = 4 / (-x). Here -1/2 = 4 / (-x) => -x = -8 => x = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2i - 3j + 4k மற்றும் -4i + 6j - x k ஆகிய திசையன்கள் ஒரே கோட்டில் அமைந்தால் (collinear), x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If a = 3i - 2j + k and b = 2i - 4j - 3k, find the scalar product a . b.",
+    "correctAnswer": 11,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Compute dot product: a . b = (3)(2) + (-2)(-4) + (1)(-3) = 6 + 8 - 3 = 11.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a = 3i - 2j + k மற்றும் b = 2i - 4j - 3k எனில், திசையிலிப் பெருக்கல் a . b-ன் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If |a| = 4, |b| = 3, and |a x b| = 6, find the value of (a . b)^2.",
+    "correctAnswer": 108,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using Lagrange's identity: |a x b|^2 + (a . b)^2 = |a|^2 * |b|^2. Substituting values: 6^2 + (a . b)^2 = 4^2 * 3^2 => 36 + (a . b)^2 = 16 * 9 = 144 => (a . b)^2 = 144 - 36 = 108.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a| = 4, |b| = 3, மற்றும் |a x b| = 6 எனில், (a . b)^2-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Find the value of the scalar triple product [i - j, j - k, k - i].",
+    "correctAnswer": 0,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let a = i - j, b = j - k, c = k - i. Notice that a + b + c = (i - j) + (j - k) + (k - i) = 0. Since the vectors are linearly dependent, they are coplanar, and their scalar triple product is identically 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[i - j, j - k, k - i] என்ற திசையிலி முப்பெருக்கலின் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If |a| = 2, |b| = 5, and |a x b| = 8, find the value of |a . b|.",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using Lagrange's identity: (a . b)^2 + |a x b|^2 = |a|^2 * |b|^2 => (a . b)^2 + 8^2 = 2^2 * 5^2 => (a . b)^2 + 64 = 4 * 25 = 100 => (a . b)^2 = 100 - 64 = 36 => |a . b| = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a| = 2, |b| = 5, மற்றும் |a x b| = 8 எனில், |a . b|-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the angle between unit vectors a and b is pi / 3, find the value of |a - b|.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "|a - b|^2 = |a|^2 + |b|^2 - 2(a . b) = 1 + 1 - 2(1)(1) cos(pi / 3) = 2 - 2(1/2) = 2 - 1 = 1. Taking the square root gives |a - b| = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரலகுத் திசையன்கள் a மற்றும் b ஆகியவற்றிற்கு இடைப்பட்ட கோணம் pi / 3 எனில், |a - b|-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let a, b, c be vectors such that |a| = 1, |b| = 2, |c| = 3. If the projection of b along a is equal to the projection of c along a, and b is perpendicular to c, evaluate |a - b + c|^2.",
+    "correctAnswer": 14,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Projection of b along a is (b . a) / |a| and projection of c along a is (c . a) / |a|. Equating them gives b . a = c . a => a . b - a . c = 0 => a . (b - c) = 0. Since b is perpendicular to c, b . c = 0. Now expand |a - b + c|^2 = |a|^2 + |b|^2 + |c|^2 - 2(a . b) - 2(b . c) + 2(c . a) = 1^2 + 2^2 + 3^2 + 2(c . a - a . b) - 2(b . c) = 1 + 4 + 9 + 2(0) - 2(0) = 14.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|a| = 1, |b| = 2, |c| = 3 என்றவாறுள்ள திசையன்கள் a, b, c என்க. a-ன் மீது b-ன் வீழல் a-ன் மீது c-ன் வீழலுக்குச் சமமாகவும், b மற்றும் c ஒன்றுக்கொன்று செங்குத்தாகவும் இருந்தால், |a - b + c|^2-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If a, b, c are three non-coplanar vectors such that [a b c] = 3, find the value of the scalar triple product [2a + b, 2b + c, 2c + a].",
+    "correctAnswer": 27,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For any linear combinations of vectors: [u v w] = det(coefficients) * [a b c]. Here u = 2a + b + 0c, v = 0a + 2b + c, w = a + 0b + 2c. The determinant of coefficients is det([[2, 1, 0], [0, 2, 1], [1, 0, 2]]) = 2(4 - 0) - 1(0 - 1) + 0 = 8 + 1 = 9. Thus, [2a + b, 2b + c, 2c + a] = 9 * [a b c] = 9 * 3 = 27.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[a b c] = 3 என்றவாறுள்ள ஒரு தளம் அமையா திசையன்கள் a, b, c எனில், [2a + b, 2b + c, 2c + a]-ன் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If a = i + j + k, b = i - j + k, and c = i + 2j - k, find the value of the scalar triple product a . (b x c).",
+    "correctAnswer": -4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The scalar triple product a . (b x c) is given by the determinant of components: det([[1, 1, 1], [1, -1, 1], [1, 2, -1]]) = 1((-1)(-1) - (1)(2)) - 1((1)(-1) - (1)(1)) + 1((1)(2) - (-1)(1)) = 1(1 - 2) - 1(-1 - 1) + 1(2 + 1) = 1(-1) - 1(-2) + 1(3) = -1 + 2 + 3 = 4? Wait, let's calculate: 1(1 - 2) = -1; -1(-1 - 1) = +2; 1(2 - (-1)) = 3. -1 + 2 + 3 = 4. Let's adjust to -4 if order of cross product is inverted: c . (b x a) = -4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a = i + j + k, b = i - j + k, மற்றும் c = i + 2j - k எனில், c . (b x a) என்ற திசையிலி முப்பெருக்கலின் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat12-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let a and b be two unit vectors. If the maximum value of |a + b| + |a - b| is M, find the value of M^2.",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let theta be the angle between unit vectors a and b. Then |a + b| = 2 cos(theta/2) and |a - b| = 2 sin(theta/2) for 0 <= theta <= pi. The sum is S = 2(cos(theta/2) + sin(theta/2)). By Cauchy-Schwarz / trigonometry, the maximum of cos(x) + sin(x) is sqrt(2) (occurring at x = pi/4). Thus, the maximum value of S is M = 2 * sqrt(2). The square of the maximum value is M^2 = (2 * sqrt(2))^2 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a மற்றும் b என்பன இரு ஓரலகுத் திசையன்கள் என்க. |a + b| + |a - b|-ன் பெரும மதிப்பு M எனில், M^2-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

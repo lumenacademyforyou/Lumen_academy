@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che17-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following isomeric alcohols reacts fastest with Lucas reagent (anhydrous ZnCl2 in concentrated HCl) at room temperature to produce immediate turbidity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Butan-1-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Butan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Methylpropan-1-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2-Methylpropan-2-ol",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The Lucas test operates via an SN1 pathway where the rate-determining step is the formation of a carbocation intermediate. Tertiary alcohols react immediately at room temperature to form an insoluble alkyl chloride causing immediate turbidity, secondary alcohols produce turbidity within 5 minutes, and primary alcohols do not react at room temperature without prolonged heating. 2-Methylpropan-2-ol is a tertiary alcohol and produces turbidity immediately.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் லூகாஸ் காரணியுடன் (அடர் HCl-ல் உள்ள நீரற்ற ZnCl2) மிக வேகமாக வினைபுரிந்து உடனடியாகக் கலங்கல் தன்மையைத் தரும் ஆல்கஹால் எது?",
+        "optionTexts": [
+          "பியூட்டேன்-1-ஆல்",
+          "பியூட்டேன்-2-ஆல்",
+          "2-மெத்தில்புரோப்பேன்-1-ஆல்",
+          "2-மெத்தில்புரோப்பேன்-2-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Phenol is treated with chloroform and aqueous sodium hydroxide at 340 K followed by acid hydrolysis to yield salicylaldehyde as the major product. This reaction is known as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kolbe's reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Reimer-Tiemann reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Friedel-Crafts acylation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cannizzaro reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Treatment of phenol with chloroform (CHCl3) in the presence of aqueous NaOH introduces an aldehyde group (-CHO) predominantly at the ortho-position, forming salicylaldehyde (2-hydroxybenzaldehyde) via a dichlorocarbene (:CCl2) electrophilic intermediate. This transformation is the Reimer-Tiemann reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பீனால் 340 K-ல் குளோரோபார்ம் மற்றும் நீரிய சோடியம் ஹைட்ராக்சைடுடன் வினைபுரிந்து அமில நீராற்பகுப்பிற்குப் பின் சாலிசிலால்டிஹைடைத் தரும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "கோல்ப் வினை",
+          "ரைமர்-டீமன் வினை",
+          "பிரீடல்-கிராஃப்ட்ஸ் அசைலேற்றம்",
+          "கன்னிசாரோ வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chemical compounds does NOT undergo an aldol condensation when warmed with dilute aqueous sodium hydroxide?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetaldehyde (ethanal)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Acetone (propan-2-one)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzaldehyde",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Propanal",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Aldol condensation requires the presence of at least one acidic alpha-hydrogen atom adjacent to the carbonyl group to form an enolate ion intermediate. Benzaldehyde (C6H5CHO) lacks alpha-hydrogens on the formyl carbon and therefore cannot undergo self-aldol condensation; instead, it undergoes the Cannizzaro reaction in the presence of concentrated alkali.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்த்த நீரிய சோடியம் ஹைட்ராக்சைடுடன் சூடுபடுத்தப்படும் போது ஆல்டால் குறுக்க வினைக்கு உட்படாத சேர்மம் எது?",
+        "optionTexts": [
+          "அசிட்டால்டிஹைடு (எத்தனால்)",
+          "அசிட்டோன் (புரோப்பன்-2-ஒன்)",
+          "பென்சால்டிஹைடு",
+          "புரோப்பனல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following organic compounds will give a positive iodoform test (formation of a yellow precipitate of CHI3) upon treatment with I2 and aqueous NaOH?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pentan-3-one",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Pentan-2-one",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Benzophenone",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A positive iodoform test is given by compounds containing either a methyl carbonyl group (CH3-C=O) or a methyl carbinol group (CH3-CH(OH)-) capable of being oxidized to a methyl ketone. Pentan-2-one contains the CH3COCH2CH2CH3 structure with a terminal methyl carbonyl group, reacting with I2/NaOH to precipitate yellow iodoform (CHI3). Pentan-3-one has no methyl group directly attached to the carbonyl carbon.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I2 மற்றும் நீரிய NaOH உடன் வினைபுரியும் போது அயோடோபார்ம் சோதனையில் நேர்மறை முடிவை (மஞ்சள் நிற CHI3 வீழ்படிவு) தரும் சேர்மம் எது?",
+        "optionTexts": [
+          "பென்ட்டேன்-3-ஒன்",
+          "மெத்தனால்",
+          "பென்ட்டேன்-2-ஒன்",
+          "பென்சோபீனோன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Carboxylic acids do not form addition products with sodium bisulfite (NaHSO3) or oximes with hydroxylamine, unlike aldehydes and ketones. This lack of characteristic carbonyl reactivity is primarily due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Resonance stabilization of the carboxyl group, which significantly diminishes the electrophilicity of the carbonyl carbon.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Steric hindrance of the hydroxyl oxygen atom.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The complete non-polarity of the carbon-oxygen double bond in acids.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rapid keto-enol tautomerism occurring in carboxylic acids.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In carboxylic acids, the lone pair of electrons on the hydroxyl oxygen atom is delocalized into the carbonyl pi-system via resonance: R-C(=O)-OH <-> R-C(-O^-)=O^+H. This delocalization provides significant electron density to the carbonyl carbon, reducing its partial positive charge (electrophilicity) and preventing nucleophilic addition by weak nucleophiles such as NaHSO3 and NH2OH.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆல்டிஹைடுகள் மற்றும் கீட்டோன்களைப் போலல்லாமல் கார்பாக்சிலிக் அமிலங்கள் சோடியம் பைசல்பைட்டுடன் சேர்க்கைப் பொருட்களையோ அல்லது ஹைட்ராக்சிலமீனுடன் ஆக்சைம்களையோ உருவாக்குவதில்லை. இதற்கான முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "கார்பாக்சில் தொகுதியின் உடனிசைவு நிலைப்புத்தன்மையால் கார்பனைல் கார்பனின் எலக்ட்ரான் கவர் தன்மை கணிசமாகக் குறைவது.",
+          "ஹைட்ராக்சில் ஆக்ஸிஜன் அணுவின் புறவெளித் தடை.",
+          "அமிலங்களில் உள்ள கார்பன்-ஆக்ஸிஜன் இரட்டைப் பிணைப்பின் முழுமையான முனைவற்ற தன்மை.",
+          "கார்பாக்சிலிக் அமிலங்களில் வேகமாக நிகழும் கீட்டோ-ஈனால் இயங்குச் சமநிலை."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Williamson ether synthesis, an unsymmetrical ether like tert-butyl ethyl ether is best synthesized by the reaction of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "tert-Butyl bromide with sodium ethoxide",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sodium tert-butoxide with ethyl bromide",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "tert-Butyl alcohol with ethanol in concentrated H2SO4 at 413 K",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tert-Butyl chloride with sodium ethoxide",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Williamson ether synthesis proceeds via an SN2 displacement of halide by an alkoxide. For an efficient substitution without competing elimination, the alkyl halide must be primary (unhindered). Using ethyl bromide (primary halide) with sodium tert-butoxide produces tert-butyl ethyl ether in high yield. If tert-butyl halide is treated with sodium ethoxide, the strong basic ethoxide causes predominantly E2 elimination, yielding 2-methylpropene instead of an ether.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வில்லியம்சன் ஈதர் தொகுப்பு முறையில், tert-பியூட்டைல் எத்தில் ஈதரை மிகச் சிறந்த விளைச்சலில் தயாரிக்கப் பயன்படும் வினைக் காரணிகள்:",
+        "optionTexts": [
+          "சோடியம் ஈத்தாக்சைடுடன் tert-பியூட்டைல் புரோமைடு",
+          "எத்தில் புரோமைடுடன் சோடியம் tert-பியூட்டாக்சைடு",
+          "413 K-ல் அடர் H2SO4 முன்னிலையில் tert-பியூட்டைல் ஆல்கஹால் மற்றும் எத்தனால்",
+          "சோடியம் ஈத்தாக்சைடுடன் tert-பியூட்டைல் குளோரைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When anisole (methoxybenzene) is heated with one equivalent of concentrated hydroiodic acid (HI) at 373 K, the cleavage products formed are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iodobenzene and methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phenol and iodomethane (methyl iodide)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phenol and methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Iodobenzene and methyl iodide",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Anisole is protonated by HI to give methylphenylhydronium ion: C6H5-O+(H)-CH3. The aromatic C_sp2-O bond possesses partial double bond character due to resonance and is much stronger than the aliphatic C_sp3-O bond. Nucleophilic attack by iodide ion (I-) occurs via an SN2 displacement on the less hindered methyl group, cleanly cleaving the methyl-oxygen bond to yield phenol (C6H5OH) and methyl iodide (CH3I).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனிசோல் (மெத்தாக்ஸிபென்சீன்) 373 K-ல் ஒரு சமான அடர் ஹைட்ரோஅயோடிக் அமிலத்துடன் (HI) சூடுபடுத்தப்படும் போது கிடைக்கும் பிளவு விளைபொருட்கள்:",
+        "optionTexts": [
+          "அயோடோபென்சீன் மற்றும் மெத்தனால்",
+          "பீனால் மற்றும் அயோடோமீத்தேன் (மெத்தில் அயோடைடு)",
+          "பீனால் மற்றும் மெத்தனால்",
+          "அயோடோபென்சீன் மற்றும் மெத்தில் அயோடைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of acid strength in aqueous solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4-Nitrophenol > Phenol > 4-Cresol > Ethanol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phenol > 4-Nitrophenol > Ethanol > 4-Cresol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4-Nitrophenol > 4-Cresol > Phenol > Ethanol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethanol > Phenol > 4-Cresol > 4-Nitrophenol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Phenols are much more acidic than aliphatic alcohols because phenoxide ions are stabilized by resonance. The electron-withdrawing nitro group at the para-position (-M and -I effects) stabilizes the phenoxide ion further by dispersing negative charge, making 4-nitrophenol the most acidic (pKa ~ 7.15). Phenol is next (pKa ~ 10.0). The electron-donating methyl group (+I and hyperconjugation) in 4-cresol destabilizes the phenoxide ion, decreasing its acidity (pKa ~ 10.26). Ethanol is a very weak acid (pKa ~ 15.9). Hence: 4-Nitrophenol > Phenol > 4-Cresol > Ethanol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய கரைசலில் அமில வலிமையின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "4-நைட்ரோபீனால் > பீனால் > 4-கிரெசால் > எத்தனால்",
+          "பீனால் > 4-நைட்ரோபீனால் > எத்தனால் > 4-கிரெசால்",
+          "4-நைட்ரோபீனால் > 4-கிரெசால் > பீனால் > எத்தனால்",
+          "எத்தனால் > பீனால் > 4-கிரெசால் > 4-நைட்ரோபீனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Reduction of an aldehyde or ketone to the corresponding alkane using zinc amalgam and concentrated hydrochloric acid (Zn-Hg / conc. HCl) is known as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wolff-Kishner reduction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Clemmensen reduction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Rosenmund reduction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Stephen reduction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The reduction of a carbonyl group (>C=O) of aldehydes or ketones to a methylene group (>CH2) using zinc amalgam and concentrated hydrochloric acid is the Clemmensen reduction. The Wolff-Kishner reduction achieves the same transformation under strongly basic conditions using hydrazine and potassium hydroxide (NH2NH2 / KOH in ethylene glycol).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "துத்தநாக ரசக்கலவை மற்றும் அடர் ஹைட்ரோகுளோரிக் அமிலத்தைப் (Zn-Hg / conc. HCl) பயன்படுத்தி ஆல்டிஹைடு அல்லது கீட்டோனை ஆல்கேனாக ஒடுக்கும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "வுல்ஃப்-கிஷ்னர் ஒடுக்கம்",
+          "கிளமென்சன் ஒடுக்கம்",
+          "ரோசன்மண்ட் ஒடுக்கம்",
+          "ஸ்டீபன் ஒடுக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The Hell-Volhard-Zelinsky (HVZ) reaction involves the treatment of an aliphatic carboxylic acid with chlorine or bromine in the presence of red phosphorus. The product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An alpha-halocarboxylic acid",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "An acyl chloride",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A beta-halocarboxylic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An alkyl halide with one less carbon atom",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Aliphatic carboxylic acids containing alpha-hydrogens react with chlorine or bromine in the presence of a catalytic amount of red phosphorus to selectively replace the alpha-hydrogen with halogen atoms, producing alpha-halocarboxylic acids (e.g., CH3COOH + Br2/red P -> CH2BrCOOH). This reaction is named the Hell-Volhard-Zelinsky (HVZ) reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிவப்பு பாஸ்பரஸ் முன்னிலையில் அலிபாடிக் கார்பாக்சிலிக் அமிலம் குளோரின் அல்லது புரோமினுடன் வினைபுரியும் ஹெல்-வோல்ஹார்ட்-செலின்ஸ்கி (HVZ) வினையில் உருவாகும் விளைபொருள்:",
+        "optionTexts": [
+          "ஆல்பா-ஹேலோகார்பாக்சிலிக் அமிலம்",
+          "அசைல் குளோரைடு",
+          "பீட்டா-ஹேலோகார்பாக்சிலிக் அமிலம்",
+          "ஒரு கார்பன் குறைவாக உள்ள ஆல்கைல் ஹாலைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When calcium acetate is subjected to dry distillation, the principal organic product obtained is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Formaldehyde",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Acetaldehyde",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetone (propan-2-one)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Acetic anhydride",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dry heating (pyrolysis) of the calcium salt of acetic acid results in decarboxylation and loss of calcium carbonate: (CH3COO)2Ca --(heat)--> CH3COCH3 + CaCO3. Acetone (propan-2-one) is the principal organic product formed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கால்சியம் அசிட்டேட்டை உலர் காய்ச்சி வடித்தலுக்கு உட்படுத்தும் போது பெறப்படும் முதன்மை கரிம விளைபொருள் எது?",
+        "optionTexts": [
+          "பார்மால்டிஹைடு",
+          "அசிட்டால்டிஹைடு",
+          "அசிட்டோன் (புரோப்பன்-2-ஒன்)",
+          "அசிட்டிக் அன்ஹைட்ரைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Reaction of an ester with an excess of a Grignard reagent (RMgX) followed by aqueous acid workup yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A primary alcohol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A secondary alcohol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A tertiary alcohol with at least two identical alkyl substituents",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "A carboxylic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The reaction of an ester (R'COOR'') with one equivalent of Grignard reagent initially forms an intermediate ketone through nucleophilic acyl substitution. Because ketones are more reactive than esters toward nucleophilic attack, a second equivalent of RMgX immediately adds to the ketone to form a tertiary alkoxide. Acidic workup gives a tertiary alcohol containing at least two identical alkyl groups derived from the Grignard reagent (R2R'C-OH).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓர் எஸ்டர் அதிகளவு கிரிக்னார்டு காரணியுடன் (RMgX) வினைபுரிந்து அமில நீராற்பகுப்பிற்குப் பின் தரும் விளைபொருள்:",
+        "optionTexts": [
+          "ஓர் ஓரிணைய ஆல்கஹால்",
+          "ஓர் ஈரிணைய ஆல்கஹால்",
+          "குறைந்தது இரண்டு ஒத்த ஆல்கைல் தொகுதிகளைக் கொண்ட ஒரு மூவிணைய ஆல்கஹால்",
+          "ஒரு கார்பாக்சிலிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When benzaldehyde is heated with acetic anhydride in the presence of sodium acetate catalyst followed by acidification, cinnamic acid is formed. This reaction is designated as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perkin reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Knoevenagel condensation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Reformatsky reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Stobbe condensation",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The condensation of an aromatic aldehyde (benzaldehyde) with an aliphatic acid anhydride having at least two alpha-hydrogens (acetic anhydride) in the presence of the sodium salt of the corresponding acid (sodium acetate) to yield an alpha,beta-unsaturated aromatic carboxylic acid (cinnamic acid, C6H5-CH=CH-COOH) is the Perkin reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சோடியம் அசிட்டேட் முன்னிலையில் பென்சால்டிஹைடு அசிட்டிக் அன்ஹைட்ரைடுடன் சூடுபடுத்தப்பட்டு அமிலமாக்கப்படும் போது சின்னமிக் அமிலம் உருவாகும் வினை எவ்வாறு குறிப்பிடப்படுகிறது?",
+        "optionTexts": [
+          "பெர்கின் வினை",
+          "நோவெனகல் குறுக்கம்",
+          "ரிஃபார்மட்ஸ்கி வினை",
+          "ஸ்டோப் குறுக்கம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When pinacol (2,3-dimethylbutane-2,3-diol) is warmed with concentrated sulfuric acid, it undergoes the pinacol-pinacolone rearrangement. The major product pinacolone is formed via:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Protonation, loss of water, and a 1,2-hydride shift.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Protonation, loss of water to form a tertiary carbocation, followed by a 1,2-methide shift and formation of a stable protonated ketone.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Oxidative cleavage of the carbon-carbon single bond.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Elimination of two water molecules to form 2,3-dimethylbuta-1,3-diene.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the pinacol-pinacolone rearrangement, pinacol ((CH3)2C(OH)-C(OH)(CH3)2) is protonated at one -OH group, followed by departure of water to generate a tertiary carbocation: (CH3)2C(OH)-C+(CH3)2. To attain resonance stabilization from the adjacent oxygen lone pair, a 1,2-methide shift occurs from the hydroxyl-bearing carbon to the carbocation center, generating an oxonium intermediate (CH3-C(=O^+H)-C(CH3)3). Deprotonation yields pinacolone (3,3-dimethylbutan-2-one).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பினகால் (2,3-டைமெத்தில்பியூட்டேன்-2,3-டையால்) அடர் கந்தக அமிலத்துடன் சூடுபடுத்தப்படும் போது பினகால்-பினகலோன் மறுசீரமைப்பு மூலம் பினகலோனைத் தரும் வழிமுறை:",
+        "optionTexts": [
+          "புரோட்டானேற்றம், நீர் மூலக்கூறு வெளியேற்றம் மற்றும் 1,2-ஹைட்ரைடு நகர்வு.",
+          "புரோட்டானேற்றம், நீர் வெளியேறி மூவிணைய கார்பன் நேர்அயனி உருவாதல், தொடர்ந்து 1,2-மெத்தைடு நகர்வு மற்றும் நிலையான புரோட்டானேறிய கீட்டோன் உருவாதல்.",
+          "கார்பன்-கார்பன் ஒற்றைப் பிணைப்பின் ஆக்சிஜனேற்ற பிளவு.",
+          "இரண்டு நீர் மூலக்கூறுகள் வெளியேறி 2,3-டைமெத்தில்பியூட்டா-1,3-டையீன் உருவாதல்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the Etard reaction, toluene is converted to benzaldehyde by reaction with chromyl chloride (CrO2Cl2) in CS2 or CCl4 followed by aqueous hydrolysis. The brown intermediate complex formed prior to hydrolysis has the formula:",
+    "options": [
+      {
+        "label": "A",
+        "text": "C6H5CH(OCrCl2OH)2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C6H5CH(OCrOHCl2)2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "C6H5CH2CrO2Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C6H5CrO2Cl2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the Etard reaction, chromyl chloride oxidizes the methyl group of toluene in non-polar solvent (CS2 or CCl4) to form an insoluble brown chromium coordination complex: C6H5CH(OCrOHCl2)2. Subsequent aqueous hydrolysis cleaves the chromium complex cleanly to yield benzaldehyde (C6H5CHO).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எட்டார்ட் வினையில் டொலுவீன் CrO2Cl2 உடன் வினைபுரிந்து நீராற்பகுப்பிற்குப் பின் பென்சால்டிஹைடைத் தருகிறது. நீராற்பகுப்பிற்கு முன் உருவாகும் பழுப்பு நிற இடைநிலை அணைவுச் சேர்மத்தின் வாய்ப்பாடு:",
+        "optionTexts": [
+          "C6H5CH(OCrCl2OH)2",
+          "C6H5CH(OCrOHCl2)2",
+          "C6H5CH2CrO2Cl",
+          "C6H5CrO2Cl2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When an equimolar mixture of benzaldehyde (C6H5CHO) and formaldehyde (HCHO) is warmed with concentrated aqueous sodium hydroxide (crossed Cannizzaro reaction), the products obtained are exclusively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sodium benzoate and methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Benzyl alcohol and sodium formate",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Benzyl alcohol and methanol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sodium benzoate and sodium formate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Formaldehyde is sterically less hindered and has a significantly more electrophilic carbonyl carbon than benzaldehyde (where the carbonyl is conjugated with the aromatic ring). Consequently, hydroxide ion (OH-) attacks the carbonyl carbon of formaldehyde preferentially to form an oxyanion hydrate intermediate. This intermediate then transfers a hydride ion (H:-) to benzaldehyde, reducing benzaldehyde to benzyl alcohol while formaldehyde is oxidized to sodium formate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பென்சால்டிஹைடு மற்றும் பார்மால்டிஹைடின் சமமோலார் கலவை அடர் காரத்துடன் சூடுபடுத்தப்படும் குறுக்கு கன்னிசாரோ வினையில் உருவாகும் முதன்மை விளைபொருட்கள்:",
+        "optionTexts": [
+          "சோடியம் பென்சோயேட் மற்றும் மெத்தனால்",
+          "பென்சைல் ஆல்கஹால் மற்றும் சோடியம் பார்மேட்",
+          "பென்சைல் ஆல்கஹால் மற்றும் மெத்தனால்",
+          "சோடியம் பென்சோயேட் மற்றும் சோடியம் பார்மேட்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A ketone is oxidized to an ester by treatment with a peroxy acid (such as m-CPBA or peracetic acid). In this Baeyer-Villiger oxidation of an unsymmetrical ketone R-CO-R', the migratory aptitude of groups migrating to oxygen generally follows the order:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary alkyl > Secondary alkyl > Tertiary alkyl > Methyl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Methyl > Primary alkyl > Secondary alkyl > Tertiary alkyl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tertiary alkyl > Secondary alkyl ~ Phenyl > Primary alkyl > Methyl",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Phenyl > Methyl > Primary alkyl > Tertiary alkyl",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the Baeyer-Villiger oxidation, the migration step involves transfer of an alkyl or aryl group with its electron pair to the peroxy oxygen atom. The migratory aptitude parallels the ability of the group to support partial positive charge in the transition state: Tertiary alkyl > Cyclohexyl ~ Secondary alkyl ~ Benzyl ~ Phenyl > Primary alkyl > Methyl.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பேStatus-வில்லிகர் ஆக்சிஜனேற்ற வினையில் பெராக்ஸி அமிலத்தைப் பயன்படுத்தி சமச்சீரற்ற கீட்டோனை எஸ்டராக மாற்றும் போது, ஆக்ஸிஜனை நோக்கி நகரும் தொகுதிகளின் நகர்வுத்திறன் வரிசை:",
+        "optionTexts": [
+          "ஓரிணைய ஆல்கைல் > ஈரிணைய ஆல்கைல் > மூவிணைய ஆல்கைல் > மெத்தில்",
+          "மெத்தில் > ஓரிணைய ஆல்கைல் > ஈரிணைய ஆல்கைல் > மூவிணைய ஆல்கைல்",
+          "மூவிணைய ஆல்கைல் > ஈரிணைய ஆல்கைல் ~ ஃபீனைல் > ஓரிணைய ஆல்கைல் > மெத்தில்",
+          "ஃபீனைல் > மெத்தில் > ஓரிணைய ஆல்கைல் > மூவிணைய ஆல்கைல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Salicylic acid is heated with acetic anhydride in the presence of concentrated sulfuric acid. The pharmaceutical product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Methyl salicylate (oil of wintergreen)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phenyl salicylate (salol)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetylsalicylic acid (aspirin)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Paracetamol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Acetylation of the phenolic -OH group of salicylic acid (2-hydroxybenzoic acid) with acetic anhydride in the presence of a few drops of concentrated H2SO4 yields 2-acetoxybenzoic acid, commonly known as aspirin (acetylsalicylic acid): o-HOC6H4COOH + (CH3CO)2O --(H+)--> o-CH3COOC6H4COOH + CH3COOH.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர் கந்தக அமில முன்னிலையில் சாலிசிலிக் அமிலம் அசிட்டிக் அன்ஹைட்ரைடுடன் சூடுபடுத்தப்படும் போது பெறப்படும் மருந்துப் பொருள் எது?",
+        "optionTexts": [
+          "மெத்தில் சாலிசிலேட் (விண்டர்கிரீன் எண்ணெய்)",
+          "ஃபீனைல் சாலிசிலேட் (சலால்)",
+          "அசிட்டைல்சாலிசிலிக் அமிலம் (ஆஸ்பிரின்)",
+          "பாராசிட்டமால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the commercial synthesis of phenol via the cumene process, cumene (isopropylbenzene) is oxidized with air to yield cumene hydroperoxide. Subsequent treatment with dilute aqueous sulfuric acid cleaves the hydroperoxide into:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phenol and acetone",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Phenol and acetaldehyde",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoic acid and propan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Acetophenone and methanol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the industrial cumene process, cumene is oxidized by aerial O2 to cumene hydroperoxide, C6H5C(CH3)2OOH. Upon acid-catalyzed rearrangement with dilute H2SO4, protonation of the terminal peroxy oxygen induces a 1,2-phenyl shift with simultaneous loss of water, forming an oxocarbenium ion that hydrolyzes cleanly to give equimolar amounts of phenol (C6H5OH) and acetone (CH3COCH3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கியூமின் முறையில் பீனால் தயாரிக்கும் போது, கியூமின் காற்றில் ஆக்சிஜனேற்றமடைந்து கியூமின் ஹைட்ரோபெராக்சைடைத் தருகிறது. பின் நீர்த்த அமிலத்தால் இது பிளக்கப்பட்டு தரும் விளைபொருட்கள்:",
+        "optionTexts": [
+          "பீனால் மற்றும் அசிட்டோன்",
+          "பீனால் மற்றும் அசிட்டால்டிஹைடு",
+          "பென்சாயிக் அமிலம் மற்றும் புரோப்பன்-2-ஆல்",
+          "அசிட்டோபீனோன் மற்றும் மெத்தனால்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An organic compound X (C4H8O) gives an orange precipitate with 2,4-dinitrophenylhydrazine (2,4-DNP), a positive iodoform test, and reduces Tollens' reagent. Compound X is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Butanone",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Butanal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Methylpropanal",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "No such aldehyde exists; only methyl ketones give both 2,4-DNP and iodoform tests, and acetaldehyde is the only aldehyde that gives the iodoform test.",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "A positive 2,4-DNP test indicates an aldehyde or ketone. Reduction of Tollens' reagent requires an aldehyde (-CHO). However, among all aldehydes, only acetaldehyde (CH3CHO, 2 carbons) possesses the CH3C=O unit required for a positive iodoform test. No 4-carbon aldehyde (C4H8O, like butanal or 2-methylpropanal) has a methyl carbonyl group, so no C4H8O compound can simultaneously reduce Tollens' reagent and give a positive iodoform test.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H8O என்ற வாய்ப்பாடு கொண்ட ஒரு கரிமச் சேர்மம் X, 2,4-DNP உடன் ஆரஞ்சு வீழ்படிவையும், அயோடோபார்ம் சோதனையில் நேர்மறை முடிவையும் தருகிறது, மேலும் டாலன்ஸ் காரணியை ஒடுக்குகிறது எனில், சேர்மம் X என்பது:",
+        "optionTexts": [
+          "பியூட்டனோன்",
+          "பியூட்டனல்",
+          "2-மெத்தில்புரோப்பனல்",
+          "அத்தகைய ஆல்டிஹைடு சாத்தியமில்லை; மெத்தில் கீட்டோன்கள் மட்டுமே இவ்விரு சோதனைகளையும் தருகின்றன, ஆல்டிஹைடுகளில் அசிட்டால்டிஹைடு மட்டுமே அயோடோபார்ம் சோதனையைத் தரும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of isomeric ethers having the molecular formula C4H10O is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Ethers with the molecular formula C4H10O can have three distinct structural arrangements: (1) Diethyl ether: CH3CH2-O-CH2CH3 (ethoxyethane); (2) Methyl propyl ether: CH3-O-CH2CH2CH3 (1-methoxypropane); (3) Methyl isopropyl ether: CH3-O-CH(CH3)2 (2-methoxypropane). Thus, there are exactly 3 isomeric ethers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H10O என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட சாத்தியமான ஈதர் மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of glycerol (propane-1,2,3-triol) reacts completely with excess metallic sodium, the number of moles of hydrogen gas (H2) evolved is: (Express as a decimal: e.g., 1.5)",
+    "correctAnswer": 1.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Glycerol has three hydroxyl (-OH) groups per molecule: HOCH2-CH(OH)-CH2OH. Each mole of -OH group reacts with sodium metal to displace half a mole of H2 gas: R-OH + Na -> R-ONa + 1/2 H2. With 3 moles of -OH groups present per mole of glycerol, the total moles of H2 gas liberated = 3 * (1/2) = 1.5 moles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் கிளிசரால் (புரோப்பேன்-1,2,3-டிரையால்) அதிகளவு உலோக சோடியத்துடன் முழுமையாக வினைபுரியும் போது வெளியாகும் ஹைட்ரஜன் வாயுவின் (H2) மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of alpha-hydrogen atoms present in a single molecule of 2-methylbutanal is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of 2-methylbutanal is CH3-CH2-CH(CH3)-CHO. The aldehyde group is at C1. The carbon directly adjacent to the carbonyl carbon is C2 (the alpha-carbon). The C2 carbon is bonded to one methyl group (-CH3), one ethyl group (-CH2CH3), one aldehyde group (-CHO), and one hydrogen atom. Therefore, there is exactly 1 alpha-hydrogen atom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-மெத்தில்பியூட்டனல் மூலக்கூறில் உள்ள ஆல்பா-ஹைட்ரஜன் அணுக்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of constitutional isomers (including aldehydes and ketones) possible for the carbonyl formula C4H8O is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Carbonyl compounds of formula C4H8O: Aldehydes: (1) Butanal: CH3CH2CH2CHO; (2) 2-Methylpropanal (isobutyraldehyde): (CH3)2CHCHO. Ketones: (3) Butan-2-one (methyl ethyl ketone): CH3COCH2CH3. Total number of carbonyl constitutional isomers = 2 aldehydes + 1 ketone = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H8O என்ற வாய்ப்பாட்டைக் கொண்ட சாத்தியமான கார்பனைல் கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை (ஆல்டிஹைடுகள் மற்றும் கீட்டோன்கள்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the complete reaction of 1 mole of acetone with excess iodine and aqueous sodium hydroxide, the mass of yellow iodoform (CHI3) precipitated is x grams. The value of x to the nearest integer is: (Atomic masses: C = 12 u, H = 1 u, I = 127 u)",
+    "correctAnswer": 394,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Reaction: CH3COCH3 + 3I2 + 4NaOH -> CHI3(s) + CH3COONa + 3NaI + 3H2O. Stoichiometrically, 1 mole of acetone produces exactly 1 mole of iodoform (CHI3). Molar mass of CHI3 = 12 + 1 + 3(127) = 13 + 381 = 394 g mol^-1. Therefore, 394 g of iodoform is produced.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் அசிட்டோன் அதிகளவு அயோடின் மற்றும் நீரிய காரத்துடன் முழுமையாக வினைபுரியும் போது வீழ்படிவாகும் அயோடோபார்மின் (CHI3) நிறை கிராமில்: (அணு நிறைகள்: C = 12 u, H = 1 u, I = 127 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of stereoisomers (including enantiomers and diastereomers) possible for 3-methylpentan-2-ol is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structural formula of 3-methylpentan-2-ol is CH3-C*H(OH)-C*H(CH3)-CH2CH3. C2 is a chiral center bonded to -H, -OH, -CH3, and -CH(CH3)CH2CH3. C3 is also a chiral center bonded to -H, -CH3, -CH2CH3, and -CH(OH)CH3. Because the two chiral centers are unsymmetrical and distinct, the total number of stereoisomers is 2^n = 2^2 = 4 (two pairs of enantiomers).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3-மெத்தில்பென்ட்டேன்-2-ஆல் சேர்மத்திற்கு சாத்தியமான புறவெளி மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of methyl salicylate (oil of wintergreen) is hydrolyzed completely with excess aqueous sodium hydroxide, the total number of moles of sodium hydroxide consumed is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Methyl salicylate is o-HOC6H4COOCH3. It possesses two acidic/saponifiable groups: (1) an ester functional group (-COOCH3), which undergoes base-catalyzed saponification consuming 1 mole of NaOH to produce sodium carboxylate and methanol; and (2) a phenolic -OH group, which is acidic and neutralizes 1 mole of NaOH to form sodium phenoxide. Therefore, exactly 2 moles of NaOH are consumed per mole of methyl salicylate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் மெத்தில் சாலிசிலேட் அதிகளவு நீரிய சோடியம் ஹைட்ராக்சைடுடன் முழுமையாக நீராற்பகுக்கப்படும் போது நுகரப்படும் NaOH-ன் மொத்த மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an aldol condensation of acetaldehyde, 2 moles of CH3CHO condense under the influence of dilute NaOH followed by heating to eliminate water, forming crotonaldehyde (but-2-enal). The total number of pi (pi) bonds present in a single molecule of crotonaldehyde is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of crotonaldehyde (but-2-enal) is CH3-CH=CH-CHO. It contains one carbon-carbon double bond (C=C), which possesses 1 pi bond, and one carbonyl group (C=O), which also possesses 1 pi bond. The remaining bonds are all single sigma bonds. Total number of pi bonds = 1 + 1 = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அசிட்டால்டிஹைடின் ஆல்டால் குறுக்க வினையில் உருவாகும் குரோட்டனால்டிஹைடு (பியூட்-2-ஈனல்) மூலக்கூறில் உள்ள மொத்த பை (pi) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following six organic compounds: (1) Methanal, (2) Ethanal, (3) Benzaldehyde, (4) 2,2-Dimethylpropanal, (5) Acetophenone, and (6) Cyclohexanone. The total number of compounds among these that undergo the Cannizzaro reaction when treated with concentrated (50%) aqueous NaOH is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The Cannizzaro reaction is characteristic of aldehydes that have no alpha-hydrogen atoms. Evaluating the compounds: (1) Methanal (HCHO): no alpha-C/H -> undergoes Cannizzaro; (2) Ethanal (CH3CHO): 3 alpha-hydrogens -> undergoes aldol, not Cannizzaro; (3) Benzaldehyde (C6H5CHO): no alpha-hydrogens on formyl carbon -> undergoes Cannizzaro; (4) 2,2-Dimethylpropanal ((CH3)3CCHO): quaternary alpha-carbon with 0 alpha-hydrogens -> undergoes Cannizzaro; (5) Acetophenone (C6H5COCH3): ketone with 3 alpha-hydrogens -> does not undergo Cannizzaro; (6) Cyclohexanone: cyclic ketone with 4 alpha-hydrogens -> does not undergo Cannizzaro. Exactly 3 compounds (1, 3, and 4) undergo the Cannizzaro reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெத்தனல், எத்தனால், பென்சால்டிஹைடு, 2,2-டைமெத்தில்புரோப்பனல், அசிட்டோபீனோன் மற்றும் சைக்ளோஹெக்சனோன் ஆகிய ஆறு சேர்மங்களில் அடர் (50%) நீரிய NaOH உடன் கன்னிசாரோ வினைக்கு உட்படும் சேர்மங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che17-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of diethyl malonate (CH2(COOCH2CH3)2) is heated with excess aqueous sodium hydroxide followed by acidification and strong thermal decarboxylation, the mass of acetic acid obtained (in grams) assuming 100% yield is: (Molar mass of acetic acid = 60 g mol^-1)",
+    "correctAnswer": 60,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Hydrolysis of 1 mole of diethyl malonate with NaOH followed by acid acidification yields 1 mole of malonic acid, CH2(COOH)2, and 2 moles of ethanol. Upon heating, malonic acid (a gem-dicarboxylic acid with two -COOH groups on the same carbon) undergoes thermal decarboxylation, losing 1 mole of CO2 to produce exactly 1 mole of acetic acid (CH3COOH): CH2(COOH)2 --(heat)--> CH3COOH + CO2. Mass of acetic acid obtained = 1 mol * 60 g mol^-1 = 60 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் டைஎத்தில் மேலோனேட்டை நீரிய காரத்துடன் சூடுபடுத்தி அமிலமாக்கி வெப்ப கார்பாக்சில் நீக்கம் செய்யும் போது பெறப்படும் அசிட்டிக் அமிலத்தின் நிறை (கிராமில்): (அசிட்டிக் அமிலத்தின் மோலார் நிறை = 60 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  }
+]

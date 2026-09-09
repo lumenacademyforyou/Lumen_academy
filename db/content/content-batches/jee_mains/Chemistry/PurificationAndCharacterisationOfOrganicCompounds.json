@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che13-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Sublimation is a separation technique used to purify substances that pass directly from solid to vapor phase upon heating without melting. Which of the following organic substances CANNOT be purified by sublimation because it decomposes rather than subliming?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Naphthalene",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Camphor",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Benzoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sucrose (cane sugar)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Substances like camphor, benzoic acid, naphthalene, anthracene, and phthalic anhydride have high vapor pressures below their melting points and readily sublime upon heating. In contrast, sucrose (cane sugar) does not sublime; upon heating, it undergoes thermal decomposition and charring into caramel and carbon.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பதங்கமாதல் என்பது சூடுபடுத்தும் போது உருகாமல் திட நிலையிலிருந்து நேரடியாக ஆவி நிலைக்கு மாறும் பொருட்களைத் தூய்மைப்படுத்தப் பயன்படும் ஒரு பிரித்தெடுக்கும் முறையாகும். பின்வரும் கரிமப் பொருட்களில் பதங்கமாவதற்குப் பதிலாக சிதைவடைவதால் பதங்கமாதல் முறையில் தூய்மைப்படுத்த முடியாத பொருள் எது?",
+        "optionTexts": [
+          "நாப்தலீன்",
+          "கற்பூரம்",
+          "பென்சாயிக் அமிலம்",
+          "சுக்ரோஸ் (கரும்புச் சர்க்கரை)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Lassaigne's test for the qualitative detection of extra elements (N, S, and halogens), the organic compound is first fused with metallic sodium primarily to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Convert covalently bonded elements into water-soluble ionic sodium salts.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Completely oxidize carbon and hydrogen into carbon dioxide and water vapor.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Reduce all heteroatoms to their elemental volatile gaseous states.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Form an acidic buffer solution required for subsequent qualitative reactions.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In organic compounds, heteroatoms such as nitrogen, sulfur, and halogens are covalently bonded and do not respond to direct ionic precipitation tests. Fusion with molten sodium metal converts these covalently bonded elements into water-soluble ionic sodium compounds: Na + C + N -> NaCN, 2Na + S -> Na2S, and Na + X -> NaX, which can then be identified using inorganic qualitative reagents.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கூடுதல் தனிமங்களை (N, S மற்றும் ஆலஜன்கள்) கண்டறிவதற்கான லேசானின் சோதனையில், கரிமச் சேர்மமானது முதலில் உலோக சோடியத்துடன் உருக்கப்படுவதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "சகப்பிணைப்பில் உள்ள தனிமங்களை நீரில் கரையக்கூடிய அயனி சோடியம் உப்புகளாக மாற்றுவது.",
+          "கார்பன் மற்றும் ஹைட்ரஜனை கார்பன் டை ஆக்சைடு மற்றும் நீராவியாக முழுமையாக ஆக்சிஜனேற்றுவது.",
+          "அனைத்து மாற்று அணுக்களையும் அவற்றின் தனிம நிலை வாயு நிலைகளுக்கு ஒடுக்குவது.",
+          "அடுத்தடுத்த தரமுறை வினைகளுக்குத் தேவையான ஓர் அமிலத் தாங்கல் கரைசலை உருவாக்குவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Lassaigne's test for nitrogen, the sodium fusion extract is boiled with iron(II) sulfate (FeSO4) and acidified with concentrated sulfuric acid. The appearance of a characteristic Prussian blue coloration confirms the presence of nitrogen due to the formation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Na4[Fe(CN)5NOS]",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fe3[Fe(CN)6]2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fe4[Fe(CN)6]3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "[Fe(H2O)5(SCN)]2+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "During sodium fusion, nitrogen forms sodium cyanide (NaCN). On boiling with FeSO4, sodium hexacyanoferrate(II) is produced: 6NaCN + FeSO4 -> Na4[Fe(CN)6] + Na2SO4. On subsequent acidification with concentrated H2SO4, some Fe2+ ions are oxidized to Fe3+, which reacts with hexacyanoferrate(II) to yield a Prussian blue complex of iron(III) hexacyanoferrate(II): 4Fe3+ + 3[Fe(CN)6]4- -> Fe4[Fe(CN)6]3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜனுக்கான லேசானின் சோதனையில், சோடிய உருகிய சாறு இரும்பு(II) சல்பேட்டுடன் (FeSO4) கொதிக்க வைக்கப்பட்டு அடர் கந்தக அமிலத்தால் அமிலமாக்கப்படுகிறது. நைட்ரஜன் இருப்பதை உறுதிப்படுத்தும் பிரஷ்யன் நீல நிறம் உருவாவதற்குக் காரணமான சேர்மம்:",
+        "optionTexts": [
+          "Na4[Fe(CN)5NOS]",
+          "Fe3[Fe(CN)6]2",
+          "Fe4[Fe(CN)6]3",
+          "[Fe(H2O)5(SCN)]2+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When a freshly prepared solution of sodium nitroprusside is added to an alkaline sodium fusion extract containing sulfide ions, an intense purple/violet coloration appears due to the formation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Na4[Fe(CN)5NOS]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Na2[Fe(CN)5NO]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Fe(SCN)3]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fe4[Fe(CN)6]3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Sulfur present in an organic compound forms sodium sulfide (Na2S) in the sodium fusion extract. When treated with sodium nitroprusside, Na2[Fe(CN)5NO], sulfide ions react to form a deep violet/purple complex named sodium thionitroprusside: Na2S + Na2[Fe(CN)5NO] -> Na4[Fe(CN)5NOS].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பைடு அயனிகளைக் கொண்டுள்ள கார சோடிய உருகிய சாற்றுடன் புதிதாகத் தயாரிக்கப்பட்ட சோடியம் நைட்ரோப்ரூஸைடு கரைசல் சேர்க்கப்படும் போது, அடர் ஊதா நிறம் தோன்றுவதற்குக் காரணமான சேர்மம்:",
+        "optionTexts": [
+          "Na4[Fe(CN)5NOS]",
+          "Na2[Fe(CN)5NO]",
+          "[Fe(SCN)3]",
+          "Fe4[Fe(CN)6]3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In thin-layer chromatography (TLC), the retardation factor (Rf) of a compound is mathematically defined as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(Distance moved by the solvent front from base line) / (Distance moved by the substance from base line)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(Concentration of substance in mobile phase) / (Concentration of substance in stationary phase)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(Time taken by mobile phase) / (Time taken by substance)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(Distance moved by the substance from base line) / (Distance moved by the solvent front from base line)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The retardation factor (Rf value) in planar chromatography (TLC and paper chromatography) is defined as the ratio of the distance traveled by the substance (solute spot) from the base line to the distance traveled by the solvent front from the base line: Rf = (Distance moved by the substance) / (Distance moved by the solvent front).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெல்லிய அடுக்கு வண்ணப்பிரிகையில் (TLC), ஒரு சேர்மத்தின் பின்னடைவுக் காரணி (Rf) கணித ரீதியாக எவ்வாறு வரையறுக்கப்படுகிறது?",
+        "optionTexts": [
+          "(தொடக்கக் கோட்டிலிருந்து கரைப்பான் முனை நகர்ந்த தொலைவு) / (தொடக்கக் கோட்டிலிருந்து பொருள் நகர்ந்த தொலைவு)",
+          "(இயங்கு நிலைமையில் பொருளின் செறிவு) / (நிலையான நிலைமையில் பொருளின் செறிவு)",
+          "(இயங்கு நிலைமை எடுத்துக் கொண்ட நேரம்) / (பொருள் எடுத்துக் கொண்ட நேரம்)",
+          "(தொடக்கக் கோட்டிலிருந்து பொருள் நகர்ந்த தொலைவு) / (தொடக்கக் கோட்டிலிருந்து கரைப்பான் முனை நகர்ந்த தொலைவு)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Kjeldahl's method for the quantitative estimation of nitrogen fails and cannot be used for which of the following organic compounds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aniline (C6H5NH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Nitrobenzene (C6H5NO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Urea (NH2CONH2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Acetamide (CH3CONH2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Kjeldahl's method is not applicable to compounds containing nitrogen in nitro (-NO2) or azo (-N=N-) groups, nor to compounds where nitrogen is part of an aromatic ring (such as pyridine or quinoline). In these compounds, the nitrogen atom is not quantitatively converted into ammonium sulfate upon digestion with concentrated sulfuric acid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜனின் அளவறி பகுப்பாய்விற்கான ஜெல்டால் முறை பின்வரும் எந்தக் கரிமச் சேர்மத்திற்குப் பொருந்தாது?",
+        "optionTexts": [
+          "அனிலீன் (C6H5NH2)",
+          "நைட்ரோபென்சீன் (C6H5NO2)",
+          "யூரியா (NH2CONH2)",
+          "அசிட்டமைடு (CH3CONH2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Aniline is immiscible with water and is purified from non-volatile impurities by steam distillation. Which statement correctly describes the physical principle operating during this steam distillation process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aniline and water distill simultaneously when the sum of their individual vapor pressures equals atmospheric pressure, allowing the mixture to boil below 100 °C.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The mixture boils at a temperature significantly higher than the normal boiling point of aniline (184 °C).",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Aniline reacts chemically with steam to form a low-boiling azeotrope that distills at 50 °C.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Water boils off completely first at 100 °C, after which pure aniline distills at its normal boiling point.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In steam distillation of two immiscible liquids, each liquid exerts its own saturated vapor pressure independently of the other. The mixture begins to boil when the total vapor pressure (P_total = P_water + P_organic) becomes equal to external atmospheric pressure. Because P_total reaches 1 atm while P_water is less than 1 atm, the distillation temperature is strictly lower than 100 °C (the normal boiling point of water) and far below that of aniline (184 °C), preventing thermal decomposition.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனிலீன் நீரில் கலக்காத பண்புடையது மற்றும் நீராவி காய்ச்சி வடித்தல் மூலம் ஆவியாகாத மாசுகளிலிருந்து தூய்மைப்படுத்தப்படுகிறது. இந்த நீராவி காய்ச்சி வடித்தல் செயல்முறையின் இயற்பியல் தத்துவத்தை விளக்கும் சரியான கூற்று எது?",
+        "optionTexts": [
+          "அனிலீன் மற்றும் நீரின் தனித்தனி ஆவி அழுத்தங்களின் கூடுதல் வளிமண்டல அழுத்தத்திற்குச் சமமாகும் போது இரண்டும் ஒரே நேரத்தில் காய்ச்சி வடிக்கப்படுகின்றன, இதனால் கலவை 100 °C-க்குக் கீழ் கொதிக்கிறது.",
+          "இக்கலவையானது அனிலீனின் இயல்பு கொதிநிலையை விட (184 °C) மிக அதிக வெப்பநிலையில் கொதிக்கிறது.",
+          "அனிலீன் நீராவியுடன் வேதிவினைபுரிந்து 50 °C-ல் காய்ச்சி வடியும் குறைந்த கொதிநிலை மாறாக் கொதி கலவையை உருவாக்குகிறது.",
+          "நீர் முதலில் 100 °C-ல் முழுமையாக காய்ச்சி வடிகிறது, பின்னர் தூய அனிலீன் அதன் இயல்பு கொதிநிலையில் காய்ச்சி வடிகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Simple distillation is suitable for separating miscible liquids only when their boiling points differ by at least 25 °C. For a binary liquid mixture whose boiling points are close (differing by less than 25 °C, such as acetone, b.p. 56 °C, and methanol, b.p. 65 °C), fractional distillation must be used because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Simple distillation causes one of the miscible components to undergo irreversible chemical condensation.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The fractionating column lowers the external pressure, allowing both liquids to distill below room temperature.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The fractionating column provides numerous cooling and vaporizing surfaces (theoretical plates) enabling repeated condensation-vaporization cycles that enrich the ascending vapor in the more volatile component.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Simple distillation is applicable only to solids dissolved in organic liquids.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When the boiling point difference between two miscible liquids is small (< 25 °C), the vapors formed contain significant proportions of both components. A fractionating column packed with glass beads or plates provides a high surface area for heat exchange, causing repeated cycles of condensation and vaporization as vapors ascend. This progressively enriches the rising vapor in the more volatile component (lower boiling point) and the descending liquid in the less volatile component.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எளிய காய்ச்சி வடித்தல் என்பது இரு திரவங்களின் கொதிநிலை வேறுபாடு குறைந்தது 25 °C இருக்கும் போது மட்டுமே அவற்றைப் பிரிக்கப் பயன்படுகிறது. கொதிநிலைகள் மிக நெருக்கமாக உள்ள திரவக் கலவைக்கு (அசிட்டோன் 56 °C மற்றும் மெத்தனால் 65 °C) பின்னக் காய்ச்சி வடித்தல் பயன்படுத்தப்படுவதன் காரணம்:",
+        "optionTexts": [
+          "எளிய காய்ச்சி வடித்தல் கலவையில் உள்ள ஒரு கூறு மீளாத வேதி குறுக்கத்திற்கு உள்ளாகக் காரணமாகிறது.",
+          "பின்னக் காய்ச்சி வடித்தல் தம்பமானது வெளி அழுத்தத்தைக் குறைத்து இரு திரவங்களையும் அறை வெப்பநிலைக்குக் கீழே காய்ச்சி வடிக்கிறது.",
+          "பின்னக் காய்ச்சி வடித்தல் தம்பமானது தொடர்ச்சியான ஒடுக்கம்-ஆவியாதல் சுழற்சிகளை ஏற்படுத்தும் பரப்புகளை (தத்துவார்த்த தட்டுகள்) வழங்கி, எளிதில் ஆவியாகும் கூறை மேலேறும் ஆவியில் செறிவூட்டுகிறது.",
+          "எளிய காய்ச்சி வடித்தல் கரிமத் திரவங்களில் கரைந்துள்ள திடப்பொருட்களுக்கு மட்டுமே பொருந்தும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Glycerol has a normal boiling point of 290 °C at 1 atm, but it undergoes extensive thermal decomposition into acrolein at or near this temperature. To safely purify glycerol without decomposition, which laboratory distillation method is used?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Steam distillation",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Fractional distillation at atmospheric pressure",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Simple distillation at atmospheric pressure",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Distillation under reduced pressure (vacuum distillation)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "A liquid boils when its vapor pressure equals the external pressure. By lowering the pressure using a vacuum pump (distillation under reduced pressure), the liquid boils at a much lower temperature than its normal boiling point. Glycerol, which decomposes at 290 °C at 760 mm Hg, boils smoothly at 180 °C under a reduced pressure of 12 mm Hg without undergoing decomposition.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிளிசரால் 1 atm அழுத்தத்தில் 290 °C என்ற இயல்பு கொதிநிலையைக் கொண்டுள்ளது, ஆனால் இந்த வெப்பநிலையில் அது அக்ரோலினாக வெப்பச்சிதைவடைகிறது. சிதைவடையாமல் கிளிசராலைத் தூய்மைப்படுத்தப் பயன்படும் ஆய்வக காய்ச்சி வடித்தல் முறை எது?",
+        "optionTexts": [
+          "நீராவி காய்ச்சி வடித்தல்",
+          "வளிமண்டல அழுத்தத்தில் பின்னக் காய்ச்சி வடித்தல்",
+          "வளிமண்டல அழுத்தத்தில் எளிய காய்ச்சி வடித்தல்",
+          "குறைக்கப்பட்ட அழுத்தத்தில் காய்ச்சி வடித்தல் (வெற்றிட காய்ச்சி வடித்தல்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Before testing for halogens by adding silver nitrate (AgNO3) solution to the sodium fusion extract, the extract is boiled with concentrated or dilute nitric acid (HNO3). What is the primary purpose of this boiling step?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To oxidize halide ions into elemental halogens to enhance precipitate formation.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "To decompose sodium cyanide (NaCN) and sodium sulfide (Na2S) as volatile HCN and H2S gases, preventing interference from white AgCN and black Ag2S precipitates.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "To neutralize excess alkali and maintain an alkaline pH for silver halide precipitation.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "To hydrolyze unreacted organic halides into water-soluble sodium halides.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "If the organic compound contains nitrogen and/or sulfur in addition to halogens, the sodium fusion extract contains NaCN and Na2S. Upon addition of AgNO3 without prior acid treatment, NaCN and Na2S would form white AgCN and black Ag2S precipitates, respectively, interfering with the detection of silver halides (AgCl, AgBr, AgI). Boiling the extract with dilute HNO3 decomposes cyanide and sulfide: NaCN + HNO3 -> NaNO3 + HCN(g) and Na2S + 2HNO3 -> 2NaNO3 + H2S(g), expelling the interfering gases.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சோடிய உருகிய சாற்றுடன் சில்வர் நைட்ரேட் (AgNO3) கரைசலைச் சேர்த்து ஆலஜன்களைச் சோதிப்பதற்கு முன், அச்சாறு நீர்த்த நைட்ரிக் அமிலத்துடன் (HNO3) கொதிக்க வைக்கப்படுவதன் முதன்மை நோக்கம் என்ன?",
+        "optionTexts": [
+          "வீழ்படிவு உருவாவதை அதிகரிக்க ஹாலைடு அயனிகளைத் தனிம நிலை ஆலஜன்களாக ஆக்சிஜனேற்றுவது.",
+          "சோடியம் சயனைடு (NaCN) மற்றும் சோடியம் சல்பைடை (Na2S) முறையே HCN மற்றும் H2S வாயுக்களாக சிதைத்து வெளியேற்றி, வெள்ளை AgCN மற்றும் கருப்பு Ag2S வீழ்படிவுகளால் ஏற்படும் குறுக்கீட்டைத் தடுப்பது.",
+          "அதிகப்படியான காரத்தை நடுநிலையாக்கி கார pH-ஐ பராமரிப்பது.",
+          "வினைபடாத கரிம ஹாலைடுகளை நீரில் கரையும் சோடியம் ஹாலைடுகளாக நீராற்பகுப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An organic compound containing BOTH nitrogen and sulfur is fused with a limited amount of sodium metal. When iron(III) chloride (FeCl3) is added to the acidified extract, a blood-red coloration is observed instead of Prussian blue. This blood-red color is attributed to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fe4[Fe(CN)6]3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Na4[Fe(CN)5NOS]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Fe(SCN)]2+",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "[Fe(H2O)6]3+",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When an organic compound contains both nitrogen and sulfur, fusion with an insufficient amount of sodium yields sodium thiocyanate (NaSCN) rather than separate NaCN and Na2S: Na + C + N + S -> NaSCN. On addition of Fe3+ ions, sodium thiocyanate forms the blood-red coordination species iron(III) thiocyanate: Fe3+ + SCN- -> [Fe(SCN)]2+ (or Fe(SCN)3). Prussian blue is not formed because free cyanide ions (CN-) are absent.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜன் மற்றும் சல்பர் ஆகிய இரண்டையும் கொண்டுள்ள ஒரு கரிமச் சேர்மம் குறைந்த அளவு சோடியத்துடன் உருக்கப்படுகிறது. அமிலமாக்கப்பட்ட சாற்றுடன் FeCl3 சேர்க்கப்படும் போது பிரஷ்யன் நீலத்திற்குப் பதிலாக இரத்த சிவப்பு நிறம் தோன்றுவதற்குக் காரணமான கூறு:",
+        "optionTexts": [
+          "Fe4[Fe(CN)6]3",
+          "Na4[Fe(CN)5NOS]",
+          "[Fe(SCN)]2+",
+          "[Fe(H2O)6]3+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the qualitative detection of phosphorus, the organic compound is heated with sodium peroxide to convert phosphorus into phosphate. The mixture is boiled with concentrated HNO3 and treated with ammonium molybdate, yielding a characteristic canary-yellow precipitate of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(NH4)3PO4 · 12MoO3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "MgNH4PO4 · 6H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(NH4)2[MoO4]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H3PO4 · 12MoO3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Heating an organic compound containing phosphorus with sodium peroxide oxidizes phosphorus to sodium phosphate: Na3PO4. Boiling with concentrated HNO3 produces phosphoric acid: Na3PO4 + 3HNO3 -> H3PO4 + 3NaNO3. On addition of ammonium molybdate in the presence of nitric acid, a canary-yellow precipitate of ammonium phosphomolybdate forms: H3PO4 + 12(NH4)2MoO4 + 21HNO3 -> (NH4)3PO4 · 12MoO3 (or (NH4)3[PMo12O40]) + 21NH4NO3 + 12H2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாஸ்பரஸைக் கண்டறியும் தரமுறை பகுப்பாய்வில், கரிமச் சேர்மம் சோடியம் பெராக்சைடுடன் சூடுபடுத்தப்பட்டு பாஸ்பேட்டாக மாற்றப்படுகிறது. இக்கரைசல் அடர் HNO3 உடன் கொதிக்க வைக்கப்பட்டு அம்மோனியம் மாலிப்டேட்டுடன் சேர்க்கப்படும் போது உருவாகும் மஞ்சள் நிற வீழ்படிவு:",
+        "optionTexts": [
+          "(NH4)3PO4 · 12MoO3",
+          "MgNH4PO4 · 6H2O",
+          "(NH4)2[MoO4]",
+          "H3PO4 · 12MoO3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Differential extraction is a technique used to recover an organic compound from an aqueous solution using an immiscible organic solvent. To achieve maximum extraction efficiency for a given total volume of the extracting solvent, one should:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perform a single extraction using the entire volume of organic solvent at once.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Add a water-miscible solvent like ethanol to the aqueous layer.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Heat the separating funnel above the boiling point of the organic solvent.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Carry out multiple successive extractions using smaller portions of the organic solvent.",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the Nernst distribution law, when a given volume V of extracting solvent is divided into n successive smaller portions (each of volume V/n), the amount of solute remaining unextracted in the aqueous layer is given by W_n = W0 * [V_aq / (K * (V/n) + V_aq)]^n. Mathematically, W_n is significantly smaller for multiple extractions (n > 1) than for a single extraction (n = 1) using the full volume V. Thus, multiple extractions maximize the yield.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வேறுபாட்டு பிரித்தெடுத்தல் முறையில் நீரிய கரைசலில் உள்ள கரிமப் பொருளை பிரித்தெடுக்க ஒரு குறிப்பிட்ட மொத்த கனஅளவு கரைப்பானைப் பயன்படுத்தும் போது அதிகபட்ச பிரித்தெடுக்கும் திறனைப் பெற என்ன செய்ய வேண்டும்?",
+        "optionTexts": [
+          "கரைப்பானின் மொத்த கனஅளவையும் ஒரே முறையில் பயன்படுத்தி ஒற்றைப் பிரித்தெடுத்தலைச் செய்வது.",
+          "நீரில் கலக்கும் எத்தனால் போன்ற கரைப்பானை நீரிய அடுக்கில் சேர்ப்பது.",
+          "பிரிபுனலை கரிமக் கரைப்பானின் கொதிநிலைக்கு மேல் சூடாக்குவது.",
+          "கரிமக் கரைப்பானின் மொத்த கனஅளவை சிறு சிறு பகுதிகளாகப் பிரித்து பலமுறை தொடர்ச்சியாகப் பிரித்தெடுப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chromatographic techniques operates fundamentally on the principle of partition chromatography rather than adsorption chromatography?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Column chromatography on alumina",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thin-layer chromatography (TLC) on silica gel",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Paper chromatography",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Gas-solid adsorption chromatography",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In paper chromatography, the stationary phase is water trapped within the pores of the cellulose fibers of the paper (a liquid stationary phase), while the developing solvent acts as the mobile liquid phase. Separation occurs due to continuous differential partitioning of components between the two liquid phases, making it an example of partition chromatography. Column and thin-layer chromatography using silica or alumina are adsorption chromatography techniques.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வண்ணப்பிரிகை நுட்பங்களில் பரப்புக்கவர்ச்சித் தத்துவத்திற்குப் பதிலாக பகிர்வு வண்ணப்பிரிகைத் தத்துவத்தின் அடிப்படையில் செயல்படுவது எது?",
+        "optionTexts": [
+          "அலுமினா மீதான தம்ப வண்ணப்பிரிகை",
+          "சிலிக்கா ஜெல் மீதான மெல்லிய அடுக்கு வண்ணப்பிரிகை (TLC)",
+          "தாள் வண்ணப்பிரிகை",
+          "வாயு-திட பரப்புக்கவர்ச்சி வண்ணப்பிரிகை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Carius method for the quantitative estimation of sulfur, an organic compound is heated with fuming nitric acid in a sealed tube. The sulfur present is quantitatively converted into sulfuric acid, which is subsequently precipitated and weighed as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Barium sulfate (BaSO4)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Lead sulfate (PbSO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Calcium sulfate (CaSO4)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Barium sulfide (BaS)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the Carius estimation of sulfur, heating with fuming HNO3 oxidizes all sulfur into sulfuric acid (H2SO4). An excess of aqueous barium chloride (BaCl2) solution is added, which precipitates the sulfate quantitatively as white, insoluble barium sulfate: H2SO4 + BaCl2 -> BaSO4(s) + 2HCl. The precipitate is filtered, washed, dried, ignited, and weighed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பரின் அளவறி பகுப்பாய்விற்கான கேரியஸ் முறையில், கரிமச் சேர்மம் புகையும் நைட்ரிக் அமிலத்துடன் சூடுபடுத்தப்பட்டு சல்பியூரிக் அமிலமாக மாற்றப்படுகிறது. பின் இது எந்த வெண் வீழ்படிவாக வீழ்படிவாக்கப்பட்டு எடையிடப்படுகிறது?",
+        "optionTexts": [
+          "பேரியம் சல்பேட் (BaSO4)",
+          "காரீய சல்பேட் (PbSO4)",
+          "கால்சியம் சல்பேட் (CaSO4)",
+          "பேரியம் சல்பைடு (BaS)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the digestion stage of Kjeldahl's method, the organic compound is heated with concentrated H2SO4 in the presence of potassium sulfate (K2SO4) and copper sulfate (CuSO4). What are the specific functions of K2SO4 and CuSO4 in this reaction mixture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "K2SO4 acts as a catalyst, while CuSO4 acts as a reducing agent.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "K2SO4 raises the boiling point of concentrated H2SO4 to accelerate digestion, while CuSO4 acts as a catalyst.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "K2SO4 absorbs evolved SO2 gas, while CuSO4 acts as an acid-base indicator.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both K2SO4 and CuSO4 serve exclusively to buffer the solution against drastic pH changes.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In Kjeldahl digestion, concentrated sulfuric acid boils around 338 °C. Addition of K2SO4 elevates the boiling point of the acid mixture to around 370-400 °C, ensuring complete and rapid thermal digestion of the organic matrix. Copper sulfate (CuSO4) or selenium acts as a catalytic agent that speeds up the conversion of organic nitrogen into ammonium sulfate, (NH4)2SO4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜெல்டால் முறையின் செரித்தல் படியில், கரிமச் சேர்மம் பொட்டாசியம் சல்பேட் (K2SO4) மற்றும் காப்பர் சல்பேட் (CuSO4) முன்னிலையில் அடர் H2SO4 உடன் சூடுபடுத்தப்படுகிறது. இவ்வினைக் கலவையில் K2SO4 மற்றும் CuSO4 ஆகியவற்றின் குறிப்பிட்ட பணிகள் என்ன?",
+        "optionTexts": [
+          "K2SO4 வினைவேக மாற்றியாகவும், CuSO4 ஒடுக்கும் காரணியாகவும் செயல்படுகின்றன.",
+          "K2SO4 அடர் H2SO4-ன் கொதிநிலையை உயர்த்தி செரித்தலை விரைவுபடுத்துகிறது, அதே நேரத்தில் CuSO4 ஒரு வினைவேக மாற்றியாகச் செயல்படுகிறது.",
+          "K2SO4 வெளியாகும் SO2 வாயுவை உறிஞ்சுகிறது, அதே நேரத்தில் CuSO4 ஓர் அமில-கார நிறங்காட்டியாகச் செயல்படுகிறது.",
+          "K2SO4 மற்றும் CuSO4 ஆகிய இரண்டுமே pH மாற்றங்களைத் தடுக்கும் தாங்கல்களாக மட்டுமே செயல்படுகின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An organic liquid X (molar mass = 123 g mol^-1) is immiscible with water and purified by steam distillation at an external pressure of 760 mm Hg. At the distillation temperature of 98 °C, the vapor pressure of pure water is 710 mm Hg. The mass percentage of organic liquid X in the collected distillate is closest to: (Molar mass of water = 18 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "48.1%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15.2%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "67.5%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "32.5%",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Partial pressure of organic liquid X: P_X = P_total - P_water = 760 - 710 = 50 mm Hg. In steam distillation, the ratio of masses of the two distilling liquids is given by: m_X / m_water = (P_X * M_X) / (P_water * M_water) = (50 * 123) / (710 * 18) = 6150 / 12780 = 0.4812. Mass percentage of X in the distillate = [m_X / (m_X + m_water)] * 100 = [0.4812 / (1 + 0.4812)] * 100 = (0.4812 / 1.4812) * 100 = 32.48% ≈ 32.5%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரில் கலக்காத ஒரு கரிமத் திரவம் X (மோலார் நிறை = 123 g mol^-1) 760 mm Hg வளிமண்டல அழுத்தத்தில் நீராவி காய்ச்சி வடித்தல் மூலம் தூய்மைப்படுத்தப்படுகிறது. காய்ச்சி வடித்தல் வெப்பநிலையான 98 °C-ல் தூய நீரின் ஆவி அழுத்தம் 710 mm Hg ஆகும். சேகரிக்கப்பட்ட திரவத்தில் கரிமத் திரவம் X-ன் நிறை சதவீதம் தோராயமாக: (நீரின் மோலார் நிறை = 18 g mol^-1)",
+        "optionTexts": [
+          "48.1%",
+          "15.2%",
+          "67.5%",
+          "32.5%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In Kjeldahl's method for estimation of nitrogen, the ammonia gas liberated from 0.28 g of an organic compound was completely absorbed into 50.0 mL of 0.10 M H2SO4 solution. The excess unreacted acid required 30.0 mL of 0.10 M NaOH for complete neutralization. The percentage of nitrogen in the organic compound is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "25.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "30.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "35.0%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "40.0%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total milliequivalents of H2SO4 taken = 2 * (50.0 mL * 0.10 M) = 10.0 meq. Milliequivalents of NaOH consumed in back-titration = 30.0 mL * 0.10 M = 3.0 meq. Milliequivalents of H2SO4 neutralized by NH3 = 10.0 - 3.0 = 7.0 meq. Since 1 mole of NH3 corresponds to 1 equivalent: millimoles of NH3 = 7.0 mmol. Mass of nitrogen = 7.0 x 10^-3 mol * 14 g mol^-1 = 0.098 g. Percentage of nitrogen = (0.098 g / 0.28 g) * 100 = 35.0%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜெல்டால் முறையில் 0.28 g கரிமச் சேர்மத்திலிருந்து வெளிவந்த அம்மோனியா வாயுவானது 50.0 mL 0.10 M H2SO4 கரைசலில் முழுமையாக உறிஞ்சப்பட்டது. எஞ்சிய அமிலத்தை நடுநிலையாக்க 30.0 mL 0.10 M NaOH தேவைப்பட்டது எனில், அக்கரிமச் சேர்மத்தில் உள்ள நைட்ரஜனின் சதவீதம்:",
+        "optionTexts": [
+          "25.0%",
+          "30.0%",
+          "35.0%",
+          "40.0%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the quantitative estimation of phosphorus, 0.310 g of an organic compound was oxidized with fuming nitric acid. The resulting phosphate was precipitated as magnesium ammonium phosphate and subsequently ignited to yield 0.222 g of magnesium pyrophosphate (Mg2P2O7). The percentage of phosphorus in the compound is: (Atomic masses: P = 31 u, Mg = 24 u, O = 16 u; Molar mass of Mg2P2O7 = 222 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "20.0%",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "31.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15.5%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Molar mass of Mg2P2O7 = 2(24) + 2(31) + 7(16) = 48 + 62 + 112 = 222 g mol^-1. Each mole of Mg2P2O7 (222 g) contains 2 moles of phosphorus atoms (62 g of P). Mass of phosphorus in 0.222 g of Mg2P2O7 = (62 / 222) * 0.222 g = 0.062 g. Percentage of phosphorus = (Mass of P / Mass of organic compound) * 100 = (0.062 g / 0.310 g) * 100 = 20.0%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாஸ்பரஸின் அளவறி பகுப்பாய்வில், 0.310 g கரிமச் சேர்மம் புகையும் நைட்ரிக் அமிலத்தால் ஆக்சிஜனேற்றப்பட்டு, மெக்னீசியம் அம்மோனியம் பாஸ்பேட்டாக வீழ்படிவாக்கப்பட்டு நீரேற்றப்பட்டு 0.222 g மெக்னீசியம் பைரோபாஸ்பேட் (Mg2P2O7) பெறப்பட்டது. அச்சேர்மத்தில் உள்ள பாஸ்பரஸின் சதவீதம்: (அணு நிறைகள்: P = 31 u, Mg = 24 u, O = 16 u; Mg2P2O7 = 222 g mol^-1)",
+        "optionTexts": [
+          "20.0%",
+          "10.0%",
+          "31.0%",
+          "15.5%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A mixture of three organic compounds X, Y, and Z is separated by column chromatography using polar silica gel as the stationary phase and a non-polar solvent (hexane) as the eluent. The adsorption affinities of the compounds on silica gel follow the order: Z > X > Y. Which of the following statements correctly predicts their elution behavior and relative Rf values on a silica TLC plate developed with hexane?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Z elutes first from the column and has the highest Rf value on the TLC plate.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Y elutes first from the column and has the highest Rf value on the TLC plate.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "X elutes first from the column, followed by Z, and Y elutes last.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Z elutes first from the column, followed by X, and Y elutes last.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In adsorption chromatography, components with weaker affinity for the stationary phase move faster with the mobile phase. Since the adsorption affinity on silica gel is Z > X > Y, compound Y is held least strongly; it travels fastest with the non-polar eluent, elutes first from the chromatography column, and travels the greatest distance on a TLC plate (giving it the highest Rf value). Compound Z is held most strongly, travels slowest, elutes last, and exhibits the lowest Rf value.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "X, Y, மற்றும் Z ஆகிய மூன்று கரிமச் சேர்மங்களின் கலவை முனைவுறு சிலிக்கா ஜெல்லை நிலையான நிலைமையாகவும், ஹெக்சேனை இயங்கு நிலைமையாகவும் கொண்டு தம்ப வண்ணப்பிரிகையில் பிரிக்கப்படுகிறது. சிலிக்கா ஜெல் மீதான பரப்புக்கவர்ச்சி கவர்ச்சி விசை Z > X > Y என்ற வரிசையைப் பின்பற்றுகிறது எனில், அவற்றின் வெளியேறும் நடத்தை மற்றும் ஹெக்சேனால் நகர்த்தப்பட்ட சிலிக்கா TLC தட்டிலுள்ள Rf மதிப்புகள் குறித்த சரியான கூற்று எது?",
+        "optionTexts": [
+          "Z முதலில் தம்பத்திலிருந்து வெளியேறும் மற்றும் TLC தட்டில் மிக அதிக Rf மதிப்பைப் பெற்றிருக்கும்.",
+          "Y முதலில் தம்பத்திலிருந்து வெளியேறும் மற்றும் TLC தட்டில் மிக அதிக Rf மதிப்பைப் பெற்றிருக்கும்.",
+          "X முதலில் வெளியேறும், பின்னர் Z, மற்றும் Y கடைசியாக வெளியேறும்.",
+          "Z முதலில் வெளியேறும், பின்னர் X, மற்றும் Y கடைசியாக வெளியேறும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the Liebig combustion method for the quantitative estimation of carbon and hydrogen, 0.200 g of an organic compound on complete combustion yielded 0.440 g of carbon dioxide (CO2). The percentage of carbon in the organic compound is: (Atomic masses: C = 12 u, O = 16 u)",
+    "correctAnswer": 60,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Molar mass of CO2 = 12 + 2(16) = 44 g mol^-1. Mass of carbon present in 0.440 g of CO2 = (12 / 44) * 0.440 g = 0.120 g. Percentage of carbon in the compound = (Mass of carbon / Mass of organic compound) * 100 = (0.120 g / 0.200 g) * 100 = 60%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பன் மற்றும் ஹைட்ரஜனின் அளவறி பகுப்பாய்விற்கான லீபிக் எரிதல் முறையில், 0.200 g கரிமச் சேர்மம் முழுமையாக எரிக்கப்பட்டு 0.440 g கார்பன் டை ஆக்சைடைத் (CO2) தந்தது. அக்கரிமச் சேர்மத்தில் உள்ள கார்பனின் சதவீதம்: (அணு நிறைகள்: C = 12 u, O = 16 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Carius method for the estimation of halogens, 0.142 g of a chlorine-containing organic compound produced 0.287 g of silver chloride (AgCl). The percentage of chlorine in the organic compound is: (Atomic masses: Ag = 108 u, Cl = 35.5 u; Molar mass of AgCl = 143.5 g mol^-1)",
+    "correctAnswer": 50,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mass of chlorine present in 0.287 g of AgCl = (Atomic mass of Cl / Molar mass of AgCl) * Mass of AgCl = (35.5 / 143.5) * 0.287 g = 0.0710 g. Percentage of chlorine = (Mass of chlorine / Mass of organic compound) * 100 = (0.0710 g / 0.142 g) * 100 = 50%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கேரியஸ் முறையில் 0.142 g குளோரின் கொண்ட கரிமச் சேர்மம் 0.287 g சில்வர் குளோரைடைத் (AgCl) தந்தது. அக்கரிமச் சேர்மத்தில் உள்ள குளோரினின் சதவீதம்: (அணு நிறைகள்: Ag = 108 u, Cl = 35.5 u; AgCl = 143.5 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In Dumas method for the estimation of nitrogen, 0.560 g of an organic compound gave 89.6 mL of dry nitrogen gas collected at STP. The percentage of nitrogen in the organic compound is: (Molar volume of ideal gas at STP = 22400 mL mol^-1; Molar mass of N2 = 28 g mol^-1)",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of N2 gas collected at STP = 89.6 mL / 22400 mL mol^-1 = 0.0040 mol. Mass of nitrogen = Moles * Molar mass = 0.0040 mol * 28 g mol^-1 = 0.112 g. Percentage of nitrogen in the compound = (Mass of nitrogen / Mass of organic compound) * 100 = (0.112 g / 0.560 g) * 100 = 20%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டியூமாஸ் முறையில் 0.560 g கரிமச் சேர்மத்திலிருந்து STP-யில் 89.6 mL உலர் நைட்ரஜன் வாயு சேகரிக்கப்பட்டது. அக்கரிமச் சேர்மத்தில் உள்ள நைட்ரஜனின் சதவீதம்: (STP-யில் வாயுவின் மோலார் கனஅளவு = 22400 mL mol^-1; N2 = 28 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Kjeldahl's method, the ammonia evolved from 0.500 g of an organic nitrogenous compound was completely absorbed and neutralized by 25.0 mL of 0.20 M H2SO4 solution. The percentage of nitrogen in the organic compound is: (Atomic mass of N = 14 u)",
+    "correctAnswer": 28,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Reaction: 2NH3 + H2SO4 -> (NH4)2SO4. Millimoles of H2SO4 consumed = Volume * Molarity = 25.0 mL * 0.20 M = 5.0 mmol. From reaction stoichiometry, millimoles of NH3 neutralized = 2 * 5.0 mmol = 10.0 mmol = 0.010 mol. Mass of nitrogen in the sample = 0.010 mol * 14 g mol^-1 = 0.140 g. Percentage of nitrogen = (0.140 g / 0.500 g) * 100 = 28%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஜெல்டால் முறையில் 0.500 g கரிம நைட்ரஜன் சேர்மத்திலிருந்து வெளிவந்த அம்மோனியா வாயுவானது 25.0 mL 0.20 M H2SO4 கரைசலால் முழுமையாக உறிஞ்சப்பட்டு நடுநிலையாக்கப்பட்டது. அக்கரிமச் சேர்மத்தில் உள்ள நைட்ரஜனின் சதவீதம்: (N-ன் அணு நிறை = 14 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Carius method for the estimation of bromine, 0.400 g of an organic compound gave 0.376 g of silver bromide (AgBr). The percentage of bromine in the compound is: (Atomic masses: Ag = 108 u, Br = 80 u; Molar mass of AgBr = 188 g mol^-1)",
+    "correctAnswer": 40,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Molar mass of AgBr = 108 + 80 = 188 g mol^-1. Mass of bromine in 0.376 g of AgBr = (80 / 188) * 0.376 g = 80 * 0.0020 g = 0.160 g. Percentage of bromine = (Mass of bromine / Mass of organic compound) * 100 = (0.160 g / 0.400 g) * 100 = 40%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரோமினின் அளவறி பகுப்பாய்விற்கான கேரியஸ் முறையில் 0.400 g கரிமச் சேர்மம் 0.376 g சில்வர் புரோமைடைத் (AgBr) தந்தது. அச்சேர்மத்தில் உள்ள புரோமினின் சதவீதம்: (அணு நிறைகள்: Ag = 108 u, Br = 80 u; AgBr = 188 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Carius estimation of sulfur, 0.300 g of an organic compound yielded 0.699 g of pure barium sulfate (BaSO4). The percentage of sulfur in the organic compound is: (Atomic masses: Ba = 137 u, S = 32 u, O = 16 u; Molar mass of BaSO4 = 233 g mol^-1)",
+    "correctAnswer": 32,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Molar mass of BaSO4 = 137 + 32 + 4(16) = 233 g mol^-1. Mass of sulfur in 0.699 g of BaSO4 = (32 / 233) * 0.699 g = 32 * 0.0030 g = 0.096 g. Percentage of sulfur = (Mass of sulfur / Mass of organic compound) * 100 = (0.096 g / 0.300 g) * 100 = 32%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பருக்கான கேரியஸ் மதிப்பீட்டில், 0.300 g கரிமச் சேர்மம் 0.699 g தூய பேரியம் சல்பேட்டைத் (BaSO4) தந்தது. அக்கரிமச் சேர்மத்தில் உள்ள சல்பரின் சதவீதம்: (அணு நிறைகள்: Ba = 137 u, S = 32 u, O = 16 u; BaSO4 = 233 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Dumas method, 0.200 g of an organic nitrogen compound yielded 49.2 mL of moist nitrogen gas collected over water at 300 K and 775 mm Hg total atmospheric pressure. The aqueous tension of water at 300 K is 15 mm Hg. The percentage of nitrogen in the compound is: (Take gas constant R = 0.082 L atm K^-1 mol^-1; 1 atm = 760 mm Hg; Molar mass of N2 = 28 g mol^-1)",
+    "correctAnswer": 28,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Pressure of dry nitrogen gas P_dry = P_total - Aqueous tension = 775 - 15 = 760 mm Hg = 1.0 atm. Volume of gas V = 49.2 mL = 0.0492 L. Temperature T = 300 K. Moles of N2 gas = (P_dry * V) / (R * T) = (1.0 * 0.0492) / (0.082 * 300) = 0.0492 / 24.6 = 0.0020 mol. Mass of nitrogen = 0.0020 mol * 28 g mol^-1 = 0.056 g. Percentage of nitrogen = (0.056 g / 0.200 g) * 100 = 28%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டியூமாஸ் முறையில் 0.200 g கரிம நைட்ரஜன் சேர்மத்திலிருந்து 300 K மற்றும் 775 mm Hg வளிமண்டல அழுத்தத்தில் நீரின் மீது 49.2 mL ஈரமான நைட்ரஜன் வாயு சேகரிக்கப்பட்டது. 300 K-ல் நீரின் ஆவி அழுத்தம் 15 mm Hg எனில், அச்சேர்மத்தில் உள்ள நைட்ரஜனின் சதவீதம்: (R = 0.082 L atm K^-1 mol^-1; 1 atm = 760 mm Hg; N2 = 28 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An organic compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. If the molecular mass of the compound is determined to be 180 g mol^-1, the total number of carbon atoms present in one molecule of this compound is: (Atomic masses: C = 12 u, H = 1 u, O = 16 u)",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Relative number of moles: Carbon = 40.0 / 12 = 3.33; Hydrogen = 6.7 / 1 = 6.70; Oxygen = 53.3 / 16 = 3.33. Dividing by the smallest value (3.33): C = 1, H = 2, O = 1. Empirical formula = CH2O. Empirical formula mass = 12 + 2(1) + 16 = 30 g mol^-1. Ratio n = Molecular mass / Empirical formula mass = 180 / 30 = 6. Molecular formula = (CH2O)6 = C6H12O6. Therefore, exactly 6 carbon atoms are present per molecule.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கரிமச் சேர்மத்தில் நிறையின் அடிப்படையில் 40.0% கார்பன், 6.7% ஹைட்ரஜன், மற்றும் 53.3% ஆக்ஸிஜன் உள்ளன. அச்சேர்மத்தின் மூலக்கூறு நிறை 180 g mol^-1 எனில், அதன் ஒரு மூலக்கூறில் உள்ள கார்பன் அணுக்களின் மொத்த எண்ணிக்கை: (அணு நிறைகள்: C = 12 u, H = 1 u, O = 16 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An organic liquid A (molar mass = 140 g mol^-1) is immiscible with water and steam-distills at 99 °C under an external atmospheric pressure of 760 mm Hg. At this temperature, the vapor pressure of pure water is 700 mm Hg. If 54 g of water is collected in the condensed distillate, the mass of organic liquid A collected in the distillate (in grams) is: (Molar mass of water = 18 g mol^-1)",
+    "correctAnswer": 36,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Partial pressure of organic liquid A: P_A = P_total - P_water = 760 - 700 = 60 mm Hg. In steam distillation, the ratio of masses of components in the distillate is: m_A / m_water = (P_A * M_A) / (P_water * M_water). Substituting the values: m_A / 54 = (60 * 140) / (700 * 18) = 8400 / 12600 = 2 / 3. Solving for m_A: m_A = 54 * (2 / 3) = 36 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரில் கலக்காத ஒரு கரிமத் திரவம் A (மோலார் நிறை = 140 g mol^-1) 760 mm Hg வளிமண்டல அழுத்தத்தில் 99 °C-ல் நீராவி காய்ச்சி வடிக்கப்படுகிறது. இந்த வெப்பநிலையில் தூய நீரின் ஆவி அழுத்தம் 700 mm Hg ஆகும். ஒடுக்கப்பட்ட திரவத்தில் 54 g நீர் சேகரிக்கப்பட்டால், அதனுடன் சேகரிக்கப்பட்ட கரிமத் திரவம் A-ன் நிறை (கிராமில்): (நீரின் மோலார் நிறை = 18 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che13-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Complete combustion of 0.200 g of an organic compound containing only carbon, hydrogen, and oxygen yielded 0.440 g of CO2 and 0.144 g of H2O. If the molar mass of the compound is 100 g mol^-1, the total number of hydrogen atoms present in one molecule of this compound is: (Atomic masses: C = 12 u, H = 1 u, O = 16 u)",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mass of carbon = (12 / 44) * 0.440 g = 0.120 g; Moles of C = 0.120 / 12 = 0.010 mol. Mass of hydrogen = (2 / 18) * 0.144 g = 0.016 g; Moles of H = 0.016 / 1 = 0.016 mol. Mass of oxygen = 0.200 - (0.120 + 0.016) = 0.064 g; Moles of O = 0.064 / 16 = 0.0040 mol. Mole ratio C : H : O = 0.010 : 0.016 : 0.0040 = 2.5 : 4 : 1 = 5 : 8 : 2. Empirical formula = C5H8O2. Empirical formula mass = 5(12) + 8(1) + 2(16) = 60 + 8 + 32 = 100 g mol^-1. Since the molar mass is 100 g mol^-1, the molecular formula is C5H8O2, which contains exactly 8 hydrogen atoms per molecule.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பன், ஹைட்ரஜன் மற்றும் ஆக்ஸிஜனை மட்டுமே கொண்டுள்ள 0.200 g கரிமச் சேர்மம் முழுமையாக எரிக்கப்பட்டு 0.440 g CO2 மற்றும் 0.144 g H2O ஆகியவற்றைத் தந்தது. அச்சேர்மத்தின் மோலார் நிறை 100 g mol^-1 எனில், அதன் ஒரு மூலக்கூறில் உள்ள ஹைட்ரஜன் அணுக்களின் மொத்த எண்ணிக்கை: (அணு நிறைகள்: C = 12 u, H = 1 u, O = 16 u)",
+        "optionTexts": []
+      }
+    ]
+  }
+]

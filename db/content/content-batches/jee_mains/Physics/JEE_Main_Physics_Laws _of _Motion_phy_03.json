@@ -1,0 +1,1223 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY03-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A force of 20 N acts on a body of mass 5 kg initially at rest on a smooth horizontal surface. Calculate the distance moved by the body in 4 s.",
+    "options": [
+      {
+        "label": "A",
+        "text": "16 m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "32 m",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "48 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "64 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given: F = 20 N, m = 5 kg, u = 0, t = 4 s. Acceleration a = F/m = 20/5 = 4 m/s². Distance s = ut + (1/2)at² = 0 + (1/2) * 4 * (4)² = 32 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வழுவழுப்பான கிடைமட்டப் பரப்பில் தொடக்கத்தில் ஓய்வுநிலையிலுள்ள 5 kg நிறையுள்ள ஒரு பொருளின் மீது 20 N விசை செயல்படுகிறது. 4 s இல் அப்பொருள் கடந்த தொலைவைக் கணக்கிடுக.",
+        "optionTexts": [
+          "16 m",
+          "32 m",
+          "48 m",
+          "64 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A bullet of mass 0.02 kg moving with a velocity of 200 m/s hits a wooden block and comes to rest after penetrating 20 cm into it. Find the average resistive force exerted by the block.",
+    "options": [
+      {
+        "label": "A",
+        "text": "1000 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2000 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3000 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4000 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given: m = 0.02 kg, u = 200 m/s, v = 0, s = 0.2 m. Using v² = u² + 2as, 0 = (200)² + 2a(0.2) => a = -40000 / 0.4 = -100000 m/s². Magnitude of resistive force F = m|a| = 0.02 * 100000 = 2000 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "200 m/s திசைவேகத்துடன் இயங்கும் 0.02 kg நிறையுள்ள ஒரு துப்பாக்கி தோட்டா மரக்கட்டையில் பாய்ந்து 20 cm ஊடுருவி ஓய்வுநிலைக்கு வருகிறது. மரக்கட்டை அளித்த சராசரி தடைவிசையைக் காண்க.",
+        "optionTexts": [
+          "1000 N",
+          "2000 N",
+          "3000 N",
+          "4000 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cricket ball of mass 0.15 kg moving at a speed of 20 m/s is caught by a player in 0.1 s. Calculate the magnitude of the average force exerted by the ball on the player's hands.",
+    "options": [
+      {
+        "label": "A",
+        "text": "15 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "30 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "45 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Given: m = 0.15 kg, u = 20 m/s, v = 0, dt = 0.1 s. Impulse J = m(v - u) = 0.15 * (0 - 20) = -3 N s. Average force F = |J / dt| = 3 / 0.1 = 15 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 m/s வேகத்தில் வரும் 0.15 kg நிறையுள்ள ஒரு கிரிக்கெட் பந்தை ஒரு ஆட்டக்காரர் 0.1 s இல் பிடிக்கிறார். ஆட்டக்காரரின் கைகளில் பந்து செலுத்திய சராசரி விசையின் அளவைக் கணக்கிடுக.",
+        "optionTexts": [
+          "15 N",
+          "30 N",
+          "45 N",
+          "3 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 10 kg is placed on a rough horizontal surface having coefficient of static friction 0.4. If a horizontal force of 30 N is applied on the block, what is the magnitude of the frictional force acting on it? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "40 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "30 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Normal force N = mg = 10 * 10 = 100 N. Maximum static friction f_s(max) = mu_s * N = 0.4 * 100 = 40 N. Since applied force F = 30 N < f_s(max), the block does not move. Therefore, static friction adjusts to equal the applied force, f_s = 30 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.4 நிலை உராய்வுக் குணகம் கொண்ட சொரசொரப்பான கிடைமட்டப் பரப்பில் 10 kg நிறையுள்ள மரக்கட்டை வைக்கப்பட்டுள்ளது. அதன் மீது 30 N கிடைமட்ட விசை செலுத்தப்பட்டால், அதன் மீது செயல்படும் உராய்வு விசையின் அளவு என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "40 N",
+          "30 N",
+          "10 N",
+          "0 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A man of mass 60 kg stands inside an elevator which is accelerating downwards at 2 m/s². Calculate the apparent weight of the man felt by the elevator floor. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "720 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "600 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "480 N",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "360 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Apparent weight N = m(g - a) = 60 * (10 - 2) = 60 * 8 = 480 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 m/s² கீழ்நோக்கிய முடுக்கத்துடன் இயங்கும் மின்தூக்கியின் உள்ளே 60 kg நிறையுள்ள மனிதர் ஒருவர் நிற்கிறார். மின்தூக்கியின் தரை உணரும் மனிதரின் தோற்ற எடையைக் கணக்கிடுக. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "720 N",
+          "600 N",
+          "480 N",
+          "360 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two masses m1 = 3 kg and m2 = 2 kg are connected by a light string passing over a frictionless light pulley (Atwood machine). Find the acceleration of the system. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 m/s²",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 m/s²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Acceleration a = ((m1 - m2) / (m1 + m2)) * g = ((3 - 2) / (3 + 2)) * 10 = (1 / 5) * 10 = 2 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m1 = 3 kg மற்றும் m2 = 2 kg ஆகிய இரு நிறைகள் உராய்வற்ற இலேசான கப்பியின் வழியாகச் செல்லும் இலேசான சரட்டின் மூலம் இணைக்கப்பட்டுள்ளன. அமைப்பின் முடுக்கத்தைக் காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "2 m/s²",
+          "4 m/s²",
+          "5 m/s²",
+          "10 m/s²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A force vector F = (6i + 8j) N acts on a mass of 2 kg. Find the magnitude of acceleration produced in the body.",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 m/s²",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "14 m/s²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Magnitude of net force |F| = sqrt(6² + 8²) = sqrt(36 + 64) = 10 N. Acceleration a = |F| / m = 10 / 2 = 5 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "F = (6i + 8j) N என்ற விசை வெக்டர் 2 kg நிறையுள்ள பொருளின் மீது செயல்படுகிறது. அப்பொருளில் ஏற்படும் முடுக்கத்தின் அளவைக் காண்க.",
+        "optionTexts": [
+          "5 m/s²",
+          "7 m/s²",
+          "10 m/s²",
+          "14 m/s²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 5 kg is sliding down a frictionless inclined plane inclined at an angle of 30 degrees to the horizontal. Calculate the force parallel to the incline responsible for its acceleration. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "50 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "25 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "25 * sqrt(3) N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Component of gravity parallel to the inclined plane F_parallel = mg sin(30 degrees) = 5 * 10 * 0.5 = 25 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிடைமட்டத்திற்கு 30 டிகிரி கோணத்தில் சாய்ந்துள்ள உராய்வற்ற சாய்தளத்தில் 5 kg நிறையுள்ள பொருள் சாய்ந்து கீழே சறுக்குகிறது. அதன் முடுக்கத்திற்கு காரணமான, சாய்தளத்திற்கு இணையான விசையைக் கணக்கிடுக. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "50 N",
+          "25 N",
+          "25 * sqrt(3) N",
+          "10 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 2 kg moving along x-axis with velocity 10 m/s collides with a wall normally and rebounds back along the same line with a speed of 6 m/s. Find the magnitude of impulse delivered to the body by the wall.",
+    "options": [
+      {
+        "label": "A",
+        "text": "8 N s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12 N s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 N s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "32 N s",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Taking initial direction of motion as positive (+x): Initial momentum p_i = m * u = 2 * (+10) = +20 kg m/s. Final momentum p_f = m * v = 2 * (-6) = -12 kg m/s. Impulse J = p_f - p_i = -12 - 20 = -32 N s. Magnitude |J| = 32 N s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சில் 10 m/s திசைவேகத்தில் செல்லும் 2 kg நிறையுள்ள பொருள் ஒரு சுவரில் செங்குத்தாக மோதி, அதே கோட்டில் 6 m/s வேகத்தில் பின்னோக்கித் திரும்புகிறது. சுவர் பொருளுக்கு அளித்த உந்துவிசையின் அளவைக் காண்க.",
+        "optionTexts": [
+          "8 N s",
+          "12 N s",
+          "20 N s",
+          "32 N s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two blocks of masses 4 kg and 6 kg are kept in contact on a smooth horizontal floor. A horizontal force of 20 N is applied to the 4 kg block towards the 6 kg block. What is the magnitude of contact force between the two blocks?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "20 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Common acceleration of system a = F / (m1 + m2) = 20 / (4 + 6) = 2 m/s². Force required to accelerate the 6 kg block alone is contact force N_contact = m2 * a = 6 * 2 = 12 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 kg மற்றும் 6 kg நிறைகொண்ட இரு கட்டைகள் வழுவழுப்பான கிடைமட்டத் தரையில் ஒன்றுடனொன்று தொட்டுக்கொண்டு வைக்கப்பட்டுள்ளன. 4 kg கட்டையின் மீது 6 kg கட்டையை நோக்கி 20 N கிடைமட்ட விசை செலுத்தப்படுகிறது. இரு கட்டைகளுக்கும் இடையேயான தொடுவிசையின் அளவு என்ன?",
+        "optionTexts": [
+          "8 N",
+          "12 N",
+          "16 N",
+          "20 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 2 kg rests on an inclined plane inclined at 30 degrees to the horizontal. If the coefficient of static friction is 0.8, what is the magnitude of the static friction force acting on the block? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "8 * sqrt(3) N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The downward force along the incline is mg sin(30) = 2 * 10 * 0.5 = 10 N. Maximum possible static friction f_s(max) = mu_s * mg cos(30) = 0.8 * 20 * (sqrt(3)/2) = 8 * sqrt(3) N ≈ 13.86 N. Since mg sin(30) < f_s(max), the block remains in static equilibrium and static friction f_s = mg sin(30) = 10 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிடைமட்டத்திற்கு 30 டிகிரி கோணத்தில் சாய்ந்துள்ள சாய்தளத்தில் 2 kg நிறையுள்ள மரக்கட்டை ஓய்வில் உள்ளது. நிலை உராய்வுக் குணகம் 0.8 எனில், மரக்கட்டையின் மீது செயல்படும் நிலை உராய்வு விசையின் அளவு என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "10 N",
+          "8 * sqrt(3) N",
+          "16 N",
+          "5 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A body of mass 5 kg is kept on a rough horizontal surface with coefficient of kinetic friction mu_k = 0.2. A horizontal force F = 30 N pulls the block. Find the acceleration of the block. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 m/s²",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 m/s²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Kinetic friction force f_k = mu_k * N = mu_k * mg = 0.2 * 5 * 10 = 10 N. Net horizontal force F_net = F - f_k = 30 - 10 = 20 N. Acceleration a = F_net / m = 20 / 5 = 4 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயக்க உராய்வுக் குணகம் mu_k = 0.2 கொண்ட சொரசொரப்பான கிடைமட்டப் பரப்பில் 5 kg நிறையுள்ள பொருள் வைக்கப்பட்டுள்ளது. F = 30 N என்ற கிடைமட்ட விசை பொருளை இழுக்கிறது. பொருளின் முடுக்கத்தைக் காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "2 m/s²",
+          "4 m/s²",
+          "6 m/s²",
+          "8 m/s²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Three blocks of masses m1 = 2 kg, m2 = 3 kg, and m3 = 5 kg are connected by light inextensible strings and pulled by a horizontal force F = 50 N on a smooth horizontal floor. Find the tension T2 in the string connecting m2 and m3.",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "25 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "35 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total mass M = 2 + 3 + 5 = 10 kg. Common acceleration a = F / M = 50 / 10 = 5 m/s². The force F pulls m3 directly (or system from m3 end). Assuming string arrangement: (m1)---T1---(m2)---T2---(m3)---F. Tension T2 accelerates (m1 + m2): T2 = (m1 + m2) * a = (2 + 3) * 5 = 25 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m1 = 2 kg, m2 = 3 kg, மற்றும் m3 = 5 kg நிறைகொண்ட மூன்று கட்டைகள் நீட்சியடையாத இலேசான சரடுகளால் இணைக்கப்பட்டு வழுவழுப்பான கிடைமட்டத் தரையில் F = 50 N என்ற கிடைமட்ட விசையால் இழுக்கப்படுகின்றன. m2 மற்றும் m3 ஐ இணைக்கும் சரட்டின் இழுவிசை T2 ஐக் காண்க. (வரிசை: m1 - T1 - m2 - T2 - m3 - F)",
+        "optionTexts": [
+          "10 N",
+          "25 N",
+          "35 N",
+          "50 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A plumb bob of mass 0.1 kg is suspended from the ceiling of a train carriage. If the train accelerates horizontally at 10 m/s², find the angle made by the string with the vertical in equilibrium relative to the train. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "30 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "45 degrees",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "60 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "90 degrees",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the accelerating frame of the train, pseudo force F_p = m*a acts horizontally. For equilibrium of bob: T sin(theta) = m*a and T cos(theta) = m*g. Dividing gives tan(theta) = a / g = 10 / 10 = 1 => theta = 45 degrees.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ரயிலின் கூரையிலிருந்து 0.1 kg நிறையுள்ள குண்டு ஒன்று தொங்கவிடப்பட்டுள்ளது. ரயில் கிடைமட்டமாக 10 m/s² முடுக்கத்தில் இயங்கினால், ரயிலைப் பொறுத்து சமநிலையில் சரடு செங்குத்துக் கோட்டுடன் செய்யும் கோணத்தைக் காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "30 டிகிரி",
+          "45 டிகிரி",
+          "60 டிகிரி",
+          "90 டிகிரி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F acting on an object of mass 2 kg varies with time t as F = (6t) N, where t is in seconds. If the object starts from rest at t = 0, find its velocity at t = 3 s.",
+    "options": [
+      {
+        "label": "A",
+        "text": "9 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "13.5 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "18 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "27 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Acceleration a(t) = F/m = 6t / 2 = 3t m/s². Velocity v = integral from 0 to 3 of a(t) dt = integral from 0 to 3 of (3t) dt = [1.5 t²] from 0 to 3 = 1.5 * 9 = 13.5 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 kg நிறையுள்ள பொருளின் மீது செயல்படும் F என்ற விசை நேரம் t பொறுத்து F = (6t) N என மாறுகிறது (t வினாடிகளில்). t = 0 இல் பொருள் ஓய்வுநிலையிலிருந்து தொடங்கினால், t = 3 s இல் அதன் திசைவேகத்தைக் காண்க.",
+        "optionTexts": [
+          "9 m/s",
+          "13.5 m/s",
+          "18 m/s",
+          "27 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 1 kg mass resting on a horizontal smooth table is connected by a string passing over a smooth pulley at the edge to a hanging mass of 4 kg. Find the tension in the string during motion. (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "32 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "System acceleration a = (m2 * g) / (m1 + m2) = (4 * 10) / (1 + 4) = 40 / 5 = 8 m/s². Tension pulling m1 on horizontal table is T = m1 * a = 1 * 8 = 8 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வழுவழுப்பான கிடைமட்ட மேசையின் மீதுள்ள 1 kg நிறை, மேசையின் முனையில் உள்ள வழுவழுப்பான கப்பியின் வழியே செல்லும் சரடு மூலம் தொங்கும் 4 kg நிறையுடன் இணைக்கப்பட்டுள்ளது. இயக்கத்தின் போது சரட்டின் இழுவிசையைக் காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "4 N",
+          "8 N",
+          "10 N",
+          "32 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 4 kg is kept on a rough inclined plane of inclination 30 degrees. The coefficient of kinetic friction is mu_k = 1 / (2 * sqrt(3)). What is the acceleration of the block down the incline? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.5 m/s²",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.0 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7.5 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.25 m/s²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Acceleration down incline a = g * (sin(30) - mu_k * cos(30)). Here sin(30) = 0.5, cos(30) = sqrt(3)/2. mu_k * cos(30) = (1 / (2 * sqrt(3))) * (sqrt(3) / 2) = 1/4 = 0.25. Therefore a = 10 * (0.5 - 0.25) = 10 * 0.25 = 2.5 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "30 டிகிரி கோணம் கொண்ட சொரசொரப்பான சாய்தளத்தின் மீது 4 kg நிறையுள்ள மரக்கட்டை வைக்கப்பட்டுள்ளது. இயக்க உராய்வுக் குணகம் mu_k = 1 / (2 * sqrt(3)) எனில், சாய்தளத்தில் கீழ்நோக்கி மரக்கட்டையின் முடுக்கம் என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "2.5 m/s²",
+          "5.0 m/s²",
+          "7.5 m/s²",
+          "1.25 m/s²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A helicopter of mass 2000 kg rises vertically with an upward acceleration of 2 m/s². What is the magnitude and direction of the action force exerted by the crew and passengers of total mass 500 kg on the floor of the helicopter? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4000 N, downwards",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5000 N, downwards",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6000 N, downwards",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "6000 N, upwards",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Normal force exerted by floor on passengers N = m_p * (g + a) = 500 * (10 + 2) = 6000 N upwards. By Newton's third law, action force by passengers on floor is 6000 N downwards.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2000 kg நிறையுள்ள ஹெலிகாப்டர் 2 m/s² மேல்நோக்கிய முடுக்கத்துடன் செங்குத்தாக உயர்கிறது. மொத்தம் 500 kg நிறையுள்ள குழுவினர் மற்றும் பயணிகள் ஹெலிகாப்டரின் தரையில் செலுத்தும் செயல் விசையின் அளவு மற்றும் திசை என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "4000 N, கீழ்நோக்கி",
+          "5000 N, கீழ்நோக்கி",
+          "6000 N, கீழ்நோக்கி",
+          "6000 N, மேல்நோக்கி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A mass of 2 kg is pulled up an inclined plane of inclination 30 degrees at a constant speed of 4 m/s by a force parallel to the incline. If the coefficient of kinetic friction is 0.2, find the magnitude of the pulling force. (Take g = 10 m/s², sqrt(3) = 1.732)",
+    "options": [
+      {
+        "label": "A",
+        "text": "10.0 N",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "13.46 N",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "17.32 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "20.0 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since speed is constant, acceleration a = 0. Applied force F = mg sin(30) + f_k = mg sin(30) + mu_k * mg cos(30) = 2 * 10 * 0.5 + 0.2 * 2 * 10 * (1.732 / 2) = 10 + 3.464 = 13.464 N ≈ 13.46 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "30 டிகிரி சாய்வுக் கோணம் கொண்ட சாய்தளத்தில் 2 kg நிறை, சாய்தளத்திற்கு இணையான விசையால் 4 m/s மாறா வேகத்தில் மேலே இழுக்கப்படுகிறது. இயக்க உராய்வுக் குணகம் 0.2 எனில், இழுவை விசையின் அளவைக் காண்க. (g = 10 m/s², sqrt(3) = 1.732 எனக் கொள்க)",
+        "optionTexts": [
+          "10.0 N",
+          "13.46 N",
+          "17.32 N",
+          "20.0 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A monkey of mass 40 kg climbs up a light rope hanging from a ceiling. The rope can withstand a maximum tension of 600 N without breaking. What is the maximum upward acceleration with which the monkey can climb safely? (Take g = 10 m/s²)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.5 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 m/s²",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "7.5 m/s²",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 m/s²",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Tension when climbing up with acceleration a is T = m(g + a). Maximum allowable tension T_max = 600 N. So 40 * (10 + a) = 600 => 10 + a = 15 => a = 5 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கூரையிலிருந்து தொங்கும் இலேசான கயிற்றில் 40 kg நிறையுள்ள குரங்கு ஒன்று மேலே ஏறுகிறது. கயிறு அறுபடாமல் தாங்கக்கூடிய அதிகபட்ச இழுவிசை 600 N ஆகும். குரங்கு பாதுகாப்பாக ஏறக்கூடிய அதிகபட்ச மேல்நோக்கிய முடுக்கம் என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": [
+          "2.5 m/s²",
+          "5 m/s²",
+          "7.5 m/s²",
+          "10 m/s²"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A force F = 50 N pulls a block of mass 10 kg resting on a smooth horizontal surface at an angle of 37 degrees above the horizontal. Calculate the acceleration of the block in m/s². (Use cos(37 deg) = 0.8)",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Horizontal component of force F_x = F cos(37 deg) = 50 * 0.8 = 40 N. Acceleration a = F_x / m = 40 / 10 = 4 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வழுவழுப்பான கிடைமட்டப் பரப்பில் ஓய்வில் உள்ள 10 kg நிறையுள்ள மரக்கட்டையை, கிடைமட்டத்திற்கு மேலே 37 டிகிரி கோணத்தில் F = 50 N என்ற விசை இழுக்கிறது. மரக்கட்டையின் முடுக்கத்தை m/s² இல் கணக்கிடுக. (cos(37 deg) = 0.8 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A machine gun fires 10 bullets per second, each of mass 0.05 kg with a speed of 800 m/s. Find the force in Newtons required to hold the gun in position.",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Force required F = n * m * v, where n is number of bullets per second. F = 10 * 0.05 * 800 = 400 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எந்திரத்துப்பாக்கி வினாடிக்கு 10 தோட்டாக்களை சுடுகிறது, ஒவ்வொன்றும் 0.05 kg நிறையும் 800 m/s வேகமும் கொண்டது. துப்பாக்கியை நகராமல் வைத்திருக்கத் தேவையான விசையை நியூட்டனில் (N) காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 5 kg lies on a horizontal floor. The coefficient of static friction is 0.5. A horizontal force F is applied to the block. What is the minimum force in Newtons required to just start moving the block? (Take g = 10 m/s²)",
+    "correctAnswer": 25,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Limiting friction force f_s(max) = mu_s * m * g = 0.5 * 5 * 10 = 25 N. Minimum force required to start motion = 25 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "5 kg நிறையுள்ள மரக்கட்டை கிடைமட்டத் தரையில் உள்ளது. நிலை உராய்வுக் குணகம் 0.5 ஆகும். மரக்கட்டையின் மீது கிடைமட்ட விசை F செலுத்தப்படுகிறது. மரக்கட்டையை நகர்த்தத் தொடங்குவதற்குத் தேவையான குறைந்தபட்ச விசை நியூட்டனில் (N) என்ன? (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 1000 kg lift is moving upwards with an acceleration of 3 m/s². Calculate the tension in the supporting cable in kiloNewtons (kN). (Take g = 10 m/s²)",
+    "correctAnswer": 13,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Tension T = m(g + a) = 1000 * (10 + 3) = 13000 N = 13 kN.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1000 kg நிறையுள்ள மின்தூக்கி 3 m/s² மேல்நோக்கிய முடுக்கத்துடன் இயங்குகிறது. தாங்கும் கம்பியில் உள்ள இழுவிசையைக் கிலோநியூட்டனில் (kN) கணக்கிடுக. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block A of mass 2 kg rests on top of block B of mass 8 kg. Block B rests on a smooth horizontal table. The coefficient of static friction between block A and block B is 0.3. Find the maximum horizontal force in Newtons that can be applied to block B so that both blocks move together without slipping. (Take g = 10 m/s²)",
+    "correctAnswer": 30,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Maximum static friction between A and B is f_max = mu_s * m_A * g = 0.3 * 2 * 10 = 6 N. Maximum acceleration of A without slipping a_max = f_max / m_A = 6 / 2 = 3 m/s². For both blocks to move together with a_max, total applied force on system (A + B) is F_max = (m_A + m_B) * a_max = (2 + 8) * 3 = 30 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "8 kg நிறையுள்ள B கட்டையின் மேல் 2 kg நிறையுள்ள A கட்டை ஓய்வில் உள்ளது. B கட்டை வழுவழுப்பான கிடைமட்ட மேசையின் மீதுள்ளது. A மற்றும் B கட்டைகளுக்கு இடையேயான நிலை உராய்வுக் குணகம் 0.3 ஆகும். இரு கட்டைகளும் சறுக்காமல் ஒன்றாக இயங்குவதற்கு B கட்டையின் மீது செலுத்தக்கூடிய அதிகபட்ச கிடைமட்ட விசையை நியூட்டனில் (N) காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 10 kg is pushed against a rough vertical wall by a horizontal force F. If the coefficient of static friction between the block and wall is 0.4, find the minimum horizontal force F in Newtons required to prevent the block from sliding down. (Take g = 10 m/s²)",
+    "correctAnswer": 250,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Normal force against vertical wall N = F. Downward force = mg = 10 * 10 = 100 N. Static friction supporting block upward f_s = mu_s * N = mu_s * F. For equilibrium: mu_s * F = mg => 0.4 * F = 100 => F = 250 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 kg நிறையுள்ள மரக்கட்டை சொரசொரப்பான செங்குத்துச் சுவருக்கு எதிராக கிடைமட்ட விசை F மூலம் அழுத்தப்படுகிறது. மரக்கட்டைக்கும் சுவருக்கும் இடையேயான நிலை உராய்வுக் குணகம் 0.4 எனில், மரக்கட்டை கீழே சறுக்காமல் தடுக்கத் தேவையான குறைந்தபட்ச கிடைமட்ட விசை F ஐ நியூட்டனில் (N) காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a pulley system, mass m1 = 6 kg sits on a rough horizontal surface with coefficient of kinetic friction mu_k = 0.5. A string connected to m1 passes over a smooth pulley at the edge of table and connects to a hanging mass m2 = 4 kg. Find the acceleration of the system in m/s². (Take g = 10 m/s²)",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Frictional force on m1 is f_k = mu_k * m1 * g = 0.5 * 6 * 10 = 30 N. Driving force is weight of m2, W2 = m2 * g = 4 * 10 = 40 N. Net driving force F_net = W2 - f_k = 40 - 30 = 10 N. Total mass M = m1 + m2 = 6 + 4 = 10 kg. Acceleration a = F_net / M = 10 / 10 = 1 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கப்பி அமைப்பில், இயக்க உராய்வுக் குணகம் mu_k = 0.5 கொண்ட சொரசொரப்பான கிடைமட்டப் பரப்பில் m1 = 6 kg நிறை உள்ளது. m1 உடன் இணைக்கப்பட்ட கயிறு மேசையின் முனையில் உள்ள வழுவழுப்பான கப்பியின் வழியே சென்று தொங்கும் m2 = 4 kg நிறையுடன் இணைக்கப்பட்டுள்ளது. அமைப்பின் முடுக்கத்தை m/s² இல் காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A smooth wedge with inclination angle 37 degrees is accelerated horizontally to the right with acceleration 'a' so that a block of mass m placed on its inclined face remains stationary relative to the wedge. Calculate the required horizontal acceleration 'a' in m/s². (Take g = 10 m/s², tan(37 deg) = 0.75)",
+    "correctAnswer": 7.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "In the reference frame of the accelerating wedge, pseudo force m*a acts horizontally to the left. For the block to remain stationary along the incline: m*a*cos(37 deg) = m*g*sin(37 deg) => a = g * tan(37 deg) = 10 * 0.75 = 7.5 m/s².",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "37 டிகிரி சாய்வுக் கோணம் கொண்ட வழுவழுப்பான சாய்சதுரம் (wedge) 'a' என்ற கிடைமட்ட முடுக்கத்துடன் வலப்புறம் முடுக்கப்படுகிறது. இதனால் அதன் சாய்வுப் பரப்பில் வைக்கப்பட்டுள்ள m நிறையுள்ள மரக்கட்டை சாய்சதுரத்தைப் பொறுத்து நகராமல் உள்ளது. தேவையான கிடைமட்ட முடுக்கம் 'a' ஐ m/s² இல் கணக்கிடுக. (g = 10 m/s², tan(37 deg) = 0.75 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A block of mass 2 kg is placed on an inclined plane of inclination 45 degrees. The coefficient of static friction is 0.6. A force F parallel to the incline is applied upward to move the block up the plane. Calculate the minimum value of force F in Newtons required to just move the block up the incline. (Take g = 10 m/s², sqrt(2) = 1.414)",
+    "correctAnswer": 22.624,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "To move the block up, applied force F must overcome both component of gravity down the incline and maximum static friction down the incline. F_min = mg sin(45) + mu_s * mg cos(45) = mg (sin(45) + mu_s cos(45)). Given m = 2 kg, g = 10 m/s², mg = 20 N. sin(45) = cos(45) = 1/sqrt(2) = 1 / 1.414 = 0.7071. F_min = 20 * 0.7071 * (1 + 0.6) = 20 * 0.7071 * 1.6 = 22.6272 N (or using exact fraction 20 * (1.6 / sqrt(2)) = 32 / 1.414 = 22.63 N). Strictly 20 * (1.6 / 1.414) = 22.63 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "45 டிகிரி கோணம் கொண்ட சாய்தளத்தில் 2 kg நிறையுள்ள மரக்கட்டை வைக்கப்பட்டுள்ளது. நிலை உராய்வுக் குணகம் 0.6 ஆகும். மரக்கட்டையை மேலே நகர்த்த சாய்தளத்திற்கு இணையான F என்ற விசை மேல்நோக்கிச் செலுத்தப்படுகிறது. மரக்கட்டையை சாய்தளத்தில் மேலே நகர்த்தத் தேவையான F விசையின் குறைந்தபட்ச மதிப்பை நியூட்டனில் (N) கணக்கிடுக. (g = 10 m/s², sqrt(2) = 1.414 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY03-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A system consists of two blocks of masses m1 = 4 kg and m2 = 2 kg connected by a light string over a frictionless pulley. The system is placed inside an elevator accelerating upwards at 2 m/s². Find the tension in the string in Newtons. (Take g = 10 m/s²)",
+    "options": [],
+    "correctAnswer": 32,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the frame of the accelerating elevator, effective acceleration due to gravity is g_eff = g + a = 10 + 2 = 12 m/s². Tension in Atwood machine under g_eff is T = (2 * m1 * m2 / (m1 + m2)) * g_eff = (2 * 4 * 2 / (4 + 2)) * 12 = (16 / 6) * 12 = 16 * 2 = 32 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m1 = 4 kg மற்றும் m2 = 2 kg நிறைகொண்ட இரு கட்டைகள் உராய்வற்ற கப்பியின் வழியே செல்லும் இலேசான சரடால் இணைக்கப்பட்டுள்ளன. இந்த அமைப்பு 2 m/s² மேல்நோக்கிய முடுக்கத்துடன் இயங்கும் மின்தூக்கியின் உள்ளே வைக்கப்பட்டுள்ளது. சரட்டில் உள்ள இழுவிசையை நியூட்டனில் (N) காண்க. (g = 10 m/s² எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  }
+]

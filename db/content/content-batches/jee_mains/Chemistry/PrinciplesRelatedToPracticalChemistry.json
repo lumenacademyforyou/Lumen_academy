@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che20-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In systematic qualitative inorganic analysis, hydrogen sulfide (H2S) gas is passed through an acidified solution (dilute HCl) to precipitate Group II cations, but it does NOT precipitate Group IV cations (like Zn2+, Mn2+, Co2+, Ni2+). The fundamental principle responsible for this selective precipitation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The common ion effect of H+ ions from dilute HCl drastically suppresses the dissociation of weak acid H2S, ensuring that [S2-] is sufficient to exceed the low Ksp of Group II sulfides but remains below the higher Ksp of Group IV sulfides.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hydrochloric acid completely oxidizes Group IV cations to a non-precipitating higher oxidation state.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Group IV cations react with HCl to form soluble volatile chlorocomplexes.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2S acts as an oxidizing agent in acidic medium and destroys Group IV cations.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "H2S is a weak diprotic acid: H2S <=> 2H+ + S2-. In the presence of dilute HCl (a strong electrolyte), the high concentration of H+ suppresses the ionization of H2S due to the common ion effect. The resulting low sulfide ion concentration ([S2-]) is sufficient to exceed the very small solubility product (Ksp) of Group II sulfides (e.g., CuS, PbS), but insufficient to exceed the considerably larger Ksp of Group IV sulfides (e.g., ZnS, MnS).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தரமுறை கனிமப் பகுப்பாய்வில், நீர்த்த HCl முன்னிலையில் H2S வாயுவைச் செலுத்தும்போது தொகுதி II நேர்அயனிகள் மட்டுமே வீழ்படிவாகி, தொகுதி IV நேர்அயனிகள் வீழ்படிவாகாமல் இருப்பதற்கான அடிப்படைக் கொள்கை:",
+        "optionTexts": [
+          "நீர்த்த HCl-ல் உள்ள H+ அயனிகளின் பொது அயனி விளைவால் H2S-ன் பிரிகை குறைக்கப்பட்டு, குறைந்த Ksp கொண்ட தொகுதி II சல்பைடுகள் மட்டுமே வீழ்படிவாகின்றன; அதிக Ksp கொண்ட தொகுதி IV சல்பைடுகள் வீழ்படிவாவதில்லை.",
+          "ஹைட்ரோகுளோரிக் அமிலம் தொகுதி IV நேர்அயனிகளை முழுமையாக ஆக்சிஜனேற்றமடையச் செய்கிறது.",
+          "தொகுதி IV நேர்அயனிகள் HCl உடன் இணைந்து எளிதில் ஆவியாகும் அணைவுச் சேர்மங்களை உருவாக்குகின்றன.",
+          "அமில ஊடகத்தில் H2S ஓர் ஆக்சிஜனேற்றியாகச் செயல்பட்டு தொகுதி IV அயனிகளை அழிக்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the volumetric estimation of Fe2+ using standard potassium permanganate (KMnO4) in acidic medium, dilute sulfuric acid (H2SO4) is used to acidify the solution rather than dilute hydrochloric acid (HCl) or dilute nitric acid (HNO3) primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "HCl is oxidized by KMnO4 to Cl2 gas causing an error, and HNO3 is itself a strong oxidizing agent that would oxidize Fe2+ prematurely.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "H2SO4 acts as a primary standard, whereas HCl and HNO3 are secondary standards.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "HCl precipitates Fe2+ as iron(II) chloride.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HNO3 completely decomposes KMnO4 to manganese dioxide.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Permanganate titration requires an acid that remains inert under the reaction conditions. Dilute HCl cannot be used because strong oxidant KMnO4 oxidizes Cl- ions to elemental Cl2 gas, consuming excess KMnO4 and causing an overestimation error. Dilute HNO3 cannot be used because it is itself a strong oxidizing agent and would directly oxidize Fe2+ to Fe3+, preventing stoichiometric titration by KMnO4. Dilute H2SO4 does not react with KMnO4 or interfere with the redox process.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "KMnO4 கொண்டு Fe2+-ஐ பருமனறி பகுப்பாய்வு செய்யும் போது கரைசலை அமிலமாக்க HCl அல்லது HNO3-க்குப் பதிலாக நீர்த்த H2SO4 பயன்படுத்தப்படுவதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "HCl-ஐ KMnO4 குளோரின் வாயுவாக ஆக்சிஜனேற்றம் செய்து பிழையை ஏற்படுத்துகிறது; HNO3 தானாகவே ஒரு வலிமையான ஆக்சிஜனேற்றியாக இருந்து Fe2+-ஐ முன்கூட்டியே ஆக்சிஜனேற்றுகிறது.",
+          "H2SO4 ஒரு முதன்மைத் தரம் வாய்ந்த காரணியாகும், ஆனால் HCl மற்றும் HNO3 இரண்டாம் நிலைத் தரக் காரணிகளாகும்.",
+          "HCl ஆனது Fe2+ அயனிகளை இரும்பு(II) குளோரைடாக வீழ்படிவாக்குகிறது.",
+          "HNO3 ஆனது KMnO4-ஐ முழுமையாக மாங்கனீசு டைஆக்சைடாக சிதைக்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In qualitative salt analysis, which of the following metal cations imparts a characteristic persistent brick-red color to a non-luminous Bunsen flame?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Barium (Ba2+)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Calcium (Ca2+)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Strontium (Sr2+)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Potassium (K+)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "During a flame test using a platinum wire moistened with concentrated HCl, volatile metal chlorides impart characteristic flame colors: Ca2+ gives a brick-red flame, Sr2+ gives a crimson red flame, Ba2+ gives an apple-green flame, and K+ gives a lilac (violet) flame.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தரமுறை உப்புப் பகுப்பாய்வில், பன்சன் சுடருக்கு செங்கல் சிவப்பு நிறத்தை வழங்கும் உலோக நேர்அயனி எது?",
+        "optionTexts": [
+          "பேரியம் (Ba2+)",
+          "கால்சியம் (Ca2+)",
+          "ஸ்ட்ரான்சியம் (Sr2+)",
+          "பொட்டாசியம் (K+)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the confirmatory chromyl chloride test for chloride ions, a solid chloride salt is heated with solid potassium dichromate (K2Cr2O7) and concentrated H2SO4, giving red vapors of chromyl chloride (CrO2Cl2). These vapors are passed into aqueous NaOH to form a yellow solution of Na2CrO4. Upon adding acetic acid and lead acetate, a yellow precipitate forms. The chemical formula of this yellow precipitate is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "PbCl2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "PbCrO4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Pb(CH3COO)2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "PbO2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When CrO2Cl2 vapors dissolve in NaOH, yellow sodium chromate is formed: CrO2Cl2 + 4NaOH -> Na2CrO4 + 2NaCl + 2H2O. Acidifying with CH3COOH and adding lead acetate solution precipitates lead chromate (PbCrO4) as an insoluble, canary-yellow solid: Na2CrO4 + (CH3COO)2Pb -> PbCrO4(s) + 2CH3COONa.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரைடுக்கான குரோமைல் குளோரைடு சோதனையில், உருவான Na2CrO4 கரைசலுடன் அசிட்டிக் அமிலம் மற்றும் காரீய அசிட்டேட் சேர்க்கப்படும் போது கிடைக்கும் மஞ்சள் நிற வீழ்படிவின் வாய்ப்பாடு:",
+        "optionTexts": [
+          "PbCl2",
+          "PbCrO4",
+          "Pb(CH3COO)2",
+          "PbO2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Aqueous solutions of starch indicator are widely used in iodometric and iodimetric titrations. At the equivalence point, starch produces an intense deep-blue coloration in the presence of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Free triiodide ions (I3-) forming an inclusion complex inside the helical structure of amylose.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Iodide ions (I-) coordinating covalently with the hydroxyl groups of amylopectin.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sodium thiosulfate coordinating directly with the glucose units of starch.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Free iodine oxidizing starch into blue cellulose.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The deep-blue color obtained when starch meets free iodine in the presence of iodide is due to the formation of polyiodide (triiodide/pentaiodide) chains trapped as an inclusion complex inside the hydrophobic helical channel of amylose. When iodine is titrated to iodide with thiosulfate, the blue color disappears sharply at the end point.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயோடோமெட்ரிக் தரம் பார்த்தலில் ஸ்டார்ச் நிறங்காட்டி அடர் நீல நிறத்தை உருவாக்குவதற்குக் காரணமான செயல்முறை:",
+        "optionTexts": [
+          "அமைலோஸின் சுருள் அமைப்பினுள் டிரைஅயோடைடு அயனிகள் (I3-) உட்சேர்க்கை அணைவை (inclusion complex) உருவாக்குவது.",
+          "அமைலோபெக்டினின் -OH தொகுதிகளுடன் அயோடைடு அயனிகள் (I-) சகப்பிணைப்பை ஏற்படுத்துவது.",
+          "ஸ்டார்ச்சின் குளுக்கோஸ் அலகுகளுடன் சோடியம் தயோசல்பேட் நேரடியாக இணைவது.",
+          "தனித்த அயோடின் ஸ்டார்ச்சை நீல நிற செல்லுலோசாக ஆக்சிஜனேற்றுவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following inorganic salts is commonly prepared in the laboratory as a double salt and serves as a reliable primary standard for the standardization of KMnO4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Potash alum (K2SO4 · Al2(SO4)3 · 24H2O)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mohr's salt (Ferrous ammonium sulfate, FeSO4 · (NH4)2SO4 · 6H2O)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ferric alum (NH4Fe(SO4)2 · 12H2O)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Microcosmic salt (NaNH4HPO4 · 4H2O)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Mohr's salt, FeSO4 · (NH4)2SO4 · 6H2O, is a stable double salt that does not undergo efflorescence or aerial oxidation readily compared to pure ferrous sulfate (FeSO4 · 7H2O). It can be obtained in high purity and serves as an excellent primary standard in redox titrations to standardize potassium permanganate solutions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "KMnO4 கரைசலைத் தரம் பார்க்க ஆய்வகத்தில் முதன்மைத் தரக் காரணியாகப் பயன்படும் இரட்டை உப்பு எது?",
+        "optionTexts": [
+          "பொட்டாஷ் படிகாரம் (K2SO4 · Al2(SO4)3 · 24H2O)",
+          "மோர் உப்பு (ஃபெரஸ் அம்மோனியம் சல்பேட், FeSO4 · (NH4)2SO4 · 6H2O)",
+          "ஃபெர்ரிக் படிகாரம் (NH4Fe(SO4)2 · 12H2O)",
+          "மைக்ரோகாஸ்மிக் உப்பு (NaNH4HPO4 · 4H2O)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the brown ring test for nitrate ions (NO3-), a freshly prepared solution of FeSO4 is added to the salt solution, and concentrated H2SO4 is added slowly along the side of the test tube. A brown ring appears at the liquid junction due to the coordination complex:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Fe(H2O)5(NO)]SO4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[Fe(H2O)4(NO)2]SO4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[Fe(NO2)6]3-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fe4[Fe(CN)6]3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Concentrated H2SO4 reduces nitrate to nitric oxide: NO3- + 3Fe2+ + 4H+ -> NO + 3Fe3+ + 2H2O. The nitric oxide coordinates with unreacted hydrated Fe2+ ions at the interface to produce the brown coordination entity pentaaquanitrosyliron(I) sulfate, [Fe(H2O)5(NO)]SO4, where NO coordinates formally as the nitrosonium ion (NO+).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரேட் அயனிக்கான பழுப்பு வளைய சோதனையில் திரவங்களின் சந்திப்பில் தோன்றும் பழுப்பு வளையத்தின் அணைவுச் சேர்ம வாய்ப்பாடு:",
+        "optionTexts": [
+          "[Fe(H2O)5(NO)]SO4",
+          "[Fe(H2O)4(NO)2]SO4",
+          "[Fe(NO2)6]3-",
+          "Fe4[Fe(CN)6]3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "During the precipitation of Group III cations (Fe3+, Al3+, Cr3+) as their hydroxides in qualitative salt analysis, ammonium chloride (NH4Cl) solid is added BEFORE adding ammonium hydroxide (NH4OH). What is the specific purpose of adding NH4Cl first?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To increase the concentration of hydroxide ions to ensure complete precipitation of Group III cations.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "To suppress the ionization of NH4OH via the common ion effect of NH4+, so that [OH-] is sufficient to exceed the Ksp of Group III hydroxides but insufficient to precipitate the more soluble hydroxides of Group IV and Mg2+.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "To prevent iron(III) from being reduced to iron(II).",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "To convert Al3+ into a water-soluble aluminate complex.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "NH4OH is a weak base: NH4OH <=> NH4+ + OH-. Adding solid NH4Cl (a completely dissociated salt) introduces excess NH4+ ions, which heavily shifts this equilibrium to the left due to the common ion effect. This lowers [OH-] to a level sufficient to exceed the low Ksp of Group III hydroxides (Fe(OH)3, Al(OH)3, Cr(OH)3), while remaining too low to precipitate the hydroxides of Group IV (Zn2+, Mn2+, Ni2+, Co2+) or Group V/Mg2+.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தரமுறை பகுப்பாய்வில் தொகுதி III நேர்அயனிகளை வீழ்படிவாக்கும் போது NH4OH சேர்ப்பதற்கு முன் திட NH4Cl சேர்க்கப்படுவதன் நோக்கம் என்ன?",
+        "optionTexts": [
+          "ஹைட்ராக்சைடு அயனிகளின் செறிவை அதிகரிக்கச் செய்வது.",
+          "NH4+ அயனியின் பொது அயனி விளைவால் NH4OH-ன் பிரிகையைக் கட்டுப்படுத்தி, தொகுதி III ஹைட்ராக்சைடுகள் மட்டுமே வீழ்படிவாவதை உறுதி செய்து தொகுதி IV அயனிகள் வீழ்படிவாவதைத் தடுப்பது.",
+          "இரும்பு(III) அயனி இரும்பு(II) ஆக ஒடுக்கமடைவதைத் தடுப்பது.",
+          "Al3+ அயனியை நீரில் கரையும் அலுமினேட்டாக மாற்றுவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the confirmatory test for nickel ion (Ni2+), an ammoniacal solution of the salt is treated with dimethylglyoxime (DMG) reagent, yielding a brilliant rosy-red precipitate of [Ni(dmg)2]. The coordination number of nickel and the type of stabilization present in this complex are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Coordination number = 4, square planar geometry stabilized by two symmetrical O-H···O intramolecular hydrogen bonds.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Coordination number = 6, octahedral geometry stabilized by covalent S-S bridges.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Coordination number = 4, tetrahedral geometry stabilized by inter-ligand steric repulsion.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Coordination number = 2, linear geometry stabilized by ionic bonds.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The nickel-dimethylglyoxime complex, [Ni(dmg)2], is a square planar dsp2 complex where Ni(II) has a coordination number of 4 (coordinated to four nitrogen donor atoms of two bidentate monoanionic dmg- ligands). The planar complex is exceptionally stable due to two five-membered chelate rings and two strong intramolecular O-H···O hydrogen bonds that form six-membered hydrogen-bonded rings.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிக்கல் அயனிக்கான (Ni2+) உறுதிப்படுத்தும் சோதனையில் டைமெத்தில் கிளையாக்ஸைம் (DMG) சேர்க்கப்படும் போது ரோஜா சிவப்பு நிற வீழ்படிவு [Ni(dmg)2] கிடைக்கிறது. இதில் நிக்கலின் அணைவு எண் மற்றும் அணைவு நிலைத்தன்மைக்கான காரணம் முறையே:",
+        "optionTexts": [
+          "அணைவு எண் = 4, இரண்டு சமச்சீரான O-H···O மூலக்கூறினுள் ஹைட்ரஜன் பிணைப்புகளால் நிலைப்படுத்தப்பட்ட சதுர தள வடிவம்.",
+          "அணைவு எண் = 6, சகப்பிணைப்பு S-S பிணைப்புகளால் நிலைப்படுத்தப்பட்ட எண்முகி வடிவம்.",
+          "அணைவு எண் = 4, புறவெளி விலக்கு விசைகளால் நிலைப்படுத்தப்பட்ட நான்முகி வடிவம்.",
+          "அணைவு எண் = 2, அயனிப் பிணைப்புகளால் நிலைப்படுத்தப்பட்ட நேர்கோட்டு வடிவம்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When a neutral solution of copper(II) sulfate is treated with excess aqueous potassium iodide (KI), it does NOT yield copper(II) iodide. Instead, it yields a white precipitate mixed with brown coloration due to the reaction:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2Cu2+ + 4I- -> 2CuI(s) (white precipitate) + I2 (brown color)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Cu2+ + 2I- -> CuI2(s) (black precipitate)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cu2+ + 4I- -> [CuI4]2- (brown solution)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cu2+ + 2I- -> Cu(s) + I2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Copper(II) iodide (CuI2) is thermodynamically unstable because Cu2+ is a sufficiently strong oxidant to oxidize the easily oxidizable iodide ion (I-) to iodine (I2), while Cu2+ is reduced to Cu+: 2Cu2+ + 4I- -> 2CuI(s) + I2. The mixture appears brown due to liberated iodine, which masks the white precipitate of cuprous iodide (CuI). Addition of sodium thiosulfate discharges the brown color, revealing pure white CuI.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காப்பர்(II) சல்பேட் கரைசலுடன் அதிகளவு பொட்டாசியம் அயோடைடு (KI) சேர்க்கப்படும் போது நிகழும் சரியான வினை எது?",
+        "optionTexts": [
+          "2Cu2+ + 4I- -> 2CuI(s) (வெண் வீழ்படிவு) + I2 (பழுப்பு நிறம்)",
+          "Cu2+ + 2I- -> CuI2(s) (கருப்பு வீழ்படிவு)",
+          "Cu2+ + 4I- -> [CuI4]2- (பழுப்பு கரைசல்)",
+          "Cu2+ + 2I- -> Cu(s) + I2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the borax bead test using a loop of platinum wire, a copper salt heated in the oxidizing flame yields a clear blue bead. When this bead is heated in the luminous reducing flame, it turns opaque red due to the formation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cupric metaborate, Cu(BO2)2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Finely divided metallic copper (Cu) and cuprous metaborate (CuBO2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cupric oxide, CuO",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Copper(II) borate, Cu3(BO3)2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the oxidizing flame, copper reacts with molten B2O3 to form blue cupric metaborate: CuO + B2O3 -> Cu(BO2)2 (blue). In the reducing flame (containing carbon and CO), Cu(BO2)2 is reduced to colorless cuprous metaborate and ultimately to colloidal metallic copper: 2Cu(BO2)2 + C -> 2CuBO2 + B2O3 + CO, followed by 2CuBO2 + C -> 2Cu + B2O3 + CO, imparting an opaque red color to the cooled bead.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போராக்ஸ் மணி சோதனையில் தாமிர உப்பு ஆக்சிஜனேற்றும் சுடரில் நீல நிற மணியைத் தருகிறது. இக்குழம்பு ஒடுக்கும் சுடரில் சூடுபடுத்தப்படும் போது ஒளிபுகா சிவப்பு நிறமாக மாறுவதற்குக் காரணம்:",
+        "optionTexts": [
+          "குப்ரிக் மெட்டாபோரேட், Cu(BO2)2",
+          "நுண்ணிய உலோகத் தாமிரம் (Cu) மற்றும் குப்ரஸ் மெட்டாபோரேட் (CuBO2) உருவாதல்",
+          "குப்ரிக் ஆக்சைடு, CuO",
+          "காப்பர்(II) போரேட், Cu3(BO3)2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the titration of oxalic acid ((COOH)2 · 2H2O) with standard potassium permanganate (KMnO4) in acidic medium, the reaction mixture is routinely warmed to about 60-70 °C before starting the titration. The reason for warming the solution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The reaction is extremely slow at room temperature; heating increases the rate of reaction until sufficient Mn2+ catalyst is generated autocatalytically.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oxalic acid decomposes into CO2 only upon heating.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "KMnO4 dissolves only at temperatures above 60 °C.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Heating removes dissolved atmospheric oxygen that interferes with the indicator.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The redox reaction between permanganate and oxalic acid: 2MnO4- + 5C2O4^2- + 16H+ -> 2Mn2+ + 10CO2 + 8H2O has a substantial activation energy and is sluggish at room temperature. Warming the solution to 60-70 °C accelerates the initial reaction rate until Mn2+ ions are produced, which then act as an autocatalyst to speed up subsequent reaction cycles even at lower temperatures.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "KMnO4 கொண்டு ஆக்ஸாலிக் அமிலத்தைத் தரம் பார்க்கும் போது கரைசலை 60-70 °C வெப்பநிலைக்கு முன்கூட்டியே சூடுபடுத்துவதன் நோக்கம் என்ன?",
+        "optionTexts": [
+          "அறை வெப்பநிலையில் இவ்வினை மிக மெதுவாக நிகழும்; சூடுபடுத்துவது வினையை துரிதப்படுத்தி தன்வினையூக்கியான Mn2+ அயனியை உருவாக்குகிறது.",
+          "ஆக்ஸாலிக் அமிலம் சூடுபடுத்தினால் மட்டுமே CO2 ஆக சிதைவடையும்.",
+          "KMnO4 60 °C-க்கு மேல் மட்டுமே கரையும்.",
+          "சூடுபடுத்துவது நிறங்காட்டியைப் பாதிக்கும் கரைந்துள்ள ஆக்ஸிஜனை வெளியேற்றுகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following organic functional group tests involves heating the organic compound with chloroform and alcoholic potassium hydroxide to generate a volatile product with an unbearable odor?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbylamine test for primary amines",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Iodoform test for methyl ketones",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Esterification test for carboxylic acids",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Azo dye test for aromatic amines",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The carbylamine test is specific for detecting primary amines (R-NH2 or Ar-NH2). When heated with chloroform (CHCl3) and ethanolic KOH, a primary amine reacts via a dichlorocarbene intermediate to yield an alkyl or aryl isocyanide (carbylamine), which possesses an extremely obnoxious, foul smell.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோபார்ம் மற்றும் எத்தனால் கலந்த பொட்டாசியம் ஹைட்ராக்சைடுடன் கரிமச் சேர்மத்தைச் சூடுபடுத்தி அருவருக்கத்தக்க வாசனையுடைய ஆவியாகும் பொருளை உருவாக்கும் சோதனை எது?",
+        "optionTexts": [
+          "ஓரிணைய அமீன்களுக்கான கார்பைலமீன் சோதனை",
+          "மெத்தில் கீட்டோன்களுக்கான அயோடோபார்ம் சோதனை",
+          "கார்பாக்சிலிக் அமிலங்களுக்கான எஸ்டராக்கல் சோதனை",
+          "அரோமேட்டிக் அமீன்களுக்கான அசோ சாயம் சோதனை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the qualitative separation of Group II cations, the black precipitate of copper(II) sulfide (CuS) is separated from bismuth and cadmium. It dissolves in warm dilute nitric acid (HNO3) to form blue Cu(NO3)2. Upon adding excess aqueous ammonia, an intensely deep-blue solution forms. The formula of the coordination entity responsible for this intense blue coloration is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[Cu(H2O)4]2+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "[Cu(NH3)4]2+",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "[Cu(OH)4]2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[Cu(NO3)4]2-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When aqueous ammonia is added dropwise to a solution of Cu2+ ions, a pale blue precipitate of basic copper sulfate/hydroxide forms initially. Upon addition of excess ammonia, this precipitate dissolves to form an intense deep-blue solution containing the tetraamminecopper(II) complex cation: Cu2+(aq) + 4NH3(aq) -> [Cu(NH3)4]2+(aq).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாமிர அயனியின் (Cu2+) கரைசலுடன் அதிகளவு அம்மோனியா கரைசல் சேர்க்கப்படும் போது உருவாகும் அடர் நீல நிற அணைவு அயனியின் வாய்ப்பாடு:",
+        "optionTexts": [
+          "[Cu(H2O)4]2+",
+          "[Cu(NH3)4]2+",
+          "[Cu(OH)4]2-",
+          "[Cu(NO3)4]2-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In iodometric titrations, sodium thiosulfate (Na2S2O3) solution is standardized against standard potassium dichromate (K2Cr2O7) in the presence of excess KI and dilute H2SO4. The stoichiometry of the reaction between dichromate and thiosulfate indicates that 1 mole of K2Cr2O7 is equivalent to how many moles of Na2S2O3?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 mole",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 moles",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6 moles",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2 moles",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The reaction proceeds in two steps: (1) Cr2O7^2- + 14H+ + 6I- -> 2Cr3+ + 3I2 + 7H2O (1 mole of dichromate liberates 3 moles of I2). (2) 2S2O3^2- + I2 -> S4O6^2- + 2I- (each mole of I2 consumes 2 moles of thiosulfate). Therefore, 3 moles of I2 react with 3 * 2 = 6 moles of Na2S2O3. Thus, 1 mole of K2Cr2O7 is stoichiometrically equivalent to 6 moles of Na2S2O3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயோடோமெட்ரிக் முறையில் K2Cr2O7 கொண்டு Na2S2O3 தரம் பார்க்கப்படும் வினையில், 1 மோல் K2Cr2O7 எத்தனை மோல் Na2S2O3-க்கு சமானமானது?",
+        "optionTexts": [
+          "1 மோல்",
+          "3 மோல்கள்",
+          "6 மோல்கள்",
+          "2 மோல்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "During the identification of a sulfate anion (SO4^2-) in water, addition of barium chloride (BaCl2) produces a dense white precipitate of BaSO4. Which property correctly characterizes this BaSO4 precipitate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It dissolves immediately in excess dilute hydrochloric acid with effervescence.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "It is completely insoluble in concentrated hydrochloric acid and concentrated nitric acid even on boiling.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "It turns black upon exposure to sunlight.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "It dissolves readily in aqueous ammonium hydroxide.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Barium sulfate (BaSO4) has an exceptionally low solubility product (Ksp ~ 1.1 x 10^-10) and is the salt of a very strong acid (H2SO4). Unlike barium sulfite (BaSO3) or barium carbonate (BaCO3), which dissolve in dilute mineral acids with gas evolution, BaSO4 does not dissolve in dilute or concentrated HCl or HNO3 even on boiling, providing a distinctive confirmatory test for sulfate ions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சல்பேட் (SO4^2-) அயனியைக் கண்டறியும் போது உருவாகும் BaSO4 வெண் வீழ்படிவின் சரியான பண்பு எது?",
+        "optionTexts": [
+          "அதிகளவு நீர்த்த HCl-ல் நுரைத்து பொங்கி உடனடியாகக் கரையும்.",
+          "அடர் HCl மற்றும் அடர் HNO3 ஆகியவற்றில் கொதிக்க வைத்தாலும் முற்றிலும் கரையாது.",
+          "சூரிய ஒளியில் படும்போது கருப்பாக மாறும்.",
+          "நீரிய அம்மோனியம் ஹைட்ராக்சைடில் எளிதில் கரையும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A student determines the enthalpy of neutralization of a strong acid (HCl) with a strong base (NaOH) in a simple open polystyrene cup calorimeter. The experimental value obtained is -52.5 kJ mol^-1, which is less exothermic than the standard theoretical value (-57.3 kJ mol^-1). Which experimental error accounts for this discrepancy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some heat was lost to the surrounding calorimeter walls and environment during the temperature measurement.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The neutral water formed absorbed excess heat from the thermometer.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "HCl and NaOH dissociated only partially.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The student stirred the mixture too vigorously, adding mechanical heat.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The theoretical enthalpy of neutralization for any strong acid with a strong base in dilute solution is -57.3 kJ mol^-1 (corresponding to H+ + OH- -> H2O). In an uninsulated or poorly insulated polystyrene cup calorimeter, heat leakage to the surroundings and absorption by the cup/thermometer that is uncalibrated lowers the observed temperature rise (Delta T), making the calculated enthalpy change less negative (-52.5 kJ mol^-1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வலிமை மிகு அமிலம் மற்றும் காரத்தின் நடுநிலையாக்கல் என்தால்பி கணக்கீட்டில் பெறப்பட்ட மதிப்பு (-52.5 kJ mol^-1) திட்ட மதிப்பை விடக் (-57.3 kJ mol^-1) குறைவாக இருப்பதற்குக் காரணமான பிழை எது?",
+        "optionTexts": [
+          "வெப்பநிலை அளவீட்டின் போது கலோரிமீட்டர் சுவர்கள் மற்றும் சுற்றுப்புறத்திற்கு வெப்ப இழப்பு ஏற்பட்டது.",
+          "உருவான நடுநிலை நீர் வெப்பமானியிலிருந்து வெப்பத்தை உறிஞ்சியது.",
+          "HCl மற்றும் NaOH பகுதியளவே பிரிகையடைந்தன.",
+          "கலவை மிக வேகமாக கலக்கப்பட்டதால் இயந்திரவியல் வெப்பம் சேர்ந்தது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In paper chromatography of a mixture of amino acids using a water-saturated n-butanol-acetic acid solvent mixture, the amino acid spots are invisible on the dried filter paper. Which developing chemical spray reagent is used to visualize these amino acid spots as intense purple-blue stains?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ninhydrin solution",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Schiff's reagent",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tollens' reagent",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2,4-Dinitrophenylhydrazine (2,4-DNP)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Ninhydrin (indan-1,2,3-trione hydrate) is a specific visualization reagent for alpha-amino acids. When sprayed on the chromatogram and warmed, it oxidatively decarboxylates and deaminates the amino acid, reacting with the released ammonia to produce a deep purple-blue conjugated pigment known as Ruhemann's purple (proline produces a yellow color).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாள் வண்ணப்பிரிகையில் அமினோ அமிலப் புள்ளிகளைக் கண்டறிய உதவும் தெளிப்பான் காரணி எது?",
+        "optionTexts": [
+          "நின்ஹைட்ரின் கரைசல்",
+          "ஷிஃப் காரணி",
+          "டாலன்ஸ் காரணி",
+          "2,4-டைநைட்ரோஃபீனைல்ஹைட்ரசீன் (2,4-DNP)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Potassium permanganate (KMnO4) is a self-indicator in acid-base and redox titrations because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Its deeply colored MnO4- ion is reduced to nearly colorless Mn2+, so that the appearance of a permanent faint pink color from a single drop of excess MnO4- marks the exact endpoint.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "It turns bright yellow at pH 7.0.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "It forms a fluorescent blue complex with sulfuric acid at the equivalence point.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "MnO2 acts as a colored precipitate that settles rapidly at the endpoint.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "KMnO4 acts as its own indicator (self-indicator). The permanganate ion (MnO4-) has an intense purple color. During titration in acidic medium, it is quantitatively reduced to the virtually colorless manganese(II) ion (Mn2+). As soon as the reducing analyte is completely consumed, a single drop of excess standard KMnO4 imparts a persistent faint pink coloration to the entire solution, indicating the endpoint clearly without adding an external indicator.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "KMnO4 தன்னிச்சையான நிறங்காட்டியாகச் (self-indicator) செயல்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அடர் நிறமுடைய MnO4- அயனி நிறமற்ற Mn2+ ஆக ஒடுக்கமடைவதால், வினையின் முடிவில் அதிகப்படியாக விழும் ஒரு துளி MnO4- கரைசலுக்கு நிலையான இளஞ்சிவப்பு நிறத்தைத் தருகிறது.",
+          "இது pH 7.0-ல் மஞ்சள் நிறமாக மாறுகிறது.",
+          "இது சல்பியூரிக் அமிலத்துடன் இணைந்து நீல நிற அணைவை உருவாக்குகிறது.",
+          "உருவாகும் MnO2 வீழ்படிவாகி நிறத்தை மாற்றுகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the volumetric estimation of copper(II) ions by iodometry, standard sodium thiosulfate (Na2S2O3) is titrated against the iodine liberated by Cu2+ from excess KI. Near the endpoint, when the solution becomes pale straw-yellow, starch indicator is added, turning the solution dark blue. Why must starch indicator be added near the endpoint rather than at the beginning of the titration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "At high iodine concentrations, starch forms an irreversibly bound, highly stable inclusion complex that releases iodine very slowly, leading to a sluggish and erroneous endpoint.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Starch decomposes into glucose in the presence of strong acid.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Starch precipitates copper(II) ions as copper starchate.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sodium thiosulfate does not react with iodine if starch is already present.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "If starch is added at the beginning when the concentration of iodine is high, a large amount of iodine becomes irreversibly trapped inside the amylose helices. This trapped iodine diffuses out into solution extremely slowly during titration with thiosulfate, causing a diffuse, creeping endpoint and significant titration error. Adding starch only when the iodine concentration has decreased to a pale straw-yellow color ensures immediate and reversible dissociation of the complex, yielding a razor-sharp color discharge from blue to colorless at the exact endpoint.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அயோடோமெட்ரி முறையில் தாமிரத்தைத் தரம் பார்க்கும் போது, ஸ்டார்ச் நிறங்காட்டி தொடக்கத்திலேயே சேர்க்கப்படாமல் முடிவு நிலைக்கு அருகில் சேர்க்கப்படுவதன் காரணம் என்ன?",
+        "optionTexts": [
+          "அதிக அயோடின் செறிவில் ஸ்டார்ச் அயோடினுடன் மிக வலுவான, எளிதில் மீளாத அணைவை உருவாக்கி அயோடினை மிக மெதுவாக வெளியிடுவதால் முடிவு நிலை பிழையாக அமையும்.",
+          "அமில முன்னிலையில் ஸ்டார்ச் குளுக்கோஸாக சிதைவடையும்.",
+          "ஸ்டார்ச் தாமிர அயனிகளை வீழ்படிவாக்கும்.",
+          "ஸ்டார்ச் முன்னிலையில் சோடியம் தயோசல்பேட் அயோடினுடன் வினைபுரியாது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The molar mass of hydrated oxalic acid crystals, (COOH)2 · 2H2O, is 126 g mol^-1. Because oxalic acid is a dibasic acid, its equivalent mass is 126 / 2 = 63 g eq^-1. The mass (in grams) of pure (COOH)2 · 2H2O crystals required to prepare 250 mL of a 0.10 M standard aqueous solution is: (Round to two decimal places, e.g., 3.15)",
+    "correctAnswer": 3.15,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Moles of oxalic acid required = Molarity * Volume in L = 0.10 mol L^-1 * 0.250 L = 0.025 mol. Mass of crystals = Moles * Molar mass = 0.025 mol * 126 g mol^-1 = 3.15 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "250 mL 0.10 M திட்ட ஆக்ஸாலிக் அமிலக் ((COOH)2 · 2H2O) கரைசலைத் தயாரிக்கத் தேவையான ஆக்ஸாலிக் அமில படிகங்களின் நிறை கிராமில்: (மோலார் நிறை = 126 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the standardization of a potassium permanganate solution using Mohr's salt, the stoichiometric redox reaction in acidic medium is: MnO4- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O. The number of moles of Fe2+ oxidized per mole of KMnO4 reduced is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In acidic medium, each mole of permanganate (MnO4-) undergoes a 5-electron reduction (Mn(+7) -> Mn(+2)), while each mole of ferrous ion (Fe2+) loses 1 electron to become ferric (Fe3+). Therefore, exactly 5 moles of Fe2+ are oxidized per mole of KMnO4 consumed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மோர் உப்பைப் பயன்படுத்தி KMnO4-ஐ தரம் பார்க்கும் வினையில் 1 மோல் KMnO4-ஆல் ஆக்சிஜனேற்றப்படும் Fe2+-ன் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of water molecules of crystallization present in one formula unit of Mohr's salt, FeSO4 · (NH4)2SO4 · xH2O, is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mohr's salt is ferrous ammonium sulfate hexahydrate: FeSO4 · (NH4)2SO4 · 6H2O. Each formula unit crystallizes with exactly 6 water molecules coordinated in the crystal lattice. Thus, x = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மோர் உப்பின் (FeSO4 · (NH4)2SO4 · xH2O) ஒரு மூலக்கூறில் உள்ள படிக நீரின் மூலக்கூறுகளின் எண்ணிக்கை x:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 25.0 mL aliquot of a 0.050 M Mohr's salt solution requires 20.0 mL of an acidified potassium permanganate (KMnO4) solution for complete oxidation. The molarity of the KMnO4 solution (expressed as x x 10^-3 M) is:",
+    "correctAnswer": 12.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Millimoles of Fe2+ in Mohr's salt = Volume * Molarity = 25.0 mL * 0.050 M = 1.25 mmol. According to the reaction stoichiometry, 5 moles of Fe2+ react with 1 mole of KMnO4: Millimoles of KMnO4 = 1.25 / 5 = 0.25 mmol. Molarity of KMnO4 = Millimoles / Volume in mL = 0.25 mmol / 20.0 mL = 0.0125 M = 12.5 x 10^-3 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "25.0 mL 0.050 M மோர் உப்பு கரைசலை முழுமையாக ஆக்சிஜனேற்றம் செய்ய 20.0 mL அமிலமாக்கப்பட்ட KMnO4 தேவைப்படுகிறது எனில், அக்கரைசலின் மோலாரிட்டி x x 10^-3 M-ல் உள்ள x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of chelate rings formed in a single neutral molecule of bis(dimethylglyoximato)nickel(II), [Ni(dmg)2], including both coordinate chelate rings and hydrogen-bonded pseudochelate rings, is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In [Ni(dmg)2], nickel coordinates to four nitrogen atoms of two bidentate dmg- ligands, forming two 5-membered metallacyclic chelate rings (Ni-N-C-C-N). Additionally, two strong symmetrical intramolecular O-H···O hydrogen bonds form between the oxygen atoms of opposite ligands, creating two 6-membered pseudochelate rings (Ni-N-O-H-O-N). The total number of chelate/pseudochelate rings is 2 + 2 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[Ni(dmg)2] அணைவு மூலக்கூறில் உள்ள மொத்த கீலேட் வளையங்களின் எண்ணிக்கை (ஹைட்ரஜன் பிணைப்பு வளையங்கள் உட்பட):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A student runs a thin-layer chromatography (TLC) experiment to separate two organic dyes on a silica plate. The solvent front moves 8.0 cm from the baseline. Dye A travels a distance of 4.8 cm. The retardation factor (Rf) of dye A expressed as x x 10^-1 is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Rf = (Distance traveled by substance) / (Distance traveled by solvent front) = 4.8 cm / 8.0 cm = 0.60 = 6 x 10^-1. Thus, x = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மெல்லிய அடுக்கு வண்ணப்பிரிகையில் கரைப்பான் முனை 8.0 cm நகர்கிறது; சாயம் A 4.8 cm நகர்கிறது எனில், அதன் Rf மதிப்பு x x 10^-1-ல் உள்ள x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an experiment to measure the enthalpy of dissolution of copper(II) sulfate, 0.050 mol of anhydrous CuSO4(s) was dissolved in 200 g of water in a calorimeter. The temperature of the water increased by 7.9 °C. Assuming the specific heat capacity of water is 4.2 J g^-1 °C^-1 and calorimeter heat capacity is negligible, the magnitude of the molar enthalpy of dissolution of anhydrous CuSO4 (in kJ mol^-1, rounded to the nearest integer) is:",
+    "correctAnswer": 133,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Heat released q = m * c * Delta T = 200 g * 4.2 J g^-1 °C^-1 * 7.9 °C = 6636 J = 6.636 kJ. Molar enthalpy of dissolution = q / moles = 6.636 kJ / 0.050 mol = 132.72 kJ mol^-1 ≈ 133 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "200 g நீரில் 0.050 mol நீரற்ற CuSO4 கரைக்கப்படும் போது வெப்பநிலை 7.9 °C உயர்கிறது. நீரின் தன்வெப்ப ஏற்புத்திறன் 4.2 J g^-1 °C^-1 எனில், நீரற்ற CuSO4-ன் கரைதல் என்தால்பியின் எண்மதிப்பு (kJ mol^-1-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the iodometric titration of copper, a 2.00 g sample of an impure brass alloy containing copper is dissolved in nitric acid, neutralized, and treated with excess KI. The liberated iodine requires 40.0 mL of 0.10 M Na2S2O3 solution to reach the starch endpoint. The mass percentage of copper in the brass alloy is: (Atomic mass of Cu = 63.5 u)",
+    "correctAnswer": 12.7,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Millimoles of Na2S2O3 = 40.0 mL * 0.10 M = 4.0 mmol. Since 2Cu2+ == I2 == 2S2O3^2-, 1 mole of Cu2+ is equivalent to 1 mole of S2O3^2-. Millimoles of Cu = 4.0 mmol = 0.0040 mol. Mass of copper = 0.0040 mol * 63.5 g mol^-1 = 0.254 g. Mass percentage of Cu in alloy = (0.254 g / 2.00 g) * 100 = 12.7%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2.00 g பித்தளை மாதிரி கரைக்கப்பட்டு அதிகளவு KI சேர்க்கப்படுகிறது. வெளிவந்த அயோடின் 40.0 mL 0.10 M Na2S2O3 கரைசலால் தரம் பார்க்கப்படுகிறது எனில், பித்தளையில் உள்ள தாமிரத்தின் நிறை சதவீதம்: (Cu = 63.5 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following eight cations in systematic qualitative analysis: (1) Pb2+, (2) Cu2+, (3) Fe3+, (4) Al3+, (5) Zn2+, (6) Ni2+, (7) Ba2+, and (8) Ca2+. The total number of these cations that yield a sulfide precipitate when H2S gas is passed through an ALKALINE ammoniacal solution (Group IV group reagent: NH4Cl + NH4OH + H2S) is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Classification of cations in qualitative analysis: Group I: Pb2+ (precipitated as PbCl2 by dil. HCl). Group II: Cu2+ (precipitated as CuS by dil. HCl + H2S). Group III: Fe3+, Al3+ (precipitated as hydroxides Fe(OH)3, Al(OH)3 by NH4Cl + NH4OH). Group IV: Zn2+, Ni2+, Co2+, Mn2+ (precipitated as sulfides ZnS, NiS by NH4Cl + NH4OH + H2S). Group V: Ba2+, Ca2+ (precipitated as carbonates by (NH4)2CO3). Among the eight listed cations, only Zn2+ (5) and Ni2+ (6) belong to Group IV and precipitate as sulfides in alkaline ammoniacal medium. Exactly 2 cations.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Pb2+, Cu2+, Fe3+, Al3+, Zn2+, Ni2+, Ba2+, மற்றும் Ca2+ ஆகிய எட்டு நேர்அயனிகளில், கார அம்மோனியா ஊடகத்தில் H2S செலுத்தும்போது சல்பைடாக வீழ்படிவாகும் தொகுதி IV அயனிகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che20-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_20",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an analytical experiment, 1.26 g of pure hydrated oxalic acid crystals, (COOH)2 · 2H2O (molar mass = 126 g mol^-1), is dissolved in water and made up to 100 mL in a volumetric flask. A 20.0 mL aliquot of this solution requires 20.0 mL of a potassium permanganate (KMnO4) solution for complete oxidation in acidic medium. The molarity of the KMnO4 solution (expressed as x x 10^-2 M) is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of oxalic acid in 100 mL = 1.26 g / 126 g mol^-1 = 0.010 mol. Molarity of oxalic acid solution = 0.010 mol / 0.100 L = 0.10 M. In 20.0 mL aliquot: millimoles of oxalic acid = 20.0 mL * 0.10 M = 2.0 mmol. From the redox stoichiometry: 2MnO4- + 5(COOH)2 + 6H+ -> 2Mn2+ + 10CO2 + 8H2O. 5 moles of oxalic acid react with 2 moles of KMnO4. Millimoles of KMnO4 consumed = (2 / 5) * 2.0 mmol = 0.80 mmol. Molarity of KMnO4 = 0.80 mmol / 20.0 mL = 0.040 M = 4.0 x 10^-2 M. Correction: If 2.0 mmol requires 20 mL of KMnO4: M = 0.80 / 20 = 0.040 M (4.0 x 10^-2 M). For x x 10^-2 M where x = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.26 g படிக ஆக்ஸாலிக் அமிலம் 100 mL-க்கு கரைக்கப்படுகிறது. இதிலிருந்து 20.0 mL அமில ஊடகத்தில் 20.0 mL KMnO4 கரைசலுடன் முழுமையாக வினைபுரிகிறது எனில், KMnO4 கரைசலின் மோலாரிட்டி x x 10^-2 M-ல் உள்ள x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

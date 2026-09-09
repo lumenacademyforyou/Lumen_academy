@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat09-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The order and degree of the differential equation (1 + (dy/dx)^2)^(5/3) = d^2y/dx^2 are respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3, 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2, 5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2, 3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3, 5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "To determine the order and degree, eliminate fractional powers by cubing both sides: (1 + (dy/dx)^2)^5 = (d^2y/dx^2)^3. The highest order derivative present is d^2y/dx^2, so the order is 2. The power of the highest order derivative in this polynomial form is 3, so the degree is 3. Hence, the order and degree are 2 and 3 respectively.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + (dy/dx)^2)^(5/3) = d^2y/dx^2 என்ற வகைக் கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி முறையே:",
+        "optionTexts": [
+          "3, 2",
+          "2, 5",
+          "2, 3",
+          "3, 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The integrating factor of the linear differential equation (x ln x) dy/dx + y = 2 ln x (where x > 1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / x",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "e^x",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "ln x",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Dividing the given equation by (x ln x) puts it in standard form: dy/dx + (1 / (x ln x)) y = 2 / x. Here P(x) = 1 / (x ln x). The integrating factor is I.F. = e^(int P(x) dx) = e^(int (1 / (x ln x)) dx). Since d(ln x) = dx / x, int (1 / (x ln x)) dx = ln(ln x). Thus, I.F. = e^(ln(ln x)) = ln x.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x ln x) dy/dx + y = 2 ln x (இங்கு x > 1) என்ற நேரியல் வகைக் கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி:",
+        "optionTexts": [
+          "x",
+          "1 / x",
+          "e^x",
+          "ln x"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The order of the differential equation representing the family of ellipses centered at the origin with axes along the coordinate axes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The family of ellipses centered at the origin with axes along the coordinate axes is given by (x^2 / a^2) + (y^2 / b^2) = 1. This family contains exactly two essential independent arbitrary constants (a and b). Hence, the order of the corresponding differential equation is 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆதியை மையமாகவும் ஆய அச்சுகளை நெட்டச்சு மற்றும் குற்றச்சுகளாகவும் கொண்ட நீள்வட்டக் குடும்பத்தைக் குறிக்கும் வகைக் கெழுச் சமன்பாட்டின் வரிசை:",
+        "optionTexts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If dy/dx = (y + 1) / (x + 1) with the initial condition y(0) = 1, then the value of y(1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Separating variables gives dy / (y + 1) = dx / (x + 1). Integrating both sides: ln|y + 1| = ln|x + 1| + ln C => y + 1 = C(x + 1). Using y(0) = 1: 1 + 1 = C(0 + 1) => C = 2. Thus y + 1 = 2(x + 1). At x = 1: y + 1 = 2(1 + 1) = 4 => y(1) = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx = (y + 1) / (x + 1) மற்றும் y(0) = 1 எனில், y(1)-ன் மதிப்பு:",
+        "optionTexts": [
+          "3",
+          "2",
+          "4",
+          "5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The degree of the differential equation d^2y/dx^2 + sin(dy/dx) = 0 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Not defined",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A differential equation possesses a degree only when it can be expressed as a polynomial in its derivatives. In d^2y/dx^2 + sin(dy/dx) = 0, the derivative dy/dx is inside a trigonometric function and cannot be expanded as a finite polynomial in terms of derivatives. Hence, the degree is not defined.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "d^2y/dx^2 + sin(dy/dx) = 0 என்ற வகைக் கெழுச் சமன்பாட்டின் படி:",
+        "optionTexts": [
+          "1",
+          "2",
+          "வரையறுக்கப்படவில்லை",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the differential equation dy/dx = e^(2x + y) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "e^(2x) - 2 e^(-y) = C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 e^(2x) + e^(-y) = C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "e^(2x) + e^(-y) = C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "e^(2x) + 2 e^(-y) = C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Rewrite dy/dx = e^(2x) * e^y. Separating variables gives e^(-y) dy = e^(2x) dx. Integrating both sides yields -e^(-y) = (1/2) e^(2x) + c. Multiplying by 2 and rearranging terms gives e^(2x) + 2 e^(-y) = C (where C = -2c).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx = e^(2x + y) என்ற வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "e^(2x) - 2 e^(-y) = C",
+          "2 e^(2x) + e^(-y) = C",
+          "e^(2x) + e^(-y) = C",
+          "e^(2x) + 2 e^(-y) = C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the linear differential equation dy/dx + y tan x = sec x is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "y = cos x + C sin x",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "y = sin x + C cos x",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "y = sec x + C tan x",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "y = tan x + C sec x",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Here P(x) = tan x and Q(x) = sec x. Integrating factor I.F. = e^(int tan x dx) = e^(ln|sec x|) = sec x. Multiplying by I.F. gives y * sec x = int sec^2 x dx = tan x + C. Dividing by sec x yields y = sin x + C cos x.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx + y tan x = sec x என்ற நேரியல் வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "y = cos x + C sin x",
+          "y = sin x + C cos x",
+          "y = sec x + C tan x",
+          "y = tan x + C sec x"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The differential equation of the family of straight lines passing through the origin is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x dy - y dx = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "x dy + y dx = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "y dy + x dx = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "y dy - x dx = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The family of lines passing through the origin is given by y = mx, where m is an arbitrary parameter. Differentiating with respect to x gives dy/dx = m. Eliminating m by substituting m = y/x yields dy/dx = y/x => x dy - y dx = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆதிப்புள்ளி வழியே செல்லும் நேர்கோடுகளின் குடும்பத்தைக் குறிக்கும் வகைக் கெழுச் சமன்பாடு:",
+        "optionTexts": [
+          "x dy - y dx = 0",
+          "x dy + y dx = 0",
+          "y dy + x dx = 0",
+          "y dy - x dx = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following differential equations is homogeneous?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(x^2 + y) dx - x dy = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(x^3 + y) dx + x^2 dy = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(x^2 + y^2) dx + 2xy dy = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "y^2 dx + (x^2 - xy - y) dy = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A differential equation M(x, y) dx + N(x, y) dy = 0 is homogeneous if both M and N are homogeneous functions of the exact same degree. For option C: M(tx, ty) = t^2(x^2 + y^2) and N(tx, ty) = t^2(2xy); both functions are homogeneous of degree 2. None of the other options have equal, uniform degree across all terms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வகைக் கெழுச் சமன்பாடுகளில் எது படித்தான (homogeneous) சமன்பாடு?",
+        "optionTexts": [
+          "(x^2 + y) dx - x dy = 0",
+          "(x^3 + y) dx + x^2 dy = 0",
+          "(x^2 + y^2) dx + 2xy dy = 0",
+          "y^2 dx + (x^2 - xy - y) dy = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the differential equation (x + 2y^3) dy/dx = y (where y > 0) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = 2y^3 + Cy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "y = x^3 + Cx",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x = y^2 + Cy^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x = y^3 + Cy",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Invert the derivative: dx/dy = (x + 2y^3) / y = x/y + 2y^2 => dx/dy - (1/y)x = 2y^2. This is a linear differential equation in x as a function of y. P(y) = -1/y and Q(y) = 2y^2. I.F. = e^(int -1/y dy) = e^(-ln y) = 1/y. The solution is x * (1/y) = int 2y^2 * (1/y) dy = int 2y dy = y^2 + C. Multiplying by y yields x = y^3 + Cy.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + 2y^3) dy/dx = y (இங்கு y > 0) என்ற வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "x = 2y^3 + Cy",
+          "y = x^3 + Cx",
+          "x = y^2 + Cy^2",
+          "x = y^3 + Cy"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the solution of x dy/dx = y - x * cos^2(y/x) satisfies y(1) = pi/4, then tan(y/x) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 + ln|x|",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 - ln|x|",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "ln|x| - 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 + x",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dividing by x gives dy/dx = y/x - cos^2(y/x). Let y = vx, then dy/dx = v + x dv/dx. The equation becomes v + x dv/dx = v - cos^2(v) => x dv/dx = -cos^2(v). Separating variables: sec^2(v) dv = -dx / x. Integrating both sides: tan(v) = -ln|x| + C => tan(y/x) = -ln|x| + C. Using y(1) = pi/4 gives tan(pi/4) = -ln(1) + C => 1 = 0 + C => C = 1. Thus, tan(y/x) = 1 - ln|x|.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x dy/dx = y - x * cos^2(y/x) என்ற சமன்பாட்டின் தீர்வு y(1) = pi/4 என்பதை நிறைவுசெய்தால், tan(y/x)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 + ln|x|",
+          "1 - ln|x|",
+          "ln|x| - 1",
+          "1 + x"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the differential equation dy/dx = (4x + y + 1)^2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) * tan^-1((4x + y + 1) / 2) = x + C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/4) * tan^-1((4x + y + 1) / 4) = x + C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "ln|(4x + y + 1) / 2| = x + C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/2) * tan((4x + y + 1) / 2) = x + C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let u = 4x + y + 1. Differentiating with respect to x gives du/dx = 4 + dy/dx => dy/dx = du/dx - 4. Substituting yields du/dx - 4 = u^2 => du/dx = u^2 + 4. Separating variables gives du / (u^2 + 2^2) = dx. Integrating both sides yields (1/2) * tan^-1(u / 2) = x + C => (1/2) * tan^-1((4x + y + 1) / 2) = x + C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx = (4x + y + 1)^2 என்ற வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "(1/2) * tan^-1((4x + y + 1) / 2) = x + C",
+          "(1/4) * tan^-1((4x + y + 1) / 4) = x + C",
+          "ln|(4x + y + 1) / 2| = x + C",
+          "(1/2) * tan((4x + y + 1) / 2) = x + C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The equation of the curve passing through (1, 0) such that the slope of the tangent at any point (x, y) is (y/x) + sec(y/x) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "cos(y/x) = ln|x|",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "tan(y/x) = ln|x|",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sin(y/x) = ln|x|",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "sin(y/x) = x - 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Slope dy/dx = y/x + sec(y/x). Substitute y = vx, so dy/dx = v + x dv/dx. Then v + x dv/dx = v + sec(v) => x dv/dx = sec(v). Separating variables gives cos(v) dv = dx / x. Integrating both sides yields sin(v) = ln|x| + C => sin(y/x) = ln|x| + C. Since the curve passes through (1, 0): sin(0/1) = ln(1) + C => 0 = 0 + C => C = 0. Therefore, the equation of the curve is sin(y/x) = ln|x|.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1, 0) புள்ளி வழியே செல்லும் வளைவரை ஒன்றின் எந்தவொரு புள்ளி (x, y)-லும் தொடுகோட்டின் சாய்வு (y/x) + sec(y/x) எனில், அவ்வளைவரையின் சமன்பாடு:",
+        "optionTexts": [
+          "cos(y/x) = ln|x|",
+          "tan(y/x) = ln|x|",
+          "sin(y/x) = ln|x|",
+          "sin(y/x) = x - 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If (1 + x^2) dy/dx + 2xy = 4x^3 and y(0) = 2, then the value of y(1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / 2",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Standard form: dy/dx + (2x / (1 + x^2)) y = 4x^3 / (1 + x^2). Integrating factor I.F. = e^(int (2x / (1+x^2)) dx) = e^(ln(1 + x^2)) = 1 + x^2. The solution is y * (1 + x^2) = int [4x^3 / (1 + x^2)] * (1 + x^2) dx = int 4x^3 dx = x^4 + C. Using y(0) = 2: 2 * (1 + 0) = 0 + C => C = 2. Thus y * (1 + x^2) = x^4 + 2. At x = 1: y(1) * (1 + 1) = 1 + 2 = 3 => 2 * y(1) = 3 => y(1) = 3/2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x^2) dy/dx + 2xy = 4x^3 மற்றும் y(0) = 2 எனில், y(1)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1",
+          "2",
+          "5 / 2",
+          "3 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the Bernoulli differential equation dy/dx + y / x = y^2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / (xy) = C + ln|x|",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / (xy) = C - ln|x|",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "y / x = C - ln|x|",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x / y = C + ln|x|",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dividing the equation by y^2 gives y^(-2) dy/dx + (1/x) y^(-1) = 1. Substitute v = y^(-1), so dv/dx = -y^(-2) dy/dx. The equation becomes -dv/dx + (1/x) v = 1 => dv/dx - (1/x) v = -1. I.F. = e^(int -1/x dx) = 1/x. Then v * (1/x) = int -1 * (1/x) dx = -ln|x| + C. Substituting v = 1/y gives (1/y) * (1/x) = C - ln|x| => 1 / (xy) = C - ln|x|.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx + y / x = y^2 என்ற பெர்னூலி வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "1 / (xy) = C + ln|x|",
+          "1 / (xy) = C - ln|x|",
+          "y / x = C - ln|x|",
+          "x / y = C + ln|x|"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A curve passes through (1, 1). If the length of the subnormal at any point (x, y) is constant and equal to 2, then the curve represents a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Circle",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ellipse",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Parabola",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Hyperbola",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The length of the subnormal to a curve is given by |y * dy/dx|. Given y * dy/dx = 2. Separating variables gives y dy = 2 dx. Integrating both sides yields y^2 / 2 = 2x + c => y^2 = 4x + 2c. Since it passes through (1, 1): 1^2 = 4(1) + 2c => 2c = -3. The equation is y^2 = 4x - 3 = 4(x - 3/4), which is the standard equation of a parabola.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1, 1) புள்ளி வழியே செல்லும் ஒரு வளைவரையின் எந்தவொரு புள்ளி (x, y)-லும் துணைச் செங்கோட்டின் (subnormal) நீளம் மாறிலியாகவும் 2-க்குச் சமமாகவும் இருப்பின், அவ்வளைவரை குறிப்பது:",
+        "optionTexts": [
+          "வட்டம்",
+          "நீள்வட்டம்",
+          "பரவளையம்",
+          "அதிபரவளையம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the differential equation (x dy - y dx) / (x^2 + y^2) = dx is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "tan^-1(x/y) = x + C",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "ln(x^2 + y^2) = 2x + C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "y / x = e^x + C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tan^-1(y/x) = x + C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Recall the exact differential identity d(tan^-1(y/x)) = (x dy - y dx) / (x^2 + y^2). The given differential equation directly equates to d(tan^-1(y/x)) = dx. Integrating both sides directly yields tan^-1(y/x) = x + C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x dy - y dx) / (x^2 + y^2) = dx என்ற வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "tan^-1(x/y) = x + C",
+          "ln(x^2 + y^2) = 2x + C",
+          "y / x = e^x + C",
+          "tan^-1(y/x) = x + C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the differential equation (2x + 3y - 1) dx + (3x + 2y + 1) dy = 0 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x^2 + 3xy + y^2 - x + y = C",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "x^2 - 3xy + y^2 - x + y = C",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x^2 + 3xy - y^2 + x - y = C",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2x^2 + 3xy + 2y^2 - x + y = C",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Grouping terms: (2x dx + 2y dy) + 3(y dx + x dy) - dx + dy = 0. Notice that 2x dx + 2y dy = d(x^2 + y^2), 3(y dx + x dy) = 3 d(xy), -dx = -d(x), and dy = d(y). Combining all exact differentials gives d(x^2 + y^2 + 3xy - x + y) = 0. Integrating both sides yields x^2 + 3xy + y^2 - x + y = C.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(2x + 3y - 1) dx + (3x + 2y + 1) dy = 0 என்ற வகைக் கெழுச் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "x^2 + 3xy + y^2 - x + y = C",
+          "x^2 - 3xy + y^2 - x + y = C",
+          "x^2 + 3xy - y^2 + x - y = C",
+          "2x^2 + 3xy + 2y^2 - x + y = C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let y = y(x) be the solution of the differential equation (x^2 + 1) dy/dx + 2xy = sqrt(x^2 + 4) with y(0) = 0. Then lim_{x -> infinity} y(x) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Standard linear form: dy/dx + (2x / (x^2 + 1)) y = sqrt(x^2 + 4) / (x^2 + 1). I.F. = x^2 + 1. The solution is y * (x^2 + 1) = int sqrt(x^2 + 4) dx = (x/2) sqrt(x^2 + 4) + 2 ln|x + sqrt(x^2 + 4)| + C. Given y(0) = 0: 0 = 0 + 2 ln(2) + C => C = -2 ln 2. Thus y(x) = [(x/2) sqrt(x^2 + 4) + 2 ln((x + sqrt(x^2 + 4))/2)] / (x^2 + 1). As x -> infinity, (x/2) sqrt(x^2 + 4) ~ x^2 / 2, while the logarithmic term grows much slower than x^2. Thus lim_{x -> infinity} y(x) = lim_{x -> infinity} (x^2 / 2) / (x^2 + 1) = 1/2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x^2 + 1) dy/dx + 2xy = sqrt(x^2 + 4) மற்றும் y(0) = 0 என்ற வகைக் கெழுச் சமன்பாட்டின் தீர்வு y = y(x) எனில், lim_{x -> infinity} y(x)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1",
+          "1 / 2",
+          "2",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the solution of the differential equation x dy/dx + y = y^2 ln x (where x > 0) satisfies y(1) = 1, then the value of y(e) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / e",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "e / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1 / (1 + e)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dividing by x * y^2: y^(-2) dy/dx + (1/x) y^(-1) = (ln x) / x. Let v = -y^(-1), then dv/dx = y^(-2) dy/dx. The equation becomes dv/dx - (1/x) v = (ln x) / x. I.F. = e^(int -1/x dx) = 1/x. Then v * (1/x) = int (ln x) / x^2 dx = -(ln x)/x - 1/x + C. Multiplying by x: v = -(1 + ln x) + Cx. Since v = -1/y, we get 1/y = 1 + ln x - Cx. Given y(1) = 1: 1/1 = 1 + ln(1) - C(1) => 1 = 1 - C => C = 0. Therefore, 1/y = 1 + ln x => y(x) = 1 / (1 + ln x). For x = e: y(e) = 1 / (1 + ln e) = 1 / (1 + 1) = 1/2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x dy/dx + y = y^2 ln x (இங்கு x > 0) மற்றும் y(1) = 1 என்ற சமன்பாட்டின் தீர்வு y(x) எனில், y(e)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 / e",
+          "e / 2",
+          "1 / 2",
+          "1 / (1 + e)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The sum of the order and degree of the differential equation [1 + (dy/dx)^3]^(4/5) = 7 (d^2y/dx^2) is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Raising both sides to the power 5 to remove fractional exponents gives: [1 + (dy/dx)^3]^4 = 7^5 (d^2y/dx^2)^5. The highest derivative present is d^2y/dx^2, which has order 2. The power of this highest derivative in the polynomial form is 5, so the degree is 5. Sum of order and degree = 2 + 5 = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[1 + (dy/dx)^3]^(4/5) = 7 (d^2y/dx^2) என்ற வகைக் கெழுச் சமன்பாட்டின் வரிசை மற்றும் படியின் கூடுதல்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let y(x) be the solution of the differential equation dy/dx = 2xy with the initial condition y(0) = 3. The value of y(1) / e is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Separating variables: dy / y = 2x dx. Integrating both sides: ln|y| = x^2 + c => y = A e^(x^2). Using y(0) = 3: 3 = A e^0 => A = 3. Thus y(x) = 3 e^(x^2). At x = 1: y(1) = 3 e^(1^2) = 3e. Therefore, y(1) / e = 3e / e = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx = 2xy மற்றும் y(0) = 3 என நிறைவுசெய்யும் சார்பு y(x) எனில், y(1) / e-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the solution of the differential equation x dy/dx + y = 3x^2 satisfies y(1) = 5, then the value of y(2) is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Notice the left-hand side is d(xy)/dx = 3x^2. Integrating both sides with respect to x yields xy = x^3 + C. Using the initial condition y(1) = 5: 1(5) = 1^3 + C => 5 = 1 + C => C = 4. Thus xy = x^3 + 4 => y(x) = x^2 + 4/x. For x = 2: y(2) = 2^2 + 4/2 = 4 + 2 = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x dy/dx + y = 3x^2 மற்றும் y(1) = 5 என்ற சமன்பாட்டின் தீர்வு y(x) எனில், y(2)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the curve satisfying 2xy dy = (x^2 + y^2) dx passes through the point (1, 2), then the value of y^2 when x = 3 is:",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Rearranging gives 2xy dy - y^2 dx = x^2 dx. Dividing through by x^2: (2xy dy - y^2 dx) / x^2 = dx. The left-hand side is the exact derivative d(y^2 / x). Integrating both sides gives y^2 / x = x + C => y^2 = x^2 + Cx. Given that the curve passes through (1, 2): 2^2 = 1^2 + C(1) => 4 = 1 + C => C = 3. The equation of the curve is y^2 = x^2 + 3x. When x = 3: y^2 = 3^2 + 3(3) = 9 + 9 = 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2xy dy = (x^2 + y^2) dx என்ற சமன்பாட்டை நிறைவுசெய்யும் வளைவரை (1, 2) புள்ளி வழியே சென்றால், x = 3 எனும்போது y^2-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let y = y(x) be the solution of the differential equation (x + 2y^3) dy/dx = y with y(1) = 1. Then the value of x when y = 2 is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Inverting derivatives gives dx/dy - (1/y) x = 2y^2. I.F. = e^(int -1/y dy) = 1/y. The solution is x * (1/y) = int 2y^2 * (1/y) dy = int 2y dy = y^2 + C => x = y^3 + Cy. Since y(1) = 1 (meaning x = 1 when y = 1): 1 = 1^3 + C(1) => 1 = 1 + C => C = 0. Hence the relation is x = y^3. When y = 2: x = 2^3 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + 2y^3) dy/dx = y மற்றும் y(1) = 1 என்ற வகைக் கெழுச் சமன்பாட்டின் தீர்வு y = y(x) எனில், y = 2 எனும்போது x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The rate of growth of a bacteria population P(t) is proportional to the population present at time t. If the population doubles in 3 hours, then in 9 hours the population becomes m times the initial population P(0). The value of m is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The growth is governed by dP/dt = kP => P(t) = P(0) e^(kt). Given that the population doubles in 3 hours: P(3) = 2 P(0) => P(0) e^(3k) = 2 P(0) => e^(3k) = 2. After 9 hours, P(9) = P(0) e^(9k) = P(0) (e^(3k))^3 = P(0) (2)^3 = 8 P(0). Thus m = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாக்டீரியாக்களின் எண்ணிக்கை P(t) வளரும் வீதம் அந்நேரத்தில் உள்ள பாக்டீரியாக்களின் எண்ணிக்கைக்கு நேர்விகிதத்தில் உள்ளது. 3 மணி நேரத்தில் மக்கள் தொகை இரட்டிப்பாகிறது எனில், 9 மணி நேரத்தில் ஆரம்ப மக்கள் தொகையை விட m மடங்கு ஆகிறது. m-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let y(x) be the solution of the homogeneous differential equation x^2 dy + y(x + y) dx = 0 satisfying y(1) = 2. The value of 7 * y(2) is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Rewrite: dy/dx = -(xy + y^2) / x^2 = -(y/x) - (y/x)^2. Substitute y = vx, then dy/dx = v + x dv/dx. The equation becomes v + x dv/dx = -v - v^2 => x dv/dx = -(2v + v^2) = -v(v + 2). Separating variables gives dv / [v(v + 2)] = -dx / x => (1/2) [1/v - 1/(v + 2)] dv = -dx / x. Integrating yields (1/2) ln|v / (v + 2)| = -ln|x| + (1/2) ln C => ln|v / (v + 2)| = ln(C / x^2) => v / (v + 2) = C / x^2. Since v = y/x: (y/x) / (y/x + 2) = y / (y + 2x) = C / x^2 => x^2 y = C(y + 2x). Using y(1) = 2: 1^2 * 2 = C(2 + 2(1)) => 2 = 4C => C = 1/2. Thus 2x^2 y = y + 2x => y(2x^2 - 1) = 2x => y = 2x / (2x^2 - 1). At x = 2: y(2) = 2(2) / (2(4) - 1) = 4 / 7. Therefore, 7 * y(2) = 7 * (4 / 7) = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 dy + y(x + y) dx = 0 மற்றும் y(1) = 2 என்ற படித்தான வகைக் கெழுச் சமன்பாட்டின் தீர்வு y(x) எனில், 7 * y(2)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A curve y = f(x) passes through the point (1, 2). If the normal to the curve at any point P(x, y) passes through the fixed point (3, 0), then the square of the radius (R^2) of this circular curve is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The slope of the normal at (x, y) is -dx/dy. The equation of the normal line at P(x, y) is Y - y = (-dx/dy)(X - x). Since it passes through (3, 0): 0 - y = (-dx/dy)(3 - x) => -y dy = (x - 3) dx => y dy + (x - 3) dx = 0. Integrating both sides yields y^2 / 2 + (x - 3)^2 / 2 = c => (x - 3)^2 + y^2 = 2c = R^2. The curve is a circle centered at (3, 0). Since it passes through (1, 2): R^2 = (1 - 3)^2 + 2^2 = (-2)^2 + 4 = 4 + 4 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "y = f(x) என்ற வளைவரை (1, 2) புள்ளி வழியே செல்கிறது. அவ்வளைவரையின் எந்தவொரு புள்ளி P(x, y)-லும் வரையப்படும் செங்கோடு (3, 0) என்ற நிலையான புள்ளி வழியே சென்றால், அவ்வட்ட வளைவரையின் ஆரத்தின் வர்க்கம் (R^2):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let y(x) be the solution of the differential equation dy/dx + y tan x = 2x + x^2 tan x with y(0) = 1. The value of pi^2 - y(pi) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "P(x) = tan x, so the integrating factor is I.F. = e^(int tan x dx) = sec x. Multiplying through gives d/dx (y sec x) = (2x + x^2 tan x) sec x = 2x sec x + x^2 sec x tan x = d/dx (x^2 sec x). Integrating both sides gives y sec x = x^2 sec x + C => y = x^2 + C cos x. Using y(0) = 1: 1 = 0 + C cos(0) => C = 1. Thus y(x) = x^2 + cos x. At x = pi: y(pi) = pi^2 + cos(pi) = pi^2 - 1. Therefore, pi^2 - y(pi) = pi^2 - (pi^2 - 1) = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "dy/dx + y tan x = 2x + x^2 tan x மற்றும் y(0) = 1 என்ற சமன்பாட்டின் தீர்வு y(x) எனில், pi^2 - y(pi)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat09-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let y(x) be the solution of the differential equation (x + 1) dy/dx - y = x + 1 (for x > -1) satisfying y(0) = 3. The value of y(e - 1) / e is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Dividing by (x + 1) gives standard linear form: dy/dx - (1 / (x + 1)) y = 1. I.F. = e^(int -1/(x + 1) dx) = e^(-ln(x + 1)) = 1 / (x + 1). The solution is y * (1 / (x + 1)) = int 1 * (1 / (x + 1)) dx = ln(x + 1) + C. Using y(0) = 3: 3 / (0 + 1) = ln(1) + C => 3 = 0 + C => C = 3. Thus y(x) = (x + 1) [ln(x + 1) + 3]. For x = e - 1: x + 1 = e, and ln(x + 1) = ln(e) = 1. Therefore, y(e - 1) = e * [1 + 3] = 4e. Hence, y(e - 1) / e = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + 1) dy/dx - y = x + 1 (இங்கு x > -1) மற்றும் y(0) = 3 என்ற சமன்பாட்டின் தீர்வு y(x) எனில், y(e - 1) / e-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

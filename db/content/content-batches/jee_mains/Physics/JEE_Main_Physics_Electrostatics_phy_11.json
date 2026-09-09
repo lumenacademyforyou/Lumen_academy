@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY11-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two point charges placed at a distance r apart in vacuum exert an electrostatic force F on each other. When placed at the same separation in a medium of dielectric constant K = 4, the force between them becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 F",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "F / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 F",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "F / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Coulomb's law, the electrostatic force between two charges in a medium of relative permittivity (dielectric constant) K is given by F_med = F_vac / K. With K = 4, F_med = F / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் r தொலைவில் வைக்கப்பட்டுள்ள இரு புள்ளி மின்னூட்டங்கள் ஒன்றுக்கொன்று F நிலைமின்னியல் விசையைச் செலுத்துகின்றன. அதே தொலைவில் K = 4 மின்காப்பு மாறிலி கொண்ட ஒரு ஊடகத்தில் வைக்கப்படும் போது, அவற்றுக்கிடையேயான விசை:",
+        "optionTexts": [
+          "4 F",
+          "F / 4",
+          "2 F",
+          "F / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The electric field intensity at a distance r from an isolated point charge q is directly proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / r",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / r^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1 / r^3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "r^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Coulomb's law and the definition of electric field, the field produced by a point charge q at distance r in vacuum is E = q / (4 pi epsilon0 r^2). Thus, E is directly proportional to 1 / r^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனித்த புள்ளி மின்னூட்டம் q இலிருந்து r தொலைவில் உள்ள மின்புலச் செறிவு எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "1 / r",
+          "1 / r^2",
+          "1 / r^3",
+          "r^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A closed Gaussian surface encloses an electric dipole consisting of charges +q and -q. The net total electric flux leaving the Gaussian surface is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "q / epsilon0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2q / epsilon0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-q / epsilon0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Gauss's Law, the total electric flux through any closed surface is Phi = q_enclosed / epsilon0. An electric dipole consists of charges +q and -q, so the net enclosed charge is q_enclosed = +q - q = 0. Therefore, the net electric flux is zero.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+q மற்றும் -q மின்னூட்டங்களைக் கொண்ட ஒரு மின் இருமுனையை உள்ளடக்கிய ஒரு மூடிய காஸியன் பரப்பின் வழியே வெளியேறும் நிகர மின்பாயம்:",
+        "optionTexts": [
+          "q / epsilon0",
+          "2q / epsilon0",
+          "சுழி",
+          "-q / epsilon0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor with plate area A and separation d has capacitance C0 in air. If the entire space between the plates is filled with a dielectric slab of dielectric constant K = 5, its new capacitance is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "C0 / 5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 C0",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "25 C0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The capacitance of a parallel plate capacitor in air is C0 = epsilon0 A / d. When filled completely with a dielectric of constant K, the capacitance becomes C = K * (epsilon0 A / d) = K C0. With K = 5, C = 5 C0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தட்டுப் பரப்பளவு A மற்றும் தட்டுகளுக்கு இடையேயான இடைவெளி d கொண்ட ஒரு இணைத்தட்டு மின்தேக்கியின் மின்தேக்குத்திறன் காற்றில் C0 ஆகும். தட்டுகளுக்கு இடையேயான முழு இடமும் K = 5 மின்காப்பு மாறிலி கொண்ட மின்காப்புப் பொருளால் நிரப்பப்பட்டால், அதன் புதிய மின்தேக்குத்திறன்:",
+        "optionTexts": [
+          "C0 / 5",
+          "5 C0",
+          "25 C0",
+          "C0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A hollow conducting spherical shell of radius R is given a positive charge Q. The electric potential at any point inside the shell at distance r from the centre (where r < R) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Q / (4 pi epsilon0 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Q / (4 pi epsilon0 r)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Q r / (4 pi epsilon0 R^2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Inside a charged conducting spherical shell, the electric field is zero everywhere: E = -dV/dr = 0. Consequently, the potential V is uniform throughout the interior and is identical to the potential on its surface: V = Q / (4 pi epsilon0 R).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு உள்ளீடற்ற கடத்தும் கோளக் கூட்டிற்கு நேர் மின்னூட்டம் Q வழங்கப்படுகிறது. கோளத்தின் மையத்திலிருந்து r தொலைவில் (r < R) உள்ளே உள்ள எந்த ஒரு புள்ளியிலும் மின்னழுத்தம்:",
+        "optionTexts": [
+          "சுழி",
+          "Q / (4 pi epsilon0 R)",
+          "Q / (4 pi epsilon0 r)",
+          "Q r / (4 pi epsilon0 R^2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A capacitor of capacitance 10 microfarad is charged to a potential difference of 100 V. The electrostatic energy stored in the capacitor is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.05 J",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.10 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.01 J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.50 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electrostatic energy stored in a charged capacitor is U = (1/2) C V^2. Substituting C = 10 microfarad = 10 x 10^-6 F and V = 100 V: U = (1/2) * (10 x 10^-6 F) * (100 V)^2 = 5 x 10^-6 * 10^4 = 0.05 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 microfarad மின்தேக்குத்திறன் கொண்ட ஒரு மின்தேக்கி 100 V மின்னழுத்த வேறுபாட்டிற்கு மின்னூட்டப்படுகிறது. மின்தேக்கியில் சேமிக்கப்பட்ட நிலைமின்னியல் ஆற்றல்:",
+        "optionTexts": [
+          "0.05 J",
+          "0.10 J",
+          "0.01 J",
+          "0.50 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electric dipole of dipole moment p is placed in a uniform electric field E. The torque tau experienced by the dipole and its potential energy U in terms of the angle theta between p and E are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "tau = p E sin theta, U = -p E cos theta",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "tau = p E cos theta, U = -p E sin theta",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "tau = p E sin theta, U = p E cos theta",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tau = -p E sin theta, U = p E sin theta",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The torque on an electric dipole in a uniform electric field is tau = p x E, so its magnitude is tau = p E sin theta. Taking the zero of potential energy at theta = 90 deg, the electrostatic potential energy is U = - p . E = - p E cos theta.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p இருமுனை திருப்புத்திறன் கொண்ட ஒரு மின் இருமுனை ஒரு சீரான மின்புலம் E இல் வைக்கப்பட்டுள்ளது. p மற்றும் E-க்கு இடையே உள்ள கோணம் theta எனில், இருமுனை உணரும் திருப்புவிசை tau மற்றும் அதன் நிலை ஆற்றல் U:",
+        "optionTexts": [
+          "tau = p E sin theta, U = -p E cos theta",
+          "tau = p E cos theta, U = -p E sin theta",
+          "tau = p E sin theta, U = p E cos theta",
+          "tau = -p E sin theta, U = p E sin theta"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a short electric dipole of dipole moment p, the ratio of the electric field intensity at an axial point to that at an equatorial point at the same distance r (where r >> dipole length) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a short electric dipole: E_axial = 2 p / (4 pi epsilon0 r^3) and E_equatorial = p / (4 pi epsilon0 r^3). Taking their ratio gives E_axial / E_equatorial = [2 p / (4 pi epsilon0 r^3)] / [p / (4 pi epsilon0 r^3)] = 2 / 1 = 2 : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p இருமுனை திருப்புத்திறன் கொண்ட ஒரு சிறிய மின் இருமுனைக்கு, சம தொலைவு r இல் (r >> இருமுனை நீளம்) அச்சுக்கோட்டில் உள்ள மின்புலச் செறிவுக்கும் நடுவரைக் கோட்டில் உள்ள மின்புலச் செறிவுக்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "1 : 2",
+          "2 : 1",
+          "4 : 1",
+          "1 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements is FALSE regarding equipotential surfaces in an electrostatic field?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The work done in moving a test charge from one point to another on the same equipotential surface is zero",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Electric field lines are always perpendicular to the equipotential surfaces",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Two equipotential surfaces can intersect each other at sharp corners",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Equipotential surfaces are closer together in regions of stronger electric fields",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Two equipotential surfaces can never intersect each other. If they intersected, there would be two different values of electric potential at the point of intersection and two different directions for the electric field at that point, which is physically impossible.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலைமின்னியல் புலத்தில் உள்ள சமமின்னழுத்தப் பரப்புகள் குறித்து பின்வரும் கூற்றுகளில் எது தவறானது?",
+        "optionTexts": [
+          "ஒரே சமமின்னழுத்தப் பரப்பில் ஒரு சோதனை மின்னூட்டத்தை ஒரு புள்ளியிலிருந்து மற்றொரு புள்ளிக்கு நகர்த்த செய்யப்படும் வேலை சுழி",
+          "மின்புலக் கோடுகள் எப்போதும் சமமின்னழுத்தப் பரப்புகளுக்கு செங்குத்தாக இருக்கும்",
+          "இரு சமமின்னழுத்தப் பரப்புகள் கூர்மையான முனைகளில் ஒன்றை ஒன்று வெட்டிக்கொள்ள முடியும்",
+          "வலிமையான மின்புலம் உள்ள பகுதிகளில் சமமின்னழுத்தப் பரப்புகள் ஒன்றுக்கொன்று நெருக்கமாக இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The electrostatic potential in a region of space is given by V(x, y) = (4x^2 - 3y^2) volts, where x and y are in meters. The magnitude of the electric field at the point (1 m, 2 m) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 V/m",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt(208) V/m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 sqrt(13) V/m",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "14 V/m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The components of the electric field are E_x = - dV/dx = - d/dx(4x^2 - 3y^2) = -8x, and E_y = - dV/dy = - d/dy(4x^2 - 3y^2) = 6y. At the point (1 m, 2 m): E_x = -8(1) = -8 V/m, and E_y = 6(2) = 12 V/m. The magnitude of the electric field is E = sqrt(E_x^2 + E_y^2) = sqrt((-8)^2 + 12^2) = sqrt(64 + 144) = sqrt(208) = sqrt(16 * 13) = 4 sqrt(13) V/m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பகுதியில் நிலைமின்னழுத்தம் V(x, y) = (4x^2 - 3y^2) வோல்ட் எனத் தரப்படுகிறது. (1 m, 2 m) புள்ளியில் மின்புலத்தின் எண்மதிப்பு:",
+        "optionTexts": [
+          "10 V/m",
+          "sqrt(208) V/m",
+          "4 sqrt(13) V/m",
+          "14 V/m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor has plate separation d and plate area A. A dielectric slab of thickness t (where t < d) and dielectric constant K is introduced between the plates. The new capacitance of the capacitor is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "epsilon0 A / (d - t + t / K)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "epsilon0 A / (d + t - t / K)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "K epsilon0 A / (d - t)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "epsilon0 A / (d - t / K)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When a dielectric slab of thickness t and constant K is introduced into a capacitor of plate separation d, the air gap becomes (d - t) with field E0 and the dielectric region has field E0 / K. The potential difference is V = E0 (d - t) + (E0 / K) t = E0 [d - t + t/K] = (Q / (epsilon0 A)) [d - t + t/K]. Therefore, C = Q / V = epsilon0 A / [d - t + t/K].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இணைத்தட்டு மின்தேக்கியின் தட்டுகளுக்கு இடையேயான தொலைவு d மற்றும் பரப்பளவு A ஆகும். t தடிமனும் (t < d) K மின்காப்பு மாறிலியும் கொண்ட ஒரு மின்காப்புப் பலகை தட்டுகளுக்கு இடையே வைக்கப்படுகிறது. மின்தேக்கியின் புதிய மின்தேக்குத்திறன்:",
+        "optionTexts": [
+          "epsilon0 A / (d - t + t / K)",
+          "epsilon0 A / (d + t - t / K)",
+          "K epsilon0 A / (d - t)",
+          "epsilon0 A / (d - t / K)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A capacitor of capacitance C1 charged to potential V1 is connected in parallel with an uncharged capacitor of capacitance C2. The common potential across the combination is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "C1 V1 / (C1 + C2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C2 V1 / (C1 + C2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(C1 + C2) V1 / C1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "V1 / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By conservation of total charge: Q_total = C1 V1 + C2 (0) = C1 V1. When connected in parallel, the equivalent capacitance is C_eq = C1 + C2. The common potential across both capacitors is V_common = Q_total / C_eq = C1 V1 / (C1 + C2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V1 மின்னழுத்தத்திற்கு மின்னூட்டப்பட்ட C1 மின்தேக்குத்திறன் கொண்ட ஒரு மின்தேக்கி, மின்னூட்டப்படாத C2 மின்தேக்கியுடன் பக்க இணைப்பில் இணைக்கப்படுகிறது. இச்சேர்க்கையின் பொதுவான மின்னழுத்தம்:",
+        "optionTexts": [
+          "C1 V1 / (C1 + C2)",
+          "C2 V1 / (C1 + C2)",
+          "(C1 + C2) V1 / C1",
+          "V1 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The electric field intensity at a distance r from an infinite non-conducting plane sheet with uniform surface charge density sigma is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sigma / (2 epsilon0) and independent of r",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sigma / epsilon0 and independent of r",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sigma / (2 epsilon0 r)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sigma r / (2 epsilon0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Applying Gauss's law with a cylindrical pillbox Gaussian surface across an infinite non-conducting plane sheet of charge density sigma yields 2 E A = sigma A / epsilon0 => E = sigma / (2 epsilon0). The field is uniform and completely independent of the distance r from the sheet.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான பரப்பு மின்னூட்ட அடர்த்தி sigma கொண்ட ஒரு முடிவிலா கடத்தா சமதளத் தகட்டிலிருந்து r தொலைவில் உள்ள மின்புலச் செறிவு:",
+        "optionTexts": [
+          "sigma / (2 epsilon0) மற்றும் r-ஐ சார்ந்தது அல்ல",
+          "sigma / epsilon0 மற்றும் r-ஐ சார்ந்தது அல்ல",
+          "sigma / (2 epsilon0 r)",
+          "sigma r / (2 epsilon0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A point charge q is placed at the exact center of a cube of side a. The electric flux passing through any one face of the cube is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "q / epsilon0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "q / (6 epsilon0)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "q / (24 epsilon0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "q / (8 epsilon0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Gauss's law, the total electric flux through the entire closed surface of the cube is Phi_total = q / epsilon0. By the cubic symmetry, the flux is distributed equally across all six identical faces. Therefore, the flux through any single face is Phi_face = (1/6) Phi_total = q / (6 epsilon0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "a பக்க அளவு கொண்ட ஒரு கனசதுரத்தின் சரியான மையத்தில் ஒரு புள்ளி மின்னூட்டம் q வைக்கப்பட்டுள்ளது. கனசதுரத்தின் ஏதேனும் ஒரு முகத்தின் வழியே செல்லும் மின்பாயம்:",
+        "optionTexts": [
+          "q / epsilon0",
+          "q / (6 epsilon0)",
+          "q / (24 epsilon0)",
+          "q / (8 epsilon0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate air capacitor of capacitance C is charged to a potential V by a battery. The battery is then disconnected, and a dielectric slab of dielectric constant K is inserted to fill the space between the plates. Which of the following statements is correct?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The electric field between the plates decreases by a factor of K",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The stored energy increases by a factor of K",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The potential difference across the plates remains V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The charge on the plates increases by a factor of K",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since the battery is disconnected, the charge Q on the plates remains constant. The capacitance increases to C' = K C. The new potential difference is V' = Q / C' = Q / (K C) = V / K (decreases by factor K). The electric field E' = V' / d = (V / d) / K = E / K (decreases by factor K). The stored energy is U' = Q^2 / (2 C') = Q^2 / (2 K C) = U / K (decreases by factor K). Therefore, statement A is correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C மின்தேக்குத்திறன் கொண்ட ஒரு இணைத்தட்டு காற்று மின்தேக்கி மின்கலன் மூலம் V மின்னழுத்தத்திற்கு மின்னூட்டப்படுகிறது. பின்னர் மின்கலன் துண்டிக்கப்பட்டு, தட்டுகளுக்கு இடையே K மின்காப்பு மாறிலி கொண்ட பலகை செருகப்படுகிறது. பின்வரும் கூற்றுகளில் எது சரியானது?",
+        "optionTexts": [
+          "தட்டுகளுக்கு இடையேயான மின்புலம் K மடங்கு குறைகிறது",
+          "சேமிக்கப்பட்ட ஆற்றல் K மடங்கு அதிகரிக்கிறது",
+          "மின்னழுத்த வேறுபாடு மாறாமல் V ஆகவே இருக்கும்",
+          "தட்டுகளில் உள்ள மின்னூட்டம் K மடங்கு அதிகரிக்கிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A non-conducting solid sphere of radius R has a uniform volume charge density rho. The ratio of the electric field intensity at a distance r1 = R / 2 from the center to that at a distance r2 = 2 R from the center is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Inside the uniformly charged non-conducting sphere (r1 = R / 2 < R), E_in(r) = (rho * r) / (3 epsilon0). So E1 = (rho * R/2) / (3 epsilon0) = rho R / (6 epsilon0). Outside the sphere (r2 = 2R > R), the sphere behaves as a point charge of total charge Q = (4/3) pi R^3 rho located at the center: E_out(r) = Q / (4 pi epsilon0 r^2) = [(4/3) pi R^3 rho] / [4 pi epsilon0 (2R)^2] = rho R / (12 epsilon0). Taking the ratio: E1 / E2 = [rho R / (6 epsilon0)] / [rho R / (12 epsilon0)] = 12 / 6 = 2 : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு கடத்தா திண்மக் கோளம் சீரான பருமன் மின்னூட்ட அடர்த்தி rho-ஐக் கொண்டுள்ளது. மையத்திலிருந்து r1 = R / 2 தொலைவில் உள்ள மின்புலச் செறிவுக்கும், r2 = 2 R தொலைவில் உள்ள மின்புலச் செறிவுக்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "1 : 1",
+          "2 : 1",
+          "1 : 2",
+          "4 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two thin concentric conducting spherical shells of radii R1 and R2 (where R1 < R2) carry initial charges. If the inner shell is connected to the ground (earthed) while the outer shell carries a charge Q, the charge q1 on the inner shell becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "- (R1 / R2) Q",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "- (R2 / R1) Q",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "- Q",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When the inner shell of radius R1 is connected to earth, its electric potential becomes zero: V1 = 0. The potential on the inner shell is V1 = q1 / (4 pi epsilon0 R1) + Q / (4 pi epsilon0 R2) = 0 => q1 / R1 = - Q / R2 => q1 = - (R1 / R2) Q.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R1 மற்றும் R2 (R1 < R2) ஆரங்கள் கொண்ட இரு மெல்லிய பொதுமைய கடத்தும் கோளக் கூடுகளில், வெளிப்புற கூடு Q மின்னூட்டத்தைக் கொண்டுள்ள நிலையில் உள் கூடு தரையிறக்கப்பட்டால் (earthed), உள் கூட்டில் உள்ள மின்னூட்டம் q1:",
+        "optionTexts": [
+          "- (R1 / R2) Q",
+          "- (R2 / R1) Q",
+          "- Q",
+          "சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total electrostatic self-energy of a uniformly charged non-conducting solid sphere of total charge Q and radius R is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/5) * Q^2 / (4 pi epsilon0 R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) * Q^2 / (4 pi epsilon0 R)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(3/8) * Q^2 / (4 pi epsilon0 R)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/6) * Q^2 / (4 pi epsilon0 R)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electrostatic self-energy is obtained by assembling the sphere layer by layer or integrating the energy density (1/2) epsilon0 E^2 over all space: U_total = integral_{0}^{R} (1/2) epsilon0 E_in^2 (4 pi r^2 dr) + integral_{R}^{infinity} (1/2) epsilon0 E_out^2 (4 pi r^2 dr) = [1/10 + 1/2] * Q^2 / (4 pi epsilon0 R) = (3/5) * [Q^2 / (4 pi epsilon0 R)].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Q மொத்த மின்னூட்டமும் R ஆரமும் கொண்ட ஒரு சீரான மின்னூட்டம் பெற்ற கடத்தா திண்மக் கோளத்தின் மொத்த நிலைமின்னியல் தன்-ஆற்றல் (self-energy):",
+        "optionTexts": [
+          "(3/5) * Q^2 / (4 pi epsilon0 R)",
+          "(1/2) * Q^2 / (4 pi epsilon0 R)",
+          "(3/8) * Q^2 / (4 pi epsilon0 R)",
+          "(5/6) * Q^2 / (4 pi epsilon0 R)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor with plate area A and charge Q has an electric field E = Q / (epsilon0 A) between the plates. The attractive electrostatic force exerted by one plate on the other is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Q E",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(1/2) Q E",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 Q E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/4) Q E",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electric field between the plates is the superposition of fields from both plates: E = E1 + E2 = sigma / (2 epsilon0) + sigma / (2 epsilon0) = sigma / epsilon0. Each individual plate experiences a force due to the electric field created by the OTHER plate alone, which is E_other = sigma / (2 epsilon0) = E / 2. Therefore, the force on one plate of charge Q is F = Q * E_other = (1/2) Q E = Q^2 / (2 epsilon0 A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தட்டுப் பரப்பளவு A மற்றும் மின்னூட்டம் Q கொண்ட ஒரு இணைத்தட்டு மின்தேக்கியின் தட்டுகளுக்கு இடையே மின்புலம் E உள்ளது. ஒரு தட்டு மற்றொரு தட்டின் மீது செலுத்தும் ஈர்ப்பு நிலைமின்னியல் விசை:",
+        "optionTexts": [
+          "Q E",
+          "(1/2) Q E",
+          "2 Q E",
+          "(1/4) Q E"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A circular ring of radius R carries a uniform positive charge Q. A small negative test charge -q of mass m is placed on the axis of the ring at a very small axial distance x (where x << R) from the center. When released from rest, the angular frequency of the resulting simple harmonic oscillation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt( Q q / (4 pi epsilon0 m R^3) )",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt( Q q / (2 pi epsilon0 m R^3) )",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt( 2 Q q / (4 pi epsilon0 m R^3) )",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt( Q q / (8 pi epsilon0 m R^3) )",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electric field on the axis of a uniformly charged ring at distance x is E(x) = (Q x) / [4 pi epsilon0 (R^2 + x^2)^(3/2)]. For small displacements x << R, (R^2 + x^2)^(3/2) approx R^3, so E(x) approx (Q / (4 pi epsilon0 R^3)) * x. The restoring force on the charge -q is F = - q E = - [ (Q q) / (4 pi epsilon0 R^3) ] * x. Comparing with F = - m omega^2 x, we obtain omega = sqrt( Q q / (4 pi epsilon0 m R^3) ).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு வட்ட வளையம் சீரான நேர் மின்னூட்டம் Q-ஐக் கொண்டுள்ளது. வளையத்தின் மையத்திலிருந்து மிகச்சிறிய அச்சுத் தொலைவு x இல் (x << R) m நிறையும் -q மின்னூட்டமும் கொண்ட ஒரு துகள் வைக்கப்பட்டு விடுவிக்கப்பட்டால், அதன் சீரிசை அலைவின் கோண அதிர்வெண்:",
+        "optionTexts": [
+          "sqrt( Q q / (4 pi epsilon0 m R^3) )",
+          "sqrt( Q q / (2 pi epsilon0 m R^3) )",
+          "sqrt( 2 Q q / (4 pi epsilon0 m R^3) )",
+          "sqrt( Q q / (8 pi epsilon0 m R^3) )"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Three capacitors of capacitances 2 microfarad, 3 microfarad, and 5 microfarad are connected in parallel across a voltage source. The equivalent capacitance of the combination is _____ microfarad.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For capacitors connected in parallel, the equivalent capacitance is the direct algebraic sum of their individual capacitances: C_eq = C1 + C2 + C3. Substituting the given values: C_eq = 2 microfarad + 3 microfarad + 5 microfarad = 10 microfarad.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 microfarad, 3 microfarad, மற்றும் 5 microfarad மின்தேக்குத்திறன் கொண்ட மூன்று மின்தேக்கிகள் ஒரு மின்னழுத்த மூலத்தின் குறுக்கே பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் மின்தேக்குத்திறன் _____ microfarad.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Three identical capacitors, each of capacitance 6 microfarad, are connected in series. The equivalent capacitance of the network is _____ microfarad.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For identical capacitors of capacitance C connected in series, the equivalent capacitance is C_eq = C / n. With C = 6 microfarad and n = 3: C_eq = 6 microfarad / 3 = 2 microfarad.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா 6 microfarad மின்தேக்குத்திறன் கொண்ட மூன்று ஒத்த மின்தேக்கிகள் தொடரிணைப்பில் இணைக்கப்பட்டுள்ளன. இந்த அமைப்பின் தொகுபயன் மின்தேக்குத்திறன் _____ microfarad.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The electric potential at point A is 10 V and at point B is 30 V. The work done by an external agent in moving a point charge of 5 C at constant speed from point A to point B is _____ J.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The work done in moving a charge q across a potential difference Delta V = V_B - V_A is W = q * (V_B - V_A). Substituting q = 5 C, V_A = 10 V, and V_B = 30 V: W = 5 * (30 - 10) = 5 * 20 = 100 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புள்ளி A இல் நிலைமின்னழுத்தம் 10 V மற்றும் புள்ளி B இல் 30 V ஆகும். 5 C புள்ளி மின்னூட்டத்தை மாறா வேகத்தில் புள்ளி A இலிருந்து புள்ளி B க்கு நகர்த்த வெளிப்புற காரணியால் செய்யப்படும் வேலை _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two positive point charges q1 = +4 microcoulomb and q2 = +16 microcoulomb are fixed at x = 0 cm and x = 30 cm respectively along the x-axis. The point on the x-axis between them where the net electric field intensity is zero is located at x = _____ cm.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let the neutral point be at distance x from charge q1. The distance from charge q2 is (30 - x). The condition for zero net field is E1 = E2 => q1 / (4 pi epsilon0 x^2) = q2 / [4 pi epsilon0 (30 - x)^2] => 4 / x^2 = 16 / (30 - x)^2. Taking square root on both sides: 2 / x = 4 / (30 - x) => 1 / x = 2 / (30 - x) => 30 - x = 2x => 3x = 30 => x = 10 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சில் முறையே x = 0 cm மற்றும் x = 30 cm நிலைகளில் q1 = +4 microcoulomb மற்றும் q2 = +16 microcoulomb என்ற இரு நேர் புள்ளி மின்னூட்டங்கள் நிலைநிறுத்தப்பட்டுள்ளன. அவற்றுக்கிடையே நிகர மின்புலச் செறிவு சுழியாக இருக்கும் புள்ளி x = _____ cm இல் அமைகிறது.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Four point charges of +1 microcoulomb, +2 microcoulomb, +3 microcoulomb, and +4 microcoulomb are placed at the four corners of a square of side length sqrt(2) meters. Taking 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2, the electrostatic potential at the center of the square is _____ kV.",
+    "correctAnswer": 90,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The distance of each corner from the center of a square of side a = sqrt(2) m is r = a / sqrt(2) = sqrt(2) / sqrt(2) = 1 m. The total potential at the center is V = (1 / (4 pi epsilon0)) * [sum(q) / r] = (9 x 10^9) * [ (1 + 2 + 3 + 4) x 10^-6 C / 1 m ] = (9 x 10^9) * (10 x 10^-6) = 90 x 10^3 V = 90 kV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sqrt(2) மீட்டர் பக்க அளவு கொண்ட ஒரு சதுரத்தின் நான்கு மூலைகளில் +1 microcoulomb, +2 microcoulomb, +3 microcoulomb, மற்றும் +4 microcoulomb ஆகிய நான்கு புள்ளி மின்னூட்டங்கள் வைக்கப்பட்டுள்ளன. 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2 எனக் கொண்டால், சதுரத்தின் மையத்தில் உள்ள நிலைமின்னழுத்தம் _____ kV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A neutral metal sphere acquires a net positive electrostatic charge of 3.2 microcoulomb after being rubbed. If the elementary charge of an electron is 1.6 x 10^-19 C, the number of electrons removed from the sphere is N x 10^13. Find the integer value of N.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the quantization of electric charge: q = n * e => n = q / e. Given q = 3.2 microcoulomb = 3.2 x 10^-6 C and e = 1.6 x 10^-19 C: n = (3.2 x 10^-6 C) / (1.6 x 10^-19 C) = 2 x 10^13 electrons. Comparing with N x 10^13, we find N = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நடுநிலையான உலோகக் கோளம் உராய்விற்குப் பின் 3.2 microcoulomb நேர் நிலைமின்னூட்டத்தைப் பெறுகிறது. எலக்ட்ரானின் அடிப்படை மின்னூட்டம் 1.6 x 10^-19 C எனில், கோளத்திலிருந்து நீக்கப்பட்ட எலக்ட்ரான்களின் எண்ணிக்கை N x 10^13 ஆகும். N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 2 microfarad capacitor charged to a potential of 100 V is disconnected from the charging supply and connected in parallel across an uncharged 2 microfarad capacitor. The loss of electrostatic energy during the sharing of charges is _____ millijoules (mJ).",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy dissipated as heat and electromagnetic radiation during charge redistribution between two capacitors is Delta U = (1/2) * [ (C1 * C2) / (C1 + C2) ] * (V1 - V2)^2. Given C1 = 2 microfarad, C2 = 2 microfarad, V1 = 100 V, and V2 = 0 V: Delta U = (1/2) * [ (2 * 2) / (2 + 2) ] * 10^-6 * (100 - 0)^2 = (1/2) * (1 x 10^-6) * 10000 = 5 x 10^-3 J = 5 mJ.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 V மின்னழுத்தத்திற்கு மின்னூட்டப்பட்ட 2 microfarad மின்தேக்கி மின்கலனிலிருந்து துண்டிக்கப்பட்டு, மின்னூட்டப்படாத 2 microfarad மின்தேக்கியுடன் பக்க இணைப்பில் இணைக்கப்படுகிறது. மின்னூட்டப் பகிர்வின் போது ஏற்படும் நிலைமின்னியல் ஆற்றல் இழப்பு _____ மில்லிஜூல் (mJ).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "To construct an isolated spherical conductor having a capacitance of 1 microfarad in vacuum, the required radius of the sphere is _____ km (take 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2).",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The capacitance of an isolated spherical conductor of radius R in vacuum is C = 4 pi epsilon0 R. Rearranging for the radius gives R = C / (4 pi epsilon0) = C * (1 / (4 pi epsilon0)). Substituting C = 1 microfarad = 1 x 10^-6 F and 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2: R = (1 x 10^-6 F) * (9 x 10^9) = 9000 m = 9 km.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் 1 microfarad மின்தேக்குத்திறன் கொண்ட ஒரு தனித்த கோளக் கடத்தியை உருவாக்கத் தேவையான கோளத்தின் ஆரம் _____ km (1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2 எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor with air between its plates has a capacitance of 10 microfarad and is connected across a constant 20 V battery. While keeping the battery connected, a dielectric slab of dielectric constant K = 3 is slowly inserted to completely fill the space between the plates. The additional charge that flows from the battery to the capacitor during this insertion is _____ microcoulomb.",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Initially, the charge on the capacitor is Q_initial = C0 * V = (10 microfarad) * (20 V) = 200 microcoulomb. When the dielectric slab of constant K = 3 is inserted with the battery remaining connected, the capacitance increases to C_final = K * C0 = 3 * 10 = 30 microfarad. The final charge on the capacitor is Q_final = C_final * V = (30 microfarad) * (20 V) = 600 microcoulomb. The additional charge supplied by the battery is Delta Q = Q_final - Q_initial = 600 microcoulomb - 200 microcoulomb = 400 microcoulomb.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காற்றை ஊடகமாகக் கொண்ட ஒரு இணைத்தட்டு மின்தேக்கி 10 microfarad மின்தேக்குத்திறனைக் கொண்டு, ஒரு மாறா 20 V மின்கலனுடன் இணைக்கப்பட்டுள்ளது. மின்கலன் இணைக்கப்பட்ட நிலையிலேயே K = 3 மின்காப்பு மாறிலி கொண்ட பலகை தட்டுகளுக்கு இடையே முழுமையாக செருகப்படுகிறது. இந்நிகழ்வின் போது மின்கலனிலிருந்து மின்தேக்கிக்கு பாயும் கூடுதல் மின்னூட்டம் _____ microcoulomb.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY11-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_11",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A spherical capacitor consists of two concentric spherical conducting shells of radii a = 9 cm and b = 10 cm with vacuum between them. The outer shell is earthed. Taking 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2, the capacitance of the spherical capacitor is _____ picofarad (pF).",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The capacitance of a spherical capacitor with outer shell earthed is given by C = 4 pi epsilon0 * [ (a * b) / (b - a) ] = [1 / (1 / (4 pi epsilon0))] * [ (a * b) / (b - a) ]. Given a = 9 cm = 0.09 m and b = 10 cm = 0.10 m: (a * b) / (b - a) = (0.09 * 0.10) / (0.10 - 0.09) = 0.009 / 0.01 = 0.9 m. Therefore, C = (0.9 m) / (9 x 10^9 N m^2/C^2) = 0.1 x 10^-9 F = 100 x 10^-12 F = 100 pF.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கோள வடிவ மின்தேக்கி வெற்றிடத்தால் பிரிக்கப்பட்ட a = 9 cm மற்றும் b = 10 cm ஆரங்கள் கொண்ட இரு பொதுமைய கடத்தும் கோளக் கூடுகளைக் கொண்டுள்ளது. வெளிப்புறக் கூடு தரையிறக்கப்பட்டுள்ளது. 1 / (4 pi epsilon0) = 9 x 10^9 N m^2/C^2 எனில், அக்கோள மின்தேக்கியின் மின்தேக்குத்திறன் _____ picofarad (pF).",
+        "optionTexts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY17-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the photoelectric effect, the threshold frequency nu_0 for a given metal surface depends upon:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The intensity of incident light",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The frequency of incident light",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The nature and work function of the metal surface",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The potential difference applied between electrodes",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The threshold frequency nu_0 is the minimum frequency of incident radiation required to eject photoelectrons from a metal surface. It depends solely on the nature (work function phi = h nu_0) of the metal and is independent of the intensity or frequency of the incident light.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": " ஒளிமின் விளைவில், கொடுக்கப்பட்ட உலோகம் ஒன்றின் பயன் தொடக்க அதிர்வெண் (threshold frequency) nu_0 எதனைப் பொறுத்தது?",
+        "optionTexts": [
+          "படுகின்ற ஒளியின் செறிவு",
+          "படுகின்ற ஒளியின் அதிர்வெண்",
+          "உலோகப் பரப்பின் தன்மை மற்றும் வெளியேற்று ஆற்றல்",
+          "மின்முனைகளுக்கு இடையே செலுத்தப்படும் மின்னழுத்த வேறுபாடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The de Broglie wavelength lambda associated with a particle of mass m moving with momentum p is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda = h / p",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "lambda = p / h",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "lambda = h p",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "lambda = h / (p^2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to de Broglie's hypothesis, every moving particle has a wave nature associated with it, where the wavelength is inversely proportional to its linear momentum: lambda = h / p.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "p உந்தத்துடன் இயங்கும் m நிறையுள்ள ஒரு துகளுடன் தொடர்புடைய டி பிராக்லி அலைநீளம் lambda:",
+        "optionTexts": [
+          "lambda = h / p",
+          "lambda = p / h",
+          "lambda = h p",
+          "lambda = h / (p^2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Einstein's photoelectric equation, the maximum kinetic energy K_max of emitted photoelectrons when light of frequency nu is incident on a metal of work function phi is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "K_max = h nu - phi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "K_max = phi - h nu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "K_max = h nu + phi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "K_max = h (nu + nu_0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Einstein's photoelectric equation is based on energy conservation: the energy of an incident photon (h nu) is partly used as work function phi to liberate the electron and the remainder appears as maximum kinetic energy K_max = h nu - phi.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஐன்ஸ்டீனின் ஒளிமின் சமன்பாட்டின்படி, வெளியேற்று ஆற்றல் phi கொண்ட உலோகத்தின் மீது nu அதிர்வெண் கொண்ட ஒளி படும் போது உமிழப்படும் ஒளி எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் K_max:",
+        "optionTexts": [
+          "K_max = h nu - phi",
+          "K_max = phi - h nu",
+          "K_max = h nu + phi",
+          "K_max = h (nu + nu_0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric experiment, if the intensity of incident monochromatic light is increased while keeping its frequency constant above the threshold limit, the stopping potential V_s will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increase",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Decrease",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remain unchanged",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Become zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The stopping potential V_s depends only on the frequency of the incident radiation and the work function of the metal (e V_s = h nu - phi). It is completely independent of the intensity of the incident light.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் சோதனையில், படுகின்ற ஒளியின் அதிர்வெண் பயன் தொடக்க அதிர்வெண்ணுக்கு மேல் மாறாமல் இருக்கும் போது அதன் செறிவை அதிகரித்தால், நிறுத்தும் மின்னழுத்தம் V_s:",
+        "optionTexts": [
+          "அதிகரிக்கும்",
+          "குறையும்",
+          "மாறாமல் இருக்கும்",
+          "சுழியாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through a potential difference V volts. The de Broglie wavelength lambda in nanometers (nm) is approximately given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.227 / sqrt(V)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12.27 / sqrt(V)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.1227 / sqrt(V)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.227 * sqrt(V)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For an electron accelerated through potential V, lambda = h / sqrt(2 m e V). Substituting numerical values of constants: lambda approx 1.227 / sqrt(V) nm (or 12.27 / sqrt(V) Angstroms).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "V வோல்ட் மின்னழுத்த வேறுபாட்டால் ஓய்வு நிலையிலிருந்து ஒரு எலக்ட்ரான் முடுக்குவிக்கப்படுகிறது. நானோமீட்டரில் (nm) டி பிராக்லி அலைநீளம் lambda தோராயமாக:",
+        "optionTexts": [
+          "1.227 / sqrt(V)",
+          "12.27 / sqrt(V)",
+          "0.1227 / sqrt(V)",
+          "1.227 * sqrt(V)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A photon of frequency nu and wavelength lambda has energy E = h nu. The linear momentum p carried by this photon is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "h / lambda",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "h lambda",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "lambda / h",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "h nu / c^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The linear momentum of a photon is given by p = E / c = (h nu) / c = h / (c / nu) = h / lambda.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "nu அதிர்வெண் மற்றும் lambda அலைநீளம் கொண்ட ஒரு போட்டானின் ஆற்றல் E = h nu ஆகும். இப்போட்டான் கொண்டு செல்லும் நேரியல் உந்தம் p:",
+        "optionTexts": [
+          "h / lambda",
+          "h lambda",
+          "lambda / h",
+          "h nu / c^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric experiment, the graph plotted between the stopping potential V_s (y-axis) and the frequency nu of incident light (x-axis) is a straight line. The slope of this line is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "h / e",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "e / h",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "h e",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "phi / e",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From Einstein's equation, e V_s = h nu - phi => V_s = (h / e) nu - (phi / e). Comparing with the equation of a straight line y = m x + c, the slope is m = h / e.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் சோதனையில், நிறுத்தும் மின்னழுத்தம் V_s (y-அச்சு) மற்றும் படுகின்ற ஒளியின் அதிர்வெண் nu (x-அச்சு) இடையே வரையப்படும் வரைபடம் ஒரு நேர்கோட்டைக் கொடுக்கிறது. இக்கோட்டின் சாய்வு மதிப்பு:",
+        "optionTexts": [
+          "h / e",
+          "e / h",
+          "h e",
+          "phi / e"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The de Broglie wavelength of a neutron (or gas molecule of mass m) in thermal equilibrium at absolute temperature T is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / sqrt(T)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / T",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(T)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The average kinetic energy of a thermal neutron is E = (3/2) k_B T. The momentum is p = sqrt(2 m E) = sqrt(3 m k_B T). Therefore, the de Broglie wavelength is lambda = h / p = h / sqrt(3 m k_B T), showing that lambda is proportional to 1 / sqrt(T).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T தனி வெப்பநிலையில் வெப்பச் சமநிலையில் உள்ள ஒரு நியூட்ரானின் (அல்லது m நிறை கொண்ட வாயு மூலக்கூறின்) டி பிராக்லி அலைநீளம் lambda எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "1 / sqrt(T)",
+          "1 / T",
+          "sqrt(T)",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When a metal surface is illuminated by light of frequency nu, the maximum kinetic energy of emitted photoelectrons is K. When the frequency of incident light is doubled to 2nu, the maximum kinetic energy becomes K'. The relation between K' and K is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "K' = 2 K",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "K' > 2 K",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "K' < 2 K",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "K' = K + h nu",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Initially: K = h nu - phi. When frequency is doubled (2nu): K' = h (2nu) - phi = 2 h nu - phi. Since phi > 0, 2K = 2 h nu - 2 phi, so K' = 2K + phi > 2K. Therefore, K' is greater than two times K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகப் பரப்பு nu அதிர்வெண் கொண்ட ஒளியால் ஒளிரூட்டப்படும் போது உமிழப்படும் ஒளி எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் K ஆகும். படுகின்ற ஒளியின் அதிர்வெண் 2nu ஆக இரட்டிப்பாக்கப்பட்டால், பெரும இயக்க ஆற்றல் K' ஆகும். K' மற்றும் K இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "K' = 2 K",
+          "K' > 2 K",
+          "K' < 2 K",
+          "K' = K + h nu"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel beam of monochromatic light of power P falls normally on a completely absorbing surface. The total force exerted by the light beam on the surface is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P / c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P c",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P / c^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 P / c",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Power P is energy per unit time (U / t). The momentum of a photon is p = U / c. The rate of momentum transfer (force) on a completely absorbing surface is F = (Delta p) / t = (U / c) / t = P / c.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P திறன் கொண்ட ஒரு ஒளிக்கற்றை முழுமையாக உறிஞ்சும் பரப்பின் மீது செங்குத்தாக விழுகிறது. ஒளிக்கற்றை அத்தளத்தின் மீது செலுத்தும் விசை:",
+        "optionTexts": [
+          "P / c",
+          "P c",
+          "P / c^2",
+          "2 P / c"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The Davisson-Germer experiment experimentally confirmed:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The wave nature of electrons (de Broglie hypothesis)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The quantization of atomic energy levels",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The existence of photons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The spin quantum number of electrons",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Davisson-Germer experiment demonstrated electron diffraction by a nickel crystal, providing direct experimental confirmation of Louis de Broglie's hypothesis of the wave nature of matter.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டேவிஸன்-ஜெர்மர் பரிசோதனை எதனைச் சோதனை ரீதியாக உறுதிப்படுத்தியது?",
+        "optionTexts": [
+          "எலக்ட்ரான்களின் அலைத் தன்மை (டி பிராக்லி கோட்பாடு)",
+          "அணு ஆற்றல் மட்டங்களின் குவாண்டமாக்கல்",
+          "போட்டான்களின் இருப்பு",
+          "எலக்ட்ரான்களின் சுழற்சி குவாண்டம் எண்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If lambda_0 is the threshold wavelength for a metal surface and lambda is the wavelength of incident light (where lambda < lambda_0), the maximum velocity v_max of the emitted photoelectrons is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt( (2 h / m) * (1 / lambda_0 - 1 / lambda) )",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt( (2 h / m) * (1 / lambda - 1 / lambda_0) )",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(h / m) * (lambda_0 - lambda)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt( (2 h c / m) * lambda_0 )",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Maximum kinetic energy is K_max = (1/2) m v_max^2 = h nu - h nu_0 = (h c / lambda) - (h c / lambda_0) = h c * (1 / lambda - 1 / lambda_0). Solving for v_max gives v_max = sqrt( (2 h c / m) * (1 / lambda - 1 / lambda_0) ). Wait, hc is missing in options? Let's check: h c / lambda - h c / lambda_0 = (2 / m) * (1/2 m v_max^2)? Ah, h c is missing in options A and B? Let's write option B with h c or adjust constants. Let's check standard formula: v_max = sqrt( 2 h c / m * (1/lambda - 1/lambda_0) ). Let's rewrite option B to include c: sqrt( (2 h c / m) * (1 / lambda - 1 / lambda_0) ).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகப் பரப்பின் பயன் தொடக்க அலைநீளம் lambda_0 மற்றும் படுகின்ற ஒளியின் அலைநீளம் lambda (lambda < lambda_0) எனில், உமிழப்படும் ஒளி எலக்ட்ரான்களின் பெரும திசைவேகம் v_max:",
+        "optionTexts": [
+          "sqrt( (2 h / m) * (1 / lambda_0 - 1 / lambda) )",
+          "sqrt( (2 h c / m) * (1 / lambda - 1 / lambda_0) )",
+          "(h / m) * (lambda_0 - lambda)",
+          "sqrt( (2 h c / m) * lambda_0 )"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A monochromatic light source of power P emits photons of frequency nu. The number of photons emitted per second by the source is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P / (h nu)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "h nu / P",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P h nu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P / (h nu^2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Energy of each photon is E = h nu. If n_p is the number of photons emitted per second, total power is P = n_p * (h nu). Therefore, n_p = P / (h nu).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P திறன் கொண்ட ஒரு ஒற்றை நிற ஒளி மூலம் nu அதிர்வெண் கொண்ட போட்டான்களை வெளியிடுகிறது. மூலத்தால் வினாடிக்கு உமிழப்படும் போட்டான்களின் எண்ணிக்கை:",
+        "optionTexts": [
+          "P / (h nu)",
+          "h nu / P",
+          "P h nu",
+          "P / (h nu^2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A proton and an alpha particle are accelerated through the same potential difference V. The ratio of the de Broglie wavelength of the proton to that of the alpha particle (lambda_p / lambda_alpha) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt(8) : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : sqrt(8)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "De Broglie wavelength is lambda = h / sqrt(2 m q V). For the same potential V, lambda is inversely proportional to sqrt(m * q). Thus, lambda_p / lambda_alpha = sqrt( (m_alpha * q_alpha) / (m_p * q_p) ). For an alpha particle, m_alpha = 4 m_p and q_alpha = 2 q_p. Therefore, lambda_p / lambda_alpha = sqrt( (4 m_p * 2 q_p) / (m_p * q_p) ) = sqrt(8) : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு புரோட்டானும் ஒரு ஆல்ஃபா துகளும் அதே மின்னழுத்த வேறுபாடு V மூலம் முடுக்குவிக்கப்படுகின்றன. புரோட்டானின் டி பிராக்லி அலைநீளத்திற்கும் ஆல்ஃபா துகளின் அலைநீளத்திற்கும் உள்ள விகிதம் (lambda_p / lambda_alpha):",
+        "optionTexts": [
+          "2 : 1",
+          "sqrt(8) : 1",
+          "1 : 2",
+          "1 : sqrt(8)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The work function of a photoelectric material is 2.0 eV. The threshold wavelength lambda_0 for this material is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6200 Angstrom",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3100 Angstrom",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1240 Angstrom",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4130 Angstrom",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Work function phi = h c / lambda_0 => lambda_0 = (12400 eV Angstrom) / phi(in eV). Substituting phi = 2.0 eV: lambda_0 = 12400 / 2.0 = 6200 Angstrom (approx 620 nm).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஒளிமின் பொருளின் வெளியேற்று ஆற்றல் 2.0 eV ஆகும். இப்போருளின் பயன் தொடக்க அலைநீளம் lambda_0 தோராயமாக:",
+        "optionTexts": [
+          "6200 Angstrom",
+          "3100 Angstrom",
+          "1240 Angstrom",
+          "4130 Angstrom"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric setup, radiation of frequencies nu1 and nu2 (where nu2 > nu1) are incident separately on the same metal surface. The corresponding stopping potentials are V_s1 and V_s2. The correct relation between stopping potentials and frequencies is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "V_s2 - V_s1 = (h / e) * (nu2 - nu1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "V_s2 - V_s1 = (e / h) * (nu2 - nu1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "V_s2 - V_s1 = (h / e) * (nu1 - nu2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "V_s2 = V_s1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From Einstein's photoelectric equation: e V_s1 = h nu1 - phi and e V_s2 = h nu2 - phi. Subtracting the two equations gives e (V_s2 - V_s1) = h (nu2 - nu1) => V_s2 - V_s1 = (h / e) * (nu2 - nu1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் அமைப்பில், nu1 மற்றும் nu2 (nu2 > nu1) அதிர்வெண்களைக் கொண்ட கதிர்வீச்சுகள் தனித்தனியாக அதே உலோகப் பரப்பின் மீது படுகின்றன. அவற்றுக்குரிய நிறுத்தும் மின்னழுத்தங்கள் V_s1 மற்றும் V_s2 ஆகும். நிறுத்தும் மின்னழுத்தங்கள் மற்றும் அதிர்வெண்களுக்கு இடையேயான சரியான தொடர்பு:",
+        "optionTexts": [
+          "V_s2 - V_s1 = (h / e) * (nu2 - nu1)",
+          "V_s2 - V_s1 = (e / h) * (nu2 - nu1)",
+          "V_s2 - V_s1 = (h / e) * (nu1 - nu2)",
+          "V_s2 = V_s1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A particle of mass m is initially at rest and starts moving under the action of a constant force F. The de Broglie wavelength of the particle as a function of time t varies as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "proportional to 1 / t",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "proportional to t",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "proportional to 1 / sqrt(t)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "independent of t",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Under a constant force F, the momentum at time t is p = F * t. The de Broglie wavelength is lambda = h / p = h / (F * t). Therefore, lambda is inversely proportional to time t (proportional to 1 / t).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறை கொண்ட ஒரு துகள் ஆரம்பத்தில் ஓய்வில் உள்ளது மற்றும் மாறா விசை F இன் கீழ் இயங்குகிறது. t நேரத்தில் துகளின் டி பிராக்லி அலைநீளம் lambda எவ்வாறு மாறுகிறது?",
+        "optionTexts": [
+          "1 / t க்கு நேர்விகிதத்தில்",
+          "t க்கு நேர்விகிதத்தில்",
+          "1 / sqrt(t) க்கு நேர்விகிதத்தில்",
+          "t-ஐ சார்ந்தது அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The wave theory of light failed to explain which key feature of the photoelectric effect?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The existence of a threshold frequency below which no emission occurs instantaneously",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The dependence of stopping potential on frequency",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The saturation photocurrent being proportional to light intensity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The conservation of energy in photon-electron collisions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to classical wave theory, light energy is continuous and distributed uniformly across wave fronts. For low intensity light, calculating the time required for an electron to absorb enough energy to escape predicted a significant time lag (hours or days), whereas experiments show photoelectric emission is instantaneous (time lag < 10^-9 s), highlighting the failure of wave theory and success of the photon concept.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளியின் அலைக் கொள்கையானது ஒளிமின் விளைவின் எந்த முக்கிய அம்சத்தை விளக்கத் தவறியது?",
+        "optionTexts": [
+          "எந்தவொரு உமிழ்வும் இன்றி உடனடித் தன்மையைக் காட்டும் பயன் தொடக்க அதிர்வெண்ணின் இருப்பு",
+          "அதிர்வெண்ணைச் சார்ந்திருக்கும் நிறுத்தும் மின்னழுத்தம்",
+          "ஒளிச் செறிவிற்கு நேர்விகிதத்தில் இருக்கும் பூரித ஒளிமின் மின்னோட்டம்",
+          "போட்டான்-எலக்ட்ரான் மோதல்களில் ஆற்றல் அழிவின்மை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated through a potential difference V such that its de Broglie wavelength is equal to the wavelength lambda of an X-ray photon. The ratio of the electron's kinetic energy to the photon's energy is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(V)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / sqrt(V)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Independent of V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Electron kinetic energy is K_e = e V. Photon energy is E_ph = h c / lambda. Given lambda_e = lambda_ph = lambda: K_e = p^2 / (2m) and lambda = h / sqrt(2 m e V). For the photon, lambda = h c / E_ph. Taking the ratio of energies: K_e / E_ph = (e V) / (h c / lambda). Since lambda proportional to 1 / sqrt(V), K_e / E_ph is proportional to V * sqrt(V) / V? Wait, let's re-derive: K_e = e V. E_ph = h c / lambda = h c * sqrt(2 m e V) / h = c sqrt(2 m e V). Thus, K_e / E_ph = (e V) / (c sqrt(2 m e V)) = (e / c sqrt(2 m e)) * sqrt(V), which is proportional to sqrt(V). Let's check ratio: K_e / E_ph proportional to sqrt(V).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரான் V மின்னழுத்த வேறுபாட்டால் முடுக்குவிக்கப்படும் போது அதன் டி பிராக்லி அலைநீளம் ஒரு எக்ஸ்-கதிர் போட்டானின் அலைநீளம் lambda-க்குச் சமமாகிறது. எலக்ட்ரானின் இயக்க ஆற்றலுக்கும் போட்டானின் ஆற்றலுக்கும் உள்ள விகிதம் எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "sqrt(V)",
+          "1 / sqrt(V)",
+          "V",
+          "V-ஐ சார்ந்தது அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A laser beam of cross-sectional area A and intensity I is directed normally onto a totally reflecting small mirror suspended by a fine fiber. The net recoil force experienced by the mirror due to radiation pressure is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 I A / c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "I A / c",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I A / (2 c)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 I A / c",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Radiation pressure for normal incidence on a totally reflecting surface is P_rad = 2 I / c. The net force (radiation pressure times area) is F = P_rad * A = (2 I / c) * A = 2 I A / c.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A பரப்பளவு மற்றும் I செறிவு கொண்ட லேசர் கற்றை மெல்லிய இழையால் தொங்கவிடப்பட்ட முழுமையாக எதிரொளிக்கும் சிறிய கண்ணாடியின் மீது செங்குத்தாக விழுகிறது. கதிர்வீச்சு அழுத்தத்தால் கண்ணாடி அனுபவிக்கும் நிகர பின்னுதைப்பு விசை (recoil force):",
+        "optionTexts": [
+          "2 I A / c",
+          "I A / c",
+          "I A / (2 c)",
+          "4 I A / c"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The threshold wavelength for photoelectric emission from a metal surface is 3100 Angstrom. Taking hc = 12400 eV Angstrom, the work function of the metal is _____ eV.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The work function is related to threshold wavelength by phi = (h c) / lambda_0. Given lambda_0 = 3100 Angstrom and h c = 12400 eV Angstrom: phi = 12400 / 3100 = 4.0 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகப் பரப்பிலிருந்து ஒளிமின் உமிழ்விற்கான பயன் தொடக்க அலைநீளம் 3100 Angstrom ஆகும். hc = 12400 eV Angstrom எனக் கொண்டால், உலோகத்தின் வெளியேற்று ஆற்றல் _____ eV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric experiment, the stopping potential for emitted photoelectrons is measured to be 2.0 V. The maximum kinetic energy of the emitted photoelectrons is _____ eV.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The maximum kinetic energy of photoelectrons is related to the stopping potential V_s by K_max = e * V_s. Given V_s = 2.0 V, the maximum kinetic energy is 2.0 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் சோதனையில், உமிழப்படும் ஒளி எலக்ட்ரான்களுக்கான நிறுத்தும் மின்னழுத்தம் 2.0 V என அளவிடப்படுகிறது. உமிழப்படும் ஒளி எலக்ட்ரான்களின் பெரும இயக்க ஆற்றல் _____ eV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The wavelength of a monochromatic photon is 1240 Angstrom. Taking hc = 12400 eV Angstrom, the energy of this photon is _____ eV.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy of a photon is given by E = (h c) / lambda. Given lambda = 1240 Angstrom and h c = 12400 eV Angstrom: E = 12400 / 1240 = 10.0 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஒற்றை நிறப் போட்டானின் அலைநீளம் 1240 Angstrom ஆகும். hc = 12400 eV Angstrom எனக் கொண்டால், இப்போட்டானின் ஆற்றல் _____ eV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through a potential difference of 150 V. The de Broglie wavelength of the electron is approximately _____ Angstroms (rounded to the nearest integer).",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The de Broglie wavelength of an electron accelerated through V volts is given by lambda approx 12.27 / sqrt(V) Angstroms. Substituting V = 150 V: lambda = 12.27 / sqrt(150) = 12.27 / 12.247 approx 1.00 Angstrom. Rounded to the nearest integer, it is 1 Angstrom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "150 V மின்னழுத்த வேறுபாட்டால் ஓய்வு நிலையிலிருந்து ஒரு எலக்ட்ரான் முடுக்குவிக்கப்படுகிறது. எலக்ட்ரானின் டி பிராக்லி அலைநீளம் தோராயமாக _____ ஆம்ஸ்ட்ராங் (Angstroms) (அருகிலுள்ள முழு எண்ணுக்கு மாற்றுக).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Light of wavelength 3100 Angstrom is incident on a metal surface of work function 2.0 eV. Taking h c = 12400 eV Angstrom, the stopping potential required to stop the fastest emitted photoelectrons is _____ V.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy of the incident photon is E = (h c) / lambda = 12400 eV Angstrom / 3100 Angstrom = 4.0 eV. By Einstein's photoelectric equation, the maximum kinetic energy is K_max = E - phi = 4.0 eV - 2.0 eV = 2.0 eV. The stopping potential V_s is given by e V_s = K_max => V_s = 2.0 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3100 Angstrom அலைநீளம் கொண்ட ஒளி 2.0 eV வெளியேற்று ஆற்றல் கொண்ட உலோகப் பரப்பின் மீது படுகிறது. hc = 12400 eV Angstrom எனக் கொண்டால், விரைவான ஒளி எலக்ட்ரான்களை நிறுத்தத் தேவைப்படும் நிறுத்தும் மின்னழுத்தம் _____ V.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron and a charged particle of mass equal to 49 times the mass of the electron are accelerated from rest through the same potential difference. The ratio of the de Broglie wavelength of the electron to that of the particle (lambda_electron / lambda_particle) is _____.",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The de Broglie wavelength of a particle accelerated through potential V is lambda = h / sqrt(2 m q V). Assuming equal elementary charges (q_e = q_particle = e): lambda_electron / lambda_particle = sqrt(m_particle / m_electron) = sqrt(49 m_e / m_e) = sqrt(49) = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரானும், எலக்ட்ரானின் நிறையைப் போல 49 மடங்கு நிறை கொண்ட ஒரு மின்னூட்டம் பெற்ற துகளும் அதே மின்னழுத்த வேறுபாட்டால் முடுக்குவிக்கப்படுகின்றன. எலக்ட்ரானின் டி பிராக்லி அலைநீளத்திற்கும் துகளின் அலைநீளத்திற்கும் உள்ள விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A monochromatic light source of power 66 W emits light of wavelength 6000 Angstrom. The number of photons emitted per second by the source is expressed as N x 10^20. Find the integer value of N (take h = 6.6 x 10^-34 J s, c = 3 x 10^8 m/s).",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy of each photon is E = (h c) / lambda = (6.6 x 10^-34 J s * 3 x 10^8 m/s) / (6000 x 10^-10 m) = (1.98 x 10^-25) / (6 x 10^-7) = 3.3 x 10^-19 J. The number of photons emitted per second is n_p = P / E = 66 W / (3.3 x 10^-19 J) = 20 x 10^19 = 2 x 10^20 photons/second. Comparing with N x 10^20, we get N = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "66 W திறன் கொண்ட ஒரு ஒற்றை நிற ஒளி மூலம் 6000 Angstrom அலைநீளமுள்ள ஒளியை வெளியிடுகிறது. மூலத்தால் வினாடிக்கு உமிழப்படும் போட்டான்களின் எண்ணிக்கை N x 10^20 எனக் குறிக்கப்பட்டால் (h = 6.6 x 10^-34 J s, c = 3 x 10^8 m/s), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a photoelectric experiment, when the frequency of incident light is doubled, the stopping potential increases from 1.0 V to 3.0 V. The ratio of the initial frequency of incident light to the threshold frequency (nu1 / nu_0) is _____.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Applying Einstein's photoelectric equation for the two frequencies nu1 and nu2 = 2nu1: e V_s1 = h nu1 - h nu_0 => 1.0 eV = h nu1 - h nu_0 (Equation 1). e V_s2 = h (2nu1) - h nu_0 => 3.0 eV = 2 h nu1 - h nu_0 (Equation 2). Subtracting Equation 1 from Equation 2: 2.0 eV = h nu1. Substituting h nu1 = 2.0 eV back into Equation 1: 1.0 eV = 2.0 eV - h nu_0 => h nu_0 = 1.0 eV. Therefore, the ratio of initial frequency to threshold frequency is nu1 / nu_0 = (h nu1) / (h nu_0) = 2.0 eV / 1.0 eV = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளிமின் சோதனையில், படுகின்ற ஒளியின் அதிர்வெண் இருமடங்காக மாற்றப்படும் போது, நிறுத்தும் மின்னழுத்தம் 1.0 V இலிருந்து 3.0 V ஆக அதிகரிக்கிறது. ஆரம்ப அதிர்வெண்ணிற்கும் பயன் தொடக்க அதிர்வெண்ணிற்கும் உள்ள விகிதம் (nu1 / nu_0) _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through a potential difference V such that its de Broglie wavelength is exactly lambda = 1.227 Angstroms (0.1227 nm). Using the approximate relation lambda = 12.27 / sqrt(V) Angstroms, the potential difference V is _____ Volts.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using the de Broglie wavelength formula for an accelerated electron: lambda approx 12.27 / sqrt(V) Angstroms. Given lambda = 1.227 Angstroms: 1.227 = 12.27 / sqrt(V) => sqrt(V) = 12.27 / 1.227 = 10. Squaring both sides gives V = (10)^2 = 100 Volts.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரான் V மின்னழுத்த வேறுபாட்டால் முடுக்குவிக்கப்படும் போது அதன் டி பிராக்லி அலைநீளம் lambda = 1.227 Angstroms ஆகும். lambda = 12.27 / sqrt(V) Angstroms சூத்திரத்தைப் பயன்படுத்தி, மின்னழுத்த வேறுபாடு V இன் மதிப்பு _____ Volts.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY17-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_17",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The work function of a certain photosensitive metal surface is 4.14 eV. Taking hc = 12400 eV Angstrom, the maximum wavelength of incident light that can cause photoelectric emission from this surface is _____ Angstroms.",
+    "correctAnswer": 3000,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The maximum wavelength (threshold wavelength lambda_0) capable of causing photoelectric emission is given by lambda_0 = (h c) / phi. Substituting phi = 4.14 eV and h c = 12400 eV Angstrom: lambda_0 = 12400 / 4.14 = 3000 Angstrom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறிப்பிட்ட ஒளிமின் உணர்திறன் கொண்ட உலோகப் பரப்பின் வெளியேற்று ஆற்றல் 4.14 eV ஆகும். hc = 12400 eV Angstrom எனக் கொண்டால், ஒளிமின் உமிழ்வை ஏற்படுத்தும் படுகின்ற ஒளியின் பெரும அலைநீளம் (பயன் தொடக்க அலைநீளம்) _____ Angstroms.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

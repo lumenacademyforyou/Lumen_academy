@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che01-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements is NOT an assumption or postulate of Dalton's atomic theory?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Matter consists of indivisible and indestructible particles called atoms.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Atoms of different elements combine in fractional ratios to form chemical compounds.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "All atoms of a given element have identical mass and identical chemical properties.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Chemical reactions involve reorganization of atoms; atoms are neither created nor destroyed.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Dalton's atomic theory, compounds are formed when atoms of different elements combine in simple whole-number ratios, not in fractional ratios. The other three statements are valid postulates of Dalton's atomic theory.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டால்டனின் அணுக்கொள்கையின் எடுகோள் அல்லது கருதுகோள் அல்லாத கூற்று எது?",
+        "optionTexts": [
+          "பருப்பொருள் என்பது பிரிக்க முடியாத, அழிக்க முடியாத அணுக்கள் எனப்படும் துகள்களால் ஆனது.",
+          "வெவ்வேறு தனிமங்களின் அணுக்கள் பின்ன விகிதங்களில் இணைந்து வேதிச் சேர்மங்களை உருவாக்குகின்றன.",
+          "ஒரு குறிப்பிட்ட தனிமத்தின் அனைத்து அணுக்களும் ஒரே மாதிரியான நிறை மற்றும் வேதிப் பண்புகளைக் கொண்டுள்ளன.",
+          "வேதிவினைகள் என்பது அணுக்களின் மறுசீரமைப்பை உள்ளடக்கியது; அணுக்கள் ஆக்கப்படவோ அழிக்கப்படவோ முடியாது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of valence electrons present in 4.2 g of azide ion (N3-) is: (Given: Avogadro constant NA = 6.02 x 10^23 mol^-1; atomic mass of N = 14 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8 NA",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3.2 NA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.6 NA",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2.4 NA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Molar mass of azide ion (N3-) = 3 * 14 = 42 g mol^-1. Number of moles of N3- = 4.2 / 42 = 0.10 mol. A neutral nitrogen atom has 5 valence electrons. In N3-, total valence electrons = (3 * 5) + 1 = 16 electrons per ion. Therefore, the total number of valence electrons = 0.10 * 16 * NA = 1.6 NA.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4.2 g அசைடு அயனியில் (N3-) உள்ள மொத்த இணைதிறன் எலக்ட்ரான்களின் எண்ணிக்கை: (கொடுக்கப்பட்டுள்ளது: அவகாட்ரோ மாறிலி NA = 6.02 x 10^23 mol^-1; N-ன் அணு நிறை = 14 u)",
+        "optionTexts": [
+          "0.8 NA",
+          "3.2 NA",
+          "1.6 NA",
+          "2.4 NA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A student measures the mass of a solid sample as 2.50 g and its volume as 0.410 cm^3. The density of the sample expressed to the correct number of significant figures is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.10 g cm^-3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6.098 g cm^-3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.1 g cm^-3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 g cm^-3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Density = mass / volume = 2.50 g / 0.410 cm^3 = 6.09756... g cm^-3. Both 2.50 and 0.410 have three significant figures. In division, the final result must retain the least number of significant figures present in any input value, which is three. Rounding 6.09756 to 3 significant figures gives 6.10 g cm^-3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மாணவர் ஒரு திடப்பொருள் மாதிரியின் நிறையை 2.50 g எனவும், அதன் கனஅளவை 0.410 cm^3 எனவும் அளவிடுகிறார். தகுந்த முக்கிய எண்ணுருக்களில் குறிப்பிடப்படும் அப்பொருளின் அடர்த்தி:",
+        "optionTexts": [
+          "6.10 g cm^-3",
+          "6.098 g cm^-3",
+          "6.1 g cm^-3",
+          "6 g cm^-3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Complete combustion of 1.80 g of an organic compound containing only carbon, hydrogen, and oxygen produces 2.64 g of CO2 and 1.08 g of H2O. The empirical formula of the compound is: (Atomic masses: C = 12 u, H = 1 u, O = 16 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "C2H4O3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C3H6O2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C2H6O",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH2O",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Mass of carbon = (12 / 44) * 2.64 = 0.72 g; Moles of C = 0.72 / 12 = 0.060 mol. Mass of hydrogen = (2 / 18) * 1.08 = 0.12 g; Moles of H = 0.12 / 1 = 0.120 mol. Mass of oxygen = 1.80 - (0.72 + 0.12) = 0.96 g; Moles of O = 0.96 / 16 = 0.060 mol. Molar ratio of C : H : O = 0.060 : 0.120 : 0.060 = 1 : 2 : 1. Therefore, the empirical formula is CH2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கார்பன், ஹைட்ரஜன் மற்றும் ஆக்ஸிஜனை மட்டுமே கொண்டுள்ள 1.80 g கரிம சேர்மம் முழுமையாக எரிக்கப்படும் போது 2.64 g CO2 மற்றும் 1.08 g H2O ஆகியவற்றைத் தருகிறது. அச்சேர்மத்தின் எளிய விகித வாய்ப்பாடு: (அணு நிறைகள்: C = 12 u, H = 1 u, O = 16 u)",
+        "optionTexts": [
+          "C2H4O3",
+          "C3H6O2",
+          "C2H6O",
+          "CH2O"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "20 L of SO2 gas and 15 L of O2 gas, both measured at STP, are reacted to form SO3 gas: 2SO2(g) + O2(g) -> 2SO3(g). Assuming the reaction proceeds to completion and the final volume is measured at STP, the total volume of the resulting gas mixture is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 L",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "25 L",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "30 L",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "35 L",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Gay-Lussac's law of combining volumes, 2 volumes of SO2 react with 1 volume of O2 to yield 2 volumes of SO3. For 20 L of SO2, volume of O2 required = 20 / 2 = 10 L. Since 15 L of O2 is supplied, SO2 is the limiting reactant and O2 is in excess. Volume of unreacted O2 = 15 - 10 = 5 L. Volume of SO3 formed = 20 L. Total volume of final gas mixture = V(unreacted O2) + V(SO3 formed) = 5 + 20 = 25 L.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "STP-யில் அளக்கப்பட்ட 20 L SO2 வாயு மற்றும் 15 L O2 வாயு ஆகியவை வினையில் ஈடுபட்டு SO3 வாயுவை உருவாக்குகின்றன: 2SO2(g) + O2(g) -> 2SO3(g). இவ்வினை முழுமையாக நிகழ்ந்து, இறுதி கனஅளவு STP-யில் அளவிடப்பட்டால், கிடைக்கும் வாயுக்கலவையின் மொத்த கனஅளவு:",
+        "optionTexts": [
+          "20 L",
+          "25 L",
+          "30 L",
+          "35 L"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An element X occurs in nature as two stable isotopes: ^63X (relative atomic mass 62.93 u) with 69.17% abundance and ^65X (relative atomic mass 64.93 u) with 30.83% abundance. The average atomic mass of element X is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "63.25 u",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "64.00 u",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "63.55 u",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "64.31 u",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Average atomic mass = [(Mass of isotope 1 * % abundance) + (Mass of isotope 2 * % abundance)] / 100 = [(62.93 * 69.17) + (64.93 * 30.83)] / 100 = (4352.87 + 2001.79) / 100 = 6354.66 / 100 = 63.55 u.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "X என்ற தனிமம் இயற்கையில் இரண்டு நிலையான ஐசோடோப்புகளாகக் காணப்படுகிறது: 69.17% பரவலுடன் ^63X (ஒப்பீட்டு அணு நிறை 62.93 u) மற்றும் 30.83% பரவலுடன் ^65X (ஒப்பீட்டு அணு நிறை 64.93 u). தனிமம் X-ன் சராசரி அணு நிறை:",
+        "optionTexts": [
+          "63.25 u",
+          "64.00 u",
+          "63.55 u",
+          "64.31 u"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution of H2SO4 has a molarity of 3.0 M and a density of 1.18 g mL^-1. The molality of this solution is: (Molar mass of H2SO4 = 98 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.39 m",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.54 m",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.82 m",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.85 m",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Consider 1 L (1000 mL) of solution. Mass of solution = 1000 mL * 1.18 g mL^-1 = 1180 g. Moles of H2SO4 = 3.0 mol. Mass of H2SO4 = 3.0 mol * 98 g mol^-1 = 294 g. Mass of solvent (water) = Mass of solution - Mass of solute = 1180 - 294 = 886 g = 0.886 kg. Molality m = (moles of solute) / (mass of solvent in kg) = 3.0 / 0.886 = 3.386 m ≈ 3.39 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீரிய H2SO4 கரைசலின் மோலாரிட்டி 3.0 M மற்றும் அடர்த்தி 1.18 g mL^-1 ஆகும். அக்கரைசலின் மோலாலிட்டி: (H2SO4-ன் மோலார் நிறை = 98 g mol^-1)",
+        "optionTexts": [
+          "3.39 m",
+          "2.54 m",
+          "3.82 m",
+          "2.85 m"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 1.84 g mixture of CaCO3 and MgCO3 on complete thermal decomposition leaves a residue (CaO and MgO) weighing 0.96 g. The mass percentage of CaCO3 in the original mixture is closest to: (Atomic masses: Ca = 40 u, Mg = 24 u, C = 12 u, O = 16 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "45.7%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "62.5%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "37.5%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "54.3%",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the mass of CaCO3 be x g. Then mass of MgCO3 = (1.84 - x) g. Reactions: CaCO3 (100 g mol^-1) -> CaO (56 g mol^-1) + CO2, and MgCO3 (84 g mol^-1) -> MgO (40 g mol^-1) + CO2. Mass of CaO = (56 / 100)x = 0.56x. Mass of MgO = (40 / 84)(1.84 - x) = (10 / 21)(1.84 - x). Total residue = 0.56x + (10 / 21)(1.84 - x) = 0.96. Multiply by 21: 11.76x + 18.40 - 10x = 20.16 => 1.76x = 1.76 => x = 1.00 g. Mass percentage of CaCO3 = (1.00 / 1.84) * 100 = 54.35% ≈ 54.3%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "CaCO3 மற்றும் MgCO3 ஆகியவற்றைக் கொண்ட 1.84 g கலவை முழுமையான வெப்பச்சிதைவுக்கு உட்படும்போது 0.96 g எச்சத்தைத் (CaO மற்றும் MgO) தருகிறது. ஆரம்ப கலவையில் உள்ள CaCO3-ன் நிறை சதவீதம்: (அணு நிறைகள்: Ca = 40 u, Mg = 24 u, C = 12 u, O = 16 u)",
+        "optionTexts": [
+          "45.7%",
+          "62.5%",
+          "37.5%",
+          "54.3%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Nitrogen forms multiple oxides. In one oxide, 14 g of nitrogen combines with 16 g of oxygen, whereas in another oxide, 14 g of nitrogen combines with 32 g of oxygen. Which law of chemical combination is directly demonstrated by these data?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Law of Definite Proportions",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Law of Multiple Proportions",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Law of Conservation of Mass",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Law of Reciprocal Proportions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the Law of Multiple Proportions, when two elements combine to form more than one compound, the masses of one element that combine with a fixed mass of the other element are in a ratio of small whole numbers. Here, with a fixed 14 g of nitrogen, the masses of oxygen are 16 g and 32 g, giving a simple ratio of 16 : 32 = 1 : 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நைட்ரஜன் பல ஆக்சைடுகளை உருவாக்குகிறது. ஓர் ஆக்சைடில் 14 g நைட்ரஜன் 16 g ஆக்ஸிஜனுடன் இணைகிறது, மற்றொரு ஆக்சைடில் 14 g நைட்ரஜன் 32 g ஆக்ஸிஜனுடன் இணைகிறது. இந்தத் தரவுகள் நேரடியாக வெளிப்படுத்தும் வேதிக்கூடுகை விதி எது?",
+        "optionTexts": [
+          "மாறா விகித விதி",
+          "பெருக்கல் விகித விதி",
+          "நிறை மாறா விதி",
+          "தலைகீழ் விகித விதி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following gaseous samples contains the largest total number of atoms? (Atomic masses: H = 1 u, C = 12 u, N = 14 u, O = 16 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 g of O2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4.0 g of N2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 g of CH4(g)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4.0 g of CO2(g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Number of atoms = (Mass / Molar mass) * (Atoms per molecule) * NA. For 4.0 g O2: (4.0 / 32) * 2 * NA = 0.25 NA atoms. For 4.0 g N2: (4.0 / 28) * 2 * NA = 0.286 NA atoms. For 4.0 g CH4: (4.0 / 16) * 5 * NA = 1.25 NA atoms. For 4.0 g CO2: (4.0 / 44) * 3 * NA = 0.273 NA atoms. Thus, 4.0 g of CH4 contains the largest number of atoms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வாயு மாதிரிகளில் அதிகபட்ச மொத்த அணுக்களின் எண்ணிக்கையைக் கொண்டுள்ள மாதிரி எது? (அணு நிறைகள்: H = 1 u, C = 12 u, N = 14 u, O = 16 u)",
+        "optionTexts": [
+          "4.0 g O2(g)",
+          "4.0 g N2(g)",
+          "4.0 g CH4(g)",
+          "4.0 g CO2(g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Potassium chlorate decomposes upon heating: 2KClO3 -> 2KCl + 3O2. The oxygen gas liberated is completely consumed to react with phosphorus: P4 + 5O2 -> P4O10. How many moles of KClO3 are required to produce 0.60 mol of P4O10?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 mol",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.5 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.0 mol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.0 mol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From the second reaction, 1 mole of P4O10 requires 5 moles of O2. To form 0.60 mol of P4O10, moles of O2 required = 0.60 * 5 = 3.0 mol. From the first reaction, 3 moles of O2 are obtained from 2 moles of KClO3. Therefore, moles of KClO3 required = (2 / 3) * 3.0 = 2.0 mol.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொட்டாசியம் குளோரேட் வெப்பப்படுத்தும் போது சிதைவடைகிறது: 2KClO3 -> 2KCl + 3O2. வெளிவந்த ஆக்ஸிஜன் வாயு பாஸ்பரஸுடன் முழுமையாக வினைபுரிகிறது: P4 + 5O2 -> P4O10. 0.60 mol P4O10 உருவாக்கத் தேவையான KClO3-ன் மோல்கள்:",
+        "optionTexts": [
+          "2.0 mol",
+          "1.5 mol",
+          "3.0 mol",
+          "1.0 mol"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The specific heat capacity of a metal is 0.22 cal g^-1 °C^-1. When 1.0 g of the metal completely reacts with oxygen, it forms 1.8 g of its oxide. The exact atomic mass of the metal is: (Atomic mass of O = 16 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 u",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "27 u",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "24 u",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30 u",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Mass of metal = 1.0 g. Mass of oxygen in oxide = 1.8 - 1.0 = 0.8 g. Equivalent mass of metal = (Mass of metal / Mass of oxygen) * 8 = (1.0 / 0.8) * 8 = 10. According to Dulong and Petit's law, Approximate atomic mass ≈ 6.4 / specific heat = 6.4 / 0.22 ≈ 29.09 u. Valency = Approximate atomic mass / Equivalent mass = 29.09 / 10 ≈ 3 (as valency must be an integer). Exact atomic mass = Equivalent mass * Valency = 10 * 3 = 30 u.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகத்தின் தன்வெப்ப ஏற்புத்திறன் 0.22 cal g^-1 °C^-1 ஆகும். 1.0 g உலோகம் ஆக்ஸிஜனுடன் முழுமையாக வினைபுரிந்து 1.8 g ஆக்சைடை உருவாக்குகிறது எனில், அவ்வுலோகத்தின் துல்லியமான அணு நிறை: (O-ன் அணு நிறை = 16 u)",
+        "optionTexts": [
+          "20 u",
+          "27 u",
+          "24 u",
+          "30 u"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "100 mL of 0.20 M BaCl2 solution is mixed with 300 mL of 0.10 M NaCl solution. Assuming complete dissociation and additive volumes, the concentration of chloride ions (Cl-) in the resulting mixture is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.175 M",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.225 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.150 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "BaCl2 gives 2 Cl- ions per formula unit: Millimoles of Cl- from BaCl2 = 100 mL * 0.20 M * 2 = 40 mmol. NaCl gives 1 Cl- ion: Millimoles of Cl- from NaCl = 300 mL * 0.10 M * 1 = 30 mmol. Total millimoles of Cl- = 40 + 30 = 70 mmol. Total volume of mixture = 100 + 300 = 400 mL. [Cl-] = 70 mmol / 400 mL = 0.175 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 mL 0.20 M BaCl2 கரைசலானது 300 mL 0.10 M NaCl கரைசலுடன் கலக்கப்படுகிறது. முழுமையான பிரிகை மற்றும் கூட்டத்தக்க கனஅளவுகளைக் கருதினால், கிடைக்கும் கலவையில் குளோரைடு அயனிகளின் (Cl-) செறிவு:",
+        "optionTexts": [
+          "0.125 M",
+          "0.175 M",
+          "0.225 M",
+          "0.150 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution contains 46% ethanol (C2H5OH) by mass. The mole fraction of ethanol in the solution is: (Molar masses: C2H5OH = 46 g mol^-1, H2O = 18 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.50",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.33",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.25",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.20",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In 100 g of solution, mass of ethanol = 46 g and mass of water = 100 - 46 = 54 g. Moles of ethanol = 46 / 46 = 1.0 mol. Moles of water = 54 / 18 = 3.0 mol. Total moles = 1.0 + 3.0 = 4.0 mol. Mole fraction of ethanol = 1.0 / 4.0 = 0.25.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீரிய கரைசலில் எத்தனால் (C2H5OH) நிறையின் அடிப்படையில் 46% உள்ளது. அக்கரைசலில் எத்தனாலின் மோல் பின்னம்: (மோலார் நிறைகள்: C2H5OH = 46 g mol^-1, H2O = 18 g mol^-1)",
+        "optionTexts": [
+          "0.50",
+          "0.33",
+          "0.25",
+          "0.20"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What mass of hydrated oxalic acid ((COOH)2 · 2H2O) is required to completely neutralize 25.0 mL of 0.40 M NaOH solution? (Molar mass of (COOH)2 · 2H2O = 126 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.63 g",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.26 g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.315 g",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.945 g",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Oxalic acid is dibasic: (COOH)2 + 2NaOH -> (COONa)2 + 2H2O. Millimoles of NaOH = 25.0 mL * 0.40 M = 10.0 mmol. From stoichiometry, millimoles of (COOH)2 · 2H2O required = 10.0 / 2 = 5.0 mmol = 0.0050 mol. Mass required = 0.0050 mol * 126 g mol^-1 = 0.63 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "25.0 mL 0.40 M NaOH கரைசலை முழுமையாக நடுநிலையாக்கத் தேவையான நீரேறிய ஆக்ஸாலிக் அமிலத்தின் ((COOH)2 · 2H2O) நிறை: ((COOH)2 · 2H2O-ன் மோலார் நிறை = 126 g mol^-1)",
+        "optionTexts": [
+          "0.63 g",
+          "1.26 g",
+          "0.315 g",
+          "0.945 g"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "10 mL of a gaseous hydrocarbon CxHy requires 55 mL of O2 for complete combustion. On cooling to room temperature, the total volume of gases is 40 mL. Upon passing through an aqueous KOH solution, the volume contracts by 30 mL. The molecular formula of the hydrocarbon is: (All volumes are measured under identical temperature and pressure)",
+    "options": [
+      {
+        "label": "A",
+        "text": "C3H8",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "C4H8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C2H6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C3H6",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "General combustion reaction: CxHy + (x + y/4) O2 -> x CO2 + (y/2) H2O(l). The contraction upon passing through KOH is due to absorption of CO2. Volume of CO2 formed = 30 mL. Since 10 mL of CxHy gives 10x mL of CO2: 10x = 30 => x = 3. The volume of gas after cooling (40 mL) contains CO2 and unreacted O2. Volume of unreacted O2 = 40 - 30 = 10 mL. Volume of O2 consumed = 55 - 10 = 45 mL. From reaction stoichiometry: 10 * (x + y/4) = 45 => 3 + y/4 = 4.5 => y/4 = 1.5 => y = 6. Hence, the formula is C3H6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 mL வாயு நிலை ஹைட்ரோகார்பன் CxHy முழுமையாக எரிய 55 mL O2 தேவைப்படுகிறது. அறை வெப்பநிலைக்கு குளிர்வித்த பின், வாயுக்களின் கனஅளவு 40 mL ஆகும். நீரிய KOH கரைசலில் செலுத்தும் போது கனஅளவு 30 mL குறைகிறது. அந்த ஹைட்ரோகார்பனின் மூலக்கூறு வாய்ப்பாடு: (அனைத்து கனஅளவுகளும் ஒரே வெப்பநிலை மற்றும் அழுத்தத்தில் அளவிடப்படுகின்றன)",
+        "optionTexts": [
+          "C3H8",
+          "C4H8",
+          "C2H6",
+          "C3H6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In an industrial synthesis, 280 g of N2 is reacted with 90 g of H2 to form ammonia: N2(g) + 3H2(g) -> 2NH3(g). If the actual yield of NH3 obtained is 204 g, the percentage yield of the reaction is: (Molar masses: N2 = 28 g mol^-1, H2 = 2 g mol^-1, NH3 = 17 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "75%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "60%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "80%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "50%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Moles of N2 = 280 / 28 = 10 mol. Moles of H2 = 90 / 2 = 45 mol. According to reaction stoichiometry, 10 mol N2 requires 30 mol H2. Since 45 mol H2 is present, N2 is the limiting reactant. Theoretical yield of NH3 = 2 * 10 = 20 mol. Theoretical mass of NH3 = 20 mol * 17 g mol^-1 = 340 g. Percentage yield = (Actual mass / Theoretical mass) * 100 = (204 / 340) * 100 = 60%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தொழிற்சாலைத் தொகுப்பு வினையில், 280 g N2 ஆனது 90 g H2 உடன் வினைபுரிந்து அம்மோனியாவை உருவாக்குகிறது: N2(g) + 3H2(g) -> 2NH3(g). பெறப்பட்ட NH3-ன் உண்மையான நிறை 204 g எனில், இவ்வினையின் சதவீத விளைச்சல்: (மோலார் நிறைகள்: N2 = 28 g mol^-1, H2 = 2 g mol^-1, NH3 = 17 g mol^-1)",
+        "optionTexts": [
+          "75%",
+          "60%",
+          "80%",
+          "50%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 1.25 g sample of limestone containing CaCO3 is dissolved in 50.0 mL of 0.50 M HCl. The unreacted acid requires 20.0 mL of 0.25 M NaOH for complete neutralization. Assuming the impurities are inert to acid, the percentage purity of CaCO3 in the limestone sample is: (Molar mass of CaCO3 = 100 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "64.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "72.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "80.0%",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "85.0%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total millimoles of HCl added = 50.0 mL * 0.50 M = 25.0 mmol. Unreacted millimoles of HCl = millimoles of NaOH = 20.0 mL * 0.25 M = 5.0 mmol. Millimoles of HCl consumed by CaCO3 = 25.0 - 5.0 = 20.0 mmol. Reaction: CaCO3 + 2HCl -> CaCl2 + H2O + CO2. Millimoles of pure CaCO3 = 20.0 / 2 = 10.0 mmol = 0.010 mol. Mass of pure CaCO3 = 0.010 mol * 100 g mol^-1 = 1.00 g. Percentage purity = (1.00 / 1.25) * 100 = 80.0%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "CaCO3-ஐக் கொண்டுள்ள 1.25 g சுண்ணாம்புக்கல் மாதிரியானது 50.0 mL 0.50 M HCl-ல் கரைக்கப்படுகிறது. வினைபடாத அமிலத்தை நடுநிலையாக்க 20.0 mL 0.25 M NaOH தேவைப்படுகிறது. மாசுகள் அமிலத்துடன் வினைபுரியாதவை எனில், அச்சுண்ணாம்புக்கல் மாதிரியில் உள்ள CaCO3-ன் தூய்மை சதவீதம்: (CaCO3-ன் மோலார் நிறை = 100 g mol^-1)",
+        "optionTexts": [
+          "64.0%",
+          "72.0%",
+          "80.0%",
+          "85.0%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A sample of groundwater has a hardness of 250 ppm expressed in terms of CaCO3 equivalent. Assuming all hardness is caused by Ca2+ ions, the molarity of Ca2+ in this water sample is: (Molar mass of CaCO3 = 100 g mol^-1; density of water = 1.0 g mL^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.5 x 10^-3 M",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5.0 x 10^-3 M",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2.5 x 10^-4 M",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.25 x 10^-3 M",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A hardness of 250 ppm means 250 g of CaCO3 equivalent per 10^6 g of water. With a density of 1.0 g mL^-1 (1.0 kg L^-1), 10^6 g of water equals 1000 L. Therefore, mass of CaCO3 per liter = 250 g / 1000 L = 0.250 g L^-1. Moles of CaCO3 per liter = 0.250 / 100 = 2.5 x 10^-3 mol L^-1. Since 1 mole of CaCO3 provides 1 mole of Ca2+, the molarity of Ca2+ is 2.5 x 10^-3 M.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலத்தடி நீர் மாதிரியின் கடினத்தன்மை CaCO3 சமானத்தின் அடிப்படையில் 250 ppm ஆகும். முழுக் கடினத்தன்மையும் Ca2+ அயனிகளால் ஏற்படுகிறது எனக் கொண்டால், இந்த நீர் மாதிரியில் உள்ள Ca2+ அயனிகளின் மோலாரிட்டி: (CaCO3-ன் மோலார் நிறை = 100 g mol^-1; நீரின் அடர்த்தி = 1.0 g mL^-1)",
+        "optionTexts": [
+          "2.5 x 10^-3 M",
+          "5.0 x 10^-3 M",
+          "2.5 x 10^-4 M",
+          "1.25 x 10^-3 M"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The mass percentage of water of crystallization in blue vitriol (copper(II) sulfate pentahydrate, CuSO4 · 5H2O) is: (Atomic masses: Cu = 63.5 u, S = 32 u, O = 16 u, H = 1 u)",
+    "options": [
+      {
+        "label": "A",
+        "text": "25.5%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "42.8%",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "18.0%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "36.1%",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Molar mass of CuSO4 · 5H2O = 63.5 + 32 + (4 * 16) + 5 * (18) = 63.5 + 32 + 64 + 90 = 249.5 g mol^-1. Mass of 5 moles of H2O = 5 * 18 = 90 g mol^-1. Mass percentage of water = (90 / 249.5) * 100 = 36.07% ≈ 36.1%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மயில் துத்தத்தில் (காப்பர்(II) சல்பேட் பென்டாஹைட்ரேட், CuSO4 · 5H2O) உள்ள படிக நீரின் நிறை சதவீதம்: (அணு நிறைகள்: Cu = 63.5 u, S = 32 u, O = 16 u, H = 1 u)",
+        "optionTexts": [
+          "25.5%",
+          "42.8%",
+          "18.0%",
+          "36.1%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A drop of liquid water has a volume of 0.054 mL. If the density of water is 1.0 g mL^-1, the total number of water molecules present in the drop is x x 10^20. The value of x is: (Take NA = 6.0 x 10^23 mol^-1; Molar mass of H2O = 18 g mol^-1)",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mass of water drop = volume * density = 0.054 mL * 1.0 g mL^-1 = 0.054 g. Moles of water = mass / molar mass = 0.054 / 18 = 3.0 x 10^-3 mol. Number of water molecules = moles * NA = 3.0 x 10^-3 * 6.0 x 10^23 = 18 x 10^20. Thus, x = 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துளி திரவ நீரின் கனஅளவு 0.054 mL ஆகும். நீரின் அடர்த்தி 1.0 g mL^-1 எனில், அத்துளியில் உள்ள நீர் மூலக்கூறுகளின் மொத்த எண்ணிக்கை x x 10^20 ஆகும். x-ன் மதிப்பு: (NA = 6.0 x 10^23 mol^-1; H2O-ன் மோலார் நிறை = 18 g mol^-1 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Aluminum reacts with excess dilute hydrochloric acid: 2Al(s) + 6HCl(aq) -> 2AlCl3(aq) + 3H2(g). The volume of H2 gas evolved at STP (in L) by the complete reaction of 45.0 g of pure aluminum is: (Given: Atomic mass of Al = 27.0 u; Molar volume of gas at STP = 22.4 L mol^-1)",
+    "correctAnswer": 56,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of Al reacted = 45.0 g / 27.0 g mol^-1 = 5 / 3 mol. From the balanced equation, 2 moles of Al produce 3 moles of H2 gas. Moles of H2 formed = (3 / 2) * (5 / 3) = 2.5 mol. Volume of H2 evolved at STP = 2.5 mol * 22.4 L mol^-1 = 56 L.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அலுமினியமானது அதிகளவு நீர்த்த ஹைட்ரோகுளோரிக் அமிலத்துடன் வினைபுரிகிறது: 2Al(s) + 6HCl(aq) -> 2AlCl3(aq) + 3H2(g). 45.0 g தூய அலுமினியம் முழுமையாக வினைபுரிவதால் STP-யில் வெளியாகும் H2 வாயுவின் கனஅளவு (L-ல்): (Al-ன் அணு நிறை = 27.0 u; STP-யில் வாயுவின் மோலார் கனஅளவு = 22.4 L mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "200 mL of 0.50 M CaCl2 solution is mixed with 300 mL of 0.20 M Na2CO3 solution to form a precipitate of CaCO3: CaCl2(aq) + Na2CO3(aq) -> CaCO3(s) + 2NaCl(aq). The mass of CaCO3 precipitate obtained (in g) is: (Given: Molar mass of CaCO3 = 100 g mol^-1)",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of CaCl2 = 0.200 L * 0.50 mol L^-1 = 0.10 mol. Moles of Na2CO3 = 0.300 L * 0.20 mol L^-1 = 0.060 mol. Reaction stoichiometry is 1 : 1. Since Na2CO3 is present in smaller quantity, it acts as the limiting reactant. Moles of CaCO3 precipitate formed = 0.060 mol. Mass of CaCO3 = 0.060 mol * 100 g mol^-1 = 6 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "200 mL 0.50 M CaCl2 கரைசலானது 300 mL 0.20 M Na2CO3 கரைசலுடன் கலக்கப்பட்டு CaCO3 வீழ்படிவு உருவாக்கப்படுகிறது: CaCl2(aq) + Na2CO3(aq) -> CaCO3(s) + 2NaCl(aq). பெறப்படும் CaCO3 வீழ்படிவின் நிறை (கிராமில்): (CaCO3-ன் மோலார் நிறை = 100 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 1.90 g mixture contains equimolar amounts of Na2CO3 and NaHCO3. The volume of 0.10 M HCl solution (in mL) required to completely neutralize this mixture is: (Molar masses: Na2CO3 = 106 g mol^-1, NaHCO3 = 84 g mol^-1)",
+    "correctAnswer": 300,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let n be the number of moles of each salt in the mixture. Total mass = n * 106 + n * 84 = 190n = 1.90 g => n = 0.010 mol. Reactions: Na2CO3 + 2HCl -> 2NaCl + H2O + CO2 (requires 2 * 0.010 = 0.020 mol HCl); NaHCO3 + HCl -> NaCl + H2O + CO2 (requires 1 * 0.010 = 0.010 mol HCl). Total moles of HCl required = 0.020 + 0.010 = 0.030 mol. Volume of 0.10 M HCl = (0.030 mol / 0.10 mol L^-1) * 1000 mL L^-1 = 300 mL.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1.90 g கலவையில் சமமோலார் அளவில் Na2CO3 மற்றும் NaHCO3 உள்ளன. இக்கலவையை முழுமையாக நடுநிலையாக்கத் தேவையான 0.10 M HCl கரைசலின் கனஅளவு (mL-ல்): (மோலார் நிறைகள்: Na2CO3 = 106 g mol^-1, NaHCO3 = 84 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Commercial concentrated nitric acid (HNO3) is 63% by mass and has a density of 1.40 g mL^-1. The volume of this concentrated acid (in mL) required to prepare 350 mL of 2.0 M HNO3 solution is: (Molar mass of HNO3 = 63 g mol^-1)",
+    "correctAnswer": 50,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Molarity of concentrated HNO3 = (% mass * density * 10) / Molar mass = (63 * 1.40 * 10) / 63 = 14.0 M. Using dilution formula M1 * V1 = M2 * V2: 14.0 M * V1 = 2.0 M * 350 mL => V1 = (2.0 * 350) / 14.0 = 50 mL.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வணிகரீதியான அடர் நைட்ரிக் அமிலமானது (HNO3) நிறையின் அடிப்படையில் 63% மற்றும் 1.40 g mL^-1 அடர்த்தியைக் கொண்டுள்ளது. 350 mL 2.0 M HNO3 கரைசலைத் தயாரிக்கத் தேவையான இந்த அடர் அமிலத்தின் கனஅளவு (mL-ல்): (HNO3-ன் மோலார் நிறை = 63 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solution is prepared by dissolving 18.0 g of glucose (C6H12O6) in 250 g of water. The molality of the solution is x x 10^-1 m. The value of x is: (Molar mass of glucose = 180 g mol^-1)",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of glucose = 18.0 g / 180 g mol^-1 = 0.10 mol. Mass of water (solvent) = 250 g = 0.250 kg. Molality m = moles of solute / mass of solvent in kg = 0.10 / 0.250 = 0.40 m = 4 x 10^-1 m. Hence, x = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "18.0 g குளுக்கோஸை (C6H12O6) 250 g நீரில் கரைத்து ஒரு கரைசல் தயாரிக்கப்படுகிறது. அக்கரைசலின் மோலாலிட்டி x x 10^-1 m ஆகும். x-ன் மதிப்பு: (குளுக்கோஸின் மோலார் நிறை = 180 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A biological metalloprotein contains 0.32% iron (Fe) by mass. If each molecule of the protein contains 4 iron atoms, the molar mass of the protein (in g mol^-1) is: (Given: Atomic mass of Fe = 56 u)",
+    "correctAnswer": 70000,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let M be the molar mass of the protein. Mass of iron present in 1 mole of protein = 4 * 56 = 224 g. Mass percentage of Fe = (Mass of Fe / M) * 100 = 0.32 => 0.32 = (224 / M) * 100 => M = 22400 / 0.32 = 70000 g mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உயிரியல் உலோகப்புரதத்தில் நிறையின் அடிப்படையில் 0.32% இரும்பு (Fe) உள்ளது. அப்பரதத்தின் ஒரு மூலக்கூறில் 4 இரும்பு அணுக்கள் உள்ளன எனில், அப்புரதத்தின் மோலார் நிறை (g mol^-1-ல்): (Fe-ன் அணு நிறை = 56 u)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 4.92 g sample of hydrated magnesium sulfate (MgSO4 · xH2O) is heated strongly until all water is expelled, leaving 2.40 g of anhydrous MgSO4. The value of x is: (Atomic masses: Mg = 24 u, S = 32 u, O = 16 u, H = 1 u; Molar mass of MgSO4 = 120 g mol^-1, H2O = 18 g mol^-1)",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mass of anhydrous MgSO4 = 2.40 g; Moles of MgSO4 = 2.40 / 120 = 0.020 mol. Mass of water of crystallization lost = 4.92 - 2.40 = 2.52 g; Moles of H2O = 2.52 / 18 = 0.14 mol. Mole ratio x = Moles of H2O / Moles of MgSO4 = 0.14 / 0.020 = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4.92 g நீரேறிய மெக்னீசியம் சல்பேட் (MgSO4 · xH2O) மாதிரியானது அனைத்து நீரும் வெளியேறும் வரை வெப்பப்படுத்தப்பட்டு, 2.40 g நீரற்ற MgSO4 எச்சத்தைத் தருகிறது. x-ன் மதிப்பு: (அணு நிறைகள்: Mg = 24 u, S = 32 u, O = 16 u, H = 1 u; MgSO4 = 120 g mol^-1, H2O = 18 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of moles of oxygen atoms present in 49.0 g of pure sulfuric acid (H2SO4) is: (Given: Molar mass of H2SO4 = 98.0 g mol^-1)",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of H2SO4 = mass / molar mass = 49.0 g / 98.0 g mol^-1 = 0.50 mol. Since each formula unit of H2SO4 contains 4 oxygen atoms, 1 mole of H2SO4 contains 4 moles of oxygen atoms. Moles of oxygen atoms = 0.50 * 4 = 2 moles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "49.0 g தூய சல்பியூரிக் அமிலத்தில் (H2SO4) உள்ள ஆக்ஸிஜன் அணுக்களின் மோல்களின் எண்ணிக்கை: (H2SO4-ன் மோலார் நிறை = 98.0 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che01-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_01",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mass of solid potassium hydroxide (KOH) in grams required to prepare 500 mL of a 0.50 M aqueous solution is: (Given: Atomic masses: K = 39 u, O = 16 u, H = 1 u; Molar mass of KOH = 56 g mol^-1)",
+    "correctAnswer": 14,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of KOH needed = Molarity * Volume in L = 0.50 mol L^-1 * 0.500 L = 0.25 mol. Mass of KOH = Moles * Molar mass = 0.25 mol * 56 g mol^-1 = 14 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 mL 0.50 M நீரிய கரைசலைத் தயாரிக்கத் தேவையான திட பொட்டாசியம் ஹைட்ராக்சைடின் (KOH) நிறை கிராமில்: (அணு நிறைகள்: K = 39 u, O = 16 u, H = 1 u; KOH-ன் மோலார் நிறை = 56 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  }
+]

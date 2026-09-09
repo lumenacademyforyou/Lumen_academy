@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat02-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If z = (1 - i*sqrt(3)) / (1 + i*sqrt(3)), then the principal argument of z is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2pi / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-2pi / 3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-pi / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "pi / 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Multiplying numerator and denominator by the conjugate of the denominator: z = (1 - i*sqrt(3))^2 / (1^2 + (sqrt(3))^2) = (1 - 3 - 2i*sqrt(3)) / 4 = (-2 - 2i*sqrt(3)) / 4 = -1/2 - i*sqrt(3)/2. Both real and imaginary parts are negative, so z lies in the third quadrant. The reference angle is alpha = tan^-1(|(-sqrt(3)/2) / (-1/2)|) = tan^-1(sqrt(3)) = pi / 3. The principal argument in the third quadrant is theta = -pi + alpha = -pi + pi/3 = -2pi / 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "z = (1 - i*sqrt(3)) / (1 + i*sqrt(3)) எனில், z-ன் முதன்மை வீச்சு (principal argument):",
+        "optionTexts": [
+          "2pi / 3",
+          "-2pi / 3",
+          "-pi / 3",
+          "pi / 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If alpha and beta are the roots of the quadratic equation 3x^2 - 5x - 2 = 0, then the value of (alpha^2 / beta) + (beta^2 / alpha) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "215 / 18",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-185 / 18",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-215 / 18",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "65 / 9",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From the equation 3x^2 - 5x - 2 = 0, alpha + beta = 5/3 and alpha * beta = -2/3. Now, (alpha^2 / beta) + (beta^2 / alpha) = (alpha^3 + beta^3) / (alpha * beta) = [(alpha + beta)^3 - 3*alpha*beta*(alpha + beta)] / (alpha * beta). Substituting values: [(5/3)^3 - 3*(-2/3)*(5/3)] / (-2/3) = [125/27 + 10/3] / (-2/3) = [125/27 + 90/27] / (-2/3) = (215/27) / (-2/3) = -(215/27) * (3/2) = -215 / 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3x^2 - 5x - 2 = 0 என்ற இருபடிச் சமன்பாட்டின் மூலங்கள் alpha மற்றும் beta எனில், (alpha^2 / beta) + (beta^2 / alpha)-ன் மதிப்பு:",
+        "optionTexts": [
+          "215 / 18",
+          "-185 / 18",
+          "-215 / 18",
+          "65 / 9"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The modulus of the complex number z = ((2 + 3i)(1 - 2i)) / (3 + 4i) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(13) / 5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt(65) / 5",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "13 / 5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(5) / 13",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using properties of modulus |z1 * z2 / z3| = (|z1| * |z2|) / |z3|: |2 + 3i| = sqrt(2^2 + 3^2) = sqrt(13), |1 - 2i| = sqrt(1^2 + (-2)^2) = sqrt(5), and |3 + 4i| = sqrt(3^2 + 4^2) = 5. Therefore, |z| = (sqrt(13) * sqrt(5)) / 5 = sqrt(65) / 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "z = ((2 + 3i)(1 - 2i)) / (3 + 4i) என்ற கலப்பெண்ணின் மட்டு மதிப்பு (modulus):",
+        "optionTexts": [
+          "sqrt(13) / 5",
+          "sqrt(65) / 5",
+          "13 / 5",
+          "sqrt(5) / 13"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The set of all real values of k for which the quadratic equation (k - 1)x^2 + 2(k - 1)x + 1 = 0 has real and distinct roots is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 < k < 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "k > 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "k < 1 or k > 2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "k <= 1 or k >= 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For the equation to be quadratic, k - 1 != 0 => k != 1. For real and distinct roots, discriminant D > 0: D = [2(k - 1)]^2 - 4(k - 1)(1) = 4(k - 1)^2 - 4(k - 1) = 4(k - 1)(k - 1 - 1) = 4(k - 1)(k - 2) > 0. This inequality holds when k < 1 or k > 2. Since k != 1 is already respected by k < 1, the solution is k < 1 or k > 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(k - 1)x^2 + 2(k - 1)x + 1 = 0 என்ற இருபடிச் சமன்பாடு மெய் மற்றும் வெவ்வேறான மூலங்களைப் பெற்றிருக்க k-ன் அனைத்து மெய்மதிப்புகளின் கணம்:",
+        "optionTexts": [
+          "1 < k < 2",
+          "k > 2",
+          "k < 1 அல்லது k > 2",
+          "k <= 1 அல்லது k >= 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of the sum sum_{n=1}^{13} (i^n + i^(n+1)) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "i",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 - i",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1 + i",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Factor out common terms: sum_{n=1}^{13} (i^n + i^(n+1)) = (1 + i) * sum_{n=1}^{13} i^n. The sum of four consecutive powers of i is always zero. Since 13 = 4 * 3 + 1, the first 12 terms cancel out in groups of 4: sum_{n=1}^{13} i^n = i^13 = i^(4*3 + 1) = i. Thus, the sum is (1 + i) * i = i + i^2 = -1 + i.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{n=1}^{13} (i^n + i^(n+1)) என்ற கூடுதலின் மதிப்பு:",
+        "optionTexts": [
+          "i",
+          "1 - i",
+          "-1 + i",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If alpha and beta are the roots of x^2 - 4x + 1 = 0, then the quadratic equation whose roots are (alpha / beta) and (beta / alpha) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x^2 + 14x + 1 = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "x^2 - 16x + 1 = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x^2 - 14x - 1 = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "x^2 - 14x + 1 = 0",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Given alpha + beta = 4 and alpha * beta = 1. The sum of the new roots is S = (alpha / beta) + (beta / alpha) = (alpha^2 + beta^2) / (alpha * beta) = [(alpha + beta)^2 - 2*alpha*beta] / (alpha * beta) = [4^2 - 2(1)] / 1 = 14. The product of the new roots is P = (alpha / beta) * (beta / alpha) = 1. Thus, the equation is x^2 - Sx + P = 0 => x^2 - 14x + 1 = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 4x + 1 = 0-ன் மூலங்கள் alpha மற்றும் beta எனில், (alpha / beta) மற்றும் (beta / alpha) ஆகியவற்றை மூலங்களாகக் கொண்ட இருபடிச் சமன்பாடு:",
+        "optionTexts": [
+          "x^2 + 14x + 1 = 0",
+          "x^2 - 16x + 1 = 0",
+          "x^2 - 14x - 1 = 0",
+          "x^2 - 14x + 1 = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If z = x + iy and (z - 2i) / (z + 2i) is purely imaginary, then the locus of z in the Argand plane is a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Straight line y = 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Circle centered at origin with radius 2, excluding the point (0, -2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Circle centered at (0, 2) with radius 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Straight line x = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let w = (z - 2i) / (z + 2i) = [x + i(y - 2)] / [x + i(y + 2)]. Multiply numerator and denominator by x - i(y + 2): real part of w is [x^2 + (y - 2)(y + 2)] / [x^2 + (y + 2)^2] = (x^2 + y^2 - 4) / [x^2 + (y + 2)^2]. For w to be purely imaginary, Re(w) = 0 => x^2 + y^2 - 4 = 0 => x^2 + y^2 = 4, with z != -2i. Hence, the locus is a circle centered at the origin of radius 2, excluding the point (0, -2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "z = x + iy மற்றும் (z - 2i) / (z + 2i) என்பது முழுவதும் கற்பனை எண் எனில், ஆர்கண்ட் தளத்தில் z-ன் நியமப்பாதை:",
+        "optionTexts": [
+          "y = 2 என்ற நேர்கோடு",
+          "(0, -2) புள்ளியைத் தவிர்த்து, ஆதியை மையமாகவும் ஆரம் 2 ஆகவும் கொண்ட வட்டம்",
+          "(0, 2) ஐ மையமாகவும் ஆரம் 2 ஆகவும் கொண்ட வட்டம்",
+          "x = 0 என்ற நேர்கோடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If one root of a quadratic equation with rational coefficients is 3 - sqrt(5), then the quadratic equation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x^2 + 6x + 4 = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "x^2 - 6x - 4 = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x^2 - 6x + 4 = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "x^2 + 6x - 4 = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since the quadratic equation has rational coefficients, irrational roots must occur in conjugate pairs. Thus, if one root is 3 - sqrt(5), the other root is 3 + sqrt(5). Sum of roots S = (3 - sqrt(5)) + (3 + sqrt(5)) = 6. Product of roots P = (3 - sqrt(5))(3 + sqrt(5)) = 3^2 - 5 = 4. The required equation is x^2 - Sx + P = 0 => x^2 - 6x + 4 = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விகிதமுறு எண்களைக் கெழுக்களாகக் கொண்ட ஓர் இருபடிச் சமன்பாட்டின் ஒரு மூலம் 3 - sqrt(5) எனில், அவ்விரும்படிச் சமன்பாடு:",
+        "optionTexts": [
+          "x^2 + 6x + 4 = 0",
+          "x^2 - 6x - 4 = 0",
+          "x^2 - 6x + 4 = 0",
+          "x^2 + 6x - 4 = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If (x + iy)(2 - 3i) = 4 + i, where x and y are real numbers, then the value of x + y is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "17 / 13",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "19 / 13",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "9 / 13",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "x + iy = (4 + i) / (2 - 3i) = [(4 + i)(2 + 3i)] / [2^2 + (-3)^2] = (8 + 12i + 2i - 3) / 13 = (5 + 14i) / 13. Equating real and imaginary parts: x = 5/13 and y = 14/13. Therefore, x + y = 5/13 + 14/13 = 19 / 13.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x, y என்பவை மெய் எண்கள் மற்றும் (x + iy)(2 - 3i) = 4 + i எனில், x + y-ன் மதிப்பு:",
+        "optionTexts": [
+          "17 / 13",
+          "19 / 13",
+          "9 / 13",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If |z + 3 - 4i| <= 2, then the maximum and minimum values of |z| are respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 and 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8 and 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 and 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7 and 3",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The given inequality represents a circular disk centered at z0 = -3 + 4i with radius r = 2. The distance from the origin to the center is |z0| = sqrt((-3)^2 + 4^2) = 5. By the triangle inequality, the maximum distance from the origin is |z0| + r = 5 + 2 = 7, and the minimum distance from the origin is |z0| - r = 5 - 2 = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|z + 3 - 4i| <= 2 எனில், |z|-ன் பெரும மற்றும் சிறும மதிப்புகள் முறையே:",
+        "optionTexts": [
+          "6 மற்றும் 2",
+          "8 மற்றும் 4",
+          "5 மற்றும் 2",
+          "7 மற்றும் 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the equations x^2 + ax + 12 = 0 and x^2 + bx + 15 = 0 have a common root, and the roots of the first equation are in the ratio 3 : 4, then the positive value of b is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let roots of x^2 + ax + 12 = 0 be 3k and 4k. Product of roots: (3k)(4k) = 12 => 12k^2 = 12 => k^2 = 1 => k = ±1. Thus the roots are either {3, 4} or {-3, -4}. Since 15 is divisible by 3 and not 4, the common root can only be 3 or -3. If common root is -3: (-3)^2 + b(-3) + 15 = 0 => 9 - 3b + 15 = 0 => 3b = 24 => b = 8 (positive). If common root is 3: 3^2 + 3b + 15 = 0 => 3b = -24 => b = -8 (negative). Hence, the positive value of b is 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 + ax + 12 = 0 மற்றும் x^2 + bx + 15 = 0 ஆகியவை ஒரு பொதுவான மூலத்தைக் கொண்டுள்ளன, மேலும் முதல் சமன்பாட்டின் மூலங்கள் 3 : 4 என்ற விகிதத்தில் இருப்பின், b-ன் மிகை மதிப்பு:",
+        "optionTexts": [
+          "6",
+          "8",
+          "10",
+          "12"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of [(1 + sin(pi/8) + i*cos(pi/8)) / (1 + sin(pi/8) - i*cos(pi/8))]^8 is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "i",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-i",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Note that sin(pi/8) = cos(3pi/8) and cos(pi/8) = sin(3pi/8). Let theta = 3pi/8. The numerator is 1 + cos(theta) + i*sin(theta) = 2*cos^2(theta/2) + 2i*sin(theta/2)*cos(theta/2) = 2*cos(theta/2)*e^(i*theta/2). The denominator is its complex conjugate: 2*cos(theta/2)*e^(-i*theta/2). The fraction simplifies to e^(i*theta/2) / e^(-i*theta/2) = e^(i*theta) = e^(i*3pi/8). Raising to the 8th power: [e^(i*3pi/8)]^8 = e^(i*3pi) = cos(3pi) + i*sin(3pi) = -1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[(1 + sin(pi/8) + i*cos(pi/8)) / (1 + sin(pi/8) - i*cos(pi/8))]^8-ன் மதிப்பு:",
+        "optionTexts": [
+          "1",
+          "-1",
+          "i",
+          "-i"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The set of all values of a for which both roots of the equation x^2 - 2ax + a^2 + a - 3 = 0 are less than 3 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(-infinity, 2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2, 3]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[2, 3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(-infinity, 3]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let f(x) = x^2 - 2ax + a^2 + a - 3. For both roots to be less than 3: (1) Discriminant D >= 0 => 4a^2 - 4(a^2 + a - 3) >= 0 => 4(-a + 3) >= 0 => a <= 3. (2) Axis of symmetry -b/(2A) < 3 => a < 3. (3) f(3) > 0 => 3^2 - 2a(3) + a^2 + a - 3 > 0 => a^2 - 5a + 6 > 0 => (a - 2)(a - 3) > 0 => a < 2 or a > 3. Intersecting a < 3 and (a < 2 or a > 3) yields a in (-infinity, 2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 2ax + a^2 + a - 3 = 0 என்ற சமன்பாட்டின் இரு மூலங்களும் 3-ஐ விடக் குறைவாக இருப்பதற்கு a-ன் அனைத்து மதிப்புகளின் கணம்:",
+        "optionTexts": [
+          "(-infinity, 2)",
+          "(2, 3]",
+          "[2, 3)",
+          "(-infinity, 3]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If Arg((z - 1) / (z + 1)) = pi / 3, then the locus of z = x + iy in the Argand plane is an arc of a circle whose radius is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 / sqrt(3)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let z = x + iy. (z - 1)/(z + 1) = [(x - 1) + iy] / [(x + 1) + iy] = [(x^2 + y^2 - 1) + 2iy] / [(x + 1)^2 + y^2]. Since the argument is pi/3, tan(pi/3) = Im/Re => sqrt(3) = 2y / (x^2 + y^2 - 1) => x^2 + y^2 - 1 = (2/sqrt(3))y => x^2 + y^2 - (2/sqrt(3))y - 1 = 0 => x^2 + (y - 1/sqrt(3))^2 = 1 + 1/3 = 4/3. Thus, the radius is R = sqrt(4/3) = 2 / sqrt(3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Arg((z - 1) / (z + 1)) = pi / 3 எனில், ஆர்கண்ட் தளத்தில் z = x + iy-ன் நியமப்பாதையானது ஒரு வட்டத்தின் வில் ஆகும். அவ்வட்டத்தின் ஆரம்:",
+        "optionTexts": [
+          "1 / sqrt(3)",
+          "sqrt(3)",
+          "2 / sqrt(3)",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let alpha and beta be the roots of x^2 - 5x - 3 = 0. If s_n = alpha^n + beta^n for n >= 1, then the value of (s_12 - 3*s_10) / s_11 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since alpha and beta satisfy x^2 - 5x - 3 = 0, multiplying by x^(n-2) gives alpha^n - 5*alpha^(n-1) - 3*alpha^(n-2) = 0 and beta^n - 5*beta^(n-1) - 3*beta^(n-2) = 0. Adding these yields s_n - 5*s_(n-1) - 3*s_(n-2) = 0 => s_n - 3*s_(n-2) = 5*s_(n-1). Setting n = 12: s_12 - 3*s_10 = 5*s_11 => (s_12 - 3*s_10) / s_11 = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 5x - 3 = 0-ன் மூலங்கள் alpha மற்றும் beta என்க. n >= 1-க்கு s_n = alpha^n + beta^n எனில், (s_12 - 3*s_10) / s_11-ன் மதிப்பு:",
+        "optionTexts": [
+          "5",
+          "3",
+          "-3",
+          "-5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If omega is a non-real complex cube root of unity, then the value of (1 + omega)(1 + omega^2)(1 + omega^4)(1 + omega^8) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Since omega^3 = 1, we have omega^4 = omega and omega^8 = omega^2. Thus, the expression is (1 + omega)(1 + omega^2)(1 + omega)(1 + omega^2) = [(1 + omega)(1 + omega^2)]^2. Using 1 + omega + omega^2 = 0, we have 1 + omega = -omega^2 and 1 + omega^2 = -omega. The product is (-omega^2)(-omega) = omega^3 = 1. Therefore, [1]^2 = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "omega என்பது ஒன்றின் மெய்யற்ற முப்படி மூலம் எனில், (1 + omega)(1 + omega^2)(1 + omega^4)(1 + omega^8)-ன் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "-1",
+          "3",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the roots of ax^2 + bx + c = 0 are alpha and beta, then the quadratic equation whose roots are 1 / (alpha + 2) and 1 / (beta + 2) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(4a - 2b + c)x^2 + (b - 4a)x + a = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(c - 2b + 4a)x^2 + (4a - b)x + a = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(4a + 2b + c)x^2 + (b + 4a)x + a = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(a - 2b + 4c)x^2 + (b - 4a)x + c = 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let y = 1 / (x + 2) => x + 2 = 1 / y => x = (1 - 2y) / y. Substituting into ax^2 + bx + c = 0: a[(1 - 2y) / y]^2 + b[(1 - 2y) / y] + c = 0. Multiplying through by y^2: a(1 - 4y + 4y^2) + by(1 - 2y) + cy^2 = 0 => (4a - 2b + c)y^2 + (b - 4a)y + a = 0. Replacing y with x gives (4a - 2b + c)x^2 + (b - 4a)x + a = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ax^2 + bx + c = 0-ன் மூலங்கள் alpha மற்றும் beta எனில், 1 / (alpha + 2) மற்றும் 1 / (beta + 2) ஆகியவற்றை மூலங்களாகக் கொண்ட இருபடிச் சமன்பாடு:",
+        "optionTexts": [
+          "(4a - 2b + c)x^2 + (b - 4a)x + a = 0",
+          "(c - 2b + 4a)x^2 + (4a - b)x + a = 0",
+          "(4a + 2b + c)x^2 + (b + 4a)x + a = 0",
+          "(a - 2b + 4c)x^2 + (b - 4a)x + c = 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The value of the trigonometric sum sum_{k=1}^{6} (sin(2k*pi / 7) - i*cos(2k*pi / 7)) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-i",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "i",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Rewrite each term using Euler's formula: sin(theta) - i*cos(theta) = -i(cos(theta) + i*sin(theta)) = -i * e^(i*theta). Thus, the sum is -i * sum_{k=1}^{6} e^(i*2k*pi / 7). Let alpha = e^(i*2pi/7) be a primitive 7th root of unity. The sum of all 7th roots of unity is 1 + sum_{k=1}^{6} alpha^k = 0 => sum_{k=1}^{6} alpha^k = -1. Therefore, the required sum is -i * (-1) = i.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{k=1}^{6} (sin(2k*pi / 7) - i*cos(2k*pi / 7)) என்ற முக்கோணவியல் கூடுதலின் மதிப்பு:",
+        "optionTexts": [
+          "-i",
+          "1",
+          "-1",
+          "i"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the vertices of a triangle in the Argand plane are represented by complex numbers z1, z2, z3 satisfying z1^2 + z2^2 + z3^2 = z1*z2 + z2*z3 + z3*z1, and |z1 - z2| = 2*sqrt(3), then the area of the triangle is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 * sqrt(3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6 * sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relation z1^2 + z2^2 + z3^2 = z1*z2 + z2*z3 + z3*z1 is the necessary and sufficient condition for the points z1, z2, z3 to form an equilateral triangle in the Argand plane. The side length of the equilateral triangle is s = |z1 - z2| = 2*sqrt(3). The area of an equilateral triangle is (sqrt(3) / 4) * s^2 = (sqrt(3) / 4) * (2*sqrt(3))^2 = (sqrt(3) / 4) * 12 = 3*sqrt(3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆர்கண்ட் தளத்தில் z1, z2, z3 என்ற கலப்பெண்களால் குறிக்கப்படும் முக்கோணத்தின் உச்சிகள் z1^2 + z2^2 + z3^2 = z1*z2 + z2*z3 + z3*z1 மற்றும் |z1 - z2| = 2*sqrt(3) என்பதை நிறைவுசெய்தால், அந்த முக்கோணத்தின் பரப்பளவு:",
+        "optionTexts": [
+          "3 * sqrt(3)",
+          "6 * sqrt(3)",
+          "12",
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the inequality (x^2 - kx + 1) / (x^2 + x + 1) < 3 holds for all x in R, then the range of k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[-7, 1]",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(-infinity, -7) U (1, infinity)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(-7, 1)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "(-1, 7)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since the denominator x^2 + x + 1 has discriminant D = 1 - 4 = -3 < 0 and leading coefficient 1 > 0, x^2 + x + 1 > 0 for all real x. We can multiply both sides by x^2 + x + 1 without changing the inequality sign: x^2 - kx + 1 < 3x^2 + 3x + 3 => 2x^2 + (k + 3)x + 2 > 0 for all x in R. For a quadratic Ax^2 + Bx + C > 0 for all real x, we must have A > 0 (which is 2 > 0) and discriminant D < 0: (k + 3)^2 - 4(2)(2) < 0 => (k + 3)^2 - 16 < 0 => (k + 3 - 4)(k + 3 + 4) < 0 => (k - 1)(k + 7) < 0 => -7 < k < 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து x in R-க்கும் (x^2 - kx + 1) / (x^2 + x + 1) < 3 என்ற சமநிலையின்மை மெய்யாகுமாயின், k-ன் இடைவெளி:",
+        "optionTexts": [
+          "[-7, 1]",
+          "(-infinity, -7) U (1, infinity)",
+          "(-7, 1)",
+          "(-1, 7)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let alpha and beta be the roots of the quadratic equation x^2 - 8x + 12 = 0. The value of |alpha^3 - beta^3| is:",
+    "correctAnswer": 208,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Factoring x^2 - 8x + 12 = 0 gives (x - 6)(x - 2) = 0, so the roots are alpha = 6 and beta = 2. Then alpha^3 = 6^3 = 216 and beta^3 = 2^3 = 8. Thus, |alpha^3 - beta^3| = |216 - 8| = 208.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 8x + 12 = 0 என்ற இருபடிச் சமன்பாட்டின் மூலங்கள் alpha மற்றும் beta எனில், |alpha^3 - beta^3|-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For any complex number z, the minimum possible value of |z - 5| + |z - 12i| is:",
+    "correctAnswer": 13,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the triangle inequality, |z - z1| + |z - z2| >= |z1 - z2|. Here z1 = 5 and z2 = 12i. Thus |z - 5| + |z - 12i| >= |5 - 12i| = sqrt(5^2 + (-12)^2) = sqrt(25 + 144) = sqrt(169) = 13. Equality holds when z lies on the straight line segment joining (5, 0) and (0, 12).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஏதேனும் ஒரு கலப்பெண் z-க்கு, |z - 5| + |z - 12i|-ன் சாத்தியமான சிறும மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If alpha and beta are the roots of the quadratic equation x^2 - 6x + k = 0 such that alpha^2 + beta^2 = 20, then the value of k is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "From the given equation: alpha + beta = 6 and alpha * beta = k. Using the algebraic identity: alpha^2 + beta^2 = (alpha + beta)^2 - 2*alpha*beta => 20 = 6^2 - 2k => 20 = 36 - 2k => 2k = 16 => k = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 6x + k = 0 என்ற சமன்பாட்டின் மூலங்கள் alpha, beta மற்றும் alpha^2 + beta^2 = 20 எனில், k-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If omega is a non-real complex cube root of unity, then the value of (2 + 5*omega + 2*omega^2)^6 is:",
+    "correctAnswer": 729,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Rewrite the expression: 2 + 5*omega + 2*omega^2 = 2(1 + omega + omega^2) + 3*omega. Since 1 + omega + omega^2 = 0, this simplifies to 2(0) + 3*omega = 3*omega. Now raising to the 6th power: (3*omega)^6 = 3^6 * omega^6 = 729 * (omega^3)^2 = 729 * 1^2 = 729.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "omega என்பது ஒன்றின் மெய்யற்ற முப்படி மூலம் எனில், (2 + 5*omega + 2*omega^2)^6-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If alpha and beta are the roots of the quadratic equation x^2 - x + 2 = 0, then the value of alpha^6 + beta^6 is:",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Here alpha + beta = 1 and alpha * beta = 2. From x^2 = x - 2, we have x^3 = x^2 - 2x = (x - 2) - 2x = -x - 2. Squaring gives x^6 = (-x - 2)^2 = x^2 + 4x + 4 = (x - 2) + 4x + 4 = 5x + 2. Thus, alpha^6 + beta^6 = (5*alpha + 2) + (5*beta + 2) = 5(alpha + beta) + 4 = 5(1) + 4 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - x + 2 = 0 என்ற இருபடிச் சமன்பாட்டின் மூலங்கள் alpha மற்றும் beta எனில், alpha^6 + beta^6-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If alpha = e^(i*2pi / 7), then the value of (alpha + alpha^2 + alpha^4) * (alpha^3 + alpha^5 + alpha^6) is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let S1 = alpha + alpha^2 + alpha^4 and S2 = alpha^3 + alpha^5 + alpha^6. S1 * S2 = (alpha + alpha^2 + alpha^4)(alpha^3 + alpha^5 + alpha^6) = alpha^4 + alpha^6 + alpha^7 + alpha^5 + alpha^7 + alpha^8 + alpha^7 + alpha^9 + alpha^10. Since alpha^7 = 1: alpha^8 = alpha, alpha^9 = alpha^2, and alpha^10 = alpha^3. Thus, the expression becomes (alpha^4 + alpha^6 + 1 + alpha^5 + 1 + alpha + 1 + alpha^2 + alpha^3) = 3 + (alpha + alpha^2 + alpha^3 + alpha^4 + alpha^5 + alpha^6). Since 1 + alpha + alpha^2 + ... + alpha^6 = 0, the sum of non-unit 7th roots is -1. Therefore, S1 * S2 = 3 + (-1) = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "alpha = e^(i*2pi / 7) எனில், (alpha + alpha^2 + alpha^4) * (alpha^3 + alpha^5 + alpha^6)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If a complex number z satisfies |z| - z = 1 + 2i, then the value of 4*|z|^2 is:",
+    "correctAnswer": 25,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let z = x + iy. Then |z| = sqrt(x^2 + y^2). The equation becomes sqrt(x^2 + y^2) - (x + iy) = 1 + 2i. Equating imaginary parts gives -y = 2 => y = -2. Equating real parts gives sqrt(x^2 + (-2)^2) - x = 1 => sqrt(x^2 + 4) = x + 1. Squaring both sides: x^2 + 4 = x^2 + 2x + 1 => 2x = 3 => x = 3/2. Thus, |z|^2 = x^2 + y^2 = (3/2)^2 + (-2)^2 = 9/4 + 4 = 25/4. Hence, 4*|z|^2 = 4 * (25/4) = 25.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கலப்பெண் z ஆனது |z| - z = 1 + 2i என்பதை நிறைவுசெய்தால், 4*|z|^2-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The number of integers p in [1, 10] for which the quadratic equation (p - 2)x^2 - 2px + (p + 3) = 0 has two distinct positive real roots is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For quadratic nature, p != 2. (1) Real and distinct roots require D > 0: (-2p)^2 - 4(p - 2)(p + 3) > 0 => 4p^2 - 4(p^2 + p - 6) > 0 => 4(-p + 6) > 0 => p < 6. (2) Both roots positive require sum of roots > 0: 2p / (p - 2) > 0 => p in (-infinity, 0) U (2, infinity). (3) Product of roots > 0: (p + 3) / (p - 2) > 0 => p in (-infinity, -3) U (2, infinity). Combining with p in [1, 10] gives p in (2, 6). The integers in this interval are p = 3, 4, 5. Thus, there are exactly 3 integers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[1, 10] இடைவெளியில், (p - 2)x^2 - 2px + (p + 3) = 0 என்ற இருபடிச் சமன்பாடு இரு வெவ்வேறான மிகை மெய் மூலங்களைப் பெற்றிருக்குமாறு உள்ள முழு எண்கள் p-ன் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let z1 and z2 be complex numbers satisfying |z1 - 3| = 1 and |z2 - 6 - 4i| = 2. The minimum possible value of |z1 - z2| is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "|z1 - 3| = 1 represents a circle with center C1(3, 0) and radius r1 = 1. |z2 - (6 + 4i)| = 2 represents a circle with center C2(6, 4) and radius r2 = 2. The distance between the centers is d = sqrt((6 - 3)^2 + (4 - 0)^2) = sqrt(9 + 16) = 5. Since d = 5 > r1 + r2 = 1 + 2 = 3, the circles are external to each other. The minimum distance between any point on circle 1 and any point on circle 2 is d - (r1 + r2) = 5 - (1 + 2) = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|z1 - 3| = 1 மற்றும் |z2 - 6 - 4i| = 2 என்றவாறுள்ள கலப்பெண்கள் z1 மற்றும் z2 எனில், |z1 - z2|-ன் குறைந்தபட்ச மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat02-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the quadratic equation x^2 - 2kx + (k^2 + k - 5) = 0 has real roots alpha and beta such that alpha^2 + beta^2 = 22, then the positive integer value of k is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "From the equation: alpha + beta = 2k and alpha * beta = k^2 + k - 5. Then alpha^2 + beta^2 = (alpha + beta)^2 - 2*alpha*beta = 4k^2 - 2(k^2 + k - 5) = 2k^2 - 2k + 10. Setting this equal to 22 gives 2k^2 - 2k + 10 = 22 => 2k^2 - 2k - 12 = 0 => k^2 - k - 6 = 0 => (k - 3)(k + 2) = 0. Thus k = 3 or k = -2. For k = 3, discriminant D = 4(9) - 4(9 + 3 - 5) = 36 - 28 = 8 > 0 (roots are real). Thus, the positive integer value of k is 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x^2 - 2kx + (k^2 + k - 5) = 0 என்ற இருபடிச் சமன்பாட்டின் மெய் மூலங்கள் alpha மற்றும் beta-க்கு alpha^2 + beta^2 = 22 எனில், k-ன் மிகை முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

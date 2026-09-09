@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY12-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a metallic conductor of cross-sectional area A carrying steady current I, if n is the free electron density and e is the elementary charge, the drift velocity v_d of conduction electrons is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "I / (n e A)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n e A / I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I e / (n A)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n A / (e I)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The macroscopic electric current is related to the microscopic drift velocity of free electrons by the relation I = n e A v_d. Rearranging for drift velocity gives v_d = I / (n e A).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குறுக்குவெட்டுப் பரப்பளவு A கொண்ட ஒரு உலோகக் கடத்தியில் பாயும் சீரான மின்னோட்டம் I, கட்டற்ற எலக்ட்ரான் அடர்த்தி n மற்றும் எலக்ட்ரான் மின்னூட்டம் e எனில், எலக்ட்ரான்களின் இழுப்புத் திசைவேகம் v_d:",
+        "optionTexts": [
+          "I / (n e A)",
+          "n e A / I",
+          "I e / (n A)",
+          "n A / (e I)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A uniform cylindrical metallic wire of resistance R is stretched uniformly so that its length increases to twice its original length. Assuming its mass and density remain unchanged, the new resistance of the wire is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 R",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4 R",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The volume of the wire remains constant: V = A * L = constant => A' * L' = A * L. When length doubles (L' = 2L), the cross-sectional area halves (A' = A / 2). The new resistance is R' = rho * L' / A' = rho * (2L) / (A / 2) = 4 * (rho * L / A) = 4 R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R மின்தடை கொண்ட ஒரு சீரான உருளை வடிவ உலோகக் கம்பி சீராக நீட்டப்பட்டு அதன் நீளம் இருமடங்காக அதிகரிக்கப்படுகிறது. அதன் பருமன் மாறாமல் இருந்தால், கம்பியின் புதிய மின்தடை:",
+        "optionTexts": [
+          "2 R",
+          "4 R",
+          "R / 2",
+          "R / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The microscopic form of Ohm's law relating current density J, electrical conductivity sigma, and electric field E inside a conductor is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "J = sigma E",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "J = E / sigma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "E = sigma J",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "J = sigma^2 E",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The microscopic (vector) form of Ohm's law states that current density vector J at any point inside a conducting medium is directly proportional to the applied electric field vector E, given by J = sigma E (or J = E / rho, where rho is resistivity).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கடத்தியினுள் மின்னோட்ட அடர்த்தி J, மின்கடத்துத்திறன் sigma, மற்றும் மின்புலம் E ஆகியவற்றைத் தொடர்புபடுத்தும் ஓம் விதியின் நுண்ணிய வடிவம்:",
+        "optionTexts": [
+          "J = sigma E",
+          "J = E / sigma",
+          "E = sigma J",
+          "J = sigma^2 E"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following materials typically exhibits a negative temperature coefficient of resistance (alpha < 0) over a moderate temperature range?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Copper",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Aluminium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Silicon",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Nichrome",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In metals (conductors like Cu, Al) and alloys (like Nichrome), resistance increases with temperature due to increased lattice scattering, so alpha > 0. In intrinsic semiconductors like silicon and germanium, thermal excitation rapidly increases free charge carrier density with temperature, decreasing resistance, resulting in a negative temperature coefficient of resistance (alpha < 0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிதமான வெப்பநிலை வரம்பில் எதிர்மறை மின்தடை வெப்பநிலை குணகத்தை (alpha < 0) கொண்ட பொருள் எது?",
+        "optionTexts": [
+          "தாமிரம் (Copper)",
+          "அலுமினியம் (Aluminium)",
+          "சிலிக்கான் (Silicon)",
+          "நிக்ரோம் (Nichrome)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A cell of emf E and internal resistance r delivers a current I to an external load resistor. The terminal potential difference V across the cell is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "V = E + I r",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "V = E - I r",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "V = I r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "V = E / (I r)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When a cell of emf E and internal resistance r is discharging (supplying current I to an external circuit), the potential drop across the internal resistance opposes the emf. Therefore, the terminal potential difference across the poles of the cell is V = E - I r.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E மின்னியக்கு விசை மற்றும் r அக மின்தடை கொண்ட ஒரு மின்கலன் வெளிப்புற மின்தடையாக்கிக்கு I மின்னோட்டத்தை வழங்குகிறது. மின்கலனின் முனைய மின்னழுத்த வேறுபாடு V:",
+        "optionTexts": [
+          "V = E + I r",
+          "V = E - I r",
+          "V = I r",
+          "V = E / (I r)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A carbon resistor has four colored bands in sequence: Yellow, Violet, Brown, and Gold. The resistance value represented by this color code is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(470 +/- 5%) ohm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(47 +/- 5%) ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(4700 +/- 5%) ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(470 +/- 10%) ohm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the standard color code: Yellow = 4 (first digit), Violet = 7 (second digit), Brown = 10^1 (multiplier), and Gold = +/- 5% (tolerance). Thus, R = 47 x 10^1 ohm +/- 5% = (470 +/- 5%) ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கார்பன் மின்தடையாக்கியில் வரிசையாக மஞ்சள், ஊதா, பழுப்பு மற்றும் தங்கம் ஆகிய நான்கு வண்ணப் பட்டைகள் உள்ளன. இதன் மின்தடை மதிப்பு:",
+        "optionTexts": [
+          "(470 +/- 5%) ohm",
+          "(47 +/- 5%) ohm",
+          "(4700 +/- 5%) ohm",
+          "(470 +/- 10%) ohm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a balanced Wheatstone bridge consisting of resistors P, Q, R, and S arranged cyclically in arms AB, BC, CD, and DA, if the positions of the galvanometer and the battery are interchanged, the balanced condition:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remains completely unchanged",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Becomes P / R = Q / S",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "No longer holds",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Requires adjusting all resistances",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The conjugate arms of a Wheatstone bridge are interchangeable. If the battery and galvanometer are interchanged between the two pairs of opposite vertices, the bridge remains balanced, and no current passes through the galvanometer in its new position.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சமன்செய்யப்பட்ட வீட்ஸ்டோன் சமனச் சுற்றில் கால்வனாமீட்டர் மற்றும் மின்கலனின் இணைப்புகள் ஒன்றுக்கொன்று மாற்றப்பட்டால், சமன்செய்தல் நிலை:",
+        "optionTexts": [
+          "எவ்வித மாற்றமுமின்றி அப்படியே இருக்கும்",
+          "P / R = Q / S என மாறும்",
+          "சமநிலையை இழக்கும்",
+          "அனைத்து மின்தடைகளையும் மாற்ற வேண்டும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A cell of emf E and internal resistance r is connected across a variable external load resistor R. The power dissipated in the load resistor R is maximum when:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R = r / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R = r",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "R = 2 r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R -> infinity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Power delivered to load is P = I^2 R = [E / (R + r)]^2 * R. Setting dP/dR = 0 yields (R + r)^2 - 2R(R + r) = 0 => (R + r) - 2R = 0 => R = r. Thus, maximum power is delivered when the external load resistance matches the internal resistance of the source.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E மின்னியக்கு விசை மற்றும் r அக மின்தடை கொண்ட ஒரு மின்கலன் மாறும் வெளிப்புற மின்தடை R உடன் இணைக்கப்பட்டுள்ளது. மின்தடையாக்கி R இல் சிதறடிக்கப்படும் திறன் பெருமமாக இருக்கும் நிலை:",
+        "optionTexts": [
+          "R = r / 2",
+          "R = r",
+          "R = 2 r",
+          "R -> infinity"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a metre bridge experiment, a balance point is obtained at l = 40 cm from the left end when a known resistance of 6 ohm is connected in the right gap. If the end corrections at the left and right ends are 2 cm and 3 cm respectively, the corrected value of the unknown resistance in the left gap is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 ohm",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4.5 ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3.5 ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.0 ohm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The corrected lengths are l1' = l1 + e1 = 40 + 2 = 42 cm, and l2' = (100 - l1) + e2 = 60 + 1 = 61? Wait, 100 - 40 = 60; 60 + e2 = 60 + 3 = 63 if e2 = 3 cm! Let e1 = 2 cm and e2 = 3 cm: l1' = 42 cm, l2' = 63 cm. Ratio l1' / l2' = 42 / 63 = 2 / 3. Then X = R * (l1' / l2') = 6 * (2/3) = 4.0 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மீட்டர் சமனச் சுற்று சோதனையில், வலது இடைவெளியில் 6 ohm மின்தடையாக்கி உள்ள போது இடது முனையிலிருந்து 40 cm நீளத்தில் சமன்செய் புள்ளி கிடைக்கிறது. இடது மற்றும் வலது முனைகளில் முறையே 2 cm மற்றும் 3 cm முனைத் திருத்தங்கள் இருந்தால், இடது இடைவெளியில் உள்ள அறியப்படாத மின்தடையின் மதிப்பு:",
+        "optionTexts": [
+          "4.0 ohm",
+          "4.5 ohm",
+          "3.5 ohm",
+          "5.0 ohm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The sensitivity of a potentiometer can be increased by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Decreasing the length of the potentiometer wire",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Increasing the potential gradient along the wire",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Increasing the length of the potentiometer wire",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Increasing the current in the primary circuit",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The sensitivity of a potentiometer is inversely proportional to its potential gradient k = V / L. Decreasing the potential gradient k increases sensitivity (detects smaller voltage differences). The potential gradient can be decreased by either increasing the length L of the wire or decreasing the current in the primary circuit (by adding resistance in series). Hence, increasing the length increases sensitivity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்னழுத்தமானியின் உணர்திறனை (sensitivity) எவ்வாறு அதிகரிக்கலாம்?",
+        "optionTexts": [
+          "மின்னழுத்தமானி கம்பியின் நீளத்தைக் குறைப்பதன் மூலம்",
+          "கம்பியின் வழியே மின்னழுத்தச் சரிவை அதிகரிப்பதன் மூலம்",
+          "மின்னழுத்தமானி கம்பியின் நீளத்தை அதிகரிப்பதன் மூலம்",
+          "முதன்மைச் சுற்றில் மின்னோட்டத்தை அதிகரிப்பதன் மூலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Kirchhoff's first law (Junction Rule, sum I = 0) and second law (Loop Rule, sum Delta V = 0) are based respectively on the conservation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Energy and Charge",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Charge and Momentum",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Charge and Energy",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Momentum and Energy",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Kirchhoff's junction rule states that no charge can accumulate at a node in a steady-state circuit, which is a direct consequence of the conservation of electric charge. Kirchhoff's loop rule states that the net change in potential around any closed loop is zero, which is a direct consequence of the conservation of energy in an electrostatic field.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிர்க்காஃபின் முதல் விதி (சந்தி விதி) மற்றும் இரண்டாம் விதி (சுற்று விதி) ஆகியவை முறையே எந்த அழிவின்மை விதிகளின் அடிப்படையில் அமைந்துள்ளன?",
+        "optionTexts": [
+          "ஆற்றல் மற்றும் மின்னூட்டம்",
+          "மின்னூட்டம் மற்றும் உந்தம்",
+          "மின்னூட்டம் மற்றும் ஆற்றல்",
+          "உந்தம் மற்றும் ஆற்றல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer of resistance G gives full-scale deflection for current I_g. To convert it into an ammeter capable of measuring up to a maximum current I (where I > I_g), the required shunt resistance S to be connected in parallel is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "G * I_g / (I - I_g)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "G * (I - I_g) / I_g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "G * I / (I - I_g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "G * I_g / I",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The shunt resistance S is connected in parallel with the galvanometer. At full-scale deflection, current through the galvanometer is I_g, and the remaining current (I - I_g) passes through the shunt. Because they are in parallel: I_g * G = (I - I_g) * S => S = G * I_g / (I - I_g).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "G மின்தடை கொண்ட ஒரு கால்வனாமீட்டர் I_g மின்னோட்டத்திற்கு முழு அளவிடை விலக்கத்தைத் தருகிறது. அதை I பெரும மின்னோட்டத்தை அளவிடும் அம்மீட்டராக மாற்ற, பக்க இணைப்பில் இணைக்கப்பட வேண்டிய ஷண்ட் மின்தடை S:",
+        "optionTexts": [
+          "G * I_g / (I - I_g)",
+          "G * (I - I_g) / I_g",
+          "G * I / (I - I_g)",
+          "G * I_g / I"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "To convert a moving coil galvanometer of resistance G and full-scale deflection current I_g into a voltmeter of range 0 to V volts, a resistor of resistance R must be connected in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Series, with R = V / I_g - G",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Parallel, with R = V / I_g - G",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Series, with R = V / I_g + G",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Parallel, with R = G * V / (V - I_g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "To measure high voltage, a large resistance R is connected in series with the galvanometer so that the total resistance becomes (G + R). At full-scale deflection: V = I_g * (G + R) => G + R = V / I_g => R = V / I_g - G.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "G மின்தடை மற்றும் I_g முழு அளவிடை விலக்க மின்னோட்டம் கொண்ட ஒரு கால்வனாமீட்டரை 0 முதல் V வோல்ட் வரை அளவிடும் வோல்ட்மீட்டராக மாற்ற, R மின்தடையானது எவ்வாறு இணைக்கப்பட வேண்டும்?",
+        "optionTexts": [
+          "தொடரிணைப்பில், R = V / I_g - G",
+          "பக்க இணைப்பில், R = V / I_g - G",
+          "தொடரிணைப்பில், R = V / I_g + G",
+          "பக்க இணைப்பில், R = G * V / (V - I_g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two cells of emfs E1 and E2 and internal resistances r1 and r2 are connected in parallel with like terminals joined together. The equivalent emf E_eq of the combination is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(E1 r2 + E2 r1) / (r1 + r2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(E1 r1 + E2 r2) / (r1 + r2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(E1 + E2) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(E1 r2 - E2 r1) / (r1 + r2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For two cells in parallel: E_eq / r_eq = E1 / r1 + E2 / r2, and 1 / r_eq = 1 / r1 + 1 / r2 = (r1 + r2) / (r1 r2). Therefore, E_eq = [ (E1 r2 + E2 r1) / (r1 r2) ] * [ (r1 r2) / (r1 + r2) ] = (E1 r2 + E2 r1) / (r1 + r2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E1 மற்றும் E2 மின்னியக்கு விசைகளும் r1 மற்றும் r2 அக மின்தடைகளும் கொண்ட இரு மின்கலன்கள் ஒத்த முனைகள் ஒன்றாக இணையுமாறு பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் மின்னியக்கு விசை E_eq:",
+        "optionTexts": [
+          "(E1 r2 + E2 r1) / (r1 + r2)",
+          "(E1 r1 + E2 r2) / (r1 + r2)",
+          "(E1 + E2) / 2",
+          "(E1 r2 - E2 r1) / (r1 + r2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a semiconductor p-n junction diode operated in forward bias, the dynamic resistance r_d is defined as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "V / I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Delta V / Delta I",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Delta I / Delta V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I / V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In non-ohmic devices where the V-I characteristic is non-linear, the dynamic (or AC) resistance at a given operating point is defined as the reciprocal of the slope of the V-I curve: r_d = Delta V / Delta I.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முன்னோக்கு சார்புடைய ஒரு குறைக்கடத்தி p-n சந்தி டையோடிற்கு, இயக்க மின்தடை (dynamic resistance r_d) எதனால் வரையறுக்கப்படுகிறது?",
+        "optionTexts": [
+          "V / I",
+          "Delta V / Delta I",
+          "Delta I / Delta V",
+          "I / V"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Twelve identical wires, each of resistance R, are connected to form the skeleton of a cube. The equivalent resistance between two diagonally opposite corners across the body diagonal of the cube is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/6) R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(3/4) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/12) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(4/3) R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let a total current 6I enter corner A and exit the diagonally opposite corner B. By symmetry, the current divides equally into 2I along each of the three edges meeting at A. At the next vertices, each 2I splits into I along two edges (6 edges carrying I). Finally, three pairs of I combine back into 2I at the three edges meeting at B. The total potential difference across the body diagonal is V = (2I) R + (I) R + (2I) R = 5 I R. The equivalent resistance is R_eq = V / (6I) = (5 I R) / (6I) = (5/6) R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா R மின்தடை கொண்ட பன்னிரண்டு ஒத்த கம்பிகள் ஒரு கனசதுர சட்டத்தை உருவாக்குகின்றன. கனசதுரத்தின் உடல் மூலைவிட்டம் (body diagonal) வழியே மூலைகளுக்கு இடையே உள்ள தொகுபயன் மின்தடை:",
+        "optionTexts": [
+          "(5/6) R",
+          "(3/4) R",
+          "(7/12) R",
+          "(4/3) R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An infinite ladder network is constructed using identical resistors of resistance R. Each repeating unit consists of a series resistor R and a shunt resistor R. The equivalent resistance across the input terminals is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(sqrt(5) - 1) / 2 * R",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(1 + sqrt(5)) / 2 * R",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sqrt(3) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(sqrt(5) + 1) R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the total equivalent resistance of the infinite ladder be R_eq. Since the ladder is infinite, adding one more stage (a series resistor R followed by a shunt resistor R in parallel with R_eq) leaves the equivalent resistance unchanged: R_eq = R + (R * R_eq) / (R + R_eq) => R_eq (R + R_eq) = R (R + R_eq) + R R_eq => R R_eq + R_eq^2 = R^2 + 2 R R_eq => R_eq^2 - R R_eq - R^2 = 0. Solving the quadratic equation for the positive root: R_eq = [R + sqrt(R^2 - 4(1)(-R^2))] / 2 = [R + sqrt(5 R^2)] / 2 = ((1 + sqrt(5)) / 2) R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா R மின்தடை கொண்ட மின்தடையாக்கிகளைக் கொண்டு ஒரு முடிவிலா ஏணி வலைப்பின்னல் உருவாக்கப்படுகிறது. உள்ளீட்டு முனையங்களுக்கு இடையே உள்ள தொகுபயன் மின்தடை:",
+        "optionTexts": [
+          "(sqrt(5) - 1) / 2 * R",
+          "(1 + sqrt(5)) / 2 * R",
+          "sqrt(3) R",
+          "(sqrt(5) + 1) R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a potentiometer experiment to determine the internal resistance of a cell, the balance point is obtained at length l1 when the cell is in open circuit, and at length l2 when a shunt resistor R is connected across the cell. The internal resistance r of the cell is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R * (l1 / l2 - 1)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R * (l2 / l1 - 1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R * (l1 / (l1 + l2))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R * l1 / l2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In open circuit, the potentiometer balances the emf E of the cell: E proportional to l1. When shunted by resistance R, the terminal potential difference is V = E * R / (R + r), which balances length l2: V proportional to l2. Taking the ratio: E / V = l1 / l2 => (R + r) / R = l1 / l2 => 1 + r / R = l1 / l2 => r = R * (l1 / l2 - 1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்கலனின் அக மின்தடையைக் கண்டறியும் மின்னழுத்தமானி சோதனையில், மின்கலன் திறந்த சுற்றில் உள்ள போது சமன்செய் நீளம் l1 ஆகவும், மின்கலனுடன் R மின்தடை இணைக்கப்படும் போது l2 ஆகவும் உள்ளது. மின்கலனின் அக மின்தடை r:",
+        "optionTexts": [
+          "R * (l1 / l2 - 1)",
+          "R * (l2 / l1 - 1)",
+          "R * (l1 / (l1 + l2))",
+          "R * l1 / l2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Twelve identical resistors, each of resistance R, form a cube. The equivalent resistance between two diagonally opposite corners of the SAME face (face diagonal) of the cube is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3/4) R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(5/6) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(7/12) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(4/5) R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using node symmetry or current distribution across a face diagonal: let the input and output corners be on the front face. The circuit can be solved by folding along the plane of symmetry perpendicular to the face diagonal, yielding an equivalent resistance of R_face_diag = (3/4) R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா R மின்தடை கொண்ட பன்னிரண்டு ஒத்த மின்தடையாக்கிகள் ஒரு கனசதுரத்தை உருவாக்குகின்றன. ஒரே முகத்தின் மூலைவிட்டம் (face diagonal) வழியே உள்ள முனைகளுக்கு இடையேயான தொகுபயன் மின்தடை:",
+        "optionTexts": [
+          "(3/4) R",
+          "(5/6) R",
+          "(7/12) R",
+          "(4/5) R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Five resistors are connected to form a bridge: arm AB = 1 ohm, BC = 2 ohm, AD = 2 ohm, DC = 1 ohm, and the bridging resistor BD = 1 ohm. The equivalent resistance between input terminals A and C is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.0 ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.0 ohm",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1.5 ohm",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.5 ohm",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let a potential V be applied across A and C such that V_A = V and V_C = 0. Applying Kirchhoff's nodal equations at junction B: (V_B - V)/1 + (V_B - 0)/2 + (V_B - V_D)/1 = 0 => 2.5 V_B - V_D = V. At junction D: (V_D - V)/2 + (V_D - 0)/1 + (V_D - V_B)/1 = 0 => 2.5 V_D - V_B = 0.5 V. Solving these simultaneous linear equations gives V_B = (5/7) V and V_D = (4/7) V. The total current entering node A is I = (V - V_B)/1 + (V - V_D)/2 = (V - 5/7 V) + (V - 4/7 V)/2 = (2/7) V + (3/14) V = (7/14) V = V / 2. The equivalent resistance across AC is R_eq = V / I = V / (V / 2) = 2.0 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஐந்து மின்தடையாக்கிகள் ஒரு சமனச் சுற்றை உருவாக்குகின்றன: கிளை AB = 1 ohm, BC = 2 ohm, AD = 2 ohm, DC = 1 ohm, மற்றும் இணைப்பு மின்தடை BD = 1 ohm. முனையங்கள் A மற்றும் C இடையே உள்ள தொகுபயன் மின்தடை:",
+        "optionTexts": [
+          "1.0 ohm",
+          "2.0 ohm",
+          "1.5 ohm",
+          "2.5 ohm"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A potential difference of 24 V is applied across a uniform resistor of resistance 6 ohm. The electric current flowing through the resistor is _____ A.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Ohm's law: V = I * R => I = V / R. Substituting V = 24 V and R = 6 ohm: I = 24 / 6 = 4 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6 ohm மின்தடை கொண்ட ஒரு சீரான மின்தடையாக்கியின் குறுக்கே 24 V மின்னழுத்த வேறுபாடு செலுத்தப்படுகிறது. மின்தடையாக்கியின் வழியே பாயும் மின்னோட்டம் _____ A.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An electric heating element is rated 100 W at an operating voltage of 200 V. The electrical resistance of the heating element is _____ ohm.",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Electric power is related to voltage and resistance by P = V^2 / R. Rearranging for resistance gives R = V^2 / P. Substituting V = 200 V and P = 100 W: R = (200)^2 / 100 = 40000 / 100 = 400 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின் சூடேற்றி 200 V இயக்க மின்னழுத்தத்தில் 100 W திறன் கொண்டதாகக் குறிப்பிடப்பட்டுள்ளது. அச்சூடேற்றியின் மின்தடை _____ ohm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Three identical resistors, each of resistance 12 ohm, are connected in parallel. The equivalent resistance of the network is _____ ohm.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For n identical resistors of resistance R connected in parallel, the equivalent resistance is R_eq = R / n. Substituting R = 12 ohm and n = 3: R_eq = 12 / 3 = 4 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா 12 ohm மின்தடை கொண்ட மூன்று ஒத்த மின்தடையாக்கிகள் பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இந்த அமைப்பின் தொகுபயன் மின்தடை _____ ohm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A battery has an open-circuit emf of 6 V. When a load resistor of 5 ohm is connected across its terminals, the terminal voltage drops to 5 V. The internal resistance of the battery is _____ ohm.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The relationship between emf E, terminal voltage V, external load R, and internal resistance r is V = E * R / (R + r) => R + r = (E / V) * R => r = R * (E / V - 1). Substituting E = 6 V, V = 5 V, and R = 5 ohm: r = 5 * (6 / 5 - 1) = 5 * (1 / 5) = 1 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்கலன் 6 V திறந்த சுற்று மின்னியக்கு விசையைக் கொண்டுள்ளது. அதன் முனையங்களில் 5 ohm மின்தடையாக்கி இணைக்கப்படும் போது, முனைய மின்னழுத்தம் 5 V ஆக குறைகிறது. மின்கலனின் அக மின்தடை _____ ohm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A platinum resistance thermometer has a resistance of 10 ohm at 0 degree Celsius. The temperature coefficient of resistance of platinum is 0.005 per degree Celsius. The temperature at which its resistance becomes 15 ohm is _____ degree Celsius.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The resistance at temperature T is given by R(T) = R0 * (1 + alpha * T). Given R0 = 10 ohm, R(T) = 15 ohm, and alpha = 0.005 / deg C: 15 = 10 * (1 + 0.005 * T) => 1.5 = 1 + 0.005 * T => 0.005 * T = 0.5 => T = 0.5 / 0.005 = 100 degree Celsius.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பிளாட்டினம் மின்தடை வெப்பநிலைமானி 0 degree Celsius இல் 10 ohm மின்தடையைக் கொண்டுள்ளது. பிளாட்டினத்தின் மின்தடை வெப்பநிலை குணகம் 0.005 per degree Celsius எனில், அதன் மின்தடை 15 ohm ஆக மாறும் வெப்பநிலை _____ degree Celsius.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a potentiometer arrangement, a standard cell of emf 1.5 V gives a balance point at a wire length of 60 cm. Another cell gives a balance point at 80 cm along the same wire. The emf of the second cell is _____ V.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a potentiometer wire with uniform potential gradient: E1 / E2 = l1 / l2. Given E1 = 1.5 V, l1 = 60 cm, and l2 = 80 cm: E2 = E1 * (l2 / l1) = 1.5 V * (80 / 60) = 1.5 * (4 / 3) = 2.0 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்னழுத்தமானி அமைப்பில், 1.5 V மின்னியக்கு விசை கொண்ட திட்ட மின்கலன் 60 cm நீளத்தில் சமன்செய் புள்ளியைத் தருகிறது. மற்றொரு மின்கலன் அதே கம்பியில் 80 cm நீளத்தில் சமன்செய் புள்ளியைத் தருகிறது. இரண்டாவது மின்கலனின் மின்னியக்கு விசை _____ V.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A galvanometer of resistance 99 ohm requires a current of 1 mA for full-scale deflection. To convert it into an ammeter capable of measuring currents up to 100 mA, the required shunt resistance to be connected in parallel is _____ ohm.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The required shunt resistance is S = G * I_g / (I - I_g). Given G = 99 ohm, I_g = 1 mA, and I = 100 mA: S = 99 * (1 mA) / (100 mA - 1 mA) = 99 / 99 = 1 ohm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "99 ohm மின்தடை கொண்ட ஒரு கால்வனாமீட்டர் முழு அளவிடை விலக்கத்திற்கு 1 mA மின்னோட்டம் தேவைப்படுகிறது. அதை 100 mA வரை அளவிடும் அம்மீட்டராக மாற்ற பக்க இணைப்பில் இணைக்கப்பட வேண்டிய ஷண்ட் மின்தடை _____ ohm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a metre bridge setup with a uniform 100 cm wire, a resistance of 2 ohm is connected in the left gap and a resistance of 3 ohm is connected in the right gap. The distance of the balance point from the left end of the wire is _____ cm.",
+    "correctAnswer": 40,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a balanced metre bridge: R_left / R_right = l / (100 - l). Substituting R_left = 2 ohm and R_right = 3 ohm: 2 / 3 = l / (100 - l) => 2 * (100 - l) = 3l => 200 - 2l = 3l => 5l = 200 => l = 40 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான 100 cm கம்பி கொண்ட மீட்டர் சமனச் சுற்றில், இடது இடைவெளியில் 2 ohm மின்தடையும் வலது இடைவெளியில் 3 ohm மின்தடையும் இணைக்கப்பட்டுள்ளன. கம்பியின் இடது முனையிலிருந்து சமன்செய் புள்ளி அமையும் தொலைவு _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Twelve identical resistors, each of resistance 6 ohm, are connected together to form a cubical network. A 10 V ideal battery is connected across two diagonally opposite corners along the body diagonal of the cube. The total current drawn from the battery is _____ A.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The equivalent resistance between two diagonally opposite vertices across the body diagonal of a cube formed by 12 identical resistors of resistance R is R_eq = (5/6) R. Substituting R = 6 ohm: R_eq = (5/6) * 6 ohm = 5 ohm. The total current drawn from the 10 V battery is I = V / R_eq = 10 V / 5 ohm = 2 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா 6 ohm மின்தடை கொண்ட பன்னிரண்டு ஒத்த மின்தடையாக்கிகள் இணைக்கப்பட்டு ஒரு கனசதுர வலைப்பின்னல் உருவாக்கப்படுகிறது. கனசதுரத்தின் உடல் மூலைவிட்ட முனைகளுக்கு இடையே 10 V நல்லியல்பு மின்கலன் இணைக்கப்படுகிறது. மின்கலனிலிருந்து பெறப்படும் மொத்த மின்னோட்டம் _____ A.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY12-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_12",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A potentiometer wire of length 10 m has a resistance of 20 ohm. It is connected in series with a resistance of 480 ohm and an ideal battery of emf 5 V. The balancing length obtained along the potentiometer wire for a thermocouple producing an emf of 60 mV is _____ m.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total resistance of the primary circuit is R_total = R_wire + R_series = 20 ohm + 480 ohm = 500 ohm. The current in the potentiometer wire is I = V / R_total = 5 V / 500 ohm = 0.01 A. The potential drop across the wire is V_wire = I * R_wire = 0.01 A * 20 ohm = 0.2 V. The potential gradient is k = V_wire / L = 0.2 V / 10 m = 0.02 V/m = 20 mV/m. For a source of emf E = 60 mV, the balancing length is l = E / k = 60 mV / (20 mV/m) = 3 m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 m நீளமும் 20 ohm மின்தடையும் கொண்ட ஒரு மின்னழுத்தமானி கம்பி 480 ohm மின்தடை மற்றும் 5 V மின்கலனுடன் தொடரிணைப்பில் இணைக்கப்பட்டுள்ளது. 60 mV மின்னியக்கு விசையைக் கொடுக்கும் ஒரு வெப்ப மின்னிரட்டைக்கு கம்பியில் கிடைக்கும் சமன்செய் நீளம் _____ m.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

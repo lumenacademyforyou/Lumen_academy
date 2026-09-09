@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che19-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following carbohydrates is a non-reducing sugar that does not reduce Fehling's solution or Tollens' reagent?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maltose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lactose",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sucrose",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Glucose",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In sucrose, the glycosidic linkage involves the anomeric carbon C1 of alpha-D-glucose and the anomeric carbon C2 of beta-D-fructose. Because both reducing functional groups (hemiacetal and hemiketal) are locked in the glycosidic bond, sucrose cannot open into a free carbonyl form and acts as a non-reducing sugar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபெலிங் கரைசல் அல்லது டாலன்ஸ் காரணியை ஒடுக்காத ஒடுக்கா சர்க்கரை எது?",
+        "optionTexts": [
+          "மால்ட்டோஸ்",
+          "லாக்டோஸ்",
+          "சுக்ரோஸ்",
+          "குளுக்கோஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following standard amino acids is optically inactive due to the absence of a chiral carbon atom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alanine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Glycine",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Valine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Leucine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Glycine has the structure H2N-CH2-COOH. Its alpha-carbon is bonded to two identical hydrogen atoms along with an amino and a carboxyl group. Because it lacks four distinct substituents, it is achiral and optically inactive.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கைரல் கார்பன் அணு இல்லாததால் ஒளி சுழற்றும் தன்மையற்ற அமினோ அமிலம் எது?",
+        "optionTexts": [
+          "அலனைன்",
+          "கிளைசீன்",
+          "வாலின்",
+          "லியூசின்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which nitrogenous base is present in RNA but absent in DNA?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thymine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Uracil",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cytosine",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Guanine",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "DNA contains adenine (A), guanine (G), cytosine (C), and thymine (T). RNA contains adenine (A), guanine (G), cytosine (C), and uracil (U) in place of thymine.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "DNA-வில் இல்லாமல் RNA-வில் மட்டுமே காணப்படும் நைட்ரஜன் காரம் எது?",
+        "optionTexts": [
+          "தைமின்",
+          "யுரேசில்",
+          "சைட்டோசின்",
+          "குவானைன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Deficiency of Vitamin C (ascorbic acid) in human diet leads to which clinical disease?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rickets",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Beriberi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Scurvy",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Pellagra",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Vitamin C deficiency causes scurvy (characterized by bleeding gums, skin spots, and impaired wound healing). Deficiency of vitamin D causes rickets, vitamin B1 causes beriberi, and vitamin B3 causes pellagra.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வைட்டமின் C குறைபாட்டினால் ஏற்படும் நோய் எது?",
+        "optionTexts": [
+          "ரிக்கெட்ஸ்",
+          "பெரிபெரி",
+          "ஸ்கர்வி",
+          "பெல்லாக்ரா"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The secondary structure of proteins (such as alpha-helix and beta-pleated sheet) is stabilized primarily by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Covalent peptide bonds",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Intermolecular / intramolecular hydrogen bonds between >C=O and -NH- groups of the peptide backbone",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Disulfide bridges exclusively",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hydrophobic electrostatic attractions only",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The alpha-helix and beta-pleated sheet conformations are regular folding arrangements of the polypeptide backbone stabilized by hydrogen bonds between the carbonyl oxygen (>C=O) of one peptide bond and the amide hydrogen (-NH-) of another.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரதங்களின் இரண்டாம் நிலை அமைப்பானது (alpha-சுருள் மற்றும் beta-மடிப்புத் தாள்) பிரதானமாக எதனால் நிலைப்படுத்தப்படுகிறது?",
+        "optionTexts": [
+          "சகப்பிணைப்பு பெப்டைடு பிணைப்புகள்",
+          ">C=O மற்றும் -NH- தொகுதிகளுக்கு இடையே உள்ள ஹைட்ரஜன் பிணைப்புகள்",
+          "டைசல்பைடு பிணைப்புகள் மட்டுமே",
+          "நீர்விலக்கும் நிலைமின்னியல் கவர்ச்சிகள் மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When D-glucose is heated with prolonged excess hydroiodic acid (HI) and red phosphorus at 373 K, the final product formed is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gluconic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sorbitol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n-Hexane",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Saccharic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Heating glucose with concentrated HI in the presence of red phosphorus reduces all carbonyl and hydroxyl groups completely to methylene and methyl groups, yielding n-hexane (CH3-CH2-CH2-CH2-CH2-CH3). This reaction proved that all six carbon atoms in glucose are linked in a continuous straight chain.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D-குளுக்கோஸ் சிவப்பு பாஸ்பரஸ் முன்னிலையில் அடர் HI உடன் சூடுபடுத்தப்படும் போது கிடைக்கும் இறுதி விளைபொருள்:",
+        "optionTexts": [
+          "குளுகோனிக் அமிலம்",
+          "சார்பிட்டால்",
+          "n-ஹெக்சேன்",
+          "சாக்கரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Hydrolysis of sucrose produces an equimolar mixture of D-(+)-glucose and D-(-)-fructose. The process is accompanied by a change in the sign of optical rotation from dextrorotatory to laevorotatory. This phenomenon is termed:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mutarotation",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Inversion of cane sugar",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Epimerization",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Racemization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Sucrose is dextrorotatory (+66.5°). On acid or enzymatic hydrolysis, it yields D-(+)-glucose (+52.5°) and D-(-)-fructose (-92.4°). Because the laevorotation of fructose is greater in magnitude than the dextrorotation of glucose, the final mixture is net laevorotatory (-19.9°). The reversal in the sign of optical rotation is called inversion of sugar, and the resulting mixture is known as invert sugar.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சுக்ரோஸின் நீராற்பகுப்பில் ஒளி சுழற்சி மதிப்பானது வலஞ்சுழற்சியிலிருந்து இடஞ்சுழற்சியாக மாறுவது எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "பரிமாற்ற சுழற்சி (Mutarotation)",
+          "கரும்புச் சர்க்கரையின் தலைகீழாதல் (Inversion of sugar)",
+          "எபிமராக்கல்",
+          "ரேசிமிக் கலவையாக்கல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The spontaneous change in specific optical rotation observed over time when either pure alpha-D-glucopyranose or pure beta-D-glucopyranose is dissolved in water until an equilibrium value (+52.7°) is reached is called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Inversion",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mutarotation",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Optical resolution",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Anomerization",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Freshly prepared alpha-D-glucose has a specific rotation of +112°, while fresh beta-D-glucose has +19°. When dissolved in water, each form slowly interconverts via the open-chain free aldehyde intermediate until reaching a dynamic equilibrium mixture (+52.7°: ~36% alpha and ~64% beta). This gradual change in optical rotation is called mutarotation.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய alpha-D-குளுக்கோஸ் அல்லது beta-D-குளுக்கோஸ் நீரில் கரையும் போது அவற்றின் தன் சுழற்சி மதிப்பு தானாக மாறி சமநிலை மதிப்பான +52.7°-ஐ அடைவது:",
+        "optionTexts": [
+          "தலைகீழாதல்",
+          "பரிமாற்ற சுழற்சி (Mutarotation)",
+          "ஒளி சுழற்சி பிரித்தெடுத்தல்",
+          "அனோமராக்கல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which functional group is formed as a linkage when amino acids combine to form polypeptides and proteins?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ester linkage (-COO-)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Amide linkage (-CO-NH-)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Glycosidic linkage (-O-)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Phosphodiester linkage",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Polypeptides are formed when the carboxyl group (-COOH) of one alpha-amino acid condenses with the amino group (-NH2) of an adjacent amino acid with elimination of a water molecule, forming a covalent amide linkage (-CO-NH-) termed a peptide bond.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அமினோ அமிலங்கள் இணைந்து பாலிபெப்டைடுகள் மற்றும் புரதங்களை உருவாக்கும் போது தோன்றும் பிணைப்பு எது?",
+        "optionTexts": [
+          "எஸ்டர் பிணைப்பு (-COO-)",
+          "அமைடு பிணைப்பு (-CO-NH-)",
+          "கிளைக்கோசிடிக் பிணைப்பு (-O-)",
+          "பாஸ்போடைஎஸ்டர் பிணைப்பு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Denaturation of a globular protein by heat, alcohol, or extreme pH changes disrupts its biological activity. During denaturation, which structural levels of the protein are destroyed, and which level remains intact?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Primary structure is destroyed; secondary and tertiary remain intact.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Secondary and tertiary structures are destroyed; primary structure remains intact.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "All structural levels (primary, secondary, tertiary, and quaternary) are destroyed.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Only the quaternary structure is disrupted; primary, secondary, and tertiary remain unchanged.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Denaturation disrupts the non-covalent interactions (hydrogen bonds, ionic attractions, and hydrophobic interactions) maintaining the secondary, tertiary, and quaternary conformations of the protein. The strong covalent peptide bonds of the primary structure are not cleaved, leaving the primary amino acid sequence intact.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புரதங்களின் இயல்பு இழத்தலின் (denaturation) போது எந்த கட்டமைப்பு நிலைகள் அழிக்கப்படுகின்றன மற்றும் எந்த நிலை மாற்றமடையாமல் நீடிக்கிறது?",
+        "optionTexts": [
+          "முதல் நிலை அமைப்பு அழிக்கப்படுகிறது; இரண்டாம் மற்றும் மூன்றாம் நிலை அமைப்புகள் மாறாமல் நீடிக்கின்றன.",
+          "இரண்டாம் மற்றும் மூன்றாம் நிலை அமைப்புகள் அழிக்கப்படுகின்றன; முதல் நிலை அமைப்பு மாற்றமடையாமல் நீடிக்கிறது.",
+          "அனைத்து கட்டமைப்பு நிலைகளும் (முதல், இரண்டாம், மூன்றாம் மற்றும் நான்காம் நிலை) அழிக்கப்படுகின்றன.",
+          "நான்காம் நிலை அமைப்பு மட்டுமே அழிக்கப்படுகிறது; மற்றவை மாற்றமடையாமல் நீடிக்கின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the double-helical structure of DNA proposed by Watson and Crick, the complementary purine-pyrimidine base pairs are linked through:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two hydrogen bonds between Guanine and Cytosine; three hydrogen bonds between Adenine and Thymine",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Two hydrogen bonds between Adenine and Thymine; three hydrogen bonds between Guanine and Cytosine",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Phosphodiester bonds linking opposite bases directly",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Covalent peptide bonds between adjacent ribose sugars",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the DNA double helix, the two antiparallel polynucleotide strands are held together by complementary hydrogen bonding between bases: Adenine forms two hydrogen bonds with Thymine (A=T), and Guanine forms three hydrogen bonds with Cytosine (G#C).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாட்சன் மற்றும் கிரிக் முன்மொழிந்த DNA இரட்டைச் சுருள் அமைப்பில், கார இணைகள் எவ்வாறு இணைக்கப்பட்டுள்ளன?",
+        "optionTexts": [
+          "குவானைன் மற்றும் சைட்டோசின் இடையே 2 ஹைட்ரஜன் பிணைப்புகள்; அடினைன் மற்றும் தைமின் இடையே 3 ஹைட்ரஜன் பிணைப்புகள்",
+          "அடினைன் மற்றும் தைமின் இடையே 2 ஹைட்ரஜன் பிணைப்புகள்; குவானைன் மற்றும் சைட்டோசின் இடையே 3 ஹைட்ரஜன் பிணைப்புகள்",
+          "காரங்களை நேரடியாக இணைக்கும் பாஸ்போடைஎஸ்டர் பிணைப்புகள்",
+          "அடுத்தடுத்த சர்க்கரைகளுக்கு இடையே உள்ள சகப்பிணைப்பு பெப்டைடு பிணைப்புகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following vitamins is water-soluble and must be regularly supplied in the diet because it is readily excreted in urine?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vitamin A",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Vitamin D",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vitamin E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Vitamin C",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Vitamins are classified into fat-soluble vitamins (A, D, E, and K) and water-soluble vitamins (B-complex and Vitamin C). Because water-soluble vitamins dissolve readily in water, they are readily excreted in urine and cannot be stored in the body (except Vitamin B12), requiring regular dietary intake.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரில் கரையும் பண்பினால் சிறுநீரின் வழியே எளிதில் வெளியேறி உடலில் சேமிக்கப்பட முடியாத வைட்டமின் எது?",
+        "optionTexts": [
+          "வைட்டமின் A",
+          "வைட்டமின் D",
+          "வைட்டமின் E",
+          "வைட்டமின் C"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In aqueous solution at its isoelectric point (pI), an amino acid exists predominantly as a dipolar internal salt known as a:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cation",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zwitterion",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Anion",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Neutral uncharged molecule (H2N-CHR-COOH)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In aqueous solution, the carboxyl group (-COOH) donates a proton to the basic amino group (-NH2), forming a dipolar ion containing both a positive and negative charge: +H3N-CHR-COO^-. At the isoelectric point (pI), the net electrical charge is zero, and the amino acid exists predominantly in this zwitterionic form.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சமமின் புள்ளியில் (isoelectric point) ஓர் அமினோ அமிலம் நீரிய கரைசலில் எந்த இருமுனை அயனி அமைப்பில் முதன்மையாகக் காணப்படுகிறது?",
+        "optionTexts": [
+          "நேர்அயனி",
+          "சுவிட்டர் அயனி (Zwitterion)",
+          "எதிர்அயனி",
+          "மின்சுமையற்ற நடுநிலை மூலக்கூறு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Amylose and amylopectin are the two structural components of starch. Which statement correctly distinguishes them?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Amylose is water-insoluble and branched, whereas amylopectin is water-soluble and linear.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Amylose is a linear polymer of alpha-D-glucose linked via C1-C4 glycosidic bonds, while amylopectin is a branched polymer with C1-C4 linear linkages and C1-C6 branch points.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Both amylose and amylopectin contain beta-D-glucose monomeric units.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Amylose forms cross-linked sheets linked solely by C1-C6 linkages.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Starch consists of ~15-20% amylose and ~80-85% amylopectin. Amylose is water-soluble and consists of long unbranched chains of 200-1000 alpha-D-glucose units joined by alpha-1,4-glycosidic linkages. Amylopectin is water-insoluble and branched, consisting of alpha-1,4-glycosidic chains with alpha-1,6-glycosidic branch points occurring every 20-25 glucose units.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஸ்டார்ச்சின் கூறுகளான அமைலோஸ் மற்றும் அமைலோபெக்டின் ஆகியவற்றைச் சரியாக வேறுபடுத்தும் கூற்று எது?",
+        "optionTexts": [
+          "அமைலோஸ் நீரில் கரையாத கிளைத்த அமைப்பு; அமைலோபெக்டின் நீரில் கரையும் நேர்கோட்டு அமைப்பு.",
+          "அமைலோஸ் C1-C4 கிளைக்கோசிடிக் பிணைப்புகளால் ஆன alpha-D-குளுக்கோஸின் நேர்கோட்டு பலபடி; அமைலோபெக்டின் C1-C4 நேர்கோட்டு மற்றும் C1-C6 கிளைப்பிணைப்புகளைக் கொண்ட பலபடி.",
+          "அமைலோஸ் மற்றும் அமைலோபெக்டின் ஆகிய இரண்டுமே beta-D-குளுக்கோஸ் அலகுகளைக் கொண்டுள்ளன.",
+          "அமைலோஸ் C1-C6 பிணைப்புகளால் மட்டுமே இணைக்கப்பட்ட குறுக்கு-பிணைப்பு அமைப்பாகும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Oxidation of D-glucose with mild bromine water (Br2/H2O) and strong concentrated nitric acid (HNO3) yields products X and Y, respectively. Products X and Y are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "X = Gluconic acid; Y = Saccharic acid (glucaric acid)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "X = Saccharic acid; Y = Gluconic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "X = Glucuronic acid; Y = Sorbitol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "X = Gluconic acid; Y = Tartaric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bromine water is a mild oxidizing agent that selectively oxidizes the terminal aldehyde group (-CHO) of glucose into a carboxylic acid (-COOH) without affecting the primary alcohol group (-CH2OH), yielding gluconic acid (X). Concentrated nitric acid is a strong oxidant that oxidizes both the aldehyde group and the primary alcoholic group into carboxyl groups, yielding the dicarboxylic acid named saccharic acid (glucaric acid, Y).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D-குளுக்கோஸ் புரோமின் நீர் மற்றும் அடர் நைட்ரிக் அமிலத்தால் ஆக்சிஜனேற்றப்படும் போது கிடைக்கும் விளைபொருட்கள் X மற்றும் Y முறையே:",
+        "optionTexts": [
+          "X = குளுகோனிக் அமிலம்; Y = சாக்கரிக் அமிலம் (குளுகாரிக் அமிலம்)",
+          "X = சாக்கரிக் அமிலம்; Y = குளுகோனிக் அமிலம்",
+          "X = குளுகுரோனிக் அமிலம்; Y = சார்பிட்டால்",
+          "X = குளுகோனிக் அமிலம்; Y = டார்டாரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A nucleotide consists of three chemical constituents. Complete enzymatic or chemical hydrolysis of a nucleotide yields:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A nitrogenous heterocyclic base and a peptide only",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A nitrogenous base, a pentose sugar, and phosphoric acid",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A nucleoside and a lipid molecule",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An amino acid, glycerol, and phosphoric acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A nucleotide is composed of a nitrogenous purine or pyrimidine base, a five-carbon aldopentose sugar (D-ribose or 2-deoxy-D-ribose), and a phosphate group. Full hydrolysis breaks the N-glycosidic and phosphodiester bonds to release the nitrogenous base, the pentose sugar, and orthophosphoric acid (H3PO4).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நியூக்ளியோடைடை முழுமையாக நீராற்பகுக்கும் போது பெறப்படும் வேதிக்கூறுகள் எவை?",
+        "optionTexts": [
+          "நைட்ரஜன் காரம் மற்றும் ஒரு பெப்டைடு மட்டுமே",
+          "நைட்ரஜன் காரம், பெண்டோஸ் சர்க்கரை மற்றும் பாஸ்போரிக் அமிலம்",
+          "நியூக்ளியோசைடு மற்றும் கொழுப்பு மூலக்கூறு",
+          "அமினோ அமிலம், கிளிசரால் மற்றும் பாஸ்போரிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements provides the experimental evidence that D-glucose exists predominantly in a cyclic hemiacetal form rather than as an open-chain aldehyde?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Glucose reacts with hydroxylamine to form an oxime.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Glucose forms a cyanohydrin with hydrogen cyanide.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Despite having an aldehyde group, glucose does not form a sodium bisulfite addition product, does not give Schiff's test, and its pentaacetate does not react with hydroxylamine.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Glucose reacts with bromine water to form gluconic acid.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The open-chain aldehyde structure fails to explain several experimental facts: (1) glucose does not form an addition product with NaHSO3 and fails Schiff's reagent test; (2) glucose pentaacetate does not react with NH2OH, indicating the absence of a free -CHO group; and (3) glucose exists in two crystalline anomeric forms (alpha and beta) that exhibit mutarotation. These observations proved that glucose exists primarily as a six-membered cyclic hemiacetal (glucopyranose).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D-குளுக்கோஸ் திறந்த சங்கிலி அமைப்பில் இல்லாமல் வளைய ஹெமிஅசிட்டால் அமைப்பில் காணப்படுகிறது என்பதை நிரூபிக்கும் பரிசோதனை ஆதாரம் எது?",
+        "optionTexts": [
+          "குளுக்கோஸ் ஹைட்ராக்சிலமீனுடன் வினைபுரிந்து ஆக்சைமை உருவாக்குவது.",
+          "குளுக்கோஸ் HCN உடன் சயனோஹைட்ரினை உருவாக்குவது.",
+          "ஆல்டிஹைடு தொகுதி இருந்தபோதிலும் குளுக்கோஸ் சோடியம் பைசல்பைட்டுடன் சேர்வதில்லை, ஷிஃப் சோதனையைத் தருவதில்லை, மற்றும் அதன் பென்டாஅசிட்டேட் ஹைட்ராக்சிலமீனுடன் வினைபுரிவதில்லை.",
+          "குளுக்கோஸ் புரோமின் நீருடன் வினைபுரிந்து குளுகோனிக் அமிலத்தைத் தருவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which disaccharide on enzymatic hydrolysis yields two molecules of D-glucopyranose linked via an alpha-(1,4)-glycosidic bond?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lactose",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Maltose",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cellobiose",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sucrose",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Maltose is composed of two alpha-D-glucose units joined through an alpha-1,4-glycosidic linkage between C1 of one glucose unit and C4 of the other. Cellobiose has two beta-D-glucose units linked via a beta-1,4-bond; lactose consists of beta-D-galactose and beta-D-glucose joined by a beta-1,4-linkage; and sucrose contains alpha-D-glucose and beta-D-fructose linked via an alpha-1,beta-2-bond.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீராற்பகுப்பில் alpha-(1,4)-கிளைக்கோசிடிக் பிணைப்பால் இணைக்கப்பட்ட இரண்டு D-குளுக்கோஸ் மூலக்கூறுகளைத் தரும் டைசாக்கரைடு எது?",
+        "optionTexts": [
+          "லாக்டோஸ்",
+          "மால்ட்டோஸ்",
+          "செல்லோபயோஸ்",
+          "சுக்ரோஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Insulin is a vital peptide hormone regulating blood glucose levels. Human insulin consists of how many total amino acids arranged in two polypeptide chains?",
+    "options": [
+      {
+        "label": "A",
+        "text": "51 amino acids (Chain A: 21, Chain B: 30)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "64 amino acids (Chain A: 32, Chain B: 32)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 amino acids (Chain A: 50, Chain B: 50)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "40 amino acids (Chain A: 20, Chain B: 20)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Insulin was the first protein whose complete primary structure was determined by Frederick Sanger. It contains 51 amino acid residues distributed between two polypeptide chains linked by disulfide (-S-S-) bridges: Chain A contains 21 amino acids and Chain B contains 30 amino acids.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டு பாலிபெப்டைடு சங்கிலிகளால் இணைக்கப்பட்ட மனித இன்சுலின் ஹார்மோனில் உள்ள மொத்த அமினோ அமிலங்களின் எண்ணிக்கை:",
+        "optionTexts": [
+          "51 அமினோ அமிலங்கள் (சங்கிலி A: 21, சங்கிலி B: 30)",
+          "64 அமினோ அமிலங்கள் (சங்கிலி A: 32, சங்கிலி B: 32)",
+          "100 அமினோ அமிலங்கள் (சங்கிலி A: 50, சங்கிலி B: 50)",
+          "40 அமினோ அமிலங்கள் (சங்கிலி A: 20, சங்கிலி B: 20)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The reaction of D-glucose with phenylhydrazine to form an osazone consumes how many moles of phenylhydrazine per mole of glucose, and what by-products are formed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 mole of phenylhydrazine with loss of water",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 moles of phenylhydrazine with loss of two water molecules",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 moles of phenylhydrazine, yielding glucosazone along with 1 mole of aniline, 1 mole of ammonia, and 2 moles of water",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4 moles of phenylhydrazine with evolution of nitrogen gas",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In osazone formation, 1 mole of glucose reacts with 3 moles of phenylhydrazine (C6H5NHNH2): the first mole forms a phenylhydrazone at C1; the second mole oxidizes the adjacent C2 secondary alcoholic group to a carbonyl group (producing aniline, C6H5NH2, and ammonia, NH3, as by-products); and the third mole condenses with the newly formed C2 carbonyl to give the bis-phenylhydrazone (glucosazone) with loss of another water molecule.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D-குளுக்கோஸ் ஃபீனைல்ஹைட்ரசீனுடன் வினைபுரிந்து ஓசசோனை உருவாக்கும் போது ஒரு மோல் குளுக்கோஸுக்கு எத்தனை மோல் ஃபீனைல்ஹைட்ரசீன் நுகரப்படுகிறது மற்றும் என்ன துணை விளைபொருட்கள் உருவாகின்றன?",
+        "optionTexts": [
+          "1 மோல் ஃபீனைல்ஹைட்ரசீன் மற்றும் நீர் வெளியேற்றம்",
+          "2 மோல் ஃபீனைல்ஹைட்ரசீன் மற்றும் இரு நீர் மூலக்கூறுகள் வெளியேற்றம்",
+          "3 மோல் ஃபீனைல்ஹைட்ரசீன், குளுகோசசோனுடன் 1 மோல் அனிலீன், 1 மோல் அம்மோனியா மற்றும் 2 மோல் நீர் உருவாதல்",
+          "4 மோல் ஃபீனைல்ஹைட்ரசீன் மற்றும் நைட்ரஜன் வாயு உருவாதல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of chiral (asymmetric) carbon atoms present in the open-chain Fischer projection of D-(+)-glucose is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The open-chain structure of glucose is CHO-(CHOH)4-CH2OH. Carbon-1 (-CHO) and Carbon-6 (-CH2OH) are achiral. Carbons 2, 3, 4, and 5 are each bonded to four distinct groups (-H, -OH, and two different carbon chains), making them chiral centers. Thus, there are 4 chiral carbon atoms in open-chain D-glucose.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D-(+)-குளுக்கோஸின் திறந்த சங்கிலி பிஷ்ஷர் அமைப்பில் உள்ள கைரல் (சமச்சீரற்ற) கார்பன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When D-glucose forms its cyclic pyranose hemiacetal ring structure, a new stereocenter is generated at carbon-1. The total number of chiral carbon atoms in alpha-D-glucopyranose is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the cyclic glucopyranose form, intramolecular hemiacetal formation between the C1 carbonyl carbon and the C5 hydroxyl group converts the achiral C1 atom into a chiral anomeric center. C1 now bears four different groups (-H, -OH, -OR, and -C2 chain). Adding C1 to the existing four chiral centers (C2, C3, C4, C5) gives a total of 5 chiral carbon atoms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "alpha-D-குளுகோபைரனோஸ் வளைய அமைப்பில் உள்ள மொத்த கைரல் கார்பன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When 1 mole of D-glucose is completely acetylated using excess acetic anhydride, it reacts with the hydroxyl groups to yield glucose pentaacetate. The number of moles of acetic anhydride consumed per mole of glucose is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Each molecule of D-glucose contains five hydroxyl (-OH) groups: four secondary alcoholic groups (at C2, C3, C4, and anomeric C1 in cyclic form) and one primary alcoholic group (at C6). Each -OH group consumes 1 mole of acetic anhydride: -OH + (CH3CO)2O -> -OCOCH3 + CH3COOH. Acetylation of all 5 hydroxyl groups consumes exactly 5 moles of acetic anhydride.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் D-குளுக்கோஸ் முழுமையாக அசிட்டைலேற்றம் அடைந்து குளுக்கோஸ் பென்டாஅசிட்டேட்டாக மாறும் போது நுகரப்படும் அசிட்டிக் அன்ஹைட்ரைடின் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A linear synthetic tripeptide is assembled from three different alpha-amino acids: glycine (Gly), alanine (Ala), and phenylalanine (Phe). The total number of peptide bonds present in a single molecule of this tripeptide is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A peptide composed of n amino acid residues contains (n - 1) peptide (amide) bonds. In a tripeptide (n = 3), the three amino acids are linked in sequence (e.g., H2N-AA1-CO-NH-AA2-CO-NH-AA3-COOH), which contains exactly 2 peptide linkages (-CO-NH-).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிளைசீன், அலனைன் மற்றும் ஃபீனைல்அலனைன் ஆகிய மூன்று அமினோ அமிலங்களால் ஆன ஒரு டிரைபெப்டைடு மூலக்கூறில் உள்ள பெப்டைடு பிணைப்புகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "How many distinct linear tripeptides can be synthesized using three distinct alpha-amino acids: glycine (G), alanine (A), and valine (V), if each amino acid must be used exactly once in each tripeptide?",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A tripeptide has distinct N-terminal and C-terminal ends. Arranging three distinct amino acids in sequence without repetition corresponds to the permutations of 3 items: 3! = 3 * 2 * 1 = 6 distinct tripeptides (G-A-V, G-V-A, A-G-V, A-V-G, V-G-A, and V-A-G).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கிளைசீன் (G), அலனைன் (A), மற்றும் வாலின் (V) ஆகிய மூன்று அமினோ அமிலங்களையும் தலா ஒரு முறை மட்டுமே பயன்படுத்தி உருவாக்கக்கூடிய தனித்துவமான நேர்கோட்டு டிரைபெப்டைடுகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A segment of a double-stranded DNA molecule contains 200 base pairs. Chemical analysis reveals that 60 of the nitrogenous bases are cytosine (C). According to Chargaff's rules, the total number of adenine (A) bases present in this DNA segment is:",
+    "correctAnswer": 140,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A segment of 200 base pairs contains a total of 200 * 2 = 400 nitrogenous bases. According to Chargaff's rules: number of Guanine bases = number of Cytosine bases. Given C = 60, then G = 60. Combined G + C = 60 + 60 = 120 bases. The remaining bases are Adenine and Thymine: A + T = 400 - 120 = 280. Because A = T, the number of Adenine bases is 280 / 2 = 140.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "200 கார இணைகளைக் கொண்ட ஒரு DNA மூலக்கூறில் 60 சைட்டோசின் (C) காரங்கள் உள்ளன எனில், சார்காஃப் விதிகளின்படி இதில் உள்ள அடினைன் (A) காரங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of stereoisomers theoretically possible for an aldohexose in its open-chain form (such as D-glucose) is 2^n, where n is the number of chiral centers. The value of 2^n is:",
+    "correctAnswer": 16,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "An aldohexose of open-chain structure CHO-(CHOH)4-CH2OH contains n = 4 distinct chiral centers (C2, C3, C4, and C5). The two ends (-CHO and -CH2OH) are different. The total number of stereoisomers is 2^n = 2^4 = 16 (comprising 8 pairs of enantiomers: 8 D-sugars and 8 L-sugars).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திறந்த சங்கிலி அமைப்பிலுள்ள ஓர் ஆல்டோஹெக்சோஸுக்கு சாத்தியமான புறவெளி மாற்றியங்களின் மொத்த எண்ணிக்கை 2^n எனில், அதன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Complete acid hydrolysis of 1 mole of the disaccharide sucrose consumes 1 mole of H2O to produce glucose and fructose. If 34.2 g of sucrose is hydrolyzed completely, the total mass of the resulting monosaccharide mixture obtained (in grams) is: (Molar mass of sucrose = 342 g mol^-1, Molar mass of water = 18 g mol^-1)",
+    "correctAnswer": 36,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The balanced hydrolysis reaction is: C12H22O11 (sucrose) + H2O -> C6H12O6 (glucose) + C6H12O6 (fructose). Moles of sucrose hydrolyzed = 34.2 g / 342 g mol^-1 = 0.10 mol. Mass of water consumed = 0.10 mol * 18 g mol^-1 = 1.8 g. According to conservation of mass: Total mass of monosaccharides = Mass of sucrose + Mass of water = 34.2 g + 1.8 g = 36.0 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "34.2 g சுக்ரோஸ் முழுமையாக நீராற்பகுக்கப்படும் போது கிடைக்கும் ஒற்றைச் சர்க்கரைக் கலவையின் மொத்த நிறை (கிராமில்): (சுக்ரோஸ் மோலார் நிறை = 342 g mol^-1, நீர் = 18 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following eight biomolecules: (1) D-Glucose, (2) D-Fructose, (3) Maltose, (4) Lactose, (5) Sucrose, (6) Starch, (7) Cellulose, and (8) Glycogen. The total number of REDUCING sugars among these is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Reducing sugars contain free or potentially free hemiacetal or hemiketal groups that can reduce Fehling's or Tollens' reagents. Evaluating the eight carbohydrates: (1) D-Glucose: monosaccharide aldose -> Reducing; (2) D-Fructose: monosaccharide ketose (tautomerizes via enediol) -> Reducing; (3) Maltose: disaccharide with a free hemiacetal group at C1 of one glucose -> Reducing; (4) Lactose: disaccharide with a free hemiacetal group at C1 of glucose -> Reducing; (5) Sucrose: anomeric carbons locked -> Non-reducing; (6) Starch: polysaccharide -> Non-reducing; (7) Cellulose: polysaccharide -> Non-reducing; (8) Glycogen: polysaccharide -> Non-reducing. Exactly 4 biomolecules (1, 2, 3, and 4) are reducing sugars.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளுக்கோஸ், பிரக்டோஸ், மால்ட்டோஸ், லாக்டோஸ், சுக்ரோஸ், ஸ்டார்ச், செல்லுலோஸ் மற்றும் கிளைக்கோஜன் ஆகிய எட்டு உயிரி மூலக்கூறுகளில் ஒடுக்கும் சர்க்கரைகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che19-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_19",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Periodic acid (HIO4) oxidatively cleaves vicinal diols and alpha-hydroxy carbonyl compounds. In the complete oxidative cleavage of 1 mole of open-chain D-glucose with excess HIO4: C6H12O6 + n HIO4 -> 5 HCOOH + 1 HCHO + n HIO3 + n H2O, the number of moles of periodic acid (n) consumed is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Open-chain D-glucose is CHO-CH(OH)-CH(OH)-CH(OH)-CH(OH)-CH2OH. It contains 5 adjacent carbon-carbon bonds linking oxidizable carbons (between C1-C2, C2-C3, C3-C4, C4-C5, and C5-C6). Cleaving each vicinal C-C bond requires 1 mole of periodic acid (HIO4). Therefore, complete oxidative cleavage of all 5 bonds consumes exactly n = 5 moles of HIO4, producing 5 moles of formic acid (from C1 through C5) and 1 mole of formaldehyde (from terminal C6).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 மோல் திறந்த சங்கிலி D-குளுக்கோஸ் அதிகளவு HIO4 உடன் முழுமையான ஆக்சிஜனேற்ற பிளவிற்கு உட்படும் போது நுகரப்படும் பெர்அயோடிக் அமிலத்தின் (HIO4) மோல்களின் எண்ணிக்கை n:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

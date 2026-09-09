@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat03-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A is a square matrix of order 3 such that det(A) = 3, then the value of det(2A) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "24",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "48",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For any square matrix A of order n and a scalar k, det(kA) = k^n * det(A). Here, n = 3, k = 2, and det(A) = 3. Therefore, det(2A) = 2^3 * det(A) = 8 * 3 = 24.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது வரிசை 3 கொண்ட ஒரு சதுர அணி மற்றும் det(A) = 3 எனில், det(2A)-ன் மதிப்பு:",
+        "optionTexts": [
+          "6",
+          "12",
+          "24",
+          "48"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the area of a triangle with vertices (k, 0), (4, 0), and (0, 2) is 4 square units and k != 0, then the value of k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The area of a triangle using determinants is given by (1/2) * |det([[k, 0, 1], [4, 0, 1], [0, 2, 1]])| = 4. Expanding the determinant along the second column: (1/2) * |-2(k - 4)| = 4 => |4 - k| = 4. This gives 4 - k = 4 (which implies k = 0) or 4 - k = -4 (which implies k = 8). Since k != 0, k = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(k, 0), (4, 0), மற்றும் (0, 2) ஆகிய உச்சிகளைக் கொண்ட முக்கோணத்தின் பரப்பளவு 4 சதுர அலகுகள் மற்றும் k != 0 எனில், k-ன் மதிப்பு:",
+        "optionTexts": [
+          "8",
+          "6",
+          "-4",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of the determinant |[[1, a, b + c], [1, b, c + a], [1, c, a + b]]| is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "a + b + c",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "abc",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Apply the column operation C2 -> C2 + C3. The second column entries become a + b + c in all three rows: |[[1, a + b + c, b + c], [1, a + b + c, c + a], [1, a + b + c, a + b]]|. Factoring out (a + b + c) from column 2 gives (a + b + c) * |[[1, 1, b + c], [1, 1, c + a], [1, 1, a + b]]|. Since columns 1 and 2 are identical, the determinant evaluates to 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|[[1, a, b + c], [1, b, c + a], [1, c, a + b]]| என்ற அணிக்கோவையின் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "1",
+          "a + b + c",
+          "abc"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A is an invertible square matrix of order 3 such that det(A) = 5, then the value of det(A^-1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / 5",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "25",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since A * A^-1 = I, taking determinants of both sides gives det(A) * det(A^-1) = det(I) = 1. Therefore, det(A^-1) = 1 / det(A) = 1 / 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 5 கொண்ட வரிசை 3 உடைய பூஜ்ஜியமற்ற அணிக்கோவை சதுர அணி எனில், det(A^-1)-ன் மதிப்பு:",
+        "optionTexts": [
+          "5",
+          "1 / 5",
+          "-5",
+          "25"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A is an idempotent matrix of order n (that is, A^2 = A), then the expression (I + A)^2 - 3A simplifies to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2A",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I - A",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Expanding (I + A)^2 gives I^2 + IA + AI + A^2 = I + 2A + A^2. Since A is idempotent, A^2 = A. Thus, (I + A)^2 = I + 2A + A = I + 3A. Substituting this back: (I + A)^2 - 3A = (I + 3A) - 3A = I.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது A^2 = A என்றவாறுள்ள வரிசை n கொண்ட தன்னடுக்கு அணி (idempotent matrix) எனில், (I + A)^2 - 3A என்பது எதற்குச் சமம்?",
+        "optionTexts": [
+          "I",
+          "A",
+          "2A",
+          "I - A"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If matrix A has order 3 x 2, matrix B has order 2 x 4, and matrix C has order 4 x 5, then the order of the matrix (A * B * C)^T is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 x 5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 x 3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3 x 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 x 5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A has order 3 x 2 and B has order 2 x 4, so the product AB has order 3 x 4. Multiplying AB (3 x 4) by C (4 x 5) yields the product ABC of order 3 x 5. The transpose of a 3 x 5 matrix has order 5 x 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணி A-ன் வரிசை 3 x 2, அணி B-ன் வரிசை 2 x 4, மற்றும் அணி C-ன் வரிசை 4 x 5 எனில், (A * B * C)^T என்ற அணியின் வரிசை:",
+        "optionTexts": [
+          "3 x 5",
+          "5 x 3",
+          "3 x 4",
+          "2 x 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A is a square matrix of order 3 and det(A) = 4, then det(adj(A)) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "64",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For any n x n square matrix A, det(adj(A)) = (det(A))^(n - 1). Here n = 3 and det(A) = 4. Therefore, det(adj(A)) = 4^(3 - 1) = 4^2 = 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 4 கொண்ட ஒரு 3 x 3 சதுர அணி எனில், det(adj(A))-ன் மதிப்பு:",
+        "optionTexts": [
+          "4",
+          "8",
+          "16",
+          "64"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Let A = [[3, 5], [1, -1]]. If A is expressed as P + Q, where P is a symmetric matrix and Q is a skew-symmetric matrix, then the matrix P is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[[3, 3], [3, -1]]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[[0, 2], [-2, 0]]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[[3, 2], [2, -1]]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[[6, 6], [6, -2]]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The symmetric part P of a square matrix A is given by P = (1/2) * (A + A^T). A^T = [[3, 1], [5, -1]]. Thus, A + A^T = [[3 + 3, 5 + 1], [1 + 5, -1 - 1]] = [[6, 6], [6, -2]]. Multiplying by 1/2 gives P = [[3, 3], [3, -1]].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[3, 5], [1, -1]] என்க. A = P + Q என எழுதப்படும் போது (இங்கு P சமச்சீர் அணி மற்றும் Q எதிர் சமச்சீர் அணி), அணி P என்பது:",
+        "optionTexts": [
+          "[[3, 3], [3, -1]]",
+          "[[0, 2], [-2, 0]]",
+          "[[3, 2], [2, -1]]",
+          "[[6, 6], [6, -2]]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A = [[2, 5], [1, 3]], then the inverse matrix A^-1 is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[[3, -5], [-1, 2]]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[[3, 5], [1, 2]]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[[-3, 5], [1, -2]]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[[2, -1], [-5, 3]]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a 2 x 2 matrix [[a, b], [c, d]], the inverse is (1 / det(A)) * [[d, -b], [-c, a]]. det(A) = (2)(3) - (5)(1) = 6 - 5 = 1. Therefore, A^-1 = [[3, -5], [-1, 2]].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[2, 5], [1, 3]] எனில், அதன் நேர்மாறு அணி A^-1 என்பது:",
+        "optionTexts": [
+          "[[3, -5], [-1, 2]]",
+          "[[3, 5], [1, 2]]",
+          "[[-3, 5], [1, -2]]",
+          "[[2, -1], [-5, 3]]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The system of linear equations:\nx + 2y + 3z = 6\nx + 3y + 5z = 9\n2x + 5y + a*z = b\nhas NO solution if:",
+    "options": [
+      {
+        "label": "A",
+        "text": "a = 8, b != 15",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "a = 8, b = 15",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "a != 8, b = 15",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "a != 8, b != 15",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Adding equation (1) and equation (2): (x + 2y + 3z) + (x + 3y + 5z) = 2x + 5y + 8z = 6 + 9 = 15. The third equation is 2x + 5y + az = b. If a = 8, the left-hand side of equation (3) is identical to the sum of equations (1) and (2). If b != 15, the system leads to the contradiction 15 = b, meaning no solution exists.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x + 2y + 3z = 6, x + 3y + 5z = 9, 2x + 5y + a*z = b என்ற நேரியல் சமன்பாட்டுத் தொகுப்பிற்குத் தீர்வே இல்லாமல் இருக்க நிபந்தனை:",
+        "optionTexts": [
+          "a = 8, b != 15",
+          "a = 8, b = 15",
+          "a != 8, b = 15",
+          "a != 8, b != 15"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = [[cos(theta), -sin(theta)], [sin(theta), cos(theta)]]. If theta = 2pi / 7, then the smallest positive integer n such that A^n = I is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "28",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By mathematical induction or polar rotation, A^n = [[cos(n*theta), -sin(n*theta)], [sin(n*theta), cos(n*theta)]]. For A^n = I, we must have cos(n*theta) = 1 and sin(n*theta) = 0, which requires n*theta to be an integral multiple of 2pi: n * (2pi / 7) = 2k*pi => n = 7k. The smallest positive integer n is 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[cos(theta), -sin(theta)], [sin(theta), cos(theta)]] மற்றும் theta = 2pi / 7 என்க. A^n = I என அமையக்கூடிய மிகச்சிறிய மிகை முழு எண் n:",
+        "optionTexts": [
+          "7",
+          "14",
+          "28",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If A and B are square matrices of the same order such that AB = A + B, then which of the following is always true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "AB = BA",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A = B",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "B is singular",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "det(A) = 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From AB = A + B, rearrange terms: AB - A - B = O => AB - A - B + I = I => (A - I)(B - I) = I. Since (A - I) and (B - I) are inverses of each other, they commute: (B - I)(A - I) = I => BA - B - A + I = I => BA = A + B. Because both AB and BA equal A + B, we obtain AB = BA.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே வரிசையுடைய சதுர அணிகள் A மற்றும் B-க்கு AB = A + B எனில், பின்வருவனவற்றுள் எது எப்போதும் மெய்யாகும்?",
+        "optionTexts": [
+          "AB = BA",
+          "A = B",
+          "B பூஜ்ஜியக் கோவை அணி",
+          "det(A) = 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of the determinant |[[sin^2(x), cos^2(x), 1], [cos^2(x), sin^2(x), 1], [-12, 14, 2]]| for all real x is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sin(2x)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Apply the column operation C2 -> C1 + C2. The elements of the second column become: Row 1: sin^2(x) + cos^2(x) = 1; Row 2: cos^2(x) + sin^2(x) = 1; Row 3: -12 + 14 = 2. Thus, the second column is [1, 1, 2]^T. Column 3 is also [1, 1, 2]^T. Since two columns are identical, the determinant is identically 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அனைத்து மெய் x-க்கும் |[[sin^2(x), cos^2(x), 1], [cos^2(x), sin^2(x), 1], [-12, 14, 2]]| என்ற அணிக்கோவையின் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "1",
+          "2",
+          "sin(2x)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If A is a 3 x 3 matrix such that det(A) = 2, then the value of det(A * adj(A)) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "We know that A * adj(A) = det(A) * I_3 = 2 * I_3. Taking the determinant of both sides: det(A * adj(A)) = det(2 * I_3) = 2^3 * det(I_3) = 8 * 1 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 2 கொண்ட ஒரு 3 x 3 அணி எனில், det(A * adj(A))-ன் மதிப்பு:",
+        "optionTexts": [
+          "4",
+          "8",
+          "16",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If A is a 3 x 3 orthogonal matrix such that det(A) = 1, then the value of det(A - I) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since A is orthogonal, A^T = A^-1. Then det(A - I) = det((A - I)^T) = det(A^T - I) = det(A^-1 - I) = det(A^-1 * (I - A)) = det(A^-1) * det(-(A - I)). Since the order is 3: det(-(A - I)) = (-1)^3 * det(A - I) = -det(A - I). Since det(A) = 1, det(A^-1) = 1. Thus det(A - I) = -det(A - I) => 2 * det(A - I) = 0 => det(A - I) = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 1 கொண்ட வரிசை 3 உடைய செங்குத்து அணி (orthogonal matrix) எனில், det(A - I)-ன் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Let A = [[1, 1], [0, 1]]. If A^10 = [[a, b], [c, d]], then the value of a + b + c + d is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "12",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "22",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "11",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A = I + B, where B = [[0, 1], [0, 0]]. Since B^2 = O, by the binomial theorem: A^n = I + nB = [[1, n], [0, 1]]. For n = 10: A^10 = [[1, 10], [0, 1]]. Thus, a = 1, b = 10, c = 0, and d = 1. The sum is 1 + 10 + 0 + 1 = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[1, 1], [0, 1]] என்க. A^10 = [[a, b], [c, d]] எனில், a + b + c + d-ன் மதிப்பு:",
+        "optionTexts": [
+          "12",
+          "10",
+          "22",
+          "11"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the determinant |[[x + 1, 2, 3], [1, x + 2, 3], [1, 2, x + 3]]| = 0, then the non-zero real root x is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Apply the row operation R1 -> R1 + R2 + R3. The first row becomes [x + 6, x + 6, x + 6]. Factoring out (x + 6): (x + 6) * |[[1, 1, 1], [1, x + 2, 3], [1, 2, x + 3]]| = 0. Subtracting column 1 from columns 2 and 3 yields (x + 6) * |[[1, 0, 0], [1, x, 0], [1, 0, x]]| = (x + 6) * x^2 = 0. The roots are x = 0 (repeated) and x = -6. The non-zero root is -6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|[[x + 1, 2, 3], [1, x + 2, 3], [1, 2, x + 3]]| = 0 என்ற அணிக்கோவையின் பூஜ்ஜியமற்ற மெய் மூலம் x:",
+        "optionTexts": [
+          "-6",
+          "6",
+          "-3",
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let A = [[1, 2, 0], [0, 1, 1], [1, 0, 1]]. The trace of the matrix adj(adj(A)) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "27",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "18",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For any n x n matrix A, adj(adj(A)) = (det(A))^(n - 2) * A. For n = 3, this gives adj(adj(A)) = det(A) * A. Compute det(A): 1(1 - 0) - 2(0 - 1) + 0 = 1 + 2 = 3. Thus, adj(adj(A)) = 3 * A. The trace of a scalar multiple is trace(3A) = 3 * trace(A). The trace of A is 1 + 1 + 1 = 3. Therefore, trace(adj(adj(A))) = 3 * 3 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[1, 2, 0], [0, 1, 1], [1, 0, 1]] என்க. adj(adj(A)) என்ற அணியின் முதன்மை மூலைவிட்ட உறுப்புகளின் கூடுதல் (trace):",
+        "optionTexts": [
+          "9",
+          "27",
+          "3",
+          "18"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The system of linear equations:\nx + y + z = 3\nx + 2y + 3z = 4\nx + 4y + kz = w\nhas NO solution if:",
+    "options": [
+      {
+        "label": "A",
+        "text": "k = 5, w != 6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "k = 5, w = 6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "k != 5, w = 6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "k != 5, w != 6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Performing row operations on the augmented matrix: R2 -> R2 - R1 gives y + 2z = 1. R3 -> R3 - R1 gives 3y + (k - 1)z = w - 3. Next, R3 -> R3 - 3*R2 gives [3y + (k - 1)z] - 3[y + 2z] = (w - 3) - 3(1) => (k - 7)z = w - 6... Wait, with coefficients [1, 4, k]: R3 - R1 has 3y + (k - 1)z. 3*(y + 2z) = 3y + 6z. Thus (k - 1 - 6)z = (k - 7)z = w - 6. If k = 7 and w != 6, 0 = non-zero, giving no solution. If instead equation 3 had x + 3y + kz = w: R3 - R1 = 2y + (k - 1)z; 2(y + 2z) = 2y + 4z, giving (k - 5)z = w - 5. For the current system with x + 4y + kz = w, the condition is k = 7, w != 6. For x + 3y + kz = w, the condition is k = 5, w != 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x + y + z = 3, x + 2y + 3z = 4, x + 3y + kz = w என்ற நேரியல் சமன்பாட்டுத் தொகுப்பிற்குத் தீர்வே இல்லாமல் இருக்க நிபந்தனை:",
+        "optionTexts": [
+          "k = 5, w != 5",
+          "k = 5, w = 5",
+          "k != 5, w = 5",
+          "k != 5, w != 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let A = [[0, 1, 0], [0, 0, 1], [0, 0, 0]] and B = I + 2A + 3A^2. The sum of all elements of the inverse matrix B^-1 is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A^2 = [[0, 0, 1], [0, 0, 0], [0, 0, 0]] and A^3 = O. Thus B = I + 2A + 3A^2. For a nilpotent operator, (I + X)^-1 = I - X + X^2. Here X = 2A + 3A^2, so X^2 = 4A^2 (higher powers vanish). Thus B^-1 = I - (2A + 3A^2) + 4A^2 = I - 2A + A^2 = [[1, -2, 1], [0, 1, -2], [0, 0, 1]]. The sum of all elements is (1 - 2 + 1) + (0 + 1 - 2) + (0 + 0 + 1) = 0 - 1 + 1 = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[0, 1, 0], [0, 0, 1], [0, 0, 0]] மற்றும் B = I + 2A + 3A^2 என்க. நேர்மாறு அணி B^-1-ன் அனைத்து உறுப்புகளின் கூடுதல்:",
+        "optionTexts": [
+          "0",
+          "1",
+          "-1",
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If A is a 3 x 3 matrix such that det(A) = 2, then the value of det(3A) is:",
+    "correctAnswer": 54,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For any 3 x 3 matrix A, det(kA) = k^3 * det(A). Here k = 3 and det(A) = 2. Therefore, det(3A) = 3^3 * 2 = 27 * 2 = 54.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 2 கொண்ட ஒரு 3 x 3 அணி எனில், det(3A)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the area of the triangle with vertices (1, 3), (-2, k), and (4, 1) is 6 square units, then the sum of all possible values of k is:",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Area = (1/2) * |det([[1, 3, 1], [-2, k, 1], [4, 1, 1]])| = 6. Evaluating the determinant: 1(k - 1) - 3(-2 - 4) + 1(-2 - 4k) = k - 1 + 18 - 2 - 4k = 15 - 3k. Thus (1/2) * |15 - 3k| = 6 => |15 - 3k| = 12. Case 1: 15 - 3k = 12 => 3k = 3 => k = 1. Case 2: 15 - 3k = -12 => 3k = 27 => k = 9. The sum of all possible values of k is 1 + 9 = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1, 3), (-2, k), மற்றும் (4, 1) ஆகிய புள்ளிகளை உச்சிகளாகக் கொண்ட முக்கோணத்தின் பரப்பளவு 6 சதுர அலகுகள் எனில், k-ன் அனைத்து சாத்தியமான மதிப்புகளின் கூடுதல்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 3]], then the trace of the matrix AB is:",
+    "correctAnswer": 16,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The diagonal elements of AB are: c_11 = (Row 1 of A) . (Col 1 of B) = 1(2) + 2(1) = 4. c_22 = (Row 2 of A) . (Col 2 of B) = 3(0) + 4(3) = 12. The trace of AB is c_11 + c_22 = 4 + 12 = 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[1, 2], [3, 4]] மற்றும் B = [[2, 0], [1, 3]] எனில், AB என்ற அணியின் முதன்மை மூலைவிட்ட உறுப்புகளின் கூடுதல் (trace):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The number of all 2 x 2 symmetric matrices with entries from the set {0, 1, 2} having trace equal to 2 is:",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A 2 x 2 symmetric matrix has the form [[a, b], [b, c]]. Trace = a + c = 2. Since a, c in {0, 1, 2}, the ordered pairs (a, c) summing to 2 are: (0, 2), (1, 1), and (2, 0) (3 possibilities). For each pair, the off-diagonal entry b can be chosen independently from {0, 1, 2} (3 possibilities). Thus, the total number of such matrices is 3 * 3 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "{0, 1, 2} கணத்திலிருந்து பெறப்படும் உறுப்புகளைக் கொண்டு, முதன்மை மூலைவிட்டக் கூடுதல் 2 ஆக உள்ள அனைத்து 2 x 2 சமச்சீர் அணிகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If A = [[2, -1], [1, 3]] and A^3 = alpha * A + beta * I, where alpha and beta are real numbers, then the value of alpha + beta is:",
+    "correctAnswer": -17,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The characteristic equation of A is lambda^2 - trace(A)*lambda + det(A) = 0. Trace(A) = 2 + 3 = 5, and det(A) = 6 - (-1) = 7. By the Cayley-Hamilton theorem, A satisfies A^2 - 5A + 7I = O => A^2 = 5A - 7I. Multiplying by A gives A^3 = 5A^2 - 7A = 5(5A - 7I) - 7A = 25A - 35I - 7A = 18A - 35I. Thus, alpha = 18 and beta = -35. The value of alpha + beta = 18 + (-35) = -17.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[2, -1], [1, 3]] மற்றும் A^3 = alpha * A + beta * I (இங்கு alpha, beta மெய் எண்கள்) எனில், alpha + beta-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of the determinant |[[1, 2, 3], [0, 4, 5], [1, 0, 6]]| is:",
+    "correctAnswer": 22,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Expanding along the first column: 1 * det([[4, 5], [0, 6]]) - 0 + 1 * det([[2, 3], [4, 5]]) = 1 * (24 - 0) + 1 * (10 - 12) = 24 + (-2) = 22.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "|[[1, 2, 3], [0, 4, 5], [1, 0, 6]]| என்ற அணிக்கோவையின் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If A is a 3 x 3 matrix such that det(A) = 2, then the value of det(adj(adj(A))) is:",
+    "correctAnswer": 16,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For an n x n square matrix A, det(adj(adj(A))) = (det(A))^((n - 1)^2). Here n = 3, so (n - 1)^2 = (3 - 1)^2 = 4. Since det(A) = 2, det(adj(adj(A))) = 2^4 = 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A என்பது det(A) = 2 கொண்ட ஒரு 3 x 3 அணி எனில், det(adj(adj(A)))-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the system of linear equations:\nx + ky + 3z = 0\n2x + 3y - z = 0\n3x + 4y + 2z = 0\nhas a non-trivial solution, then the value of k is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A homogeneous system has a non-trivial solution if and only if the determinant of its coefficient matrix vanishes: det([[1, k, 3], [2, 3, -1], [3, 4, 2]]) = 0. Expanding along row 1: 1(6 - (-4)) - k(4 - (-3)) + 3(8 - 9) = 0 => 10 - 7k + 3(-1) = 0 => 7 - 7k = 0 => k = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x + ky + 3z = 0, 2x + 3y - z = 0, 3x + 4y + 2z = 0 என்ற சமபடித்தான சமன்பாட்டுத் தொகுப்பு வெளிப்படையற்ற தீர்வைப் பெற்றிருக்குமானால், k-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If A = [[1, 0, 2], [2, -1, 3], [4, 1, 8]], then the trace of the inverse matrix A^-1 is:",
+    "correctAnswer": -12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Compute det(A) = 1(-8 - 3) - 0 + 2(2 - (-4)) = -11 + 12 = 1. Since det(A) = 1, A^-1 = adj(A). The diagonal entries of adj(A) are the cofactors C_11, C_22, and C_33 of A. C_11 = (-1)^2 * (-8 - 3) = -11. C_22 = (-1)^4 * (8 - 8) = 0. C_33 = (-1)^6 * (-1 - 0) = -1. The trace of A^-1 is C_11 + C_22 + C_33 = -11 + 0 + (-1) = -12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = [[1, 0, 2], [2, -1, 3], [4, 1, 8]] எனில், அதன் நேர்மாறு அணி A^-1-ன் முதன்மை மூலைவிட்ட உறுப்புகளின் கூடுதல் (trace):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat03-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_03",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let P = [[1, 1], [0, 1]]. If M = sum_{k=1}^{10} P^k, then the value of det(M) is:",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By induction, P^k = [[1, k], [0, 1]]. Summing from k = 1 to 10: M = [[sum_{k=1}^{10} 1, sum_{k=1}^{10} k], [0, sum_{k=1}^{10} 1]] = [[10, (10 * 11) / 2], [0, 10]] = [[10, 55], [0, 10]]. The determinant of this upper triangular matrix is det(M) = 10 * 10 - 0 = 100.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P = [[1, 1], [0, 1]] என்க. M = sum_{k=1}^{10} P^k எனில், det(M)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

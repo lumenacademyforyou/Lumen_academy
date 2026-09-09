@@ -1,0 +1,1223 @@
+[
+  {
+    "questionUid": "LMN-CHE-che16-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The preparation of alkyl fluorides by heating an alkyl chloride or alkyl bromide in the presence of a metallic fluoride like AgF, Hg2F2, CoF3, or SbF3 is known as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Finkelstein reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Swarts reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Wurtz-Fittig reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sandmeyer reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The halogen exchange reaction where alkyl bromides or chlorides are converted into alkyl fluorides by heating with inorganic fluorides such as AgF, Hg2F2, CoF3, or SbF3 is named the Swarts reaction. The Finkelstein reaction specifically refers to the preparation of alkyl iodides using NaI in dry acetone.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "AgF, Hg2F2, CoF3 அல்லது SbF3 போன்ற உலோக புளூரைடுகளுடன் ஆல்கைல் குளோரைடு அல்லது ஆல்கைல் புரோமைடைச் சூடுபடுத்தி ஆல்கைல் புளூரைடுகளைத் தயாரிக்கும் வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "ஃபின்கெல்ஸ்டீன் வினை",
+          "சுவார்ட்ஸ் வினை",
+          "வுர்ட்ஸ்-ஃபிட்டிக் வினை",
+          "சான்ட்மேயர் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkyl halides undergoes nucleophilic substitution via the SN1 mechanism at the fastest rate in polar protic solvents?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3-CH2-CH2-CH2-Br",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3-CH2-CH(Br)-CH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(CH3)2CH-CH2-Br",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3C-Br",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The rate of an SN1 reaction is governed by the stability of the intermediate carbocation formed in the rate-determining ionization step: 3° > 2° > 1° > methyl. (CH3)3C-Br (tert-butyl bromide) ionizes to yield a highly stable tertiary carbocation stabilized by hyperconjugation (9 alpha-hydrogens) and +I inductive effects, making its SN1 rate the fastest.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முனைவுறு புரோட்டான் கரைப்பான்களில் பின்வரும் ஆல்கைல் ஹாலைடுகளில் SN1 வழிமுறையின் மூலம் மிக வேகமாகக் கருக்கவர் பதிலீட்டு வினைக்கு உட்படுவது எது?",
+        "optionTexts": [
+          "CH3-CH2-CH2-CH2-Br",
+          "CH3-CH2-CH(Br)-CH3",
+          "(CH3)2CH-CH2-Br",
+          "(CH3)3C-Br"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A chiral alkyl halide undergoes complete bimolecular nucleophilic substitution (SN2) with an incoming nucleophile. The stereochemical outcome of this SN2 substitution is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete inversion of configuration (Walden inversion).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Racemization with net loss of optical activity.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formation of equal amounts of diastereomers.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The SN2 mechanism is a concerted one-step process where the nucleophile attacks the stereocenter exclusively from the backside (180° opposite to the departing leaving group). This backside attack turns the tetrahedral arrangement inside out like an umbrella inverted by wind, causing 100% inversion of configuration (Walden inversion).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கைரல் ஆல்கைல் ஹாலைடு SN2 வழிமுறையில் முழுமையான கருக்கவர் பதிலீட்டு வினைக்கு உட்படும் போது ஏற்படும் ஸ்டீரியோவேதியியல் விளைவு:",
+        "optionTexts": [
+          "வச அமைப்பில் முழுமையான தக்கவைத்தல் (retention).",
+          "வச அமைப்பில் முழுமையான தலைகீழ் மாற்றம் (வால்டன் தலைகீழ் மாற்றம்).",
+          "ரேசிமிக் கலவை உருவாதல்.",
+          "சம அளவு டயஸ்டீரியோமர்கள் உருவாதல்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Chlorobenzene is extremely unreactive toward nucleophilic substitution reactions under ordinary conditions compared to chloroalkanes primarily due to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Partial double bond character of the C-Cl bond arising from resonance delocalization of chlorine lone pairs into the aromatic ring.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hyperconjugation between the chlorine atom and the benzene ring.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Strong positive inductive (+I) effect exerted by the chlorine atom.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Steric hindrance of the planar aromatic ring preventing any reagent contact.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The low reactivity of aryl halides toward nucleophilic substitution is due to: (1) resonance stabilization where the lone pair on chlorine delocalizes into the pi-system of the benzene ring, imparting partial double-bond character to the C-Cl bond and making it shorter and harder to cleave; (2) the sp2 hybridized aromatic carbon being more electronegative than an sp3 carbon; and (3) electrostatic repulsion between the electron-rich aromatic ring and an incoming nucleophile.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோஆல்கேன்களுடன் ஒப்பிடும் போது குளோரோபென்சீன் வழக்கமான சூழ்நிலைகளில் கருக்கவர் பதிலீட்டு வினைகளில் மிகக் குறைந்த வினைதிறனைக் கொண்டிருப்பதற்கு முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "குளோரின் தனித்த எலக்ட்ரான் இரட்டைகள் பென்சீன் வளையத்துடன் உடனிசைவில் ஈடுபடுவதால் C-Cl பிணைப்பு பகுதி இரட்டைப் பிணைப்புத் தன்மையைப் பெறுவது.",
+          "குளோரின் அணு மற்றும் பென்சீன் வளையத்திற்கு இடையே உள்ள ஹைப்பர்கான்ஜுகேஷன்.",
+          "குளோரின் அணு செலுத்தும் வலிமையான நேர் தூண்டல் (+I) விளைவு.",
+          "தள அரோமேட்டிக் வளையத்தின் புறவெளித் தடையினால் எந்தக் காரணியும் அணுக முடியாமல் போவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Chloroform (CHCl3) is stored in dark brown glass bottles filled to the brim and sealed tightly because, in the presence of light and atmospheric oxygen, it slowly oxidizes into a toxic gas called:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbon monoxide (CO)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Phosgene / Carbonyl chloride (COCl2)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Mustard gas",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tear gas / Chloropicrin (CCl3NO2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the presence of light and atmospheric oxygen, chloroform undergoes slow autoxidation according to the equation: 2CHCl3 + O2 --(light)--> 2COCl2 + 2HCl. The product COCl2 (carbonyl chloride or phosgene) is an extremely poisonous gas. To prevent this, chloroform is stored in dark amber-colored bottles filled completely to displace air, often with ~1% ethanol added to convert any formed phosgene into harmless diethyl carbonate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒளி மற்றும் வளிமண்டல ஆக்ஸிஜன் முன்னிலையில் குளோரோபார்ம் (CHCl3) மெதுவாக ஆக்சிஜனேற்றமடைந்து எந்த நச்சு வாயுவை உருவாக்குவதால் அடர் பழுப்பு நிற பாட்டில்களில் விளிம்பு வரை நிரப்பி சேமிக்கப்படுகிறது?",
+        "optionTexts": [
+          "கார்பன் மோனாக்சைடு (CO)",
+          "பாஸ்ஜீன் / கார்பனைல் குளோரைடு (COCl2)",
+          "மஸ்டர்ட் வாயு",
+          "கண்ணீர்ப்புகை / குளோரோபிக்ரின் (CCl3NO2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "When an aryl halide reacts with an alkyl halide in the presence of metallic sodium in dry ether to yield an alkylarene, the coupling reaction is known as the:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fittig reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Wurtz reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Wurtz-Fittig reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ullmann reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A mixture of an alkyl halide and an aryl halide treated with sodium in dry ether gives an alkylarene: Ar-X + 2Na + R-X -> Ar-R + 2NaX. This cross-coupling is called the Wurtz-Fittig reaction. When only aryl halides couple with sodium, it is the Fittig reaction (Ar-Ar), and when only alkyl halides couple, it is the Wurtz reaction (R-R).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உலர் ஈதரில் உலோக சோடியம் முன்னிலையில் ஓர் அரைல் ஹாலைடு ஓர் ஆல்கைல் ஹாலைடுடன் இணைந்து ஆல்கைல்அரீனைத் தரும் இணைப்பு வினை எவ்வாறு அழைக்கப்படுகிறது?",
+        "optionTexts": [
+          "ஃபிட்டிக் வினை",
+          "வுர்ட்ஸ் வினை",
+          "வுர்ட்ஸ்-ஃபிட்டிக் வினை",
+          "உல்மேன் வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When ethyl bromide is reacted separately with aqueous potassium cyanide (KCN) and silver cyanide (AgCN), the major products formed are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethyl cyanide (propanenitrile) with KCN, and Ethyl isocyanide with AgCN",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ethyl isocyanide with KCN, and Ethyl cyanide with AgCN",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ethyl cyanide in both reactions",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ethyl isocyanide in both reactions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Cyanide ion is an ambidentate nucleophile. KCN is predominantly ionic (K+ and :C#N:-), so nucleophilic attack occurs through the more nucleophilic carbon atom to form a stronger C-C bond, yielding ethyl cyanide (CH3CH2CN) as the major product. In contrast, AgCN is predominantly covalent (Ag-C#N:), so the carbon atom's lone pair is unavailable and nucleophilic attack occurs via the nitrogen lone pair, producing ethyl isocyanide (CH3CH2NC) as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தில் புரோமைடானது முறையே பொட்டாசியம் சயனைடு (KCN) மற்றும் சில்வர் சயனைடு (AgCN) ஆகியவற்றுடன் தனித்தனியாக வினைபுரியும் போது கிடைக்கும் முதன்மை விளைபொருட்கள் முறையே:",
+        "optionTexts": [
+          "KCN உடன் எத்தில் சயனைடு (புரோப்பேன்நைட்ரைல்), மற்றும் AgCN உடன் எத்தில் ஐசோசயனைடு",
+          "KCN உடன் எத்தில் ஐசோசயனைடு, மற்றும் AgCN உடன் எத்தில் சயனைடு",
+          "இரு வினைகளிலுமே எத்தில் சயனைடு",
+          "இரு வினைகளிலுமே எத்தில் ஐசோசயனைடு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The rate of bimolecular nucleophilic substitution (SN2) depends critically on steric hindrance around the carbon bearing the leaving group. Which of the following alkyl bromides reacts the SLOWEST via the SN2 pathway?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Bromobutane (CH3CH2CH2CH2Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Bromo-2-methylpropane ((CH3)2CHCH2Br)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1-Bromo-2,2-dimethylpropane (neopentyl bromide, (CH3)3CCH2Br)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bromoethane (CH3CH2Br)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Although neopentyl bromide ((CH3)3CCH2Br) is technically a primary alkyl halide, the beta-carbon bears three bulky methyl groups forming a tert-butyl framework. This creates immense steric congestion that blocks the incoming nucleophile from accessing the backside of the alpha-carbon, making neopentyl bromide undergo SN2 substitution roughly 100,000 times slower than bromoethane and slower than all others listed.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெளியேறும் தொகுதியைத் தாங்கியுள்ள கார்பனைச் சுற்றியுள்ள புறவெளித் தடை SN2 வினையின் வேகத்தை நிர்ணயிக்கிறது. பின்வரும் ஆல்கைல் புரோமைடுகளில் SN2 பாதையில் மிக மெதுவாக வினைபுரிவது எது?",
+        "optionTexts": [
+          "1-புரோமோபியூட்டேன் (CH3CH2CH2CH2Br)",
+          "1-புரோமோ-2-மெத்தில்புரோப்பேன் ((CH3)2CHCH2Br)",
+          "1-புரோமோ-2,2-டைமெத்தில்புரோப்பேன் (நியோபென்டைல் புரோமைடு, (CH3)3CCH2Br)",
+          "புரோமோஈத்தேன் (CH3CH2Br)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chloronitrobenzene compounds undergoes nucleophilic aromatic substitution (bimolecular displacement of chloride by aqueous NaOH) at the FASTEST rate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4-Chloronitrobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1-Chloro-2,4-dinitrobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2-Chloronitrobenzene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Chloro-2,4,6-trinitrobenzene (picryl chloride)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Nucleophilic aromatic substitution (SNAr) proceeds via an addition-elimination mechanism involving a negatively charged Meisenheimer complex intermediate. Strong electron-withdrawing nitro groups (-NO2) positioned ortho and para to the leaving chlorine withdraw electron density by resonance (-M) and stabilize the anionic intermediate. 1-Chloro-2,4,6-trinitrobenzene (picryl chloride) has three -NO2 groups (two ortho, one para), hydrolyzing rapidly into picric acid simply upon warm water treatment without requiring strong alkali.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய NaOH கொண்டு குளோரைடை பதிலீடு செய்யும் கருக்கவர் அரோமேட்டிக் பதிலீட்டு வினையில் (SNAr) மிக வேகமான வினைதிறனைக் காட்டும் குளோரோநைட்ரோபென்சீன் சேர்மம் எது?",
+        "optionTexts": [
+          "4-குளோரோநைட்ரோபென்சீன்",
+          "1-குளோரோ-2,4-டைநைட்ரோபென்சீன்",
+          "2-குளோரோநைட்ரோபென்சீன்",
+          "1-குளோரோ-2,4,6-ட்ரைநைட்ரோபென்சீன் (பிக்ரைல் குளோரைடு)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Darzens procedure (treating an alcohol with thionyl chloride, SOCl2) is considered the most superior laboratory method for synthesizing pure chloroalkanes primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "It requires no heating or solvent.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The by-products of the reaction (SO2 and HCl) are both gases that escape easily, leaving behind the pure alkyl chloride without requiring tedious purification.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "It selectively converts tertiary alcohols without dehydrating them.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "It proceeds exclusively via an SN2 mechanism with full inversion under all circumstances.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The reaction of an alcohol with thionyl chloride proceeds according to: R-OH + SOCl2 -> R-Cl + SO2(g) + HCl(g). Both coproducts—sulfur dioxide (SO2) and hydrogen chloride (HCl)—are gaseous at reaction temperatures and escape from the reaction flask continuously, yielding the alkyl chloride in high purity and yield without complex distillation steps.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய குளோரோஆல்கேன்களைத் தயாரிப்பதற்கு தயோனைல் குளோரைடுடன் (SOCl2) ஆல்கஹாலை வினைப்படுத்தும் முறை சிறந்ததாகக் கருதப்படுவதன் முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "இவ்வினைக்கு வெப்பப்படுத்துதலோ அல்லது கரைப்பானோ தேவையில்லை.",
+          "இவ்வினையின் துணை விளைபொருட்கள் (SO2 மற்றும் HCl) எளிதில் வெளியேறக்கூடிய வாயுக்களாக உள்ளதால், கூடுதல் தூய்மைப்படுத்தல் தேவையின்றி தூய ஆல்கைல் குளோரைடு கிடைக்கிறது.",
+          "இது மூவிணைய ஆல்கஹால்களை நீரிழக்கச் செய்யாமல் தேர்ந்தெடுத்து மாற்றுகிறது.",
+          "இது அனைத்து சூழ்நிலைகளிலும் முழுமையான தலைகீழ் மாற்றத்துடன் SN2 வழிமுறையில் மட்டுமே நிகழ்கிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1-bromobutane is heated with alcoholic potassium nitrite (KNO2) in aqueous ethanol, the major organic product obtained is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Nitrobutane (CH3CH2CH2CH2NO2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Butyl nitrite (CH3CH2CH2CH2ONO)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "But-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butan-1-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Nitrite ion is an ambidentate nucleophile having donor atoms at both oxygen and nitrogen. KNO2 is predominantly an ionic salt (K+ and [O-N=O]-). The negative charge resides primarily on the more electronegative oxygen atom, which acts as the nucleophilic center attacking the alkyl group to form alkyl nitrite (butyl nitrite, CH3CH2CH2CH2ONO) as the major product. In contrast, covalent silver nitrite (AgNO2) attacks through the nitrogen lone pair to yield 1-nitrobutane.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரிய எத்தனாலில் பொட்டாசியம் நைட்ரைட்டுடன் (KNO2) 1-புரோமோபியூட்டேன் சூடுபடுத்தப்படும் போது கிடைக்கும் முதன்மை விளைபொருள்:",
+        "optionTexts": [
+          "1-நைட்ரோபியூட்டேன் (CH3CH2CH2CH2NO2)",
+          "பியூட்டைல் நைட்ரைட் (CH3CH2CH2CH2ONO)",
+          "பியூட்-1-ஈன்",
+          "பியூட்டேன்-1-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements concerning the dipole moments of chloromethane (CH3Cl) and fluoromethane (CH3F) is correct?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3F has a higher dipole moment than CH3Cl because fluorine is far more electronegative than chlorine.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3Cl has a slightly higher dipole moment (1.860 D) than CH3F (1.847 D) because the C-Cl bond length is significantly larger, and dipole moment is the product of charge and distance (q x d).",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Both have identical dipole moments because both adopt regular tetrahedral geometries.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "CH3Cl is completely non-polar, whereas CH3F is highly polar.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Dipole moment is defined as mu = q * d. Although the C-F bond is more strongly polarized (greater q) than C-Cl due to fluorine's higher electronegativity, the C-F bond distance (139 pm) is substantially shorter than the C-Cl bond distance (178 pm). The greater distance d in the C-Cl bond more than compensates for the slightly smaller charge difference, resulting in a slightly higher dipole moment for CH3Cl (1.860 D) compared to CH3F (1.847 D).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரோமீத்தேன் (CH3Cl) மற்றும் புளூரோமீத்தேன் (CH3F) ஆகியவற்றின் இருமுனைத் திருப்புத்திறன்கள் குறித்த சரியான கூற்று எது?",
+        "optionTexts": [
+          "புளூரின் அதிக எலக்ட்ரான் கவர்தன்மை கொண்டிருப்பதால் CH3F-ன் இருமுனைத் திருப்புத்திறன் CH3Cl-ஐ விட அதிகம்.",
+          "C-Cl பிணைப்பு நீளம் கணிசமாக அதிகமாக இருப்பதாலும், இருமுனைத் திருப்புத்திறன் என்பது மின்சுமை மற்றும் தொலைவின் பெருக்கற்பலன் (q x d) என்பதாலும் CH3Cl-ன் இருமுனைத் திருப்புத்திறன் (1.860 D) CH3F-ஐ (1.847 D) விட சற்றே அதிகமாக உள்ளது.",
+          "இரண்டும் சீரான நான்முகி அமைப்பைப் பெற்றுள்ளதால் சமமான இருமுனைத் திருப்புத்திறனைக் கொண்டுள்ளன.",
+          "CH3Cl முற்றிலும் முனைவற்றது, ஆனால் CH3F அதிக முனைவுத்தன்மை கொண்டது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the presence of 2,6-lutidine (a sterically hindered base) or pyridine, an optically pure secondary alcohol reacts with thionyl chloride (SOCl2) to yield an alkyl chloride with:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete retention of configuration via an SNi mechanism.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Complete inversion of configuration via an SN2 displacement on the chlorosulfite intermediate by chloride ion.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Complete racemization via a stable free carbocation.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Formation of equal amounts of cis and trans alkenes.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the absence of base (in dioxane or ether), reaction of SOCl2 with an alcohol forms an alkyl chlorosulfite intermediate (ROSOCl), which decomposes internally via an SNi (internal nucleophilic substitution) mechanism with retention of configuration. However, when pyridine is present, it captures the generated HCl to form pyridinium chloride (PyH+ Cl-). The high concentration of free chloride ions then attacks the chlorosulfite intermediate from the backside in a classic SN2 step, causing complete inversion of configuration.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பிரிடீன் முன்னிலையில், ஓர் ஒளி சுழற்றும் தூய ஈரிணைய ஆல்கஹால் தயோனைல் குளோரைடுடன் (SOCl2) வினைபுரியும் போது கிடைக்கும் ஆல்கைல் குளோரைடின் வச அமைப்பியல் பண்பு:",
+        "optionTexts": [
+          "SNi வழிமுறை மூலம் வச அமைப்பில் முழுமையான தக்கவைத்தல்.",
+          "குளோரோசல்பைட் இடைநிலை மீது குளோரைடு அயனியின் SN2 தாக்குதல் மூலம் வச அமைப்பில் முழுமையான தலைகீழ் மாற்றம்.",
+          "கார்பன் நேர்அயனி உருவாவதால் முழுமையான ரேசிமிக் கலவை உருவாதல்.",
+          "சம அளவுள்ள cis மற்றும் trans ஆல்கீன்கள் உருவாதல்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "DDT (p,p'-dichlorodiphenyltrichloroethane) is a historically famous chlorinated organic pesticide synthesized industrially by condensing chloral (trichloroethanal, CCl3CHO) with chlorobenzene in the presence of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Concentrated sulfuric acid (H2SO4)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Anhydrous aluminum chloride (AlCl3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Dilute aqueous sodium hydroxide",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Finely divided platinum catalyst",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "DDT is prepared by heating chloral with two equivalents of chlorobenzene in the presence of concentrated sulfuric acid, which functions as both an acid catalyst and a powerful dehydrating agent: CCl3CHO + 2C6H5Cl --(conc. H2SO4)--> (p-Cl-C6H4)2CH-CCl3 + H2O.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குளோரால் (CCl3CHO) மற்றும் குளோரோபென்சீன் ஆகியவற்றை எதன் முன்னிலையில் குறுக்கி DDT தயாரிக்கப்படுகிறது?",
+        "optionTexts": [
+          "அடர் கந்தக அமிலம் (H2SO4)",
+          "நீரற்ற அலுமினியம் குளோரைடு (AlCl3)",
+          "நீர்த்த நீரிய சோடியம் ஹைட்ராக்சைடு",
+          "நுண்ணிய பிளாட்டின வினையூக்கி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When 1-bromo-1-methylcyclohexane is heated with a bulky base like potassium tert-butoxide (t-BuOK) in tert-butanol, the major elimination product obtained is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1-Methylcyclohexene (Saytzeff product)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Methylenecyclohexane (Hofmann product)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1-Methylcyclohexanol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cycloheptene via ring expansion",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Elimination with a small, unhindered base (e.g., NaOEt) follows Saytzeff's rule to yield the more substituted endocyclic alkene (1-methylcyclohexene). However, potassium tert-butoxide ((CH3)3CO-K+) is extremely bulky. Steric hindrance prevents this base from abstracting a proton from the more substituted, sterically crowded internal ring carbon. Instead, it preferentially abstracts a more accessible, less hindered proton from the exocyclic methyl group, yielding the less substituted Hofmann alkene (methylenecyclohexane) as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1-புரோமோ-1-மெத்தில்சைக்ளோஹெக்சேன் சேர்மமானது பொட்டாசியம் tert-பியூட்டாக்சைடு (t-BuOK) போன்ற பருமனான காரத்துடன் சூடுபடுத்தப்படும் போது கிடைக்கும் முதன்மை நீக்க விளைபொருள்:",
+        "optionTexts": [
+          "1-மெத்தில்சைக்ளோஹெக்சீன் (செய்ட்ஸெஃப் விளைபொருள்)",
+          "மெத்திலீன்சைக்ளோஹெக்சேன் (ஹாஃப்மன் விளைபொருள்)",
+          "1-மெத்தில்சைக்ளோஹெக்சனால்",
+          "வளைய விரிவாக்கம் மூலம் சைக்ளோஹெப்டீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Allyl chloride (CH2=CH-CH2Cl) undergoes nucleophilic substitution much faster than 1-chloropropane via both SN1 and SN2 mechanisms. The respective reasons for this enhanced reactivity are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "SN1: Formation of a resonance-stabilized allylic carbocation; SN2: Lower activation energy due to stabilizing orbital overlap between the adjacent pi-bond and the incoming nucleophile / departing leaving group in the transition state.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "SN1: Extreme steric hindrance; SN2: Formation of a stable cyclic chloronium ion.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "SN1: Strong inductive electron withdrawal; SN2: Fast free-radical dimerization.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both mechanisms are accelerated entirely by the formation of an aromatic intermediate.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Allylic substrates display enhanced reactivity in both mechanisms: (1) Under SN1 conditions, ionization leaves behind an allylic carbocation [CH2=CH-CH2+ <-> +CH2-CH=CH2], which is heavily stabilized by pi-electron resonance delocalization. (2) Under SN2 conditions, the unhybridized p-orbitals of the adjacent double bond overlap with the developing p-orbital in the pentacoordinate transition state, delocalizing electron density, lowering the transition state energy barrier, and accelerating the reaction rate.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1-குளோரோபுரோப்பேனை விட அல்லைல் குளோரைடு (CH2=CH-CH2Cl) SN1 மற்றும் SN2 ஆகிய இரு வழிமுறைகளிலுமே மிக வேகமாக கருக்கவர் பதிலீட்டு வினைக்கு உட்படுவதற்கான காரணங்கள் முறையே:",
+        "optionTexts": [
+          "SN1: உடனிசைவால் நிலைப்படுத்தப்பட்ட அல்லைல் கார்பன் நேர்அயனி உருவாதல்; SN2: இடைநிலை நிலையில் அருகிலுள்ள பை-பிணைப்புடன் ஏற்படும் ஆர்பிட்டால் மேற்பொருந்துதலால் கிளர்வுறு ஆற்றல் குறைவது.",
+          "SN1: தீவிர புறவெளித் தடை; SN2: நிலையான வளைய குளோரோனியம் அயனி உருவாதல்.",
+          "SN1: வலிமையான தூண்டல் விளைவு; SN2: வேகமான தீவிரவாத இருபடியாக்கம்.",
+          "இரண்டு வழிமுறைகளும் ஓர் அரோமேட்டிக் இடைநிலைப் பொருள் உருவாவதால் மட்டுமே துரிதப்படுத்தப்படுகின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When 2-bromobutane is treated with sodium ethoxide (NaOEt) in ethanol, an E2 elimination occurs producing a mixture of trans-but-2-ene, cis-but-2-ene, and but-1-ene. The ratio of trans-but-2-ene to cis-but-2-ene is significantly greater than 1 because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "cis-But-2-ene has a higher dipole moment and is more volatile.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The transition state leading to trans-but-2-ene features an anti-coplanar conformation with the two methyl groups placed far apart, minimizing steric van der Waals repulsions compared to the transition state leading to the cis isomer.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "trans-But-2-ene undergoes rapid catalytic isomerization back into but-1-ene.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Elimination leading to trans-but-2-ene involves a syn-periplanar geometry.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "E2 eliminations require an anti-periplanar (anti-coplanar) orientation between the departing beta-hydrogen and the leaving bromide group. When generating the internal but-2-ene alkene, there are two distinct anti-conformations: one where the two terminal methyl groups are anti to each other (leading to trans-but-2-ene), and one where they are gauche to each other (leading to cis-but-2-ene). The trans-conformation has much lower steric repulsion between methyl groups, lowering its transition state energy and making trans-but-2-ene the predominant stereoisomer (~60% trans vs ~20% cis).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எத்தனால் ஊடகத்தில் சோடியம் ஈத்தாக்சைடுடன் (NaOEt) 2-புரோமோபியூட்டேன் E2 நீக்க வினைக்கு உட்படும் போது trans-பியூட்-2-ஈன் மற்றும் cis-பியூட்-2-ஈன் ஆகியவற்றின் விகிதம் 1-ஐ விட கணிசமாக அதிகமாக இருப்பதன் காரணம்:",
+        "optionTexts": [
+          "cis-பியூட்-2-ஈன் அதிக இருமுனைத் திருப்புத்திறனைக் கொண்டு எளிதில் ஆவியாகிறது.",
+          "trans-பியூட்-2-ஈனை உருவாக்கும் இடைநிலை அமைப்பில் இரண்டு மெத்தில் தொகுதிகளும் தொலைவில் அமைந்துள்ளதால் புறவெளி வான்டர் வால்ஸ் விலக்கு விசைகள் குறைக்கப்படுகின்றன.",
+          "trans-பியூட்-2-ஈன் வேகமாக பியூட்-1-ஈனாக மாற்றியமடைகிறது.",
+          "trans-பியூட்-2-ஈனை உருவாக்கும் நீக்க வினை சின்-பெரிபிளானார் அமைப்பை உள்ளடக்கியது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "When 2-chloro-3-methylbutane is treated with warm ethanol, it undergoes solvolysis via an SN1 pathway to yield an ether as the major product. The structure of this major product is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(CH3)2CH-CH(OCH2CH3)-CH3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(CH3)2C(OCH2CH3)-CH2CH3",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(CH3)2CH-CH2CH2-OCH2CH3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3C-CH(OCH2CH3)2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Ionization of 2-chloro-3-methylbutane produces an initial secondary carbocation: (CH3)2CH-C+H-CH3. To achieve greater thermodynamic stability, this carbocation undergoes an immediate 1,2-hydride shift (migration of the tertiary C3 hydrogen): (CH3)2CH-C+H-CH3 -> (CH3)2C+-CH2CH3, forming a more stable tertiary carbocation. Nucleophilic attack of ethanol on this tertiary carbocation followed by deprotonation yields 2-ethoxy-2-methylbutane, (CH3)2C(OCH2CH3)-CH2CH3, as the major product.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-குளோரோ-3-மெத்தில்பியூட்டேன் சூடான எத்தனாலுடன் SN1 கரைப்பான் பகுப்பு வினைக்கு உட்படும் போது கிடைக்கும் முதன்மை ஈதர் விளைபொருள்:",
+        "optionTexts": [
+          "(CH3)2CH-CH(OCH2CH3)-CH3",
+          "(CH3)2C(OCH2CH3)-CH2CH3",
+          "(CH3)2CH-CH2CH2-OCH2CH3",
+          "(CH3)3C-CH(OCH2CH3)2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Treatment of chlorobenzene with sodamide (NaNH2) in liquid ammonia at 240 K (-33 °C) yields aniline. When 1-chloronaphthalene is treated under identical conditions, the major product is 1-naphthylamine accompanied by 2-naphthylamine. These reactions proceed through an elimination-addition pathway involving which reactive intermediate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A free phenyl radical",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A benzyne (aryne) intermediate containing a formal triple bond in an aromatic ring",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "A classical Meisenheimer carbanionic complex",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A planar nitrene intermediate",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Aryl halides lacking electron-withdrawing groups do not react by the SNAr pathway. With an extremely strong base like amide ion (NH2-) in liquid ammonia, elimination of HX occurs first to generate a neutral, highly strained benzyne (aryne) intermediate possessing a formal carbon-carbon triple bond in the aromatic ring. Subsequent nucleophilic addition of NH3/NH2- to either end of the triple bond generates the substituted product (giving cine-substitution and isomeric product mixtures).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திரவ அம்மோனியாவில் சோடமைடுடன் (NaNH2) குளோரோபென்சீன் வினைபுரிந்து அனிலீனைத் தரும் நீக்கல்-சேர்க்கை வினையில் உருவாகும் வினையுறு இடைநிலைப்பொருள் எது?",
+        "optionTexts": [
+          "ஒரு தனி ஃபீனைல் தீவிரவாதி",
+          "அரோமேட்டிக் வளையத்தில் முப்பிணைப்பைக் கொண்ட பென்சைன் (அரைன்) இடைநிலைப்பொருள்",
+          "மெய்சன்ஹைமர் கார்பன் எதிர்அயனி அணைவு",
+          "ஒரு தள நைட்ரீன் இடைநிலைப்பொருள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Freon-12 (dichlorodifluoromethane, CCl2F2) is an ozone-depleting chlorofluorocarbon historically synthesized by the action of antimony trifluoride (SbF3) on carbon tetrachloride in the presence of an SbCl5 catalyst. What is the active chemical species directly responsible for catalytically destroying ozone in the stratosphere?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Chlorine free radical (Cl·)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fluorine free radical (F·)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Chloride anion (Cl-)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Dichlorocarbene (:CCl2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the stratosphere, chlorofluorocarbons like Freon-12 are irradiated by solar UV light, breaking the C-Cl bond to liberate reactive chlorine free radicals: CF2Cl2 --(UV)--> CF2Cl· + Cl·. The chlorine radical acts as a homogeneous chain catalyst in decomposing ozone: Cl· + O3 -> ClO· + O2; ClO· + O -> Cl· + O2. A single chlorine radical can catalytically destroy up to 100,000 ozone molecules before being deactivated.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வளிமண்டலத்தின் ஸ்ட்ரேடோஸ்பியரில் ஓசோன் படலத்தை வினையூக்க முறையில் அழிப்பதற்கு நேரடியாகக் காரணமான வினையுறு கூறு எது?",
+        "optionTexts": [
+          "குளோரின் தனி தீவிரவாதி (Cl·)",
+          "புளூரின் தனி தீவிரவாதி (F·)",
+          "குளோரைடு எதிரயனி (Cl-)",
+          "டைகுளோரோகார்பீன் (:CCl2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of chlorine atoms present in a single molecule of the pesticide DDT (p,p'-dichlorodiphenyltrichloroethane) is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The molecular structure of DDT is (p-Cl-C6H4)2CH-CCl3. There is one chlorine atom substituted on each of the two benzene rings (2 aryl chlorines) and three chlorine atoms present on the aliphatic trichloromethyl group (-CCl3, 3 alkyl chlorines). The total number of chlorine atoms per molecule is 2 + 3 = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "DDT (p,p'-டைகுளோரோடைஃபீனைல்ட்ரைகுளோரோஈத்தேன்) என்ற பூச்சிக்கொல்லி மூலக்கூறில் உள்ள மொத்த குளோரின் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of constitutional (structural) alkyl halide isomers possible for the molecular formula C4H9Cl is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Alkyl halides with the formula C4H9Cl can have four structural arrangements: (1) 1-Chlorobutane: CH3CH2CH2CH2Cl; (2) 2-Chlorobutane: CH3CH2CH(Cl)CH3; (3) 1-Chloro-2-methylpropane (isobutyl chloride): (CH3)2CHCH2Cl; (4) 2-Chloro-2-methylpropane (tert-butyl chloride): (CH3)3CCl. Thus, there are exactly 4 constitutional isomers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H9Cl என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட ஆல்கைல் ஹாலைடிற்கு சாத்தியமான கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In the haloform reaction of acetone with sodium hypochlorite: CH3COCH3 + 3NaOCl -> CHCl3 + CH3COONa + 2NaOH, the number of moles of NaOCl consumed per mole of acetone is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The haloform reaction involves the stepwise halogenation of all three alpha-hydrogens of the methyl ketone group: CH3COCH3 + 3NaOCl -> CCl3COCH3 + 3NaOH. The trichloro intermediate is then cleaved by base: CCl3COCH3 + NaOH -> CHCl3 + CH3COONa. Thus, exactly 3 moles of sodium hypochlorite (NaOCl) are consumed per mole of acetone.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அசிட்டோனின் ஹேலோபார்ம் வினையில் ஒரு மோல் அசிட்டோனுக்கு நுகரப்படும் NaOCl-ன் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of stereoisomers possible for the dihalide 2,3-dichlorobutane is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "2,3-Dichlorobutane (CH3-C*H(Cl)-C*H(Cl)-CH3) contains n = 2 identical chiral centers. For a symmetrical molecule with an even number of chiral centers: (1) Number of optically active enantiomers = 2^(n-1) = 2^(2-1) = 2 (a pair of d- and l-enantiomers); (2) Number of meso forms = 2^(n/2 - 1) = 2^(1-1) = 1 (meso-2,3-dichlorobutane, achiral with an internal inversion center/plane). Total number of stereoisomers = 2 + 1 = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2,3-டைகுளோரோபியூட்டேன் சேர்மத்திற்கு சாத்தியமான புறவெளி மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Finkelstein reaction, 10.9 g of ethyl bromide (molar mass = 109 g mol^-1) is reacted with excess sodium iodide in dry acetone to yield ethyl iodide (molar mass = 156 g mol^-1). If the reaction proceeds with an 80% practical yield, the mass of pure ethyl iodide obtained (in grams) is: (Round to one decimal place if needed)",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Moles of ethyl bromide reacted = 10.9 g / 109 g mol^-1 = 0.10 mol. Theoretical yield of ethyl iodide = 0.10 mol * 156 g mol^-1 = 15.6 g. Since the practical yield is 80%, the actual mass obtained = 15.6 g * 0.80 = 12.48 g ≈ 12 g (rounded to nearest integer).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஃபின்கெல்ஸ்டீன் வினையில் 10.9 g எத்தில் புரோமைடு (மோலார் நிறை = 109 g mol^-1) உலர் அசிட்டோனில் அதிகளவு NaI உடன் வினைபுரிகிறது. இவ்வினை 80% விளைச்சலைத் தருகிறது எனில், பெறப்படும் தூய எத்தில் அயோடைடின் நிறை (கிராமில்): (எத்தில் அயோடைடின் மோலார் நிறை = 156 g mol^-1)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An organic halide of formula C4H9Br on reaction with alcoholic KOH yields a mixture of three isomeric alkenes A, B, and C (including stereoisomers). The number of chiral carbon atoms present in the original alkyl halide is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "An alkyl halide of formula C4H9Br that yields three alkenes on dehydrohalogenation must be 2-bromobutane (CH3-CH(Br)-CH2CH3). Elimination gives: (1) but-1-ene, (2) cis-but-2-ene, and (3) trans-but-2-ene (total 3 alkenes). In 2-bromobutane, the C2 carbon is attached to four distinct groups: -H, -Br, -CH3, and -CH2CH3. Therefore, it possesses exactly 1 chiral carbon atom.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H9Br என்ற வாய்ப்பாட்டைக் கொண்ட ஓர் ஆல்கைல் ஹாலைடு alc. KOH உடன் வினைபுரிந்து மூன்று ஆல்கீன் மாற்றியங்களைத் (A, B மற்றும் C, புறவெளி மாற்றியங்கள் உட்பட) தருகிறது எனில், அந்த ஆல்கைல் ஹாலைடில் உள்ள கைரல் கார்பன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of stereoisomers (including enantiomers and diastereomers) possible for 1-bromo-2-chlorocyclopropane is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In 1-bromo-2-chlorocyclopropane, both C1 and C2 are chiral centers, and the two substituents are different (-Br and -Cl). The compound exists as: (1) cis-1-bromo-2-chlorocyclopropane, which is chiral (lacks a plane of symmetry) and exists as a pair of enantiomers (2 isomers); (2) trans-1-bromo-2-chlorocyclopropane, which is also chiral and exists as a pair of enantiomers (2 isomers). Total number of stereoisomers = 2 (cis enantiomers) + 2 (trans enantiomers) = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1-புரோமோ-2-குளோரோசைக்ளோபுரோப்பேன் சேர்மத்திற்கு சாத்தியமான புறவெளி மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 0.100 mole sample of pure optically active (R)-2-bromooctane is reacted with sodium hydroxide in an aqueous ethanol solution. The reaction proceeds simultaneously through two pathways: 70% of the reaction occurs via an SN2 mechanism, while 30% of the reaction occurs via an SN1 mechanism. Assuming complete racemization in the SN1 pathway and complete inversion in the SN2 pathway, the optical purity (enantiomeric excess, % ee) of the isolated 2-octanol product is:",
+    "correctAnswer": 70,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The SN2 pathway (70%) proceeds with 100% inversion of configuration, converting (R) into (S)-2-octanol. The SN1 pathway (30%) forms a planar carbocation, which is attacked equally from both faces to give 15% (R) and 15% (S)-2-octanol (racemic). Total products: (S)-enantiomer = 70% + 15% = 85%; (R)-enantiomer = 15%. The enantiomeric excess (% ee) is: % ee = % major enantiomer - % minor enantiomer = 85% - 15% = 70%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தூய ஒளி சுழற்றும் (R)-2-புரோமோஆக்டேன் NaOH உடன் வினைபுரிகிறது. இவ்வினையானது 70% SN2 வழியிலும், 30% SN1 வழியிலும் ஒரே நேரத்தில் நிகழ்கிறது. SN1-ல் முழுமையான ரேசிமிக் கலவையும், SN2-ல் முழுமையான தலைகீழ் மாற்றமும் ஏற்படுவதாகக் கொண்டால், பெறப்படும் 2-ஆக்டனாலின் ஒளி தூய்மை (enantiomeric excess, % ee):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following five organic halides: (1) Vinyl chloride (CH2=CHCl), (2) Chlorobenzene (C6H5Cl), (3) Allyl chloride (CH2=CH-CH2Cl), (4) Benzyl chloride (C6H5CH2Cl), and (5) Ethyl chloride (CH3CH2Cl). How many of these halides will form a precipitate of silver chloride (AgCl) upon warming with aqueous sodium hydroxide followed by acidification with dilute HNO3 and addition of aqueous AgNO3?",
+    "options": [],
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "To give a precipitate of AgCl with AgNO3, the organic halide must first undergo nucleophilic substitution by OH- to release free chloride ions (Cl-). Vinyl chloride (1) and chlorobenzene (2) have partial double bond character due to resonance and resist nucleophilic displacement under normal warming conditions. In contrast, allyl chloride (3), benzyl chloride (4), and ethyl chloride (5) readily undergo nucleophilic displacement, releasing Cl- ions that precipitate quantitatively as white AgCl with AgNO3. Exactly 3 halides (3, 4, and 5) respond positively.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வினைல் குளோரைடு (1), குளோரோபென்சீன் (2), அல்லைல் குளோரைடு (3), பென்சைல் குளோரைடு (4), மற்றும் எத்தில் குளோரைடு (5) ஆகிய ஐந்து ஹாலைடுகளில், நீரிய NaOH உடன் சூடுபடுத்தப்பட்டு அமிலமாக்கப்பட்ட பின் AgNO3 கரைசலுடன் AgCl வெண் வீழ்படிவைத் தரும் ஹாலைடுகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che16-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of possible benzenoid structural isomers having the molecular formula C7H7Cl is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Compounds of formula C7H7Cl containing a benzene ring can have the chlorine atom on the side chain or on the aromatic ring: (1) Benzyl chloride: C6H5-CH2Cl (chlorine on the side chain); (2) 2-Chlorotoluene (o-chlorotoluene): o-Cl-C6H4-CH3; (3) 3-Chlorotoluene (m-chlorotoluene): m-Cl-C6H4-CH3; (4) 4-Chlorotoluene (p-chlorotoluene): p-Cl-C6H4-CH3. Therefore, exactly 4 benzenoid constitutional isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C7H7Cl என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட சாத்தியமான பென்சீன் வளைய கட்டமைப்பு மாற்றியங்களின் (benzenoid isomers) மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

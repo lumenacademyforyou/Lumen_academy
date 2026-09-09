@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che04-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following thermodynamic properties is an intensive property?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Enthalpy",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Internal energy",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Heat capacity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Molar heat capacity",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "An intensive property is independent of the amount or mass of matter present in the system. Enthalpy, internal energy, and total heat capacity depend directly on the quantity of matter and are extensive properties. Molar heat capacity is the heat capacity per mole of substance, making it an intensive property.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வெப்ப இயக்கவியல் பண்புகளில் எது பொருண்மை சாராப் பண்பு (intensive property) ஆகும்?",
+        "optionTexts": [
+          "என்தால்பி",
+          "அக ஆற்றல்",
+          "வெப்ப ஏற்புத்திறன்",
+          "மோலார் வெப்ப ஏற்புத்திறன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A thermodynamic system absorbs 250 J of heat from its surroundings while 120 J of work is done on the system by compression. According to the first law of thermodynamics, the change in internal energy (Delta U) of the system is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+130 J",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-130 J",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+370 J",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "-370 J",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the first law of thermodynamics, Delta U = q + w. Heat absorbed by the system is positive: q = +250 J. Work done on the system by compression is positive: w = +120 J. Therefore, Delta U = (+250 J) + (+120 J) = +370 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வெப்ப இயக்கவியல் அமைப்பு சூழலில் இருந்து 250 J வெப்பத்தை உறிஞ்சுகிறது, அதே நேரத்தில் அழுத்தப்படுவதன் மூலம் அவ்வமைப்பின் மீது 120 J வேலை செய்யப்படுகிறது. வெப்ப இயக்கவியலின் முதல் விதிப்படி, அவ்வமைப்பின் அக ஆற்றலில் ஏற்படும் மாற்றம் (Delta U):",
+        "optionTexts": [
+          "+130 J",
+          "-130 J",
+          "+370 J",
+          "-370 J"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "One mole of an ideal gas at 300 K expands isothermally from an initial volume of 2.0 L to a final volume of 20.0 L. Which of the following statements correctly compares the reversible work (w_rev) and irreversible work (w_irr) done against a constant external pressure, following the IUPAC sign convention?",
+    "options": [
+      {
+        "label": "A",
+        "text": "w_rev is positive, whereas w_irr is negative.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Both are negative, and |w_rev| > |w_irr|.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Both are negative, and |w_irr| > |w_rev|.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Both are positive, and w_rev > w_irr.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In gas expansion, work is performed by the system on the surroundings; therefore, by IUPAC sign convention, both w_rev and w_irr are negative. A reversible isothermal expansion delivers the maximum possible magnitude of work compared to any irreversible expansion operating between the same initial and final states. Hence, both are negative and |w_rev| > |w_irr|.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K வெப்பநிலையில் உள்ள ஒரு மோல் நல்லியல்பு வாயு 2.0 L ஆரம்ப கனஅளவிலிருந்து 20.0 L இறுதி கனஅளவிற்கு மாறா வெப்பநிலையில் விரிவடைகிறது. IUPAC குறி மரபின்படி, மீள் செயல்முறை வேலை (w_rev) மற்றும் மாறா வெளி அழுத்தத்திற்கு எதிரான மீளா செயல்முறை வேலை (w_irr) ஆகியவற்றை ஒப்பிடும் சரியான கூற்று எது?",
+        "optionTexts": [
+          "w_rev நேர்மதிப்புடையது, ஆனால் w_irr எதிர்மதிப்புடையது.",
+          "இரண்டும் எதிர்மதிப்புடையவை, மற்றும் |w_rev| > |w_irr|.",
+          "இரண்டும் எதிர்மதிப்புடையவை, மற்றும் |w_irr| > |w_rev|.",
+          "இரண்டும் நேர்மதிப்புடையவை, மற்றும் w_rev > w_irr."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ideal monoatomic gas (gamma = 5/3) undergoes a reversible adiabatic expansion. If its volume increases to 8 times its initial volume, its final absolute temperature becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/2 of its initial temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1/4 of its initial temperature",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1/8 of its initial temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1/16 of its initial temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a reversible adiabatic process involving an ideal gas: T1 * V1^(gamma - 1) = T2 * V2^(gamma - 1). For a monoatomic gas, gamma = 5/3, so gamma - 1 = 2/3. Given V2 = 8 * V1: T2 / T1 = (V1 / V2)^(2/3) = (1/8)^(2/3) = ((1/2)^3)^(2/3) = (1/2)^2 = 1/4. Thus, the final temperature is 1/4 of its initial temperature.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு ஓரணு வாயு (gamma = 5/3) மீளக்கூடிய வெப்பமாறா விரிவடைதலுக்கு உட்படுகிறது. அதன் கனஅளவு ஆரம்ப கனஅளவை விட 8 மடங்காக அதிகரித்தால், அதன் இறுதி தனி வெப்பநிலை:",
+        "optionTexts": [
+          "ஆரம்ப வெப்பநிலையில் 1/2 பங்கு",
+          "ஆரம்ப வெப்பநிலையில் 1/4 பங்கு",
+          "ஆரம்ப வெப்பநிலையில் 1/8 பங்கு",
+          "ஆரம்ப வெப்பநிலையில் 1/16 பங்கு"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Given the following standard enthalpies of combustion at 298 K:\nC(graphite) + O2(g) -> CO2(g); Delta H° = -393.5 kJ mol^-1\nH2(g) + 1/2 O2(g) -> H2O(l); Delta H° = -285.8 kJ mol^-1\nC2H6(g) + 7/2 O2(g) -> 2CO2(g) + 3H2O(l); Delta H° = -1559.8 kJ mol^-1\nThe standard molar enthalpy of formation of ethane (C2H6(g)) at 298 K is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-84.6 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+84.6 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-136.2 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+136.2 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The formation reaction of ethane is: 2C(graphite) + 3H2(g) -> C2H6(g). According to Hess's Law: Delta H_f°[C2H6(g)] = 2 * Delta H_c°[C(graphite)] + 3 * Delta H_c°[H2(g)] - Delta H_c°[C2H6(g)]. Substituting values: Delta H_f° = 2 * (-393.5) + 3 * (-285.8) - (-1559.8) = -787.0 - 857.4 + 1559.8 = -1644.4 + 1559.8 = -84.6 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K வெப்பநிலையில் திட்ட எரிதல் என்தால்பி மதிப்புகள் கீழே கொடுக்கப்பட்டுள்ளன:\nC(graphite) + O2(g) -> CO2(g); Delta H° = -393.5 kJ mol^-1\nH2(g) + 1/2 O2(g) -> H2O(l); Delta H° = -285.8 kJ mol^-1\nC2H6(g) + 7/2 O2(g) -> 2CO2(g) + 3H2O(l); Delta H° = -1559.8 kJ mol^-1\n298 K-ல் ஈத்தேனின் (C2H6(g)) திட்ட மோலார் உருவாதல் என்தால்பி:",
+        "optionTexts": [
+          "-84.6 kJ mol^-1",
+          "+84.6 kJ mol^-1",
+          "-136.2 kJ mol^-1",
+          "+136.2 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The enthalpy of neutralization of a strong acid with a strong base in dilute aqueous solution is -57.3 kJ mol^-1. However, the neutralization of hydrofluoric acid (HF, a weak acid) with sodium hydroxide releases more heat, having an enthalpy of neutralization of -68.6 kJ mol^-1. The primary reason for this anomalous behavior is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Exceptionally high hydration enthalpy of the small fluoride ion (F-).",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Complete dissociation of HF in water at all concentrations.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Very low bond dissociation enthalpy of the H-F bond.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Precipitation of sodium fluoride from the aqueous solution.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Although HF is a weak acid and requires energy for ionization, the extremely small radius and high charge density of the generated fluoride ion (F-) result in an extraordinarily large negative enthalpy of hydration. This hydration enthalpy more than compensates for the dissociation energy of HF, releasing net excess heat and making the neutralization enthalpy more exothermic (-68.6 kJ mol^-1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்த்த நீரிய கரைசலில் ஒரு வலிமை மிகு அமிலம் வலிமை மிகு காரத்தால் நடுநிலையாக்கப்படும் போது நடுநிலையாக்கல் என்தால்பி -57.3 kJ mol^-1 ஆகும். ஆனால், ஹைட்ரோபுளூரிக் அமிலம் (HF, ஒரு வலிமை குறைந்த அமிலம்) சோடியம் ஹைட்ராக்சைடுடன் வினைபுரியும் போது அதிக வெப்பத்தை வெளிப்படுத்தி -68.6 kJ mol^-1 என்ற நடுநிலையாக்கல் என்தால்பியைக் கொண்டுள்ளது. இந்த முரண்பட்ட நடத்தைக்கான முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "சிறிய புளூரைடு அயனியின் (F-) மிக அதிக நீரேற்ற என்தால்பி.",
+          "நீரில் அனைத்து செறிவுகளிலும் HF முழுமையாக பிரிகையடைவது.",
+          "H-F பிணைப்பின் மிகக் குறைந்த பிணைப்புப் பிளவு என்தால்பி.",
+          "நீரிய கரைசலில் இருந்து சோடியம் புளூரைடு வீழ்படிவாவது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Consider the gas-phase synthesis of ammonia: N2(g) + 3H2(g) -> 2NH3(g). Given the average bond dissociation enthalpies: B(N#N) = 945 kJ mol^-1, B(H-H) = 436 kJ mol^-1, and B(N-H) = 391 kJ mol^-1. The standard enthalpy of formation of gaseous ammonia (Delta H_f°[NH3(g)]) calculated from these data is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-93.0 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-46.5 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "+46.5 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+93.0 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Enthalpy change of reaction Delta H_rxn = [Sum of bond enthalpies of reactants] - [Sum of bond enthalpies of products] = [B(N#N) + 3 * B(H-H)] - [6 * B(N-H)] = [945 + 3 * (436)] - [6 * 391] = [945 + 1308] - 2346 = 2253 - 2346 = -93 kJ. This reaction produces 2 moles of NH3(g). Therefore, Delta H_f°[NH3(g)] = -93 / 2 = -46.5 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாயு நிலை அம்மோனியா உருவாக்க வினையைக் கருதுக: N2(g) + 3H2(g) -> 2NH3(g). சராசரி பிணைப்புப் பிளவு என்தால்பிகள்: B(N#N) = 945 kJ mol^-1, B(H-H) = 436 kJ mol^-1, மற்றும் B(N-H) = 391 kJ mol^-1 எனக் கொடுக்கப்பட்டுள்ளன. இந்தத் தரவுகளிலிருந்து கணக்கிடப்படும் வாயு நிலை அம்மோனியாவின் திட்ட உருவாதல் என்தால்பி (Delta H_f°[NH3(g)]):",
+        "optionTexts": [
+          "-93.0 kJ mol^-1",
+          "-46.5 kJ mol^-1",
+          "+46.5 kJ mol^-1",
+          "+93.0 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In which of the following chemical or physical processes is the entropy change of the system (Delta S_sys) negative?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sublimation of dry ice: CO2(s) -> CO2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Thermal decomposition of calcium carbonate: CaCO3(s) -> CaO(s) + CO2(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Dissolution of table salt in water: NaCl(s) -> Na+(aq) + Cl-(aq)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Polymerization of ethene gas: n CH2=CH2(g) -> -[CH2-CH2]n-(s)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "In polymerization, a large number (n) of independent gaseous monomer molecules with high translational freedom combine to form a single, highly ordered solid polymer chain. This causes a dramatic reduction in microstates and randomness, resulting in Delta S_sys < 0. In processes A, B, and C, gases are formed or crystal lattices dissolve into hydrated mobile ions, giving Delta S_sys > 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வேதியியல் அல்லது இயற்பியல் செயல்முறைகளில் எதில் அமைப்பின் என்ட்ரோபி மாற்றம் (Delta S_sys) எதிர்மதிப்பைப் பெறுகிறது?",
+        "optionTexts": [
+          "உலர் பனிக்கட்டியின் பதங்கமாதல்: CO2(s) -> CO2(g)",
+          "கால்சியம் கார்பனேட்டின் வெப்பச் சிதைவு: CaCO3(s) -> CaO(s) + CO2(g)",
+          "சமையல் உப்பு நீரில் கரைதல்: NaCl(s) -> Na+(aq) + Cl-(aq)",
+          "ஈத்தீன் வாயுவின் பலபடியாக்கல்: n CH2=CH2(g) -> -[CH2-CH2]n-(s)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a chemical process occurring at constant temperature and pressure, which condition guarantees that the reaction will be spontaneous at all temperatures?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta H < 0 and Delta S > 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Delta H > 0 and Delta S > 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Delta H < 0 and Delta S < 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Delta H > 0 and Delta S < 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the Gibbs-Helmholtz relation, Delta G = Delta H - T * Delta S. When Delta H is negative (exothermic) and Delta S is positive (increase in disorder), the term (-T * Delta S) is negative for all positive absolute temperatures T. Consequently, Delta G is unconditionally negative (Delta G < 0) at all temperatures, ensuring spontaneity.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா வெப்பநிலை மற்றும் அழுத்தத்தில் நிகழும் ஒரு வேதிவினைக்கு, எந்த நிபந்தனையானது அனைத்து வெப்பநிலைகளிலும் அவ்வினை தன்னிச்சையாக நிகழும் என்பதற்கு உத்தரவாதம் அளிக்கிறது?",
+        "optionTexts": [
+          "Delta H < 0 மற்றும் Delta S > 0",
+          "Delta H > 0 மற்றும் Delta S > 0",
+          "Delta H < 0 மற்றும் Delta S < 0",
+          "Delta H > 0 மற்றும் Delta S < 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a reaction: X(s) + Y(g) -> Z(s) + W(g), the enthalpy and entropy changes are Delta H = +30.5 kJ mol^-1 and Delta S = +61.0 J K^-1 mol^-1 respectively. Assuming Delta H and Delta S remain constant with temperature, the reaction becomes spontaneous above what temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "250 K",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "300 K",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "500 K",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "600 K",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For spontaneity, Delta G = Delta H - T * Delta S < 0, which gives T > Delta H / Delta S. Substituting values: T > (30.5 * 1000 J mol^-1) / (61.0 J K^-1 mol^-1) = 30500 / 61.0 = 500 K. Thus, the reaction becomes spontaneous at temperatures above 500 K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "X(s) + Y(g) -> Z(s) + W(g) என்ற வினைக்கு, என்தால்பி மற்றும் என்ட்ரோபி மாற்றங்கள் முறையே Delta H = +30.5 kJ mol^-1 மற்றும் Delta S = +61.0 J K^-1 mol^-1 ஆகும். Delta H மற்றும் Delta S வெப்பநிலையுடன் மாறாது எனக் கொண்டால், இவ்வினை எந்த வெப்பநிலைக்கு மேல் தன்னிச்சையானதாக மாறும்?",
+        "optionTexts": [
+          "250 K",
+          "300 K",
+          "500 K",
+          "600 K"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the gaseous equilibrium 2NO2(g) <=> N2O4(g) at 298 K, the standard Gibbs free energy change is Delta G° = -4.80 kJ mol^-1. If a reaction vessel at 298 K contains NO2 and N2O4 at partial pressures of 2.0 bar and 0.20 bar respectively, the reaction quotient Q_p and the spontaneity of the forward reaction under these conditions are: (Given: 2.303 * R * 298 = 5.71 kJ mol^-1; log(0.05) = -1.30)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Q_p = 0.05 bar^-1, forward reaction is non-spontaneous",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Q_p = 0.10 bar^-1, reaction is at equilibrium",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Q_p = 0.05 bar^-1, forward reaction is spontaneous",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Q_p = 0.10 bar^-1, forward reaction is spontaneous",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Reaction quotient Q_p = P(N2O4) / [P(NO2)]^2 = 0.20 / (2.0)^2 = 0.20 / 4.0 = 0.05 bar^-1. Using the relation Delta G = Delta G° + 2.303 * R * T * log(Q_p): Delta G = -4.80 kJ mol^-1 + 5.71 kJ mol^-1 * (-1.30) = -4.80 - 7.42 = -12.22 kJ mol^-1. Because Delta G < 0, the forward reaction is spontaneous under these non-standard conditions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K வெப்பநிலையில் 2NO2(g) <=> N2O4(g) என்ற வாயு நிலை சமநிலைக்கு, திட்ட கிப்ஸ் கட்டிலா ஆற்றல் மாற்றம் Delta G° = -4.80 kJ mol^-1 ஆகும். 298 K-ல் உள்ள ஒரு கலனில் NO2 மற்றும் N2O4 ஆகியவற்றின் பகுதி அழுத்தங்கள் முறையே 2.0 bar மற்றும் 0.20 bar எனில், இவ்வினைக்கான வினை ஈவு Q_p மற்றும் முன்னோக்கிய வினையின் தன்னிச்சைத் தன்மை:",
+        "optionTexts": [
+          "Q_p = 0.05 bar^-1, முன்னோக்கிய வினை தன்னிச்சையற்றது",
+          "Q_p = 0.10 bar^-1, வினை சமநிலையில் உள்ளது",
+          "Q_p = 0.05 bar^-1, முன்னோக்கிய வினை தன்னிச்சையானது",
+          "Q_p = 0.10 bar^-1, முன்னோக்கிய வினை தன்னிச்சையானது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a constant-volume bomb calorimeter, the complete combustion of 1.00 mol of benzene, C6H6(l), occurs at 298 K according to: C6H6(l) + 15/2 O2(g) -> 6CO2(g) + 3H2O(l). The heat evolved at constant volume is 3267.0 kJ (qv = -3267.0 kJ). The standard molar enthalpy of combustion (Delta H_c) of benzene at 298 K is: (Take R = 8.314 J K^-1 mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "-3263.3 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-3270.7 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-3267.0 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-3274.4 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relationship between Delta H and Delta U is Delta H = Delta U + Delta n_g * R * T. Here, Delta U = qv = -3267.0 kJ mol^-1. Change in gaseous moles Delta n_g = moles of product gases - moles of reactant gases = 6 - 7.5 = -1.5 mol. Delta n_g * R * T = (-1.5 mol) * (8.314 J K^-1 mol^-1) * (298 K) = -3716.36 J = -3.72 kJ. Therefore, Delta H = -3267.0 + (-3.72) = -3270.72 kJ mol^-1 ≈ -3270.7 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா கனஅளவு கொண்ட வெடிகுண்டு கலோரிமீட்டரில், 1.00 mol பென்சீனின் (C6H6(l)) முழுமையான எரிதல் வினையானது 298 K-ல் நிகழ்கிறது: C6H6(l) + 15/2 O2(g) -> 6CO2(g) + 3H2O(l). மாறா கனஅளவில் வெளிப்படும் வெப்பம் 3267.0 kJ (qv = -3267.0 kJ) ஆகும். 298 K-ல் பென்சீனின் திட்ட மோலார் எரிதல் என்தால்பி (Delta H_c): (R = 8.314 J K^-1 mol^-1 எனக் கொள்க)",
+        "optionTexts": [
+          "-3263.3 kJ mol^-1",
+          "-3270.7 kJ mol^-1",
+          "-3267.0 kJ mol^-1",
+          "-3274.4 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pairs comprises solely state functions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Work (w) and Heat (q)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Enthalpy (H) and Work (w)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Internal energy (U) and Entropy (S)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Heat (q) and Gibbs free energy (G)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A state function is a property whose value depends only on the current equilibrium state of the system and is independent of the path taken to reach that state. Internal energy (U), entropy (S), enthalpy (H), and Gibbs free energy (G) are state functions. In contrast, heat (q) and work (w) are path functions whose values depend on the trajectory followed during the process.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இணைகளில் நிலைச் சார்புகளை மட்டுமே கொண்டுள்ள இணை எது?",
+        "optionTexts": [
+          "வேலை (w) மற்றும் வெப்பம் (q)",
+          "என்தால்பி (H) மற்றும் வேலை (w)",
+          "அக ஆற்றல் (U) மற்றும் என்ட்ரோபி (S)",
+          "வெப்பம் (q) மற்றும் கிப்ஸ் கட்டிலா ஆற்றல் (G)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas undergoes isothermal free expansion into an evacuated chamber (vacuum, P_ext = 0). For this process, the values of work done (w), heat absorbed (q), and internal energy change (Delta U) are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "w < 0, q > 0, Delta U = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "w = 0, q = 0, Delta U = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "w = 0, q > 0, Delta U > 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "w < 0, q = 0, Delta U < 0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In free expansion against vacuum, external pressure P_ext = 0, hence w = -P_ext * Delta V = 0. For an ideal gas undergoing an isothermal process, the internal energy depends solely on temperature; therefore, Delta U = n * C_v * Delta T = 0. From the first law of thermodynamics, q = Delta U - w = 0 - 0 = 0. Hence, w = 0, q = 0, and Delta U = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயு வெற்றிடத்தில் (vacuum, P_ext = 0) மாறா வெப்பநிலையில் தடையற்ற விரிவடைதலுக்கு உட்படுகிறது. இச்செயல்முறைக்கு செய்யப்பட்ட வேலை (w), உறிஞ்சப்பட்ட வெப்பம் (q) மற்றும் அக ஆற்றல் மாற்றம் (Delta U) ஆகியவற்றின் மதிப்புகள் முறையே:",
+        "optionTexts": [
+          "w < 0, q > 0, Delta U = 0",
+          "w = 0, q = 0, Delta U = 0",
+          "w = 0, q > 0, Delta U > 0",
+          "w < 0, q = 0, Delta U < 0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "One mole of an ideal gas initially at state (P1, V1, T1) is expanded to a final volume V2 via two separate reversible pathways: Path I is isothermal, and Path II is adiabatic. Which of the following statements regarding these processes is INCORRECT?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The magnitude of work done in Path I is greater than that in Path II.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The final pressure P2 in Path I is higher than the final pressure P2 in Path II.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The final temperature of the gas in Path II is lower than T1.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The change in internal energy Delta U is negative for Path I and zero for Path II.",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "For an ideal gas undergoing an isothermal expansion (Path I), Delta T = 0, which implies Delta U = 0 (not negative). In a reversible adiabatic expansion (Path II), q = 0 and the system does work at the expense of its internal energy, giving Delta U = w < 0 (negative) and causing the gas to cool below T1. Thus, statement D is false and the correct choice.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(P1, V1, T1) என்ற நிலையில் உள்ள ஒரு மோல் நல்லியல்பு வாயு V2 என்ற இறுதி கனஅளவிற்கு இரண்டு வெவ்வேறு மீள் பாதைகளில் விரிவடைகிறது: பாதை I என்பது மாறா வெப்பநிலை செயல்முறை, பாதை II என்பது வெப்பமாறா செயல்முறை. இச்செயல்முறைகள் குறித்த பின்வரும் கூற்றுகளில் தவறானது எது?",
+        "optionTexts": [
+          "பாதை I-ல் செய்யப்பட்ட வேலையின் எண்மதிப்பு பாதை II-ஐ விட அதிகம்.",
+          "பாதை I-ல் கிடைக்கும் இறுதி அழுத்தம் P2, பாதை II-ல் கிடைக்கும் இறுதி அழுத்தத்தை விட அதிகம்.",
+          "பாதை II-ல் வாயுவின் இறுதி வெப்பநிலை T1-ஐ விடக் குறைவு.",
+          "பாதை I-ல் அக ஆற்றல் மாற்றம் Delta U எதிர்மதிப்பாகவும், பாதை II-ல் சுழியாகவும் இருக்கும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For an exothermic reaction occurring at constant temperature T = 300 K and constant pressure, Delta H_sys = -90.0 kJ mol^-1 and Delta S_sys = -150.0 J K^-1 mol^-1. The total entropy change of the universe (Delta S_total) for this reaction is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-150.0 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "+300.0 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+450.0 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "+150.0 J K^-1 mol^-1",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The entropy change of the surroundings is Delta S_surr = -Delta H_sys / T = -(-90000 J mol^-1) / 300 K = +300.0 J K^-1 mol^-1. The total entropy change of the universe is Delta S_total = Delta S_sys + Delta S_surr = -150.0 J K^-1 mol^-1 + 300.0 J K^-1 mol^-1 = +150.0 J K^-1 mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா வெப்பநிலை T = 300 K மற்றும் மாறா அழுத்தத்தில் நிகழும் ஒரு வெப்ப உமிழ் வினைக்கு, Delta H_sys = -90.0 kJ mol^-1 மற்றும் Delta S_sys = -150.0 J K^-1 mol^-1 ஆகும். இவ்வினைக்கான அண்டத்தின் மொத்த என்ட்ரோபி மாற்றம் (Delta S_total):",
+        "optionTexts": [
+          "-150.0 J K^-1 mol^-1",
+          "+300.0 J K^-1 mol^-1",
+          "+450.0 J K^-1 mol^-1",
+          "+150.0 J K^-1 mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "By thermodynamic convention, the standard molar enthalpy of formation (Delta H_f°) at 298 K is defined as zero for which of the following substances in its standard state?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Diamond, C(diamond)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Liquid bromine, Br2(l)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Ozone gas, O3(g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gaseous water, H2O(g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Standard molar enthalpy of formation (Delta H_f°) is defined as zero for pure elements in their most stable, reference physical state at 298 K and 1 bar pressure. For bromine, the reference state is liquid bromine, Br2(l). For carbon, it is graphite (not diamond); for oxygen, it is dioxygen gas, O2(g) (not ozone); and water is a chemical compound.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்ப இயக்கவியல் மரபின்படி, 298 K-ல் திட்ட நிலையில் உள்ள பின்வரும் பொருட்களில் எதன் திட்ட மோலார் உருவாதல் என்தால்பி (Delta H_f°) சுழியாக வரையறுக்கப்படுகிறது?",
+        "optionTexts": [
+          "வைரம், C(diamond)",
+          "திரவ புரோமின், Br2(l)",
+          "ஓசோன் வாயு, O3(g)",
+          "வாயு நிலை நீர், H2O(g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The normal boiling point of a liquid is 77 °C at 1.0 atm. If its molar enthalpy of vaporization (Delta H_vap) is 30.8 kJ mol^-1, the molar entropy of vaporization (Delta S_vap) of the liquid at its boiling point is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "88.0 J K^-1 mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "400 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "23.7 J K^-1 mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "120.5 J K^-1 mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the normal boiling point, liquid and vapor are at dynamic equilibrium (Delta G = 0), so Delta S_vap = Delta H_vap / T_b. Normal boiling point in Kelvin T_b = 77 + 273 = 350 K. Molar entropy of vaporization Delta S_vap = (30.8 * 1000 J mol^-1) / 350 K = 30800 / 350 = 88.0 J K^-1 mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திரவத்தின் இயல்பு கொதிநிலை 1.0 atm அழுத்தத்தில் 77 °C ஆகும். அதன் மோலார் ஆவியாதல் என்தால்பி (Delta H_vap) 30.8 kJ mol^-1 எனில், அத்திரவத்தின் கொதிநிலையில் மோலார் ஆவியாதல் என்ட்ரோபி (Delta S_vap):",
+        "optionTexts": [
+          "88.0 J K^-1 mol^-1",
+          "400 J K^-1 mol^-1",
+          "23.7 J K^-1 mol^-1",
+          "120.5 J K^-1 mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The lattice enthalpy of solid sodium chloride, NaCl(s), is +788.0 kJ mol^-1. The hydration enthalpies of gaseous ions Na+(g) and Cl-(g) are -406.0 kJ mol^-1 and -378.0 kJ mol^-1, respectively. The standard enthalpy of solution (Delta H_sol°) of NaCl(s) in water is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+4.0 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-4.0 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+784.0 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-784.0 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The standard enthalpy of solution is related to lattice enthalpy and ionic hydration enthalpies by: Delta H_sol° = Lattice Enthalpy + Delta H_hyd°[Na+] + Delta H_hyd°[Cl-]. Substituting the given values: Delta H_sol° = +788.0 kJ mol^-1 + (-406.0 kJ mol^-1) + (-378.0 kJ mol^-1) = +788.0 - 784.0 = +4.0 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட சோடியம் குளோரைடின் (NaCl(s)) படிகக்கூடு என்தால்பி +788.0 kJ mol^-1 ஆகும். வாயு நிலை அயனிகளான Na+(g) மற்றும் Cl-(g) ஆகியவற்றின் நீரேற்ற என்தால்பிகள் முறையே -406.0 kJ mol^-1 மற்றும் -378.0 kJ mol^-1 ஆகும். நீரில் NaCl(s)-ன் திட்ட கரைதல் என்தால்பி (Delta H_sol°):",
+        "optionTexts": [
+          "+4.0 kJ mol^-1",
+          "-4.0 kJ mol^-1",
+          "+784.0 kJ mol^-1",
+          "-784.0 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The enthalpy of atomization of methane, CH4(g), is +1664 kJ mol^-1 and that of ethane, C2H6(g), is +2844 kJ mol^-1. Assuming the C-H bond dissociation enthalpy is identical in both molecules, the C-C bond dissociation enthalpy in ethane is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "330 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "348 kJ mol^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "416 kJ mol^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "280 kJ mol^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Methane contains four C-H bonds: 4 * B(C-H) = 1664 kJ mol^-1 => B(C-H) = 1664 / 4 = 416 kJ mol^-1. Ethane contains one C-C bond and six C-H bonds: Enthalpy of atomization = B(C-C) + 6 * B(C-H) = 2844 kJ mol^-1. Therefore, B(C-C) + 6 * 416 = 2844 => B(C-C) + 2496 = 2844 => B(C-C) = 2844 - 2496 = 348 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மீத்தேனின் (CH4(g)) அணுவாக்கல் என்தால்பி +1664 kJ mol^-1 மற்றும் ஈத்தேனின் (C2H6(g)) அணுவாக்கல் என்தால்பி +2844 kJ mol^-1 ஆகும். இரண்டு மூலக்கூறுகளிலும் C-H பிணைப்புப் பிளவு என்தால்பி சமம் எனக் கருதினால், ஈத்தேனில் உள்ள C-C பிணைப்புப் பிளவு என்தால்பி:",
+        "optionTexts": [
+          "330 kJ mol^-1",
+          "348 kJ mol^-1",
+          "416 kJ mol^-1",
+          "280 kJ mol^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas expands irreversibly from an initial volume of 2.0 L to a final volume of 7.0 L against a constant external pressure of 2.0 bar at 300 K. The magnitude of the work done by the gas (in Joules) is: (Take 1 bar L = 100 J)",
+    "correctAnswer": 1000,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Work done in expansion against constant external pressure is w = -P_ext * (V2 - V1). Here, P_ext = 2.0 bar and Delta V = 7.0 - 2.0 = 5.0 L. Magnitude of work |w| = P_ext * Delta V = 2.0 bar * 5.0 L = 10.0 bar L. Converting to Joules: |w| = 10.0 * 100 J = 1000 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K வெப்பநிலையில் ஒரு நல்லியல்பு வாயு 2.0 bar என்ற மாறா வெளி அழுத்தத்திற்கு எதிராக 2.0 L ஆரம்ப கனஅளவிலிருந்து 7.0 L இறுதி கனஅளவிற்கு மீளாத வகையில் விரிவடைகிறது. அவ்வாயுவினால் செய்யப்பட்ட வேலையின் எண்மதிப்பு (ஜூல்களில்): (1 bar L = 100 J எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Given the thermochemical equations:\n(i) 2Fe(s) + 3/2 O2(g) -> Fe2O3(s); Delta H° = -824 kJ mol^-1\n(ii) CO(g) + 1/2 O2(g) -> CO2(g); Delta H° = -283 kJ mol^-1\nThe standard enthalpy change (Delta H° in kJ) for the metallurgical reduction: Fe2O3(s) + 3CO(g) -> 2Fe(s) + 3CO2(g) is -x kJ. The value of x is:",
+    "correctAnswer": 25,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The target reduction reaction is obtained by multiplying equation (ii) by 3 and subtracting equation (i): Target Delta H° = 3 * Delta H°(ii) - Delta H°(i) = 3 * (-283 kJ) - (-824 kJ) = -849 kJ + 824 kJ = -25 kJ. Since Delta H° is given as -x kJ, x = 25.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்ப வேதியியல் சமன்பாடுகள் கொடுக்கப்பட்டுள்ளன:\n(i) 2Fe(s) + 3/2 O2(g) -> Fe2O3(s); Delta H° = -824 kJ mol^-1\n(ii) CO(g) + 1/2 O2(g) -> CO2(g); Delta H° = -283 kJ mol^-1\nFe2O3(s) + 3CO(g) -> 2Fe(s) + 3CO2(g) என்ற ஒடுக்க வினைக்கான திட்ட என்தால்பி மாற்றம் (Delta H° kJ-ல்) -x kJ எனில், x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The standard molar enthalpy of combustion of liquid ethanol (C2H5OH, molar mass = 46 g mol^-1) is -1260 kJ mol^-1. The mass of ethanol (in grams) required to be completely burned to heat 3.0 kg of water from 20 °C to 70 °C is: (Specific heat capacity of water = 4.2 J g^-1 °C^-1; assume 100% heat transfer efficiency)",
+    "correctAnswer": 23,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Heat required to warm the water q = m * c * Delta T = (3000 g) * (4.2 J g^-1 °C^-1) * (70 - 20 °C) = 3000 * 4.2 * 50 = 630,000 J = 630 kJ. Moles of ethanol required = q / |Delta H_c°| = 630 kJ / 1260 kJ mol^-1 = 0.50 mol. Mass of ethanol = moles * molar mass = 0.50 mol * 46 g mol^-1 = 23 g.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திரவ எத்தனாலின் (C2H5OH, மோலார் நிறை = 46 g mol^-1) திட்ட மோலார் எரிதல் என்தால்பி -1260 kJ mol^-1 ஆகும். 3.0 kg நீரை 20 °C-லிருந்து 70 °C-க்கு வெப்பப்படுத்த முழுமையாக எரிக்கப்பட வேண்டிய எத்தனாலின் நிறை (கிராமில்): (நீரின் தன்வெப்ப ஏற்புத்திறன் = 4.2 J g^-1 °C^-1; வெப்ப இழப்பு இல்லை எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For a reversible gaseous reaction A(g) <=> 2B(g), the standard Gibbs free energy change at 500 K is Delta H° = +19.14 kJ mol^-1. Given that 2.303 * R * 500 = 9570 J mol^-1, the equilibrium constant K_p is expressed as 10^-x. The integer value of x is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The relation between standard Gibbs free energy and equilibrium constant is Delta G° = -2.303 * R * T * log10(K_p). Substituting the values: +19140 J mol^-1 = -9570 J mol^-1 * log10(K_p) => log10(K_p) = -19140 / 9570 = -2.0. Therefore, K_p = 10^-2, which gives x = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K வெப்பநிலையில் A(g) <=> 2B(g) என்ற மீள் வாயு வினைக்கு திட்ட கிப்ஸ் கட்டிலா ஆற்றல் மாற்றம் Delta G° = +19.14 kJ mol^-1 ஆகும். 2.303 * R * 500 = 9570 J mol^-1 எனக் கொடுக்கப்பட்டால், சமநிலை மாறிலி K_p மதிப்பானது 10^-x எனக் குறிப்பிடப்படுகிறது எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The standard enthalpy change for the gas-phase reaction H2(g) + Cl2(g) -> 2HCl(g) is -184 kJ. The bond dissociation enthalpies of H-H and Cl-Cl are 436 kJ mol^-1 and 242 kJ mol^-1, respectively. The bond dissociation enthalpy of the H-Cl bond (in kJ mol^-1) is:",
+    "correctAnswer": 431,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Enthalpy change of reaction Delta H_rxn = [B(H-H) + B(Cl-Cl)] - 2 * B(H-Cl). Substituting values: -184 = [436 + 242] - 2 * B(H-Cl) => -184 = 678 - 2 * B(H-Cl) => 2 * B(H-Cl) = 678 + 184 = 862 kJ mol^-1 => B(H-Cl) = 862 / 2 = 431 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "H2(g) + Cl2(g) -> 2HCl(g) என்ற வாயு நிலை வினைக்கான திட்ட என்தால்பி மாற்றம் -184 kJ ஆகும். H-H மற்றும் Cl-Cl ஆகியவற்றின் பிணைப்புப் பிளவு என்தால்பிகள் முறையே 436 kJ mol^-1 மற்றும் 242 kJ mol^-1 எனில், H-Cl பிணைப்பின் பிணைப்புப் பிளவு என்தால்பி (kJ mol^-1-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "During a thermodynamic process, a closed system releases 180 J of heat to its surroundings while simultaneously performing 70 J of expansion work on the surroundings. The magnitude of the change in internal energy |Delta U| of the system (in Joules) is:",
+    "correctAnswer": 250,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By IUPAC sign convention: Heat released by system q = -180 J. Work done by system on surroundings w = -70 J. From the first law of thermodynamics: Delta U = q + w = (-180 J) + (-70 J) = -250 J. The magnitude of the change in internal energy |Delta U| is 250 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வெப்ப இயக்கவியல் செயல்முறையின் போது, ஒரு மூடிய அமைப்பு தன் சூழலுக்கு 180 J வெப்பத்தை வெளியிடுகிறது, அதே வேளையில் சூழலின் மீது 70 J விரிவடைதல் வேலையைச் செய்கிறது. அவ்வமைப்பின் அக ஆற்றல் மாற்றத்தின் எண்மதிப்பு |Delta U| (ஜூல்களில்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two moles of an ideal monoatomic gas (molar heat capacity at constant volume C_v,m = 1.5 R) are heated from 300 K to 400 K at constant volume. The change in internal energy of the gas Delta U (in Joules) is: (Take R = 8.31 J K^-1 mol^-1)",
+    "correctAnswer": 2493,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Change in internal energy at constant volume is Delta U = n * C_v,m * Delta T. Here n = 2.0 mol, C_v,m = 1.5 * R = 1.5 * 8.31 = 12.465 J K^-1 mol^-1, and Delta T = 400 - 300 = 100 K. Therefore, Delta U = 2 * (1.5 * 8.31) * 100 = 3 * 8.31 * 100 = 2493 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டு மோல் நல்லியல்பு ஓரணு வாயு (மாறா கனஅளவில் மோலார் வெப்ப ஏற்புத்திறன் C_v,m = 1.5 R) மாறா கனஅளவில் 300 K-லிருந்து 400 K-க்கு வெப்பப்படுத்தப்படுகிறது. வாயுவின் அக ஆற்றல் மாற்றம் Delta U (ஜூல்களில்): (R = 8.31 J K^-1 mol^-1 எனக் கொள்க)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The enthalpy of hydrogenation of cyclohexene to cyclohexane is -120 kJ mol^-1: C6H10(l) + H2(g) -> C6H12(l); Delta H° = -120 kJ mol^-1. If benzene possessed three localized, non-interacting double bonds, its theoretical enthalpy of hydrogenation would be three times that of cyclohexene. The experimentally observed enthalpy of hydrogenation of benzene is -208 kJ mol^-1: C6H6(l) + 3H2(g) -> C6H12(l); Delta H° = -208 kJ mol^-1. The resonance energy of benzene (in kJ mol^-1) is:",
+    "correctAnswer": 152,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Theoretical enthalpy of hydrogenation for hypothetical 1,3,5-cyclohexatriene = 3 * (-120 kJ mol^-1) = -360 kJ mol^-1. Experimental enthalpy of hydrogenation of benzene = -208 kJ mol^-1. Resonance energy = |Theoretical Delta H° - Experimental Delta H°| = |-360 - (-208)| = |-152| = 152 kJ mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சைக்ளோஹெக்சீன் சைக்ளோஹெக்சேனாக மாறும் ஹைட்ரஜனேற்ற என்தால்பி -120 kJ mol^-1 ஆகும்: C6H10(l) + H2(g) -> C6H12(l); Delta H° = -120 kJ mol^-1. பென்சீன் மூன்று குறிப்பிட்ட இரட்டைப் பிணைப்புகளைக் கொண்டிருந்தால், அதன் கொள்கை ரீதியான ஹைட்ரஜனேற்ற என்தால்பி சைக்ளோஹெக்சீனைப் போல் மூன்று மடங்காக இருக்கும். பென்சீனின் பரிசோதனை மூலமான ஹைட்ரஜனேற்ற என்தால்பி -208 kJ mol^-1 எனில், பென்சீனின் உடனிசைவு ஆற்றல் (kJ mol^-1-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The molar enthalpy of fusion of ice at its normal melting point of 273 K is 6006 J mol^-1. The molar entropy of fusion of ice (in J K^-1 mol^-1) is:",
+    "correctAnswer": 22,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "At the normal melting point of ice, solid water and liquid water exist in equilibrium at 1 atm, meaning Delta G_fus = 0. Therefore, Delta S_fus = Delta H_fus / T_fus = 6006 J mol^-1 / 273 K = 22 J K^-1 mol^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பனிக்கட்டியின் இயல்பு உருகுநிலையான 273 K-ல் அதன் மோலார் உருகுதல் என்தால்பி 6006 J mol^-1 ஆகும். பனிக்கட்டியின் மோலார் உருகுதல் என்ட்ரோபி (J K^-1 mol^-1-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che04-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_04",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For a chemical reaction, the standard enthalpy change is Delta H° = +45.0 kJ mol^-1 and the standard entropy change is Delta S° = +150.0 J K^-1 mol^-1. Assuming Delta H° and Delta S° remain independent of temperature, the absolute temperature (in K) at which the reaction attains thermodynamic equilibrium (Delta G° = 0) is:",
+    "correctAnswer": 300,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "At equilibrium, Delta G° = Delta H° - T * Delta S° = 0, which yields T = Delta H° / Delta S°. Substituting values: T = (45.0 * 1000 J mol^-1) / (150.0 J K^-1 mol^-1) = 45000 / 150.0 = 300 K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வேதிவினைக்கு திட்ட என்தால்பி மாற்றம் Delta H° = +45.0 kJ mol^-1 மற்றும் திட்ட என்ட்ரோபி மாற்றம் Delta S° = +150.0 J K^-1 mol^-1 ஆகும். Delta H° மற்றும் Delta S° வெப்பநிலையுடன் மாறாது எனக் கொண்டால், இவ்வினை வெப்ப இயக்கவியல் சமநிலையை (Delta G° = 0) அடையும் தனி வெப்பநிலை (K-ல்):",
+        "optionTexts": []
+      }
+    ]
+  }
+]

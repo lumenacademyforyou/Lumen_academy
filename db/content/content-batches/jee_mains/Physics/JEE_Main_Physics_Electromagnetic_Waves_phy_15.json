@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY15-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Maxwell's displacement current I_d across a surface with time-varying electric flux Phi_E is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "epsilon_0 * (dPhi_E / dt)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1 / epsilon_0) * (dPhi_E / dt)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "mu_0 * (dPhi_E / dt)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "epsilon_0 mu_0 * (dPhi_E / dt)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Maxwell's modification of Ampere's circuital law, the displacement current arises from a time-varying electric field and is mathematically defined as I_d = epsilon_0 * (dPhi_E / dt).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காலத்தைப் பொறுத்து மாறும் மின்பாயம் Phi_E கொண்ட ஒரு பரப்பின் வழியே மேக்ஸ்வெல்லின் இடப்பெயர்ச்சி மின்னோட்டம் I_d எதனால் தரப்படுகிறது?",
+        "optionTexts": [
+          "epsilon_0 * (dPhi_E / dt)",
+          "(1 / epsilon_0) * (dPhi_E / dt)",
+          "mu_0 * (dPhi_E / dt)",
+          "epsilon_0 mu_0 * (dPhi_E / dt)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The speed of propagation c of electromagnetic waves in free space (vacuum) is related to permeability mu_0 and permittivity epsilon_0 as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "c = 1 / sqrt(mu_0 epsilon_0)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "c = sqrt(mu_0 epsilon_0)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "c = 1 / (mu_0 epsilon_0)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "c = sqrt(mu_0 / epsilon_0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From Maxwell's electromagnetic wave equations, the velocity of light in vacuum is given by c = 1 / sqrt(mu_0 epsilon_0).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் மின்காந்த அலைகள் பரவும் வேகம் c ஆனது உட்புகுதிறன் mu_0 மற்றும் விடுதிறன் epsilon_0 உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "c = 1 / sqrt(mu_0 epsilon_0)",
+          "c = sqrt(mu_0 epsilon_0)",
+          "c = 1 / (mu_0 epsilon_0)",
+          "c = sqrt(mu_0 / epsilon_0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a plane electromagnetic wave propagating in vacuum, the relation between the amplitude of the electric field E0 and the amplitude of the magnetic field B0 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "E0 = c B0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B0 = c E0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "E0 B0 = c",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "E0 = c^2 B0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In a plane transverse electromagnetic wave in free space, the electric and magnetic field amplitudes are in phase and strictly satisfy the relation E0 / B0 = c, which gives E0 = c B0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் பரவும் ஒரு சமதள மின்காந்த அலையில், மின்புல வீச்சு E0 மற்றும் காந்தப்புல வீச்சு B0 ஆகியவற்றிற்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "E0 = c B0",
+          "B0 = c E0",
+          "E0 B0 = c",
+          "E0 = c^2 B0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The direction of propagation of an electromagnetic wave is always parallel to the vector:",
+    "options": [
+      {
+        "label": "A",
+        "text": "E x B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B x E",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The energy flow and direction of propagation of an electromagnetic wave are specified by the Poynting vector S = (1 / mu_0) * (E x B). Therefore, the wave always propagates along the direction of the vector cross product E x B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மின்காந்த அலையின் பரவும் திசை எப்போதும் எந்த வெக்டருக்கு இணையாக இருக்கும்?",
+        "optionTexts": [
+          "E x B",
+          "B x E",
+          "E",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following optical phenomena conclusively demonstrates the transverse nature of electromagnetic waves?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Interference",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Diffraction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Polarization",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Refraction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Interference, diffraction, and refraction occur in both longitudinal and transverse waves. Polarization is unique to transverse waves because oscillations occur in a plane perpendicular to the direction of propagation, thereby conclusively proving the transverse nature of electromagnetic waves.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்காந்த அலைகளின் குறுக்கலைத் தன்மையை திட்டவட்டமாக நிரூபிக்கும் ஒளியியல் நிகழ்வு எது?",
+        "optionTexts": [
+          "குறுக்கீட்டு விளைவு",
+          "விளிம்பு விளைவு",
+          "தளவிளைவு (Polarization)",
+          "ஒளிவிலகல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following correctly arranges electromagnetic radiations in order of increasing wavelength?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gamma rays < X-rays < Ultraviolet < Microwaves",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Microwaves < Infrared < Visible < X-rays",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "X-rays < Gamma rays < Infrared < Radio waves",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ultraviolet < Visible < Gamma rays < Microwaves",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electromagnetic spectrum arranged in order of increasing wavelength (decreasing frequency and photon energy) is: Gamma rays (< 10^-12 m) < X-rays (10^-12 to 10^-8 m) < Ultraviolet (10^-8 to 4x10^-7 m) < Visible < Infrared < Microwaves (10^-3 to 0.3 m) < Radio waves.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வருவனவற்றில் மின்காந்தக் கதிர்வீச்சுகளை அவற்றின் அலைநீளத்தின் ஏறுவரிசையில் சரியாக வரிசைப்படுத்துவது எது?",
+        "optionTexts": [
+          "காமா கதிர்கள் < எக்ஸ் கதிர்கள் < புற ஊதாக்கதிர்கள் < நுண்ணலைகள்",
+          "நுண்ணலைகள் < அகச்சிவப்பு < கட்புலனாகும் ஒளி < எக்ஸ் கதிர்கள்",
+          "எக்ஸ் கதிர்கள் < காமா கதிர்கள் < அகச்சிவப்பு < ரேடியோ அலைகள்",
+          "புற ஊதாக்கதிர்கள் < கட்புலனாகும் ஒளி < காமா கதிர்கள் < நுண்ணலைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a plane electromagnetic wave traveling in vacuum, the average energy density of the electric field u_E and that of the magnetic field u_B are related by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "u_E = u_B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "u_E = 2 u_B",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "u_B = 2 u_E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "u_E = c u_B",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The average electric energy density is u_E = (1/4) epsilon_0 E0^2 and magnetic energy density is u_B = B0^2 / (4 mu_0). Using E0 = c B0 and c = 1 / sqrt(mu_0 epsilon_0): u_E = (1/4) epsilon_0 (c B0)^2 = (1/4) epsilon_0 [1 / (mu_0 epsilon_0)] B0^2 = B0^2 / (4 mu_0) = u_B. Thus, energy is partitioned equally between electric and magnetic fields.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் செல்லும் ஒரு சமதள மின்காந்த அலையில், மின்புலத்தின் சராசரி ஆற்றல் அடர்த்தி u_E மற்றும் காந்தப்புலத்தின் சராசரி ஆற்றல் அடர்த்தி u_B ஆகியவற்றிற்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "u_E = u_B",
+          "u_E = 2 u_B",
+          "u_B = 2 u_E",
+          "u_E = c u_B"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electromagnetic wave of intensity I falls normally on a surface. The radiation pressure exerted on a perfectly reflecting surface P_ref and on a perfectly absorbing surface P_abs are related by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P_ref = 2 P_abs",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P_abs = 2 P_ref",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P_ref = P_abs",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P_ref = 4 P_abs",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For normal incidence, a photon of energy U carries momentum p = U / c. Upon complete absorption, momentum transferred is Delta p = U / c, so radiation pressure is P_abs = I / c. Upon complete reflection, momentum transferred is Delta p = 2 U / c, so radiation pressure is P_ref = 2 I / c. Thus, P_ref = 2 P_abs.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I செறிவு கொண்ட ஒரு மின்காந்த அலை ஒரு பரப்பின் மீது செங்குத்தாக விழுகிறது. முழுமையாக எதிரொளிக்கும் பரப்பில் ஏற்படும் கதிர்வீச்சு அழுத்தம் P_ref மற்றும் முழுமையாக உறிஞ்சும் பரப்பில் ஏற்படும் அழுத்தம் P_abs ஆகியவற்றுக்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "P_ref = 2 P_abs",
+          "P_abs = 2 P_ref",
+          "P_ref = P_abs",
+          "P_ref = 4 P_abs"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The electric field of a plane electromagnetic wave traveling along the positive z-direction is given by E = E0 cos(k z - omega t) i. The corresponding magnetic field vector B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "B = (E0 / c) cos(k z - omega t) j",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B = - (E0 / c) cos(k z - omega t) j",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "B = (E0 / c) cos(k z - omega t) k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B = (E0 / c) sin(k z - omega t) j",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The wave propagates along the positive z-axis (direction k_hat = +k). The direction of wave propagation satisfies k_hat = E_hat x B_hat. Given E_hat = +i: +k = i x B_hat. Since i x j = k, the magnetic field must oscillate along the +j direction. The amplitude is B0 = E0 / c, and both fields are in phase. Therefore, B = (E0 / c) cos(k z - omega t) j.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நேர் z-அச்சின் வழியே செல்லும் ஒரு சமதள மின்காந்த அலையின் மின்புலம் E = E0 cos(k z - omega t) i எனத் தரப்பட்டுள்ளது. அதற்குரிய காந்தப்புல வெக்டர் B:",
+        "optionTexts": [
+          "B = (E0 / c) cos(k z - omega t) j",
+          "B = - (E0 / c) cos(k z - omega t) j",
+          "B = (E0 / c) cos(k z - omega t) k",
+          "B = (E0 / c) sin(k z - omega t) j"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which electromagnetic radiation is primarily used in RADAR systems for aircraft navigation and speed detection?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Microwaves",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Infrared waves",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ultraviolet rays",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "X-rays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Microwaves (wavelength range approx 1 mm to 0.3 m) are ideal for radar systems because their relatively short wavelengths enable sharp directional beaming with minimal diffraction around atmospheric obstacles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "விமான வழிசெலுத்தல் மற்றும் வேகத்தைக் கண்டறிவதற்கான ரேடார் (RADAR) அமைப்புகளில் முதன்மையாகப் பயன்படுத்தப்படும் மின்காந்தக் கதிர்வீச்சு எது?",
+        "optionTexts": [
+          "நுண்ணலைகள் (Microwaves)",
+          "அகச்சிவப்பு அலைகள்",
+          "புற ஊதாக்கதிர்கள்",
+          "எக்ஸ் கதிர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The greenhouse effect that maintains the Earth's average temperature is primarily caused by atmospheric absorption and re-radiation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Infrared radiation",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ultraviolet radiation",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Visible light",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Microwaves",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Earth's surface absorbs visible solar radiation and reradiates energy at longer wavelengths, primarily in the infrared spectrum. Greenhouse gases (such as CO2, CH4, and water vapor) absorb these outgoing infrared waves and re-emit them in all directions, trapping thermal energy in the lower atmosphere.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியின் சராசரி வெப்பநிலையைப் பராமரிக்கும் பசுமை இல்ல விளைவு (greenhouse effect) வளிமண்டலத்தால் எந்தக் கதிர்வீச்சு உறிஞ்சப்படுவதால் ஏற்படுகிறது?",
+        "optionTexts": [
+          "அகச்சிவப்புக் கதிர்வீச்சு (Infrared radiation)",
+          "புற ஊதாக்கதிர்வீச்சு",
+          "கட்புலனாகும் ஒளி",
+          "நுண்ணலைகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electromagnetic wave travels through a non-magnetic medium having relative permittivity (dielectric constant) epsilon_r = 4.0 and relative permeability mu_r = 1.0. The refractive index n of the medium and the speed of light v in this medium are respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n = 2.0, v = 1.5 x 10^8 m/s",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n = 4.0, v = 0.75 x 10^8 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n = 2.0, v = 3.0 x 10^8 m/s",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n = 1.414, v = 2.12 x 10^8 m/s",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The refractive index of a non-magnetic medium is n = sqrt(mu_r * epsilon_r) = sqrt(1.0 * 4.0) = 2.0. The velocity of the electromagnetic wave in the medium is v = c / n = (3.0 x 10^8 m/s) / 2.0 = 1.5 x 10^8 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்காந்த அலை ஒன்று ஒப்புமை விடுதிறன் epsilon_r = 4.0 மற்றும் ஒப்புமை உட்புகுதிறன் mu_r = 1.0 கொண்ட காந்தமற்ற ஊடகத்தின் வழியே பரவுகிறது. ஊடகத்தின் ஒளிவிலகல் எண் n மற்றும் ஒளியின் வேகம் v முறையே:",
+        "optionTexts": [
+          "n = 2.0, v = 1.5 x 10^8 m/s",
+          "n = 4.0, v = 0.75 x 10^8 m/s",
+          "n = 2.0, v = 3.0 x 10^8 m/s",
+          "n = 1.414, v = 2.12 x 10^8 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to classical electromagnetic theory, electromagnetic waves are radiated by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An accelerated electric charge",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A charge moving with constant velocity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A stationary electric charge",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "An electric dipole at rest",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A stationary charge produces only a static electric field. A charge moving at constant velocity produces a constant magnetic field alongside its electric field, but no radiation. An accelerating (or oscillating) electric charge continuously radiates electromagnetic energy in the form of electromagnetic waves.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "செவ்வியல் மின்காந்தக் கொள்கையின்படி, மின்காந்த அலைகள் எதனால் கதிர்வீசப்படுகின்றன?",
+        "optionTexts": [
+          "முடுக்கப்பட்ட மின்னூட்டம்",
+          "மாறாத் திசைவேகத்தில் இயங்கும் மின்னூட்டம்",
+          "நிலையான மின் கட்டமைப்பு",
+          "ஓய்வில் உள்ள மின் இருமுனை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The intensity I (average energy transported per unit area per unit time) of a plane electromagnetic wave having peak electric field E0 in vacuum is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) epsilon_0 c E0^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "epsilon_0 c E0^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/2) c E0^2 / mu_0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "c E0^2 / (2 epsilon_0)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The intensity of a plane electromagnetic wave is the time-averaged Poynting vector magnitude: I = <S> = u_total * c. Since u_total = (1/2) epsilon_0 E0^2, we obtain I = (1/2) epsilon_0 c E0^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் பெரும மின்புலம் E0 கொண்ட ஒரு சமதள மின்காந்த அலையின் செறிவு I (ஓரலகு பரப்பில் ஓரலகு நேரத்தில் கடத்தப்படும் சராசரி ஆற்றல்):",
+        "optionTexts": [
+          "(1/2) epsilon_0 c E0^2",
+          "epsilon_0 c E0^2",
+          "(1/2) c E0^2 / mu_0",
+          "c E0^2 / (2 epsilon_0)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The ozone layer in the Earth's stratosphere absorbs which harmful portion of the solar spectrum, thereby protecting life on Earth?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ultraviolet rays",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "X-rays",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Infrared radiation",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gamma rays",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The stratospheric ozone layer absorbs energetic, harmful ultraviolet radiation (specifically UV-B and UV-C wavelengths shorter than approx 310 nm), converting it into heat and preventing cellular damage to terrestrial organisms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவியின் அடுக்கு மண்டலத்தில் (stratosphere) உள்ள ஓசோன் படலம் சூரியக் கதிர்வீச்சின் எந்த ஆபத்தான பகுதியை உறிஞ்சி பூமியில் உள்ள உயிரினங்களைப் பாதுகாக்கிறது?",
+        "optionTexts": [
+          "புற ஊதாக்கதிர்கள் (Ultraviolet rays)",
+          "எக்ஸ் கதிர்கள்",
+          "அகச்சிவப்புக் கதிர்கள்",
+          "காமா கதிர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate circular capacitor of plate radius R is being charged by a current I. At a radial distance r from the central axis between the plates (where r < R), the magnitude of the induced magnetic field B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(mu_0 I r) / (2 pi R^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(mu_0 I) / (2 pi r)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(mu_0 I R) / (2 pi r^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(mu_0 I r^2) / (2 pi R^3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The conduction current charging the capacitor produces a uniform displacement current density between the circular plates: J_d = I / (pi R^2). Applying Ampere-Maxwell law to a concentric circular path of radius r < R: oint B . dl = mu_0 I_{d,enclosed} => B (2 pi r) = mu_0 [J_d * (pi r^2)] = mu_0 [I * (r^2 / R^2)]. Solving for B gives B = (mu_0 I r) / (2 pi R^2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய வட்ட வடிவ தட்டுகளைக் கொண்ட ஒரு இணைத்தட்டு மின்தேக்கி I மின்னோட்டத்தால் மின்னூட்டப்படுகிறது. தட்டுகளுக்கு இடையே உள்ள மைய அச்சிலிருந்து r தொலைவில் (r < R) தூண்டப்பட்ட காந்தப்புலத்தின் எண்மதிப்பு:",
+        "optionTexts": [
+          "(mu_0 I r) / (2 pi R^2)",
+          "(mu_0 I) / (2 pi r)",
+          "(mu_0 I R) / (2 pi r^2)",
+          "(mu_0 I r^2) / (2 pi R^3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A beam of light of total energy U falls normally on a flat surface with reflection coefficient rho (reflects a fraction rho and absorbs a fraction (1 - rho)). The net linear momentum transferred to the surface is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1 + rho) U / c",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1 - rho) U / c",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2 - rho) U / c",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 rho U / c",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The incident momentum is p_i = U / c. The absorbed portion has energy (1 - rho) U, transferring momentum Delta p_abs = (1 - rho) U / c. The reflected portion has energy rho U, reversing direction and transferring momentum Delta p_ref = 2 (rho U / c). The total momentum transferred is Delta p = (1 - rho) U / c + 2 rho U / c = (1 + rho) U / c.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "U மொத்த ஆற்றல் கொண்ட ஒரு ஒளிக்கற்றை rho எதிரொளிப்புக் குணகம் கொண்ட தட்டையான பரப்பின் மீது செங்குத்தாக விழுகிறது. அத்தளத்திற்கு மாற்றப்படும் நிகர நேரியல் உந்தம்:",
+        "optionTexts": [
+          "(1 + rho) U / c",
+          "(1 - rho) U / c",
+          "(2 - rho) U / c",
+          "2 rho U / c"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In charge-free and current-free vacuum, the electric field vector E of an electromagnetic wave satisfies which of the following wave differential equations?",
+    "options": [
+      {
+        "label": "A",
+        "text": "nabla^2 E = mu_0 epsilon_0 (d^2 E / dt^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "nabla^2 E = (1 / (mu_0 epsilon_0)) (d^2 E / dt^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "nabla x E = mu_0 epsilon_0 (d E / dt)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "nabla . E = mu_0 epsilon_0 (d^2 E / dt^2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Taking the curl of Maxwell's Faraday equation: curl(curl E) = - d/dt(curl B). Using curl B = mu_0 epsilon_0 (dE/dt) in free space (where J = 0) and the vector identity curl(curl E) = grad(div E) - nabla^2 E with div E = 0 (charge-free) gives - nabla^2 E = - mu_0 epsilon_0 (d^2 E / dt^2), or nabla^2 E = mu_0 epsilon_0 (d^2 E / dt^2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்னூட்டம் மற்றும் மின்னோட்டம் இல்லாத வெற்றிடத்தில், மின்காந்த அலையின் மின்புல வெக்டர் E பின்வரும் எந்த அலை வகைக்கெழுச் சமன்பாட்டை நிறைவு செய்கிறது?",
+        "optionTexts": [
+          "nabla^2 E = mu_0 epsilon_0 (d^2 E / dt^2)",
+          "nabla^2 E = (1 / (mu_0 epsilon_0)) (d^2 E / dt^2)",
+          "nabla x E = mu_0 epsilon_0 (d E / dt)",
+          "nabla . E = mu_0 epsilon_0 (d^2 E / dt^2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A point source of isotropic electromagnetic radiation emits power P0 uniformly in all directions. At a distance R from the source, the peak electric field amplitude E0 is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt( mu_0 c P0 / (2 pi R^2) )",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt( P0 / (2 pi epsilon_0 c R^2) )",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt( mu_0 P0 / (4 pi c R^2) )",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt( 2 P0 / (pi epsilon_0 c R^2) )",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The intensity of radiation at distance R from an isotropic point source is I = P0 / (4 pi R^2). In terms of peak electric field, intensity is I = (1/2) epsilon_0 c E0^2. Equating the two: (1/2) epsilon_0 c E0^2 = P0 / (4 pi R^2) => E0^2 = 2 P0 / (4 pi epsilon_0 c R^2) = P0 / (2 pi epsilon_0 c R^2). Since 1 / epsilon_0 = mu_0 c^2, this can be written as E0 = sqrt( mu_0 c P0 / (2 pi R^2) ).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சமச்சீர் புள்ளி மூலமானது அனைத்து திசைகளிலும் P0 மின்காந்தத் திறனைச் சீராக வெளியிடுகிறது. மூலத்திலிருந்து R தொலைவில் பெரும மின்புல வீச்சு E0:",
+        "optionTexts": [
+          "sqrt( mu_0 c P0 / (2 pi R^2) )",
+          "sqrt( P0 / (2 pi epsilon_0 c R^2) )",
+          "sqrt( mu_0 P0 / (4 pi c R^2) )",
+          "sqrt( 2 P0 / (pi epsilon_0 c R^2) )"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An unpolarized electromagnetic wave in air is incident on a dielectric surface of refractive index sqrt(3). If the reflected wave is completely linearly polarized, the angle between the reflected wave vector and the refracted wave vector is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "90 degrees",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "60 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "45 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "120 degrees",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Brewster's law, when light is incident at the polarizing angle theta_p (where tan theta_p = n = sqrt(3) => theta_p = 60 degrees), the reflected ray consists purely of vibrations perpendicular to the plane of incidence. At this condition, the reflected ray and refracted ray are always mutually perpendicular (angle = 90 degrees).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காற்றில் உள்ள ஒரு தளவிளைவற்ற மின்காந்த அலை sqrt(3) ஒளிவிலகல் எண் கொண்ட மின்காப்புப் பரப்பின் மீது படுகிறது. எதிரொளிக்கப்பட்ட அலை முழுமையாக தளவிளைவு பெற்றிருந்தால், எதிரொளிப்பு அலை வெக்டருக்கும் விலகல் அலை வெக்டருக்கும் இடைப்பட்ட கோணம்:",
+        "optionTexts": [
+          "90 டிகிரி",
+          "60 டிகிரி",
+          "45 டிகிரி",
+          "120 டிகிரி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A microwave transmitter emits electromagnetic waves of frequency 30 GHz (3 x 10^10 Hz). Taking the speed of light in vacuum as c = 3 x 10^8 m/s, the wavelength of these waves is _____ cm.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The wavelength lambda is related to wave speed c and frequency f by lambda = c / f. Substituting c = 3 x 10^8 m/s and f = 3 x 10^10 Hz: lambda = (3 x 10^8 m/s) / (3 x 10^10 Hz) = 10^-2 m = 1 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நுண்ணலை பரப்பி 30 GHz (3 x 10^10 Hz) அதிர்வெண் கொண்ட மின்காந்த அலைகளை வெளியிடுகிறது. வெற்றிடத்தில் ஒளியின் வேகம் c = 3 x 10^8 m/s எனக் கொண்டால், இவ்வலைகளின் அலைநீளம் _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a plane electromagnetic wave traveling in vacuum, the amplitude of the oscillating electric field is 600 V/m. Taking the speed of light in vacuum as c = 3 x 10^8 m/s, the amplitude of the oscillating magnetic field is _____ microtesla.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The amplitude of the magnetic field B0 is related to the electric field amplitude E0 by B0 = E0 / c. Given E0 = 600 V/m and c = 3 x 10^8 m/s: B0 = 600 / (3 x 10^8) = 2 x 10^-6 T = 2 microtesla.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் செல்லும் ஒரு சமதள மின்காந்த அலையில், அலையுறும் மின்புலத்தின் வீச்சு 600 V/m ஆகும். ஒளியின் வேகம் c = 3 x 10^8 m/s எனில், அலையுறும் காந்தப்புலத்தின் வீச்சு _____ மைக்ரோடெஸ்லா (microtesla).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A parallel plate capacitor is connected across a DC charging circuit such that a steady conduction current of 4 A flows through the connecting wires. The magnitude of the displacement current through the region between the capacitor plates is _____ A.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the generalized Ampere-Maxwell law, the continuity of total current requires that the conduction current I_c in the connecting leads must exactly equal the displacement current I_d passing across the dielectric gap between the capacitor plates: I_d = I_c = 4 A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு இணைத்தட்டு மின்தேக்கியானது இணைப்பு கம்பிகளின் வழியே 4 A மாறா கடத்து மின்னோட்டம் பாயும் வகையில் ஒரு சுற்றில் இணைக்கப்பட்டுள்ளது. மின்தேக்கித் தட்டுகளுக்கு இடையே உள்ள பகுதியில் பாயும் இடப்பெயர்ச்சி மின்னோட்டத்தின் எண்மதிப்பு _____ A.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A parallel beam of light of power 900 W falls perpendicularly on a completely absorbing flat surface. Taking the speed of light in vacuum as c = 3 x 10^8 m/s, the total force exerted by the light beam on the surface is _____ micronewtons (mu N).",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a completely absorbing surface, the rate of momentum transferred by an electromagnetic beam of power P is F = P / c. Substituting P = 900 W and c = 3 x 10^8 m/s: F = 900 / (3 x 10^8) = 3 x 10^-6 N = 3 micronewtons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "900 W திறன் கொண்ட ஒரு இணை ஒளிக்கற்றை முழுமையாக உறிஞ்சும் ஒரு தட்டையான பரப்பின் மீது செங்குத்தாக விழுகிறது. ஒளியின் வேகம் c = 3 x 10^8 m/s எனக் கொண்டால், ஒளிக்கற்றை அத்தளத்தின் மீது செலுத்தும் மொத்த விசை _____ மைக்ரோநியூட்டன் (mu N).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The magnetic field component of a plane electromagnetic wave in vacuum is given by B = (4 x 10^-7 T) sin(k x - omega t) j. The peak amplitude of the associated electric field is _____ V/m (take c = 3 x 10^8 m/s).",
+    "correctAnswer": 120,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The relationship between the amplitudes of the electric and magnetic fields in an electromagnetic wave traveling in vacuum is E0 = c * B0. Given B0 = 4 x 10^-7 T and c = 3 x 10^8 m/s: E0 = (3 x 10^8 m/s) * (4 x 10^-7 T) = 120 V/m.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் ஒரு சமதள மின்காந்த அலையின் காந்தப்புலக் கூறு B = (4 x 10^-7 T) sin(k x - omega t) j எனத் தரப்படுகிறது. அதனுடன் தொடர்புடைய பெரும மின்புல வீச்சு _____ V/m (c = 3 x 10^8 m/s எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a plane electromagnetic wave propagating through vacuum, the amplitude of the electric field is E0 = 10 V/m. The total average electromagnetic energy density stored in the wave is expressed as N * epsilon_0 Joules/m^3, where epsilon_0 is the permittivity of free space. Find the integer value of N.",
+    "correctAnswer": 50,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total average energy density of an electromagnetic wave in vacuum is the sum of the electric and magnetic contributions: u_total = (1/4) epsilon_0 E0^2 + (1/4) (B0^2 / mu_0) = (1/2) epsilon_0 E0^2. Substituting E0 = 10 V/m: u_total = (1/2) * epsilon_0 * (10)^2 = (1/2) * 100 * epsilon_0 = 50 * epsilon_0 Joules/m^3. Thus, N = 50.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் பரவும் ஒரு சமதள மின்காந்த அலையில், மின்புலத்தின் வீச்சு E0 = 10 V/m ஆகும். அலையில் சேமிக்கப்பட்டுள்ள மொத்த சராசரி மின்காந்த ஆற்றல் அடர்த்தி N * epsilon_0 ஜூல்/மீ^3 எனில் (epsilon_0 என்பது வெற்றிடத்தின் விடுதிறன்), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A plane electromagnetic wave traveling in vacuum has a propagation constant (wave number) k = 2 rad/m. The angular frequency omega of the wave is expressed as N x 10^8 rad/s (take c = 3 x 10^8 m/s). Find the integer value of N.",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The angular frequency omega is related to wave number k and speed of light c by omega = c * k. Given k = 2 rad/m and c = 3 x 10^8 m/s: omega = (3 x 10^8 m/s) * (2 rad/m) = 6 x 10^8 rad/s. Comparing with N x 10^8 rad/s, we get N = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெற்றிடத்தில் பரவும் ஒரு சமதள மின்காந்த அலை k = 2 rad/m அலை எண்ணைக் கொண்டுள்ளது. அலையின் கோண அதிர்வெண் omega ஆனது N x 10^8 rad/s எனக் குறிப்பிடப்பட்டால் (c = 3 x 10^8 m/s), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A laser beam transfers a total energy of 1500 J onto a target surface of cross-sectional area 5 m^2 over an exposure duration of 10 seconds. The average intensity of the laser radiation on the target is _____ W/m^2.",
+    "correctAnswer": 30,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The intensity I of a wave is defined as the energy transferred per unit area per unit time: I = Energy / (Area * time). Substituting Energy = 1500 J, Area = 5 m^2, and time = 10 s: I = 1500 / (5 * 10) = 1500 / 50 = 30 W/m^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு லேசர் கற்றை 10 விநாடிகள் காலத்தில் 5 m^2 குறுக்குவெட்டுப் பரப்பளவு கொண்ட இலக்கின் மீது 1500 J மொத்த ஆற்றலைச் செலுத்துகிறது. இலக்கின் மீது லேசர் கதிர்வீச்சின் சராசரி செறிவு _____ W/m^2.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A high-power laser emits a continuous beam of power 600 W. The beam strikes a flat, perfectly reflecting mirror normally. Taking the speed of light in vacuum as c = 3 x 10^8 m/s, the radiation force exerted on the mirror is _____ micronewtons (mu N).",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For normal incidence on a perfectly reflecting surface, each photon of energy U carries momentum p = U / c, and upon reflection suffers a momentum change of Delta p = 2 p = 2 U / c. The radiation force exerted by a continuous beam of power P is F = 2 P / c. Substituting P = 600 W and c = 3 x 10^8 m/s: F = (2 * 600) / (3 x 10^8) = 1200 / (3 x 10^8) = 4 x 10^-6 N = 4 micronewtons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "600 W திறன் கொண்ட ஒரு சக்திவாய்ந்த லேசர் தொடர்ச்சியான கற்றையை வெளியிடுகிறது. இக்கற்றை ஒரு தட்டையான முழுமையாக எதிரொளிக்கும் கண்ணாடியின் மீது செங்குத்தாக விழுகிறது. ஒளியின் வேகம் c = 3 x 10^8 m/s எனக் கொண்டால், கண்ணாடியின் மீது செலுத்தப்படும் கதிர்வீச்சு விசை _____ மைக்ரோநியூட்டன் (mu N).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY15-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_15",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electromagnetic radiation pulse carrying a total energy of 900 J strikes a black surface at normal incidence and is completely absorbed. The magnitude of the linear momentum delivered to the surface is expressed as N x 10^-6 kg m/s (take c = 3 x 10^8 m/s). Find the integer value of N.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "When electromagnetic radiation carrying total energy U is completely absorbed by a surface, the linear momentum transferred to the surface is p = U / c. Given U = 900 J and c = 3 x 10^8 m/s: p = 900 J / (3 x 10^8 m/s) = 3 x 10^-6 kg m/s. Comparing with N x 10^-6 kg m/s, the integer value of N is 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "900 J மொத்த ஆற்றலைக் கொண்ட ஒரு மின்காந்தக் கதிர்வீச்சுத் துடிப்பு ஒரு கருமைப் பரப்பின் மீது செங்குத்தாக விழுந்து முழுமையாக உறிஞ்சப்படுகிறது. அத்தளத்திற்கு அளிக்கப்பட்ட நேரியல் உந்தத்தின் எண்மதிப்பு N x 10^-6 kg m/s எனக் குறிக்கப்பட்டால் (c = 3 x 10^8 m/s), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

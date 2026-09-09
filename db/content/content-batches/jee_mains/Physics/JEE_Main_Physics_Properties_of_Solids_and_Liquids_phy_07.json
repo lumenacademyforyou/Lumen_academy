@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY07-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two wires A and B are made of the same material. The length of wire A is twice that of B, and its diameter is half that of B. If both wires are subjected to the same stretching force, the ratio of the elongation produced in wire A to that in wire B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "8 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Elongation Delta L = F L / (A Y) = F L / [pi (d/2)^2 Y] = 4 F L / (pi d^2 Y). Since F and Y are the same: Delta L is proportional to L / d^2. Thus, (Delta L_A) / (Delta L_B) = (L_A / L_B) * (d_B / d_A)^2 = (2 / 1) * (2 / 1)^2 = 2 * 4 = 8 : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு கம்பிகள் ஒரே பொருளால் செய்யப்பட்டுள்ளன. கம்பி A இன் நீளம் B-ஐப் போல இருமடங்கு மற்றும் அதன் விட்டம் B-ல் பாதியாகும். இரு கம்பிகளும் ஒரே இழுவிசைக்கு உட்படுத்தப்பட்டால், கம்பி A-ல் ஏற்படும் நீட்சிக்கும் கம்பி B-ல் ஏற்படும் நீட்சிக்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "8 : 1",
+          "4 : 1",
+          "2 : 1",
+          "1 : 8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The elastic potential energy stored per unit volume (energy density u) of a stretched wire of Young's modulus Y under longitudinal strain epsilon is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) Y epsilon",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(1/2) Y epsilon^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Y epsilon^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/2) Y^2 epsilon",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Elastic energy density is u = (1/2) * Stress * Strain. Since Stress = Y * Strain = Y * epsilon, substituting gives u = (1/2) * (Y * epsilon) * epsilon = (1/2) Y epsilon^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீள்பக்கத் திரிபு epsilon-க்கு உட்படுத்தப்பட்ட யங் குணகம் Y கொண்ட ஒரு நீட்டப்பட்ட கம்பியின் ஓரலகு பருமனில் சேமிக்கப்படும் மீட்சி நிலை ஆற்றல் (ஆற்றல் அடர்த்தி u):",
+        "optionTexts": [
+          "(1/2) Y epsilon",
+          "(1/2) Y epsilon^2",
+          "Y epsilon^2",
+          "(1/2) Y^2 epsilon"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a hydraulic lift, the areas of the smaller and larger pistons are 5 cm^2 and 500 cm^2 respectively. What force must be applied to the smaller piston to support a load of mass 1500 kg on the larger piston? (take g = 10 m/s^2)",
+    "options": [
+      {
+        "label": "A",
+        "text": "150 N",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 N",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1500 N",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "75 N",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Pascal's principle, pressure is transmitted equally: F1 / A1 = F2 / A2. Here F2 = m g = 1500 kg * 10 m/s^2 = 15000 N. Thus, F1 = F2 * (A1 / A2) = 15000 * (5 / 500) = 15000 * 0.01 = 150 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீரியல் உயர்த்தியில் (hydraulic lift), சிறிய மற்றும் பெரிய பிஸ்டன்களின் பரப்பளவுகள் முறையே 5 cm^2 மற்றும் 500 cm^2 ஆகும். பெரிய பிஸ்டனில் உள்ள 1500 kg எடையைத் தாங்க சிறிய பிஸ்டனில் செலுத்தப்பட வேண்டிய விசை (g = 10 m/s^2 எனக்கொள்க):",
+        "optionTexts": [
+          "150 N",
+          "15 N",
+          "1500 N",
+          "75 N"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A spherical raindrop of radius r falls through air with a constant terminal velocity v_t. Under identical conditions, the terminal velocity of another raindrop of radius 2r of the same density will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_t",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 v_t",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 v_t",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "8 v_t",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Terminal velocity of a spherical body falling through a viscous medium is given by Stokes' formula: v_t = (2/9) * [r^2 (rho - sigma) g] / eta. Therefore, v_t is directly proportional to r^2. For radius 2r: v_t' = (2)^2 * v_t = 4 v_t.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r ஆரமுடைய ஒரு கோள வடிவ மழைத்துளி காற்றில் மாறா முனையத் திசைவேகம் v_t-யுடன் விழுகிறது. அதே அடர்த்தியுடைய 2r ஆரமுள்ள மற்றொரு மழைத்துளியின் முனையத் திசைவேகம்:",
+        "optionTexts": [
+          "v_t",
+          "2 v_t",
+          "4 v_t",
+          "8 v_t"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The excess pressure inside a spherical liquid drop of radius R with surface tension T is Delta P1, while the excess pressure inside a spherical soap bubble of the same radius R in air is Delta P2. The ratio Delta P1 : Delta P2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 : 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A liquid drop has one free surface, so excess pressure is Delta P1 = 2T / R. A soap bubble in air has two free surfaces (inner and outer), so excess pressure is Delta P2 = 4T / R. Therefore, Delta P1 / Delta P2 = (2T/R) / (4T/R) = 1 / 2 = 1 : 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பரப்பு இழுவிசை T மற்றும் ஆரம் R கொண்ட ஒரு கோள வடிவ நீர்மத்துளியின் உள்ளே உள்ள மிகை அழுத்தம் Delta P1, அதே ஆரம் R கொண்ட சோப்புக் குமிழியின் உள்ளே உள்ள மிகை அழுத்தம் Delta P2 எனில், Delta P1 : Delta P2 விகிதம்:",
+        "optionTexts": [
+          "1 : 1",
+          "1 : 2",
+          "2 : 1",
+          "1 : 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Water flows steadily through a horizontal pipe of non-uniform cross-section. If the diameter of the pipe at section 1 is 4 cm and at section 2 is 2 cm, the ratio of the flow speed at section 1 to that at section 2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By the equation of continuity for an incompressible fluid: A1 * v1 = A2 * v2 => (pi d1^2 / 4) * v1 = (pi d2^2 / 4) * v2. Therefore, v1 / v2 = (d2 / d1)^2 = (2 / 4)^2 = (1 / 2)^2 = 1 / 4 = 1 : 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரற்ற குறுக்குவெட்டுப் பரப்பளவு கொண்ட ஒரு கிடைமட்டக் குழாயின் வழியே நீர் சீராகப் பாய்கிறது. பிரிவு 1 இல் குழாயின் விட்டம் 4 cm மற்றும் பிரிவு 2 இல் 2 cm எனில், பிரிவு 1 மற்றும் பிரிவு 2 இல் பாய்வு வேகங்களின் விகிதம்:",
+        "optionTexts": [
+          "1 : 4",
+          "1 : 2",
+          "2 : 1",
+          "4 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A large spherical drop of water of radius R is broken into n identical small droplets of radius r. If T is the surface tension of water, rho is its density, and s is its specific heat capacity, the decrease in temperature of the droplets (assuming no heat exchange with surroundings) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3 T / (rho s)) * (1/r - 1/R)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2 T / (rho s)) * (1/r - 1/R)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(3 T / (rho s)) * (1/R - 1/r)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(T / (rho s)) * (1/r - 1/R)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total volume is conserved: (4/3) pi R^3 = n * (4/3) pi r^3 => n = R^3 / r^3. Increase in surface area: Delta A = n * (4 pi r^2) - 4 pi R^3 / R = 4 pi (n r^2 - R^2) = 4 pi (R^3 / r - R^2) = 4 pi R^3 (1/r - 1/R). The work done to create new surface area is W = T * Delta A. This energy is drawn from the internal energy of the drop: W = m s Delta theta => T * 4 pi R^3 (1/r - 1/R) = [ (4/3) pi R^3 rho ] s Delta theta => Delta theta = (3 T / (rho s)) * (1/r - 1/R).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமுடைய ஒரு பெரிய கோள வடிவ நீர்த்துளி r ஆரமுடைய n ஒத்த சிறு துளிகளாக உடைக்கப்படுகிறது. நீரின் பரப்பு இழுவிசை T, அடர்த்தி rho, மற்றும் தன்வெப்ப ஏற்புதிறன் s எனில், துளிகளின் வெப்பநிலை குறைவு:",
+        "optionTexts": [
+          "(3 T / (rho s)) * (1/r - 1/R)",
+          "(2 T / (rho s)) * (1/r - 1/R)",
+          "(3 T / (rho s)) * (1/R - 1/r)",
+          "(T / (rho s)) * (1/r - 1/R)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A capillary tube of radius r is dipped vertically in water, and water rises to a vertical height h in it. If the capillary tube is now tilted at an angle of 60 degrees with the vertical, the length of the water column along the tube will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "h",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "h / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 h",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "h / sqrt(3)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The vertical height of the liquid column supported by surface tension depends solely on the radius and surface tension: h = (2 T cos theta_c) / (r rho g). When the tube is tilted by an angle alpha with the vertical, the vertical height h remains constant. If L is the length of the liquid column along the tube, then h = L cos alpha => L = h / cos alpha. For alpha = 60 degrees: L = h / cos(60 deg) = h / 0.5 = 2h.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r ஆரமுடைய ஒரு நுண்புழைக் குழாய் செங்குத்தாக நீரில் மூழ்க வைக்கப்படும் போது, நீர் அதில் h செங்குத்து உயரத்திற்கு உயர்கிறது. அக்குழாய் செங்குத்துடன் 60 டிகிரி கோணத்தில் சாய்க்கப்பட்டால், குழாயின் வழியே நீர்த் தம்பத்தின் நீளம்:",
+        "optionTexts": [
+          "h",
+          "h / 2",
+          "2 h",
+          "h / sqrt(3)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A cylindrical tank of height H is filled completely with water. A small hole is punched in the side wall at a depth y below the top surface. The horizontal distance (range R) from the foot of the wall at which the issuing water jet strikes the ground is maximum when y equals:",
+    "options": [
+      {
+        "label": "A",
+        "text": "H / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3H / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H / 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The velocity of efflux from Torricelli's law is v = sqrt(2 g y). The time of flight of the jet to fall through remaining height (H - y) is t = sqrt(2 (H - y) / g). The horizontal range is R = v * t = sqrt(2 g y) * sqrt(2 (H - y) / g) = 2 sqrt(y (H - y)). For R to be maximum, the product y (H - y) must be maximum. Differentiating with respect to y: d/dy (y H - y^2) = H - 2y = 0 => y = H / 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "H உயரமுள்ள ஒரு உருளை வடிவத் தொட்டி நீரினால் முழுமையாக நிரப்பப்பட்டுள்ளது. மேல் மேற்பரப்பிற்கு கீழே y ஆழத்தில் பக்கவாட்டுச் சுவரில் ஒரு சிறு துளை இடப்படுகிறது. வெளியேறும் நீர்த்தாரை தரையைத் தொடும் கிடைமட்டத் தொலைவு பெருமமாக இருக்க y இன் மதிப்பு:",
+        "optionTexts": [
+          "H / 4",
+          "H / 2",
+          "3H / 4",
+          "H / 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a horizontal wind tunnel, air of density rho flows past the upper and lower surfaces of an airplane wing. The speed of air is v_top over the upper wing surface and v_bottom over the lower wing surface. If the wing area is A, the net upward aerodynamic lift force generated on the wing is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/2) rho A (v_top^2 - v_bottom^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) rho A (v_top^2 + v_bottom^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "rho A (v_top^2 - v_bottom^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1/2) rho A (v_top - v_bottom)^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Applying Bernoulli's equation across the horizontal streamlines above and below the wing: P_bottom + (1/2) rho v_bottom^2 = P_top + (1/2) rho v_top^2. The pressure difference is Delta P = P_bottom - P_top = (1/2) rho (v_top^2 - v_bottom^2). The upward lift force is Lift = Delta P * A = (1/2) rho A (v_top^2 - v_bottom^2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கிடைமட்ட காற்றுச் சுரங்கத்தில், rho அடர்த்தி கொண்ட காற்று ஒரு விமான இறக்கையின் மேல் மற்றும் கீழ் பரப்புகளின் வழியே பாய்கிறது. மேல் பரப்பில் காற்றின் வேகம் v_top மற்றும் கீழ் பரப்பில் v_bottom ஆகும். இறக்கையின் பரப்பளவு A எனில், அதன் மீது செயல்படும் நிகர மேல்நோக்கிய தூக்கு விசை:",
+        "optionTexts": [
+          "(1/2) rho A (v_top^2 - v_bottom^2)",
+          "(1/2) rho A (v_top^2 + v_bottom^2)",
+          "rho A (v_top^2 - v_bottom^2)",
+          "(1/2) rho A (v_top - v_bottom)^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A small metal sphere of mass m and density rho is dropped into a tall jar containing a viscous liquid of density sigma (where rho > sigma). When the sphere achieves two-thirds of its terminal velocity, the net downward acceleration of the sphere is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "g / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(g / 3) * (1 - sigma / rho)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(2g / 3) * (1 - sigma / rho)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "g * (1 - sigma / rho)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At any speed v, the net downward force is F_net = m g - F_buoyant - F_viscous = m g (1 - sigma/rho) - 6 pi eta r v. At terminal speed v_t, F_net = 0, so 6 pi eta r v_t = m g (1 - sigma/rho). When speed v = (2/3) v_t, the viscous drag is (2/3) * [m g (1 - sigma/rho)]. Thus, F_net = m g (1 - sigma/rho) - (2/3) m g (1 - sigma/rho) = (1/3) m g (1 - sigma/rho). The acceleration is a = F_net / m = (g / 3) * (1 - sigma / rho).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையும் rho அடர்த்தியும் கொண்ட ஒரு சிறு உலோகக் கோளம் sigma அடர்த்தி கொண்ட பாகுநிலைக் கொண்ட நீர்மத்தினுள் (rho > sigma) விடப்படுகிறது. கோளம் அதன் முனையத் திசைவேகத்தில் மூன்றில் இரண்டு பங்கை அடையும் போது, அதன் நிகர கீழ்நோக்கிய முடுக்கம்:",
+        "optionTexts": [
+          "g / 3",
+          "(g / 3) * (1 - sigma / rho)",
+          "(2g / 3) * (1 - sigma / rho)",
+          "g * (1 - sigma / rho)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The bulk modulus of water is B. When water at the surface is taken to a depth where the hydrostatic pressure increases by Delta P, the fractional change in its density (Delta rho / rho) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta P / B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B / Delta P",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Delta P / (B + Delta P)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Delta P / (2B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bulk modulus is defined as B = - Delta P / (Delta V / V). For a fixed mass m = rho * V, differentiating gives Delta m = rho Delta V + V Delta rho = 0 => Delta V / V = - Delta rho / rho. Substituting this into the bulk modulus expression gives B = - Delta P / (- Delta rho / rho) = Delta P / (Delta rho / rho). Therefore, Delta rho / rho = Delta P / B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரின் பருமக் குணகம் B ஆகும். மேற்பரப்பில் உள்ள நீர் நிலைமின்னியல் அழுத்தம் Delta P அதிகரிக்கும் ஆழத்திற்குக் கொண்டு செல்லப்படும் போது, அதன் அடர்த்தியில் ஏற்படும் பின்ன மாற்றம் (Delta rho / rho):",
+        "optionTexts": [
+          "Delta P / B",
+          "B / Delta P",
+          "Delta P / (B + Delta P)",
+          "Delta P / (2B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A cylindrical wire of Poisson's ratio sigma is subjected to longitudinal tensile strain epsilon. The fractional change in the volume of the wire (Delta V / V) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1 - 2 sigma) epsilon",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1 + 2 sigma) epsilon",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1 - sigma) epsilon",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1 + sigma) epsilon",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Volume of a cylinder is V = pi r^2 L. Taking logarithms and differentiating: ln V = ln pi + 2 ln r + ln L => Delta V / V = 2 (Delta r / r) + (Delta L / L). By definition of Poisson's ratio, lateral strain is Delta r / r = - sigma * (Delta L / L) = - sigma * epsilon. Therefore, Delta V / V = 2 (- sigma * epsilon) + epsilon = (1 - 2 sigma) epsilon.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பாய்சன் விகிதம் sigma கொண்ட ஒரு உருளை வடிவக் கம்பி நீள்பக்க இழுவிசைத் திரிபு epsilon-க்கு உட்படுத்தப்படுகிறது. கம்பியின் பருமனில் ஏற்படும் பின்ன மாற்றம் (Delta V / V):",
+        "optionTexts": [
+          "(1 - 2 sigma) epsilon",
+          "(1 + 2 sigma) epsilon",
+          "(1 - sigma) epsilon",
+          "(1 + sigma) epsilon"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A drop of liquid of surface tension T placed on a flat horizontal solid plate is in equilibrium with its vapor. If T_SA, T_SL, and T_LA denote the solid-air, solid-liquid, and liquid-air interfacial surface tensions respectively, the contact angle theta satisfies Young's equation as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "cos theta = (T_SA - T_SL) / T_LA",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "cos theta = (T_SL - T_SA) / T_LA",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "cos theta = (T_LA - T_SL) / T_SA",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "cos theta = (T_SA + T_SL) / T_LA",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the contact line, horizontal balance of surface tension forces gives T_SA = T_SL + T_LA cos theta. Rearranging gives cos theta = (T_SA - T_SL) / T_LA. This is Young's relation.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தட்டையான கிடைமட்டத் தகட்டின் மீதுள்ள நீர்மத்துளி அதன் ஆவியுடன் சமநிலையில் உள்ளது. T_SA, T_SL, மற்றும் T_LA ஆகியவை முறையே திண்மம்-காற்று, திண்மம்-நீர்மம், மற்றும் நீர்மம்-காற்று இடைமுகப் பரப்பு இழுவிசைகள் எனில், சேர்க்கைக் கோணம் theta பூர்த்தி செய்யும் சமன்பாடு:",
+        "optionTexts": [
+          "cos theta = (T_SA - T_SL) / T_LA",
+          "cos theta = (T_SL - T_SA) / T_LA",
+          "cos theta = (T_LA - T_SL) / T_SA",
+          "cos theta = (T_SA + T_SL) / T_LA"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Reynolds number R_e determines the nature of fluid flow through a cylindrical pipe of diameter D. If density is rho, viscosity is eta, and average flow velocity is v, then R_e is defined as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "rho v D / eta",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "rho v / (eta D)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "eta v D / rho",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "rho eta D / v",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Reynolds number is a dimensionless quantity representing the ratio of inertial forces to viscous forces: R_e = (Inertial force) / (Viscous force) = (rho v^2 / D) / (eta v / D^2) = rho v D / eta.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "D விட்டம் கொண்ட உருளைக் குழாயின் வழியே பாயும் பாய்ம ஓட்டத்தின் தன்மையை ரெனால்ட்ஸ் எண் R_e தீர்மானிக்கிறது. அடர்த்தி rho, பாகியல் எண் eta, மற்றும் சராசரி திசைவேகம் v எனில், R_e இன் வரையறை:",
+        "optionTexts": [
+          "rho v D / eta",
+          "rho v / (eta D)",
+          "eta v D / rho",
+          "rho eta D / v"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An open cylindrical vessel containing a liquid rotates with a constant angular velocity omega about its central vertical axis. The profile of the free liquid surface formed in equilibrium is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A paraboloid of revolution given by y = omega^2 r^2 / (2g)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A cone given by y = omega r / g",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A sphere of radius g / omega^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A catenary given by y = cosh(omega r / g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the rotating frame of reference, a fluid element at distance r from the axis experiences outward centrifugal force dm omega^2 r and downward gravity dm g. The tangent to the surface satisfies dy/dr = (dm omega^2 r) / (dm g) = omega^2 r / g. Integrating with respect to r gives y(r) - y(0) = integral (omega^2 r / g) dr = omega^2 r^2 / (2g). This describes a paraboloid of revolution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீர்மத்தைக் கொண்ட ஒரு திறந்த உருளைக் கலன் அதன் மைய செங்குத்து அச்சைப் பற்றி மாறா கோணத் திசைவேகம் omega-வுடன் சுழல்கிறது. சமநிலையில் உருவாகும் நீர்மத்தின் வெளி மேற்பரப்பின் வடிவம்:",
+        "optionTexts": [
+          "y = omega^2 r^2 / (2g) எனத் தரப்படும் சுழல் பரவளையம் (paraboloid)",
+          "y = omega r / g எனத் தரப்படும் கூம்பு",
+          "g / omega^2 ஆரம் கொண்ட கோளம்",
+          "y = cosh(omega r / g) எனத் தரப்படும் சங்கிலி வளைவு (catenary)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A uniform U-tube of cross-sectional area A contains a non-viscous, incompressible liquid of total column length L and density rho. If the liquid in one arm is depressed slightly by a distance y and released, the time period of the resulting simple harmonic oscillation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 pi sqrt(L / (2g))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 pi sqrt(L / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 pi sqrt(2L / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "pi sqrt(L / g)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When the liquid in one column is displaced down by y, the level in the other arm rises by y, creating a level difference of 2y. The net restoring force acting on the entire liquid of mass M = A L rho is F_restoring = - (2 y A rho g) = - (2 rho A g) y. Equation of motion: M (d^2y/dt^2) = - (2 A rho g) y => (A L rho) (d^2y/dt^2) = - (2 A rho g) y => d^2y/dt^2 = - (2g / L) y. Thus, angular frequency is omega = sqrt(2g / L) and the time period is T = 2 pi / omega = 2 pi sqrt(L / (2g)).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குறுக்குவெட்டுப் பரப்பளவு A கொண்ட ஒரு சீரான U-வடிவக் குழாயில் L மொத்த நீளமும் rho அடர்த்தியும் கொண்ட பாகுநிலையற்ற நீர்மம் உள்ளது. ஒரு பக்கத்தில் நீர்மம் y அளவு லேசாக அழுத்தப்பட்டு விடுவிக்கப்பட்டால், ஏற்படும் சீரிசை அலைவின் அலைவுக்காலம்:",
+        "optionTexts": [
+          "2 pi sqrt(L / (2g))",
+          "2 pi sqrt(L / g)",
+          "2 pi sqrt(2L / g)",
+          "pi sqrt(L / g)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A thin film of water of surface tension T and thickness d is trapped between two parallel flat glass plates. If the wetted area of each plate is A and the contact angle is assumed to be zero (cos theta = 1), the attractive force pulling the two plates together is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 A T / d",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A T / d",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 A T / d",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A T / (2 d)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The liquid meniscus between the two plates is curved with radius of curvature r1 = d / 2 in the vertical plane (concave outward) and r2 = infinity in the horizontal plane. The pressure deficit inside the water film compared to atmospheric pressure is Delta P = T * (1/r1 + 1/r2) = T / (d / 2) = 2T / d. Because the pressure inside is less than atmospheric, atmospheric pressure exerts an inward force on both plates: F = Delta P * A = 2 A T / d.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பரப்பு இழுவிசை T மற்றும் தடிமன் d கொண்ட ஒரு மெல்லிய நீர்ப்படலம் இரு இணை கண்ணாடித் தகடுகளுக்கு இடையே மாட்டிக்கொண்டுள்ளது. நனைந்த பரப்பளவு A மற்றும் சேர்க்கைக் கோணம் சுழி (cos theta = 1) எனில், இரு தகடுகளையும் ஒன்றாக ஈர்க்கும் விசை:",
+        "optionTexts": [
+          "2 A T / d",
+          "A T / d",
+          "4 A T / d",
+          "A T / (2 d)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A cylindrical vessel of cross-sectional area A is filled with water up to height H. A small orifice of area a (where a << A) is opened at the bottom. The total time taken to completely empty the vessel is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(A / a) * sqrt(2H / g)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2A / a) * sqrt(2H / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(A / (2a)) * sqrt(2H / g)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(A / a) * sqrt(H / (2g))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let the water height be h at time t. Rate of outflow is a * v = a * sqrt(2 g h). By volume conservation: -A (dh/dt) = a sqrt(2 g h) => dt = - (A / a) * (1 / sqrt(2g)) * h^(-1/2) dh. Integrating from h = H to h = 0: t_empty = (A / a) * (1 / sqrt(2g)) * [2 sqrt(h)]_{0}^{H} = (A / a) * (2 sqrt(H) / sqrt(2g)) = (A / a) * sqrt(2H / g).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A குறுக்குவெட்டுப் பரப்பளவு கொண்ட ஒரு உருளை வடிவக் கலன் H உயரம் வரை நீரினால் நிரப்பப்பட்டுள்ளது. அதன் அடியில் a பரப்பளவு கொண்ட ஒரு சிறு துளை (a << A) திறக்கப்படுகிறது. கலன் முழுமையாக காலியாக எடுக்கும் மொத்த நேரம்:",
+        "optionTexts": [
+          "(A / a) * sqrt(2H / g)",
+          "(2A / a) * sqrt(2H / g)",
+          "(A / (2a)) * sqrt(2H / g)",
+          "(A / a) * sqrt(H / (2g))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A metal rod of Young's modulus Y, area of cross-section A, and coefficient of linear thermal expansion alpha is clamped firmly between two unyielding rigid walls. If the temperature of the rod is increased by Delta T, the thermal force exerted by the rod on the walls is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Y A alpha Delta T",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Y alpha Delta T / A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Y A Delta T / alpha",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A alpha Delta T / Y",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The unconstrained thermal elongation would be Delta L = L * alpha * Delta T, corresponding to thermal strain epsilon = Delta L / L = alpha * Delta T. Because the rigid walls completely prevent any expansion, a compressive mechanical strain equal to the thermal strain is set up: Stress / Y = alpha * Delta T => Stress = Y alpha Delta T. The force exerted on the walls is F = Stress * A = Y A alpha Delta T.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங் குணகம் Y, குறுக்குவெட்டுப் பரப்பு A, மற்றும் நீள் வெப்ப விரிவுக் குணகம் alpha கொண்ட ஒரு உலோகக் கம்பி இரு அசையாத திடமான சுவர்களுக்கு இடையே உறுதியாகப் பொருத்தப்பட்டுள்ளது. கம்பியின் வெப்பநிலை Delta T அதிகரித்தால், கம்பி சுவர்களின் மீது செலுத்தும் வெப்ப விசை:",
+        "optionTexts": [
+          "Y A alpha Delta T",
+          "Y alpha Delta T / A",
+          "Y A Delta T / alpha",
+          "A alpha Delta T / Y"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A steel wire of length 2 m is stretched by 4 mm under a stretching load of 2000 N. The elastic work done in stretching the wire is _____ J.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Work done in stretching a wire within the elastic limit is given by W = (1/2) * Force * Elongation = (1/2) * F * Delta L. Substituting F = 2000 N and Delta L = 4 mm = 4 x 10^-3 m: W = (1/2) * 2000 * (4 x 10^-3) = 1000 * 4 x 10^-3 = 4 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 m நீளமுள்ள ஒரு எஃகுக் கம்பி 2000 N இழுவிசையினால் 4 mm நீட்சியடைகிறது. கம்பியை நீட்டுவதில் செய்யப்பட்ட மீட்சி வேலை _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A spherical soap bubble floating in air has a radius of 2 cm. If the surface tension of the soap solution is 0.03 N/m, the excess pressure inside the bubble is _____ Pa.",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A soap bubble in air has two liquid-air interfaces. Excess pressure is Delta P = 4T / R. Given T = 0.03 N/m and R = 2 cm = 0.02 m: Delta P = (4 * 0.03 N/m) / (0.02 m) = 0.12 / 0.02 = 6 Pa.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காற்றில் மிதக்கும் ஒரு கோள வடிவ சோப்புக் குமிழியின் ஆரம் 2 cm ஆகும். சோப்புக் கரைசலின் பரப்பு இழுவிசை 0.03 N/m எனில், குமிழியின் உள்ளே உள்ள மிகை அழுத்தம் _____ Pa.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A hydraulic press has circular pistons of radii 2 cm and 10 cm. If an effort force of 20 N is applied to the smaller piston, the maximum load force that can be supported by the larger piston is _____ N.",
+    "correctAnswer": 500,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Pascal's law: F1 / A1 = F2 / A2 => F2 = F1 * (A2 / A1) = F1 * (pi R2^2 / pi R1^2) = F1 * (R2 / R1)^2. Substituting F1 = 20 N, R1 = 2 cm, and R2 = 10 cm: F2 = 20 * (10 / 2)^2 = 20 * (5)^2 = 20 * 25 = 500 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீரியல் அழுத்தகம் 2 cm மற்றும் 10 cm ஆரங்கள் கொண்ட வட்ட வடிவ பிஸ்டன்களைக் கொண்டுள்ளது. சிறிய பிஸ்டனில் 20 N விசை செலுத்தப்பட்டால், பெரிய பிஸ்டனால் தாங்கக்கூடிய பெரும சுமை விசை _____ N.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Sixty-four (64) identical small spherical water droplets, each of radius r, coalesce to form a single large spherical drop of radius R. The ratio of the total initial surface energy of the 64 droplets to the surface energy of the single large drop is _____.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let r be the radius of each droplet and R be the radius of the big drop. Conserving volume: (4/3) pi R^3 = 64 * (4/3) pi r^3 => R^3 = 64 r^3 => R = 4r. Initial total surface energy of 64 droplets: U_initial = 64 * (4 pi r^2 T) = 256 pi r^2 T. Final surface energy of the single large drop: U_final = 4 pi R^2 T = 4 pi (4r)^2 T = 64 pi r^2 T. The ratio is U_initial / U_final = (256 pi r^2 T) / (64 pi r^2 T) = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தலா r ஆரம் கொண்ட அறுபத்து நான்கு (64) ஒத்த சிறு கோள வடிவ நீர்த்துளிகள் ஒன்றிணைந்து R ஆரம் கொண்ட ஒரு பெரிய ஒற்றைத் துளியாக மாறுகின்றன. 64 துளிகளின் மொத்த ஆரம்ப பரப்பு ஆற்றலுக்கும் பெரிய துளியின் பரப்பு ஆற்றலுக்கும் உள்ள விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A clean glass capillary tube of internal radius r = 0.7 mm is dipped vertically into water of surface tension T = 0.07 N/m and density rho = 1000 kg/m^3. Taking contact angle theta = 0 degrees and g = 10 m/s^2, the height to which water rises in the capillary is _____ cm.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The capillary rise height is given by h = (2 T cos theta) / (r rho g). Substituting T = 0.07 N/m, theta = 0 deg (cos 0 = 1), r = 0.7 mm = 7 x 10^-4 m, rho = 1000 kg/m^3, and g = 10 m/s^2: h = (2 * 0.07 * 1) / (7 x 10^-4 * 1000 * 10) = 0.14 / 7 = 0.02 m = 2 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "உள் ஆரம் r = 0.7 mm கொண்ட ஒரு சுத்தமான கண்ணாடி நுண்புழைக் குழாய் T = 0.07 N/m பரப்பு இழுவிசையும் rho = 1000 kg/m^3 அடர்த்தியும் கொண்ட நீரில் செங்குத்தாக வைக்கப்படுகிறது. சேர்க்கைக் கோணம் theta = 0 மற்றும் g = 10 m/s^2 எனக் கொண்டால், நீர் உயரும் உயரம் _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A large open storage tank contains water. A small leak develops on the vertical side wall of the tank at a depth of 5 m below the open water surface. Neglecting viscosity and taking g = 10 m/s^2, the speed of efflux of water escaping from the hole is _____ m/s.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Torricelli's theorem for efflux speed from an open tank: v = sqrt(2 g h). Given depth h = 5 m and g = 10 m/s^2: v = sqrt(2 * 10 * 5) = sqrt(100) = 10 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பெரிய திறந்த நீர்த் தொட்டியில் நீர் உள்ளது. மேல் நீர் மேற்பரப்பிற்கு கீழே 5 m ஆழத்தில் பக்கவாட்டுச் சுவரில் ஒரு சிறு கசிவு துளை ஏற்படுகிறது. பாகுநிலையைப் புறக்கணித்து g = 10 m/s^2 எனக் கொண்டால், துளையிலிருந்து வெளியேறும் நீரின் பாயும் வேகம் _____ m/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two spherical raindrops of the same liquid fall through air with terminal speeds. The radius of the second drop is 3 times the radius of the first drop. If the terminal speed of the first raindrop is 2 m/s, the terminal speed of the second raindrop is _____ m/s.",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Terminal speed of a spherical body falling through a fluid of viscosity eta is given by v_t = (2/9) * [r^2 (rho - sigma) g] / eta. Therefore, terminal speed is directly proportional to the square of the radius: v_t proportional to r^2. Thus, v_t2 / v_t1 = (r2 / r1)^2 = (3 / 1)^2 = 9. Given v_t1 = 2 m/s: v_t2 = 9 * 2 = 18 m/s.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே நீர்மத்தினால் ஆன இரு கோள வடிவ மழைத்துளிகள் முனையத் திசைவேகங்களுடன் காற்றில் விழுகின்றன. இரண்டாவது துளியின் ஆரம் முதலாவது துளியின் ஆரத்தைப் போல 3 மடங்கு ஆகும். முதல் துளியின் முனையத் திசைவேகம் 2 m/s எனில், இரண்டாவது துளியின் முனையத் திசைவேகம் _____ m/s.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A horizontal metal plate of surface area 0.1 m^2 rests on a 1 mm thick layer of castor oil of dynamic viscosity eta = 0.5 Pa s placed on a fixed table. The horizontal force required to pull the plate at a constant velocity of 2 m/s is _____ N.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Newton's law of viscosity, the viscous drag force is F = eta * A * (dv / dy). Here eta = 0.5 Pa s, area A = 0.1 m^2, velocity v = 2 m/s, and thickness dy = 1 mm = 10^-3 m. Substituting these values: F = 0.5 * 0.1 * (2 / 10^-3) = 0.05 * 2000 = 100 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.1 m^2 பரப்பளவு கொண்ட ஒரு கிடைமட்ட உலோகத் தகடு, நிலையான மேசையின் மீது வைக்கப்பட்டுள்ள 1 mm தடிமனும் eta = 0.5 Pa s பாகியல் எண்ணும் கொண்ட ஆமணக்கு எண்ணெய் அடுக்கின் மீது உள்ளது. அத்தகட்டை 2 m/s மாறாத் திசைவேகத்தில் இழுக்கத் தேவையான கிடைமட்ட விசை _____ N.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A solid cube of wood of side 10 cm and density 900 kg/m^3 floats vertically at the interface between an upper layer of oil (density 800 kg/m^3) and a lower layer of water (density 1000 kg/m^3). The height of the portion of the cube submerged in the water is _____ cm.",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let h be the height of the cube submerged in water (in cm). Then the remaining height (10 - h) cm is submerged in the oil layer. For floating equilibrium, Weight of cube = Total buoyant force from water and oil: V_total * rho_wood * g = V_water * rho_water * g + V_oil * rho_oil * g. Since cross-sectional area A is uniform: (10 cm) * 900 = h * 1000 + (10 - h) * 800 => 9000 = 1000 h + 8000 - 800 h => 1000 = 200 h => h = 5 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "10 cm பக்க அளவும் 900 kg/m^3 அடர்த்தியும் கொண்ட ஒரு மரக் கனசதுரம், எண்ணெய் (அடர்த்தி 800 kg/m^3) மற்றும் நீர் (அடர்த்தி 1000 kg/m^3) ஆகிய இரு அடுக்குகளின் இடைமுகத்தில் செங்குத்தாக மிதக்கிறது. நீரின் அடுக்கினுள் மூழ்கியுள்ள கனசதுரப் பகுதியின் உயரம் _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY07-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_07",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Water flows horizontally through a Venturi tube of cross-sectional area A1 = 20 cm^2 at the entrance and throat area A2 = 10 cm^2. The height difference of water in the vertical manometer tubes connected to the entrance and throat is h = 60 cm. Taking g = 10 m/s^2, the volume flow rate of water through the tube is _____ liters/second.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "By the continuity equation: A1 * v1 = A2 * v2 => v2 = (A1 / A2) * v1 = (20 / 10) * v1 = 2 v1. Applying Bernoulli's equation between entrance and throat: P1 - P2 = (1/2) rho (v2^2 - v1^2) = (1/2) rho ((2 v1)^2 - v1^2) = (3/2) rho v1^2. The pressure head difference is P1 - P2 = rho g h. Equating both expressions: (3/2) rho v1^2 = rho g h => v1 = sqrt(2 g h / 3). Substituting g = 10 m/s^2 and h = 0.60 m: v1 = sqrt(2 * 10 * 0.60 / 3) = sqrt(12 / 3) = sqrt(4) = 2 m/s. The volume rate of flow is Q = A1 * v1 = (20 x 10^-4 m^2) * (2 m/s) = 40 x 10^-4 m^3/s = 4 x 10^-3 m^3/s. Since 1 m^3 = 1000 liters, Q = (4 x 10^-3) * 1000 = 4 liters/second.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A1 = 20 cm^2 நுழைவுப் பரப்பளவும் A2 = 10 cm^2 தொண்டை குறுக்குவெட்டுப் பரப்பளவும் கொண்ட கிடைமட்ட வென்ச்சுரி குழாயின் வழியே நீர் பாய்கிறது. இரு பிரிவுகளுக்கு இடையே உள்ள செங்குத்து அழுத்தமானிக் குழாய்களில் நீர்ம மட்ட வேறுபாடு h = 60 cm ஆகும். g = 10 m/s^2 எனக் கொண்டால், குழாயின் வழியே நீரின் பருமப் பாய்வு வீதம் வினாடிக்கு _____ லிட்டர்கள் ஆகும்.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

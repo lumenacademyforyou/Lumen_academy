@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat05-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^4 in the binomial expansion of (2x + 3)^6 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1080",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2160",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4320",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "720",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The general term in the expansion of (a + b)^n is T_(r+1) = C(n, r) * a^(n-r) * b^r. Here a = 2x, b = 3, and n = 6: T_(r+1) = C(6, r) * (2x)^(6-r) * 3^r = C(6, r) * 2^(6-r) * 3^r * x^(6-r). For the coefficient of x^4, set 6 - r = 4 => r = 2. Then T_3 = C(6, 2) * 2^4 * 3^2 * x^4 = 15 * 16 * 9 * x^4 = 2160 * x^4. Thus, the coefficient is 2160.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(2x + 3)^6 என்ற ஈருறுப்பு விரிவில் x^4-ன் கெழு:",
+        "optionTexts": [
+          "1080",
+          "2160",
+          "4320",
+          "720"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The middle term in the expansion of (x^2 - 1/x)^8 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "70 x^4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-70 x^4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "56 x^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-56 x^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since n = 8 is even, there is exactly one middle term, which is T_(8/2 + 1) = T_5. Using T_(r+1) = C(n, r) * a^(n-r) * b^r with r = 4: T_5 = C(8, 4) * (x^2)^4 * (-1/x)^4 = 70 * x^8 * (1/x^4) = 70 x^4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x^2 - 1/x)^8 என்ற விரிவின் நடு உறுப்பு:",
+        "optionTexts": [
+          "70 x^4",
+          "-70 x^4",
+          "56 x^2",
+          "-56 x^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The sum of all binomial coefficients in the expansion of (1 + x)^10 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "512",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1024",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2048",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "256",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The sum of all binomial coefficients C(n, 0) + C(n, 1) + ... + C(n, n) is obtained by substituting x = 1 into (1 + x)^n. For n = 10, the sum is (1 + 1)^10 = 2^10 = 1024.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x)^10 என்ற விரிவில் உள்ள அனைத்து ஈருறுப்புக் கெழுக்களின் கூடுதல்:",
+        "optionTexts": [
+          "512",
+          "1024",
+          "2048",
+          "256"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of terms in the expansion of (x + 2y + 3z)^10 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "55",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "66",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "121",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "78",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The number of distinct terms in the multinomial expansion of (x_1 + x_2 + ... + x_k)^n is given by C(n + k - 1, k - 1). Here n = 10 and k = 3. Therefore, the total number of terms is C(10 + 3 - 1, 3 - 1) = C(12, 2) = (12 * 11) / 2 = 66.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + 2y + 3z)^10 என்ற விரிவில் உள்ள மொத்த உறுப்புகளின் எண்ணிக்கை:",
+        "optionTexts": [
+          "55",
+          "66",
+          "121",
+          "78"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The term independent of x in the expansion of (2x + 1/(3x^2))^9 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T_7",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T_6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "T_4",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "T_3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The general term is T_(r+1) = C(9, r) * (2x)^(9-r) * (1/(3x^2))^r = C(9, r) * 2^(9-r) * (1/3)^r * x^(9 - 3r). For the term to be independent of x, set 9 - 3r = 0 => r = 3. Thus, the independent term is T_(3+1) = T_4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(2x + 1/(3x^2))^9 என்ற விரிவில் x-ஐச் சாராத உறுப்பு:",
+        "optionTexts": [
+          "T_7",
+          "T_6",
+          "T_4",
+          "T_3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of C(n, 0) - C(n, 1) + C(n, 2) - C(n, 3) + ... + (-1)^n * C(n, n) for any positive integer n >= 1 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2^n",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2^(n-1)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From the binomial expansion of (1 - x)^n = sum_{r=0}^n (-1)^r * C(n, r) * x^r, substituting x = 1 gives (1 - 1)^n = 0^n = 0 for all integers n >= 1. Hence, the alternating sum of binomial coefficients is 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "n >= 1 என்ற ஏதேனும் ஒரு மிகை முழு எண்ணிற்கு, C(n, 0) - C(n, 1) + C(n, 2) - C(n, 3) + ... + (-1)^n * C(n, n)-ன் மதிப்பு:",
+        "optionTexts": [
+          "2^n",
+          "2^(n-1)",
+          "0",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the coefficients of x^7 and x^8 in the expansion of (2 + x/3)^n are equal, then the value of n is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "55",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "49",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "56",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "63",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The coefficient of x^r in (2 + x/3)^n is C(n, r) * 2^(n-r) * (1/3)^r. Setting coefficients of x^7 and x^8 equal: C(n, 7) * 2^(n-7) * (1/3)^7 = C(n, 8) * 2^(n-8) * (1/3)^8 => [C(n, 7) / C(n, 8)] * 2 = 1/3 => [8 / (n - 7)] * 2 = 1/3 => 16 / (n - 7) = 1/3 => n - 7 = 48 => n = 55.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(2 + x/3)^n என்ற விரிவில் x^7 மற்றும் x^8 ஆகியவற்றின் கெழுக்கள் சமம் எனில், n-ன் மதிப்பு:",
+        "optionTexts": [
+          "55",
+          "49",
+          "56",
+          "63"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The remainder obtained when 7^103 is divided by 25 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "24",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Rewrite 7^103 = 7 * (7^2)^51 = 7 * (49)^51 = 7 * (50 - 1)^51. By the binomial theorem: (50 - 1)^51 = 50k - 1 = 25(2k) - 1. Then 7 * (50k - 1) = 25(14k) - 7 = 25m - 7. Converting to a positive remainder modulo 25 gives 25(m - 1) + (25 - 7) = 25q + 18. Thus, the remainder is 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "7^103 என்ற எண்ணை 25-ஆல் வகுக்கும்போது கிடைக்கும் மீதி:",
+        "optionTexts": [
+          "7",
+          "18",
+          "24",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The sum of the coefficients of all odd powers of x in the expansion of (1 + x)^20 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2^19",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2^20",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2^18",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2^21",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the expansion of (1 + x)^n, the sum of coefficients of odd powers of x is C(n, 1) + C(n, 3) + C(n, 5) + ... = 2^(n-1). For n = 20, the sum is 2^(20 - 1) = 2^19.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x)^20 என்ற விரிவில் x-ன் ஒற்றைப்படை அடுக்குகளைக் கொண்ட உறுப்புகளின் கெழுக்களின் கூடுதல்:",
+        "optionTexts": [
+          "2^19",
+          "2^20",
+          "2^18",
+          "2^21"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of the term independent of x in the expansion of (x + 1/x^2)^6 * (x - 1/x^2)^6 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-20",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-15",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Combine the factors: [(x + 1/x^2)(x - 1/x^2)]^6 = (x^2 - 1/x^4)^6. The general term is T_(r+1) = C(6, r) * (x^2)^(6-r) * (-1/x^4)^r = C(6, r) * (-1)^r * x^(12 - 6r). For the term independent of x: 12 - 6r = 0 => r = 2. Then T_3 = C(6, 2) * (-1)^2 = 15 * 1 = 15.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + 1/x^2)^6 * (x - 1/x^2)^6 என்ற பெருக்கலின் விரிவில் x-ஐச் சாராத உறுப்பின் மதிப்பு:",
+        "optionTexts": [
+          "-20",
+          "15",
+          "-15",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the fractional part of 2^403 / 15 is k / 15, then the value of k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Rewrite 2^403 = 2^(4*100 + 3) = 2^3 * (2^4)^100 = 8 * (16)^100 = 8 * (15 + 1)^100. Using the binomial theorem: (15 + 1)^100 = 15M + 1. Thus, 2^403 = 8 * (15M + 1) = 15(8M) + 8. Dividing by 15 gives 8M + 8/15. The fractional part {2^403 / 15} is 8/15. Hence, k = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2^403 / 15-ன் பின்னப் பகுதி k / 15 எனில், k-ன் மதிப்பு:",
+        "optionTexts": [
+          "2",
+          "4",
+          "8",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^5 in the expansion of (1 + x^2)^5 * (1 + x)^4 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "60",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "40",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "50",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "(1 + x^2)^5 = sum_{r=0}^5 C(5, r) x^(2r) and (1 + x)^4 = sum_{k=0}^4 C(4, k) x^k. We require 2r + k = 5. Case 1: r = 1 => k = 3, giving C(5, 1) * C(4, 3) = 5 * 4 = 20. Case 2: r = 2 => k = 1, giving C(5, 2) * C(4, 1) = 10 * 4 = 40. Total coefficient of x^5 = 20 + 40 = 60.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x^2)^5 * (1 + x)^4 என்ற பெருக்கலின் விரிவில் x^5-ன் கெழு:",
+        "optionTexts": [
+          "60",
+          "40",
+          "50",
+          "30"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the ratio of the 7th term from the beginning to the 7th term from the end in the expansion of (2^(1/3) + 3^(-1/3))^n is 1/6, then the value of n is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "9",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The 7th term from the beginning is T_7 = C(n, 6) * (2^(1/3))^(n-6) * (3^(-1/3))^6. The 7th term from the end is T'_7 = C(n, 6) * (3^(-1/3))^(n-6) * (2^(1/3))^6. Ratio T_7 / T'_7 = [(2^(1/3))^(n-12)] / [(3^(-1/3))^(n-12)] = [2^(1/3) * 3^(1/3)]^(n-12) = 6^((n-12)/3). Given this equals 1/6 = 6^(-1): (n - 12) / 3 = -1 => n - 12 = -3 => n = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(2^(1/3) + 3^(-1/3))^n என்ற விரிவில் தொடக்கத்திலிருந்து 7-வது உறுப்பிற்கும் இறுதியிலிருந்து 7-வது உறுப்பிற்கும் உள்ள விகிதம் 1/6 எனில், n-ன் மதிப்பு:",
+        "optionTexts": [
+          "8",
+          "9",
+          "10",
+          "12"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of sum_{r=1}^{15} r * [C(15, r) / C(15, r - 1)] is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "120",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "105",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "135",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "150",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the combination identity C(n, r) / C(n, r - 1) = (n - r + 1) / r: with n = 15, r * [C(15, r) / C(15, r - 1)] = r * [(15 - r + 1) / r] = 16 - r. Summing from r = 1 to 15: sum_{r=1}^{15} (16 - r) = 15 + 14 + ... + 1 = (15 * 16) / 2 = 120.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{r=1}^{15} r * [C(15, r) / C(15, r - 1)] என்ற கூடுதலின் மதிப்பு:",
+        "optionTexts": [
+          "120",
+          "105",
+          "135",
+          "150"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If (1 + x - 2x^2)^6 = 1 + a_1 x + a_2 x^2 + ... + a_12 x^12, then the value of a_2 + a_4 + a_6 + ... + a_12 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "31",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "32",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "64",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let P(x) = (1 + x - 2x^2)^6 = a_0 + a_1 x + a_2 x^2 + ... + a_12 x^12, where a_0 = P(0) = 1. For x = 1: P(1) = 0 = a_0 + a_1 + ... + a_12. For x = -1: P(-1) = (1 - 1 - 2)^6 = 64 = a_0 - a_1 + a_2 - ... + a_12. Adding both gives P(1) + P(-1) = 64 = 2(a_0 + a_2 + a_4 + ... + a_12) => a_0 + a_2 + a_4 + ... + a_12 = 32. Since a_0 = 1, a_2 + a_4 + ... + a_12 = 32 - 1 = 31.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x - 2x^2)^6 = 1 + a_1 x + a_2 x^2 + ... + a_12 x^12 எனில், a_2 + a_4 + a_6 + ... + a_12-ன் மதிப்பு:",
+        "optionTexts": [
+          "31",
+          "32",
+          "64",
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^5 in the expansion of (x^2 + 2x + 3)^5 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1024",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "720",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1002",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1052",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the multinomial expansion, general term is [5! / (a! b! c!)] * (x^2)^a * (2x)^b * 3^c = [5! / (a! b! c!)] * 2^b * 3^c * x^(2a + b), with a + b + c = 5 and 2a + b = 5. Case 1: a = 0, b = 5, c = 0 => (5! / 5!) * 2^5 * 3^0 = 32. Case 2: a = 1, b = 3, c = 1 => (5! / (1! 3! 1!)) * 2^3 * 3^1 = 20 * 8 * 3 = 480. Case 3: a = 2, b = 1, c = 2 => (5! / (2! 1! 2!)) * 2^1 * 3^2 = 30 * 2 * 9 = 540. Summing: 32 + 480 + 540 = 1052.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x^2 + 2x + 3)^5 என்ற விரிவில் x^5-ன் கெழு:",
+        "optionTexts": [
+          "1024",
+          "720",
+          "1002",
+          "1052"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the 4th term in the expansion of (x + x^(log_10(x)))^5 is 1000000, then x can be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "100",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1000",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "T_4 = C(5, 3) * x^(5-3) * [x^(log_10(x))]^3 = 10 * x^2 * x^(3*log_10(x)) = 10 * x^(2 + 3*log_10(x)). Given T_4 = 10^6: 10 * x^(2 + 3*log_10(x)) = 10^6 => x^(2 + 3*log_10(x)) = 10^5. Taking base-10 log on both sides: (2 + 3*log_10(x)) * log_10(x) = 5. Let y = log_10(x): 3y^2 + 2y - 5 = 0 => (3y + 5)(y - 1) = 0 => y = 1 or y = -5/3. For y = 1: log_10(x) = 1 => x = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x + x^(log_10(x)))^5 என்ற விரிவின் 4-வது உறுப்பு 1000000 எனில், x-ன் மதிப்பு:",
+        "optionTexts": [
+          "10",
+          "100",
+          "1",
+          "1000"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The value of sum_{r=0}^{20} r * (C(20, r))^2 is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 * C(40, 20)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "20 * C(40, 20)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 * C(39, 19)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "40 * C(40, 20)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let S = sum_{r=0}^n r * (C(n, r))^2. Using the property C(n, r) = C(n, n - r) and reversing index: S = sum_{r=0}^n (n - r) * (C(n, r))^2. Adding both: 2S = n * sum_{r=0}^n (C(n, r))^2. By Vandermonde's identity, sum_{r=0}^n (C(n, r))^2 = C(2n, n). Thus, S = (n/2) * C(2n, n). For n = 20: S = (20/2) * C(40, 20) = 10 * C(40, 20).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{r=0}^{20} r * (C(20, r))^2 என்ற கூடுதலின் மதிப்பு:",
+        "optionTexts": [
+          "10 * C(40, 20)",
+          "20 * C(40, 20)",
+          "10 * C(39, 19)",
+          "40 * C(40, 20)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^50 in the expansion of (1 + x)^1000 + 2x*(1 + x)^999 + 3x^2*(1 + x)^998 + ... + 1001*x^1000 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "C(1002, 50)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "C(1001, 50)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "C(1002, 51)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "C(1000, 50)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Notice this is (1 + x)^1000 * sum_{k=0}^{1000} (k + 1) * [x / (1 + x)]^k. For degrees up to 1000, sum_{k=0}^infinity (k + 1) u^k = (1 - u)^(-2). Here 1 - u = 1 - x/(1 + x) = 1/(1 + x). Thus the series evaluates to (1 + x)^1000 * (1 + x)^2 = (1 + x)^1002. Hence, the coefficient of x^50 is simply C(1002, 50).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x)^1000 + 2x*(1 + x)^999 + 3x^2*(1 + x)^998 + ... + 1001*x^1000 என்ற விரிவில் x^50-ன் கெழு:",
+        "optionTexts": [
+          "C(1002, 50)",
+          "C(1001, 50)",
+          "C(1002, 51)",
+          "C(1000, 50)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The largest term in the expansion of (3 + 2x)^50 when x = 1/5 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T_6",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T_7",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "T_8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T_5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Consider |T_(r+1) / T_r| = [(n - r + 1) / r] * |b / a|. Here n = 50, a = 3, and b = 2(1/5) = 2/5. |b / a| = (2/5) / 3 = 2/15. Setting |T_(r+1) / T_r| >= 1 gives [(51 - r) / r] * (2/15) >= 1 => 102 - 2r >= 15r => 17r <= 102 => r <= 6. At r = 6, T_7 / T_6 = 1, so both T_6 and T_7 are maximum and equal. Thus T_7 is the peak term.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x = 1/5 ஆக இருக்கும் போது (3 + 2x)^50 என்ற விரிவில் உள்ள மிகப்பெரிய எண்மதிப்பு கொண்ட உறுப்பு:",
+        "optionTexts": [
+          "T_6",
+          "T_7",
+          "T_8",
+          "T_5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the constant term in the expansion of (x - k / x^2)^12 is 495, then the positive integer value of k is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "T_(r+1) = C(12, r) * x^(12-r) * (-k / x^2)^r = C(12, r) * (-k)^r * x^(12 - 3r). For the constant term: 12 - 3r = 0 => r = 4. Constant term = C(12, 4) * (-k)^4 = 495 * k^4. Setting 495 * k^4 = 495 gives k^4 = 1. Since k is a positive integer, k = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x - k / x^2)^12 என்ற விரிவின் மாறிலி உறுப்பு 495 எனில், மிகை முழு எண் k-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The remainder when 3^2022 is divided by 5 is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "3^2022 = (3^2)^1011 = 9^1011 = (10 - 1)^1011. Expanding using the binomial theorem: (10 - 1)^1011 = 10M - 1. Modulo 5: 10M - 1 = 5(2M) - 1 = 5(2M - 1) + 4. Thus, the remainder is 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3^2022 என்ற எண்ணை 5-ஆல் வகுக்கும்போது கிடைக்கும் மீதி:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the sum of the coefficients in the expansion of (x - 2y + 3z)^n is 1024, then the coefficient of x in the expansion of (1 + x)^n is:",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Substituting x = y = z = 1: (1 - 2 + 3)^n = 2^n. Given 2^n = 1024 = 2^10 => n = 10. The coefficient of x in (1 + x)^10 is C(10, 1) = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(x - 2y + 3z)^n என்ற விரிவில் உள்ள அனைத்துக் கெழுக்களின் கூடுதல் 1024 எனில், (1 + x)^n என்ற விரிவில் x-ன் கெழு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^3 in the expansion of (1 - x + 2x^2)^7 is:",
+    "correctAnswer": -119,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "General term is [7! / (a! b! c!)] * 1^a * (-x)^b * (2x^2)^c = [7! / (a! b! c!)] * (-1)^b * 2^c * x^(b + 2c), with a + b + c = 7 and b + 2c = 3. Case 1: c = 0 => b = 3, a = 4. Term = [7! / (4! 3! 0!)] * (-1)^3 * 2^0 = 35 * (-1) = -35. Case 2: c = 1 => b = 1, a = 5. Term = [7! / (5! 1! 1!)] * (-1)^1 * 2^1 = 42 * (-1) * 2 = -84. Total coefficient = -35 + (-84) = -119.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 - x + 2x^2)^7 என்ற விரிவில் x^3-ன் கெழு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of sum_{r=0}^{10} (r + 1) * C(10, r) is:",
+    "correctAnswer": 6144,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "sum_{r=0}^n (r + 1) * C(n, r) = sum_{r=0}^n r * C(n, r) + sum_{r=0}^n C(n, r) = n * 2^(n-1) + 2^n = 2^(n-1) * (n + 2). For n = 10: 2^9 * (10 + 2) = 512 * 12 = 6144.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{r=0}^{10} (r + 1) * C(10, r) என்ற கூடுதலின் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^10 in the expansion of (1 + x)^15 * (1 - x)^15 is equal to (-1)^k * C(15, m), where k = 5. The value of m is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "[(1 + x)(1 - x)]^15 = (1 - x^2)^15. The general term is T_(r+1) = C(15, r) * (-x^2)^r = (-1)^r * C(15, r) * x^(2r). For x^10: 2r = 10 => r = 5. The coefficient is (-1)^5 * C(15, 5). Given k = 5, we have m = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x)^15 * (1 - x)^15 என்ற பெருக்கலின் விரிவில் x^10-ன் கெழு (-1)^k * C(15, m) (இங்கு k = 5) எனில், m-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The value of sum_{r=0}^{10} [C(10, r) / (r + 1)] is equal to p / q, where p and q are coprime positive integers. The value of p - q is:",
+    "correctAnswer": 2036,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using C(n, r) / (r + 1) = C(n + 1, r + 1) / (n + 1): sum_{r=0}^n [C(n, r) / (r + 1)] = (1 / (n + 1)) * sum_{r=0}^n C(n + 1, r + 1) = (2^(n+1) - 1) / (n + 1). For n = 10: sum = (2^11 - 1) / 11 = 2047 / 11. Since 2047 = 11 * 186 + 1, gcd(2047, 11) = 1, so p = 2047 and q = 11. Thus, p - q = 2047 - 11 = 2036.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{r=0}^{10} [C(10, r) / (r + 1)] என்ற கூடுதலின் மதிப்பு சார்பகா மிகை முழு எண்களான p / q எனில், p - q-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the third term in the binomial expansion of (x + x^(log_2(x)))^5 equals 320 for a positive real number x, then the value of x is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "T_3 = C(5, 2) * x^(5-2) * [x^(log_2(x))]^2 = 10 * x^3 * x^(2*log_2(x)) = 10 * x^(3 + 2*log_2(x)). Setting this equal to 320: 10 * x^(3 + 2*log_2(x)) = 320 => x^(3 + 2*log_2(x)) = 32 = 2^5. Taking base-2 logarithm on both sides: (3 + 2*log_2(x)) * log_2(x) = 5. Let y = log_2(x): 2y^2 + 3y - 5 = 0 => (2y + 5)(y - 1) = 0 => y = 1 (for x > 0 integer base) => log_2(x) = 1 => x = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மிகை மெய்யெண் x-க்கு (x + x^(log_2(x)))^5 என்ற விரிவின் மூன்றாவது உறுப்பு 320 எனில், x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of x^4 in the expansion of (1 + x + x^2 + x^3)^6 is:",
+    "correctAnswer": 120,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Factor the base: 1 + x + x^2 + x^3 = (1 + x)(1 + x^2). Thus, (1 + x + x^2 + x^3)^6 = (1 + x)^6 * (1 + x^2)^6 = [sum_{r=0}^6 C(6, r) x^r] * [sum_{k=0}^6 C(6, k) x^(2k)]. Setting r + 2k = 4: Case 1: k = 0 => r = 4, giving C(6, 4) * C(6, 0) = 15 * 1 = 15. Case 2: k = 1 => r = 2, giving C(6, 2) * C(6, 1) = 15 * 6 = 90. Case 3: k = 2 => r = 0, giving C(6, 0) * C(6, 2) = 1 * 15 = 15. Total coefficient of x^4 = 15 + 90 + 15 = 120.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(1 + x + x^2 + x^3)^6 என்ற விரிவில் x^4-ன் கெழு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat05-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_05",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The number of rational terms in the expansion of (sqrt(2) + 3^(1/5))^10 is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The general term in (2^(1/2) + 3^(1/5))^10 is T_(r+1) = C(10, r) * 2^((10-r)/2) * 3^(r/5), where r in {0, 1, ..., 10}. For the term to be rational, (10 - r)/2 and r/5 must both be integers. From r/5 being an integer, r can only be 0, 5, or 10. For r = 0: (10 - 0)/2 = 5 (integer, rational). For r = 5: (10 - 5)/2 = 5/2 (non-integer, irrational). For r = 10: (10 - 10)/2 = 0 (integer, rational). Thus, exactly 2 terms (r = 0 and r = 10) are rational.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(sqrt(2) + 3^(1/5))^10 என்ற விரிவில் உள்ள விகிதமுறு உறுப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

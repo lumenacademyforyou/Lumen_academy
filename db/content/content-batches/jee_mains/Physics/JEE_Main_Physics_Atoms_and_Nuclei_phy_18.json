@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY18-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's model of the hydrogen atom, the radius r of the n-th electron orbit is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "n^2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "1 / n",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / n^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In Bohr's atomic model, the radius of the n-th orbit is given by r_n = (epsilon_0 h^2 n^2) / (pi m e^2), which shows that the orbit radius is directly proportional to the square of ghosts / principal quantum number: r_n proportional to n^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் ஹைட்ரஜன் அணு மாதிரியின்படி, n-வது எலக்ட்ரான் வட்டப்பாதையின் ஆரம் r எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "n",
+          "n^2",
+          "1 / n",
+          "1 / n^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which spectral series of the hydrogen atom lies entirely in the ultraviolet region of the electromagnetic spectrum?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lyman series",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Balmer series",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Paschen series",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pfund series",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Lyman series corresponds to electronic transitions ending at the ground state (n1 = 1) from higher energy levels (n2 = 2, 3, 4, ...). The energy differences are large, placing all spectral lines of the Lyman series in the ultraviolet region.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவின் எந்த நிறமாலை வரிசை முழுமையாக மின்காந்த நிறமாலையின் புற ஊதா (ultraviolet) பகுதியில் அமைகிறது?",
+        "optionTexts": [
+          "லைமன் வரிசை (Lyman series)",
+          "சால்மர் வரிசை (Balmer series)",
+          "பாஸ்சன் வரிசை (Paschen series)",
+          "புண்ட் வரிசை (Pfund series)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The radioactive decay law states that the number of undecayed nuclei N(t) remaining at time t is related to the initial number N0 by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "N(t) = N0 * e^(-lambda t)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "N(t) = N0 * e^(lambda t)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "N(t) = N0 * (1 - e^(-lambda t))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "N(t) = N0 / (lambda t)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The rate of radioactive disintegration is directly proportional to the number of undecayed nuclei present: dN/dt = -lambda N. Integrating this differential equation yields the exponential decay law N(t) = N0 * e^(-lambda t).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கதிரியக்கச் சிதைவு விதியின்படி, t நேரத்தில் சிதையாமல் மீதமுள்ள அணுக்கருக்களின் எண்ணிக்கை N(t) ஆரம்ப எண்ணிக்கை N0 உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "N(t) = N0 * e^(-lambda t)",
+          "N(t) = N0 * e^(lambda t)",
+          "N(t) = N0 * (1 - e^(-lambda t))",
+          "N(t) = N0 / (lambda t)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The nuclear density rho of a nucleus is related to its mass number A as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "proportional to A",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "proportional to A^(1/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "proportional to A^(2/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "independent of A",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Nuclear radius is R = R0 * A^(1/3) and nuclear mass is approximately m * A. The nuclear density is rho = (m A) / [(4/3) pi R0^3 A] = (3 m) / (4 pi R0^3), which is a constant and completely independent of the mass number A.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு அணுக்கருவின் அணுக்கரு அடர்த்தி rho அதன் நிறை எண் A-ஐ எவ்வாறு சார்ந்துள்ளது?",
+        "optionTexts": [
+          "A க்கு நேர்விகிதத்தில்",
+          "A^(1/3) க்கு நேர்விகிதத்தில்",
+          "A^(2/3) க்கு நேர்விகிதத்தில்",
+          "A-ஐ சார்ந்தது அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The half-life T_1/2 of a radioactive substance is related to its decay constant lambda as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T_1/2 = lambda * ln(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "T_1/2 = ln(2) / lambda",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "T_1/2 = 1 / lambda^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "T_1/2 = e^lambda / ln(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By definition of half-life, when t = T_1/2, N = N0 / 2. Substituting in N(t) = N0 * e^(-lambda t): N0 / 2 = N0 * e^(-lambda T_1/2) => 2 = e^(lambda T_1/2) => lambda T_1/2 = ln(2) => T_1/2 = ln(2) / lambda approx 0.693 / lambda.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்கப் பொருளின் அரை ஆயுட்காலம் T_1/2 அதன் சிதைவு மாறிலி lambda உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "T_1/2 = lambda * ln(2)",
+          "T_1/2 = ln(2) / lambda",
+          "T_1/2 = 1 / lambda^2",
+          "T_1/2 = e^lambda / ln(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The curve of binding energy per nucleon versus mass number A shows a broad peak. Which nuclei lie near this peak and are most stable?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Light nuclei like Hydrogen",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Intermediate nuclei around A = 50 to 80 (such as Iron)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Very heavy nuclei like Uranium and Plutonium",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "All nuclei have identical binding energy per nucleon",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The binding energy per nucleon reaches a maximum value of about 8.8 MeV per nucleon for nuclei with mass numbers in the range A = 50 to 80 (with Iron-56 being exceptionally stable).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை எண் A-ஐப் பொறுத்து நியூக்டியானுக்கான பிணைப்பு ஆற்றலின் வளைகோடு ஒரு உச்சியைக் காட்டுகிறது. எந்த அணுக்கருமக்கள் இந்த உச்சியின் அருகில் அமைந்து மிகவும் ஸ்திரத்தன்மை (stability) கொண்டவை?",
+        "optionTexts": [
+          "ஹைட்ரஜன் போன்ற இலேசான அணுக்கருக்கள்",
+          "A = 50 முதல் 80 வரையிலான இடைநிலை அணுக்கருக்கள் (இரும்பு போன்றவை)",
+          "யுரேனியம் மற்றும் புளுட்டோனியம் போன்ற மிகக் கனமான அணுக்கருக்கள்",
+          "அனைத்து அணுக்கருக்களும் ஒரே மாதிரியான பிணைப்பு ஆற்றலைக் கொண்டுள்ளன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Bohr model of the hydrogen atom, the speed v of the electron in the n-th orbit is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "n^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / n",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1 / n^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The orbital speed of an electron in the n-th Bohr orbit is given by v_n = (e^2) / (2 epsilon_0 h n), which shows that the electron speed is inversely proportional to the principal quantum number n.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் ஹைட்ரஜன் அணு மாதிரியில், n-வது வட்டப்பாதையில் எலக்ட்ரானின் வேகம் v எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "n",
+          "n^2",
+          "1 / n",
+          "1 / n^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total energy E_n of an electron in the n-th Bohr orbit of a hydrogen-like ion of atomic number Z is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Z^2 / n^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Z / n^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Z^2 / n",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Z / n",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The total energy in the n-th Bohr orbit is E_n = - (13.6 Z^2 / n^2) eV. Thus, E_n is directly proportional to Z^2 / n^2 and negative, indicating a bound system.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணு எண் Z கொண்ட ஹைட்ரஜன் போன்ற அயனியின் n-வது போர்ட் வட்டப்பாதையில் உள்ள எலக்ட்ரானின் மொத்த ஆற்றல் E_n எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "Z^2 / n^2",
+          "Z / n^2",
+          "Z^2 / n",
+          "Z / n"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The shortest wavelength lambda_min (the series limit) of the Balmer series in the hydrogen atom spectrum is related to the Rydberg constant R as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 / R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "9 / R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The Rydberg formula is 1 / lambda = R * [1 / n1^2 - 1 / n2^2]. For the Balmer series, n1 = 2. The shortest wavelength (series limit) corresponds to the highest possible transition from n2 = infinity: 1 / lambda_min = R * [1 / 2^2 - 1 / infinity^2] = R / 4 => lambda_min = 4 / R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணு நிறமாலையின் சால்மர் வரிசையின் மிகக் குறைந்த அலைநீளம் (series limit) lambda_min ரைட்பெர்க் மாறிலி R உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "4 / R",
+          "1 / R",
+          "9 / R",
+          "3 / R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Rutherford's alpha-particle scattering experiment, the distance of closest approach r_0 of an alpha particle of kinetic energy K headed directly towards a nucleus of atomic number Z is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1 / (4 pi epsilon0)) * (2 Z e^2) / K",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1 / (4 pi epsilon0)) * (Z e^2) / K",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1 / (4 pi epsilon0)) * (4 Z e^2) / K",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(1 / (4 pi epsilon0)) * (Z e^2) / (2 K)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At the distance of closest approach r_0, the initial kinetic energy K of the alpha particle (charge q1 = 2e) is entirely converted into electrostatic potential energy U = (1 / (4 pi epsilon0)) * [(2e) * (Z e)] / r_0. Therefore, r_0 = (1 / (4 pi epsilon0)) * (2 Z e^2) / K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ருதர்போர்டின் ஆல்ஃபா-தகள் சிதறல் சோதனையில், Z அணு எண் கொண்ட அணுக்கருவை நோக்கி நேராகச் செல்லும் K இயக்க ஆற்றல் கொண்ட ஆல்ஃபா துகளின் மிக நெருக்கமான அணுகு தொலைவு (distance of closest approach) r_0:",
+        "optionTexts": [
+          "(1 / (4 pi epsilon0)) * (2 Z e^2) / K",
+          "(1 / (4 pi epsilon0)) * (Z e^2) / K",
+          "(1 / (4 pi epsilon0)) * (4 Z e^2) / K",
+          "(1 / (4 pi epsilon0)) * (Z e^2) / (2 K)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The activity A of a radioactive sample containing N undecayed nuclei with decay constant lambda decreases with time t according to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A(t) = A0 * e^(-lambda t)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "A(t) = A0 * e^(lambda t)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "A(t) = A0 * t * e^(-lambda t)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A(t) = A0 / (1 + lambda t)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Activity is defined as the rate of disintegration: A = - dN/dt = lambda N. Since N(t) = N0 * e^(-lambda t), multiplying by lambda gives A(t) = lambda N0 * e^(-lambda t) = A0 * e^(-lambda t).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சிதைவு மாறிலி lambda மற்றும் N சிதையாத அணுக்கருக்களைக் கொண்ட ஒரு கதிரியக்க மாதிரியின் செயல்பாடு (activity A) காலத்துடன் எவ்வாறு குறைகிறது?",
+        "optionTexts": [
+          "A(t) = A0 * e^(-lambda t)",
+          "A(t) = A0 * e^(lambda t)",
+          "A(t) = A0 * t * e^(-lambda t)",
+          "A(t) = A0 / (1 + lambda t)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mean life tau of a radioactive substance is related to its decay constant lambda as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "tau = 1 / lambda",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "tau = lambda",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "tau = ln(2) / lambda",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "tau = lambda / ln(2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The mean life tau is defined as the average lifetime of all radioactive nuclei, which is the reciprocal of the decay constant: tau = 1 / lambda.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்கப் பொருளின் சராசரி ஆயுட்காலம் tau அதன் சிதைவு மாறிலி lambda உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "tau = 1 / lambda",
+          "tau = lambda",
+          "tau = ln(2) / lambda",
+          "tau = lambda / ln(2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The Q-value of a nuclear reaction is defined as Q = (sum(m_reactants) - sum(m_products)) * c^2. For an exothermic (energy-releasing) nuclear reaction:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Q > 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Q < 0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Q = 0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Q depends only on temperature",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In an exothermic nuclear reaction, the total rest mass of the reactants is greater than the total rest mass of the products (Delta m > 0), resulting in mass being converted into energy with Q > 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு அணுக்கரு வினையின் Q-மதிப்பு Q = (sum(m_reactants) - sum(m_products)) * c^2 என வரையறுக்கப்படுகிறது. ஆற்றலை வெளிப்படுத்தும் (exothermic) அணுக்கரு வினைக்கு:",
+        "optionTexts": [
+          "Q > 0",
+          "Q < 0",
+          "Q = 0",
+          "Q வெப்பநிலையை மட்டும் சார்ந்தது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Nuclear fission and nuclear fusion both release energy because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The binding energy per nucleon of intermediate-mass nuclei is greater than that of very heavy and very light nuclei",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mass is created during both processes",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Protons are converted into electrons",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The total number of nucleons is not conserved",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Both nuclear fission (splitting of very heavy nuclei) and nuclear fusion (combining very light nuclei) result in the formation of nuclei with higher binding energy per nucleon (closer to iron). Because binding energy is released, the total mass of the products is less than the reactants, releasing energy.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அணுக்கருப் பிளவு (fission) மற்றும் அணுக்கரு இணைவு (fusion) இரண்டும் ஆற்றலை வெளியிடக் காரணம்:",
+        "optionTexts": [
+          "இடைநிலை நிறை அணுக்கருக்களின் நியூக்டியானுக்கான பிணைப்பு ஆற்றல், மிகக் கனமான மற்றும் மிக இலேசான அணுக்கருக்களை விட அதிகமாகும்",
+          "இரண்டு செயல்முறைகளின் போதும் நிறை உருவாக்கப்படுகிறது",
+          "புரோட்டான்கள் எலக்ட்ரான்களாக மாற்றப்படுகின்றன",
+          "நியூக்ளான்களின் மொத்த எண்ணிக்கை மாறாமல் இருப்பதில்லை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's postulate, the orbital angular momentum L of an electron revolving in the n-th stationary orbit is quantized as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "L = n * (h / (2 pi))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "L = n * (2 pi / h)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "L = h / (n pi)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "L = n^2 * (h / (2 pi))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bohr's quantization condition postulates that an electron can only revolve in those orbits where its orbital angular momentum is an integral multiple of h / (2 pi): L = m v r = n * (h / (2 pi)) where n = 1, 2, 3, ...",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போரின் எடுகோளின்படி, n-வது நிலையான வட்டப்பாதையில் சுற்றும் எலக்ட்ரானின் கோண உந்தம் L குவாண்டமாக்கப்படுவது:",
+        "optionTexts": [
+          "L = n * (h / (2 pi))",
+          "L = n * (2 pi / h)",
+          "L = h / (n pi)",
+          "L = n^2 * (h / (2 pi))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An isolated free atom of mass M initially at rest emits a photon of frequency nu. The recoil kinetic energy of the atom is approximately:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(h nu)^2 / (2 M c^2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "h nu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(h nu)^2 / (M c^2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By conservation of linear momentum, the momentum of the emitted photon p = h nu / c is equal and opposite to the recoil momentum of the atom: P_atom = p = h nu / c. The recoil kinetic energy is K_recoil = P_atom^2 / (2 M) = (h nu / c)^2 / (2 M) = (h nu)^2 / (2 M c^2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆரம்பத்தில் ஓய்வில் உள்ள M நிறை கொண்ட தனித்த சுதந்திர அணு ஒன்று nu அதிர்வெண் கொண்ட போட்டானை வெளியிடுகிறது. அணுவின் பின்னுதைப்பு இயக்க ஆற்றல் (recoil kinetic energy):",
+        "optionTexts": [
+          "(h nu)^2 / (2 M c^2)",
+          "h nu",
+          "(h nu)^2 / (M c^2)",
+          "சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A radioactive sample has a half-life of 4 days. The fraction of the initial number of undecayed radioactive nuclei that disintegrates (decays) over a period of 12 days is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "15 / 16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The time span of 12 days corresponds to n = 12 / 4 = 3 half-lives. The fraction remaining is N / N0 = (1/2)^n = (1/2)^3 = 1/8. Therefore, the fraction that has decayed (disintegrated) is 1 - 1/8 = 7/8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்க மாதிரியின் அரை ஆயுட்காலம் 4 நாட்கள் ஆகும். 12 நாள் காலத்தில் சிதைவடையும் (disintegrates) ஆரம்ப கதிரியக்க அணுக்கருக்களின் பின்னம்:",
+        "optionTexts": [
+          "7 / 8",
+          "1 / 8",
+          "15 / 16",
+          "3 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In alpha particle scattering by a nucleus of charge Ze, the impact parameter b for a scattering angle of 180 degrees (head-on collision) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The distance of closest approach r_0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 * r_0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "r_0 / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The impact parameter b is the perpendicular distance of the velocity vector of the alpha particle from the central line of the nucleus. For a head-on collision resulting in a 180-degree scattering angle, the alpha particle travels directly along the line of centers, making the impact parameter b = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "Ze மின்னூட்டம் கொண்ட அணுக்கருவால் ஆல்ஃபா துகள் சிதறடிக்கப்படுவதில், 180 டிகிரி சிதறல் கோட்டிற்கான (நேருக்கு நேர் மோதல்) மோதல் பருமஅளவு (impact parameter b):",
+        "optionTexts": [
+          "சுழி",
+          "மிக நெருக்கமான அணுகு தொலைவு r_0",
+          "2 * r_0",
+          "r_0 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a radioactive series where parent nuclide A decays to daughter nuclide B (A -> B -> C stable), under secular equilibrium where the half-life of parent A is much greater than that of daughter B (lambda_A << lambda_B), the ratio of the number of nuclei N_B to N_A is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda_A / lambda_B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "lambda_B / lambda_A",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(lambda_A / lambda_B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In secular equilibrium, the activity of daughter B equals the activity of parent A: lambda_B N_B = lambda_A N_A. Therefore, the ratio of their numbers is N_B / N_A = lambda_A / lambda_B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தந்தை அணுக்கரு A சேய் அணுக்கரு B ஆக சிதையும் கதிரியக்கத் தொடரில் (A -> B -> C), A இன் அரை ஆயுட்காலம் B ஐ விட மிக அதிகம் (lambda_A << lambda_B) என்ற நிலையில், அணுக்கருக்களின் எண்ணிக்கைகளின் விகிதம் N_B / N_A:",
+        "optionTexts": [
+          "lambda_A / lambda_B",
+          "lambda_B / lambda_A",
+          "1",
+          "sqrt(lambda_A / lambda_B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The ionization potential of a hydrogen atom is 13.6 V. The energy of the photon emitted when an electron jumps from the n = 3 state to the ground state (n = 1) in hydrogen is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "12.1 eV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10.2 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "13.6 eV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.89 eV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The energy of the electron in the n-th Bohr orbit is E_n = - 13.6 / n^2 eV. For n = 3: E3 = - 13.6 / 9 = - 1.51 eV. For ground state n = 1: E1 = - 13.6 eV. The energy of the emitted photon is Delta E = E3 - E1 = -1.51 eV - (-13.6 eV) = 12.09 eV approx 12.1 eV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவின் அயனியாக்கும் மின்னழுத்தம் 13.6 V ஆகும். ஹைட்ரஜனில் எலக்ட்ரான் n = 3 நிலையிலிருந்து தரை நிலைக்கு (n = 1) தாவுடும் போது உமிழப்படும் போட்டானின் ஆற்றல்:",
+        "optionTexts": [
+          "12.1 eV",
+          "10.2 eV",
+          "13.6 eV",
+          "1.89 eV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The shortest wavelength of the Lyman series of the hydrogen atom spectrum is lambda_L, and the shortest wavelength (series limit) of the Balmer series is lambda_B. The ratio lambda_B / lambda_L is _____.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The shortest wavelength for Lyman series (n1 = 1, n2 = infinity) is lambda_L = 1 / R. The shortest wavelength for Balmer series (n1 = 2, n2 = infinity) is lambda_B = 4 / R. Taking their ratio: lambda_B / lambda_L = (4 / R) / (1 / R) = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணு நிறமாலையின் லைமன் வரிசையின் மிகக் குறைந்த அலைநீளம் lambda_L மற்றும் சால்மர் வரிசையின் மிகக் குறைந்த அலைநீளம் lambda_B ஆகும். lambda_B / lambda_L இன் விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A radioactive sample initially contains 6400 undecayed nuclei. After a time equal to 3 half-lives of the substance, the number of undecayed nuclei remaining in the sample is _____.",
+    "correctAnswer": 800,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "After n half-lives, the remaining undecayed nuclei are given by N = N0 * (1 / 2)^n. Given N0 = 6400 and n = 3 half-lives: N = 6400 * (1 / 2)^3 = 6400 / 8 = 800.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்க மாதிரி ஆரம்பத்தில் 6400 சிதையாத அணுக்கருக்களைக் கொண்டுள்ளது. அப்பொருளின் 3 அரை ஆயுட்காலங்களுக்குப் பிறகு, மாதிரியில் மீதமுள்ள சிதையாத அணுக்கருக்களின் எண்ணிக்கை _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The radius of a nucleus with mass number A = 64 is expressed as N * R0, where R0 is the nuclear radius constant. Find the integer value of N.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Nuclear radius is given by R = R0 * A^(1/3). Substituting A = 64: R = R0 * (64)^(1/3) = R0 * 4 = 4 R0. Comparing with N * R0, we find N = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிறை எண் A = 64 கொண்ட அணுக்கருவின் ஆரம் N * R0 எனக் குறிப்பிடப்படுகிறது (R0 என்பது அணுக்கரு ஆரம் மாறிலி). N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total binding energy of a certain nucleus is 28 MeV and its mass number is 4. The binding energy per nucleon for this nucleus is _____ MeV.",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The binding energy per nucleon is defined as the total binding energy divided by the mass number A: BE_per_nucleon = Total BE / A = 28 MeV / 4 = 7 MeV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குறிப்பிட்ட அணுக்கருவின் மொத்தப் பிணைப்பு ஆற்றல் 28 MeV மற்றும் அதன் நிறை எண் 4 ஆகும். இவற்றுக்கான நியூக்டியானுக்கான பிணைப்பு ஆற்றல் _____ MeV.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A radioactive isotope has a half-life of 3 hours. If the initial mass of the radioactive sample is 64 grams, the mass remaining undecayed after 12 hours is _____ grams.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The number of half-lives elapsed in 12 hours is n = Total time / Half-life = 12 hours / 3 hours = 4. The remaining mass is m = m0 * (1 / 2)^n = 64 g * (1 / 2)^4 = 64 / 16 = 4 grams.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கதிரியக்க ஐசோடோப்பின் அரை ஆயுட்காலம் 3 மணி நேரம் ஆகும். கதிரியக்க மாதிரியின் ஆரம்ப நிறை 64 கிராம்கள் எனில், 12 மணி நேரத்திற்குப் பிறகு சிதையாமல் மீதமுள்ள நிறை _____ கிராம்கள்.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The wavelength of the first spectral line of the Lyman series (transition from n = 2 to n = 1) is expressed in terms of the Rydberg constant R as N / (3 R). Find the integer value of N.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using the Rydberg formula for the first line of the Lyman series (n1 = 1, n2 = 2): 1 / lambda = R * [1 / 1^2 - 1 / 2^2] = R * [1 - 1/4] = (3/4) R. Solving for lambda gives lambda = 4 / (3 R). Comparing with N / (3 R), we find N = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லைமன் வரிசையின் முதல் நிறமாலை வரியின் அலைநீளம் (n = 2 இலிருந்து n = 1 க்கான தாவுதல்) ரைட்பெர்க் மாறிலி R இன் அடிப்படையில் N / (3 R) எனத் தரப்படுகிறது. N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through a potential difference of 100 V. The de Broglie wavelength of the electron is X x 10^-10 meters. Using the approximation lambda = 12.27 / sqrt(V) Angstroms (where 1 Angstrom = 10^-10 m), the integer value of X (rounded to nearest integer) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using the formula lambda approx 12.27 / sqrt(V) Angstroms = (1.227 / sqrt(V)) x 10^-10 m. For V = 100 V: lambda = 12.27 / 10 = 1.227 Angstroms = 1.227 x 10^-10 m. Rounded to the nearest integer, X = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 V மின்னழுத்த வேறுபாட்டால் ஒரு எலக்ட்ரான் முடுக்குவிக்கப்படுகிறது. எலக்ட்ரானின் டி பிராக்லி அலைநீளம் X x 10^-10 மீட்டர்கள் ஆகும். X இன் முழு எண் மதிப்பு (அருகிலுள்ள முழு எண்ணுக்கு மாற்றுக):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The energy of a particular excited state of a hydrogen atom is -1.51 eV. The principal quantum number n corresponding to this energy state is _____.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy levels of a hydrogen atom are given by E_n = -13.6 / n^2 eV. Setting E_n = -1.51 eV: -1.51 = -13.6 / n^2 => n^2 = 13.6 / 1.51 = 9.0 => n = 3 (the second excited state).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவின் ஒரு குறிப்பிட்ட கிளர்ச்சியடைந்த ஆற்றல் மட்டம் -1.51 eV ஆகும். இந்த ஆற்றல் நிலைக்குரிய முதன்மைக் குவாண்டம் எண் n இன் மதிப்பு _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The half-life of radioactive carbon-14 (14C) is 5730 years. An archaeological wooden artifact is found to have 14C activity equal to one-fourth (1/4) of that found in living trees. The age of the artifact is _____ years.",
+    "correctAnswer": 11460,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The activity of a radioactive sample drops to 1/4 of its initial value: A / A0 = 1 / 4 = (1 / 2)^2, which means exactly 2 half-lives have elapsed. The age of the artifact is t = 2 * T_1/2 = 2 * 5730 years = 11460 years.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கதிரியக்க கார்பன்-14 (14C) இன் அரை ஆயுட்காலம் 5730 ஆண்டுகள் ஆகும். ஒரு மரப் பொருட்களின் தொல்பொருள் மாதிரியில் 14C இன் செயல்பாடு உயிருள்ள மரங்களில் உள்ளதில் நான்கில் ஒரு பங்கு (1/4) எனக் கண்டறியப்பட்டுள்ளது. அத்தொல்பொருளின் வயது _____ ஆண்டுகள்.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY18-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_18",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a stellar nuclear fusion reaction, four protons combine to form an alpha particle with a net mass defect of Delta m = 0.030 u. Taking 1 u equivalent to 931 MeV, the total energy released in the reaction is _____ MeV (rounded to the nearest integer).",
+    "correctAnswer": 28,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The energy released in a nuclear reaction is given by Q = Delta m * 931 MeV. Substituting Delta m = 0.030 u: Q = 0.030 * 931 MeV = 27.93 MeV. Rounded to the nearest integer, the total energy released is 28 MeV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நட்சத்திர அணுக்கரு இணைவு வினையில், நான்கு புரோட்டான்கள் இணைந்து ஒரு ஆல்ஃபா துகளை உருவாக்கும் போது நிகர நிறை குறைபாடு Delta m = 0.030 u ஆகும். 1 u என்பது 931 MeV க்கு சமம் எனக் கொண்டால், வினையில் வெளிப்படும் மொத்த ஆற்றல் _____ MeV (அருகிலுள்ள முழு எண்ணுக்கு மாற்றுக).",
+        "optionTexts": []
+      }
+    ]
+  }
+]

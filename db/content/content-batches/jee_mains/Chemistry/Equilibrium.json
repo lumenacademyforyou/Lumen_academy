@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che06-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For the reversible gaseous reaction: N2(g) + 3H2(g) <=> 2NH3(g), the relationship between the equilibrium constants Kp and Kc is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kp = Kc(RT)^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kp = Kc(RT)^-2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Kp = Kc(RT)^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kp = Kc",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The general thermodynamic relationship between Kp and Kc is given by Kp = Kc(RT)^(Delta n_g), where Delta n_g is the difference between the stoichiometric moles of gaseous products and gaseous reactants. For N2(g) + 3H2(g) <=> 2NH3(g), Delta n_g = 2 - (1 + 3) = 2 - 4 = -2. Therefore, Kp = Kc(RT)^-2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "N2(g) + 3H2(g) <=> 2NH3(g) என்ற மீள் வாயு வினைக்கு சமநிலை மாறிலிகள் Kp மற்றும் Kc ஆகியவற்றிற்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "Kp = Kc(RT)^2",
+          "Kp = Kc(RT)^-2",
+          "Kp = Kc(RT)^-1",
+          "Kp = Kc"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the Bronsted-Lowry concept of acids and bases, what are the conjugate acid and conjugate base of the hydrogen carbonate ion (HCO3-), respectively?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CO3^2- and H2CO3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "H2CO3 and CO3^2-",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "H3O+ and CO3^2-",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "H2CO3 and OH-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A conjugate acid is formed when a species gains a proton (H+): HCO3- + H+ -> H2CO3. A conjugate base is formed when a species loses a proton: HCO3- -> H+ + CO3^2-. Thus, the conjugate acid is H2CO3 and the conjugate base is CO3^2-.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பிரான்ஸ்டெட்-லௌரி கொள்கையின்படி, ஹைட்ரஜன் கார்பனேட் அயனியின் (HCO3-) இணை அமிலம் மற்றும் இணை காரம் முறையே எவை?",
+        "optionTexts": [
+          "CO3^2- மற்றும் H2CO3",
+          "H2CO3 மற்றும் CO3^2-",
+          "H3O+ மற்றும் CO3^2-",
+          "H2CO3 மற்றும் OH-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chemical species acts as a Lewis base?",
+    "options": [
+      {
+        "label": "A",
+        "text": "BF3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "AlCl3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "NH3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "BCl3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A Lewis base is an electron-pair donor. In ammonia (NH3), the central nitrogen atom possesses a non-bonding lone pair of electrons that it can donate to an electron-deficient species. In contrast, BF3, AlCl3, and BCl3 have incomplete octets (electron deficiency) and act as Lewis acids.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் வேதிக்கூறுகளில் லூயிஸ் காரமாகச் செயல்படுவது எது?",
+        "optionTexts": [
+          "BF3",
+          "AlCl3",
+          "NH3",
+          "BCl3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The pH of pure liquid water at 350 K is found to be 6.3. Which statement correctly describes water at this temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Water becomes acidic because [H+] > [OH-].",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Water becomes basic because [OH-] > [H+].",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Water remains completely neutral because [H+] = [OH-].",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Water undergoes spontaneous thermal decomposition.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The autoionization of water, H2O <=> H+ + OH-, is an endothermic process. According to Le Chatelier's principle, increasing the temperature shifts the equilibrium forward, causing Kw to increase (Kw > 10^-14 at 350 K). Since each dissociation yields exactly one H+ and one OH- ion, [H+] remains strictly equal to [OH-]. Therefore, pure water remains neutral despite having a pH below 7.0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "350 K வெப்பநிலையில் தூய நீரின் pH மதிப்பு 6.3 ஆக உள்ளது. இந்த வெப்பநிலையில் உள்ள நீர் பற்றிய சரியான கூற்று எது?",
+        "optionTexts": [
+          "[H+] > [OH-] என்பதால் நீர் அமிலத்தன்மை பெறுகிறது.",
+          "[OH-] > [H+] என்பதால் நீர் காரத்தன்மை பெறுகிறது.",
+          "[H+] = [OH-] என்பதால் நீர் முற்றிலும் நடுநிலையாகவே நீடிக்கிறது.",
+          "நீர் தன்னிச்சையான வெப்பச்சிதைவுக்கு உட்படுகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following pairs of aqueous solutions, when mixed in equimolar amounts, produces an effective acidic buffer solution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HCl and NaCl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH3COOH and CH3COONa",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "NaOH and CH3COONa",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "HNO3 and NaNO3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "An acidic buffer consists of a weak acid and its salt with a strong base (conjugate base). CH3COOH is a weak acid and CH3COONa is its salt with the strong base NaOH. This mixture provides both the weak acid to consume added base and the acetate conjugate base to consume added acid. Strong acids like HCl and HNO3 cannot form buffer systems.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சமமோலார் அளவில் கலக்கும் போது ஒரு சிறந்த அமிலத் தாங்கல் கரைசலை உருவாக்கும் நீரிய கரைசல்களின் இணை எது?",
+        "optionTexts": [
+          "HCl மற்றும் NaCl",
+          "CH3COOH மற்றும் CH3COONa",
+          "NaOH மற்றும் CH3COONa",
+          "HNO3 மற்றும் NaNO3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the solubility of a sparingly soluble salt AB2 in water is S mol L^-1, its solubility product Ksp is expressed as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "S^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2S^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4S^3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "27S^4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The dissolution equilibrium for the salt AB2 is AB2(s) <=> A^2+(aq) + 2B^-(aq). If S mol L^-1 of AB2 dissolves, the equilibrium concentrations are [A^2+] = S and [B^-] = 2S. The solubility product is Ksp = [A^2+][B^-]^2 = (S)(2S)^2 = S * 4S^2 = 4S^3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நீரில் சிறிதளவு கரையும் உப்பு AB2-ன் கரைதிறன் S mol L^-1 எனில், அதன் கரைதிறன் பெருக்கம் Ksp:",
+        "optionTexts": [
+          "S^2",
+          "2S^2",
+          "4S^3",
+          "27S^4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the endothermic gaseous reaction: PCl5(g) <=> PCl3(g) + Cl2(g), which of the following changes will shift the equilibrium in the forward direction according to Le Chatelier's principle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increasing the total pressure at constant temperature",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Increasing the temperature of the system",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Adding chlorine gas (Cl2) at constant volume",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Removing PCl5(g) from the system",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Le Chatelier's principle: (1) For an endothermic reaction (Delta H > 0), increasing temperature favors the forward reaction. (2) Increasing total pressure shifts the equilibrium toward fewer gaseous moles (backward, 2 moles -> 1 mole). (3) Adding product Cl2 shifts the reaction backward. (4) Removing reactant PCl5 shifts the reaction backward. Thus, increasing temperature drives the equilibrium forward.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்ப ஏற்பு வாயு வினையான PCl5(g) <=> PCl3(g) + Cl2(g) என்பதில், லீ சாட்லியர் கொள்கையின்படி சமநிலையை முன்னோக்கிய திசையில் நகர்த்தும் மாற்றம் எது?",
+        "optionTexts": [
+          "மாறா வெப்பநிலையில் மொத்த அழுத்தத்தை அதிகரிப்பது",
+          "அமைப்பின் வெப்பநிலையை அதிகரிப்பது",
+          "மாறா கனஅளவில் குளோரின் வாயுவைச் (Cl2) சேர்ப்பது",
+          "அமைப்பிலிருந்து PCl5(g)-ஐ நீக்குவது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An inert gas (such as helium) is added to the equilibrium mixture PCl5(g) <=> PCl3(g) + Cl2(g) at constant temperature and constant pressure. The equilibrium will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shift in the forward direction to increase the total number of moles of gas.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Shift in the backward direction to reduce dissociation.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Remain completely unaffected because inert gases do not participate chemically.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cause precipitation of solid phosphorus.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When an inert gas is added at constant pressure, the total volume of the system must increase to maintain constant total pressure. This volume expansion decreases the partial pressures (concentrations) of all reactive gaseous species. According to Le Chatelier's principle, the equilibrium shifts in the direction that produces more moles of gas (Delta n_g > 0), which is the forward direction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "PCl5(g) <=> PCl3(g) + Cl2(g) என்ற சமநிலைக் கலவையில் மாறா வெப்பநிலை மற்றும் மாறா அழுத்தத்தில் ஒரு மந்த வாயு (ஹீலியம் போன்றவை) சேர்க்கப்படும் போது சமநிலை எவ்வாறு மாறும்?",
+        "optionTexts": [
+          "வாயுக்களின் மொத்த மோல்களின் எண்ணிக்கையை அதிகரிக்க முன்னோக்கிய திசையில் நகரும்.",
+          "பிரிகையை குறைக்க பின்னோக்கிய திசையில் நகரும்.",
+          "மந்த வாயுக்கள் வேதிவினையில் ஈடுபடாததால் எந்த பாதிப்பும் அடையாது.",
+          "திட பாஸ்பரஸ் வீழ்படிவாவதை ஏற்படுத்தும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The equilibrium constant for the reaction SO2(g) + 1/2 O2(g) <=> SO3(g) is K1. What is the equilibrium constant K2 for the reaction 2SO3(g) <=> 2SO2(g) + O2(g) at the same temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "K2 = 2 * K1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "K2 = 1 / K1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "K2 = 1 / (K1)^2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "K2 = (K1)^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The first reaction is: SO2(g) + 1/2 O2(g) <=> SO3(g) with K1 = [SO3] / ([SO2][O2]^(1/2)). The second reaction is obtained by reversing the first reaction and multiplying its stoichiometric coefficients by 2: 2SO3(g) <=> 2SO2(g) + O2(g). Reversing inverts the equilibrium constant (1/K1), and multiplying by a factor of 2 raises the constant to the power of 2. Therefore, K2 = (1 / K1)^2 = 1 / (K1)^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "SO2(g) + 1/2 O2(g) <=> SO3(g) என்ற வினைக்கான சமநிலை மாறிலி K1 ஆகும். அதே வெப்பநிலையில் 2SO3(g) <=> 2SO2(g) + O2(g) என்ற வினைக்கான சமநிலை மாறிலி K2 என்பது:",
+        "optionTexts": [
+          "K2 = 2 * K1",
+          "K2 = 1 / K1",
+          "K2 = 1 / (K1)^2",
+          "K2 = (K1)^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Solid ammonium hydrogen sulfide decomposes according to the equilibrium: NH4HS(s) <=> NH3(g) + H2S(g). At a certain temperature, the total pressure at equilibrium over solid NH4HS in an evacuated closed flask is 0.80 bar. The value of Kp for this decomposition reaction is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.64 bar^2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.40 bar^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.16 bar^2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "0.32 bar^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For NH4HS(s) <=> NH3(g) + H2S(g), the two gases are produced in equimolar amounts: p(NH3) = p(H2S). Total equilibrium pressure P_total = p(NH3) + p(H2S) = 2 * p(NH3) = 0.80 bar => p(NH3) = p(H2S) = 0.40 bar. Solid NH4HS has unit activity. Therefore, Kp = p(NH3) * p(H2S) = (0.40 bar) * (0.40 bar) = 0.16 bar^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "திட அம்மோனியம் ஹைட்ரஜன் சல்பைடு சமநிலையில் சிதைவடைகிறது: NH4HS(s) <=> NH3(g) + H2S(g). ஒரு குறிப்பிட்ட வெப்பநிலையில் ஒரு மூடிய வெற்றிடக் கலனில் மொத்த சமநிலை அழுத்தம் 0.80 bar ஆகும். இச்சிதைவு வினைக்கான Kp-ன் மதிப்பு:",
+        "optionTexts": [
+          "0.64 bar^2",
+          "0.40 bar^2",
+          "0.16 bar^2",
+          "0.32 bar^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following salts produces a basic aqueous solution with pH > 7.0 at 298 K as a result of cationic or anionic hydrolysis?",
+    "options": [
+      {
+        "label": "A",
+        "text": "NH4Cl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "KNO3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH3COONa",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "FeCl3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "CH3COONa is the salt of a weak acid (CH3COOH) and a strong base (NaOH). In aqueous solution, the acetate anion hydrolyzes: CH3COO- + H2O <=> CH3COOH + OH-, producing excess hydroxide ions and making the solution basic (pH > 7.0). In contrast, NH4Cl and FeCl3 yield acidic solutions due to cationic hydrolysis, and KNO3 is a neutral salt.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் நீராற்பகுப்பின் காரணமாக pH > 7.0 கொண்ட காரத்தன்மை வாய்ந்த நீரிய கரைசலைத் தரும் உப்பு எது?",
+        "optionTexts": [
+          "NH4Cl",
+          "KNO3",
+          "CH3COONa",
+          "FeCl3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The solubility of silver chromate (Ag2CrO4, Ksp = 1.1 x 10^-12) is lowest in which of the following aqueous media due to the common ion effect?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pure water",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0.10 M AgNO3 solution",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "0.01 M K2CrO4 solution",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.05 M K2CrO4 solution",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Ksp = [Ag+]^2 * [CrO4^2-]. In 0.10 M AgNO3, [Ag+] = 0.10 M, so solubility S = Ksp / [Ag+]^2 = (1.1 x 10^-12) / (0.10)^2 = 1.1 x 10^-10 M. In 0.05 M K2CrO4, [CrO4^2-] = 0.05 M, so [Ag+] = sqrt(Ksp / 0.05) = sqrt(2.2 x 10^-11) ≈ 4.7 x 10^-6 M (S ≈ 2.35 x 10^-6 M). The common ion effect suppresses solubility most strongly when the ion with the higher stoichiometric power in Ksp is present in high concentration. Thus, solubility is lowest in 0.10 M AgNO3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பொது அயனி விளைவின் காரணமாக சில்வர் குரோமேட்டின் (Ag2CrO4, Ksp = 1.1 x 10^-12) கரைதிறன் பின்வரும் எந்த நீரிய ஊடகத்தில் மிகக் குறைவாக இருக்கும்?",
+        "optionTexts": [
+          "தூய நீர்",
+          "0.10 M AgNO3 கரைசல்",
+          "0.01 M K2CrO4 கரைசல்",
+          "0.05 M K2CrO4 கரைசல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "What is the pH of a 1.0 x 10^-8 M aqueous solution of hydrochloric acid (HCl) at 298 K? (Take log(1.05) = 0.021)",
+    "options": [
+      {
+        "label": "A",
+        "text": "8.00",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6.98",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "7.02",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.00",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In very dilute acid solutions (< 10^-6 M), autoionization of water cannot be neglected. Total [H+] = [H+]_acid + [H+]_water = 10^-8 + x. Since [H+][OH-] = 10^-14, (10^-8 + x)(x) = 10^-14 => x^2 + 10^-8 * x - 10^-14 = 0. Solving the quadratic gives x = 0.95 x 10^-7 M. Total [H+] = 10^-8 + 0.95 x 10^-7 = 1.05 x 10^-7 M. Then pH = -log(1.05 x 10^-7) = 7 - log(1.05) = 7 - 0.021 = 6.98.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் 1.0 x 10^-8 M நீரிய ஹைட்ரோகுளோரிக் அமிலக் கரைசலின் (HCl) pH மதிப்பு: (log(1.05) = 0.021 எனக் கொள்க)",
+        "optionTexts": [
+          "8.00",
+          "6.98",
+          "7.02",
+          "6.00"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the gaseous equilibrium 2SO3(g) <=> 2SO2(g) + O2(g), the degree of dissociation (alpha) is very small (alpha << 1). The relationship between the degree of dissociation alpha and total equilibrium pressure P is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "alpha is proportional to P",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "alpha is proportional to P^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "alpha is proportional to P^(-1/3)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "alpha is proportional to P^(1/2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let initial moles of SO3 be 1. At equilibrium: n(SO3) = 1 - alpha ≈ 1, n(SO2) = alpha, n(O2) = alpha / 2. Total moles = 1 + alpha / 2 ≈ 1. Partial pressures are: p(SO3) ≈ P, p(SO2) = alpha * P, p(O2) = (alpha / 2) * P. Then Kp = [p(SO2)]^2 * p(O2) / [p(SO3)]^2 = (alpha * P)^2 * (alpha * P / 2) / P^2 = (alpha^3 * P) / 2. Since Kp is constant at a fixed temperature, alpha^3 * P = constant => alpha is proportional to P^(-1/3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2SO3(g) <=> 2SO2(g) + O2(g) என்ற வாயு நிலை சமநிலையில், பிரிகை வீதம் (alpha) மிகக் குறைவு (alpha << 1). பிரிகை வீதம் alpha மற்றும் மொத்த சமநிலை அழுத்தம் P ஆகியவற்றிற்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "alpha நேர்விகிதத்தில் P உடன் அமைகிறது",
+          "alpha நேர்விகிதத்தில் P^-1 உடன் அமைகிறது",
+          "alpha நேர்விகிதத்தில் P^(-1/3) உடன் அமைகிறது",
+          "alpha நேர்விகிதத்தில் P^(1/2) உடன் அமைகிறது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 0.10 M solution of a weak monoprotic acid HA has a pH of 3.00 at 298 K. What volume of water must be added to 100 mL of this solution so that the degree of dissociation of the acid is doubled?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "200 mL",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "300 mL",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "400 mL",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Ostwald's dilution law for a weak acid: alpha = sqrt(Ka / C), which means alpha is inversely proportional to sqrt(C). For alpha to double (alpha_2 / alpha_1 = 2), the concentration must satisfy sqrt(C1 / C2) = 2 => C1 / C2 = 4 => C2 = C1 / 4. Diluting concentration by a factor of 4 requires the final volume to be 4 times the initial volume: V_final = 4 * V1 = 4 * 100 mL = 400 mL. Volume of water to add = V_final - V1 = 400 - 100 = 300 mL.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் HA என்ற வலிமை குறைந்த ஒருகாரத்துவ அமிலத்தின் 0.10 M கரைசல் pH = 3.00 கொண்டுள்ளது. இவ்வமிலத்தின் பிரிகை வீதத்தை இருமடங்காக்க 100 mL கரைசலுடன் சேர்க்கப்பட வேண்டிய நீரின் கனஅளவு:",
+        "optionTexts": [
+          "100 mL",
+          "200 mL",
+          "300 mL",
+          "400 mL"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At 298 K, the dissociation constant of ammonium hydroxide (NH4OH) is Kb = 1.8 x 10^-5 and the ion product of water is Kw = 1.0 x 10^-14. The hydrolysis constant (Kh) and pH of a 0.10 M aqueous solution of ammonium chloride (NH4Cl) are, respectively: (Take log(1.8) = 0.26)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kh = 5.56 x 10^-10, pH = 5.13",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Kh = 1.8 x 10^-9, pH = 4.87",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kh = 5.56 x 10^-10, pH = 8.87",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kh = 1.8 x 10^-5, pH = 5.13",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "NH4Cl is the salt of a weak base and strong acid. Hydrolysis constant Kh = Kw / Kb = (1.0 x 10^-14) / (1.8 x 10^-5) = 5.56 x 10^-10. For such a salt, pH = 7 - 0.5 * pKb - 0.5 * log(C). Given Kb = 1.8 x 10^-5, pKb = 5 - log(1.8) = 5 - 0.26 = 4.74. For C = 0.10 M, log(C) = -1. Therefore, pH = 7 - 0.5 * (4.74) - 0.5 * (-1) = 7 - 2.37 + 0.50 = 5.13.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் NH4OH-ன் பிரிகை மாறிலி Kb = 1.8 x 10^-5 மற்றும் நீரின் அயனிப் பெருக்கம் Kw = 1.0 x 10^-14. 0.10 M அம்மோனியம் குளோரைடு (NH4Cl) நீரிய கரைசலின் நீராற்பகுப்பு மாறிலி (Kh) மற்றும் pH முறையே:",
+        "optionTexts": [
+          "Kh = 5.56 x 10^-10, pH = 5.13",
+          "Kh = 1.8 x 10^-9, pH = 4.87",
+          "Kh = 5.56 x 10^-10, pH = 8.87",
+          "Kh = 1.8 x 10^-5, pH = 5.13"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Equal volumes of 0.002 M AgNO3 and 0.002 M K2CrO4 are mixed together. Given that the solubility product of silver chromate is Ksp(Ag2CrO4) = 1.1 x 10^-12, which of the following statements is correct regarding precipitation?",
+    "options": [
+      {
+        "label": "A",
+        "text": "No precipitate forms because the ionic product is less than Ksp.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "A precipitate of Ag2CrO4 forms because the ionic product (1.0 x 10^-9) exceeds Ksp.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The solution reaches exact saturation with no precipitate.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Only metallic silver precipitates out.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When equal volumes are mixed, each concentration is halved: [Ag+] = 0.002 / 2 = 1.0 x 10^-3 M; [CrO4^2-] = 0.002 / 2 = 1.0 x 10^-3 M. The ionic product Q_sp = [Ag+]^2 * [CrO4^2-] = (1.0 x 10^-3)^2 * (1.0 x 10^-3) = 1.0 x 10^-9. Since Q_sp (1.0 x 10^-9) > Ksp (1.1 x 10^-12), the solution is supersaturated and precipitation of Ag2CrO4 occurs.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம கனஅளவுள்ள 0.002 M AgNO3 மற்றும் 0.002 M K2CrO4 கரைசல்கள் ஒன்றாகக் கலக்கப்படுகின்றன. சில்வர் குரோமேட்டின் கரைதிறன் பெருக்கம் Ksp(Ag2CrO4) = 1.1 x 10^-12 எனில், வீழ்படிவாதல் பற்றிய சரியான கூற்று எது?",
+        "optionTexts": [
+          "அயனிப் பெருக்கம் Ksp-ஐ விடக் குறைவு என்பதால் வீழ்படிவு உருவாகாது.",
+          "அயனிப் பெருக்கம் (1.0 x 10^-9) Ksp-ஐ விட அதிகம் என்பதால் Ag2CrO4 வீழ்படிவு உருவாகும்.",
+          "வீழ்படிவு ஏதுமின்றி கரைசல் தெவிட்டிய நிலையை அடைகிறது.",
+          "உலோக சில்வர் மட்டுமே வீழ்படிவாகப் பிரிகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The solubility of calcium fluoride (CaF2) in a 0.10 M aqueous sodium fluoride (NaF) solution is S mol L^-1. Given that Ksp(CaF2) = 4.0 x 10^-11, the value of S is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.0 x 10^-9 mol L^-1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2.0 x 10^-5 mol L^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4.0 x 10^-10 mol L^-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.15 x 10^-4 mol L^-1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the presence of 0.10 M NaF, fluoride ion concentration is dominated by the strong electrolyte NaF: [F-] = 0.10 + 2S ≈ 0.10 M (since S is very small). The solubility equilibrium is CaF2(s) <=> Ca^2+(aq) + 2F^-(aq). Here [Ca^2+] = S. The solubility product is Ksp = [Ca^2+][F-]^2 => 4.0 x 10^-11 = S * (0.10)^2 = S * 0.01. Therefore, S = (4.0 x 10^-11) / 10^-2 = 4.0 x 10^-9 mol L^-1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.10 M நீரிய சோடியம் புளூரைடு (NaF) கரைசலில் கால்சியம் புளூரைடின் (CaF2) கரைதிறன் S mol L^-1 ஆகும். Ksp(CaF2) = 4.0 x 10^-11 எனில், S-ன் மதிப்பு:",
+        "optionTexts": [
+          "4.0 x 10^-9 mol L^-1",
+          "2.0 x 10^-5 mol L^-1",
+          "4.0 x 10^-10 mol L^-1",
+          "2.15 x 10^-4 mol L^-1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the gaseous reaction N2O4(g) <=> 2NO2(g), the vapour density of the equilibrium mixture is found to be 38.33 at a certain temperature. The percentage dissociation of N2O4 at this temperature is: (Molar mass of N2O4 = 92.0 g mol^-1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "20%",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "25%",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "33%",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Theoretical vapour density of undissociated N2O4 is D = Molar mass / 2 = 92.0 / 2 = 46.0. Observed vapour density d = 38.33. For N2O4 <=> 2NO2, the number of moles produced per mole dissociated is n = 2. Degree of dissociation alpha = (D - d) / [(n - 1) * d] = (46.0 - 38.33) / [(2 - 1) * 38.33] = 7.67 / 38.33 = 0.20. Percentage dissociation = 0.20 * 100 = 20%.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "N2O4(g) <=> 2NO2(g) என்ற வாயு வினைக்கு, ஒரு குறிப்பிட்ட வெப்பநிலையில் சமநிலைக் கலவையின் ஆவி அடர்த்தி 38.33 ஆக உள்ளது. இந்த வெப்பநிலையில் N2O4-ன் சதவீத பிரிகை வீதம்: (N2O4-ன் மோலார் நிறை = 92.0 g mol^-1)",
+        "optionTexts": [
+          "10%",
+          "20%",
+          "25%",
+          "33%"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The acid dissociation constant of acetic acid (CH3COOH) is Ka = 1.8 x 10^-5 at 298 K. A buffer solution is prepared by mixing 50 mL of 0.20 M CH3COOH with 50 mL of 0.10 M NaOH. The pH of the resulting buffer solution is: (Take log(1.8) = 0.26)",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.48",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4.74",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "5.04",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3.85",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Millimoles of CH3COOH initial = 50 mL * 0.20 M = 10.0 mmol. Millimoles of NaOH added = 50 mL * 0.10 M = 5.0 mmol. Neutralization: CH3COOH + NaOH -> CH3COONa + H2O. Millimoles of CH3COONa formed = 5.0 mmol. Millimoles of CH3COOH remaining = 10.0 - 5.0 = 5.0 mmol. Using Henderson-Hasselbalch equation: pH = pKa + log([Salt] / [Acid]). Since [Salt] = [Acid] = 5.0 mmol / 100 mL, log(1) = 0. Therefore, pH = pKa = -log(1.8 x 10^-5) = 5 - 0.26 = 4.74.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் அசிட்டிக் அமிலத்தின் (CH3COOH) அமிலப் பிரிகை மாறிலி Ka = 1.8 x 10^-5. 50 mL 0.20 M CH3COOH கரைசலானது 50 mL 0.10 M NaOH கரைசலுடன் கலக்கப்பட்டு ஒரு தாங்கல் கரைசல் தயாரிக்கப்படுகிறது. அக்கரைசலின் pH மதிப்பு: (log(1.8) = 0.26 எனக் கொள்க)",
+        "optionTexts": [
+          "4.48",
+          "4.74",
+          "5.04",
+          "3.85"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An aqueous solution of sodium hydroxide (NaOH) has a concentration of 0.010 M at 298 K. Given Kw = 1.0 x 10^-14, the pH of this solution is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "NaOH is a strong base that dissociates completely: [OH-] = 0.010 M = 1.0 x 10^-2 M. pOH = -log10[OH-] = -log10(10^-2) = 2. Since pH + pOH = 14 at 298 K: pH = 14 - pOH = 14 - 2 = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் சோடியம் ஹைட்ராக்சைடு (NaOH) நீரிய கரைசலின் செறிவு 0.010 M ஆகும். Kw = 1.0 x 10^-14 எனில், அக்கரைசலின் pH மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For the gaseous reaction: 2A(g) <=> B(g) + 3C(g), at a certain temperature, the equilibrium partial pressures of A, B, and C are 2.0 bar, 4.0 bar, and 2.0 bar, respectively. The value of Kp (in bar^2) is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The equilibrium constant expression is Kp = (p_B * p_C^3) / p_A^2. Substituting the equilibrium partial pressures: Kp = (4.0 * (2.0)^3) / (2.0)^2 = (4.0 * 8.0) / 4.0 = 8 bar^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2A(g) <=> B(g) + 3C(g) என்ற வாயு வினைக்கு, ஒரு குறிப்பிட்ட வெப்பநிலையில் A, B மற்றும் C ஆகியவற்றின் சமநிலை பகுதி அழுத்தங்கள் முறையே 2.0 bar, 4.0 bar, மற்றும் 2.0 bar ஆகும். Kp-ன் மதிப்பு (bar^2-ல்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The solubility of silver chloride (AgCl) in pure water at 298 K is 1.0 x 10^-5 mol L^-1. The solubility product Ksp of AgCl is expressed as 1.0 x 10^-x. The integer value of x is:",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "AgCl dissociates as AgCl(s) <=> Ag+(aq) + Cl-(aq). If the molar solubility is S = 1.0 x 10^-5 mol L^-1, then [Ag+] = S and [Cl-] = S. The solubility product is Ksp = [Ag+][Cl-] = S^2 = (1.0 x 10^-5)^2 = 1.0 x 10^-10. Hence, x = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் தூய நீரில் சில்வர் குளோரைடின் (AgCl) கரைதிறன் 1.0 x 10^-5 mol L^-1 ஆகும். AgCl-ன் கரைதிறன் பெருக்கம் Ksp மதிப்பானது 1.0 x 10^-x எனக் குறிப்பிடப்படுகிறது எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the gaseous equilibrium: H2(g) + I2(g) <=> 2HI(g) at 700 K, the equilibrium constant Kc is 64. If 2.0 moles of H2 and 2.0 moles of I2 are placed in an evacuated 1.0 L sealed reaction vessel and heated to 700 K, the number of moles of HI present at equilibrium is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Let 2x moles of HI be formed at equilibrium. Then at equilibrium: n(H2) = 2.0 - x, n(I2) = 2.0 - x, and n(HI) = 2x. Since volume V = 1.0 L, concentrations are equal to moles. Kc = [HI]^2 / ([H2][I2]) => 64 = (2x)^2 / (2.0 - x)^2. Taking square root on both sides: 8 = 2x / (2.0 - x) => 16 - 8x = 2x => 10x = 16 => x = 1.6 mol. Moles of HI at equilibrium = 2x = 2 * 1.6 = 3.2 mol ≈ 3 moles (rounded to nearest integer). More precisely, Kc = (2x/(2-x))^2 => sqrt(Kc) = 8 => 2x/(2-x) = 8 => x = 1.6; moles of HI = 3.2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "700 K-ல் H2(g) + I2(g) <=> 2HI(g) என்ற வாயு நிலை சமநிலைக்கு சமநிலை மாறிலி Kc = 64. 1.0 L மூடிய கலனில் 2.0 மோல் H2 மற்றும் 2.0 மோல் I2 ஆகியவை எடுத்துக்கொள்ளப்பட்டால், சமநிலையில் உள்ள HI-ன் மோல்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A 100 mL sample of 0.10 M aqueous hydrochloric acid (HCl) is mixed with 100 mL of 0.060 M aqueous sodium hydroxide (NaOH) solution at 298 K. The pH of the resulting solution is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Initial millimoles of H+ = 100 mL * 0.10 M = 10.0 mmol. Initial millimoles of OH- = 100 mL * 0.060 M = 6.0 mmol. Reaction: H+ + OH- -> H2O. Unreacted millimoles of H+ = 10.0 - 6.0 = 4.0 mmol. Total volume of mixture = 100 + 100 = 200 mL. [H+] in final solution = 4.0 mmol / 200 mL = 0.020 M = 2.0 x 10^-2 M. pH = -log10(2.0 x 10^-2) = 2 - log10(2) = 2 - 0.301 = 1.699 ≈ 2 (nearest integer).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 mL 0.10 M நீரிய HCl கரைசலானது 100 mL 0.060 M நீரிய NaOH கரைசலுடன் 298 K-ல் கலக்கப்படுகிறது. கிடைக்கும் கரைசலின் pH மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The solubility of calcium hydroxide, Ca(OH)2, in water at 298 K is 1.0 x 10^-2 mol L^-1. Assuming complete dissociation, its solubility product Ksp is expressed as x x 10^-6. The integer value of x is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Ca(OH)2 dissociates as Ca(OH)2(s) <=> Ca^2+(aq) + 2OH^-(aq). With solubility S = 1.0 x 10^-2 mol L^-1: [Ca^2+] = S = 1.0 x 10^-2 M, and [OH-] = 2S = 2.0 x 10^-2 M. Solubility product Ksp = [Ca^2+][OH-]^2 = (1.0 x 10^-2) * (2.0 x 10^-2)^2 = (1.0 x 10^-2) * (4.0 x 10^-4) = 4.0 x 10^-6. Thus, x = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் நீரில் கால்சியம் ஹைட்ராக்சைடின் (Ca(OH)2) கரைதிறன் 1.0 x 10^-2 mol L^-1 ஆகும். அதன் கரைதிறன் பெருக்கம் Ksp மதிப்பானது x x 10^-6 எனக் குறிப்பிடப்படுகிறது எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "At 298 K, the standard Gibbs free energy of formation of NO2(g) and N2O4(g) are 51.3 kJ mol^-1 and 97.8 kJ mol^-1, respectively. For the reaction 2NO2(g) <=> N2O4(g), given 2.303 * R * 298 = 5.71 kJ mol^-1, the equilibrium constant Kp is expressed as 10^x. The integer value of x is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Standard Gibbs free energy change Delta G° = Delta G_f°(N2O4) - 2 * Delta G_f°(NO2) = 97.8 - 2 * (51.3) = 97.8 - 102.6 = -4.8 kJ mol^-1. Using Delta G° = -2.303 * R * T * log10(Kp): -4.8 = -5.71 * log10(Kp) => log10(Kp) = 4.8 / 5.71 = 0.84 ≈ 1. Therefore, Kp = 10^1 (x = 1).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் NO2(g) மற்றும் N2O4(g) ஆகியவற்றின் திட்ட உருவாதல் கிப்ஸ் ஆற்றல்கள் முறையே 51.3 kJ mol^-1 மற்றும் 97.8 kJ mol^-1. 2NO2(g) <=> N2O4(g) என்ற வினைக்கு 2.303 * R * 298 = 5.71 kJ mol^-1 எனில், சமநிலை மாறிலி Kp = 10^x-ல் உள்ள x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A weak acid HA has an ionization constant Ka = 1.0 x 10^-5 at 298 K. The pH of a 0.10 M aqueous solution of its salt with a strong base, NaA, at 298 K is:",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a salt of a weak acid and strong base, the hydrolysis formula is pH = 7 + 0.5 * pKa + 0.5 * log10(C). Here, Ka = 1.0 x 10^-5 => pKa = 5. Concentration C = 0.10 M = 10^-1 M => log10(C) = -1. Substituting values: pH = 7 + 0.5 * (5) + 0.5 * (-1) = 7 + 2.5 - 0.5 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் வலிமை குறைந்த அமிலம் HA-ன் அயனியாதல் மாறிலி Ka = 1.0 x 10^-5. வலிமை மிகு காரத்துடன் அது உருவாக்கும் உப்பு NaA-ன் 0.10 M நீரிய கரைசலின் pH மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For the reaction N2(g) + 3H2(g) <=> 2NH3(g), the value of Kp is 4.1 x 10^-3 bar^-2 at 500 K. Given gas constant R = 0.082 bar L K^-1 mol^-1, the value of Kc (in L^2 mol^-2, rounded to the nearest integer) at 500 K is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The relation is Kp = Kc(RT)^(Delta n_g). Here Delta n_g = 2 - (1 + 3) = -2. Therefore, Kc = Kp * (RT)^2. R * T = 0.082 * 500 = 41. (RT)^2 = (41)^2 = 1681. Then Kc = (4.1 x 10^-3) * 1681 = 6.89 L^2 mol^-2 ≈ 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "500 K-ல் N2(g) + 3H2(g) <=> 2NH3(g) என்ற வினைக்கு Kp = 4.1 x 10^-3 bar^-2. R = 0.082 bar L K^-1 mol^-1 எனில், 500 K-ல் Kc-ன் மதிப்பு (L^2 mol^-2-ல், அருகிலுள்ள முழு எண்ணிற்கு மாற்றுக):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che06-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_06",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A 0.010 M aqueous solution of a weak monobasic acid HA is 10% ionized at 298 K. The acid dissociation constant Ka of this acid is expressed as 1.1 x 10^-x. The integer value of x is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Concentration C = 0.010 M, degree of dissociation alpha = 10% = 0.10. Using Ostwald's dilution law: Ka = C * alpha^2 / (1 - alpha) = (0.010) * (0.10)^2 / (1 - 0.10) = (0.010 * 0.010) / 0.90 = (1.0 x 10^-4) / 0.90 = 1.11 x 10^-4. Expressed as 1.1 x 10^-x, we get x = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "298 K-ல் 0.010 M வலிமை குறைந்த ஒருகாரத்துவ அமிலம் HA 10% அயனியடைகிறது. இவ்வமிலத்தின் பிரிகை மாறிலி Ka மதிப்பானது 1.1 x 10^-x எனக் குறிப்பிடப்படுகிறது எனில், முழு எண் x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che14-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The state of hybridization of the carbon atoms in acrylonitrile (CH2=CH-C#N) from carbon-3 to carbon-1 (following IUPAC numbering: 3 to 1) are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sp2, sp, sp",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "sp2, sp2, sp",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "sp3, sp2, sp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sp2, sp2, sp2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The IUPAC numbering of acrylonitrile (prop-2-enenitrile) begins at the nitrile carbon: C1 is -C#N, C2 is =CH-, and C3 is CH2=. C3 forms two C-H sigma bonds and one C-C sigma bond (3 sigma bonds, 0 lone pairs), making it sp2 hybridized. C2 forms one C-H sigma bond, one C-C sigma bond, and one C=C sigma bond (3 sigma bonds, 0 lone pairs), making it sp2 hybridized. C1 forms one C-C sigma bond and one C#N sigma bond (2 sigma bonds, 0 lone pairs), making it sp hybridized. Therefore, the hybridization from C3 to C1 is sp2, sp2, sp.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அக்ரிலோநைட்ரைல் (CH2=CH-C#N) மூலக்கூறில் கார்பன்-3 முதல் கார்பன்-1 வரையிலான கார்பன் அணுக்களின் இனக்கலப்பு நிலைகள் (IUPAC எண் முறைப்படி: 3 முதல் 1 வரை) முறையே:",
+        "optionTexts": [
+          "sp2, sp, sp",
+          "sp2, sp2, sp",
+          "sp3, sp2, sp",
+          "sp2, sp2, sp2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements is INCORRECT regarding the characteristics of a homologous series?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Successive members of the series differ in their molecular formula by a -CH2- unit.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Successive members of the series differ in molecular mass by 14 unified mass units (u).",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "All members of the series possess strictly identical physical properties such as melting point and boiling point.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "All members of the series contain the same characteristic functional group and exhibit similar chemical properties.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Members of a homologous series share the same functional group and exhibit similar chemical properties, differing from adjacent members by a -CH2- group (14 u). However, their physical properties (such as boiling point, melting point, density, and solubility) are not identical; they show a regular, gradual gradation as molecular mass increases. Therefore, statement C is incorrect and the correct choice.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "படித்தான தொடரின் (homologous series) பண்புகள் குறித்த பின்வரும் கூற்றுகளில் தவறானது எது?",
+        "optionTexts": [
+          "இத்தொடரின் அடுத்தடுத்த உறுப்பினர்கள் மூலக்கூறு வாய்ப்பாட்டில் ஒரு -CH2- அலகால் வேறுபடுகின்றன.",
+          "இத்தொடரின் அடுத்தடுத்த உறுப்பினர்கள் மூலக்கூறு நிறையில் 14 அணு நிறை அலகுகளால் (u) வேறுபடுகின்றன.",
+          "இத்தொடரின் அனைத்து உறுப்பினர்களும் உருகுநிலை மற்றும் கொதிநிலை போன்ற முற்றிலும் ஒத்த இயற்பியல் பண்புகளைக் கொண்டுள்ளன.",
+          "இத்தொடரின் அனைத்து உறுப்பினர்களும் ஒரே வினைசெயல் தொகுதியைக் கொண்டு ஒத்த வேதிப்பண்புகளை வெளிப்படுத்துகின்றன."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following chemical species functions as an electrophile in organic reactions?",
+    "options": [
+      {
+        "label": "A",
+        "text": "H2O",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "NH3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "AlCl3",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "CH3O-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "An electrophile is an electron-deficient species capable of accepting an electron pair. In aluminum chloride (AlCl3), the central aluminum atom has only six valence electrons (an incomplete octet) and possesses a vacant 3p orbital, allowing it to accept an electron pair as an electrophilic Lewis acid. In contrast, H2O, NH3, and CH3O- have non-bonding lone pairs or negative charges, functioning as nucleophiles.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரிம வினைகளில் எலக்ட்ரான் கவர் காரணியாகச் (electrophile) செயல்படும் வேதிக்கூறு எது?",
+        "optionTexts": [
+          "H2O",
+          "NH3",
+          "AlCl3",
+          "CH3O-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The correct IUPAC name of the hydrocarbon (CH3)2CH-CH2-CH=CH2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4-Methylpent-1-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2-Methylpent-4-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4,4-Dimethylbut-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1-Isopropylprop-2-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The principal carbon chain containing the double bond has five carbon atoms (pentene). Numbering begins from the end closer to the carbon-carbon double bond to give the unsaturation the lowest locant: C1 is =CH2, C2 is -CH=, C3 is -CH2-, C4 is -CH(CH3)-, and C5 is -CH3. A methyl substituent is present at C4. Therefore, the IUPAC name is 4-Methylpent-1-ene.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "(CH3)2CH-CH2-CH=CH2 என்ற ஹைட்ரோகார்பனின் சரியான IUPAC பெயர்:",
+        "optionTexts": [
+          "4-மெத்தில்பென்ட்-1-ஈன்",
+          "2-மெத்தில்பென்ட்-4-ஈன்",
+          "4,4-டைமெத்தில்பியூட்-1-ஈன்",
+          "1-ஐசோபுரோப்பைல்புரோப்-2-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The symmetrical homolytic cleavage of a single covalent bond in an organic molecule results in the formation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A carbocation and a carbanion",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Two carbocations",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Two neutral free radicals with an unpaired electron each",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Two carbanions",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In homolytic cleavage (homolysis), a covalent bond breaks symmetrically such that each bonded atom retains one of the two shared bonding electrons. This process generates two neutral, highly reactive species containing an unpaired valence electron, known as free radicals (A-B -> A· + B·). Heterolytic cleavage, by contrast, generates a cation and an anion.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கரிம மூலக்கூறில் சகப்பிணைப்பானது சமச்சீரான சீரான பிளவுக்கு (homolytic cleavage) உட்படும் போது உருவாவது:",
+        "optionTexts": [
+          "ஒரு கார்பன் நேர்அயனி மற்றும் ஒரு கார்பன் எதிர்அயனி",
+          "இரண்டு கார்பன் நேர்அயனிகள்",
+          "தனித்த எலக்ட்ரானைக் கொண்ட இரண்டு நடுநிலை தனி தீவிரவாதிகள் (free radicals)",
+          "இரண்டு கார்பன் எதிர்அயனிகள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The reaction of propene with hydrogen bromide (HBr) in the absence of peroxides to yield 2-bromopropane is classified as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electrophilic addition reaction",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Nucleophilic substitution reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Electrophilic substitution reaction",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Free radical addition reaction",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Alkenes possess a pi-electron cloud that acts as a nucleophile. In the first step of hydrohalogenation, an electrophile (H+) attacks the carbon-carbon double bond to form a more stable secondary carbocation intermediate. In the second step, the nucleophilic bromide ion (Br-) attacks the carbocation to form 2-bromopropane. Because the reaction is initiated by an electrophile and involves addition across a multiple bond, it is an electrophilic addition reaction.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பெராக்சைடு இல்லாத சூழலில் புரோப்பீன் ஹைட்ரஜன் புரோமைடுடன் (HBr) வினைபுரிந்து 2-புரோமோபுரோப்பேனைத் தரும் வினையின் வகை:",
+        "optionTexts": [
+          "எலக்ட்ரான் கவர் சேர்க்கை வினை",
+          "கருக்கவர் பதிலீட்டு வினை",
+          "எலக்ட்ரான் கவர் பதிலீட்டு வினை",
+          "தனி தீவிரவாத சேர்க்கை வினை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following represents the correct decreasing order of thermodynamic stability for the given carbocations?\n(I) p-CH3O-C6H4-CH2+\n(II) p-CH3-C6H4-CH2+\n(III) C6H5-CH2+\n(IV) p-NO2-C6H4-CH2+",
+    "options": [
+      {
+        "label": "A",
+        "text": "I > II > III > IV",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "IV > III > II > I",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I > III > II > IV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II > I > III > IV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The stability of benzyl carbocations is governed by electronic substituent effects. In (I), the para-methoxy group (-OCH3) provides powerful electron donation through resonance (+R / +M effect), stabilizing the positive charge most effectively. In (II), the para-methyl group (-CH3) donates electron density through hyperconjugation and +I effect. In (III), unsubstituted benzyl cation has moderate resonance stabilization. In (IV), the strongly electron-withdrawing nitro group (-NO2) exerts strong -M and -I effects, destabilizing the carbocation. Thus, the decreasing order is I > II > III > IV.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்டுள்ள கார்பன் நேர்அயனிகளின் வெப்ப இயக்கவியல் நிலைப்புத்தன்மையின் சரியான இறங்கு வரிசை எது?\n(I) p-CH3O-C6H4-CH2+\n(II) p-CH3-C6H4-CH2+\n(III) C6H5-CH2+\n(IV) p-NO2-C6H4-CH2+",
+        "optionTexts": [
+          "I > II > III > IV",
+          "IV > III > II > I",
+          "I > III > II > IV",
+          "II > I > III > IV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Hyperconjugation involves the delocalization of sigma electrons of a C-H bond with an adjacent empty p-orbital or pi-system. Which of the following alkenes exhibits the maximum number of hyperconjugative contributing structures?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2,3-Dimethylbut-2-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2-Methylbut-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "trans-But-2-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Propene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The number of hyperconjugative structures depends directly on the number of alpha-hydrogen atoms attached to the sp3 carbons adjacent to the double bond. In 2,3-dimethylbut-2-ene, (CH3)2C=C(CH3)2, there are four methyl groups providing 4 * 3 = 12 alpha-hydrogens. 2-Methylbut-2-ene has 9 alpha-hydrogens; trans-but-2-ene has 6 alpha-hydrogens; propene has 3 alpha-hydrogens. Therefore, 2,3-dimethylbut-2-ene displays the maximum number of hyperconjugative structures (12 no-bond resonance forms).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைப்பர்கான்ஜுகேஷன் என்பது ஒரு C-H பிணைப்பின் சிக்மா எலக்ட்ரான்கள் அருகிலுள்ள காலியான p-ஆர்பிட்டால் அல்லது பை-அமைப்புடன் உள்ளடங்காத் தன்மையடைவதாகும். பின்வரும் ஆல்கீன்களில் அதிக எண்ணிக்கையிலான ஹைப்பர்கான்ஜுகேஷன் அமைப்புகளை வெளிப்படுத்துவது எது?",
+        "optionTexts": [
+          "2,3-டைமெத்தில்பியூட்-2-ஈன்",
+          "2-மெத்தில்பியூட்-2-ஈன்",
+          "trans-பியூட்-2-ஈன்",
+          "புரோப்பீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following carbonyl compounds exhibits the highest percentage of enol content at dynamic equilibrium in pure liquid state at room temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Acetone (propan-2-one)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cyclohexanone",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Acetylacetone (pentane-2,4-dione)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Acetaldehyde (ethanal)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In monocarbonyl compounds like acetone, acetaldehyde, and cyclohexanone, the keto form is overwhelmingly favored (>99%) because the C=O bond is thermodynamically much stronger than the C=C bond. However, in beta-dicarbonyl compounds like acetylacetone (pentane-2,4-dione), the enol form is present in ~76-80% at equilibrium because it forms a conjugated six-membered cyclic system stabilized by resonance and strong intramolecular hydrogen bonding (chelation).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் தூய திரவ நிலையில் இயங்கு சமநிலையில் அதிக சதவீத ஈனால் (enol) உள்ளடக்கத்தைக் காட்டும் கார்பனைல் சேர்மம் எது?",
+        "optionTexts": [
+          "அசிட்டோன் (புரோப்பன்-2-ஒன்)",
+          "சைக்ளோஹெக்சனோன்",
+          "அசிட்டைல்அசிட்டோன் (பென்ட்டேன்-2,4-டையோன்)",
+          "அசிட்டால்டிஹைடு (எத்தனால்)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The correct IUPAC name for the polyfunctional compound CH3-CO-CH(CH3)-CH2-COOH is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2-Methyl-4-oxopentanoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3-Methyl-4-oxobutanoic acid",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3-Methyl-4-oxopentanoic acid",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4-Oxo-3-methylpentanoic acid",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The carboxylic acid (-COOH) group has higher priority than the ketone (-CO-) group and receives locant 1. The longest continuous carbon chain containing both functional groups has five carbons (pentanoic acid): C1 is -COOH, C2 is -CH2-, C3 is -CH(CH3)-, C4 is -CO-, and C5 is -CH3. The substituents are a methyl group at C3 and an oxo group (=O) at C4. In alphabetical order, 'methyl' precedes 'oxo'. Therefore, the correct IUPAC name is 3-Methyl-4-oxopentanoic acid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "CH3-CO-CH(CH3)-CH2-COOH என்ற பல்வினைசெயல் தொகுதி சேர்மத்தின் சரியான IUPAC பெயர்:",
+        "optionTexts": [
+          "2-மெத்தில்-4-ஆக்ஸோபென்டனாயிக் அமிலம்",
+          "3-மெத்தில்-4-ஆக்ஸோபியூட்டனாயிக் அமிலம்",
+          "3-மெத்தில்-4-ஆக்ஸோபென்டனாயிக் அமிலம்",
+          "4-ஆக்ஸோ-3-மெத்தில்பென்டனாயிக் அமிலம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following arrangements correctly reflects the decreasing order of the negative inductive (-I) effect of the given groups?",
+    "options": [
+      {
+        "label": "A",
+        "text": "-CN > -NO2 > -F > -COOH",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "-NO2 > -CN > -COOH > -F",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "-F > -NO2 > -CN > -COOH",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-COOH > -NO2 > -CN > -F",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The -I effect of groups depends on the electronegativity and formal charge of the attaching atom. The nitro group (-NO2) possesses a formally positively charged nitrogen atom and exerts the strongest electron withdrawal, followed by cyano (-CN with an sp-hybridized carbon), then carboxyl (-COOH), and finally fluorine (-F). Thus, the standard decreasing order of -I effect is -NO2 > -CN > -COOH > -F.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்டுள்ள தொகுதிகளின் எதிர் தூண்டல் (-I) விளைவின் சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "-CN > -NO2 > -F > -COOH",
+          "-NO2 > -CN > -COOH > -F",
+          "-F > -NO2 > -CN > -COOH",
+          "-COOH > -NO2 > -CN > -F"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which pair of organic compounds represents metamers?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ethoxyethane (CH3CH2OCH2CH3) and 1-Methoxypropane (CH3OCH2CH2CH3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Pentan-1-ol and Pentan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Propanone and Propanal",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Butan-1-ol and Diethyl ether",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Metamerism arises from the unequal distribution of alkyl carbon chains on either side of the same polyvalent functional group. In ethoxyethane, an ether oxygen is attached to two ethyl groups (-C2H5 and -C2H5). In 1-methoxypropane, the same ether oxygen is attached to a methyl group (-CH3) and a propyl group (-C3H7). Both have the same functional group (-O-) and formula (C4H10O), making them metamers. Pentan-1-ol and pentan-2-ol are position isomers; propanone and propanal are functional isomers; butan-1-ol and diethyl ether are functional isomers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "படிநிலை மாற்றியங்களை (metamers) குறிக்கும் கரிமச் சேர்மங்களின் இணை எது?",
+        "optionTexts": [
+          "ஈத்தாக்ஸிஈத்தேன் (CH3CH2OCH2CH3) மற்றும் 1-மெத்தாக்ஸிபுரோப்பேன் (CH3OCH2CH2CH3)",
+          "பென்ட்டேன்-1-ஆல் மற்றும் பென்ட்டேன்-2-ஆல்",
+          "புரோப்பனோன் மற்றும் புரோப்பனல்",
+          "பியூட்டேன்-1-ஆல் மற்றும் டைஎத்தில் ஈதர்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following alkenes is capable of exhibiting geometrical (cis-trans) isomerism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "But-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2-Methylprop-1-ene",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "But-2-ene",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1,1-Dichloroprop-1-ene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For an alkene to exhibit geometrical isomerism, restricted rotation must exist around the double bond, and each doubly bonded carbon atom must be attached to two different atoms or groups. In but-2-ene (CH3-CH=CH-CH3), each sp2 carbon is bonded to one -H and one -CH3 group, allowing the existence of cis-but-2-ene and trans-but-2-ene. In but-1-ene, 2-methylprop-1-ene, and 1,1-dichloroprop-1-ene, one of the sp2 carbons is bonded to two identical atoms/groups, preventing geometrical isomerism.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வடிவ மாற்றியத்தை (cis-trans isomerism) வெளிப்படுத்தக்கூடிய ஆல்கீன் எது?",
+        "optionTexts": [
+          "பியூட்-1-ஈன்",
+          "2-மெத்தில்புரோப்-1-ஈன்",
+          "பியூட்-2-ஈன்",
+          "1,1-டைகுளோரோபுரோப்-1-ஈன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the Newman projection of n-butane viewed along the C2-C3 bond axis, the dihedral angle between the two bulky methyl groups in the gauche conformation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0°",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "60°",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "120°",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "180°",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In the conformational analysis of n-butane about the central C2-C3 bond: the fully eclipsed conformation has a dihedral angle theta = 0°; the gauche conformation (a staggered conformation with steric strain between methyl groups) has theta = 60°; the partially eclipsed conformation has theta = 120°; and the anti-staggered conformation (the most stable conformer) has theta = 180°.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "n-பியூட்டேனின் C2-C3 பிணைப்பு அச்சு வழியே பார்க்கப்படும் நியூமன் அமைப்பில், கௌச் (gauche) வச அமைப்பில் உள்ள இரண்டு மெத்தில் தொகுதிகளுக்கு இடையேயான இருமுகக் கோணம் (dihedral angle):",
+        "optionTexts": [
+          "0°",
+          "60°",
+          "120°",
+          "180°"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following carbanions possesses the highest thermodynamic stability?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CH3-CH2^-",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "CH2=CH^-",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "CH#C^-",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "(CH3)3C^-",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The stability of a carbanion depends on the electronegativity and s-character of the carbon atom bearing the negative charge. In the ethynyl carbanion (CH#C^-), the carbon is sp-hybridized with 50% s-character. Because s-orbitals are closer to the nucleus, high s-character significantly stabilizes negative charge. In CH2=CH^-, the carbon is sp2 (33.3% s-character), and in alkyl carbanions it is sp3 (25% s-character). Thus, CH#C^- is by far the most stable carbanion.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அதிக வெப்ப இயக்கவியல் நிலைப்புத்தன்மை கொண்ட கார்பன் எதிர்அயனி எது?",
+        "optionTexts": [
+          "CH3-CH2^-",
+          "CH2=CH^-",
+          "CH#C^-",
+          "(CH3)3C^-"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following isomeric alcohols contains an asymmetric carbon atom (chiral center) and exhibits optical isomerism?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Propan-2-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Butan-2-ol",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Pentan-3-ol",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2-Methylpropan-2-ol",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A chiral carbon atom is bonded to four completely different atoms or groups. In butan-2-ol, CH3-C*H(OH)-CH2CH3, the C2 carbon is attached to: -H, -OH, -CH3, and -CH2CH3. Because all four substituents are distinct, C2 is a chiral center, rendering butan-2-ol chiral and optically active. In propan-2-ol, pentan-3-ol, and 2-methylpropan-2-ol, the central carbon is attached to identical alkyl groups, making them achiral.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சமச்சீரற்ற கார்பன் அணுவைக் (கைரல் மையம்) கொண்டு ஒளி சுழற்றும் பண்புடைய மாற்றிய ஆல்கஹால் எது?",
+        "optionTexts": [
+          "புரோப்பன்-2-ஆல்",
+          "பியூட்டேன்-2-ஆல்",
+          "பென்ட்டேன்-3-ஆல்",
+          "2-மெத்தில்புரோப்பன்-2-ஆல்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following resonating structures of diazomethane:\n(I) H2C=N^+=N^-\n(II) H2C^--N^+ #N\n(III) H2C^+-N=N^-\n(IV) H2C^--N=N^+\nWhich canonical structure makes the LEAST contribution to the resonance hybrid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "IV",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The relative stability of resonance structures is evaluated using key rules: (1) structures with complete octets are much more stable than those with incomplete octets; (2) minimal formal charge separation is favored. In structures I and II, every atom (C and both N atoms) has a complete valence octet. In structure III, the carbon atom carries a positive charge and has an incomplete octet (only 6 electrons). Having an incomplete octet combined with unfavorable charge separation makes structure III the least stable, contributing the least to the resonance hybrid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டையசோமீத்தேனின் உடனிசைவு அமைப்புகளைக் கருதுக:\n(I) H2C=N^+=N^-\n(II) H2C^--N^+ #N\n(III) H2C^+-N=N^-\n(IV) H2C^--N=N^+\nஉடனிசைவு கலப்பினத்திற்கு மிகக் குறைந்த பங்களிப்பை வழங்கும் அமைப்பு எது?",
+        "optionTexts": [
+          "I",
+          "II",
+          "III",
+          "IV"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "According to Hückel's aromaticity rule, which of the following cyclic conjugated species is ANTI-AROMATIC?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cyclopentadienyl anion",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cycloheptatrienyl cation (tropylium ion)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cyclobutadiene",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Cyclooctatetraene",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A compound is anti-aromatic if it is cyclic, planar, fully conjugated, and contains 4n pi electrons (where n = 1, 2, ...). Cyclobutadiene is planar, cyclic, completely conjugated, and possesses 4 pi electrons (4n with n = 1), making it anti-aromatic and exceptionally unstable. The cyclopentadienyl anion and tropylium cation each possess (4n + 2) = 6 pi electrons (aromatic). Cyclooctatetraene has 8 pi electrons but avoids anti-aromaticity by adopting a non-planar tub conformation (non-aromatic).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹக்கல் விதியின்படி, பின்வரும் வளைய இணைந்த கூறுகளில் எது எதிர்-அரோமேட்டிக் (anti-aromatic) தன்மை கொண்டது?",
+        "optionTexts": [
+          "சைக்ளோபென்டாடையீனைல் எதிரயனி",
+          "சைக்ளோஹெப்டாட்ரையீனைல் நேர்அயனி (ட்ரோபிலியம் அயனி)",
+          "சைக்ளோபியூட்டாடையீன்",
+          "சைக்ளோஆக்டாடெட்ராயீன்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Tartaric acid, HOOC-CH(OH)-CH(OH)-COOH, contains two identical chiral carbon atoms. The total number of stereoisomers and the number of optically active enantiomers possible for tartaric acid are, respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 stereoisomers, 4 enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 stereoisomers, 2 enantiomers",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 stereoisomers, 2 enantiomers",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 stereoisomers, 0 enantiomers",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a molecule with n similar chiral carbons where n is even (n = 2): Number of optically active forms (a) = 2^(n - 1) = 2^(2 - 1) = 2 (d-tartaric acid and l-tartaric acid, which form 1 enantiomeric pair). Number of meso forms (m) = 2^((n/2) - 1) = 2^(1 - 1) = 2^0 = 1 (meso-tartaric acid, which is optically inactive due to an internal plane of symmetry). Total stereoisomers = a + m = 2 + 1 = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டார்டாரிக் அமிலம், HOOC-CH(OH)-CH(OH)-COOH, இரண்டு ஒத்த கைரல் கார்பன் அணுக்களைக் கொண்டுள்ளது. டார்டாரிக் அமிலத்திற்கு சாத்தியமான புறவெளி மாற்றியங்களின் மொத்த எண்ணிக்கை மற்றும் ஒளி சுழற்றும் எனான்சியோமர்களின் எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "4 புறவெளி மாற்றியங்கள், 4 எனான்சியோமர்கள்",
+          "3 புறவெளி மாற்றியங்கள், 2 எனான்சியோமர்கள்",
+          "4 புறவெளி மாற்றியங்கள், 2 எனான்சியோமர்கள்",
+          "3 புறவெளி மாற்றியங்கள், 0 எனான்சியோமர்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements concerning electronic displacement effects in organic molecules is INCORRECT?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The inductive effect is a permanent polarization operating through sigma bonds that falls off rapidly with distance.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hyperconjugation involves the interaction of electrons in a sigma bond (usually C-H) with an adjacent empty or partially filled p-orbital or pi-orbital.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The electromeric effect is a permanent electronic displacement occurring in isolated single covalent bonds in the absence of reagents.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "The resonance (mesomeric) effect involves the complete delocalization of pi-electrons or lone pairs and operates permanently through conjugated systems.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The electromeric effect is a temporary electronic displacement occurring exclusively in molecules containing multiple bonds (double or triple bonds) only upon the demand of an attacking reagent. As soon as the attacking reagent is removed, the molecule returns to its original ground state. It does not occur permanently nor does it occur in isolated single bonds. Therefore, statement C is incorrect and the correct choice.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கரிம மூலக்கூறுகளில் நிகழும் எலக்ட்ரான் இடப்பெயர்ச்சி விளைவுகள் குறித்த பின்வரும் கூற்றுகளில் தவறானது எது?",
+        "optionTexts": [
+          "தூண்டல் விளைவு என்பது சிக்மா பிணைப்புகள் வழியே செயல்படும் ஒரு நிலையான முனைவுறுத்தல் மற்றும் தொலைவு அதிகரிக்க வேகமாக குறைகிறது.",
+          "ஹைப்பர்கான்ஜுகேஷன் என்பது ஒரு சிக்மா பிணைப்பின் (C-H) எலக்ட்ரான்கள் அருகிலுள்ள காலியான அல்லது பகுதியளவு நிரப்பப்பட்ட p-ஆர்பிட்டால் அல்லது பை-அமைப்புடன் ஈடுபடும் இடைவினையாகும்.",
+          "எலக்ட்ரோமெரிக் விளைவு என்பது வினைப்பொருட்கள் இல்லாத போதும் தனித்த ஒற்றைச் சகப்பிணைப்புகளில் ஏற்படும் ஒரு நிலையான எலக்ட்ரான் இடப்பெயர்ச்சியாகும்.",
+          "உடனிசைவு (மீசோமெரிக்) விளைவு என்பது பை-எலக்ட்ரான்கள் அல்லது தனித்த இரட்டைகளின் முழுமையான உள்ளடங்காத் தன்மையாகும் மற்றும் இணைந்த அமைப்புகளில் நிரந்தரமாகச் செயல்படுகிறது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of pi (pi) bonds present in a single molecule of but-1-en-3-yne (CH2=CH-C#CH) is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of but-1-en-3-yne is CH2=CH-C#CH. The double bond (-CH=CH2) contains one sigma bond and 1 pi bond. The triple bond (-C#CH) contains one sigma bond and 2 pi bonds. Therefore, the total number of pi bonds in the molecule = 1 + 2 = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பியூட்-1-ஈன்-3-ஐன் (CH2=CH-C#CH) என்ற ஒரு மூலக்கூறில் உள்ள மொத்த பை (pi) பிணைப்புகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of alpha-hydrogen atoms available for hyperconjugation in the 2,3-dimethylbutan-2-yl carbocation, (CH3)2C^+-CH(CH3)2, is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure is (CH3)2C^+-CH(CH3)2. The positively charged carbon (C2) is directly bonded to: two methyl groups at C2 (contributing 2 * 3 = 6 alpha-hydrogens) and one CH carbon at C3 (contributing 1 alpha-hydrogen). The methyl groups attached to C3 are beta to the carbocation center and cannot participate directly in hyperconjugation. Therefore, the total number of alpha-hydrogens = 6 + 1 = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2,3-டைமெத்தில்பியூட்டேன்-2-யில் கார்பன் நேர்அயனியில், (CH3)2C^+-CH(CH3)2, ஹைப்பர்கான்ஜுகேஷனுக்குக் கிடைக்கக்கூடிய ஆல்பா-ஹைட்ரஜன் அணுக்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of chiral (asymmetric) carbon atoms present in a single molecule of 2-bromo-3-chlorobutane is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structural formula of 2-bromo-3-chlorobutane is CH3-C*H(Br)-C*H(Cl)-CH3. Carbon-2 is bonded to four different groups: -H, -Br, -CH3, and -CH(Cl)CH3, making it a chiral center. Carbon-3 is bonded to four different groups: -H, -Cl, -CH3, and -CH(Br)CH3, making it a second chiral center. Carbons 1 and 4 are methyl carbons and achiral. Thus, there are exactly 2 chiral carbon atoms.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-புரோமோ-3-குளோரோபியூட்டேன் மூலக்கூறில் உள்ள கைரல் (சமச்சீரற்ற) கார்பன் அணுக்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The degree of unsaturation (Double Bond Equivalent, DBE) of an organic compound having the molecular formula C7H7NO is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The formula for the degree of unsaturation (DBE) is: DBE = C + 1 - (H - N + X) / 2, where C is the number of tetravalent carbon atoms, H is monovalent hydrogens, N is trivalent nitrogens, and X is halogens. Oxygen atoms (divalent) do not affect the formula. For C7H7NO: DBE = 7 + 1 - (7 - 1 + 0) / 2 = 8 - (6 / 2) = 8 - 3 = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C7H7NO என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட ஒரு கரிமச் சேர்மத்தின் நிறைவுறாமைத் தரம் (இரட்டைப் பிணைப்புச் சமானம், DBE):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of acyclic structural (constitutional) isomers possible for the alkane having the molecular formula C6H14 is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The constitutional isomers of hexane (C6H14) are: (1) Hexane (n-hexane): CH3-CH2-CH2-CH2-CH2-CH3; (2) 2-Methylpentane: (CH3)2CH-CH2-CH2-CH3; (3) 3-Methylpentane: CH3-CH2-CH(CH3)-CH2-CH3; (4) 2,2-Dimethylbutane: (CH3)3C-CH2-CH3; (5) 2,3-Dimethylbutane: (CH3)2CH-CH(CH3)2. Therefore, exactly 5 structural isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C6H14 என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட ஆல்கேனுக்கு சாத்தியமான திறந்த சங்கிலி கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of alpha-hydrogen atoms available for hyperconjugation in 2-methylbut-2-ene is:",
+    "correctAnswer": 9,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The structure of 2-methylbut-2-ene is (CH3)2C=CH-CH3. The double bond is between C2 and C3. Attached to C2 are two methyl groups, contributing 2 * 3 = 6 alpha-hydrogens. Attached to C3 is one methyl group, contributing 3 alpha-hydrogens. Total alpha-hydrogens = 6 + 3 = 9.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2-மெத்தில்பியூட்-2-ஈனில் ஹைப்பர்கான்ஜுகேஷனுக்குக் கிடைக்கக்கூடிய ஆல்பா-ஹைட்ரஜன் அணுக்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of acyclic ether constitutional isomers having the molecular formula C4H10O is:",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Acyclic ethers containing four carbon atoms (C4H10O) are formed by arranging alkyl groups around the divalent oxygen atom: (1) Diethyl ether: CH3CH2-O-CH2CH3 (ethoxyethane); (2) Methyl propyl ether: CH3-O-CH2CH2CH3 (1-methoxypropane); (3) Methyl isopropyl ether: CH3-O-CH(CH3)2 (2-methoxypropane). Thus, there are exactly 3 acyclic ether isomers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C4H10O என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட திறந்த சங்கிலி ஈதர் கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to Hückel's rule of aromaticity, the number of delocalized pi (pi) electrons present in the aromatic polycyclic framework of anthracene (C14H10) is:",
+    "correctAnswer": 14,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Anthracene consists of three linearly fused benzene rings. Its conjugated system contains 7 alternating double bonds, meaning there are 7 * 2 = 14 delocalized pi electrons. This satisfies Hückel's (4n + 2) rule for n = 3: 4(3) + 2 = 14 pi electrons. Thus, exactly 14 pi electrons are involved.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹக்கல் விதியின்படி, ஆந்த்ரசீனின் (C14H10) அரோமேட்டிக் அமைப்பில் உள்ளடங்காமல் உள்ள பை (pi) எலக்ட்ரான்களின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The total number of constitutional (structural) carboxylic acid isomers having the molecular formula C5H10O2 is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A carboxylic acid of formula C5H10O2 has the general structure R-COOH, where R is a butyl group (-C4H9). There are four isomeric butyl groups: (1) n-Butyl: CH3CH2CH2CH2COOH (pentanoic acid); (2) sec-Butyl: CH3CH2CH(CH3)COOH (2-methylbutanoic acid); (3) Isobutyl: (CH3)2CHCH2COOH (3-methylbutanoic acid); (4) tert-Butyl: (CH3)3CCOOH (2,2-dimethylpropanoic acid). Therefore, exactly 4 carboxylic acid constitutional isomers exist.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "C5H10O2 என்ற மூலக்கூறு வாய்ப்பாட்டைக் கொண்ட கார்பாக்சிலிக் அமில கட்டமைப்பு மாற்றியங்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che14-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Consider the following eight cyclic species: (1) Benzene, (2) Cyclopentadienyl anion, (3) Cyclooctatetraene, (4) Tropylium cation, (5) Cyclobutadiene, (6) Naphthalene, (7) Pyridine, and (8) Pyrrole. The total number of species among these that are AROMATIC according to Hückel's rule is:",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Evaluating each species for aromaticity: (1) Benzene: planar, cyclic, 6 pi electrons (4n+2 with n=1) -> Aromatic; (2) Cyclopentadienyl anion: planar, cyclic, 6 pi electrons -> Aromatic; (3) Cyclooctatetraene: 8 pi electrons, adopts a non-planar tub shape -> Non-aromatic; (4) Tropylium cation: planar, cyclic, 6 pi electrons -> Aromatic; (5) Cyclobutadiene: planar, cyclic, 4 pi electrons -> Anti-aromatic; (6) Naphthalene: planar, cyclic, 10 pi electrons (n=2) -> Aromatic; (7) Pyridine: planar, cyclic, 6 pi electrons -> Aromatic; (8) Pyrrole: planar, cyclic, lone pair on N participates in delocalization giving 6 pi electrons -> Aromatic. Exactly 6 species (1, 2, 4, 6, 7, and 8) are aromatic.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் எட்டு வளையக் கூறுகளைக் கருதுக: (1) பென்சீன், (2) சைக்ளோபென்டாடையீனைல் எதிரயனி, (3) சைக்ளோஆக்டாடெட்ராயீன், (4) ட்ரோபிலியம் நேர்அயனி, (5) சைக்ளோபியூட்டாடையீன், (6) நாப்தலீன், (7) பிரிடீன், மற்றும் (8) பிரோல். இவற்றுள் ஹக்கல் விதியின்படி அரோமேட்டிக் தன்மை கொண்ட கூறுகளின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

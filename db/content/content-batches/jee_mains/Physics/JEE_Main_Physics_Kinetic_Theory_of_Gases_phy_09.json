@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY09-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas is maintained at constant temperature. If its volume is compressed to one-third of its initial value, its pressure becomes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "One-third",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Three times",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Nine times",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Unchanged",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Boyle's law (P V = constant at constant temperature T): P1 V1 = P2 V2 => P2 = P1 (V1 / V2). Since V2 = V1 / 3, P2 = 3 P1. Thus, the pressure becomes three times its initial value.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா வெப்பநிலையில் உள்ள ஒரு நல்லியல்பு வாயுவின் பருமன் தொடக்க மதிப்பில் மூன்றில் ஒரு பங்காக அமுக்கப்பட்டால், அதன் அழுத்தம்:",
+        "optionTexts": [
+          "மூன்றில் ஒரு பங்கு",
+          "மூன்று மடங்கு",
+          "ஒன்பது மடங்கு",
+          "மாறாது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the kinetic theory of gases, the pressure P exerted by an ideal gas of density rho and root-mean-square velocity v_rms is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P = (1/3) rho v_rms^2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "P = (2/3) rho v_rms^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "P = (1/2) rho v_rms^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P = rho v_rms^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "From the kinetic theory of gases, the pressure exerted by gas molecules on the walls of the container is derived as P = (1/3) * (M_total / V) * v_rms^2 = (1/3) rho v_rms^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வாயுக்களின் இயக்கவியல் கொள்கையின்படி, அடர்த்தி rho மற்றும் சராசரி இருமடி மூல வேகம் v_rms கொண்ட ஒரு நல்லியல்பு வாயு ஏற்படுத்தும் அழுத்தம் P:",
+        "optionTexts": [
+          "P = (1/3) rho v_rms^2",
+          "P = (2/3) rho v_rms^2",
+          "P = (1/2) rho v_rms^2",
+          "P = rho v_rms^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The average translational kinetic energy of a molecule of any ideal gas at absolute temperature T depends on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The nature and molecular mass of the gas",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Temperature T only and is equal to (3/2) k_B T",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Volume and pressure only",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Temperature T only and is equal to (5/2) k_B T",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The average translational kinetic energy per molecule is given by E_trans = (3/2) k_B T. It is independent of the nature, mass, or atomicity of the gas molecule and depends solely on the absolute temperature T.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனி வெப்பநிலை T இல் உள்ள ஒரு நல்லியல்பு வாயு மூலக்கூறின் சராசரி நேரியல் இயக்க ஆற்றல் எதனைச் சார்ந்தது?",
+        "optionTexts": [
+          "வாயுவின் தன்மை மற்றும் மோலார் நிறை",
+          "வெப்பநிலை T-ஐ மட்டுமே மற்றும் அதன் மதிப்பு (3/2) k_B T",
+          "பருமன் மற்றும் அழுத்தம் மட்டுமே",
+          "வெப்பநிலை T-ஐ மட்டுமே மற்றும் அதன் மதிப்பு (5/2) k_B T"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "For a Maxwell-Boltzmann distribution of molecular speeds at a given temperature, the correct order of speeds is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "v_rms > v_avg > v_mp",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "v_mp > v_avg > v_rms",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "v_avg > v_rms > v_mp",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "v_rms > v_mp > v_avg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The three characteristic speeds are: Most probable speed v_mp = sqrt(2 R T / M) approx 1.414 sqrt(R T / M); Average speed v_avg = sqrt(8 R T / (pi M)) approx 1.596 sqrt(R T / M); Root-mean-square speed v_rms = sqrt(3 R T / M) approx 1.732 sqrt(R T / M). Thus, v_rms > v_avg > v_mp.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கொடுக்கப்பட்ட வெப்பநிலையில் மூலக்கூறு வேகங்களின் மேக்ஸ்வெல்-போல்ட்ஸ்மேன் பகிர்வுக்கு, வேகங்களின் சரியான வரிசை:",
+        "optionTexts": [
+          "v_rms > v_avg > v_mp",
+          "v_mp > v_avg > v_rms",
+          "v_avg > v_rms > v_mp",
+          "v_rms > v_mp > v_avg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "At moderate temperatures, a rigid diatomic gas molecule has how many degrees of freedom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A rigid diatomic molecule has 3 translational degrees of freedom and 2 rotational degrees of freedom (about two perpendicular axes perpendicular to the internuclear bond). Since vibrational modes are not active at moderate temperatures, the total degrees of freedom is f = 3 + 2 = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிதமான வெப்பநிலையில், திடமான ஈரணு வாயு மூலக்கூறு எத்தனை சுதந்திர இயக்கக் கூறுகளைக் (degrees of freedom) கொண்டுள்ளது?",
+        "optionTexts": [
+          "3",
+          "5",
+          "6",
+          "7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to the law of equipartition of energy, the average kinetic energy associated with each degree of freedom per molecule in thermal equilibrium at temperature T is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "k_B T",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(1/2) k_B T",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(3/2) k_B T",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(5/2) k_B T",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The theorem of equipartition of energy states that in thermal equilibrium, total energy is shared equally among all degrees of freedom, and the average energy associated with each quadratic degree of freedom per molecule is (1/2) k_B T.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஆற்றல் சமபங்கீட்டு விதியின்படி, T வெப்பநிலையில் வெப்பச் சமநிலையில் உள்ள ஒரு மூலக்கூறின் ஒவ்வொரு சுதந்திர இயக்கக் கூறுடனும் தொடர்புடைய சராசரி இயக்க ஆற்றல்:",
+        "optionTexts": [
+          "k_B T",
+          "(1/2) k_B T",
+          "(3/2) k_B T",
+          "(5/2) k_B T"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If E is the translational kinetic energy per unit volume of an ideal gas, the pressure P exerted by the gas is related to E as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "P = (1/3) E",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "P = (2/3) E",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "P = (3/2) E",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "P = 2 E",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Pressure is P = (1/3) rho v_rms^2. Kinetic energy per unit volume is E = (1/2) rho v_rms^2 => rho v_rms^2 = 2 E. Substituting this gives P = (1/3) * (2 E) = (2/3) E.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "E என்பது ஒரு நல்லியல்பு வாயுவின் ஓரலகு பருமனுக்கான நேரியல் இயக்க ஆற்றல் எனில், வாயு ஏற்படுத்தும் அழுத்தம் P ஆனது E உடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "P = (1/3) E",
+          "P = (2/3) E",
+          "P = (3/2) E",
+          "P = 2 E"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mean free path lambda of molecules of an ideal gas is related to absolute temperature T and pressure P as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "proportional to T / P",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "proportional to P / T",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "proportional to T^2 / P",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "proportional to 1 / (P T)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The mean free path is lambda = 1 / (sqrt(2) n pi d^2). From the ideal gas equation P = n k_B T, the number density is n = P / (k_B T). Substituting n gives lambda = (k_B T) / (sqrt(2) pi d^2 P). Thus, lambda is proportional to T / P.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயு மூலக்கூறுகளின் சராசரி மோதல் இடைவெளி lambda ஆனது தனி வெப்பநிலை T மற்றும் அழுத்தம் P ஆகியவற்றுடன் எவ்வாறு தொடர்புடையது?",
+        "optionTexts": [
+          "T / P க்கு நேர்விகிதத்தில்",
+          "P / T க்கு நேர்விகிதத்தில்",
+          "T^2 / P க்கு நேர்விகிதத்தில்",
+          "1 / (P T) க்கு நேர்விகிதத்தில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the absolute temperature of an ideal gas is quadrupled (T' = 4T) at constant volume, the collision frequency of the gas molecules will:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remain unchanged",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Double",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Become four times",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Become eight times",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Collision frequency is nu = v_avg / lambda. The mean free path is lambda = 1 / (sqrt(2) n pi d^2). At constant volume, number density n is constant, so lambda remains constant. The average speed is v_avg proportional to sqrt(T). Therefore, nu is proportional to sqrt(T). When T becomes 4T, nu becomes sqrt(4) = 2 times its initial value.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா பருமனில் உள்ள ஒரு நல்லியல்பு வாயுவின் தனி வெப்பநிலை நான்கு மடங்காக உயர்த்தப்பட்டால் (T' = 4T), வாயு மூலக்கூறுகளின் மோதல் அதிர்வெண்:",
+        "optionTexts": [
+          "மாறாமல் இருக்கும்",
+          "இரு மடங்காகும்",
+          "நான்கு மடங்காகும்",
+          "எட்டு மடங்காகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A mixture consists of 2 moles of helium (monoatomic, C_v = 1.5 R) and 1 mole of oxygen (diatomic, C_v = 2.5 R). The adiabatic exponent gamma = C_p / C_v of the mixture is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.55",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1.60",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.47",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.50",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "C_v,mix = (n1 C_v1 + n2 C_v2) / (n1 + n2) = [ 2 * (1.5 R) + 1 * (2.5 R) ] / (2 + 1) = (3 R + 2.5 R) / 3 = 5.5 R / 3 = 11 R / 6. Then C_p,mix = C_v,mix + R = 11 R / 6 + R = 17 R / 6. The ratio is gamma_mix = C_p,mix / C_v,mix = (17/6) / (11/6) = 17 / 11 approx 1.545 approx 1.55.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 மோல் ஹீலியம் (ஓரணு வாயு, C_v = 1.5 R) மற்றும் 1 மோல் ஆக்சிஜன் (ஈரணு வாயு, C_v = 2.5 R) கலந்த ஒரு கலவையின் வெப்பப் பரிமாற்றமில்லா அடுக்கு gamma = C_p / C_v இன் மதிப்பு:",
+        "optionTexts": [
+          "1.55",
+          "1.60",
+          "1.47",
+          "1.50"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The Moon has no atmosphere primarily because:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The escape speed on the Moon is smaller than the root-mean-square speed of gas molecules",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The gravitational pull of the Sun sweeps away all gases",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The temperature on the Moon is extremely low",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gases react chemically with the lunar rocks",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The acceleration due to gravity on the Moon is small, making the escape speed from its surface low (approx 2.38 km/s). At lunar daytime temperatures, the root-mean-square speed of light gas molecules (like H2, He, O2) exceeds or is comparable to the lunar escape velocity, causing them to escape into space.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிலவில் வளிமண்டலம் இல்லாததற்கு முக்கிய காரணம்:",
+        "optionTexts": [
+          "நிலவின் விடுபடு வேகம் வாயு மூலக்கூறுகளின் சராசரி இருமடி மூல வேகத்தை விட குறைவாக உள்ளது",
+          "சூரியனின் ஈர்ப்பு விசை அனைத்து வாயுக்களையும் இழுத்துக் கொள்கிறது",
+          "நிலவின் வெப்பநிலை மிகக் குறைவாக உள்ளது",
+          "வாயுக்கள் சந்திர பாறைகளுடன் வேதிவினை புரிகின்றன"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "As the absolute temperature of an ideal gas increases, the peak of the Maxwell-Boltzmann molecular speed distribution curve:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shifts to the right and becomes taller",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Shifts to the right and flattens (becomes lower)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Shifts to the left and becomes taller",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Remains at the same position but broadens",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The peak of the Maxwell-Boltzmann distribution corresponds to the most probable speed v_mp = sqrt(2 k_B T / m), which increases with temperature, shifting the peak to the right (higher speed). Since the total area under the probability distribution must remain normalized to unity, the peak height decreases, causing the curve to flatten and broaden.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நல்லியல்பு வாயுவின் தனி வெப்பநிலை அதிகரிக்கும் போது, மேக்ஸ்வெல்-போல்ட்ஸ்மேன் மூலக்கூறு வேகப் பகிர்வு வளைகோட்டின் உச்சி:",
+        "optionTexts": [
+          "வலதுபுறம் நகர்ந்து உயரமாகும்",
+          "வலதுபுறம் நகர்ந்து தட்டையாகும் (உயரம் குறையும்)",
+          "இடதுபுறம் நகர்ந்து உயரமாகும்",
+          "அதே இடத்தில் இருந்து அகலமாகும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At very high temperatures, when the vibrational mode of a diatomic molecule is also active, the molar heat capacity at constant volume C_v is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(5/2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(7/2) R",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(9/2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "At high temperatures, a diatomic molecule has 3 translational, 2 rotational, and 1 vibrational mode. A vibrational mode contributes 2 degrees of freedom (one kinetic energy term and one potential energy term). Thus, total degrees of freedom is f = 3 + 2 + 2 = 7. Consequently, C_v = (f/2) R = (7/2) R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மிக உயர்ந்த வெப்பநிலையில், ஈரணு மூலக்கூறின் அதிர்வு நிலையும் செயல்படும் போது, மாறா பருமனில் அதன் மோலார் வெப்ப ஏற்புதிறன் C_v:",
+        "optionTexts": [
+          "(5/2) R",
+          "(7/2) R",
+          "(9/2) R",
+          "3 R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An open rigid vessel contains air at 27 degree Celsius. To what temperature must it be heated so that one-third of the air initially inside the vessel escapes into the atmosphere?",
+    "options": [
+      {
+        "label": "A",
+        "text": "177 degree Celsius",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "127 degree Celsius",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "150 degree Celsius",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "200 degree Celsius",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Because the vessel is open, pressure P and volume V remain constant, which means n * T = constant. If n is the initial number of moles, the remaining moles inside the vessel is n' = n - n/3 = (2/3) n. Thus, n * T1 = n' * T2 => n * (27 + 273) = (2/3) n * T2 => 300 = (2/3) T2 => T2 = 300 * 3 / 2 = 450 K. In Celsius: t2 = 450 - 273 = 177 degree Celsius.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு திறந்த திடமான கலனில் 27 degree Celsius வெப்பநிலையில் காற்று உள்ளது. கலனில் உள்ள காற்றின் மூன்றில் ஒரு பங்கு வளிமண்டலத்திற்கு வெளியேறும் வகையில் அது எந்த வெப்பநிலைக்கு சூடேற்றப்பட வேண்டும்?",
+        "optionTexts": [
+          "177 degree Celsius",
+          "127 degree Celsius",
+          "150 degree Celsius",
+          "200 degree Celsius"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Under identical conditions of temperature and pressure, the rate of diffusion of gas A is 4 times that of gas B. The ratio of the molecular mass of gas A to that of gas B is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 4",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 : 16",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "16 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 : 1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Graham's law of diffusion, rate of diffusion r is inversely proportional to the square root of molar mass: r proportional to 1 / sqrt(M). Thus, r_A / r_B = sqrt(M_B / M_A) => 4 = sqrt(M_B / M_A) => M_B / M_A = 16 => M_A / M_B = 1 / 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே வெப்பநிலை மற்றும் அழுத்த நிபந்தனைகளில், வாயு A இன் விரவல் வீதம் வாயு B இன் விரவல் வீதத்தைப் போல 4 மடங்கு ஆகும். வாயு A மற்றும் வாயு B ஆகியவற்றின் மூலக்கூறு நிறைகளின் விகிதம்:",
+        "optionTexts": [
+          "1 : 4",
+          "1 : 16",
+          "16 : 1",
+          "4 : 1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas is expanded adiabatically according to P V^(5/3) = constant. During this expansion, the mean free path lambda of the gas molecules varies with volume V as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda proportional to V",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "lambda proportional to V^(2/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "lambda proportional to V^(5/3)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "lambda is independent of V",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Mean free path is lambda = 1 / (sqrt(2) n pi d^2). The number density of molecules is n = N / V, where N is the total number of molecules in volume V. Substituting n gives lambda = V / (sqrt(2) N pi d^2). Therefore, the mean free path depends purely on the volume V of the container (directly proportional to V) and is completely independent of temperature, pressure, or the nature of the thermodynamic process.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P V^(5/3) = மாறிலி என்ற சமன்பாட்டின்படி ஒரு நல்லியல்பு வாயு வெப்பப் பரிமாற்றமில்லா முறையில் விரிவடைகிறது. இந்த விரிவடைதலின் போது மூலக்கூறுகளின் சராசரி மோதல் இடைவெளி lambda பருமன் V உடன் எவ்வாறு மாறுகிறது?",
+        "optionTexts": [
+          "lambda என்பது V க்கு நேர்விகிதத்தில் இருக்கும்",
+          "lambda என்பது V^(2/3) க்கு நேர்விகிதத்தில் இருக்கும்",
+          "lambda என்பது V^(5/3) க்கு நேர்விகிதத்தில் இருக்கும்",
+          "lambda என்பது V-ஐ சார்ந்தது அல்ல"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For an ideal gas consisting of non-linear triatomic molecules (such as water vapor H2O) at room temperature, neglecting vibrational modes, the ratio of molar heat capacities gamma = C_p / C_v is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4/3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7/5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5/3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9/7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A non-linear triatomic molecule has 3 translational degrees of freedom and 3 rotational degrees of freedom (rotation about all three Cartesian axes). Total degrees of freedom f = 3 + 3 = 6. Thus, C_v = (6/2) R = 3 R, and C_p = C_v + R = 3 R + R = 4 R. The ratio is gamma = C_p / C_v = 4R / 3R = 4/3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அறை வெப்பநிலையில் நேரியலற்ற மூவணு மூலக்கூறுகளைக் (H2O போன்றவை) கொண்ட ஒரு நல்லியல்பு வாயுவிற்கு, அதிர்வு முறைகளைப் புறக்கணித்தால், மோலார் வெப்ப ஏற்புதிறன்களின் விகிதம் gamma = C_p / C_v:",
+        "optionTexts": [
+          "4/3",
+          "7/5",
+          "5/3",
+          "9/7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In an ideal gas of adiabatic index gamma, the ratio of the root-mean-square speed of gas molecules v_rms to the speed of sound v_s in the same gas is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(3 / gamma)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(gamma / 3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(gamma)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / gamma",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The root-mean-square speed of molecules is v_rms = sqrt(3 R T / M). The speed of sound in an ideal gas is v_s = sqrt(gamma R T / M). Taking their ratio gives v_rms / v_s = [sqrt(3 R T / M)] / [sqrt(gamma R T / M)] = sqrt(3 / gamma).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "வெப்பப் பரிமாற்றமில்லா அடுக்கு gamma கொண்ட ஒரு நல்லியல்பு வாயுவில், வாயு மூலக்கூறுகளின் சராசரி இருமடி மூல வேகம் v_rms க்கும் அதே வாயுவில் ஒலியின் வேகம் v_s க்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "sqrt(3 / gamma)",
+          "sqrt(gamma / 3)",
+          "sqrt(gamma)",
+          "3 / gamma"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "n1 moles of an ideal gas at absolute temperature T1 is mixed adiabatically with n2 moles of another ideal gas at temperature T2. If the molar heat capacities at constant volume of the two gases are C_v1 and C_v2 respectively, the final equilibrium temperature T of the mixture is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(n1 T1 + n2 T2) / (n1 + n2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(n1 C_v2 T1 + n2 C_v1 T2) / (n1 C_v1 + n2 C_v2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(C_v1 T1 + C_v2 T2) / (C_v1 + C_v2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Because the mixing is adiabatic and no external work is done, total internal energy is conserved: U_initial = U_final. Here U1 + U2 = U_mix => n1 C_v1 T1 + n2 C_v2 T2 = (n1 C_v1 + n2 C_v2) T. Solving for the equilibrium temperature yields T = (n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "T1 தனி வெப்பநிலையில் உள்ள n1 மோல்கள் நல்லியல்பு வாயுவானது T2 வெப்பநிலையில் உள்ள n2 மோல்கள் மற்றொரு நல்லியல்பு வாயுவுடன் வெப்பப் பரிமாற்றமில்லாமல் கலக்கப்படுகிறது. அவற்றின் மாறா பருமன் மோலார் வெப்ப ஏற்புதிறன்கள் முறையே C_v1 மற்றும் C_v2 எனில், கலவையின் இறுதி சமநிலை வெப்பநிலை T:",
+        "optionTexts": [
+          "(n1 C_v1 T1 + n2 C_v2 T2) / (n1 C_v1 + n2 C_v2)",
+          "(n1 T1 + n2 T2) / (n1 + n2)",
+          "(n1 C_v2 T1 + n2 C_v1 T2) / (n1 C_v1 + n2 C_v2)",
+          "(C_v1 T1 + C_v2 T2) / (C_v1 + C_v2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The rate of molecular collisions per unit area with the planar wall of a container holding an ideal gas of number density n and average speed v_avg is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(1/4) n v_avg",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(1/2) n v_avg",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(1/6) n v_avg",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n v_avg",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By integrating over all velocities directed towards the wall across hemispherical solid angles, the flux of molecules striking a unit area of the wall per second is derived in kinetic theory as J = (1/4) n v_avg.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "எண் அடர்த்தி n மற்றும் சராசரி வேகம் v_avg கொண்ட ஒரு நல்லியல்பு வாயுவைக் கொண்டுள்ள கொள்கலனின் தட்டையான சுவரில் ஓரலகு பரப்பில் ஒரு வினாடியில் ஏற்படும் மூலக்கூறு மோதல்களின் வீதம்:",
+        "optionTexts": [
+          "(1/4) n v_avg",
+          "(1/2) n v_avg",
+          "(1/6) n v_avg",
+          "n v_avg"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The root-mean-square speed of gas molecules at 27 degree Celsius is v0. To double this root-mean-square speed (2 v0), the temperature of the gas must be raised to _____ K.",
+    "correctAnswer": 1200,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The rms speed is v_rms = sqrt(3 R T / M) proportional to sqrt(T). Initial temperature is T1 = 27 + 273 = 300 K. For the rms speed to double: v2 / v1 = 2 = sqrt(T2 / T1) => T2 / T1 = 4 => T2 = 4 * 300 K = 1200 K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "27 degree Celsius வெப்பநிலையில் வாயு மூலக்கூறுகளின் சராசரி இருமடி மூல வேகம் v0 ஆகும். இந்த rms வேகத்தை இருமடங்காக மாற்ற (2 v0), வாயுவின் வெப்பநிலை _____ K ஆக உயர்த்தப்பட வேண்டும்.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total internal energy of 2 moles of an ideal monoatomic gas at an absolute temperature of 300 K is expressed as N * R Joules, where R is the universal gas constant. Find the value of N.",
+    "correctAnswer": 900,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The internal energy of an ideal monoatomic gas is given by U = n C_v T = n * ((3/2) R) * T. Substituting n = 2 moles and T = 300 K: U = 2 * ((3/2) R) * 300 = 3 R * 300 = 900 R Joules. Thus, N = 900.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "300 K தனி வெப்பநிலையில் உள்ள 2 மோல்கள் நல்லியல்பு ஓரணு வாயுவின் மொத்த அக ஆற்றல் N * R ஜூல் எனக் குறிப்பிடப்பட்டால் (R என்பது பொது வாயு மாறிலி), N இன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of translational degrees of freedom possessed by 4 moles of an ideal gas is N * N_A, where N_A is Avogadro's number. Find the integer value of N.",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Every gas molecule, regardless of whether it is monoatomic, diatomic, or polyatomic, has exactly 3 translational degrees of freedom (motion along x, y, and z axes). Therefore, for 4 moles of gas containing 4 N_A molecules, the total number of translational degrees of freedom is 3 * 4 N_A = 12 N_A. Thus, N = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4 மோல்கள் கொண்ட ஒரு நல்லியல்பு வாயுவில் உள்ள மொத்த நேரியல் இயக்கக் கூறுகளின் எண்ணிக்கை N * N_A ஆகும் (N_A என்பது அவகேட்ரோ எண்). N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The root-mean-square speed of hydrogen molecules (molar mass = 2 g/mol) at 25 K is equal to the root-mean-square speed of oxygen molecules (molar mass = 32 g/mol) at temperature T. The value of T is _____ K.",
+    "correctAnswer": 400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The rms speed of a gas is v_rms = sqrt(3 R T / M). Equating the rms speeds: sqrt(3 R T_H2 / M_H2) = sqrt(3 R T_O2 / M_O2) => T_H2 / M_H2 = T_O2 / M_O2. Substituting T_H2 = 25 K, M_H2 = 2 g/mol, and M_O2 = 32 g/mol: 25 / 2 = T_O2 / 32 => T_O2 = 25 * 16 = 400 K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "25 K வெப்பநிலையில் ஹைட்ரஜன் மூலக்கூறுகளின் (மோலார் நிறை = 2 g/mol) சராசரி இருமடி மூல வேகம், T வெப்பநிலையில் உள்ள ஆக்சிஜன் மூலக்கூறுகளின் (மோலார் நிறை = 32 g/mol) rms வேகத்திற்குச் சமம் எனில், T இன் மதிப்பு _____ K.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas in a container is heated and compressed such that its absolute temperature is quadrupled (4T) while its pressure is doubled (2P). The ratio of the new mean free path to the initial mean free path of the gas molecules is _____.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The mean free path of an ideal gas is lambda = (k_B T) / (sqrt(2) pi d^2 P) proportional to T / P. Therefore: lambda_new / lambda_initial = (T_new / T_initial) * (P_initial / P_new) = (4) * (1 / 2) = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கொள்கலனில் உள்ள நல்லியல்பு வாயுவானது அதன் தனி வெப்பநிலை நான்கு மடங்காகவும் (4T), அழுத்தம் இருமடங்காகவும் (2P) மாறும் வகையில் சூடேற்றப்பட்டு அமுக்கப்படுகிறது. வாயு மூலக்கூறுகளின் புதிய சராசரி மோதல் இடைவெளிக்கும் ஆரம்ப சராசரி மோதல் இடைவெளிக்கும் உள்ள விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two moles of an ideal diatomic gas undergo an adiabatic expansion in which the gas performs 100 * R Joules of work on the surroundings (where R is the universal gas constant). The magnitude of the decrease in temperature of the gas is _____ K.",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For an adiabatic process, heat exchange is Delta Q = 0. According to the First Law: W = - Delta U = - n C_v Delta T. For an ideal diatomic gas, C_v = (5/2) R. Therefore: 100 R = - 2 * ((5/2) R) * Delta T = - 5 R * Delta T => Delta T = - 100 / 5 = -20 K. The magnitude of the decrease in temperature is 20 K.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இரண்டு மோல்கள் கொண்ட ஒரு நல்லியல்பு ஈரணு வாயு வெப்பப் பரிமாற்றமில்லா விரிவடைதலுக்கு உட்பட்டு சூழ்நிலையின் மீது 100 * R ஜூல் வேலையைச் செய்கிறது (R என்பது பொது வாயு மாறிலி). வாயுவின் வெப்பநிலையில் ஏற்படும் குறைவின் எண்மதிப்பு _____ K.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A sample of gas is heated from an initial temperature of 300 K to a final temperature of 900 K. The ratio of the average translational kinetic energy per molecule at the final temperature to that at the initial temperature is _____.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The average translational kinetic energy per molecule of an ideal gas is E = (3/2) k_B T, which is directly proportional to absolute temperature T. Therefore, E_final / E_initial = T_final / T_initial = 900 K / 300 K = 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வாயு மாதிரி 300 K ஆரம்ப வெப்பநிலையிலிருந்து 900 K இறுதி வெப்பநிலைக்கு சூடேற்றப்படுகிறது. இறுதி வெப்பநிலையில் ஒரு மூலக்கூறின் சராசரி நேரியல் இயக்க ஆற்றலுக்கும் ஆரம்ப வெப்பநிலையில் உள்ளதற்கும் இடையேயான விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A gas mixture contains 1 mole of an ideal monoatomic gas and 2 moles of an ideal rigid diatomic gas. The total number of degrees of freedom of all molecules in the mixture is N * N_A, where N_A is Avogadro's number. Find the integer value of N.",
+    "correctAnswer": 13,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "A monoatomic molecule has 3 degrees of freedom. For 1 mole, degrees of freedom = 1 * 3 N_A = 3 N_A. A rigid diatomic molecule has 5 degrees of freedom. For 2 moles, degrees of freedom = 2 * 5 N_A = 10 N_A. The total number of degrees of freedom in the mixture is 3 N_A + 10 N_A = 13 N_A. Hence, N = 13.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வாயுக் கலவையில் 1 மோல் நல்லியல்பு ஓரணு வாயுவும் 2 மோல்கள் நல்லியல்பு திடமான ஈரணு வாயுவும் உள்ளன. கலவையில் உள்ள அனைத்து மூலக்கூறுகளின் மொத்த சுதந்திர இயக்கக் கூறுகளின் எண்ணிக்கை N * N_A எனில் (N_A என்பது அவகேட்ரோ எண்), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a comparative study of two ideal gases A and B, the effective molecular diameter of gas A is twice that of gas B (d_A = 2 d_B), and the number density of molecules of gas A is twice that of gas B (n_A = 2 n_B). The ratio of the mean free path of molecules of gas B to that of gas A (lambda_B / lambda_A) is _____.",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The mean free path of gas molecules is given by lambda = 1 / (sqrt(2) n pi d^2). Therefore, lambda is inversely proportional to n * d^2. The ratio of their mean free paths is lambda_B / lambda_A = (n_A / n_B) * (d_A / d_B)^2. Substituting n_A / n_B = 2 and d_A / d_B = 2: lambda_B / lambda_A = (2) * (2)^2 = 2 * 4 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A மற்றும் B என்ற இரு நல்லியல்பு வாயுக்களின் ஒப்பீட்டு ஆய்வில், வாயு A இன் மூலக்கூறு விட்டம் வாயு B-ஐப் போல இருமடங்கு (d_A = 2 d_B), மற்றும் வாயு A இன் மூலக்கூறு எண் அடர்த்தி வாயு B-ஐப் போல இருமடங்கு (n_A = 2 n_B). வாயு B இன் சராசரி மோதல் இடைவெளிக்கும் வாயு A இன் சராசரி மோதல் இடைவெளிக்கும் உள்ள விகிதம் (lambda_B / lambda_A) _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY09-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_09",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An ideal gas kept at a constant temperature is compressed isothermally such that its volume is reduced to one-half of its initial volume. According to the kinetic theory of gases, the total rate of intermolecular collisions occurring per unit volume of the gas increases by a factor of _____.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total rate of binary molecular collisions per unit volume is given by Z_11 = (1/2) * sqrt(2) * pi * d^2 * v_avg * n^2, where n is the number density of molecules and v_avg is the average molecular speed. Since the compression is isothermal, the temperature T remains constant, so v_avg = sqrt(8 k_B T / (pi m)) is constant. When volume is halved (V' = V / 2), the number density doubles (n' = 2n). Therefore, the collision rate per unit volume scales as n^2: Z_11' / Z_11 = (n' / n)^2 = (2)^2 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மாறா வெப்பநிலையில் உள்ள ஒரு நல்லியல்பு வாயுவானது அதன் பருமன் தொடக்க பருமனில் பாதியாக குறையும் வகையில் சமவெப்ப நிலையில் அமுக்கப்படுகிறது. வாயுக்களின் இயக்கவியல் கொள்கையின்படி, வாயுவின் ஓரலகு பருமனில் நிகழும் மொத்த மூலக்கூறிடை மோதல்களின் வீதம் எத்தனை மடங்கு அதிகரிக்கும்?",
+        "optionTexts": []
+      }
+    ]
+  }
+]

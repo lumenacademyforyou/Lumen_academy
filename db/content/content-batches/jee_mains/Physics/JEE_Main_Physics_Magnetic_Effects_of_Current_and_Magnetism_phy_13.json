@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY13-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A circular loop of wire of radius R carries a steady current I. The magnetic field intensity at the center of the loop is B0. If the radius of the loop is doubled while keeping the current unchanged, the new magnetic field at the center will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 B0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "B0 / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 B0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B0 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The magnetic field at the center of a circular loop carrying current I is given by B = (mu_0 * I) / (2 R). Since B is inversely proportional to R, doubling the radius (R' = 2R) reduces the magnetic field at the center to B' = B0 / 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு வட்ட வடிவ கம்பி வளையம் சீரான மின்னோட்டம் I-ஐக் கொண்டுள்ளது. வளையத்தின் மையத்தில் காந்தப்புலம் B0 ஆகும். மின்னோட்டம் மாறாமல் இருக்கையில் வளையத்தின் ஆரம் இருமடங்காக மாற்றப்பட்டால், மையத்தில் புதிய காந்தப்புலம்:",
+        "optionTexts": [
+          "2 B0",
+          "B0 / 2",
+          "4 B0",
+          "B0 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A charged particle with charge q moves with velocity v in a uniform magnetic field B. Under which of the following conditions is the magnetic force on the particle identically zero?",
+    "options": [
+      {
+        "label": "A",
+        "text": "When v is perpendicular to B",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "When v is parallel or anti-parallel to B",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "When v is directed at 45 degrees to B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Magnetic force is never zero for a moving charge",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The magnetic Lorentz force on a moving charge is F = q (v x B) = q v B sin(theta), where theta is the angle between velocity v and magnetic field B. When the velocity is parallel (theta = 0 deg) or anti-parallel (theta = 180 deg) to the magnetic field, sin(theta) = 0, so the magnetic force is zero.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "q மின்னூட்டம் கொண்ட ஒரு துகள் சீரான காந்தப்புலம் B இல் v திசைவேகத்துடன் இயங்குகிறது. பின்வரும் எந்த நிபந்தனையின் கீழ் துகளின் மீதான காந்த விசை சுழியாக இருக்கும்?",
+        "optionTexts": [
+          "v ஆனது B-க்கு செங்குத்தாக இருக்கும் போது",
+          "v ஆனது B-க்கு இணையாகவோ அல்லது எதிரிணையாகவோ இருக்கும் போது",
+          "v ஆனது B-உடன் 45 டிகிரி கோணத்தில் செல்லும் போது",
+          "இயங்கும் துகளுக்கு காந்த விசை ஒருபோதும் சுழியாகாது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two long, straight parallel wires carry steady currents in the same direction. The nature of the magnetic force between them is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Repulsive",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Attractive",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Rotational torque only",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Ampere's force law, parallel currents flowing in the same direction attract each other due to the direction of the magnetic field and the resulting Lorentz force (I L x B). Conversely, anti-parallel currents repel each other.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரே திசையில் சீரான மின்னோட்டம் பாயும் இரு நீண்ட நேரான இணை கடத்திகளுக்கு இடையே செயல்படும் காந்த விசையின் தன்மை:",
+        "optionTexts": [
+          "விலக்கு விசை",
+          "ஈர்ப்பு விசை",
+          "சுழி",
+          "திருப்புவிசை மட்டுமே"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The magnetic susceptibility chi_m of a diamagnetic substance is typically:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Small and positive",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Small and negative",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Large and positive",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Diamagnetic materials are weakly repelled by an external magnetic field. Their magnetic susceptibility chi_m is independent of temperature, small in magnitude (approx 10^-5 to 10^-4), and negative.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு டயா காந்தப் பொருளின் காந்த ஏற்புத்திறன் (magnetic susceptibility chi_m) பொதுவாக எவ்வாறு இருக்கும்?",
+        "optionTexts": [
+          "சிறியது மற்றும் நேர்மறை",
+          "சிறியது மற்றும் எதிர்மறை",
+          "பெரியது மற்றும் நேர்மறை",
+          "சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The work done by a purely static magnetic field on a charged particle moving freely through it is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Always positive",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Always zero",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Always negative",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Dependent on the path taken",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The magnetic force F_m = q (v x B) is always perpendicular to the instantaneous velocity v of the charged particle. The instantaneous power delivered by the magnetic field is P = F_m . v = q (v x B) . v = 0. Consequently, the work done W = integral P dt = 0 at all times.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நிலையான காந்தப்புலத்தில் தடையின்றி இயங்கும் மின்னூட்டம் பெற்ற துகளின் மீது காந்த விசை செய்யும் வேலை:",
+        "optionTexts": [
+          "எப்போதும் நேர்மறை",
+          "எப்போதும் சுழி",
+          "எப்போதும் எதிர்மறை",
+          "செல்லும் பாதையைச் சார்ந்தது"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Curie's Law, the magnetic susceptibility chi of a paramagnetic material at absolute temperature T is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "T",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 / T",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "T^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / T^2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Curie's law states that the magnetization of a paramagnetic material is inversely proportional to its absolute temperature T: chi = C / T, where C is the Curie constant. Therefore, chi is proportional to 1 / T.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கியூரி விதியின்படி, தனி வெப்பநிலை T இல் உள்ள ஒரு பாரா காந்தப் பொருளின் காந்த ஏற்புத்திறன் chi எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "T",
+          "1 / T",
+          "T^2",
+          "1 / T^2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A charged particle of mass m and charge q enters a uniform magnetic field B at an angle theta with the field lines. The pitch p of the resulting helical path described by the particle is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(2 pi m v cos theta) / (q B)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(2 pi m v sin theta) / (q B)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(2 pi m v) / (q B)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(pi m v cos theta) / (q B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The velocity component parallel to the field is v_parallel = v cos theta, which causes linear translation along the field lines without experiencing magnetic force. The perpendicular component v_perp = v sin theta causes circular motion with period T = 2 pi m / (q B). The pitch of the helix is the axial distance travelled in one period: p = v_parallel * T = (v cos theta) * (2 pi m / (q B)) = (2 pi m v cos theta) / (q B).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறையும் q மின்னூட்டமும் கொண்ட ஒரு துகள் காந்தப்புலக் கோடுகளுடன் theta கோணத்தில் சீரான காந்தப்புலம் B இல் நுழைகிறது. துகள் மேற்கொள்ளும் சுருள் பாதையின் சுருள் இடைவெளி (pitch p):",
+        "optionTexts": [
+          "(2 pi m v cos theta) / (q B)",
+          "(2 pi m v sin theta) / (q B)",
+          "(2 pi m v) / (q B)",
+          "(pi m v cos theta) / (q B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A tightly wound long solenoid of n turns per unit length carries a steady current I. The ratio of the magnetic field intensity well inside the solenoid near its center to that at either of its open ends along the axis is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Inside an infinitely long ideal solenoid, the axial magnetic field is B_center = mu_0 n I. At the extreme ends of a long semi-infinite solenoid, the field drops to half its central value due to flux diverging outwards: B_end = (1/2) mu_0 n I. Therefore, B_center / B_end = (mu_0 n I) / ((1/2) mu_0 n I) = 2 : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓரலகு நீளத்திற்கு n சுற்றுகள் கொண்ட நீண்ட வரிச்சுருள் சீரான மின்னோட்டம் I-ஐக் கொண்டுள்ளது. வரிச்சுருளின் மையப்பகுதியில் உள்ள காந்தப்புலத்திற்கும் அதன் முனைகளில் உள்ள காந்தப்புலத்திற்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "1 : 1",
+          "2 : 1",
+          "4 : 1",
+          "1 : 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A planar loop of area A carrying current I is placed in a uniform magnetic field B. The magnetic dipole moment of the loop is M = I A. The work done in rotating the magnetic dipole from an angle theta = 0 degrees (stable equilibrium) to theta = 180 degrees (unstable equilibrium) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "M B",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 M B",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-2 M B",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The potential energy of a magnetic dipole in a magnetic field is U(theta) = - M . B = - M B cos theta. At theta = 0 deg, U_initial = - M B. At theta = 180 deg, U_final = - M B cos(180 deg) = + M B. The work done by an external agent is W = U_final - U_initial = M B - (- M B) = 2 M B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சீரான காந்தப்புலம் B இல் உள்ள ஒரு மின்னோட்ட வளையத்தின் காந்த இருமுனை திருப்புத்திறன் M ஆகும். அதை theta = 0 டிகிரியிலிருந்து (நிலையான சமநிலை) theta = 180 டிகிரிக்கு (நிலையற்ற சமநிலை) சுழற்ற வெளிப்புற விசையால் செய்யப்படும் வேலை:",
+        "optionTexts": [
+          "M B",
+          "2 M B",
+          "சுழி",
+          "-2 M B"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "At a place on the Earth's surface, the horizontal component of the Earth's magnetic field is B_H and the vertical component is B_V. If the angle of dip at that place is 30 degrees, the ratio B_H / B_V is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The angle of dip delta satisfies tan(delta) = B_V / B_H. For delta = 30 degrees, tan(30 deg) = 1 / sqrt(3) = B_V / B_H. Taking the reciprocal gives B_H / B_V = sqrt(3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "புவி மேற்பரப்பில் உள்ள ஒரு இடத்தில், புவிக் காந்தப்புலத்தின் கிடைமட்டக் கூறு B_H மற்றும் செங்குத்துக் கூறு B_V ஆகும். அவ்விடத்தில் சரிவுக் கோணம் (angle of dip) 30 டிகிரி எனில், B_H / B_V விகிதம்:",
+        "optionTexts": [
+          "sqrt(3)",
+          "1 / sqrt(3)",
+          "1 / 2",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular loop of radius R carries current I. The axial distance x from the center of the loop at which the magnetic field intensity drops to (1/8) of its value at the center is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "x = R",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "x = sqrt(2) R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "x = sqrt(3) R",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "x = 2 R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The magnetic field along the axis of a circular loop is B(x) = (mu_0 I R^2) / [2 (R^2 + x^2)^(3/2)]. At the center (x = 0), B0 = (mu_0 I) / (2 R). Given B(x) = B0 / 8: (mu_0 I R^2) / [2 (R^2 + x^2)^(3/2)] = (1/8) * (mu_0 I / 2R) => R^3 / (R^2 + x^2)^(3/2) = 1 / 8. Taking the 2/3 power: R^2 / (R^2 + x^2) = (1/8)^(2/3) = 1 / 4 => R^2 + x^2 = 4 R^2 => x^2 = 3 R^2 => x = sqrt(3) R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு வட்ட வளையம் மின்னோட்டம் I-ஐக் கொண்டுள்ளது. வளையத்தின் மையத்திலிருந்து எந்த அச்சுத் தொலைவு x இல் காந்தப்புலச் செறிவு மையத்தில் உள்ள மதிப்பில் (1/8) பங்காகக் குறையும்?",
+        "optionTexts": [
+          "x = R",
+          "x = sqrt(2) R",
+          "x = sqrt(3) R",
+          "x = 2 R"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a cyclotron, the resonance frequency f_c of the alternating electric field required to accelerate charged particles of mass m and charge q in a magnetic field B depends on the particle's speed v as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "proportional to v",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "proportional to v^2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "independent of v",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "proportional to 1 / v",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The period of revolution of a charged particle in a uniform magnetic field is T = 2 pi m / (q B), and the cyclotron frequency is f_c = 1 / T = (q B) / (2 pi m). In the non-relativistic regime, this frequency is completely independent of both the orbital radius r and the speed v of the particle.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு சைக்ளோட்ரானில், B காந்தப்புலத்தில் m நிறையும் q மின்னூட்டமும் கொண்ட துகள்களை முடுக்குவிக்கத் தேவையான மாறுதிசை மின்புலத்தின் அதிர்வெண் f_c துகளின் வேகம் v-ஐ எவ்வாறு சார்ந்துள்ளது?",
+        "optionTexts": [
+          "v க்கு நேர்விகிதத்தில்",
+          "v^2 க்கு நேர்விகிதத்தில்",
+          "v-ஐ சார்ந்தது அல்ல",
+          "1 / v க்கு நேர்விகிதத்தில்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "For constructing permanent magnets, the ferromagnetic material chosen should possess:",
+    "options": [
+      {
+        "label": "A",
+        "text": "High retentivity and high coercivity",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "High retentivity and low coercivity",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Low retentivity and high coercivity",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Low retentivity and low coercivity",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "A permanent magnet must retain strong magnetization even after the magnetizing field is removed (requiring high retentivity) and resist demagnetization from stray magnetic fields, temperature fluctuations, or mechanical handling (requiring high coercivity). Therefore, materials like Alnico or steel having high retentivity and high coercivity are used.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நிலையான காந்தங்களைத் தயாரிக்கப் பயன்படுத்தப்படும் ஃபெர்ரோ காந்தப் பொருள் கொண்டிருக்க வேண்டிய பண்புகள்:",
+        "optionTexts": [
+          "அதிக காந்த ஏற்புத்திறன் (retentivity) மற்றும் அதிக காந்த நீக்குத்திறன் (coercivity)",
+          "அதிக retentivity மற்றும் குறைந்த coercivity",
+          "குறைந்த retentivity மற்றும் அதிக coercivity",
+          "குறைந்த retentivity மற்றும் குறைந்த coercivity"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron of charge e and mass m_e revolves in a circular orbit of radius r with speed v. The ratio of its magnetic dipole moment mu_L to its orbital angular momentum L is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "e / (2 m_e)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "e / m_e",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 e / m_e",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "e / (4 m_e)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The equivalent current is I = e / T = e v / (2 pi r). The magnetic moment is mu_L = I * A = [e v / (2 pi r)] * (pi r^2) = (1/2) e v r. The orbital angular momentum is L = m_e v r. The gyromagnetic ratio is mu_L / L = ((1/2) e v r) / (m_e v r) = e / (2 m_e).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "e மின்னூட்டமும் m_e நிறையும் கொண்ட ஒரு எலக்ட்ரான் r ஆரமுடைய வட்டப்பாதையில் v வேகத்தில் சுற்றுகிறது. அதன் காந்த இருமுனை திருப்புத்திறன் mu_L க்கும் கோண உந்தம் L க்கும் உள்ள விகிதம் (gyromagnetic ratio):",
+        "optionTexts": [
+          "e / (2 m_e)",
+          "e / m_e",
+          "2 e / m_e",
+          "e / (4 m_e)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A beam of charged particles passes undeflected through mutually perpendicular electric field E and magnetic field B. The velocity v of the undeflected particles is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "E / B",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B / E",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "E * B",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(E / B)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For the particles to pass undeflected, the electrostatic force q E and the magnetic Lorentz force q v B must be equal in magnitude and oppositely directed: q E = q v B => v = E / B.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "மின்னூட்டம் பெற்ற துகள்களின் கற்றை ஒன்றுக்கொன்று செங்குத்தான மின்புலம் E மற்றும் காந்தப்புலம் B ஆகியவற்றின் வழியே எவ்வித விலகலுமின்றி நேராகச் செல்கிறது. விலகலடையாத துகள்களின் திசைவேகம் v:",
+        "optionTexts": [
+          "E / B",
+          "B / E",
+          "E * B",
+          "sqrt(E / B)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A long, solid cylindrical copper conductor of radius R carries a uniform current I across its cross-section. The magnetic field intensity B(r) as a function of radial distance r from the cylinder's central axis satisfies:",
+    "options": [
+      {
+        "label": "A",
+        "text": "B proportional to r for r < R, and B proportional to 1/r for r >= R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "B = 0 for r < R, and B proportional to 1/r for r >= R",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "B proportional to 1/r for all r",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "B proportional to r^2 for r < R, and B proportional to 1/r for r >= R",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Applying Ampere's circuital law: For an Amperian loop of radius r < R, current enclosed is I_enclosed = I * (r^2 / R^2). Thus, B * (2 pi r) = mu_0 * I (r^2 / R^2) => B(r) = (mu_0 I / 2 pi R^2) * r (directly proportional to r). For r >= R, I_enclosed = I, so B * (2 pi r) = mu_0 I => B(r) = (mu_0 I) / (2 pi r) (inversely proportional to r).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட ஒரு நீண்ட திடமான உருளை வடிவக் கடத்தி அதன் குறுக்குவெட்டுப் பரப்பில் சீரான மின்னோட்டம் I-ஐக் கொண்டுள்ளது. கடத்தியின் மைய அச்சிலிருந்து r தொலைவில் காந்தப்புலம் B(r) எவ்வாறு அமையும்?",
+        "optionTexts": [
+          "r < R க்கு B என்பது r-க்கு நேர்விகிதத்திலும், r >= R க்கு 1/r-க்கு நேர்விகிதத்திலும் இருக்கும்",
+          "r < R க்கு B = 0, மற்றும் r >= R க்கு 1/r-க்கு நேர்விகிதத்தில் இருக்கும்",
+          "அனைத்து r-க்கும் B என்பது 1/r-க்கு நேர்விகிதத்தில் இருக்கும்",
+          "r < R க்கு B என்பது r^2-க்கு நேர்விகிதத்தில் இருக்கும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A non-magnetic toroid of mean radius r has N total turns and carries a steady current I. The magnetic field in the open space interior to the toroid (the central hole) and in the external space outside the toroid are respectively:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero and Zero",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "mu_0 N I / (2 pi r) and Zero",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zero and mu_0 N I / (2 pi r)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "mu_0 N I / (2 r) and Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Ampere's circuital law: any circular Amperian loop in the central hole encloses zero current, so B = 0 there. Any Amperian loop outside the outer boundary encloses equal and opposite currents (each turn enters and leaves the loop plane), yielding net enclosed current zero, so B = 0 outside. A non-zero magnetic field B = mu_0 N I / (2 pi r) exists ONLY within the core of the toroid.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "r சராசரி ஆரம் கொண்ட ஒரு வட்ட வரிச்சுருள் (toroid) N மொத்த சுற்றுகளைக் கொண்டு I மின்னோட்டத்தைச் சுமக்கிறது. வரிச்சுருளின் மையத் துளையின் வெற்றுப் பகுதியிலும், வரிச்சுருளுக்கு வெளியே உள்ள வெளிப்புறப் பகுதியிலும் காந்தப்புலங்கள் முறையே:",
+        "optionTexts": [
+          "சுழி மற்றும் சுழி",
+          "mu_0 N I / (2 pi r) மற்றும் சுழி",
+          "சுழி மற்றும் mu_0 N I / (2 pi r)",
+          "mu_0 N I / (2 r) மற்றும் சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A magnetic needle of magnetic dipole moment M and moment of inertia I oscillates freely in a horizontal uniform magnetic field B_H. If the magnetic dipole moment of the needle is quadrupled (M' = 4M), its new oscillation frequency f' will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 f",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "f / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 f",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "f / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The restoring torque on a vibrating magnetic needle is tau = - M B_H sin theta approx - M B_H theta for small angular displacements. The equation of motion is I (d^2 theta / dt^2) = - M B_H theta, giving an oscillation period T = 2 pi sqrt(I / (M B_H)) and frequency f = (1 / 2 pi) * sqrt(M B_H / I). If M is quadrupled (M' = 4M): f' = sqrt(4) * f = 2 f.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "M காந்த இருமுனை திருப்புத்திறனும் I நிலைமத் திருப்புத்திறனும் கொண்ட ஒரு காந்த ஊசி சீரான கிடைமட்டக் காந்தப்புலம் B_H இல் அலைவுறுகிறது. ஊசியின் காந்த திருப்புத்திறன் நான்கு மடங்காக அதிகரிக்கப்பட்டால் (M' = 4M), அதன் புதிய அலைவு அதிர்வெண் f':",
+        "optionTexts": [
+          "2 f",
+          "f / 2",
+          "4 f",
+          "f / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two identical circular coils of radius R and carrying identical currents I are placed concentrically such that their planes are mutually perpendicular to each other. The magnitude of the resultant magnetic field at their common center is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2) * (mu_0 I / (2 R))",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 * (mu_0 I / (2 R))",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(mu_0 I / (2 R))",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Zero",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let coil 1 lie in the xy-plane and coil 2 in the yz-plane. Coil 1 produces a magnetic field at the center directed along the z-axis: B1 = (mu_0 I / 2R) k. Coil 2 produces a field directed along the x-axis: B2 = (mu_0 I / 2R) i. Because the two coils are mutually perpendicular, their magnetic field vectors are orthogonal. The net magnetic field magnitude is B_net = sqrt(B1^2 + B2^2) = sqrt((mu_0 I / 2R)^2 + (mu_0 I / 2R)^2) = sqrt(2) * (mu_0 I / (2 R)).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரம் கொண்ட இரு ஒத்த வட்டக் கம்பிச் சுருள்கள் தலா I மின்னோட்டத்தைச் சுமந்து அவற்றின் தளங்கள் ஒன்றுக்கொன்று செங்குத்தாக அமையுமாறு பொதுமையமாக வைக்கப்பட்டுள்ளன. அவற்றின் பொது மையத்தில் உருவாகும் தொகுபயன் காந்தப்புலத்தின் எண்மதிப்பு:",
+        "optionTexts": [
+          "sqrt(2) * (mu_0 I / (2 R))",
+          "2 * (mu_0 I / (2 R))",
+          "(mu_0 I / (2 R))",
+          "சுழி"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An infinite flat conductive sheet lying in the xy-plane carries a uniform surface current density K = K0 i (in A/m). The magnetic field B just above the sheet (for z > 0) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "- (1/2) mu_0 K0 j",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "+ (1/2) mu_0 K0 j",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+ (1/2) mu_0 K0 k",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "- (1/2) mu_0 K0 i",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Consider a rectangular Amperian loop of length L parallel to the y-axis with one side above the sheet at +z and one below at -z. By the right-hand rule, current in the +i direction produces a magnetic field in the -j direction for z > 0 and in the +j direction for z < 0. Applying Ampere's circuital law: B * L - (- B * L) = 2 B L = mu_0 I_enclosed = mu_0 (K0 L) => B = (1/2) mu_0 K0. Therefore, above the sheet (z > 0), B = - (1/2) mu_0 K0 j.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "xy-தளத்தில் உள்ள ஒரு முடிவிலா தட்டையான கடத்தும் தகடு K = K0 i (A/m) என்ற சீரான பரப்பு மின்னோட்ட அடர்த்தியைக் கொண்டுள்ளது. தகட்டிற்கு சற்று மேலே (z > 0) உள்ள காந்தப்புலம் B:",
+        "optionTexts": [
+          "- (1/2) mu_0 K0 j",
+          "+ (1/2) mu_0 K0 j",
+          "+ (1/2) mu_0 K0 k",
+          "- (1/2) mu_0 K0 i"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A straight wire of length 2 m carries a current of 5 A perpendicular to a uniform magnetic field of 0.4 T. The magnitude of the magnetic force acting on the wire is _____ N.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnetic force on a straight current-carrying conductor in a uniform magnetic field is F = I * L * B * sin(theta). Given I = 5 A, L = 2 m, B = 0.4 T, and theta = 90 degrees (sin 90 = 1): F = 5 * 2 * 0.4 * 1 = 4 N.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.4 T சீரான காந்தப்புலத்திற்கு செங்குத்தாக 2 m நீளமுள்ள ஒரு நேரான கம்பி 5 A மின்னோட்டத்தைக் கொண்டுள்ளது. கம்பியின் மீது செயல்படும் காந்த விசையின் எண்மதிப்பு _____ N.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A proton (mass m = 1.6 x 10^-27 kg, charge q = 1.6 x 10^-19 C) enters a uniform magnetic field of 0.1 T perpendicular to its velocity with a speed of 10^6 m/s. The radius of the circular path executed by the proton is _____ cm.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The radius of the circular path of a charged particle in a magnetic field is r = (m * v) / (q * B). Substituting the values: r = (1.6 x 10^-27 kg * 10^6 m/s) / (1.6 x 10^-19 C * 0.1 T) = (1.6 x 10^-21) / (1.6 x 10^-20) = 0.1 m = 10 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு புரோட்டான் (நிறை m = 1.6 x 10^-27 kg, மின்னூட்டம் q = 1.6 x 10^-19 C) 10^6 m/s வேகத்தில் 0.1 T சீரான காந்தப்புலத்திற்கு செங்குத்தாக நுழைகிறது. புரோட்டான் மேற்கொள்ளும் வட்டப் பாதையின் ஆரம் _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A flat square coil of 50 turns has side length 0.2 m and carries a steady current of 2 A. The magnitude of the magnetic dipole moment of the coil is _____ A m^2.",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnetic dipole moment of a flat coil having N turns, carrying current I and enclosing area A is M = N * I * A. For a square coil of side a = 0.2 m, the area is A = a^2 = (0.2)^2 = 0.04 m^2. Substituting values: M = 50 * 2 A * 0.04 m^2 = 4 A m^2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "50 சுற்றுகளும் 0.2 m பக்க அளவும் கொண்ட ஒரு தட்டையான சதுர கம்பிச்சுருள் 2 A சீரான மின்னோட்டத்தைக் கொண்டுள்ளது. கம்பிச்சுருளின் காந்த இருமுனை திருப்புத்திறனின் எண்மதிப்பு _____ A m^2.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A long straight horizontal wire carries a current of 30 A. The magnitude of the magnetic field produced by the wire at a perpendicular distance of 10 cm from it is _____ microtesla (take mu_0 = 4 pi x 10^-7 T m/A).",
+    "correctAnswer": 60,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnetic field produced by an infinitely long straight wire carrying current I at perpendicular distance d is B = (mu_0 * I) / (2 pi d). With mu_0 / (2 pi) = 2 x 10^-7 T m/A, I = 30 A, and d = 10 cm = 0.1 m: B = (2 x 10^-7 * 30) / 0.1 = 60 x 10^-6 T = 60 microtesla.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நீண்ட நேரான கிடைமட்டக் கம்பி 30 A மின்னோட்டத்தைக் கொண்டுள்ளது. கம்பியிலிருந்து 10 cm செங்குத்துத் தொலைவில் உருவாகும் காந்தப்புலத்தின் எண்மதிப்பு _____ மைக்ரோடெஸ்லா (microtesla) (mu_0 = 4 pi x 10^-7 T m/A எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two long parallel conductors separated by a distance of 0.2 m carry currents of 10 A and 20 A in the same direction. The attractive force per unit length between the two conductors is N x 10^-4 N/m. Find the integer value of N (take mu_0 = 4 pi x 10^-7 T m/A).",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnetic force per unit length between two parallel long straight currents is F / L = (mu_0 * I1 * I2) / (2 pi d). Substituting mu_0 / (2 pi) = 2 x 10^-7 T m/A, I1 = 10 A, I2 = 20 A, and d = 0.2 m: F / L = (2 x 10^-7 * 10 * 20) / 0.2 = (400 x 10^-7) / 0.2 = 2 x 10^-4 N/m. Comparing with N x 10^-4 N/m, we get N = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.2 m தொலைவில் பிரிக்கப்பட்டுள்ள இரு நீண்ட இணை கடத்திகள் ஒரே திசையில் 10 A மற்றும் 20 A மின்னோட்டங்களைச் சுமக்கின்றன. இரு கடத்திகளுக்கு இடையே ஓரலகு நீளத்திற்கான ஈர்ப்பு விசை N x 10^-4 N/m எனில், N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A proton and an alpha particle with identical linear momentum enter a uniform magnetic field perpendicularly. The ratio of the radius of the circular path of the proton to that of the alpha particle is _____.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The radius of the circular path of a charged particle in a magnetic field is r = (m v) / (q B) = p / (q B). Since both particles have identical linear momentum p and move in the same magnetic field B: r is inversely proportional to charge q. The charge of an alpha particle is q_alpha = 2e, and the charge of a proton is q_p = e. Therefore, r_proton / r_alpha = q_alpha / q_proton = (2e) / e = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சம நேரியல் உந்தம் கொண்ட ஒரு புரோட்டானும் ஆல்ஃபா துகளும் ஒரு சீரான காந்தப்புலத்திற்கு செங்குத்தாக நுழைகின்றன. புரோட்டானின் வட்டப் பாதையின் ஆரத்திற்கும் ஆல்ஃபா துகளின் வட்டப் பாதையின் ஆரத்திற்கும் உள்ள விகிதம் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A closely wound solenoid of length 0.5 m has 500 turns and carries a current of 2 A. The magnetic field at the center of the solenoid along its axis is expressed as N * pi x 10^-4 Tesla (where mu_0 = 4 pi x 10^-7 T m/A). Find the integer value of N.",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The number of turns per unit length is n = N_turns / L = 500 / 0.5 m = 1000 turns/m. The magnetic field well inside a long solenoid is B = mu_0 * n * I. Substituting values: B = (4 pi x 10^-7 T m/A) * 1000 * 2 A = 8 pi x 10^-4 Tesla. Comparing with N * pi x 10^-4 T, we obtain N = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.5 m நீளமுள்ள ஒரு நெருக்கமாக சுற்றப்பட்ட வரிச்சுருள் 500 சுற்றுகளைக் கொண்டு 2 A மின்னோட்டத்தைச் சுமக்கிறது. வரிச்சுருளின் மையத்தில் உள்ள காந்தப்புலம் N * pi x 10^-4 டெஸ்லா எனில் (mu_0 = 4 pi x 10^-7 T m/A), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A small bar magnet of magnetic dipole moment 2 A m^2 is aligned initially along the direction of a uniform magnetic field of 0.5 T. The work done by an external torque in rotating the magnet from theta = 0 degrees to theta = 90 degrees with respect to the field is _____ J.",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The potential energy of a magnetic dipole in a magnetic field is U = - M B cos theta. The work done by an external agent against the magnetic field is W = Delta U = U(90 deg) - U(0 deg) = - M B cos(90 deg) - [- M B cos(0 deg)] = 0 - (- M B) = M B. Substituting M = 2 A m^2 and B = 0.5 T: W = 2 * 0.5 = 1 J.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "2 A m^2 காந்த இருமுனை திருப்புத்திறன் கொண்ட ஒரு சிறு சட்டக் காந்தம் தொடக்கத்தில் 0.5 T சீரான காந்தப்புலத்தின் திசையில் அமைந்துள்ளது. அக்காந்தத்தை புலத்தின் திசையிலிருந்து theta = 90 டிகிரி கோணத்திற்கு சுழற்ற வெளிப்புற திருப்புவிசையால் செய்யப்படும் வேலை _____ J.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Two long straight insulated wires lie along the x-axis and y-axis carrying currents I1 = 3 A (along +x) and I2 = 4 A (along +y) respectively. The magnitude of the net magnetic field at the point (0, 0, 10 cm) on the z-axis is _____ microtesla (take mu_0 = 4 pi x 10^-7 T m/A).",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "At the point (0, 0, d) on the z-axis (d = 10 cm = 0.1 m): The wire along the x-axis carrying current I1 = 3 A produces a magnetic field directed along the -y direction by the right-hand rule: B1 = (mu_0 I1) / (2 pi d) = (2 x 10^-7 * 3) / 0.1 = 6 x 10^-6 T. The wire along the y-axis carrying current I2 = 4 A produces a magnetic field directed along the +x direction: B2 = (mu_0 I2) / (2 pi d) = (2 x 10^-7 * 4) / 0.1 = 8 x 10^-6 T. Since B1 and B2 are perpendicular vectors (along -j and +i): B_net = sqrt(B1^2 + B2^2) = sqrt((6 x 10^-6)^2 + (8 x 10^-6)^2) = 10 x 10^-6 T = 10 microtesla.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-அச்சு மற்றும் y-அச்சின் வழியே செல்லும் இரு நீண்ட நேரான மின்காப்பிடப்பட்ட கம்பிகள் முறையே I1 = 3 A மற்றும் I2 = 4 A மின்னோட்டங்களைச் சுமக்கின்றன. z-அச்சில் உள்ள (0, 0, 10 cm) புள்ளியில் உருவாகும் நிகர காந்தப்புலத்தின் எண்மதிப்பு _____ மைக்ரோடெஸ்லா (microtesla) (mu_0 = 4 pi x 10^-7 T m/A எனக்கொள்க).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY13-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A circular arc of wire of radius R = 0.2 m subtends an angle of 90 degrees at its center. If a steady current of 8 A flows through the arc, the magnetic field produced at the center of curvature is expressed as N * pi x 10^-6 Tesla (take mu_0 = 4 pi x 10^-7 T m/A). Find the integer value of N.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnetic field produced at the center of curvature by a circular arc subtending an angle theta (in radians) at the center is B = (theta / (2 pi)) * [ (mu_0 * I) / (2 R) ]. For theta = 90 degrees = pi / 2 radians: B = ((pi / 2) / (2 pi)) * [ (mu_0 * I) / (2 R) ] = (1 / 4) * [ (mu_0 * I) / (2 R) ] = (mu_0 * I) / (8 R). Substituting mu_0 = 4 pi x 10^-7 T m/A, I = 8 A, and R = 0.2 m: B = (4 pi x 10^-7 * 8) / (8 * 0.2) = (4 pi x 10^-7) / 0.2 = 20 pi x 10^-7 T = 2 * pi x 10^-6 Tesla. Therefore, N = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "0.2 m ஆரம் கொண்ட ஒரு வட்ட வில் கம்பி அதன் மையத்தில் 90 டிகிரி கோணத்தை உருவாக்குகிறது. அவ்வழியே 8 A சீரான மின்னோட்டம் பாய்கிறது எனில், அதன் வளைவு மையத்தில் உருவாகும் காந்தப்புலம் N * pi x 10^-6 டெஸ்லா எனக் குறிக்கப்பட்டால் (mu_0 = 4 pi x 10^-7 T m/A), N இன் முழு எண் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

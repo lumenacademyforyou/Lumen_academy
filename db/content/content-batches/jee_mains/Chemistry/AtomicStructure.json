@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-CHE-che02-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following statements is NOT consistent with Bohr's model of the hydrogen atom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The angular momentum of an electron in a stationary orbit is an integral multiple of h/(2pi).",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Electrons continuously radiate energy while revolving in their stationary circular orbits.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Energy is emitted or absorbed only when an electron jumps from one stationary orbit to another.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The model cannot explain the splitting of spectral lines in electric and magnetic fields.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Bohr's postulates, an electron in an permitted stationary orbit does not radiate energy while revolving; its energy remains constant. Radiation is emitted or absorbed only during a transition between orbits. Statement B is incorrect and therefore the correct choice.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போர் அணு மாதிரியின் கருதுகோள்களுக்குப் பொருந்தாத கூற்று எது?",
+        "optionTexts": [
+          "நிலையான சுற்றுப்பாதையில் எலக்ட்ரானின் கோண உந்தமானது h/(2pi)-ன் முழு எண் மடங்காகும்.",
+          "எலக்ட்ரான்கள் நிலையான வட்டப் பாதைகளில் சுற்றும்போது தொடர்ந்து ஆற்றலை கதிர்வீசுகின்றன.",
+          "ஒரு நிலையான சுற்றுப்பாதையிலிருந்து மற்றொன்றிற்கு எலக்ட்ரான் தாவும்போது மட்டுமே ஆற்றல் உமிழப்படுகிறது அல்லது உறிஞ்சப்படுகிறது.",
+          "இக்கொள்கை மின் மற்றும் காந்தப்புலங்களில் நிறமாலை வரிகள் பிளவுபடுவதை விளக்க இயலாது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "When monochromatic radiation of frequency 2nu_0 (where nu_0 is the threshold frequency) is incident on a metal surface, the maximum kinetic energy of emitted photoelectrons is K1. When radiation of frequency 5nu_0 is incident on the same metal surface, the maximum kinetic energy is K2. The ratio K1 : K2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 : 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 : 5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 : 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 : 3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Einstein's photoelectric equation, K_max = h*nu - h*nu_0. For incident frequency 2nu_0: K1 = h(2nu_0) - h*nu_0 = h*nu_0. For incident frequency 5nu_0: K2 = h(5nu_0) - h*nu_0 = 4h*nu_0. Therefore, the ratio K1 : K2 = h*nu_0 / (4h*nu_0) = 1 : 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு உலோகப் பரப்பின் மீது 2nu_0 (nu_0 என்பது தொடக்க அதிர்வெண்) அதிர்வெண் கொண்ட கதிர்வீச்சு படும்போது உமிழப்படும் ஒளி எலக்ட்ரான்களின் அதிகபட்ச இயக்க ஆற்றல் K1 ஆகும். அதே உலோகத்தின் மீது 5nu_0 அதிர்வெண் கொண்ட கதிர்வீச்சு படும்போது அதிகபட்ச இயக்க ஆற்றல் K2 ஆகும். K1 : K2 விகிதம்:",
+        "optionTexts": [
+          "1 : 4",
+          "2 : 5",
+          "1 : 2",
+          "1 : 3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which of the following sets of quantum numbers (n, l, m_l, m_s) is NOT permitted for an electron in an atom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3, 2, -2, +1/2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "4, 0, 0, -1/2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2, 2, +1, +1/2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3, 1, 0, -1/2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a principal quantum number n, the azimuthal quantum number l can only take integer values from 0 to (n - 1). When n = 2, the permissible values of l are 0 and 1. The value l = 2 is not permitted for n = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு அணுவில் உள்ள எலக்ட்ரானுக்கு பின்வரும் குவாண்டம் எண்களின் தொகுப்புகளில் (n, l, m_l, m_s) அனுமதிக்கப்படாதது எது?",
+        "optionTexts": [
+          "3, 2, -2, +1/2",
+          "4, 0, 0, -1/2",
+          "2, 2, +1, +1/2",
+          "3, 1, 0, -1/2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In the emission spectrum of atomic hydrogen, the ratio of the longest wavelength of the Lyman series to the longest wavelength of the Balmer series is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 : 36",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 : 8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "9 : 32",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 : 27",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "For the Lyman series, the longest wavelength corresponds to the transition n = 2 -> 1: 1/lambda_L = R_H * (1/1^2 - 1/2^2) = 3*R_H / 4 => lambda_L = 4 / (3*R_H). For the Balmer series, the longest wavelength corresponds to n = 3 -> 2: 1/lambda_B = R_H * (1/2^2 - 1/3^2) = 5*R_H / 36 => lambda_B = 36 / (5*R_H). The ratio lambda_L / lambda_B = (4 / (3*R_H)) / (36 / (5*R_H)) = (4/3) * (5/36) = 5 / 27.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணு உமிழ்வு நிறமாலையில், லைமன் தொடரின் மிக நீண்ட அலைநீளத்திற்கும் பாமர் தொடரின் மிக நீண்ட அலைநீளத்திற்கும் இடையே உள்ள விகிதம்:",
+        "optionTexts": [
+          "5 : 36",
+          "3 : 8",
+          "9 : 32",
+          "5 : 27"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a hydrogen atom, let r_n and v_n denote the radius of the orbit and the orbital velocity of the electron in the n-th Bohr orbit respectively. The frequency of revolution of the electron in the n-th orbit is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n^-3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n^-2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n^2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n^3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The orbital radius scales as r_n proportional to n^2 / Z, and orbital velocity scales as v_n proportional to Z / n. The frequency of revolution f is given by v_n / (2*pi*r_n). Therefore, f is proportional to (1/n) / (n^2) = n^-3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவில், n-வது போர் சுற்றுப்பாதையின் ஆரம் r_n எனவும், எலக்ட்ரானின் சுற்றுப்பாதை திசைவேகம் v_n எனவும் கொண்டால், n-வது சுற்றுப்பாதையில் எலக்ட்ரானின் சுழற்சி அதிர்வெண் எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "n^-3",
+          "n^-2",
+          "n^2",
+          "n^3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Which principle states that no two electrons in an isolated atom can have the same set of all four quantum numbers?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hund's Rule of Maximum Multiplicity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Aufbau Principle",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Heisenberg Uncertainty Principle",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Pauli Exclusion Principle",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "The Pauli Exclusion Principle states that no two electrons in an atom can have the identical values for all four quantum numbers (n, l, m_l, and m_s). Consequently, an orbital can accommodate a maximum of two electrons with opposing spins.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தனித்த அணுவில் உள்ள எந்த இரு எலக்ட்ரான்களும் ஒரே மாதிரியான நான்கு குவாண்டம் எண்களின் தொகுப்பைக் கொண்டிருக்க முடியாது என்று கூறும் தத்துவம் எது?",
+        "optionTexts": [
+          "ஹுண்ட் விதி",
+          "ஆஃபா தத்துவம்",
+          "ஹைசன்பர்க்கின் நிச்சயமற்ற தன்மைக் கொள்கை",
+          "பவுலியின் தவிர்ப்புத் தத்துவம்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The number of radial nodes and angular nodes respectively for a 4d atomic orbital are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 and 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 and 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 and 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 and 2",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "For a 4d orbital, principal quantum number n = 4 and azimuthal quantum number l = 2. Number of radial nodes = n - l - 1 = 4 - 2 - 1 = 1. Number of angular nodes = l = 2. Thus, the orbital has 1 radial node and 2 angular nodes.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "4d அணு ஆர்பிட்டாலில் உள்ள ஆரக் கணுக்கள் மற்றும் கோணக் கணுக்களின் எண்ணிக்கை முறையே:",
+        "optionTexts": [
+          "2 மற்றும் 1",
+          "1 மற்றும் 1",
+          "2 மற்றும் 2",
+          "1 மற்றும் 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "An electron, an alpha particle, and a proton have identical kinetic energies. Which of the following correctly represents the descending order of their de Broglie wavelengths (lambda_e, lambda_alpha, lambda_p)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda_alpha > lambda_p > lambda_e",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "lambda_e > lambda_alpha > lambda_p",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "lambda_e > lambda_p > lambda_alpha",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "lambda_p > lambda_alpha > lambda_e",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The de Broglie wavelength is given by lambda = h / sqrt(2*m*K). For equal kinetic energy K, lambda is inversely proportional to sqrt(m). The masses satisfy m_e << m_p < m_alpha. Therefore, the de Broglie wavelengths follow the order: lambda_e > lambda_p > lambda_alpha.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரான், ஓர் ஆல்பா துகள் மற்றும் ஒரு புரோட்டான் ஆகியவை சமமான இயக்க ஆற்றலைக் கொண்டுள்ளன. அவற்றின் டி பிராய் அலைநீளங்களின் (lambda_e, lambda_alpha, lambda_p) சரியான இறங்கு வரிசை எது?",
+        "optionTexts": [
+          "lambda_alpha > lambda_p > lambda_e",
+          "lambda_e > lambda_alpha > lambda_p",
+          "lambda_e > lambda_p > lambda_alpha",
+          "lambda_p > lambda_alpha > lambda_e"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of nodal planes (angular nodes) passing through the nucleus for a d_xy orbital is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For any d orbital, the azimuthal quantum number l is 2, meaning it possesses 2 angular nodes (nodal planes). For a d_xy orbital, the probability density is zero in the xz and yz planes, yielding exactly 2 nodal planes.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "d_xy ஆர்பிட்டாலில் உட்கரு வழியே செல்லும் கணுத் தளங்களின் (கோணக் கணுக்கள்) மொத்த எண்ணிக்கை:",
+        "optionTexts": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The ground-state electronic configuration of chromium (Z = 24) is [Ar] 3d^5 4s^1 rather than [Ar] 3d^4 4s^2. This preference is primarily attributed to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Higher effective nuclear charge experienced by 4s electrons.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Extra stability associated with symmetrical distribution and maximum exchange energy of a half-filled 3d subshell.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The relatively lower ionization enthalpy of a 3d electron compared to a 4s electron.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lesser penetration power of the 3d orbitals towards the nucleus.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Half-filled and completely filled subshells possess enhanced stability due to two main factors: a more symmetrical spatial distribution of electron charge, and a large negative exchange energy arising from parallel spin exchanges among degenerate orbitals.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "குரோமியத்தின் (Z = 24) அடிநிலை எலக்ட்ரான் அமைப்பு [Ar] 3d^4 4s^2 என்பதற்குப் பதிலாக [Ar] 3d^5 4s^1 என அமைவதற்கு முதன்மைக் காரணம்:",
+        "optionTexts": [
+          "4s எலக்ட்ரான்களால் உணரப்படும் அதிக செயலுறு அணுக்கரு மின்சுமை.",
+          "பாதி நிரப்பப்பட்ட 3d துணைக் கூட்டின் சமச்சீர் பகிர்வு மற்றும் அதிகபட்ச பரிமாற்ற ஆற்றலால் விளையும் கூடுதல் நிலைப்புத்தன்மை.",
+          "4s எலக்ட்ரானை விட 3d எலக்ட்ரானின் அயனியாக்கும் என்தால்பி ஒப்பீட்டளவில் குறைவாக இருப்பது.",
+          "உட்கருவை நோக்கி 3d ஆர்பிட்டால்களின் ஊடுருவல் திறன் குறைவாக இருப்பது."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The orbital angular momentum of an electron present in a 3p atomic orbital is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "h / pi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(6) * h / (2pi)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(2) * h / (2pi)",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Orbital angular momentum is given by L = sqrt(l * (l + 1)) * h / (2pi). For a p orbital, the azimuthal quantum number l = 1. Therefore, L = sqrt(1 * (1 + 1)) * h / (2pi) = sqrt(2) * h / (2pi).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3p அணு ஆர்பிட்டாலில் உள்ள ஓர் எலக்ட்ரானின் ஆர்பிட்டால் கோண உந்தம்:",
+        "optionTexts": [
+          "h / pi",
+          "0",
+          "sqrt(6) * h / (2pi)",
+          "sqrt(2) * h / (2pi)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "For the 2s orbital of a hydrogen atom, the radial wave function exhibits a node at r = 2a_0. Which of the following statements correctly describes the corresponding radial probability distribution function, 4*pi*r^2*[R(r)]^2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It exhibits its maximum value at r = 0.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "It has two maxima and is zero at r = 0, at r = 2a_0, and as r approaches infinity.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "It has only a single peak and does not vanish at any finite distance from the nucleus.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The height of the first maximum is significantly greater than that of the second maximum.",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The radial distribution function 4*pi*r^2*[R(r)]^2 vanishes at r = 0 due to the r^2 factor, vanishes at the radial node r = 2a_0 where R(r) = 0, and approaches zero as r -> infinity. Because n - l - 1 = 1 node exists, the curve displays two maxima separated by the node, with the second outer peak having a much higher probability density than the small inner peak.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவின் 2s ஆர்பிட்டாலில், ஆர அலைச்சார்பானது r = 2a_0 தொலைவில் கணுவைக் கொண்டுள்ளது. ஆரப் பரவல் நிகழ்தகவு சார்பு 4*pi*r^2*[R(r)]^2 பற்றிய சரியான கூற்று எது?",
+        "optionTexts": [
+          "இது r = 0 என்ற தொலைவில் தன் பெரும மதிப்பைக் கொண்டிருக்கும்.",
+          "இது இரு பெருமங்களைக் கொண்டுள்ளது மற்றும் r = 0, r = 2a_0 மற்றும் r முடிவிலியை நெருங்கும் போது சுழியாகிறது.",
+          "இது ஒரே ஒரு உச்சியை மட்டுமே கொண்டுள்ளது மற்றும் வரையறுக்கப்பட்ட தொலைவில் எங்கும் சுழியாவதில்லை.",
+          "முதல் உச்சத்தின் உயரமானது இரண்டாவது உச்சத்தின் உயரத்தை விட கணிசமாக அதிகமாக இருக்கும்."
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The maximum number of electrons that can be accommodated in a subshell with azimuthal quantum number l = 3 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "14",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "18",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The maximum number of electrons in any subshell is given by 2 * (2l + 1). For l = 3 (an f subshell), the capacity is 2 * (2*3 + 1) = 2 * 7 = 14 electrons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "கோண உந்தக் குவாண்டம் எண் l = 3 கொண்ட துணைக் கூட்டில் இடம்பெறக்கூடிய அதிகபட்ச எலக்ட்ரான்களின் எண்ணிக்கை:",
+        "optionTexts": [
+          "14",
+          "10",
+          "7",
+          "18"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the uncertainty in position of a moving particle of mass m is numerically equal to its de Broglie wavelength, the minimum fractional uncertainty in its velocity (Delta v / v) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / (2pi)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2pi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / (4pi)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "4pi",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the de Broglie relation, lambda = h / p = h / (m*v). The problem states Delta x = lambda = h / (m*v). From the Heisenberg uncertainty principle, Delta x * Delta p >= h / (4*pi), which translates to Delta x * (m * Delta v) >= h / (4*pi). Substituting Delta x gives [h / (m*v)] * (m * Delta v) >= h / (4*pi) => Delta v / v >= 1 / (4*pi).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "m நிறைகொண்ட இயங்கும் ஒரு துகளின் நிலையின் நிச்சயமற்ற தன்மை அதன் டி பிராய் அலைநீளத்திற்கு எண்ணளவில் சமமாக இருந்தால், அதன் திசைவேகத்தின் குறைந்தபட்ச பின்ன நிச்சயமற்ற தன்மை (Delta v / v):",
+        "optionTexts": [
+          "1 / (2pi)",
+          "2pi",
+          "1 / (4pi)",
+          "4pi"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The energy of an electron in the second Bohr orbit of He+ ion is equal to the energy of an electron in which Bohr orbit of Li2+ ion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Third orbit",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Fourth orbit",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "First orbit",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sixth orbit",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bohr energy for a single-electron species is E_n = -13.6 * (Z^2 / n^2) eV. For He+ (Z = 2) in n = 2: Z/n = 2/2 = 1. For Li2+ (Z = 3), to have the same energy we require Z/n = 1 => 3/n = 1 => n = 3. Hence, it corresponds to the third orbit of Li2+.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "He+ அயனியின் இரண்டாவது போர் சுற்றுப்பாதையில் உள்ள ஓர் எலக்ட்ரானின் ஆற்றலானது, Li2+ அயனியின் எந்த போர் சுற்றுப்பாதையில் உள்ள எலக்ட்ரானின் ஆற்றலுக்குச் சமமாகும்?",
+        "optionTexts": [
+          "மூன்றாவது சுற்றுப்பாதை",
+          "நான்காவது சுற்றுப்பாதை",
+          "முதல் சுற்றுப்பாதை",
+          "ஆறாவது சுற்றுப்பாதை"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "According to de Broglie's hypothesis, the circumference of the n-th Bohr orbit in a hydrogen atom contains exactly:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n / 2 de Broglie wavelengths",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "n de Broglie wavelengths",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2n de Broglie wavelengths",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n^2 de Broglie wavelengths",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Bohr's quantization condition is m*v*r = n*h / (2*pi). Rearranging gives 2*pi*r = n*(h / (m*v)). Since de Broglie wavelength lambda = h / (m*v), this yields 2*pi*r = n*lambda. Thus, the circumference of the n-th orbit equals an integral number n of de Broglie wavelengths.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "டி பிராயின் கருதுகோளின்படி, ஹைட்ரஜன் அணுவில் n-வது போர் சுற்றுப்பாதையின் சுற்றளவானது எத்தனை டி பிராய் அலைநீளங்களைக் கொண்டிருக்கும்?",
+        "optionTexts": [
+          "n / 2 டி பிராய் அலைநீளங்கள்",
+          "n டி பிராய் அலைநீளங்கள்",
+          "2n டி பிராய் அலைநீளங்கள்",
+          "n^2 டி பிராய் அலைநீளங்கள்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The total number of orbitals associated with the principal quantum number n = 4 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "32",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "16",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The total number of orbitals in a shell with principal quantum number n is given by n^2. For n = 4, number of orbitals = 4^2 = 16 (one 4s, three 4p, five 4d, and seven 4f orbitals).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முதன்மைக் குவாண்டம் எண் n = 4 உடன் தொடர்புடைய மொத்த ஆர்பிட்டால்களின் எண்ணிக்கை:",
+        "optionTexts": [
+          "8",
+          "32",
+          "16",
+          "12"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following transition metal ions possesses the highest spin-only magnetic moment in its ground state?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fe2+",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cr3+",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cu2+",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mn2+",
+        "isCorrect": true
+      }
+    ],
+    "solution": {
+      "explanationText": "Spin-only magnetic moment mu = sqrt(n * (n + 2)) BM, where n is the number of unpaired electrons. Electronic configurations: Fe2+ (d^6, n = 4), Cr3+ (d^3, n = 3), Cu2+ (d^9, n = 1), Mn2+ (d^5, n = 5). Mn2+ has 5 unpaired electrons, giving the highest value: mu = sqrt(5 * 7) = sqrt(35) approx 5.92 BM.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இடைநிலை உலோக அயனிகளில் எது தன் அடிநிலையில் அதிக சுழற்சி-மட்டும் காந்தத் திருப்புத்திறனைக் கொண்டுள்ளது?",
+        "optionTexts": [
+          "Fe2+",
+          "Cr3+",
+          "Cu2+",
+          "Mn2+"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the wavelength of the series limit of the Lyman series in the hydrogen spectrum is lambda_0, the wavelength of the series limit of the Balmer series for the same atom is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 * lambda_0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 * lambda_0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "lambda_0 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9 * lambda_0",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Series limit corresponds to a transition from n = infinity. For Lyman series limit: 1 / lambda_0 = R_H * (1/1^2 - 0) = R_H => lambda_0 = 1 / R_H. For Balmer series limit: 1 / lambda_B = R_H * (1/2^2 - 0) = R_H / 4 => lambda_B = 4 / R_H = 4 * lambda_0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் நிறமாலையில் லைமன் தொடரின் எல்லை அலைநீளம் lambda_0 எனில், அதே அணுவின் பாமர் தொடரின் எல்லை அலைநீளம்:",
+        "optionTexts": [
+          "4 * lambda_0",
+          "2 * lambda_0",
+          "lambda_0 / 4",
+          "9 * lambda_0"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Which of the following valence shell electronic configurations represents a violation of Hund's rule of maximum multiplicity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbon (Z = 6): 1s^2 2s^2 2p_x^2 2p_y^0 2p_z^0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Boron (Z = 5): 1s^2 2s^2 2p_x^1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Nitrogen (Z = 7): 1s^2 2s^2 2p_x^1 2p_y^1 2p_z^1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Oxygen (Z = 8): 1s^2 2s^2 2p_x^2 2p_y^1 2p_z^1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Hund's rule of maximum multiplicity states that electron pairing in degenerate orbitals cannot begin until each degenerate orbital is singly occupied with parallel spins. In configuration A, two electrons are paired in 2p_x while 2p_y and 2p_z remain completely empty, directly violating Hund's rule.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பின்வரும் இணைதிறன் கூண்டு எலக்ட்ரான் அமைப்புகளில் ஹுண்ட் விதியை மீறும் அமைப்பு எது?",
+        "optionTexts": [
+          "கார்பன் (Z = 6): 1s^2 2s^2 2p_x^2 2p_y^0 2p_z^0",
+          "போரான் (Z = 5): 1s^2 2s^2 2p_x^1",
+          "நைட்ரஜன் (Z = 7): 1s^2 2s^2 2p_x^1 2p_y^1 2p_z^1",
+          "ஆக்ஸிஜன் (Z = 8): 1s^2 2s^2 2p_x^2 2p_y^1 2p_z^1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An electron in an excited state of a hydrogen atom with principal quantum number n = 5 de-excites to the ground state (n = 1). The maximum number of distinct spectral lines possible in the emission spectrum is:",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The total number of spectral lines emitted when an electron relaxes from level n to the ground state (n = 1) is given by N = n * (n - 1) / 2. For n = 5, N = 5 * 4 / 2 = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஹைட்ரஜன் அணுவில் முதன்மைக் குவாண்டம் எண் n = 5 என்ற கிளர்வு நிலையிலுள்ள எலக்ட்ரான் அடிநிலைக்கு (n = 1) தாவுகிறது. உமிழ்வு நிறமாலையில் கிடைக்கக்கூடிய அதிகபட்ச தனித்துவமான நிறமாலை வரிகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The radius of the n-th Bohr orbit is given by r_n = 0.529 * (n^2 / Z) Angstrom. The ratio of the radius of the fourth Bohr orbit of He+ ion to the radius of the second Bohr orbit of hydrogen atom is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Radius r is proportional to n^2 / Z. For He+ in the 4th orbit (n = 4, Z = 2): r_He = 4^2 / 2 = 16 / 2 = 8. For H in the 2nd orbit (n = 2, Z = 1): r_H = 2^2 / 1 = 4. The ratio is 8 / 4 = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "n-வது போர் சுற்றுப்பாதையின் ஆரம் r_n = 0.529 * (n^2 / Z) ஆம்ஸ்ட்ராங் எனக் கொடுக்கப்பட்டுள்ளது. He+ அயனியின் நான்காவது போர் சுற்றுப்பாதையின் ஆரத்திற்கும், ஹைட்ரஜன் அணுவின் இரண்டாவது போர் சுற்றுப்பாதையின் ஆரத்திற்கும் உள்ள விகிதம்:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A clean metal surface is illuminated with light of frequency 1.0 x 10^15 Hz, and the stopping potential is measured to be 1.0 V. When illuminated with light of frequency 2.0 x 10^15 Hz, the stopping potential is found to be V_2 volts. Given h/e = 4.0 x 10^-15 V s, the value of V_2 (in volts) is:",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The photoelectric equation relates stopping potential to incident frequency: e * V_s = h * nu - phi, or V_s = (h/e) * nu - (phi/e). For two frequencies, the difference in stopping potential is V_2 - V_1 = (h/e) * (nu_2 - nu_1). Substituting values: V_2 - 1.0 = (4.0 x 10^-15) * (2.0 x 10^15 - 1.0 x 10^15) = 4.0 * 1.0 = 4.0 V. Thus, V_2 = 1.0 + 4.0 = 5 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தூய உலோகப் பரப்பின் மீது 1.0 x 10^15 Hz அதிர்வெண் கொண்ட ஒளி படும் போது நிறுத்தும் மின்னழுத்தம் 1.0 V என அளவிடப்படுகிறது. 2.0 x 10^15 Hz அதிர்வெண் கொண்ட ஒளி படும் போது நிறுத்தும் மின்னழுத்தம் V_2 வோல்ட் எனில், h/e = 4.0 x 10^-15 V s என்ற மதிப்பைக் கொண்டு V_2-ன் மதிப்பை (வோல்ட்டில்) காண்க:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The total number of nodes (sum of radial nodes and angular nodes) present in a 5f atomic orbital is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For any orbital, the total number of nodes is given by (n - 1). For a 5f orbital, principal quantum number n = 5. Therefore, total nodes = 5 - 1 = 4 (consisting of n - l - 1 = 5 - 3 - 1 = 1 radial node and l = 3 angular nodes).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "5f அணு ஆர்பிட்டாலில் உள்ள மொத்த கணுக்களின் (ஆரக் கணுக்கள் மற்றும் கோணக் கணுக்களின் கூடுதல்) எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The number of unpaired electrons present in an isolated Fe3+ ion in its ground state is: (Atomic number of Fe = 26)",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The ground-state electronic configuration of neutral iron (Fe, Z = 26) is [Ar] 3d^6 4s^2. Forming Fe3+ requires removing two 4s electrons and one 3d electron, resulting in the configuration [Ar] 3d^5. According to Hund's rule, all 5 electrons in the five degenerate 3d orbitals remain unpaired. Hence, there are 5 unpaired electrons.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடிநிலையில் உள்ள தனித்த Fe3+ அயனியில் காணப்படும் இணையாகாத எலக்ட்ரான்களின் எண்ணிக்கை: (Fe-ன் அணு எண் = 26)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An electron is accelerated from rest through an electric potential difference of 150 V. If it is instead accelerated from rest through a potential difference of V volts, its de Broglie wavelength becomes exactly one-fourth of its previous value. The value of V (in volts) is:",
+    "correctAnswer": 2400,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The de Broglie wavelength of an electron accelerated through potential difference V is lambda = h / sqrt(2*m*e*V), which means lambda is proportional to 1 / sqrt(V). If the new wavelength is lambda' = lambda / 4, then sqrt(V' / V) = lambda / lambda' = 4. Squaring both sides yields V' / V = 16. Therefore, V' = 16 * 150 V = 2400 V.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஓய்வு நிலையிலுள்ள ஓர் எலக்ட்ரான் 150 V மின்னழுத்த வேறுபாட்டினால் முடுக்கப்படுகிறது. அது V வோல்ட் மின்னழுத்த வேறுபாட்டினால் முடுக்கப்படும் போது அதன் டி பிராய் அலைநீளம் முந்தைய மதிப்பில் சரியாக நான்கில் ஒரு பங்காக மாறுகிறது எனில், V-ன் மதிப்பு (வோல்ட்டில்):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A hydrogen-like ion in its ground state absorbs a photon of energy 108.8 eV and gets excited to a state where the electron has an orbital angular momentum equal to sqrt(6) * h / (2pi). The atomic number Z of this hydrogen-like ion is: (Given: Ionization energy of ground state hydrogen atom = 13.6 eV)",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Orbital angular momentum L = sqrt(l * (l + 1)) * h / (2pi) = sqrt(6) * h / (2pi) implies l = 2 (a d subshell). A d subshell requires principal quantum number n >= 3. For excitation from ground state (n = 1) to n = 3, delta E = 13.6 * Z^2 * (1/1^2 - 1/3^2) = 13.6 * Z^2 * (8/9) = (108.8 / 9) * Z^2. Given delta E = 108.8 eV, we have 108.8 = (108.8 / 9) * Z^2 => Z^2 = 9 => Z = 3 (Li2+ ion).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடிநிலையில் உள்ள ஒரு ஹைட்ரஜன் போன்ற அயனியானது 108.8 eV ஆற்றல் கொண்ட போட்டானை உறிஞ்சி, sqrt(6) * h / (2pi) என்ற ஆர்பிட்டால் கோண உந்தத்தைக் கொண்ட ஒரு நிலைக்குக் கிளர்வுறுகிறது. அந்த அயனியின் அணு எண் Z: (ஹைட்ரஜனின் அடிநிலை அயனியாக்கும் ஆற்றல் = 13.6 eV)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Bohr's theory, the orbital angular momentum of an electron revolving in the fourth orbit of a hydrogen atom is x * [h / (2pi)]. The value of x is:",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "According to Bohr's quantization postulate, orbital angular momentum m*v*r = n * h / (2pi). For the fourth orbit, n = 4, so angular momentum = 4 * [h / (2pi)]. Thus, x = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "போர் கொள்கையின்படி, ஹைட்ரஜன் அணுவின் நான்காவது சுற்றுப்பாதையில் சுற்றும் ஓர் எலக்ட்ரானின் கோண உந்தமானது x * [h / (2pi)] ஆகும். x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The spin multiplicity of an electronic state is defined as (2S + 1), where S is the total spin quantum number. The spin multiplicity of a gaseous Cr3+ ion in its ground state is: (Atomic number of Cr = 24)",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The ground-state electronic configuration of Cr3+ (Z = 24) is [Ar] 3d^3. By Hund's rule, the three 3d electrons occupy three separate d orbitals with parallel spins. Total spin S = 3 * (1/2) = 3/2. Spin multiplicity = 2S + 1 = 2*(3/2) + 1 = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு எலக்ட்ரான் நிலையின் சுழற்சி பெருக்கம் (2S + 1) என வரையறுக்கப்படுகிறது, இங்கு S என்பது மொத்த சுழற்சி குவாண்டம் எண் ஆகும். அடிநிலையிலுள்ள வாயு நிலை Cr3+ அயனியின் சுழற்சி பெருக்கத்தின் மதிப்பு: (Cr-ன் அணு எண் = 24)",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-CHE-che02-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "che",
+    "nodeTagCode": "che_02",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a ground-state iron atom (Fe, Z = 26), the total number of electrons having azimuthal quantum number l = 1 is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The complete ground-state configuration of iron (Z = 26) is 1s^2 2s^2 2p^6 3s^2 3p^6 3d^6 4s^2. Electrons with azimuthal quantum number l = 1 reside in p subshells. The 2p subshell contains 6 electrons and the 3p subshell contains 6 electrons. Total number of electrons with l = 1 is 6 + 6 = 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடிநிலை இரும்பு அணுவில் (Fe, Z = 26), கோண உந்தக் குவாண்டம் எண் l = 1 கொண்ட எலக்ட்ரான்களின் மொத்த எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

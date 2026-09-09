@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-PHY-PHY16-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A ray of light travels from a denser medium of refractive index mu into air. The critical angle for total internal reflection is theta_c. The relation between mu and theta_c is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "mu = sin(theta_c)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "mu = 1 / sin(theta_c)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "mu = cos(theta_c)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "mu = tan(theta_c)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "By Snell's law at the interface between a denser medium of refractive index mu and air (refractive index = 1): mu * sin(theta_c) = 1 * sin(90 deg) = 1. Therefore, mu = 1 / sin(theta_c).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "mu ஒளிவிலகல் எண் கொண்ட அடர்வுமிகு ஊடகத்திலிருந்து காற்றுக்கு ஒரு ஒளிக்கதிர் செல்கிறது. முழு அக எதிரொளிப்பிற்கான மாறுநிலைக் கோணம் theta_c எனில், mu மற்றும் theta_c ஆகியவற்றிற்கு இடையேயான தொடர்பு:",
+        "optionTexts": [
+          "mu = sin(theta_c)",
+          "mu = 1 / sin(theta_c)",
+          "mu = cos(theta_c)",
+          "mu = tan(theta_c)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An equiconvex thin glass lens of refractive index mu = 1.5 has both surfaces with equal radius of curvature R. Its focal length f in air is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "R",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "2 R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to the lens maker's formula: 1 / f = (mu - 1) * (1 / R1 - 1 / R2). For an equiconvex lens in air: R1 = +R and R2 = -R. Thus, 1 / f = (1.5 - 1) * [1 / R - (- 1 / R)] = 0.5 * (2 / R) = 1 / R => f = R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "mu = 1.5 ஒளிவிலகல் எண் கொண்ட ஒரு இருபுற குவி லென்ஸின் இரு பரப்புகளும் சம ஆரம் R கொண்டுள்ளன. காற்றில் அதன் குவியத் தொலைவு f:",
+        "optionTexts": [
+          "R / 2",
+          "R",
+          "2 R",
+          "R / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double slit experiment using monochromatic light of wavelength lambda, the slit separation is d and the screen distance is D. The fringe width beta is given by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "beta = lambda D / d",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "beta = lambda d / D",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "beta = D d / lambda",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "beta = lambda / (D d)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In Young's double slit experiment, the fringe width (separation between two successive bright or dark fringes) is derived from path difference as beta = lambda D / d.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "lambda அலைநீளம் கொண்ட ஒற்றை நிற ஒளியைப் பயன்படுத்தி செய்யப்படும் யங்கின் இரட்டைப் பிளவு சோதனையில், பிளவுகளுக்கு இடையே உள்ள தொலைவு d மற்றும் திரை உள்ள தொலைவு D எனில், பட்டை அகலம் beta:",
+        "optionTexts": [
+          "beta = lambda D / d",
+          "beta = lambda d / D",
+          "beta = D d / lambda",
+          "beta = lambda / (D d)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two thin lenses of optical powers +5 D and -3 D are placed in coaxial contact. The power and nature of the combined lens are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "+2 D, converging",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-2 D, diverging",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "+8 D, converging",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-8 D, diverging",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For thin lenses placed in contact, the net optical power is the algebraic sum of their individual powers: P_eq = P1 + P2 = +5 D + (-3 D) = +2 D. Since the net power is positive, the combination behaves as a converging (convex) lens.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "+5 D மற்றும் -3 D ஒளித்திறன் கொண்ட இரு மெல்லிய லென்ஸ்கள் பொது அச்சுத் தொடர்பில் வைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் திறன் மற்றும் தன்மை:",
+        "optionTexts": [
+          "+2 D, குவிக்கும் லென்ஸ்",
+          "-2 D, விரிக்கும் லென்ஸ்",
+          "+8 D, குவிக்கும் லென்ஸ்",
+          "-8 D, விரிக்கும் லென்ஸ்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "According to Brewster's law, when an unpolarized beam of light is incident on a transparent medium at the polarizing angle i_p, the refractive index mu of the medium satisfies:",
+    "options": [
+      {
+        "label": "A",
+        "text": "mu = sin(i_p)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "mu = cos(i_p)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "mu = tan(i_p)",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "mu = cot(i_p)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Brewster's law states that the refractive index of a transparent medium is equal to the tangent of the polarizing angle (Brewster's angle): mu = tan(i_p).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ப்ரூஸ்டரின் விதியின்படி, தளவிளைவற்ற ஒளிக்கற்றை ஒரு ஒளிபுகும் ஊடகத்தின் மீது தளவிளைவுக் கோணம் i_p இல் படும் போது, ஊடகத்தின் ஒளிவிலகல் எண் mu எதனை நிறைவு செய்கிறது?",
+        "optionTexts": [
+          "mu = sin(i_p)",
+          "mu = cos(i_p)",
+          "mu = tan(i_p)",
+          "mu = cot(i_p)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The magnifying power of a simple microscope (magnifying glass) of focal length f when the final image is formed at the near point of distinct vision D is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 + D / f",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "D / f",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 - D / f",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "f / D",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a simple microscope formed by a single convex lens of focal length f, when the virtual image is formed at the least distance of distinct vision D, the angular magnification is M = 1 + D / f.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f குவியத் தொலைவு கொண்ட ஒரு எளிய நுண்ணோக்கியில் இறுதிப் பிம்பம் தெளிவுறு காட்சியின் மீச்சிறு தொலைவு D இல் உருவாகும் போது, அதன் உருப்பெருக்கத் திறன்:",
+        "optionTexts": [
+          "1 + D / f",
+          "D / f",
+          "1 - D / f",
+          "f / D"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A convex glass lens of refractive index mu_g = 1.5 has a focal length f in air. If it is completely immersed in a liquid of refractive index mu_l = 1.25, its new focal length in the liquid will be:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 f",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2.5 f",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 f",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1.5 f",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In air: 1 / f = (mu_g - 1) * (1/R1 - 1/R2) = (1.5 - 1) K = 0.5 K => K = 2 / f. In liquid: 1 / f_l = (mu_g / mu_l - 1) K = (1.5 / 1.25 - 1) K = (1.2 - 1) K = 0.2 K. Substituting K = 2 / f: 1 / f_l = 0.2 * (2 / f) = 0.4 / f = (2/5) / f => f_l = (5/2) f = 2.5 f.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "காற்றில் f குவியத் தொலைவு கொண்ட mu_g = 1.5 ஒளிவிலகல் எண் உடைய ஒரு குவிலென்ஸ் mu_l = 1.25 ஒளிவிலகல் எண் கொண்ட ஒரு நீர்மத்தினுள் முழுமையாக மூழ்க வைக்கப்படுகிறது. நீர்மத்தில் அதன் புதிய குவியத் தொலைவு:",
+        "optionTexts": [
+          "2 f",
+          "2.5 f",
+          "4 f",
+          "1.5 f"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A prism of refracting angle A = 60 degrees produces an angle of minimum deviation delta_m = 30 degrees. The refractive index mu of the prism material is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "sqrt(3)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "sqrt(3) / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The prism formula is mu = sin((A + delta_m) / 2) / sin(A / 2). Given A = 60 deg and delta_m = 30 deg: mu = sin((60 + 30) / 2) / sin(60 / 2) = sin(45 deg) / sin(30 deg) = (1 / sqrt(2)) / (1 / 2) = 2 / sqrt(2) = sqrt(2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "A = 60 டிகிரி விலகுகோணம் கொண்ட ஒரு முப்பட்டகம் delta_m = 30 டிகிரி சிறும விலகுக் கோணத்தை உருவாக்குகிறது. முப்பட்டகப் பொருளின் ஒளிவிலகல் எண் mu:",
+        "optionTexts": [
+          "sqrt(2)",
+          "sqrt(3)",
+          "1.5",
+          "sqrt(3) / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Young's double slit experiment, a thin transparent mica sheet of thickness t and refractive index mu is placed in the path of one of the interfering beams. The central bright fringe shifts on the screen by a distance:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(mu - 1) t D / d",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "mu t D / d",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(mu - 1) t d / D",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(mu + 1) t D / d",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Introducing a film of thickness t and refractive index mu introduces an additional optical path difference of Delta x = (mu - 1) t. The whole fringe pattern shifts across the screen by y_shift = (D / d) * Delta x = (mu - 1) t D / d.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு சோதனையில், தடிமன் t மற்றும் ஒளிவிலகல் எண் mu கொண்ட ஒரு மெல்லிய மைகா தகடு ஒரு பிளவின் பாதையில் வைக்கப்படுகிறது. மைய பொலிவுப் பட்டை திரையில் இடம்பெயரும் தொலைவு:",
+        "optionTexts": [
+          "(mu - 1) t D / d",
+          "mu t D / d",
+          "(mu - 1) t d / D",
+          "(mu + 1) t D / d"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In Fraunhofer diffraction at a single slit of width a using light of wavelength lambda, the angular width of the central diffraction maximum is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda / a",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 lambda / a",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "lambda / (2 a)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 lambda / a",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The first minima in single-slit diffraction occur at angles theta satisfying a sin theta = +/- lambda => theta approx +/- lambda / a. The central maximum lies between the first minimum on either side. Therefore, the angular width is 2 theta = 2 lambda / a.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "lambda அலைநீளம் கொண்ட ஒளியைப் பயன்படுத்தி a அகலம் கொண்ட ஒரு பிளவில் நிகழும் ஃபிரான்ஹோஃபர் விளிம்பு விளைவில், மைய முதன்மைப் பெருமத்தின் கோண அகலம்:",
+        "optionTexts": [
+          "lambda / a",
+          "2 lambda / a",
+          "lambda / (2 a)",
+          "4 lambda / a"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A vessel contains two immiscible transparent liquids. The lower liquid layer has depth d1 and refractive index mu1, while the upper liquid layer has depth d2 and refractive index mu2. The apparent depth of the bottom of the vessel as viewed normally from above is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "d1 / mu1 + d2 / mu2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(d1 + d2) / (mu1 + mu2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "mu1 d1 + mu2 d2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(d1 + d2) * (mu1 mu2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For normal viewing, the apparent depth through a composite stack of liquid layers is the sum of the apparent depths produced by each individual layer: d_app = d1 / mu1 + d2 / mu2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு கலனில் ஒன்றோடொன்று கலக்காத இரு நீர்மங்கள் உள்ளன. கீழ் அடுக்கு d1 ஆழமும் mu1 ஒளிவிலகல் எண்ணும், மேல் அடுக்கு d2 ஆழமும் mu2 ஒளிவிலகல் எண்ணும் கொண்டுள்ளன. செங்குத்தாக பார்க்கும் போது கலனின் அடிப்பகுதியின் தோற்ற ஆழம்:",
+        "optionTexts": [
+          "d1 / mu1 + d2 / mu2",
+          "(d1 + d2) / (mu1 + mu2)",
+          "mu1 d1 + mu2 d2",
+          "(d1 + d2) * (mu1 mu2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The resolving power of an astronomical telescope having an objective lens of diameter D observing light of wavelength lambda is proportional to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "D / lambda",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "lambda / D",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / (D lambda)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "D * lambda",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Rayleigh's criterion, the limit of resolution (minimum angular separation) of a circular aperture is d theta = 1.22 lambda / D. Resolving power is the reciprocal of the limit of resolution: RP = 1 / d theta = D / (1.22 lambda), which is directly proportional to D / lambda.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "lambda அலைநீளம் கொண்ட ஒளியை உற்றுநோக்கும் D விட்டம் கொண்ட பொருள்வில்லை உடைய ஒரு வானியல் தொலைநோக்கியின் பிரிதிறன் (resolving power) எதற்கு நேர்விகிதத்தில் இருக்கும்?",
+        "optionTexts": [
+          "D / lambda",
+          "lambda / D",
+          "1 / (D lambda)",
+          "D * lambda"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A completely linearly polarized light beam of intensity I0 is incident on an analyzer whose transmission axis makes an angle of 60 degrees with the polarization direction of the incident beam. The intensity of light transmitted by the analyzer is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "I0 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I0 / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(3/4) I0",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I0 / 8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "According to Malus's law, the transmitted intensity through an analyzer is I = I0 cos^2(theta). For theta = 60 degrees, cos(60 deg) = 1 / 2. Therefore, I = I0 * (1 / 2)^2 = I0 / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "I0 செறிவு கொண்ட நேரியல் தளவிளைவுற்ற ஒளிக்கற்றை ஒரு தளவிளைவு பகுப்பாய்வியின் மீது படுகிறது. பகுப்பாய்வியின் அச்சு படுகற்றையின் தளவிளைவு திசையுடன் 60 டிகிரி கோணத்தை உருவாக்கினால், பகுப்பாய்வியால் கடத்தப்படும் ஒளியின் செறிவு:",
+        "optionTexts": [
+          "I0 / 2",
+          "I0 / 4",
+          "(3/4) I0",
+          "I0 / 8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Two thin prisms of refracting angles A1 and A2 with mean refractive indices mu1 and mu2 are combined such that they produce dispersion without mean deviation. The condition to be satisfied is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(mu1 - 1) A1 + (mu2 - 1) A2 = 0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(mu1 - 1) A1 = (mu2 - 1) A2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "mu1 A1 = mu2 A2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "A1 / A2 = (mu2 + 1) / (mu1 + 1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For achromatic combination without mean deviation, the net deviation for mean yellow light produced by the two opposed prisms must be zero: delta_net = delta1 + delta2 = (mu1 - 1) A1 + (mu2 - 1) A2 = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "சராசரி ஒளிவிலகல் எண்கள் mu1, mu2 மற்றும் முப்பட்டகக் கோணங்கள் A1, A2 கொண்ட இரு மெல்லிய முப்பட்டகங்கள் சராசரி விலகலின்றி நிறப்பிரிகையை உருவாக்குமாறு இணைக்கப்படுகின்றன. நிறைவு செய்யப்பட வேண்டிய நிபந்தனை:",
+        "optionTexts": [
+          "(mu1 - 1) A1 + (mu2 - 1) A2 = 0",
+          "(mu1 - 1) A1 = (mu2 - 1) A2",
+          "mu1 A1 = mu2 A2",
+          "A1 / A2 = (mu2 + 1) / (mu1 + 1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An astronomical telescope is set in normal adjustment (image at infinity). If the focal lengths of the objective and eyepiece are f_o and f_e respectively, the length of the telescope tube is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "f_o + f_e",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "f_o - f_e",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "f_o * f_e",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(f_o + f_e) / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "In normal adjustment of an astronomical telescope, the parallel rays from a distant object focus at the second focal point of the objective lens, which coincides with the first focal point of the eyepiece. Hence, the distance between the two lenses (length of the tube) is L = f_o + f_e.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயல்பு நிலை அமைப்பில் (பிம்பம் முடிவிலியில்) உள்ள ஒரு வானியல் தொலைநோக்கியில் பொருள்வில்லை மற்றும் பார்வைவில்லையின் குவியத் தொலைவுகள் முறையே f_o மற்றும் f_e எனில், தொலைநோக்கிக் குழாயின் நீளம்:",
+        "optionTexts": [
+          "f_o + f_e",
+          "f_o - f_e",
+          "f_o * f_e",
+          "(f_o + f_e) / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A plano-convex lens of refractive index mu = 1.5 has its curved surface of radius of curvature R silvered so that it acts as a concave mirror. The effective focal length of this silvered lens system is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R / (2 mu)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "R / (mu - 1)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The equivalent optical power of a lens with one silvered surface is P_eq = 2 P_L + P_M. Here, the lens is plano-convex with curved surface silvered: P_L = (mu - 1) / R, and P_M = 2 / R. Thus, P_eq = 2 * [ (mu - 1) / R ] + 2 / R = (2 mu - 2 + 2) / R = 2 mu / R. The magnitude of the effective focal length is f_eq = 1 / P_eq = R / (2 mu).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "mu = 1.5 ஒளிவிலகல் எண் கொண்ட ஒரு தட்டைக் குவிலென்ஸின் R வளைவு ஆரம் கொண்ட வளைந்த பரப்பு வெள்ளி பூசப்பட்டு குழிஆடியாக மாற்றப்படுகிறது. இந்த அமைப்பின் தொகுபயன் குவியத் தொலைவு:",
+        "optionTexts": [
+          "R / (2 mu)",
+          "R / 2",
+          "R / (mu - 1)",
+          "R / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A small air bubble is trapped at the exact center of a solid glass sphere of radius R and refractive index mu = 1.5. When viewed from outside the sphere, the apparent distance of the bubble from the surface of the sphere is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "R",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "R / 1.5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1.5 R",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "R / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "When the bubble is located at the center of the sphere, any ray of light originating from the bubble strikes the spherical glass-air interface normally (angle of incidence i = 0 degrees). By Snell's law, normal rays pass through without undergoing any deviation (r = 0 degrees). Tracing the rays back, they appear to originate from the center itself. Hence, the apparent position coincides with the real position, so the apparent distance from the surface is exactly R.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R ஆரமும் mu = 1.5 ஒளிவிலகல் எண்ணும் கொண்ட ஒரு கண்ணாடி கோளத்தின் மையத்தில் ஒரு சிறு காற்றுக்குமிழி உள்ளது. கோளத்தின் மேற்பரப்பிலிருந்து பார்க்கும்போது குமிழியின் தோற்றத் தொலைவு:",
+        "optionTexts": [
+          "R",
+          "R / 1.5",
+          "1.5 R",
+          "R / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The minimum distance D_min between a real object and its real image formed by a thin convex lens of focal length f is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 f",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 f",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "f",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 f",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let u and v be object and image distances: D = u + v. Using 1/v - 1/(-u) = 1/f => 1/v + 1/u = 1/f => v = u f / (u - f). Then D(u) = u + u f / (u - f) = u^2 / (u - f). Differentiating D with respect to u and setting dD/du = 0 gives u = 2f. At u = 2f, v = 2f, and D_min = 2f + 2f = 4f.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f குவியத் தொலைவு கொண்ட ஒரு மெல்லிய குவிலென்ஸினால் உருவாக்கப்படும் ஒரு மெய் பொருள் மற்றும் அதன் மெய் பிம்பத்திற்கு இடையேயான குறைந்தபட்ச தொலைவு D_min:",
+        "optionTexts": [
+          "4 f",
+          "2 f",
+          "f",
+          "8 f"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double-slit experiment, the ratio of the amplitudes of the two interfering waves is A1 / A2 = 3 / 2. The ratio of the maximum intensity I_max to the minimum intensity I_min in the resulting interference pattern is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "25 : 1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5 : 1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "9 : 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "13 : 5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The maximum and minimum intensities in an interference pattern are I_max proportional to (A1 + A2)^2 and I_min proportional to (A1 - A2)^2. Therefore: I_max / I_min = (A1 + A2)^2 / (A1 - A2)^2 = (3 + 2)^2 / (3 - 2)^2 = (5)^2 / (1)^2 = 25 / 1 = 25 : 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு சோதனையில், இரு குறுக்கிடும் அலைகளின் வீச்சுகளின் விகிதம் A1 / A2 = 3 / 2 ஆகும். உருவாகும் குறுக்கீட்டு அமைப்பில் பெரும செறிவு I_max க்கும் சிறும செறிவு I_min க்கும் உள்ள விகிதம்:",
+        "optionTexts": [
+          "25 : 1",
+          "5 : 1",
+          "9 : 4",
+          "13 : 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In the displacement method using a convex lens, two sharp images of an object are formed on a fixed screen for two different positions of the lens separated by distance d. If the sizes of the two images are I1 and I2, the actual size of the object O is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(I1 * I2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(I1 + I2) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I1 * I2 / (I1 + I2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2 I1 I2 / (I1 + I2)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let m1 = v1 / u1 = I1 / O and m2 = v2 / u2 = I2 / O be the magnifications at the two conjugate positions. Since the two positions are conjugate, u2 = v1 and v2 = u1, which implies m1 * m2 = (v1 / u1) * (u1 / v1) = 1. Therefore, (I1 / O) * (I2 / O) = 1 => I1 * I2 / O^2 = 1 => O = sqrt(I1 * I2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இடப்பெயர்ச்சி முறையில், இரு நிலைகளில் லென்ஸை வைக்கும் போது திரையில் உருவாகும் இரு பிம்பங்களின் அளவுகள் I1 மற்றும் I2 எனில், பொருளின் உண்மையான அளவு O:",
+        "optionTexts": [
+          "sqrt(I1 * I2)",
+          "(I1 + I2) / 2",
+          "I1 * I2 / (I1 + I2)",
+          "2 I1 I2 / (I1 + I2)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "An object is placed at a distance of 15 cm in front of a concave spherical mirror. A real inverted image is formed at a distance of 30 cm from the mirror on the same side. The focal length of the mirror has a magnitude of _____ cm.",
+    "correctAnswer": 10,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using the mirror formula: 1 / f = 1 / v + 1 / u. Following the Cartesian sign convention: u = -15 cm and v = -30 cm (real image in front of mirror). Thus, 1 / f = 1 / (-30) + 1 / (-15) = -1/30 - 2/30 = -3/30 = -1/10 cm^-1 => f = -10 cm. The magnitude of the focal length is 10 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குழிஆடியின் முன் 15 cm தொலைவில் ஒரு பொருள் வைக்கப்படுகிறது. ஆடியின் அதே பக்கத்தில் 30 cm தொலைவில் ஒரு மெய் பிம்பம் உருவாகிறது. ஆடியின் குவியத் தொலைவின் எண்மதிப்பு _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A converging lens has a focal length of 20 cm. The optical power of this lens is _____ Diopters.",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The optical power P of a lens in Diopters is P = 1 / f(in meters). Given focal length f = +20 cm = +0.20 m: P = 1 / 0.20 = +5 Diopters.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு குவிக்கும் லென்ஸ் 20 cm குவியத் தொலைவைக் கொண்டுள்ளது. இந்த லென்ஸின் ஒளித்திறன் _____ டையாப்டர் (Diopters).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The refractive index of a dense optical medium is mu = 2.0. The critical angle for total internal reflection of light going from this medium into air is _____ degrees.",
+    "correctAnswer": 30,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The critical angle theta_c is given by sin(theta_c) = 1 / mu. Substituting mu = 2.0: sin(theta_c) = 1 / 2.0 = 0.5 => theta_c = 30 degrees.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "அடர்வுமிகு ஊடகம் ஒன்றின் ஒளிவிலகல் எண் mu = 2.0 ஆகும். இவ்வூடகத்திலிருந்து காற்றுக்குள் செல்லும் ஒளிக்கான முழு அக எதிரொளிப்பின் மாறுநிலைக் கோணம் _____ டிகிரி.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double-slit experiment, the slits are separated by 1 mm and the screen is placed at a distance of 1 m. Monochromatic light of wavelength 600 nm is used. The distance of the 5th bright fringe from the central maximum on the screen is _____ mm.",
+    "correctAnswer": 3,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The position of the nth bright fringe from the central maximum is y_n = n * (lambda * D / d). Substituting n = 5, lambda = 600 nm = 6 x 10^-7 m, D = 1 m, and d = 1 mm = 10^-3 m: y5 = 5 * (6 x 10^-7 m * 1 m) / (10^-3 m) = 5 * (6 x 10^-4 m) = 30 x 10^-4 m = 3 x 10^-3 m = 3 mm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "யங்கின் இரட்டைப் பிளவு சோதனையில், பிளவுகளுக்கு இடையே உள்ள தொலைவு 1 mm மற்றும் திரை 1 m தொலைவில் உள்ளது. 600 nm அலைநீளம் கொண்ட ஒளி பயன்படுத்தப்பட்டால், திரையில் மையப் பெருமத்திலிருந்து 5-வது பொலிவுப் பட்டை அமையும் தொலைவு _____ mm.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A printed mark on a piece of paper is viewed normally through a flat glass plate of thickness 6 cm and refractive index 1.5. The mark appears to be raised by _____ cm.",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The apparent normal shift s produced by a transparent slab of thickness t and refractive index mu is given by s = t * (1 - 1 / mu). Substituting t = 6 cm and mu = 1.5 = 3/2: s = 6 * (1 - 1 / (3/2)) = 6 * (1 - 2/3) = 6 * (1/3) = 2 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தாளில் உள்ள ஒரு அச்சுக்குறி 6 cm தடிமனும் 1.5 ஒளிவிலகல் எண்ணும் கொண்ட ஒரு தட்டையான கண்ணாடித் தகட்டின் வழியே செங்குத்தாக பார்க்கப்படுகிறது. அக்குறி எத்தனை cm மேலே உயர்ந்து காணப்படும்?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a compound microscope in normal adjustment (image formed at near point D = 25 cm), the focal lengths of the objective and eyepiece are 1 cm and 5 cm respectively, and the tube length of the microscope is 20 cm. The magnifying power of the microscope is _____.",
+    "correctAnswer": 100,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "For a compound microscope with tube length L and image formed at near point D, the magnifying power is approximately M = (L / f_o) * (D / f_e). Given L = 20 cm, f_o = 1 cm, D = 25 cm, and f_e = 5 cm: M = (20 / 1) * (25 / 5) = 20 * 5 = 100.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "இயல்பு அமைப்பில் உள்ள ஒரு கூட்டு நுண்ணோக்கியில் பொருள்வில்லை மற்றும் பார்வைவில்லையின் குவியத் தொலைவுகள் முறையே 1 cm மற்றும் 5 cm, மற்றும் குழாயின் நீளம் 20 cm ஆகும். தெளிவுறு காட்சியின் மீச்சிறு தொலைவு D = 25 cm எனில், நுண்ணோக்கியின் உருப்பெருக்கத் திறன் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An astronomical telescope consists of an objective lens of focal length 100 cm and an eyepiece of focal length 5 cm. The magnifying power of the telescope in normal adjustment is _____.",
+    "correctAnswer": 20,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The magnifying power of an astronomical telescope in normal adjustment (with the final image formed at infinity) is given by M = f_o / f_e. Substituting f_o = 100 cm and f_e = 5 cm: M = 100 / 5 = 20.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு வானியல் தொலைநோக்கியில் 100 cm குவியத் தொலைவு கொண்ட பொருள்வில்லையும் 5 cm குவியத் தொலைவு கொண்ட பார்வைவில்லையும் உள்ளன. இயல்பு அமைப்பில் அத்தொலைநோக்கியின் உருப்பெருக்கத் திறன் _____.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "An equilateral triangular prism (refracting angle A = 60 degrees) is made of a glass material of refractive index mu = sqrt(3). The angle of minimum deviation produced by this prism is _____ degrees.",
+    "correctAnswer": 60,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using the prism formula: mu = sin((A + delta_m) / 2) / sin(A / 2). Given A = 60 deg and mu = sqrt(3): sqrt(3) = sin((60 deg + delta_m) / 2) / sin(30 deg) => sin((60 deg + delta_m) / 2) = sqrt(3) * (1 / 2) = sqrt(3) / 2. Therefore, (60 deg + delta_m) / 2 = 60 deg => 60 deg + delta_m = 120 deg => delta_m = 60 degrees.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sqrt(3) ஒளிவிலகல் எண் கொண்ட கண்ணாடியால் செய்யப்பட்ட ஒரு சமபக்க முப்பட்டகத்தின் (A = 60 டிகிரி) சிறும விலகுக் கோணம் _____ டிகிரி.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a Young's double-slit experiment using light of wavelength 600 nm, a thin sheet of mica of refractive index 1.5 is placed over one of the slits. As a result, the central bright fringe shifts to the position previously occupied by the 5th bright fringe. The thickness of the mica sheet is _____ micrometers (mu m).",
+    "correctAnswer": 6,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The shift in the fringe pattern caused by introducing a film of thickness t and refractive index mu is y = (mu - 1) t D / d. Given that the pattern shifts by 5 fringe widths: y = 5 * beta = 5 * (lambda D / d). Equating the shifts: (mu - 1) t D / d = 5 lambda D / d => (mu - 1) t = 5 lambda. Substituting mu = 1.5 and lambda = 600 nm = 600 x 10^-9 m: (1.5 - 1) t = 5 * (600 x 10^-9 m) => 0.5 t = 3000 x 10^-9 m = 3 x 10^-6 m => t = (3 x 10^-6 m) / 0.5 = 6 x 10^-6 m = 6 micrometers.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "600 nm அலைநீளம் கொண்ட ஒளியைப் பயன்படுத்தும் யங்கின் இரட்டைப் பிளவு சோதனையில், ஒரு பிளவின் மீது 1.5 ஒளிவிலகல் எண் கொண்ட மெல்லிய மைகா தகடு வைக்கப்படுகிறது. இதனால் மையப் பொலிவுப் பட்டை முன்பு 5-வது பொலிவுப் பட்டை இருந்த இடத்திற்கு நகர்கிறது. மைகா தகட்டின் தடிமன் _____ மைக்ரோமீட்டர் (mu m).",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-PHY-PHY16-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "PHY",
+    "nodeTagCode": "phy_16",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "In a displacement method experiment to determine the focal length of a convex lens, the distance between a luminous object and a screen is fixed at D = 100 cm. Two distinct, sharp images are focused on the screen for two positions of the lens separated by a displacement of d = 20 cm. The focal length of the convex lens is _____ cm.",
+    "correctAnswer": 24,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "In the lens displacement method, the focal length f of the convex lens is given by the formula f = (D^2 - d^2) / (4 D), where D is the fixed distance between the object and screen and d is the distance between the two positions of the lens. Substituting D = 100 cm and d = 20 cm: f = (100^2 - 20^2) / (4 * 100) = (10000 - 400) / 400 = 9600 / 400 = 24 cm.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "லென்ஸ் இடப்பெயர்ச்சி முறையில் குவிலென்ஸின் குவியத் தொலைவைக் காணும் சோதனையில், ஒளிரும் பொருளுக்கும் திரைக்கும் இடையேயான தொலைவு D = 100 cm என நிலைநிறுத்தப்பட்டுள்ளது. லென்ஸின் இரு நிலைகளுக்கு இடையே உள்ள தூரம் d = 20 cm ஆக இருக்கும் போது இரு தெளிவான பிம்பங்கள் திரையில் கிடைக்கின்றன. குவிலென்ஸின் குவியத் தொலைவு _____ cm.",
+        "optionTexts": []
+      }
+    ]
+  }
+]

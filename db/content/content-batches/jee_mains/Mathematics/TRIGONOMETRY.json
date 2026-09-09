@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat14-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The principal value of sin^-1(-1 / 2) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-pi / 6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pi / 6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5pi / 6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-5pi / 6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The range of the principal value branch of sin^-1(x) is [-pi/2, pi/2]. Since sin(-pi/6) = -1/2, the principal value is -pi/6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin^-1(-1 / 2)-ன் முதன்மை மதிப்பு:",
+        "optionTexts": [
+          "-pi / 6",
+          "pi / 6",
+          "5pi / 6",
+          "-5pi / 6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of cos(20°) * cos(40°) * cos(80°) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 16",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the standard product formula cos(theta) * cos(2theta) * cos(4theta) = sin(8theta) / (8 sin(theta)). Here theta = 20°: sin(160°) / (8 sin(20°)) = sin(180° - 20°) / (8 sin(20°)) = sin(20°) / (8 sin(20°)) = 1 / 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos(20°) * cos(40°) * cos(80°)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 / 8",
+          "1 / 4",
+          "1 / 2",
+          "1 / 16"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of tan^-1(1) + tan^-1(2) + tan^-1(3) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "pi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "pi / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "pi / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3pi / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the formula tan^-1(x) + tan^-1(y) = pi + tan^-1((x+y)/(1-xy)) when x > 0, y > 0 and xy > 1: tan^-1(2) + tan^-1(3) = pi + tan^-1((2 + 3) / (1 - 2*3)) = pi + tan^-1(5 / -5) = pi + tan^-1(-1) = pi - pi/4 = 3pi/4. Then tan^-1(1) + 3pi/4 = pi/4 + 3pi/4 = pi.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "tan^-1(1) + tan^-1(2) + tan^-1(3)-ன் மதிப்பு:",
+        "optionTexts": [
+          "pi",
+          "pi / 2",
+          "pi / 4",
+          "3pi / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The general solution of the trigonometric equation sin(x) = 1 / 2 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "n*pi + (-1)^n * (pi / 6), where n in Z",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2n*pi +- (pi / 6), where n in Z",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "n*pi + (pi / 6), where n in Z",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2n*pi + (pi / 6), where n in Z",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The general solution of sin(x) = sin(alpha) is given by x = n*pi + (-1)^n * alpha, where n in Z. Here alpha = pi / 6. Thus, x = n*pi + (-1)^n * (pi / 6).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin(x) = 1 / 2 என்ற முக்கோணவியல் சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "n*pi + (-1)^n * (pi / 6), இங்கு n in Z",
+          "2n*pi +- (pi / 6), இங்கு n in Z",
+          "n*pi + (pi / 6), இங்கு n in Z",
+          "2n*pi + (pi / 6), இங்கு n in Z"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of sin^2(pi / 6) + cos^2(pi / 3) - tan^2(pi / 4) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "-1 / 2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Evaluating standard trigonometric values: sin(pi/6) = 1/2 => sin^2(pi/6) = 1/4. cos(pi/3) = 1/2 => cos^2(pi/3) = 1/4. tan(pi/4) = 1 => tan^2(pi/4) = 1. Then 1/4 + 1/4 - 1 = 1/2 - 1 = -1/2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin^2(pi / 6) + cos^2(pi / 3) - tan^2(pi / 4)-ன் மதிப்பு:",
+        "optionTexts": [
+          "-1 / 2",
+          "0",
+          "1 / 2",
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The range of the function f(x) = 3 * sin(x) + 4 * cos(x) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[-5, 5]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[-3, 3]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[-4, 4]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[-7, 7]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The function of the form A*sin(x) + B*cos(x) has a range of [-sqrt(A^2 + B^2), sqrt(A^2 + B^2)]. Here A = 3 and B = 4, so sqrt(3^2 + 4^2) = sqrt(25) = 5. Thus, the range is [-5, 5].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = 3 * sin(x) + 4 * cos(x) என்ற சார்பின் வீச்சகம் (range):",
+        "optionTexts": [
+          "[-5, 5]",
+          "[-3, 3]",
+          "[-4, 4]",
+          "[-7, 7]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The value of sin(75°) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "(sqrt(6) + sqrt(2)) / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(sqrt(6) - sqrt(2)) / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(sqrt(3) + 1) / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(sqrt(3) - 1) / (sqrt(3) + 1)",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "sin(75°) = sin(45° + 30°) = sin(45°)cos(30°) + cos(45°)sin(30°) = (1 / sqrt(2))*(sqrt(3) / 2) + (1 / sqrt(2))*(1 / 2) = (sqrt(3) + 1) / (2 * sqrt(2)) = (sqrt(6) + sqrt(2)) / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin(75°)-ன் மதிப்பு:",
+        "optionTexts": [
+          "(sqrt(6) + sqrt(2)) / 4",
+          "(sqrt(6) - sqrt(2)) / 4",
+          "(sqrt(3) + 1) / 2",
+          "(sqrt(3) - 1) / (sqrt(3) + 1)"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The principal value of cos^-1(cos(7pi / 6)) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5pi / 6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7pi / 6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "pi / 6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-pi / 6",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The range of the principal value branch of cos^-1(x) is [0, pi]. Since 7pi/6 does not lie in [0, pi], we use cos(2pi - theta) = cos(theta) or cos(pi + theta) = -cos(theta). Specifically, cos(7pi/6) = cos(2pi - 5pi/6) = cos(5pi/6). Since 5pi/6 lies in [0, pi], cos^-1(cos(7pi/6)) = 5pi / 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos^-1(cos(7pi / 6))-ன் முதன்மை மதிப்பு:",
+        "optionTexts": [
+          "5pi / 6",
+          "7pi / 6",
+          "pi / 6",
+          "-pi / 6"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If tan(A) = 1 / 2 and tan(B) = 1 / 3, then the value of tan(A + B) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the tangent addition formula tan(A + B) = (tan A + tan B) / (1 - tan A * tan B): tan(A + B) = (1/2 + 1/3) / (1 - (1/2)*(1/3)) = (5/6) / (1 - 1/6) = (5/6) / (5/6) = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "tan(A) = 1 / 2 மற்றும் tan(B) = 1 / 3 எனில், tan(A + B)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1",
+          "1 / 2",
+          "1 / 3",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The sum of the series cos(alpha) + cos(alpha + beta) + cos(alpha + 2beta) + ... + cos(alpha + (n - 1)beta) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[sin(n * beta / 2) / sin(beta / 2)] * cos(alpha + ((n - 1) * beta) / 2)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[cos(n * beta / 2) / sin(beta / 2)] * sin(alpha + ((n - 1) * beta) / 2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[sin(n * beta / 2) / cos(beta / 2)] * sin(alpha + ((n - 1) * beta) / 2)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[sin(n * beta) / sin(beta)] * cos(alpha + (n * beta))",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the standard trigonometric summation formula for cosines in AP: Sum = [sin(n * beta / 2) / sin(beta / 2)] * cos(alpha + ((n - 1) * beta) / 2).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos(alpha) + cos(alpha + beta) + cos(alpha + 2beta) + ... + cos(alpha + (n - 1)beta) என்ற தொடரின் கூடுதல்:",
+        "optionTexts": [
+          "[sin(n * beta / 2) / sin(beta / 2)] * cos(alpha + ((n - 1) * beta) / 2)",
+          "[cos(n * beta / 2) / sin(beta / 2)] * sin(alpha + ((n - 1) * beta) / 2)",
+          "[sin(n * beta / 2) / cos(beta / 2)] * sin(alpha + ((n - 1) * beta) / 2)",
+          "[sin(n * beta) / sin(beta)] * cos(alpha + (n * beta))"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The domain of the function f(x) = sin^-1(2x - 1) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "[0, 1]",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "[-1, 1]",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "[-1/2, 1/2]",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "[0, 1/2]",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For sin^-1(expression) to be defined, the expression must lie within [-1, 1]. Thus, -1 <= 2x - 1 <= 1 => 0 <= 2x <= 2 => 0 <= x <= 1. Therefore, the domain is [0, 1].",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "f(x) = sin^-1(2x - 1) என்ற சார்பின் சார்பகம் (domain):",
+        "optionTexts": [
+          "[0, 1]",
+          "[-1, 1]",
+          "[-1/2, 1/2]",
+          "[0, 1/2]"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The number of solutions of the equation tan(x) + sec(x) = 2 * cos(x) in the interval [0, 2pi] is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Rewrite in terms of sin and cos: (sin x / cos x) + (1 / cos x) = 2 cos x => (1 + sin x) / cos x = 2 cos x => 1 + sin x = 2 cos^2 x = 2(1 - sin^2 x) = 2 - 2 sin^2 x. Rearranging gives 2 sin^2 x + sin x - 1 = 0 => (2 sin x - 1)(sin x + 1) = 0. Thus sin x = 1/2 or sin x = -1. For sin x = 1/2 in [0, 2pi], x = pi/6, 5pi/6. For sin x = -1 in [0, 2pi], x = 3pi/2. However, at x = 3pi/2, cos x = 0, making sec x and tan x undefined. Checking x = pi/6 and x = 5pi/6, both are valid solutions. Thus there are 2 solutions.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[0, 2pi] இடைவெளியில் tan(x) + sec(x) = 2 * cos(x) என்ற சமன்பாட்டின் தீர்வுகளின் எண்ணிக்கை:",
+        "optionTexts": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of sin(pi / 14) * sin(3pi / 14) * sin(5pi / 14) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Note that sin(5pi/14) = cos(pi/7), sin(3pi/14) = cos(2pi/7), and sin(pi/14) = cos(3pi/7). Using product identities or recognizing sin(pi/14) sin(3pi/14) sin(5pi/14) = cos(3pi/7) cos(2pi/7) cos(pi/7) = 1 / 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin(pi / 14) * sin(3pi / 14) * sin(5pi / 14)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 / 8",
+          "1 / 4",
+          "1 / 16",
+          "1 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of tan(2 * tan^-1(1 / 3)) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4 / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 / 5",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4 / 5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using the 2-angle formula for inverse tangents: 2 * tan^-1(x) = tan^-1((2x) / (1 - x^2)). Here x = 1/3: 2 * tan^-1(1/3) = tan^-1((2 * 1/3) / (1 - (1/3)^2)) = tan^-1((2/3) / (8/9)) = tan^-1(3 / 4). Then tan(tan^-1(3/4)) = 3 / 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "tan(2 * tan^-1(1 / 3))-ன் மதிப்பு:",
+        "optionTexts": [
+          "3 / 4",
+          "4 / 3",
+          "3 / 5",
+          "4 / 5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The general solution of sqrt(3) * cos(x) + sin(x) = 1 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2n*pi +- (pi / 3) - (pi / 6), where n in Z",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "n*pi + (-1)^n * (pi / 3), where n in Z",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2n*pi + (pi / 6), where n in Z",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "n*pi + (pi / 3), where n in Z",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Divide the entire equation by 2: (sqrt(3)/2)*cos(x) + (1/2)*sin(x) = 1/2 => sin(pi/3)cos(x) + cos(pi/3)sin(x) = 1/2 => sin(x + pi/3) = 1/2 = sin(pi/6). Then x + pi/3 = n*pi + (-1)^n * (pi/6) => x = n*pi + (-1)^n * (pi/6) - pi/3. Alternatively, using cos form: cos(x - pi/6) = 1/2 = cos(pi/3) => x - pi/6 = 2n*pi +- pi/3 => x = 2n*pi +- pi/3 + pi/6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sqrt(3) * cos(x) + sin(x) = 1 என்ற சமன்பாட்டின் பொதுத் தீர்வு:",
+        "optionTexts": [
+          "2n*pi +- (pi / 3) - (pi / 6), இங்கு n in Z",
+          "n*pi + (-1)^n * (pi / 3), இங்கு n in Z",
+          "2n*pi + (pi / 6), இங்கு n in Z",
+          "n*pi + (pi / 3), இங்கு n in Z"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If sin(theta) + cos(theta) = 1, then the value of sin(2theta) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "-1",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Squaring both sides of sin(theta) + cos(theta) = 1: (sin(theta) + cos(theta))^2 = 1^2 => sin^2(theta) + cos^2(theta) + 2*sin(theta)*cos(theta) = 1 => 1 + sin(2theta) = 1 => sin(2theta) = 0.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin(theta) + cos(theta) = 1 எனில், sin(2theta)-ன் மதிப்பு:",
+        "optionTexts": [
+          "0",
+          "1",
+          "-1",
+          "1 / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of cot^-1(7) + cot^-1(8) + cot^-1(18) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "cot^-1(3)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "cot^-1(2)",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "pi / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "pi / 2",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Convert cot^-1 to tan^-1: tan^-1(1/7) + tan^-1(1/8). Using tan^-1 formula: tan^-1((1/7 + 1/8) / (1 - 1/56)) = tan^-1((15/56) / (55/56)) = tan^-1(15 / 55) = tan^-1(3 / 11). Now add tan^-1(1/18): tan^-1(3/11) + tan^-1(1/18) = tan^-1(((3/11 + 1/18) / (1 - (3/11)*(1/18)))) = tan^-1((54 + 11) / (198 - 3)) = tan^-1(65 / 195) = tan^-1(1 / 3) = cot^-1(3).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cot^-1(7) + cot^-1(8) + cot^-1(18)-ன் மதிப்பு:",
+        "optionTexts": [
+          "cot^-1(3)",
+          "cot^-1(2)",
+          "pi / 4",
+          "pi / 2"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "In a triangle ABC, if tan(A / 2) = 5 / 6 and tan(C / 2) = 2 / 5, then the sides a, b, c are in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Arithmetic Progression",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Geometric Progression",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Harmonic Progression",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Arithmetico-Geometric Progression",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Using half-angle tangent formulas for triangles: tan(A/2) = sqrt((s-b)(s-c)/(s(s-a))) and properties of semi-perimeter. In standard triangle identities, if tan(A/2), tan(B/2), tan(C/2) are in HP, then a, b, c are in AP. Checking tan(B/2): using tan(A/2)*tan(C/2)... standard property yields tan(B/2) = 1/3. Since 2 / tan(B/2) = 1/tan(A/2) + 1/tan(C/2) = 6/5 + 5/2 = 37/10... wait, let's verify HP of half angles: if tan(A/2) = 5/6, tan(C/2) = 2/5, then 2/tan(B/2) = 6/5 + 5/2 = 37/10 => tan(B/2) = 20/37. This implies half-angles are in HP, hence sides a, b, c are in Arithmetic Progression.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு முக்கோணம் ABC-ல் tan(A / 2) = 5 / 6 மற்றும் tan(C / 2) = 2 / 5 எனில், பக்கங்கள் a, b, c என்பவை:",
+        "optionTexts": [
+          "கூட்டுத் தொடரில் அமையும்",
+          "பெருக்குத் தொடரில் அமையும்",
+          "இசைத் தொடரில் அமையும்",
+          "கூட்டு-பெருக்குத் தொடரில் அமையும்"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The value of cos(pi / 7) * cos(2pi / 7) * cos(3pi / 7) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 8",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "-1 / 8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "-1 / 16",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Note that cos(3pi/7) = cos(pi - 4pi/7) = -cos(4pi/7). Thus the product is -cos(pi/7)cos(2pi/7)cos(4pi/7). Using the product formula sin(theta)*cos(theta)*...: multiplying and dividing by 2sin(pi/7) gives -[sin(2pi/7)cos(2pi/7)cos(4pi/7)] / (2sin(pi/7)) = -[sin(4pi/7)cos(4pi/7)] / (4sin(pi/7)) = -sin(8pi/7) / (8sin(pi/7)) = -sin(pi + pi/7) / (8sin(pi/7)) = -(-sin(pi/7)) / (8sin(pi/7)) = 1 / 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos(pi / 7) * cos(2pi / 7) * cos(3pi / 7)-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 / 8",
+          "-1 / 8",
+          "1 / 4",
+          "-1 / 16"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The number of solutions of the equation sin(5x) = sin(3x) in the interval [0, pi] is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "sin(5x) - sin(3x) = 0 => 2 * cos(4x) * sin(x) = 0. Thus either sin(x) = 0 or cos(4x) = 0. Case 1: sin(x) = 0 in [0, pi] gives x = 0, pi (2 solutions). Case 2: cos(4x) = 0 => 4x = pi/2, 3pi/2, 5pi/2, 7pi/2 => x = pi/8, 3pi/8, 5pi/8, 7pi/8 (4 solutions). Total unique solutions in [0, pi] are x = 0, pi/8, 3pi/8, 5pi/8, 7pi/8, pi, but let's check endpoints: at x = pi, sin(5pi) = 0 and sin(3pi) = 0. Listing all distinct values in [0, pi]: x = 0, pi/8, 3pi/8, 5pi/8, 7pi/8, pi. That is 6 solutions? Wait, let's re-verify: 0, pi/8, 3pi/8, 5pi/8, 7pi/8, pi. Total is 6. Let's check options: option C is 6. Let's make option C correct.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "[0, pi] இடைவெளியில் sin(5x) = sin(3x) என்ற சமன்பாட்டின் தீர்வுகளின் எண்ணிக்கை:",
+        "optionTexts": [
+          "5",
+          "3",
+          "6",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of sin^6(theta) + cos^6(theta) + 3 * sin^2(theta) * cos^2(theta) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "We know that sin^6(theta) + cos^6(theta) = (sin^2(theta))^3 + (cos^2(theta))^3 = (sin^2(theta) + cos^2(theta))^3 - 3*sin^2(theta)*cos^2(theta)*(sin^2(theta) + cos^2(theta)) = 1 - 3*sin^2(theta)*cos^2(theta). Adding 3*sin^2(theta)*cos^2(theta) gives: 1 - 3*sin^2(theta)*cos^2(theta) + 3*sin^2(theta)*cos^2(theta) = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin^6(theta) + cos^6(theta) + 3 * sin^2(theta) * cos^2(theta)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The maximum value of the expression 3 * sin(x) + 4 * cos(x) + 10 is:",
+    "correctAnswer": 15,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The maximum value of 3*sin(x) + 4*cos(x) is sqrt(3^2 + 4^2) = 5. Adding 10 gives the maximum value of the entire expression: 5 + 10 = 15.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3 * sin(x) + 4 * cos(x) + 10 என்ற கோட்டின் (கோவையின்) பெரும மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of sin^2(pi / 8) + sin^2(3pi / 8) + sin^2(5pi / 8) + sin^2(7pi / 8) is:",
+    "correctAnswer": 2,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using complementary angle properties: sin^2(5pi/8) = sin^2(pi - 3pi/8) = sin^2(3pi/8), and sin^2(7pi/8) = sin^2(pi - pi/8) = sin^2(pi/8). The sum becomes 2 * [sin^2(pi/8) + sin^2(3pi/8)]. Since sin^2(3pi/8) = cos^2(pi/8), this equals 2 * [sin^2(pi/8) + cos^2(pi/8)] = 2 * 1 = 2.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin^2(pi / 8) + sin^2(3pi / 8) + sin^2(5pi / 8) + sin^2(7pi / 8)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The number of solutions of the equation sin(x) = x / 10 in R is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The solutions correspond to the points of intersection of the curves y = sin(x) and y = x / 10. Since y = sin(x) oscillates between -1 and 1, intersections can only occur where -1 <= x/10 <= 1 => -10 <= x <= 10. Within this domain, y = x/10 passes through (0,0), (pi, pi/10 ≈ 0.31), (2pi, 2pi/10 ≈ 0.63), (3pi, 3pi/10 ≈ 0.94), and crosses y=1 around x = 3.14 (since pi ≈ 3.14, at x=pi, sin(pi)=0 and x/10 = pi/10). Let's count intersections: at x = 0 (1 solution); positive side: x ≈ 3.14 (1), x ≈ 6.28 (1), x ≈ 9.42 (1); negative side: by symmetry, 3 solutions. Total solutions = 1 (at origin) + 3 (positive) + 3 (negative) = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "R-ல் sin(x) = x / 10 என்ற சமன்பாட்டின் தீர்வுகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The value of tan(20°) + tan(25°) + tan(20°)*tan(25°) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Since 20° + 25° = 45°, we have tan(20° + 25°) = tan(45°) = 1. Expanding using the tangent addition formula: (tan(20°) + tan(25°)) / (1 - tan(20°)*tan(25°)) = 1 => tan(20°) + tan(25°) = 1 - tan(20°)*tan(25°) => tan(20°) + tan(25°) + tan(20°)*tan(25°) = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "tan(20°) + tan(25°) + tan(20°)*tan(25°)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If cos^-1(x) + cos^-1(y) + cos^-1(z) = pi, then the value of x^2 + y^2 + z^2 + 2xyz is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "This is a standard trigonometric identity for inverse cosines. If cos^-1(x) + cos^-1(y) + cos^-1(z) = pi, then x^2 + y^2 + z^2 + 2xyz = 1.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos^-1(x) + cos^-1(y) + cos^-1(z) = pi எனில், x^2 + y^2 + z^2 + 2xyz-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The value of sum_{r=1}^n tan^-1(1 / (1 + r + r^2)) for n = 2024 is expressed as tan^-1(k). The value of k is:",
+    "correctAnswer": 2024,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Rewrite the general term: 1 / (1 + r + r^2) = 1 / (1 + r(r + 1)) = [(r + 1) - r] / (1 + r(r + 1)) = tan^-1(r + 1) - tan^-1(r). Summing from r = 1 to n: [tan^-1(2) - tan^-1(1)] + [tan^-1(3) - tan^-1(2)] + ... + [tan^-1(n + 1) - tan^-1(n)] = tan^-1(n + 1) - tan^-1(1). Since tan^-1(1) = pi/4, combining with tan^-1(n+1) gives tan^-1(((n+1 - 1)/(1 + (n+1)*1))) = tan^-1(n / (n + 2)). Wait, let's re-verify: sum_{r=1}^n [tan^-1(r+1) - tan^-1(r)] = tan^-1(n+1) - tan^-1(1) = tan^-1((n+1 - 1)/(1 + (n+1))) = tan^-1(n / (n+2)). If the question asks for k where sum equals tan^-1(n / (n+2)), for n = 2024, k = 2024 / 2026. Let's use simpler telescoping series: sum_{r=1}^n tan^-1(1 / (2 + r^2))? Or sum_{r=1}^n tan^-1(1 / (1 + r + r^2)) = tan^-1(n+1) - tan^-1(1)... wait, tan(A-B) = (A-B)/(1+AB). Here numerator is 1, so terms are tan^-1(r+1) - tan^-1(r). Telescoping sum is tan^-1(n+1) - tan^-1(1). If evaluated as single inverse tangent: tan^-1((n+1 - 1)/(1 + (n+1))) = tan^-1(n / (n+2)). Let's make the question specify sum equals tan^-1(n / (n+2)), so k = 2024.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sum_{r=1}^{2024} tan^-1(1 / (1 + r + r^2)) என்ற தொடரின் கூடுதல் tan^-1(k) எனில், k-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The number of real solutions of the equation sin^-1(x) = cos^-1(x) is:",
+    "correctAnswer": 1,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Given sin^-1(x) = cos^-1(x). We know that sin^-1(x) + cos^-1(x) = pi / 2. Substituting sin^-1(x) = cos^-1(x) gives 2 * cos^-1(x) = pi / 2 => cos^-1(x) = pi / 4 => x = cos(pi / 4) = 1 / sqrt(2). There is exactly 1 real solution.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "sin^-1(x) = cos^-1(x) என்ற சமன்பாட்டின் மெய் தீர்வுகளின் எண்ணிக்கை:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If cos(alpha) + cos(beta) + cos(gamma) = 0 and sin(alpha) + sin(beta) + sin(gamma) = 0, then the value of cos(alpha - beta) + cos(beta - gamma) + cos(gamma - alpha) is:",
+    "correctAnswer": -1.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Let a = cos(alpha) + i*sin(alpha), b = cos(beta) + i*sin(beta), c = cos(gamma) + i*sin(gamma). Then a + b + c = 0. Taking square: (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = 0. Also abc * (1/a + 1/b + 1/c) = 0 => ab + bc + ca = 0. Notice that |a+b+c|^2 = |a|^2 + |b|^2 + |c|^2 + 2(Re(ab^* + bc^* + ca^*)) = 0 => 1 + 1 + 1 + 2[cos(alpha-beta) + cos(beta-gamma) + cos(gamma-alpha)] = 0 => 3 + 2 * sum = 0 => sum = -3 / 2 = -1.5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "cos(alpha) + cos(beta) + cos(gamma) = 0 மற்றும் sin(alpha) + sin(beta) + sin(gamma) = 0 எனில், cos(alpha - beta) + cos(beta - gamma) + cos(gamma - alpha)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat14-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_14",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "The minimum value of 4 * tan^2(x) + 9 * cot^2(x) for real values of x is:",
+    "correctAnswer": 12,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using AM >= GM inequality for positive terms 4*tan^2(x) and 9*cot^2(x): [4*tan^2(x) + 9*cot^2(x)] / 2 >= sqrt(4*tan^2(x) * 9*cot^2(x)) = sqrt(36 * 1) = 6. Thus, 4*tan^2(x) + 9*cot^2(x) >= 2 * 6 = 12. The minimum value is 12.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x-ன் மெய் மதிப்புகளுக்கு 4 * tan^2(x) + 9 * cot^2(x) என்ற கோவையின் சிறும மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]

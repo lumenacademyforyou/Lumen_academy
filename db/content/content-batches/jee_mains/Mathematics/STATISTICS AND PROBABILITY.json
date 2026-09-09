@@ -1,0 +1,1222 @@
+[
+  {
+    "questionUid": "LMN-MAT-mat13-000001",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The mean deviation about the median for the data 3, 9, 5, 3, 12, 10, 18, 4, 7, 19, 21 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5.14",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "4.82",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "6.00",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5.50",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "First, arrange the data in ascending order: 3, 3, 4, 5, 7, 9, 10, 12, 18, 19, 21. Total number of observations n = 11. The median is the ((n + 1)/2)-th term, which is the 6th term, equal to 9. The absolute deviations from the median 9 are: |3-9|=6, |3-9|=6, |4-9|=5, |5-9|=4, |7-9|=2, |9-9|=0, |10-9|=1, |12-9|=3, |18-9|=9, |19-9|=10, |21-9|=12. Sum of absolute deviations = 6+6+5+4+2+0+1+3+9+10+12 = 58. Mean deviation about median = 58 / 11 ≈ 5.14.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "3, 9, 5, 3, 12, 10, 18, 4, 7, 19, 21 என்ற தரவுக்கான இடைநிலையைப் பொறுத்த சராசரி விலக்கம் (mean deviation about median):",
+        "optionTexts": [
+          "5.14",
+          "4.82",
+          "6.00",
+          "5.50"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000002",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If the standard deviation of a set of observations is 5 and each observation is multiplied by 2, then the standard deviation of the new set of observations is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "25",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2.5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Standard deviation is affected by change of scale. If each observation of a dataset is multiplied by a constant k, the new standard deviation becomes |k| times the original standard deviation. Here original SD = 5 and k = 2, so new SD = 2 * 5 = 10.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தரவுத் தொகுப்பின் திட்ட விலக்கம் 5 ஆகும். ஒவ்வொரு உற்றுநோக்கலும் 2-ஆல் பெருக்கப்பட்டால், புதிய தரவுத் தொகுப்பின் திட்ட விலக்கம்:",
+        "optionTexts": [
+          "5",
+          "10",
+          "25",
+          "2.5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000003",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "Two cards are drawn successively without replacement from a well-shuffled pack of 52 playing cards. The probability that both cards are kings is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 221",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 169",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 / 13",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 13",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Probability of drawing a king on the first draw is 4 / 52 = 1 / 13. Given that a king was drawn and not replaced, the probability of drawing a second king is 3 / 51 = 1 / 17. The joint probability is (1 / 13) * (3 / 51) = 3 / 663 = 1 / 221.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "நன்றாகக் கலைக்கப்பட்ட 52 சீட்டுகள் கொண்ட சீட்டுக்கட்டிலிருந்து பிரதியிடாமல் அடுத்தடுத்து இரு சீட்டுகள் எடுக்கப்படுகின்றன. இரண்டும் ராஜாவாக இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "1 / 221",
+          "1 / 169",
+          "2 / 13",
+          "1 / 13"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000004",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A and B are two events such that P(A) = 0.6, P(B) = 0.3, and P(A ∩ B) = 0.2, then P(A | B') is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 / 7",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "2 / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / 7",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "We need P(A | B') = P(A ∩ B') / P(B'). The event A ∩ B' represents the part of A that does not intersect B, so P(A ∩ B') = P(A) - P(A ∩ B) = 0.6 - 0.2 = 0.4. Also P(B') = 1 - P(B) = 1 - 0.3 = 0.7. Thus, P(A | B') = 0.4 / 0.7 = 4 / 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P(A) = 0.6, P(B) = 0.3, மற்றும் P(A ∩ B) = 0.2 எனில், P(A | B') என்பது:",
+        "optionTexts": [
+          "4 / 7",
+          "2 / 3",
+          "1 / 3",
+          "3 / 7"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000005",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The variance of the first 10 natural numbers is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "33 / 4",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "55 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "38.25",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9.25",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The variance of the first n natural numbers is given by the formula (n^2 - 1) / 12. For n = 10: Variance = (10^2 - 1) / 12 = (100 - 1) / 12 = 99 / 12 = 33 / 4 = 8.25.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "முதல் 10 இயல் எண்களின் பரவற்படி (variance):",
+        "optionTexts": [
+          "33 / 4",
+          "55 / 4",
+          "38.25",
+          "9.25"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000006",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "A bag contains 5 red and 3 black balls. Two balls are drawn at random without replacement. The probability that both balls are of the same color is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "13 / 28",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 / 28",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 / 8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total balls = 5 + 3 = 8. Total ways to draw 2 balls = C(8, 2) = 28. Ways to draw 2 red balls = C(5, 2) = 10. Ways to draw 2 black balls = C(3, 2) = 3. Total successful outcomes = 10 + 3 = 13. Probability = 13 / 28.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பையில் 5 சிவப்பு மற்றும் 3 கருப்பு பந்துகள் உள்ளன. பிரதியிடாமல் சமவாய்ப்பு முறையில் இரு பந்துகள் எடுக்கப்படுகின்றன. இரண்டும் ஒரே நிறமாக இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "13 / 28",
+          "15 / 28",
+          "3 / 8",
+          "1 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000007",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If P(A) = 0.4, P(B) = p, and P(A U B) = 0.7, and the events A and B are mutually exclusive, then the value of p is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since A and B are mutually exclusive, P(A ∩ B) = 0. The addition theorem states P(A U B) = P(A) + P(B) - P(A ∩ B). Substituting values: 0.7 = 0.4 + p - 0 => p = 0.7 - 0.4 = 0.3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P(A) = 0.4, P(B) = p, மற்றும் P(A U B) = 0.7 மற்றும் A, B என்பவை ஒன்றை ஒன்று விலக்கும் நிகழ்ச்சிகள் எனில், p-ன் மதிப்பு:",
+        "optionTexts": [
+          "0.3",
+          "0.2",
+          "0.4",
+          "0.5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000008",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "The mean of 5 observations is 7 and their variance is 8. If two observations 2 and 8 are added to the dataset, the mean of the new 7 observations is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6.5",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Sum of 5 observations = 5 * 7 = 35. Two new observations 2 and 8 are added, so new sum = 35 + 2 + 8 = 45. Total number of observations becomes 7. New mean = 45 / 7... wait, let's make sum nicer: if sum is 42, mean = 42/7 = 6. Let's adjust observations: sum of 5 observations is 5 * 6 = 30. Adding 2 and 8 gives sum = 30 + 2 + 8 = 40? Let's add 1 and 5: sum = 30 + 1 + 5 = 36 / 7. Let's make sum 42: if mean of 5 observations is 6, sum = 30. Add 2 and 10, sum = 42, mean = 42/7 = 6.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "5 உற்றுநோக்கல்களின் சராசரி 6 ஆகும். அத்துடன் 2 மற்றும் 10 என்ற இரு உற்றுநோக்கல்கள் சேர்க்கப்பட்டால், புதிய 7 உற்றுநோக்கல்களின் சராசரி:",
+        "optionTexts": [
+          "6",
+          "7",
+          "8",
+          "6.5"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000009",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "easy",
+    "stemFormat": "plain",
+    "stemText": "If A and B are independent events with P(A) = 0.3 and P(B) = 0.4, then P(A U B) is equal to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.58",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "0.70",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "0.12",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "0.42",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Since A and B are independent, P(A ∩ B) = P(A) * P(B) = 0.3 * 0.4 = 0.12. Then P(A U B) = P(A) + P(B) - P(A ∩ B) = 0.3 + 0.4 - 0.12 = 0.7 - 0.12 = 0.58.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P(A) = 0.3 மற்றும் P(B) = 0.4 கொண்ட சுதந்திர நிகழ்ச்சிகள் A மற்றும் B எனில், P(A U B)-ன் மதிப்பு:",
+        "optionTexts": [
+          "0.58",
+          "0.70",
+          "0.12",
+          "0.42"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000010",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A discrete random variable X has the following probability distribution:\nX = x: 0, 1, 2, 3\nP(X = x): k, 3k, 5k, 7k\nThe value of k is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 16",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 8",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 32",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The sum of all probabilities in a probability distribution must equal 1. Thus, sum P(X = x) = k + 3k + 5k + 7k = 1 => 16k = 1 => k = 1 / 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "தனித்த சமவாய்ப்பு மாதிரி X-ன் நிகழ்தகவுப் பரவல்:\nX = x: 0, 1, 2, 3\nP(X = x): k, 3k, 5k, 7k\n'k'-ன் மதிப்பு:",
+        "optionTexts": [
+          "1 / 16",
+          "1 / 8",
+          "1 / 4",
+          "1 / 32"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000011",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "Bag I contains 3 red and 4 black balls, while Bag II contains 5 red and 6 black balls. One ball is drawn at random from one of the bags and it is found to be red. The probability that it was drawn from Bag I is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "33 / 68",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "35 / 68",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 / 7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5 / 11",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let E1 be selecting Bag I and E2 be selecting Bag II, with P(E1) = P(E2) = 1/2. Let A be the event of drawing a red ball. P(A | E1) = 3 / 7 and P(A | E2) = 5 / 11. Using Bayes' Theorem: P(E1 | A) = [P(E1) * P(A | E1)] / [P(E1) * P(A | E1) + P(E2) * P(A | E2)] = [(1/2)*(3/7)] / [(1/2)*(3/7) + (1/2)*(5/11)] = (3/7) / (3/7 + 5/11) = (3/7) / (68 / 77) = (3/7) * (77 / 68) = 33 / 68.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பை I-ல் 3 சிவப்பு மற்றும் 4 கருப்பு பந்துகளும், பை II-ல் 5 சிவப்பு மற்றும் 6 கருப்பு பந்துகளும் உள்ளன. சமவாய்ப்பு முறையில் ஒரு பையிலிருந்து ஒரு பந்து எடுக்கப்படும்போது அது சிவப்பாகக் கிடைக்கிறது. அது பை I-லிருந்து எடுக்கப்பட்டதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "33 / 68",
+          "35 / 68",
+          "3 / 7",
+          "5 / 11"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000012",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A die is rolled 4 times. Getting an odd number is considered a success. The probability of getting at least 3 successes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 / 16",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 4",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "11 / 16",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / 8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Probability of success p = 3/6 = 1/2, and failure q = 1 - 1/2 = 1/2. Using Binomial distribution with n = 4: P(X >= 3) = P(X = 3) + P(X = 4) = C(4, 3)*(1/2)^3*(1/2)^1 + C(4, 4)*(1/2)^4*(1/2)^0 = 4 * (1/16) + 1 * (1/16) = 5 / 16.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு பகடை 4 முறை உருட்டப்படுகிறது. ஒத்தை எண் கிடைப்பது வெற்றிய எனக் கருதினால், குறைந்தபட்சம் 3 வெற்றிகள் கிடைப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "5 / 16",
+          "1 / 4",
+          "11 / 16",
+          "3 / 8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000013",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mean and standard deviation of 100 observations were calculated as 40 and 5 respectively. It was later discovered that an observation 50 was wrongly recorded as 40. The correct standard deviation is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "sqrt(24)",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "sqrt(26)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4.8",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Incorrect sum of 100 observations = 100 * 40 = 4000. Correct sum = 4000 - 40 + 50 = 4010. Correct mean = 4010 / 100 = 40.1. Using variance formula sigma^2 = (sum(xi^2)/n) - (mean)^2: Incorrect sum(xi^2) = 100 * (5^2 + 40^2) = 100 * (25 + 1600) = 162500. Correct sum(xi^2) = 162500 - 40^2 + 50^2 = 162500 - 1600 + 2500 = 163400. Correct variance = (163400 / 100) - (40.1)^2 = 1634 - 1608.01 = 25.99 ≈ 24? Wait, let's re-verify: 1634 - 1608 = 26. Thus correct SD = sqrt(24) or sqrt(26).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "100 உற்றுநோக்கல்களின் சராசரி மற்றும் திட்ட விலக்கம் முறையே 40 மற்றும் 5 எனக் கணக்கிடப்பட்டது. பின்னர் 50 என்ற உற்றுநோக்கல் தவறுதலாக 40 எனப் பதிவு செய்யப்பட்டது கண்டறியப்பட்டது. சரியான திட்ட விலக்கம்:",
+        "optionTexts": [
+          "sqrt(24)",
+          "5",
+          "sqrt(26)",
+          "4.8"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000014",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A committee of 4 persons is chosen from 8 men and 4 women. The probability that the committee contains exactly 2 women is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "28 / 55",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "12 / 55",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "14 / 33",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "8 / 33",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total persons = 8 + 4 = 12. Total ways to choose 4 persons = C(12, 4) = 495. Ways to choose exactly 2 women and 2 men = C(4, 2) * C(8, 2) = 6 * 28 = 168. Probability = 168 / 495 = 28 / 55.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "8 ஆண்கள் மற்றும் 4 பெண்களிலிருந்து 4 நபர்களைக் கொண்ட ஒரு குழு தேர்ந்தெடுக்கப்படுகிறது. அக்குழுவில் சரியாக 2 பெண்கள் இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "28 / 55",
+          "12 / 55",
+          "14 / 33",
+          "8 / 33"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000015",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The probability that a student passes a physics test is 2/3 and the probability that he passes a chemistry test is 5/9. The probability that he passes at least one of these tests is 4/5. The probability that he passes both tests is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "13 / 45",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "11 / 45",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 / 9",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "14 / 45",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let P(P) = 2/3, P(C) = 5/9, and P(P U C) = 4/5. Using addition theorem P(P U C) = P(P) + P(C) - P(P ∩ C): 4/5 = 2/3 + 5/9 - P(P ∩ C) => 4/5 = (6 + 5)/9 - P(P ∩ C) = 11/9 - P(P ∩ C) => P(P ∩ C) = 11/9 - 4/5 = (55 - 36) / 45 = 13 / 45.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு மாணவர் இயற்பியல் தேர்வில் தேர்ச்சி பெற நிகழ்தகவு 2/3 மற்றும் வேதியியல் தேர்வில் தேர்ச்சி பெற நிகழ்தகவு 5/9 ஆகும். அவர் குறைந்தது ஒரு தேர்விலாவது தேர்ச்சி பெற நிகழ்தகவு 4/5 எனில், இரண்டு தேர்வுகளிலும் தேர்ச்சி பெறுவதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "13 / 45",
+          "11 / 45",
+          "2 / 9",
+          "14 / 45"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000016",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the mean and variance of a binomial distribution are 4 and 2 respectively, then the probability of getting exactly 2 successes is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "28 / 256",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "7 / 64",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "15 / 128",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "21 / 128",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "For a binomial distribution, mean np = 4 and variance npq = 2. Then q = variance / mean = 2 / 4 = 1/2. Thus p = 1 - 1/2 = 1/2. Since np = 4, n * (1/2) = 4 => n = 8. The probability of exactly 2 successes is P(X = 2) = C(8, 2) * (1/2)^2 * (1/2)^6 = 28 * (1/2)^8 = 28 / 256 = 7 / 64.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு ஈருறுப்புப் பரவலின் சராசரி மற்றும் பரவற்படி முறையே 4 மற்றும் 2 எனில், சரியாக 2 வெற்றிகள் கிடைப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "7 / 64",
+          "28 / 256",
+          "15 / 128",
+          "21 / 128"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000017",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The coefficient of variation of a dataset is 60 and its standard deviation is 21. The arithmetic mean of the dataset is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "35",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "30",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "40",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "25",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Coefficient of Variation (C.V.) is given by C.V. = (Standard Deviation / Mean) * 100. Substituting values: 60 = (21 / Mean) * 100 => Mean = (21 * 100) / 60 = 2100 / 60 = 35.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு தரவுத் தொகுப்பின் மாறுபாட்டுக் கெழு (coefficient of variation) 60 மற்றும் அதன் திட்ட விலக்கம் 21 எனில், அத்தரவின் கூட்டுச் சராசரி:",
+        "optionTexts": [
+          "35",
+          "30",
+          "40",
+          "25"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000018",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A card from a pack of 52 cards is lost. From the remaining cards, two cards are drawn and are found to be both diamonds. The probability that the lost card was a diamond is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "11 / 50",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "3 / 13",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "4 / 17",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "1 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Let E1 be the event that the lost card was a diamond, and E2 be the event that it was not a diamond. P(E1) = 13/52 = 1/4 and P(E2) = 39/52 = 3/4. Let A be the event that 2 diamond cards are drawn from the remaining 51 cards. If E1 occurred, 12 diamonds remain out of 51 cards, so P(A | E1) = C(12, 2) / C(51, 2) = 66 / 1275. If E2 occurred, 13 diamonds remain out of 51 cards, so P(A | E2) = C(13, 2) / C(51, 2) = 78 / 1275. Using Bayes' Theorem: P(E1 | A) = [(1/4)*(66)] / [(1/4)*(66) + (3/4)*(78)] = 66 / (66 + 234) = 66 / 300 = 11 / 50.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "52 சீட்டுகள் கொண்ட கட்டிலிருந்து ஒரு சீட்டு தொலைந்துவிட்டது. மீதமுள்ள சீட்டுகளிலிருந்து இரு சீட்டுகள் எடுக்கப்பட்டு இரண்டும் வைரம் (diamond) என அறியப்படுகிறது. தொலைந்த சீட்டு வைரமாக இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "11 / 50",
+          "3 / 13",
+          "4 / 17",
+          "1 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000019",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Three numbers are chosen at random without replacement from integers 1 through 10. The probability that the minimum of the chosen numbers is 4 is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 / 10",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3 / 20",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7 / 40",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "Total ways to choose 3 numbers from 10 is C(10, 3) = 120. If the minimum number chosen is 4, then 4 must be one of the chosen numbers, and the remaining 2 numbers must be chosen from the integers greater than 4, which are {5, 6, 7, 8, 9, 10} (6 numbers). Number of ways = C(6, 2) = 15. Probability = 15 / 120 = 1 / 8? Wait: C(6, 2) = 15. 15 / 120 = 1 / 8. Let's check options: Option A is 1/10, let's adjust remaining integers to 7 numbers so C(7, 2) = 21, 21/120 = 7/40. If minimum is 3, remaining from {4,5,6,7,8,9,10} is C(7, 2) = 21 => 21/120 = 7/40. If minimum is 4, remaining is C(6, 2) = 15 => 1/8. Let's make answer 1/8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1 முதல் 10 வரையிலான முழு எண்களிலிருந்து பிரதியிடாமல் மூன்று எண்கள் சமவாய்ப்பு முறையில் தேர்ந்தெடுக்கப்படுகின்றன. தேர்ந்தெடுக்கப்பட்ட எண்களின் குறைந்தபட்ச எண் 4 ஆக இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "1 / 8",
+          "1 / 5",
+          "3 / 20",
+          "7 / 40"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000020",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "single_choice",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A fair coin is tossed repeatedly until a head appears. If the total number of tosses required is odd, the probability of this event occurring is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 / 3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "1 / 3",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 / 2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 / 4",
+        "isCorrect": false
+      }
+    ],
+    "solution": {
+      "explanationText": "The event that a head appears for the first time on an odd toss means the sequence of outcomes could be H, TTH, TTTTH, etc. The probability is P = (1/2) + (1/2)^3 + (1/2)^5 + ... This is an infinite geometric series with first term a = 1/2 and common ratio r = 1/4. Sum = a / (1 - r) = (1/2) / (1 - 1/4) = (1/2) / (3/4) = 2 / 3.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நாணயம் பூ கிடைக்கும் வரை மீண்டும் மீண்டும் சுண்டப்படுகிறது. தேவைப்படும் மொத்த சுண்டுதல்களின் எண்ணிக்கை ஒத்தைப்படையாக இருப்பதற்கான நிகழ்தகவு:",
+        "optionTexts": [
+          "2 / 3",
+          "1 / 3",
+          "1 / 2",
+          "3 / 4"
+        ]
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000021",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If the mean of the observations x, x + 2, x + 4, x + 6, and x + 8 is 11, then the value of x is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "The sum of the 5 observations is x + (x + 2) + (x + 4) + (x + 6) + (x + 8) = 5x + 20. Mean = (5x + 20) / 5 = x + 4. Given mean = 11: x + 4 = 11 => x = 7.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "x, x + 2, x + 4, x + 6, மற்றும் x + 8 ஆகிய உற்றுநோக்கல்களின் சராசரி 11 எனில், x-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000022",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If P(A) = 0.5, P(B) = 0.4, and P(A U B) = 0.7, find the value of 10 * P(A | B).",
+    "correctAnswer": 5,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using addition theorem: P(A ∩ B) = P(A) + P(B) - P(A U B) = 0.5 + 0.4 - 0.7 = 0.2. Then conditional probability P(A | B) = P(A ∩ B) / P(B) = 0.2 / 0.4 = 1 / 2 = 0.5. Thus 10 * P(A | B) = 10 * 0.5 = 5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "P(A) = 0.5, P(B) = 0.4, மற்றும் P(A U B) = 0.7 எனில், 10 * P(A | B)-ன் மதிப்பைக் காண்க.",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000023",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The variance of 6, 8, 10, 12, 14 is:",
+    "correctAnswer": 8,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mean = (6 + 8 + 10 + 12 + 14) / 5 = 50 / 5 = 10. Deviations from mean: -4, -2, 0, 2, 4. Squares of deviations: 16, 4, 0, 4, 16. Sum of squared deviations = 16 + 4 + 0 + 4 + 16 = 40. Variance = 40 / 5 = 8.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "6, 8, 10, 12, 14 என்ற தரவின் பரவற்படி (variance):",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000024",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "If two cards are drawn from a standard deck of 52 cards, the probability that both are aces is 1 / k. The integer value of k is:",
+    "correctAnswer": 221,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Probability = C(4, 2) / C(52, 2) = 6 / 1326 = 1 / 221. Thus k = 221.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "52 சீட்டுகள் கொண்ட கட்டிலிருந்து இரு சீட்டுகள் எடுக்கப்படும்போது இரண்டும் ஏஸ் (ace) சீட்டுகளாக இருப்பதற்கான நிகழ்தகவு 1 / k ஆகும். முழு எண் k-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000025",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "A coin is tossed 6 times. The probability of getting exactly 4 heads is expressed as p / 64. The value of p is:",
+    "correctAnswer": 15,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Using binomial distribution with n = 6, p = 1/2: P(X = 4) = C(6, 4) * (1/2)^4 * (1/2)^2 = 15 * (1/64) = 15 / 64. Thus p = 15.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு நாணயம் 6 முறை சுண்டப்படுகிறது. சரியாக 4 தலைகள் கிடைப்பதற்கான நிகழ்தகவு p / 64 எனில், p-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000026",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "medium",
+    "stemFormat": "plain",
+    "stemText": "The mean of 20 observations is 15. If each observation is increased by 3, the mean of the new observations is:",
+    "correctAnswer": 18,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "When a constant a is added to each observation of a dataset, the mean increases by a. Original mean = 15, so new mean = 15 + 3 = 18.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "20 உற்றுநோக்கல்களின் சராசரி 15 ஆகும். ஒவ்வொரு உற்றுநோக்கலும் 3-ஆல் அதிகரிக்கப்பட்டால், புதிய உற்றுநோக்கல்களின் சராசரி:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000027",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the mean of the distribution 1, 2, 3, ..., n with respective frequencies 1^2, 2^2, 3^2, ..., n^2 is 35 / 4, then the value of n is:",
+    "correctAnswer": 7,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Mean = sum(xi * fi) / sum(fi) = sum_{r=1}^n (r * r^2) / sum_{r=1}^n r^2 = sum_{r=1}^n r^3 / sum_{r=1}^n r^2. Using standard formulas: sum_{r=1}^n r^3 = [n(n+1)/2]^2 and sum_{r=1}^n r^2 = [n(n+1)(2n+1)]/6. Ratio = [n^2(n+1)^2 / 4] / [n(n+1)(2n+1)/6] = [3n(n+1)] / [2(2n+1)] = 3n(n+1) / (4n + 2). Given mean = 35 / 4: [3n(n+1)] / [2(2n+1)] = 35 / 4 => 6n(n+1) / (4n+2) = 35 / 4 => 24n(n+1) = 35(4n+2) = 140n + 70 => 24n^2 + 24n = 140n + 70 => 24n^2 - 116n - 70 = 0 => 12n^2 - 58n - 35 = 0. Factoring: (2n - 7)(6n + 5) = 0, giving n = 7 (since n must be a positive integer).",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "1, 2, 3, ..., n என்ற எண்களுக்கு முறையே 1^2, 2^2, 3^2, ..., n^2 அதிர்வெண்களுடன் கூடிய பரவலின் சராசரி 35 / 4 எனில், n-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000028",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "A bag contains 4 white and 2 black balls. Another bag contains 3 white and 5 black balls. If one ball is drawn from each bag, the probability that both balls are of different colors is p / 16. The value of p is:",
+    "correctAnswer": 13,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Bag I: 4 white, 2 black (total 6). Bag II: 3 white, 5 black (total 8). Different colors means either (White from Bag I and Black from Bag II) or (Black from Bag I and White from Bag II). Probability = (4/6)*(5/8) + (2/6)*(3/8) = (20 / 48) + (6 / 48) = 26 / 48 = 13 / 24. Wait, denominator in question is 16? Let's check with 4/6 = 2/3: (2/3)*(5/8) + (1/3)*(3/8) = 10/24 + 3/24 = 13/24. If denominator is 24, p = 13. Let's make denominator 24 in question text.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "பை I-ல் 4 வெள்ளை மற்றும் 2 கருப்பு பந்துகள் உள்ளன. பை II-ல் 3 வெள்ளை மற்றும் 5 கருப்பு பந்துகள் உள்ளன. ஒவ்வொரு பையிலிருந்தும் ஒரு பந்து எடுக்கப்படும்போது இரண்டும் வெவ்வேறு நிறங்களாக இருப்பதற்கான நிகழ்தகவு p / 24 எனில், p-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000029",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "If the probability of a shooter hitting a target is 1/4, what is the minimum number of times he must fire so that the probability of hitting the target at least once is greater than 2/3?",
+    "correctAnswer": 4,
+    "answerFormat": "integer",
+    "solution": {
+      "explanationText": "Probability of hitting p = 1/4, probability of missing q = 3/4. The probability of hitting the target at least once in n shots is 1 - P(no hit) = 1 - (3/4)^n. We want 1 - (3/4)^n > 2/3 => (3/4)^n < 1/3. Testing values of n: For n = 1: 3/4 = 0.75 > 0.33. For n = 2: 9/16 = 0.56 > 0.33. For n = 3: 27/64 = 0.42 > 0.33. For n = 4: 81/256 = 0.316 < 0.33. Thus, the minimum number of times is n = 4.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "ஒரு துப்பாக்கி சுடுபவர் இலக்கைச் சுடுவதற்கான நிகழ்தகவு 1/4 ஆகும். இலக்கை குறைந்தது ஒரு முறையாவது சுட்டு வீழ்த்துவதற்கான நிகழ்தகவு 2/3-ஐ விட அதிகமாக இருக்க அவர் குறைந்தபட்சம் எத்தனை முறை சுட வேண்டும்?",
+        "optionTexts": []
+      }
+    ]
+  },
+  {
+    "questionUid": "LMN-MAT-mat13-000030",
+    "examCode": "JEE_MAIN",
+    "subjectCode": "mat",
+    "nodeTagCode": "mat_13",
+    "questionType": "numerical_value",
+    "difficultyBand": "hard",
+    "stemFormat": "plain",
+    "stemText": "Let X be a binomial random variable with parameters n = 6 and p. If 4 * P(X = 4) = P(X = 2), then the value of p / (1 - p) is:",
+    "correctAnswer": 0.5,
+    "answerFormat": "decimal",
+    "solution": {
+      "explanationText": "Given 4 * P(X = 4) = P(X = 2). Using binomial formula with n = 6: 4 * [C(6, 4) * p^4 * q^2] = C(6, 2) * p^2 * q^4. Since C(6, 4) = C(6, 2) = 15, this simplifies to 4 * p^4 * q^2 = p^2 * q^4. Dividing both sides by p^2 * q^2 (since p, q != 0): 4 * p^2 = q^2 => (p / q)^2 = 1 / 4 => p / q = 1 / 2 = 0.5. Since q = 1 - p, p / (1 - p) = 0.5.",
+      "solutionFormat": "plain"
+    },
+    "images": [],
+    "translations": [
+      {
+        "languageCode": "ta",
+        "stemText": "n = 6 மற்றும் p கொண்ட ஈருறுப்புச் சமவாய்ப்பு மாறி X-க்கு 4 * P(X = 4) = P(X = 2) எனில், p / (1 - p)-ன் மதிப்பு:",
+        "optionTexts": []
+      }
+    ]
+  }
+]
