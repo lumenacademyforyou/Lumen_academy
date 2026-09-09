@@ -6,6 +6,7 @@ import { config } from "./config/env.js";
 import { pool } from "../../db/shared/pool.js";
 import { prisma } from "./lib/db.js";
 import { AppError, errorHandler } from "./middleware/errorHandler.js";
+import { globalApiLimiter } from "./middleware/rateLimit.js";
 import { requestTiming } from "./middleware/requestTiming.js";
 import apiRouter from "./routes/api.js";
 import { startExpirySweeper, stopExpirySweeper } from "./jobs/expirySweeper.js";
@@ -54,6 +55,12 @@ app.use(
 );
 app.use(express.json({ limit: "1mb" }));
 app.use(requestTiming);
+
+// Outer rate-limiting ceiling for the whole API (see middleware/rateLimit.ts
+// for the sizing rationale and why it keys on the user rather than the IP
+// wherever one is known). Mounted before the router so it also covers the
+// unauthenticated reads and the 404 fallthrough below.
+app.use("/api", globalApiLimiter);
 
 app.use("/api", apiRouter);
 app.use("/api", (_req, _res, next) => {

@@ -33,6 +33,38 @@ async function loginAsDemo(page: Page) {
   await expect(page.getByRole("heading", { name: /Start your journey, Prince A!/i })).toBeVisible({ timeout: 40000 });
 }
 
+// Pulls a real Supabase access token for the demo account out of the browser
+// after a normal sign-in, so an API-level test can call an authenticated
+// endpoint with a genuine token instead of a fabricated one.
+//
+// Reads it from localStorage rather than importing the demo credentials:
+// DEMO_PASSWORD is deliberately not exported from services/demoSession.ts, and
+// that module pulls in the Vite-only supabase client, which will not load
+// under Playwright's plain-node transform. supabase-js writes the session
+// under an "sb-<project-ref>-auth-token" key, and newer versions prefix the
+// value with "base64-" — both shapes are handled here.
+async function getDemoAccessToken(page: Page): Promise<string> {
+  await loginAsDemo(page);
+  const token = await page.evaluate(() => {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key || !key.startsWith("sb-") || !key.endsWith("-auth-token")) continue;
+      const raw = localStorage.getItem(key);
+      if (!raw) continue;
+      const json = raw.startsWith("base64-") ? atob(raw.slice("base64-".length)) : raw;
+      try {
+        const parsed = JSON.parse(json);
+        if (parsed?.access_token) return parsed.access_token as string;
+      } catch {
+        // Not the shape we expect — keep scanning the remaining keys.
+      }
+    }
+    return null;
+  });
+  expect(token, "expected a Supabase session in localStorage after demo login").toBeTruthy();
+  return token as string;
+}
+
 // Shared pre-test ritual every session (subject-wise/custom/full-mock) goes
 // through after `createSession` succeeds: system_check (auto-runs ~3.7s of
 // simulated diagnostics) -> lobby (requires the instructions checkbox) ->
@@ -94,18 +126,68 @@ test.describe("Lumen Academy E2E & Backend API Test Suite", () => {
     expect(body.service).toContain("Lumen Academy Backend");
   });
 
-  test("Backend Questions API Endpoint", async ({ request }) => {
+  // GET /api/questions used to be open and unpaginated: one anonymous request
+  // returned every published question in the bank with its options. The answer
+  // key was never in the payload (questionController's STOP GATE 5 comment),
+  // so this was never a cheating vector — but the questions themselves are the
+  // product, and this was a one-request mirror of them. These three cases are
+  // the proof of the fix: the route now requires a token, pages its results,
+  // and still rejects a bad filter.
+  test("Backend Questions API Endpoint requires authentication", async ({ request }) => {
     const response = await request.get("/api/questions?subject=physics");
+    expect(response.status()).toBe(401);
+    const body = await response.json();
+    expect(body.error.code).toBe("UNAUTHORIZED");
+  });
+
+  test("Backend Questions API Endpoint returns a bounded page when authenticated", async ({ page, request }) => {
+    const token = await getDemoAccessToken(page);
+    const response = await request.get("/api/questions?subject=physics&limit=5", {
+      headers: { Authorization: `Bearer ${token}` },
+    });
     expect(response.status()).toBe(200);
     const body = await response.json();
     expect(body.status).toBe("success");
     expect(Array.isArray(body.questions)).toBeTruthy();
     expect(body.questions.length).toBeGreaterThan(0);
+    // The whole point of the change: a caller gets a page, not the bank.
+    expect(body.questions.length).toBeLessThanOrEqual(5);
+    expect(body.limit).toBe(5);
+    expect(body.offset).toBe(0);
+    expect(body.total).toBeGreaterThanOrEqual(body.questions.length);
+    // The answer key must stay absent whether or not the caller is signed in.
+    const serialized = JSON.stringify(body);
+    expect(serialized).not.toContain("is_correct");
+    expect(serialized).not.toContain("correctAnswerIndex");
   });
 
-  test("Backend Questions API Endpoint - invalid subject rejected", async ({ request }) => {
-    const response = await request.get("/api/questions?subject=biology");
+  test("Backend Questions API Endpoint - invalid subject rejected", async ({ page, request }) => {
+    // Authenticated, so this proves the 400 comes from the subject validation
+    // rather than from the new auth gate in front of it.
+    const token = await getDemoAccessToken(page);
+    const response = await request.get("/api/questions?subject=biology", {
+      headers: { Authorization: `Bearer ${token}` },
+    });
     expect(response.status()).toBe(400);
+  });
+
+  test("Public read endpoints are rate limited", async ({ request }) => {
+    // publicReadLimiter allows 120 requests per minute per IP; 130 sequential
+    // calls must therefore run into it. Uses /api/questions/count rather than
+    // a heavier route because the assertion is about the limiter, not the
+    // handler — and the limiter is what makes an unbounded sweep of the open
+    // endpoints impractical.
+    let sawRateLimit = false;
+    for (let i = 0; i < 130; i++) {
+      const response = await request.get("/api/questions/count");
+      if (response.status() === 429) {
+        const body = await response.json();
+        expect(body.error.code).toBe("RATE_LIMITED");
+        sawRateLimit = true;
+        break;
+      }
+    }
+    expect(sawRateLimit).toBeTruthy();
   });
 
   // Phase H (H1): the AI study-plan endpoint is retired — rule 6 of the

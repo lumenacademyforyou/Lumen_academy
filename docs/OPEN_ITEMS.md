@@ -1,5 +1,11 @@
 # Open items — repository/database vs brief §1.6/§1.7 (TE-P0)
 
+> **Point-in-time record from TE-P0 — do not read as current state.** The schema has moved on
+> substantially since this was written: this file describes migrations `000`–`017` as the full set,
+> and `db/migrations/` now runs to `048`. The brief-vs-reality *deltas* below are still useful as
+> history (they explain why the live design differs from the original brief), but any specific count,
+> file list, or "actual" claim needs re-checking against the repository before it is relied on.
+
 Every place the live repository or live database contradicts LA-BE-ENGINE-001 §1.6 ("state of the
 repository") or §1.7 ("expected repository paths"), one item per bullet: what the brief assumed,
 what's actually true. Ground truth for all of these is `docs/DB_STATE.md` and this session's direct

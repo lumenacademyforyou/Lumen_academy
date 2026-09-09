@@ -17,6 +17,24 @@ export const listQuerySchema = z.object({
   subject: z.enum(["physics", "chemistry", "botany", "zoology"]).optional(),
 });
 
+export const DEFAULT_QUESTION_PAGE_SIZE = 50;
+export const MAX_QUESTION_PAGE_SIZE = 200;
+
+// getQuestions only. The list endpoint used to run `PUBLISHED_SUBJECT_FILTER`
+// with no LIMIT at all, so a single request returned every published question
+// in the bank (~1,400 rows and growing) plus a second query for all of their
+// options and a third for all of their assets. Two problems with that, both
+// real: it hands the entire question bank over in one call, and it is an
+// unbounded fan-out against a 4-connection pool that anyone could fire
+// repeatedly. Paging is now mandatory and capped; the count endpoint is what
+// answers "how many are there".
+//
+// z.coerce because query-string values arrive as strings.
+export const listPageQuerySchema = listQuerySchema.extend({
+  limit: z.coerce.number().int().positive().max(MAX_QUESTION_PAGE_SIZE).default(DEFAULT_QUESTION_PAGE_SIZE),
+  offset: z.coerce.number().int().min(0).default(0),
+});
+
 // Same subject filter and lifecycle_status = 'published' condition as
 // getQuestions below — kept as one literal query string so a count and a
 // list for the same filter are structurally guaranteed to agree.
@@ -86,10 +104,19 @@ async function loadImagesByQuestion(questionIds: string[]): Promise<Map<string, 
 
 // db/content-backed, real (non-mock). Deliberately different response shape
 // from the retired mock version — see STOP GATE 5: the old shape included
-// correctAnswerIndex/explanation directly, which is the answer key, and this
-// route has no auth (public/student-scoped). No is_correct anywhere here.
+// correctAnswerIndex/explanation directly, which is the answer key. No
+// is_correct anywhere here, and that stays true regardless of who is calling.
+//
+// The route itself is no longer open: it now sits behind requireAuth (see
+// routes/api.ts). Withholding the answer key kept this from being a cheating
+// vector, but the stems and options *are* the product — an unauthenticated,
+// unpaginated dump of them let anyone who knew the URL mirror the entire bank
+// in one request. Nothing in the frontend has ever called this endpoint (the
+// test engine reads questions through the attempt envelope, which has its own
+// ownership checks); its only callers were tests, so gating it costs no real
+// traffic.
 export const getQuestions = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-  const parsed = listQuerySchema.safeParse(req.query);
+  const parsed = listPageQuerySchema.safeParse(req.query);
   if (!parsed.success) {
     next(new AppError(400, "VALIDATION_ERROR", parsed.error.issues[0].message));
     return;
@@ -97,6 +124,15 @@ export const getQuestions = async (req: Request, res: Response, next: NextFuncti
 
   try {
     const subjectCode = parsed.data.subject ? SUBJECT_NAME_TO_CODE[parsed.data.subject] : undefined;
+    const { limit, offset } = parsed.data;
+
+    // Same filter string as getQuestionCount, so `total` below is the count of
+    // exactly the rows this page is drawn from — the two can't drift.
+    const totalRes = await pool.query<{ count: string }>(`select count(*)::text as count ${PUBLISHED_SUBJECT_FILTER}`, [
+      subjectCode ?? null,
+    ]);
+    const total = Number(totalRes.rows[0].count);
+
     const questionsRes = await pool.query<{
       question_id: string;
       question_uid: string;
@@ -108,8 +144,9 @@ export const getQuestions = async (req: Request, res: Response, next: NextFuncti
     }>(
       `select q.question_id, q.question_uid, q.stem_text, q.question_type, q.difficulty_band, s.subject_code, q.has_image
       ${PUBLISHED_SUBJECT_FILTER}
-        order by q.question_id`,
-      [subjectCode ?? null]
+        order by q.question_id
+        limit $2 offset $3`,
+      [subjectCode ?? null, limit, offset]
     );
 
     const questionIds = questionsRes.rows.map((r) => r.question_id);
@@ -142,7 +179,17 @@ export const getQuestions = async (req: Request, res: Response, next: NextFuncti
       images: imagesByQuestion.get(q.question_id) ?? [],
     }));
 
-    res.json({ status: "success", count: questions.length, questions });
+    res.json({
+      status: "success",
+      // Unchanged meaning: how many questions are in *this* response. `total`
+      // is the new field — how many match the filter overall.
+      count: questions.length,
+      total,
+      limit,
+      offset,
+      hasMore: offset + questions.length < total,
+      questions,
+    });
   } catch (err) {
     next(err);
   }

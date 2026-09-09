@@ -7,6 +7,7 @@ import { getAdminStats } from "../controllers/adminController";
 import { prisma } from "../lib/db.js";
 import { requireAuth } from "../middleware/requireAuth.js";
 import { requirePermission } from "../middleware/requirePermission.js";
+import { publicReadLimiter } from "../middleware/rateLimit.js";
 import { validate } from "../middleware/validate.js";
 import { getFullProfile, updateProfile, updateProfileSchema, syncOnboardingState } from "../services/meProfile.service.js";
 import { requireRecentOtpReauthentication, deleteOwnAccount } from "../services/deleteAccount.service.js";
@@ -170,11 +171,27 @@ router.get("/health", async (_req: Request, res: Response) => {
 });
 
 // Questions Endpoint
-router.get("/questions", getQuestions);
-router.get("/questions/count", getQuestionCount);
+//
+// The list route is behind requireAuth as of this change. It was open, and
+// unpaginated with it, so one anonymous request returned every published
+// question in the bank with its options — the answer key was correctly
+// withheld (see questionController's own header), but the questions
+// themselves are the product. Nothing in the frontend calls it; the test
+// engine serves questions through the attempt envelope, which enforces
+// attempt ownership. See getQuestions for the paging contract.
+//
+// The count route stays open deliberately: it answers with a single integer
+// and nothing else, which is the sort of thing a public landing page
+// legitimately shows ("1,400+ questions"). It gets the tighter
+// publicReadLimiter instead, as does /syllabus below — both are the endpoints
+// an anonymous script would hammer.
+router.get("/questions", requireAuth, getQuestions);
+router.get("/questions/count", publicReadLimiter, getQuestionCount);
 
-// Syllabus Endpoint
-router.get("/syllabus", getSyllabus);
+// Syllabus Endpoint — the NEET syllabus structure (unit names and class
+// levels). Public information by nature, so it stays open; rate-limited for
+// the same reason as the count above.
+router.get("/syllabus", publicReadLimiter, getSyllabus);
 
 // Analytics Endpoint (Phase G — real, SQL-aggregated, scoped to the caller)
 router.get("/analytics/dashboard", requireAuth, getDashboard);
