@@ -104,8 +104,8 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In the 3d transition series, only copper has a positive standard electrode potential (E°_Cu2+/Cu = +0.34 V). This positive value is due to:",
+    "stemFormat": "latex",
+    "stemText": "In the 3d transition series, only copper has a positive standard electrode potential (E°_{Cu2}+/Cu = +0.34 V). This positive value is due to:",
     "options": [
       {
         "label": "A",
@@ -129,14 +129,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The standard electrode potential E° relates to Delta H_total = Delta_a H° + Delta_i H°1 + Delta_i H°2 + Delta_hyd H°.\nStep 2: Copper has an exceptionally high enthalpy of atomization and high second ionization enthalpy (removing an electron from stable 3d10).\nStep 3: The hydration enthalpy of Cu2+ is not sufficiently negative to compensate for these large energy inputs.\nStep 4: As a result, the conversion Cu(s) -> Cu2+(aq) is endothermic and E°_Cu2+/Cu is positive (+0.34 V). Conclude Option A.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The standard electrode potential E° relates to Delta H_{total} = Delta_a H° + Delta_i H°1 + Delta_i H°2 + Delta_{hyd} H°.\nStep 2: Copper has an exceptionally high enthalpy of atomization and high second ionization enthalpy (removing an electron from stable 3d10).\nStep 3: The hydration enthalpy of Cu2+ is not sufficiently negative to compensate for these large energy inputs.\nStep 4: As a result, the conversion Cu(s) -> Cu2+(aq) is endothermic and E°_{Cu2}+/Cu is positive (+0.34 V). Conclude Option A.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "3d தொடரில் தாமிரம் மட்டுமே நேர்மறை திட்ட மின்முனை அழுத்தத்தைக் (E°_Cu2+/Cu = +0.34 V) கொண்டிருப்பதன் காரணம் என்ன?",
+        "stemText": "3d தொடரில் தாமிரம் மட்டுமே நேர்மறை திட்ட மின்முனை அழுத்தத்தைக் (E°_{Cu2}+/Cu = +0.34 V) கொண்டிருப்பதன் காரணம் என்ன?",
         "optionTexts": [
           "அதிக அணுவாக்கல் மற்றும் அயனியாக்கும் என்தால்பியை அதன் நீரேற்ற என்தால்பியால் ஈடுசெய்ய முடியாதது",
           "தாமிரத்தின் மிக அதிக நீரேற்ற என்தால்பி",
@@ -202,7 +202,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the spin-only magnetic moment of a divalent ion of an element with atomic number 27 (Co2+)?",
     "options": [
       {
@@ -227,8 +227,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Atomic number Z = 27 is Cobalt (Co). Configuration: [Ar] 3d7 4s2.\nStep 2: Divalent cation Co2+ = [Ar] 3d7.\nStep 3: In a 3d7 subshell, there are 3 unpaired electrons (n = 3).\nStep 4: Spin-only magnetic moment mu = sqrt(n(n+2)) = sqrt(3(5)) = sqrt(15) = 3.87 BM (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Atomic number Z = 27 is Cobalt (Co). Configuration: [Ar] 3d7 4s2.\nStep 2: Divalent cation Co2+ = [Ar] 3d7.\nStep 3: In a 3d7 subshell, there are 3 unpaired electrons (n = 3).\nStep 4: Spin-only magnetic moment mu = \\sqrt{n(n+2)} = \\sqrt{3(5)} = \\sqrt{15} = 3.87 BM (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,8 +447,8 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "In aqueous solution, chromate ion (CrO4^2-, yellow) and dichromate ion (Cr2O7^2-, orange) interconvert depending on pH. What is the oxidation state of chromium in CrO4^2- and Cr2O7^2-, respectively?",
+    "stemFormat": "latex",
+    "stemText": "In aqueous solution, chromate ion (CrO4^{2-}, yellow) and dichromate ion (Cr2O7^{2-}, orange) interconvert depending on pH. What is the oxidation state of chromium in CrO4^{2-} and Cr2O7^{2-}, respectively?",
     "options": [
       {
         "label": "A",
@@ -472,14 +472,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In CrO4^2-: x + 4(-2) = -2 => x = +6.\nStep 2: In Cr2O7^2-: 2x + 7(-2) = -2 => 2x = 12 => x = +6.\nStep 3: The interconversion 2 CrO4^2- + 2 H+ <=> Cr2O7^2- + H2O is an acid-base equilibrium, not a redox reaction.\nStep 4: The oxidation state of chromium is +6 in both species (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In CrO4^{2-}: x + 4(-2) = -2 => x = +6.\nStep 2: In Cr2O7^{2-}: 2x + 7(-2) = -2 => 2x = 12 => x = +6.\nStep 3: The interconversion 2 CrO4^{2-} + 2 H+ <=> Cr2O7^{2-} + H2O is an acid-base equilibrium, not a redox reaction.\nStep 4: The oxidation state of chromium is +6 in both species (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "CrO4^2- (மஞ்சள்) மற்றும் Cr2O7^2- (ஆரஞ்சு) அயனிகளில் குரோமியத்தின் ஆக்சிஜனேற்ற எண்கள் முறையே:",
+        "stemText": "CrO4^{2-} (மஞ்சள்) மற்றும் Cr2O7^{2-} (ஆரஞ்சு) அயனிகளில் குரோமியத்தின் ஆக்சிஜனேற்ற எண்கள் முறையே:",
         "optionTexts": [
           "+6 மற்றும் +6",
           "+3 மற்றும் +6",
@@ -496,8 +496,8 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In the dichromate dianion (Cr2O7^2-), what is the structural nature of the chromium-oxygen bonds?",
+    "stemFormat": "latex",
+    "stemText": "In the dichromate dianion (Cr2O7^{2-}), what is the structural nature of the chromium-oxygen bonds?",
     "options": [
       {
         "label": "A",
@@ -521,14 +521,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The structure of Cr2O7^2- consists of two tetrahedral CrO4 units sharing a single oxygen atom at a corner.\nStep 2: The six terminal Cr-O bonds have identical lengths (163 pm) due to resonance delocalization.\nStep 3: The bridging Cr-O-Cr bond length is longer (179 pm) with a bent bridge angle of 126°.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The structure of Cr2O7^{2-} consists of two tetrahedral CrO4 units sharing a single oxygen atom at a corner.\nStep 2: The six terminal Cr-O bonds have identical lengths (163 pm) due to resonance delocalization.\nStep 3: The bridging Cr-O-Cr bond length is longer (179 pm) with a bent bridge angle of 126°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "டைகுரோமேட் எதிரயனியில் (Cr2O7^2-) குரோமியம்-ஆக்ஸிஜன் பிணைப்புகளின் அமைப்பு எவ்வாறு உள்ளது?",
+        "stemText": "டைகுரோமேட் எதிரயனியில் (Cr2O7^{2-}) குரோமியம்-ஆக்ஸிஜன் பிணைப்புகளின் அமைப்பு எவ்வாறு உள்ளது?",
         "optionTexts": [
           "ஆறு சமமான முனைய Cr-O பிணைப்புகள் மற்றும் 126° பிணைப்புக் கோணம் கொண்ட இரண்டு பால Cr-O-Cr பிணைப்புகள்",
           "அனைத்து ஏழு Cr-O பிணைப்புகளும் ஒரே நீளம் கொண்டவை",
@@ -545,7 +545,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "How many moles of electrons are involved when 1 mole of potassium dichromate (K2Cr2O7) acts as an oxidizing agent in acidic medium?",
     "options": [
       {
@@ -570,8 +570,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Ionic half-reaction in acidic medium: Cr2O7^2- + 14 H+ + 6 e- -> 2 Cr3+ + 7 H2O.\nStep 2: Two chromium atoms change from +6 to +3, each accepting 3 electrons.\nStep 3: Total electrons gained per mole of Cr2O7^2- is 2 * 3 = 6 electrons (n-factor = 6).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Ionic half-reaction in acidic medium: Cr2O7^{2-} + 14 H+ + 6 e- -> 2 Cr3+ + 7 H2O.\nStep 2: Two chromium atoms change from +6 to +3, each accepting 3 electrons.\nStep 3: Total electrons gained per mole of Cr2O7^{2-} is 2 * 3 = 6 electrons (n-factor = 6).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -594,7 +594,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Pyrolusite ore (MnO2) is converted into potassium permanganate by first fusing with KOH in the presence of air to form a green compound 'X'. Compound 'X' is:",
     "options": [
       {
@@ -619,8 +619,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fusion of MnO2 with caustic potash (KOH) in the presence of atmospheric oxygen or an oxidizing agent like KNO3: 2 MnO2 + 4 KOH + O2 -> 2 K2MnO4 + 2 H2O.\nStep 2: The product is potassium manganate (K2MnO4), which is dark green.\nStep 3: Disproportionation or electrolytic oxidation of manganate (MnO4^2-) then yields purple permanganate (KMnO4).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Fusion of MnO2 with caustic potash (KOH) in the presence of atmospheric oxygen or an oxidizing agent like KNO3: 2 MnO2 + 4 KOH + O2 -> 2 K2MnO4 + 2 H2O.\nStep 2: The product is potassium manganate (K2MnO4), which is dark green.\nStep 3: Disproportionation or electrolytic oxidation of manganate (MnO4^{2-}) then yields purple permanganate (KMnO4).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -643,7 +643,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In neutral or faintly alkaline medium, KMnO4 oxidizes potassium iodide (KI) quantitatively into:",
     "options": [
       {
@@ -669,7 +669,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In acidic medium, permanganate oxidizes iodide (I-) to iodine (I2): 2 MnO4^- + 16 H+ + 10 I- -> 2 Mn2+ + 5 I2 + 8 H2O.\nStep 2: In neutral or faintly alkaline medium, permanganate oxidizes iodide directly to iodate (IO3-): 2 MnO4^- + H2O + I- -> 2 MnO2 + 2 OH^- + IO3^-.\nStep 3: Iodate is KIO3.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,7 +692,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The equivalent weight of potassium permanganate (molar mass = M) when acting as an oxidizing agent in acidic solution is:",
     "options": [
       {
@@ -718,7 +718,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Half-reaction in acidic medium: MnO4^- + 8 H+ + 5 e- -> Mn2+ + 4 H2O.\nStep 2: Oxidation state of Mn changes from +7 to +2, gaining 5 electrons (n-factor = 5).\nStep 3: Equivalent weight = Molar mass / n-factor = M / 5.\nStep 4: (In neutral medium, n-factor is 3 -> M/3; in strongly alkaline, n-factor is 1 -> M/1). Conclude Option A.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -790,7 +790,7 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following is the most common and stable oxidation state exhibited by all lanthanoids?",
     "options": [
       {
@@ -815,8 +815,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The general valence shell configuration of lanthanoids is 4f^(1-14) 5d^(0-1) 6s^2.\nStep 2: All lanthanoids readily lose their two 6s electrons and one 5d (or 4f) electron.\nStep 3: The +3 oxidation state is predominantly stable across the entire 4f series in both solid state and aqueous solutions.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The general valence shell configuration of lanthanoids is 4f^{1-14} 5d^{0-1} 6s^2.\nStep 2: All lanthanoids readily lose their two 6s electrons and one 5d (or 4f) electron.\nStep 3: The +3 oxidation state is predominantly stable across the entire 4f series in both solid state and aqueous solutions.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,8 +1182,8 @@
     "nodeTagCode": "chem_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In acidic solution, green manganate ion (MnO4^2-) is unstable and spontaneously disproportionates to form:",
+    "stemFormat": "latex",
+    "stemText": "In acidic solution, green manganate ion (MnO4^{2-}) is unstable and spontaneously disproportionates to form:",
     "options": [
       {
         "label": "A",
@@ -1207,14 +1207,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The manganate(VI) ion (MnO4^2-) is stable only in strongly alkaline solution (pH > 12).\nStep 2: In neutral or acidic solutions, it undergoes disproportionation: 3 MnO4^2- + 4 H+ -> 2 MnO4^- + MnO2 + 2 H2O.\nStep 3: Manganese(+6) is simultaneously oxidized to manganese(+7) (MnO4^-, purple) and reduced to manganese(+4) (MnO2, brown).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The manganate(VI) ion (MnO4^{2-}) is stable only in strongly alkaline solution (pH > 12).\nStep 2: In neutral or acidic solutions, it undergoes disproportionation: 3 MnO4^{2-} + 4 H+ -> 2 MnO4^- + MnO2 + 2 H2O.\nStep 3: Manganese(+6) is simultaneously oxidized to manganese(+7) (MnO4^-, purple) and reduced to manganese(+4) (MnO2, brown).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "அமிலக் கரைசலில், பச்சை நிற மாங்கனேட் அயனி (MnO4^2-) தன்னிச்சையாக விகிதச்சிதைவு (disproportionation) அடைந்து எதனைத் தருகிறது?",
+        "stemText": "அமிலக் கரைசலில், பச்சை நிற மாங்கனேட் அயனி (MnO4^{2-}) தன்னிச்சையாக விகிதச்சிதைவு (disproportionation) அடைந்து எதனைத் தருகிறது?",
         "optionTexts": [
           "ஊதா நிற பெர்மாங்கனேட் (MnO4^-) மற்றும் பழுப்பு நிற மாங்கனீசு டை ஆக்சைடு (MnO2)",
           "Mn2+ மற்றும் O2 வாயு",

@@ -6,7 +6,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A thin uniform circular disc of mass M and radius R has a moment of inertia about its diameter axis equal to:",
     "options": [
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By perpendicular axis theorem: I_z = I_x + I_y.\nStep 2: By symmetry for a planar disc, I_x = I_y = I_diameter.\nStep 3: Since I_z = (1/2) M R^2, we have 2 I_diameter = (1/2) M R^2.\nStep 4: Therefore, I_diameter = (1/4) M R^2. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: By perpendicular axis theorem: I_z = I_x + I_y.\nStep 2: By symmetry for a planar disc, I_x = I_y = I_{diameter}.\nStep 3: Since I_z = (1/2) M R^2, we have 2 I_{diameter} = (1/2) M R^2.\nStep 4: Therefore, I_{diameter} = (1/4) M R^2. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -55,7 +55,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid sphere of mass M and radius R rolls without slipping down an inclined plane of inclination angle θ. What is the linear acceleration of its center of mass?",
     "options": [
       {
@@ -81,7 +81,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Formula for acceleration in pure rolling down an incline: a = g sin θ / (1 + I / (M R^2)) = g sin θ / (1 + k^2 / R^2).\nStep 2: For a solid sphere, I = (2/5) M R^2, so k^2 / R^2 = 2/5 = 0.4.\nStep 3: a = g sin θ / (1 + 2/5) = g sin θ / (7/5) = (5/7) g sin θ.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -104,7 +104,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two particles of masses 2 kg and 6 kg are located at positions r1 = (3i + 2j - k) m and r2 = (i - 2j + 3k) m. What is the position vector of their center of mass?",
     "options": [
       {
@@ -129,8 +129,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for center of mass: R_cm = (m1 r1 + m2 r2) / (m1 + m2).\nStep 2: R_cm = [ 2(3i + 2j - k) + 6(i - 2j + 3k) ] / (2 + 6).\nStep 3: R_cm = [ (6i + 4j - 2k) + (6i - 12j + 18k) ] / 8 = (12i - 8j + 16k) / 8.\nStep 4: R_cm = (1.5 i - 1.0 j + 2.0 k) m. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula for center of mass: R_{cm} = (m1 r1 + m2 r2) / (m1 + m2).\nStep 2: R_{cm} = [ 2(3i + 2j - k) + 6(i - 2j + 3k) ] / (2 + 6).\nStep 3: R_{cm} = [ (6i + 4j - 2k) + (6i - 12j + 18k) ] / 8 = (12i - 8j + 16k) / 8.\nStep 4: R_{cm} = (1.5 i - 1.0 j + 2.0 k) m. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -153,7 +153,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A constant torque of 50 N m is applied to a stationary flywheel of moment of inertia 10 kg m^2. What is its angular kinetic energy after 4.0 seconds?",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Angular acceleration α = τ / I = 50 N m / 10 kg m^2 = 5.0 rad/s².\nStep 2: Angular velocity after 4.0 s: ω = ω₀ + α t = 0 + 5.0 * 4.0 = 20 rad/s.\nStep 3: Rotational kinetic energy K_rot = (1/2) I ω^2 = (1/2) * 10 * (20)^2 = 5 * 400 = 2000 J.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Angular acceleration α = τ / I = 50 N m / 10 kg m^2 = 5.0 rad/s².\nStep 2: Angular velocity after 4.0 s: ω = ω₀ + α t = 0 + 5.0 * 4.0 = 20 rad/s.\nStep 3: Rotational kinetic energy K_{rot} = (1/2) I ω^2 = (1/2) * 10 * (20)^2 = 5 * 400 = 2000 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,7 +202,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A person standing on a rotating platform with outstretched arms holds weights in each hand. When the person pulls the weights inwards towards the chest, which of the following quantities remains strictly conserved and which increases?",
     "options": [
       {
@@ -227,8 +227,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: No external torque acts on the system (τ_ext = 0), so angular momentum L = I ω is strictly conserved.\nStep 2: Pulling hands inward decreases moment of inertia (I_final < I_initial), so angular velocity ω increases.\nStep 3: Rotational kinetic energy K = L^2 / (2I). Since I decreases and L is constant, K increases (work is done by muscles).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: No external torque acts on the system (τ_{ext} = 0), so angular momentum L = I ω is strictly conserved.\nStep 2: Pulling hands inward decreases moment of inertia (I_{final} < I_{initial}), so angular velocity ω increases.\nStep 3: Rotational kinetic energy K = L^2 / (2I). Since I decreases and L is constant, K increases (work is done by muscles).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -251,7 +251,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the ratio of rotational kinetic energy to total kinetic energy for a uniform solid cylinder rolling purely without slipping on a horizontal surface?",
     "options": [
       {
@@ -276,8 +276,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: For a solid cylinder, moment of inertia I = (1/2) M R^2, so k^2 / R^2 = 1/2.\nStep 2: Rotational KE K_rot = (1/2) I ω^2 = (1/4) M v^2.\nStep 3: Total KE K_total = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Ratio K_rot / K_total = (1/4) / (3/4) = 1/3. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: For a solid cylinder, moment of inertia I = (1/2) M R^2, so k^2 / R^2 = 1/2.\nStep 2: Rotational KE K_{rot} = (1/2) I ω^2 = (1/4) M v^2.\nStep 3: Total KE K_{total} = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Ratio K_{rot} / K_{total} = (1/4) / (3/4) = 1/3. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -349,7 +349,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A uniform thin rod of mass M and length L has a moment of inertia I₀ = (1/12) M L^2 about an axis passing through its center of mass perpendicular to its length. What is its moment of inertia about a parallel axis passing through one of its ends?",
     "options": [
       {
@@ -374,8 +374,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Use the parallel axis theorem: I = I_cm + M d^2.\nStep 2: Distance from center of mass to one end is d = L / 2.\nStep 3: I = (1/12) M L^2 + M (L/2)^2 = (1/12) M L^2 + (1/4) M L^2.\nStep 4: I = (1/12 + 3/12) M L^2 = (4/12) M L^2 = (1/3) M L^2. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Use the parallel axis theorem: I = I_{cm} + M d^2.\nStep 2: Distance from center of mass to one end is d = L / 2.\nStep 3: I = (1/12) M L^2 + M (L/2)^2 = (1/12) M L^2 + (1/4) M L^2.\nStep 4: I = (1/12 + 3/12) M L^2 = (4/12) M L^2 = (1/3) M L^2. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,7 +398,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "From a uniform solid circular disc of radius R and mass 9M, a small circular disc of radius R/3 is removed whose center is located at a distance 2R/3 from the disc's center. What is the moment of inertia of the remaining portion about an axis passing through the center of the original disc and perpendicular to its plane?",
     "options": [
       {
@@ -423,8 +423,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total disc mass = 9M, radius = R => Area = π R^2. Removed portion area = π (R/3)^2 = π R^2 / 9 => mass of removed disc m = (9M) / 9 = M.\nStep 2: Moment of inertia of original disc about central axis: I_total = (1/2) (9M) R^2 = (9/2) M R^2.\nStep 3: Moment of inertia of removed disc about central axis (using parallel axis theorem): I_removed = (1/2) m r^2 + m d^2 = (1/2) M (R/3)^2 + M (2R/3)^2 = M R^2 [ 1/18 + 4/9 ] = M R^2 [ 1/18 + 8/18 ] = (9/18) M R^2 = (1/2) M R^2.\nStep 4: I_remaining = I_total - I_removed = (9/2) M R^2 - (1/2) M R^2 = (8/2) M R^2 = 4 M R^2. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total disc mass = 9M, radius = R => Area = π R^2. Removed portion area = π (R/3)^2 = π R^2 / 9 => mass of removed disc m = (9M) / 9 = M.\nStep 2: Moment of inertia of original disc about central axis: I_{total} = (1/2) (9M) R^2 = (9/2) M R^2.\nStep 3: Moment of inertia of removed disc about central axis (using parallel axis theorem): I_{removed} = (1/2) m r^2 + m d^2 = (1/2) M (R/3)^2 + M (2R/3)^2 = M R^2 [ 1/18 + 4/9 ] = M R^2 [ 1/18 + 8/18 ] = (9/18) M R^2 = (1/2) M R^2.\nStep 4: I_{remaining} = I_{total} - I_{removed} = (9/2) M R^2 - (1/2) M R^2 = (8/2) M R^2 = 4 M R^2. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid sphere, a solid cylinder, and a thin hoop (ring) of identical mass and radius are released from rest at the top of an inclined plane. In which order do they reach the bottom of the incline (without slipping)?",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Linear acceleration down the incline is a = g sin θ / (1 + k^2 / R^2).\nStep 2: Values of k^2/R^2: Solid sphere = 2/5 = 0.40; Solid cylinder = 1/2 = 0.50; Hoop = 1.0.\nStep 3: Smaller k^2/R^2 yields higher acceleration: a_sphere > a_cylinder > a_hoop.\nStep 4: Therefore, the sphere arrives first, the cylinder second, and the hoop last. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Linear acceleration down the incline is a = g sin θ / (1 + k^2 / R^2).\nStep 2: Values of k^2/R^2: Solid sphere = 2/5 = 0.40; Solid cylinder = 1/2 = 0.50; Hoop = 1.0.\nStep 3: Smaller k^2/R^2 yields higher acceleration: a_{sphere} > a_{cylinder} > a_{hoop}.\nStep 4: Therefore, the sphere arrives first, the cylinder second, and the hoop last. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,22 +496,22 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The radius of gyration of a uniform thin spherical shell of mass M and radius R about its diameter axis is:",
     "options": [
       {
         "label": "A",
-        "text": "sqrt(2/3) R",
+        "text": "\\sqrt{2/3} R",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "sqrt(2/5) R",
+        "text": "\\sqrt{2/5} R",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "sqrt(1/2) R",
+        "text": "\\sqrt{1/2} R",
         "isCorrect": false
       },
       {
@@ -521,8 +521,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Moment of inertia of a spherical shell about diameter: I = (2/3) M R^2.\nStep 2: Relate to radius of gyration: I = M k^2 => M k^2 = (2/3) M R^2.\nStep 3: k = sqrt(2/3) R.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Moment of inertia of a spherical shell about diameter: I = (2/3) M R^2.\nStep 2: Relate to radius of gyration: I = M k^2 => M k^2 = (2/3) M R^2.\nStep 3: k = \\sqrt{2/3} R.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -530,9 +530,9 @@
         "languageCode": "ta",
         "stemText": "M நிறையும் R ஆரமும் கொண்ட ஒரு மெல்லிய சீரான கோளக் கூட்டின் விட்டம் பற்றிய சுழற்சி ஆரம் (k) என்ன?",
         "optionTexts": [
-          "sqrt(2/3) R",
-          "sqrt(2/5) R",
-          "sqrt(1/2) R",
+          "\\sqrt{2/3} R",
+          "\\sqrt{2/5} R",
+          "\\sqrt{1/2} R",
           "R"
         ]
       }
@@ -594,7 +594,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A circular ring of mass M and radius R rotates with angular velocity ω about its central axis. Two identical small pieces of mass m are gently attached to diametrically opposite points of the ring. What is the new angular velocity of the ring?",
     "options": [
       {
@@ -620,7 +620,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Conservation of angular momentum: I1 ω1 = I2 ω2.\nStep 2: Initial moment of inertia I1 = M R^2.\nStep 3: Final moment of inertia I2 = M R^2 + 2(m R^2) = (M + 2m) R^2.\nStep 4: ω2 = (I1 / I2) ω = [ M R^2 / ((M + 2m) R^2) ] ω = [ M / (M + 2m) ] ω. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -643,7 +643,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid cylinder of mass M and radius R is pulled horizontally by a constant force F applied at its top edge. If it rolls purely without slipping on a horizontal surface, what is the magnitude and direction of the friction force acting on it?",
     "options": [
       {
@@ -669,7 +669,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Let friction force f act forward. Linear equation: F + f = M a.\nStep 2: Torque equation about center of mass: F R - f R = I α = ((1/2) M R^2) (a / R) = (1/2) M a R => F - f = (1/2) M a.\nStep 3: Multiply (F - f) by 2: 2F - 2f = M a = F + f => F = 3f => f = F / 3.\nStep 4: Since f > 0, it acts in the forward direction with magnitude F/3. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -741,22 +741,22 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The center of mass of a system of three particles of masses 1 kg, 2 kg, and 3 kg situated at the vertices of an equilateral triangle of side 1 m with mass 1 kg at origin (0, 0), mass 2 kg on x-axis at (1, 0), and mass 3 kg at (0.5, sqrt(3)/2) has coordinates:",
+    "stemFormat": "latex",
+    "stemText": "The center of mass of a system of three particles of masses 1 kg, 2 kg, and 3 kg situated at the vertices of an equilateral triangle of side 1 m with mass 1 kg at origin (0, 0), mass 2 kg on x-axis at (1, 0), and mass 3 kg at (0.5, \\sqrt{3}/2) has coordinates:",
     "options": [
       {
         "label": "A",
-        "text": "(7/12 m, sqrt(3)/4 m)",
+        "text": "(7/12 m, \\sqrt{3}/4 m)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "(1/2 m, sqrt(3)/6 m)",
+        "text": "(1/2 m, \\sqrt{3}/6 m)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "(5/12 m, sqrt(3)/3 m)",
+        "text": "(5/12 m, \\sqrt{3}/3 m)",
         "isCorrect": false
       },
       {
@@ -766,18 +766,18 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total mass M = 1 + 2 + 3 = 6 kg.\nStep 2: X_cm = [1(0) + 2(1) + 3(0.5)] / 6 = [0 + 2 + 1.5] / 6 = 3.5 / 6 = 7/12 m.\nStep 3: Y_cm = [1(0) + 2(0) + 3(sqrt(3)/2)] / 6 = [1.5 sqrt(3)] / 6 = sqrt(3) / 4 m.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total mass M = 1 + 2 + 3 = 6 kg.\nStep 2: X_{cm} = [1(0) + 2(1) + 3(0.5)] / 6 = [0 + 2 + 1.5] / 6 = 3.5 / 6 = 7/12 m.\nStep 3: Y_{cm} = [1(0) + 2(0) + 3(\\sqrt{3}/2)] / 6 = [1.5 \\sqrt{3}] / 6 = \\sqrt{3} / 4 m.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "1 m பக்கமுள்ள சமபக்க முக்கோணத்தின் உச்சிகளில் 1 kg (0,0), 2 kg (1,0), 3 kg (0.5, sqrt(3)/2) நிறைகள் வைக்கப்பட்டுள்ளன. அவற்றின் நிறை மையத்தின் ஆயத்தொலைவுகள் என்ன?",
+        "stemText": "1 m பக்கமுள்ள சமபக்க முக்கோணத்தின் உச்சிகளில் 1 kg (0,0), 2 kg (1,0), 3 kg (0.5, \\sqrt{3}/2) நிறைகள் வைக்கப்பட்டுள்ளன. அவற்றின் நிறை மையத்தின் ஆயத்தொலைவுகள் என்ன?",
         "optionTexts": [
-          "(7/12 m, sqrt(3)/4 m)",
-          "(1/2 m, sqrt(3)/6 m)",
-          "(5/12 m, sqrt(3)/3 m)",
+          "(7/12 m, \\sqrt{3}/4 m)",
+          "(1/2 m, \\sqrt{3}/6 m)",
+          "(5/12 m, \\sqrt{3}/3 m)",
           "(2/3 m, 1/2 m)"
         ]
       }
@@ -790,7 +790,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For a given body of mass M and radius R, the ratio of moment of inertia about diameter for a solid sphere to that for a thin spherical shell is:",
     "options": [
       {
@@ -815,8 +815,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Moment of inertia of solid sphere: I_solid = (2/5) M R^2.\nStep 2: Moment of inertia of spherical shell: I_shell = (2/3) M R^2.\nStep 3: Ratio I_solid / I_shell = (2/5) / (2/3) = 3/5.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Moment of inertia of solid sphere: I_{solid} = (2/5) M R^2.\nStep 2: Moment of inertia of spherical shell: I_{shell} = (2/3) M R^2.\nStep 3: Ratio I_{solid} / I_{shell} = (2/5) / (2/3) = 3/5.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -839,7 +839,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A circular disc of radius R and mass M rolls purely on a horizontal surface with linear velocity v. What is the total kinetic energy of the rolling disc?",
     "options": [
       {
@@ -864,8 +864,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total kinetic energy K_total = K_trans + K_rot = (1/2) M v^2 + (1/2) I ω^2.\nStep 2: For a disc, I = (1/2) M R^2 and pure rolling gives ω = v / R.\nStep 3: K_total = (1/2) M v^2 + (1/2) ((1/2) M R^2) (v/R)^2 = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total kinetic energy K_{total} = K_{trans} + K_{rot} = (1/2) M v^2 + (1/2) I ω^2.\nStep 2: For a disc, I = (1/2) M R^2 and pure rolling gives ω = v / R.\nStep 3: K_{total} = (1/2) M v^2 + (1/2) ((1/2) M R^2) (v/R)^2 = (1/2) M v^2 + (1/4) M v^2 = (3/4) M v^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -888,33 +888,33 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A uniform rod of length L and mass M is free to rotate in a vertical plane about a smooth horizontal axis through its upper end. It is held vertically upside down (unstable equilibrium) and released. What is the angular velocity of the rod when it passes through the lowest vertical position?",
     "options": [
       {
         "label": "A",
-        "text": "sqrt(6 g / L)",
+        "text": "\\sqrt{6 g / L}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "sqrt(3 g / L)",
+        "text": "\\sqrt{3 g / L}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "sqrt(12 g / L)",
+        "text": "\\sqrt{12 g / L}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "2 sqrt(g / L)",
+        "text": "2 \\sqrt{g / L}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fall in center of mass from top vertical to bottom vertical: h = L/2 - (-L/2) = L.\nStep 2: Loss in gravitational PE = M g h = M g L.\nStep 3: Gain in rotational KE about pivot = (1/2) I ω^2 = (1/2) ((1/3) M L^2) ω^2 = (1/6) M L^2 ω^2.\nStep 4: Equating energies: (1/6) M L^2 ω^2 = M g L => ω^2 = 6 g / L => ω = sqrt(6 g / L). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Fall in center of mass from top vertical to bottom vertical: h = L/2 - (-L/2) = L.\nStep 2: Loss in gravitational PE = M g h = M g L.\nStep 3: Gain in rotational KE about pivot = (1/2) I ω^2 = (1/2) ((1/3) M L^2) ω^2 = (1/6) M L^2 ω^2.\nStep 4: Equating energies: (1/6) M L^2 ω^2 = M g L => ω^2 = 6 g / L => ω = \\sqrt{6 g / L}. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -922,10 +922,10 @@
         "languageCode": "ta",
         "stemText": "L நீளமும் M நிறையும் கொண்ட சீரான தண்டு மேல் முனையில் பொருத்தப்பட்டு சுழலக் கூடியது. அது உச்சியில் நிலையற்ற செங்குத்து நிலையிலிருந்து விடுவிக்கப்படுகிறது. அது கீழ்நோக்கிய செங்குத்து நிலையைக் கடக்கும் போது அதன் கோண வேகம் என்ன?",
         "optionTexts": [
-          "sqrt(6 g / L)",
-          "sqrt(3 g / L)",
-          "sqrt(12 g / L)",
-          "2 sqrt(g / L)"
+          "\\sqrt{6 g / L}",
+          "\\sqrt{3 g / L}",
+          "\\sqrt{12 g / L}",
+          "2 \\sqrt{g / L}"
         ]
       }
     ]
@@ -986,7 +986,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "If the earth suddenly shrinks to half of its present radius without any change in its total mass, what will be the new duration of one day?",
     "options": [
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Conservation of angular momentum: I1 ω1 = I2 ω2 => I1 (2π / T1) = I2 (2π / T2) => T2 = T1 * (I2 / I1).\nStep 2: Moment of inertia of sphere I = (2/5) M R^2 ∝ R^2.\nStep 3: When R becomes R/2, I becomes I/4.\nStep 4: T2 = T1 * (1/4) = 24 hours / 4 = 6 hours. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1035,7 +1035,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid cylinder and a hollow cylinder of equal masses and identical outer radii roll down an inclined plane without slipping. Which one arrives at the bottom with greater kinetic energy and greater speed?",
     "options": [
       {
@@ -1060,8 +1060,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total kinetic energy at bottom = Initial potential energy = M g h, which is identical for both.\nStep 2: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ].\nStep 3: For solid cylinder k^2/R^2 = 0.5; for hollow cylinder k^2/R^2 = 1.0.\nStep 4: Solid cylinder has lower k^2/R^2, so it has greater linear speed v_solid = sqrt(4gh/3) > v_hollow = sqrt(gh). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total kinetic energy at bottom = Initial potential energy = M g h, which is identical for both.\nStep 2: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ].\nStep 3: For solid cylinder k^2/R^2 = 0.5; for hollow cylinder k^2/R^2 = 1.0.\nStep 4: Solid cylinder has lower k^2/R^2, so it has greater linear speed v_{solid} = \\sqrt{4gh/3} > v_{hollow} = \\sqrt{gh}. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the moment of inertia of a uniform circular ring of mass M and radius R about a tangent in its own plane?",
     "options": [
       {
@@ -1109,8 +1109,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Moment of inertia of ring about diameter: I_diameter = (1/2) M R^2.\nStep 2: By parallel axis theorem, tangent in plane is parallel to diameter at distance d = R.\nStep 3: I_tangent = I_diameter + M R^2 = (1/2) M R^2 + M R^2 = (3/2) M R^2.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Moment of inertia of ring about diameter: I_{diameter} = (1/2) M R^2.\nStep 2: By parallel axis theorem, tangent in plane is parallel to diameter at distance d = R.\nStep 3: I_{tangent} = I_{diameter} + M R^2 = (1/2) M R^2 + M R^2 = (3/2) M R^2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid sphere rolls down two different inclined planes of equal heights but different inclinations θ1 and θ2. Which of the following statements is true regarding the speed v and time of descent t?",
     "options": [
       {
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ] depends only on vertical height h, so speeds are equal.\nStep 2: Length of incline s = h / sin θ; acceleration a = g sin θ / (1 + k^2/R^2).\nStep 3: Time t = sqrt(2s / a) = [ 1 / sin θ ] * sqrt[ 2h(1 + k^2/R^2) / g ].\nStep 4: Greater θ (steeper incline) gives larger sin θ, hence smaller time t. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Speed at bottom v = sqrt[ 2gh / (1 + k^2/R^2) ] depends only on vertical height h, so speeds are equal.\nStep 2: Length of incline s = h / sin θ; acceleration a = g sin θ / (1 + k^2/R^2).\nStep 3: Time t = \\sqrt{2s / a} = [ 1 / sin θ ] * sqrt[ 2h(1 + k^2/R^2) / g ].\nStep 4: Greater θ (steeper incline) gives larger sin θ, hence smaller time t. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1280,12 +1280,12 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A particle of mass m is projected with speed u at angle 45° to the horizontal. What is the magnitude of angular momentum of the projectile about the point of projection when it is at its maximum height?",
     "options": [
       {
         "label": "A",
-        "text": "m u^3 / (4 sqrt(2) g)",
+        "text": "m u^3 / (4 \\sqrt{2} g)",
         "isCorrect": true
       },
       {
@@ -1300,13 +1300,13 @@
       },
       {
         "label": "D",
-        "text": "m u^3 / (sqrt(2) g)",
+        "text": "m u^3 / (\\sqrt{2} g)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: At maximum height, velocity is purely horizontal: v = u cos 45° = u / sqrt(2).\nStep 2: Maximum height is H = u^2 sin^2 45° / (2g) = u^2 (1/2) / (2g) = u^2 / (4g).\nStep 3: Angular momentum about point of projection: L = m * v_horizontal * H = m * (u / sqrt(2)) * (u^2 / (4g)).\nStep 4: L = m u^3 / (4 sqrt(2) g). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: At maximum height, velocity is purely horizontal: v = u cos 45° = u / \\sqrt{2}.\nStep 2: Maximum height is H = u^2 sin^2 45° / (2g) = u^2 (1/2) / (2g) = u^2 / (4g).\nStep 3: Angular momentum about point of projection: L = m * v_{horizontal} * H = m * (u / \\sqrt{2}) * (u^2 / (4g)).\nStep 4: L = m u^3 / (4 \\sqrt{2} g). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1314,10 +1314,10 @@
         "languageCode": "ta",
         "stemText": "m நிறையுள்ள துகள் கிடைமட்டத்திற்கு 45° கோணத்தில் u வேகத்தில் எறியப்படுகிறது. அது தனது பெரும உயரத்தை அடையும் போது, எறியப்பட்ட புள்ளியைப் பற்றிய அதன் கோண உந்தத்தின் எண்மதிப்பு என்ன?",
         "optionTexts": [
-          "m u^3 / (4 sqrt(2) g)",
+          "m u^3 / (4 \\sqrt{2} g)",
           "m u^3 / (2 g)",
           "m u^2 / (2 g)",
-          "m u^3 / (sqrt(2) g)"
+          "m u^3 / (\\sqrt{2} g)"
         ]
       }
     ]
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A solid disc of mass M and radius R rolls without slipping down an incline of angle θ. What is the minimum coefficient of static friction μ_s required to prevent slipping?",
     "options": [
       {
@@ -1355,7 +1355,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Friction required for pure rolling down an incline: f = M g sin θ / [ 1 + M R^2 / I ].\nStep 2: For a disc, I = (1/2) M R^2, so f = M g sin θ / [ 1 + 2 ] = (1/3) M g sin θ.\nStep 3: Normal force N = M g cos θ.\nStep 4: Condition for no slip: f <= μ_s N => (1/3) M g sin θ <= μ_s M g cos θ => μ_s >= (1/3) tan θ. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1378,7 +1378,7 @@
     "nodeTagCode": "phy_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two point masses m and 2m are separated by a distance d. The moment of inertia of the system about an axis passing through their center of mass and perpendicular to the line joining them is:",
     "options": [
       {
@@ -1403,8 +1403,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Distance of mass m from center of mass: r1 = [2m / (m + 2m)] d = 2d / 3.\nStep 2: Distance of mass 2m from center of mass: r2 = [m / (m + 2m)] d = d / 3.\nStep 3: Moment of inertia I = m r1^2 + 2m r2^2 = m (2d/3)^2 + 2m (d/3)^2 = m (4d^2/9) + 2m (d^2/9) = (6/9) m d^2 = (2/3) m d^2 (or μ d^2 where μ = 2m/3).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Distance of mass m from center of mass: r1 = [2m / (m + 2m)] d = 2d / 3.\nStep 2: Distance of mass 2m from center of mass: r2 = [m / (m + 2m)] d = d / 3.\nStep 3: Moment of inertia I = m r_1^2 + 2m r_2^2 = m (2d/3)^2 + 2m (d/3)^2 = m (4d^2/9) + 2m (d^2/9) = (6/9) m d^2 = (2/3) m d^2 (or μ d^2 where μ = 2m/3).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

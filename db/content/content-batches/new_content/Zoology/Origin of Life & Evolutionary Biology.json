@@ -398,7 +398,7 @@
     "nodeTagCode": "zoo_05",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In a human population adhering to Hardy-Weinberg equilibrium, the frequency of a recessive allele (a) for an autosomal trait is 0.4. What is the frequency of heterozygous individuals (Aa) in this population?",
     "options": [
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: According to Hardy-Weinberg equation: p + q = 1 and p^2 + 2pq + q^2 = 1.\nStep 2: Given recessive allele frequency q = 0.4.\nStep 3: Dominant allele frequency p = 1 - 0.4 = 0.6.\nStep 4: Heterozygote frequency (2pq) = 2 × 0.6 × 0.4 = 0.48 (48%).\nStep 5: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

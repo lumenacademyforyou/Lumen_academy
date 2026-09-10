@@ -251,7 +251,7 @@
     "nodeTagCode": "chem_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following carbanions is the most stable?",
     "options": [
       {
@@ -277,7 +277,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Carbanion stability increases with increasing s-character of the carbon holding the lone pair.\nStep 2: Carbon hybridization: HC≡C^- is sp (50% s-character); CH2=CH^- is sp2 (33.3% s-character); CH3-CH2^- is sp3 (25% s-character).\nStep 3: Higher s-character brings the lone pair closer to the positively charged nucleus, stabilizing the negative charge.\nStep 4: Stability order: HC≡C^- > CH2=CH^- > CH3-CH2^- > (CH3)2CH^-. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -937,7 +937,7 @@
     "nodeTagCode": "chem_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following cyclic species is aromatic?",
     "options": [
       {
@@ -962,8 +962,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In the cyclopentadienyl anion, all 5 carbon atoms are sp2 hybridized in a planar ring.\nStep 2: The system contains 4 pi-electrons from two double bonds and 2 electrons from the carbanion lone pair, giving a total of 6 pi-electrons.\nStep 3: 6 pi-electrons satisfies Huckel's rule (4n + 2 = 6, for n = 1).\nStep 4: Cyclobutadiene (4 pi) and cyclopentadienyl cation (4 pi) are anti-aromatic. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In the cyclopentadienyl anion, all 5 carbon atoms are sp2 hybridized in a planar ring.\nStep 2: The system contains 4 pi-electrons from two double bonds and 2 electrons from the carbanion lone pair, giving a total of 6 pi-electrons.\nStep 3: 6 pi-electrons satisfies Huckel's rule (4n + 2 = 6, for n = 1).\nStep 4: Cyclobutadiene (4 \\pi) and cyclopentadienyl cation (4 \\pi) are anti-aromatic. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -986,7 +986,7 @@
     "nodeTagCode": "chem_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the nitration of benzene using a mixture of concentrated HNO3 and concentrated H2SO4, the active electrophile is:",
     "options": [
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In the nitrating mixture, concentrated H2SO4 acts as a Bronsted-Lowry acid and protonates HNO3 (which acts as a base).\nStep 2: HNO3 + 2 H2SO4 <=> NO2^+ + H3O^+ + 2 HSO4^-.\nStep 3: Loss of water from protonated nitric acid generates the linear nitronium ion (NO2^+).\nStep 4: NO2^+ acts as the electrophile attacking the benzene ring. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

@@ -55,7 +55,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The escape velocity from the surface of Earth is 11.2 km/s. If a planet has twice the mass and twice the radius of Earth, what is the escape velocity from that planet's surface?",
     "options": [
       {
@@ -80,8 +80,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for escape velocity: v_e = sqrt(2 G M / R).\nStep 2: For the new planet: v_e' = sqrt(2 G (2M) / (2R)) = sqrt(2 G M / R) = v_e.\nStep 3: v_e' = 11.2 km/s.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula for escape velocity: v_e = \\sqrt{2 G M / R}.\nStep 2: For the new planet: v_e' = \\sqrt{2 G (2M) / (2R)} = \\sqrt{2 G M / R} = v_e.\nStep 3: v_e' = 11.2 km/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -104,7 +104,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A satellite orbits the Earth in a circular orbit of radius r with orbital speed v₀. If the radius of its orbit is increased to 4r, what is its new orbital speed?",
     "options": [
       {
@@ -124,13 +124,13 @@
       },
       {
         "label": "D",
-        "text": "v₀ / sqrt(2)",
+        "text": "v₀ / \\sqrt{2}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Orbital velocity formula: v = sqrt(G M / r).\nStep 2: Orbital velocity is inversely proportional to square root of radius: v ∝ 1 / sqrt(r).\nStep 3: For r' = 4r: v' = sqrt(G M / 4r) = (1/2) sqrt(G M / r) = v₀ / 2.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Orbital velocity formula: v = \\sqrt{G M / r}.\nStep 2: Orbital velocity is inversely proportional to square root of radius: v ∝ 1 / \\sqrt{r}.\nStep 3: For r' = 4r: v' = \\sqrt{G M / 4r} = (1/2) \\sqrt{G M / r} = v₀ / 2.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -141,7 +141,7 @@
           "v₀ / 2",
           "v₀ / 4",
           "2 v₀",
-          "v₀ / sqrt(2)"
+          "v₀ / \\sqrt{2}"
         ]
       }
     ]
@@ -153,7 +153,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A geostationary satellite orbits the Earth at a height of approximately 36,000 km above the Earth's surface (orbital radius ≈ 7R). Another satellite orbits at a radius of 1.75R (≈ 7R/4). What is the time period of this second satellite?",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Kepler's third law: T^2 ∝ r^3 => (T2 / T1) = (r2 / r1)^(3/2).\nStep 2: r2 / r1 = (7R / 4) / (7R) = 1/4.\nStep 3: T2 = T1 * (1/4)^(3/2) = 24 hours * (1/8) = 3 hours.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: By Kepler's third law: T^2 ∝ r^3 => (T2 / T1) = (r2 / r1)^{3/2}.\nStep 2: r2 / r1 = (7R / 4) / (7R) = 1/4.\nStep 3: T2 = T1 * (1/4)^{3/2} = 24 hours * (1/8) = 3 hours.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,7 +202,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A steel wire of length L and cross-sectional area A is stretched by a load F. If Young's modulus of steel is Y, what is the elastic potential energy stored in the stretched wire?",
     "options": [
       {
@@ -228,7 +228,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Elastic potential energy U = (1/2) * Force * Elongation = (1/2) F ΔL.\nStep 2: From Young's modulus: Y = (F / A) / (ΔL / L) => ΔL = F L / (A Y).\nStep 3: U = (1/2) F * [ F L / (A Y) ] = F^2 L / (2 A Y).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -300,7 +300,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Eight identical small spherical mercury droplets, each falling with a terminal speed of 5.0 cm/s in air, coalesce to form a single large spherical drop. What is the terminal velocity of the single large drop?",
     "options": [
       {
@@ -326,7 +326,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Conservation of volume: (4/3) π R^3 = 8 * (4/3) π r^3 => R = 2r.\nStep 2: Terminal velocity from Stokes' law: v_t = (2/9) [r^2 (ρ - σ) g] / η => v_t ∝ r^2.\nStep 3: Ratio of terminal speeds: v_T / v_t = (R / r)^2 = (2r / r)^2 = 4.\nStep 4: v_T = 4 * 5.0 cm/s = 20 cm/s. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,7 +398,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A hydraulic automobile lift has an input piston of radius 5 cm and an output piston of radius 15 cm. What force must be applied to the input piston to support a car of mass 1800 kg on the output piston? (Take g = 10 m/s²)",
     "options": [
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: By Pascal's principle: P1 = P2 => F1 / A1 = F2 / A2 => F1 = F2 * (A1 / A2).\nStep 2: Area ratio: A1 / A2 = (r1 / r2)^2 = (5 / 15)^2 = (1/3)^2 = 1/9.\nStep 3: Weight on output piston: F2 = m g = 1800 kg * 10 m/s² = 18,000 N.\nStep 4: Input force F1 = 18,000 N * (1/9) = 2000 N. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An open cylindrical water tank of height H is completely filled with water. A small orifice is punched in the vertical wall at depth h below the water surface. At what depth h should the orifice be made so that the horizontal range of the issuing water stream on the ground is maximum?",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Velocity of efflux: v = sqrt(2 g h).\nStep 2: Time to fall through remaining height (H - h): t = sqrt[ 2(H - h) / g ].\nStep 3: Horizontal range: R = v * t = sqrt(2 g h) * sqrt[ 2(H - h) / g ] = 2 sqrt[ h (H - h) ].\nStep 4: R is maximum when product h (H - h) is maximum, which occurs at h = H / 2 (maximum range R_max = H). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Velocity of efflux: v = \\sqrt{2 g h}.\nStep 2: Time to fall through remaining height (H - h): t = sqrt[ 2(H - h) / g ].\nStep 3: Horizontal range: R = v * t = \\sqrt{2 g h} * sqrt[ 2(H - h) / g ] = 2 sqrt[ h (H - h) ].\nStep 4: R is maximum when product h (H - h) is maximum, which occurs at h = H / 2 (maximum range R_{max} = H). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,33 +496,33 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "If the acceleration due to gravity at the equator is to become zero due to Earth's axial rotation, what should be the new angular speed of rotation of the Earth? (Take R = 6400 km and g = 10 m/s²)",
     "options": [
       {
         "label": "A",
-        "text": "1.25 x 10^-3 rad/s (1 / 800 rad/s)",
+        "text": "1.25 x 10^{-3} rad/s (1 / 800 rad/s)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "7.27 x 10^-5 rad/s",
+        "text": "7.27 x 10^{-5} rad/s",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "2.5 x 10^-3 rad/s",
+        "text": "2.5 x 10^{-3} rad/s",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "6.28 x 10^-4 rad/s",
+        "text": "6.28 x 10^{-4} rad/s",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Variation of g with latitude λ: g' = g - R ω^2 cos^2 λ.\nStep 2: At equator (λ = 0°): g' = g - R ω^2 = 0 => ω = sqrt(g / R).\nStep 3: Substitute g = 10 m/s² and R = 6.4 x 10^6 m: ω = sqrt(10 / (6.4 x 10^6)) = sqrt(1 / 640000) = 1 / 800 rad/s = 1.25 x 10^-3 rad/s.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Variation of g with latitude λ: g' = g - R ω^2 cos^2 λ.\nStep 2: At equator (λ = 0°): g' = g - R ω^2 = 0 => ω = \\sqrt{g / R}.\nStep 3: Substitute g = 10 m/s² and R = 6.4 x 10^6 m: ω = \\sqrt{10 / (6.4 x 10^6)} = \\sqrt{1 / 640000} = 1 / 800 rad/s = 1.25 x 10^{-3} rad/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -530,10 +530,10 @@
         "languageCode": "ta",
         "stemText": "பூமியின் சுழற்சியால் நிலநடுக்கோட்டு பகுதியில் புவியீர்ப்பு முடுக்கம் பூஜ்ஜியமாக மாற பூமியின் புதிய கோண வேகம் என்னவாக இருக்க வேண்டும்? (R = 6400 km மற்றும் g = 10 m/s²)",
         "optionTexts": [
-          "1.25 x 10^-3 rad/s (1 / 800 rad/s)",
-          "7.27 x 10^-5 rad/s",
-          "2.5 x 10^-3 rad/s",
-          "6.28 x 10^-4 rad/s"
+          "1.25 x 10^{-3} rad/s (1 / 800 rad/s)",
+          "7.27 x 10^{-5} rad/s",
+          "2.5 x 10^{-3} rad/s",
+          "6.28 x 10^{-4} rad/s"
         ]
       }
     ]
@@ -594,7 +594,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A body of mass m is lifted from the surface of the Earth to an altitude equal to the Earth's radius R. What is the increase in gravitational potential energy of the body?",
     "options": [
       {
@@ -620,7 +620,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Potential energy at surface: U1 = - G M m / R.\nStep 2: Potential energy at height h = R (distance r = 2R): U2 = - G M m / (2R).\nStep 3: Change in potential energy ΔU = U2 - U1 = - G M m / (2R) - (- G M m / R) = G M m / (2R).\nStep 4: Since g = G M / R^2 => G M / R = g R, ΔU = (1/2) m g R. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -643,7 +643,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two wires of identical material and lengths L and 2L have radii 2r and r respectively. If they are stretched by the same tensile force F, what is the ratio of elongation of the first wire to that of the second wire?",
     "options": [
       {
@@ -669,7 +669,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Elongation formula: ΔL = (F L) / (A Y) = (F L) / (π r^2 Y) ∝ L / r^2.\nStep 2: For wire 1: ΔL1 ∝ L / (2r)^2 = L / (4 r^2).\nStep 3: For wire 2: ΔL2 ∝ (2L) / (r^2) = 2L / r^2.\nStep 4: Ratio ΔL1 / ΔL2 = [ L / (4 r^2) ] / [ 2L / r^2 ] = (1/4) / 2 = 1/8. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,17 +692,17 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two soap bubbles of radii r1 and r2 (r1 > r2) coalesce under isothermal conditions in vacuum to form a combined bubble of radius R. What is the relation for R in terms of r1 and r2?",
     "options": [
       {
         "label": "A",
-        "text": "R = sqrt(r1^2 + r2^2)",
+        "text": "R = \\sqrt{r_1^2 + r_2^2}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "R = (r1^3 + r2^3)^(1/3)",
+        "text": "R = (r_1^3 + r_2^3)^{1/3}",
         "isCorrect": false
       },
       {
@@ -712,13 +712,13 @@
       },
       {
         "label": "D",
-        "text": "R = sqrt(r1 r2)",
+        "text": "R = \\sqrt{r1 r2}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In vacuum, pressure inside bubble of radius r is P = 4T / r, and volume is V = (4/3) π r^3.\nStep 2: By Boyle's law for isothermal mixing: P1 V1 + P2 V2 = P V.\nStep 3: (4T / r1) * ((4/3) π r1^3) + (4T / r2) * ((4/3) π r2^3) = (4T / R) * ((4/3) π R^3).\nStep 4: Simplifying yields r1^2 + r2^2 = R^2 => R = sqrt(r1^2 + r2^2). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In vacuum, pressure inside bubble of radius r is P = 4T / r, and volume is V = (4/3) π r^3.\nStep 2: By Boyle's law for isothermal mixing: P1 V1 + P2 V2 = P V.\nStep 3: (4T / r1) * ((4/3) π r_1^3) + (4T / r2) * ((4/3) π r_2^3) = (4T / R) * ((4/3) π R^3).\nStep 4: Simplifying yields r_1^2 + r_2^2 = R^2 => R = \\sqrt{r_1^2 + r_2^2}. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -726,10 +726,10 @@
         "languageCode": "ta",
         "stemText": "வெற்றிடத்தில் சமவெப்ப நிலையில் r1 மற்றும் r2 ஆரமுடைய இரு சோப்புக் குமிழிகள் இணைந்து R ஆரமுடைய ஒரு குமிழியாக மாறுகின்றன. R இன் தொடர்பு என்ன?",
         "optionTexts": [
-          "R = sqrt(r1^2 + r2^2)",
-          "R = (r1^3 + r2^3)^(1/3)",
+          "R = \\sqrt{r_1^2 + r_2^2}",
+          "R = (r_1^3 + r_2^3)^{1/3}",
           "R = r1 + r2",
-          "R = sqrt(r1 r2)"
+          "R = \\sqrt{r1 r2}"
         ]
       }
     ]
@@ -790,7 +790,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An incompressible ideal fluid flows through a horizontal pipe of non-uniform cross-section. If the cross-sectional area at two points are A1 = 10 cm^2 and A2 = 5 cm^2, and velocity at section 1 is v1 = 2 m/s, what is the pressure difference (P1 - P2) between the two sections? (Density of fluid ρ = 1000 kg/m^3)",
     "options": [
       {
@@ -815,8 +815,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equation of continuity: A1 v1 = A2 v2 => v2 = (A1 / A2) v1 = (10 / 5) * 2 = 4 m/s.\nStep 2: Bernoulli's equation for horizontal pipe: P1 + (1/2) ρ v1^2 = P2 + (1/2) ρ v2^2.\nStep 3: P1 - P2 = (1/2) ρ (v2^2 - v1^2) = (1/2) * 1000 * (4^2 - 2^2) = 500 * (16 - 4) = 500 * 12 = 6000 Pa.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Equation of continuity: A1 v1 = A2 v2 => v2 = (A1 / A2) v1 = (10 / 5) * 2 = 4 m/s.\nStep 2: Bernoulli's equation for horizontal pipe: P1 + (1/2) ρ v_1^2 = P2 + (1/2) ρ v_2^2.\nStep 3: P1 - P2 = (1/2) ρ (v_2^2 - v_1^2) = (1/2) * 1000 * (4^2 - 2^2) = 500 * (16 - 4) = 500 * 12 = 6000 Pa.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -888,7 +888,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A spherical ball of density ρ and radius r is dropped into a viscous liquid of density σ (ρ > σ) and coefficient of viscosity η. When it reaches terminal velocity, what is the rate of heat generation due to viscous dissipation?",
     "options": [
       {
@@ -914,7 +914,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Terminal velocity v_t ∝ r^2.\nStep 2: Viscous retarding force F_v = 6 π η r v_t ∝ r * r^2 = r^3.\nStep 3: Rate of heat generation (power dissipated) P = F_v * v_t ∝ r^3 * r^2 = r^5.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -937,7 +937,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A wire of length L, area of cross-section A and Young's modulus Y is stretched by x. The work done per unit volume in stretching the wire is:",
     "options": [
       {
@@ -963,7 +963,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Energy density = Energy / Volume = (1/2) * Stress * Strain.\nStep 2: Stress = Y * Strain = Y * (x / L).\nStep 3: Energy density = (1/2) * [ Y (x/L) ] * (x/L) = (1/2) Y (x / L)^2.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1035,33 +1035,33 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A metal cube of edge 10 cm subjected to a uniform hydrostatic pressure of 2.0 x 10^7 Pa undergoes a volume contraction of 0.05 cm^3. What is the Bulk modulus of the metal?",
     "options": [
       {
         "label": "A",
-        "text": "4.0 x 10^11 Pa",
+        "text": "4.0 x 10^{11} Pa",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "2.0 x 10^11 Pa",
+        "text": "2.0 x 10^{11} Pa",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "1.0 x 10^11 Pa",
+        "text": "1.0 x 10^{11} Pa",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "8.0 x 10^11 Pa",
+        "text": "8.0 x 10^{11} Pa",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Original volume V = (10 cm)^3 = 1000 cm^3.\nStep 2: Volume strain = ΔV / V = 0.05 cm^3 / 1000 cm^3 = 5.0 x 10^-5.\nStep 3: Bulk modulus B = P / (ΔV / V) = (2.0 x 10^7 Pa) / (5.0 x 10^-5).\nStep 4: B = 4.0 x 10^11 Pa. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Original volume V = (10 cm)^3 = 1000 cm^3.\nStep 2: Volume strain = ΔV / V = 0.05 cm^3 / 1000 cm^3 = 5.0 x 10^{-5}.\nStep 3: Bulk modulus B = P / (ΔV / V) = (2.0 x 10^7 Pa) / (5.0 x 10^{-5}).\nStep 4: B = 4.0 x 10^{11} Pa. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1069,10 +1069,10 @@
         "languageCode": "ta",
         "stemText": "10 cm பக்கமுள்ள உலோகக் கனசதுரத்தின் மீது 2.0 x 10^7 Pa சீரான அழுத்தம் செலுத்தப்படும் போது அதன் பருமன் 0.05 cm^3 சுருங்குகிறது. உலோகத்தின் பருமக் குணகம் (B) என்ன?",
         "optionTexts": [
-          "4.0 x 10^11 Pa",
-          "2.0 x 10^11 Pa",
-          "1.0 x 10^11 Pa",
-          "8.0 x 10^11 Pa"
+          "4.0 x 10^{11} Pa",
+          "2.0 x 10^{11} Pa",
+          "1.0 x 10^{11} Pa",
+          "8.0 x 10^{11} Pa"
         ]
       }
     ]
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two satellites S1 and S2 revolve around a planet in coplanar circular orbits in the same sense with radii 1 x 10^4 km and 4 x 10^4 km respectively. If the period of S1 is 8 hours, what is the time interval between their successive closest approaches?",
     "options": [
       {
@@ -1109,8 +1109,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Kepler's third law: T2 / T1 = (r2 / r1)^(3/2) = (4/1)^(3/2) = 8 => T2 = 8 * 8 = 64 hours.\nStep 2: Angular speeds: ω1 = 2π / 8, ω2 = 2π / 64.\nStep 3: Relative angular speed: ω_rel = ω1 - ω2 = 2π [ 1/8 - 1/64 ] = 2π [ (8 - 1) / 64 ] = 2π (7 / 64).\nStep 4: Time interval between closest approaches: T_rel = 2π / ω_rel = 64 / 7 hours. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: By Kepler's third law: T2 / T1 = (r2 / r1)^{3/2} = (4/1)^{3/2} = 8 => T2 = 8 * 8 = 64 hours.\nStep 2: Angular speeds: ω1 = 2π / 8, ω2 = 2π / 64.\nStep 3: Relative angular speed: ω_{rel} = ω1 - ω2 = 2π [ 1/8 - 1/64 ] = 2π [ (8 - 1) / 64 ] = 2π (7 / 64).\nStep 4: Time interval between closest approaches: T_{rel} = 2π / ω_{rel} = 64 / 7 hours. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A U-tube contains water and methylated spirit separated by mercury in the columns. The mercury columns in the two arms are in level with 10.0 cm of water in one arm and 12.5 cm of spirit in the other. What is the specific gravity of the spirit?",
     "options": [
       {
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equal pressure at mercury interface: P_water = P_spirit => h_water * ρ_water * g = h_spirit * ρ_spirit * g.\nStep 2: Specific gravity = ρ_spirit / ρ_water = h_water / h_spirit.\nStep 3: Ratio = 10.0 cm / 12.5 cm = 0.80.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Equal pressure at mercury interface: P_{water} = P_{spirit} => h_{water} * ρ_{water} * g = h_{spirit} * ρ_{spirit} * g.\nStep 2: Specific gravity = ρ_{spirit} / ρ_{water} = h_{water} / h_{spirit}.\nStep 3: Ratio = 10.0 cm / 12.5 cm = 0.80.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1231,7 +1231,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The value of gravitational potential V at the center of a uniform solid sphere of mass M and radius R (taking V = 0 at infinity) is:",
     "options": [
       {
@@ -1256,8 +1256,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Potential inside a uniform solid sphere at distance r <= R is V(r) = - (G M / 2 R^3) (3 R^2 - r^2).\nStep 2: At center r = 0: V_center = - (G M / 2 R^3) (3 R^2) = - (3/2) G M / R.\nStep 3: This is 1.5 times the potential at the surface.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Potential inside a uniform solid sphere at distance r <= R is V(r) = - (G M / 2 R^3) (3 R^2 - r^2).\nStep 2: At center r = 0: V_{center} = - (G M / 2 R^3) (3 R^2) = - (3/2) G M / R.\nStep 3: This is 1.5 times the potential at the surface.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1280,7 +1280,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Work done in blowing a liquid soap bubble of radius R is W. What is the additional work required to further expand the bubble to radius 2R?",
     "options": [
       {
@@ -1306,7 +1306,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Initial work to form bubble of radius R: W1 = T * 2 * (4π R^2) = 8π T R^2 = W.\nStep 2: Work to form bubble of radius 2R: W2 = 8π T (2R)^2 = 4 * (8π T R^2) = 4W.\nStep 3: Additional work required = W2 - W1 = 4W - W = 3W.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An ice block floats in water in a beaker. What happens to the water level in the beaker when the ice melts completely?",
     "options": [
       {
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Archimedes' principle, floating ice of mass m displaces volume of water V_displaced = m / ρ_water.\nStep 2: When ice melts, it turns into water of the exact same mass m, occupying volume V_melted = m / ρ_water.\nStep 3: Since V_melted = V_displaced, the melted ice fills the exact displaced volume.\nStep 4: Water level remains unchanged. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: By Archimedes' principle, floating ice of mass m displaces volume of water V_{displaced} = m / ρ_{water}.\nStep 2: When ice melts, it turns into water of the exact same mass m, occupying volume V_{melted} = m / ρ_{water}.\nStep 3: Since V_{melted} = V_{displaced}, the melted ice fills the exact displaced volume.\nStep 4: Water level remains unchanged. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1378,33 +1378,33 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The dimensions of the universal gravitational constant G are:",
     "options": [
       {
         "label": "A",
-        "text": "[M^-1 L^3 T^-2]",
+        "text": "[M^{-1} L^3 T^{-2}]",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "[M^1 L^3 T^-2]",
+        "text": "[M^1 L^3 T^{-2}]",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "[M^-1 L^2 T^-2]",
+        "text": "[M^{-1} L^2 T^{-2}]",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "[M^-2 L^3 T^-1]",
+        "text": "[M^{-2} L^3 T^{-1}]",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: From Newton's law of gravitation: F = G M1 M2 / r^2 => G = F r^2 / M^2.\nStep 2: [G] = [M L T^-2] [L^2] / [M^2] = [M^-1 L^3 T^-2].\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: From Newton's law of gravitation: F = G M1 M2 / r^2 => G = F r^2 / M^2.\nStep 2: [G] = [M L T^{-2}] [L^2] / [M^2] = [M^{-1} L^3 T^{-2}].\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1412,10 +1412,10 @@
         "languageCode": "ta",
         "stemText": "ஈர்ப்பியல் மாறிலி G இன் பரிமாண வாய்ப்பாடு என்ன?",
         "optionTexts": [
-          "[M^-1 L^3 T^-2]",
-          "[M^1 L^3 T^-2]",
-          "[M^-1 L^2 T^-2]",
-          "[M^-2 L^3 T^-1]"
+          "[M^{-1} L^3 T^{-2}]",
+          "[M^1 L^3 T^{-2}]",
+          "[M^{-1} L^2 T^{-2}]",
+          "[M^{-2} L^3 T^{-1}]"
         ]
       }
     ]
@@ -1427,7 +1427,7 @@
     "nodeTagCode": "phy_10",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A body weighs 200 N on the surface of the Earth. How much will it weigh at a height h = R/2 above the Earth's surface? (R is Earth's radius)",
     "options": [
       {
@@ -1453,7 +1453,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Variation of g with height h: g_h = g / (1 + h/R)^2.\nStep 2: Substitute h = R/2: g_h = g / (1 + 1/2)^2 = g / (3/2)^2 = 4g / 9.\nStep 3: Weight W_h = m g_h = (4/9) m g = (4/9) * 200 N = 800 / 9 N ≈ 88.9 N.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

@@ -6,44 +6,44 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "For the reaction 2 N2O5(g) -> 4 NO2(g) + O2(g), the rate of disappearance of N2O5 is 6.25 * 10^-3 mol L^-1 s^-1. What is the rate of formation of NO2?",
+    "stemFormat": "latex",
+    "stemText": "For the reaction 2 N2O5(g) -> 4 NO2(g) + O2(g), the rate of disappearance of N2O5 is 6.25 * 10^{-3} mol L^{-1} s^{-1}. What is the rate of formation of NO2?",
     "options": [
       {
         "label": "A",
-        "text": "1.25 * 10^-2 mol L^-1 s^-1",
+        "text": "1.25 * 10^{-2} mol L^{-1} s^{-1}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "6.25 * 10^-3 mol L^-1 s^-1",
+        "text": "6.25 * 10^{-3} mol L^{-1} s^{-1}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "3.125 * 10^-3 mol L^-1 s^-1",
+        "text": "3.125 * 10^{-3} mol L^{-1} s^{-1}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "2.50 * 10^-2 mol L^-1 s^-1",
+        "text": "2.50 * 10^{-2} mol L^{-1} s^{-1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Express rate of reaction in terms of stoichiometric coefficients: Rate = -1/2 (d[N2O5]/dt) = 1/4 (d[NO2]/dt) = d[O2]/dt.\nStep 2: Given rate of disappearance of N2O5: -d[N2O5]/dt = 6.25 * 10^-3 mol L^-1 s^-1.\nStep 3: Rate of formation of NO2: d[NO2]/dt = (4/2) * (-d[N2O5]/dt) = 2 * (6.25 * 10^-3) = 1.25 * 10^-2 mol L^-1 s^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Express rate of reaction in terms of stoichiometric coefficients: Rate = -1/2 (d[N2O5]/dt) = 1/4 (d[NO2]/dt) = d[O2]/dt.\nStep 2: Given rate of disappearance of N2O5: -d[N2O5]/dt = 6.25 * 10^{-3} mol L^{-1} s^{-1}.\nStep 3: Rate of formation of NO2: d[NO2]/dt = (4/2) * (-d[N2O5]/dt) = 2 * (6.25 * 10^{-3}) = 1.25 * 10^{-2} mol L^{-1} s^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "2 N2O5(g) -> 4 NO2(g) + O2(g) என்ற வினையில், N2O5 மறைவு வீதம் 6.25 * 10^-3 mol L^-1 s^-1 எனில், NO2 உருவாதல் வீதம் என்ன?",
+        "stemText": "2 N2O5(g) -> 4 NO2(g) + O2(g) என்ற வினையில், N2O5 மறைவு வீதம் 6.25 * 10^{-3} mol L^{-1} s^{-1} எனில், NO2 உருவாதல் வீதம் என்ன?",
         "optionTexts": [
-          "1.25 * 10^-2 mol L^-1 s^-1",
-          "6.25 * 10^-3 mol L^-1 s^-1",
-          "3.125 * 10^-3 mol L^-1 s^-1",
-          "2.50 * 10^-2 mol L^-1 s^-1"
+          "1.25 * 10^{-2} mol L^{-1} s^{-1}",
+          "6.25 * 10^{-3} mol L^{-1} s^{-1}",
+          "3.125 * 10^{-3} mol L^{-1} s^{-1}",
+          "2.50 * 10^{-2} mol L^{-1} s^{-1}"
         ]
       }
     ]
@@ -55,33 +55,33 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What are the units of the rate constant (k) for a zero-order reaction?",
     "options": [
       {
         "label": "A",
-        "text": "mol L^-1 s^-1",
+        "text": "mol L^{-1} s^{-1}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "s^-1",
+        "text": "s^{-1}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "L mol^-1 s^-1",
+        "text": "L mol^{-1} s^{-1}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "L^2 mol^-2 s^-1",
+        "text": "L^2 mol^{-2} s^{-1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: General formula for units of rate constant: (mol L^-1)^(1 - n) * s^-1, where n is the order of the reaction.\nStep 2: For a zero-order reaction, n = 0.\nStep 3: Units of k = (mol L^-1)^(1 - 0) * s^-1 = mol L^-1 s^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: General formula for units of rate constant: (mol L^{-1})^{1 - n} * s^{-1}, where n is the order of the reaction.\nStep 2: For a zero-order reaction, n = 0.\nStep 3: Units of k = (mol L^{-1})^{1 - 0} * s^{-1} = mol L^{-1} s^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -89,10 +89,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு பூஜ்ஜிய வகை வினைக்கான வினைவேக மாறிலியின் (k) அலகு என்ன?",
         "optionTexts": [
-          "mol L^-1 s^-1",
-          "s^-1",
-          "L mol^-1 s^-1",
-          "L^2 mol^-2 s^-1"
+          "mol L^{-1} s^{-1}",
+          "s^{-1}",
+          "L mol^{-1} s^{-1}",
+          "L^2 mol^{-2} s^{-1}"
         ]
       }
     ]
@@ -153,7 +153,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For a zero-order reaction A -> Products, the half-life period (t1/2) is directly proportional to:",
     "options": [
       {
@@ -179,7 +179,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Integrated rate law for zero-order reaction: [A] = [A]0 - k*t.\nStep 2: At half-life t = t1/2, [A] = [A]0 / 2.\nStep 3: [A]0 / 2 = [A]0 - k * t1/2 => t1/2 = [A]0 / (2k).\nStep 4: Therefore, t1/2 is directly proportional to initial concentration [A]0 (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,7 +202,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The decomposition of gaseous ammonia on a hot platinum surface at high pressure is a zero-order reaction because:",
     "options": [
       {
@@ -228,7 +228,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The catalytic decomposition of NH3 on hot Pt proceeds by adsorption of NH3 molecules on active surface sites.\nStep 2: At high pressures, all the active sites on the platinum surface are completely occupied (saturated with adsorbed NH3).\nStep 3: Further increase in ammonia pressure cannot increase the amount adsorbed, rendering the rate independent of NH3 concentration (Rate = k[NH3]^0 = k).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -251,7 +251,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A first-order reaction is 50% complete in 20 minutes. How much time is required for 99.9% completion of the reaction?",
     "options": [
       {
@@ -276,8 +276,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: For a first-order reaction: t = (2.303 / k) * log10([A]0 / [A]).\nStep 2: For 99.9% completion, [A] = [A]0 - 0.999[A]0 = 0.001[A]0 = [A]0 / 1000.\nStep 3: t_99.9% = (2.303 / k) * log10(1000) = (2.303 / k) * 3 = 3 * (2.303 / k).\nStep 4: Since t1/2 = 0.693 / k = (2.303 * 0.301) / k, t_99.9% = 10 * t1/2 = 10 * 20 min = 200 minutes (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: For a first-order reaction: t = (2.303 / k) * log10([A]0 / [A]).\nStep 2: For 99.9% completion, [A] = [A]0 - 0.999[A]0 = 0.001[A]0 = [A]0 / 1000.\nStep 3: t_{99}.9% = (2.303 / k) * log10(1000) = (2.303 / k) * 3 = 3 * (2.303 / k).\nStep 4: Since t1/2 = 0.693 / k = (2.303 * 0.301) / k, t_{99}.9% = 10 * t1/2 = 10 * 20 min = 200 minutes (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,7 +398,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For a reaction A + B -> Products, doubling the concentration of A quadruples the rate, while doubling the concentration of B has no effect on the rate. The overall rate law is:",
     "options": [
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Let Rate = k [A]^x [B]^y.\nStep 2: When [A] is doubled (2^x), rate increases by a factor of 4 (2^2 = 4), which means x = 2 (second order in A).\nStep 3: When [B] is doubled (2^y), rate is unaffected (2^0 = 1), which means y = 0 (zero order in B).\nStep 4: Overall rate law is Rate = k [A]^2 [B]^0 = k [A]^2 (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,7 +496,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For most chemical reactions, an increase in temperature by 10 °C (e.g., from 298 K to 308 K) roughly doubles the reaction rate because:",
     "options": [
       {
@@ -521,8 +521,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: According to Maxwell-Boltzmann distribution, collision frequency increases only by ~1-2% for a 10 °C rise.\nStep 2: However, the area under the curve beyond the activation energy threshold nearly doubles.\nStep 3: The fraction of molecules with energy >= Ea (given by e^(-Ea/RT)) increases by ~100%, nearly doubling the effective collisions and rate.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: According to Maxwell-Boltzmann distribution, collision frequency increases only by ~1-2% for a 10 °C rise.\nStep 2: However, the area under the curve beyond the activation energy threshold nearly doubles.\nStep 3: The fraction of molecules with energy >= Ea (given by e^{-Ea/RT}) increases by ~100%, nearly doubling the effective collisions and rate.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -594,8 +594,8 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "For a reaction, the rate constant doubles when the temperature increases from 300 K to 310 K. What is the activation energy (Ea) of the reaction? (R = 8.314 J K^-1 mol^-1, log10 2 = 0.3010)",
+    "stemFormat": "latex",
+    "stemText": "For a reaction, the rate constant doubles when the temperature increases from 300 K to 310 K. What is the activation energy (Ea) of the reaction? (R = 8.314 J K^{-1} mol^{-1}, log10 2 = 0.3010)",
     "options": [
       {
         "label": "A",
@@ -620,13 +620,13 @@
     ],
     "solution": {
       "explanationText": "Step 1: Use two-temperature Arrhenius equation: log10(k2 / k1) = (Ea / (2.303 * R)) * ((T2 - T1) / (T1 * T2)).\nStep 2: Substitute k2/k1 = 2, T1 = 300 K, T2 = 310 K: log10(2) = 0.3010.\nStep 3: 0.3010 = [Ea / (2.303 * 8.314)] * [10 / (300 * 310)] = [Ea / 19.147] * [10 / 93000].\nStep 4: Ea = (0.3010 * 19.147 * 93000) / 10 = 53594 J/mol approx 53.6 kJ/mol (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு வினையின் வெப்பநிலை 300 K இலிருந்து 310 K ஆக உயரும் போது வினைவேக மாறிலி இருமடங்காகிறது எனில், அவ்வினையின் கிளர்வுறு ஆற்றல் (Ea) என்ன? (R = 8.314 J K^-1 mol^-1, log 2 = 0.3010)",
+        "stemText": "ஒரு வினையின் வெப்பநிலை 300 K இலிருந்து 310 K ஆக உயரும் போது வினைவேக மாறிலி இருமடங்காகிறது எனில், அவ்வினையின் கிளர்வுறு ஆற்றல் (Ea) என்ன? (R = 8.314 J K^{-1} mol^{-1}, log 2 = 0.3010)",
         "optionTexts": [
           "53.6 kJ/mol",
           "26.8 kJ/mol",
@@ -741,8 +741,8 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In the collision theory of chemical reactions, the rate equation is expressed as Rate = P * Z_AB * e^(-Ea / RT). The term 'P' represents:",
+    "stemFormat": "latex",
+    "stemText": "In the collision theory of chemical reactions, the rate equation is expressed as Rate = P * Z_{AB} * e^{-Ea / RT}. The term 'P' represents:",
     "options": [
       {
         "label": "A",
@@ -766,14 +766,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Collision theory assumes that for a reaction to occur, colliding molecules must possess activation energy and the proper orientation.\nStep 2: Z_AB is the collision frequency (number of collisions per second per unit volume).\nStep 3: The factor P is the steric or probability factor, which accounts for the requirement that molecules must collide in a specific geometric orientation.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Collision theory assumes that for a reaction to occur, colliding molecules must possess activation energy and the proper orientation.\nStep 2: Z_{AB} is the collision frequency (number of collisions per second per unit volume).\nStep 3: The factor P is the steric or probability factor, which accounts for the requirement that molecules must collide in a specific geometric orientation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "வேதிவினைகளின் மோதல் கொள்கையில், Rate = P * Z_AB * e^(-Ea / RT) என்ற சமன்பாட்டில் உள்ள 'P' எதனைக் குறிக்கிறது?",
+        "stemText": "வேதிவினைகளின் மோதல் கொள்கையில், Rate = P * Z_{AB} * e^{-Ea / RT} என்ற சமன்பாட்டில் உள்ள 'P' எதனைக் குறிக்கிறது?",
         "optionTexts": [
           "சரியான மூலக்கூறு திசை அமைப்பைக் குறிக்கும் இடநெருக்கடி காரணி (Steric/Probability factor)",
           "வாயுக்கலவையின் மொத்த அழுத்தம்",
@@ -839,12 +839,12 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The decomposition of ozone proceeds as: Step 1: O3 <=> O2 + O (fast equilibrium, K); Step 2: O + O3 -> 2 O2 (slow, k2). The overall rate law for the reaction is:",
     "options": [
       {
         "label": "A",
-        "text": "Rate = k [O3]^2 [O2]^-1",
+        "text": "Rate = k [O3]^2 [O2]^{-1}",
         "isCorrect": true
       },
       {
@@ -864,8 +864,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The rate-determining step is the slow step (Step 2): Rate = k2 [O] [O3].\nStep 2: Atomic oxygen [O] is a reactive intermediate. From the fast pre-equilibrium (Step 1): K = [O2][O] / [O3] => [O] = K [O3] / [O2].\nStep 3: Substitute [O] into the rate law: Rate = k2 (K [O3] / [O2]) [O3] = k [O3]^2 [O2]^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The rate-determining step is the slow step (Step 2): Rate = k2 [O] [O3].\nStep 2: Atomic oxygen [O] is a reactive intermediate. From the fast pre-equilibrium (Step 1): K = [O2][O] / [O3] => [O] = K [O3] / [O2].\nStep 3: Substitute [O] into the rate law: Rate = k2 (K [O3] / [O2]) [O3] = k [O3]^2 [O2]^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -873,7 +873,7 @@
         "languageCode": "ta",
         "stemText": "ஓசோன் சிதைவு பின்வருமாறு நிகழ்கிறது: படி 1: O3 <=> O2 + O (வேகமான சமநிலை, K); படி 2: O + O3 -> 2 O2 (மெதுவான படி, k2). இவ்வினையின் ஒட்டுமொத்த வினைவேக விதி என்ன?",
         "optionTexts": [
-          "Rate = k [O3]^2 [O2]^-1",
+          "Rate = k [O3]^2 [O2]^{-1}",
           "Rate = k [O3]^2",
           "Rate = k [O3] [O2]",
           "Rate = k [O3]"
@@ -888,12 +888,12 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For an n-th order chemical reaction, the relationship between the half-life period (t1/2) and initial concentration ([A]0) is:",
     "options": [
       {
         "label": "A",
-        "text": "t1/2 is proportional to [A]0^(1 - n)",
+        "text": "t1/2 is proportional to [A]0^{1 - n}",
         "isCorrect": true
       },
       {
@@ -903,18 +903,18 @@
       },
       {
         "label": "C",
-        "text": "t1/2 is proportional to [A]0^(n - 1)",
+        "text": "t1/2 is proportional to [A]0^{n - 1}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "t1/2 is proportional to [A]0^(n + 1)",
+        "text": "t1/2 is proportional to [A]0^{n + 1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: General integrated rate equation for n-th order (n != 1): k*t = (1 / (n - 1)) * [1/[A]^(n - 1) - 1/[A]0^(n - 1)].\nStep 2: At t = t1/2, [A] = [A]0 / 2.\nStep 3: t1/2 = [(2^(n - 1) - 1) / (k * (n - 1))] * [1 / [A]0^(n - 1)].\nStep 4: Therefore, t1/2 is proportional to 1 / [A]0^(n - 1) = [A]0^(1 - n) (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: General integrated rate equation for n-th order (n != 1): k*t = (1 / (n - 1)) * [1/[A]^{n - 1} - 1/[A]0^{n - 1}].\nStep 2: At t = t1/2, [A] = [A]0 / 2.\nStep 3: t1/2 = [(2^{n - 1} - 1) / (k * (n - 1))] * [1 / [A]0^{n - 1}].\nStep 4: Therefore, t1/2 is proportional to 1 / [A]0^{n - 1} = [A]0^{1 - n} (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -922,10 +922,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு n-ஆம் வகை வேதிவினைக்கு, அரை ஆயுட்காலத்திற்கும் (t1/2) ஆரம்ப செறிவுக்கும் ([A]0) இடையே உள்ள தொடர்பு என்ன?",
         "optionTexts": [
-          "t1/2 ஆனது [A]0^(1 - n) க்கு நேர்விகிதத்தில் இருக்கும்",
+          "t1/2 ஆனது [A]0^{1 - n} க்கு நேர்விகிதத்தில் இருக்கும்",
           "t1/2 ஆனது [A]0^n க்கு நேர்விகிதத்தில் இருக்கும்",
-          "t1/2 ஆனது [A]0^(n - 1) க்கு நேர்விகிதத்தில் இருக்கும்",
-          "t1/2 ஆனது [A]0^(n + 1) க்கு நேர்விகிதத்தில் இருக்கும்"
+          "t1/2 ஆனது [A]0^{n - 1} க்கு நேர்விகிதத்தில் இருக்கும்",
+          "t1/2 ஆனது [A]0^{n + 1} க்கு நேர்விகிதத்தில் இருக்கும்"
         ]
       }
     ]
@@ -937,7 +937,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A radioactive isotope has a half-life of 15 days. What percentage of the original sample remains undecayed after 60 days?",
     "options": [
       {
@@ -963,7 +963,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Radioactive decay follows first-order kinetics: N = N0 * (1/2)^n, where n is the number of half-lives.\nStep 2: Number of half-lives n = total time / t1/2 = 60 / 15 = 4.\nStep 3: N / N0 = (1/2)^4 = 1/16 = 0.0625.\nStep 4: Percentage remaining = 0.0625 * 100 = 6.25% (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -986,7 +986,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For a first-order gas-phase reaction A(g) -> 2 B(g) + C(g), if the initial pressure is P_i and the total pressure at time t is P_t, the rate constant k is given by:",
     "options": [
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: At t = 0: P_A = P_i, P_B = 0, P_C = 0. At time t: P_A = P_i - x, P_B = 2x, P_C = x.\nStep 2: Total pressure P_t = (P_i - x) + 2x + x = P_i + 2x => 2x = P_t - P_i => x = (P_t - P_i) / 2.\nStep 3: Partial pressure of A at time t: P_A = P_i - x = P_i - (P_t - P_i) / 2 = (3 P_i - P_t) / 2.\nStep 4: k = (2.303 / t) * log10(P_i / P_A) = (2.303 / t) * log10[ 2 P_i / (3 P_i - P_t) ] (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1035,8 +1035,8 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "A substance A decomposes by two parallel first-order pathways: A -> B with rate constant k1 = 1.26 * 10^-4 s^-1, and A -> C with rate constant k2 = 3.14 * 10^-5 s^-1. What is the percentage yield of B?",
+    "stemFormat": "latex",
+    "stemText": "A substance A decomposes by two parallel first-order pathways: A -> B with rate constant k1 = 1.26 * 10^{-4} s^{-1}, and A -> C with rate constant k2 = 3.14 * 10^{-5} s^{-1}. What is the percentage yield of B?",
     "options": [
       {
         "label": "A",
@@ -1060,14 +1060,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total rate constant of disappearance of A: k_total = k1 + k2.\nStep 2: k_total = (1.26 * 10^-4) + (0.314 * 10^-4) = 1.574 * 10^-4 s^-1.\nStep 3: Fractional yield of B = k1 / (k1 + k2) = (1.26 * 10^-4) / (1.574 * 10^-4) = 1.26 / 1.574 = 0.8005.\nStep 4: Percentage yield of B = 0.8005 * 100 approx 80.0% (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total rate constant of disappearance of A: k_{total} = k1 + k2.\nStep 2: k_{total} = (1.26 * 10^{-4}) + (0.314 * 10^{-4}) = 1.574 * 10^{-4} s^{-1}.\nStep 3: Fractional yield of B = k1 / (k1 + k2) = (1.26 * 10^{-4}) / (1.574 * 10^{-4}) = 1.26 / 1.574 = 0.8005.\nStep 4: Percentage yield of B = 0.8005 * 100 approx 80.0% (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "பொருள் A இரண்டு இணை முதல் வகை வினைகளில் சிதைவடைகிறது: A -> B (k1 = 1.26 * 10^-4 s^-1) மற்றும் A -> C (k2 = 3.14 * 10^-5 s^-1) எனில், B இன் சதவீத விளைச்சல் என்ன?",
+        "stemText": "பொருள் A இரண்டு இணை முதல் வகை வினைகளில் சிதைவடைகிறது: A -> B (k1 = 1.26 * 10^{-4} s^{-1}) மற்றும் A -> C (k2 = 3.14 * 10^{-5} s^{-1}) எனில், B இன் சதவீத விளைச்சல் என்ன?",
         "optionTexts": [
           "80.0%",
           "20.0%",
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the order of the photochemical reaction between H2 and Cl2 over water: H2(g) + Cl2(g) -(light)-> 2 HCl(g)?",
     "options": [
       {
@@ -1110,7 +1110,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The reaction H2(g) + Cl2(g) -> 2 HCl(g) over water is a photochemical chain reaction.\nStep 2: The rate of reaction depends strictly on the intensity of the absorbed light photons and not on the concentrations of H2 or Cl2.\nStep 3: Rate = k * I (intensity)^1 * [H2]^0 * [Cl2]^0.\nStep 4: Therefore, it is a zero-order reaction (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,8 +1182,8 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "In the presence of a catalyst, the activation energy of a reaction is lowered by 20 kJ/mol at 300 K. How does the rate constant k change? (e^(20000 / (8.314 * 300)) = 3130)",
+    "stemFormat": "latex",
+    "stemText": "In the presence of a catalyst, the activation energy of a reaction is lowered by 20 kJ/mol at 300 K. How does the rate constant k change? (e^{20000 / (8.314 * 300)} = 3130)",
     "options": [
       {
         "label": "A",
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Ratio of rate constants: k_cat / k_uncat = e^(-Ea_cat / RT) / e^(-Ea_uncat / RT) = e^(Delta Ea / RT).\nStep 2: Delta Ea = 20 kJ/mol = 20000 J/mol.\nStep 3: Exponent = 20000 / (8.314 * 300) = 20000 / 2494.2 = 8.018.\nStep 4: k_cat / k_uncat = e^8.018 = 3130. The rate increases by ~3130 times (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Ratio of rate constants: k_{cat} / k_{uncat} = e^{-Ea_{cat} / RT} / e^{-Ea_{uncat} / RT} = e^{Delta Ea / RT}.\nStep 2: Delta Ea = 20 kJ/mol = 20000 J/mol.\nStep 3: Exponent = 20000 / (8.314 * 300) = 20000 / 2494.2 = 8.018.\nStep 4: k_{cat} / k_{uncat} = e^{8.018} = 3130. The rate increases by ~3130 times (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1231,33 +1231,33 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What are the units of the rate constant (k) for a second-order chemical reaction?",
     "options": [
       {
         "label": "A",
-        "text": "L mol^-1 s^-1",
+        "text": "L mol^{-1} s^{-1}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "s^-1",
+        "text": "s^{-1}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "mol L^-1 s^-1",
+        "text": "mol L^{-1} s^{-1}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "L^2 mol^-2 s^-1",
+        "text": "L^2 mol^{-2} s^{-1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: General formula for units of rate constant: (mol L^-1)^(1 - n) * s^-1.\nStep 2: For second-order reaction, n = 2.\nStep 3: Units of k = (mol L^-1)^(1 - 2) * s^-1 = (mol L^-1)^-1 * s^-1 = L mol^-1 s^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: General formula for units of rate constant: (mol L^{-1})^{1 - n} * s^{-1}.\nStep 2: For second-order reaction, n = 2.\nStep 3: Units of k = (mol L^{-1})^{1 - 2} * s^{-1} = (mol L^{-1})^{-1} * s^{-1} = L mol^{-1} s^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1265,10 +1265,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு இரண்டாம் வகை வேதிவினையின் வினைவேக மாறிலியின் (k) அலகு என்ன?",
         "optionTexts": [
-          "L mol^-1 s^-1",
-          "s^-1",
-          "mol L^-1 s^-1",
-          "L^2 mol^-2 s^-1"
+          "L mol^{-1} s^{-1}",
+          "s^{-1}",
+          "mol L^{-1} s^{-1}",
+          "L^2 mol^{-2} s^{-1}"
         ]
       }
     ]
@@ -1280,8 +1280,8 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "The rate constant of a reaction is given by k = 2.1 * 10^-3 s^-1. What is the overall order of this reaction?",
+    "stemFormat": "latex",
+    "stemText": "The rate constant of a reaction is given by k = 2.1 * 10^{-3} s^{-1}. What is the overall order of this reaction?",
     "options": [
       {
         "label": "A",
@@ -1305,14 +1305,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Inspect the unit of the rate constant: s^-1 (time^-1).\nStep 2: General unit formula is (mol L^-1)^(1 - n) * s^-1.\nStep 3: Setting (1 - n) = 0 gives n = 1.\nStep 4: A rate constant with units of s^-1 corresponds strictly to a first-order reaction. Conclude Option A.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Inspect the unit of the rate constant: s^{-1} (time^{-1}).\nStep 2: General unit formula is (mol L^{-1})^{1 - n} * s^{-1}.\nStep 3: Setting (1 - n) = 0 gives n = 1.\nStep 4: A rate constant with units of s^{-1} corresponds strictly to a first-order reaction. Conclude Option A.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு வினையின் வினைவேக மாறிலி k = 2.1 * 10^-3 s^-1 எனில், அவ்வினையின் வகை என்ன?",
+        "stemText": "ஒரு வினையின் வினைவேக மாறிலி k = 2.1 * 10^{-3} s^{-1} எனில், அவ்வினையின் வகை என்ன?",
         "optionTexts": [
           "முதல் வகை",
           "பூஜ்ஜிய வகை",
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For a reaction, the half-life period is 100 minutes when initial concentration is 0.1 M, and 25 minutes when initial concentration is 0.2 M. What is the order of the reaction?",
     "options": [
       {
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Relationship between half-life and initial concentration: (t1/2)_1 / (t1/2)_2 = ([A]0_2 / [A]0_1)^(n - 1).\nStep 2: Substitute values: 100 / 25 = (0.2 / 0.1)^(n - 1).\nStep 3: 4 = (2)^(n - 1) => 2^2 = 2^(n - 1).\nStep 4: n - 1 = 2 => n = 3. The reaction is third order (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Relationship between half-life and initial concentration: (t1/2)_1 / (t1/2)_2 = ([A]0_2 / [A]0_1)^{n - 1}.\nStep 2: Substitute values: 100 / 25 = (0.2 / 0.1)^{n - 1}.\nStep 3: 4 = (2)^{n - 1} => 2^2 = 2^{n - 1}.\nStep 4: n - 1 = 2 => n = 3. The reaction is third order (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1427,7 +1427,7 @@
     "nodeTagCode": "chem_09",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What fraction of a reactant remains unreacted after a time t equal to 5 half-lives in a first-order reaction?",
     "options": [
       {
@@ -1453,7 +1453,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In a first-order reaction, the amount remaining after n half-lives is [A] = [A]0 * (1/2)^n.\nStep 2: Here, n = 5 half-lives.\nStep 3: Fraction remaining = [A] / [A]0 = (1/2)^5 = 1 / 32 (or 3.125%).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

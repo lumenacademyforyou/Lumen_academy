@@ -48,16 +48,21 @@ interface NodeIndexEntry {
 }
 
 function parseArgs(argv: string[]) {
-  const positional = argv.filter((a) => !a.startsWith("--"));
-  const live = argv.includes("--live");
   const assetsDirFlagIndex = argv.indexOf("--assets-dir");
+  // Guard the -1 case: without --assets-dir the index is -1, and "i !== 0"
+  // would otherwise swallow the batch file itself.
+  const assetsDirValueIndex = assetsDirFlagIndex >= 0 ? assetsDirFlagIndex + 1 : -1;
+  const positional = argv.filter((a, i) => !a.startsWith("--") && i !== assetsDirValueIndex);
+  const live = argv.includes("--live");
+  const resync = argv.includes("--resync");
   const assetsDirArg = assetsDirFlagIndex >= 0 ? argv[assetsDirFlagIndex + 1] : undefined;
   const batchFile = positional[0];
   if (!batchFile) {
     console.error("Usage: npx tsx db/scripts/import/import-content.ts <batch.json> [--live] [--assets-dir <dir>]");
+    console.error("       npx tsx db/scripts/import/import-content.ts <batch.json|dir> --resync [--live]");
     process.exit(1);
   }
-  return { batchFile, live, assetsDirArg };
+  return { batchFile, live, resync, assetsDirArg };
 }
 
 function inferAssetsDir(batchFilePath: string): string {
@@ -136,8 +141,255 @@ async function ensureSystemImportUser(): Promise<string> {
   return appUserRes.rows[0].user_id;
 }
 
+// ---------------------------------------------------------------------------
+// --resync (docs/latex-rendering-fix-prompt.md, requirement 3)
+// ---------------------------------------------------------------------------
+//
+// Re-running the importer above cannot refresh content that is already in the
+// bank, by design and in two independent ways:
+//
+//   1. DUPLICATE_CONTENT_FP. Every row whose normalized stem+options already
+//      exist is rejected outright (Phase 2.4, docs/no-repeat-questions-fix.md).
+//      Re-running the loader over new_content today rejects all 1140 rows and
+//      writes nothing. That guard is the anti-clone fix and must stay.
+//   2. The option reload is `delete from content.question_option` + re-insert,
+//      which mints fresh option_ids. assess.attempt_response.option_id
+//      references those rows with no ON DELETE clause, so with student answers
+//      on the bank (286 rows at the time of writing) the delete raises a
+//      foreign-key violation and rolls the whole batch back — and if it ever
+//      did succeed it would orphan every historical answer and cascade-delete
+//      the option images hanging off content.asset.option_id.
+//
+// So a *text* fix to already-published questions needs a text refresh, not an
+// import. This mode is that refresh, kept inside the same script so there is
+// one tool and one parse/validate contract rather than a second parallel
+// importer: it matches rows by question_uid, compares field by field, and
+// UPDATEs only what actually differs. It never inserts or deletes a question,
+// an option or an answer key, and never touches lifecycle_status, option_id,
+// display_order, is_correct or content_fp — so attempt history, publication
+// state and the dedup index all survive untouched.
+//
+//   npx tsx db/scripts/import/import-content.ts <file.json|dir> --resync
+//   npx tsx db/scripts/import/import-content.ts <file.json|dir> --resync --live
+//
+// Dry run by default, like the importer proper.
+
+interface ResyncStats {
+  questions: number;
+  notInBank: string[];
+  stemText: number;
+  stemFormat: number;
+  optionText: number;
+  explanationText: number;
+  translationStem: number;
+  translationOptions: number;
+  optionLabelMismatch: string[];
+  answerKeyDrift: string[];
+  samples: { uid: string; field: string; db: string; file: string }[];
+}
+
+function listBatchFiles(target: string): string[] {
+  const stat = fs.statSync(target);
+  if (!stat.isDirectory()) return [target];
+  const out: string[] = [];
+  for (const entry of fs.readdirSync(target, { withFileTypes: true })) {
+    const full = path.join(target, entry.name);
+    if (entry.isDirectory()) out.push(...listBatchFiles(full));
+    else if (entry.name.endsWith(".json")) out.push(full);
+  }
+  return out.sort();
+}
+
+async function resyncFile(filePath: string, live: boolean, stats: ResyncStats) {
+  const rows = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  if (!Array.isArray(rows)) throw new Error(`${filePath} is not a JSON array`);
+
+  const parsedRows: QuestionAuthoring[] = [];
+  for (const raw of rows) {
+    const parsed = QuestionAuthoringSchema.safeParse(raw);
+    if (!parsed.success) stats.notInBank.push(`${(raw as { questionUid?: string })?.questionUid ?? "?"} (schema error)`);
+    else parsedRows.push(parsed.data);
+  }
+  if (parsedRows.length === 0) return;
+
+  const client = await pool.connect();
+  try {
+    await client.query("begin");
+
+    // Read the whole file's worth of bank state in four queries rather than
+    // ~five per question — over a remote pooler the per-question shape turned
+    // a 38-file run into thousands of serial round trips.
+    const uids = parsedRows.map((q) => q.questionUid);
+    const qRes = await client.query<{ question_id: string; question_uid: string; stem_text: string; stem_format: string }>(
+      `select question_id, question_uid, stem_text, stem_format from content.question where question_uid = any($1::text[])`,
+      [uids]
+    );
+    const byUid = new Map(qRes.rows.map((r) => [r.question_uid, r]));
+    const ids = qRes.rows.map((r) => r.question_id);
+
+    const optRes = await client.query<{ question_id: string; option_label: string; option_text: string; is_correct: boolean }>(
+      `select question_id, option_label, option_text, is_correct from content.question_option where question_id = any($1::uuid[])`,
+      [ids]
+    );
+    const optionsByQuestion = new Map<string, Map<string, { option_text: string; is_correct: boolean }>>();
+    for (const r of optRes.rows) {
+      if (!optionsByQuestion.has(r.question_id)) optionsByQuestion.set(r.question_id, new Map());
+      optionsByQuestion.get(r.question_id)!.set(r.option_label, r);
+    }
+
+    const solRes = await client.query<{ question_id: string; explanation_text: string }>(
+      `select question_id, explanation_text from content.question_solution where question_id = any($1::uuid[])`,
+      [ids]
+    );
+    const solutionByQuestion = new Map(solRes.rows.map((r) => [r.question_id, r.explanation_text]));
+
+    const trRes = await client.query<{ question_id: string; language_code: string; stem_text: string; option_texts: string[] | null }>(
+      `select question_id, language_code, stem_text, option_texts from content.question_translation where question_id = any($1::uuid[])`,
+      [ids]
+    );
+    const translationByKey = new Map(trRes.rows.map((r) => [`${r.question_id}:${r.language_code}`, r]));
+
+    for (const q of parsedRows) {
+      const dbQuestion = byUid.get(q.questionUid);
+      if (!dbQuestion) {
+        stats.notInBank.push(q.questionUid);
+        continue;
+      }
+      stats.questions++;
+      const questionId = dbQuestion.question_id;
+
+      const note = (field: string, dbVal: string, fileVal: string) => {
+        if (stats.samples.length < 10) stats.samples.push({ uid: q.questionUid, field, db: dbVal.slice(0, 150), file: fileVal.slice(0, 150) });
+      };
+
+      if (dbQuestion.stem_text !== q.stemText || dbQuestion.stem_format !== q.stemFormat) {
+        if (dbQuestion.stem_text !== q.stemText) {
+          stats.stemText++;
+          note("stemText", dbQuestion.stem_text, q.stemText);
+        }
+        if (dbQuestion.stem_format !== q.stemFormat) stats.stemFormat++;
+        if (live) {
+          await client.query(`update content.question set stem_text = $2, stem_format = $3 where question_id = $1`, [questionId, q.stemText, q.stemFormat]);
+        }
+      }
+
+      // Options are matched on option_label and updated in place, never
+      // reloaded, so option_id — and every assess.attempt_response pointing at
+      // it — stays valid.
+      const dbOptions = optionsByQuestion.get(questionId) ?? new Map();
+      for (const opt of q.options ?? []) {
+        const dbOpt = dbOptions.get(opt.label);
+        if (!dbOpt) {
+          stats.optionLabelMismatch.push(`${q.questionUid}:${opt.label} missing in bank`);
+          continue;
+        }
+        // Reported, never written: an answer-key change is not a text re-sync
+        // and must not ride along on one.
+        if (dbOpt.is_correct !== opt.isCorrect) stats.answerKeyDrift.push(`${q.questionUid}:${opt.label}`);
+        if (dbOpt.option_text !== opt.text) {
+          stats.optionText++;
+          note(`option[${opt.label}]`, dbOpt.option_text, opt.text);
+          if (live) {
+            await client.query(`update content.question_option set option_text = $3 where question_id = $1 and option_label = $2`, [questionId, opt.label, opt.text]);
+          }
+        }
+      }
+
+      const dbExplanation = solutionByQuestion.get(questionId) ?? null;
+      if (dbExplanation !== q.solution.explanationText) {
+        stats.explanationText++;
+        note("explanationText", dbExplanation ?? "(none)", q.solution.explanationText);
+        if (live) {
+          await client.query(
+            `insert into content.question_solution (question_id, explanation_text, formula_reference)
+             values ($1, $2, $3)
+             on conflict (question_id) do update set explanation_text = excluded.explanation_text`,
+            [questionId, q.solution.explanationText, q.solution.formulaReference ?? null]
+          );
+        }
+      }
+
+      for (const t of q.translations) {
+        const dbTr = translationByKey.get(`${questionId}:${t.languageCode}`);
+        const fileOptionTexts = t.optionTexts ?? [];
+        const stemDiffers = !dbTr || dbTr.stem_text !== t.stemText;
+        const optionsDiffer = !dbTr || JSON.stringify(dbTr.option_texts ?? []) !== JSON.stringify(fileOptionTexts);
+        if (stemDiffers) {
+          stats.translationStem++;
+          note(`translation[${t.languageCode}].stemText`, dbTr?.stem_text ?? "(none)", t.stemText);
+        }
+        if (optionsDiffer) stats.translationOptions++;
+        if ((stemDiffers || optionsDiffer) && live) {
+          await client.query(
+            `insert into content.question_translation (question_id, language_code, stem_text, option_texts, review_status)
+             values ($1, $2, $3, $4, 'unreviewed')
+             on conflict (question_id, language_code) do update set
+               stem_text = excluded.stem_text, option_texts = excluded.option_texts`,
+            [questionId, t.languageCode, t.stemText, JSON.stringify(fileOptionTexts)]
+          );
+        }
+      }
+    }
+
+    if (live) await client.query("commit");
+    else await client.query("rollback");
+  } catch (err) {
+    await client.query("rollback");
+    throw err;
+  } finally {
+    client.release();
+  }
+}
+
+async function resyncMain(target: string, live: boolean) {
+  const files = listBatchFiles(path.resolve(process.cwd(), target));
+  console.log(live ? "--- LIVE RESYNC (text columns only) ---" : "--- DRY RUN RESYNC: no writes will happen ---");
+  console.log(`files: ${files.length}`);
+
+  const stats: ResyncStats = {
+    questions: 0,
+    notInBank: [],
+    stemText: 0,
+    stemFormat: 0,
+    optionText: 0,
+    explanationText: 0,
+    translationStem: 0,
+    translationOptions: 0,
+    optionLabelMismatch: [],
+    answerKeyDrift: [],
+    samples: [],
+  };
+
+  for (const file of files) await resyncFile(file, live, stats);
+
+  console.log("\nquestions matched in bank:", stats.questions);
+  console.log("fields updated:", {
+    stemText: stats.stemText,
+    stemFormat: stats.stemFormat,
+    optionText: stats.optionText,
+    explanationText: stats.explanationText,
+    translationStem: stats.translationStem,
+    translationOptions: stats.translationOptions,
+  });
+  if (stats.notInBank.length) console.log(`not in bank (skipped): ${stats.notInBank.length}`, stats.notInBank.slice(0, 10));
+  if (stats.optionLabelMismatch.length) console.log(`option label mismatches: ${stats.optionLabelMismatch.length}`, stats.optionLabelMismatch.slice(0, 10));
+  if (stats.answerKeyDrift.length) console.log(`ANSWER KEY DRIFT (reported, not written): ${stats.answerKeyDrift.length}`, stats.answerKeyDrift.slice(0, 10));
+
+  if (stats.samples.length) {
+    console.log("\nsample changes:");
+    for (const s of stats.samples) {
+      console.log(`\n  ${s.uid} · ${s.field}`);
+      console.log(`    db:   ${s.db}`);
+      console.log(`    file: ${s.file}`);
+    }
+  }
+  console.log(live ? "\nresync committed." : "\ndry run complete — rolled back, nothing written. Pass --live to apply.");
+  await pool.end();
+}
+
 async function main() {
-  const { batchFile, live, assetsDirArg } = parseArgs(process.argv.slice(2));
+  const { batchFile, live, resync, assetsDirArg } = parseArgs(process.argv.slice(2));
+  if (resync) return resyncMain(batchFile, live);
   const batchFilePath = path.resolve(process.cwd(), batchFile);
   const assetsDir = assetsDirArg ? path.resolve(process.cwd(), assetsDirArg) : inferAssetsDir(batchFilePath);
 

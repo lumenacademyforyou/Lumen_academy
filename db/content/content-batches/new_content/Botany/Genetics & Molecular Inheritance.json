@@ -1378,7 +1378,7 @@
     "nodeTagCode": "bot_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "According to the Human Genome Project (HGP), which chromosome in the human genome has the maximum number of genes, and which has the fewest genes?",
     "options": [
       {
@@ -1404,7 +1404,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The Human Genome Project sequenced approximately 3 × 10^9 base pairs containing ~30,000 genes.\nStep 2: Chromosome 1 has the highest gene density with 2,968 genes.\nStep 3: Chromosome Y contains the fewest genes with only 231 genes.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

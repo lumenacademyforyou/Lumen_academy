@@ -251,7 +251,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The addition of hydrogen cyanide (HCN) to aldehydes and ketones is catalyzed by a base because:",
     "options": [
       {
@@ -276,8 +276,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Pure HCN is a very weak acid (Ka = 4.9 * 10^-10) and dissociates sluggishly to provide nucleophilic CN^-.\nStep 2: Addition of a base (OH^-) removes a proton from HCN: HCN + OH^- <=> CN^- + H2O.\nStep 3: This generates a high concentration of cyanide ion (CN^-), which is a powerful nucleophile that rapidly attacks the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Pure HCN is a very weak acid (Ka = 4.9 * 10^{-10}) and dissociates sluggishly to provide nucleophilic CN^-.\nStep 2: Addition of a base (OH^-) removes a proton from HCN: HCN + OH^- <=> CN^- + H2O.\nStep 3: This generates a high concentration of cyanide ion (CN^-), which is a powerful nucleophile that rapidly attacks the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -300,7 +300,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Aldehydes and methyl ketones react with saturated sodium bisulfite (NaHSO3) solution to form crystalline bisulfite addition compounds because:",
     "options": [
       {
@@ -326,7 +326,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The bisulfite ion has a lone pair on sulfur, which is more polarizable and nucleophilic than oxygen.\nStep 2: Sulfur attacks the electrophilic carbonyl carbon to form a stable C-S bond.\nStep 3: Proton transfer gives a crystalline bisulfite adduct: >C(OH)(SO3Na).\nStep 4: This reaction is utilized for the purification and separation of aldehydes from non-carbonyl impurities. Conclude Option A.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

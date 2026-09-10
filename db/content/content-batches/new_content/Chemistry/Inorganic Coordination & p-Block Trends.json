@@ -55,7 +55,7 @@
     "nodeTagCode": "chem_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The correct IUPAC name of the complex [Co(NH3)5(CO3)]Cl is:",
     "options": [
       {
@@ -80,8 +80,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Identify ligands: 5 ammine (neutral) and 1 carbonato (CO3^2-, anionic). In alphabetical order: 'pentaammine' precedes 'carbonato'.\nStep 2: Calculate oxidation state of Co: x + 5(0) + (-2) + (-1) = 0 => x = +3.\nStep 3: Since the complex cation is cationic, the metal is named 'cobalt(III)'.\nStep 4: The counter anion is chloride, giving Pentaamminecarbonatocobalt(III) chloride (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Identify ligands: 5 ammine (neutral) and 1 carbonato (CO3^{2-}, anionic). In alphabetical order: 'pentaammine' precedes 'carbonato'.\nStep 2: Calculate oxidation state of Co: x + 5(0) + (-2) + (-1) = 0 => x = +3.\nStep 3: Since the complex cation is cationic, the metal is named 'cobalt(III)'.\nStep 4: The counter anion is chloride, giving Pentaamminecarbonatocobalt(III) chloride (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -153,7 +153,7 @@
     "nodeTagCode": "chem_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The pair of coordination complexes [Co(NH3)5(SO4)]Br and [Co(NH3)5Br]SO4 represents an example of:",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Ionization isomerism occurs when a ligand in the coordination sphere exchanges places with an anion in the outer ionization sphere.\nStep 2: [Co(NH3)5(SO4)]Br produces bromide ions (Br-) in aqueous solution, reacting with AgNO3 to give a pale yellow AgBr precipitate.\nStep 3: [Co(NH3)5Br]SO4 produces sulfate ions (SO4^2-) in solution, reacting with BaCl2 to give a white BaSO4 precipitate.\nStep 4: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Ionization isomerism occurs when a ligand in the coordination sphere exchanges places with an anion in the outer ionization sphere.\nStep 2: [Co(NH3)5(SO4)]Br produces bromide ions (Br-) in aqueous solution, reacting with AgNO3 to give a pale yellow AgBr precipitate.\nStep 3: [Co(NH3)5Br]SO4 produces sulfate ions (SO4^{2-}) in solution, reacting with BaCl2 to give a white BaSO4 precipitate.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,7 +398,7 @@
     "nodeTagCode": "chem_02",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In an octahedral crystal field, the electronic configuration of a d5 metal ion in the presence of a strong field ligand (Delta_o > P) is:",
     "options": [
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In an octahedral field, the five d-orbitals split into lower energy t2g (triply degenerate) and higher energy eg (doubly degenerate) sets.\nStep 2: For a strong field ligand, the crystal field splitting energy is greater than the pairing energy (Delta_o > P).\nStep 3: All 5 electrons pair up in the lower t2g level before any electron enters the eg level.\nStep 4: The low-spin configuration is t2g^5 eg^0 (Option B).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "chem_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The spin-only magnetic moment of [MnBr4]2- (atomic number of Mn = 25) is approximately:",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Oxidation state of Mn: x + 4(-1) = -2 => x = +2. Mn2+ = [Ar] 3d5.\nStep 2: Br- is a weak field ligand and tetrahedral splitting (Delta_t) is small, resulting in a high-spin complex with n = 5 unpaired electrons.\nStep 3: Spin-only magnetic moment mu = sqrt(n(n+2)) = sqrt(5(7)) = sqrt(35) = 5.92 BM.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Oxidation state of Mn: x + 4(-1) = -2 => x = +2. Mn2+ = [Ar] 3d5.\nStep 2: Br- is a weak field ligand and tetrahedral splitting (Delta_t) is small, resulting in a high-spin complex with n = 5 unpaired electrons.\nStep 3: Spin-only magnetic moment mu = \\sqrt{n(n+2)} = \\sqrt{5(7)} = \\sqrt{35} = 5.92 BM.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,7 +496,7 @@
     "nodeTagCode": "chem_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following represents the correct increasing order of ligand field strength in the spectrochemical series?",
     "options": [
       {
@@ -521,8 +521,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The spectrochemical series arranges ligands in order of increasing field strength (Delta_o splitting power).\nStep 2: Halide ions are weak field ligands: I- < Br- < S^2- < SCN- < Cl- < F-.\nStep 3: Oxygen donors follow: OH- < C2O4^2- < H2O.\nStep 4: Nitrogen and carbon donors are strong: NCS- < edta^4- < NH3 < en < NO2- < CN- < CO.\nStep 5: Conclude I- < Cl- < F- < H2O < NH3 < CN- (Option A is correct).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The spectrochemical series arranges ligands in order of increasing field strength (Delta_o splitting power).\nStep 2: Halide ions are weak field ligands: I- < Br- < S^{2-} < SCN- < Cl- < F-.\nStep 3: Oxygen donors follow: OH- < C2O4^{2-} < H2O.\nStep 4: Nitrogen and carbon donors are strong: NCS- < edta^{4-} < NH3 < en < NO2- < CN- < CO.\nStep 5: Conclude I- < Cl- < F- < H2O < NH3 < CN- (Option A is correct).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

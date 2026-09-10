@@ -6,44 +6,44 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "What is the total number of atoms present in 4.4 g of carbon dioxide (CO2) gas? (Molar mass of CO2 = 44 g/mol, N_A = 6.022 * 10^23 mol^-1)",
+    "stemFormat": "latex",
+    "stemText": "What is the total number of atoms present in 4.4 g of carbon dioxide (CO2) gas? (Molar mass of CO2 = 44 g/mol, N_A = 6.022 * 10^{23} mol^{-1})",
     "options": [
       {
         "label": "A",
-        "text": "1.806 * 10^23 atoms",
+        "text": "1.806 * 10^{23} atoms",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "6.022 * 10^22 atoms",
+        "text": "6.022 * 10^{22} atoms",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "6.022 * 10^23 atoms",
+        "text": "6.022 * 10^{23} atoms",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "1.204 * 10^23 atoms",
+        "text": "1.204 * 10^{23} atoms",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Calculate moles of CO2: n = mass / molar mass = 4.4 / 44 = 0.1 mol.\nStep 2: Number of CO2 molecules = n * N_A = 0.1 * 6.022 * 10^23 = 6.022 * 10^22 molecules.\nStep 3: Each CO2 molecule contains 3 atoms (1 C atom + 2 O atoms).\nStep 4: Total number of atoms = 3 * 6.022 * 10^22 = 1.8066 * 10^23 atoms (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Calculate moles of CO2: n = mass / molar mass = 4.4 / 44 = 0.1 mol.\nStep 2: Number of CO2 molecules = n * N_A = 0.1 * 6.022 * 10^{23} = 6.022 * 10^{22} molecules.\nStep 3: Each CO2 molecule contains 3 atoms (1 C atom + 2 O atoms).\nStep 4: Total number of atoms = 3 * 6.022 * 10^{22} = 1.8066 * 10^{23} atoms (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "4.4 g கார்பன் டை ஆக்சைடு (CO2) வாயுவில் உள்ள மொத்த அணுக்களின் எண்ணிக்கை என்ன? (CO2 மோலார் நிறை = 44 g/mol, N_A = 6.022 * 10^23)",
+        "stemText": "4.4 g கார்பன் டை ஆக்சைடு (CO2) வாயுவில் உள்ள மொத்த அணுக்களின் எண்ணிக்கை என்ன? (CO2 மோலார் நிறை = 44 g/mol, N_A = 6.022 * 10^{23})",
         "optionTexts": [
-          "1.806 * 10^23 அணுக்கள்",
-          "6.022 * 10^22 அணுக்கள்",
-          "6.022 * 10^23 அணுக்கள்",
-          "1.204 * 10^23 அணுக்கள்"
+          "1.806 * 10^{23} அணுக்கள்",
+          "6.022 * 10^{22} அணுக்கள்",
+          "6.022 * 10^{23} அணுக்கள்",
+          "1.204 * 10^{23} அணுக்கள்"
         ]
       }
     ]
@@ -300,7 +300,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "If 250 mL of 0.5 M HCl is mixed with 750 mL of 0.1 M HCl, what is the final molarity of the resulting mixture?",
     "options": [
       {
@@ -325,8 +325,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total millimoles of HCl = M1 * V1 + M2 * V2.\nStep 2: mmol = (0.5 * 250) + (0.1 * 750) = 125 + 75 = 200 mmol.\nStep 3: Total volume of mixture V_total = 250 + 750 = 1000 mL.\nStep 4: Final molarity M3 = total mmol / total mL = 200 / 1000 = 0.20 M (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total millimoles of HCl = M1 * V1 + M2 * V2.\nStep 2: mmol = (0.5 * 250) + (0.1 * 750) = 125 + 75 = 200 mmol.\nStep 3: Total volume of mixture V_{total} = 250 + 750 = 1000 mL.\nStep 4: Final molarity M3 = total mmol / total mL = 200 / 1000 = 0.20 M (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,7 +398,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "According to Charles's law, the absolute zero of temperature (-273.15 °C) is the theoretical temperature at which:",
     "options": [
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Charles's law states V_t = V_0 * (1 + t / 273.15).\nStep 2: When temperature t = -273.15 °C: V_t = V_0 * (1 - 273.15 / 273.15) = V_0 * 0 = 0.\nStep 3: Extrapolation of isobars on the volume-temperature axis shows that all ideal gases theoretically achieve zero volume at -273.15 °C (0 Kelvin).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,8 +447,8 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The density of an ideal gas at 27 °C and 2.0 atm pressure is 2.60 g/L. What is the molar mass of the gas? (R = 0.0821 L atm K^-1 mol^-1)",
+    "stemFormat": "latex",
+    "stemText": "The density of an ideal gas at 27 °C and 2.0 atm pressure is 2.60 g/L. What is the molar mass of the gas? (R = 0.0821 L atm K^{-1} mol^{-1})",
     "options": [
       {
         "label": "A",
@@ -472,14 +472,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula relating gas density (d) and molar mass (M): d = (P * M) / (R * T) => M = (d * R * T) / P.\nStep 2: Given: d = 2.60 g/L, P = 2.0 atm, T = 27 + 273.15 = 300.15 K (approx 300 K), R = 0.0821 L atm K^-1 mol^-1.\nStep 3: M = (2.60 * 0.0821 * 300) / 2.0 = (64.038) / 2.0 = 32.02 g/mol.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula relating gas density (d) and molar mass (M): d = (P * M) / (R * T) => M = (d * R * T) / P.\nStep 2: Given: d = 2.60 g/L, P = 2.0 atm, T = 27 + 273.15 = 300.15 K (approx 300 K), R = 0.0821 L atm K^{-1} mol^{-1}.\nStep 3: M = (2.60 * 0.0821 * 300) / 2.0 = (64.038) / 2.0 = 32.02 g/mol.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "27 °C மற்றும் 2.0 வளிமண்டல அழுத்தத்தில் ஒரு நல்லியல்பு வாயுவின் அடர்த்தி 2.60 g/L எனில், அதன் மோலார் நிறை என்ன? (R = 0.0821 L atm K^-1 mol^-1)",
+        "stemText": "27 °C மற்றும் 2.0 வளிமண்டல அழுத்தத்தில் ஒரு நல்லியல்பு வாயுவின் அடர்த்தி 2.60 g/L எனில், அதன் மோலார் நிறை என்ன? (R = 0.0821 L atm K^{-1} mol^{-1})",
         "optionTexts": [
           "32.0 g/mol",
           "64.0 g/mol",
@@ -496,8 +496,8 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "A gaseous mixture contains 8.0 g of O2 and 14.0 g of N2 in a closed vessel at total pressure P. What is the partial pressure of oxygen (p_O2)?",
+    "stemFormat": "latex",
+    "stemText": "A gaseous mixture contains 8.0 g of O2 and 14.0 g of N2 in a closed vessel at total pressure P. What is the partial pressure of oxygen (p_{O2})?",
     "options": [
       {
         "label": "A",
@@ -521,14 +521,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Calculate moles: n_O2 = 8.0 / 32 = 0.25 mol; n_N2 = 14.0 / 28 = 0.50 mol.\nStep 2: Total moles n_total = 0.25 + 0.50 = 0.75 mol.\nStep 3: Mole fraction of O2: x_O2 = 0.25 / 0.75 = 1 / 3.\nStep 4: By Dalton's law: Partial pressure p_O2 = x_O2 * P_total = (1/3) * P = P / 3 (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Calculate moles: n_{O2} = 8.0 / 32 = 0.25 mol; n_{N2} = 14.0 / 28 = 0.50 mol.\nStep 2: Total moles n_{total} = 0.25 + 0.50 = 0.75 mol.\nStep 3: Mole fraction of O2: x_{O2} = 0.25 / 0.75 = 1 / 3.\nStep 4: By Dalton's law: Partial pressure p_{O2} = x_{O2} * P_{total} = (1/3) * P = P / 3 (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு மூடிய கலனில் 8.0 g O2 மற்றும் 14.0 g N2 கொண்ட வாயுக்கலவையின் மொத்த அழுத்தம் P எனில், ஆக்ஸிஜனின் பகுதி அழுத்தம் (p_O2) என்ன?",
+        "stemText": "ஒரு மூடிய கலனில் 8.0 g O2 மற்றும் 14.0 g N2 கொண்ட வாயுக்கலவையின் மொத்த அழுத்தம் P எனில், ஆக்ஸிஜனின் பகுதி அழுத்தம் (p_{O2}) என்ன?",
         "optionTexts": [
           "P / 3",
           "P / 2",
@@ -545,7 +545,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Under identical conditions of temperature and pressure, 50 mL of hydrogen gas effuses through a pinhole in 20 seconds. How long will it take for 50 mL of oxygen gas to effuse through the same pinhole?",
     "options": [
       {
@@ -570,8 +570,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Graham's Law of Effusion for identical volumes: t2 / t1 = sqrt(M2 / M1).\nStep 2: Given t1 (for H2) = 20 s, M1 = 2.0 g/mol, M2 (for O2) = 32.0 g/mol.\nStep 3: t(O2) / 20 = sqrt(32 / 2) = sqrt(16) = 4.\nStep 4: t(O2) = 20 * 4 = 80 seconds. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Graham's Law of Effusion for identical volumes: t2 / t1 = \\sqrt{M2 / M1}.\nStep 2: Given t1 (for H2) = 20 s, M1 = 2.0 g/mol, M2 (for O2) = 32.0 g/mol.\nStep 3: t(O2) / 20 = \\sqrt{32 / 2} = \\sqrt{16} = 4.\nStep 4: t(O2) = 20 * 4 = 80 seconds. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -594,8 +594,8 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "What is the ratio of most probable speed (u_mp), average speed (u_avg), and root mean square speed (u_rms) for an ideal gas at a given temperature?",
+    "stemFormat": "latex",
+    "stemText": "What is the ratio of most probable speed (u_{mp}), average speed (u_{avg}), and root mean square speed (u_{rms}) for an ideal gas at a given temperature?",
     "options": [
       {
         "label": "A",
@@ -619,14 +619,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for molecular speeds:\n- u_mp = sqrt(2RT/M) = sqrt(2) * sqrt(RT/M) = 1.414\n- u_avg = sqrt(8RT/pi M) = sqrt(8/pi) * sqrt(RT/M) = 1.596\n- u_rms = sqrt(3RT/M) = sqrt(3) * sqrt(RT/M) = 1.732\nStep 2: Ratio u_mp : u_avg : u_rms = sqrt(2) : sqrt(8/pi) : sqrt(3) = 1 : 1.128 : 1.224.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula for molecular speeds:\n- u_{mp} = \\sqrt{2RT/M} = \\sqrt{2} * \\sqrt{RT/M} = 1.414\n- u_{avg} = \\sqrt{8RT/\\pi M} = \\sqrt{8/\\pi} * \\sqrt{RT/M} = 1.596\n- u_{rms} = \\sqrt{3RT/M} = \\sqrt{3} * \\sqrt{RT/M} = 1.732\nStep 2: Ratio u_{mp} : u_{avg} : u_{rms} = \\sqrt{2} : \\sqrt{8/\\pi} : \\sqrt{3} = 1 : 1.128 : 1.224.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு குறிப்பிட்ட வெப்பநிலையில் நல்லியல்பு வாயுவின் அதிகபட்ச சாத்தியமுள்ள வேகம் (u_mp), சராசரி வேகம் (u_avg) மற்றும் சராசரி இருமடி மூல வேகம் (u_rms) ஆகியவற்றின் விகிதம் என்ன?",
+        "stemText": "ஒரு குறிப்பிட்ட வெப்பநிலையில் நல்லியல்பு வாயுவின் அதிகபட்ச சாத்தியமுள்ள வேகம் (u_{mp}), சராசரி வேகம் (u_{avg}) மற்றும் சராசரி இருமடி மூல வேகம் (u_{rms}) ஆகியவற்றின் விகிதம் என்ன?",
         "optionTexts": [
           "1 : 1.128 : 1.224",
           "1.224 : 1.128 : 1",
@@ -643,7 +643,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "For an ideal gas, the total translational kinetic energy of 2 moles of gas at temperature T is given by:",
     "options": [
       {
@@ -668,8 +668,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: According to kinetic theory of gases, the average kinetic energy per mole of an ideal gas is E_k = 3/2 RT.\nStep 2: For n moles of gas, total translational kinetic energy = n * (3/2 RT).\nStep 3: For n = 2 moles: E_total = 2 * (3/2 RT) = 3 RT.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: According to kinetic theory of gases, the average kinetic energy per mole of an ideal gas is E_k = 3/2 RT.\nStep 2: For n moles of gas, total translational kinetic energy = n * (3/2 RT).\nStep 3: For n = 2 moles: E_{total} = 2 * (3/2 RT) = 3 RT.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,7 +692,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "At very high pressures, the compressibility factor (Z = PV / RT) for one mole of a real gas is given by:",
     "options": [
       {
@@ -718,7 +718,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: van der Waals equation for 1 mole: (P + a/V^2)(V - b) = RT.\nStep 2: At very high pressures, P is very large compared to a/V^2, so a/V^2 can be neglected: P(V - b) = RT.\nStep 3: PV - Pb = RT => PV = RT + Pb.\nStep 4: Dividing by RT: Z = PV / RT = 1 + (Pb / RT). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -741,7 +741,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the van der Waals equation of state, the constant 'a' provides a measure of:",
     "options": [
       {
@@ -767,7 +767,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In the van der Waals equation (P + an^2/V^2)(V - nb) = nRT, the term an^2/V^2 corrects for attractive forces.\nStep 2: The constant 'a' reflects the strength of intermolecular attraction between gas molecules.\nStep 3: A gas with a higher 'a' value has stronger attractive forces and is more easily liquefied (e.g., NH3, SO2).\nStep 4: The constant 'b' accounts for the co-volume (size of molecules). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -790,33 +790,33 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What are the SI units of the van der Waals constants 'a' and 'b', respectively?",
     "options": [
       {
         "label": "A",
-        "text": "N m^4 mol^-2 and m^3 mol^-1",
+        "text": "N m^4 mol^{-2} and m^3 mol^{-1}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "atm L mol^-1 and L mol^-1",
+        "text": "atm L mol^{-1} and L mol^{-1}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "N m^-2 and m^3",
+        "text": "N m^{-2} and m^3",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "J mol^-1 and m^3 mol^-1",
+        "text": "J mol^{-1} and m^3 mol^{-1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Pressure correction term: P_internal = a * n^2 / V^2 => a = (P * V^2) / n^2.\nStep 2: SI unit of a = (N m^-2) * (m^3)^2 / mol^2 = N m^4 mol^-2 (or bar dm^6 mol^-2).\nStep 3: Volume correction: nb has units of volume, so b = V / n = m^3 / mol = m^3 mol^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Pressure correction term: P_{internal} = a * n^2 / V^2 => a = (P * V^2) / n^2.\nStep 2: SI unit of a = (N m^{-2}) * (m^3)^2 / mol^2 = N m^4 mol^{-2} (or bar dm^6 mol^{-2}).\nStep 3: Volume correction: nb has units of volume, so b = V / n = m^3 / mol = m^3 mol^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -824,10 +824,10 @@
         "languageCode": "ta",
         "stemText": "வான்டர்வால்ஸ் மாறிலிகளான 'a' மற்றும் 'b' ஆகியவற்றின் SI அலகுகள் முறையே:",
         "optionTexts": [
-          "N m^4 mol^-2 மற்றும் m^3 mol^-1",
-          "atm L mol^-1 மற்றும் L mol^-1",
-          "N m^-2 மற்றும் m^3",
-          "J mol^-1 மற்றும் m^3 mol^-1"
+          "N m^4 mol^{-2} மற்றும் m^3 mol^{-1}",
+          "atm L mol^{-1} மற்றும் L mol^{-1}",
+          "N m^{-2} மற்றும் m^3",
+          "J mol^{-1} மற்றும் m^3 mol^{-1}"
         ]
       }
     ]
@@ -986,7 +986,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "How many significant figures are present in the measured quantities 0.0025 and 2.500 * 10^3, respectively?",
     "options": [
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: For 0.0025: Zeros preceding the first non-zero digit are not significant. Only 2 and 5 are significant (2 significant figures).\nStep 2: For 2.500 * 10^3: Terminal zeros after a decimal point in scientific notation are significant (2, 5, 0, 0 = 4 significant figures).\nStep 3: Significant figures are 2 and 4.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1133,7 +1133,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "At standard temperature and pressure (STP: 273.15 K and 1 bar), the molar volume of an ideal gas is:",
     "options": [
       {
@@ -1158,8 +1158,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: According to IUPAC definition of standard temperature and pressure (STP: T = 273.15 K and P = 1 bar = 10^5 Pa).\nStep 2: V_m = R * T / P = (0.08314 bar L K^-1 mol^-1 * 273.15 K) / 1 bar = 22.71 L/mol.\nStep 3: (Note: At 1 atm and 273.15 K, molar volume is 22.4 L/mol; at 1 bar, it is 22.71 L/mol).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: According to IUPAC definition of standard temperature and pressure (STP: T = 273.15 K and P = 1 bar = 10^5 Pa).\nStep 2: V_m = R * T / P = (0.08314 bar L K^{-1} mol^{-1} * 273.15 K) / 1 bar = 22.71 L/mol.\nStep 3: (Note: At 1 atm and 273.15 K, molar volume is 22.4 L/mol; at 1 bar, it is 22.71 L/mol).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A sample of nitrogen gas collected over water at 300 K exerts a total pressure of 755 mm Hg. If the aqueous tension of water at 300 K is 25 mm Hg, what is the partial pressure of dry nitrogen gas?",
     "options": [
       {
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: When a gas is collected over water, it becomes saturated with water vapor.\nStep 2: Total pressure P_total = P_dry gas + Aqueous tension.\nStep 3: P_dry nitrogen = P_total - Aqueous tension = 755 mm Hg - 25 mm Hg = 730 mm Hg.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: When a gas is collected over water, it becomes saturated with water vapor.\nStep 2: Total pressure P_{total} = P_{dry} gas + Aqueous tension.\nStep 3: P_{dry} nitrogen = P_{total} - Aqueous tension = 755 mm Hg - 25 mm Hg = 730 mm Hg.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1231,8 +1231,8 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "At what temperature will the root mean square velocity (u_rms) of SO2 molecules be equal to that of O2 molecules at 300 K? (Molar mass of SO2 = 64 g/mol, O2 = 32 g/mol)",
+    "stemFormat": "latex",
+    "stemText": "At what temperature will the root mean square velocity (u_{rms}) of SO2 molecules be equal to that of O2 molecules at 300 K? (Molar mass of SO2 = 64 g/mol, O2 = 32 g/mol)",
     "options": [
       {
         "label": "A",
@@ -1256,14 +1256,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for rms velocity: u_rms = sqrt(3RT / M).\nStep 2: Condition: u_rms(SO2) = u_rms(O2) => sqrt(3 R T_SO2 / 64) = sqrt(3 R * 300 / 32).\nStep 3: Squaring both sides: T_SO2 / 64 = 300 / 32 => T_SO2 = 300 * (64 / 32) = 300 * 2 = 600 K.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula for rms velocity: u_{rms} = \\sqrt{3RT / M}.\nStep 2: Condition: u_{rms}(SO2) = u_{rms}(O2) => \\sqrt{3 R T_{SO2} / 64} = \\sqrt{3 R * 300 / 32}.\nStep 3: Squaring both sides: T_{SO2} / 64 = 300 / 32 => T_{SO2} = 300 * (64 / 32) = 300 * 2 = 600 K.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "300 K இல் உள்ள O2 மூலக்கூறுகளின் சராசரி இருமடி மூல வேகத்திற்கு (u_rms) சமமாக SO2 மூலக்கூறுகளின் வேகம் அமைய எந்த வெப்பநிலை தேவைப்படுகிறது? (SO2 = 64 g/mol, O2 = 32 g/mol)",
+        "stemText": "300 K இல் உள்ள O2 மூலக்கூறுகளின் சராசரி இருமடி மூல வேகத்திற்கு (u_{rms}) சமமாக SO2 மூலக்கூறுகளின் வேகம் அமைய எந்த வெப்பநிலை தேவைப்படுகிறது? (SO2 = 64 g/mol, O2 = 32 g/mol)",
         "optionTexts": [
           "600 K",
           "150 K",
@@ -1329,8 +1329,8 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "The four gases O2, N2, NH3, and CH4 have van der Waals constant 'a' values of 1.36, 1.39, 4.17, and 2.25 L^2 atm mol^-2, respectively. Which gas will liquefy most easily?",
+    "stemFormat": "latex",
+    "stemText": "The four gases O2, N2, NH3, and CH4 have van der Waals constant 'a' values of 1.36, 1.39, 4.17, and 2.25 L^2 atm mol^{-2}, respectively. Which gas will liquefy most easily?",
     "options": [
       {
         "label": "A",
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The van der Waals constant 'a' measures the magnitude of attractive intermolecular forces.\nStep 2: Stronger intermolecular forces lead to a higher critical temperature and make the gas liquefy more easily.\nStep 3: NH3 has the highest 'a' value (4.17 L^2 atm mol^-2) due to hydrogen bonding and dipole interactions.\nStep 4: Therefore, NH3 liquefies most easily (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The van der Waals constant 'a' measures the magnitude of attractive intermolecular forces.\nStep 2: Stronger intermolecular forces lead to a higher critical temperature and make the gas liquefy more easily.\nStep 3: NH3 has the highest 'a' value (4.17 L^2 atm mol^{-2}) due to hydrogen bonding and dipole interactions.\nStep 4: Therefore, NH3 liquefies most easily (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1427,44 +1427,44 @@
     "nodeTagCode": "chem_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "What is the mass of one molecule of glucose (C6H12O6)? (Avogadro constant N_A = 6.022 * 10^23 mol^-1)",
+    "stemFormat": "latex",
+    "stemText": "What is the mass of one molecule of glucose (C6H12O6)? (Avogadro constant N_A = 6.022 * 10^{23} mol^{-1})",
     "options": [
       {
         "label": "A",
-        "text": "2.989 * 10^-22 g",
+        "text": "2.989 * 10^{-22} g",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "1.800 * 10^-22 g",
+        "text": "1.800 * 10^{-22} g",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "3.344 * 10^-23 g",
+        "text": "3.344 * 10^{-23} g",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "6.022 * 10^-23 g",
+        "text": "6.022 * 10^{-23} g",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Molecular mass of glucose (C6H12O6) = 6(12.011) + 12(1.008) + 6(15.999) = 180.16 g/mol.\nStep 2: One mole contains N_A molecules (6.022 * 10^23 molecules).\nStep 3: Mass of 1 molecule = Molar mass / N_A = 180.16 / (6.022 * 10^23) = 2.9893 * 10^-22 g.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Molecular mass of glucose (C6H12O6) = 6(12.011) + 12(1.008) + 6(15.999) = 180.16 g/mol.\nStep 2: One mole contains N_A molecules (6.022 * 10^{23} molecules).\nStep 3: Mass of 1 molecule = Molar mass / N_A = 180.16 / (6.022 * 10^{23}) = 2.9893 * 10^{-22} g.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு குளுக்கோஸ் (C6H12O6) மூலக்கூறின் நிறை என்ன? (N_A = 6.022 * 10^23)",
+        "stemText": "ஒரு குளுக்கோஸ் (C6H12O6) மூலக்கூறின் நிறை என்ன? (N_A = 6.022 * 10^{23})",
         "optionTexts": [
-          "2.989 * 10^-22 g",
-          "1.800 * 10^-22 g",
-          "3.344 * 10^-23 g",
-          "6.022 * 10^-23 g"
+          "2.989 * 10^{-22} g",
+          "1.800 * 10^{-22} g",
+          "3.344 * 10^{-23} g",
+          "6.022 * 10^{-23} g"
         ]
       }
     ]

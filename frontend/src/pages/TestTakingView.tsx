@@ -4,7 +4,7 @@ import QuestionImage from "../components/ui/QuestionImage";
 import Modal from "../components/layout/Modal";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../contexts/LanguageContext";
-import { displayQuestionText } from "../utils/questionText";
+import MathText from "../components/ui/MathText";
 import type { EnvelopeQuestion, Scorecard, SessionResult } from "../types";
 import { saveResponses, submitAttempt as submitAttemptApi, pauseAttempt as pauseAttemptApi, postAttemptEvent, type ResponseUpdate } from "../services/sessionApi";
 
@@ -654,8 +654,8 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                     !!stemTextTa a safe, sufficient completeness check here:
                     pure "ta" mode falls back to English for the whole
                     question rather than ever rendering a blank stem. */}
-                {showEnglishText && <div className="mb-2">{displayQuestionText(currentQuestion.stemText)}</div>}
-                {showTamilText && <div className={showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}>{displayQuestionText(currentQuestion.stemTextTa)}</div>}
+                {showEnglishText && <div className="mb-2"><MathText>{currentQuestion.stemText}</MathText></div>}
+                {showTamilText && <div className={showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}><MathText>{currentQuestion.stemTextTa}</MathText></div>}
               </h2>
 
               {stemImage && (
@@ -686,8 +686,8 @@ export default function TestTakingView({ session, onCompleteTest, onCancel, stud
                         {option.optionLabel || String.fromCharCode(65 + idx)}
                       </div>
                       <div className="flex flex-col gap-1">
-                        {showEnglishText && <span>{displayQuestionText(option.optionText)}</span>}
-                        {showTamilText && <span className={`opacity-90 text-sm ${showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}`}>{displayQuestionText(option.optionTextTa)}</span>}
+                        {showEnglishText && <span><MathText>{option.optionText}</MathText></span>}
+                        {showTamilText && <span className={`opacity-90 text-sm ${showEnglishText ? "text-[var(--teal)] dark:text-[#FCB824]" : ""}`}><MathText>{option.optionTextTa}</MathText></span>}
                         {optionImage && (
                           <div className="max-w-[220px] mt-1">
                             <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />

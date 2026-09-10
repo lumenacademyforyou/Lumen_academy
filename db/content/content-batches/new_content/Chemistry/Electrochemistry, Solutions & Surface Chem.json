@@ -6,7 +6,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following binary liquid mixtures forms an ideal solution obeying Raoult's law over the entire range of concentration?",
     "options": [
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: An ideal solution forms when intermolecular attractive forces between solute-solvent (A-B) are nearly equal to those between solute-solute (A-A) and solvent-solvent (B-B).\nStep 2: Benzene and toluene have nearly identical molecular sizes, polarities, and structures, giving Delta H_mix = 0 and Delta V_mix = 0.\nStep 3: Mixtures like ethanol + acetone show positive deviation, while chloroform + acetone and HNO3 + water show negative deviation.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: An ideal solution forms when intermolecular attractive forces between solute-solvent (A-B) are nearly equal to those between solute-solute (A-A) and solvent-solvent (B-B).\nStep 2: Benzene and toluene have nearly identical molecular sizes, polarities, and structures, giving Delta H_{mix} = 0 and Delta V_{mix} = 0.\nStep 3: Mixtures like ethanol + acetone show positive deviation, while chloroform + acetone and HNO3 + water show negative deviation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -55,7 +55,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A mixture of ethanol and acetone exhibits positive deviation from Raoult's law because:",
     "options": [
       {
@@ -70,7 +70,7 @@
       },
       {
         "label": "C",
-        "text": "Delta H_mixing is negative",
+        "text": "Delta H_{mixing} is negative",
         "isCorrect": false
       },
       {
@@ -80,8 +80,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In pure ethanol, molecules are held together by strong intermolecular hydrogen bonds.\nStep 2: On adding acetone, its molecules occupy spaces between ethanol molecules, breaking existing H-bonds.\nStep 3: The resulting A-B interactions are weaker than A-A interactions, increasing escaping tendency and vapor pressure (positive deviation, Delta H_mix > 0, Delta V_mix > 0).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In pure ethanol, molecules are held together by strong intermolecular hydrogen bonds.\nStep 2: On adding acetone, its molecules occupy spaces between ethanol molecules, breaking existing H-bonds.\nStep 3: The resulting A-B interactions are weaker than A-A interactions, increasing escaping tendency and vapor pressure (positive deviation, Delta H_{mix} > 0, Delta V_{mix} > 0).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -91,7 +91,7 @@
         "optionTexts": [
           "அசிட்டோன் மூலக்கூறுகள் எத்தனால் மூலக்கூறுகளுக்கு இடையே நுழைந்து அவற்றின் ஹைட்ரஜன் பிணைப்புகளை பலவீனப்படுத்துகின்றன",
           "எத்தனால் மற்றும் அசிட்டோன் இடையே புதிய வலிமையான ஹைட்ரஜன் பிணைப்புகள் உருவாகின்றன",
-          "Delta H_mixing மதிப்பு எதிர்மறியானது",
+          "Delta H_{mixing} மதிப்பு எதிர்மறியானது",
           "கலவையின் கொதிநிலை இரண்டு கூறுகளை விடவும் அதிகமாகும்"
         ]
       }
@@ -104,7 +104,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Mixing of chloroform and acetone results in a negative deviation from Raoult's law with the evolution of heat because of:",
     "options": [
       {
@@ -119,7 +119,7 @@
       },
       {
         "label": "C",
-        "text": "Increase in the volume of mixing (Delta V_mix > 0)",
+        "text": "Increase in the volume of mixing (Delta V_{mix} > 0)",
         "isCorrect": false
       },
       {
@@ -129,8 +129,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In chloroform (CHCl3), the hydrogen atom is acidic due to the strong -I effect of three chlorines.\nStep 2: When mixed with acetone (CH3COCH3), a new intermolecular hydrogen bond forms between the H of chloroform and the carbonyl oxygen of acetone.\nStep 3: The solute-solvent (A-B) attraction is stronger than A-A and B-B attractions, lowering vapor pressure (negative deviation, Delta H_mix < 0, Delta V_mix < 0).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In chloroform (CHCl3), the hydrogen atom is acidic due to the strong -I effect of three chlorines.\nStep 2: When mixed with acetone (CH3COCH3), a new intermolecular hydrogen bond forms between the H of chloroform and the carbonyl oxygen of acetone.\nStep 3: The solute-solvent (A-B) attraction is stronger than A-A and B-B attractions, lowering vapor pressure (negative deviation, Delta H_{mix} < 0, Delta V_{mix} < 0).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -140,7 +140,7 @@
         "optionTexts": [
           "குளோரோபார்ம் மற்றும் அசிட்டோன் மூலக்கூறுகளிடையே புதிய மூலக்கூறுகளுக்கு இடையேயான ஹைட்ரஜன் பிணைப்பு உருவாவது",
           "கூறுகளுக்கு இடையே இருமுனை-இருமுனை விலக்கு விசை ஏற்படுவது",
-          "கலத்தலின் கனஅளவு அதிகரிப்பது (Delta V_mix > 0)",
+          "கலத்தலின் கனஅளவு அதிகரிப்பது (Delta V_{mix} > 0)",
           "அசிட்டோன் வீழ்படிவாவது"
         ]
       }
@@ -153,7 +153,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "According to Henry's law, the solubility of a gas in a liquid decreases with an increase in temperature because:",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Henry's law is expressed as P = K_H * x, where x is solubility (mole fraction) and K_H is Henry's constant.\nStep 2: Higher K_H at a given pressure corresponds to lower solubility (x = P / K_H).\nStep 3: As temperature increases, gas dissolution is typically exothermic (Delta H_sol < 0), causing K_H to increase and gas solubility to decrease.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Henry's law is expressed as P = K_H * x, where x is solubility (mole fraction) and K_H is Henry's constant.\nStep 2: Higher K_H at a given pressure corresponds to lower solubility (x = P / K_H).\nStep 3: As temperature increases, gas dissolution is typically exothermic (Delta H_{sol} < 0), causing K_H to increase and gas solubility to decrease.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,7 +202,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The vapor pressure of pure benzene at a certain temperature is 0.850 bar. When 0.5 g of a non-volatile non-electrolyte solid is added to 39.0 g of benzene (molar mass = 78 g/mol), the vapor pressure of the solution becomes 0.845 bar. What is the molar mass of the solid substance?",
     "options": [
       {
@@ -228,7 +228,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Relative lowering of vapor pressure: (P° - P_s) / P° = (w2 / M2) * (M1 / w1).\nStep 2: P° = 0.850 bar, P_s = 0.845 bar, P° - P_s = 0.005 bar. w2 = 0.5 g, w1 = 39.0 g, M1 = 78 g/mol.\nStep 3: 0.005 / 0.850 = (0.5 / M2) * (78 / 39) = (0.5 / M2) * 2 = 1.0 / M2.\nStep 4: M2 = 0.850 / 0.005 = 170 g/mol. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -251,8 +251,8 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The boiling point of an aqueous solution containing 6.0 g of urea (molar mass = 60 g/mol) in 500 g of water is: (Kb for water = 0.52 K kg mol^-1, normal boiling point of water = 100 °C)",
+    "stemFormat": "latex",
+    "stemText": "The boiling point of an aqueous solution containing 6.0 g of urea (molar mass = 60 g/mol) in 500 g of water is: (Kb for water = 0.52 K kg mol^{-1}, normal boiling point of water = 100 °C)",
     "options": [
       {
         "label": "A",
@@ -277,13 +277,13 @@
     ],
     "solution": {
       "explanationText": "Step 1: Calculate moles of urea: n = 6.0 / 60 = 0.1 mol.\nStep 2: Molality m = moles of solute / mass of solvent in kg = 0.1 / 0.5 kg = 0.2 m.\nStep 3: Elevation in boiling point Delta Tb = Kb * m = 0.52 * 0.2 = 0.104 K.\nStep 4: Boiling point of solution Tb = 100 °C + 0.104 °C = 100.104 °C (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "500 g நீரில் 6.0 g யூரியா (மோலார் நிறை = 60 g/mol) கரைக்கப்பட்டுள்ள கரைசலின் கொதிநிலை என்ன? (நீரின் Kb = 0.52 K kg mol^-1)",
+        "stemText": "500 g நீரில் 6.0 g யூரியா (மோலார் நிறை = 60 g/mol) கரைக்கப்பட்டுள்ள கரைசலின் கொதிநிலை என்ன? (நீரின் Kb = 0.52 K kg mol^{-1})",
         "optionTexts": [
           "100.104 °C",
           "100.520 °C",
@@ -447,8 +447,8 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The freezing point depression of a 0.1 m aqueous solution of a monobasic acid HX is measured to be 0.205 K. What is the degree of dissociation (alpha) of the acid? (Kf for water = 1.86 K kg mol^-1)",
+    "stemFormat": "latex",
+    "stemText": "The freezing point depression of a 0.1 m aqueous solution of a monobasic acid HX is measured to be 0.205 K. What is the degree of dissociation (alpha) of the acid? (Kf for water = 1.86 K kg mol^{-1})",
     "options": [
       {
         "label": "A",
@@ -473,13 +473,13 @@
     ],
     "solution": {
       "explanationText": "Step 1: Theoretical Delta Tf (without dissociation) = Kf * m = 1.86 * 0.1 = 0.186 K.\nStep 2: van 't Hoff factor i = Delta Tf(observed) / Delta Tf(calculated) = 0.205 / 0.186 = 1.102.\nStep 3: For monobasic acid HX <=> H+ + X- (n = 2 ions): alpha = i - 1 = 1.102 - 1 = 0.102 approx 0.10 (10%).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "0.1 m HX ஒற்றைக்கார அமிலக் கரைசலின் உறைநிலைத் தாழ்வு 0.205 K எனில், அவ்வமிலத்தின் பிரிகை வீதம் (alpha) என்ன? (நீரின் Kf = 1.86 K kg mol^-1)",
+        "stemText": "0.1 m HX ஒற்றைக்கார அமிலக் கரைசலின் உறைநிலைத் தாழ்வு 0.205 K எனில், அவ்வமிலத்தின் பிரிகை வீதம் (alpha) என்ன? (நீரின் Kf = 1.86 K kg mol^{-1})",
         "optionTexts": [
           "0.10 (10%)",
           "0.05 (5%)",
@@ -496,7 +496,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "On increasing the dilution of an electrolytic solution, what happens to conductivity (kappa) and molar conductivity (Lambda_m)?",
     "options": [
       {
@@ -522,7 +522,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Conductivity (kappa) is the conductance of 1 cm^3 (unit volume) of electrolytic solution.\nStep 2: On dilution, the number of current-carrying ions per unit volume decreases, so conductivity (kappa) always decreases.\nStep 3: Molar conductivity Lambda_m = kappa * V. The increase in volume V containing 1 mole of electrolyte overwhelmingly compensates for the decrease in kappa.\nStep 4: Therefore, Lambda_m increases on dilution (Option A).",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -545,44 +545,44 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Given limiting molar conductivities at 298 K: Lambda°_m(CH3COONa) = 91.0 S cm^2 mol^-1, Lambda°_m(HCl) = 426.0 S cm^2 mol^-1, and Lambda°_m(NaCl) = 126.0 S cm^2 mol^-1. The limiting molar conductivity of acetic acid Lambda°_m(CH3COOH) is:",
+    "stemFormat": "latex",
+    "stemText": "Given limiting molar conductivities at 298 K: Lambda°_m(CH3COONa) = 91.0 S cm^2 mol^{-1}, Lambda°_m(HCl) = 426.0 S cm^2 mol^{-1}, and Lambda°_m(NaCl) = 126.0 S cm^2 mol^{-1}. The limiting molar conductivity of acetic acid Lambda°_m(CH3COOH) is:",
     "options": [
       {
         "label": "A",
-        "text": "391.0 S cm^2 mol^-1",
+        "text": "391.0 S cm^2 mol^{-1}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "517.0 S cm^2 mol^-1",
+        "text": "517.0 S cm^2 mol^{-1}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "643.0 S cm^2 mol^-1",
+        "text": "643.0 S cm^2 mol^{-1}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "209.0 S cm^2 mol^-1",
+        "text": "209.0 S cm^2 mol^{-1}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Apply Kohlrausch's Law of Independent Migration of Ions:\nLambda°_m(CH3COOH) = Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl).\nStep 2: Substitute values: Lambda°_m(CH3COOH) = 91.0 + 426.0 - 126.0.\nStep 3: Lambda°_m(CH3COOH) = 517.0 - 126.0 = 391.0 S cm^2 mol^-1.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Apply Kohlrausch's Law of Independent Migration of Ions:\nLambda°_m(CH3COOH) = Lambda°_m(CH3COONa) + Lambda°_m(HCl) - Lambda°_m(NaCl).\nStep 2: Substitute values: Lambda°_m(CH3COOH) = 91.0 + 426.0 - 126.0.\nStep 3: Lambda°_m(CH3COOH) = 517.0 - 126.0 = 391.0 S cm^2 mol^{-1}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "298 K இல் கொடுக்கப்பட்டுள்ள எல்லை மோலார் கடத்துத்திறன் மதிப்புகள்: CH3COONa = 91.0 S cm^2 mol^-1, HCl = 426.0 S cm^2 mol^-1, NaCl = 126.0 S cm^2 mol^-1 எனில், அசிட்டிக் அமிலத்தின் (CH3COOH) எல்லை மோலார் கடத்துத்திறன் என்ன?",
+        "stemText": "298 K இல் கொடுக்கப்பட்டுள்ள எல்லை மோலார் கடத்துத்திறன் மதிப்புகள்: CH3COONa = 91.0 S cm^2 mol^{-1}, HCl = 426.0 S cm^2 mol^{-1}, NaCl = 126.0 S cm^2 mol^{-1} எனில், அசிட்டிக் அமிலத்தின் (CH3COOH) எல்லை மோலார் கடத்துத்திறன் என்ன?",
         "optionTexts": [
-          "391.0 S cm^2 mol^-1",
-          "517.0 S cm^2 mol^-1",
-          "643.0 S cm^2 mol^-1",
-          "209.0 S cm^2 mol^-1"
+          "391.0 S cm^2 mol^{-1}",
+          "517.0 S cm^2 mol^{-1}",
+          "643.0 S cm^2 mol^{-1}",
+          "209.0 S cm^2 mol^{-1}"
         ]
       }
     ]
@@ -594,7 +594,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In a Daniell cell (Zn-Cu galvanic cell), what is the primary function of the salt bridge containing agar-agar and inert electrolyte (such as KCl or KNO3)?",
     "options": [
       {
@@ -619,8 +619,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: As oxidation occurs at the zinc anode, Zn2+ ions accumulate in the anode compartment.\nStep 2: At the copper cathode, Cu2+ ions discharge, leaving excess SO4^2- in the cathode compartment.\nStep 3: The salt bridge allows migration of counter-ions (e.g. Cl- to anode and K+ to cathode), neutralizing charge accumulation and preventing liquid junction potential.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: As oxidation occurs at the zinc anode, Zn2+ ions accumulate in the anode compartment.\nStep 2: At the copper cathode, Cu2+ ions discharge, leaving excess SO4^{2-} in the cathode compartment.\nStep 3: The salt bridge allows migration of counter-ions (e.g. Cl- to anode and K+ to cathode), neutralizing charge accumulation and preventing liquid junction potential.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -643,8 +643,8 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Given standard reduction potentials: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, and E°(Cl2/Cl-) = +1.36 V. The strongest oxidizing agent among these is:",
+    "stemFormat": "latex",
+    "stemText": "Given standard reduction potentials: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^{2-}/Cr3+) = +1.33 V, and E°(Cl2/Cl-) = +1.36 V. The strongest oxidizing agent among these is:",
     "options": [
       {
         "label": "A",
@@ -658,7 +658,7 @@
       },
       {
         "label": "C",
-        "text": "Cr2O7^2-",
+        "text": "Cr2O7^{2-}",
         "isCorrect": false
       },
       {
@@ -668,18 +668,18 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Oxidizing power is directly proportional to standard reduction potential (E°_red).\nStep 2: A species with a more positive standard reduction potential has a greater tendency to gain electrons and undergo reduction.\nStep 3: Comparing E° values: MnO4^- (+1.51 V) > Cl2 (+1.36 V) > Cr2O7^2- (+1.33 V) > Cr3+ (-0.74 V).\nStep 4: MnO4^- has the most positive reduction potential and is the strongest oxidizing agent (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Oxidizing power is directly proportional to standard reduction potential (E°_{red}).\nStep 2: A species with a more positive standard reduction potential has a greater tendency to gain electrons and undergo reduction.\nStep 3: Comparing E° values: MnO4^- (+1.51 V) > Cl2 (+1.36 V) > Cr2O7^{2-} (+1.33 V) > Cr3+ (-0.74 V).\nStep 4: MnO4^- has the most positive reduction potential and is the strongest oxidizing agent (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கொடுக்கப்பட்டுள்ள திட்ட ஒடுக்க மின்னழுத்தங்கள்: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^2-/Cr3+) = +1.33 V, E°(Cl2/Cl-) = +1.36 V எனில், மிக வலிமையான ஆக்சிஜனேற்ற காரணி எது?",
+        "stemText": "கொடுக்கப்பட்டுள்ள திட்ட ஒடுக்க மின்னழுத்தங்கள்: E°(Cr3+/Cr) = -0.74 V, E°(MnO4-/Mn2+) = +1.51 V, E°(Cr2O7^{2-}/Cr3+) = +1.33 V, E°(Cl2/Cl-) = +1.36 V எனில், மிக வலிமையான ஆக்சிஜனேற்ற காரணி எது?",
         "optionTexts": [
           "MnO4^-",
           "Cl2",
-          "Cr2O7^2-",
+          "Cr2O7^{2-}",
           "Cr3+"
         ]
       }
@@ -692,8 +692,8 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "For the Daniell cell: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), if E°cell = 1.10 V at 298 K, what is the cell potential (E_cell)? (2.303 RT / F = 0.0591 V)",
+    "stemFormat": "latex",
+    "stemText": "For the Daniell cell: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), if E°cell = 1.10 V at 298 K, what is the cell potential (E_{cell})? (2.303 RT / F = 0.0591 V)",
     "options": [
       {
         "label": "A",
@@ -717,14 +717,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Cell reaction: Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), where n = 2 electrons transferred.\nStep 2: Nernst equation: E_cell = E°cell - (0.0591 / n) * log10([Zn2+] / [Cu2+]).\nStep 3: [Zn2+] / [Cu2+] = 0.01 / 1.0 = 10^-2, so log10(10^-2) = -2.\nStep 4: E_cell = 1.10 - (0.0591 / 2) * (-2) = 1.10 + 0.0591 = 1.1591 V approx 1.159 V (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Cell reaction: Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), where n = 2 electrons transferred.\nStep 2: Nernst equation: E_{cell} = E°cell - (0.0591 / n) * log10([Zn2+] / [Cu2+]).\nStep 3: [Zn2+] / [Cu2+] = 0.01 / 1.0 = 10^{-2}, so log10(10^{-2}) = -2.\nStep 4: E_{cell} = 1.10 - (0.0591 / 2) * (-2) = 1.10 + 0.0591 = 1.1591 V approx 1.159 V (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "டேனியல் மின்கலனுக்கு: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), 298 K இல் E°cell = 1.10 V எனில், அம்மின்கலனின் மின்னழுத்தம் (E_cell) என்ன?",
+        "stemText": "டேனியல் மின்கலனுக்கு: Zn(s) | Zn2+(0.01 M) || Cu2+(1.0 M) | Cu(s), 298 K இல் E°cell = 1.10 V எனில், அம்மின்கலனின் மின்னழுத்தம் (E_{cell}) என்ன?",
         "optionTexts": [
           "1.159 V",
           "1.041 V",
@@ -741,12 +741,12 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "If the standard cell potential for the reaction Cu(s) + 2 Ag+(aq) -> Cu2+(aq) + 2 Ag(s) is E°cell = +0.46 V at 298 K, what is the equilibrium constant (K) for this reaction? (2.303 RT / F = 0.059 V)",
     "options": [
       {
         "label": "A",
-        "text": "3.9 * 10^15",
+        "text": "3.9 * 10^{15}",
         "isCorrect": true
       },
       {
@@ -756,18 +756,18 @@
       },
       {
         "label": "C",
-        "text": "4.6 * 10^10",
+        "text": "4.6 * 10^{10}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "2.0 * 10^15",
+        "text": "2.0 * 10^{15}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula relating E°cell and equilibrium constant K: E°cell = (0.059 / n) * log10(K).\nStep 2: For this reaction, n = 2 electrons transferred.\nStep 3: 0.46 = (0.059 / 2) * log10(K) => log10(K) = (0.46 * 2) / 0.059 = 0.92 / 0.059 = 15.59.\nStep 4: K = 10^15.59 = 10^0.59 * 10^15 = 3.9 * 10^15 (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula relating E°cell and equilibrium constant K: E°cell = (0.059 / n) * log10(K).\nStep 2: For this reaction, n = 2 electrons transferred.\nStep 3: 0.46 = (0.059 / 2) * log10(K) => log10(K) = (0.46 * 2) / 0.059 = 0.92 / 0.059 = 15.59.\nStep 4: K = 10^{15.59} = 10^{0.59} * 10^{15} = 3.9 * 10^{15} (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -775,10 +775,10 @@
         "languageCode": "ta",
         "stemText": "Cu(s) + 2 Ag+(aq) -> Cu2+(aq) + 2 Ag(s) என்ற வினையின் திட்ட மின்கல மின்னழுத்தம் E°cell = +0.46 V எனில், அதன் சமநிலை மாறிலி (K) மதிப்பு என்ன? (2.303 RT / F = 0.059 V)",
         "optionTexts": [
-          "3.9 * 10^15",
+          "3.9 * 10^{15}",
           "1.0 * 10^8",
-          "4.6 * 10^10",
-          "2.0 * 10^15"
+          "4.6 * 10^{10}",
+          "2.0 * 10^{15}"
         ]
       }
     ]
@@ -888,7 +888,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During the discharge of a lead storage battery, which chemical change occurs at the electrodes?",
     "options": [
       {
@@ -913,8 +913,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: At the anode during discharge: Pb(s) + SO4^2-(aq) -> PbSO4(s) + 2e-.\nStep 2: At the cathode: PbO2(s) + 4H+(aq) + SO4^2-(aq) + 2e- -> PbSO4(s) + 2H2O(l).\nStep 3: Overall reaction: Pb(s) + PbO2(s) + 2H2SO4(aq) -> 2PbSO4(s) + 2H2O(l).\nStep 4: Both electrodes form insoluble PbSO4 and H2SO4 is consumed (lowering acid density). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: At the anode during discharge: Pb(s) + SO4^{2-}(aq) -> PbSO4(s) + 2e-.\nStep 2: At the cathode: PbO2(s) + 4H+(aq) + SO4^{2-}(aq) + 2e- -> PbSO4(s) + 2H2O(l).\nStep 3: Overall reaction: Pb(s) + PbO2(s) + 2H2SO4(aq) -> 2PbSO4(s) + 2H2O(l).\nStep 4: Both electrodes form insoluble PbSO4 and H2SO4 is consumed (lowering acid density). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -986,7 +986,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the hydrogen-oxygen fuel cell used in spacecraft, the reaction occurring at the anode is:",
     "options": [
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In an alkaline H2-O2 fuel cell (using aqueous KOH electrolyte), hydrogen gas is bubbled into the anode compartment.\nStep 2: At the anode, hydrogen is oxidized in alkaline medium: 2 H2(g) + 4 OH^-(aq) -> 4 H2O(l) + 4 e^-.\nStep 3: At the cathode, oxygen is reduced: O2(g) + 2 H2O(l) + 4 e^- -> 4 OH^-(aq).\nStep 4: Conclude Option A represents the anodic reaction.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1035,12 +1035,12 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Galvanization of iron protects it from corrosion because:",
     "options": [
       {
         "label": "A",
-        "text": "Zinc has a more negative reduction potential than iron (E°_Zn2+/Zn = -0.76 V vs E°_Fe2+/Fe = -0.44 V) and corrodes sacrificially",
+        "text": "Zinc has a more negative reduction potential than iron (E°_{Zn2}+/Zn = -0.76 V vs E°_{Fe2}+/Fe = -0.44 V) and corrodes sacrificially",
         "isCorrect": true
       },
       {
@@ -1061,7 +1061,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Galvanization coats iron with a thin protective layer of zinc.\nStep 2: Zinc is more electropositive than iron (E° Zn2+/Zn = -0.76 V vs Fe2+/Fe = -0.44 V).\nStep 3: Even if the surface coating is scratched, zinc acts as the sacrificial anode, oxidizing preferentially and shielding iron from rusting.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1133,7 +1133,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the Freundlich adsorption isotherm, a linear plot of log(x/m) against log P gives a straight line with slope equal to:",
     "options": [
       {
@@ -1158,8 +1158,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Freundlich adsorption equation: x / m = k * P^(1/n).\nStep 2: Taking logarithms on both sides: log(x / m) = log k + (1/n) * log P.\nStep 3: Comparing with the straight-line equation y = c + mx: the y-intercept is log k and the slope is 1/n.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Freundlich adsorption equation: x / m = k * P^{1/n}.\nStep 2: Taking logarithms on both sides: log(x / m) = log k + (1/n) * log P.\nStep 3: Comparing with the straight-line equation y = c + mx: the y-intercept is log k and the slope is 1/n.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1231,7 +1231,7 @@
     "nodeTagCode": "chem_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The minimum temperature above which micelle formation takes place is known as:",
     "options": [
       {
@@ -1257,7 +1257,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Micelles (associated colloids) form only above a specific threshold concentration and temperature.\nStep 2: The minimum concentration required is the Critical Micelle Concentration (CMC).\nStep 3: The minimum temperature above which surfactant molecules aggregate into micelles is the Kraft temperature (T_k).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

@@ -398,7 +398,7 @@
     "nodeTagCode": "bot_05",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What mathematical equation describes the Verhulst-Pearl Logistic Growth of a population with a carrying capacity (K)?",
     "options": [
       {
@@ -413,7 +413,7 @@
       },
       {
         "label": "C",
-        "text": "Nt = N0 e^(rt)",
+        "text": "Nt = N0 e^{rt}",
         "isCorrect": false
       },
       {
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: A population growing in a habitat with limited resources exhibits logistic growth (sigmoid curve).\nStep 2: The equation is given by dN/dt = rN ((K - N) / K), where N = population density, r = intrinsic rate of natural increase, and K = carrying capacity.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -434,7 +434,7 @@
         "optionTexts": [
           "dN/dt = rN ((K - N) / K)",
           "dN/dt = rN",
-          "Nt = N0 e^(rt)",
+          "Nt = N0 e^{rt}",
           "dN/dt = (K - N) / rN"
         ]
       }

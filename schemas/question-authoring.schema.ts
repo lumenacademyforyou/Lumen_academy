@@ -35,6 +35,60 @@ import { z } from "zod";
 // tag_code "phy_01" (Rotational Dynamics & Mechanics per db/scripts/seed/02_content.ts).
 export const QUESTION_UID_PATTERN = /^LMN-[A-Z]+-[A-Z0-9]+-\d{6}$/;
 
+// ---------------------------------------------------------------------------
+// MATH NOTATION CONTRACT (v1.1, added 10-09-2026 — docs/latex-rendering-fix-prompt.md)
+//
+// The whole bank is authored as math *inline inside prose*, in English and in
+// the Tamil translations[], with no $...$ delimiters. The renderer
+// (frontend/src/components/ui/MathText.tsx) turns ^ and _ into real <sup>/<sub>
+// and hands genuine LaTeX commands to KaTeX. That only works if the notation
+// is written the way below. The original 1140-question load was authored
+// informally and had to be repaired in bulk by
+// db/scripts/normalize-latex-new-content.mjs — these rules exist so it never
+// needs repairing again. db/scripts/audit-latex-new-content.mjs is the check.
+//
+// Required, in every text field: stemText, options[].text,
+// solution.explanationText, translations[].stemText and
+// translations[].optionTexts[].
+//
+//   1. BRACE every exponent and subscript longer than one character.
+//        "10^15"        -> "10^{15}"          (a bare ^15 superscripts only the 1)
+//        "m^-1"         -> "m^{-1}"
+//        "SO4^2-"       -> "SO4^{2-}"
+//        "Z_AB"         -> "Z_{AB}"
+//        "V_rms"        -> "V_{rms}"
+//      Single-character scripts may stay bare: "x^2", "Cl^-", "R_H".
+//      Brace a single-character exponent anyway when a letter follows it, so
+//      the boundary is explicit: "d^{2}U/dx^2", "_{92}U^{238}".
+//
+//   2. NEVER use parentheses for grouping a script. They are not grouping
+//      syntax and render as literal brackets.
+//        "e^(rt)"          -> "e^{rt}"
+//        "e^(-Ea / RT)"    -> "e^{-E_a / RT}"
+//        "f_(n+1)"         -> "f_{n+1}"
+//
+//   3. NEVER write sqrt as a function call. Use the LaTeX command.
+//        "sqrt(6)"           -> "\\sqrt{6}"
+//        "sqrt(l(l + 1))"    -> "\\sqrt{l(l + 1)}"
+//
+//   4. NEVER spell a symbol out in words inside a math expression — use the
+//      real LaTeX command (or the Unicode character, which is also accepted).
+//        "1 / lambda"    -> "1 / \\lambda"
+//        "h / (2 pi)"    -> "h / (2 \\pi)"
+//      This applies only inside math. Ordinary prose keeps its ordinary
+//      words: "pi bonds", "pi-electrons" and "delta cells" are English, not
+//      notation, and must NOT be converted.
+//
+//   5. Set stemFormat AND solution.solutionFormat to "latex" on any question
+//      carrying math notation in ANY of its fields — including when the only
+//      math is in the solution or in a translation. "plain" asserts the text
+//      has no notation in it, and is what the audit checks against.
+//
+//   6. Apply all of the above to translations[] identically. The Tamil entries
+//      repeat the same formulae verbatim; a formula fixed only in English is
+//      still broken for every student reading the paper in Tamil.
+// ---------------------------------------------------------------------------
+
 export const StemFormat = z.enum(["plain", "markdown", "latex", "html"]);
 export const SolutionFormat = z.enum(["plain", "markdown", "latex", "html"]);
 

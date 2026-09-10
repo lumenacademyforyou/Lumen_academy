@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
-import { displayQuestionText } from "../utils/questionText";
+import MathText from "../components/ui/MathText";
 import { getAttemptReview } from "../services/sessionApi";
 import { exportAnalyticsPdf } from "../services/pdfExport";
 import QuestionImage from "../components/ui/QuestionImage";
@@ -187,7 +187,7 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
                     </div>
                   </div>
 
-                  <p className="font-semibold text-sm text-[#00243B] dark:text-white">{displayQuestionText(q.stemText)}</p>
+                  <p className="font-semibold text-sm text-[#00243B] dark:text-white"><MathText>{q.stemText}</MathText></p>
                   {stemImage && <QuestionImage url={stemImage.url} altText={stemImage.altText} />}
 
                   {q.options.length > 0 && (
@@ -207,7 +207,7 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
                           >
                             <span className="font-bold">{opt.optionLabel}.</span>
                             <span className="flex-1">
-                              {displayQuestionText(opt.optionText)}
+                              <MathText>{opt.optionText}</MathText>
                               {optionImage && (
                                 <div className="max-w-[200px] mt-1">
                                   <QuestionImage url={optionImage.url} altText={optionImage.altText} maxHeightPx={160} />
@@ -236,7 +236,7 @@ export default function AttemptReviewView({ attemptId, testTitle, onBack }: Atte
                   {q.explanationText && (
                     <div className="p-3.5 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 text-xs text-slate-700 dark:text-slate-300">
                       <p className="font-bold text-amber-700 dark:text-[#FCB824] uppercase text-[10px] mb-1">{t("Explanation")}</p>
-                      {q.explanationText}
+                      <MathText>{q.explanationText}</MathText>
                     </div>
                   )}
                 </div>

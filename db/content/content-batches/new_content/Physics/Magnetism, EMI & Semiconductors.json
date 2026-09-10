@@ -6,7 +6,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A charged particle of charge q and mass m enters a uniform magnetic field B with velocity v perpendicular to the field lines. What is the radius of its circular trajectory?",
     "options": [
       {
@@ -32,7 +32,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Magnetic Lorentz force provides the necessary centripetal force: q v B = m v^2 / r.\nStep 2: Rearranging for radius r: r = m v / (q B).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -55,7 +55,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the magnetic field intensity at the center of a circular loop of radius R carrying a steady current I?",
     "options": [
       {
@@ -81,7 +81,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: From Biot-Savart Law: B = (μ₀ / 4π) * (I ∫ dl / R^2) = (μ₀ / 4π) * (I * 2π R / R^2).\nStep 2: Simplifying gives B = μ₀ I / (2 R).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -104,7 +104,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A galvanometer of internal resistance 50 Ω gives full-scale deflection for a current of 2.0 mA. What shunt resistance must be connected across it to convert it into an ammeter of range 0 to 5.0 A?",
     "options": [
       {
@@ -130,7 +130,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Formula for shunt resistance: S = (I_g * G) / (I - I_g).\nStep 2: Here G = 50 Ω, I_g = 2.0 mA = 0.002 A, I = 5.0 A.\nStep 3: S = (0.002 * 50) / (5.0 - 0.002) = 0.10 / 4.998 ≈ 0.020 Ω.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -153,7 +153,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two long parallel straight wires separated by a distance d in vacuum carry equal currents I in the same direction. What is the nature and magnitude of the magnetic force per unit length between them?",
     "options": [
       {
@@ -179,7 +179,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Currents flowing in the same direction attract each other due to magnetic interaction.\nStep 2: Force per unit length F/L = μ₀ I1 I2 / (2π d) = μ₀ I^2 / (2π d).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,8 +202,8 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "A series LCR circuit has R = 30 Ω, inductive reactance X_L = 80 Ω, and capacitive reactance X_C = 40 Ω connected across an AC voltage source of V_rms = 200 V. What is the impedance of the circuit and the power factor?",
+    "stemFormat": "latex",
+    "stemText": "A series LCR circuit has R = 30 Ω, inductive reactance X_L = 80 Ω, and capacitive reactance X_C = 40 Ω connected across an AC voltage source of V_{rms} = 200 V. What is the impedance of the circuit and the power factor?",
     "options": [
       {
         "label": "A",
@@ -227,8 +227,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Impedance Z = sqrt(R^2 + (X_L - X_C)^2) = sqrt(30^2 + (80 - 40)^2) = sqrt(900 + 1600) = sqrt(2500) = 50 Ω.\nStep 2: Power factor cos φ = R / Z = 30 / 50 = 0.60.\nStep 3: Since X_L > X_C, current lags voltage.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Impedance Z = \\sqrt{R^2 + (X_L - X_C)^2} = \\sqrt{30^2 + (80 - 40)^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50 Ω.\nStep 2: Power factor cos φ = R / Z = 30 / 50 = 0.60.\nStep 3: Since X_L > X_C, current lags voltage.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -300,7 +300,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A conducting rod of length L = 1.0 m rotates in a horizontal plane with a constant angular frequency ω = 100 rad/s about one of its ends in a vertical uniform magnetic field B = 0.5 T. What is the magnitude of the EMF induced between the two ends of the rod?",
     "options": [
       {
@@ -326,7 +326,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Formula for motional EMF in a rotating rod: e = (1/2) B ω L^2.\nStep 2: Substitute B = 0.5 T, ω = 100 rad/s, L = 1.0 m.\nStep 3: e = (1/2) * 0.5 * 100 * (1.0)^2 = 25 V.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -349,7 +349,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A magnetic material has a relative permeability μ_r slightly less than 1 (μ_r = 0.9999) and a small negative magnetic susceptibility (χ < 0). This material is classified as:",
     "options": [
       {
@@ -374,8 +374,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Diamagnetic substances are weakly repelled by magnetic fields and have negative susceptibility χ (typically -10^-5 to -10^-9).\nStep 2: Since μ_r = 1 + χ, μ_r is slightly less than 1.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Diamagnetic substances are weakly repelled by magnetic fields and have negative susceptibility χ (typically -10^{-5} to -10^{-9}).\nStep 2: Since μ_r = 1 + χ, μ_r is slightly less than 1.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,12 +398,12 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "At what resonant angular frequency ω₀ will a series circuit containing an inductor L = 20 mH and capacitor C = 5.0 μF exhibit maximum current resonance?",
     "options": [
       {
         "label": "A",
-        "text": "3162 rad/s (10^4 / sqrt(10) ≈ 3.16 x 10^3 rad/s)",
+        "text": "3162 rad/s (10^4 / \\sqrt{10} ≈ 3.16 x 10^3 rad/s)",
         "isCorrect": true
       },
       {
@@ -423,8 +423,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Resonant angular frequency: ω₀ = 1 / sqrt(L C).\nStep 2: L C = (20 x 10^-3 H) * (5.0 x 10^-6 F) = 100 x 10^-9 = 10^-7 s^2.\nStep 3: ω₀ = 1 / sqrt(10^-7) = sqrt(10^7) = sqrt(10) x 10^3 = 3.162 x 10^3 = 3162 rad/s.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Resonant angular frequency: ω₀ = 1 / \\sqrt{L C}.\nStep 2: L C = (20 x 10^{-3} H) * (5.0 x 10^{-6} F) = 100 x 10^{-9} = 10^{-7} s^2.\nStep 3: ω₀ = 1 / \\sqrt{10^{-7}} = \\sqrt{10^7} = \\sqrt{10} x 10^3 = 3.162 x 10^3 = 3162 rad/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An ideal step-down transformer connected to a 220 V AC mains supply operates an electric heater rated at 11 V, 44 W. What is the current in the primary winding and the transformation ratio (N_s / N_p)?",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Secondary voltage V_s = 11 V, Primary voltage V_p = 220 V => N_s / N_p = V_s / V_p = 11 / 220 = 1/20.\nStep 2: Secondary current I_s = P / V_s = 44 W / 11 V = 4.0 A.\nStep 3: For an ideal transformer (100% efficiency): Power_in = Power_out => V_p * I_p = 44 W.\nStep 4: I_p = 44 W / 220 V = 0.20 A. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Secondary voltage V_s = 11 V, Primary voltage V_p = 220 V => N_s / N_p = V_s / V_p = 11 / 220 = 1/20.\nStep 2: Secondary current I_s = P / V_s = 44 W / 11 V = 4.0 A.\nStep 3: For an ideal transformer (100% efficiency): Power_{in} = Power_{out} => V_p * I_p = 44 W.\nStep 4: I_p = 44 W / 220 V = 0.20 A. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,7 +496,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "At a geographic location on Earth, the horizontal component of Earth's magnetic field B_H is equal to the vertical component B_V. What is the angle of magnetic dip (inclination δ) at this place?",
     "options": [
       {
@@ -521,8 +521,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Dip angle formula: tan δ = B_V / B_H.\nStep 2: Given B_V = B_H, tan δ = 1.\nStep 3: δ = tan^-1(1) = 45°.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Dip angle formula: tan δ = B_V / B_H.\nStep 2: Given B_V = B_H, tan δ = 1.\nStep 3: δ = tan^{-1}(1) = 45°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -545,12 +545,12 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "An air-core solenoid of length 0.5 m, cross-sectional area 20 cm^2 and 500 total turns has a self-inductance L. What is the value of L? (Take μ₀ = 4π x 10^-7 T m/A)",
+    "stemFormat": "latex",
+    "stemText": "An air-core solenoid of length 0.5 m, cross-sectional area 20 cm^2 and 500 total turns has a self-inductance L. What is the value of L? (Take μ₀ = 4π x 10^{-7} T m/A)",
     "options": [
       {
         "label": "A",
-        "text": "1.26 mH (4π x 10^-4 H)",
+        "text": "1.26 mH (4π x 10^{-4} H)",
         "isCorrect": true
       },
       {
@@ -570,8 +570,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Self-inductance of solenoid: L = μ₀ N^2 A / l.\nStep 2: Substitute N = 500, A = 20 x 10^-4 m^2 = 2 x 10^-3 m^2, l = 0.5 m.\nStep 3: L = (4π x 10^-7) * (25 x 10^4) * (2 x 10^-3) / 0.5 = (4π x 10^-7) * (500) / 0.5 = (4π x 10^-7) * 1000 = 4π x 10^-4 H = 1.257 x 10^-3 H ≈ 1.26 mH.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Self-inductance of solenoid: L = μ₀ N^2 A / l.\nStep 2: Substitute N = 500, A = 20 x 10^{-4} m^2 = 2 x 10^{-3} m^2, l = 0.5 m.\nStep 3: L = (4π x 10^{-7}) * (25 x 10^4) * (2 x 10^{-3}) / 0.5 = (4π x 10^{-7}) * (500) / 0.5 = (4π x 10^{-7}) * 1000 = 4π x 10^{-4} H = 1.257 x 10^{-3} H ≈ 1.26 mH.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -579,7 +579,7 @@
         "languageCode": "ta",
         "stemText": "0.5 m நீளமும், 20 cm^2 குறுக்குவெட்டுப் பரப்பும், 500 சுற்றுகளும் கொண்ட காற்று உள்ளக வரிச்சுருளின் தன்மின் தூண்டல் எண் L என்ன?",
         "optionTexts": [
-          "1.26 mH (4π x 10^-4 H)",
+          "1.26 mH (4π x 10^{-4} H)",
           "2.52 mH",
           "0.63 mH",
           "6.28 mH"
@@ -594,7 +594,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A circular coil of radius 10 cm and 100 turns carries a current of 3.2 A. What is the magnetic dipole moment of the coil?",
     "options": [
       {
@@ -620,7 +620,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Magnetic moment M = N * I * A.\nStep 2: Area of loop A = π R^2 = π * (0.10 m)^2 = 0.01 π m^2.\nStep 3: M = 100 * 3.2 A * (0.01 π m^2) = 3.2 π A m^2 = 3.2 * 3.1416 = 10.053 A m^2.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,33 +692,33 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A magnetic field B = 0.2 T is directed perpendicular to the plane of a circular loop of wire of radius 10 cm and resistance 2.0 Ω. If the magnetic field decreases uniformly to zero in 0.1 s, what is the total charge that flows through the wire loop during this time?",
     "options": [
       {
         "label": "A",
-        "text": "3.14 x 10^-3 C (3.14 mC)",
+        "text": "3.14 x 10^{-3} C (3.14 mC)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "6.28 x 10^-3 C",
+        "text": "6.28 x 10^{-3} C",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "1.57 x 10^-3 C",
+        "text": "1.57 x 10^{-3} C",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "3.14 x 10^-2 C",
+        "text": "3.14 x 10^{-2} C",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total charge flowing Δq = ΔΦ / R (independent of time taken).\nStep 2: Initial flux Φ1 = B * A = 0.2 T * (π * 0.10^2) = 0.2 * 0.01 π = 0.002 π Wb.\nStep 3: Final flux Φ2 = 0 => ΔΦ = 0.002 π Wb.\nStep 4: Δq = 0.002 π / 2.0 = 0.001 π C = 3.14 x 10^-3 C = 3.14 mC. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Total charge flowing Δq = ΔΦ / R (independent of time taken).\nStep 2: Initial flux Φ1 = B * A = 0.2 T * (π * 0.10^2) = 0.2 * 0.01 π = 0.002 π Wb.\nStep 3: Final flux Φ2 = 0 => ΔΦ = 0.002 π Wb.\nStep 4: Δq = 0.002 π / 2.0 = 0.001 π C = 3.14 x 10^{-3} C = 3.14 mC. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -726,10 +726,10 @@
         "languageCode": "ta",
         "stemText": "10 cm ஆரமும் 2.0 Ω மின்தடையும் கொண்ட வட்டக்கம்பியின் தளத்திற்கு செங்குத்தாக 0.2 T காந்தப்புலம் செயல்படுகிறது. காந்தப்புலம் 0.1 s இல் சீராக பூஜ்ஜியமாகக் குறைந்தால், கம்பி வழியே பாயும் மொத்த மின்னூட்டம் என்ன?",
         "optionTexts": [
-          "3.14 x 10^-3 C (3.14 mC)",
-          "6.28 x 10^-3 C",
-          "1.57 x 10^-3 C",
-          "3.14 x 10^-2 C"
+          "3.14 x 10^{-3} C (3.14 mC)",
+          "6.28 x 10^{-3} C",
+          "1.57 x 10^{-3} C",
+          "3.14 x 10^{-2} C"
         ]
       }
     ]
@@ -741,7 +741,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Curie's law for a paramagnetic material states that magnetic susceptibility χ is inversely proportional to:",
     "options": [
       {
@@ -767,7 +767,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Curie's law for paramagnets relates magnetization susceptibility to absolute temperature.\nStep 2: χ = C / T, where C is Curie's constant.\nStep 3: As temperature increases, thermal agitation disrupts magnetic dipole alignment, decreasing susceptibility.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -790,7 +790,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A cyclotron is used to accelerate protons (charge q, mass m) in a magnetic field B. What is the kinetic energy of the accelerated protons when they exit at the dees radius R?",
     "options": [
       {
@@ -816,7 +816,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Velocity at radius R: v = q B R / m.\nStep 2: Kinetic energy K = (1/2) m v^2 = (1/2) m [ q B R / m ]^2.\nStep 3: K = q^2 B^2 R^2 / (2 m).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -839,33 +839,33 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In a series LCR resonant circuit, quality factor Q is given by which of the following expressions in terms of L, C, and R?",
     "options": [
       {
         "label": "A",
-        "text": "(1 / R) sqrt(L / C)",
+        "text": "(1 / R) \\sqrt{L / C}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "R sqrt(L / C)",
+        "text": "R \\sqrt{L / C}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "(1 / R) sqrt(C / L)",
+        "text": "(1 / R) \\sqrt{C / L}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "R sqrt(C / L)",
+        "text": "R \\sqrt{C / L}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Quality factor Q = ω₀ L / R = (1 / sqrt(L C)) * (L / R).\nStep 2: Q = (1 / R) * (L / sqrt(L C)) = (1 / R) sqrt(L / C).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Quality factor Q = ω₀ L / R = (1 / \\sqrt{L C}) * (L / R).\nStep 2: Q = (1 / R) * (L / \\sqrt{L C}) = (1 / R) \\sqrt{L / C}.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -873,10 +873,10 @@
         "languageCode": "ta",
         "stemText": "தொடர் LCR ஒத்ததிர்வு சுற்றில் தரக் காரணி Q இன் சமன்பாடு என்ன?",
         "optionTexts": [
-          "(1 / R) sqrt(L / C)",
-          "R sqrt(L / C)",
-          "(1 / R) sqrt(C / L)",
-          "R sqrt(C / L)"
+          "(1 / R) \\sqrt{L / C}",
+          "R \\sqrt{L / C}",
+          "(1 / R) \\sqrt{C / L}",
+          "R \\sqrt{C / L}"
         ]
       }
     ]
@@ -937,7 +937,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An alternating voltage source given by V = 282.8 sin(100π t) volts is connected across a pure resistor of 100 Ω. What is the reading of an AC ammeter connected in the circuit?",
     "options": [
       {
@@ -962,8 +962,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Peak voltage V₀ = 282.8 V = 200 sqrt(2) V.\nStep 2: RMS voltage V_rms = V₀ / sqrt(2) = 200 V.\nStep 3: AC ammeters always measure the RMS current: I_rms = V_rms / R = 200 V / 100 Ω = 2.0 A.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Peak voltage V₀ = 282.8 V = 200 \\sqrt{2} V.\nStep 2: RMS voltage V_{rms} = V₀ / \\sqrt{2} = 200 V.\nStep 3: AC ammeters always measure the RMS current: I_{rms} = V_{rms} / R = 200 V / 100 Ω = 2.0 A.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -986,17 +986,17 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two coaxial circular coils of radii r1 and r2 (r1 << r2) are placed with their centers coinciding in the same plane. What is the mutual inductance M between the two coils?",
     "options": [
       {
         "label": "A",
-        "text": "μ₀ π r1^2 / (2 r2)",
+        "text": "μ₀ π r_1^2 / (2 r2)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "μ₀ π r2^2 / (2 r1)",
+        "text": "μ₀ π r_2^2 / (2 r1)",
         "isCorrect": false
       },
       {
@@ -1011,8 +1011,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Current I2 in outer coil produces magnetic field at center: B2 = μ₀ I2 / (2 r2).\nStep 2: Since r1 << r2, field B2 is uniform across inner coil area A1 = π r1^2.\nStep 3: Magnetic flux through inner coil: Φ1 = B2 * A1 = [ μ₀ I2 / (2 r2) ] * (π r1^2).\nStep 4: Mutual inductance M = Φ1 / I2 = μ₀ π r1^2 / (2 r2). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Current I2 in outer coil produces magnetic field at center: B2 = μ₀ I2 / (2 r2).\nStep 2: Since r1 << r2, field B2 is uniform across inner coil area A1 = π r_1^2.\nStep 3: Magnetic flux through inner coil: Φ1 = B2 * A1 = [ μ₀ I2 / (2 r2) ] * (π r_1^2).\nStep 4: Mutual inductance M = Φ1 / I2 = μ₀ π r_1^2 / (2 r2). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1020,8 +1020,8 @@
         "languageCode": "ta",
         "stemText": "ஒரே தளத்தில் பொது மையத்தைக் கொண்ட r1 மற்றும் r2 (r1 << r2) ஆரமுடைய இரு வட்டக் கம்பிச்சுருள்களுக்கு இடையேயான பரிமாற்றுத் தூண்டல் எண் M என்ன?",
         "optionTexts": [
-          "μ₀ π r1^2 / (2 r2)",
-          "μ₀ π r2^2 / (2 r1)",
+          "μ₀ π r_1^2 / (2 r2)",
+          "μ₀ π r_2^2 / (2 r1)",
           "μ₀ r1 r2 / 2",
           "μ₀ π r1 r2 / 4"
         ]
@@ -1035,7 +1035,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the average power dissipated over a complete cycle in an AC circuit when the phase difference between voltage and current is π / 2 (90°)?",
     "options": [
       {
@@ -1045,23 +1045,23 @@
       },
       {
         "label": "B",
-        "text": "V_rms * I_rms",
+        "text": "V_{rms} * I_{rms}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "(1/2) V_rms * I_rms",
+        "text": "(1/2) V_{rms} * I_{rms}",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "V_rms * I_rms / sqrt(2)",
+        "text": "V_{rms} * I_{rms} / \\sqrt{2}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Average power P_avg = V_rms * I_rms * cos φ.\nStep 2: Phase angle φ = π/2 => cos(π/2) = 0.\nStep 3: P_avg = 0 (Wattless current in pure L or pure C circuits).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Average power P_{avg} = V_{rms} * I_{rms} * cos φ.\nStep 2: Phase angle φ = π/2 => cos(π/2) = 0.\nStep 3: P_{avg} = 0 (Wattless current in pure L or pure C circuits).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1070,9 +1070,9 @@
         "stemText": "மின்னழுத்தம் மற்றும் மின்னோட்டத்திற்கு இடையே கட்ட வேறுபாடு π / 2 (90°) உள்ள ஒரு AC சுற்றில் ஒரு முழு சுழற்சியில் செலவிடப்படும் சராசரி திறன் என்ன?",
         "optionTexts": [
           "பூஜ்ஜியம் (திறனற்ற மின்னோட்டம்)",
-          "V_rms * I_rms",
-          "(1/2) V_rms * I_rms",
-          "V_rms * I_rms / sqrt(2)"
+          "V_{rms} * I_{rms}",
+          "(1/2) V_{rms} * I_{rms}",
+          "V_{rms} * I_{rms} / \\sqrt{2}"
         ]
       }
     ]
@@ -1084,17 +1084,17 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An electron and a proton having equal kinetic energies enter perpendicularly into a uniform magnetic field. If r_e and r_p are the radii of their circular paths, what is the ratio r_e / r_p? (m_e < m_p)",
     "options": [
       {
         "label": "A",
-        "text": "sqrt(m_e / m_p)",
+        "text": "\\sqrt{m_e / m_p}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "sqrt(m_p / m_e)",
+        "text": "\\sqrt{m_p / m_e}",
         "isCorrect": false
       },
       {
@@ -1109,8 +1109,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Radius in terms of kinetic energy K: r = m v / (q B) = sqrt(2 m K) / (q B).\nStep 2: Since K and charge magnitude q are equal for both, r ∝ sqrt(m).\nStep 3: r_e / r_p = sqrt(m_e / m_p).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Radius in terms of kinetic energy K: r = m v / (q B) = \\sqrt{2 m K} / (q B).\nStep 2: Since K and charge magnitude q are equal for both, r ∝ \\sqrt{m}.\nStep 3: r_e / r_p = \\sqrt{m_e / m_p}.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1118,8 +1118,8 @@
         "languageCode": "ta",
         "stemText": "சம இயக்க ஆற்றல் கொண்ட ஓர் எலக்ட்ரான் மற்றும் புரோட்டான் சீரான காந்தப்புலத்தில் செங்குத்தாக நுழைகின்றன. அவற்றின் வட்டப்பாதை ஆரங்களின் விகிதம் r_e / r_p என்ன?",
         "optionTexts": [
-          "sqrt(m_e / m_p)",
-          "sqrt(m_p / m_e)",
+          "\\sqrt{m_e / m_p}",
+          "\\sqrt{m_p / m_e}",
           "m_e / m_p",
           "1 : 1"
         ]
@@ -1133,7 +1133,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The core of an electromagnet and transformer is made of soft iron rather than steel because soft iron has:",
     "options": [
       {
@@ -1159,7 +1159,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Soft iron is easily magnetized (high permeability μ_r) and easily demagnetized.\nStep 2: Its hysteresis loop has a narrow area, minimizing energy loss per AC cycle.\nStep 3: High coercivity and retentivity are desired for permanent magnets (steel), while soft iron is optimal for transformers.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A series circuit consists of an AC source (220 V, 50 Hz), a non-inductive resistor R = 50 Ω, and an inductor with self-inductance L = 0.2 H. What is the peak current in the circuit?",
     "options": [
       {
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Inductive reactance: X_L = 2π f L = 2 * 3.1416 * 50 * 0.2 = 62.83 Ω.\nStep 2: Impedance Z = sqrt(R^2 + X_L^2) = sqrt(50^2 + 62.83^2) = sqrt(2500 + 3948) = sqrt(6448) ≈ 80.3 Ω.\nStep 3: Peak voltage V₀ = V_rms * sqrt(2) = 220 * 1.414 = 311.1 V.\nStep 4: Peak current I₀ = V₀ / Z = 311.1 V / 80.3 Ω ≈ 3.87 A. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Inductive reactance: X_L = 2π f L = 2 * 3.1416 * 50 * 0.2 = 62.83 Ω.\nStep 2: Impedance Z = \\sqrt{R^2 + X_L^2} = \\sqrt{50^2 + 62.83^2} = \\sqrt{2500 + 3948} = \\sqrt{6448} ≈ 80.3 Ω.\nStep 3: Peak voltage V₀ = V_{rms} * \\sqrt{2} = 220 * 1.414 = 311.1 V.\nStep 4: Peak current I₀ = V₀ / Z = 311.1 V / 80.3 Ω ≈ 3.87 A. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1427,8 +1427,8 @@
     "nodeTagCode": "phy_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "A horizontal telephone wire 1 km long stretched in East-West direction falls freely under gravity from a height. If the horizontal component of Earth's magnetic field is B_H = 0.3 x 10^-4 T, what is the induced EMF across the wire when its falling speed is 20 m/s?",
+    "stemFormat": "latex",
+    "stemText": "A horizontal telephone wire 1 km long stretched in East-West direction falls freely under gravity from a height. If the horizontal component of Earth's magnetic field is B_H = 0.3 x 10^{-4} T, what is the induced EMF across the wire when its falling speed is 20 m/s?",
     "options": [
       {
         "label": "A",
@@ -1452,14 +1452,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Motional EMF e = B_H * L * v.\nStep 2: Substitute B_H = 0.3 x 10^-4 T, L = 1000 m, v = 20 m/s.\nStep 3: e = (0.3 x 10^-4 T) * (1000 m) * (20 m/s) = 0.03 * 20 = 0.60 V.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Motional EMF e = B_H * L * v.\nStep 2: Substitute B_H = 0.3 x 10^{-4} T, L = 1000 m, v = 20 m/s.\nStep 3: e = (0.3 x 10^{-4} T) * (1000 m) * (20 m/s) = 0.03 * 20 = 0.60 V.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கிழக்கு-மேற்கு திசையில் 1 km நீளமுள்ள கம்பி 20 m/s வேகத்தில் கீழ்நோக்கி விழுகிறது. பூமியின் கிடைமட்டக் காந்தப்புலம் 0.3 x 10^-4 T எனில் கம்பியின் முனைகளுக்கு இடையே தூண்டப்படும் மின்னியக்கு விசை என்ன?",
+        "stemText": "கிழக்கு-மேற்கு திசையில் 1 km நீளமுள்ள கம்பி 20 m/s வேகத்தில் கீழ்நோக்கி விழுகிறது. பூமியின் கிடைமட்டக் காந்தப்புலம் 0.3 x 10^{-4} T எனில் கம்பியின் முனைகளுக்கு இடையே தூண்டப்படும் மின்னியக்கு விசை என்ன?",
         "optionTexts": [
           "0.60 V",
           "0.30 V",

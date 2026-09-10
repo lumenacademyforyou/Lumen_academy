@@ -6,12 +6,12 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the critical angle for total internal reflection at a diamond-air interface if the refractive index of diamond is 2.42?",
     "options": [
       {
         "label": "A",
-        "text": "24.4° (sin^-1(1 / 2.42))",
+        "text": "24.4° (sin^{-1}(1 / 2.42))",
         "isCorrect": true
       },
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for critical angle: sin θ_c = 1 / μ.\nStep 2: Substitute μ = 2.42: sin θ_c = 1 / 2.42 ≈ 0.4132.\nStep 3: θ_c = sin^-1(0.4132) ≈ 24.41°.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula for critical angle: sin θ_c = 1 / μ.\nStep 2: Substitute μ = 2.42: sin θ_c = 1 / 2.42 ≈ 0.4132.\nStep 3: θ_c = sin^{-1}(0.4132) ≈ 24.41°.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -55,7 +55,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An equiconvex thin lens made of glass of refractive index μ = 1.5 has focal length f = +20 cm in air. What will be its focal length when completely immersed in water of refractive index μ_w = 4/3?",
     "options": [
       {
@@ -80,8 +80,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Lens maker's formula in air: 1/f_air = (μ_g - 1) (1/R1 - 1/R2) = (1.5 - 1) K = 0.5 K => K = 1 / (0.5 * 20) = 1/10.\nStep 2: In water: 1/f_water = (μ_g / μ_w - 1) K = (1.5 / (4/3) - 1) K = (9/8 - 1) K = (1/8) K.\nStep 3: 1/f_water = (1/8) * (1/10) = 1/80 => f_water = +80 cm (focal length quadruples in water).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Lens maker's formula in air: 1/f_{air} = (μ_g - 1) (1/R1 - 1/R2) = (1.5 - 1) K = 0.5 K => K = 1 / (0.5 * 20) = 1/10.\nStep 2: In water: 1/f_{water} = (μ_g / μ_w - 1) K = (1.5 / (4/3) - 1) K = (9/8 - 1) K = (1/8) K.\nStep 3: 1/f_{water} = (1/8) * (1/10) = 1/80 => f_{water} = +80 cm (focal length quadruples in water).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -104,7 +104,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In a Young's double-slit experiment, monochromatic light of wavelength 600 nm illuminates slits separated by 0.5 mm. If the interference fringes are observed on a screen placed 1.0 m away, what is the fringe width?",
     "options": [
       {
@@ -129,8 +129,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fringe width formula: β = λ D / d.\nStep 2: Substitute λ = 600 x 10^-9 m, D = 1.0 m, d = 0.5 x 10^-3 m.\nStep 3: β = (600 x 10^-9 * 1.0) / (0.5 x 10^-3) = 1200 x 10^-6 m = 1.2 x 10^-3 m = 1.2 mm.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Fringe width formula: β = λ D / d.\nStep 2: Substitute λ = 600 x 10^{-9} m, D = 1.0 m, d = 0.5 x 10^{-3} m.\nStep 3: β = (600 x 10^{-9} * 1.0) / (0.5 x 10^{-3}) = 1200 x 10^{-6} m = 1.2 x 10^{-3} m = 1.2 mm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -153,7 +153,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "According to Brewster's law, when unpolarized light is incident on a transparent dielectric medium at the polarizing angle i_p, the reflected and refracted rays are:",
     "options": [
       {
@@ -179,7 +179,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Brewster's law states μ = tan i_p = sin i_p / cos i_p.\nStep 2: From Snell's law: μ = sin i_p / sin r => sin i_p / cos i_p = sin i_p / sin r => sin r = cos i_p = sin(90° - i_p).\nStep 3: r = 90° - i_p => i_p + r = 90°.\nStep 4: The angle between reflected and refracted rays is 180° - (i_p + r) = 180° - 90° = 90°. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -202,7 +202,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An astronomical telescope has an objective lens of focal length 100 cm and an eyepiece of focal length 5.0 cm. What is the magnifying power and length of the telescope tube in normal adjustment (relaxed eye)?",
     "options": [
       {
@@ -228,7 +228,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: In normal adjustment (final image at infinity), magnifying power m = f_o / f_e = 100 cm / 5.0 cm = 20.\nStep 2: Tube length L = f_o + f_e = 100 cm + 5.0 cm = 105 cm.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -300,17 +300,17 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A ray of light is incident on an equilateral glass prism of refracting angle A = 60° at the angle of minimum deviation δ_m = 30°. What is the refractive index of the glass material?",
     "options": [
       {
         "label": "A",
-        "text": "sqrt(2) (≈ 1.414)",
+        "text": "\\sqrt{2} (≈ 1.414)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "sqrt(3) (≈ 1.732)",
+        "text": "\\sqrt{3} (≈ 1.732)",
         "isCorrect": false
       },
       {
@@ -325,8 +325,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Prism formula: μ = sin[(A + δ_m) / 2] / sin(A / 2).\nStep 2: Substitute A = 60°, δ_m = 30°: μ = sin[(60° + 30°) / 2] / sin(60° / 2) = sin 45° / sin 30°.\nStep 3: μ = (1 / sqrt(2)) / (1 / 2) = 2 / sqrt(2) = sqrt(2) ≈ 1.414.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Prism formula: μ = sin[(A + δ_m) / 2] / sin(A / 2).\nStep 2: Substitute A = 60°, δ_m = 30°: μ = sin[(60° + 30°) / 2] / sin(60° / 2) = sin 45° / sin 30°.\nStep 3: μ = (1 / \\sqrt{2}) / (1 / 2) = 2 / \\sqrt{2} = \\sqrt{2} ≈ 1.414.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -334,8 +334,8 @@
         "languageCode": "ta",
         "stemText": "60° கோணமுடைய சமபக்க முப்பட்டகத்தில் சிறும திசைமாறுபாட்டுக் கோணம் 30° எனில், முப்பட்டகப் பொருளின் ஒளிவிலகல் எண் என்ன?",
         "optionTexts": [
-          "sqrt(2) (≈ 1.414)",
-          "sqrt(3) (≈ 1.732)",
+          "\\sqrt{2} (≈ 1.414)",
+          "\\sqrt{3} (≈ 1.732)",
           "1.50",
           "2.0"
         ]
@@ -349,7 +349,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two thin convex lenses of focal lengths f1 = +30 cm and f2 = +20 cm are placed in coaxial contact with each other. What is the equivalent power of the lens combination?",
     "options": [
       {
@@ -374,8 +374,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equivalent focal length: 1 / f_eq = 1/f1 + 1/f2 = 1/30 + 1/20 = (2 + 3) / 60 = 5/60 = 1/12 cm^-1 => f_eq = +12 cm = +0.12 m.\nStep 2: Power P = 1 / f_eq(m) = 1 / 0.12 = 100 / 12 = 25 / 3 D ≈ +8.33 Diopters.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Equivalent focal length: 1 / f_{eq} = 1/f1 + 1/f2 = 1/30 + 1/20 = (2 + 3) / 60 = 5/60 = 1/12 cm^{-1} => f_{eq} = +12 cm = +0.12 m.\nStep 2: Power P = 1 / f_{eq}(m) = 1 / 0.12 = 100 / 12 = 25 / 3 D ≈ +8.33 Diopters.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -398,33 +398,33 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In a single slit diffraction experiment, light of wavelength 500 nm illuminates a slit of width a = 0.2 mm. What is the total angular width of the central diffraction maximum?",
     "options": [
       {
         "label": "A",
-        "text": "5.0 x 10^-3 rad (5.0 mrad)",
+        "text": "5.0 x 10^{-3} rad (5.0 mrad)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "2.5 x 10^-3 rad",
+        "text": "2.5 x 10^{-3} rad",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "1.0 x 10^-2 rad",
+        "text": "1.0 x 10^{-2} rad",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "1.25 x 10^-3 rad",
+        "text": "1.25 x 10^{-3} rad",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Angular half-width to first minimum: θ = λ / a.\nStep 2: Total angular width of central maximum: 2θ = 2 λ / a.\nStep 3: 2θ = (2 * 500 x 10^-9 m) / (0.2 x 10^-3 m) = 1000 x 10^-9 / (2 x 10^-4) = 5.0 x 10^-3 rad = 5.0 mrad.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Angular half-width to first minimum: θ = λ / a.\nStep 2: Total angular width of central maximum: 2θ = 2 λ / a.\nStep 3: 2θ = (2 * 500 x 10^{-9} m) / (0.2 x 10^{-3} m) = 1000 x 10^{-9} / (2 x 10^{-4}) = 5.0 x 10^{-3} rad = 5.0 mrad.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -432,10 +432,10 @@
         "languageCode": "ta",
         "stemText": "0.2 mm அகலமுள்ள ஒற்றைப் பிளவில் 500 nm அலைநீள ஒளி படும்போது உருவாகும் மைய பெருமத்தின் மொத்தக் கோண அகலம் என்ன?",
         "optionTexts": [
-          "5.0 x 10^-3 rad",
-          "2.5 x 10^-3 rad",
-          "1.0 x 10^-2 rad",
-          "1.25 x 10^-3 rad"
+          "5.0 x 10^{-3} rad",
+          "2.5 x 10^{-3} rad",
+          "1.0 x 10^{-2} rad",
+          "1.25 x 10^{-3} rad"
         ]
       }
     ]
@@ -447,7 +447,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Unpolarized light of intensity I₀ passes through two ideal polarizers whose transmission axes are oriented at an angle of 60° to each other. According to Malus's law, what is the intensity of light transmitted through the second polarizer?",
     "options": [
       {
@@ -473,7 +473,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: After passing through the first polarizer, unpolarized light becomes linearly polarized with intensity I1 = I₀ / 2.\nStep 2: By Malus's Law, after the second polarizer: I2 = I1 cos^2(60°).\nStep 3: cos 60° = 1/2 => cos^2(60°) = 1/4.\nStep 4: I2 = (I₀ / 2) * (1/4) = I₀ / 8. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,12 +496,12 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A plane electromagnetic wave propagating in vacuum along the +x direction has an electric field vector oscillating along the y-axis: E = E₀ sin(k x - ω t) j. Along which axis does the magnetic field vector B oscillate?",
     "options": [
       {
         "label": "A",
-        "text": "+z axis (k_hat x j_hat = -i_hat, so E x B is along +x)",
+        "text": "+z axis (k_{hat} x j_{hat} = -i_{hat}, so E x B is along +x)",
         "isCorrect": true
       },
       {
@@ -522,7 +522,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The Poynting vector direction (wave propagation direction) is given by E x B.\nStep 2: E is along +j, wave propagates along +i.\nStep 3: Since j x k = +i, B must oscillate along the +k (+z) direction.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -594,7 +594,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The Maxwell displacement current I_D inside a charging parallel plate capacitor is given by:",
     "options": [
       {
@@ -620,7 +620,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Maxwell introduced the displacement current arising from a time-varying electric flux.\nStep 2: I_D = ε₀ (dΦ_E / dt).\nStep 3: Inside a charging capacitor, displacement current is exactly equal to the conduction current in connecting wires.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -741,7 +741,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The ratio of peak electric field amplitude E₀ to peak magnetic field amplitude B₀ in a plane electromagnetic wave propagating in free space is equal to:",
     "options": [
       {
@@ -761,13 +761,13 @@
       },
       {
         "label": "D",
-        "text": "sqrt(c)",
+        "text": "\\sqrt{c}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: From Maxwell's equations for electromagnetic waves: E₀ / B₀ = c = 1 / sqrt(μ₀ ε₀).\nStep 2: The ratio of electric field to magnetic field amplitude is exactly the speed of light in vacuum.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: From Maxwell's equations for electromagnetic waves: E₀ / B₀ = c = 1 / \\sqrt{μ₀ ε₀}.\nStep 2: The ratio of electric field to magnetic field amplitude is exactly the speed of light in vacuum.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -778,7 +778,7 @@
           "வெற்றிடத்தில் ஒளியின் வேகம் c",
           "1 / c",
           "c^2",
-          "sqrt(c)"
+          "\\sqrt{c}"
         ]
       }
     ]
@@ -790,7 +790,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A compound microscope has an objective lens of focal length 1.0 cm and an eyepiece of focal length 2.5 cm. If an object is placed at 1.2 cm from the objective lens and final image is formed at near point D = 25 cm, what is the total magnifying power?",
     "options": [
       {
@@ -816,7 +816,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: For objective lens: 1/f_o = 1/v_o - 1/u_o => 1/1.0 = 1/v_o - 1/(-1.2) => 1/v_o = 1 - 1/1.2 = 0.2/1.2 = 1/6 => v_o = 6.0 cm.\nStep 2: Objective magnification: m_o = |v_o / u_o| = 6.0 / 1.2 = 5.\nStep 3: Eyepiece magnification at near point: m_e = 1 + D / f_e = 1 + 25 / 2.5 = 1 + 10 = 11.\nStep 4: Total magnification M = m_o * m_e = 5 * 11 = 55. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -839,33 +839,33 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "When two coherent light waves of intensities I and 4I interfere, what are the maximum and minimum intensities produced in the interference pattern?",
     "options": [
       {
         "label": "A",
-        "text": "I_max = 9I, I_min = I",
+        "text": "I_{max} = 9I, I_{min} = I",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "I_max = 5I, I_min = 3I",
+        "text": "I_{max} = 5I, I_{min} = 3I",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "I_max = 9I, I_min = 0",
+        "text": "I_{max} = 9I, I_{min} = 0",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "I_max = 16I, I_min = I",
+        "text": "I_{max} = 16I, I_{min} = I",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula: I_max = (sqrt(I1) + sqrt(I2))^2 = (sqrt(I) + sqrt(4I))^2 = (sqrt(I) + 2 sqrt(I))^2 = (3 sqrt(I))^2 = 9I.\nStep 2: Formula: I_min = (sqrt(I1) - sqrt(I2))^2 = (2 sqrt(I) - sqrt(I))^2 = (sqrt(I))^2 = I.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formula: I_{max} = (\\sqrt{I1} + \\sqrt{I2})^2 = (\\sqrt{I} + \\sqrt{4I})^2 = (\\sqrt{I} + 2 \\sqrt{I})^2 = (3 \\sqrt{I})^2 = 9I.\nStep 2: Formula: I_{min} = (\\sqrt{I1} - \\sqrt{I2})^2 = (2 \\sqrt{I} - \\sqrt{I})^2 = (\\sqrt{I})^2 = I.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -873,10 +873,10 @@
         "languageCode": "ta",
         "stemText": "I மற்றும் 4I செறிவு கொண்ட இரு ஓரியல் ஒளி அலைகள் குறுக்கீட்டு விளைவை ஏற்படுத்தினால் உருவாகும் பெரும மற்றும் சிறும செறிவுகள் என்ன?",
         "optionTexts": [
-          "I_max = 9I, I_min = I",
-          "I_max = 5I, I_min = 3I",
-          "I_max = 9I, I_min = 0",
-          "I_max = 16I, I_min = I"
+          "I_{max} = 9I, I_{min} = I",
+          "I_{max} = 5I, I_{min} = 3I",
+          "I_{max} = 9I, I_{min} = 0",
+          "I_{max} = 16I, I_{min} = I"
         ]
       }
     ]
@@ -888,33 +888,33 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A ray of light traveling inside water (refractive index 4/3) strikes a glass plate (refractive index 1.5) submerged in water. What is the polarizing angle i_p for light reflected from the glass surface?",
     "options": [
       {
         "label": "A",
-        "text": "tan^-1(9 / 8) ≈ 48.4°",
+        "text": "tan^{-1}(9 / 8) ≈ 48.4°",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "tan^-1(8 / 9)",
+        "text": "tan^{-1}(8 / 9)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "tan^-1(1.5)",
+        "text": "tan^{-1}(1.5)",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "tan^-1(1.33)",
+        "text": "tan^{-1}(1.33)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Brewster's Law for interface between medium 1 and medium 2: tan i_p = μ2 / μ1.\nStep 2: Here μ1 = 4/3 (water) and μ2 = 1.5 = 3/2 (glass).\nStep 3: tan i_p = (3/2) / (4/3) = 9 / 8 = 1.125.\nStep 4: i_p = tan^-1(9/8) ≈ 48.37°. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Brewster's Law for interface between medium 1 and medium 2: tan i_p = μ2 / μ1.\nStep 2: Here μ1 = 4/3 (water) and μ2 = 1.5 = 3/2 (glass).\nStep 3: tan i_p = (3/2) / (4/3) = 9 / 8 = 1.125.\nStep 4: i_p = tan^{-1}(9/8) ≈ 48.37°. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -922,10 +922,10 @@
         "languageCode": "ta",
         "stemText": "நீரில் (4/3) இருந்து கண்ணாடியின் (1.5) மீது படும் ஒளியின் தளவிளைவுக் கோணம் i_p என்ன?",
         "optionTexts": [
-          "tan^-1(9 / 8) ≈ 48.4°",
-          "tan^-1(8 / 9)",
-          "tan^-1(1.5)",
-          "tan^-1(1.33)"
+          "tan^{-1}(9 / 8) ≈ 48.4°",
+          "tan^{-1}(8 / 9)",
+          "tan^{-1}(1.5)",
+          "tan^{-1}(1.33)"
         ]
       }
     ]
@@ -986,7 +986,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An optical fiber works on the principle of:",
     "options": [
       {
@@ -1011,8 +1011,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: An optical fiber has a denser core surrounded by a rarer cladding (μ_core > μ_cladding).\nStep 2: Light entering the core undergoes repeated total internal reflections at angles greater than the critical angle, propagating with negligible loss.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: An optical fiber has a denser core surrounded by a rarer cladding (μ_{core} > μ_{cladding}).\nStep 2: Light entering the core undergoes repeated total internal reflections at angles greater than the critical angle, propagating with negligible loss.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In Young's double-slit experiment, the intensity at the central bright maximum is I₀. What is the intensity at a point on the screen where the path difference between the interfering waves is λ / 6?",
     "options": [
       {
@@ -1104,13 +1104,13 @@
       },
       {
         "label": "D",
-        "text": "I₀ / sqrt(2)",
+        "text": "I₀ / \\sqrt{2}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Phase difference Δφ = (2π / λ) * Δx = (2π / λ) * (λ / 6) = 2π / 6 = π / 3 (60°).\nStep 2: Intensity formula: I = I₀ cos^2(Δφ / 2).\nStep 3: Δφ / 2 = (π/3) / 2 = π/6 (30°).\nStep 4: I = I₀ cos^2(30°) = I₀ * (sqrt(3)/2)^2 = (3/4) I₀ = 0.75 I₀. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Phase difference Δφ = (2π / λ) * Δx = (2π / λ) * (λ / 6) = 2π / 6 = π / 3 (60°).\nStep 2: Intensity formula: I = I₀ cos^2(Δφ / 2).\nStep 3: Δφ / 2 = (π/3) / 2 = π/6 (30°).\nStep 4: I = I₀ cos^2(30°) = I₀ * (\\sqrt{3}/2)^2 = (3/4) I₀ = 0.75 I₀. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1121,7 +1121,7 @@
           "3 I₀ / 4 (0.75 I₀)",
           "I₀ / 2",
           "I₀ / 4",
-          "I₀ / sqrt(2)"
+          "I₀ / \\sqrt{2}"
         ]
       }
     ]
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A convex lens of focal length f forms a real image on a screen with object and screen fixed at a distance D apart. If the two positions of the lens for sharp image formation on the screen are separated by distance d (displacement method), the focal length f is given by:",
     "options": [
       {
@@ -1202,13 +1202,13 @@
       },
       {
         "label": "D",
-        "text": "sqrt(D d) / 4",
+        "text": "\\sqrt{D d} / 4",
         "isCorrect": false
       }
     ],
     "solution": {
       "explanationText": "Step 1: In the displacement method, object distance in position 1 is u1 = (D - d)/2, and image distance is v1 = (D + d)/2.\nStep 2: Using lens formula 1/f = 1/v1 - 1/u1 = 2/(D+d) - (- 2/(D-d)) = 2/(D+d) + 2/(D-d).\nStep 3: 1/f = 2 [(D-d) + (D+d)] / (D^2 - d^2) = 4D / (D^2 - d^2).\nStep 4: f = (D^2 - d^2) / (4 D). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1219,7 +1219,7 @@
           "(D^2 - d^2) / (4 D)",
           "(D^2 + d^2) / (4 D)",
           "(D - d) / 4",
-          "sqrt(D d) / 4"
+          "\\sqrt{D d} / 4"
         ]
       }
     ]
@@ -1231,22 +1231,22 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The speed of electromagnetic waves in vacuum is given by which fundamental relation?",
     "options": [
       {
         "label": "A",
-        "text": "1 / sqrt(μ₀ ε₀)",
+        "text": "1 / \\sqrt{μ₀ ε₀}",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "sqrt(μ₀ / ε₀)",
+        "text": "\\sqrt{μ₀ / ε₀}",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "sqrt(μ₀ ε₀)",
+        "text": "\\sqrt{μ₀ ε₀}",
         "isCorrect": false
       },
       {
@@ -1256,8 +1256,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Maxwell derived the wave equation from his four electromagnetic equations.\nStep 2: The wave speed c emerged as c = 1 / sqrt(μ₀ ε₀) ≈ 3.0 x 10^8 m/s.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Maxwell derived the wave equation from his four electromagnetic equations.\nStep 2: The wave speed c emerged as c = 1 / \\sqrt{μ₀ ε₀} ≈ 3.0 x 10^8 m/s.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1265,9 +1265,9 @@
         "languageCode": "ta",
         "stemText": "வெற்றிடத்தில் மின்காந்த அலையின் வேகத்திற்கான அடிப்படை சமன்பாடு எது?",
         "optionTexts": [
-          "1 / sqrt(μ₀ ε₀)",
-          "sqrt(μ₀ / ε₀)",
-          "sqrt(μ₀ ε₀)",
+          "1 / \\sqrt{μ₀ ε₀}",
+          "\\sqrt{μ₀ / ε₀}",
+          "\\sqrt{μ₀ ε₀}",
           "1 / (μ₀ ε₀)"
         ]
       }
@@ -1280,7 +1280,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A tank is filled with water to a depth of 16 cm. What is the apparent depth of a coin resting on the bottom of the tank when viewed normally from above? (Refractive index of water = 4/3)",
     "options": [
       {
@@ -1305,8 +1305,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Apparent depth formula: d_apparent = Real depth / μ.\nStep 2: d_apparent = 16 cm / (4/3) = 16 * (3/4) = 12 cm.\nStep 3: The coin appears raised by 16 - 12 = 4 cm.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Apparent depth formula: d_{apparent} = Real depth / μ.\nStep 2: d_{apparent} = 16 cm / (4/3) = 16 * (3/4) = 12 cm.\nStep 3: The coin appears raised by 16 - 12 = 4 cm.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "An unpolarized light beam of intensity I₀ passes through a stack of three polarizers P1, P2, and P3. The transmission axis of P2 is oriented at 45° to P1, and the transmission axis of P3 is oriented at 90° to P1 (perpendicular to P1). What is the intensity of light transmitted through P3?",
     "options": [
       {
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: After P1: I1 = I₀ / 2.\nStep 2: After P2 (at 45° to P1): I2 = I1 cos^2(45°) = (I₀ / 2) * (1 / sqrt(2))^2 = (I₀ / 2) * (1/2) = I₀ / 4.\nStep 3: Angle between P2 and P3 = 90° - 45° = 45°.\nStep 4: After P3: I3 = I2 cos^2(45°) = (I₀ / 4) * (1/2) = I₀ / 8. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: After P1: I1 = I₀ / 2.\nStep 2: After P2 (at 45° to P1): I2 = I1 cos^2(45°) = (I₀ / 2) * (1 / \\sqrt{2})^2 = (I₀ / 2) * (1/2) = I₀ / 4.\nStep 3: Angle between P2 and P3 = 90° - 45° = 45°.\nStep 4: After P3: I3 = I2 cos^2(45°) = (I₀ / 4) * (1/2) = I₀ / 8. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1427,7 +1427,7 @@
     "nodeTagCode": "phy_03",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the resolving power of an optical microscope having objective numerical aperture NA = n sin θ with light of wavelength λ?",
     "options": [
       {
@@ -1452,8 +1452,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Minimum resolvable separation: d_min = 1.22 λ / (2 n sin θ).\nStep 2: Resolving Power = 1 / d_min = 2 n sin θ / (1.22 λ).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Minimum resolvable separation: d_{min} = 1.22 λ / (2 n sin θ).\nStep 2: Resolving Power = 1 / d_{min} = 2 n sin θ / (1.22 λ).\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
