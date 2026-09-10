@@ -6,8 +6,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "In C4 plants (e.g., Maize and Sugarcane), the Kranz anatomy isolates the primary carbon fixation step. Which enzyme catalyzes the initial CO2 fixation in the mesophyll cells, and what is the primary 4-carbon organic acid product formed?",
+    "stemFormat": "latex",
+    "stemText": "In C_4 plants (e.g., Maize and Sugarcane), the Kranz anatomy isolates the primary carbon fixation step. Which enzyme catalyzes the initial CO_2 fixation in the mesophyll cells, and what is the primary 4-carbon organic acid product formed?",
     "options": [
       {
         "label": "A",
@@ -31,14 +31,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In C4 plants, initial CO2 acceptor in mesophyll cytosol is 3-carbon Phosphoenolpyruvate (PEP).\nStep 2: PEP carboxylase catalyzes carboxylation of PEP to form the 4-carbon dicarboxylic acid Oxaloacetate (OAA).\nStep 3: OAA is converted to malate/aspartate and shuttled into bundle sheath cells where RuBisCO operates without photorespiration.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In C_4 plants, initial CO_2 acceptor in mesophyll cytosol is 3-carbon Phosphoenolpyruvate (PEP).\nStep 2: PEP carboxylase catalyzes carboxylation of PEP to form the 4-carbon dicarboxylic acid Oxaloacetate (OAA).\nStep 3: OAA is converted to malate/aspartate and shuttled into bundle sheath cells where RuBisCO operates without photorespiration.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "C4 தாவரங்களில் (எ.கா. சோளம், கரும்பு) மீசோஃபில் செல்களில் முதன்மை CO2 நிலைநிறுத்தத்தை வினையூக்கும் என்சைம் எது மற்றும் உருவாகும் முதன்மை 4-கார்பன் அமில விளைபொருள் எது?",
+        "stemText": "C_4 தாவரங்களில் (எ.கா. சோளம், கரும்பு) மீசோஃபில் செல்களில் முதன்மை CO_2 நிலைநிறுத்தத்தை வினையூக்கும் என்சைம் எது மற்றும் உருவாகும் முதன்மை 4-கார்பன் அமில விளைபொருள் எது?",
         "optionTexts": [
           "கார்பானிக் அன்ஹைட்ரேஸ்; அஸ்பார்டிக் அமிலம்",
           "PEP கார்பாக்சிலேஸ்; ஆக்சலோஅசிட்டிக் அமிலம் (OAA)",
@@ -55,8 +55,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "In aerobic cellular respiration, during the complete oxidation of one mole of palmitic acid / tripalmitin (a fat, C51H98O6), what is the calculated value of the Respiratory Quotient (RQ)?",
+    "stemFormat": "latex",
+    "stemText": "In aerobic cellular respiration, during the complete oxidation of one mole of palmitic acid / tripalmitin (a fat, C_{51}H_{98}O_6), what is the calculated value of the Respiratory Quotient (RQ)?",
     "options": [
       {
         "label": "A",
@@ -75,24 +75,24 @@
       },
       {
         "label": "D",
-        "text": "0.70 (less than 1.0 because fats are oxygen-poor and consume more O2 per CO2 evolved)",
+        "text": "0.70 (less than 1.0 because fats are oxygen-poor and consume more O_2 per CO_2 evolved)",
         "isCorrect": true
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Write the balanced oxidation equation for tripalmitin: 2 C51H98O6 + 145 O2 → 102 CO2 + 98 H2O + Energy.\nStep 2: Respiratory Quotient is defined as: RQ = Volume of CO2 evolved / Volume of O2 consumed.\nStep 3: RQ = 102 / 145 ≈ 0.703 ≈ 0.70.\nStep 4: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Write the balanced oxidation equation for tripalmitin: 2 C_{51}H_{98}O_6 + 145 O_2 → 102 CO_2 + 98 H_2O + Energy.\nStep 2: Respiratory Quotient is defined as: RQ = Volume of CO_2 evolved / Volume of O_2 consumed.\nStep 3: RQ = 102 / 145 ≈ 0.703 ≈ 0.70.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "காற்று சுவாசத்தில் ஒரு மோல் ட்ரைபால்மிட்டின் கொழுப்பு (C51H98O6) முழுமையாக ஆக்சிஜனேற்றமடையும் போது கணக்கிடப்படும் சுவாச ஈவு (RQ) மதிப்பு என்ன?",
+        "stemText": "காற்று சுவாசத்தில் ஒரு மோல் ட்ரைபால்மிட்டின் கொழுப்பு (C_{51}H_{98}O_6) முழுமையாக ஆக்சிஜனேற்றமடையும் போது கணக்கிடப்படும் சுவாச ஈவு (RQ) மதிப்பு என்ன?",
         "optionTexts": [
           "1.33 (மாலிக் அமிலம் போன்ற கரிம அமிலங்களுக்கு சமம்)",
           "0.90 (புரதங்களுக்கு சமம்)",
           "1.00 (குளுக்கோஸ் போன்ற கார்போஹைட்ரேட்டுகளுக்கு சமம்)",
-          "0.70 (கொழுப்புகளில் ஆக்ஸிஜன் குறைவாக உள்ளதால் அதிக O2 நுகரப்பட்டு RQ மதிப்பு 1 ஐ விடக் குறைவாக அமைகிறது)"
+          "0.70 (கொழுப்புகளில் ஆக்ஸிஜன் குறைவாக உள்ளதால் அதிக O_2 நுகரப்பட்டு RQ மதிப்பு 1 ஐ விடக் குறைவாக அமைகிறது)"
         ]
       }
     ]
@@ -104,22 +104,22 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During the light reaction of photosynthesis, which mineral ions are directly required for the water-splitting complex (photolysis of water) associated with Photosystem II?",
     "options": [
       {
         "label": "A",
-        "text": "Manganese (Mn2+) and Chlorine (Cl-)",
+        "text": "Manganese (Mn^{2+}) and Chlorine (Cl^-)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Magnesium (Mg2+) and Iron (Fe2+)",
+        "text": "Magnesium (Mg^{2+}) and Iron (Fe^{2+})",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Zinc (Zn2+) and Copper (Cu2+)",
+        "text": "Zinc (Zn^{2+}) and Copper (Cu^{2+})",
         "isCorrect": false
       },
       {
@@ -129,8 +129,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The oxygen-evolving complex (OEC) is associated with PS II located on the inner side of the thylakoid membrane.\nStep 2: It catalyzes the oxidation of water: 2 H2O → 4 H+ + O2 + 4 e-.\nStep 3: Manganese (Mn) and Chloride (Cl-) along with Calcium (Ca2+) are essential cofactors for this photolysis reaction.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The oxygen-evolving complex (OEC) is associated with PS II located on the inner side of the thylakoid membrane.\nStep 2: It catalyzes the oxidation of water: 2 H_2O → 4 H^+ + O_2 + 4 e^-.\nStep 3: Manganese (Mn) and Chloride (Cl^-) along with Calcium (Ca^{2+}) are essential cofactors for this photolysis reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -138,9 +138,9 @@
         "languageCode": "ta",
         "stemText": "ஒளிச்சேர்க்கையின் ஒளி வினையின் போது, இரண்டாம் ஒளித்தொகுப்புடன் (PS II) தொடர்புடைய நீர் மூலக்கூறு பிளத்தல் (photolysis of water) வினைக்கு அவசியமான கனிம அயனிகள் யாவை?",
         "optionTexts": [
-          "மாங்கனீசு (Mn2+) மற்றும் குளோரின் (Cl-)",
-          "மெக்னீசியம் (Mg2+) மற்றும் இரும்பு (Fe2+)",
-          "துத்தநாகம் (Zn2+) மற்றும் தாமிரம் (Cu2+)",
+          "மாங்கனீசு (Mn^{2+}) மற்றும் குளோரின் (Cl^-)",
+          "மெக்னீசியம் (Mg^{2+}) மற்றும் இரும்பு (Fe^{2+})",
+          "துத்தநாகம் (Zn^{2+}) மற்றும் தாமிரம் (Cu^{2+})",
           "மாலிப்டினம் (Mo) மற்றும் போரான் (B)"
         ]
       }
@@ -153,8 +153,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "How many molecules of ATP and NADPH are consumed during the Calvin cycle (C3 pathway) for the synthesis of one mole of glucose (C6H12O6)?",
+    "stemFormat": "latex",
+    "stemText": "How many molecules of ATP and NADPH are consumed during the Calvin cycle (C_3 pathway) for the synthesis of one mole of glucose (C_6H_{12}O_6)?",
     "options": [
       {
         "label": "A",
@@ -178,14 +178,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: For the fixation of one molecule of CO2 in the Calvin cycle:\n- Reduction stage uses 2 ATP and 2 NADPH.\n- Regeneration of RuBP uses 1 ATP.\nTotal per CO2 = 3 ATP + 2 NADPH.\nStep 2: To synthesize one mole of glucose (6 carbons), 6 turns of the cycle are required.\nStep 3: Total ATP = 6 × 3 = 18 ATP; Total NADPH = 6 × 2 = 12 NADPH.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: For the fixation of one molecule of CO_2 in the Calvin cycle:\n- Reduction stage uses 2 ATP and 2 NADPH.\n- Regeneration of RuBP uses 1 ATP.\nTotal per CO_2 = 3 ATP + 2 NADPH.\nStep 2: To synthesize one mole of glucose (6 carbons), 6 turns of the cycle are required.\nStep 3: Total ATP = 6 × 3 = 18 ATP; Total NADPH = 6 × 2 = 12 NADPH.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கால்வின் சுழற்சியில் (C3 வழிப்பாதை) ஒரு மோல் குளுக்கோஸ் (C6H12O6) உருவாவதற்கு எத்தனை மூலக்கூறுகள் ATP மற்றும் NADPH பயன்படுத்தப்படுகின்றன?",
+        "stemText": "கால்வின் சுழற்சியில் (C_3 வழிப்பாதை) ஒரு மோல் குளுக்கோஸ் (C_6H_{12}O_6) உருவாவதற்கு எத்தனை மூலக்கூறுகள் ATP மற்றும் NADPH பயன்படுத்தப்படுகின்றன?",
         "optionTexts": [
           "18 ATP மற்றும் 12 NADPH",
           "12 ATP மற்றும் 18 NADPH",
@@ -202,8 +202,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In photorespiration (C2 cycle), which three cell organelles cooperate sequentially in a coordinated metabolic pathway?",
+    "stemFormat": "latex",
+    "stemText": "In photorespiration (C_2 cycle), which three cell organelles cooperate sequentially in a coordinated metabolic pathway?",
     "options": [
       {
         "label": "A",
@@ -227,14 +227,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: When RuBisCO oxygenates RuBP due to high O2/low CO2, phosphoglycolate is produced.\nStep 2: Phosphoglycolate is metabolized across three organelles in sequence: Chloroplast → Peroxisome → Mitochondria.\nStep 3: In mitochondria, two glycine molecules form serine and release one CO2 without ATP synthesis.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: When RuBisCO oxygenates RuBP due to high O_2/low CO_2, phosphoglycolate is produced.\nStep 2: Phosphoglycolate is metabolized across three organelles in sequence: Chloroplast → Peroxisome → Mitochondria.\nStep 3: In mitochondria, two glycine molecules form serine and release one CO_2 without ATP synthesis.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒளிச்சுவாசத்தில் (C2 சுழற்சி), அடுத்தடுத்து ஒருங்கிணைந்து செயல்படும் மூன்று செல் உறுப்புகள் யாவை?",
+        "stemText": "ஒளிச்சுவாசத்தில் (C_2 சுழற்சி), அடுத்தடுத்து ஒருங்கிணைந்து செயல்படும் மூன்று செல் உறுப்புகள் யாவை?",
         "optionTexts": [
           "பசுங்கணிகம், பெராக்சிசோம் மற்றும் மைட்டோகாண்ட்ரியா",
           "பசுங்கணிகம், கோல்கை உறுப்பு மற்றும் எண்டோபிளாச வலைப்பின்னல்",
@@ -251,12 +251,12 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which statement correctly distinguishes cyclic photophosphorylation from non-cyclic photophosphorylation?",
     "options": [
       {
         "label": "A",
-        "text": "Cyclic photophosphorylation involves only PS I, occurs in stroma lamellae, and synthesizes only ATP without producing NADPH or O2",
+        "text": "Cyclic photophosphorylation involves only PS I, occurs in stroma lamellae, and synthesizes only ATP without producing NADPH or O_2",
         "isCorrect": true
       },
       {
@@ -276,8 +276,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Cyclic photophosphorylation operates predominantly in stroma lamellae membranes which lack PS II and NADP reductase enzyme.\nStep 2: The excited electron from PS I (P700) cycles back to PS I through the electron transport chain, generating a proton gradient for ATP synthesis.\nStep 3: Neither NADPH nor O2 (no water photolysis) is produced in cyclic photophosphorylation.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Cyclic photophosphorylation operates predominantly in stroma lamellae membranes which lack PS II and NADP reductase enzyme.\nStep 2: The excited electron from PS I (P700) cycles back to PS I through the electron transport chain, generating a proton gradient for ATP synthesis.\nStep 3: Neither NADPH nor O_2 (no water photolysis) is produced in cyclic photophosphorylation.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -285,7 +285,7 @@
         "languageCode": "ta",
         "stemText": "சுழல் ஒளி பாஸ்பரிகரணம் மற்றும் சுழலா ஒளி பாஸ்பரிகரணம் ஆகியவற்றை சரியாக வேறுபடுத்தும் கூற்று எது?",
         "optionTexts": [
-          "சுழல் ஒளி பாஸ்பரிகரணம் PS I-ஐ மட்டுமே உள்ளடக்கியது, ஸ்ட்ரோமா லேமெல்லாவில் நிகழ்கிறது மற்றும் NADPH அல்லது O2 ஐ உருவாக்காமல் ATP-ஐ மட்டுமே உற்பத்தி செய்கிறது",
+          "சுழல் ஒளி பாஸ்பரிகரணம் PS I-ஐ மட்டுமே உள்ளடக்கியது, ஸ்ட்ரோமா லேமெல்லாவில் நிகழ்கிறது மற்றும் NADPH அல்லது O_2 ஐ உருவாக்காமல் ATP-ஐ மட்டுமே உற்பத்தி செய்கிறது",
           "சுழல் ஒளி பாஸ்பரிகரணம் PS I மற்றும் PS II இரண்டையும் உள்ளடக்கி ATP மற்றும் NADPH இரண்டையும் உருவாக்குகிறது",
           "சுழலா ஒளி பாஸ்பரிகரணம் 680 nm-க்கு அதிகமான அலைநீள ஒளி உள்ளபோது மட்டுமே நிகழ்கிறது",
           "சுழல் ஒளி பாஸ்பரிகரணம் நீர் மூலக்கூறு பிளத்தலுக்கு வழிவகுக்கிறது"
@@ -349,8 +349,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In Peter Mitchell's Chemiosmotic Hypothesis of ATP synthesis in chloroplasts, where do protons (H+) accumulate to generate the proton motive force during photosynthetic light reactions?",
+    "stemFormat": "latex",
+    "stemText": "In Peter Mitchell's Chemiosmotic Hypothesis of ATP synthesis in chloroplasts, where do protons (H^+) accumulate to generate the proton motive force during photosynthetic light reactions?",
     "options": [
       {
         "label": "A",
@@ -374,14 +374,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Protons from water splitting are released inside the thylakoid lumen.\nStep 2: Protons are transported from the stroma into the lumen by the cytochrome b6f / plastoquinone pump.\nStep 3: Removal of protons from stroma by NADP+ reductase further increases proton concentration in the thylakoid lumen.\nStep 4: The proton gradient drives ATP synthesis as protons flow back through the CF0-CF1 ATP synthase channel into the stroma.\nStep 5: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Protons from water splitting are released inside the thylakoid lumen.\nStep 2: Protons are transported from the stroma into the lumen by the cytochrome b6f / plastoquinone pump.\nStep 3: Removal of protons from stroma by NADP^+ reductase further increases proton concentration in the thylakoid lumen.\nStep 4: The proton gradient drives ATP synthesis as protons flow back through the CF_0-CF_1 ATP synthase channel into the stroma.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "பீட்டர் மிட்செலின் வேதிசவ்வூடுபரவல் கொள்கையின்படி (Chemiosmotic Hypothesis), ஒளிச்சேர்க்கையின் ஒளி வினையில் புரோட்டான் உந்து விசையை உருவாக்க புரோட்டான்கள் (H+) எங்கு குவிகின்றன?",
+        "stemText": "பீட்டர் மிட்செலின் வேதிசவ்வூடுபரவல் கொள்கையின்படி (Chemiosmotic Hypothesis), ஒளிச்சேர்க்கையின் ஒளி வினையில் புரோட்டான் உந்து விசையை உருவாக்க புரோட்டான்கள் (H^+) எங்கு குவிகின்றன?",
         "optionTexts": [
           "தைலகாய்டின் உட்பகுதி (Lumen)",
           "பசுங்கணிகத்தின் ஸ்ட்ரோமா பகுதி",
@@ -398,7 +398,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In glycolysis (EMP pathway), what is the net gain of ATP and NADH molecules produced per mole of glucose oxidized to two moles of pyruvate?",
     "options": [
       {
@@ -423,8 +423,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In the preparatory phase of glycolysis, 2 ATP molecules are invested (hexokinase and phosphofructokinase steps).\nStep 2: In the payoff phase, 4 ATP molecules are produced via substrate-level phosphorylation (2 from 1,3-BPGA → 3-PGA and 2 from PEP → pyruvate).\nStep 3: 2 molecules of NADH + H+ are produced in the glyceraldehyde-3-phosphate dehydrogenase step.\nStep 4: Net yield = 4 - 2 = 2 ATP and 2 NADH.\nStep 5: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In the preparatory phase of glycolysis, 2 ATP molecules are invested (hexokinase and phosphofructokinase steps).\nStep 2: In the payoff phase, 4 ATP molecules are produced via substrate-level phosphorylation (2 from 1,3-BPGA → 3-PGA and 2 from PEP → pyruvate).\nStep 3: 2 molecules of NADH + H^+ are produced in the glyceraldehyde-3-phosphate dehydrogenase step.\nStep 4: Net yield = 4 - 2 = 2 ATP and 2 NADH.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In cellular respiration, which multi-enzyme complex catalyzes the oxidative decarboxylation of pyruvate into Acetyl-CoA in the mitochondrial matrix (Link Reaction)?",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Pyruvate enters the mitochondrial matrix from the cytoplasm.\nStep 2: Pyruvate dehydrogenase complex, requiring Mg2+, TPP, lipoate, CoA, and NAD+, catalyzes: Pyruvate + CoA + NAD+ → Acetyl-CoA + CO2 + NADH + H+.\nStep 3: This links glycolysis to the Krebs cycle.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Pyruvate enters the mitochondrial matrix from the cytoplasm.\nStep 2: Pyruvate dehydrogenase complex, requiring Mg^{2+}, TPP, lipoate, CoA, and NAD^+, catalyzes: Pyruvate + CoA + NAD^+ → Acetyl-CoA + CO_2 + NADH + H^+.\nStep 3: This links glycolysis to the Krebs cycle.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -545,17 +545,17 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the mitochondrial electron transport chain (ETC), Complex IV (Cytochrome c oxidase) contains which cytochromes and metallic redox centers?",
     "options": [
       {
         "label": "A",
-        "text": "Cytochromes a and a3, and two copper centers (CuA and CuB)",
+        "text": "Cytochromes a and a_3, and two copper centers (CuA and CuB)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Cytochromes b and c1, and one iron-sulfur center",
+        "text": "Cytochromes b and c_1, and one iron-sulfur center",
         "isCorrect": false
       },
       {
@@ -570,8 +570,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Complex IV refers to Cytochrome c oxidase complex.\nStep 2: It contains Cytochrome a and Cytochrome a3, along with two copper centers named CuA and CuB.\nStep 3: It accepts electrons from reduced cytochrome c and transfers them to molecular oxygen (terminal electron acceptor), reducing O2 to H2O.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Complex IV refers to Cytochrome c oxidase complex.\nStep 2: It contains Cytochrome a and Cytochrome a_3, along with two copper centers named CuA and CuB.\nStep 3: It accepts electrons from reduced cytochrome c and transfers them to molecular oxygen (terminal electron acceptor), reducing O_2 to H_2O.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -579,8 +579,8 @@
         "languageCode": "ta",
         "stemText": "மைட்டோகாண்ட்ரிய எலக்ட்ரான் கடத்து சங்கிலியில் (ETC), கூட்டமைப்பு IV (சைட்டோக்ரோம் c ஆக்சிடேஸ்) பெற்றுள்ள சைட்டோக்ரோம்கள் மற்றும் உலோக மையங்கள் யாவை?",
         "optionTexts": [
-          "சைட்டோக்ரோம் a மற்றும் a3, மற்றும் இரண்டு தாமிர மையங்கள் (CuA மற்றும் CuB)",
-          "சைட்டோக்ரோம் b மற்றும் c1, மற்றும் ஒரு இரும்பு-கந்தக மையம்",
+          "சைட்டோக்ரோம் a மற்றும் a_3, மற்றும் இரண்டு தாமிர மையங்கள் (CuA மற்றும் CuB)",
+          "சைட்டோக்ரோம் b மற்றும் c_1, மற்றும் ஒரு இரும்பு-கந்தக மையம்",
           "FMN மற்றும் Fe-S கூட்டமைப்புகள்",
           "FAD மற்றும் சைட்டோக்ரோம் b558"
         ]
@@ -643,7 +643,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which plant hormone is responsible for the phenomenon of 'apical dominance', where the growing apical bud suppresses the outgrowth of lateral axillary buds?",
     "options": [
       {
@@ -653,7 +653,7 @@
       },
       {
         "label": "B",
-        "text": "Gibberellic acid (GA3)",
+        "text": "Gibberellic acid (GA_3)",
         "isCorrect": false
       },
       {
@@ -669,7 +669,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Apical dominance is caused by auxin produced at the shoot apex diffusing basipetally to inhibit lateral bud growth.\nStep 2: Decapitation (removal of shoot apex) relieves this inhibition and promotes branching (widely used in tea plucking and hedge making).\nStep 3: Cytokinins act antagonistically to overcome apical dominance.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -678,7 +678,7 @@
         "stemText": "வளரும் நுனி மொட்டு பக்கவாட்டு மொட்டுகளின் வளர்ச்சியைத் தடுக்கும் 'நுனி ஆதிக்கம்' (apical dominance) என்ற நிகழ்விற்கு காரணமான தாவர ஹார்மோன் எது?",
         "optionTexts": [
           "ஆக்சின் (இண்டோல்-3-அசிட்டிக் அமிலம் / IAA)",
-          "ஜிப்ரல்லிக் அமிலம் (GA3)",
+          "ஜிப்ரல்லிக் அமிலம் (GA_3)",
           "அப்சிசிக் அமிலம் (ABA)",
           "எத்திலீன்"
         ]
@@ -692,7 +692,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which synthetic auxin derivative is widely used as a selective herbicide (weedicide) to eradicate broad-leaved dicot weeds in cereal crop fields without affecting mature monocot plants?",
     "options": [
       {
@@ -712,13 +712,13 @@
       },
       {
         "label": "D",
-        "text": "GA3 (Gibberellin A3)",
+        "text": "GA_3 (Gibberellin A_3)",
         "isCorrect": false
       }
     ],
     "solution": {
       "explanationText": "Step 1: 2,4-D (2,4-Dichlorophenoxyacetic acid) is a synthetic auxin.\nStep 2: At higher concentrations, it selectively kills broad-leaved dicot weeds while leaving mature monocotyledonous grasses/crops unharmed.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -729,7 +729,7 @@
           "2,4-D (2,4-டைக்ளோரோஃபீனாக்சி அசிட்டிக் அமிலம்)",
           "NAA (நாப்தலீன் அசிட்டிக் அமிலம்)",
           "IBA (இண்டோல்-3-பியூட்ரிக் அமிலம்)",
-          "GA3 (ஜிப்ரல்லின் A3)"
+          "GA_3 (ஜிப்ரல்லின் A_3)"
         ]
       }
     ]
@@ -741,8 +741,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The agricultural practice of applying Gibberellic acid (GA3) directly to sugarcane crops increases the yield by as much as 20 tonnes per acre by:",
+    "stemFormat": "latex",
+    "stemText": "The agricultural practice of applying Gibberellic acid (GA_3) directly to sugarcane crops increases the yield by as much as 20 tonnes per acre by:",
     "options": [
       {
         "label": "A",
@@ -766,14 +766,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Sugarcane stores carbohydrates as sugar in its stems.\nStep 2: Spraying sugarcane with gibberellins (GA3) promotes dramatic internode elongation, increasing stem length.\nStep 3: This increases total biomass and sugar yield by up to 20 tonnes per acre.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Sugarcane stores carbohydrates as sugar in its stems.\nStep 2: Spraying sugarcane with gibberellins (GA_3) promotes dramatic internode elongation, increasing stem length.\nStep 3: This increases total biomass and sugar yield by up to 20 tonnes per acre.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கரும்புப் பயிரில் ஜிப்ரல்லிக் அமிலத்தை (GA3) தெளிப்பது எதன் மூலம் ஒரு ஏக்கருக்கு 20 டன்கள் வரை மகசூலை அதிகரிக்கிறது?",
+        "stemText": "கரும்புப் பயிரில் ஜிப்ரல்லிக் அமிலத்தை (GA_3) தெளிப்பது எதன் மூலம் ஒரு ஏக்கருக்கு 20 டன்கள் வரை மகசூலை அதிகரிக்கிறது?",
         "optionTexts": [
           "சுக்ரோஸ் சேமிக்கப்படும் தண்டின் கணுவிடைப் பகுதிகளை நீட்சியடையச் செய்வதன் மூலம்",
           "வேர் மூலம் நைட்ரஜன் உறிஞ்சும் வீதத்தை அதிகரிப்பதன் மூலம்",
@@ -790,12 +790,12 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which plant hormone is a gas at physiological temperatures and triggers the climacteric respiratory burst during fruit ripening?",
     "options": [
       {
         "label": "A",
-        "text": "Ethylene (C2H4)",
+        "text": "Ethylene (C_2H_4)",
         "isCorrect": true
       },
       {
@@ -816,7 +816,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Ethylene is the only natural gaseous plant growth regulator.\nStep 2: It accelerates fruit ripening by inducing a rapid rise in respiration rate known as the respiratory climacteric.\nStep 3: It also promotes abscission of leaves and flowers.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -824,7 +824,7 @@
         "languageCode": "ta",
         "stemText": "இயற்கையாகவே வாயு நிலையில் உள்ளதும், பழங்கள் பழுக்கும் போது சுவாச வீதத்தை விரைவுபடுத்துவதும் (respiratory climacteric) ஆன தாவர ஹார்மோன் எது?",
         "optionTexts": [
-          "எத்திலீன் (C2H4)",
+          "எத்திலீன் (C_2H_4)",
           "அப்சிசிக் அமிலம் (ABA)",
           "சைட்டோகைனின்",
           "ஆக்சின்"
@@ -888,17 +888,17 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "In the mechanism of opening and closing of stomata according to Levitt's Active K+ transport hypothesis, opening of stomata in light involves:",
+    "stemFormat": "latex",
+    "stemText": "In the mechanism of opening and closing of stomata according to Levitt's Active K^+ transport hypothesis, opening of stomata in light involves:",
     "options": [
       {
         "label": "A",
-        "text": "Active proton (H+) efflux and influx of K+ ions and malate into guard cells, increasing turgidity",
+        "text": "Active proton (H^+) efflux and influx of K^+ ions and malate into guard cells, increasing turgidity",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Efflux of K+ ions and influx of H+ ions into guard cells, decreasing turgor",
+        "text": "Efflux of K^+ ions and influx of H^+ ions into guard cells, decreasing turgor",
         "isCorrect": false
       },
       {
@@ -913,17 +913,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In light, phosphoenolpyruvate is converted to malic acid in guard cells, which dissociates into H+ and malate2-.\nStep 2: H+ is actively pumped out of guard cells, and K+ enters in exchange.\nStep 3: K+ and malate accumulate in guard cell vacuoles, lowering osmotic potential and causing endosmosis.\nStep 4: Guard cells become turgid, bowing outer thin walls and opening the stomatal aperture.\nStep 5: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In light, phosphoenolpyruvate is converted to malic acid in guard cells, which dissociates into H^+ and malate2-.\nStep 2: H^+ is actively pumped out of guard cells, and K^+ enters in exchange.\nStep 3: K^+ and malate accumulate in guard cell vacuoles, lowering osmotic potential and causing endosmosis.\nStep 4: Guard cells become turgid, bowing outer thin walls and opening the stomatal aperture.\nStep 5: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "லெவிட்டின் செயல்படு K+ கடத்துக் கோட்பாட்டின்படி, ஒளியில் இலைத்துளை திறக்கும் போது காப்பு செல்களில் நிகழும் முக்கிய நிகழ்வு எது?",
+        "stemText": "லெவிட்டின் செயல்படு K^+ கடத்துக் கோட்பாட்டின்படி, ஒளியில் இலைத்துளை திறக்கும் போது காப்பு செல்களில் நிகழும் முக்கிய நிகழ்வு எது?",
         "optionTexts": [
-          "புரோட்டான் (H+) வெளியேற்றப்பட்டு, K+ மற்றும் மாலேட் அயனிகள் காப்பு செல்களுக்குள் நுழைந்து விறைப்பழுத்தத்தை அதிகரித்தல்",
-          "K+ அயனிகள் வெளியேறி H+ அயனிகள் காப்பு செல்களுக்குள் நுழைந்து விறைப்பழுத்தம் குறைதல்",
+          "புரோட்டான் (H^+) வெளியேற்றப்பட்டு, K^+ மற்றும் மாலேட் அயனிகள் காப்பு செல்களுக்குள் நுழைந்து விறைப்பழுத்தத்தை அதிகரித்தல்",
+          "K^+ அயனிகள் வெளியேறி H^+ அயனிகள் காப்பு செல்களுக்குள் நுழைந்து விறைப்பழுத்தம் குறைதல்",
           "காப்பு செல்களில் ஸ்டார்ச் உருவாகி சவ்வூடுபரவல் அழுத்தம் குறைதல்",
           "ABA குவிந்து துணை செல்களுக்குள் நீர் வெளியேறுதல்"
         ]
@@ -937,7 +937,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During fermentation by yeast in an anaerobic environment, what are the two enzymes that catalyze the conversion of pyruvic acid into ethanol and carbon dioxide?",
     "options": [
       {
@@ -962,14 +962,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In alcoholic fermentation, Pyruvate decarboxylase decarboxylates pyruvic acid to acetaldehyde releasing CO2.\nStep 2: Alcohol dehydrogenase reduces acetaldehyde to ethanol using NADH + H+.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In alcoholic fermentation, Pyruvate decarboxylase decarboxylates pyruvic acid to acetaldehyde releasing CO_2.\nStep 2: Alcohol dehydrogenase reduces acetaldehyde to ethanol using NADH + H^+.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஈஸ்ட்டில் நிகழும் காற்றில்லா ஆல்கஹால் நொதித்தலில், பைருவிக் அமிலத்தை எத்தனால் மற்றும் CO2 ஆக மாற்றும் இரண்டு என்சைம்கள் யாவை?",
+        "stemText": "ஈஸ்ட்டில் நிகழும் காற்றில்லா ஆல்கஹால் நொதித்தலில், பைருவிக் அமிலத்தை எத்தனால் மற்றும் CO_2 ஆக மாற்றும் இரண்டு என்சைம்கள் யாவை?",
         "optionTexts": [
           "பைருவேட் டிகார்பாக்சிலேஸ் மற்றும் ஆல்கஹால் டிஹைட்ரஜனேஸ்",
           "லாக்டேட் டிஹைட்ரஜனேஸ் மற்றும் ஹெக்சோகைனேஸ்",
@@ -986,33 +986,33 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In plants, which mineral element is a structural component of the chlorophyll porphyrin ring and is essential for maintaining ribosome structure?",
     "options": [
       {
         "label": "A",
-        "text": "Magnesium (Mg2+)",
+        "text": "Magnesium (Mg^{2+})",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Calcium (Ca2+)",
+        "text": "Calcium (Ca^{2+})",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Iron (Fe2+)",
+        "text": "Iron (Fe^{2+})",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Potassium (K+)",
+        "text": "Potassium (K^+)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Magnesium (Mg2+) is the central metal atom coordinated within the tetrapyrrole porphyrin ring of chlorophyll molecules.\nStep 2: Mg2+ is also required to maintain the structural integrity and association of ribosomal subunits during protein synthesis.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Magnesium (Mg^{2+}) is the central metal atom coordinated within the tetrapyrrole porphyrin ring of chlorophyll molecules.\nStep 2: Mg^{2+} is also required to maintain the structural integrity and association of ribosomal subunits during protein synthesis.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1020,10 +1020,10 @@
         "languageCode": "ta",
         "stemText": "தாவரங்களில் குளோரோஃபில் போர்பைரின் வளையத்தின் மையக் கனிமமாகவும், ரைபோசோம் கட்டமைப்பைப் பராமரிக்கவும் அவசியமான கனிமத் தனிமம் எது?",
         "optionTexts": [
-          "மெக்னீசியம் (Mg2+)",
-          "கால்சியம் (Ca2+)",
-          "இரும்பு (Fe2+)",
-          "பொட்டாசியம் (K+)"
+          "மெக்னீசியம் (Mg^{2+})",
+          "கால்சியம் (Ca^{2+})",
+          "இரும்பு (Fe^{2+})",
+          "பொட்டாசியம் (K^+)"
         ]
       }
     ]
@@ -1084,8 +1084,8 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "In C4 photosynthesis, the decarboxylation of 4-carbon dicarboxylic acids (malic/aspartic acid) takes place in which specific cellular compartment?",
+    "stemFormat": "latex",
+    "stemText": "In C_4 photosynthesis, the decarboxylation of 4-carbon dicarboxylic acids (malic/aspartic acid) takes place in which specific cellular compartment?",
     "options": [
       {
         "label": "A",
@@ -1109,14 +1109,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: C4 acids (malate/aspartate) are transported from mesophyll cells to bundle sheath cells via plasmodesmata.\nStep 2: In bundle sheath chloroplasts, malic enzyme decarboxylates malate into 3-carbon pyruvate and CO2.\nStep 3: The released CO2 builds a high concentration around RuBisCO, driving Calvin cycle and suppressing oxygenase activity.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: C_4 acids (malate/aspartate) are transported from mesophyll cells to bundle sheath cells via plasmodesmata.\nStep 2: In bundle sheath chloroplasts, malic enzyme decarboxylates malate into 3-carbon pyruvate and CO_2.\nStep 3: The released CO_2 builds a high concentration around RuBisCO, driving Calvin cycle and suppressing oxygenase activity.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "C4 ஒளிச்சேர்க்கையில், 4-கார்பன் அமிலங்கள் (மாலிக் / அஸ்பார்டிக் அமிலம்) கார்பாக்சில் நீக்கம் செய்யப்படும் குறிப்பிட்ட செல் பகுதி எது?",
+        "stemText": "C_4 ஒளிச்சேர்க்கையில், 4-கார்பன் அமிலங்கள் (மாலிக் / அஸ்பார்டிக் அமிலம்) கார்பாக்சில் நீக்கம் செய்யப்படும் குறிப்பிட்ட செல் பகுதி எது?",
         "optionTexts": [
           "கற்றை உறை செல்களின் பசுங்கணிகங்கள் (Bundle sheath chloroplasts)",
           "மீசோஃபில் செல்களின் சைட்டோசால் பகுதி",
@@ -1134,7 +1134,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "plain",
-    "stemText": "Which plant growth regulator is commonly termed as the 'anti-gibberellin' because it promotes seed dormancy and inhibits alpha-amylase synthesis?",
+    "stemText": "Which plant growth regulator is commonly termed as the 'anti-gibberellin' because it promotes seed dormancy and inhibits α-amylase synthesis?",
     "options": [
       {
         "label": "A",
@@ -1158,7 +1158,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Gibberellins stimulate seed germination by inducing hydrolytic enzymes like alpha-amylase in aleurone layer.\nStep 2: Abscisic acid (ABA) directly counteracts GA by inhibiting alpha-amylase and maintaining dormancy.\nStep 3: Thus, ABA acts as an antagonist / anti-gibberellin.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Gibberellins stimulate seed germination by inducing hydrolytic enzymes like α-amylase in aleurone layer.\nStep 2: Abscisic acid (ABA) directly counteracts GA by inhibiting α-amylase and maintaining dormancy.\nStep 3: Thus, ABA acts as an antagonist / anti-gibberellin.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1182,7 +1182,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In biological nitrogen fixation by Rhizobium leguminosarum in legume root nodules, which pigment acts as an oxygen scavenger to protect the oxygen-sensitive nitrogenase enzyme?",
     "options": [
       {
@@ -1207,8 +1207,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The nitrogenase enzyme requires anaerobic conditions because molecular O2 irreversibly denatures its Mo-Fe protein components.\nStep 2: Legume root nodules synthesize pink-red Leghaemoglobin, which binds oxygen with high affinity.\nStep 3: Leghaemoglobin maintains low free oxygen tension (acting as an oxygen scavenger) while delivering adequate O2 for bacteroid ATP respiration.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The nitrogenase enzyme requires anaerobic conditions because molecular O_2 irreversibly denatures its Mo-Fe protein components.\nStep 2: Legume root nodules synthesize pink-red Leghaemoglobin, which binds oxygen with high affinity.\nStep 3: Leghaemoglobin maintains low free oxygen tension (acting as an oxygen scavenger) while delivering adequate O_2 for bacteroid ATP respiration.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1427,7 +1427,7 @@
     "nodeTagCode": "bot_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In rosette plants like Cabbage and Beet, rapid elongation of internodes just prior to reproductive flowering is called 'bolting'. Which hormone induces bolting?",
     "options": [
       {
@@ -1452,8 +1452,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Bolting is the rapid internodal elongation of rosette plants prior to flowering.\nStep 2: Treatment with gibberellins (e.g., GA3) induces bolting in rosette plants like beet, cabbage, and lettuce under non-inductive conditions.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Bolting is the rapid internodal elongation of rosette plants prior to flowering.\nStep 2: Treatment with gibberellins (e.g., GA_3) induces bolting in rosette plants like beet, cabbage, and lettuce under non-inductive conditions.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

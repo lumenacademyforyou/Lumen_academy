@@ -6,8 +6,8 @@
     "nodeTagCode": "bot_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In four o'clock plants (Mirabilis jalapa) and Snapdragon (Antirrhinum majus), crossing a pure red-flowered plant (RR) with a pure white-flowered plant (rr) produces all pink-flowered F1 progeny (Rr). When the F1 pink plants are self-pollinated, what are the phenotypic and genotypic ratios obtained in the F2 generation?",
+    "stemFormat": "latex",
+    "stemText": "In four o'clock plants (Mirabilis jalapa) and Snapdragon (Antirrhinum majus), crossing a pure red-flowered plant (RR) with a pure white-flowered plant (rr) produces all pink-flowered F_1 progeny (Rr). When the F_1 pink plants are self-pollinated, what are the phenotypic and genotypic ratios obtained in the F_2 generation?",
     "options": [
       {
         "label": "A",
@@ -32,13 +32,13 @@
     ],
     "solution": {
       "explanationText": "Step 1: Incomplete dominance occurs when the dominant allele (R) cannot fully mask the recessive allele (r) in the heterozygous state (Rr).\nStep 2: Selfing Rr × Rr yields offspring: 1/4 RR (Red), 2/4 Rr (Pink), and 1/4 rr (White).\nStep 3: Because heterozygotes have a distinct intermediate pink phenotype, the phenotypic ratio matches the genotypic ratio exactly: 1:2:1.\nStep 4: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "அந்திமந்தாரை (Mirabilis jalapa) மற்றும் ஸ்னாப்டிராகன் தாவரங்களில் தூய சிவப்பு மலர் (RR) மற்றும் தூய வெள்ளை மலர் (rr) கலப்பில் F1 இல் இளஞ்சிவப்பு மலர்கள் (Rr) தோன்றுகின்றன. F1 தாவரங்களை சுயகலப்பு செய்யும்போது F2 சந்ததியில் கிடைக்கும் புறத்தோற்ற மற்றும் மரபணுத்தோற்ற விகிதங்கள் யாவை?",
+        "stemText": "அந்திமந்தாரை (Mirabilis jalapa) மற்றும் ஸ்னாப்டிராகன் தாவரங்களில் தூய சிவப்பு மலர் (RR) மற்றும் தூய வெள்ளை மலர் (rr) கலப்பில் F_1 இல் இளஞ்சிவப்பு மலர்கள் (Rr) தோன்றுகின்றன. F_1 தாவரங்களை சுயகலப்பு செய்யும்போது F_2 சந்ததியில் கிடைக்கும் புறத்தோற்ற மற்றும் மரபணுத்தோற்ற விகிதங்கள் யாவை?",
         "optionTexts": [
           "புறத்தோற்ற விகிதம் = 9:3:3:1 மற்றும் மரபணு விகிதம் = 1:2:1",
           "புறத்தோற்ற விகிதம் = 3 சிவப்பு : 1 வெள்ளை மற்றும் மரபணு விகிதம் = 1:2:1",
@@ -104,8 +104,8 @@
     "nodeTagCode": "bot_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "What is the expected phenotypic ratio in the F2 generation of a Mendelian dihybrid cross involving two heterozygous individuals (AaBb × AaBb)?",
+    "stemFormat": "latex",
+    "stemText": "What is the expected phenotypic ratio in the F_2 generation of a Mendelian dihybrid cross involving two heterozygous individuals (AaBb × AaBb)?",
     "options": [
       {
         "label": "A",
@@ -130,13 +130,13 @@
     ],
     "solution": {
       "explanationText": "Step 1: A dihybrid cross between two heterozygous parents (AaBb × AaBb) produces 16 combinations.\nStep 2: According to the Law of Independent Assortment, alleles of two independent gene pairs assort independently.\nStep 3: The resulting phenotypic ratio is 9 (dominant-dominant) : 3 (dominant-recessive) : 3 (recessive-dominant) : 1 (recessive-recessive).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "மெண்டலின் இருபண்பு கலப்பில் (AaBb × AaBb) F2 சந்ததியில் கிடைக்கும் எதிர்பார்க்கப்படும் புறத்தோற்ற விகிதம் என்ன?",
+        "stemText": "மெண்டலின் இருபண்பு கலப்பில் (AaBb × AaBb) F_2 சந்ததியில் கிடைக்கும் எதிர்பார்க்கப்படும் புறத்தோற்ற விகிதம் என்ன?",
         "optionTexts": [
           "9:3:3:1",
           "1:2:1",
@@ -399,7 +399,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "plain",
-    "stemText": "In sickle cell anemia, a point mutation in the beta-globin gene causes substitution of which amino acid at the 6th position of the beta-globin chain?",
+    "stemText": "In sickle cell anemia, a point mutation in the β-globin gene causes substitution of which amino acid at the 6th position of the β-globin chain?",
     "options": [
       {
         "label": "A",
@@ -423,7 +423,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Sickle-cell anemia is an autosomal recessive Mendelian disorder.\nStep 2: It is caused by a single base substitution at the 6th codon of the beta-globin gene from GAG (coding for Glutamic acid) to GUG (coding for Valine).\nStep 3: This substitution causes HbS polymerisation under low oxygen tension, distorting RBCs into a sickle shape.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Sickle-cell anemia is an autosomal recessive Mendelian disorder.\nStep 2: It is caused by a single base substitution at the 6th codon of the β-globin gene from GAG (coding for Glutamic acid) to GUG (coding for Valine).\nStep 3: This substitution causes HbS polymerisation under low oxygen tension, distorting RBCs into a sickle shape.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -717,7 +717,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The RNA polymerase core enzyme (α2ββ'ω) can synthesize RNA but cannot recognize specific promoter sites.\nStep 2: Association with the Sigma (σ) factor forms the complete holoenzyme and enables specific promoter binding for initiation.\nStep 3: Once initiation occurs, the sigma factor dissociates.\nStep 4: (Rho factor mediates termination).\nStep 5: Conclude Option A is correct.",
+      "explanationText": "Step 1: The RNA polymerase core enzyme (α2ββ'ω) can synthesize RNA but cannot recognize specific promoter sites.\nStep 2: Association with the Sigma (σ) factor forms the complete holoenzyme and enables specific promoter binding for initiation.\nStep 3: Once initiation occurs, the σ factor dissociates.\nStep 4: (Rho factor mediates termination).\nStep 5: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -898,12 +898,12 @@
       },
       {
         "label": "B",
-        "text": "Increases cell permeability to beta-galactosides (Permease)",
+        "text": "Increases cell permeability to β-galactosides (Permease)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Transfers an acetyl group to beta-galactosides (Transacetylase)",
+        "text": "Transfers an acetyl group to β-galactosides (Transacetylase)",
         "isCorrect": false
       },
       {
@@ -1300,7 +1300,7 @@
       },
       {
         "label": "D",
-        "text": "DNA Polymerase gamma",
+        "text": "DNA Polymerase γ",
         "isCorrect": false
       }
     ],
@@ -1349,7 +1349,7 @@
       },
       {
         "label": "D",
-        "text": "T-psi-C loop",
+        "text": "T-ψ-C loop",
         "isCorrect": false
       }
     ],

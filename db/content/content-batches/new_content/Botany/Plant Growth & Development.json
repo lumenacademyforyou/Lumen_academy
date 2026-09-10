@@ -6,7 +6,7 @@
     "nodeTagCode": "bot_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which plant hormone is universally recognized as the 'stress hormone' because it triggers rapid closing of stomata during drought, induces seed dormancy, and inhibits precocious germination?",
     "options": [
       {
@@ -16,7 +16,7 @@
       },
       {
         "label": "B",
-        "text": "Gibberellic acid (GA3)",
+        "text": "Gibberellic acid (GA_3)",
         "isCorrect": false
       },
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Under water stress, roots synthesize Abscisic Acid (ABA) and transport it to leaves.\nStep 2: ABA triggers K+ efflux from guard cells, causing loss of turgor and stomatal closure to conserve water.\nStep 3: ABA also promotes desiccation tolerance and seed dormancy, acting as an antagonist to gibberellins.\nStep 4: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Under water stress, roots synthesize Abscisic Acid (ABA) and transport it to leaves.\nStep 2: ABA triggers K^+ efflux from guard cells, causing loss of turgor and stomatal closure to conserve water.\nStep 3: ABA also promotes desiccation tolerance and seed dormancy, acting as an antagonist to gibberellins.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -41,7 +41,7 @@
         "stemText": "வறட்சியின் போது இலைத்துளைகளை விரைவாக மூடி, விதை உறக்கத்தைத் தூண்டி, முன்கூட்டிய முளைத்தலைத் தடுப்பதால் 'தகைவு ஹார்மோன்' (stress hormone) என அழைக்கப்படும் தாவர ஹார்மோன் எது?",
         "optionTexts": [
           "இண்டோல்-3-அசிட்டிக் அமிலம் (ஆக்சின்)",
-          "ஜிப்ரல்லிக் அமிலம் (GA3)",
+          "ஜிப்ரல்லிக் அமிலம் (GA_3)",
           "சியாட்டீன் (சைட்டோகைனின்)",
           "அப்சிசிக் அமிலம் (ABA)"
         ]
@@ -839,8 +839,8 @@
     "nodeTagCode": "bot_09",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "The large holes in 'Swiss cheese' are produced by the release of large amounts of carbon dioxide (CO2) during fermentation by which bacterium?",
+    "stemFormat": "latex",
+    "stemText": "The large holes in 'Swiss cheese' are produced by the release of large amounts of carbon dioxide (CO_2) during fermentation by which bacterium?",
     "options": [
       {
         "label": "A",
@@ -864,14 +864,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The large characteristic holes in Swiss cheese are due to the production of a large amount of CO2 gas.\nStep 2: This is produced by the bacterium Propionibacterium sharmanii.\nStep 3: (Roquefort cheese is ripened by Penicillium roqueforti fungus).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The large characteristic holes in Swiss cheese are due to the production of a large amount of CO_2 gas.\nStep 2: This is produced by the bacterium Propionibacterium sharmanii.\nStep 3: (Roquefort cheese is ripened by Penicillium roqueforti fungus).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "'ஸ்விஸ் பாலாடைக்கட்டியில்' (Swiss cheese) காணப்படும் பெரிய துளைகள் எந்த பாக்டீரியாவால் CO2 வெளியேற்றப்படுவதால் ஏற்படுகின்றன?",
+        "stemText": "'ஸ்விஸ் பாலாடைக்கட்டியில்' (Swiss cheese) காணப்படும் பெரிய துளைகள் எந்த பாக்டீரியாவால் CO_2 வெளியேற்றப்படுவதால் ஏற்படுகின்றன?",
         "optionTexts": [
           "புரோபியானிபாக்டீரியம் ஷெர்மானி (Propionibacterium sharmanii)",
           "பெனிசிலியம் ராக்ஃபோர்ட்டி",
@@ -1187,7 +1187,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Human alpha-lactalbumin",
+        "text": "Human α-lactalbumin",
         "isCorrect": true
       },
       {
@@ -1202,12 +1202,12 @@
       },
       {
         "label": "D",
-        "text": "Interferon gamma",
+        "text": "Interferon γ",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In 1997, the first transgenic cow, Rosie, produced human protein-enriched milk (2.4 g/L).\nStep 2: The milk contained the human gene for alpha-lactalbumin, making it nutritionally more balanced for human babies than natural cow milk.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: In 1997, the first transgenic cow, Rosie, produced human protein-enriched milk (2.4 g/L).\nStep 2: The milk contained the human gene for α-lactalbumin, making it nutritionally more balanced for human babies than natural cow milk.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1216,7 +1216,7 @@
         "languageCode": "ta",
         "stemText": "1997 இல் உருவாக்கப்பட்ட முதல் மரபணு மாற்றப்பட்ட பசுவான ரோசி (Rosie), எந்த மனித புரதம் நிறைந்த பாலை (2.4 g/L) உற்பத்தி செய்தது?",
         "optionTexts": [
-          "மனித ஆல்ஃபா-லாக்டால்புமின் (Human alpha-lactalbumin)",
+          "மனித ஆல்ஃபா-லாக்டால்புமின் (Human α-lactalbumin)",
           "ஆல்ஃபா-1-ஆன்டிடிரிப்சின்",
           "மனித இன்சுலின் A சங்கிலி",
           "இன்டர்ஃபெரான் காமா"
@@ -1285,22 +1285,22 @@
     "options": [
       {
         "label": "A",
-        "text": "Denaturation (~94 °C) -> Primer Annealing (~50-60 °C) -> Primer Extension (~72 °C)",
+        "text": "Denaturation (~94 °C) → Primer Annealing (~50-60 °C) → Primer Extension (~72 °C)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Annealing -> Denaturation -> Extension",
+        "text": "Annealing → Denaturation → Extension",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Extension -> Annealing -> Ligation",
+        "text": "Extension → Annealing → Ligation",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Electrophoresis -> Hybridization -> Blotting",
+        "text": "Electrophoresis → Hybridization → Blotting",
         "isCorrect": false
       }
     ],
@@ -1314,10 +1314,10 @@
         "languageCode": "ta",
         "stemText": "PCR வினையின் (Polymerase Chain Reaction) ஒவ்வொரு சுழற்சியிலும் நிகழும் மூன்று தொடர் வெப்ப நிலைகள் யாவை?",
         "optionTexts": [
-          "இயல்பிழத்தல் (~94 °C) -> பிரைமர் இணைதல் (~50-60 °C) -> பிரைமர் நீட்சி (~72 °C)",
-          "பிரைமர் இணைதல் -> இயல்பிழத்தல் -> நீட்சி",
-          "நீட்சி -> இணைதல் -> லிகேஷன்",
-          "எலக்ட்ரோபோரேசிஸ் -> கலப்பினமாதல் -> பிளாட்டிங்"
+          "இயல்பிழத்தல் (~94 °C) → பிரைமர் இணைதல் (~50-60 °C) → பிரைமர் நீட்சி (~72 °C)",
+          "பிரைமர் இணைதல் → இயல்பிழத்தல் → நீட்சி",
+          "நீட்சி → இணைதல் → லிகேஷன்",
+          "எலக்ட்ரோபோரேசிஸ் → கலப்பினமாதல் → பிளாட்டிங்"
         ]
       }
     ]
@@ -1330,7 +1330,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "plain",
-    "stemText": "In screening recombinant colonies using blue-white color selection, what enzyme is insertional-inactivated when foreign DNA is cloned into the beta-galactosidase (lacZ) gene?",
+    "stemText": "In screening recombinant colonies using blue-white color selection, what enzyme is insertional-inactivated when foreign DNA is cloned into the β-galactosidase (lacZ) gene?",
     "options": [
       {
         "label": "A",
@@ -1354,7 +1354,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: A recombinant DNA is inserted within the coding sequence of an enzyme, beta-galactosidase (lacZ gene).\nStep 2: This causes insertional inactivation of the beta-galactosidase enzyme.\nStep 3: In the presence of chromogenic substrate (X-gal), non-recombinants produce active enzyme and turn blue, while recombinants with inserted genes form white colonies.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: A recombinant DNA is inserted within the coding sequence of an enzyme, β-galactosidase (lacZ gene).\nStep 2: This causes insertional inactivation of the β-galactosidase enzyme.\nStep 3: In the presence of chromogenic substrate (X-gal), non-recombinants produce active enzyme and turn blue, while recombinants with inserted genes form white colonies.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],

@@ -47,6 +47,28 @@ describe("MathText", () => {
     expect(Array.from(sups).map((s) => s.textContent)).toEqual(["-", "2"]);
   });
 
+  it("renders chemical formulae with real subscripts and ion charges", () => {
+    const container = renderMath("Cu^{2+}(aq) + H_2O and C_6H_{12}O_6 and NH_4^+");
+    expect(Array.from(container.querySelectorAll("sub")).map((s) => s.textContent)).toEqual(["2", "6", "12", "6", "4"]);
+    expect(Array.from(container.querySelectorAll("sup")).map((s) => s.textContent)).toEqual(["2+", "+"]);
+    expect(container.textContent).toBe("Cu2+(aq) + H2O and C6H12O6 and NH4+");
+  });
+
+  it("never swallows a bond hyphen or a hydrate dot into a subscript", () => {
+    const hyphen = renderMath("CH_3-CH=NH");
+    expect(hyphen.querySelector("sub")?.textContent).toBe("3");
+    expect(hyphen.textContent).toBe("CH3-CH=NH");
+
+    const hydrate = renderMath("CuSO_4.5H_2O");
+    expect(Array.from(hydrate.querySelectorAll("sub")).map((s) => s.textContent)).toEqual(["4", "2"]);
+  });
+
+  it("keeps a hyphen after an unbraced exponent as a hyphen", () => {
+    const container = renderMath("an sp^2-hybridized carbon and SO4^2- ions");
+    expect(Array.from(container.querySelectorAll("sup")).map((s) => s.textContent)).toEqual(["2", "2-"]);
+    expect(container.textContent).toBe("an sp2-hybridized carbon and SO42- ions");
+  });
+
   it("hands a genuine LaTeX command to KaTeX", () => {
     const container = renderMath("\\sqrt{6} * (h / (2 \\pi))");
     expect(container.querySelector(".katex")).not.toBeNull();

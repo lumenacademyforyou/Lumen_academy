@@ -31,7 +31,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Let Q be at distance x from +q. Distance from +4q is (d - x).\nStep 2: Equating Coulomb forces: k q Q / x^2 = k (4q) Q / (d - x)^2 => 1 / x^2 = 4 / (d - x)^2.\nStep 3: Taking square root: 1 / x = 2 / (d - x) => d - x = 2x => 3x = d.\nStep 4: x = d / 3. Conclude Option A is correct.",
+      "explanationText": "Step 1: Let Q be at distance x from +q. Distance from +4q is (d - x).\nStep 2: Equating Coulomb forces: k q Q / x^2 = k (4q) Q / (d - x)^2 ⇒ 1 / x^2 = 4 / (d - x)^2.\nStep 3: Taking square root: 1 / x = 2 / (d - x) ⇒ d - x = 2x ⇒ 3x = d.\nStep 4: x = d / 3. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -129,7 +129,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Stored energy in capacitor at constant voltage V: U = (1/2) C V^2.\nStep 2: New capacitance with dielectric: C' = K * C₀ = 4 C₀.\nStep 3: New energy U' = (1/2) C' V^2 = (1/2) (4 C₀) V^2 = 4 * [ (1/2) C₀ V^2 ] = 4 U₀.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Stored energy in capacitor at constant voltage V: U = (1/2) C V^2.\nStep 2: New capacitance with dielectric: C' = K × C₀ = 4 C₀.\nStep 3: New energy U' = (1/2) C' V^2 = (1/2) (4 C₀) V^2 = 4 × [ (1/2) C₀ V^2 ] = 4 U₀.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -178,7 +178,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Volume V = A * L remains constant during stretching, so A ∝ 1 / L.\nStep 2: Resistance R = ρ L / A = ρ L^2 / V => R ∝ L^2.\nStep 3: New length L' = 1.10 L => New resistance R' = (1.10)^2 R = 1.21 R.\nStep 4: Percentage increase = (1.21 - 1.00) * 100% = 21%. Conclude Option A is correct.",
+      "explanationText": "Step 1: Volume V = A × L remains constant during stretching, so A ∝ 1 / L.\nStep 2: Resistance R = ρ L / A = ρ L^2 / V ⇒ R ∝ L^2.\nStep 3: New length L' = 1.10 L ⇒ New resistance R' = (1.10)^2 R = 1.21 R.\nStep 4: Percentage increase = (1.21 - 1.00) × 100% = 21%. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -227,7 +227,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Meter bridge balancing condition: R / S = l / (100 - l).\nStep 2: Here l = 40 cm, so 100 - l = 60 cm.\nStep 3: R / 12 = 40 / 60 = 2 / 3.\nStep 4: R = 12 * (2 / 3) = 8 Ω. Conclude Option A is correct.",
+      "explanationText": "Step 1: Meter bridge balancing condition: R / S = l / (100 - l).\nStep 2: Here l = 40 cm, so 100 - l = 60 cm.\nStep 3: R / 12 = 40 / 60 = 2 / 3.\nStep 4: R = 12 × (2 / 3) = 8 Ω. Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total resistance of primary circuit: R_{total} = 20 + 480 = 500 Ω.\nStep 2: Current in potentiometer wire: I = E / R_{total} = 5.0 V / 500 Ω = 0.01 A.\nStep 3: Potential difference across wire: V_{wire} = I * R_{wire} = 0.01 A * 20 Ω = 0.20 V.\nStep 4: Potential gradient k = V_{wire} / L = 0.20 V / 10 m = 0.02 V/m. Conclude Option A is correct.",
+      "explanationText": "Step 1: Total resistance of primary circuit: R_{total} = 20 + 480 = 500 Ω.\nStep 2: Current in potentiometer wire: I = E / R_{total} = 5.0 V / 500 Ω = 0.01 A.\nStep 3: Potential difference across wire: V_{wire} = I × R_{wire} = 0.01 A × 20 Ω = 0.20 V.\nStep 4: Potential gradient k = V_{wire} / L = 0.20 V / 10 m = 0.02 V/m. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -374,7 +374,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equivalent series capacitance: 1 / C_{eq} = 1/2 + 1/3 + 1/6 = (3 + 2 + 1) / 6 = 6/6 = 1 => C_{eq} = 1 μF.\nStep 2: Total charge Q = C_{eq} * V = 1 μF * 120 V = 120 μC (same on each capacitor in series).\nStep 3: Voltage across 2 μF capacitor: V1 = Q / C1 = 120 μC / 2 μF = 60 V.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Equivalent series capacitance: 1 / C_{eq} = 1/2 + 1/3 + 1/6 = (3 + 2 + 1) / 6 = 6/6 = 1 ⇒ C_{eq} = 1 μF.\nStep 2: Total charge Q = C_{eq} × V = 1 μF × 120 V = 120 μC (same on each capacitor in series).\nStep 3: Voltage across 2 μF capacitor: V_1 = Q / C_1 = 120 μC / 2 μF = 60 V.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -472,7 +472,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In series: R_s = n * R.\nStep 2: In parallel: R_p = R / n.\nStep 3: Ratio R_s / R_p = (n R) / (R / n) = n^2.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: In series: R_s = n × R.\nStep 2: In parallel: R_p = R / n.\nStep 3: Ratio R_s / R_p = (n R) / (R / n) = n^2.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -521,7 +521,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Power delivered to load: P = I^2 R = [ E / (R + r) ]^2 * R.\nStep 2: Differentiating P with respect to R and setting dP/dR = 0 yields R = r (Maximum Power Transfer Theorem).\nStep 3: Substitute R = r: P_{max} = E^2 * r / (2r)^2 = E^2 r / (4 r^2) = E^2 / (4r).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Power delivered to load: P = I^2 R = [ E / (R + r) ]^2 × R.\nStep 2: Differentiating P with respect to R and setting dP/dR = 0 yields R = r (Maximum Power Transfer Theorem).\nStep 3: Substitute R = r: P_{max} = E^2 × r / (2r)^2 = E^2 r / (4 r^2) = E^2 / (4r).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -546,43 +546,43 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "A copper wire carries a current of 1.0 A. If the cross-sectional area of the wire is 1.0 mm^2 and electron number density is 8.5 x 10^{28} m^{-3}, what is the drift velocity of free electrons? (e = 1.6 x 10^{-19} C)",
+    "stemText": "A copper wire carries a current of 1.0 A. If the cross-sectional area of the wire is 1.0 mm^2 and electron number density is 8.5 × 10^{28} m^{-3}, what is the drift velocity of free electrons? (e = 1.6 × 10^{-19} C)",
     "options": [
       {
         "label": "A",
-        "text": "7.35 x 10^{-5} m/s (≈ 0.074 mm/s)",
+        "text": "7.35 × 10^{-5} m/s (≈ 0.074 mm/s)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "1.25 x 10^{-3} m/s",
+        "text": "1.25 × 10^{-3} m/s",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "3.0 x 10^8 m/s",
+        "text": "3.0 × 10^8 m/s",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "5.4 x 10^{-2} m/s",
+        "text": "5.4 × 10^{-2} m/s",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Current relation: I = n e A v_d => v_d = I / (n e A).\nStep 2: Area A = 1.0 mm^2 = 1.0 x 10^{-6} m^2.\nStep 3: v_d = 1.0 / [ (8.5 x 10^{28}) * (1.6 x 10^{-19}) * (1.0 x 10^{-6}) ] = 1.0 / [ 1.36 x 10^4 ] = 7.35 x 10^{-5} m/s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Current relation: I = n e A v_d ⇒ v_d = I / (n e A).\nStep 2: Area A = 1.0 mm^2 = 1.0 × 10^{-6} m^2.\nStep 3: v_d = 1.0 / [ (8.5 × 10^{28}) × (1.6 × 10^{-19}) × (1.0 × 10^{-6}) ] = 1.0 / [ 1.36 × 10^4 ] = 7.35 × 10^{-5} m/s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "1.0 mm^2 குறுக்குவெட்டுப் பரப்புள்ள தாமிரக் கம்பியில் 1.0 A மின்னோட்டம் பாய்கிறது. எலக்ட்ரான் எண் அடர்த்தி 8.5 x 10^{28} m^{-3} எனில், கட்டுறா எலக்ட்ரான்களின் இழுப்பு திசைவேகம் என்ன? (e = 1.6 x 10^{-19} C)",
+        "stemText": "1.0 mm^2 குறுக்குவெட்டுப் பரப்புள்ள தாமிரக் கம்பியில் 1.0 A மின்னோட்டம் பாய்கிறது. எலக்ட்ரான் எண் அடர்த்தி 8.5 × 10^{28} m^{-3} எனில், கட்டுறா எலக்ட்ரான்களின் இழுப்பு திசைவேகம் என்ன? (e = 1.6 × 10^{-19} C)",
         "optionTexts": [
-          "7.35 x 10^{-5} m/s (≈ 0.074 mm/s)",
-          "1.25 x 10^{-3} m/s",
-          "3.0 x 10^8 m/s",
-          "5.4 x 10^{-2} m/s"
+          "7.35 × 10^{-5} m/s (≈ 0.074 mm/s)",
+          "1.25 × 10^{-3} m/s",
+          "3.0 × 10^8 m/s",
+          "5.4 × 10^{-2} m/s"
         ]
       }
     ]
@@ -619,7 +619,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Entering vertex splits total current I equally into 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 2: Next intermediate layer splits into 6 branches (each carrying I/6, voltage drop = (I/6) R).\nStep 3: Final converging layer has 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 4: Total potential drop V = (I/3) R + (I/6) R + (I/3) R = (5/6) I R => R_{eq} = V / I = (5/6) R. Conclude Option A is correct.",
+      "explanationText": "Step 1: Entering vertex splits total current I equally into 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 2: Next intermediate layer splits into 6 branches (each carrying I/6, voltage drop = (I/6) R).\nStep 3: Final converging layer has 3 branches (each carrying I/3, voltage drop = (I/3) R).\nStep 4: Total potential drop V = (I/3) R + (I/6) R + (I/3) R = (5/6) I R ⇒ R_{eq} = V / I = (5/6) R. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -717,7 +717,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Band 1: Yellow = 4.\nStep 2: Band 2: Violet = 7.\nStep 3: Band 3: Multiplier Brown = 10^1 = 10.\nStep 4: Band 4: Tolerance Gold = ± 5%.\nStep 5: Resistance = 47 x 10^1 Ω ± 5% = 470 Ω ± 5%. Conclude Option A is correct.",
+      "explanationText": "Step 1: Band 1: Yellow = 4.\nStep 2: Band 2: Violet = 7.\nStep 3: Band 3: Multiplier Brown = 10^1 = 10.\nStep 4: Band 4: Tolerance Gold = ± 5%.\nStep 5: Resistance = 47 × 10^1 Ω ± 5% = 470 Ω ± 5%. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -742,43 +742,43 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "An infinite line charge produces an electric field of 9.0 x 10^4 N/C at a perpendicular distance of 2.0 cm. What is the linear charge density λ of the line? (1 / (4πε₀) = 9.0 x 10^9 N m^2/C^2)",
+    "stemText": "An infinite line charge produces an electric field of 9.0 × 10^4 N/C at a perpendicular distance of 2.0 cm. What is the linear charge density λ of the line? (1 / (4πε₀) = 9.0 × 10^9 N m^2/C^2)",
     "options": [
       {
         "label": "A",
-        "text": "1.0 x 10^{-7} C/m (0.1 μC/m)",
+        "text": "1.0 × 10^{-7} C/m (0.1 μC/m)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "2.0 x 10^{-7} C/m",
+        "text": "2.0 × 10^{-7} C/m",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "4.5 x 10^{-6} C/m",
+        "text": "4.5 × 10^{-6} C/m",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "1.0 x 10^{-6} C/m",
+        "text": "1.0 × 10^{-6} C/m",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Electric field of infinite line charge: E = λ / (2πε₀ r) = 2 k λ / r.\nStep 2: Rearrange for λ: λ = E * r / (2k).\nStep 3: Substitute E = 9.0 x 10^4 N/C, r = 0.02 m, k = 9.0 x 10^9: λ = (9.0 x 10^4 * 0.02) / (2 * 9.0 x 10^9) = 1800 / (18 x 10^9) = 1.0 x 10^{-7} C/m.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Electric field of infinite line charge: E = λ / (2πε₀ r) = 2 k λ / r.\nStep 2: Rearrange for λ: λ = E × r / (2k).\nStep 3: Substitute E = 9.0 × 10^4 N/C, r = 0.02 m, k = 9.0 × 10^9: λ = (9.0 × 10^4 × 0.02) / (2 × 9.0 × 10^9) = 1800 / (18 × 10^9) = 1.0 × 10^{-7} C/m.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "முடிவிலா நீளமுள்ள ஒரு நேர்கோட்டு மின்னூட்டம் 2.0 cm செங்குத்துத் தொலைவில் 9.0 x 10^4 N/C மின்புலத்தை உருவாக்குகிறது. அதன் நீள் மின்னூட்ட அடர்த்தி λ என்ன?",
+        "stemText": "முடிவிலா நீளமுள்ள ஒரு நேர்கோட்டு மின்னூட்டம் 2.0 cm செங்குத்துத் தொலைவில் 9.0 × 10^4 N/C மின்புலத்தை உருவாக்குகிறது. அதன் நீள் மின்னூட்ட அடர்த்தி λ என்ன?",
         "optionTexts": [
-          "1.0 x 10^{-7} C/m (0.1 μC/m)",
-          "2.0 x 10^{-7} C/m",
-          "4.5 x 10^{-6} C/m",
-          "1.0 x 10^{-6} C/m"
+          "1.0 × 10^{-7} C/m (0.1 μC/m)",
+          "2.0 × 10^{-7} C/m",
+          "4.5 × 10^{-6} C/m",
+          "1.0 × 10^{-6} C/m"
         ]
       }
     ]
@@ -795,7 +795,7 @@
     "options": [
       {
         "label": "A",
-        "text": "(1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2 = [ C₂ / (2 (C₁ + C₂)) ] * (Q₀^2 / C₁)",
+        "text": "(1/2) × [ C₁ C₂ / (C₁ + C₂) ] × V₀^2 = [ C₂ / (2 (C₁ + C₂)) ] × (Q₀^2 / C₁)",
         "isCorrect": true
       },
       {
@@ -815,7 +815,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Initial energy U_i = Q₀^2 / (2 C₁) = (1/2) C₁ V₀^2.\nStep 2: Common potential V = Q₀ / (C₁ + C₂).\nStep 3: Final energy U_f = (1/2) (C₁ + C₂) V^2 = (1/2) Q₀^2 / (C₁ + C₂).\nStep 4: Energy lost ΔU = U_i - U_f = (1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2. Conclude Option A is correct.",
+      "explanationText": "Step 1: Initial energy U_i = Q₀^2 / (2 C₁) = (1/2) C₁ V₀^2.\nStep 2: Common potential V = Q₀ / (C₁ + C₂).\nStep 3: Final energy U_f = (1/2) (C₁ + C₂) V^2 = (1/2) Q₀^2 / (C₁ + C₂).\nStep 4: Energy lost ΔU = U_i - U_f = (1/2) × [ C₁ C₂ / (C₁ + C₂) ] × V₀^2. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -824,7 +824,7 @@
         "languageCode": "ta",
         "stemText": "Q₀ மின்னூட்டம் கொண்ட C₁ மின்தேக்கி மின்கலத்திலிருந்து துண்டிக்கப்பட்டு மின்னூட்டமற்ற C₂ மின்தேக்கியுடன் பக்க இணைப்பில் இணைக்கப்படுகிறது. மின்னூட்ட பகிர்வின் போது ஏற்படும் நிலைமின்னியல் ஆற்றல் இழப்பு என்ன?",
         "optionTexts": [
-          "(1/2) * [ C₁ C₂ / (C₁ + C₂) ] * V₀^2",
+          "(1/2) × [ C₁ C₂ / (C₁ + C₂) ] × V₀^2",
           "பூஜ்ஜியம் (ஆற்றல் மாறாது)",
           "(1/2) (C₁ + C₂) V₀^2",
           "Q₀^2 / (2 C₂)"
@@ -913,7 +913,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula: t = [ (R_t - R₀) / (R_{100} - R₀) ] * 100 °C.\nStep 2: Substitute R_t = 3.20 Ω, R₀ = 2.00 Ω, R_{100} = 2.80 Ω.\nStep 3: t = [ (3.20 - 2.00) / (2.80 - 2.00) ] * 100 = (1.20 / 0.80) * 100 = 1.5 * 100 = 150 °C.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Formula: t = [ (R_t - R₀) / (R_{100} - R₀) ] × 100 °C.\nStep 2: Substitute R_t = 3.20 Ω, R₀ = 2.00 Ω, R_{100} = 2.80 Ω.\nStep 3: t = [ (3.20 - 2.00) / (2.80 - 2.00) ] × 100 = (1.20 / 0.80) × 100 = 1.5 × 100 = 150 °C.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1036,7 +1036,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "Two cells of EMFs E1 = 2.0 V and E2 = 1.0 V with internal resistances r1 = 1.0 Ω and r2 = 2.0 Ω are connected in parallel with positive terminals connected together. What is the equivalent EMF and equivalent internal resistance of the combination?",
+    "stemText": "Two cells of EMFs E_1 = 2.0 V and E_2 = 1.0 V with internal resistances r_1 = 1.0 Ω and r_2 = 2.0 Ω are connected in parallel with positive terminals connected together. What is the equivalent EMF and equivalent internal resistance of the combination?",
     "options": [
       {
         "label": "A",
@@ -1060,14 +1060,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equivalent internal resistance in parallel: 1 / r_{eq} = 1/r1 + 1/r2 = 1/1 + 1/2 = 3/2 => r_{eq} = 2/3 Ω.\nStep 2: Equivalent EMF: E_{eq} = [ (E1 / r1) + (E2 / r2) ] * r_{eq} = [ (2/1) + (1/2) ] * (2/3) = (5/2) * (2/3) = 5/3 V.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Equivalent internal resistance in parallel: 1 / r_{eq} = 1/r_1 + 1/r_2 = 1/1 + 1/2 = 3/2 ⇒ r_{eq} = 2/3 Ω.\nStep 2: Equivalent EMF: E_{eq} = [ (E_1 / r_1) + (E_2 / r_2) ] × r_{eq} = [ (2/1) + (1/2) ] × (2/3) = (5/2) × (2/3) = 5/3 V.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "E1 = 2.0 V (r1 = 1.0 Ω) மற்றும் E2 = 1.0 V (r2 = 2.0 Ω) கொண்ட இரு மின்கலன்கள் பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் மின்னியக்கு விசை மற்றும் தொகுபயன் அக மின்தடை என்ன?",
+        "stemText": "E_1 = 2.0 V (r_1 = 1.0 Ω) மற்றும் E_2 = 1.0 V (r_2 = 2.0 Ω) கொண்ட இரு மின்கலன்கள் பக்க இணைப்பில் இணைக்கப்பட்டுள்ளன. இச்சேர்க்கையின் தொகுபயன் மின்னியக்கு விசை மற்றும் தொகுபயன் அக மின்தடை என்ன?",
         "optionTexts": [
           "E_{eq} = 5/3 V (≈ 1.67 V), r_{eq} = 2/3 Ω",
           "E_{eq} = 1.5 V, r_{eq} = 0.5 Ω",
@@ -1094,7 +1094,7 @@
       },
       {
         "label": "B",
-        "text": "P * Q = R * S",
+        "text": "P × Q = R × S",
         "isCorrect": false
       },
       {
@@ -1119,7 +1119,7 @@
         "stemText": "P, Q, R, S ஆகிய நான்கு கரங்களைக் கொண்ட வீட்ஸ்டோன் சமனச்சுற்று சமநிலையில் இருக்க நிபந்தனை:",
         "optionTexts": [
           "P / Q = R / S",
-          "P * Q = R * S",
+          "P × Q = R × S",
           "P + Q = R + S",
           "P / R = S / Q"
         ]
@@ -1158,7 +1158,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Inside a conductor, electric field is zero (dielectric constant K -> ∞).\nStep 2: Effective air gap between plates reduces from d to (d - t).\nStep 3: Capacitance C = ε₀ A / (d - t + t/K) = ε₀ A / (d - t + 0) = ε₀ A / (d - t).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Inside a conductor, electric field is zero (dielectric constant K → ∞).\nStep 2: Effective air gap between plates reduces from d to (d - t).\nStep 3: Capacitance C = ε₀ A / (d - t + t/K) = ε₀ A / (d - t + 0) = ε₀ A / (d - t).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Total potential energy is the sum of pairwise interaction energies: U = U12 + U23 + U13.\nStep 2: For 3 charges, number of distinct pairs = 3*2 / 2 = 3 pairs.\nStep 3: Each pair has separation a, so U_{pair} = k q^2 / a = q^2 / (4πε₀ a).\nStep 4: Total energy U = 3 * [ q^2 / (4πε₀ a) ]. Conclude Option A is correct.",
+      "explanationText": "Step 1: Total potential energy is the sum of pairwise interaction energies: U = U_{12} + U_{23} + U_{13}.\nStep 2: For 3 charges, number of distinct pairs = 3×2 / 2 = 3 pairs.\nStep 3: Each pair has separation a, so U_{pair} = k q^2 / a = q^2 / (4πε₀ a).\nStep 4: Total energy U = 3 × [ q^2 / (4πε₀ a) ]. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "phy_02",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Two point charges +8 μC and -2 μC are placed 12 cm apart in air. At what point on the line joining them (other than infinity) is the net electric potential zero?",
     "options": [
       {
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Potential V = k q1 / x + k q2 / (d - x) = 0 => 8 / x = 2 / (12 - x) => 4(12 - x) = x => 48 - 4x = x => 5x = 48 => x = 9.6 cm (internal point).\nStep 2: External point (distance x' from +8 μC where x' > 12): 8 / x' = 2 / (x' - 12) => 4(x' - 12) = x' => 4x' - 48 = x' => 3x' = 48 => x' = 16 cm (wait: 48/3 = 16 cm or from -2 μC distance is 4 cm => x' = 16 cm from +8 μC).\nStep 3: Point between them at 9.6 cm is an exact zero potential point.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Potential V = k q_1 / x + k q_2 / (d - x) = 0 ⇒ 8 / x = 2 / (12 - x) ⇒ 4(12 - x) = x ⇒ 48 - 4x = x ⇒ 5x = 48 ⇒ x = 9.6 cm (internal point).\nStep 2: External point (distance x' from +8 μC where x' > 12): 8 / x' = 2 / (x' - 12) ⇒ 4(x' - 12) = x' ⇒ 4x' - 48 = x' ⇒ 3x' = 48 ⇒ x' = 16 cm (wait: 48/3 = 16 cm or from -2 μC distance is 4 cm ⇒ x' = 16 cm from +8 μC).\nStep 3: Point between them at 9.6 cm is an exact zero potential point.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Initial potential difference across resistor V₀ = 500 V.\nStep 2: Initial discharge current I₀ = V₀ / R.\nStep 3: I₀ = 500 V / (10 x 10^3 Ω) = 500 / 10000 = 0.05 A = 50 mA.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Initial potential difference across resistor V₀ = 500 V.\nStep 2: Initial discharge current I₀ = V₀ / R.\nStep 3: I₀ = 500 V / (10 × 10^3 Ω) = 500 / 10000 = 0.05 A = 50 mA.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],

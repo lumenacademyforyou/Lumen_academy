@@ -413,7 +413,7 @@
       },
       {
         "label": "C",
-        "text": "Nt = N0 e^{rt}",
+        "text": "N_t = N_0 e^{rt}",
         "isCorrect": false
       },
       {
@@ -434,7 +434,7 @@
         "optionTexts": [
           "dN/dt = rN ((K - N) / K)",
           "dN/dt = rN",
-          "Nt = N0 e^{rt}",
+          "N_t = N_0 e^{rt}",
           "dN/dt = (K - N) / rN"
         ]
       }
@@ -1035,7 +1035,7 @@
     "nodeTagCode": "bot_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "When human beings travel to high altitudes (>3,500 meters, e.g., Rohtang Pass), altitude sickness (nausea, fatigue, heart palpitations) is physiologically compensated by:",
     "options": [
       {
@@ -1060,8 +1060,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: At high altitude, low atmospheric pressure causes hypoxia (low oxygen availability).\nStep 2: The body acclimatizes by stimulating erythropoietin to increase RBC production.\nStep 3: Hemoglobin binding affinity for O2 decreases (releasing oxygen to tissues more readily) and breathing rate increases.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: At high altitude, low atmospheric pressure causes hypoxia (low oxygen availability).\nStep 2: The body acclimatizes by stimulating erythropoietin to increase RBC production.\nStep 3: Hemoglobin binding affinity for O_2 decreases (releasing oxygen to tissues more readily) and breathing rate increases.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

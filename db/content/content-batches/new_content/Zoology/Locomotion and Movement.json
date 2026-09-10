@@ -6,44 +6,44 @@
     "nodeTagCode": "zoo_08",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "According to the Sliding Filament Theory of skeletal muscle contraction, what occurs at the molecular level when calcium ions (Ca2+) are released from the sarcoplasmic reticulum into the sarcoplasm?",
+    "stemFormat": "latex",
+    "stemText": "According to the Sliding Filament Theory of skeletal muscle contraction, what occurs at the molecular level when calcium ions (Ca^{2+}) are released from the sarcoplasmic reticulum into the sarcoplasm?",
     "options": [
       {
         "label": "A",
-        "text": "Ca2+ binds to myosin light chains to permanently inactivate the ATPase enzyme",
+        "text": "Ca^{2+} binds to myosin light chains to permanently inactivate the ATPase enzyme",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Ca2+ prevents ATP binding to the myosin cross-bridge",
+        "text": "Ca^{2+} prevents ATP binding to the myosin cross-bridge",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Ca2+ binds to Troponin-C, inducing a conformational change that moves tropomyosin away to unmask the active myosin-binding sites on actin filaments",
+        "text": "Ca^{2+} binds to Troponin-C, inducing a conformational change that moves tropomyosin away to unmask the active myosin-binding sites on actin filaments",
         "isCorrect": true
       },
       {
         "label": "D",
-        "text": "Ca2+ hydrolyzes the Z-line proteins, causing sarcomere elongation",
+        "text": "Ca^{2+} hydrolyzes the Z-line proteins, causing sarcomere elongation",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In resting muscle, the fibrous protein tropomyosin blocks the active binding sites for myosin on the actin filament.\nStep 2: Action potential triggers Ca2+ efflux from the sarcoplasmic reticulum into the sarcoplasm.\nStep 3: Ca2+ binds to the subunit Troponin-C, causing a structural shift in the troponin-tropomyosin complex.\nStep 4: This conformational change unmasks the myosin-binding sites on actin, allowing cross-bridge formation and power stroke contraction.\nStep 5: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In resting muscle, the fibrous protein tropomyosin blocks the active binding sites for myosin on the actin filament.\nStep 2: Action potential triggers Ca^{2+} efflux from the sarcoplasmic reticulum into the sarcoplasm.\nStep 3: Ca^{2+} binds to the subunit Troponin-C, causing a structural shift in the troponin-tropomyosin complex.\nStep 4: This conformational change unmasks the myosin-binding sites on actin, allowing cross-bridge formation and power stroke contraction.\nStep 5: Conclude Option C is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "எலும்புத் தசை சுருங்குதலின் நெகிழ்வு இழை கொள்கைப்படி, சார்கோபிளாச வலைப்பின்னலிலிருந்து கால்சியம் அயனிகள் (Ca2+) வெளிப்படும் போது மூலக்கூறு மட்டத்தில் என்ன நிகழ்கிறது?",
+        "stemText": "எலும்புத் தசை சுருங்குதலின் நெகிழ்வு இழை கொள்கைப்படி, சார்கோபிளாச வலைப்பின்னலிலிருந்து கால்சியம் அயனிகள் (Ca^{2+}) வெளிப்படும் போது மூலக்கூறு மட்டத்தில் என்ன நிகழ்கிறது?",
         "optionTexts": [
-          "Ca2+ மயோசினுடன் இணைந்து ATPase என்சைமை முற்றிலும் செயலிழக்கச் செய்கிறது",
-          "Ca2+ மயோசின் தலையில் ATP இணைவதைத் தடுக்கிறது",
-          "Ca2+ அயனிகள் ட்ரோபோனின்-C உடன் இணைந்து, ஆக்டின் இழைகளில் மயோசின் இணையும் செயல் தளங்களை மூடியுள்ள ட்ரோபோமயோசினை விலக்கி செயல் தளங்களை வெளிப்படுத்துகின்றன",
-          "Ca2+ Z-கோடு புரதங்களை அழித்து சார்கோமியரை நீளமாக்குகிறது"
+          "Ca^{2+} மயோசினுடன் இணைந்து ATPase என்சைமை முற்றிலும் செயலிழக்கச் செய்கிறது",
+          "Ca^{2+} மயோசின் தலையில் ATP இணைவதைத் தடுக்கிறது",
+          "Ca^{2+} அயனிகள் ட்ரோபோனின்-C உடன் இணைந்து, ஆக்டின் இழைகளில் மயோசின் இணையும் செயல் தளங்களை மூடியுள்ள ட்ரோபோமயோசினை விலக்கி செயல் தளங்களை வெளிப்படுத்துகின்றன",
+          "Ca^{2+} Z-கோடு புரதங்களை அழித்து சார்கோமியரை நீளமாக்குகிறது"
         ]
       }
     ]
@@ -202,7 +202,7 @@
     "nodeTagCode": "zoo_08",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Red muscle fibers differ functionally from White muscle fibers because Red fibers possess:",
     "options": [
       {
@@ -227,8 +227,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Red muscle fibers contain high concentrations of the oxygen-storing pigment myoglobin, giving them a red appearance.\nStep 2: They contain large numbers of mitochondria that utilize O2 for aerobic ATP production.\nStep 3: They can contract for prolonged periods without fatigue (slow twitch fibers).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Red muscle fibers contain high concentrations of the oxygen-storing pigment myoglobin, giving them a red appearance.\nStep 2: They contain large numbers of mitochondria that utilize O_2 for aerobic ATP production.\nStep 3: They can contract for prolonged periods without fatigue (slow twitch fibers).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,33 +692,33 @@
     "nodeTagCode": "zoo_08",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Tetany, manifested as sustained painful involuntary muscle spasms and twitches, is caused by which electrolyte disturbance in body fluids?",
     "options": [
       {
         "label": "A",
-        "text": "Hypocalcemia (Low Ca2+ concentration in extracellular body fluids)",
+        "text": "Hypocalcemia (Low Ca^{2+} concentration in extracellular body fluids)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Hypercalcemia (Excess Ca2+ in blood)",
+        "text": "Hypercalcemia (Excess Ca^{2+} in blood)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Hyperkalemia (Excess K+ in blood)",
+        "text": "Hyperkalemia (Excess K^+ in blood)",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Hyponatremia (Low Na+ in blood)",
+        "text": "Hyponatremia (Low Na^+ in blood)",
         "isCorrect": false
       }
     ],
     "solution": {
       "explanationText": "Step 1: Tetany is characterized by wild spasms (rapid contractions) in skeletal muscles.\nStep 2: It is caused by low calcium (hypocalcemia) in body fluids (often due to hypoparathyroidism), which increases neuronal excitability.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -726,10 +726,10 @@
         "languageCode": "ta",
         "stemText": "தசைகளில் கடுமையான தன்னிச்சையற்ற சுளுக்கு மற்றும் இழுப்பு நோயான டெட்டனி (Tetany) உடல் திரவங்களில் எதன் குறைபாட்டால் ஏற்படுகிறது?",
         "optionTexts": [
-          "ஹைப்போகால்சீமியா / குறைந்த Ca2+ அளவு (Hypocalcemia)",
-          "அதிக Ca2+ அளவு",
-          "அதிக K+ அளவு",
-          "குறைந்த Na+ அளவு"
+          "ஹைப்போகால்சீமியா / குறைந்த Ca^{2+} அளவு (Hypocalcemia)",
+          "அதிக Ca^{2+} அளவு",
+          "அதிக K^+ அளவு",
+          "குறைந்த Na^+ அளவு"
         ]
       }
     ]
@@ -1378,8 +1378,8 @@
     "nodeTagCode": "zoo_08",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "In skeletal muscle fibers, the storehouse of calcium ions (Ca2+) essential for excitation-contraction coupling is the:",
+    "stemFormat": "latex",
+    "stemText": "In skeletal muscle fibers, the storehouse of calcium ions (Ca^{2+}) essential for excitation-contraction coupling is the:",
     "options": [
       {
         "label": "A",
@@ -1403,14 +1403,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The sarcoplasmic reticulum of muscle fibers is a modified smooth endoplasmic reticulum.\nStep 2: It actively sequesters and stores calcium ions (Ca2+) and releases them upon action potential arrival via T-tubules.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The sarcoplasmic reticulum of muscle fibers is a modified smooth endoplasmic reticulum.\nStep 2: It actively sequesters and stores calcium ions (Ca^{2+}) and releases them upon action potential arrival via T-tubules.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "எலும்புத் தசை செல்களில் தசை சுருக்கத்திற்குத் தேவையான கால்சியம் அயனிகளின் (Ca2+) சேமிப்புக் கிடங்காகச் செயல்படும் உறுப்பு எது?",
+        "stemText": "எலும்புத் தசை செல்களில் தசை சுருக்கத்திற்குத் தேவையான கால்சியம் அயனிகளின் (Ca^{2+}) சேமிப்புக் கிடங்காகச் செயல்படும் உறுப்பு எது?",
         "optionTexts": [
           "சார்கோபிளாச வலைப்பின்னல் (Sarcoplasmic reticulum)",
           "கோல்கை உடலம்",

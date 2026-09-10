@@ -7,7 +7,7 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "latex",
-    "stemText": "A physical quantity X is given by the relation X = (A^2 * B^3) / (C * \\sqrt{D}). If the percentage errors in the measurement of A, B, C, and D are 1%, 2%, 3%, and 4% respectively, what is the maximum percentage error in the measurement of X?",
+    "stemText": "A physical quantity X is given by the relation X = (A^2 × B^3) / (C × \\sqrt{D}). If the percentage errors in the measurement of A, B, C, and D are 1%, 2%, 3%, and 4% respectively, what is the maximum percentage error in the measurement of X?",
     "options": [
       {
         "label": "A",
@@ -38,7 +38,7 @@
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு இயற்பியல் அளவு X = (A^2 * B^3) / (C * \\sqrt{D}) என்ற சமன்பாட்டால் குறிக்கப்படுகிறது. A, B, C மற்றும் D அளவீடுகளில் உள்ள விழுக்காடு பிழைகள் முறையே 1%, 2%, 3% மற்றும் 4% எனில், X அளவீட்டில் ஏற்படும் பெரும விழுக்காடு பிழை என்ன?",
+        "stemText": "ஒரு இயற்பியல் அளவு X = (A^2 × B^3) / (C × \\sqrt{D}) என்ற சமன்பாட்டால் குறிக்கப்படுகிறது. A, B, C மற்றும் D அளவீடுகளில் உள்ள விழுக்காடு பிழைகள் முறையே 1%, 2%, 3% மற்றும் 4% எனில், X அளவீட்டில் ஏற்படும் பெரும விழுக்காடு பிழை என்ன?",
         "optionTexts": [
           "13%",
           "16%",
@@ -80,7 +80,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Energy of photon E = h * nu => [h] = [E] / [nu] = [M L^2 T^{-2}] / [T^{-1}] = [M L^2 T^{-1}].\nStep 2: Angular momentum L = m * v * r => [L] = [M] [L T^{-1}] [L] = [M L^2 T^{-1}].\nStep 3: Both have identical dimensional formula [M L^2 T^{-1}].\nStep 4: Conclude Option B is correct.",
+      "explanationText": "Step 1: Energy of photon E = h × ν ⇒ [h] = [E] / [ν] = [M L^2 T^{-2}] / [T^{-1}] = [M L^2 T^{-1}].\nStep 2: Angular momentum L = m × v × r ⇒ [L] = [M] [L T^{-1}] [L] = [M L^2 T^{-1}].\nStep 3: Both have identical dimensional formula [M L^2 T^{-1}].\nStep 4: Conclude Option B is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -129,7 +129,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Least count (LC) = Pitch / Total circular divisions = 1.0 mm / 100 = 0.01 mm.\nStep 2: Reading = Main Scale Reading (MSR) + (Circular Scale Reading * LC).\nStep 3: Reading = 2 mm + (45 * 0.01 mm) = 2.45 mm.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Least count (LC) = Pitch / Total circular divisions = 1.0 mm / 100 = 0.01 mm.\nStep 2: Reading = Main Scale Reading (MSR) + (Circular Scale Reading × LC).\nStep 3: Reading = 2 mm + (45 × 0.01 mm) = 2.45 mm.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -178,7 +178,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: From v^2 = u^2 - 2as, when v = 0, stopping distance s = u^2 / (2a).\nStep 2: Stopping distance is directly proportional to the square of initial speed: s ∝ u^2.\nStep 3: When initial speed doubles from 72 km/h to 144 km/h, s increases by a factor of 2^2 = 4.\nStep 4: New stopping distance = 40 m * 4 = 160 m. Conclude Option C is correct.",
+      "explanationText": "Step 1: From v^2 = u^2 - 2as, when v = 0, stopping distance s = u^2 / (2a).\nStep 2: Stopping distance is directly proportional to the square of initial speed: s ∝ u^2.\nStep 3: When initial speed doubles from 72 km/h to 144 km/h, s increases by a factor of 2^2 = 4.\nStep 4: New stopping distance = 40 m × 4 = 160 m. Conclude Option C is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -227,7 +227,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Use third equation of motion v^2 = u^2 + 2as with downward direction as positive.\nStep 2: Initial velocity upwards: u_{initial} = -u; Final velocity downwards: v = 3u; acceleration a = g, displacement s = H.\nStep 3: (3u)^2 = (-u)^2 + 2gH => 9u^2 = u^2 + 2gH => 8u^2 = 2gH.\nStep 4: H = 4u^2 / g. Conclude Option A is correct.",
+      "explanationText": "Step 1: Use third equation of motion v^2 = u^2 + 2as with downward direction as positive.\nStep 2: Initial velocity upwards: u_{initial} = -u; Final velocity downwards: v = 3u; acceleration a = g, displacement s = H.\nStep 3: (3u)^2 = (-u)^2 + 2gH ⇒ 9u^2 = u^2 + 2gH ⇒ 8u^2 = 2gH.\nStep 4: H = 4u^2 / g. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -325,7 +325,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Square both sides: |A + B|^2 = |A - B|^2.\nStep 2: A^2 + B^2 + 2A·B = A^2 + B^2 - 2A·B.\nStep 3: 4(A·B) = 0 => A·B = AB cos θ = 0.\nStep 4: Since A, B ≠ 0, cos θ = 0 => θ = 90°. Conclude Option A is correct.",
+      "explanationText": "Step 1: Square both sides: |A + B|^2 = |A - B|^2.\nStep 2: A^2 + B^2 + 2A·B = A^2 + B^2 - 2A·B.\nStep 3: 4(A·B) = 0 ⇒ A·B = AB cos θ = 0.\nStep 4: Since A, B ≠ 0, cos θ = 0 ⇒ θ = 90°. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -374,7 +374,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Initial kinetic energy K = (1/2) m u^2.\nStep 2: At maximum height, vertical velocity is zero, and horizontal velocity is v_x = u cos 60° = u / 2.\nStep 3: Kinetic energy at apex K_{top} = (1/2) m (u cos 60°)^2 = (1/2) m (u/2)^2 = (1/4) * (1/2 m u^2) = K / 4.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Initial kinetic energy K = (1/2) m u^2.\nStep 2: At maximum height, vertical velocity is zero, and horizontal velocity is v_x = u cos 60° = u / 2.\nStep 3: Kinetic energy at apex K_{top} = (1/2) m (u cos 60°)^2 = (1/2) m (u/2)^2 = (1/4) × (1/2 m u^2) = K / 4.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -423,7 +423,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Velocity v = dx/dt = 18t - 3t^2.\nStep 2: Speed is maximum when acceleration a = dv/dt = 0 => 18 - 6t = 0 => t = 3 s.\nStep 3: Substitute t = 3 s into x(t): x(3) = 9(3)^2 - (3)^3 = 9(9) - 27 = 81 - 27 = 54 m.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Velocity v = dx/dt = 18t - 3t^2.\nStep 2: Speed is maximum when acceleration a = dv/dt = 0 ⇒ 18 - 6t = 0 ⇒ t = 3 s.\nStep 3: Substitute t = 3 s into x(t): x(3) = 9(3)^2 - (3)^3 = 9(9) - 27 = 81 - 27 = 54 m.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -472,7 +472,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: From Coulomb's law, F = q_1 q_2 / (4π ε₀ r^2) => ε₀ = q^2 / (F r^2).\nStep 2: Dimensions of charge q = [I T] = A s; Force F = kg m s^{-2}; distance r = m.\nStep 3: Units of ε₀ = (A s)^2 / [(kg m s^{-2}) * m^2] = A^2 s^4 kg^{-1} m^{-3}.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: From Coulomb's law, F = q_1 q_2 / (4π ε₀ r^2) ⇒ ε₀ = q^2 / (F r^2).\nStep 2: Dimensions of charge q = [I T] = A s; Force F = kg m s^{-2}; distance r = m.\nStep 3: Units of ε₀ = (A s)^2 / [(kg m s^{-2}) × m^2] = A^2 s^4 kg^{-1} m^{-3}.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -521,7 +521,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Motion along x-axis: x(t) = u_x t + (1/2) a_x t^2 => 84 = 5t + (1/2)(3)t^2 => 1.5t^2 + 5t - 84 = 0 => 3t^2 + 10t - 168 = 0.\nStep 2: Solve quadratic: (3t + 28)(t - 6) = 0 => t = 6 s.\nStep 3: Motion along y-axis: y(t) = u_y t + (1/2) a_y t^2 = 0 + (1/2)(2.0)(6)^2 = 36 m.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Motion along x-axis: x(t) = u_x t + (1/2) a_x t^2 ⇒ 84 = 5t + (1/2)(3)t^2 ⇒ 1.5t^2 + 5t - 84 = 0 ⇒ 3t^2 + 10t - 168 = 0.\nStep 2: Solve quadratic: (3t + 28)(t - 6) = 0 ⇒ t = 6 s.\nStep 3: Motion along y-axis: y(t) = u_y t + (1/2) a_y t^2 = 0 + (1/2)(2.0)(6)^2 = 36 m.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -570,7 +570,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: To reach directly opposite, the resultant velocity must be perpendicular to river flow: v_{resultant} = \\sqrt{v_{swimmer}^2 - v_{river}^2}.\nStep 2: v_{resultant} = \\sqrt{5.0^2 - 3.0^2} = \\sqrt{25 - 9} = 4.0 m/s.\nStep 3: Angle with normal upstream: sin θ = v_{river} / v_{swimmer} = 3/5 = 0.6 => θ = sin^{-1}(0.6).\nStep 4: Time taken = Width / v_{resultant} = 400 m / 4.0 m/s = 100 s. Conclude Option A is correct.",
+      "explanationText": "Step 1: To reach directly opposite, the resultant velocity must be perpendicular to river flow: v_{resultant} = \\sqrt{v_{swimmer}^2 - v_{river}^2}.\nStep 2: v_{resultant} = \\sqrt{5.0^2 - 3.0^2} = \\sqrt{25 - 9} = 4.0 m/s.\nStep 3: Angle with normal upstream: sin θ = v_{river} / v_{swimmer} = 3/5 = 0.6 ⇒ θ = sin^{-1}(0.6).\nStep 4: Time taken = Width / v_{resultant} = 400 m / 4.0 m/s = 100 s. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -668,7 +668,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for Range: R = (2 u^2 sin θ cos θ) / g; Maximum Height: H = (u^2 sin^2 θ) / (2g).\nStep 2: Relation between R and H is R = 4 H cot θ.\nStep 3: Given R = 4H => 4H = 4H cot θ => cot θ = 1 => tan θ = 1.\nStep 4: θ = 45°. Conclude Option A is correct.",
+      "explanationText": "Step 1: Formula for Range: R = (2 u^2 sin θ cos θ) / g; Maximum Height: H = (u^2 sin^2 θ) / (2g).\nStep 2: Relation between R and H is R = 4 H cot θ.\nStep 3: Given R = 4H ⇒ 4H = 4H cot θ ⇒ cot θ = 1 ⇒ tan θ = 1.\nStep 4: θ = 45°. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -693,43 +693,43 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "A stone dropped from the top of a cliff falls through a height h in time t. If it falls through the first h/2 in time t1 and the remaining h/2 in time t2, what is the relation between t, t1, and t2?",
+    "stemText": "A stone dropped from the top of a cliff falls through a height h in time t. If it falls through the first h/2 in time t_1 and the remaining h/2 in time t_2, what is the relation between t, t_1, and t_2?",
     "options": [
       {
         "label": "A",
-        "text": "t1 = t / \\sqrt{2} and t2 = t (1 - 1/\\sqrt{2})",
+        "text": "t_1 = t / \\sqrt{2} and t_2 = t (1 - 1/\\sqrt{2})",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "t1 = t2 = t / 2",
+        "text": "t_1 = t_2 = t / 2",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "t1 = 2 t2",
+        "text": "t_1 = 2 t_2",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "t2 = \\sqrt{2} t1",
+        "text": "t_2 = \\sqrt{2} t_1",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Height fallen from rest in time t: h = (1/2) g t^2 => t = \\sqrt{2h / g}.\nStep 2: For first half height h/2: h/2 = (1/2) g t_1^2 => t1 = \\sqrt{h / g} = t / \\sqrt{2}.\nStep 3: Time for second half: t2 = t - t1 = t - t / \\sqrt{2} = t (1 - 1/\\sqrt{2}).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Height fallen from rest in time t: h = (1/2) g t^2 ⇒ t = \\sqrt{2h / g}.\nStep 2: For first half height h/2: h/2 = (1/2) g t_1^2 ⇒ t_1 = \\sqrt{h / g} = t / \\sqrt{2}.\nStep 3: Time for second half: t_2 = t - t_1 = t - t / \\sqrt{2} = t (1 - 1/\\sqrt{2}).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு செங்குத்துப் பாறையின் உச்சியிலிருந்து விழும் கல் t நேரத்தில் h உயரத்தைக் கடக்கிறது. முதல் h/2 உயரத்தை t1 நேரத்திலும், மீதமுள்ள h/2 உயரத்தை t2 நேரத்திலும் கடந்தால் t, t1 மற்றும் t2 இடையே உள்ள தொடர்பு என்ன?",
+        "stemText": "ஒரு செங்குத்துப் பாறையின் உச்சியிலிருந்து விழும் கல் t நேரத்தில் h உயரத்தைக் கடக்கிறது. முதல் h/2 உயரத்தை t_1 நேரத்திலும், மீதமுள்ள h/2 உயரத்தை t_2 நேரத்திலும் கடந்தால் t, t_1 மற்றும் t_2 இடையே உள்ள தொடர்பு என்ன?",
         "optionTexts": [
-          "t1 = t / \\sqrt{2} மற்றும் t2 = t (1 - 1/\\sqrt{2})",
-          "t1 = t2 = t / 2",
-          "t1 = 2 t2",
-          "t2 = \\sqrt{2} t1"
+          "t_1 = t / \\sqrt{2} மற்றும் t_2 = t (1 - 1/\\sqrt{2})",
+          "t_1 = t_2 = t / 2",
+          "t_1 = 2 t_2",
+          "t_2 = \\sqrt{2} t_1"
         ]
       }
     ]
@@ -766,7 +766,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Express Force: F = M * a = M * (v / T).\nStep 2: Rearrange for Mass: M = F * T / v = F v^{-1} T.\nStep 3: Dimensions of mass: [M] = [F v^{-1} T].\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Express Force: F = M × a = M × (v / T).\nStep 2: Rearrange for Mass: M = F × T / v = F v^{-1} T.\nStep 3: Dimensions of mass: [M] = [F v^{-1} T].\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -815,7 +815,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The magnitude of change in velocity for rotation by angle θ is |Δv| = 2v sin(θ / 2).\nStep 2: Here θ = 60°, so θ / 2 = 30°.\nStep 3: |Δv| = 2v sin 30° = 2v * (1/2) = v.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: The magnitude of change in velocity for rotation by angle θ is |Δv| = 2v sin(θ / 2).\nStep 2: Here θ = 60°, so θ / 2 = 30°.\nStep 3: |Δv| = 2v sin 30° = 2v × (1/2) = v.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -864,7 +864,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: 1 Main Scale Division (MSD) = 1 mm.\nStep 2: 20 Vernier Scale Divisions (VSD) = 19 MSD => 1 VSD = 19/20 MSD = 0.95 mm.\nStep 3: Least Count (LC) = 1 MSD - 1 VSD = 1 mm - 0.95 mm = 0.05 mm (or 1/20 mm).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: 1 Main Scale Division (MSD) = 1 mm.\nStep 2: 20 Vernier Scale Divisions (VSD) = 19 MSD ⇒ 1 VSD = 19/20 MSD = 0.95 mm.\nStep 3: Least Count (LC) = 1 MSD - 1 VSD = 1 mm - 0.95 mm = 0.05 mm (or 1/20 mm).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -913,7 +913,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Relative velocity v_{rel} = v1 - v2 = 72 - 36 = 36 km/h = 36 * (5/18) = 10 m/s.\nStep 2: Total relative distance to cover for complete overtaking d = L1 + L2 = 200 + 300 = 500 m.\nStep 3: Time taken t = d / v_{rel} = 500 m / 10 m/s = 50 s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Relative velocity v_{rel} = v_1 - v_2 = 72 - 36 = 36 km/h = 36 × (5/18) = 10 m/s.\nStep 2: Total relative distance to cover for complete overtaking d = L_1 + L_2 = 200 + 300 = 500 m.\nStep 3: Time taken t = d / v_{rel} = 500 m / 10 m/s = 50 s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -962,7 +962,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Speed at time t starting from rest: v = a_t * t.\nStep 2: Radial acceleration a_r = v^2 / R = (a_t * t)^2 / R = (a_t^2 * t^2) / R.\nStep 3: Equate a_r = a_t: (a_t^2 * t^2) / R = a_t => t^2 = R / a_t.\nStep 4: t = \\sqrt{R / a_t}. Conclude Option A is correct.",
+      "explanationText": "Step 1: Speed at time t starting from rest: v = a_t × t.\nStep 2: Radial acceleration a_r = v^2 / R = (a_t × t)^2 / R = (a_t^2 × t^2) / R.\nStep 3: Equate a_r = a_t: (a_t^2 × t^2) / R = a_t ⇒ t^2 = R / a_t.\nStep 4: t = \\sqrt{R / a_t}. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1109,7 +1109,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Height reached in 8 s: h = (1/2) * a * t^2 = 0.5 * 1.25 * 64 = 40 m.\nStep 2: Velocity of balloon and stone at release: u = a * t = 1.25 * 8 = 10 m/s upwards.\nStep 3: Equation for stone falling to ground: -h = u*t' - (1/2) g t'^2 => -40 = 10 t' - 5 t'^2.\nStep 4: 5 t'^2 - 10 t' - 40 = 0 => t'^2 - 2t' - 8 = 0 => (t' - 4)(t' + 2) = 0 => t' = 4 s. Conclude Option A is correct.",
+      "explanationText": "Step 1: Height reached in 8 s: h = (1/2) × a × t^2 = 0.5 × 1.25 × 64 = 40 m.\nStep 2: Velocity of balloon and stone at release: u = a × t = 1.25 × 8 = 10 m/s upwards.\nStep 3: Equation for stone falling to ground: -h = u×t' - (1/2) g t'^2 ⇒ -40 = 10 t' - 5 t'^2.\nStep 4: 5 t'^2 - 10 t' - 40 = 0 ⇒ t'^2 - 2t' - 8 = 0 ⇒ (t' - 4)(t' + 2) = 0 ⇒ t' = 4 s. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1207,7 +1207,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Resistance R = Potential / Current = V / I = (Work / Charge) / I = W / (I^2 * t).\nStep 2: [W] = [M L^2 T^{-2}], [I^2] = [A^2], [t] = [T].\nStep 3: [R] = [M L^2 T^{-2}] / [A^2 T] = [M L^2 T^{-3} A^{-2}].\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Resistance R = Potential / Current = V / I = (Work / Charge) / I = W / (I^2 × t).\nStep 2: [W] = [M L^2 T^{-2}], [I^2] = [A^2], [t] = [T].\nStep 3: [R] = [M L^2 T^{-2}] / [A^2 T] = [M L^2 T^{-3} A^{-2}].\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Acceleration a = v (dv/dx) = -k v.\nStep 2: Dividing by v yields dv/dx = -k => dv = -k dx.\nStep 3: Integrate from v = v₀ to v = 0 and x = 0 to x = s: ∫[v₀ to 0] dv = -k ∫[0 to s] dx => 0 - v₀ = -k s.\nStep 4: s = v₀ / k. Conclude Option A is correct.",
+      "explanationText": "Step 1: Acceleration a = v (dv/dx) = -k v.\nStep 2: Dividing by v yields dv/dx = -k ⇒ dv = -k dx.\nStep 3: Integrate from v = v₀ to v = 0 and x = 0 to x = s: ∫[v₀ to 0] dv = -k ∫[0 to s] dx ⇒ 0 - v₀ = -k s.\nStep 4: s = v₀ / k. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1305,7 +1305,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Magnitude of B: |B| = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25.\nStep 2: Unit vector along A: A_{hat} = (3i + 4j) / \\sqrt{3^2 + 4^2} = (3i + 4j) / 5.\nStep 3: Desired vector = |B| * A_{hat} = 25 * (3i + 4j) / 5 = 5 * (3i + 4j) = 15i + 20j.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Magnitude of B: |B| = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25.\nStep 2: Unit vector along A: A_{hat} = (3i + 4j) / \\sqrt{3^2 + 4^2} = (3i + 4j) / 5.\nStep 3: Desired vector = |B| × A_{hat} = 25 × (3i + 4j) / 5 = 5 × (3i + 4j) = 15i + 20j.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1403,7 +1403,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Using conservation of mechanical energy: (1/2) m u^2 = (1/2) m v^2 + m g h.\nStep 2: Given v = u / \\sqrt{2}, so (1/2) m u^2 = (1/2) m (u^2 / 2) + m g h => (1/4) m u^2 = m g h => h = u^2 / (4g).\nStep 3: Maximum height H = (u^2 sin^2 θ) / (2g).\nStep 4: Conclude Option B is the exact formula for H (or H = 2h sin^2 θ). Option B is correct.",
+      "explanationText": "Step 1: Using conservation of mechanical energy: (1/2) m u^2 = (1/2) m v^2 + m g h.\nStep 2: Given v = u / \\sqrt{2}, so (1/2) m u^2 = (1/2) m (u^2 / 2) + m g h ⇒ (1/4) m u^2 = m g h ⇒ h = u^2 / (4g).\nStep 3: Maximum height H = (u^2 sin^2 θ) / (2g).\nStep 4: Conclude Option B is the exact formula for H (or H = 2h sin^2 θ). Option B is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Impulse J = Force * time = [M L T^{-2}] * [T] = [M L T^{-1}].\nStep 2: Linear momentum p = mass * velocity = [M] * [L T^{-1}] = [M L T^{-1}].\nStep 3: Both have identical dimensions [M L T^{-1}].\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Impulse J = Force × time = [M L T^{-2}] × [T] = [M L T^{-1}].\nStep 2: Linear momentum p = mass × velocity = [M] × [L T^{-1}] = [M L T^{-1}].\nStep 3: Both have identical dimensions [M L T^{-1}].\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],

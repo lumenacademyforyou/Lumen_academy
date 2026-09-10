@@ -6,7 +6,7 @@
     "nodeTagCode": "zoo_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Why is the human immunodeficiency virus (HIV) classified as a retrovirus, and what critical enzyme does it utilize to integrate its viral genome into the host helper T-cell DNA?",
     "options": [
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Retroviruses contain single-stranded RNA as genetic material wrapped in a protein capsid with viral enzymes.\nStep 2: Upon infecting host macrophages or CD4+ T-helper lymphocytes, HIV uses its viral Reverse Transcriptase to synthesize double-stranded viral cDNA from viral RNA.\nStep 3: Viral Integrase incorporates this viral DNA into the host chromosome, converting the host cell into an HIV-producing factory.\nStep 4: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Retroviruses contain single-stranded RNA as genetic material wrapped in a protein capsid with viral enzymes.\nStep 2: Upon infecting host macrophages or CD4^+ T-helper lymphocytes, HIV uses its viral Reverse Transcriptase to synthesize double-stranded viral cDNA from viral RNA.\nStep 3: Viral Integrase incorporates this viral DNA into the host chromosome, converting the host cell into an HIV-producing factory.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -119,7 +119,7 @@
       },
       {
         "label": "C",
-        "text": "Interferon-alpha",
+        "text": "Interferon-α",
         "isCorrect": false
       },
       {
@@ -153,7 +153,7 @@
     "nodeTagCode": "zoo_04",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which type of immunity is primarily responsible for the rejection of kidney, heart, and corneal allografts in transplanted human patients?",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Graft rejection is mediated by the recipient's immune system recognizing foreign HLA/MHC antigens.\nStep 2: Cytotoxic T-lymphocytes (CD8+) differentiate self from non-self and destroy foreign graft cells.\nStep 3: Thus, cell-mediated immunity (CMI) is responsible for graft rejection, requiring immunosuppressants like Cyclosporin-A.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Graft rejection is mediated by the recipient's immune system recognizing foreign HLA/MHC antigens.\nStep 2: Cytotoxic T-lymphocytes (CD8^+) differentiate self from non-self and destroy foreign graft cells.\nStep 3: Thus, cell-mediated immunity (CMI) is responsible for graft rejection, requiring immunosuppressants like Cyclosporin-A.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -251,33 +251,33 @@
     "nodeTagCode": "zoo_04",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which basic molecular formula correctly represents the monomeric structure of a standard immunoglobulin (antibody) molecule?",
     "options": [
       {
         "label": "A",
-        "text": "H4L2",
+        "text": "H_4L_2",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "H2L2 (two heavy polypeptide chains and two light polypeptide chains linked by disulfide bonds)",
+        "text": "H_2L_2 (two heavy polypeptide chains and two light polypeptide chains linked by disulfide bonds)",
         "isCorrect": true
       },
       {
         "label": "C",
-        "text": "H1L3",
+        "text": "H_1L_3",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "H2L4",
+        "text": "H_2L_4",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Each antibody molecule has four polypeptide chains: two identical small light (L) chains and two identical longer heavy (H) chains.\nStep 2: These chains are held together by interchain disulfide bonds forming a Y-shaped structure.\nStep 3: Hence, an antibody is represented as H2L2.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Each antibody molecule has four polypeptide chains: two identical small light (L) chains and two identical longer heavy (H) chains.\nStep 2: These chains are held together by interchain disulfide bonds forming a Y-shaped structure.\nStep 3: Hence, an antibody is represented as H_2L_2.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -285,10 +285,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு வழக்கமான ஆன்டிபாடி (இம்யூனோகுளோபுலின்) மூலக்கூறின் சரியான மூலக்கூறு குறியீடு எது?",
         "optionTexts": [
-          "H4L2",
-          "H2L2 (டைசல்பைடு பிணைப்புகளால் இணைக்கப்பட்ட இரண்டு கனமான மற்றும் இரண்டு லேசான பாலிபெப்டைட் இழைகள்)",
-          "H1L3",
-          "H2L4"
+          "H_4L_2",
+          "H_2L_2 (டைசல்பைடு பிணைப்புகளால் இணைக்கப்பட்ட இரண்டு கனமான மற்றும் இரண்டு லேசான பாலிபெப்டைட் இழைகள்)",
+          "H_1L_3",
+          "H_2L_4"
         ]
       }
     ]
@@ -741,7 +741,7 @@
     "nodeTagCode": "zoo_04",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Smoking tobacco leads to an increased risk of cardiovascular disease primarily because Carbon Monoxide (CO) in tobacco smoke:",
     "options": [
       {
@@ -766,8 +766,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Tobacco smoke contains nicotine and carbon monoxide (CO).\nStep 2: CO binds to hemoglobin with ~200 times higher affinity than O2, forming carboxyhemoglobin.\nStep 3: This drastically reduces the concentration of haem-bound oxygen, causing tissue hypoxia and cardiovascular strain.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Tobacco smoke contains nicotine and carbon monoxide (CO).\nStep 2: CO binds to hemoglobin with ~200 times higher affinity than O_2, forming carboxyhemoglobin.\nStep 3: This drastically reduces the concentration of haem-bound oxygen, causing tissue hypoxia and cardiovascular strain.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -888,7 +888,7 @@
     "nodeTagCode": "zoo_04",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In an infected person, which cells of the immune system are progressively depleted in number by HIV, leading to severe immunodeficiency and opportunistic infections?",
     "options": [
       {
@@ -898,7 +898,7 @@
       },
       {
         "label": "B",
-        "text": "CD4+ T-helper (TH) lymphocytes",
+        "text": "CD4^+ T-helper (TH) lymphocytes",
         "isCorrect": true
       },
       {
@@ -913,8 +913,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: HIV enters macrophages and helper T-lymphocytes (CD4+ TH cells).\nStep 2: Progeny HIV viruses released into the blood attack and destroy other helper T-lymphocytes.\nStep 3: The progressive decline in CD4+ helper T cell count causes severe immune collapse, rendering the patient vulnerable to opportunistic pathogens (Mycobacterium, Toxoplasma, fungi).\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: HIV enters macrophages and helper T-lymphocytes (CD4^+ TH cells).\nStep 2: Progeny HIV viruses released into the blood attack and destroy other helper T-lymphocytes.\nStep 3: The progressive decline in CD4^+ helper T cell count causes severe immune collapse, rendering the patient vulnerable to opportunistic pathogens (Mycobacterium, Toxoplasma, fungi).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -923,7 +923,7 @@
         "stemText": "HIV தொற்றினால் படிப்படியாக அழிக்கப்பட்டு எண்ணிக்கை குறைவதால் கடுமையான நோயெதிர்ப்புக் குறைபாடு ஏற்படும் செல்கள் யாவை?",
         "optionTexts": [
           "இரத்த சிவப்பணுக்கள்",
-          "CD4+ T-உதவி செல்கள் (T-helper lymphocytes)",
+          "CD4^+ T-உதவி செல்கள் (T-helper lymphocytes)",
           "பேசோஃபில்கள்",
           "இரத்த தட்டணுக்கள்"
         ]
@@ -1104,7 +1104,7 @@
       },
       {
         "label": "D",
-        "text": "Positron Emission Tomography with gamma rays",
+        "text": "Positron Emission Tomography with γ rays",
         "isCorrect": false
       }
     ],

@@ -80,7 +80,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Kinetic energy K = (1/2) m ω^2 (A^2 - x^2).\nStep 2: Potential energy U = (1/2) m ω^2 x^2.\nStep 3: Equating K = U: A^2 - x^2 = x^2 => 2x^2 = A^2.\nStep 4: x = A / \\sqrt{2}. Conclude Option A is correct.",
+      "explanationText": "Step 1: Kinetic energy K = (1/2) m ω^2 (A^2 - x^2).\nStep 2: Potential energy U = (1/2) m ω^2 x^2.\nStep 3: Equating K = U: A^2 - x^2 = x^2 ⇒ 2x^2 = A^2.\nStep 4: x = A / \\sqrt{2}. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -129,7 +129,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Effective acceleration in upward accelerating frame: g_{eff} = g + a = g + g/3 = 4g / 3.\nStep 2: Time period T' = 2π \\sqrt{L / g_{eff}} = 2π sqrt[ L / (4g/3) ] = \\sqrt{3/4} * (2π \\sqrt{L/g}) = (\\sqrt{3}/2) * T.\nStep 3: T' = (\\sqrt{3}/2) * 2.0 s = \\sqrt{3} s ≈ 1.732 s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Effective acceleration in upward accelerating frame: g_{eff} = g + a = g + g/3 = 4g / 3.\nStep 2: Time period T' = 2π \\sqrt{L / g_{eff}} = 2π sqrt[ L / (4g/3) ] = \\sqrt{3/4} × (2π \\sqrt{L/g}) = (\\sqrt{3}/2) × T.\nStep 3: T' = (\\sqrt{3}/2) × 2.0 s = \\sqrt{3} s ≈ 1.732 s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -203,7 +203,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "A closed organ pipe of length L1 and an open organ pipe of length L2 resonate at their respective fundamental frequencies. If their fundamental frequencies are equal, what is the ratio of their lengths L1 / L2?",
+    "stemText": "A closed organ pipe of length L_1 and an open organ pipe of length L_2 resonate at their respective fundamental frequencies. If their fundamental frequencies are equal, what is the ratio of their lengths L_1 / L_2?",
     "options": [
       {
         "label": "A",
@@ -227,14 +227,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fundamental frequency of closed pipe: f_{closed} = v / (4 L1).\nStep 2: Fundamental frequency of open pipe: f_{open} = v / (2 L2).\nStep 3: Equating: v / (4 L1) = v / (2 L2) => 4 L1 = 2 L2 => L1 / L2 = 2 / 4 = 1/2.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Fundamental frequency of closed pipe: f_{closed} = v / (4 L_1).\nStep 2: Fundamental frequency of open pipe: f_{open} = v / (2 L_2).\nStep 3: Equating: v / (4 L_1) = v / (2 L_2) ⇒ 4 L_1 = 2 L_2 ⇒ L_1 / L_2 = 2 / 4 = 1/2.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "L1 நீளமுள்ள ஒரு மூடிய குழாய் மற்றும் L2 நீளமுள்ள ஒரு திறந்த குழாய் அவற்றின் அடிப்படை அதிர்வெண்களில் ஒத்ததிர்வு பெறுகின்றன. அவற்றின் அடிப்படை அதிர்வெண்கள் சமம் எனில், நீளங்களின் விகிதம் L1 / L2 என்ன?",
+        "stemText": "L_1 நீளமுள்ள ஒரு மூடிய குழாய் மற்றும் L_2 நீளமுள்ள ஒரு திறந்த குழாய் அவற்றின் அடிப்படை அதிர்வெண்களில் ஒத்ததிர்வு பெறுகின்றன. அவற்றின் அடிப்படை அதிர்வெண்கள் சமம் எனில், நீளங்களின் விகிதம் L_1 / L_2 என்ன?",
         "optionTexts": [
           "1 : 2",
           "1 : 4",
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Direct sound frequency heard by passenger = source frequency = f₀ = 300 Hz (since observer and source travel together).\nStep 2: Frequency received at cliff (stationary observer): f_{cliff} = f₀ * [ v / (v - v_s) ] = 300 * [ 330 / (330 - 10) ] = 300 * (330 / 320) = 309.375 Hz.\nStep 3: Cliff reflects this sound as stationary source, heard by moving observer on train: f_{echo} = f_{cliff} * [ (v + v_s) / v ] = 300 * [ (330 + 10) / (330 - 10) ] = 300 * (340 / 320) = 318.75 Hz.\nStep 4: Beat frequency f_{beat} = f_{echo} - f₀ = 318.75 - 300 = 18.75 Hz. Conclude Option A is correct.",
+      "explanationText": "Step 1: Direct sound frequency heard by passenger = source frequency = f₀ = 300 Hz (since observer and source travel together).\nStep 2: Frequency received at cliff (stationary observer): f_{cliff} = f₀ × [ v / (v - v_s) ] = 300 × [ 330 / (330 - 10) ] = 300 × (330 / 320) = 309.375 Hz.\nStep 3: Cliff reflects this sound as stationary source, heard by moving observer on train: f_{echo} = f_{cliff} × [ (v + v_s) / v ] = 300 × [ (330 + 10) / (330 - 10) ] = 300 × (340 / 320) = 318.75 Hz.\nStep 4: Beat frequency f_{beat} = f_{echo} - f₀ = 318.75 - 300 = 18.75 Hz. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -374,7 +374,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Linear mass density μ = mass / length = (3.0 x 10^{-3} kg) / 0.6 m = 5.0 x 10^{-3} kg/m.\nStep 2: Transverse wave speed v = \\sqrt{T / μ} = \\sqrt{80 / 0.005} = \\sqrt{16000} = 126.49 m/s.\nStep 3: Fundamental frequency f1 = v / (2L) = 126.49 / (2 * 0.6) = 126.49 / 1.2 = 105.41 Hz.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Linear mass density μ = mass / length = (3.0 × 10^{-3} kg) / 0.6 m = 5.0 × 10^{-3} kg/m.\nStep 2: Transverse wave speed v = \\sqrt{T / μ} = \\sqrt{80 / 0.005} = \\sqrt{16000} = 126.49 m/s.\nStep 3: Fundamental frequency f_1 = v / (2L) = 126.49 / (2 × 0.6) = 126.49 / 1.2 = 105.41 Hz.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -545,8 +545,8 @@
     "nodeTagCode": "phy_05",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "A uniform thin spring of force constant k and unstretched length L is cut into two pieces of lengths L1 and L2 such that L1 = 2 L2. What is the force constant k1 of the longer spring segment?",
+    "stemFormat": "latex",
+    "stemText": "A uniform thin spring of force constant k and unstretched length L is cut into two pieces of lengths L_1 and L_2 such that L_1 = 2 L_2. What is the force constant k_1 of the longer spring segment?",
     "options": [
       {
         "label": "A",
@@ -570,14 +570,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The force constant of a spring is inversely proportional to its length: k * L = constant.\nStep 2: Total length L = L1 + L2 = 2 L2 + L2 = 3 L2 => L1 = (2/3) L.\nStep 3: k1 * L1 = k * L => k1 * (2/3 L) = k * L.\nStep 4: k1 = (3/2) k = 1.5 k. Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The force constant of a spring is inversely proportional to its length: k × L = constant.\nStep 2: Total length L = L_1 + L_2 = 2 L_2 + L_2 = 3 L_2 ⇒ L_1 = (2/3) L.\nStep 3: k_1 × L_1 = k × L ⇒ k_1 × (2/3 L) = k × L.\nStep 4: k_1 = (3/2) k = 1.5 k. Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "k சுருள் மாறிலி கொண்ட சுருள்வில் L1 = 2 L2 என்ற விகிதத்தில் இரு துண்டுகளாக வெட்டப்படுகிறது. நீண்ட பகுதியின் (L1) சுருள் மாறிலி k1 என்ன?",
+        "stemText": "k சுருள் மாறிலி கொண்ட சுருள்வில் L_1 = 2 L_2 என்ற விகிதத்தில் இரு துண்டுகளாக வெட்டப்படுகிறது. நீண்ட பகுதியின் (L_1) சுருள் மாறிலி k_1 என்ன?",
         "optionTexts": [
           "(3/2) k",
           "3 k",
@@ -643,8 +643,8 @@
     "nodeTagCode": "phy_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Two simple harmonic motions are represented by y1 = 5 sin(ω t + π/6) and y2 = 5 cos(ω t). What is the phase difference between the two motions?",
+    "stemFormat": "latex",
+    "stemText": "Two simple harmonic motions are represented by y_1 = 5 sin(ω t + π/6) and y_2 = 5 cos(ω t). What is the phase difference between the two motions?",
     "options": [
       {
         "label": "A",
@@ -668,14 +668,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Convert y2 to sine form: y2 = 5 sin(ω t + π/2).\nStep 2: Phase of motion 1: φ1 = ω t + π/6.\nStep 3: Phase of motion 2: φ2 = ω t + π/2.\nStep 4: Phase difference Δφ = φ2 - φ1 = π/2 - π/6 = 3π/6 - π/6 = 2π/6 = π/3 (60°). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Convert y_2 to sine form: y_2 = 5 sin(ω t + π/2).\nStep 2: Phase of motion 1: φ1 = ω t + π/6.\nStep 3: Phase of motion 2: φ2 = ω t + π/2.\nStep 4: Phase difference Δφ = φ2 - φ1 = π/2 - π/6 = 3π/6 - π/6 = 2π/6 = π/3 (60°). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "y1 = 5 sin(ω t + π/6) மற்றும் y2 = 5 cos(ω t) என்ற சமன்பாடுகளால் குறிக்கப்படும் இரு தனிச்சீரிசை இயக்கங்களுக்கு இடையே உள்ள கட்ட வேறுபாடு என்ன?",
+        "stemText": "y_1 = 5 sin(ω t + π/6) மற்றும் y_2 = 5 cos(ω t) என்ற சமன்பாடுகளால் குறிக்கப்படும் இரு தனிச்சீரிசை இயக்கங்களுக்கு இடையே உள்ள கட்ட வேறுபாடு என்ன?",
         "optionTexts": [
           "π / 3 (60°)",
           "π / 6 (30°)",
@@ -717,7 +717,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Doppler formula for source approaching stationary observer: f' = f₀ * [ v / (v - v_s) ].\nStep 2: Substitute f₀ = 500 Hz, v = 330 m/s, v_s = 30 m/s.\nStep 3: f' = 500 * [ 330 / (330 - 30) ] = 500 * (330 / 300) = 500 * 1.1 = 550 Hz.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Doppler formula for source approaching stationary observer: f' = f₀ × [ v / (v - v_s) ].\nStep 2: Substitute f₀ = 500 Hz, v = 330 m/s, v_s = 30 m/s.\nStep 3: f' = 500 × [ 330 / (330 - 30) ] = 500 × (330 / 300) = 500 × 1.1 = 550 Hz.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -864,7 +864,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In an open organ pipe, all integer harmonics exist: f_n = n * f1.\nStep 2: Consecutive harmonics difference: f_{n+1} - f_n = (n + 1) f1 - n f1 = f1.\nStep 3: f1 = 420 Hz - 350 Hz = 70 Hz.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: In an open organ pipe, all integer harmonics exist: f_n = n × f_1.\nStep 2: Consecutive harmonics difference: f_{n+1} - f_n = (n + 1) f_1 - n f_1 = f_1.\nStep 3: f_1 = 420 Hz - 350 Hz = 70 Hz.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -962,7 +962,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Velocity in SHM: v = ω \\sqrt{A^2 - x^2}.\nStep 2: Maximum velocity: v_{max} = ω A.\nStep 3: Given v = v_{max} / 2 => ω \\sqrt{A^2 - x^2} = (1/2) ω A => \\sqrt{A^2 - x^2} = A / 2.\nStep 4: A^2 - x^2 = A^2 / 4 => x^2 = 3 A^2 / 4 => x = A \\sqrt{3} / 2 = 4 * \\sqrt{3} / 2 = 2 \\sqrt{3} cm. Conclude Option A is correct.",
+      "explanationText": "Step 1: Velocity in SHM: v = ω \\sqrt{A^2 - x^2}.\nStep 2: Maximum velocity: v_{max} = ω A.\nStep 3: Given v = v_{max} / 2 ⇒ ω \\sqrt{A^2 - x^2} = (1/2) ω A ⇒ \\sqrt{A^2 - x^2} = A / 2.\nStep 4: A^2 - x^2 = A^2 / 4 ⇒ x^2 = 3 A^2 / 4 ⇒ x = A \\sqrt{3} / 2 = 4 × \\sqrt{3} / 2 = 2 \\sqrt{3} cm. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1011,7 +1011,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Apparent frequency for moving observer: f' = f₀ * [ (v + v₀) / v ].\nStep 2: Given v₀ = v / 5 => f' = f₀ * [ (v + v/5) / v ] = f₀ * (6/5) = 1.20 f₀.\nStep 3: Fractional increase = (f' - f₀) / f₀ = (1.20 - 1) = 0.20 = 20%.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Apparent frequency for moving observer: f' = f₀ × [ (v + v₀) / v ].\nStep 2: Given v₀ = v / 5 ⇒ f' = f₀ × [ (v + v/5) / v ] = f₀ × (6/5) = 1.20 f₀.\nStep 3: Fractional increase = (f' - f₀) / f₀ = (1.20 - 1) = 0.20 = 20%.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1060,7 +1060,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: A closed pipe supports ONLY odd harmonics: f_n = (2n - 1) f1 for n = 1, 2, 3, ...\nStep 2: Supported frequencies: 1*220 = 220 Hz, 3*220 = 660 Hz, 5*220 = 1100 Hz, 7*220 = 1540 Hz.\nStep 3: 440 Hz is the 2nd harmonic (even), which is physically absent in a closed pipe.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: A closed pipe supports ONLY odd harmonics: f_n = (2n - 1) f_1 for n = 1, 2, 3, ...\nStep 2: Supported frequencies: 1×220 = 220 Hz, 3×220 = 660 Hz, 5×220 = 1100 Hz, 7×220 = 1540 Hz.\nStep 3: 440 Hz is the 2nd harmonic (even), which is physically absent in a closed pipe.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1109,7 +1109,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Time period formula: T = 2π \\sqrt{L / g} => T ∝ \\sqrt{L}.\nStep 2: New length L' = 1.44 L.\nStep 3: New period T' = \\sqrt{1.44} T = 1.20 T.\nStep 4: Percentage increase = (1.20 - 1.00) * 100% = 20%. Conclude Option A is correct.",
+      "explanationText": "Step 1: Time period formula: T = 2π \\sqrt{L / g} ⇒ T ∝ \\sqrt{L}.\nStep 2: New length L' = 1.44 L.\nStep 3: New period T' = \\sqrt{1.44} T = 1.20 T.\nStep 4: Percentage increase = (1.20 - 1.00) × 100% = 20%. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1158,7 +1158,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Maximum particle velocity v_p_{max} = A ω.\nStep 2: Wave propagation velocity v = ω / k.\nStep 3: Given v_p_{max} = 4 v => A ω = 4 (ω / k).\nStep 4: A = 4 / k => k = 4 / A. Conclude Option A is correct.",
+      "explanationText": "Step 1: Maximum particle velocity v_p_{max} = A ω.\nStep 2: Wave propagation velocity v = ω / k.\nStep 3: Given v_p_{max} = 4 v ⇒ A ω = 4 (ω / k).\nStep 4: A = 4 / k ⇒ k = 4 / A. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1183,7 +1183,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "Two simple harmonic motions of same frequency have equations x1 = 3 sin(ω t) and x2 = 4 cos(ω t). What is the amplitude of the resultant motion upon superposition?",
+    "stemText": "Two simple harmonic motions of same frequency have equations x_1 = 3 sin(ω t) and x_2 = 4 cos(ω t). What is the amplitude of the resultant motion upon superposition?",
     "options": [
       {
         "label": "A",
@@ -1207,14 +1207,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Rewrite x2: x2 = 4 sin(ω t + π/2).\nStep 2: Phase difference Δφ = π/2 (90°).\nStep 3: Resultant amplitude A = \\sqrt{A_1^2 + A_2^2 + 2 A1 A2 cos 90°} = \\sqrt{3^2 + 4^2 + 0} = \\sqrt{9 + 16} = \\sqrt{25} = 5.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Rewrite x_2: x_2 = 4 sin(ω t + π/2).\nStep 2: Phase difference Δφ = π/2 (90°).\nStep 3: Resultant amplitude A = \\sqrt{A_1^2 + A_2^2 + 2 A_1 A_2 cos 90°} = \\sqrt{3^2 + 4^2 + 0} = \\sqrt{9 + 16} = \\sqrt{25} = 5.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "x1 = 3 sin(ω t) மற்றும் x2 = 4 cos(ω t) ஆகிய இரு தனிச்சீரிசை இயக்கங்களின் மேற்பொருந்துதலால் உண்டாகும் தொகுபயன் அலைவீச்சு என்ன?",
+        "stemText": "x_1 = 3 sin(ω t) மற்றும் x_2 = 4 cos(ω t) ஆகிய இரு தனிச்சீரிசை இயக்கங்களின் மேற்பொருந்துதலால் உண்டாகும் தொகுபயன் அலைவீச்சு என்ன?",
         "optionTexts": [
           "5 அலகுகள்",
           "7 அலகுகள்",
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In a freely falling elevator, effective acceleration due to gravity is g_{eff} = g - g = 0.\nStep 2: Time period T = 2π \\sqrt{L / g_{eff}} = 2π \\sqrt{L / 0} -> ∞ (does not oscillate).\nStep 3: Frequency f = 1 / T = 0.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: In a freely falling elevator, effective acceleration due to gravity is g_{eff} = g - g = 0.\nStep 2: Time period T = 2π \\sqrt{L / g_{eff}} = 2π \\sqrt{L / 0} → ∞ (does not oscillate).\nStep 3: Frequency f = 1 / T = 0.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1305,7 +1305,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Sound level in decibels: β = 10 log10(I / I₀).\nStep 2: Change in sound level: Δβ = 10 log10(I_{final} / I_{initial}).\nStep 3: Δβ = 10 log10(100) = 10 * 2 = 20 dB.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Sound level in decibels: β = 10 log_{10}(I / I₀).\nStep 2: Change in sound level: Δβ = 10 log_{10}(I_{final} / I_{initial}).\nStep 3: Δβ = 10 log_{10}(100) = 10 × 2 = 20 dB.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1330,43 +1330,43 @@
     "questionType": "single_choice",
     "difficultyBand": "hard",
     "stemFormat": "latex",
-    "stemText": "A block of mass m is suspended from two springs of force constants k1 and k2 connected in series. What is the time period of vertical oscillation of the mass?",
+    "stemText": "A block of mass m is suspended from two springs of force constants k_1 and k_2 connected in series. What is the time period of vertical oscillation of the mass?",
     "options": [
       {
         "label": "A",
-        "text": "2π sqrt[ m (k1 + k2) / (k1 k2) ]",
+        "text": "2π sqrt[ m (k_1 + k_2) / (k_1 k_2) ]",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "2π sqrt[ m / (k1 + k2) ]",
+        "text": "2π sqrt[ m / (k_1 + k_2) ]",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "2π sqrt[ m k1 k2 / (k1 + k2) ]",
+        "text": "2π sqrt[ m k_1 k_2 / (k_1 + k_2) ]",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "2π sqrt[ 2m / (k1 + k2) ]",
+        "text": "2π sqrt[ 2m / (k_1 + k_2) ]",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In series combination, effective spring constant: 1 / k_{eq} = 1/k1 + 1/k2 => k_{eq} = (k1 k2) / (k1 + k2).\nStep 2: Time period formula: T = 2π \\sqrt{m / k_{eq}}.\nStep 3: T = 2π sqrt[ m / ((k1 k2) / (k1 + k2)) ] = 2π sqrt[ m (k1 + k2) / (k1 k2) ].\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: In series combination, effective spring constant: 1 / k_{eq} = 1/k_1 + 1/k_2 ⇒ k_{eq} = (k_1 k_2) / (k_1 + k_2).\nStep 2: Time period formula: T = 2π \\sqrt{m / k_{eq}}.\nStep 3: T = 2π sqrt[ m / ((k_1 k_2) / (k_1 + k_2)) ] = 2π sqrt[ m (k_1 + k_2) / (k_1 k_2) ].\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "k1 மற்றும் k2 சுருள் மாறிலிகள் கொண்ட தொடரிணைப்பு சுருள்வில்களில் m நிறை தொங்கவிடப்பட்டுள்ளது. அதன் செங்குத்து அலைவு நேரம் என்ன?",
+        "stemText": "k_1 மற்றும் k_2 சுருள் மாறிலிகள் கொண்ட தொடரிணைப்பு சுருள்வில்களில் m நிறை தொங்கவிடப்பட்டுள்ளது. அதன் செங்குத்து அலைவு நேரம் என்ன?",
         "optionTexts": [
-          "2π sqrt[ m (k1 + k2) / (k1 k2) ]",
-          "2π sqrt[ m / (k1 + k2) ]",
-          "2π sqrt[ m k1 k2 / (k1 + k2) ]",
-          "2π sqrt[ 2m / (k1 + k2) ]"
+          "2π sqrt[ m (k_1 + k_2) / (k_1 k_2) ]",
+          "2π sqrt[ m / (k_1 + k_2) ]",
+          "2π sqrt[ m k_1 k_2 / (k_1 + k_2) ]",
+          "2π sqrt[ 2m / (k_1 + k_2) ]"
         ]
       }
     ]
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Speed of source on circle: v_s = r ω = 1.0 m * 10 rad/s = 10 m/s.\nStep 2: Lowest frequency occurs when source moves directly away from observer: f_{min} = f₀ * [ v / (v + v_s) ].\nStep 3: f_{min} = 600 * [ 340 / (340 + 10) ] = 600 * (340 / 350) = 600 * 0.9714 = 582.85 Hz ≈ 583 Hz.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Speed of source on circle: v_s = r ω = 1.0 m × 10 rad/s = 10 m/s.\nStep 2: Lowest frequency occurs when source moves directly away from observer: f_{min} = f₀ × [ v / (v + v_s) ].\nStep 3: f_{min} = 600 × [ 340 / (340 + 10) ] = 600 × (340 / 350) = 600 × 0.9714 = 582.85 Hz ≈ 583 Hz.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],

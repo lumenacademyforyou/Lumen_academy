@@ -6,8 +6,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Rosenmund reduction of benzoyl chloride (C6H5COCl) with H2 over Pd-BaSO4 poisoned with sulfur or quinoline produces:",
+    "stemFormat": "latex",
+    "stemText": "Rosenmund reduction of benzoyl chloride (C_6H_5COCl) with H_2 over Pd-BaSO_4 poisoned with sulfur or quinoline produces:",
     "options": [
       {
         "label": "A",
@@ -31,14 +31,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The catalytic hydrogenation of an acyl chloride to an aldehyde is known as the Rosenmund reduction.\nStep 2: Palladium catalyst is supported on BaSO4 and partially deactivated (poisoned) with sulfur or quinoline to prevent further reduction of the aldehyde to primary alcohol.\nStep 3: C6H5COCl + H2 -(Pd/BaSO4, S)-> C6H5CHO + HCl.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The catalytic hydrogenation of an acyl chloride to an aldehyde is known as the Rosenmund reduction.\nStep 2: Palladium catalyst is supported on BaSO_4 and partially deactivated (poisoned) with sulfur or quinoline to prevent further reduction of the aldehyde to primary alcohol.\nStep 3: C_6H_5COCl + H_2 -(Pd/BaSO_4, S)→ C_6H_5CHO + HCl.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கந்தகம் அல்லது குயினோலினால் மட்டுப்படுத்தப்பட்ட Pd-BaSO4 முன்னிலையில் பென்சாயில் குளோரைடு (C6H5COCl) H2 உடன் ரோசன்மண்ட் ஒடுக்கமடையும் போது உருவாவது எது?",
+        "stemText": "கந்தகம் அல்லது குயினோலினால் மட்டுப்படுத்தப்பட்ட Pd-BaSO_4 முன்னிலையில் பென்சாயில் குளோரைடு (C_6H_5COCl) H_2 உடன் ரோசன்மண்ட் ஒடுக்கமடையும் போது உருவாவது எது?",
         "optionTexts": [
           "பென்சால்டிஹைடு",
           "பென்சைல் ஆல்கஹால்",
@@ -55,8 +55,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "In the Stephen reaction, ethanenitrile (methyl cyanide, CH3CN) is reduced with SnCl2 and concentrated HCl followed by steam hydrolysis to yield:",
+    "stemFormat": "latex",
+    "stemText": "In the Stephen reaction, ethanenitrile (methyl cyanide, CH_3CN) is reduced with SnCl_2 and concentrated HCl followed by steam hydrolysis to yield:",
     "options": [
       {
         "label": "A",
@@ -80,14 +80,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nitriles on reduction with stannous chloride (SnCl2) and HCl form an aldimine hydrochloride intermediate: CH3-CH=NH.HCl.\nStep 2: Subsequent steam hydrolysis of the imine intermediate produces the corresponding aldehyde: CH3CHO + NH4Cl.\nStep 3: This reaction is known as Stephen reaction.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Nitriles on reduction with stannous chloride (SnCl_2) and HCl form an aldimine hydrochloride intermediate: CH_3-CH=NH.HCl.\nStep 2: Subsequent steam hydrolysis of the imine intermediate produces the corresponding aldehyde: CH_3CHO + NH_4Cl.\nStep 3: This reaction is known as Stephen reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஸ்டீபன் வினையில், எத்தனநைட்ரைல் (CH3CN) SnCl2 மற்றும் அடர் HCl உடன் ஒடுக்கப்பட்டு பின்னர் நீராவியால் நீராற்பகுக்கப்படும் போது கிடைப்பது எது?",
+        "stemText": "ஸ்டீபன் வினையில், எத்தனநைட்ரைல் (CH_3CN) SnCl_2 மற்றும் அடர் HCl உடன் ஒடுக்கப்பட்டு பின்னர் நீராவியால் நீராற்பகுக்கப்படும் போது கிடைப்பது எது?",
         "optionTexts": [
           "எத்தனால் (அசிட்டால்டிஹைடு)",
           "எத்தனமீன் (எத்தைலமீன்)",
@@ -104,44 +104,44 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "The intermediate formed during the oxidation of toluene to benzaldehyde by chromyl chloride (CrO2Cl2) in CS2 (Etard reaction) is:",
+    "stemFormat": "latex",
+    "stemText": "The intermediate formed during the oxidation of toluene to benzaldehyde by chromyl chloride (CrO_2Cl_2) in CS_2 (Etard reaction) is:",
     "options": [
       {
         "label": "A",
-        "text": "A brown chromium complex, C6H5CH[OCr(OH)Cl2]2",
+        "text": "A brown chromium complex, C_6H_5CH[OCr(OH)Cl_2]_2",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Benzal chloride, C6H5CHCl2",
+        "text": "Benzal chloride, C_6H_5CHCl_2",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Benzyl alcohol, C6H5CH2OH",
+        "text": "Benzyl alcohol, C_6H_5CH_2OH",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Benzoic acid, C6H5COOH",
+        "text": "Benzoic acid, C_6H_5COOH",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Chromyl chloride (CrO2Cl2) oxidizes the methyl group of toluene in non-polar solvent CS2 or CCl4.\nStep 2: It forms an insoluble brown chromium complex: C6H5CH[OCr(OH)Cl2]2.\nStep 3: Subsequent hydrolysis of this brown complex yields benzaldehyde.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Chromyl chloride (CrO_2Cl_2) oxidizes the methyl group of toluene in non-polar solvent CS_2 or CCl_4.\nStep 2: It forms an insoluble brown chromium complex: C_6H_5CH[OCr(OH)Cl_2]_2.\nStep 3: Subsequent hydrolysis of this brown complex yields benzaldehyde.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "எட்டார்ட் வினையில் டொலுவீன் குரோமைல் குளோரைடால் (CrO2Cl2) பென்சால்டிஹைடாக ஆக்சிஜனேற்றம் அடையும் போது உருவாகும் இடைநிலைப்பொருள் எது?",
+        "stemText": "எட்டார்ட் வினையில் டொலுவீன் குரோமைல் குளோரைடால் (CrO_2Cl_2) பென்சால்டிஹைடாக ஆக்சிஜனேற்றம் அடையும் போது உருவாகும் இடைநிலைப்பொருள் எது?",
         "optionTexts": [
-          "பழுப்பு நிற குரோமியம் அணைவு, C6H5CH[OCr(OH)Cl2]2",
-          "பென்சால் குளோரைடு, C6H5CHCl2",
-          "பென்சைல் ஆல்கஹால், C6H5CH2OH",
-          "பென்சோயிக் அமிலம், C6H5COOH"
+          "பழுப்பு நிற குரோமியம் அணைவு, C_6H_5CH[OCr(OH)Cl_2]_2",
+          "பென்சால் குளோரைடு, C_6H_5CHCl_2",
+          "பென்சைல் ஆல்கஹால், C_6H_5CH_2OH",
+          "பென்சோயிக் அமிலம், C_6H_5COOH"
         ]
       }
     ]
@@ -153,8 +153,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Treatment of benzene with carbon monoxide (CO) and hydrogen chloride (HCl) in the presence of anhydrous AlCl3 and CuCl yields benzaldehyde. This reaction is known as:",
+    "stemFormat": "latex",
+    "stemText": "Treatment of benzene with carbon monoxide (CO) and hydrogen chloride (HCl) in the presence of anhydrous AlCl_3 and CuCl yields benzaldehyde. This reaction is known as:",
     "options": [
       {
         "label": "A",
@@ -178,14 +178,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formylation of benzene or its derivatives using CO + HCl in the presence of anhydrous AlCl3/CuCl catalyst gives benzaldehyde.\nStep 2: The reaction generates formyl chloride (HCOCl) in situ as the electrophilic carrier.\nStep 3: This specific reaction is the Gattermann-Koch reaction.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Formylation of benzene or its derivatives using CO + HCl in the presence of anhydrous AlCl_3/CuCl catalyst gives benzaldehyde.\nStep 2: The reaction generates formyl chloride (HCOCl) in situ as the electrophilic carrier.\nStep 3: This specific reaction is the Gattermann-Koch reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "நீரற்ற AlCl3 மற்றும் CuCl முன்னிலையில் பென்சீன் கார்பன் மோனாக்சைடு (CO) மற்றும் HCl உடன் வினைபுரிந்து பென்சால்டிஹைடைத் தரும் வினை:",
+        "stemText": "நீரற்ற AlCl_3 மற்றும் CuCl முன்னிலையில் பென்சீன் கார்பன் மோனாக்சைடு (CO) மற்றும் HCl உடன் வினைபுரிந்து பென்சால்டிஹைடைத் தரும் வினை:",
         "optionTexts": [
           "காட்டர்மேன்-கோச் வினை",
           "எட்டார்ட் வினை",
@@ -202,7 +202,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following compounds exhibits the highest reactivity towards nucleophilic addition reactions?",
     "options": [
       {
@@ -212,23 +212,23 @@
       },
       {
         "label": "B",
-        "text": "CH3CHO (Acetaldehyde)",
+        "text": "CH_3CHO (Acetaldehyde)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "CH3COCH3 (Acetone)",
+        "text": "CH_3COCH_3 (Acetone)",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "C6H5COCH3 (Acetophenone)",
+        "text": "C_6H_5COCH_3 (Acetophenone)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nucleophilic addition reactivity is governed by electronic (electrophilicity of carbonyl carbon) and steric factors.\nStep 2: Formaldehyde (HCHO) has no +I alkyl groups attached to the carbonyl group, maximizing the positive charge on carbon.\nStep 3: It has two tiny hydrogen atoms, offering minimum steric hindrance to the attacking nucleophile.\nStep 4: Reactivity order: HCHO > CH3CHO > CH3COCH3 > C6H5COCH3. Conclude Option A.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Nucleophilic addition reactivity is governed by electronic (electrophilicity of carbonyl carbon) and steric factors.\nStep 2: Formaldehyde (HCHO) has no +I alkyl groups attached to the carbonyl group, maximizing the positive charge on carbon.\nStep 3: It has two tiny hydrogen atoms, offering minimum steric hindrance to the attacking nucleophile.\nStep 4: Reactivity order: HCHO > CH_3CHO > CH_3COCH_3 > C_6H_5COCH_3. Conclude Option A.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -237,9 +237,9 @@
         "stemText": "பின்வரும் சேர்மங்களில் நியூக்ளியோஃபிலிக் சேர்க்கை வினைகளில் அதிக வினைதிறன் கொண்டது எது?",
         "optionTexts": [
           "HCHO (பார்மால்டிஹைடு)",
-          "CH3CHO (அசிட்டால்டிஹைடு)",
-          "CH3COCH3 (அசிட்டோன்)",
-          "C6H5COCH3 (அசிட்டோஃபீனோன்)"
+          "CH_3CHO (அசிட்டால்டிஹைடு)",
+          "CH_3COCH_3 (அசிட்டோன்)",
+          "C_6H_5COCH_3 (அசிட்டோஃபீனோன்)"
         ]
       }
     ]
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Pure HCN is a very weak acid (Ka = 4.9 * 10^{-10}) and dissociates sluggishly to provide nucleophilic CN^-.\nStep 2: Addition of a base (OH^-) removes a proton from HCN: HCN + OH^- <=> CN^- + H2O.\nStep 3: This generates a high concentration of cyanide ion (CN^-), which is a powerful nucleophile that rapidly attacks the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Pure HCN is a very weak acid (K_a = 4.9 × 10^{-10}) and dissociates sluggishly to provide nucleophilic CN^-.\nStep 2: Addition of a base (OH^-) removes a proton from HCN: HCN + OH^- ⇌ CN^- + H_2O.\nStep 3: This generates a high concentration of cyanide ion (CN^-), which is a powerful nucleophile that rapidly attacks the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -301,11 +301,11 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "latex",
-    "stemText": "Aldehydes and methyl ketones react with saturated sodium bisulfite (NaHSO3) solution to form crystalline bisulfite addition compounds because:",
+    "stemText": "Aldehydes and methyl ketones react with saturated sodium bisulfite (NaHSO_3) solution to form crystalline bisulfite addition compounds because:",
     "options": [
       {
         "label": "A",
-        "text": "Bisulfite ion (HSO3^-) attacks through the nucleophilic sulfur atom to form a stable carbon-sulfur bond",
+        "text": "Bisulfite ion (HSO_3^-) attacks through the nucleophilic sulfur atom to form a stable carbon-sulfur bond",
         "isCorrect": true
       },
       {
@@ -320,24 +320,24 @@
       },
       {
         "label": "D",
-        "text": "NaHSO3 acts as a dehydrating agent",
+        "text": "NaHSO_3 acts as a dehydrating agent",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The bisulfite ion has a lone pair on sulfur, which is more polarizable and nucleophilic than oxygen.\nStep 2: Sulfur attacks the electrophilic carbonyl carbon to form a stable C-S bond.\nStep 3: Proton transfer gives a crystalline bisulfite adduct: >C(OH)(SO3Na).\nStep 4: This reaction is utilized for the purification and separation of aldehydes from non-carbonyl impurities. Conclude Option A.",
+      "explanationText": "Step 1: The bisulfite ion has a lone pair on sulfur, which is more polarizable and nucleophilic than oxygen.\nStep 2: Sulfur attacks the electrophilic carbonyl carbon to form a stable C-S bond.\nStep 3: Proton transfer gives a crystalline bisulfite adduct: >C(OH)(SO_3Na).\nStep 4: This reaction is utilized for the purification and separation of aldehydes from non-carbonyl impurities. Conclude Option A.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஆல்டிஹைடுகள் மற்றும் மெத்தில் கீட்டோன்கள் சோடியம் பைசல்பைட்டுடன் (NaHSO3) படிக சேர்க்கை சேர்மங்களை உருவாக்குவதற்கான காரணம் என்ன?",
+        "stemText": "ஆல்டிஹைடுகள் மற்றும் மெத்தில் கீட்டோன்கள் சோடியம் பைசல்பைட்டுடன் (NaHSO_3) படிக சேர்க்கை சேர்மங்களை உருவாக்குவதற்கான காரணம் என்ன?",
         "optionTexts": [
           "பைசல்பைட் அயனியானது நியூக்ளியோஃபிலிக் கந்தக அணுவின் மூலம் தாக்கி நிலையான கார்பன்-கந்தகப் பிணைப்பை உருவாக்குகிறது",
           "சோடியம் உலோகம் கார்பனைல் கார்பனில் படிகிறது",
           "இது ஒரு எலக்ட்ரான் கவர் அரோமேட்டிக் பதிலீட்டு வினையாகும்",
-          "NaHSO3 ஒரு நீர்நீக்கும் காரணியாக செயல்படுகிறது"
+          "NaHSO_3 ஒரு நீர்நீக்கும் காரணியாக செயல்படுகிறது"
         ]
       }
     ]
@@ -349,33 +349,33 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Acetaldehyde reacts with two equivalents of ethanol in the presence of dry HCl gas to yield an acetal with the formula:",
     "options": [
       {
         "label": "A",
-        "text": "CH3-CH(OC2H5)2 (1,1-Diethoxyethane)",
+        "text": "CH_3-CH(OC_2H_5)_2 (1,1-Diethoxyethane)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "CH3-CH(OH)(OC2H5) (Hemiacetal)",
+        "text": "CH_3-CH(OH)(OC_2H_5) (Hemiacetal)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "C2H5-O-C2H5",
+        "text": "C_2H_5-O-C_2H_5",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "CH3-CO-OC2H5",
+        "text": "CH_3-CO-OC_2H_5",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In the presence of dry HCl gas, one mole of ethanol adds to acetaldehyde (CH3CHO) to form an unstable hemiacetal: CH3-CH(OH)(OC2H5).\nStep 2: Reaction with a second mole of ethanol with loss of water produces a stable gem-dialkoxy compound: acetal, CH3-CH(OC2H5)2 (1,1-diethoxyethane).\nStep 3: Dry HCl gas protonates the carbonyl group and absorbs the released water, driving the reversible equilibrium forward.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In the presence of dry HCl gas, one mole of ethanol adds to acetaldehyde (CH_3CHO) to form an unstable hemiacetal: CH_3-CH(OH)(OC_2H_5).\nStep 2: Reaction with a second mole of ethanol with loss of water produces a stable gem-dialkoxy compound: acetal, CH_3-CH(OC_2H_5)_2 (1,1-diethoxyethane).\nStep 3: Dry HCl gas protonates the carbonyl group and absorbs the released water, driving the reversible equilibrium forward.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -383,10 +383,10 @@
         "languageCode": "ta",
         "stemText": "உலர் HCl வாயு முன்னிலையில் அசிட்டால்டிஹைடு இரண்டு மோல் எத்தனாலுடன் வினைபுரிந்து தரும் அசிட்டாலின் வாய்ப்பாடு என்ன?",
         "optionTexts": [
-          "CH3-CH(OC2H5)2 (1,1-டைஎத்தாக்சிஈத்தேன்)",
-          "CH3-CH(OH)(OC2H5) (ஹெமிஅசிட்டால்)",
-          "C2H5-O-C2H5",
-          "CH3-CO-OC2H5"
+          "CH_3-CH(OC_2H_5)_2 (1,1-டைஎத்தாக்சிஈத்தேன்)",
+          "CH_3-CH(OH)(OC_2H_5) (ஹெமிஅசிட்டால்)",
+          "C_2H_5-O-C_2H_5",
+          "CH_3-CO-OC_2H_5"
         ]
       }
     ]
@@ -398,7 +398,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Brady's reagent (2,4-dinitrophenylhydrazine, 2,4-DNP) reacts with aldehydes and ketones to produce bright yellow, orange, or red precipitates of:",
     "options": [
       {
@@ -423,8 +423,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Brady's reagent is 2,4-dinitrophenylhydrazine in methanol and concentrated H2SO4.\nStep 2: Nucleophilic addition-elimination of 2,4-DNP on carbonyl group (>C=O) eliminates H2O to form >C=N-NH-C6H3(NO2)2.\nStep 3: The resulting 2,4-dinitrophenylhydrazone derivatives have high melting points and bright yellow/orange/red colors, serving as a diagnostic test for carbonyl compounds.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Brady's reagent is 2,4-dinitrophenylhydrazine in methanol and concentrated H_2SO_4.\nStep 2: Nucleophilic addition-elimination of 2,4-DNP on carbonyl group (>C=O) eliminates H_2O to form >C=N-NH-C_6H_3(NO_2)_2.\nStep 3: The resulting 2,4-dinitrophenylhydrazone derivatives have high melting points and bright yellow/orange/red colors, serving as a diagnostic test for carbonyl compounds.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,17 +447,17 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Semicarbazide (H2N-CO-NH-NH2) has two -NH2 groups, yet only one -NH2 group participates in the formation of semicarbazone with carbonyl compounds because:",
+    "stemFormat": "latex",
+    "stemText": "Semicarbazide (H_2N-CO-NH-NH_2) has two -NH_2 groups, yet only one -NH_2 group participates in the formation of semicarbazone with carbonyl compounds because:",
     "options": [
       {
         "label": "A",
-        "text": "The -NH2 group attached directly to the carbonyl carbon is involved in resonance with C=O, making its lone pair unavailable",
+        "text": "The -NH_2 group attached directly to the carbonyl carbon is involved in resonance with C=O, making its lone pair unavailable",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "One -NH2 group is sterically blocked by oxygen",
+        "text": "One -NH_2 group is sterically blocked by oxygen",
         "isCorrect": false
       },
       {
@@ -467,24 +467,24 @@
       },
       {
         "label": "D",
-        "text": "Both -NH2 groups react simultaneously",
+        "text": "Both -NH_2 groups react simultaneously",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In semicarbazide, the -NH2 group directly attached to C=O participates in resonance: H2N-C(=O)- <-> H2N+=C(O-)-.\nStep 2: This delocalization decreases the electron density on that nitrogen atom, destroying its nucleophilicity.\nStep 3: The terminal -NH2 group attached to the -NH- group is not conjugated with C=O and retains an available nucleophilic lone pair.\nStep 4: Therefore, only the hydrazine -NH2 group acts as a nucleophile (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In semicarbazide, the -NH_2 group directly attached to C=O participates in resonance: H_2N-C(=O)- ↔ H_2N^+=C(O^-)-.\nStep 2: This delocalization decreases the electron density on that nitrogen atom, destroying its nucleophilicity.\nStep 3: The terminal -NH_2 group attached to the -NH- group is not conjugated with C=O and retains an available nucleophilic lone pair.\nStep 4: Therefore, only the hydrazine -NH_2 group acts as a nucleophile (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "செமிகார்பசைடில் (H2N-CO-NH-NH2) இரண்டு -NH2 தொகுதிகள் இருந்தபோதிலும், ஒன்று மட்டுமே கார்பனைல் சேர்மங்களுடன் வினைபுரிந்து செமிகார்பசோனைத் தருவதற்குக் காரணம் என்ன?",
+        "stemText": "செமிகார்பசைடில் (H_2N-CO-NH-NH_2) இரண்டு -NH_2 தொகுதிகள் இருந்தபோதிலும், ஒன்று மட்டுமே கார்பனைல் சேர்மங்களுடன் வினைபுரிந்து செமிகார்பசோனைத் தருவதற்குக் காரணம் என்ன?",
         "optionTexts": [
-          "கார்பனைல் கார்பனுடன் நேரடியாக இணைக்கப்பட்டுள்ள -NH2 தொகுதி C=O உடன் உடனிசைவில் ஈடுபடுவதால் அதன் எலக்ட்ரான் இரட்டை கிடைப்பதில்லை",
-          "ஒரு -NH2 தொகுதி ஆக்ஸிஜனால் இடநெருக்கடிக்கு உள்ளாகிறது",
+          "கார்பனைல் கார்பனுடன் நேரடியாக இணைக்கப்பட்டுள்ள -NH_2 தொகுதி C=O உடன் உடனிசைவில் ஈடுபடுவதால் அதன் எலக்ட்ரான் இரட்டை கிடைப்பதில்லை",
+          "ஒரு -NH_2 தொகுதி ஆக்ஸிஜனால் இடநெருக்கடிக்கு உள்ளாகிறது",
           "ஹைட்ரசீன் நைட்ரஜன் அமிலத்தன்மை கொண்டது",
-          "இரண்டு -NH2 தொகுதிகளும் ஒரே நேரத்தில் வினைபுரிகின்றன"
+          "இரண்டு -NH_2 தொகுதிகளும் ஒரே நேரத்தில் வினைபுரிகின்றன"
         ]
       }
     ]
@@ -496,7 +496,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Wolff-Kishner reduction of an aldehyde or ketone involves heating the hydrazone with:",
     "options": [
       {
@@ -511,18 +511,18 @@
       },
       {
         "label": "C",
-        "text": "LiAlH4 in dry ether",
+        "text": "LiAlH_4 in dry ether",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "NaBH4 in ethanol",
+        "text": "NaBH_4 in ethanol",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Wolff-Kishner reduction converts carbonyl group (>C=O) into methylene group (-CH2-).\nStep 2: Carbonyl compound is first treated with hydrazine (NH2NH2) to form hydrazone (>C=N-NH2).\nStep 3: Heating the hydrazone with a strong base (KOH) in high-boiling solvent (ethylene glycol) at 453-473 K eliminates N2 gas to yield hydrocarbon.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Wolff-Kishner reduction converts carbonyl group (>C=O) into methylene group (-CH_2-).\nStep 2: Carbonyl compound is first treated with hydrazine (NH_2NH_2) to form hydrazone (>C=N-NH_2).\nStep 3: Heating the hydrazone with a strong base (KOH) in high-boiling solvent (ethylene glycol) at 453-473 K eliminates N_2 gas to yield hydrocarbon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -532,8 +532,8 @@
         "optionTexts": [
           "அதிக கொதிநிலை கொண்ட எத்திலீன் கிளைக்காலில் உள்ள KOH",
           "அடர் HCl இல் உள்ள Zn-Hg",
-          "உலர் ஈதரில் உள்ள LiAlH4",
-          "எத்தனாலில் உள்ள NaBH4"
+          "உலர் ஈதரில் உள்ள LiAlH_4",
+          "எத்தனாலில் உள்ள NaBH_4"
         ]
       }
     ]
@@ -545,33 +545,33 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Tollens' reagent is an ammoniacal solution of silver nitrate containing the complex ion [Ag(NH3)2]+. Which of the following compounds gives a positive Tollens' test (silver mirror)?",
+    "stemFormat": "latex",
+    "stemText": "Tollens' reagent is an ammoniacal solution of silver nitrate containing the complex ion [Ag(NH_3)_2]^+. Which of the following compounds gives a positive Tollens' test (silver mirror)?",
     "options": [
       {
         "label": "A",
-        "text": "Benzaldehyde (C6H5CHO)",
+        "text": "Benzaldehyde (C_6H_5CHO)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Acetone (CH3COCH3)",
+        "text": "Acetone (CH_3COCH_3)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Benzophenone (C6H5COC6H5)",
+        "text": "Benzophenone (C_6H_5COC_6H_5)",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Ethyl benzoate (C6H5COOC2H5)",
+        "text": "Ethyl benzoate (C_6H_5COOC_2H_5)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Tollens' reagent is a mild oxidizing agent that oxidizes all aldehydes (both aliphatic and aromatic) to corresponding carboxylate ions.\nStep 2: In the process, [Ag(NH3)2]+ is reduced to metallic silver (Ag), depositing as a shining silver mirror on the glass wall.\nStep 3: Benzaldehyde is an aromatic aldehyde and gives a positive Tollens' test; ketones and esters do not reduce Tollens' reagent.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Tollens' reagent is a mild oxidizing agent that oxidizes all aldehydes (both aliphatic and aromatic) to corresponding carboxylate ions.\nStep 2: In the process, [Ag(NH_3)_2]^+ is reduced to metallic silver (Ag), depositing as a shining silver mirror on the glass wall.\nStep 3: Benzaldehyde is an aromatic aldehyde and gives a positive Tollens' test; ketones and esters do not reduce Tollens' reagent.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -579,9 +579,9 @@
         "languageCode": "ta",
         "stemText": "டாலன்ஸ் காரணியுடன் வினைபுரிந்து வெள்ளி ஆடி சோதனையைத் (Silver mirror test) தரும் சேர்மம் எது?",
         "optionTexts": [
-          "பென்சால்டிஹைடு (C6H5CHO)",
-          "அசிட்டோன் (CH3COCH3)",
-          "பென்சோஃபீனோன் (C6H5COC6H5)",
+          "பென்சால்டிஹைடு (C_6H_5CHO)",
+          "அசிட்டோன் (CH_3COCH_3)",
+          "பென்சோஃபீனோன் (C_6H_5COC_6H_5)",
           "எத்தில் பென்சோயேட்டு"
         ]
       }
@@ -594,17 +594,17 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Which of the following aldehydes does NOT reduce Fehling's solution to give a red precipitate of Cu2O?",
+    "stemFormat": "latex",
+    "stemText": "Which of the following aldehydes does NOT reduce Fehling's solution to give a red precipitate of Cu_2O?",
     "options": [
       {
         "label": "A",
-        "text": "Benzaldehyde (C6H5CHO)",
+        "text": "Benzaldehyde (C_6H_5CHO)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Acetaldehyde (CH3CHO)",
+        "text": "Acetaldehyde (CH_3CHO)",
         "isCorrect": false
       },
       {
@@ -614,24 +614,24 @@
       },
       {
         "label": "D",
-        "text": "Propanal (CH3CH2CHO)",
+        "text": "Propanal (CH_3CH_2CHO)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fehling's solution is an alkaline solution of Cu2+ ions complexed with tartrate (Rochelle salt).\nStep 2: Aliphatic aldehydes readily reduce Cu2+ to red cuprous oxide (Cu2O) precipitate.\nStep 3: Aromatic aldehydes like benzaldehyde are weaker reducing agents than aliphatic aldehydes and fail to reduce Fehling's solution.\nStep 4: Conclude Benzaldehyde (Option A) is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Fehling's solution is an alkaline solution of Cu^{2+} ions complexed with tartrate (Rochelle salt).\nStep 2: Aliphatic aldehydes readily reduce Cu^{2+} to red cuprous oxide (Cu_2O) precipitate.\nStep 3: Aromatic aldehydes like benzaldehyde are weaker reducing agents than aliphatic aldehydes and fail to reduce Fehling's solution.\nStep 4: Conclude Benzaldehyde (Option A) is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஃபெலிங் கரைசலை ஒடுக்கி சிவப்பு நிற Cu2O வீழ்படிவைத் தராத ஆல்டிஹைடு எது?",
+        "stemText": "ஃபெலிங் கரைசலை ஒடுக்கி சிவப்பு நிற Cu_2O வீழ்படிவைத் தராத ஆல்டிஹைடு எது?",
         "optionTexts": [
-          "பென்சால்டிஹைடு (C6H5CHO)",
-          "அசிட்டால்டிஹைடு (CH3CHO)",
+          "பென்சால்டிஹைடு (C_6H_5CHO)",
+          "அசிட்டால்டிஹைடு (CH_3CHO)",
           "பார்மால்டிஹைடு (HCHO)",
-          "புரோப்பனால் (CH3CH2CHO)"
+          "புரோப்பனால் (CH_3CH_2CHO)"
         ]
       }
     ]
@@ -643,8 +643,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Which of the following compounds will give a positive iodoform test with I2 and NaOH?",
+    "stemFormat": "latex",
+    "stemText": "Which of the following compounds will give a positive iodoform test with I_2 and NaOH?",
     "options": [
       {
         "label": "A",
@@ -668,14 +668,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The iodoform test is given by compounds containing a methyl ketone group (CH3-C=O) or a secondary methyl carbinol group (CH3-CH(OH)-).\nStep 2: Pentan-2-one (CH3-CO-CH2CH2CH3) is a methyl ketone and yields yellow CHI3 precipitate.\nStep 3: Pentan-3-one (CH3CH2-CO-CH2CH3) lacks a methyl group attached to the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The iodoform test is given by compounds containing a methyl ketone group (CH_3-C=O) or a secondary methyl carbinol group (CH_3-CH(OH)-).\nStep 2: Pentan-2-one (CH_3-CO-CH_2CH_2CH_3) is a methyl ketone and yields yellow CHI_3 precipitate.\nStep 3: Pentan-3-one (CH_3CH_2-CO-CH_2CH_3) lacks a methyl group attached to the carbonyl carbon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "I2 மற்றும் NaOH உடன் மஞ்சள் நிற அயோடோபார்ம் வீழ்படிவைத் தரும் சேர்மம் எது?",
+        "stemText": "I_2 மற்றும் NaOH உடன் மஞ்சள் நிற அயோடோபார்ம் வீழ்படிவைத் தரும் சேர்மம் எது?",
         "optionTexts": [
           "பென்டன்-2-ஓன்",
           "பென்டன்-3-ஓன்",
@@ -692,12 +692,12 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the aldol condensation of acetaldehyde, what is the key role of dilute sodium hydroxide (NaOH)?",
     "options": [
       {
         "label": "A",
-        "text": "It acts as a base and abstracts an acidic alpha-hydrogen to generate a nucleophilic enolate carbanion",
+        "text": "It acts as a base and abstracts an acidic α-hydrogen to generate a nucleophilic enolate carbanion",
         "isCorrect": true
       },
       {
@@ -717,8 +717,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Dilute base (OH-) abstracts a weakly acidic alpha-hydrogen from acetaldehyde (CH3CHO).\nStep 2: This produces a resonance-stabilized enolate carbanion: -CH2-CHO <-> CH2=CH-O-.\nStep 3: The enolate acts as a nucleophile and attacks the carbonyl carbon of a second acetaldehyde molecule to form an alkoxide ion.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Dilute base (OH^-) abstracts a weakly acidic α-hydrogen from acetaldehyde (CH_3CHO).\nStep 2: This produces a resonance-stabilized enolate carbanion: -CH_2-CHO ↔ CH_2=CH-O^-.\nStep 3: The enolate acts as a nucleophile and attacks the carbonyl carbon of a second acetaldehyde molecule to form an alkoxide ion.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -741,12 +741,12 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "When an equimolar mixture of benzaldehyde (C6H5CHO) and formaldehyde (HCHO) is heated with 50% aqueous NaOH (Cross-Cannizzaro reaction), the products obtained are:",
+    "stemFormat": "latex",
+    "stemText": "When an equimolar mixture of benzaldehyde (C_6H_5CHO) and formaldehyde (HCHO) is heated with 50% aqueous NaOH (Cross-Cannizzaro reaction), the products obtained are:",
     "options": [
       {
         "label": "A",
-        "text": "Sodium formate (HCOONa) and Benzyl alcohol (C6H5CH2OH)",
+        "text": "Sodium formate (HCOONa) and Benzyl alcohol (C_6H_5CH_2OH)",
         "isCorrect": true
       },
       {
@@ -766,8 +766,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In a crossed Cannizzaro reaction between formaldehyde and another aldehyde lacking alpha-H, formaldehyde is sterically less hindered and electronically more electrophilic.\nStep 2: Hydroxide ion preferentially attacks formaldehyde to form a tetrahedral intermediate that transfers hydride (H-) to benzaldehyde.\nStep 3: Therefore, formaldehyde is oxidized to formic acid (HCOONa) and benzaldehyde is reduced to benzyl alcohol (C6H5CH2OH).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In a crossed Cannizzaro reaction between formaldehyde and another aldehyde lacking α-H, formaldehyde is sterically less hindered and electronically more electrophilic.\nStep 2: Hydroxide ion preferentially attacks formaldehyde to form a tetrahedral intermediate that transfers hydride (H^-) to benzaldehyde.\nStep 3: Therefore, formaldehyde is oxidized to formic acid (HCOONa) and benzaldehyde is reduced to benzyl alcohol (C_6H_5CH_2OH).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -775,7 +775,7 @@
         "languageCode": "ta",
         "stemText": "பென்சால்டிஹைடு மற்றும் பார்மால்டிஹைடு கலவை 50% காரத்துடன் சூடுபடுத்தப்படும் குறுக்கு கான்னிசரோ வினையில் கிடைக்கும் விளைபொருட்கள் யாவை?",
         "optionTexts": [
-          "சோடியம் பார்மேட் (HCOONa) மற்றும் பென்சைல் ஆல்கஹால் (C6H5CH2OH)",
+          "சோடியம் பார்மேட் (HCOONa) மற்றும் பென்சைல் ஆல்கஹால் (C_6H_5CH_2OH)",
           "சோடியம் பென்சோயேட்டு மற்றும் மெத்தனால்",
           "பென்சைல் ஆல்கஹால் மற்றும் மெத்தனால்",
           "சோடியம் பென்சோயேட்டு மற்றும் சோடியம் பார்மேட்"
@@ -790,8 +790,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Nitration of benzaldehyde with a mixture of concentrated HNO3 and concentrated H2SO4 yields:",
+    "stemFormat": "latex",
+    "stemText": "Nitration of benzaldehyde with a mixture of concentrated HNO_3 and concentrated H_2SO_4 yields:",
     "options": [
       {
         "label": "A",
@@ -815,14 +815,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The aldehyde group (-CHO) has a powerful electron-withdrawing -M (resonance) and -I inductive effect on the benzene ring.\nStep 2: It withdraws electron density specifically from the ortho and para positions, making the meta positions relatively richer in electrons.\nStep 3: The electrophilic nitronium ion (NO2+) attacks predominantly at the meta position.\nStep 4: Conclude m-Nitrobenzaldehyde is formed as the major product (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The aldehyde group (-CHO) has a powerful electron-withdrawing -M (resonance) and -I inductive effect on the benzene ring.\nStep 2: It withdraws electron density specifically from the ortho and para positions, making the meta positions relatively richer in electrons.\nStep 3: The electrophilic nitronium ion (NO_2^+) attacks predominantly at the meta position.\nStep 4: Conclude m-Nitrobenzaldehyde is formed as the major product (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "அடர் HNO3 மற்றும் அடர் H2SO4 கலவையைக் கொண்டு பென்சால்டிஹைடை நைட்ரோஏற்றம் செய்யும் போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "stemText": "அடர் HNO_3 மற்றும் அடர் H_2SO_4 கலவையைக் கொண்டு பென்சால்டிஹைடை நைட்ரோஏற்றம் செய்யும் போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
         "optionTexts": [
           "m-நைட்ரோபென்சால்டிஹைடு",
           "o-நைட்ரோபென்சால்டிஹைடு",
@@ -839,8 +839,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Reaction of methyl magnesium bromide (CH3MgBr) with solid carbon dioxide (dry ice) in dry ether followed by acid hydrolysis yields:",
+    "stemFormat": "latex",
+    "stemText": "Reaction of methyl magnesium bromide (CH_3MgBr) with solid carbon dioxide (dry ice) in dry ether followed by acid hydrolysis yields:",
     "options": [
       {
         "label": "A",
@@ -864,14 +864,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nucleophilic methyl carbanion (CH3-) from the Grignard reagent attacks the electrophilic carbon of carbon dioxide (O=C=O).\nStep 2: This forms a magnesium halocarboxylate salt: CH3-COOMgBr.\nStep 3: Acid hydrolysis of the salt yields ethanoic acid (acetic acid): CH3COOH + Mg(OH)Br.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Nucleophilic methyl carbanion (CH_3^-) from the Grignard reagent attacks the electrophilic carbon of carbon dioxide (O=C=O).\nStep 2: This forms a magnesium halocarboxylate salt: CH_3-COOMgBr.\nStep 3: Acid hydrolysis of the salt yields ethanoic acid (acetic acid): CH_3COOH + Mg(OH)Br.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "உலர் ஈதரில் மெத்தில் மெக்னீசியம் புரோமைடு (CH3MgBr) திட CO2 (உலர் பனி) உடன் வினைபுரிந்து பின்னர் அமில நீராற்பகுப்பு செய்யப்படும் போது கிடைப்பது எது?",
+        "stemText": "உலர் ஈதரில் மெத்தில் மெக்னீசியம் புரோமைடு (CH_3MgBr) திட CO_2 (உலர் பனி) உடன் வினைபுரிந்து பின்னர் அமில நீராற்பகுப்பு செய்யப்படும் போது கிடைப்பது எது?",
         "optionTexts": [
           "எத்தனாயிக் அமிலம் (அசிட்டிக் அமிலம்)",
           "மெத்தனாயிக் அமிலம்",
@@ -888,7 +888,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which of the following substituted benzoic acids is the strongest acid?",
     "options": [
       {
@@ -913,8 +913,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Ortho-substituted benzoic acids exhibit the 'ortho effect' (steric inhibition of resonance).\nStep 2: Bulky ortho substituents twist the -COOH group out of the plane of the benzene ring, preventing ring-pi donation into the carbonyl group.\nStep 3: This allows maximal delocalization of the negative charge across the two carboxylate oxygens, dramatically increasing acidity.\nStep 4: In addition, -NO2 exerts a powerful -I effect at the ortho position, making o-nitrobenzoic acid the strongest acid (Option A).",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Ortho-substituted benzoic acids exhibit the 'ortho effect' (steric inhibition of resonance).\nStep 2: Bulky ortho substituents twist the -COOH group out of the plane of the benzene ring, preventing ring-π donation into the carbonyl group.\nStep 3: This allows maximal delocalization of the negative charge across the two carboxylate oxygens, dramatically increasing acidity.\nStep 4: In addition, -NO_2 exerts a powerful -I effect at the ortho position, making o-nitrobenzoic acid the strongest acid (Option A).",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -937,7 +937,7 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Carboxylic acids are significantly more acidic than phenols and alcohols primarily because:",
     "options": [
       {
@@ -962,8 +962,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In the carboxylate ion (RCOO-), the negative charge is delocalized equally over two strongly electronegative oxygen atoms in two equivalent canonical structures.\nStep 2: In the phenoxide ion (C6H5O-), the negative charge is delocalized onto less electronegative carbon atoms of the benzene ring (non-equivalent resonance structures).\nStep 3: Equal delocalization over electronegative oxygens makes the carboxylate ion far more stable than the phenoxide ion.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In the carboxylate ion (RCOO^-), the negative charge is delocalized equally over two strongly electronegative oxygen atoms in two equivalent canonical structures.\nStep 2: In the phenoxide ion (C_6H_5O^-), the negative charge is delocalized onto less electronegative carbon atoms of the benzene ring (non-equivalent resonance structures).\nStep 3: Equal delocalization over electronegative oxygens makes the carboxylate ion far more stable than the phenoxide ion.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -986,33 +986,33 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The best reagent for converting carboxylic acids to acyl chlorides cleanly without generating non-volatile byproducts is:",
     "options": [
       {
         "label": "A",
-        "text": "Thionyl chloride (SOCl2)",
+        "text": "Thionyl chloride (SOCl_2)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Phosphorus pentachloride (PCl5)",
+        "text": "Phosphorus pentachloride (PCl_5)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Phosphorus trichloride (PCl3)",
+        "text": "Phosphorus trichloride (PCl_3)",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Concentrated HCl with ZnCl2",
+        "text": "Concentrated HCl with ZnCl_2",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: RCOOH + SOCl2 -> RCOCl + SO2(g) + HCl(g).\nStep 2: The byproducts sulfur dioxide (SO2) and hydrogen chloride (HCl) are gases that escape into the atmosphere.\nStep 3: This leaves the pure acyl chloride product in the reaction flask without the need for complex fractional distillation.\nStep 4: Conclude Thionyl chloride (Option A) is preferred.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: RCOOH + SOCl_2 → RCOCl + SO_2(g) + HCl(g).\nStep 2: The byproducts sulfur dioxide (SO_2) and hydrogen chloride (HCl) are gases that escape into the atmosphere.\nStep 3: This leaves the pure acyl chloride product in the reaction flask without the need for complex fractional distillation.\nStep 4: Conclude Thionyl chloride (Option A) is preferred.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1020,10 +1020,10 @@
         "languageCode": "ta",
         "stemText": "கார்பாக்சிலிக் அமிலங்களை அசைல் குளோரைடுகளாக மாற்றுவதற்கு சிறந்த காரணியாகக் கருதப்படுவது எது?",
         "optionTexts": [
-          "தையோனைல் குளோரைடு (SOCl2)",
-          "பாஸ்பரஸ் பென்டாகுளோரைடு (PCl5)",
-          "பாஸ்பரஸ் டிரைகுளோரைடு (PCl3)",
-          "அடர் HCl மற்றும் ZnCl2"
+          "தையோனைல் குளோரைடு (SOCl_2)",
+          "பாஸ்பரஸ் பென்டாகுளோரைடு (PCl_5)",
+          "பாஸ்பரஸ் டிரைகுளோரைடு (PCl_3)",
+          "அடர் HCl மற்றும் ZnCl_2"
         ]
       }
     ]
@@ -1035,8 +1035,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Heating ethanoic acid with phosphorus pentoxide (P2O5) or concentrated H2SO4 causes dehydration to produce:",
+    "stemFormat": "latex",
+    "stemText": "Heating ethanoic acid with phosphorus pentoxide (P_2O_5) or concentrated H_2SO_4 causes dehydration to produce:",
     "options": [
       {
         "label": "A",
@@ -1050,7 +1050,7 @@
       },
       {
         "label": "C",
-        "text": "Methane and CO2",
+        "text": "Methane and CO_2",
         "isCorrect": false
       },
       {
@@ -1060,18 +1060,18 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Phosphorus pentoxide (P2O5) is a powerful dehydrating agent.\nStep 2: Two molecules of ethanoic acid (CH3COOH) eliminate one molecule of water on heating with P2O5.\nStep 3: 2 CH3COOH -(P2O5, heat)-> (CH3CO)2O + H2O.\nStep 4: The product is ethanoic anhydride (acetic anhydride). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Phosphorus pentoxide (P_2O_5) is a powerful dehydrating agent.\nStep 2: Two molecules of ethanoic acid (CH_3COOH) eliminate one molecule of water on heating with P_2O_5.\nStep 3: 2 CH_3COOH -(P_2O_5, heat)→ (CH_3CO)_2O + H_2O.\nStep 4: The product is ethanoic anhydride (acetic anhydride). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "பாஸ்பரஸ் பென்டாக்சைடு (P2O5) முன்னிலையில் எத்தனாயிக் அமிலத்தை சூடுபடுத்தி நீர்நீக்கம் செய்யும் போது கிடைப்பது எது?",
+        "stemText": "பாஸ்பரஸ் பென்டாக்சைடு (P_2O_5) முன்னிலையில் எத்தனாயிக் அமிலத்தை சூடுபடுத்தி நீர்நீக்கம் செய்யும் போது கிடைப்பது எது?",
         "optionTexts": [
           "எத்தனாயிக் நீரிலி (அசிட்டிக் நீரிலி)",
           "எத்தில் எத்தனோயேட்டு",
-          "மீத்தேன் மற்றும் CO2",
+          "மீத்தேன் மற்றும் CO_2",
           "எத்தனால்"
         ]
       }
@@ -1084,8 +1084,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Fischer esterification of a carboxylic acid with an alcohol in the presence of an acid catalyst (conc. H2SO4 or dry HCl) involves:",
+    "stemFormat": "latex",
+    "stemText": "Fischer esterification of a carboxylic acid with an alcohol in the presence of an acid catalyst (conc. H_2SO_4 or dry HCl) involves:",
     "options": [
       {
         "label": "A",
@@ -1110,7 +1110,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The acid catalyst protonates the carbonyl oxygen of the carboxylic acid, increasing the electrophilicity of the carbonyl carbon.\nStep 2: The neutral alcohol molecule attacks as a nucleophile to form a tetrahedral intermediate.\nStep 3: Proton transfers and subsequent elimination of water yields the ester.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1133,8 +1133,8 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Heating sodium propanoate (CH3CH2COONa) with soda lime (NaOH + CaO in 3:1 ratio) produces:",
+    "stemFormat": "latex",
+    "stemText": "Heating sodium propanoate (CH_3CH_2COONa) with soda lime (NaOH + CaO in 3:1 ratio) produces:",
     "options": [
       {
         "label": "A",
@@ -1158,14 +1158,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Soda lime decarboxylation eliminates the carboxyl group as Na2CO3.\nStep 2: CH3CH2COONa + NaOH -(CaO, heat)-> CH3CH3 + Na2CO3.\nStep 3: The resulting hydrocarbon is an alkane containing one carbon atom fewer than the starting carboxylate.\nStep 4: Sodium propanoate (3 carbons) yields ethane (2 carbons). Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Soda lime decarboxylation eliminates the carboxyl group as Na_2CO_3.\nStep 2: CH_3CH_2COONa + NaOH -(CaO, heat)→ CH_3CH_3 + Na_2CO_3.\nStep 3: The resulting hydrocarbon is an alkane containing one carbon atom fewer than the starting carboxylate.\nStep 4: Sodium propanoate (3 carbons) yields ethane (2 carbons). Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "சோடா சுண்ணாம்பு (NaOH + CaO) உடன் சோடியம் புரோப்பனோயேட்டை (CH3CH2COONa) சூடுபடுத்தி கார்பாக்சில் நீக்கம் செய்யும்போது கிடைப்பது எது?",
+        "stemText": "சோடா சுண்ணாம்பு (NaOH + CaO) உடன் சோடியம் புரோப்பனோயேட்டை (CH_3CH_2COONa) சூடுபடுத்தி கார்பாக்சில் நீக்கம் செய்யும்போது கிடைப்பது எது?",
         "optionTexts": [
           "ஈத்தேன்",
           "புரோப்பேன்",
@@ -1182,17 +1182,17 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "In the Hell-Volhard-Zelinsky (HVZ) reaction, which of the following carboxylic acids can undergo alpha-bromination?",
+    "stemFormat": "latex",
+    "stemText": "In the Hell-Volhard-Zelinsky (HVZ) reaction, which of the following carboxylic acids can undergo α-bromination?",
     "options": [
       {
         "label": "A",
-        "text": "(CH3)2CH-COOH (2-Methylpropanoic acid)",
+        "text": "(CH_3)_2CH-COOH (2-Methylpropanoic acid)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "(CH3)3C-COOH (2,2-Dimethylpropanoic acid)",
+        "text": "(CH_3)_3C-COOH (2,2-Dimethylpropanoic acid)",
         "isCorrect": false
       },
       {
@@ -1202,13 +1202,13 @@
       },
       {
         "label": "D",
-        "text": "C6H5-COOH (Benzoic acid)",
+        "text": "C_6H_5-COOH (Benzoic acid)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The HVZ reaction requires the presence of at least one alpha-hydrogen atom on the carbon adjacent to the -COOH group.\nStep 2: In (CH3)2CH-COOH, the alpha-carbon carries one hydrogen atom (one alpha-H).\nStep 3: (CH3)3CCOOH, HCOOH, and C6H5COOH have zero alpha-hydrogens and cannot undergo the HVZ reaction.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The HVZ reaction requires the presence of at least one α-hydrogen atom on the carbon adjacent to the -COOH group.\nStep 2: In (CH_3)_2CH-COOH, the α-carbon carries one hydrogen atom (one α-H).\nStep 3: (CH_3)_3CCOOH, HCOOH, and C_6H_5COOH have zero α-hydrogens and cannot undergo the HVZ reaction.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1216,10 +1216,10 @@
         "languageCode": "ta",
         "stemText": "ஹெல்-வோல்ஹார்ட்-ஜெலின்ஸ்கி (HVZ) வினையில், பின்வரும் எந்த கார்பாக்சிலிக் அமிலம் ஆல்ஃபா-புரோமினேற்றத்திற்கு உட்படக்கூடியது?",
         "optionTexts": [
-          "(CH3)2CH-COOH (2-மெத்தில்புரோப்பனாயிக் அமிலம்)",
-          "(CH3)3C-COOH (2,2-டைமெத்தில்புரோப்பனாயிக் அமிலம்)",
+          "(CH_3)_2CH-COOH (2-மெத்தில்புரோப்பனாயிக் அமிலம்)",
+          "(CH_3)_3C-COOH (2,2-டைமெத்தில்புரோப்பனாயிக் அமிலம்)",
           "HCOOH (பார்மிக் அமிலம்)",
-          "C6H5-COOH (பென்சோயிக் அமிலம்)"
+          "C_6H_5-COOH (பென்சோயிக் அமிலம்)"
         ]
       }
     ]
@@ -1231,22 +1231,22 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Reduction of ethanoic acid (CH3COOH) with lithium aluminum hydride (LiAlH4) in dry ether followed by acid workup gives:",
+    "stemFormat": "latex",
+    "stemText": "Reduction of ethanoic acid (CH_3COOH) with lithium aluminum hydride (LiAlH_4) in dry ether followed by acid workup gives:",
     "options": [
       {
         "label": "A",
-        "text": "Ethanol (CH3CH2OH)",
+        "text": "Ethanol (CH_3CH_2OH)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Ethanal (CH3CHO)",
+        "text": "Ethanal (CH_3CHO)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Ethane (CH3CH3)",
+        "text": "Ethane (CH_3CH_3)",
         "isCorrect": false
       },
       {
@@ -1256,17 +1256,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Carboxylic acids are resistant to weak reducing agents (such as NaBH4).\nStep 2: Strong reducing agents like LiAlH4 or diborane (B2H6) reduce the carboxyl group (-COOH) completely to primary alcohol (-CH2OH).\nStep 3: CH3COOH -(1. LiAlH4 / ether, 2. H3O+)-> CH3CH2OH (Ethanol).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Carboxylic acids are resistant to weak reducing agents (such as NaBH_4).\nStep 2: Strong reducing agents like LiAlH_4 or diborane (B_2H_6) reduce the carboxyl group (-COOH) completely to primary alcohol (-CH_2OH).\nStep 3: CH_3COOH -(1. LiAlH_4 / ether, 2. H_3O^+)→ CH_3CH_2OH (Ethanol).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "உலர் ஈதரில் LiAlH4 ஐப் பயன்படுத்தி எத்தனாயிக் அமிலத்தை (CH3COOH) ஒடுக்கும் போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
+        "stemText": "உலர் ஈதரில் LiAlH_4 ஐப் பயன்படுத்தி எத்தனாயிக் அமிலத்தை (CH_3COOH) ஒடுக்கும் போது கிடைக்கும் முதன்மை விளைபொருள் எது?",
         "optionTexts": [
-          "எத்தனால் (CH3CH2OH)",
-          "எத்தனால் (CH3CHO, அசிட்டால்டிஹைடு)",
+          "எத்தனால் (CH_3CH_2OH)",
+          "எத்தனால் (CH_3CHO, அசிட்டால்டிஹைடு)",
           "ஈத்தேன்",
           "மெத்தனால்"
         ]
@@ -1280,22 +1280,22 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Which of the following compounds does NOT evolve CO2 gas with aqueous sodium bicarbonate (NaHCO3) solution?",
+    "stemFormat": "latex",
+    "stemText": "Which of the following compounds does NOT evolve CO_2 gas with aqueous sodium bicarbonate (NaHCO_3) solution?",
     "options": [
       {
         "label": "A",
-        "text": "Phenol (C6H5OH)",
+        "text": "Phenol (C_6H_5OH)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Ethanoic acid (CH3COOH)",
+        "text": "Ethanoic acid (CH_3COOH)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Benzoic acid (C6H5COOH)",
+        "text": "Benzoic acid (C_6H_5COOH)",
         "isCorrect": false
       },
       {
@@ -1305,18 +1305,18 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: A compound decomposes aqueous NaHCO3 with effervescence of CO2 only if it is a stronger acid than carbonic acid (H2CO3, pKa = 6.35).\nStep 2: Carboxylic acids (pKa ~ 4-5) and picric acid (pKa = 0.38) are stronger acids than H2CO3 and liberate CO2.\nStep 3: Simple phenol (pKa = 10.0) is a much weaker acid than carbonic acid and cannot displace CO2 from NaHCO3.\nStep 4: Conclude Phenol (Option A) does not react with NaHCO3.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: A compound decomposes aqueous NaHCO_3 with effervescence of CO_2 only if it is a stronger acid than carbonic acid (H_2CO_3, pK_a = 6.35).\nStep 2: Carboxylic acids (pK_a ~ 4-5) and picric acid (pK_a = 0.38) are stronger acids than H_2CO_3 and liberate CO_2.\nStep 3: Simple phenol (pK_a = 10.0) is a much weaker acid than carbonic acid and cannot displace CO_2 from NaHCO_3.\nStep 4: Conclude Phenol (Option A) does not react with NaHCO_3.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "நீரிய சோடியம் பைகார்பனேட் (NaHCO3) கரைசலுடன் நுரைத்து பொங்கி CO2 வாயுவை வெளியிடாத சேர்மம் எது?",
+        "stemText": "நீரிய சோடியம் பைகார்பனேட் (NaHCO_3) கரைசலுடன் நுரைத்து பொங்கி CO_2 வாயுவை வெளியிடாத சேர்மம் எது?",
         "optionTexts": [
-          "பீனால் (C6H5OH)",
-          "எத்தனாயிக் அமிலம் (CH3COOH)",
-          "பென்சோயிக் அமிலம் (C6H5COOH)",
+          "பீனால் (C_6H_5OH)",
+          "எத்தனாயிக் அமிலம் (CH_3COOH)",
+          "பென்சோயிக் அமிலம் (C_6H_5COOH)",
           "2,4,6-டிரைநைட்ரோபீனால் (பிக்ரிக் அமிலம்)"
         ]
       }
@@ -1329,17 +1329,17 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Dry distillation of calcium ethanoate [Ca(CH3COO)2] yields:",
+    "stemFormat": "latex",
+    "stemText": "Dry distillation of calcium ethanoate [Ca(CH_3COO)_2] yields:",
     "options": [
       {
         "label": "A",
-        "text": "Propanone (Acetone) and CaCO3",
+        "text": "Propanone (Acetone) and CaCO_3",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Ethanal and CaCO3",
+        "text": "Ethanal and CaCO_3",
         "isCorrect": false
       },
       {
@@ -1349,24 +1349,24 @@
       },
       {
         "label": "D",
-        "text": "Ethane and CO2",
+        "text": "Ethane and CO_2",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Dry distillation of the calcium salt of a monocarboxylic acid (other than formate) produces a symmetrical ketone.\nStep 2: (CH3COO)2Ca -(heat)-> CH3-CO-CH3 + CaCO3.\nStep 3: The product is propanone (acetone).\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Dry distillation of the calcium salt of a monocarboxylic acid (other than formate) produces a symmetrical ketone.\nStep 2: (CH_3COO)_2Ca -(heat)→ CH_3-CO-CH_3 + CaCO_3.\nStep 3: The product is propanone (acetone).\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "கால்சியம் அசிட்டேட்டை [Ca(CH3COO)2] உலர் வடித்தலுக்கு உட்படுத்தும்போது கிடைப்பது எது?",
+        "stemText": "கால்சியம் அசிட்டேட்டை [Ca(CH_3COO)_2] உலர் வடித்தலுக்கு உட்படுத்தும்போது கிடைப்பது எது?",
         "optionTexts": [
-          "புரோப்பனோன் (அசிட்டோன்) மற்றும் CaCO3",
-          "எத்தனால் மற்றும் CaCO3",
+          "புரோப்பனோன் (அசிட்டோன்) மற்றும் CaCO_3",
+          "எத்தனால் மற்றும் CaCO_3",
           "மெத்தனால் மற்றும் CaO",
-          "ஈத்தேன் மற்றும் CO2"
+          "ஈத்தேன் மற்றும் CO_2"
         ]
       }
     ]
@@ -1378,17 +1378,17 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "An organic compound 'A' (C3H6O) forms a yellow precipitate with 2,4-DNP reagent and also responds to the iodoform test, but does NOT reduce Tollens' reagent. Compound 'A' is:",
+    "stemFormat": "latex",
+    "stemText": "An organic compound 'A' (C_3H_6O) forms a yellow precipitate with 2,4-DNP reagent and also responds to the iodoform test, but does NOT reduce Tollens' reagent. Compound 'A' is:",
     "options": [
       {
         "label": "A",
-        "text": "Propanone (CH3COCH3)",
+        "text": "Propanone (CH_3COCH_3)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Propanal (CH3CH2CHO)",
+        "text": "Propanal (CH_3CH_2CHO)",
         "isCorrect": false
       },
       {
@@ -1403,14 +1403,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Reaction with 2,4-DNP indicates the presence of a carbonyl group (>C=O).\nStep 2: It does not reduce Tollens' reagent, confirming it is a ketone, not an aldehyde.\nStep 3: A positive iodoform test indicates the presence of a methyl ketone group (CH3-C=O).\nStep 4: With molecular formula C3H6O, the only 3-carbon methyl ketone is propanone (acetone). Conclude Option A.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Reaction with 2,4-DNP indicates the presence of a carbonyl group (>C=O).\nStep 2: It does not reduce Tollens' reagent, confirming it is a ketone, not an aldehyde.\nStep 3: A positive iodoform test indicates the presence of a methyl ketone group (CH_3-C=O).\nStep 4: With molecular formula C_3H_6O, the only 3-carbon methyl ketone is propanone (acetone). Conclude Option A.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "C3H6O என்ற வாய்ப்பாடு கொண்ட ஒரு கரிமச் சேர்மம் 2,4-DNP உடன் மஞ்சள் வீழ்படிவையும், அயோடோபார்ம் சோதனைக்கு நேர்மறை முடிவையும் தருகிறது, ஆனால் டாலன்ஸ் காரணியை ஒடுக்குவதில்லை எனில் அச்சேர்மம் எது?",
+        "stemText": "C_3H_6O என்ற வாய்ப்பாடு கொண்ட ஒரு கரிமச் சேர்மம் 2,4-DNP உடன் மஞ்சள் வீழ்படிவையும், அயோடோபார்ம் சோதனைக்கு நேர்மறை முடிவையும் தருகிறது, ஆனால் டாலன்ஸ் காரணியை ஒடுக்குவதில்லை எனில் அச்சேர்மம் எது?",
         "optionTexts": [
           "புரோப்பனோன் (அசிட்டோன்)",
           "புரோப்பனால்",
@@ -1427,22 +1427,22 @@
     "nodeTagCode": "chem_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Which of the following carboxylic acids does NOT contain an alpha-hydrogen atom?",
+    "stemFormat": "latex",
+    "stemText": "Which of the following carboxylic acids does NOT contain an α-hydrogen atom?",
     "options": [
       {
         "label": "A",
-        "text": "Benzoic acid (C6H5COOH)",
+        "text": "Benzoic acid (C_6H_5COOH)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Ethanoic acid (CH3COOH)",
+        "text": "Ethanoic acid (CH_3COOH)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Propanoic acid (CH3CH2COOH)",
+        "text": "Propanoic acid (CH_3CH_2COOH)",
         "isCorrect": false
       },
       {
@@ -1452,8 +1452,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The alpha-carbon is the carbon atom directly bonded to the carboxyl (-COOH) carbon.\nStep 2: In benzoic acid (C6H5COOH), the alpha-carbon is an sp2-hybridized aromatic ring carbon bonded to two neighboring carbons and the -COOH group, carrying zero hydrogens.\nStep 3: CH3COOH has 3 alpha-H, CH3CH2COOH has 2 alpha-H, and (CH3)2CHCOOH has 1 alpha-H.\nStep 4: Conclude Benzoic acid (Option A) lacks alpha-hydrogens.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: The α-carbon is the carbon atom directly bonded to the carboxyl (-COOH) carbon.\nStep 2: In benzoic acid (C_6H_5COOH), the α-carbon is an sp^{2}-hybridized aromatic ring carbon bonded to two neighboring carbons and the -COOH group, carrying zero hydrogens.\nStep 3: CH_3COOH has 3 α-H, CH_3CH_2COOH has 2 α-H, and (CH_3)_2CHCOOH has 1 α-H.\nStep 4: Conclude Benzoic acid (Option A) lacks α-hydrogens.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1461,9 +1461,9 @@
         "languageCode": "ta",
         "stemText": "பின்வரும் கார்பாக்சிலிக் அமிலங்களில் ஆல்ஃபா-ஹைட்ரஜன் அணு இல்லாத அமிலம் எது?",
         "optionTexts": [
-          "பென்சோயிக் அமிலம் (C6H5COOH)",
-          "எத்தனாயிக் அமிலம் (CH3COOH)",
-          "புரோப்பனாயிக் அமிலம் (CH3CH2COOH)",
+          "பென்சோயிக் அமிலம் (C_6H_5COOH)",
+          "எத்தனாயிக் அமிலம் (CH_3COOH)",
+          "புரோப்பனாயிக் அமிலம் (CH_3CH_2COOH)",
           "2-மெத்தில்புரோப்பனாயிக் அமிலம்"
         ]
       }

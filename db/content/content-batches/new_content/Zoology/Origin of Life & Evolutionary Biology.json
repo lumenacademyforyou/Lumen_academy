@@ -6,33 +6,33 @@
     "nodeTagCode": "zoo_05",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the Miller-Urey experimental simulation of primitive Earth's reducing atmosphere (1953), which gaseous mixture and physical energy source produced significant amounts of simple amino acids (e.g., Glycine, Alanine, Aspartic acid)?",
     "options": [
       {
         "label": "A",
-        "text": "Methane (CH4) and pure Oxygen (O2) with radioactive alpha decay",
+        "text": "Methane (CH_4) and pure Oxygen (O_2) with radioactive α decay",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Methane (CH4), Ammonia (NH3), Hydrogen (H2) in a 2:1:2 volume ratio with water vapor, subjected to continuous electric spark discharge at 800 °C",
+        "text": "Methane (CH_4), Ammonia (NH_3), Hydrogen (H_2) in a 2:1:2 volume ratio with water vapor, subjected to continuous electric spark discharge at 800 °C",
         "isCorrect": true
       },
       {
         "label": "C",
-        "text": "Carbon monoxide (CO), Nitrogen dioxide (NO2), Sulfur dioxide (SO2) with heat",
+        "text": "Carbon monoxide (CO), Nitrogen dioxide (NO_2), Sulfur dioxide (SO_2) with heat",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Oxygen (O2), Carbon dioxide (CO2), Nitrogen (N2) with UV radiation",
+        "text": "Oxygen (O_2), Carbon dioxide (CO_2), Nitrogen (N_2) with UV radiation",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Stanley Miller and Harold Urey created conditions similar to primitive Earth in a closed glass apparatus.\nStep 2: They introduced a reducing gas mixture containing CH4, NH3, H2 (in 2:1:2 ratio) and boiling water vapor.\nStep 3: Continuous 75,000-volt electric spark discharge at 800 °C simulated lightning.\nStep 4: Chemical analysis of the condensed liquid revealed synthesis of organic compounds including amino acids (glycine, alanine, aspartic acid), supporting chemical evolution.\nStep 5: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Stanley Miller and Harold Urey created conditions similar to primitive Earth in a closed glass apparatus.\nStep 2: They introduced a reducing gas mixture containing CH_4, NH_3, H_2 (in 2:1:2 ratio) and boiling water vapor.\nStep 3: Continuous 75,000-volt electric spark discharge at 800 °C simulated lightning.\nStep 4: Chemical analysis of the condensed liquid revealed synthesis of organic compounds including amino acids (glycine, alanine, aspartic acid), supporting chemical evolution.\nStep 5: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -41,7 +41,7 @@
         "stemText": "தொன்மையான பூமியின் குறைக்கப்பட்ட வளிமண்டலத்தை உருவகப்படுத்திய மில்லர்-யூரே சோதனையில் (1953), அமினோ அமிலங்களை (கிளைசின், அலனைன் போன்றவை) உருவாக்கப் பயன்படுத்தப்பட்ட வாயுக்கலவை மற்றும் ஆற்றல் மூலம் எது?",
         "optionTexts": [
           "மீத்தேன் மற்றும் ஆக்ஸிஜன் கலவை",
-          "மீத்தேன் (CH4), அம்மோனியா (NH3), ஹைட்ரஜன் (H2) மற்றும் நீராவி கலவையை 800 °C வெப்பநிலையில் தொடர் மின்பொறி வீச்சுக்கு (spark discharge) உட்படுத்துதல்",
+          "மீத்தேன் (CH_4), அம்மோனியா (NH_3), ஹைட்ரஜன் (H_2) மற்றும் நீராவி கலவையை 800 °C வெப்பநிலையில் தொடர் மின்பொறி வீச்சுக்கு (spark discharge) உட்படுத்துதல்",
           "கார்பன் மோனாக்சைடு மற்றும் வெப்பம்",
           "ஆக்ஸிஜன், கார்பன் டை ஆக்சைடு மற்றும் புற ஊதா கதிர்கள்"
         ]
@@ -550,27 +550,27 @@
     "options": [
       {
         "label": "A",
-        "text": "Ramapithecus -> Australopithecus -> Homo habilis -> Homo erectus -> Neanderthal man -> Homo sapiens",
+        "text": "Ramapithecus → Australopithecus → Homo habilis → Homo erectus → Neanderthal man → Homo sapiens",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Homo habilis -> Australopithecus -> Ramapithecus -> Homo erectus -> Homo sapiens",
+        "text": "Homo habilis → Australopithecus → Ramapithecus → Homo erectus → Homo sapiens",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Australopithecus -> Ramapithecus -> Homo erectus -> Homo habilis -> Homo sapiens",
+        "text": "Australopithecus → Ramapithecus → Homo erectus → Homo habilis → Homo sapiens",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Ramapithecus -> Homo erectus -> Australopithecus -> Homo habilis -> Homo sapiens",
+        "text": "Ramapithecus → Homo erectus → Australopithecus → Homo habilis → Homo sapiens",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Ramapithecus (~15 mya) -> Australopithecus (~2 mya) -> Homo habilis (650-800 cc) -> Homo erectus (900 cc, ~1.5 mya) -> Neanderthal man (1400 cc, ~100,000 ya) -> Homo sapiens (~75,000-10,000 ya).\nStep 2: Conclude Option A is correct.",
+      "explanationText": "Step 1: Ramapithecus (~15 mya) → Australopithecus (~2 mya) → Homo habilis (650-800 cc) → Homo erectus (900 cc, ~1.5 mya) → Neanderthal man (1400 cc, ~100,000 ya) → Homo sapiens (~75,000-10,000 ya).\nStep 2: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -579,10 +579,10 @@
         "languageCode": "ta",
         "stemText": "மனித பரிணாம வரிசையின் சரியான காலவரிசைப் படிநிலை எது?",
         "optionTexts": [
-          "ராமாபித்தேகஸ் -> ஆஸ்ட்ரலோபித்தேகஸ் -> ஹோமோ ஹேபிலிஸ் -> ஹோமோ எரக்டஸ் -> நியாண்டர்தால் மனிதன் -> ஹோமோ சேப்பியன்ஸ்",
-          "ஹோமோ ஹேபிலிஸ் -> ஆஸ்ட்ரலோபித்தேகஸ் -> ராமாபித்தேகஸ் -> ஹோமோ எரக்டஸ் -> ஹோமோ சேப்பியன்ஸ்",
-          "ஆஸ்ட்ரலோபித்தேகஸ் -> ராமாபித்தேகஸ் -> ஹோமோ எரக்டஸ் -> ஹோமோ ஹேபிலிஸ் -> ஹோமோ சேப்பியன்ஸ்",
-          "ராமாபித்தேகஸ் -> ஹோமோ எரக்டஸ் -> ஆஸ்ட்ரலோபித்தேகஸ் -> ஹோமோ ஹேபிலிஸ் -> ஹோமோ சேப்பியன்ஸ்"
+          "ராமாபித்தேகஸ் → ஆஸ்ட்ரலோபித்தேகஸ் → ஹோமோ ஹேபிலிஸ் → ஹோமோ எரக்டஸ் → நியாண்டர்தால் மனிதன் → ஹோமோ சேப்பியன்ஸ்",
+          "ஹோமோ ஹேபிலிஸ் → ஆஸ்ட்ரலோபித்தேகஸ் → ராமாபித்தேகஸ் → ஹோமோ எரக்டஸ் → ஹோமோ சேப்பியன்ஸ்",
+          "ஆஸ்ட்ரலோபித்தேகஸ் → ராமாபித்தேகஸ் → ஹோமோ எரக்டஸ் → ஹோமோ ஹேபிலிஸ் → ஹோமோ சேப்பியன்ஸ்",
+          "ராமாபித்தேகஸ் → ஹோமோ எரக்டஸ் → ஆஸ்ட்ரலோபித்தேகஸ் → ஹோமோ ஹேபிலிஸ் → ஹோமோ சேப்பியன்ஸ்"
         ]
       }
     ]

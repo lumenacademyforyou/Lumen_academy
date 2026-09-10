@@ -31,7 +31,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The acceleration due to gravity at depth d is given by g' = g (1 - d / R).\nStep 2: Given g' = g / 4 => g / 4 = g (1 - d / R).\nStep 3: 1 - d / R = 1/4 => d / R = 1 - 1/4 = 3/4.\nStep 4: d = 3R / 4. Conclude Option A is correct.",
+      "explanationText": "Step 1: The acceleration due to gravity at depth d is given by g' = g (1 - d / R).\nStep 2: Given g' = g / 4 ⇒ g / 4 = g (1 - d / R).\nStep 3: 1 - d / R = 1/4 ⇒ d / R = 1 - 1/4 = 3/4.\nStep 4: d = 3R / 4. Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -178,7 +178,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Kepler's third law: T^2 ∝ r^3 => (T2 / T1) = (r2 / r1)^{3/2}.\nStep 2: r2 / r1 = (7R / 4) / (7R) = 1/4.\nStep 3: T2 = T1 * (1/4)^{3/2} = 24 hours * (1/8) = 3 hours.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: By Kepler's third law: T^2 ∝ r^3 ⇒ (T_2 / T_1) = (r_2 / r_1)^{3/2}.\nStep 2: r_2 / r_1 = (7R / 4) / (7R) = 1/4.\nStep 3: T_2 = T_1 × (1/4)^{3/2} = 24 hours × (1/8) = 3 hours.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -227,7 +227,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Elastic potential energy U = (1/2) * Force * Elongation = (1/2) F ΔL.\nStep 2: From Young's modulus: Y = (F / A) / (ΔL / L) => ΔL = F L / (A Y).\nStep 3: U = (1/2) F * [ F L / (A Y) ] = F^2 L / (2 A Y).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Elastic potential energy U = (1/2) × Force × Elongation = (1/2) F ΔL.\nStep 2: From Young's modulus: Y = (F / A) / (ΔL / L) ⇒ ΔL = F L / (A Y).\nStep 3: U = (1/2) F × [ F L / (A Y) ] = F^2 L / (2 A Y).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Capillary rise formula: h = (2 T cos θ) / (r ρ g).\nStep 2: Capillary height is inversely proportional to radius: h ∝ 1 / r (Jurin's law).\nStep 3: When radius is halved (r' = r/2), height doubles: h' = 2 * h = 2 * 4.0 cm = 8.0 cm.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Capillary rise formula: h = (2 T cos θ) / (r ρ g).\nStep 2: Capillary height is inversely proportional to radius: h ∝ 1 / r (Jurin's law).\nStep 3: When radius is halved (r' = r/2), height doubles: h' = 2 × h = 2 × 4.0 cm = 8.0 cm.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -325,7 +325,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Conservation of volume: (4/3) π R^3 = 8 * (4/3) π r^3 => R = 2r.\nStep 2: Terminal velocity from Stokes' law: v_t = (2/9) [r^2 (ρ - σ) g] / η => v_t ∝ r^2.\nStep 3: Ratio of terminal speeds: v_T / v_t = (R / r)^2 = (2r / r)^2 = 4.\nStep 4: v_T = 4 * 5.0 cm/s = 20 cm/s. Conclude Option A is correct.",
+      "explanationText": "Step 1: Conservation of volume: (4/3) π R^3 = 8 × (4/3) π r^3 ⇒ R = 2r.\nStep 2: Terminal velocity from Stokes' law: v_t = (2/9) [r^2 (ρ - σ) g] / η ⇒ v_t ∝ r^2.\nStep 3: Ratio of terminal speeds: v_T / v_t = (R / r)^2 = (2r / r)^2 = 4.\nStep 4: v_T = 4 × 5.0 cm/s = 20 cm/s. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -423,7 +423,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Pascal's principle: P1 = P2 => F1 / A1 = F2 / A2 => F1 = F2 * (A1 / A2).\nStep 2: Area ratio: A1 / A2 = (r1 / r2)^2 = (5 / 15)^2 = (1/3)^2 = 1/9.\nStep 3: Weight on output piston: F2 = m g = 1800 kg * 10 m/s² = 18,000 N.\nStep 4: Input force F1 = 18,000 N * (1/9) = 2000 N. Conclude Option A is correct.",
+      "explanationText": "Step 1: By Pascal's principle: P_1 = P_2 ⇒ F_1 / A_1 = F_2 / A_2 ⇒ F_1 = F_2 × (A_1 / A_2).\nStep 2: Area ratio: A_1 / A_2 = (r_1 / r_2)^2 = (5 / 15)^2 = (1/3)^2 = 1/9.\nStep 3: Weight on output piston: F_2 = m g = 1800 kg × 10 m/s² = 18,000 N.\nStep 4: Input force F_1 = 18,000 N × (1/9) = 2000 N. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -472,7 +472,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Velocity of efflux: v = \\sqrt{2 g h}.\nStep 2: Time to fall through remaining height (H - h): t = sqrt[ 2(H - h) / g ].\nStep 3: Horizontal range: R = v * t = \\sqrt{2 g h} * sqrt[ 2(H - h) / g ] = 2 sqrt[ h (H - h) ].\nStep 4: R is maximum when product h (H - h) is maximum, which occurs at h = H / 2 (maximum range R_{max} = H). Conclude Option A is correct.",
+      "explanationText": "Step 1: Velocity of efflux: v = \\sqrt{2 g h}.\nStep 2: Time to fall through remaining height (H - h): t = sqrt[ 2(H - h) / g ].\nStep 3: Horizontal range: R = v × t = \\sqrt{2 g h} × sqrt[ 2(H - h) / g ] = 2 sqrt[ h (H - h) ].\nStep 4: R is maximum when product h (H - h) is maximum, which occurs at h = H / 2 (maximum range R_{max} = H). Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -501,27 +501,27 @@
     "options": [
       {
         "label": "A",
-        "text": "1.25 x 10^{-3} rad/s (1 / 800 rad/s)",
+        "text": "1.25 × 10^{-3} rad/s (1 / 800 rad/s)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "7.27 x 10^{-5} rad/s",
+        "text": "7.27 × 10^{-5} rad/s",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "2.5 x 10^{-3} rad/s",
+        "text": "2.5 × 10^{-3} rad/s",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "6.28 x 10^{-4} rad/s",
+        "text": "6.28 × 10^{-4} rad/s",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Variation of g with latitude λ: g' = g - R ω^2 cos^2 λ.\nStep 2: At equator (λ = 0°): g' = g - R ω^2 = 0 => ω = \\sqrt{g / R}.\nStep 3: Substitute g = 10 m/s² and R = 6.4 x 10^6 m: ω = \\sqrt{10 / (6.4 x 10^6)} = \\sqrt{1 / 640000} = 1 / 800 rad/s = 1.25 x 10^{-3} rad/s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Variation of g with latitude λ: g' = g - R ω^2 cos^2 λ.\nStep 2: At equator (λ = 0°): g' = g - R ω^2 = 0 ⇒ ω = \\sqrt{g / R}.\nStep 3: Substitute g = 10 m/s² and R = 6.4 × 10^6 m: ω = \\sqrt{10 / (6.4 × 10^6)} = \\sqrt{1 / 640000} = 1 / 800 rad/s = 1.25 × 10^{-3} rad/s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -530,10 +530,10 @@
         "languageCode": "ta",
         "stemText": "பூமியின் சுழற்சியால் நிலநடுக்கோட்டு பகுதியில் புவியீர்ப்பு முடுக்கம் பூஜ்ஜியமாக மாற பூமியின் புதிய கோண வேகம் என்னவாக இருக்க வேண்டும்? (R = 6400 km மற்றும் g = 10 m/s²)",
         "optionTexts": [
-          "1.25 x 10^{-3} rad/s (1 / 800 rad/s)",
-          "7.27 x 10^{-5} rad/s",
-          "2.5 x 10^{-3} rad/s",
-          "6.28 x 10^{-4} rad/s"
+          "1.25 × 10^{-3} rad/s (1 / 800 rad/s)",
+          "7.27 × 10^{-5} rad/s",
+          "2.5 × 10^{-3} rad/s",
+          "6.28 × 10^{-4} rad/s"
         ]
       }
     ]
@@ -570,7 +570,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Theoretical limits of Poisson's ratio for isotropic materials are -1.0 <= σ <= +0.5 (practical values are between 0 and 0.5).\nStep 2: A value of +0.8 exceeds the upper theoretical bound of +0.5.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Theoretical limits of Poisson's ratio for isotropic materials are -1.0 ≤ σ ≤ +0.5 (practical values are between 0 and 0.5).\nStep 2: A value of +0.8 exceeds the upper theoretical bound of +0.5.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -619,7 +619,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Potential energy at surface: U1 = - G M m / R.\nStep 2: Potential energy at height h = R (distance r = 2R): U2 = - G M m / (2R).\nStep 3: Change in potential energy ΔU = U2 - U1 = - G M m / (2R) - (- G M m / R) = G M m / (2R).\nStep 4: Since g = G M / R^2 => G M / R = g R, ΔU = (1/2) m g R. Conclude Option A is correct.",
+      "explanationText": "Step 1: Potential energy at surface: U_1 = - G M m / R.\nStep 2: Potential energy at height h = R (distance r = 2R): U_2 = - G M m / (2R).\nStep 3: Change in potential energy ΔU = U_2 - U_1 = - G M m / (2R) - (- G M m / R) = G M m / (2R).\nStep 4: Since g = G M / R^2 ⇒ G M / R = g R, ΔU = (1/2) m g R. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -668,7 +668,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Elongation formula: ΔL = (F L) / (A Y) = (F L) / (π r^2 Y) ∝ L / r^2.\nStep 2: For wire 1: ΔL1 ∝ L / (2r)^2 = L / (4 r^2).\nStep 3: For wire 2: ΔL2 ∝ (2L) / (r^2) = 2L / r^2.\nStep 4: Ratio ΔL1 / ΔL2 = [ L / (4 r^2) ] / [ 2L / r^2 ] = (1/4) / 2 = 1/8. Conclude Option A is correct.",
+      "explanationText": "Step 1: Elongation formula: ΔL = (F L) / (A Y) = (F L) / (π r^2 Y) ∝ L / r^2.\nStep 2: For wire 1: ΔL_1 ∝ L / (2r)^2 = L / (4 r^2).\nStep 3: For wire 2: ΔL_2 ∝ (2L) / (r^2) = 2L / r^2.\nStep 4: Ratio ΔL_1 / ΔL_2 = [ L / (4 r^2) ] / [ 2L / r^2 ] = (1/4) / 2 = 1/8. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -693,7 +693,7 @@
     "questionType": "single_choice",
     "difficultyBand": "hard",
     "stemFormat": "latex",
-    "stemText": "Two soap bubbles of radii r1 and r2 (r1 > r2) coalesce under isothermal conditions in vacuum to form a combined bubble of radius R. What is the relation for R in terms of r1 and r2?",
+    "stemText": "Two soap bubbles of radii r_1 and r_2 (r_1 > r_2) coalesce under isothermal conditions in vacuum to form a combined bubble of radius R. What is the relation for R in terms of r_1 and r_2?",
     "options": [
       {
         "label": "A",
@@ -707,29 +707,29 @@
       },
       {
         "label": "C",
-        "text": "R = r1 + r2",
+        "text": "R = r_1 + r_2",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "R = \\sqrt{r1 r2}",
+        "text": "R = \\sqrt{r1 r_2}",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In vacuum, pressure inside bubble of radius r is P = 4T / r, and volume is V = (4/3) π r^3.\nStep 2: By Boyle's law for isothermal mixing: P1 V1 + P2 V2 = P V.\nStep 3: (4T / r1) * ((4/3) π r_1^3) + (4T / r2) * ((4/3) π r_2^3) = (4T / R) * ((4/3) π R^3).\nStep 4: Simplifying yields r_1^2 + r_2^2 = R^2 => R = \\sqrt{r_1^2 + r_2^2}. Conclude Option A is correct.",
+      "explanationText": "Step 1: In vacuum, pressure inside bubble of radius r is P = 4T / r, and volume is V = (4/3) π r^3.\nStep 2: By Boyle's law for isothermal mixing: P_1 V_1 + P_2 V_2 = P V.\nStep 3: (4T / r_1) × ((4/3) π r_1^3) + (4T / r_2) × ((4/3) π r_2^3) = (4T / R) × ((4/3) π R^3).\nStep 4: Simplifying yields r_1^2 + r_2^2 = R^2 ⇒ R = \\sqrt{r_1^2 + r_2^2}. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "வெற்றிடத்தில் சமவெப்ப நிலையில் r1 மற்றும் r2 ஆரமுடைய இரு சோப்புக் குமிழிகள் இணைந்து R ஆரமுடைய ஒரு குமிழியாக மாறுகின்றன. R இன் தொடர்பு என்ன?",
+        "stemText": "வெற்றிடத்தில் சமவெப்ப நிலையில் r_1 மற்றும் r_2 ஆரமுடைய இரு சோப்புக் குமிழிகள் இணைந்து R ஆரமுடைய ஒரு குமிழியாக மாறுகின்றன. R இன் தொடர்பு என்ன?",
         "optionTexts": [
           "R = \\sqrt{r_1^2 + r_2^2}",
           "R = (r_1^3 + r_2^3)^{1/3}",
-          "R = r1 + r2",
-          "R = \\sqrt{r1 r2}"
+          "R = r_1 + r_2",
+          "R = \\sqrt{r1 r_2}"
         ]
       }
     ]
@@ -791,7 +791,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "An incompressible ideal fluid flows through a horizontal pipe of non-uniform cross-section. If the cross-sectional area at two points are A1 = 10 cm^2 and A2 = 5 cm^2, and velocity at section 1 is v1 = 2 m/s, what is the pressure difference (P1 - P2) between the two sections? (Density of fluid ρ = 1000 kg/m^3)",
+    "stemText": "An incompressible ideal fluid flows through a horizontal pipe of non-uniform cross-section. If the cross-sectional area at two points are A_1 = 10 cm^2 and A_2 = 5 cm^2, and velocity at section 1 is v_1 = 2 m/s, what is the pressure difference (P_1 - P_2) between the two sections? (Density of fluid ρ = 1000 kg/m^3)",
     "options": [
       {
         "label": "A",
@@ -815,14 +815,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equation of continuity: A1 v1 = A2 v2 => v2 = (A1 / A2) v1 = (10 / 5) * 2 = 4 m/s.\nStep 2: Bernoulli's equation for horizontal pipe: P1 + (1/2) ρ v_1^2 = P2 + (1/2) ρ v_2^2.\nStep 3: P1 - P2 = (1/2) ρ (v_2^2 - v_1^2) = (1/2) * 1000 * (4^2 - 2^2) = 500 * (16 - 4) = 500 * 12 = 6000 Pa.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Equation of continuity: A_1 v_1 = A_2 v_2 ⇒ v_2 = (A_1 / A_2) v_1 = (10 / 5) × 2 = 4 m/s.\nStep 2: Bernoulli's equation for horizontal pipe: P_1 + (1/2) ρ v_1^2 = P_2 + (1/2) ρ v_2^2.\nStep 3: P_1 - P_2 = (1/2) ρ (v_2^2 - v_1^2) = (1/2) × 1000 × (4^2 - 2^2) = 500 × (16 - 4) = 500 × 12 = 6000 Pa.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "சீரற்ற குறுக்குவெட்டுப் பரப்புள்ள கிடைமட்டக் குழாயில் பாயும் நீரின் இரு புள்ளிகளில் பரப்புகள் 10 cm^2 மற்றும் 5 cm^2 ஆகும். முதல் பகுதியில் வேகம் 2 m/s எனில், இரு பகுதிகளுக்கு இடையே உள்ள அழுத்த வேறுபாடு (P1 - P2) என்ன? (ρ = 1000 kg/m^3)",
+        "stemText": "சீரற்ற குறுக்குவெட்டுப் பரப்புள்ள கிடைமட்டக் குழாயில் பாயும் நீரின் இரு புள்ளிகளில் பரப்புகள் 10 cm^2 மற்றும் 5 cm^2 ஆகும். முதல் பகுதியில் வேகம் 2 m/s எனில், இரு பகுதிகளுக்கு இடையே உள்ள அழுத்த வேறுபாடு (P_1 - P_2) என்ன? (ρ = 1000 kg/m^3)",
         "optionTexts": [
           "6000 Pa",
           "3000 Pa",
@@ -913,7 +913,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Terminal velocity v_t ∝ r^2.\nStep 2: Viscous retarding force F_v = 6 π η r v_t ∝ r * r^2 = r^3.\nStep 3: Rate of heat generation (power dissipated) P = F_v * v_t ∝ r^3 * r^2 = r^5.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Terminal velocity v_t ∝ r^2.\nStep 2: Viscous retarding force F_v = 6 π η r v_t ∝ r × r^2 = r^3.\nStep 3: Rate of heat generation (power dissipated) P = F_v × v_t ∝ r^3 × r^2 = r^5.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -962,7 +962,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Energy density = Energy / Volume = (1/2) * Stress * Strain.\nStep 2: Stress = Y * Strain = Y * (x / L).\nStep 3: Energy density = (1/2) * [ Y (x/L) ] * (x/L) = (1/2) Y (x / L)^2.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Energy density = Energy / Volume = (1/2) × Stress × Strain.\nStep 2: Stress = Y × Strain = Y × (x / L).\nStep 3: Energy density = (1/2) × [ Y (x/L) ] × (x/L) = (1/2) Y (x / L)^2.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1036,43 +1036,43 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "A metal cube of edge 10 cm subjected to a uniform hydrostatic pressure of 2.0 x 10^7 Pa undergoes a volume contraction of 0.05 cm^3. What is the Bulk modulus of the metal?",
+    "stemText": "A metal cube of edge 10 cm subjected to a uniform hydrostatic pressure of 2.0 × 10^7 Pa undergoes a volume contraction of 0.05 cm^3. What is the Bulk modulus of the metal?",
     "options": [
       {
         "label": "A",
-        "text": "4.0 x 10^{11} Pa",
+        "text": "4.0 × 10^{11} Pa",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "2.0 x 10^{11} Pa",
+        "text": "2.0 × 10^{11} Pa",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "1.0 x 10^{11} Pa",
+        "text": "1.0 × 10^{11} Pa",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "8.0 x 10^{11} Pa",
+        "text": "8.0 × 10^{11} Pa",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Original volume V = (10 cm)^3 = 1000 cm^3.\nStep 2: Volume strain = ΔV / V = 0.05 cm^3 / 1000 cm^3 = 5.0 x 10^{-5}.\nStep 3: Bulk modulus B = P / (ΔV / V) = (2.0 x 10^7 Pa) / (5.0 x 10^{-5}).\nStep 4: B = 4.0 x 10^{11} Pa. Conclude Option A is correct.",
+      "explanationText": "Step 1: Original volume V = (10 cm)^3 = 1000 cm^3.\nStep 2: Volume strain = ΔV / V = 0.05 cm^3 / 1000 cm^3 = 5.0 × 10^{-5}.\nStep 3: Bulk modulus B = P / (ΔV / V) = (2.0 × 10^7 Pa) / (5.0 × 10^{-5}).\nStep 4: B = 4.0 × 10^{11} Pa. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "10 cm பக்கமுள்ள உலோகக் கனசதுரத்தின் மீது 2.0 x 10^7 Pa சீரான அழுத்தம் செலுத்தப்படும் போது அதன் பருமன் 0.05 cm^3 சுருங்குகிறது. உலோகத்தின் பருமக் குணகம் (B) என்ன?",
+        "stemText": "10 cm பக்கமுள்ள உலோகக் கனசதுரத்தின் மீது 2.0 × 10^7 Pa சீரான அழுத்தம் செலுத்தப்படும் போது அதன் பருமன் 0.05 cm^3 சுருங்குகிறது. உலோகத்தின் பருமக் குணகம் (B) என்ன?",
         "optionTexts": [
-          "4.0 x 10^{11} Pa",
-          "2.0 x 10^{11} Pa",
-          "1.0 x 10^{11} Pa",
-          "8.0 x 10^{11} Pa"
+          "4.0 × 10^{11} Pa",
+          "2.0 × 10^{11} Pa",
+          "1.0 × 10^{11} Pa",
+          "8.0 × 10^{11} Pa"
         ]
       }
     ]
@@ -1085,7 +1085,7 @@
     "questionType": "single_choice",
     "difficultyBand": "hard",
     "stemFormat": "latex",
-    "stemText": "Two satellites S1 and S2 revolve around a planet in coplanar circular orbits in the same sense with radii 1 x 10^4 km and 4 x 10^4 km respectively. If the period of S1 is 8 hours, what is the time interval between their successive closest approaches?",
+    "stemText": "Two satellites S_1 and S_2 revolve around a planet in coplanar circular orbits in the same sense with radii 1 × 10^4 km and 4 × 10^4 km respectively. If the period of S_1 is 8 hours, what is the time interval between their successive closest approaches?",
     "options": [
       {
         "label": "A",
@@ -1109,14 +1109,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By Kepler's third law: T2 / T1 = (r2 / r1)^{3/2} = (4/1)^{3/2} = 8 => T2 = 8 * 8 = 64 hours.\nStep 2: Angular speeds: ω1 = 2π / 8, ω2 = 2π / 64.\nStep 3: Relative angular speed: ω_{rel} = ω1 - ω2 = 2π [ 1/8 - 1/64 ] = 2π [ (8 - 1) / 64 ] = 2π (7 / 64).\nStep 4: Time interval between closest approaches: T_{rel} = 2π / ω_{rel} = 64 / 7 hours. Conclude Option A is correct.",
+      "explanationText": "Step 1: By Kepler's third law: T_2 / T_1 = (r_2 / r_1)^{3/2} = (4/1)^{3/2} = 8 ⇒ T_2 = 8 × 8 = 64 hours.\nStep 2: Angular speeds: ω1 = 2π / 8, ω2 = 2π / 64.\nStep 3: Relative angular speed: ω_{rel} = ω1 - ω2 = 2π [ 1/8 - 1/64 ] = 2π [ (8 - 1) / 64 ] = 2π (7 / 64).\nStep 4: Time interval between closest approaches: T_{rel} = 2π / ω_{rel} = 64 / 7 hours. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "S1 மற்றும் S2 ஆகிய இரு செயற்கைக்கோள்கள் ஒரே திசையில் 1 x 10^4 km மற்றும் 4 x 10^4 km ஆரமுள்ள வட்டப்பாதைகளில் சுற்றுகின்றன. S1 இன் சுழற்சிக் காலம் 8 மணி நேரம் எனில், அவை அருகருகே வரும் தொடர்ச்சியான கால இடைவெளி என்ன?",
+        "stemText": "S_1 மற்றும் S_2 ஆகிய இரு செயற்கைக்கோள்கள் ஒரே திசையில் 1 × 10^4 km மற்றும் 4 × 10^4 km ஆரமுள்ள வட்டப்பாதைகளில் சுற்றுகின்றன. S_1 இன் சுழற்சிக் காலம் 8 மணி நேரம் எனில், அவை அருகருகே வரும் தொடர்ச்சியான கால இடைவெளி என்ன?",
         "optionTexts": [
           "64 / 7 மணி நேரம் (≈ 9.14 மணி நேரம்)",
           "16 மணி நேரம்",
@@ -1207,7 +1207,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Equal pressure at mercury interface: P_{water} = P_{spirit} => h_{water} * ρ_{water} * g = h_{spirit} * ρ_{spirit} * g.\nStep 2: Specific gravity = ρ_{spirit} / ρ_{water} = h_{water} / h_{spirit}.\nStep 3: Ratio = 10.0 cm / 12.5 cm = 0.80.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Equal pressure at mercury interface: P_{water} = P_{spirit} ⇒ h_{water} × ρ_{water} × g = h_{spirit} × ρ_{spirit} × g.\nStep 2: Specific gravity = ρ_{spirit} / ρ_{water} = h_{water} / h_{spirit}.\nStep 3: Ratio = 10.0 cm / 12.5 cm = 0.80.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Potential inside a uniform solid sphere at distance r <= R is V(r) = - (G M / 2 R^3) (3 R^2 - r^2).\nStep 2: At center r = 0: V_{center} = - (G M / 2 R^3) (3 R^2) = - (3/2) G M / R.\nStep 3: This is 1.5 times the potential at the surface.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Potential inside a uniform solid sphere at distance r ≤ R is V(r) = - (G M / 2 R^3) (3 R^2 - r^2).\nStep 2: At center r = 0: V_{center} = - (G M / 2 R^3) (3 R^2) = - (3/2) G M / R.\nStep 3: This is 1.5 times the potential at the surface.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1305,7 +1305,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Initial work to form bubble of radius R: W1 = T * 2 * (4π R^2) = 8π T R^2 = W.\nStep 2: Work to form bubble of radius 2R: W2 = 8π T (2R)^2 = 4 * (8π T R^2) = 4W.\nStep 3: Additional work required = W2 - W1 = 4W - W = 3W.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Initial work to form bubble of radius R: W_1 = T × 2 × (4π R^2) = 8π T R^2 = W.\nStep 2: Work to form bubble of radius 2R: W_2 = 8π T (2R)^2 = 4 × (8π T R^2) = 4W.\nStep 3: Additional work required = W_2 - W_1 = 4W - W = 3W.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1403,7 +1403,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: From Newton's law of gravitation: F = G M1 M2 / r^2 => G = F r^2 / M^2.\nStep 2: [G] = [M L T^{-2}] [L^2] / [M^2] = [M^{-1} L^3 T^{-2}].\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: From Newton's law of gravitation: F = G M_1 M_2 / r^2 ⇒ G = F r^2 / M^2.\nStep 2: [G] = [M L T^{-2}] [L^2] / [M^2] = [M^{-1} L^3 T^{-2}].\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Variation of g with height h: g_h = g / (1 + h/R)^2.\nStep 2: Substitute h = R/2: g_h = g / (1 + 1/2)^2 = g / (3/2)^2 = 4g / 9.\nStep 3: Weight W_h = m g_h = (4/9) m g = (4/9) * 200 N = 800 / 9 N ≈ 88.9 N.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Variation of g with height h: g_h = g / (1 + h/R)^2.\nStep 2: Substitute h = R/2: g_h = g / (1 + 1/2)^2 = g / (3/2)^2 = 4g / 9.\nStep 3: Weight W_h = m g_h = (4/9) m g = (4/9) × 200 N = 800 / 9 N ≈ 88.9 N.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],

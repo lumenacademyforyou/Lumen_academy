@@ -87,6 +87,31 @@ export const QUESTION_UID_PATTERN = /^LMN-[A-Z]+-[A-Z0-9]+-\d{6}$/;
 //   6. Apply all of the above to translations[] identically. The Tamil entries
 //      repeat the same formulae verbatim; a formula fixed only in English is
 //      still broken for every student reading the paper in Tamil.
+//
+//   7. CHEMICAL FORMULAE carry explicit markup too (v1.2) — a bare digit in a
+//      formula renders full-size, and a bare sign reads as a hyphen.
+//        "H2O"          -> "H_2O"             "C12H22O11" -> "C_{12}H_{22}O_{11}"
+//        "(CH3)3N"      -> "(CH_3)_3N"        "SO4^{2-}"  -> "SO_4^{2-}"
+//        "NH4+"         -> "NH_4^+"           "Cl-"       -> "Cl^-"
+//        "Cu2+"         -> "Cu^{2+}"          (monatomic: the digit is the CHARGE)
+//        "O2+" (MO)     -> "O_2^+"            (molecular: the digit is the COUNT)
+//        "[CoF6]3-"     -> "[CoF_6]^{3-}"     "6 e-"      -> "6 e^-"
+//      Never mark up names or variables that only look like formulae: "SN2",
+//      "C4 plants", "P700", "F1 generation", "K1", "V2", "IP3", "Rh+" blood
+//      groups. Where plain text is ambiguous, write the markup that says what
+//      you mean: oxide is "O^{2-}", superoxide is "O_2^-".
+//
+//   8. SYMBOLS are typed as the symbol itself (v1.3), never as ASCII stand-ins:
+//        "->" "<=>" "<->" "=>"   -> "→" "⇌" "↔" "⇒"      ">=" "<=" "!=" -> "≥" "≤" "≠"
+//        "6.6 * 10^{-34}"        -> "6.6 × 10^{-34}"    (same for "x"; "π*"/"σ*" orbitals keep *)
+//        "Delta H", "beta-globin", "pi bonds" -> "ΔH", "β-globin", "π bonds"
+//      Chemistry: electron configurations "3d^5 4s^1", "2p_x^1", "(n-1)d^{10}";
+//      hybridisation "sp^3", "sp^{3}d^2"; constants "K_{sp}", "pK_a", "E_a",
+//      "E°_{cell}", "t_{1/2}", "log_{10}", "[A]_0".
+//      Indexed variables carry a subscript: "P_1 = P_2", "U_{12}", "k_1", "T_2".
+//      Biology names printed with one in NCERT: "F_1", "G_1 phase", "C_4 plants",
+//      "GA_3", "B_{12}", "T_3", "IP_3", "NAD^+". Names printed without one stay
+//      plain: "T2 phage", "H3 histone", "P700", "C7 vertebra", "E2 elimination".
 // ---------------------------------------------------------------------------
 
 export const StemFormat = z.enum(["plain", "markdown", "latex", "html"]);

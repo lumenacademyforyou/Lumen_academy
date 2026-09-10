@@ -6,8 +6,8 @@
     "nodeTagCode": "zoo_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
-    "stemText": "Which combination of physiological factors in metabolically active systemic tissues shifts the oxygen-hemoglobin dissociation curve to the right (Bohr effect), promoting the rapid unloading of O2 to tissue cells?",
+    "stemFormat": "latex",
+    "stemText": "Which combination of physiological factors in metabolically active systemic tissues shifts the oxygen-hemoglobin dissociation curve to the right (Bohr effect), promoting the rapid unloading of O_2 to tissue cells?",
     "options": [
       {
         "label": "A",
@@ -16,7 +16,7 @@
       },
       {
         "label": "B",
-        "text": "High pCO2, High H+ concentration (Low pH / Acidosis), High Temperature, and High 2,3-BPG",
+        "text": "High pCO2, High H^+ concentration (Low pH / Acidosis), High Temperature, and High 2,3-BPG",
         "isCorrect": true
       },
       {
@@ -26,22 +26,22 @@
       },
       {
         "label": "D",
-        "text": "High pO2, Low pCO2, Low H+ (Alkaline pH), and Low Temperature",
+        "text": "High pO2, Low pCO2, Low H^+ (Alkaline pH), and Low Temperature",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In actively respiring tissues, metabolic activity consumes O2 and generates CO2, heat, and lactic/carbonic acid (H+).\nStep 2: Binding of CO2 and H+ to hemoglobin stabilizes the low-affinity deoxygenated T-state (tense conformation).\nStep 3: This rightward shift of the oxygen dissociation curve decreases hemoglobin's affinity for O2, facilitating O2 release.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In actively respiring tissues, metabolic activity consumes O_2 and generates CO_2, heat, and lactic/carbonic acid (H^+).\nStep 2: Binding of CO_2 and H^+ to hemoglobin stabilizes the low-affinity deoxygenated T-state (tense conformation).\nStep 3: This rightward shift of the oxygen dissociation curve decreases hemoglobin's affinity for O_2, facilitating O_2 release.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "வளர்சிதை மாற்றத்தில் தீவிரமாக ஈடுபடும் திசுக்களில், ஆக்ஸிஜன்-ஹிமோகுளோபின் பிரிகை வளைகோட்டை வலதுபுறமாக நகர்த்தி (போர் விளைவு / Bohr effect) திசுக்களுக்கு O2 வெளியீட்டை அதிகரிக்கும் உடலியங்கியல் காரணிகளின் சரியான தொகுப்பு எது?",
+        "stemText": "வளர்சிதை மாற்றத்தில் தீவிரமாக ஈடுபடும் திசுக்களில், ஆக்ஸிஜன்-ஹிமோகுளோபின் பிரிகை வளைகோட்டை வலதுபுறமாக நகர்த்தி (போர் விளைவு / Bohr effect) திசுக்களுக்கு O_2 வெளியீட்டை அதிகரிக்கும் உடலியங்கியல் காரணிகளின் சரியான தொகுப்பு எது?",
         "optionTexts": [
           "அதிக pO2 மற்றும் அதிக pH மட்டுமே",
-          "அதிக pCO2, அதிக H+ செறிவு (குறைந்த pH / அமிலத்தன்மை), அதிக வெப்பநிலை மற்றும் அதிக 2,3-BPG",
+          "அதிக pCO2, அதிக H^+ செறிவு (குறைந்த pH / அமிலத்தன்மை), அதிக வெப்பநிலை மற்றும் அதிக 2,3-BPG",
           "குறைந்த pCO2 மற்றும் குறைந்த வெப்பநிலை",
           "அதிக pO2, குறைந்த pCO2, கார pH மற்றும் குறைந்த வெப்பநிலை"
         ]
@@ -251,8 +251,8 @@
     "nodeTagCode": "zoo_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Approximately 70% of Carbon Dioxide (CO2) is transported in human blood in which form?",
+    "stemFormat": "latex",
+    "stemText": "Approximately 70% of Carbon Dioxide (CO_2) is transported in human blood in which form?",
     "options": [
       {
         "label": "A",
@@ -261,7 +261,7 @@
       },
       {
         "label": "B",
-        "text": "As Bicarbonate ions (HCO3-) in plasma, catalyzed by red blood cell Carbonic Anhydrase",
+        "text": "As Bicarbonate ions (HCO_3^-) in plasma, catalyzed by red blood cell Carbonic Anhydrase",
         "isCorrect": true
       },
       {
@@ -276,17 +276,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: CO2 is transported in three forms:\n- 7% dissolved in plasma\n- 20-25% bound to amino groups of hemoglobin as Carbamino-hemoglobin\n- Nearly 70% as bicarbonate ions (HCO3-).\nStep 2: RBCs contain high concentrations of carbonic anhydrase that rapidly converts CO2 + H2O <-> H2CO3 <-> H+ + HCO3-.\nStep 3: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: CO_2 is transported in three forms:\n- 7% dissolved in plasma\n- 20-25% bound to amino groups of hemoglobin as Carbamino-hemoglobin\n- Nearly 70% as bicarbonate ions (HCO_3^-).\nStep 2: RBCs contain high concentrations of carbonic anhydrase that rapidly converts CO_2 + H_2O ↔ H_2CO_3 ↔ H^+ + HCO_3^-.\nStep 3: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "மனித இரத்தத்தில் சுமார் 70% கார்பன் டை ஆக்சைடு (CO2) எந்த வடிவில் கடத்தப்படுகிறது?",
+        "stemText": "மனித இரத்தத்தில் சுமார் 70% கார்பன் டை ஆக்சைடு (CO_2) எந்த வடிவில் கடத்தப்படுகிறது?",
         "optionTexts": [
           "பிளாஸ்மாவில் கரைந்த வாயுவாக",
-          "RBC இன் கார்போனிக் அன்ஹைட்ரேஸ் என்சைமால் உருவாக்கப்பட்ட பைகார்பனேட் (HCO3-) அயனிகளாக",
+          "RBC இன் கார்போனிக் அன்ஹைட்ரேஸ் என்சைமால் உருவாக்கப்பட்ட பைகார்பனேட் (HCO_3^-) அயனிகளாக",
           "கார்பமினோ-ஹிமோகுளோபினாக",
           "கார்போனிக் அமிலப் படிவுகளாக"
         ]
@@ -692,7 +692,7 @@
     "nodeTagCode": "zoo_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What are the partial pressures of Oxygen (pO2) and Carbon Dioxide (pCO2) in human alveolar air compared to systemic deoxygenated blood?",
     "options": [
       {
@@ -717,14 +717,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In alveoli: pO2 = 104 mmHg and pCO2 = 40 mmHg.\nStep 2: In deoxygenated blood entering pulmonary capillaries: pO2 = 40 mmHg and pCO2 = 45 mmHg.\nStep 3: This partial pressure gradient drives O2 from alveoli into blood and CO2 from blood into alveoli.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In alveoli: pO2 = 104 mmHg and pCO2 = 40 mmHg.\nStep 2: In deoxygenated blood entering pulmonary capillaries: pO2 = 40 mmHg and pCO2 = 45 mmHg.\nStep 3: This partial pressure gradient drives O_2 from alveoli into blood and CO_2 from blood into alveoli.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "நுரையீரல் ஆல்வியோலை காற்று மற்றும் சிரை இரத்தத்தில் ஆக்ஸிஜன் (pO2) மற்றும் CO2 (pCO2) பகுதி அழுத்தங்கள் முறையே என்ன?",
+        "stemText": "நுரையீரல் ஆல்வியோலை காற்று மற்றும் சிரை இரத்தத்தில் ஆக்ஸிஜன் (pO2) மற்றும் CO_2 (pCO2) பகுதி அழுத்தங்கள் முறையே என்ன?",
         "optionTexts": [
           "ஆல்வியோலை: pO2 = 104 mmHg, pCO2 = 40 mmHg; சிரை இரத்தம்: pO2 = 40 mmHg, pCO2 = 45 mmHg",
           "ஆல்வியோலை: pO2 = 40 mmHg, pCO2 = 45 mmHg; சிரை இரத்தம்: pO2 = 104 mmHg, pCO2 = 40 mmHg",
@@ -888,7 +888,7 @@
     "nodeTagCode": "zoo_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During blood coagulation, conversion of soluble plasma fibrinogen into an insoluble fibrin thread mesh is catalyzed by which active enzyme?",
     "options": [
       {
@@ -913,8 +913,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Injured platelets and tissues release thromboplastin, which forms thrombokinase (prothrombinase).\nStep 2: Prothrombinase converts inactive prothrombin into active Thrombin in the presence of Ca2+.\nStep 3: Thrombin converts soluble fibrinogen into insoluble fibrin monomers that polymerize to form the blood clot.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Injured platelets and tissues release thromboplastin, which forms thrombokinase (prothrombinase).\nStep 2: Prothrombinase converts inactive prothrombin into active Thrombin in the presence of Ca^{2+}.\nStep 3: Thrombin converts soluble fibrinogen into insoluble fibrin monomers that polymerize to form the blood clot.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "zoo_07",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In the human brain, the chemosensitive area located adjacent to the respiratory rhythm center is highly sensitive to increases in which blood parameters to regulate ventilation?",
     "options": [
       {
@@ -1094,7 +1094,7 @@
       },
       {
         "label": "B",
-        "text": "Carbon dioxide (CO2) and Hydrogen ion (H+) concentration",
+        "text": "Carbon dioxide (CO_2) and Hydrogen ion (H^+) concentration",
         "isCorrect": true
       },
       {
@@ -1109,8 +1109,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: A chemosensitive area is situated adjacent to the rhythm center in the medulla.\nStep 2: It is highly sensitive to increases in CO2 and H+ ions.\nStep 3: Increase in these substances activates this center to signal the rhythm center to increase rate of breathing. (The role of oxygen is quite insignificant).\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: A chemosensitive area is situated adjacent to the rhythm center in the medulla.\nStep 2: It is highly sensitive to increases in CO_2 and H^+ ions.\nStep 3: Increase in these substances activates this center to signal the rhythm center to increase rate of breathing. (The role of oxygen is quite insignificant).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1119,7 +1119,7 @@
         "stemText": "சுவாச இயக்கத்தை ஒழுங்குபடுத்தும் முகுளத்தின் வேதி உணர்வு மையம் எந்த காரணிகளின் அதிகரிப்புக்கு அதிக உணர்திறன் கொண்டது?",
         "optionTexts": [
           "இரத்த pO2 அளவு மட்டும்",
-          "கார்பன் டை ஆக்சைடு (CO2) மற்றும் ஹைட்ரஜன் அயனி (H+) செறிவு",
+          "கார்பன் டை ஆக்சைடு (CO_2) மற்றும் ஹைட்ரஜன் அயனி (H^+) செறிவு",
           "இரத்த சர்க்கரை மற்றும் யூரியா",
           "சோடியம் மற்றும் பொட்டாசியம் அளவுகள்"
         ]

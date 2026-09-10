@@ -48,7 +48,14 @@ function readBraceGroup(s: string, open: number): { body: string; end: number } 
 // A signed digit run, optionally decimal, optionally carrying a trailing ion
 // charge ("10^-3", "10^15", "1.4", "2-" as in SO4^2-). The trailing sign is
 // only taken when a digit run precedes it, so "x^2 - y" keeps its minus.
-const DIGIT_RUN = /^[+-]?\d+(?:\.\d+)?[+-]?/;
+// The trailing sign is dropped when a letter or digit follows it, so the hyphen
+// in "sp^2-hybridized" stays a hyphen instead of becoming a superscript "2-".
+const DIGIT_RUN = /^[+-]?\d+(?:\.\d+)?(?:[+-](?![A-Za-z0-9]))?/;
+
+// Subscripts are counts and indices, never signed or decimal. Using DIGIT_RUN
+// for them read the bond hyphen in "CH_3-CH=NH" as a subscript "3-" and the
+// hydrate dot in "CuSO_4.5H_2O" as a subscript "4.5".
+const SUBSCRIPT_DIGIT_RUN = /^\d+/;
 
 /**
  * Splits mixed prose/math into renderable segments. Never throws: anything it
@@ -97,7 +104,7 @@ export function parseMathText(input: string): MathNode[] {
         }
       }
       const rest = input.slice(i + 1);
-      const run = DIGIT_RUN.exec(rest);
+      const run = (kind === "sup" ? DIGIT_RUN : SUBSCRIPT_DIGIT_RUN).exec(rest);
       if (run) {
         flush();
         nodes.push({ kind, body: run[0] });

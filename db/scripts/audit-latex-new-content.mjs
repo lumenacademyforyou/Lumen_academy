@@ -1,5 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
+// The chemistry check reuses the transform's own formula grammar rather than a
+// second copy of it: the element table, the name/variable exclusions and the
+// ion-charge rules are too specific to keep in sync by hand, and a copy that
+// drifted would report phantom issues. "unformatted_chemical_notation" means
+// "a field the chemistry rule would still rewrite" — zero is the target.
+// "unformatted_notation" is the same idea for the symbols pass: arrows, ×,
+// spelled Greek, orbitals, constants and indices it would still rewrite.
+import { normalizeChemistry, normalizeNotation } from "./normalize-latex-new-content.mjs";
 
 const ROOT = path.resolve("db/content/content-batches/new_content");
 
@@ -86,8 +94,15 @@ for (const file of files) {
     let questionHasIssue = false;
     let questionHasMathMarkup = false;
 
+    const subject = path.relative(ROOT, file).split(path.sep)[0];
     for (const [fieldName, text] of fields) {
-      const issues = scanText(text);
+      let issues = scanText(text);
+      if (text && normalizeChemistry(text, { subject, questionUid: q.questionUid }) !== text) {
+        issues = [...(issues ?? []), "unformatted_chemical_notation"];
+      }
+      if (text && normalizeNotation(text, { subject, questionUid: q.questionUid }) !== text) {
+        issues = [...(issues ?? []), "unformatted_notation"];
+      }
       if (!issues) continue;
       questionHasIssue = true;
       if (issues.some((i) => ["caret", "underscore", "frac", "latex_command", "sqrt_function_style"].includes(i))) {

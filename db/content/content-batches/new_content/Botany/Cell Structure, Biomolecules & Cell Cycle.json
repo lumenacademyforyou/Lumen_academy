@@ -545,7 +545,7 @@
     "nodeTagCode": "bot_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In which stage of the eukaryotic cell cycle does DNA replication take place in the nucleus, accompanied by the duplication of centrioles in the cytoplasm?",
     "options": [
       {
@@ -555,23 +555,23 @@
       },
       {
         "label": "B",
-        "text": "G1 phase",
+        "text": "G_1 phase",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "G2 phase",
+        "text": "G_2 phase",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "G0 phase",
+        "text": "G_0 phase",
         "isCorrect": false
       }
     ],
     "solution": {
       "explanationText": "Step 1: During the S (Synthesis) phase, DNA replication doubles the amount of DNA per cell (from 2C to 4C), but chromosome number remains 2n.\nStep 2: In animal cells, centriole duplication begins in the cytoplasm during this same S phase.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -580,9 +580,9 @@
         "stemText": "யூகேரியோட்டிக் செல் சுழற்சியில், உட்கருவில் DNA இரட்டிப்பாதலும் சைட்டோபிளாசத்தில் சென்ட்ரியோல் இரட்டிப்பாதலும் நிகழும் நிலை எது?",
         "optionTexts": [
           "S நிலை (Synthesis phase)",
-          "G1 நிலை",
-          "G2 நிலை",
-          "G0 நிலை"
+          "G_1 நிலை",
+          "G_2 நிலை",
+          "G_0 நிலை"
         ]
       }
     ]
@@ -594,12 +594,12 @@
     "nodeTagCode": "bot_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Cells that exit the G1 phase and enter an inactive, non-dividing metabolic resting stage are said to be in:",
+    "stemFormat": "latex",
+    "stemText": "Cells that exit the G_1 phase and enter an inactive, non-dividing metabolic resting stage are said to be in:",
     "options": [
       {
         "label": "A",
-        "text": "G0 phase (Quiescent stage)",
+        "text": "G_0 phase (Quiescent stage)",
         "isCorrect": true
       },
       {
@@ -609,7 +609,7 @@
       },
       {
         "label": "C",
-        "text": "G2 phase",
+        "text": "G_2 phase",
         "isCorrect": false
       },
       {
@@ -619,18 +619,18 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Some cells in adult organisms do not divide (e.g., heart cells, neurons).\nStep 2: These cells exit G1 phase and enter an inactive Quiescent stage called G0.\nStep 3: Cells in G0 remain metabolically active but do not proliferate unless called upon.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Some cells in adult organisms do not divide (e.g., heart cells, neurons).\nStep 2: These cells exit G_1 phase and enter an inactive Quiescent stage called G_0.\nStep 3: Cells in G_0 remain metabolically active but do not proliferate unless called upon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "G1 நிலையிலிருந்து வெளியேறி, செல் பகுப்படையாமல் வளர்சிதை மாற்ற செயல்பாட்டுடன் மட்டுமே இருக்கும் அமைதி நிலை (Quiescent stage) எது?",
+        "stemText": "G_1 நிலையிலிருந்து வெளியேறி, செல் பகுப்படையாமல் வளர்சிதை மாற்ற செயல்பாட்டுடன் மட்டுமே இருக்கும் அமைதி நிலை (Quiescent stage) எது?",
         "optionTexts": [
-          "G0 நிலை (அமைதி நிலை)",
+          "G_0 நிலை (அமைதி நிலை)",
           "S நிலை",
-          "G2 நிலை",
+          "G_2 நிலை",
           "M நிலை"
         ]
       }
@@ -986,7 +986,7 @@
     "nodeTagCode": "bot_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "The short stage between Telophase I of meiosis and Prophase II, during which no DNA replication occurs, is called:",
     "options": [
       {
@@ -1001,7 +1001,7 @@
       },
       {
         "label": "C",
-        "text": "Quiescent stage G0",
+        "text": "Quiescent stage G_0",
         "isCorrect": false
       },
       {
@@ -1012,7 +1012,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The stage between the two meiotic divisions is called Interkinesis.\nStep 2: It is generally short-lived.\nStep 3: There is NO DNA replication during interkinesis.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1022,7 +1022,7 @@
         "optionTexts": [
           "இடைக் கைனசிஸ் / இன்டர்கைனசிஸ் (Interkinesis)",
           "இடைக்கால நிலை (Interphase)",
-          "அமைதி நிலை G0",
+          "அமைதி நிலை G_0",
           "டையாகைனசிஸ்"
         ]
       }
@@ -1231,8 +1231,8 @@
     "nodeTagCode": "bot_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "A cell has a DNA content of 2C and chromosome number of 2n at G1 phase. What will be the DNA content and chromosome number at G2 phase after completing S phase?",
+    "stemFormat": "latex",
+    "stemText": "A cell has a DNA content of 2C and chromosome number of 2n at G_1 phase. What will be the DNA content and chromosome number at G_2 phase after completing S phase?",
     "options": [
       {
         "label": "A",
@@ -1256,14 +1256,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: During S phase, DNA replication doubles the amount of DNA from 2C to 4C.\nStep 2: However, there is no increase in chromosome number; the chromosome number remains 2n.\nStep 3: Thus, entering G2 phase, the cell has 4C DNA and 2n chromosomes.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: During S phase, DNA replication doubles the amount of DNA from 2C to 4C.\nStep 2: However, there is no increase in chromosome number; the chromosome number remains 2n.\nStep 3: Thus, entering G_2 phase, the cell has 4C DNA and 2n chromosomes.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஒரு செல்லில் G1 நிலையில் 2C DNA அளவும் 2n குரோமோசோம் எண்ணிக்கையும் உள்ளது. S நிலையை முடித்து G2 நிலையை அடையும் போது DNA அளவு மற்றும் குரோமோசோம் எண்ணிக்கை என்னவாக இருக்கும்?",
+        "stemText": "ஒரு செல்லில் G_1 நிலையில் 2C DNA அளவும் 2n குரோமோசோம் எண்ணிக்கையும் உள்ளது. S நிலையை முடித்து G_2 நிலையை அடையும் போது DNA அளவு மற்றும் குரோமோசோம் எண்ணிக்கை என்னவாக இருக்கும்?",
         "optionTexts": [
           "4C DNA அளவு மற்றும் 2n குரோமோசோம் எண்ணிக்கை",
           "4C DNA அளவு மற்றும் 4n குரோமோசோம் எண்ணிக்கை",
@@ -1427,17 +1427,17 @@
     "nodeTagCode": "bot_04",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During which phase of the cell cycle are tubulin proteins synthesized for the assembly of the mitotic spindle apparatus while cell growth continues?",
     "options": [
       {
         "label": "A",
-        "text": "G2 phase",
+        "text": "G_2 phase",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "G1 phase",
+        "text": "G_1 phase",
         "isCorrect": false
       },
       {
@@ -1452,8 +1452,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: During the G2 (Gap 2) phase, proteins necessary for mitosis (such as tubulin for spindle fibers) are synthesized while cell growth continues.\nStep 2: The cell prepares to enter the M phase.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: During the G_2 (Gap 2) phase, proteins necessary for mitosis (such as tubulin for spindle fibers) are synthesized while cell growth continues.\nStep 2: The cell prepares to enter the M phase.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1461,8 +1461,8 @@
         "languageCode": "ta",
         "stemText": "செல் சுழற்சியில் கதிர் இழைகள் உருவாவதற்கு அவசியமான டியூபுலின் புரதங்கள் உருவாக்கப்படும் நிலை எது?",
         "optionTexts": [
-          "G2 நிலை",
-          "G1 நிலை",
+          "G_2 நிலை",
+          "G_1 நிலை",
           "S நிலை",
           "அனாஃபேஸ்"
         ]

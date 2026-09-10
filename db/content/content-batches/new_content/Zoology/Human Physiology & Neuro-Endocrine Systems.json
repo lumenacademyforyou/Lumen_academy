@@ -6,12 +6,12 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "What is the ionic basis for the maintenance of the resting membrane potential (-70 mV) across the axolemma of an unexcited resting neuron?",
     "options": [
       {
         "label": "A",
-        "text": "Passive rapid influx of 3 Ca2+ ions against their concentration gradient",
+        "text": "Passive rapid influx of 3 Ca^{2+} ions against their concentration gradient",
         "isCorrect": false
       },
       {
@@ -26,13 +26,13 @@
       },
       {
         "label": "D",
-        "text": "Active transport by the electrogenic Na+/K+ ATPase pump (pumping 3 Na+ outward for every 2 K+ inward per ATP) combined with higher resting membrane permeability to K+ than to Na+",
+        "text": "Active transport by the electrogenic Na^+/K^+ ATPase pump (pumping 3 Na^+ outward for every 2 K^+ inward per ATP) combined with higher resting membrane permeability to K^+ than to Na^+",
         "isCorrect": true
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In a resting neuron, the axolemma is substantially more permeable to K+ than to Na+ and completely impermeable to intracellular negatively charged proteins.\nStep 2: K+ diffuses outward down its concentration gradient faster than Na+ can diffuse in.\nStep 3: The Na+/K+ ATPase pump actively expels 3 Na+ for every 2 K+ brought in, creating a net loss of positive charge inside.\nStep 4: This produces a stable resting membrane potential of -70 mV (inside negative relative to outside).\nStep 5: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In a resting neuron, the axolemma is substantially more permeable to K^+ than to Na^+ and completely impermeable to intracellular negatively charged proteins.\nStep 2: K^+ diffuses outward down its concentration gradient faster than Na^+ can diffuse in.\nStep 3: The Na^+/K^+ ATPase pump actively expels 3 Na^+ for every 2 K^+ brought in, creating a net loss of positive charge inside.\nStep 4: This produces a stable resting membrane potential of -70 mV (inside negative relative to outside).\nStep 5: Conclude Option D is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -40,10 +40,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு ஓய்வுநிலை நரம்பு செல்லின் அச்சு நரம்பு சவ்வின் குறுக்கே ஓய்வு நிலை மின்னழுத்தம் (-70 mV) பராமரிக்கப்படுவதன் அயனி அடிப்படை என்ன?",
         "optionTexts": [
-          "Ca2+ அயனிகள் விரைவாக உள்ளே பாய்வது",
+          "Ca^{2+} அயனிகள் விரைவாக உள்ளே பாய்வது",
           "அனைத்து அயனிகளுக்கும் சவ்வு சம ஊடுருவும் திறன் கொண்டிருப்பது",
           "அச்சு சவ்வின் உள்புறத்தில் நேர்மின்சுமை சேர்வது",
-          "Na+/K+ ATPase பம்ப் மூலம் ஒவ்வொரு ATP க்கும் 3 Na+ அயனிகள் வெளியேற்றப்பட்டு 2 K+ அயனிகள் உள்ளே செலுத்தப்படுவது மற்றும் சவ்வு Na+ ஐ விட K+ அயனிகளுக்கு அதிக ஊடுருவும் திறன் கொண்டிருப்பது"
+          "Na^+/K^+ ATPase பம்ப் மூலம் ஒவ்வொரு ATP க்கும் 3 Na^+ அயனிகள் வெளியேற்றப்பட்டு 2 K^+ அயனிகள் உள்ளே செலுத்தப்படுவது மற்றும் சவ்வு Na^+ ஐ விட K^+ அயனிகளுக்கு அதிக ஊடுருவும் திறன் கொண்டிருப்பது"
         ]
       }
     ]
@@ -55,8 +55,8 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Which pair of endocrine hormones acts antagonistically to regulate and strictly maintain normal extracellular calcium ion (Ca2+) homeostasis in human blood?",
+    "stemFormat": "latex",
+    "stemText": "Which pair of endocrine hormones acts antagonistically to regulate and strictly maintain normal extracellular calcium ion (Ca^{2+}) homeostasis in human blood?",
     "options": [
       {
         "label": "A",
@@ -80,17 +80,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Parathyroid hormone (PTH) is a hypercalcemic hormone; it increases blood Ca2+ levels by stimulating bone osteoclast resorption, renal tubular reabsorption of Ca2+, and intestinal absorption.\nStep 2: Thyrocalcitonin (TCT / Calcitonin) from the thyroid gland is a hypocalcemic hormone; it lowers blood Ca2+ by suppressing bone resorption and promoting Ca2+ excretion/deposition.\nStep 3: Together, PTH and TCT maintain precise blood calcium homeostasis.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Parathyroid hormone (PTH) is a hypercalcemic hormone; it increases blood Ca^{2+} levels by stimulating bone osteoclast resorption, renal tubular reabsorption of Ca^{2+}, and intestinal absorption.\nStep 2: Thyrocalcitonin (TCT / Calcitonin) from the thyroid gland is a hypocalcemic hormone; it lowers blood Ca^{2+} by suppressing bone resorption and promoting Ca^{2+} excretion/deposition.\nStep 3: Together, PTH and TCT maintain precise blood calcium homeostasis.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "மனித இரத்தத்தில் கால்சியம் அயனி (Ca2+) சமநிலையை ஒழுங்குபடுத்த ஒன்றுக்கொன்று எதிரெதிராகச் செயல்படும் நாளமில்லா சுரப்பி ஹார்மோன் இணை எது?",
+        "stemText": "மனித இரத்தத்தில் கால்சியம் அயனி (Ca^{2+}) சமநிலையை ஒழுங்குபடுத்த ஒன்றுக்கொன்று எதிரெதிராகச் செயல்படும் நாளமில்லா சுரப்பி ஹார்மோன் இணை எது?",
         "optionTexts": [
           "ஆல்டோஸ்டீரோன் மற்றும் ANF",
-          "பாராதைராய்டு ஹார்மோன் (PTH, இரத்த Ca2+ ஐ உயர்த்தும்) மற்றும் தைரோகால்சிட்டோனின் (TCT, இரத்த Ca2+ ஐக் குறைக்கும்)",
+          "பாராதைராய்டு ஹார்மோன் (PTH, இரத்த Ca^{2+} ஐ உயர்த்தும்) மற்றும் தைரோகால்சிட்டோனின் (TCT, இரத்த Ca^{2+} ஐக் குறைக்கும்)",
           "இன்சுலின் மற்றும் குளூக்கோகான்",
           "ஆக்ஸிடாசின் மற்றும் வாசோபிரசின்"
         ]
@@ -104,33 +104,33 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During the transmission of a nerve impulse across a chemical synapse, which ion influx into the presynaptic axon terminal triggers the exocytosis of neurotransmitter vesicles into the synaptic cleft?",
     "options": [
       {
         "label": "A",
-        "text": "Rapid influx of Mg2+ ions",
+        "text": "Rapid influx of Mg^{2+} ions",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Efflux of Cl- ions into the synaptic cleft",
+        "text": "Efflux of Cl^- ions into the synaptic cleft",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Influx of Ca2+ ions through voltage-gated channels",
+        "text": "Influx of Ca^{2+} ions through voltage-gated channels",
         "isCorrect": true
       },
       {
         "label": "D",
-        "text": "Efflux of K+ ions out of the postsynaptic membrane",
+        "text": "Efflux of K^+ ions out of the postsynaptic membrane",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Arrival of an action potential at the presynaptic knob causes depolarization.\nStep 2: This depolarization opens voltage-gated Ca2+ channels, causing rapid Ca2+ influx into the axon terminal.\nStep 3: Ca2+ causes synaptic vesicles to fuse with the presynaptic membrane and release neurotransmitters (e.g., acetylcholine) into the synaptic cleft.\nStep 4: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Arrival of an action potential at the presynaptic knob causes depolarization.\nStep 2: This depolarization opens voltage-gated Ca^{2+} channels, causing rapid Ca^{2+} influx into the axon terminal.\nStep 3: Ca^{2+} causes synaptic vesicles to fuse with the presynaptic membrane and release neurotransmitters (e.g., acetylcholine) into the synaptic cleft.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -138,10 +138,10 @@
         "languageCode": "ta",
         "stemText": "வேதியியல் சினாப்ஸில் நரம்பு தூண்டல் கடத்தலின் போது, சினாப்ஸுக்கு முந்தைய நரம்பு முனையத்தில் நியூரோடிரான்ஸ்மிட்டர் வெசிகிள்கள் வெளியேறத் தூண்டும் அயனி எது?",
         "optionTexts": [
-          "Mg2+ அயனிகள் வேகமாக உள்ளே நுழைவது",
-          "Cl- அயனிகள் சினாப்ஸ் பிளவுக்குள் வெளியேறுவது",
-          "மின்னழுத்த உணர்வு கால்வாய்கள் வழியாக Ca2+ அயனிகள் உள்ளே நுழைவது",
-          "K+ அயனிகள் சினாப்ஸுக்கு பிந்தைய சவ்விலிருந்து வெளியேறுவது"
+          "Mg^{2+} அயனிகள் வேகமாக உள்ளே நுழைவது",
+          "Cl^- அயனிகள் சினாப்ஸ் பிளவுக்குள் வெளியேறுவது",
+          "மின்னழுத்த உணர்வு கால்வாய்கள் வழியாக Ca^{2+} அயனிகள் உள்ளே நுழைவது",
+          "K^+ அயனிகள் சினாப்ஸுக்கு பிந்தைய சவ்விலிருந்து வெளியேறுவது"
         ]
       }
     ]
@@ -349,12 +349,12 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Grave's disease (Exophthalmic goitre) is an autoimmune endocrine disorder characterized by hyperthyroidism, high metabolic rate, and protruding eyes. It is caused by:",
     "options": [
       {
         "label": "A",
-        "text": "Hypersecretion of thyroid hormones (T3 and T4)",
+        "text": "Hypersecretion of thyroid hormones (T_3 and T_4)",
         "isCorrect": true
       },
       {
@@ -375,7 +375,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Graves' disease is caused by autoimmune antibodies stimulating the thyroid to overproduce thyroid hormones.\nStep 2: This hyperthyroidism leads to elevated basal metabolic rate, goitre, and exophthalmos (protruding eyes).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -447,7 +447,7 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which peptide hormone secreted by the heart atria in response to elevated blood pressure causes vasodilation and excretion of sodium to reduce blood pressure?",
     "options": [
       {
@@ -472,8 +472,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: When blood pressure increases, atrial wall myocytes stretch and secrete Atrial Natriuretic Factor (ANF).\nStep 2: ANF causes vasodilation of blood vessels and increases excretion of Na+ and water by kidneys (natriuresis).\nStep 3: This acts antagonistically to the RAAS mechanism, lowering blood pressure.\nStep 4: Conclude Option D is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: When blood pressure increases, atrial wall myocytes stretch and secrete Atrial Natriuretic Factor (ANF).\nStep 2: ANF causes vasodilation of blood vessels and increases excretion of Na^+ and water by kidneys (natriuresis).\nStep 3: This acts antagonistically to the RAAS mechanism, lowering blood pressure.\nStep 4: Conclude Option D is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -496,33 +496,33 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "During depolarization of an axonal membrane upon electrical stimulation, which ion channel opens to allow rapid influx of ions down their electrochemical gradient?",
     "options": [
       {
         "label": "A",
-        "text": "Voltage-gated Potassium (K+) channels",
+        "text": "Voltage-gated Potassium (K^+) channels",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Voltage-gated Sodium (Na+) channels",
+        "text": "Voltage-gated Sodium (Na^+) channels",
         "isCorrect": true
       },
       {
         "label": "C",
-        "text": "Chloride (Cl-) leak channels",
+        "text": "Chloride (Cl^-) leak channels",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Calcium (Ca2+) ATPase pump",
+        "text": "Calcium (Ca^{2+}) ATPase pump",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: When a threshold stimulus is applied to a resting axolemma, voltage-gated Na+ channels rapidly open.\nStep 2: Na+ ions rush into the axoplasm down their electrochemical gradient.\nStep 3: This reverses membrane polarity from -70 mV to +30 mV (depolarization), generating an action potential.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: When a threshold stimulus is applied to a resting axolemma, voltage-gated Na^+ channels rapidly open.\nStep 2: Na^+ ions rush into the axoplasm down their electrochemical gradient.\nStep 3: This reverses membrane polarity from -70 mV to +30 mV (depolarization), generating an action potential.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -530,8 +530,8 @@
         "languageCode": "ta",
         "stemText": "தூண்டலின் போது அச்சு நரம்பு சவ்வின் முனைவியக்க நீக்கத்திற்கு (depolarization) காரணமாக வேகமாகத் திறந்து அயனிகளை உள்ளே அனுமதிக்கும் கால்வாய் எது?",
         "optionTexts": [
-          "மின்னழுத்த உணர்வு K+ கால்வாய்கள்",
-          "மின்னழுத்த உணர்வு சோடியம் (Na+) கால்வாய்கள்",
+          "மின்னழுத்த உணர்வு K^+ கால்வாய்கள்",
+          "மின்னழுத்த உணர்வு சோடியம் (Na^+) கால்வாய்கள்",
           "குளோரைடு கசிவு கால்வாய்கள்",
           "கால்சியம் பம்ப்"
         ]
@@ -712,7 +712,7 @@
       },
       {
         "label": "D",
-        "text": "Pancreatic beta cells",
+        "text": "Pancreatic β cells",
         "isCorrect": false
       }
     ],
@@ -790,8 +790,8 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
-    "stemText": "Which category of hormones cannot cross the lipid bilayer of the target cell membrane and instead exerts physiological effects via cell surface receptors and intracellular second messengers (e.g., cAMP, IP3, Ca2+)?",
+    "stemFormat": "latex",
+    "stemText": "Which category of hormones cannot cross the lipid bilayer of the target cell membrane and instead exerts physiological effects via cell surface receptors and intracellular second messengers (e.g., cAMP, IP_3, Ca^{2+})?",
     "options": [
       {
         "label": "A",
@@ -800,7 +800,7 @@
       },
       {
         "label": "B",
-        "text": "Iodothyronines (T3 and T4)",
+        "text": "Iodothyronines (T_3 and T_4)",
         "isCorrect": false
       },
       {
@@ -815,17 +815,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Water-soluble peptide/protein hormones cannot diffuse across target cell plasma membranes.\nStep 2: They bind membrane-bound surface receptors, activating G-proteins that generate second messengers such as cyclic AMP (cAMP), IP3, or Ca2+.\nStep 3: Steroid and thyroid hormones, being lipid-soluble, enter cells and bind intracellular/nuclear receptors.\nStep 4: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Water-soluble peptide/protein hormones cannot diffuse across target cell plasma membranes.\nStep 2: They bind membrane-bound surface receptors, activating G-proteins that generate second messengers such as cyclic AMP (cAMP), IP_3, or Ca^{2+}.\nStep 3: Steroid and thyroid hormones, being lipid-soluble, enter cells and bind intracellular/nuclear receptors.\nStep 4: Conclude Option C is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "இலக்கு செல்லின் பிளாஸ்மா சவ்வைக் கடக்க முடியாமல், செல் மேற்பரப்பு ஏற்பிகளுடன் இணைந்து இரண்டாம் நிலை தூதுவர்கள் (cAMP, IP3) வழியாகச் செயல்படும் ஹார்மோன்கள் எவை?",
+        "stemText": "இலக்கு செல்லின் பிளாஸ்மா சவ்வைக் கடக்க முடியாமல், செல் மேற்பரப்பு ஏற்பிகளுடன் இணைந்து இரண்டாம் நிலை தூதுவர்கள் (cAMP, IP_3) வழியாகச் செயல்படும் ஹார்மோன்கள் எவை?",
         "optionTexts": [
           "ஸ்டீராய்டு ஹார்மோன்கள் (கார்டிசோல், ஈஸ்ட்ரோஜன்)",
-          "அயோடோதைரோனின்கள் (T3, T4)",
+          "அயோடோதைரோனின்கள் (T_3, T_4)",
           "பெப்டைட் மற்றும் புரத ஹார்மோன்கள் (இன்சுலின், குளூக்கோகான், பிட்யூட்டரி ஹார்மோன்கள்)",
           "ரெட்டினாய்டுகள்"
         ]
@@ -938,7 +938,7 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "plain",
-    "stemText": "Which hormone secreted by the beta cells of the Islets of Langerhans promotes cellular glucose uptake, glycogenesis in hepatocytes, and lowers blood glucose levels?",
+    "stemText": "Which hormone secreted by the β cells of the Islets of Langerhans promotes cellular glucose uptake, glycogenesis in hepatocytes, and lowers blood glucose levels?",
     "options": [
       {
         "label": "A",
@@ -962,7 +962,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Insulin is a hypoglycemic peptide hormone secreted by beta cells of pancreatic islets.\nStep 2: It enhances glucose uptake in adipocytes and hepatocytes and stimulates glycogenesis, lowering blood glucose.\nStep 3: Glucagon from alpha cells stimulates glycogenolysis and gluconeogenesis, raising blood glucose.\nStep 4: Conclude Option B is correct.",
+      "explanationText": "Step 1: Insulin is a hypoglycemic peptide hormone secreted by β cells of pancreatic islets.\nStep 2: It enhances glucose uptake in adipocytes and hepatocytes and stimulates glycogenesis, lowering blood glucose.\nStep 3: Glucagon from α cells stimulates glycogenolysis and gluconeogenesis, raising blood glucose.\nStep 4: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1427,7 +1427,7 @@
     "nodeTagCode": "zoo_01",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Glucocorticoids (primarily cortisol) produced by the adrenal cortex exhibit which combination of physiological functions?",
     "options": [
       {
@@ -1453,7 +1453,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Cortisol stimulates gluconeogenesis, lipolysis, and proteolysis, and inhibits cellular uptake and utilization of amino acids.\nStep 2: Cortisol is also involved in maintaining the cardiovascular system, kidney function, and producing anti-inflammatory responses (suppressing the immune response).\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1463,7 +1463,7 @@
         "optionTexts": [
           "குளுக்கோனியோஜெனிசிஸ், கொழுப்பு சிதைவு, புரத சிதைவு ஆகியவற்றைத் தூண்டுதல் மற்றும் அழற்சி எதிர்ப்பு, நோயெதிர்ப்பு ஒடுக்குதல் பணிகளைச் செய்தல்",
           "செல்களின் குளுக்கோஸ் பயன்பாட்டை அதிகரித்தல்",
-          "எலும்புகளில் கால்சியம் சேர்வதை அதிகரித்தல் மற்றும் Na+ வெளியேற்றுதல்",
+          "எலும்புகளில் கால்சியம் சேர்வதை அதிகரித்தல் மற்றும் Na^+ வெளியேற்றுதல்",
           "பால் சுரப்பு மற்றும் கருப்பை சுருங்குதலைத் தூண்டுதல்"
         ]
       }

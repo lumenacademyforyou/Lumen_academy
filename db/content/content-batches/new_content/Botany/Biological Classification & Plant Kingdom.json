@@ -6,7 +6,7 @@
     "nodeTagCode": "bot_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "In cyanobacteria like Nostoc and Anabaena, which specialized, thick-walled cells are responsible for biological nitrogen fixation under anaerobic conditions?",
     "options": [
       {
@@ -31,8 +31,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Heterocysts are specialized pale, thick-walled vegetative cells in cyanobacteria.\nStep 2: They create an impermeable barrier to atmospheric oxygen.\nStep 3: This protects the nitrogenase enzyme from irreversible oxygen inactivation, allowing conversion of N2 to NH3.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Heterocysts are specialized pale, thick-walled vegetative cells in cyanobacteria.\nStep 2: They create an impermeable barrier to atmospheric oxygen.\nStep 3: This protects the nitrogenase enzyme from irreversible oxygen inactivation, allowing conversion of N_2 to NH_3.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -692,12 +692,12 @@
     "nodeTagCode": "bot_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Lichens are mutually symbiotic composite organisms of an alga and a fungus. Why are lichens universally recognized as excellent bio-indicators of atmospheric pollution?",
     "options": [
       {
         "label": "A",
-        "text": "They are extremely sensitive to air pollution and do not grow in areas polluted with sulfur dioxide (SO2)",
+        "text": "They are extremely sensitive to air pollution and do not grow in areas polluted with sulfur dioxide (SO_2)",
         "isCorrect": true
       },
       {
@@ -717,8 +717,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Lichens consist of a photosynthetic phycobiont (algae) and a heterotrophic mycobiont (fungi).\nStep 2: Lichens are very sensitive to atmospheric pollutants, especially Sulfur Dioxide (SO2).\nStep 3: They do not grow in polluted areas (e.g., industrial cities) and serve as excellent natural air pollution bio-indicators.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Lichens consist of a photosynthetic phycobiont (algae) and a heterotrophic mycobiont (fungi).\nStep 2: Lichens are very sensitive to atmospheric pollutants, especially Sulfur Dioxide (SO_2).\nStep 3: They do not grow in polluted areas (e.g., industrial cities) and serve as excellent natural air pollution bio-indicators.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -726,7 +726,7 @@
         "languageCode": "ta",
         "stemText": "பாசி மற்றும் பூஞ்சையின் கூட்டுயிரி அமைப்பான லைக்கன்கள் (Lichens) சுற்றுச்சூழல் மாசுபாட்டின் சிறந்த உயிரி-சுட்டிக்காட்டிகளாகக் கருதப்படுவதன் காரணம் என்ன?",
         "optionTexts": [
-          "அவை காற்று மாசுபாட்டிற்கு அதிக உணர்திறன் கொண்டவை; சல்பர் டை ஆக்சைடு (SO2) காற்று மாசுபாடு உள்ள பகுதிகளில் அவை வளர்வதில்லை",
+          "அவை காற்று மாசுபாட்டிற்கு அதிக உணர்திறன் கொண்டவை; சல்பர் டை ஆக்சைடு (SO_2) காற்று மாசுபாடு உள்ள பகுதிகளில் அவை வளர்வதில்லை",
           "அவை கழிவுநீர் கலந்த நீரில் மட்டுமே வளரும்",
           "அவை கார்பன் மோனாக்சைடை உறிஞ்சி மீத்தேனை வெளியிடுகின்றன",
           "கன உலோக மண்ணில் அவற்றின் பாசிப் பகுதி விரைவாக சடுதிமாற்றம் அடைகிறது"
@@ -1084,7 +1084,7 @@
     "nodeTagCode": "bot_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which chemosynthetic autotrophic bacteria oxidize inorganic ammonia into nitrite during the biological nitrogen cycle?",
     "options": [
       {
@@ -1109,8 +1109,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nitrification is a two-step oxidative process:\n- Step 1: 2 NH3 + 3 O2 → 2 NO2- + 2 H+ + 2 H2O (catalyzed by Nitrosomonas / Nitrococcus).\n- Step 2: 2 NO2- + O2 → 2 NO3- (catalyzed by Nitrobacter).\nStep 2: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Nitrification is a two-step oxidative process:\n- Step 1: 2 NH_3 + 3 O_2 → 2 NO_2^- + 2 H^+ + 2 H_2O (catalyzed by Nitrosomonas / Nitrococcus).\n- Step 2: 2 NO_2^- + O_2 → 2 NO_3^- (catalyzed by Nitrobacter).\nStep 2: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1329,7 +1329,7 @@
     "nodeTagCode": "bot_07",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which unicellular fungus is widely used in commercial brewing of alcoholic beverages and baking of bread?",
     "options": [
       {
@@ -1354,8 +1354,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: While most fungi are filamentous, yeasts are unicellular Ascomycetes.\nStep 2: Saccharomyces cerevisiae is known as Brewer's yeast for alcoholic fermentation and Baker's yeast for leavening bread dough by producing CO2.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: While most fungi are filamentous, yeasts are unicellular Ascomycetes.\nStep 2: Saccharomyces cerevisiae is known as Brewer's yeast for alcoholic fermentation and Baker's yeast for leavening bread dough by producing CO_2.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [

@@ -153,7 +153,7 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Palmitic acid and Arachidonic acid contain how many total carbon atoms respectively (including the carboxyl carbon)?",
     "options": [
       {
@@ -178,8 +178,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Fatty acids have a hydrocarbon chain ending in a carboxyl group (-COOH).\nStep 2: Palmitic acid has 16 carbons including the carboxyl carbon (CH3-(CH2)14-COOH).\nStep 3: Arachidonic acid has 20 carbon atoms including the carboxyl carbon.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Fatty acids have a hydrocarbon chain ending in a carboxyl group (-COOH).\nStep 2: Palmitic acid has 16 carbons including the carboxyl carbon (CH_3-(CH_2)_{14}-COOH).\nStep 3: Arachidonic acid has 20 carbon atoms including the carboxyl carbon.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -251,7 +251,7 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "easy",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which non-protein organic chemical component of an enzyme is tightly and permanently bound to the apoenzyme protein?",
     "options": [
       {
@@ -261,12 +261,12 @@
       },
       {
         "label": "B",
-        "text": "Co-enzyme (e.g., NAD+)",
+        "text": "Co-enzyme (e.g., NAD^+)",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Metal ion activator (e.g., Zn2+)",
+        "text": "Metal ion activator (e.g., Zn^{2+})",
         "isCorrect": false
       },
       {
@@ -277,7 +277,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: Cofactors are non-protein constituents bound to apoenzymes to make them catalytically active.\nStep 2: Prosthetic groups are organic compounds distinguished by being tightly and permanently bound to the apoenzyme (e.g., Haem in catalase).\nStep 3: Coenzymes bind only transiently during catalysis.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -300,17 +300,17 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Coenzymes NAD (Nicotinamide Adenine Dinucleotide) and NADP contain which essential water-soluble B-complex vitamin?",
     "options": [
       {
         "label": "A",
-        "text": "Thiamine (Vitamin B1)",
+        "text": "Thiamine (Vitamin B_1)",
         "isCorrect": false
       },
       {
         "label": "B",
-        "text": "Niacin (Nicotinic acid / Vitamin B3)",
+        "text": "Niacin (Nicotinic acid / Vitamin B_3)",
         "isCorrect": true
       },
       {
@@ -320,13 +320,13 @@
       },
       {
         "label": "D",
-        "text": "Biotin (Vitamin B7)",
+        "text": "Biotin (Vitamin B_7)",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Many coenzymes contain vitamins as their essential chemical components.\nStep 2: Coenzyme NAD and NADP contain the vitamin niacin (Vitamin B3 / nicotinic acid).\nStep 3: FAD contains riboflavin (Vitamin B2).\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Many coenzymes contain vitamins as their essential chemical components.\nStep 2: Coenzyme NAD and NADP contain the vitamin niacin (Vitamin B_3 / nicotinic acid).\nStep 3: FAD contains riboflavin (Vitamin B2).\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -334,8 +334,8 @@
         "languageCode": "ta",
         "stemText": "NAD மற்றும் NADP ஆகிய இணை நொதிகளில் அடங்கியுள்ள வைட்டமின் எது?",
         "optionTexts": [
-          "தயமின் (வைட்டமின் B1)",
-          "நியாசின் (Niacin / வைட்டமின் B3)",
+          "தயமின் (வைட்டமின் B_1)",
+          "நியாசின் (Niacin / வைட்டமின் B_3)",
           "ரிபோஃபிளேவின் (வைட்டமின் B2)",
           "பயோட்டின்"
         ]
@@ -349,33 +349,33 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "hard",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "Which metal ion acts as an essential cofactor for the proteolytic enzyme carboxypeptidase and carbonic anhydrase?",
     "options": [
       {
         "label": "A",
-        "text": "Zinc (Zn2+)",
+        "text": "Zinc (Zn^{2+})",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "Magnesium (Mg2+)",
+        "text": "Magnesium (Mg^{2+})",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "Copper (Cu2+)",
+        "text": "Copper (Cu^{2+})",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "Iron (Fe2+)",
+        "text": "Iron (Fe^{2+})",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Metal ions form coordination bonds with side chains at the active site.\nStep 2: Zinc (Zn2+) is a mandatory cofactor for Carboxypeptidase, Carbonic Anhydrase, and Alcohol Dehydrogenase.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Metal ions form coordination bonds with side chains at the active site.\nStep 2: Zinc (Zn^{2+}) is a mandatory cofactor for Carboxypeptidase, Carbonic Anhydrase, and Alcohol Dehydrogenase.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -383,10 +383,10 @@
         "languageCode": "ta",
         "stemText": "கார்பாக்சிபெப்டிடேஸ் மற்றும் கார்போனிக் அன்ஹைட்ரேஸ் ஆகிய என்சைம்களின் இன்றியமையாத உலோக இணை காரணியாகச் செயல்படும் அயனி எது?",
         "optionTexts": [
-          "துத்தநாகம் / ஜிங்க் (Zn2+)",
-          "மெக்னீசியம் (Mg2+)",
-          "தாமிரம் (Cu2+)",
-          "இரும்பு (Fe2+)"
+          "துத்தநாகம் / ஜிங்க் (Zn^{2+})",
+          "மெக்னீசியம் (Mg^{2+})",
+          "தாமிரம் (Cu^{2+})",
+          "இரும்பு (Fe^{2+})"
         ]
       }
     ]
@@ -398,8 +398,8 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "When living tissue is homogenized in trichloroacetic acid (Cl3CCOOH) and filtered, which biomolecules are recovered in the acid-insoluble retentate fraction despite having a molecular weight below 800 Da?",
+    "stemFormat": "latex",
+    "stemText": "When living tissue is homogenized in trichloroacetic acid (Cl_3CCOOH) and filtered, which biomolecules are recovered in the acid-insoluble retentate fraction despite having a molecular weight below 800 Da?",
     "options": [
       {
         "label": "A",
@@ -424,7 +424,7 @@
     ],
     "solution": {
       "explanationText": "Step 1: The acid-insoluble fraction contains macromolecules with MW > 10,000 Da (proteins, nucleic acids, polysaccharides).\nStep 2: Lipids have molecular weights under 800 Da, but because cell membranes fragment into water-insoluble vesicles, they are retained on the filter paper with macromolecules.\nStep 3: Conclude Option C is correct.",
-      "solutionFormat": "plain"
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -546,7 +546,7 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "plain",
-    "stemText": "Which homopolysaccharide is composed of N-acetylglucosamine (NAG) units linked by beta-1,4-glycosidic bonds and forms the hard exoskeleton of arthropods and cell walls of fungi?",
+    "stemText": "Which homopolysaccharide is composed of N-acetylglucosamine (NAG) units linked by β-1,4-glycosidic bonds and forms the hard exoskeleton of arthropods and cell walls of fungi?",
     "options": [
       {
         "label": "A",
@@ -609,7 +609,7 @@
       },
       {
         "label": "C",
-        "text": "Regular folding into alpha-helices and beta-pleated sheets",
+        "text": "Regular folding into α-helices and β-pleated sheets",
         "isCorrect": false
       },
       {
@@ -619,7 +619,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The primary structure is the amino acid sequence.\nStep 2: Secondary structure includes alpha-helices and beta-sheets.\nStep 3: Tertiary structure is the overall 3D conformational folding of the polypeptide creating active clefts (catalytic sites), stabilized by disulfide, ionic, and hydrophobic interactions.\nStep 4: Conclude Option B is correct.",
+      "explanationText": "Step 1: The primary structure is the amino acid sequence.\nStep 2: Secondary structure includes α-helices and β-sheets.\nStep 3: Tertiary structure is the overall 3D conformational folding of the polypeptide creating active clefts (catalytic sites), stabilized by disulfide, ionic, and hydrophobic interactions.\nStep 4: Conclude Option B is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -761,7 +761,7 @@
       },
       {
         "label": "D",
-        "text": "Two amino acid alpha-carboxyl groups",
+        "text": "Two amino acid α-carboxyl groups",
         "isCorrect": false
       }
     ],
@@ -839,7 +839,7 @@
     "nodeTagCode": "zoo_06",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "At a specific pH known as the isoelectric point (pI), an amino acid carries both a positive and negative charge simultaneously with a net charge of zero. This dipolar ionic form is called a:",
     "options": [
       {
@@ -864,8 +864,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Amino acids contain both ionizable amino (-NH2) and carboxyl (-COOH) groups.\nStep 2: In aqueous solution at its isoelectric pH, the carboxyl group loses a proton (-COO-) and the amino group gains a proton (-NH3+).\nStep 3: This dipolar ion with net zero electrical charge is termed a Zwitterion.\nStep 4: Conclude Option B is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Amino acids contain both ionizable amino (-NH_2) and carboxyl (-COOH) groups.\nStep 2: In aqueous solution at its isoelectric pH, the carboxyl group loses a proton (-COO-) and the amino group gains a proton (-NH_3^+).\nStep 3: This dipolar ion with net zero electrical charge is termed a Zwitterion.\nStep 4: Conclude Option B is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -1134,7 +1134,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "plain",
-    "stemText": "Which type of chemical bond stabilizes the secondary structure (alpha-helix and beta-pleated sheet) of a polypeptide chain?",
+    "stemText": "Which type of chemical bond stabilizes the secondary structure (α-helix and β-pleated sheet) of a polypeptide chain?",
     "options": [
       {
         "label": "A",
@@ -1158,7 +1158,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: The secondary structure of proteins involves regular, local folding patterns.\nStep 2: The alpha-helix and beta-pleated sheets are held and stabilized by hydrogen bonds between the carbonyl oxygen (-C=O) of one peptide bond and the amino hydrogen (-NH-) of another.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: The secondary structure of proteins involves regular, local folding patterns.\nStep 2: The α-helix and β-pleated sheets are held and stabilized by hydrogen bonds between the carbonyl oxygen (-C=O) of one peptide bond and the amino hydrogen (-NH-) of another.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -1330,7 +1330,7 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "plain",
-    "stemText": "The simple basic amino acid containing a positively charged epsilon-amino group in its side chain is:",
+    "stemText": "The simple basic amino acid containing a positively charged ε-amino group in its side chain is:",
     "options": [
       {
         "label": "A",
@@ -1379,7 +1379,7 @@
     "questionType": "single_choice",
     "difficultyBand": "hard",
     "stemFormat": "plain",
-    "stemText": "In adult human hemoglobin (HbA), which level of protein structural organization is exhibited by its four polypeptide subunits (2 alpha and 2 beta chains)?",
+    "stemText": "In adult human hemoglobin (HbA), which level of protein structural organization is exhibited by its four polypeptide subunits (2 α and 2 β chains)?",
     "options": [
       {
         "label": "A",

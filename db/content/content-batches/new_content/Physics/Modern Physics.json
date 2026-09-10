@@ -129,7 +129,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Bohr radius formula: r_n = r₁ * n^2 / Z.\nStep 2: For hydrogen (Z = 1), r_n ∝ n^2.\nStep 3: For n = 3: r3 / r1 = (3)^2 / (1)^2 = 9 / 1 = 9 : 1.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Bohr radius formula: r_n = r₁ × n^2 / Z.\nStep 2: For hydrogen (Z = 1), r_n ∝ n^2.\nStep 3: For n = 3: r_3 / r_1 = (3)^2 / (1)^2 = 9 / 1 = 9 : 1.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -154,7 +154,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "What is the shortest wavelength (series limit) of the Lyman spectral series in atomic hydrogen? (Rydberg constant R = 1.097 x 10^7 m^{-1})",
+    "stemText": "What is the shortest wavelength (series limit) of the Lyman spectral series in atomic hydrogen? (Rydberg constant R = 1.097 × 10^7 m^{-1})",
     "options": [
       {
         "label": "A",
@@ -178,14 +178,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Rydberg formula for Lyman series: 1/λ = R [ 1/1^2 - 1/n^2 ].\nStep 2: Shortest wavelength occurs for transition from n = ∞ to n = 1: 1/λ_{min} = R [ 1 - 0 ] = R.\nStep 3: λ_{min} = 1 / R = 1 / (1.097 x 10^7 m^{-1}) ≈ 9.116 x 10^{-8} m = 91.2 nm = 912 Å (in ultraviolet region).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Rydberg formula for Lyman series: 1/λ = R [ 1/1^2 - 1/n^2 ].\nStep 2: Shortest wavelength occurs for transition from n = ∞ to n = 1: 1/λ_{min} = R [ 1 - 0 ] = R.\nStep 3: λ_{min} = 1 / R = 1 / (1.097 × 10^7 m^{-1}) ≈ 9.116 × 10^{-8} m = 91.2 nm = 912 Å (in ultraviolet region).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "ஹைட்ரஜன் நிறமாலையில் லைமன் தொடரின் குறுகிய அலைநீளம் (தொடர் எல்லை) என்ன? (R = 1.097 x 10^7 m^{-1})",
+        "stemText": "ஹைட்ரஜன் நிறமாலையில் லைமன் தொடரின் குறுகிய அலைநீளம் (தொடர் எல்லை) என்ன? (R = 1.097 × 10^7 m^{-1})",
         "optionTexts": [
           "91.2 nm (912 Å)",
           "121.6 nm",
@@ -252,11 +252,11 @@
     "questionType": "single_choice",
     "difficultyBand": "easy",
     "stemFormat": "latex",
-    "stemText": "The nuclear radius R of an atom with mass number A is given by R = R₀ A^{1/3}, where R₀ ≈ 1.2 x 10^{-15} m. What does this formula imply about the nuclear density of all stable nuclei?",
+    "stemText": "The nuclear radius R of an atom with mass number A is given by R = R₀ A^{1/3}, where R₀ ≈ 1.2 × 10^{-15} m. What does this formula imply about the nuclear density of all stable nuclei?",
     "options": [
       {
         "label": "A",
-        "text": "Nuclear density is constant and independent of mass number A (≈ 2.3 x 10^{17} kg/m^3)",
+        "text": "Nuclear density is constant and independent of mass number A (≈ 2.3 × 10^{17} kg/m^3)",
         "isCorrect": true
       },
       {
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nuclear mass M ≈ A * m_{nucleon}.\nStep 2: Nuclear volume V = (4/3) π R^3 = (4/3) π (R₀ A^{1/3})^3 = (4/3) π R₀^3 A.\nStep 3: Nuclear density ρ = M / V = [ A * m_{nucleon} ] / [ (4/3) π R₀^3 A ] = m_{nucleon} / [ (4/3) π R₀^3 ] = constant.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Nuclear mass M ≈ A × m_{nucleon}.\nStep 2: Nuclear volume V = (4/3) π R^3 = (4/3) π (R₀ A^{1/3})^3 = (4/3) π R₀^3 A.\nStep 3: Nuclear density ρ = M / V = [ A × m_{nucleon} ] / [ (4/3) π R₀^3 A ] = m_{nucleon} / [ (4/3) π R₀^3 ] = constant.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -374,7 +374,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Truth table of NOR gate: (0,0)->1, (0,1)->0, (1,0)->0, (1,1)->0.\nStep 2: A NOR gate gives high output (1) if and only if all inputs are low (0).\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Truth table of NOR gate: (0,0)→1, (0,1)→0, (1,0)→0, (1,1)→0.\nStep 2: A NOR gate gives high output (1) if and only if all inputs are low (0).\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -521,7 +521,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Energy of level n: E_n = - 13.6 / n^2 eV.\nStep 2: E2 = - 13.6 / 2^2 = - 3.40 eV.\nStep 3: E4 = - 13.6 / 4^2 = - 0.85 eV.\nStep 4: Emitted photon energy ΔE = E4 - E2 = - 0.85 - (- 3.40) = 3.40 - 0.85 = 2.55 eV (Balmer H-beta line). Conclude Option A is correct.",
+      "explanationText": "Step 1: Energy of level n: E_n = - 13.6 / n^2 eV.\nStep 2: E_2 = - 13.6 / 2^2 = - 3.40 eV.\nStep 3: E_4 = - 13.6 / 4^2 = - 0.85 eV.\nStep 4: Emitted photon energy ΔE = E_4 - E_2 = - 0.85 - (- 3.40) = 3.40 - 0.85 = 2.55 eV (Balmer H-β line). Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -546,31 +546,31 @@
     "questionType": "single_choice",
     "difficultyBand": "hard",
     "stemFormat": "latex",
-    "stemText": "In a nuclear reaction, 1.0 milligram of mass is completely converted into energy. How much electrical energy is released in kilowatt-hours (kWh)? (c = 3.0 x 10^8 m/s)",
+    "stemText": "In a nuclear reaction, 1.0 milligram of mass is completely converted into energy. How much electrical energy is released in kilowatt-hours (kWh)? (c = 3.0 × 10^8 m/s)",
     "options": [
       {
         "label": "A",
-        "text": "2.5 x 10^4 kWh (25,000 kWh)",
+        "text": "2.5 × 10^4 kWh (25,000 kWh)",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "9.0 x 10^{10} kWh",
+        "text": "9.0 × 10^{10} kWh",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "2.5 x 10^7 kWh",
+        "text": "2.5 × 10^7 kWh",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "9.0 x 10^7 kWh",
+        "text": "9.0 × 10^7 kWh",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Mass m = 1.0 mg = 1.0 x 10^{-6} kg.\nStep 2: Energy E = m c^2 = (1.0 x 10^{-6} kg) * (3.0 x 10^8 m/s)^2 = 9.0 x 10^{10} J.\nStep 3: Conversion: 1 kWh = 3.6 x 10^6 J.\nStep 4: E in kWh = (9.0 x 10^{10} J) / (3.6 x 10^6 J/kWh) = 2.5 x 10^4 kWh = 25,000 kWh. Conclude Option A is correct.",
+      "explanationText": "Step 1: Mass m = 1.0 mg = 1.0 × 10^{-6} kg.\nStep 2: Energy E = m c^2 = (1.0 × 10^{-6} kg) × (3.0 × 10^8 m/s)^2 = 9.0 × 10^{10} J.\nStep 3: Conversion: 1 kWh = 3.6 × 10^6 J.\nStep 4: E in kWh = (9.0 × 10^{10} J) / (3.6 × 10^6 J/kWh) = 2.5 × 10^4 kWh = 25,000 kWh. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -579,10 +579,10 @@
         "languageCode": "ta",
         "stemText": "1.0 மில்லிகிராம் நிறை முழுமையாக ஆற்றலாக மாற்றப்படும் போது வெளிப்படும் ஆற்றல் கிலோவாட்-மணி (kWh) அலகில் என்ன?",
         "optionTexts": [
-          "2.5 x 10^4 kWh (25,000 kWh)",
-          "9.0 x 10^{10} kWh",
-          "2.5 x 10^7 kWh",
-          "9.0 x 10^7 kWh"
+          "2.5 × 10^4 kWh (25,000 kWh)",
+          "9.0 × 10^{10} kWh",
+          "2.5 × 10^7 kWh",
+          "9.0 × 10^7 kWh"
         ]
       }
     ]
@@ -619,7 +619,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Einstein's relation: e V₀ = K_{max} = hν - Φ₀ => V₀ = (h/e) ν - (Φ₀/e).\nStep 2: Stopping potential is independent of light intensity and depends solely on incident frequency ν and work function Φ₀.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Einstein's relation: e V₀ = K_{max} = hν - Φ₀ ⇒ V₀ = (h/e) ν - (Φ₀/e).\nStep 2: Stopping potential is independent of light intensity and depends solely on incident frequency ν and work function Φ₀.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -644,7 +644,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "When an unstable nucleus _{92}U^{238} undergoes radioactive alpha decay followed by two successive beta-minus (β-) decays, what are the mass number A and atomic number Z of the resulting daughter nucleus?",
+    "stemText": "When an unstable nucleus _{92}U^{238} undergoes radioactive α decay followed by two successive β-minus (β-) decays, what are the mass number A and atomic number Z of the resulting daughter nucleus?",
     "options": [
       {
         "label": "A",
@@ -668,7 +668,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: One alpha decay decreases A by 4 and Z by 2: _{92}U^{238} -> _{90}Th^{234} + _2He^4.\nStep 2: Two β- decays leave A unchanged and increase Z by 1 each (total +2): _{90}Th^{234} -> _{92}U^{234} + 2 e^- + 2 ν_{bar}.\nStep 3: Final nucleus has A = 234, Z = 92.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: One α decay decreases A by 4 and Z by 2: _{92}U^{238} → _{90}Th^{234} + _2He^4.\nStep 2: Two β- decays leave A unchanged and increase Z by 1 each (total +2): _{90}Th^{234} → _{92}U^{234} + 2 e^- + 2 ν_{bar}.\nStep 3: Final nucleus has A = 234, Z = 92.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -766,7 +766,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Mean life τ is defined as the reciprocal of decay constant: τ = 1 / λ.\nStep 2: τ = 1 / 0.05 day^{-1} = 20 days.\nStep 3: (Note that half-life T_{half} = 0.693 * τ = 13.86 days).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Mean life τ is defined as the reciprocal of decay constant: τ = 1 / λ.\nStep 2: τ = 1 / 0.05 day^{-1} = 20 days.\nStep 3: (Note that half-life T_{half} = 0.693 × τ = 13.86 days).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -791,7 +791,7 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "What is the de Broglie wavelength of a thermal neutron of mass m = 1.67 x 10^{-27} kg at absolute temperature T = 300 K? (Boltzmann constant k_B = 1.38 x 10^{-23} J/K, h = 6.63 x 10^{-34} J s)",
+    "stemText": "What is the de Broglie wavelength of a thermal neutron of mass m = 1.67 × 10^{-27} kg at absolute temperature T = 300 K? (Boltzmann constant k_B = 1.38 × 10^{-23} J/K, h = 6.63 × 10^{-34} J s)",
     "options": [
       {
         "label": "A",
@@ -815,7 +815,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Average thermal kinetic energy of neutron: E = (3/2) k_B T.\nStep 2: De Broglie wavelength: λ = h / \\sqrt{2 m E} = h / \\sqrt{3 m k_B T}.\nStep 3: 3 m k_B T = 3 * (1.67 x 10^{-27}) * (1.38 x 10^{-23}) * 300 = 2.074 x 10^{-47}.\nStep 4: \\sqrt{3 m k_B T} = 4.554 x 10^{-24} kg m/s.\nStep 5: λ = (6.63 x 10^{-34}) / (4.554 x 10^{-24}) = 1.455 x 10^{-10} m = 0.145 nm = 1.45 Å. Conclude Option A is correct.",
+      "explanationText": "Step 1: Average thermal kinetic energy of neutron: E = (3/2) k_B T.\nStep 2: De Broglie wavelength: λ = h / \\sqrt{2 m E} = h / \\sqrt{3 m k_B T}.\nStep 3: 3 m k_B T = 3 × (1.67 × 10^{-27}) × (1.38 × 10^{-23}) × 300 = 2.074 × 10^{-47}.\nStep 4: \\sqrt{3 m k_B T} = 4.554 × 10^{-24} kg m/s.\nStep 5: λ = (6.63 × 10^{-34}) / (4.554 × 10^{-24}) = 1.455 × 10^{-10} m = 0.145 nm = 1.45 Å. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -913,7 +913,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: A full-wave rectifier conducts during both the positive and negative half-cycles of input AC.\nStep 2: Therefore, output pulses occur at twice the input frequency: f_{ripple} = 2 * f_{in}.\nStep 3: f_{ripple} = 2 * 50 Hz = 100 Hz.\nStep 4: (In contrast, half-wave rectifier ripple frequency equals input frequency = 50 Hz). Conclude Option A is correct.",
+      "explanationText": "Step 1: A full-wave rectifier conducts during both the positive and negative half-cycles of input AC.\nStep 2: Therefore, output pulses occur at twice the input frequency: f_{ripple} = 2 × f_{in}.\nStep 3: f_{ripple} = 2 × 50 Hz = 100 Hz.\nStep 4: (In contrast, half-wave rectifier ripple frequency equals input frequency = 50 Hz). Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1040,27 +1040,27 @@
     "options": [
       {
         "label": "A",
-        "text": "3.125 x 10^{19} fissions/s",
+        "text": "3.125 × 10^{19} fissions/s",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "5.0 x 10^{18} fissions/s",
+        "text": "5.0 × 10^{18} fissions/s",
         "isCorrect": false
       },
       {
         "label": "C",
-        "text": "1.25 x 10^{20} fissions/s",
+        "text": "1.25 × 10^{20} fissions/s",
         "isCorrect": false
       },
       {
         "label": "D",
-        "text": "6.25 x 10^{19} fissions/s",
+        "text": "6.25 × 10^{19} fissions/s",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Power P = 1000 MW = 10^9 J/s.\nStep 2: Energy per fission = 200 MeV = 200 x 10^6 x 1.6 x 10^{-19} J = 3.2 x 10^{-11} J.\nStep 3: Number of fissions per second n = P / E_{fission} = 10^9 / (3.2 x 10^{-11}) = 0.3125 x 10^{20} = 3.125 x 10^{19}.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Power P = 1000 MW = 10^9 J/s.\nStep 2: Energy per fission = 200 MeV = 200 × 10^6 x 1.6 × 10^{-19} J = 3.2 × 10^{-11} J.\nStep 3: Number of fissions per second n = P / E_{fission} = 10^9 / (3.2 × 10^{-11}) = 0.3125 × 10^{20} = 3.125 × 10^{19}.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1069,10 +1069,10 @@
         "languageCode": "ta",
         "stemText": "ஒரு U-235 உட்கரு பிளவின் போது 200 MeV ஆற்றல் வெளிப்படுகிறது. 1000 MW வெப்பத் திறனைப் பெற வினாடிக்கு எத்தனை பிளவுகள் நிகழ வேண்டும்?",
         "optionTexts": [
-          "3.125 x 10^{19} பிளவுகள்/வி",
-          "5.0 x 10^{18} பிளவுகள்/வி",
-          "1.25 x 10^{20} பிளவுகள்/வி",
-          "6.25 x 10^{19} பிளவுகள்/வி"
+          "3.125 × 10^{19} பிளவுகள்/வி",
+          "5.0 × 10^{18} பிளவுகள்/வி",
+          "1.25 × 10^{20} பிளவுகள்/வி",
+          "6.25 × 10^{19} பிளவுகள்/வி"
         ]
       }
     ]
@@ -1158,7 +1158,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Bohr's quantization condition: L_n = n h / (2π).\nStep 2: Angular momentum is directly proportional to principal quantum number n: L_n ∝ n.\nStep 3: Ratio L4 / L2 = 4 / 2 = 2 : 1.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Bohr's quantization condition: L_n = n h / (2π).\nStep 2: Angular momentum is directly proportional to principal quantum number n: L_n ∝ n.\nStep 3: Ratio L_4 / L_2 = 4 / 2 = 2 : 1.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Activity A = A₀ (1/2)^n = A₀ / 16 = A₀ / 2^4 => number of half-lives n = 4.\nStep 2: Half-life T_{half} = 80 min / 4 = 20 minutes.\nStep 3: Decay constant λ = ln 2 / T_{half} = 0.69315 / 20 min = 0.03466 min^{-1} ≈ 0.0347 min^{-1}.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Activity A = A₀ (1/2)^n = A₀ / 16 = A₀ / 2^4 ⇒ number of half-lives n = 4.\nStep 2: Half-life T_{half} = 80 min / 4 = 20 minutes.\nStep 3: Decay constant λ = ln 2 / T_{half} = 0.69315 / 20 min = 0.03466 min^{-1} ≈ 0.0347 min^{-1}.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1354,7 +1354,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Nuclear radius relation: R ∝ A^{1/3}.\nStep 2: R1 / R2 = (A1 / A2)^{1/3} = (1 / 27)^{1/3} = 1 / 3.\nStep 3: Ratio is 1 : 3.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Nuclear radius relation: R ∝ A^{1/3}.\nStep 2: R_1 / R_2 = (A_1 / A_2)^{1/3} = (1 / 27)^{1/3} = 1 / 3.\nStep 3: Ratio is 1 : 3.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Current gain β = ΔI_c / ΔI_b = (2.0 x 10^{-3} A) / (20 x 10^{-6} A) = 2000 / 20 = 100.\nStep 2: Resistance gain = R_{load} / R_{in} = 5.0 kΩ / 1.0 kΩ = 5.\nStep 3: Voltage gain A_v = Current gain * Resistance gain = β * (R_{load} / R_{in}) = 100 * 5 = 500.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Current gain β = ΔI_c / ΔI_b = (2.0 × 10^{-3} A) / (20 × 10^{-6} A) = 2000 / 20 = 100.\nStep 2: Resistance gain = R_{load} / R_{in} = 5.0 kΩ / 1.0 kΩ = 5.\nStep 3: Voltage gain A_v = Current gain × Resistance gain = β × (R_{load} / R_{in}) = 100 × 5 = 500.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],

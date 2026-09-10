@@ -31,7 +31,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In the accelerating frame of the incline, a pseudo force 'm a' acts horizontally backwards on the block.\nStep 2: Component of pseudo force up the incline is m a cos θ.\nStep 3: Component of gravity down the incline is m g sin θ.\nStep 4: For relative rest: m a cos θ = m g sin θ => a = g tan θ. Conclude Option A is correct.",
+      "explanationText": "Step 1: In the accelerating frame of the incline, a pseudo force 'm a' acts horizontally backwards on the block.\nStep 2: Component of pseudo force up the incline is m a cos θ.\nStep 3: Component of gravity down the incline is m g sin θ.\nStep 4: For relative rest: m a cos θ = m g sin θ ⇒ a = g tan θ. Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -55,8 +55,8 @@
     "nodeTagCode": "phy_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "Two blocks of masses m1 = 4 kg and m2 = 6 kg are connected by a light inextensible string passing over a frictionless, massless pulley (Atwood's machine). What is the acceleration of the masses and tension in the string? (Take g = 10 m/s²)",
+    "stemFormat": "latex",
+    "stemText": "Two blocks of masses m_1 = 4 kg and m_2 = 6 kg are connected by a light inextensible string passing over a frictionless, massless pulley (Atwood's machine). What is the acceleration of the masses and tension in the string? (Take g = 10 m/s²)",
     "options": [
       {
         "label": "A",
@@ -80,14 +80,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Acceleration a = (m2 - m1) g / (m1 + m2) = (6 - 4) * 10 / (6 + 4) = 20 / 10 = 2 m/s².\nStep 2: Tension T = 2 m1 m2 g / (m1 + m2) = 2 * 4 * 6 * 10 / 10 = 48 N.\nStep 3: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Acceleration a = (m_2 - m_1) g / (m_1 + m_2) = (6 - 4) × 10 / (6 + 4) = 20 / 10 = 2 m/s².\nStep 2: Tension T = 2 m_1 m_2 g / (m_1 + m_2) = 2 × 4 × 6 × 10 / 10 = 48 N.\nStep 3: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "m1 = 4 kg மற்றும் m2 = 6 kg நிறைகொண்ட இரு பொருட்கள் உராய்வற்ற, நிறையற்ற கப்பி வழியாக செல்லும் லேசான இழையால் இணைக்கப்பட்டுள்ளன. நிறைகளின் முடுக்கம் மற்றும் இழையின் இழுவிசை என்ன? (g = 10 m/s²)",
+        "stemText": "m_1 = 4 kg மற்றும் m_2 = 6 kg நிறைகொண்ட இரு பொருட்கள் உராய்வற்ற, நிறையற்ற கப்பி வழியாக செல்லும் லேசான இழையால் இணைக்கப்பட்டுள்ளன. நிறைகளின் முடுக்கம் மற்றும் இழையின் இழுவிசை என்ன? (g = 10 m/s²)",
         "optionTexts": [
           "a = 2 m/s², T = 48 N",
           "a = 1 m/s², T = 50 N",
@@ -129,7 +129,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: For downward acceleration 'a', apparent weight N = m (g - a).\nStep 2: Substitute m = 60 kg, g = 10 m/s², a = 2.0 m/s².\nStep 3: N = 60 * (10 - 2) = 60 * 8 = 480 N.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: For downward acceleration 'a', apparent weight N = m (g - a).\nStep 2: Substitute m = 60 kg, g = 10 m/s², a = 2.0 m/s².\nStep 3: N = 60 × (10 - 2) = 60 × 8 = 480 N.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -178,7 +178,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Work done W = ∫[0 to 3] F dx = ∫[0 to 3] (3x^2 + 2x - 7) dx.\nStep 2: W = [x^3 + x^2 - 7x] from 0 to 3.\nStep 3: W = (3^3 + 3^2 - 7*3) - 0 = 27 + 9 - 21 = 15 J.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Work done W = ∫[0 to 3] F dx = ∫[0 to 3] (3x^2 + 2x - 7) dx.\nStep 2: W = [x^3 + x^2 - 7x] from 0 to 3.\nStep 3: W = (3^3 + 3^2 - 7×3) - 0 = 27 + 9 - 21 = 15 J.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -202,7 +202,7 @@
     "nodeTagCode": "phy_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
+    "stemFormat": "latex",
     "stemText": "A ball of mass 0.5 kg moving at 10 m/s collides head-on and elastically with an identical ball at rest. What are the velocities of the two balls immediately after the collision?",
     "options": [
       {
@@ -227,8 +227,8 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: In a 1D elastic collision between two bodies of equal mass (m1 = m2), the bodies completely exchange their velocities.\nStep 2: Initial velocities: u1 = 10 m/s, u2 = 0 m/s.\nStep 3: Final velocities: v1 = u2 = 0 m/s, v2 = u1 = 10 m/s.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: In a 1D elastic collision between two bodies of equal mass (m_1 = m_2), the bodies completely exchange their velocities.\nStep 2: Initial velocities: u_1 = 10 m/s, u_2 = 0 m/s.\nStep 3: Final velocities: v_1 = u_2 = 0 m/s, v_2 = u_1 = 10 m/s.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
@@ -276,7 +276,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Condition to complete a vertical circle: v_{lowest} = \\sqrt{5 g R}.\nStep 2: Substitute g = 10 m/s² and R = 0.5 m.\nStep 3: v_{lowest} = \\sqrt{5 * 10 * 0.5} = \\sqrt{25} = 5.0 m/s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Condition to complete a vertical circle: v_{lowest} = \\sqrt{5 g R}.\nStep 2: Substitute g = 10 m/s² and R = 0.5 m.\nStep 3: v_{lowest} = \\sqrt{5 × 10 × 0.5} = \\sqrt{25} = 5.0 m/s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -325,7 +325,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Mass of water exiting per second: dm/dt = m * v (where m is mass per unit length).\nStep 2: Kinetic energy per second (Power) = dK/dt = (1/2) (dm/dt) v^2.\nStep 3: Power = (1/2) (m v) v^2 = (1/2) m v^3.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Mass of water exiting per second: dm/dt = m × v (where m is mass per unit length).\nStep 2: Kinetic energy per second (Power) = dK/dt = (1/2) (dm/dt) v^2.\nStep 3: Power = (1/2) (m v) v^2 = (1/2) m v^3.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -374,7 +374,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Maximum static friction (limiting friction): f_{max} = μ_s * m * g = 0.4 * 2 * 10 = 8 N.\nStep 2: Applied force F = 6 N is less than limiting friction f_{max} (8 N).\nStep 3: Since applied force is less than limiting friction, the block remains at rest and static friction self-adjusts to equal applied force: f = F = 6 N.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Maximum static friction (limiting friction): f_{max} = μ_s × m × g = 0.4 × 2 × 10 = 8 N.\nStep 2: Applied force F = 6 N is less than limiting friction f_{max} (8 N).\nStep 3: Since applied force is less than limiting friction, the block remains at rest and static friction self-adjusts to equal applied force: f = F = 6 N.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -423,7 +423,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Centripetal force: m v^2 / r = k / r => m v^2 = k.\nStep 2: Kinetic energy K = (1/2) m v^2 = (1/2) k.\nStep 3: Kinetic energy is independent of radius r and equal to k/2.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Centripetal force: m v^2 / r = k / r ⇒ m v^2 = k.\nStep 2: Kinetic energy K = (1/2) m v^2 = (1/2) k.\nStep 3: Kinetic energy is independent of radius r and equal to k/2.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -472,7 +472,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: To reach the top and complete the vertical loop, the minimum speed at bottom must be v = \\sqrt{5 g R}.\nStep 2: Kinetic energy at bottom: K = (1/2) m v^2 = (1/2) m (5 g R).\nStep 3: Initial potential energy of compressed spring: U = (1/2) k x^2.\nStep 4: Equating energies: (1/2) k x^2 = (5/2) m g R => x = \\sqrt{5 m g R / k}. Conclude Option A is correct.",
+      "explanationText": "Step 1: To reach the top and complete the vertical loop, the minimum speed at bottom must be v = \\sqrt{5 g R}.\nStep 2: Kinetic energy at bottom: K = (1/2) m v^2 = (1/2) m (5 g R).\nStep 3: Initial potential energy of compressed spring: U = (1/2) k x^2.\nStep 4: Equating energies: (1/2) k x^2 = (5/2) m g R ⇒ x = \\sqrt{5 m g R / k}. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -521,7 +521,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By conservation of linear momentum: m v = (m + M) V => V = m v / (m + M).\nStep 2: By conservation of mechanical energy: (1/2) (m + M) V^2 = (m + M) g h => h = V^2 / (2g) = m^2 v^2 / [2 (m + M)^2 g].\nStep 3: Height related to swing angle: h = L (1 - cos θ) => 1 - cos θ = h / L.\nStep 4: cos θ = 1 - m^2 v^2 / [2 (m + M)^2 g L] => θ = cos^{-1} [1 - m^2 v^2 / (2 (m + M)^2 g L)]. Conclude Option A is correct.",
+      "explanationText": "Step 1: By conservation of linear momentum: m v = (m + M) V ⇒ V = m v / (m + M).\nStep 2: By conservation of mechanical energy: (1/2) (m + M) V^2 = (m + M) g h ⇒ h = V^2 / (2g) = m^2 v^2 / [2 (m + M)^2 g].\nStep 3: Height related to swing angle: h = L (1 - cos θ) ⇒ 1 - cos θ = h / L.\nStep 4: cos θ = 1 - m^2 v^2 / [2 (m + M)^2 g L] ⇒ θ = cos^{-1} [1 - m^2 v^2 / (2 (m + M)^2 g L)]. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -594,8 +594,8 @@
     "nodeTagCode": "phy_07",
     "questionType": "single_choice",
     "difficultyBand": "medium",
-    "stemFormat": "plain",
-    "stemText": "A force F = (4 i + 3 j) N acts on a particle, displacing it from position r1 = (i + 2 j) m to r2 = (3 i + 6 j) m. What is the total work done by the force?",
+    "stemFormat": "latex",
+    "stemText": "A force F = (4 i + 3 j) N acts on a particle, displacing it from position r_1 = (i + 2 j) m to r_2 = (3 i + 6 j) m. What is the total work done by the force?",
     "options": [
       {
         "label": "A",
@@ -619,14 +619,14 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Displacement vector Δr = r2 - r1 = (3i + 6j) - (i + 2j) = (2i + 4j) m.\nStep 2: Work done W = F · Δr = (4i + 3j) · (2i + 4j).\nStep 3: W = 4*2 + 3*4 = 8 + 12 = 20 J.\nStep 4: Conclude Option A is correct.",
-      "solutionFormat": "plain"
+      "explanationText": "Step 1: Displacement vector Δr = r_2 - r_1 = (3i + 6j) - (i + 2j) = (2i + 4j) m.\nStep 2: Work done W = F · Δr = (4i + 3j) · (2i + 4j).\nStep 3: W = 4×2 + 3×4 = 8 + 12 = 20 J.\nStep 4: Conclude Option A is correct.",
+      "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "F = (4 i + 3 j) N என்ற விசை செயல்பட்டு ஒரு துகளை r1 = (i + 2 j) m இலிருந்து r2 = (3 i + 6 j) m நிலைக்கு இடப்பெயர்ச்சி செய்கிறது. விசை செய்த மொத்த வேலை என்ன?",
+        "stemText": "F = (4 i + 3 j) N என்ற விசை செயல்பட்டு ஒரு துகளை r_1 = (i + 2 j) m இலிருந்து r_2 = (3 i + 6 j) m நிலைக்கு இடப்பெயர்ச்சி செய்கிறது. விசை செய்த மொத்த வேலை என்ன?",
         "optionTexts": [
           "20 J",
           "12 J",
@@ -668,7 +668,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Initial momentum = m v; Combined mass = 3m => common velocity V = m v / (3m) = v / 3.\nStep 2: Initial KE = K_i = (1/2) m v^2.\nStep 3: Final KE = K_f = (1/2) (3m) (v/3)^2 = (1/2) (3m) (v^2 / 9) = (1/6) m v^2 = K_i / 3.\nStep 4: Loss in KE = K_i - K_f = (2/3) K_i = 66.7%. Conclude Option A is correct.",
+      "explanationText": "Step 1: Initial momentum = m v; Combined mass = 3m ⇒ common velocity V = m v / (3m) = v / 3.\nStep 2: Initial KE = K_i = (1/2) m v^2.\nStep 3: Final KE = K_f = (1/2) (3m) (v/3)^2 = (1/2) (3m) (v^2 / 9) = (1/6) m v^2 = K_i / 3.\nStep 4: Loss in KE = K_i - K_f = (2/3) K_i = 66.7%. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -717,7 +717,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Kinetic energy K = p^2 / (2m).\nStep 2: New momentum p' = 1.5 p.\nStep 3: New kinetic energy K' = (1.5 p)^2 / (2m) = 2.25 * (p^2 / 2m) = 2.25 K.\nStep 4: Percentage increase = [(K' - K) / K] * 100% = [(2.25 - 1)] * 100% = 125%. Conclude Option A is correct.",
+      "explanationText": "Step 1: Kinetic energy K = p^2 / (2m).\nStep 2: New momentum p' = 1.5 p.\nStep 3: New kinetic energy K' = (1.5 p)^2 / (2m) = 2.25 × (p^2 / 2m) = 2.25 K.\nStep 4: Percentage increase = [(K' - K) / K] × 100% = [(2.25 - 1)] × 100% = 125%. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -766,7 +766,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Work done = Change in kinetic energy = (1/2) m v^2 - 0 = (1/2) * 1000 * (20)^2 = 500 * 400 = 200,000 J.\nStep 2: Average power P = Work / time = 200,000 J / 5.0 s = 40,000 W = 40 kW.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Work done = Change in kinetic energy = (1/2) m v^2 - 0 = (1/2) × 1000 × (20)^2 = 500 × 400 = 200,000 J.\nStep 2: Average power P = Work / time = 200,000 J / 5.0 s = 40,000 W = 40 kW.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -815,7 +815,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Mass of hanging part: m_{hang} = M / n.\nStep 2: Center of mass of the hanging part is at distance y_{cm} = (L/n) / 2 = L / (2n) below the table edge.\nStep 3: Work done to lift the hanging portion = m_{hang} * g * y_{cm} = (M / n) * g * (L / (2n)).\nStep 4: W = M g L / (2 n^2). Conclude Option A is correct.",
+      "explanationText": "Step 1: Mass of hanging part: m_{hang} = M / n.\nStep 2: Center of mass of the hanging part is at distance y_{cm} = (L/n) / 2 = L / (2n) below the table edge.\nStep 3: Work done to lift the hanging portion = m_{hang} × g × y_{cm} = (M / n) × g × (L / (2n)).\nStep 4: W = M g L / (2 n^2). Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -864,7 +864,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Change in momentum Δp = m (v - u) = 0.150 kg * (0 - 20 m/s) = -3.0 kg m/s.\nStep 2: Average force F = |Δp / Δt| = 3.0 / 0.1 = 30 N.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Change in momentum Δp = m (v - u) = 0.150 kg × (0 - 20 m/s) = -3.0 kg m/s.\nStep 2: Average force F = |Δp / Δt| = 3.0 / 0.1 = 30 N.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
@@ -913,7 +913,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Force F = - dU/dx = - (2x - 4) = 4 - 2x.\nStep 2: For equilibrium, F = 0 => 4 - 2x = 0 => x = 2 m.\nStep 3: Second derivative d^{2}U/dx^2 = d/dx(2x - 4) = +2 > 0 (minimum potential energy).\nStep 4: Positive second derivative indicates stable equilibrium at x = 2 m. Conclude Option A is correct.",
+      "explanationText": "Step 1: Force F = - dU/dx = - (2x - 4) = 4 - 2x.\nStep 2: For equilibrium, F = 0 ⇒ 4 - 2x = 0 ⇒ x = 2 m.\nStep 3: Second derivative d^{2}U/dx^2 = d/dx(2x - 4) = +2 > 0 (minimum potential energy).\nStep 4: Positive second derivative indicates stable equilibrium at x = 2 m. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -991,7 +991,7 @@
     "options": [
       {
         "label": "A",
-        "text": "(1/2) * [m M / (m + M)] * v^2",
+        "text": "(1/2) × [m M / (m + M)] × v^2",
         "isCorrect": true
       },
       {
@@ -1001,7 +1001,7 @@
       },
       {
         "label": "C",
-        "text": "(1/2) * [m^2 / (m + M)] * v^2",
+        "text": "(1/2) × [m^2 / (m + M)] × v^2",
         "isCorrect": false
       },
       {
@@ -1011,7 +1011,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Formula for loss of kinetic energy in perfectly inelastic collision: ΔK = (1/2) * (m1 * m2 / (m1 + m2)) * (u1 - u2)^2.\nStep 2: Here m1 = m, m2 = M, u1 = v, u2 = 0.\nStep 3: ΔK = (1/2) * [m M / (m + M)] * v^2 (using reduced mass μ = m M / (m + M)).\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Formula for loss of kinetic energy in perfectly inelastic collision: ΔK = (1/2) × (m_1 × m_2 / (m_1 + m_2)) × (u_1 - u_2)^2.\nStep 2: Here m_1 = m, m_2 = M, u_1 = v, u_2 = 0.\nStep 3: ΔK = (1/2) × [m M / (m + M)] × v^2 (using reduced mass μ = m M / (m + M)).\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1020,9 +1020,9 @@
         "languageCode": "ta",
         "stemText": "M நிறையுள்ள மணல் மூட்டையில் v வேகத்தில் வரும் m நிறையுள்ள தோட்டா பாய்ந்து புதைந்துவிடுகிறது. மோதலில் ஏற்படும் இயக்க ஆற்றல் இழப்பு என்ன?",
         "optionTexts": [
-          "(1/2) * [m M / (m + M)] * v^2",
+          "(1/2) × [m M / (m + M)] × v^2",
           "(1/2) m v^2",
-          "(1/2) * [m^2 / (m + M)] * v^2",
+          "(1/2) × [m^2 / (m + M)] × v^2",
           "(1/2) M v^2"
         ]
       }
@@ -1109,7 +1109,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Impact velocity on striking floor: v = \\sqrt{2 g h}.\nStep 2: Rebound velocity: v' = e * v = e * \\sqrt{2 g h}.\nStep 3: Height of first rebound: h1 = (v')^2 / (2g) = e^2 (2gh) / (2g) = e^2 h.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Impact velocity on striking floor: v = \\sqrt{2 g h}.\nStep 2: Rebound velocity: v' = e × v = e × \\sqrt{2 g h}.\nStep 3: Height of first rebound: h_1 = (v')^2 / (2g) = e^2 (2gh) / (2g) = e^2 h.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1134,16 +1134,16 @@
     "questionType": "single_choice",
     "difficultyBand": "medium",
     "stemFormat": "latex",
-    "stemText": "Two masses m1 and m2 (m1 > m2) connected by an inextensible string over a frictionless pulley have total mass M = m1 + m2. What is the acceleration of the center of mass of the system?",
+    "stemText": "Two masses m_1 and m_2 (m_1 > m_2) connected by an inextensible string over a frictionless pulley have total mass M = m_1 + m_2. What is the acceleration of the center of mass of the system?",
     "options": [
       {
         "label": "A",
-        "text": "[ (m1 - m2) / (m1 + m2) ]^2 * g downwards",
+        "text": "[ (m_1 - m_2) / (m_1 + m_2) ]^2 × g downwards",
         "isCorrect": true
       },
       {
         "label": "B",
-        "text": "[ (m1 - m2) / (m1 + m2) ] * g downwards",
+        "text": "[ (m_1 - m_2) / (m_1 + m_2) ] × g downwards",
         "isCorrect": false
       },
       {
@@ -1158,17 +1158,17 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Individual acceleration of both blocks is a = [ (m1 - m2) / (m1 + m2) ] g (m1 accelerates downward, m2 upward).\nStep 2: Acceleration of center of mass: a_{cm} = (m1 a1 + m2 a2) / (m1 + m2) = [m1 (-a) + m2 (+a)] / (m1 + m2) = - [(m1 - m2) / (m1 + m2)] a.\nStep 3: Substitute a: a_{cm} = - [ (m1 - m2) / (m1 + m2) ]^2 g.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: Individual acceleration of both blocks is a = [ (m_1 - m_2) / (m_1 + m_2) ] g (m_1 accelerates downward, m_2 upward).\nStep 2: Acceleration of center of mass: a_{cm} = (m_1 a_1 + m_2 a_2) / (m_1 + m_2) = [m_1 (-a) + m_2 (+a)] / (m_1 + m_2) = - [(m_1 - m_2) / (m_1 + m_2)] a.\nStep 3: Substitute a: a_{cm} = - [ (m_1 - m_2) / (m_1 + m_2) ]^2 g.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
     "translations": [
       {
         "languageCode": "ta",
-        "stemText": "உராய்வற்ற கப்பி மீது தொங்கும் m1 மற்றும் m2 (m1 > m2) நிறைகளின் அமைப்பின் நிறை மையத்தின் முடுக்கம் என்ன?",
+        "stemText": "உராய்வற்ற கப்பி மீது தொங்கும் m_1 மற்றும் m_2 (m_1 > m_2) நிறைகளின் அமைப்பின் நிறை மையத்தின் முடுக்கம் என்ன?",
         "optionTexts": [
-          "[ (m1 - m2) / (m1 + m2) ]^2 * g கீழ்நோக்கி",
-          "[ (m1 - m2) / (m1 + m2) ] * g கீழ்நோக்கி",
+          "[ (m_1 - m_2) / (m_1 + m_2) ]^2 × g கீழ்நோக்கி",
+          "[ (m_1 - m_2) / (m_1 + m_2) ] × g கீழ்நோக்கி",
           "பூஜ்ஜியம்",
           "g கீழ்நோக்கி"
         ]
@@ -1207,7 +1207,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Mass lifted per second: dm/dt = 600 kg / 60 s = 10 kg/s.\nStep 2: Rate of potential energy imparted: P_{pe} = (dm/dt) * g * h = 10 * 10 * 20 = 2000 W.\nStep 3: Rate of kinetic energy imparted: P_{ke} = (1/2) (dm/dt) v^2 = (1/2) * 10 * 400 = 2000 W.\nStep 4: Total Power = P_{pe} + P_{ke} = 2000 + 2000 = 4000 W = 4.0 kW. Conclude Option A is correct.",
+      "explanationText": "Step 1: Mass lifted per second: dm/dt = 600 kg / 60 s = 10 kg/s.\nStep 2: Rate of potential energy imparted: P_{pe} = (dm/dt) × g × h = 10 × 10 × 20 = 2000 W.\nStep 3: Rate of kinetic energy imparted: P_{ke} = (1/2) (dm/dt) v^2 = (1/2) × 10 × 400 = 2000 W.\nStep 4: Total Power = P_{pe} + P_{ke} = 2000 + 2000 = 4000 W = 4.0 kW. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1256,7 +1256,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Constant velocity implies acceleration a = 0 (net force along incline is zero).\nStep 2: Downward component of gravity = Kinetic friction: m g sin θ = f_k = μ_k N.\nStep 3: Normal force N = m g cos θ => m g sin θ = μ_k m g cos θ.\nStep 4: μ_k = sin θ / cos θ = tan θ. Conclude Option A is correct.",
+      "explanationText": "Step 1: Constant velocity implies acceleration a = 0 (net force along incline is zero).\nStep 2: Downward component of gravity = Kinetic friction: m g sin θ = f_k = μ_k N.\nStep 3: Normal force N = m g cos θ ⇒ m g sin θ = μ_k m g cos θ.\nStep 4: μ_k = sin θ / cos θ = tan θ. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1285,7 +1285,7 @@
     "options": [
       {
         "label": "A",
-        "text": "\\sqrt{ (g / L) * (L^2 - l^2) }",
+        "text": "\\sqrt{ (g / L) × (L^2 - l^2) }",
         "isCorrect": true
       },
       {
@@ -1300,12 +1300,12 @@
       },
       {
         "label": "D",
-        "text": "\\sqrt{ (g / 2L) * (L^2 - l^2) }",
+        "text": "\\sqrt{ (g / 2L) × (L^2 - l^2) }",
         "isCorrect": false
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Let the table surface be reference level U = 0.\nStep 2: Initial potential energy: U_i = - (M l / L) * g * (l / 2) = - M g l^2 / (2L).\nStep 3: Final potential energy when whole rope hangs: U_f = - M g (L / 2) = - M g L^2 / (2L).\nStep 4: Loss in PE = Gain in KE: (1/2) M v^2 = U_i - U_f = (M g / 2L) (L^2 - l^2) => v = sqrt[ (g/L) (L^2 - l^2) ]. Conclude Option A is correct.",
+      "explanationText": "Step 1: Let the table surface be reference level U = 0.\nStep 2: Initial potential energy: U_i = - (M l / L) × g × (l / 2) = - M g l^2 / (2L).\nStep 3: Final potential energy when whole rope hangs: U_f = - M g (L / 2) = - M g L^2 / (2L).\nStep 4: Loss in PE = Gain in KE: (1/2) M v^2 = U_i - U_f = (M g / 2L) (L^2 - l^2) ⇒ v = sqrt[ (g/L) (L^2 - l^2) ]. Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1314,10 +1314,10 @@
         "languageCode": "ta",
         "stemText": "M நிறையும் L நீளமும் கொண்ட கயிறு ஒன்றின் l பகுதி மேசையின் விளிம்பில் தொங்குகிறது. கயிறு மேசையை முழுமையாக விட்டு வெளியேறும் கணத்தில் அதன் வேகம் என்ன?",
         "optionTexts": [
-          "\\sqrt{ (g / L) * (L^2 - l^2) }",
+          "\\sqrt{ (g / L) × (L^2 - l^2) }",
           "\\sqrt{ 2g (L - l) }",
           "\\sqrt{ g (L + l) }",
-          "\\sqrt{ (g / 2L) * (L^2 - l^2) }"
+          "\\sqrt{ (g / 2L) × (L^2 - l^2) }"
         ]
       }
     ]
@@ -1403,7 +1403,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: By conservation of linear momentum: m_{bullet} * v_{bullet} + M_{rifle} * V_{rifle} = 0.\nStep 2: V_{rifle} = - (m_{bullet} * v_{bullet}) / M_{rifle}.\nStep 3: Substitute values: V_{rifle} = - (0.010 kg * 400 m/s) / 4.0 kg = - 4.0 / 4.0 = -1.0 m/s.\nStep 4: Conclude Option A is correct.",
+      "explanationText": "Step 1: By conservation of linear momentum: m_{bullet} × v_{bullet} + M_{rifle} × V_{rifle} = 0.\nStep 2: V_{rifle} = - (m_{bullet} × v_{bullet}) / M_{rifle}.\nStep 3: Substitute values: V_{rifle} = - (0.010 kg × 400 m/s) / 4.0 kg = - 4.0 / 4.0 = -1.0 m/s.\nStep 4: Conclude Option A is correct.",
       "solutionFormat": "latex"
     },
     "images": [],
@@ -1452,7 +1452,7 @@
       }
     ],
     "solution": {
-      "explanationText": "Step 1: Power P = Force * Velocity = F * v.\nStep 2: P = 100 N * 2.0 m/s = 200 W.\nStep 3: Conclude Option A is correct.",
+      "explanationText": "Step 1: Power P = Force × Velocity = F × v.\nStep 2: P = 100 N × 2.0 m/s = 200 W.\nStep 3: Conclude Option A is correct.",
       "solutionFormat": "plain"
     },
     "images": [],
